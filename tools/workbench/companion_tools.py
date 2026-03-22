@@ -245,7 +245,7 @@ TOOL_DEFINITIONS = [
                         "enum": ["figurative_language", "greek_constructions", "hebrew_constructions",
                                  "literary_typing", "wordplay", "propositional_outline",
                                  "important_words", "preaching_themes", "nt_use_of_ot",
-                                 "cultural_concepts"]
+                                 "cultural_concepts", "thematic_outlines"]
                     },
                     "description": "Which datasets to query. If omitted, queries the most relevant ones for the current phase."
                 }
@@ -582,26 +582,43 @@ def _save_to_outline(tool_input, session_context):
 # ── Dataset Tool Implementations ─────────────────────────────────────────
 
 def _get_passage_data(tool_input, session_context):
-    """Query pre-indexed passage datasets."""
+    """Query pre-indexed passage datasets.
+
+    When no datasets are specified, selects defaults based on the current
+    study phase so Claude gets the most relevant data automatically.
+    """
     from dataset_tools import (
         query_figurative_language, query_greek_constructions,
         query_hebrew_constructions, query_literary_typing,
         query_wordplay, query_propositional_outline,
         query_important_words, query_preaching_themes,
-        query_nt_use_of_ot, query_cultural_concepts
+        query_nt_use_of_ot, query_cultural_concepts,
+        query_thematic_outlines,
     )
 
     ref = parse_reference(tool_input["reference"])
     book, chapter = ref["book"], ref["chapter"]
     testament = "ot" if book <= 39 else "nt"
+    phase = session_context.get("phase", "")
 
     requested = tool_input.get("datasets")
     if not requested:
-        requested = ["preaching_themes"]
-        if testament == "nt":
-            requested.append("greek_constructions")
+        # Phase-aware defaults
+        constructions = "greek_constructions" if testament == "nt" else "hebrew_constructions"
+        if phase in ("text_work", ""):
+            requested = ["figurative_language", constructions, "literary_typing"]
+        elif phase == "word_study":
+            requested = ["important_words", constructions]
+        elif phase == "context":
+            requested = ["thematic_outlines", "nt_use_of_ot", "cultural_concepts"]
+        elif phase == "theological":
+            requested = ["nt_use_of_ot", "cultural_concepts", "preaching_themes"]
+        elif phase in ("exegetical_point", "fcf_homiletical"):
+            requested = ["propositional_outline", "preaching_themes"]
+        elif phase == "sermon_construction":
+            requested = ["preaching_themes", "cultural_concepts"]
         else:
-            requested.append("hebrew_constructions")
+            requested = ["preaching_themes", constructions]
 
     dispatch = {
         "figurative_language": lambda: query_figurative_language(book, chapter),
@@ -614,6 +631,7 @@ def _get_passage_data(tool_input, session_context):
         "preaching_themes": lambda: query_preaching_themes(book, chapter),
         "nt_use_of_ot": lambda: query_nt_use_of_ot(book, chapter),
         "cultural_concepts": lambda: query_cultural_concepts(book, chapter),
+        "thematic_outlines": lambda: query_thematic_outlines(book, chapter),
     }
 
     results = {}
