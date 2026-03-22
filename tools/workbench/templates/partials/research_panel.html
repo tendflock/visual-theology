@@ -1,0 +1,20 @@
+{% if items %}
+<div class="research-items">
+    {% for item in items %}
+    <div class="research-item {% if item.pinned %}pinned{% endif %}">
+        <div class="ri-header">
+            <span class="ri-type">{{ item.item_type }}</span>
+            {% if item.title %}
+            <span class="ri-title">{{ item.title }}</span>
+            {% endif %}
+        </div>
+        {% if item.source %}
+        <div class="ri-source">{{ item.source }}</div>
+        {% endif %}
+        <div class="ri-content">{{ item.content[:500] }}{% if item.content | length > 500 %}...{% endif %}</div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p class="empty-state">No research items yet. Chat with the assistant to start gathering materials.</p>
+{% endif %}

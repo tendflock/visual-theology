@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ session.passage_ref }} — Sermon Outline</title>
+    <style>
+        body { font-family: Georgia, 'Times New Roman', serif; max-width: 700px; margin: 2em auto; line-height: 1.6; color: #222; }
+        h1 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 1.6em; border-bottom: 2px solid #333; padding-bottom: 0.3em; }
+        h2 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 1.3em; margin-top: 1.5em; }
+        h2.theme { font-style: italic; color: #555; }
+        h3 { font-size: 1.1em; margin-top: 1em; }
+        .verse-ref { color: #666; font-size: 0.9em; }
+        .cross-ref { margin-left: 2em; color: #555; font-size: 0.9em; border-left: 2px solid #ccc; padding-left: 0.5em; }
+        .note { font-style: italic; color: #666; }
+        ul { margin-top: 0.3em; }
+        @media print {
+            body { margin: 0; font-size: 11pt; }
+            h2 { page-break-before: auto; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print" style="margin-bottom: 1em;">
+        <button onclick="window.print()">Print / Save as PDF</button>
+        <a href="/companion/session/{{ session.id }}">Back to session</a>
+    </div>
+
+    <h1>{{ session.passage_ref }}</h1>
+
+    {% macro render_export_node(node, depth) %}
+        {% if node.type == 'title' %}
+            <h1>{{ node.content }}</h1>
+        {% elif node.type == 'theme' %}
+            <h2 class="theme">{{ node.content }}</h2>
+        {% elif node.type == 'main_point' %}
+            <h2>{{ node.content }}{% if node.verse_ref %} <span class="verse-ref">({{ node.verse_ref }})</span>{% endif %}</h2>
+        {% elif node.type == 'sub_point' %}
+            <h3>{{ node.content }}{% if node.verse_ref %} <span class="verse-ref">({{ node.verse_ref }})</span>{% endif %}</h3>
+        {% elif node.type == 'bullet' %}
+            <ul><li>{{ node.content }}</li></ul>
+        {% elif node.type == 'cross_ref' %}
+            <div class="cross-ref">{{ node.content }}</div>
+        {% elif node.type == 'note' %}
+            <p class="note">{{ node.content }}</p>
+        {% endif %}
+        {% if node.children %}
+            {% for child in node.children %}
+                {{ render_export_node(child, depth + 1) }}
+            {% endfor %}
+        {% endif %}
+    {% endmacro %}
+
+    {% for node in tree %}
+        {{ render_export_node(node, 0) }}
+    {% endfor %}
+
+    {% if not tree %}
+    <p><em>No outline content yet.</em></p>
+    {% endif %}
+</body>
+</html>

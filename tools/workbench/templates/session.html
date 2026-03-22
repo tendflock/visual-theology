@@ -1,0 +1,62 @@
+{% extends "companion_base.html" %}
+{% block title %}{{ session.passage_ref }} — Companion{% endblock %}
+{% block content %}
+<div id="companion-app">
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <span id="passage-ref">{{ session.passage_ref }}</span>
+        <span id="phase-badge">{{ phase_info.name }}</span>
+        <div id="progress-dots"
+             hx-get="/companion/session/{{ session.id }}/progress"
+             hx-trigger="load"
+             hx-swap="innerHTML">
+        </div>
+        <div id="topbar-spacer"></div>
+        <span id="timer-display">--:--</span>
+        <div id="timer-controls">
+            <button class="btn-timer" id="btn-timer-toggle">Pause</button>
+        </div>
+        <button id="btn-outline-toggle" onclick="toggleOutlineDrawer()">Outline</button>
+    </div>
+
+    <!-- Main Content — side-by-side when discussion is open -->
+    <div id="main-content">
+        <!-- Card Area — always visible -->
+        <div id="card-area"
+             hx-get="/companion/session/{{ session.id }}/card"
+             hx-trigger="load"
+             hx-swap="innerHTML">
+            <div class="loading-text">Loading...</div>
+        </div>
+
+        <!-- Discussion Panel — slides in from right, card shrinks to make room -->
+        <div id="discussion-area" class="hidden">
+            <div id="discussion-header">
+                <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">Discussion</span>
+                <button id="btn-close-discussion" onclick="enterCardMode()" style="background:transparent; border:none; color:var(--text-dim); font-size:18px; cursor:pointer;">&times;</button>
+            </div>
+            <div id="discussion-thread">
+                <!-- Messages loaded here -->
+            </div>
+            <div id="discussion-input-row">
+                <textarea id="discussion-input" placeholder="Ask your study partner..." rows="2"></textarea>
+                <button id="btn-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outline Drawer -->
+    <div id="outline-drawer"
+         hx-get="/companion/session/{{ session.id }}/outline"
+         hx-trigger="load"
+         hx-swap="innerHTML">
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    window.sessionId = {{ session.id }};
+    initTimer({{ session.id }}, {{ session.timer_remaining_seconds }}, {{ 'true' if session.timer_paused else 'false' }});
+</script>
+{% endblock %}

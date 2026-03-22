@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Library — Sermon Workbench{% endblock %}
+
+{% block content %}
+<div class="page-library">
+    <h1>Library Browser</h1>
+
+    <div class="library-search">
+        <input type="text" id="library-query" name="q"
+               placeholder="Search 4,652 resources..."
+               hx-get="/api/library/search"
+               hx-trigger="keyup changed delay:300ms"
+               hx-target="#library-results"
+               hx-include="#library-type"
+               autofocus>
+        <select id="library-type" name="type"
+                hx-get="/api/library/search"
+                hx-trigger="change"
+                hx-target="#library-results"
+                hx-include="#library-query">
+            <option value="all">All Types</option>
+            <option value="bible">Bibles</option>
+            <option value="commentary">Commentaries</option>
+            <option value="lexicon">Lexicons</option>
+            <option value="theology">Theology</option>
+            <option value="confession">Confessions</option>
+            <option value="ancient">Ancient Literature</option>
+            <option value="sermons">Sermons</option>
+        </select>
+    </div>
+
+    <div id="library-results">
+        <p class="empty-state">Type to search, or select a resource type.</p>
+    </div>
+</div>
+{% endblock %}

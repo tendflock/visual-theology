@@ -1,0 +1,57 @@
+<div id="outline-header">
+    <h2>Sermon Outline</h2>
+    <a href="/companion/session/{{ session_id }}/export" target="_blank" class="btn btn-secondary" style="padding: 4px 12px; font-size: 12px;">Export</a>
+</div>
+
+<div id="outline-body">
+{% if tree %}
+<ul class="outline-list">
+    {% macro render_node(node) %}
+    <li class="outline-item {{ 'main-point' if node.type == 'main_point' else '' }}" data-node-id="{{ node.id }}">
+        <div class="outline-item-row">
+            {% if node.verse_ref %}<span style="color: var(--text-dim); font-size: 11px; margin-right: 4px;">{{ node.verse_ref }}</span>{% endif %}
+            <span class="outline-item-text">{{ node.content }}</span>
+            <div class="outline-item-actions">
+                <button class="outline-btn-icon" onclick="editOutlineItem({{ node.id }})" title="Edit">&#9998;</button>
+                <button class="outline-btn-icon delete"
+                        hx-delete="/companion/session/{{ session_id }}/outline/{{ node.id }}"
+                        hx-target="#outline-drawer"
+                        hx-swap="innerHTML"
+                        hx-confirm="Delete this node and its children?"
+                        title="Delete">&#10005;</button>
+            </div>
+        </div>
+        {% if node.children %}
+        <ul class="outline-list">
+            {% for child in node.children %}
+            {{ render_node(child) }}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endmacro %}
+
+    {% for node in tree %}
+    {{ render_node(node) }}
+    {% endfor %}
+</ul>
+{% else %}
+<p class="loading-text" style="text-align: center; padding: 20px;">Your sermon outline will build here as you study.</p>
+{% endif %}
+</div>
+
+<div id="outline-footer">
+    <form hx-post="/companion/session/{{ session_id }}/outline/add"
+          hx-target="#outline-drawer"
+          hx-swap="innerHTML"
+          style="display: flex; gap: 6px;">
+        <input type="text" name="content" placeholder="Add a note...">
+        <select name="node_type" style="background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); font-size: 12px; padding: 4px 6px;">
+            <option value="note">Note</option>
+            <option value="main_point">Main Point</option>
+            <option value="sub_point">Sub Point</option>
+            <option value="bullet">Bullet</option>
+        </select>
+        <button type="submit" class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">Add</button>
+    </form>
+</div>

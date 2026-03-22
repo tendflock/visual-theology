@@ -1,0 +1,34 @@
+<div class="resource-detail">
+    <h2>{{ title }}</h2>
+    <div class="resource-detail-meta">
+        {% if abbrev %}{{ abbrev }} &middot; {% endif %}
+        {{ filename }}
+        {% if rtype %} &middot; <span class="type-badge">{{ rtype.split('.')[-1] if rtype else '' }}</span>{% endif %}
+    </div>
+
+    <div class="resource-detail-actions">
+        <button onclick="this.closest('.resource-detail').remove()">Close</button>
+    </div>
+
+    {% if toc %}
+    <h4>Table of Contents ({{ toc | length }} entries)</h4>
+    <div class="resource-toc">
+        {% for entry in toc %}
+        {% if entry.article >= 0 %}
+        <div class="toc-entry" style="padding-left: {{ entry.depth * 16 }}px"
+             onclick="readArticle('{{ filename }}', {{ entry.article }}, this)">
+            {{ entry.label }}
+        </div>
+        {% else %}
+        <div style="padding-left: {{ entry.depth * 16 }}px; color: var(--text-light);">
+            {{ entry.label }}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty-state">No table of contents available for this resource.</p>
+    {% endif %}
+
+    <div id="article-slot-{{ filename | replace('.', '-') }}"></div>
+</div>

@@ -1,0 +1,42 @@
+# Logos library data (33GB) — never track
+Data/
+Documents/
+Logging/
+Shared/
+Users/
+
+# Symlinks to claude config
+-Volumes-External-Logos4
+claude
+
+# Superpowers brainstorm artifacts
+.superpowers/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# .NET build output
+**/bin/
+**/obj/
+
+# Databases created at runtime
+*.db
+*.db-wal
+*.db-shm
+
+# Environment files
+.env
+tools/.env
+tools/workbench/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~

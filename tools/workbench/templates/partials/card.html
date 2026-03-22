@@ -1,0 +1,49 @@
+<div class="study-card">
+    {% if question %}
+    <div id="progress-dots" style="margin-bottom: 16px;">
+        {% for i in range(total_questions) %}
+        <span class="progress-dot {{ 'completed' if i < answered_count else ('current' if i == answered_count else 'future') }}"></span>
+        {% endfor %}
+    </div>
+
+    <h3 class="card-question">{{ question.question_text }}</h3>
+    {% if question.guidance_text %}
+    <p class="card-guidance">{{ question.guidance_text }}</p>
+    {% endif %}
+
+    {% if resource_text %}
+    <div class="card-resource">
+        <div class="card-resource-label">{{ resource_label }}</div>
+        <div>{{ resource_text }}</div>
+    </div>
+    {% endif %}
+
+    <form hx-post="/companion/session/{{ session_id }}/card/respond"
+          hx-target="#card-area"
+          hx-swap="innerHTML">
+        <input type="hidden" name="question_id" value="{{ question.id }}">
+        <textarea name="response" class="card-textarea" placeholder="Your response..." rows="5">{{ prefilled_response|default('', true) }}</textarea>
+        <div class="card-actions">
+            {% if can_go_back %}
+            <button type="button" class="btn btn-secondary"
+                    hx-post="/companion/session/{{ session_id }}/card/back"
+                    hx-target="#card-area" hx-swap="innerHTML">Back</button>
+            {% else %}
+            <div></div>
+            {% endif %}
+            <div class="spacer"></div>
+            <button type="button" class="btn btn-discuss" onclick="enterDiscussionMode()">Discuss</button>
+            <button type="submit" class="btn btn-primary">Next</button>
+        </div>
+    </form>
+
+    {% elif phase_complete %}
+    <div id="phase-complete-banner">
+        <h3>{{ phase_name }} complete</h3>
+        <p>Ready to move on?</p>
+        <button class="btn btn-primary"
+                hx-post="/companion/session/{{ session_id }}/phase/next"
+                hx-target="#card-area" hx-swap="innerHTML">Next Phase</button>
+    </div>
+    {% endif %}
+</div>

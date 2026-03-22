@@ -1,0 +1,29 @@
+{% extends "companion_base.html" %}
+{% block title %}Sermon Companion{% endblock %}
+{% block content %}
+<div class="start-container">
+    <h1 class="start-title">Sermon Study Companion</h1>
+    <p class="start-subtitle">One question at a time.</p>
+
+    {% if error %}
+    <div class="error-message">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="/companion/session/new" class="start-form">
+        <input type="text" name="passage" placeholder="Romans 1:18-23" class="passage-input" autofocus required>
+        <button type="submit" class="btn btn-primary">Begin Study</button>
+    </form>
+
+    {% if sessions %}
+    <div class="active-sessions">
+        <h3>Continue studying</h3>
+        {% for s in sessions %}
+        <a href="/companion/session/{{ s.id }}" class="session-link">
+            <span class="session-passage">{{ s.passage_ref }}</span>
+            <span class="session-phase">{{ s.current_phase | replace('_', ' ') | title }}</span>
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

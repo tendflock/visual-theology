@@ -1,0 +1,5 @@
+{% for msg in messages %}
+<div class="message message-{{ msg.role }}">
+    <div class="message-content">{{ msg.content }}</div>
+</div>
+{% endfor %}

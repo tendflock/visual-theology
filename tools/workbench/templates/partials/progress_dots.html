@@ -1,0 +1,6 @@
+<div class="progress-dots">
+    {% for phase in phases_order %}
+    <span class="progress-dot {{ 'completed' if phase in completed_phases else ('current' if phase == current_phase else 'future') }}"
+          title="{{ phase | replace('_', ' ') | title }}"></span>
+    {% endfor %}
+</div>

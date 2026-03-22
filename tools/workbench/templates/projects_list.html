@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Projects — Sermon Workbench{% endblock %}
+
+{% block content %}
+<div class="page-projects">
+    <div class="projects-header">
+        <h1>Sermon Projects</h1>
+    </div>
+
+    <form class="new-project-form" action="/api/projects" method="POST">
+        <div class="form-row">
+            <input type="text" name="passage" placeholder="Bible reference (e.g., John 3:16-18)" required autofocus>
+            <input type="text" name="theme" placeholder="Theme (optional)">
+            <button type="submit">New Project</button>
+        </div>
+    </form>
+
+    <div class="projects-grid">
+        {% for p in projects %}
+        <a href="/project/{{ p.id }}" class="project-card">
+            <div class="project-passage">{{ p.passage }}</div>
+            {% if p.theme %}
+            <div class="project-theme">{{ p.theme }}</div>
+            {% endif %}
+            <div class="project-meta">
+                <span class="phase-badge">{{ p.current_phase }}</span>
+                <span class="project-date">{{ p.updated_at[:10] }}</span>
+            </div>
+        </a>
+        {% else %}
+        <div class="empty-state">
+            <p>No projects yet. Create one above to start your sermon research.</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

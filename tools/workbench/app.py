@@ -1,0 +1,732 @@
+#!/usr/bin/env python3
+"""
+Sermon Research Workbench — Flask application.
+
+Run:
+    cd /Volumes/External/Logos4/tools/workbench
+    python3 app.py
+    # Open http://localhost:5111
+"""
+
+import atexit
+import json
+import os
+import sys
+from pathlib import Path
+
+# Add tools directory to path
+TOOLS_DIR = Path(__file__).parent.parent
+sys.path.insert(0, str(TOOLS_DIR))
+sys.path.insert(0, str(Path(__file__).parent))
+
+# Load .env file if present (simple key=value parsing)
+_env_file = TOOLS_DIR / "workbench" / ".env"
+if not _env_file.exists():
+    _env_file = TOOLS_DIR.parent / ".env"
+if _env_file.exists():
+    for line in _env_file.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, _, v = line.partition("=")
+            v = v.strip().strip('"').strip("'")
+            os.environ.setdefault(k.strip(), v)
+
+from flask import Flask, Response, render_template, request, jsonify, redirect, url_for
+
+import workbench_db as db
+from workbench_agent import stream_agent_response, PHASES
+from study import (
+    init_batch_reader, shutdown_batch_reader, parse_reference,
+    find_bibles, find_commentaries_for_ref, find_lexicons,
+    read_bible_chapter, extract_verses, clean_bible_text, read_annotations,
+    get_interlinear_for_chapter, run_reader, read_article_text,
+    resolve_bible_files, CATALOG_DB, RESOURCE_MGR_DB,
+)
+from companion_db import CompanionDB, PHASES_ORDER, PHASE_TIMERS
+from companion_agent import stream_companion_response, PHASE_DESCRIPTIONS
+from genre_map import get_genre
+from seed_questions import seed_question_bank
+
+app = Flask(__name__)
+
+
+# ── Jinja Filters ────────────────────────────────────────────────────────
+
+@app.template_filter('safe_assistant')
+def safe_assistant_filter(content):
+    """Render assistant message content, which may be JSON with tool_use blocks."""
+    from markupsafe import escape, Markup
+    try:
+        blocks = json.loads(content)
+        if isinstance(blocks, list):
+            parts = []
+            for block in blocks:
+                if isinstance(block, dict):
+                    if block.get("type") == "text":
+                        parts.append(str(escape(block.get("text", ""))))
+                    elif block.get("type") == "tool_use":
+                        name = escape(block.get("name", ""))
+                        parts.append(f'<span class="ri-type">{name}</span>')
+            return Markup("<br>".join(parts)) if parts else escape(content)
+    except (json.JSONDecodeError, TypeError):
+        pass
+    return escape(content)
+
+
+# ── Lifecycle ─────────────────────────────────────────────────────────────
+
+companion_db = None
+
+def startup():
+    db.init_db()
+    init_batch_reader()
+    # Initialize companion DB
+    global companion_db
+    companion_db = CompanionDB(str(TOOLS_DIR / "workbench" / "companion.db"))
+    companion_db.init_db()
+    # Seed question bank if empty
+    if not companion_db.get_questions('prayer'):
+        seed_question_bank(companion_db)
+
+def shutdown():
+    shutdown_batch_reader()
+
+atexit.register(shutdown)
+
+# ── Template Helpers ─────────────────────────────────────────────────────
+
+@app.context_processor
+def inject_globals():
+    return {"phases": PHASES}
+
+# ── Page Routes ──────────────────────────────────────────────────────────
+
+@app.route("/")
+def index():
+    projects = db.list_projects()
+    return render_template("projects_list.html", projects=projects)
+
+
+@app.route("/project/<project_id>")
+def project_view(project_id):
+    project = db.get_project(project_id)
+    if not project:
+        return redirect(url_for("index"))
+    conversation = db.get_conversation(project_id)
+    research_items = db.get_research_items(project_id)
+    notes = db.get_notes(project_id)
+    return render_template(
+        "project.html",
+        project=project,
+        conversation=conversation,
+        research_items=research_items,
+        notes=notes,
+        phases=PHASES,
+    )
+
+
+@app.route("/library")
+def library_view():
+    return render_template("library.html")
+
+
+# ── API: Projects ────────────────────────────────────────────────────────
+
+@app.route("/api/projects", methods=["POST"])
+def api_create_project():
+    passage = request.form.get("passage", "").strip()
+    theme = request.form.get("theme", "").strip() or None
+    if not passage:
+        return redirect(url_for("index"))
+
+    try:
+        parsed = parse_reference(passage)
+    except Exception:
+        parsed = None
+
+    project = db.create_project(passage, theme, parsed)
+    return redirect(url_for("project_view", project_id=project["id"]))
+
+
+@app.route("/api/projects/<project_id>/phase", methods=["POST"])
+def api_update_phase(project_id):
+    phase = request.form.get("phase") or request.json.get("phase")
+    if phase:
+        db.update_project_phase(project_id, phase)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/projects/<project_id>", methods=["DELETE"])
+def api_delete_project(project_id):
+    db.delete_project(project_id)
+    return jsonify({"ok": True})
+
+
+# ── API: Chat ────────────────────────────────────────────────────────────
+
+@app.route("/api/chat", methods=["POST"])
+def api_chat():
+    data = request.get_json()
+    project_id = data.get("project_id")
+    message = data.get("message", "").strip()
+    model = data.get("model", "claude-haiku-4-5-20251001")
+
+    if not project_id or not message:
+        return jsonify({"error": "project_id and message required"}), 400
+
+    return Response(
+        stream_agent_response(project_id, message, model=model),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
+
+# ── API: Passage ─────────────────────────────────────────────────────────
+
+@app.route("/api/passage")
+def api_passage():
+    """Get passage text in multiple translations."""
+    ref_str = request.args.get("ref", "")
+    versions = request.args.get("versions", "ESV,NASB95,KJV").split(",")
+
+    if not ref_str:
+        return jsonify({"error": "ref required"}), 400
+
+    ref = parse_reference(ref_str)
+    bible_files = resolve_bible_files(versions)
+
+    results = []
+    for bf in bible_files:
+        chapter_text, metadata = read_bible_chapter(bf, ref["book"], ref["chapter"])
+        if chapter_text:
+            if ref["verse_start"]:
+                text = extract_verses(chapter_text, ref["verse_start"], ref["verse_end"])
+            else:
+                text = chapter_text
+            text = clean_bible_text(text)
+            results.append({
+                "version": bf.replace(".logos4", "").replace(".lbxlls", ""),
+                "text": text,
+            })
+
+    return render_template("partials/passage_display.html",
+                           reference=ref_str, translations=results)
+
+
+@app.route("/api/interlinear")
+def api_interlinear():
+    """Get interlinear data for a passage."""
+    ref_str = request.args.get("ref", "")
+    if not ref_str:
+        return jsonify({"error": "ref required"}), 400
+
+    ref = parse_reference(ref_str)
+    bible_files = resolve_bible_files(["ESV"])
+    if not bible_files:
+        return "<p>No Bible available for interlinear</p>"
+
+    data = get_interlinear_for_chapter(bible_files[0], ref["book"], ref["chapter"])
+    return render_template("partials/interlinear_display.html",
+                           reference=ref_str, words=data)
+
+
+# ── API: Notes ───────────────────────────────────────────────────────────
+
+@app.route("/api/projects/<project_id>/notes", methods=["GET"])
+def api_get_notes(project_id):
+    section = request.args.get("section")
+    notes = db.get_notes(project_id, section)
+    return render_template("partials/notes_editor.html",
+                           project_id=project_id, notes=notes)
+
+
+@app.route("/api/projects/<project_id>/notes", methods=["POST"])
+def api_save_notes(project_id):
+    data = request.get_json() or request.form
+    section = data.get("section", "general")
+    content = data.get("content", "")
+    db.save_note(project_id, content, section)
+    return jsonify({"ok": True})
+
+
+# ── API: Research Items ──────────────────────────────────────────────────
+
+@app.route("/api/projects/<project_id>/research")
+def api_get_research(project_id):
+    item_type = request.args.get("type")
+    items = db.get_research_items(project_id, item_type)
+    return render_template("partials/research_panel.html",
+                           project_id=project_id, items=items)
+
+
+# ── API: Resource Browser ─────────────────────────────────────────────────
+
+@app.route("/api/resource/<filename>/toc")
+def api_resource_toc(filename):
+    """Get a resource's table of contents."""
+    from study import get_toc_cached
+    toc_entries = get_toc_cached(filename)
+    return render_template("partials/resource_detail.html",
+                           filename=filename, toc=toc_entries,
+                           title=request.args.get("title", filename),
+                           abbrev=request.args.get("abbrev", ""),
+                           rtype=request.args.get("type", ""))
+
+
+@app.route("/api/resource/<filename>/article/<int:article_num>")
+def api_resource_article(filename, article_num):
+    """Read a specific article from a resource."""
+    text = read_article_text(filename, article_num, max_chars=30000)
+    if not text:
+        text = "(Could not read this article)"
+    return f'<div class="article-text">{_escape(text)}</div>'
+
+
+def _escape(text):
+    """HTML-escape text for safe rendering."""
+    from markupsafe import escape
+    return escape(text)
+
+
+# ── API: Library ─────────────────────────────────────────────────────────
+
+@app.route("/api/library/search")
+def api_library_search():
+    import sqlite3
+    import os
+
+    query = request.args.get("q", "").strip()
+    rtype = request.args.get("type", "all")
+    limit = int(request.args.get("limit", "50"))
+
+    if not query and rtype == "all":
+        return render_template("partials/library_results.html", results=[], query="")
+
+    type_filter = ""
+    if rtype != "all":
+        type_map = {
+            "bible": "text.monograph.bible",
+            "commentary": "text.monograph.commentary%",
+            "lexicon": "%lexicon%",
+            "theology": "%systematic-theology%",
+            "confession": "%confession%",
+            "ancient": "%ancient%",
+            "sermons": "%sermons%",
+        }
+        if rtype in type_map:
+            type_filter = f"AND c.Type LIKE '{type_map[rtype]}'"
+
+    conn = sqlite3.connect(CATALOG_DB)
+    conn.row_factory = sqlite3.Row
+    conn.execute(f"ATTACH '{RESOURCE_MGR_DB}' AS rm")
+
+    if query:
+        rows = conn.execute(f"""
+            SELECT c.ResourceId, c.AbbreviatedTitle, c.Title, c.Type,
+                   rm.Resources.Location
+            FROM Records c
+            INNER JOIN rm.Resources ON c.ResourceId = rm.Resources.ResourceId
+            WHERE c.Availability = 2
+            AND (c.Title LIKE ? OR c.AbbreviatedTitle LIKE ?)
+            {type_filter}
+            ORDER BY c.AbbreviatedTitle
+            LIMIT ?
+        """, (f"%{query}%", f"%{query}%", limit)).fetchall()
+    else:
+        rows = conn.execute(f"""
+            SELECT c.ResourceId, c.AbbreviatedTitle, c.Title, c.Type,
+                   rm.Resources.Location
+            FROM Records c
+            INNER JOIN rm.Resources ON c.ResourceId = rm.Resources.ResourceId
+            WHERE c.Availability = 2
+            {type_filter}
+            ORDER BY c.AbbreviatedTitle
+            LIMIT ?
+        """, (limit,)).fetchall()
+    conn.close()
+
+    results = []
+    for r in rows:
+        loc = r["Location"] or ""
+        results.append({
+            "resource_id": r["ResourceId"],
+            "abbrev": r["AbbreviatedTitle"] or "",
+            "title": r["Title"],
+            "type": r["Type"],
+            "filename": os.path.basename(loc) if loc else "",
+        })
+
+    return render_template("partials/library_results.html",
+                           results=results, query=query)
+
+
+# ── Companion Routes ─────────────────────────────────────────────────────
+
+@app.route("/companion/")
+def companion_index():
+    """Start page — enter a passage or continue an active session."""
+    sessions = companion_db.list_sessions(status='active')
+    error = request.args.get('error')
+    return render_template("start.html", sessions=sessions, error=error)
+
+
+@app.route("/companion/session/new", methods=["POST"])
+def companion_new_session():
+    """Create a new study session from a passage reference."""
+    passage = request.form.get("passage", "").strip()
+    if not passage:
+        return redirect(url_for("companion_index", error="Please enter a passage"))
+
+    try:
+        ref = parse_reference(passage)
+    except ValueError as e:
+        return redirect(url_for("companion_index", error=str(e)))
+
+    genre = get_genre(ref["book"])
+    session_id = companion_db.create_session(
+        passage_ref=passage,
+        book=ref["book"],
+        chapter=ref["chapter"],
+        verse_start=ref["verse_start"],
+        verse_end=ref["verse_end"],
+        genre=genre,
+    )
+    return redirect(url_for("companion_session", session_id=session_id))
+
+
+@app.route("/companion/session/<int:session_id>")
+def companion_session(session_id):
+    """Main session view."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return redirect(url_for("companion_index"))
+
+    phase = session['current_phase']
+    phase_info = PHASE_DESCRIPTIONS.get(phase, {'name': phase.replace('_', ' ').title()})
+
+    return render_template("session.html",
+                           session=session,
+                           phase_info=phase_info)
+
+
+@app.route("/companion/session/<int:session_id>/card")
+def companion_card(session_id):
+    """Return the current card partial."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "<p>Session not found</p>", 404
+
+    phase = session['current_phase']
+    genre = session['genre']
+
+    # Get questions for this phase + genre
+    questions = companion_db.get_questions(phase, genre=genre)
+
+    # Get responses already given in this phase
+    responses = companion_db.get_card_responses(session_id, phase=phase)
+    answered_ids = {r['question_id'] for r in responses}
+
+    # Find next unanswered question
+    current_question = None
+    for q in questions:
+        if q['id'] not in answered_ids:
+            current_question = q
+            break
+
+    if current_question:
+        # Load resource if applicable
+        resource_text = None
+        resource_label = None
+        res_type = current_question.get('resource_type', 'none')
+
+        if res_type == 'original_lang':
+            # Original language text: THGNT for NT (books 61-87), BHS for OT (books 1-39)
+            try:
+                if session['book'] >= 61:
+                    orig_versions = ["THGNT"]
+                else:
+                    orig_versions = ["BHS OT"]
+                bible_files = resolve_bible_files(orig_versions)
+                if bible_files:
+                    chapter_text, _ = read_bible_chapter(
+                        bible_files[0], session['book'], session['chapter'])
+                    if chapter_text and session['verse_start']:
+                        resource_text = extract_verses(chapter_text, session['verse_start'], session['verse_end'])
+                    elif chapter_text:
+                        resource_text = chapter_text
+                    # Don't run clean_bible_text on original language — markers are different
+                    if resource_text:
+                        resource_text = resource_text.replace('\ufeff', '').replace('\xa0', ' ')
+                    resource_label = orig_versions[0]
+            except Exception:
+                pass
+
+        elif res_type == 'bible':
+            try:
+                bible_files = resolve_bible_files(["ESV"])
+                if bible_files:
+                    chapter_text, _ = read_bible_chapter(
+                        bible_files[0], session['book'], session['chapter'])
+                    if chapter_text and session['verse_start']:
+                        resource_text = clean_bible_text(
+                            extract_verses(chapter_text, session['verse_start'], session['verse_end']))
+                    elif chapter_text:
+                        resource_text = clean_bible_text(chapter_text)
+                    resource_label = "ESV"
+            except Exception:
+                pass
+
+        return render_template("partials/card.html",
+                               session_id=session_id,
+                               question=current_question,
+                               resource_text=resource_text,
+                               resource_label=resource_label,
+                               total_questions=len(questions),
+                               answered_count=len(answered_ids),
+                               can_go_back=len(answered_ids) > 0,
+                               phase_complete=False,
+                               phase_name=None)
+    else:
+        # All questions answered — show phase completion
+        phase_name = PHASE_DESCRIPTIONS.get(phase, {}).get('name', phase)
+        return render_template("partials/card.html",
+                               session_id=session_id,
+                               question=None,
+                               resource_text=None,
+                               resource_label=None,
+                               total_questions=len(questions),
+                               answered_count=len(answered_ids),
+                               can_go_back=False,
+                               phase_complete=True,
+                               phase_name=phase_name)
+
+
+@app.route("/companion/session/<int:session_id>/card/respond", methods=["POST"])
+def companion_card_respond(session_id):
+    """Save a card response and return the next card."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "<p>Session not found</p>", 404
+
+    question_id = request.form.get("question_id", type=int)
+    response_text = request.form.get("response", "").strip()
+
+    if question_id:
+        # Check if this question was already answered (editing via Back)
+        existing = [r for r in companion_db.get_card_responses(session_id, phase=session['current_phase'])
+                    if r['question_id'] == question_id]
+        if existing:
+            # Update existing response
+            conn = companion_db._conn()
+            conn.execute("UPDATE card_responses SET content = ? WHERE id = ?",
+                         (response_text or "(skipped)", existing[-1]['id']))
+            conn.commit()
+            conn.close()
+        elif response_text:
+            companion_db.save_card_response(session_id, session['current_phase'], question_id, response_text)
+        else:
+            companion_db.save_card_response(session_id, session['current_phase'], question_id, "(skipped)")
+
+    # Return next card
+    return companion_card(session_id)
+
+
+@app.route("/companion/session/<int:session_id>/card/back", methods=["POST"])
+def companion_card_back(session_id):
+    """Go back to previous question, showing the saved response for editing."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "<p>Session not found</p>", 404
+
+    phase = session['current_phase']
+    genre = session['genre']
+    questions = companion_db.get_questions(phase, genre=genre)
+    responses = companion_db.get_card_responses(session_id, phase=phase)
+
+    if not responses:
+        return companion_card(session_id)
+
+    # Show the last answered question with its response pre-filled
+    last_response = responses[-1]
+    prev_question = companion_db.get_question(last_response['question_id'])
+    if not prev_question:
+        return companion_card(session_id)
+
+    # Load resource if applicable
+    resource_text = None
+    resource_label = None
+    if prev_question.get('resource_type') == 'bible':
+        try:
+            bible_files = resolve_bible_files(["ESV"])
+            if bible_files:
+                chapter_text, _ = read_bible_chapter(
+                    bible_files[0], session['book'], session['chapter'])
+                if chapter_text and session['verse_start']:
+                    resource_text = clean_bible_text(
+                        extract_verses(chapter_text, session['verse_start'], session['verse_end']))
+                elif chapter_text:
+                    resource_text = clean_bible_text(chapter_text)
+                resource_label = "ESV"
+        except Exception:
+            pass
+
+    answered_ids = {r['question_id'] for r in responses}
+    return render_template("partials/card.html",
+                           session_id=session_id,
+                           question=prev_question,
+                           resource_text=resource_text,
+                           resource_label=resource_label,
+                           total_questions=len(questions),
+                           answered_count=len(answered_ids) - 1,
+                           can_go_back=len(answered_ids) > 1,
+                           phase_complete=False,
+                           phase_name=None,
+                           prefilled_response=last_response['content'])
+
+
+@app.route("/companion/session/<int:session_id>/phase/next", methods=["POST"])
+def companion_phase_next(session_id):
+    """Advance to the next phase."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "<p>Session not found</p>", 404
+
+    current_phase = session['current_phase']
+    try:
+        idx = PHASES_ORDER.index(current_phase)
+        if idx + 1 < len(PHASES_ORDER):
+            next_phase = PHASES_ORDER[idx + 1]
+            companion_db.update_phase(session_id, next_phase)
+        else:
+            companion_db.complete_session(session_id)
+            return '<div class="phase-complete"><h3>Study Complete!</h3><p><a href="/companion/">Return home</a> | <a href="/companion/session/' + str(session_id) + '/export" target="_blank">Export Outline</a></p></div>'
+    except ValueError:
+        pass
+
+    # Return new card + trigger progress dots refresh
+    response_html = companion_card(session_id)
+    return response_html
+
+
+@app.route("/companion/session/<int:session_id>/discuss", methods=["POST"])
+def companion_discuss(session_id):
+    """Stream a discussion response via SSE."""
+    data = request.get_json() or {}
+    message = data.get("message", "").strip()
+
+    if not message:
+        return jsonify({"error": "message required"}), 400
+
+    return Response(
+        stream_companion_response(session_id, message, companion_db),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
+
+@app.route("/companion/session/<int:session_id>/outline")
+def companion_outline(session_id):
+    """Return outline drawer partial."""
+    tree = companion_db.get_outline_tree(session_id)
+    return render_template("partials/outline_drawer.html",
+                           session_id=session_id, tree=tree)
+
+
+@app.route("/companion/session/<int:session_id>/outline/add", methods=["POST"])
+def companion_outline_add(session_id):
+    """Add a node to the outline."""
+    content = request.form.get("content", "").strip()
+    node_type = request.form.get("node_type", "note")
+    parent_id = request.form.get("parent_id", type=int)
+    verse_ref = request.form.get("verse_ref", "").strip() or None
+
+    if content:
+        companion_db.add_outline_node(
+            session_id=session_id,
+            node_type=node_type,
+            content=content,
+            parent_id=parent_id,
+            verse_ref=verse_ref,
+        )
+
+    return companion_outline(session_id)
+
+
+@app.route("/companion/session/<int:session_id>/outline/<int:node_id>", methods=["PATCH"])
+def companion_outline_update(session_id, node_id):
+    """Update an outline node."""
+    data = request.get_json() or {}
+    companion_db.update_outline_node(
+        node_id=node_id,
+        content=data.get("content"),
+        node_type=data.get("node_type"),
+        rank=data.get("rank"),
+    )
+    return companion_outline(session_id)
+
+
+@app.route("/companion/session/<int:session_id>/outline/<int:node_id>", methods=["DELETE"])
+def companion_outline_delete(session_id, node_id):
+    """Delete an outline node and its children."""
+    companion_db.delete_outline_node(node_id)
+    return companion_outline(session_id)
+
+
+@app.route("/companion/session/<int:session_id>/export")
+def companion_export(session_id):
+    """Render printable outline."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return redirect(url_for("companion_index"))
+    tree = companion_db.get_outline_tree(session_id)
+    return render_template("export.html", session=session, tree=tree)
+
+
+@app.route("/companion/session/<int:session_id>/timer", methods=["PATCH"])
+def companion_timer_update(session_id):
+    """Update timer state from client."""
+    data = request.get_json() or {}
+    remaining = data.get("remaining")
+    paused = data.get("paused")
+    elapsed_delta = data.get("elapsed_delta", 0)
+
+    if remaining is not None:
+        companion_db.update_timer(session_id, remaining, paused=paused, elapsed_delta=elapsed_delta)
+
+    return jsonify({"ok": True})
+
+
+@app.route("/companion/session/<int:session_id>/progress")
+def companion_progress(session_id):
+    """Return progress dots partial."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return ""
+
+    current_phase = session['current_phase']
+    try:
+        current_idx = PHASES_ORDER.index(current_phase)
+    except ValueError:
+        current_idx = 0
+
+    completed_phases = set(PHASES_ORDER[:current_idx])
+
+    return render_template("partials/progress_dots.html",
+                           phases_order=PHASES_ORDER,
+                           current_phase=current_phase,
+                           completed_phases=completed_phases)
+
+
+# ── Main ─────────────────────────────────────────────────────────────────
+
+if __name__ == "__main__":
+    startup()
+    print("Sermon Research Workbench starting on http://localhost:5111", file=sys.stderr)
+    print("  Companion at http://localhost:5111/companion/", file=sys.stderr)
+    app.run(host="127.0.0.1", port=5111, debug=False, threaded=True)

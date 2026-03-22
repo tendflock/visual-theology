@@ -1,0 +1,52 @@
+<div class="interlinear-display">
+    <h2>Interlinear: {{ reference }}</h2>
+    {% if words %}
+    <div class="interlinear-table-wrap">
+        <table class="interlinear-table">
+            <thead>
+                <tr>
+                    {% set headers = words[0].keys() | list if words else [] %}
+                    {% for h in headers %}
+                    <th>{{ h }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for w in words %}
+                <tr>
+                    {% for h in headers %}
+                    <td>{{ w.get(h, '') }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <p class="interlinear-count">{{ words | length }} words</p>
+    {% else %}
+    <div style="padding: 20px 0;">
+        <p style="margin-bottom: 12px;">Interlinear extraction is not yet working in batch mode (native library limitation). You can still access original language data through the chat assistant.</p>
+        <p style="margin-bottom: 16px; color: var(--text-muted);">Try asking the assistant:</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><button class="interlinear-suggest" onclick="suggestWordStudy('{{ reference }}')">"Do a word study on the key terms in {{ reference }}"</button></li>
+            <li><button class="interlinear-suggest" onclick="suggestWordStudy('{{ reference }}')">"What are the important Greek/Hebrew words in this passage?"</button></li>
+        </ul>
+    </div>
+    <style>
+        .interlinear-suggest {
+            background: var(--accent-light);
+            border: 1px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--accent);
+            text-align: left;
+        }
+        .interlinear-suggest:hover {
+            background: var(--accent);
+            color: white;
+        }
+    </style>
+    {% endif %}
+</div>

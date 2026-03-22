@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}{{ project.passage }} — Sermon Workbench{% endblock %}
+
+{% block content %}
+<div class="workspace" data-project-id="{{ project.id }}">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <h3>{{ project.passage }}</h3>
+            {% if project.theme %}
+            <p class="sidebar-theme">{{ project.theme }}</p>
+            {% endif %}
+        </div>
+
+        <div class="sidebar-section">
+            <h4>Research Phases</h4>
+            <div class="phase-list">
+                {% for pid, pname, pdesc in phases %}
+                <button class="phase-item {% if project.current_phase == pid %}active{% endif %}"
+                        hx-post="/api/projects/{{ project.id }}/phase"
+                        hx-vals='{"phase": "{{ pid }}"}'
+                        hx-swap="none"
+                        onclick="activatePhase(this, '{{ pid }}', '{{ pname }}', '{{ pdesc }}')"
+                        title="{{ pdesc }}">
+                    {{ pname }}
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h4>Research Items</h4>
+            <div id="research-sidebar"
+                 hx-get="/api/projects/{{ project.id }}/research"
+                 hx-trigger="load, refreshResearch from:body"
+                 hx-swap="innerHTML">
+                Loading...
+            </div>
+        </div>
+    </aside>
+
+    <!-- CENTER PANEL -->
+    <div class="center-panel">
+        <div class="tab-bar">
+            <button class="tab active" onclick="switchTab(this, 'tab-text')">Text</button>
+            <button class="tab" onclick="switchTab(this, 'tab-interlinear')">Interlinear</button>
+            <button class="tab" onclick="switchTab(this, 'tab-notes')">Notes</button>
+            <button class="tab" onclick="switchTab(this, 'tab-research')">Research</button>
+        </div>
+
+        <div id="tab-text" class="tab-content active"
+             hx-get="/api/passage?ref={{ project.passage | urlencode }}"
+             hx-trigger="load"
+             hx-swap="innerHTML">
+            <p class="loading">Loading passage...</p>
+        </div>
+
+        <div id="tab-interlinear" class="tab-content"
+             hx-get="/api/interlinear?ref={{ project.passage | urlencode }}"
+             hx-trigger="revealed"
+             hx-swap="innerHTML">
+            <p class="loading">Loading interlinear data...</p>
+        </div>
+
+        <div id="tab-notes" class="tab-content">
+            <div class="notes-container">
+                <textarea id="notes-text"
+                          placeholder="Type your notes, observations, and questions here..."
+                          oninput="debounceSaveNotes(this)">{% for n in notes %}{{ n.content }}{% endfor %}</textarea>
+                <div class="notes-status" id="notes-status"></div>
+            </div>
+        </div>
+
+        <div id="tab-research" class="tab-content">
+            <div id="research-full"
+                 hx-get="/api/projects/{{ project.id }}/research"
+                 hx-trigger="load, refreshResearch from:body"
+                 hx-swap="innerHTML">
+                Loading research items...
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT PANEL -->
+    <div class="chat-panel">
+        <div class="chat-header">
+            <span>Research Assistant</span>
+            <select id="model-select" class="model-select">
+                <option value="claude-haiku-4-5-20251001">Haiku</option>
+                <option value="claude-sonnet-4-20250514">Sonnet</option>
+                <option value="claude-opus-4-20250514">Opus</option>
+            </select>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            {% for msg in conversation %}
+                {% if msg.role == 'user' %}
+                <div class="chat-msg user">
+                    <div class="msg-content">{{ msg.content }}</div>
+                </div>
+                {% elif msg.role == 'assistant' %}
+                <div class="chat-msg assistant">
+                    <div class="msg-content">{{ msg.content | safe_assistant }}</div>
+                </div>
+                {% elif msg.role == 'tool_result' %}
+                <div class="chat-msg tool">
+                    <details>
+                        <summary>Tool: {{ msg.tool_name or 'result' }}</summary>
+                        <pre class="tool-output">{{ msg.content[:500] }}</pre>
+                    </details>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="chat-input-area">
+            <textarea id="chat-input"
+                      placeholder="Ask about the passage, request research, or discuss interpretation..."
+                      rows="3"></textarea>
+            <button id="chat-send" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const PROJECT_ID = "{{ project.id }}";
+</script>
+{% endblock %}

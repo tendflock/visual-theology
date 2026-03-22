@@ -1,0 +1,28 @@
+{% if results %}
+<div class="library-count">{{ results | length }} results{% if query %} for "{{ query }}"{% endif %}</div>
+
+<div id="resource-detail-slot"></div>
+
+<table class="library-table">
+    <thead>
+        <tr>
+            <th>Abbreviation</th>
+            <th>Title</th>
+            <th>Type</th>
+            <th>File</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in results %}
+        <tr onclick="openResource('{{ r.filename }}', '{{ r.title | e }}', '{{ r.abbrev | e }}', '{{ r.type }}')" title="Click to browse">
+            <td class="lib-abbrev">{{ r.abbrev }}</td>
+            <td class="lib-title">{{ r.title }}</td>
+            <td class="lib-type"><span class="type-badge">{{ r.type.split('.')[-1] if r.type else '' }}</span></td>
+            <td class="lib-file">{{ r.filename }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% elif query %}
+<p class="empty-state">No results for "{{ query }}".</p>
+{% endif %}

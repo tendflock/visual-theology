@@ -1,0 +1,10 @@
+<div class="notes-container">
+    {% for note in notes %}
+    <div class="note-section">
+        <h4>{{ note.section | title }}</h4>
+        <div class="note-content">{{ note.content }}</div>
+    </div>
+    {% else %}
+    <p class="empty-state">No notes yet.</p>
+    {% endfor %}
+</div>
