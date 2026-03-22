@@ -40,3 +40,5 @@ Thumbs.db
 *.swp
 *.swo
 *~
+tools/word_number_cache.db
+tools/resource_index.db

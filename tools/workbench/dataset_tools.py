@@ -18,9 +18,12 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from logos_batch import LogosBatchReader
+from word_number_cache import WordNumberCache
 
 # Singleton batch reader — reuse across calls
 _reader = None
+_word_cache = None
+_WORD_CACHE_PATH = os.path.join(os.path.dirname(__file__), '..', 'word_number_cache.db')
 
 
 def _get_reader():
@@ -29,6 +32,150 @@ def _get_reader():
     if _reader is None or not _reader.is_alive():
         _reader = LogosBatchReader()
     return _reader
+
+
+def _get_word_cache():
+    """Get or create the word number cache singleton. Build if needed."""
+    global _word_cache
+    if _word_cache is None:
+        _word_cache = WordNumberCache(_WORD_CACHE_PATH)
+        if not _word_cache.is_built():
+            _word_cache.build()
+    return _word_cache
+
+
+def _find_word_ids(reader, resource_file, db_name, word_refs):
+    """Find WordNumberIds in a SupplementalData db matching word references.
+
+    Uses numeric RANGE matching: extracts min/max word numbers per prefix
+    (gnt, hot, lxx) from the cache refs, then finds all WordNumbers in the
+    target database within those ranges. This catches all tagged words in
+    the passage, not just the ones with word-sense annotations.
+    """
+    if not word_refs:
+        return []
+
+    # Build numeric ranges per prefix (gnt, hot, lxx)
+    ranges = {}  # prefix → (min_num, max_num)
+    for ref in word_refs:
+        if "/" not in ref:
+            continue
+        prefix, num_str = ref.split("/", 1)
+        try:
+            num = int(num_str.split(".")[0].split(":")[0])
+        except ValueError:
+            continue
+        if prefix not in ranges:
+            ranges[prefix] = (num, num)
+        else:
+            mn, mx = ranges[prefix]
+            ranges[prefix] = (min(mn, num), max(mx, num))
+
+    if not ranges:
+        return []
+
+    # Query all word numbers from the target database and filter by range
+    rows = reader.query_dataset(resource_file, db_name,
+        "SELECT WordNumberId, hex(Reference) as ref FROM WordNumbers",
+        max_rows=300000)
+
+    matching_ids = []
+    for r in rows:
+        try:
+            ref_bytes = bytes.fromhex(r["ref"])
+            ref_text = ref_bytes[1:].decode("utf-8", errors="replace")
+            if "/" not in ref_text:
+                continue
+            prefix, num_str = ref_text.split("/", 1)
+            if prefix not in ranges:
+                continue
+            num = int(num_str.split(".")[0].split(":")[0])
+            mn, mx = ranges[prefix]
+            if mn <= num <= mx:
+                matching_ids.append(int(r["WordNumberId"]))
+        except Exception:
+            continue
+
+    return matching_ids
+
+
+def _decode_label_ref(hex_ref):
+    """Decode a SupplementalData label Reference blob into structured data.
+
+    The blob has a variable-length prefix:
+    - If byte 0 < 0x80: 1-byte length prefix, text starts at byte 1
+    - If byte 0 >= 0x80: 2-byte length prefix, text starts at byte 2
+    Text is URL-encoded: Category%20Name|Property=$Value|...
+    """
+    try:
+        ref_bytes = bytes.fromhex(hex_ref)
+        # Skip length prefix
+        if ref_bytes[0] >= 0x80:
+            ref_text = ref_bytes[2:].decode("utf-8", errors="replace")
+        else:
+            ref_text = ref_bytes[1:].decode("utf-8", errors="replace")
+    except Exception:
+        return None
+
+    if not ref_text:
+        return None
+
+    # Strip ~ prefix if present
+    if ref_text.startswith("~"):
+        ref_text = ref_text[1:]
+
+    from urllib.parse import unquote
+    parts = ref_text.split("|")
+
+    category = unquote(parts[0]) if parts else ""
+    properties = {}
+    for part in parts[1:]:
+        if "=" not in part:
+            continue
+        key, val = part.split("=", 1)
+        key = unquote(key)
+        if val.startswith("$"):
+            val = val[1:]
+        elif val.startswith("#"):
+            segments = val[1:].split(".")
+            val = segments[-1] if segments else val[1:]
+        val = unquote(val)
+        properties[key] = val
+
+    return {"category": category, "properties": properties}
+
+
+def _query_supplemental_by_word_ids(reader, resource_file, db_name, word_ids):
+    """Query SupplementalData for label entries matching word IDs."""
+    if not word_ids:
+        return []
+
+    id_list = ",".join(str(i) for i in word_ids[:500])
+
+    rows = reader.query_dataset(resource_file, db_name,
+        f"SELECT DISTINCT dtr.ReferenceId, hex(dtr.Reference) as ref, "
+        f"hex(dtr.DataType) as dt "
+        f"FROM WordNumberSets wns "
+        f"JOIN WordNumberSetAttachments wnsa "
+        f"  ON wns.WordNumberSetAttachmentId = wnsa.WordNumberSetAttachmentId "
+        f"JOIN DataTypeReferences dtr "
+        f"  ON wnsa.DataTypeReferenceId = dtr.ReferenceId "
+        f"WHERE wns.WordNumberId IN ({id_list}) "
+        f"AND hex(dtr.DataType) = '6C6162656C'")  # 'label'
+
+    results = []
+    seen = set()
+    for r in rows:
+        ref_hex = r.get("ref", "")
+        if ref_hex in seen:
+            continue
+        seen.add(ref_hex)
+
+        decoded = _decode_label_ref(ref_hex)
+        if decoded:
+            results.append(decoded)
+
+    return results
 
 
 def _protestant_to_logos(book):
@@ -233,54 +380,94 @@ def query_dataset_tables(resource_file, db_name):
 
 
 def query_figurative_language(book, chapter, verse_start=None, verse_end=None):
-    """Query figurative language labels from the dataset.
-
-    NOTE: SupplementalData uses word-number-based indexing. This function
-    returns all distinct figurative language labels (types/categories)
-    from the dataset. Passage-specific filtering requires word number
-    mapping (v2).
-    """
+    """Query figurative language tagged for a passage."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter, verse_start, verse_end)
+    if not word_refs:
+        return []
     reader = _get_reader()
-    rows = reader.query_dataset(
-        "FIGURATIVE-LANGUAGE.lbssd", "SupplementalData.db",
-        "SELECT DISTINCT ls.Text as Label, lsk_prop.StringKey as Property "
-        "FROM LabelStrings ls "
-        "JOIN LocalizedStringKeys lsk_prop ON ls.PropertyValueStringId = lsk_prop.LocalizedStringKeyId "
-        "WHERE ls.Language = 'en' AND ls.PropertyValueStringId IS NOT NULL "
-        "AND ls.PropertyValueStringId != '' "
-        "LIMIT 100"
-    )
-    return rows
+    word_ids = _find_word_ids(reader, "FIGURATIVE-LANGUAGE.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "FIGURATIVE-LANGUAGE.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_greek_constructions(book, chapter, verse_start=None, verse_end=None):
-    """Query Greek grammatical constructions. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2 — requires word number mapping
+    """Query Greek grammatical constructions for a passage."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter, verse_start, verse_end)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, "GREEK-CONSTRUCTIONS.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "GREEK-CONSTRUCTIONS.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_hebrew_constructions(book, chapter, verse_start=None, verse_end=None):
-    """Query Hebrew grammatical constructions. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2 — requires word number mapping
+    """Query Hebrew grammatical constructions for a passage."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter, verse_start, verse_end)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, "HEBREW-CONSTRUCTIONS.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "HEBREW-CONSTRUCTIONS.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_literary_typing(book, chapter):
-    """Query literary type classification. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2
+    """Query literary type classification for a passage."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, "LITERARYTYPING.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "LITERARYTYPING.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_propositional_outline(book, chapter, testament="nt"):
-    """Query propositional outline. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2
+    """Query propositional outline for a passage."""
+    resource = "PROPOSITIONAL-OUTLINES.lbssd" if testament == "nt" else "PROPOSITIONAL-OUTLINES-OT.lbssd"
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, resource, "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, resource, "SupplementalData.db", word_ids)
 
 
 def query_nt_use_of_ot(book, chapter):
-    """Query NT use of OT passages. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2
+    """Query NT use of OT passages."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, "NT-USE-OF-OT.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "NT-USE-OF-OT.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_wordplay(book, chapter):
-    """Query wordplay instances. V2: passage-specific via word numbers."""
-    return []  # Deferred to v2
+    """Query wordplay instances in a passage."""
+    cache = _get_word_cache()
+    word_refs = cache.get_word_numbers(book, chapter)
+    if not word_refs:
+        return []
+    reader = _get_reader()
+    word_ids = _find_word_ids(reader, "WORDPLAY.lbssd",
+                              "SupplementalData.db", word_refs)
+    return _query_supplemental_by_word_ids(
+        reader, "WORDPLAY.lbssd", "SupplementalData.db", word_ids)
 
 
 def query_cultural_concepts(book, chapter):

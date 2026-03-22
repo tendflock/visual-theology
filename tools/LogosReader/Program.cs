@@ -1291,7 +1291,7 @@ class Program
                             Console.WriteLine(string.Join("\t", colNames));
 
                             int rowCount = 0;
-                            while (sqlite3_step(stmt) == SQLITE_ROW && rowCount < 1000)
+                            while (sqlite3_step(stmt) == SQLITE_ROW && rowCount < 500000)
                             {
                                 var vals = new string[colCount];
                                 for (int ci = 0; ci < colCount; ci++)
