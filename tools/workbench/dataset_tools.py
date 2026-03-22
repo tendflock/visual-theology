@@ -471,15 +471,155 @@ def query_wordplay(book, chapter):
 
 
 def query_cultural_concepts(book, chapter):
-    """Query Lexham Cultural Ontology. V2: passage-specific."""
-    return []  # Deferred to v2
+    """Query Lexham Cultural Ontology concepts for a passage.
+
+    Links LCO concepts → WordNet senses → WordSenses occurrences → Bible refs.
+    Returns list of dicts with concept label and description.
+    """
+    reader = _get_reader()
+    logos_book = _protestant_to_logos(book)
+
+    # Step 1: Get word sense IDs for this passage from WordSenses
+    ref_clause = f"(hex(br.Reference) LIKE '60{logos_book:02X}{chapter:02X}%' " \
+                 f"OR hex(br.Reference) LIKE '61{logos_book:02X}{chapter:02X}%')"
+    sense_rows = reader.query_dataset(
+        "WordSenses.lbswsd", "WordSenses.db",
+        f"SELECT DISTINCT o.SenseId "
+        f"FROM Occurrences o "
+        f"JOIN BibleReferences br ON o.BibleReferenceId = br.BibleReferenceId "
+        f"WHERE {ref_clause}",
+        max_rows=500)
+    if not sense_rows:
+        return []
+
+    sense_ids = [r["SenseId"] for r in sense_rows]
+
+    # Step 2: Get sense names from WordSenses
+    sid_list = ",".join(str(s) for s in sense_ids[:200])
+    name_rows = reader.query_dataset(
+        "WordSenses.lbswsd", "WordSenses.db",
+        f"SELECT SenseId, Name FROM Senses WHERE SenseId IN ({sid_list})",
+        max_rows=500)
+
+    # Map ws.X.n.01 → X.n.01 for LCO matching
+    sense_names = {}
+    for r in name_rows:
+        name = r.get("Name", "")
+        if name.startswith("ws."):
+            sense_names[name[3:]] = r["SenseId"]
+
+    if not sense_names:
+        return []
+
+    # Step 3: Find LCO senses matching these WordSenses names
+    lco_sense_rows = reader.query_dataset(
+        "LCO.lbslco", "lco.db",
+        "SELECT SenseId, hex(SenseReference) as ref FROM SenseReferences",
+        max_rows=2000)
+
+    matching_lco_senses = []
+    for r in lco_sense_rows:
+        try:
+            ref_bytes = bytes.fromhex(r["ref"])
+            ref_text = ref_bytes[1:].decode("utf-8", errors="replace")
+            if ref_text in sense_names:
+                matching_lco_senses.append(int(r["SenseId"]))
+        except Exception:
+            continue
+
+    if not matching_lco_senses:
+        return []
+
+    # Step 4: Get concepts linked to these senses
+    lco_sid_list = ",".join(str(s) for s in matching_lco_senses[:100])
+    concept_rows = reader.query_dataset(
+        "LCO.lbslco", "lco.db",
+        f"SELECT DISTINCT sr.ConceptId, l.Label, d.Description "
+        f"FROM SenseRelationships sr "
+        f"JOIN Labels l ON sr.ConceptId = l.ConceptId AND l.LanguageId = 2 "
+        f"LEFT JOIN Descriptions d ON sr.ConceptId = d.ConceptId AND d.LanguageId = 2 "
+        f"WHERE sr.SenseId IN ({lco_sid_list}) LIMIT 30")
+
+    return [{"concept": r.get("Label", ""), "description": r.get("Description", "")}
+            for r in concept_rows]
 
 
 def query_ancient_literature(book, chapter):
-    """Query ancient literature cross-references. V2: passage-specific."""
-    return []  # Deferred to v2
+    """Query ancient literature cross-references for a passage.
+
+    Returns quotations and allusions from church fathers, Josephus, Philo, etc.
+    Uses binary reference matching on DataTypeReferences.
+    """
+    reader = _get_reader()
+    ref_clause = _ref_hex_clause_for_col("canon.Reference", book, chapter)
+
+    rows = reader.query_dataset(
+        "AncientLiterature.lbsanc", "ancientliterature.db",
+        f"SELECT cr.CrossReferenceId, "
+        f"hex(canon.Reference) as canon_ref, canon.DataType as canon_dt, "
+        f"noncanon.DataType as source_type, "
+        f"rel.Title as Relation, ds.Title as DataSet "
+        f"FROM CrossReferences cr "
+        f"JOIN DataTypeReferences canon ON cr.CanonReference = canon.DataTypeReferenceId "
+        f"JOIN DataTypeReferences noncanon ON cr.NonCanonReference = noncanon.DataTypeReferenceId "
+        f"LEFT JOIN Relations rel ON cr.RelationKindId = rel.RelationKindId AND rel.Language = 'en' "
+        f"LEFT JOIN DataSets ds ON cr.DataSetKindId = ds.DataSetKindId AND ds.Language = 'en' "
+        f"WHERE {ref_clause} LIMIT 50")
+
+    results = []
+    for r in rows:
+        canon_hex = r.get("canon_ref", "")
+        try:
+            canon_bytes = bytes.fromhex(canon_hex)
+            verse = canon_bytes[3] if len(canon_bytes) >= 4 else 0
+        except Exception:
+            verse = 0
+
+        results.append({
+            "verse": verse,
+            "source_type": r.get("source_type", ""),
+            "relation": r.get("Relation", ""),
+            "dataset": r.get("DataSet", ""),
+        })
+
+    return results
 
 
 def query_important_words(book, chapter):
-    """Query important words tagged for a passage. V2: passage-specific."""
-    return []  # Deferred to v2
+    """Query important words for a passage from ImportantWords dataset.
+
+    Uses text reference matching: bible+nrsv.{logos_book}.{chapter}.
+    Returns list of dicts with lemma (Greek/Hebrew word) and importance count.
+    """
+    reader = _get_reader()
+    logos_book = _protestant_to_logos(book)
+    ref_pattern = f"bible+nrsv.{logos_book}.{chapter}."
+
+    rows = reader.query_dataset(
+        "IMPORTANTWORDS.lbsiw", "importantwords.db",
+        f"SELECT DISTINCT l.LemmaReference as Lemma, pwr.Count as Importance "
+        f"FROM Pericopes p "
+        f"JOIN PericopeWordRelationships pwr ON p.PericopeId = pwr.PericopeId "
+        f"JOIN Lemmas l ON pwr.LemmaId = l.LemmaId "
+        f"WHERE p.PericopeReference LIKE '{ref_pattern}%' "
+        f"ORDER BY CAST(pwr.Count as INTEGER) DESC LIMIT 30")
+
+    results = []
+    seen = set()
+    for r in rows:
+        lemma = r.get("Lemma", "")
+        if lemma in seen:
+            continue
+        seen.add(lemma)
+        # Extract the actual word from lemma reference
+        # Format: lemma.lbs.el.θεός or lemma.lbs.he.אֱלֹהִים
+        word = lemma.split(".")[-1] if "." in lemma else lemma
+        lang = "Greek" if ".el." in lemma else "Hebrew" if ".he." in lemma else ""
+        results.append({
+            "word": word,
+            "language": lang,
+            "importance": int(r.get("Importance", 0)),
+            "lemma_ref": lemma,
+        })
+
+    return results
