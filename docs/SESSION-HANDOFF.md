@@ -1,76 +1,80 @@
-# Session Handoff: Library Tools Supercharge
+# Session Handoff: Conversation-First UX Implementation
 
 **Date:** 2026-03-22
-**Status:** Plan written and reviewed. Ready to implement.
+**Status:** Plan written. Ready to implement.
 
-## What We're Building
+## What Was Done This Session
 
-Three-phase upgrade to make the sermon companion's library access actually work:
+### Library Tools Supercharge (COMPLETE)
+All library tools are now fully working — zero stubs remain:
 
-1. **Fix broken lexicon/grammar search** — the current search returns garbage (abbreviation entries like `ABBR.MID` instead of Wallace's actual voice chapter) because article IDs are transliterated Latin, not Greek. Solution: build a one-time index that reads article headwords.
+1. **Fixed lexicon/grammar search** — resource index with headword extraction, lazy-built on first use
+2. **Unlocked encrypted volumes** — EncryptedVolume + sqlite3 P/Invoke in LogosReader, query-db batch command
+3. **Wired 16+ dataset tools** — cross-refs, theology xrefs, preaching themes, places/people/things, figurative language, Greek/Hebrew constructions, literary typing, propositional outlines, wordplay, NT use of OT, ancient literature (church fathers), cultural concepts (LCO), important words
+4. **Built word-number-to-verse mapping cache** — 47K entries from WordSenses.lbswsd, enables SupplementalData passage queries
+5. **Phase-aware tool defaults** — get_passage_data auto-selects datasets based on current study phase
+6. **Rewrote system prompt** — per-phase tool guidance for the AI
 
-2. **Unlock encrypted volume datasets** — 150+ `.lbs*` files contain pre-indexed study tool data (figurative language, grammatical constructions, cross-references, biblical places/people/things, theology xrefs, preaching themes). These are encrypted SQLite databases accessed via the EncryptedVolume API in libSinaiInterop.dylib.
+### UX Redesign (DESIGNED, NOT YET IMPLEMENTED)
+Designed a conversation-first UI to replace the card-based quiz system:
+- **Spec:** `docs/superpowers/specs/2026-03-22-conversation-first-ux-design.md`
+- **Plan:** `docs/superpowers/plans/2026-03-22-conversation-first-ux.md`
 
-3. **Wire up 30+ tools** into the companion agent so it can be a real graduate assistant.
+## What the Next Session Should Do
 
-## Implementation Plan
+Execute the conversation-first UX plan:
 
-**Path:** `docs/superpowers/plans/2026-03-22-library-tools-supercharge.md`
+```
+Read the implementation plan at docs/superpowers/plans/2026-03-22-conversation-first-ux.md
+and the design spec at docs/superpowers/specs/2026-03-22-conversation-first-ux-design.md.
 
-### 7 Tasks, 3 Phases
+Execute the plan using superpowers:executing-plans. 4 sequential tasks:
 
-| Task | Phase | What | Status |
-|------|-------|------|--------|
-| 1 | Fix Search | Build `resource_index.py` — lemma→article index | Not started |
-| 2 | Fix Search | Rewrite `_search_lexicon()` to use index | Not started |
-| 3 | Encrypted Volume | Add EncryptedVolume + sqlite3 P/Invoke to LogosReader | Not started |
-| 4 | Encrypted Volume | Add `query_dataset()` Python wrapper | Not started |
-| 5 | Encrypted Volume | Discover actual database schemas | Not started |
-| 6 | Wire Tools | Create `dataset_tools.py` with 16 query functions | Not started |
-| 7 | Wire Tools | Wire tools into companion agent + system prompt | Not started |
+Task 1: session_analytics.py — behavioral tracking (phase time, stall detection)
+Task 2: /study/ routes + study_start.html + study_session.html + study.css + study.js
+Task 3: build_study_prompt() + stream_study_response() in companion_agent.py
+Task 4: Wellbeing nudge, full test suite, manual test
 
-**Tasks 1-2 and 3-4 can run in parallel** (different files, no dependencies).
+The existing /companion/ routes must continue working. The new /study/ routes
+run alongside them at http://localhost:5111/study/
 
-### Key Technical Decisions Already Made
-
-1. **libsqlite3-logos.dylib** (confirmed exists at 824KB) provides sqlite3 C API for raw handle queries
-2. **`Marshal.PtrToStringUTF8`** (not `PtrToStringAnsi`) for Greek/Hebrew data from sqlite3
-3. **SQL quoting**: Python double-quotes the SQL argument; `ParseCommandLine` treats it as one token
-4. **Batch loop integration**: `query-db` and `volume-info` are early-exit cases in the switch that set `mode = "__skip__"` to bypass the CTitle path
-5. **Shared batch reader**: `dataset_tools.py` reuses study.py's singleton (no duplicate process)
-6. **Wallace chapter mapping**: approximate, with verification substep in Task 1
-
-## What NOT to Touch
-
-- `LogosReader/Program.cs` existing commands (read, list, toc, etc.) — they work
-- `logos_batch.py` existing methods — they work
-- `study.py` existing functions — they work
-- Old workbench routes — they still serve the companion UI
-
-## Environment
-
-```bash
-export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet@8/libexec"
-cd /Volumes/External/Logos4
+Key design decisions already made:
+- Conversation-first (no cards, no visible phases, AI steers naturally)
+- Outline sidebar always visible on right (300px)
+- Rich content blocks inline (scripture, library quotes, cross-refs, insight pills)
+- Original language only in scripture blocks (THGNT/BHS), clickable words for parsing
+- NKJV + NET as English translations (not ESV)
+- No animations, dark theme, session clock counts UP not down
+- Wellbeing nudges at 2h and 4h
+- 70 existing tests must continue passing
 ```
 
 ## Key Files
 
 | Purpose | Path |
 |---------|------|
-| **Implementation Plan** | `docs/superpowers/plans/2026-03-22-library-tools-supercharge.md` |
-| **Design Spec** | `docs/specs/2026-03-21-sermon-companion-design.md` |
-| **EncryptedVolume Research** | `docs/plans/2026-03-10-encrypted-volume-api.md` |
+| **UX Design Spec** | `docs/superpowers/specs/2026-03-22-conversation-first-ux-design.md` |
+| **UX Implementation Plan** | `docs/superpowers/plans/2026-03-22-conversation-first-ux.md` |
+| **Library Tools Plan** | `docs/superpowers/plans/2026-03-22-library-tools-supercharge.md` |
+| **Encrypted Volume Schemas** | `docs/research/encrypted-volume-schemas.md` |
+| **Word Number Cache Design** | `docs/superpowers/specs/2026-03-22-word-number-mapping-design.md` |
+| **Companion Agent** | `tools/workbench/companion_agent.py` |
 | **Companion Tools** | `tools/workbench/companion_tools.py` |
+| **Dataset Tools** | `tools/workbench/dataset_tools.py` |
 | **LogosReader** | `tools/LogosReader/Program.cs` |
-| **Batch Reader** | `tools/logos_batch.py` |
-| **Study Orchestrator** | `tools/study.py` |
+| **Flask App** | `tools/workbench/app.py` |
 
-## What the Next Session Should Do
+## Test Status
 
-1. Read the plan at `docs/superpowers/plans/2026-03-22-library-tools-supercharge.md`
-2. Execute tasks using `superpowers:subagent-driven-development` or `superpowers:executing-plans`
-3. Tasks 1-2 and 3-4 can be parallelized
-4. Task 5 (schema discovery) is research — run the SQL queries, document what you find
-5. Tasks 6-7 depend on Task 5's schema findings — update SQL queries with real column names
+70 tests passing across 10 test files. Run with:
+```bash
+cd /Volumes/External/Logos4/tools
+/opt/homebrew/bin/python3 -m pytest workbench/tests/ -v
+```
+
+## Environment
+
+```bash
+export PATH="/opt/homebrew/opt/dotnet@8/bin:/opt/homebrew/bin:$PATH"
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet@8/libexec"
+```
