@@ -11,6 +11,7 @@ import sys
 # Add parent tools dir to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
+from resource_index import ResourceIndex
 from study import (
     parse_reference, find_bibles, find_commentaries_for_ref,
     read_bible_chapter, extract_verses, clean_bible_text,
@@ -60,6 +61,25 @@ OT_GRAMMARS = [
 ]
 
 ALL_GRAMMARS = NT_GRAMMARS + OT_GRAMMARS
+
+# Module-level resource index singleton
+_resource_index = None
+_INDEX_DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'resource_index.db')
+
+
+def _get_index():
+    global _resource_index
+    if _resource_index is None:
+        _resource_index = ResourceIndex(_INDEX_DB_PATH)
+    return _resource_index
+
+
+def _ensure_indexed(resource_file, resource_type="lexicon"):
+    """Ensure a resource is indexed. Build index on first use."""
+    idx = _get_index()
+    if not idx.is_indexed(resource_file):
+        idx.build_index_for_resource(resource_file, resource_type=resource_type)
+    return idx
 
 
 TOOL_DEFINITIONS = [
@@ -206,7 +226,74 @@ TOOL_DEFINITIONS = [
             },
             "required": ["node_type", "content"]
         }
-    }
+    },
+    # ── Encrypted Volume Dataset Tools ──────────────────────────────────
+    {
+        "name": "get_passage_data",
+        "description": "Get structured study data for a passage from Logos's pre-indexed datasets. Returns figurative language, grammatical constructions, literary typing, wordplay, propositional outlines, important words, preaching themes, and more. Use this proactively when Bryan enters a new passage or phase.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "reference": {
+                    "type": "string",
+                    "description": "Bible reference, e.g. 'Romans 1:18-23'"
+                },
+                "datasets": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": ["figurative_language", "greek_constructions", "hebrew_constructions",
+                                 "literary_typing", "wordplay", "propositional_outline",
+                                 "important_words", "preaching_themes", "nt_use_of_ot",
+                                 "cultural_concepts"]
+                    },
+                    "description": "Which datasets to query. If omitted, queries the most relevant ones for the current phase."
+                }
+            },
+            "required": ["reference"]
+        }
+    },
+    {
+        "name": "get_cross_reference_network",
+        "description": "Get curated cross-references from Logos's cross-reference databases. Much richer than inline Bible annotations. Can also query theology, biblical theology, confessional, and grammar cross-references.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "reference": {
+                    "type": "string",
+                    "description": "Bible reference"
+                },
+                "xref_type": {
+                    "type": "string",
+                    "enum": ["curated", "systematic", "biblical", "confessional", "grammar"],
+                    "description": "Type of cross-references. 'curated' = Bible cross-refs, 'systematic' = systematic theology sections, etc."
+                }
+            },
+            "required": ["reference"]
+        }
+    },
+    {
+        "name": "get_passage_context",
+        "description": "Get contextual data for a passage: biblical places, people, things, events, ancient literature references, and timeline data.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "reference": {
+                    "type": "string",
+                    "description": "Bible reference"
+                },
+                "context_types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": ["places", "people", "things", "ancient_literature"]
+                    },
+                    "description": "Which context data to retrieve. If omitted, returns all available."
+                }
+            },
+            "required": ["reference"]
+        }
+    },
 ]
 
 
@@ -236,6 +323,12 @@ def execute_tool(tool_name, tool_input, session_context):
             return _expand_cross_references(tool_input, session_context)
         elif tool_name == "save_to_outline":
             return _save_to_outline(tool_input, session_context)
+        elif tool_name == "get_passage_data":
+            return _get_passage_data(tool_input, session_context)
+        elif tool_name == "get_cross_reference_network":
+            return _get_cross_reference_network(tool_input, session_context)
+        elif tool_name == "get_passage_context":
+            return _get_passage_context(tool_input, session_context)
         else:
             return {"error": f"Unknown tool: {tool_name}"}
     except Exception as e:
@@ -342,65 +435,27 @@ def _lookup_lexicon(tool_input, session_context):
     }
 
 
-def _search_lexicon(resource_file, abbrev, word):
-    """Search a lexicon/grammar by article ID match first, then content search."""
+def _search_lexicon(resource_file, abbrev, word, resource_type="lexicon"):
+    """Search a lexicon/grammar using the pre-built index."""
     try:
-        articles = get_resource_articles(resource_file)
-        if not articles:
+        idx = _ensure_indexed(resource_file, resource_type=resource_type)
+        results = idx.lookup(word, resource_file, limit=3)
+
+        if not results:
             return None
 
-        word_lower = word.lower().strip()
-
-        # Phase 1: Exact article ID match (works for lexicons keyed by lemma)
-        matches = []
-        for art in articles:
-            art_id = art.get("id", "").lower()
-            if word_lower in art_id and len(art_id) > 3:  # skip abbreviation entries
-                matches.append(art)
-            if len(matches) >= 3:
-                break
-
-        # Phase 2: Content search — sample articles evenly across the resource
-        # then scan nearby articles when a match is found
-        if not matches:
-            total = len(articles)
-            # Sample ~200 articles evenly spread
-            step = max(1, total // 200)
-            for i in range(0, total, step):
-                art = articles[i]
-                text = read_article_text(resource_file, art["num"], max_chars=600)
-                if text and word_lower in text.lower():
-                    # Found a hit — now scan nearby articles for the best/longest match
-                    best_art = art
-                    best_text = text
-                    # Check surrounding articles for more relevant content
-                    for j in range(max(0, i - 3), min(total, i + 10)):
-                        nearby = articles[j]
-                        nearby_text = read_article_text(resource_file, nearby["num"], max_chars=8000)
-                        if nearby_text and word_lower in nearby_text.lower() and len(nearby_text) > len(best_text):
-                            best_art = nearby
-                            best_text = nearby_text
-                    return {
-                        "lexicon": abbrev,
-                        "article_id": best_art["id"],
-                        "text": best_text[:6000],
-                    }
-
-        if not matches:
-            return None
-
-        # Read the best ID match
-        best = matches[0]
-        text = read_article_text(resource_file, best["num"], max_chars=8000)
+        # Read the best match article
+        best = results[0]
+        text = read_article_text(resource_file, best["article_num"], max_chars=8000)
         if not text:
             return None
 
         return {
             "lexicon": abbrev,
-            "article_id": best["id"],
+            "article_id": best["article_id"],
+            "headword": best.get("headword", ""),
             "text": text[:6000] if len(text) > 6000 else text,
         }
-
     except Exception:
         return None
 
@@ -420,7 +475,7 @@ def _lookup_grammar(tool_input, session_context):
 
     results = []
     for gram in grammars:
-        entry = _search_lexicon(gram["file"], gram["abbrev"], query)
+        entry = _search_lexicon(gram["file"], gram["abbrev"], query, resource_type="grammar")
         if entry:
             results.append(entry)
         if len(results) >= 2:
@@ -522,3 +577,105 @@ def _save_to_outline(tool_input, session_context):
         "node_type": tool_input["node_type"],
         "content": tool_input["content"]
     }
+
+
+# ── Dataset Tool Implementations ─────────────────────────────────────────
+
+def _get_passage_data(tool_input, session_context):
+    """Query pre-indexed passage datasets."""
+    from dataset_tools import (
+        query_figurative_language, query_greek_constructions,
+        query_hebrew_constructions, query_literary_typing,
+        query_wordplay, query_propositional_outline,
+        query_important_words, query_preaching_themes,
+        query_nt_use_of_ot, query_cultural_concepts
+    )
+
+    ref = parse_reference(tool_input["reference"])
+    book, chapter = ref["book"], ref["chapter"]
+    testament = "ot" if book <= 39 else "nt"
+
+    requested = tool_input.get("datasets")
+    if not requested:
+        requested = ["preaching_themes"]
+        if testament == "nt":
+            requested.append("greek_constructions")
+        else:
+            requested.append("hebrew_constructions")
+
+    dispatch = {
+        "figurative_language": lambda: query_figurative_language(book, chapter),
+        "greek_constructions": lambda: query_greek_constructions(book, chapter),
+        "hebrew_constructions": lambda: query_hebrew_constructions(book, chapter),
+        "literary_typing": lambda: query_literary_typing(book, chapter),
+        "wordplay": lambda: query_wordplay(book, chapter),
+        "propositional_outline": lambda: query_propositional_outline(book, chapter, testament),
+        "important_words": lambda: query_important_words(book, chapter),
+        "preaching_themes": lambda: query_preaching_themes(book, chapter),
+        "nt_use_of_ot": lambda: query_nt_use_of_ot(book, chapter),
+        "cultural_concepts": lambda: query_cultural_concepts(book, chapter),
+    }
+
+    results = {}
+    for ds in requested:
+        if ds in dispatch:
+            try:
+                data = dispatch[ds]()
+                results[ds] = data if data else []
+            except Exception:
+                results[ds] = []
+
+    return {"reference": tool_input["reference"], "datasets": results}
+
+
+def _get_cross_reference_network(tool_input, session_context):
+    """Query cross-reference databases."""
+    from dataset_tools import query_curated_cross_refs, query_theology_xrefs
+
+    ref = parse_reference(tool_input["reference"])
+    xref_type = tool_input.get("xref_type", "curated")
+
+    if xref_type == "curated":
+        rows = query_curated_cross_refs(ref["book"], ref["chapter"],
+                                        ref.get("verse_start"), ref.get("verse_end"))
+    else:
+        rows = query_theology_xrefs(ref["book"], ref["chapter"], xref_type=xref_type)
+
+    return {
+        "reference": tool_input["reference"],
+        "xref_type": xref_type,
+        "cross_references": rows[:50]
+    }
+
+
+def _get_passage_context(tool_input, session_context):
+    """Query contextual data for a passage."""
+    from dataset_tools import (
+        query_biblical_places, query_biblical_people,
+        query_biblical_things, query_ancient_literature
+    )
+
+    ref = parse_reference(tool_input["reference"])
+    book, chapter = ref["book"], ref["chapter"]
+
+    requested = tool_input.get("context_types")
+    if not requested:
+        requested = ["places", "people", "things"]
+
+    dispatch = {
+        "places": lambda: query_biblical_places(book, chapter),
+        "people": lambda: query_biblical_people(book, chapter),
+        "things": lambda: query_biblical_things(book, chapter),
+        "ancient_literature": lambda: query_ancient_literature(book, chapter),
+    }
+
+    results = {}
+    for ct in requested:
+        if ct in dispatch:
+            try:
+                data = dispatch[ct]()
+                results[ct] = data if data else []
+            except Exception:
+                results[ct] = []
+
+    return {"reference": tool_input["reference"], "context": results}

@@ -176,6 +176,76 @@ class Program
     [return: MarshalAs(UnmanagedType.U1)]
     static extern bool SinaiInterop_Interlinear_GetShowDefault(IntPtr interlinearLine);
 
+    // ── EncryptedVolume API ──────────────────────────────────────────────
+    // Opens encrypted dataset files (.lbssd, .lbsxrf, .lbsplc, .lbsthg, etc.)
+    // These contain embedded SQLite databases with structured study tool data.
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    static extern IntPtr EncryptedVolume_New();
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.U1)]
+    static extern bool EncryptedVolume_Open(
+        IntPtr ptr,
+        IntPtr pLicenseManager,
+        [MarshalAs(UnmanagedType.LPWStr)] string filePath);
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    static extern IntPtr EncryptedVolume_OpenDatabase(
+        IntPtr ptr,
+        [MarshalAs(UnmanagedType.LPWStr)] string strFileName);
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    static extern IntPtr EncryptedVolume_OpenFile(
+        IntPtr ptr,
+        [MarshalAs(UnmanagedType.LPWStr)] string strFileName);
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.LPWStr)]
+    static extern string EncryptedVolume_GetResourceId(IntPtr ptr);
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.LPWStr)]
+    static extern string EncryptedVolume_GetResourceDriverName(IntPtr ptr);
+
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    static extern void EncryptedVolume_Delete(IntPtr ptr);
+
+    // ── SQLite C API (from libsqlite3-logos.dylib bundled with Logos) ────
+    // Used to query the raw sqlite3* handle returned by EncryptedVolume_OpenDatabase.
+
+    const string SqliteLib = "/Applications/Logos.app/Contents/Frameworks/FaithlifeDesktop.framework/Versions/48.0.0.0238/Frameworks/ApplicationBundle.framework/Resources/lib/libsqlite3-logos.dylib";
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_prepare_v2")]
+    static extern int sqlite3_prepare_v2(IntPtr db, byte[] sql, int nByte, out IntPtr stmt, out IntPtr tail);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_step")]
+    static extern int sqlite3_step(IntPtr stmt);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_count")]
+    static extern int sqlite3_column_count(IntPtr stmt);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_name")]
+    static extern IntPtr sqlite3_column_name(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_text")]
+    static extern IntPtr sqlite3_column_text(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_type")]
+    static extern int sqlite3_column_type(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_finalize")]
+    static extern int sqlite3_finalize(IntPtr stmt);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_errmsg")]
+    static extern IntPtr sqlite3_errmsg(IntPtr db);
+
+    // SQLite constants
+    const int SQLITE_ROW = 100;
+    const int SQLITE_DONE = 101;
+    const int SQLITE_OK = 0;
+    const int SQLITE_NULL = 5;
+
     // NativeLogosResourceIndexer - for extracting word-level interlinear data
     // Callback delegate types matching the C++ NativeLogosResourceIndexerCallbackImpl constructor
     // Signatures derived from mangled C++ symbol analysis:
@@ -1030,6 +1100,8 @@ class Program
 
             // Cache of opened resources: filepath -> title pointer
             var resourceCache = new Dictionary<string, IntPtr>();
+            var volumeCache = new Dictionary<string, IntPtr>();
+            var volumeDbCache = new Dictionary<string, IntPtr>();
 
             Console.Error.WriteLine("[*] Batch mode ready. Reading commands from stdin...");
 
@@ -1152,11 +1224,143 @@ class Program
                             int.TryParse(tokens[2], out articleNum);
                             break;
 
+                        case "query-db":
+                        {
+                            if (tokens.Count < 4)
+                            {
+                                Console.Error.WriteLine("[!] query-db requires: query-db <file> <db-name> <sql>");
+                                mode = "__skip__";
+                                resourceFile = "";
+                                break;
+                            }
+                            string volFile = tokens[1];
+                            string dbName = tokens[2];
+                            string sql = tokens[3];
+
+                            if (!volFile.Contains("/"))
+                                volFile = $"{resourcesBase}/{volFile}";
+
+                            string cacheKey = volFile + "|" + dbName;
+                            IntPtr dbHandle;
+                            if (!volumeDbCache.TryGetValue(cacheKey, out dbHandle))
+                            {
+                                IntPtr volHandle;
+                                if (!volumeCache.TryGetValue(volFile, out volHandle))
+                                {
+                                    volHandle = EncryptedVolume_New();
+                                    bool opened = EncryptedVolume_Open(volHandle, licMgr, volFile);
+                                    if (!opened)
+                                    {
+                                        Console.Error.WriteLine($"[!] Failed to open volume: {volFile}");
+                                        mode = "__skip__";
+                                        resourceFile = "";
+                                        break;
+                                    }
+                                    volumeCache[volFile] = volHandle;
+                                }
+                                dbHandle = EncryptedVolume_OpenDatabase(volHandle, dbName);
+                                if (dbHandle == IntPtr.Zero)
+                                {
+                                    Console.Error.WriteLine($"[!] Failed to open DB {dbName} in {volFile}");
+                                    mode = "__skip__";
+                                    resourceFile = "";
+                                    break;
+                                }
+                                volumeDbCache[cacheKey] = dbHandle;
+                            }
+
+                            byte[] sqlBytes = System.Text.Encoding.UTF8.GetBytes(sql + "\0");
+                            int rc = sqlite3_prepare_v2(dbHandle, sqlBytes, -1, out IntPtr stmt, out IntPtr tail);
+                            if (rc != SQLITE_OK)
+                            {
+                                IntPtr errMsg = sqlite3_errmsg(dbHandle);
+                                string err = Marshal.PtrToStringUTF8(errMsg) ?? "unknown error";
+                                Console.Error.WriteLine($"[!] SQL error: {err}");
+                                mode = "__skip__";
+                                resourceFile = "";
+                                break;
+                            }
+
+                            int colCount = sqlite3_column_count(stmt);
+                            var colNames = new string[colCount];
+                            for (int ci = 0; ci < colCount; ci++)
+                            {
+                                IntPtr namePtr = sqlite3_column_name(stmt, ci);
+                                colNames[ci] = Marshal.PtrToStringUTF8(namePtr) ?? $"col{ci}";
+                            }
+                            Console.WriteLine(string.Join("\t", colNames));
+
+                            int rowCount = 0;
+                            while (sqlite3_step(stmt) == SQLITE_ROW && rowCount < 1000)
+                            {
+                                var vals = new string[colCount];
+                                for (int ci = 0; ci < colCount; ci++)
+                                {
+                                    if (sqlite3_column_type(stmt, ci) == SQLITE_NULL)
+                                        vals[ci] = "";
+                                    else
+                                    {
+                                        IntPtr textPtr = sqlite3_column_text(stmt, ci);
+                                        vals[ci] = Marshal.PtrToStringUTF8(textPtr) ?? "";
+                                    }
+                                }
+                                Console.WriteLine(string.Join("\t", vals));
+                                rowCount++;
+                            }
+                            sqlite3_finalize(stmt);
+
+                            mode = "__skip__";
+                            resourceFile = "";
+                            break;
+                        }
+
+                        case "volume-info":
+                        {
+                            if (tokens.Count < 2)
+                            {
+                                Console.Error.WriteLine("[!] volume-info requires: volume-info <file>");
+                                mode = "__skip__";
+                                resourceFile = "";
+                                break;
+                            }
+                            string volFile = tokens[1];
+                            if (!volFile.Contains("/"))
+                                volFile = $"{resourcesBase}/{volFile}";
+
+                            IntPtr volHandle;
+                            if (!volumeCache.TryGetValue(volFile, out volHandle))
+                            {
+                                volHandle = EncryptedVolume_New();
+                                bool opened = EncryptedVolume_Open(volHandle, licMgr, volFile);
+                                if (!opened)
+                                {
+                                    Console.Error.WriteLine($"[!] Failed to open volume: {volFile}");
+                                    mode = "__skip__";
+                                    resourceFile = "";
+                                    break;
+                                }
+                                volumeCache[volFile] = volHandle;
+                            }
+
+                            string resId = EncryptedVolume_GetResourceId(volHandle) ?? "unknown";
+                            string driverName = EncryptedVolume_GetResourceDriverName(volHandle) ?? "unknown";
+                            Console.WriteLine($"ResourceId: {resId}");
+                            Console.WriteLine($"DriverName: {driverName}");
+
+                            mode = "__skip__";
+                            resourceFile = "";
+                            break;
+                        }
+
                         default:
                             Console.Error.WriteLine($"[!] Unknown command: {cmd}");
                             Console.WriteLine("---END---");
                             continue;
                     }
+
+                    // Skip CTitle path for EncryptedVolume commands
+                    if (mode == "__skip__")
+                        goto printEnd;
 
                     // Resolve resource path
                     if (!resourceFile.Contains("/"))
@@ -1182,6 +1386,7 @@ class Program
                     Console.Error.WriteLine($"[!] Command error: {ex.GetType().Name}: {ex.Message}");
                 }
 
+                printEnd:
                 Console.WriteLine("---END---");
                 Console.Out.Flush();
             }

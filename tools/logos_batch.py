@@ -202,6 +202,61 @@ class LogosBatchReader:
                     pass
         return articles
 
+    def query_dataset(self, resource_file, db_name, sql, max_rows=500):
+        """Query an encrypted volume's embedded SQLite database.
+
+        Args:
+            resource_file: e.g. "FIGURATIVE-LANGUAGE.lbssd"
+            db_name: e.g. "SupplementalData.db"
+            sql: SQL query string
+
+        Returns:
+            List of dicts (column_name → value), or empty list on failure.
+        """
+        # SQL must be double-quoted so ParseCommandLine treats it as one token.
+        # Replace internal double-quotes with single-quotes (safe for SQLite).
+        sql_safe = sql.replace('"', "'")
+        result = self._send_command(f'query-db {resource_file} {db_name} "{sql_safe}"')
+        if not result:
+            return []
+
+        lines = result.strip().split('\n')
+        if len(lines) < 1:
+            return []
+
+        # First line is tab-separated column headers
+        headers = lines[0].split('\t')
+        rows = []
+        for line in lines[1:]:
+            if not line.strip():
+                continue
+            vals = line.split('\t')
+            row = {}
+            for i, h in enumerate(headers):
+                row[h] = vals[i] if i < len(vals) else ""
+            rows.append(row)
+            if len(rows) >= max_rows:
+                break
+
+        return rows
+
+    def volume_info(self, resource_file):
+        """Get metadata for an encrypted volume.
+
+        Returns:
+            Dict with ResourceId and DriverName, or None on failure.
+        """
+        result = self._send_command(f'volume-info {resource_file}')
+        if not result:
+            return None
+
+        info = {}
+        for line in result.strip().split('\n'):
+            if ':' in line:
+                key, val = line.split(':', 1)
+                info[key.strip()] = val.strip()
+        return info
+
     def is_alive(self):
         """Check if the underlying process is still running."""
         return self._proc is not None and self._proc.poll() is None
