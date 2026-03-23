@@ -269,24 +269,24 @@ class Program
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void AddNamedSectionCallback(IntPtr name, int offset);
 
-    // AddMedia: void(*)(Media, int, int, int, int, void const*, int, int, int, int) = 10 params
+    // AddMedia: 10 params
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void AddMediaCallback(int mediaType, int a, int b, int c, int d, IntPtr data, int e, int f, int g, int h);
 
-    // AddReference: 13 params - void(*)(char16_t const*, int, char16_t const*, int, int, int, int, int, char const*, int, int, int, int)
+    // AddReference: 13 params
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void AddReferenceCallback(
         IntPtr ref1, int offset,
         IntPtr ref2, int a, int b, int c, int d, int e,
         IntPtr ref3, int f, int g, int h, int i);
 
-    // AddWord: 11 params - void(*)(char16_t const*, int, int, int, int, int, char const*, int, int, int, int)
+    // AddWord: 11 params
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void AddWordCallback(
         IntPtr word, int a, int b, int c, int d, int e,
         IntPtr word2, int f, int g, int h, int i2);
 
-    // ProcessReverseInterlinearIndexData: void(char16_t const*, ReverseInterlinearColumnIndexData const*, int count)
+    // ProcessReverseInterlinearIndexData: 3 params
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void ProcessReverseInterlinearIndexDataCallback(
         IntPtr word, IntPtr columnData, int columnCount);
@@ -989,7 +989,7 @@ class Program
         // No-op
     }
 
-    // AddWord: 11 params (ptr, i, i, i, i, i, ptr, i, i, i, i)
+    // AddWord: 11 params
     static void OnAddWord(
         IntPtr wordPtr, int a, int b, int c, int d, int e,
         IntPtr word2Ptr, int f, int g, int h, int i2)
@@ -1006,7 +1006,7 @@ class Program
         catch { }
     }
 
-    // AddReference: 13 params (ptr, i, ptr, i, i, i, i, i, ptr, i, i, i, i)
+    // AddReference: 13 params
     static void OnAddReference(
         IntPtr ref1, int offset,
         IntPtr ref2, int a, int b, int c, int d, int e,
