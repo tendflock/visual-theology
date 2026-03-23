@@ -96,7 +96,7 @@ TOOL_DEFINITIONS = [
                 "versions": {
                     "type": "array",
                     "items": {"type": "string"},
-                    "description": "Bible version names, e.g. ['ESV', 'NASB95']. Defaults to ['ESV']."
+                    "description": "Bible version names. For original language: 'THGNT' (Greek NT), 'BHS' (Hebrew OT). For English: 'NKJV', 'NET', 'ESV', 'NASB95', 'KJV'. Defaults to ['THGNT'] for NT, ['BHS'] for OT. Always prefer original language unless English is specifically requested."
                 }
             },
             "required": ["reference"]
@@ -338,9 +338,13 @@ def execute_tool(tool_name, tool_input, session_context):
 def _read_bible_passage(tool_input):
     """Read a Bible passage in one or more translations."""
     ref_str = tool_input["reference"]
-    versions = tool_input.get("versions", ["ESV"])
-
     ref = parse_reference(ref_str)
+    # Default to original language: THGNT for NT (books 40-66), BHS for OT
+    if "versions" not in tool_input or not tool_input["versions"]:
+        versions = ["THGNT"] if ref["book"] >= 61 else ["BHS"]
+    else:
+        versions = tool_input["versions"]
+
     bible_files = resolve_bible_files(versions)
 
     results = []

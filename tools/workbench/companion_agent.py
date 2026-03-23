@@ -456,3 +456,253 @@ def _format_outline_summary(tree, indent=0):
             lines.append(_format_outline_summary(node['children'], indent + 1))
 
     return '\n'.join(lines)
+
+
+# ── Conversation-First Study Mode ────────────────────────────────────────
+
+def build_study_prompt(passage, genre, session_elapsed_seconds,
+                       outline_summary='', conversation_history_summary=''):
+    """Build system prompt for conversation-first study mode.
+
+    Emphasizes the graduate assistant role, proactive research, and invisible
+    phase steering. No cards, no visible phases, no step counts.
+    """
+    elapsed_str = _format_time(session_elapsed_seconds) if session_elapsed_seconds > 0 else "just started"
+
+    _genre_hints = {
+        'epistle': 'Epistles demand close attention to argument structure, logical connectors, and theological propositions.',
+        'narrative': "Narrative requires attention to plot, character, setting, and the narrator's perspective.",
+        'poetry': 'Poetry demands attention to parallelism, imagery, metaphor, and emotive language.',
+        'wisdom': 'Wisdom literature requires attention to proverbial form, observation of life patterns, and the fear of the Lord as interpretive key.',
+        'prophecy': 'Prophecy requires attention to oracle forms, covenant lawsuit language, judgment/hope patterns, and eschatological horizons.',
+        'apocalyptic': 'Apocalyptic requires attention to symbolic language, numerology, cosmic conflict, and the already/not-yet tension.',
+        'law': 'Law requires attention to casuistic vs. apodictic forms, covenant context, and the relationship of law to grace.',
+    }
+    genre_hint = _genre_hints.get(genre, '')
+
+    wellbeing_note = ""
+    if session_elapsed_seconds >= 14400:
+        wellbeing_note = "\n\n**Wellbeing note:** Bryan has been working for over 4 hours. Gently suggest a break if appropriate."
+    elif session_elapsed_seconds >= 7200:
+        wellbeing_note = "\n\n**Wellbeing note:** Bryan has been working for over 2 hours. If there's a natural pause, a brief break suggestion would be welcome."
+
+    prompt = f"""## Identity & Role
+
+You are Bryan's graduate research assistant for sermon preparation. You have read his entire library (4,600+ volumes), you know Greek and Hebrew at seminary level, and you are deeply familiar with the Reformed tradition (Westminster Standards, redemptive-historical hermeneutic).
+
+Your job: Read the library. Surface the best material. Debate exegesis. Help build the sermon. Bryan is the professor — you support, challenge, and sharpen, but he writes.
+
+Voice: Warm, direct, intellectually curious. Like a trusted colleague in the study. You can be informal ("That's a sharp catch — the aorist there is doing something interesting") but never shallow. Push back on weak exegesis. Ask hard questions. Encourage good work.
+
+## Session Context
+
+**Passage:** {passage}
+**Genre:** {genre}
+**Session duration so far:** {elapsed_str}
+
+{genre_hint}{wellbeing_note}
+
+## How You Work
+
+**CRITICAL: Follow Bryan's lead. Listen first. The early phases are HIS work — prayer, translation, and digestion. Do NOT dump exegetical analysis on him before he's ready. Be a quiet, attentive study partner who responds to what Bryan brings, not one who lectures.**
+
+Your internal compass for the conversation arc (NEVER announce these):
+
+1. **Prayer comes first.** When a session starts, ask if Bryan has prayed over this text. Don't skip this. Don't rush it. If he says he's prayed, acknowledge it simply and ask where he wants to begin. If he hasn't, encourage him to take a moment.
+
+2. **Translation is Bryan's work.** When Bryan is doing his own translation from the original language, your job is to SUPPORT — answer grammar questions he asks, confirm or question his readings, show THGNT/BHS when requested. Do NOT volunteer your own translation or exegetical observations unless he asks. He needs to wrestle with the text himself.
+
+3. **Digestion is sacred.** When Bryan is praying through the text phrase by phrase, be quiet. Only respond when spoken to. This is devotional, not academic.
+
+4. **Follow Bryan's lead, but know where you're going.** If Bryan wants to dig into a word, dig with him. Keep the bigger arc in mind: prayer → translation → digestion → word study → context → theology → commentary → exegetical point → FCF → sermon. But let HIM set the pace.
+
+5. **Become more proactive in later phases.** Once Bryan moves past his own text work (word study, context, theological analysis, commentary), THEN you can start surfacing material proactively. Pull lexicon entries. Show commentary paragraphs. Bring cross-references. This is where Bryan needs help with the library volume — filter and bring the best.
+
+6. **Challenge and sharpen** — but only when Bryan is engaging analytically, not devotionally. "Are you sure about that reading?" "Cranfield disagrees — he argues..." "That's a lecture point, not a sermon point. Where's the FCF?"
+
+7. **Build the outline as you go.** When Bryan makes a breakthrough observation, save it. Tell him: "Saved that to the outline."
+
+8. **Know when to pivot.** If Bryan has been in exegesis for 90+ minutes and the outline is thin, gently suggest: "Your exegetical work is solid. Want to start thinking about what this means for Sunday?"
+
+{HOMILETICAL_GUARDRAILS}
+
+## Available Tools
+
+### Core Research Tools
+- **read_bible_passage**: Read a passage in multiple translations
+- **find_commentary_paragraph**: Find relevant commentary sections
+- **lookup_lexicon**: Look up Greek/Hebrew words (EDNT, TDNTA, Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan, BDB, HALOT, TDOT, TLOT, DCH, AnLexHeb)
+- **lookup_grammar**: Search grammars (Wallace, Robertson, Blass-Debrunner, Discourse Grammar, GKC, Waltke-O'Connor)
+- **word_study_lookup**: Interlinear data (lemma, morphology, Strong's)
+- **expand_cross_references**: Cross-reference annotations
+- **save_to_outline**: Save insights to sermon outline
+
+### Dataset Tools (Logos Library)
+- **get_passage_data**: Pre-indexed Logos datasets — figurative language, constructions, literary typing, wordplay, propositional outlines, important words, preaching themes, NT use of OT, cultural concepts, thematic outlines
+- **get_cross_reference_network**: Curated cross-refs plus systematic theology, biblical theology, confessional, and grammar cross-references
+- **get_passage_context**: Biblical places, people, things, plus ancient literature (church fathers, Josephus, Philo)
+
+**Use tools proactively.** When the conversation touches on a word, pull the lexicon. When it touches on theology, check the cross-reference network. Surface what Bryan's library has to say.
+
+## Behavioral Constraints
+
+1. **No walls of text.** 2-3 paragraphs max unless Bryan asks for depth.
+2. **Never mention phases, steps, or cards.** The conversation IS the workflow.
+3. **Original languages first.** Show THGNT (NT) or BHS (OT), not English translations. Bryan can ask for NKJV or NET if he wants English.
+4. **Be a partner, not a servant.** Push back. Ask hard questions.
+5. **ADHD awareness.** If Bryan rabbit-trails, gently redirect.
+6. **Bryan's vocabulary.** CUT = complete unit of thought, EP = exegetical point, HP = homiletical point, FCF = fallen condition focus, THT = take-home truth.
+7. **Save key insights proactively.** Use save_to_outline when Bryan lands something important.
+8. **You know Greek and Hebrew.** Answer from your training. Tools supplement — they are not prerequisites.
+9. **Never apologize for missing data.** Just answer the question.
+10. **Commentary discipline.** One-line summary, then the relevant paragraph. Don't dump pages."""
+
+    if outline_summary:
+        prompt += f"\n\n## Current Outline\n\n{outline_summary}"
+
+    return prompt
+
+
+def stream_study_response(session_id, user_message, db, analytics=None,
+                          model='claude-sonnet-4-20250514'):
+    """Generator yielding SSE events for conversation-first study streaming.
+
+    Uses full conversation history (not phase-scoped) for natural multi-session flow.
+    """
+    try:
+        import anthropic
+    except ImportError:
+        yield _sse_event('error', {'message': 'Anthropic SDK not installed. Run: pip install anthropic'})
+        return
+
+    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    if not api_key:
+        yield _sse_event('error', {'message': 'ANTHROPIC_API_KEY not set'})
+        return
+
+    client = anthropic.Anthropic(api_key=api_key)
+
+    # Load session
+    session = db.get_session(session_id)
+    if not session:
+        yield _sse_event('error', {'message': 'Session not found'})
+        return
+
+    # Build outline summary
+    outline_tree = db.get_outline_tree(session_id)
+    outline_summary = _format_outline_summary(outline_tree) if outline_tree else ''
+
+    # Build system prompt
+    system_prompt = build_study_prompt(
+        passage=session['passage_ref'],
+        genre=session['genre'],
+        session_elapsed_seconds=session['total_elapsed_seconds'],
+        outline_summary=outline_summary,
+    )
+
+    # Build messages from FULL conversation history (not phase-scoped)
+    all_messages = db.get_messages(session_id, limit=100)
+    messages = []
+    for m in all_messages:
+        if m['role'] == 'user' and m.get('content'):
+            messages.append({'role': 'user', 'content': m['content']})
+        elif m['role'] == 'assistant' and m.get('content'):
+            messages.append({'role': 'assistant', 'content': m['content']})
+
+    # Add current user message
+    messages.append({'role': 'user', 'content': user_message})
+
+    # Save user message (phase='study' — not phase-scoped)
+    db.save_message(session_id, 'study', 'user', user_message)
+
+    # Session context for tool execution
+    session_context = {
+        'session_id': session_id,
+        'passage_ref': session['passage_ref'],
+        'book': session['book'],
+        'chapter': session['chapter'],
+        'verse_start': session['verse_start'],
+        'verse_end': session['verse_end'],
+        'genre': session['genre'],
+        'phase': session['current_phase'],
+        'db': db,
+    }
+
+    tool_defs = [{'name': t['name'], 'description': t['description'], 'input_schema': t['input_schema']}
+                 for t in TOOL_DEFINITIONS]
+
+    # Streaming loop with tool use
+    full_response_text = ''
+
+    while True:
+        tool_use_blocks = []
+        current_tool = None
+
+        try:
+            with client.messages.stream(
+                model=model,
+                max_tokens=4096,
+                system=system_prompt,
+                messages=messages,
+                tools=tool_defs,
+            ) as stream:
+                for event in stream:
+                    if event.type == 'content_block_start':
+                        if hasattr(event.content_block, 'type') and event.content_block.type == 'tool_use':
+                            current_tool = {
+                                'id': event.content_block.id,
+                                'name': event.content_block.name,
+                                'input_json': ''
+                            }
+                            yield _sse_event('tool_start', {'name': event.content_block.name})
+                    elif event.type == 'content_block_delta':
+                        if hasattr(event.delta, 'text'):
+                            full_response_text += event.delta.text
+                            yield _sse_event('text_delta', {'text': event.delta.text})
+                        elif hasattr(event.delta, 'partial_json'):
+                            if current_tool:
+                                current_tool['input_json'] += event.delta.partial_json
+                    elif event.type == 'content_block_stop':
+                        if current_tool:
+                            try:
+                                tool_input = json.loads(current_tool['input_json'])
+                            except json.JSONDecodeError:
+                                tool_input = {}
+                            result = execute_tool(current_tool['name'], tool_input, session_context)
+                            tool_use_blocks.append((current_tool, result))
+                            yield _sse_event('tool_result', {
+                                'name': current_tool['name'],
+                                'result': result
+                            })
+                            # Track outline saves
+                            if current_tool['name'] == 'save_to_outline' and analytics:
+                                analytics.record_outline_event(session_id, 'add',
+                                                              tool_input.get('node_type', 'note'))
+                            current_tool = None
+
+                response = stream.get_final_message()
+
+        except Exception as e:
+            yield _sse_event('error', {'message': str(e)})
+            break
+
+        if response.stop_reason == 'tool_use':
+            messages.append({'role': 'assistant', 'content': response.content})
+            tool_results = []
+            for tool, result in tool_use_blocks:
+                tool_results.append({
+                    'type': 'tool_result',
+                    'tool_use_id': tool['id'],
+                    'content': json.dumps(result) if isinstance(result, dict) else str(result)
+                })
+            messages.append({'role': 'user', 'content': tool_results})
+        else:
+            break
+
+    # Save assistant response
+    if full_response_text:
+        db.save_message(session_id, 'study', 'assistant', full_response_text)
+        if analytics:
+            analytics.record_message(session_id, 'assistant', len(full_response_text))
+
+    yield _sse_event('done', {})

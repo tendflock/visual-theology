@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ session.passage_ref }} — Study</title>
+    <link rel="stylesheet" href="/static/study.css?v=1">
+</head>
+<body>
+    <div id="study-app">
+        <!-- Top Bar -->
+        <div id="study-topbar">
+            <span class="passage-name">{{ session.passage_ref }}</span>
+            <span class="spacer"></span>
+            <span class="session-clock" id="session-clock">0m</span>
+        </div>
+
+        <!-- Main: Conversation + Outline Sidebar -->
+        <div id="study-main">
+            <!-- Conversation Column -->
+            <div id="conversation-column">
+                <div id="conversation-thread">
+                    {% for msg in messages %}
+                    <div class="conv-message {{ msg.role }}">
+                        <div class="msg-content">{{ msg.content }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div id="input-area">
+                    <textarea id="study-input" placeholder="Ask your study partner..." rows="1"></textarea>
+                    <button id="btn-study-send">Send</button>
+                </div>
+            </div>
+
+            <!-- Outline Sidebar -->
+            <div id="outline-sidebar">
+                <div class="sidebar-header">
+                    <input type="text" class="sidebar-title" id="outline-title"
+                           value="{{ session.passage_ref }}"
+                           placeholder="Sermon title...">
+                </div>
+                <div class="sidebar-body" id="outline-tree-container">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="sidebar-footer">
+                    <input type="text" id="outline-add-input" placeholder="+ add note">
+                    <select id="outline-add-type">
+                        <option value="note">Note</option>
+                        <option value="main_point">Main pt</option>
+                        <option value="sub_point">Sub pt</option>
+                        <option value="cross_ref">Ref</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wellbeing Nudge -->
+        <div id="wellbeing-nudge" class="hidden">
+            <span class="nudge-text"></span>
+            <button id="btn-dismiss-nudge">Got it</button>
+        </div>
+    </div>
+
+    <script src="/static/study.js?v=1"></script>
+    <script>
+        window.studySessionId = {{ session.id }};
+        studyClock.start({{ session.total_elapsed_seconds }});
+    </script>
+</body>
+</html>

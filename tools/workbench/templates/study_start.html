@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermon Study</title>
+    <link rel="stylesheet" href="/static/study.css?v=1">
+</head>
+<body>
+    <div class="study-start">
+        <h1>Sermon Study</h1>
+        <p class="subtitle">What are you preaching?</p>
+
+        {% if error %}
+        <div class="error-msg">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/study/session/new">
+            <input type="text" name="passage" placeholder="Romans 1:18-23" autofocus required>
+            <button type="submit" class="btn">Begin</button>
+        </form>
+
+        {% if sessions %}
+        <div class="recent-sessions">
+            <h3>Continue studying</h3>
+            {% for s in sessions %}
+            <a href="/study/session/{{ s.id }}" class="recent-session-link">
+                <span class="passage">{{ s.passage_ref }}</span>
+                <span class="meta">{{ s.current_phase | replace('_', ' ') | title }}</span>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

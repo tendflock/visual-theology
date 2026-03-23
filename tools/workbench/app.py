@@ -44,6 +44,8 @@ from study import (
 )
 from companion_db import CompanionDB, PHASES_ORDER, PHASE_TIMERS
 from companion_agent import stream_companion_response, PHASE_DESCRIPTIONS
+from companion_agent import build_study_prompt, stream_study_response
+from session_analytics import SessionAnalytics
 from genre_map import get_genre
 from seed_questions import seed_question_bank
 
@@ -76,14 +78,18 @@ def safe_assistant_filter(content):
 # ── Lifecycle ─────────────────────────────────────────────────────────────
 
 companion_db = None
+study_analytics = None
 
 def startup():
     db.init_db()
     init_batch_reader()
     # Initialize companion DB
-    global companion_db
+    global companion_db, study_analytics
     companion_db = CompanionDB(str(TOOLS_DIR / "workbench" / "companion.db"))
     companion_db.init_db()
+    # Initialize analytics DB
+    study_analytics = SessionAnalytics(str(TOOLS_DIR / "workbench" / "companion.db"))
+    study_analytics.init_db()
     # Seed question bank if empty
     if not companion_db.get_questions('prayer'):
         seed_question_bank(companion_db)
@@ -723,10 +729,143 @@ def companion_progress(session_id):
                            completed_phases=completed_phases)
 
 
+# ── Study Routes (Conversation-First UI) ────────────────────────────────
+
+@app.route("/study/")
+def study_index():
+    """Start page — enter a passage or continue a session."""
+    sessions = companion_db.list_sessions(status='active')
+    error = request.args.get('error')
+    return render_template("study_start.html", sessions=sessions, error=error)
+
+
+@app.route("/study/session/new", methods=["POST"])
+def study_new_session():
+    """Create a new study session."""
+    passage = request.form.get("passage", "").strip()
+    if not passage:
+        return redirect(url_for("study_index", error="Please enter a passage"))
+
+    try:
+        ref = parse_reference(passage)
+    except ValueError as e:
+        return redirect(url_for("study_index", error=str(e)))
+
+    genre = get_genre(ref["book"])
+    session_id = companion_db.create_session(
+        passage_ref=passage,
+        book=ref["book"],
+        chapter=ref["chapter"],
+        verse_start=ref["verse_start"],
+        verse_end=ref["verse_end"],
+        genre=genre,
+    )
+    # Record initial phase entry
+    if study_analytics:
+        study_analytics.record_phase_enter(session_id, 'prayer')
+    return redirect(url_for("study_session_view", session_id=session_id))
+
+
+@app.route("/study/session/<int:session_id>")
+def study_session_view(session_id):
+    """Main conversation + outline view."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return redirect(url_for("study_index"))
+
+    # Load all messages (not phase-scoped — full conversation)
+    messages = companion_db.get_messages(session_id, limit=200)
+
+    return render_template("study_session.html",
+                           session=session,
+                           messages=messages)
+
+
+@app.route("/study/session/<int:session_id>/discuss", methods=["POST"])
+def study_discuss(session_id):
+    """Stream a study response via SSE."""
+    data = request.get_json() or {}
+    message = data.get("message", "").strip()
+
+    if not message:
+        return jsonify({"error": "message required"}), 400
+
+    # Record message analytics
+    if study_analytics:
+        study_analytics.record_message(session_id, 'user', len(message))
+
+    return Response(
+        stream_study_response(session_id, message, companion_db, study_analytics),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
+
+@app.route("/study/session/<int:session_id>/outline")
+def study_outline(session_id):
+    """Return outline tree as JSON."""
+    tree = companion_db.get_outline_tree(session_id)
+    return jsonify(tree)
+
+
+@app.route("/study/session/<int:session_id>/outline/add", methods=["POST"])
+def study_outline_add(session_id):
+    """Add a node to the outline."""
+    data = request.get_json() or {}
+    content = data.get("content", "").strip()
+    node_type = data.get("node_type", "note")
+
+    if content:
+        node_id = companion_db.add_outline_node(
+            session_id=session_id,
+            node_type=node_type,
+            content=content,
+        )
+        if study_analytics:
+            study_analytics.record_outline_event(session_id, 'add', node_type)
+        return jsonify({"ok": True, "id": node_id})
+
+    return jsonify({"ok": False}), 400
+
+
+@app.route("/study/session/<int:session_id>/outline/<int:node_id>", methods=["PATCH"])
+def study_outline_update(session_id, node_id):
+    """Update an outline node."""
+    data = request.get_json() or {}
+    companion_db.update_outline_node(
+        node_id=node_id,
+        content=data.get("content"),
+        node_type=data.get("node_type"),
+        rank=data.get("rank"),
+    )
+    return jsonify({"ok": True})
+
+
+@app.route("/study/session/<int:session_id>/outline/<int:node_id>", methods=["DELETE"])
+def study_outline_delete(session_id, node_id):
+    """Delete an outline node."""
+    companion_db.delete_outline_node(node_id)
+    return jsonify({"ok": True})
+
+
+@app.route("/study/session/<int:session_id>/clock", methods=["PATCH"])
+def study_clock_update(session_id):
+    """Update elapsed time from client."""
+    data = request.get_json() or {}
+    elapsed = data.get("elapsed", 0)
+    if elapsed:
+        companion_db.update_timer(session_id, 0, elapsed_delta=elapsed)
+    return jsonify({"ok": True})
+
+
 # ── Main ─────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     startup()
     print("Sermon Research Workbench starting on http://localhost:5111", file=sys.stderr)
     print("  Companion at http://localhost:5111/companion/", file=sys.stderr)
+    print("  Study at http://localhost:5111/study/", file=sys.stderr)
     app.run(host="127.0.0.1", port=5111, debug=False, threaded=True)
