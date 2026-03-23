@@ -1,5 +1,5 @@
 /**
- * study.js — Conversation-first sermon study UI
+ * study.js — Hybrid card + conversation sermon study UI
  * Vanilla JS. No framework. SSE streaming. Outline sidebar. Session clock.
  */
 
@@ -10,7 +10,7 @@
 var studyClock = {
     startTime: null,
     interval: null,
-    elapsed: 0,        // seconds, restored from server on resume
+    elapsed: 0,
     nudge2hShown: false,
     nudge4hShown: false,
 
@@ -73,6 +73,138 @@ function showWellbeingNudge(text) {
 function dismissWellbeingNudge() {
     var el = document.getElementById('wellbeing-nudge');
     if (el) el.classList.add('hidden');
+}
+
+/* ── Card Functions ─────────────────────────────────────────────────────── */
+
+function switchTab(btn) {
+    var tabIndex = btn.getAttribute('data-tab');
+    var container = btn.closest('.study-bible-container');
+    if (!container) return;
+
+    // Toggle tab active state
+    var allTabs = container.querySelectorAll('.sb-tab');
+    for (var i = 0; i < allTabs.length; i++) {
+        allTabs[i].classList.remove('active');
+    }
+    btn.classList.add('active');
+
+    // Toggle panel visibility
+    var allPanels = container.querySelectorAll('.sb-panel');
+    for (var j = 0; j < allPanels.length; j++) {
+        if (allPanels[j].getAttribute('data-tab') === tabIndex) {
+            allPanels[j].classList.add('active');
+        } else {
+            allPanels[j].classList.remove('active');
+        }
+    }
+}
+
+function copyCardResponse() {
+    var textarea = document.getElementById('card-response');
+    var hidden = document.getElementById('hidden-response');
+    if (textarea && hidden) {
+        hidden.value = textarea.value;
+    }
+}
+
+/* ── Star Annotations ───────────────────────────────────────────────────── */
+
+var starPopup = null;
+
+function setupStarAnnotations() {
+    var sbTextElements = document.querySelectorAll('.sb-text');
+    if (sbTextElements.length === 0) return;
+
+    document.addEventListener('mouseup', function(e) {
+        var selection = window.getSelection();
+        var text = selection ? selection.toString().trim() : '';
+
+        // Remove existing popup
+        if (starPopup) {
+            starPopup.remove();
+            starPopup = null;
+        }
+
+        if (!text || text.length < 3) return;
+
+        // Check if selection is inside a .sb-text element
+        var anchor = selection.anchorNode;
+        var insideSbText = false;
+        var sourceAbbrev = '';
+        var node = anchor;
+        while (node) {
+            if (node.nodeType === 1 && node.classList && node.classList.contains('sb-text')) {
+                insideSbText = true;
+                sourceAbbrev = node.getAttribute('data-source') || '';
+                break;
+            }
+            node = node.parentNode;
+        }
+        if (!insideSbText) return;
+
+        // Show star popup near selection
+        var range = selection.getRangeAt(0);
+        var rect = range.getBoundingClientRect();
+
+        starPopup = document.createElement('div');
+        starPopup.id = 'star-popup';
+        starPopup.textContent = '\u2605';
+        starPopup.title = 'Star this selection';
+        starPopup.style.left = (rect.left + rect.width / 2 - 16) + 'px';
+        starPopup.style.top = (rect.top - 36) + 'px';
+
+        var selectedText = text;
+        var source = sourceAbbrev;
+
+        starPopup.addEventListener('mousedown', function(ev) {
+            ev.preventDefault();
+            ev.stopPropagation();
+
+            var note = prompt('Add a note (optional):') || '';
+
+            fetch('/study/session/' + window.studySessionId + '/annotate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    source: source,
+                    starred_text: selectedText,
+                    note: note
+                })
+            }).then(function() {
+                window.location.reload();
+            }).catch(function() {});
+
+            if (starPopup) {
+                starPopup.remove();
+                starPopup = null;
+            }
+        });
+
+        document.body.appendChild(starPopup);
+    });
+
+    // Remove popup on click elsewhere
+    document.addEventListener('mousedown', function(e) {
+        if (starPopup && e.target !== starPopup) {
+            starPopup.remove();
+            starPopup = null;
+        }
+    });
+}
+
+/* ── Notepad Auto-save ──────────────────────────────────────────────────── */
+
+var notepadTimer = null;
+function debouncedSaveNotepad(content) {
+    clearTimeout(notepadTimer);
+    notepadTimer = setTimeout(function() {
+        fetch('/study/session/' + window.studySessionId + '/notepad', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ phase: 'study_bibles', content: content })
+        }).catch(function() {});
+    }, 1000);
 }
 
 /* ── SSE Streaming ──────────────────────────────────────────────────────── */
@@ -139,7 +271,6 @@ async function sendStudyMessage(sessionId, message) {
         if (inputEl) { inputEl.disabled = false; inputEl.focus(); }
         if (sendBtn) sendBtn.disabled = false;
         scrollConversation();
-        // Sync clock after each exchange
         studyClock.syncToServer();
     }
 }
@@ -159,14 +290,12 @@ function handleSSEEvent(data, assistantEl) {
         scrollConversation();
 
     } else if (data.type === 'outline_update') {
-        // AI saved something to outline — refresh sidebar
         refreshOutline();
 
     } else if (data.type === 'error') {
         var errContent = assistantEl.querySelector('.msg-content');
         if (errContent) errContent.textContent += '\n[Error: ' + (data.message || 'unknown') + ']';
     }
-    // 'done' — handled by finally block
 }
 
 /* ── Message Rendering ──────────────────────────────────────────────────── */
@@ -292,7 +421,6 @@ function renderOutlineTree(tree) {
     var body = document.getElementById('outline-tree-container');
     if (!body) return;
 
-    // Clear existing
     while (body.firstChild) body.removeChild(body.firstChild);
 
     if (!tree || tree.length === 0) {
@@ -433,35 +561,44 @@ function addOutlineNote(text, nodeType) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Study input — Enter to send, Shift+Enter for newline
-    var inputEl = document.getElementById('study-input');
-    if (inputEl) {
-        inputEl.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                var msg = inputEl.value.trim();
+    // Conversation mode: wire input and send button
+    if (window.studyMode === 'conversation') {
+        var inputEl = document.getElementById('study-input');
+        if (inputEl) {
+            inputEl.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    var msg = inputEl.value.trim();
+                    if (msg && window.studySessionId) {
+                        sendStudyMessage(window.studySessionId, msg);
+                    }
+                }
+            });
+
+            // Auto-resize
+            inputEl.addEventListener('input', function() {
+                inputEl.style.height = 'auto';
+                inputEl.style.height = Math.min(inputEl.scrollHeight, 160) + 'px';
+            });
+        }
+
+        var sendBtn = document.getElementById('btn-study-send');
+        if (sendBtn) {
+            sendBtn.addEventListener('click', function() {
+                var msg = inputEl ? inputEl.value.trim() : '';
                 if (msg && window.studySessionId) {
                     sendStudyMessage(window.studySessionId, msg);
                 }
-            }
-        });
+            });
+        }
 
-        // Auto-resize
-        inputEl.addEventListener('input', function() {
-            inputEl.style.height = 'auto';
-            inputEl.style.height = Math.min(inputEl.scrollHeight, 160) + 'px';
-        });
+        // Scroll conversation to bottom
+        scrollConversation();
     }
 
-    // Send button
-    var sendBtn = document.getElementById('btn-study-send');
-    if (sendBtn) {
-        sendBtn.addEventListener('click', function() {
-            var msg = inputEl ? inputEl.value.trim() : '';
-            if (msg && window.studySessionId) {
-                sendStudyMessage(window.studySessionId, msg);
-            }
-        });
+    // Card mode: set up star annotations
+    if (window.studyMode === 'card') {
+        setupStarAnnotations();
     }
 
     // Dismiss wellbeing nudge
@@ -490,9 +627,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load outline on page load
     refreshOutline();
 
-    // Scroll conversation to bottom
-    scrollConversation();
-
     // Sync clock every 60 seconds
     setInterval(function() { studyClock.syncToServer(); }, 60000);
 });
@@ -507,5 +641,8 @@ Object.assign(window, {
     refreshOutline: refreshOutline,
     showWellbeingNudge: showWellbeingNudge,
     dismissWellbeingNudge: dismissWellbeingNudge,
-    addOutlineNote: addOutlineNote
+    addOutlineNote: addOutlineNote,
+    switchTab: switchTab,
+    copyCardResponse: copyCardResponse,
+    debouncedSaveNotepad: debouncedSaveNotepad
 });

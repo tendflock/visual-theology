@@ -1,4 +1,4 @@
-/* ── Study CSS — Conversation-first dark theme ─────────────────────────── */
+/* ── Study CSS — Hybrid card + conversation dark theme ─────────────────── */
 /* No animations. No transitions. No smooth scroll. ADHD-friendly.         */
 
 /* ── Reset ──────────────────────────────────────────────────────────────── */
@@ -18,23 +18,25 @@
     --bg-input:     #0d1b33;
     --bg-user-msg:  #1e3a5f;
 
-    --text:         #e8e8e8;
+    --text:         #e0e0e0;
     --text-muted:   #a0a0b0;
     --text-dim:     #606070;
 
-    --green:        #7fdb98;
-    --blue:         #5b8def;
-    --yellow:       #f0c674;
+    --blue:         #5b8dd9;
+    --green:        #4a7c59;
+    --gold:         #d4a55a;
     --red:          #e06060;
+    --yellow:       #f0c674;
 
     --border:       rgba(255, 255, 255, 0.08);
-    --border-focus: rgba(91, 141, 239, 0.6);
+    --border-focus: rgba(91, 141, 217, 0.6);
 
     --font:         -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     --font-mono:    "SF Mono", "Fira Code", "Consolas", monospace;
 
     --topbar-h:     48px;
     --sidebar-w:    300px;
+    --card-max-w:   800px;
     --conv-max-w:   800px;
     --radius:       6px;
     --radius-lg:    12px;
@@ -130,7 +132,7 @@ body {
 
 .study-start input[type="text"]:focus {
     border-color: var(--border-focus);
-    box-shadow: 0 0 0 3px rgba(91, 141, 239, 0.1);
+    box-shadow: 0 0 0 3px rgba(91, 141, 217, 0.1);
 }
 
 .study-start .btn {
@@ -146,7 +148,7 @@ body {
 }
 
 .study-start .btn:hover {
-    background: #4a7de0;
+    background: #4a7cc8;
 }
 
 .recent-sessions {
@@ -214,17 +216,50 @@ body {
     z-index: 100;
 }
 
-#study-topbar .passage-name {
+.topbar-passage {
     font-size: 15px;
     font-weight: 600;
     flex-shrink: 0;
 }
 
-#study-topbar .spacer {
+.topbar-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     flex: 1;
+    justify-content: center;
 }
 
-#study-topbar .session-clock {
+.phase-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid var(--text-dim);
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.phase-dot.done {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.phase-dot.current {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.phase-divider {
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: var(--text-dim);
+    margin: 0 4px;
+    flex-shrink: 0;
+}
+
+#session-clock {
     font-family: var(--font-mono);
     font-size: 14px;
     color: var(--text-muted);
@@ -232,28 +267,330 @@ body {
     flex-shrink: 0;
 }
 
-#study-topbar .menu-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-    padding: 4px 10px;
-    border-radius: var(--radius);
-    font-size: 13px;
-    cursor: pointer;
-}
-
-#study-topbar .menu-btn:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: var(--text);
-}
-
-/* ── Main Area: Conversation + Sidebar ──────────────────────────────────── */
+/* ── Main Area ──────────────────────────────────────────────────────────── */
 
 #study-main {
     margin-top: var(--topbar-h);
     flex: 1;
     display: flex;
     overflow: hidden;
+}
+
+/* ── Card Area ──────────────────────────────────────────────────────────── */
+
+#card-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#card-area::-webkit-scrollbar { width: 5px; }
+#card-area::-webkit-scrollbar-track { background: transparent; }
+#card-area::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 3px; }
+
+.study-card {
+    max-width: var(--card-max-w);
+    width: 100%;
+}
+
+.card-phase-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.card-prompt {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-guidance {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+/* ── Resource Text (original language) ──────────────────────────────────── */
+
+.card-resource {
+    background: var(--bg-card);
+    border-left: 3px solid var(--blue);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.card-resource-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.card-resource-text {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.card-resource-text.rtl {
+    direction: rtl;
+    text-align: right;
+    font-size: 22px;
+    line-height: 2.2;
+}
+
+/* ── Study Bible Tabs ───────────────────────────────────────────────────── */
+
+.study-bible-container {
+    margin-bottom: 24px;
+}
+
+.sb-tabs {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.sb-tabs::-webkit-scrollbar { height: 3px; }
+.sb-tabs::-webkit-scrollbar-track { background: transparent; }
+.sb-tabs::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 2px; }
+
+.sb-tab {
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-family: var(--font);
+}
+
+.sb-tab:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    color: var(--text);
+}
+
+.sb-tab.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+}
+
+.sb-panels-and-notes {
+    display: flex;
+    gap: 16px;
+}
+
+.sb-panels {
+    flex: 2;
+    min-width: 0;
+}
+
+.sb-panel {
+    display: none;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+}
+
+.sb-panel.active {
+    display: block;
+}
+
+.sb-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+    cursor: text;
+    user-select: text;
+}
+
+/* ── Notepad & Star Annotations ─────────────────────────────────────────── */
+
+.sb-notepad-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.sb-notepad-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.sb-notepad {
+    width: 100%;
+    min-height: 120px;
+    background: var(--bg-input);
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px 14px;
+    resize: vertical;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.sb-notepad::placeholder {
+    color: var(--text-dim);
+}
+
+.sb-notepad:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212, 165, 90, 0.15);
+}
+
+.sb-star-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.sb-star-item:last-child {
+    border-bottom: none;
+}
+
+.star-icon {
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+.star-source {
+    color: var(--text-muted);
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.star-text {
+    color: var(--text);
+    font-style: italic;
+}
+
+.star-note {
+    color: var(--gold);
+    font-size: 12px;
+}
+
+/* ── Star Selection Popup ───────────────────────────────────────────────── */
+
+#star-popup {
+    position: fixed;
+    background: var(--bg-surface);
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 4px 8px;
+    cursor: pointer;
+    z-index: 200;
+    font-size: 18px;
+    color: var(--gold);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    user-select: none;
+}
+
+#star-popup:hover {
+    background: rgba(212, 165, 90, 0.15);
+}
+
+/* ── Card Textarea ──────────────────────────────────────────────────────── */
+
+.card-textarea {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 14px 16px;
+    resize: vertical;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.card-textarea::placeholder {
+    color: var(--text-dim);
+}
+
+.card-textarea:focus {
+    border-color: var(--border-focus);
+    box-shadow: 0 0 0 3px rgba(91, 141, 217, 0.1);
+}
+
+/* ── Card Navigation ────────────────────────────────────────────────────── */
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.btn {
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: var(--font);
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #4a7cc8;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text);
 }
 
 /* ── Conversation Column ────────────────────────────────────────────────── */
@@ -280,7 +617,6 @@ body {
 #conversation-thread::-webkit-scrollbar-track { background: transparent; }
 #conversation-thread::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 3px; }
 
-/* Center messages within a max-width container */
 .conv-message {
     max-width: var(--conv-max-w);
     width: 100%;
@@ -315,7 +651,7 @@ body {
     word-break: break-word;
 }
 
-/* ── Tool indicators ────────────────────────────────────────────────────── */
+/* ── Tool Indicators ────────────────────────────────────────────────────── */
 
 .conv-tool-start {
     max-width: var(--conv-max-w);
@@ -329,7 +665,6 @@ body {
 
 /* ── Rich Content Blocks ────────────────────────────────────────────────── */
 
-/* Scripture block */
 .scripture-block {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -378,7 +713,6 @@ body {
     border-bottom-color: var(--blue);
 }
 
-/* Library quote block */
 .library-block {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -420,7 +754,6 @@ body {
     text-decoration: underline;
 }
 
-/* Cross-reference cluster */
 .xref-block {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -461,13 +794,12 @@ body {
     display: inline-block;
 }
 
-/* Insight pill */
 .insight-pill {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: rgba(127, 219, 152, 0.1);
-    border: 1px solid rgba(127, 219, 152, 0.25);
+    background: rgba(74, 124, 89, 0.15);
+    border: 1px solid rgba(74, 124, 89, 0.3);
     border-radius: var(--radius-pill);
     padding: 5px 14px;
     font-size: 13px;
@@ -573,7 +905,7 @@ body {
 
 #study-input:focus {
     border-color: var(--border-focus);
-    box-shadow: 0 0 0 3px rgba(91, 141, 239, 0.1);
+    box-shadow: 0 0 0 3px rgba(91, 141, 217, 0.1);
 }
 
 #btn-study-send {
@@ -586,10 +918,11 @@ body {
     font-weight: 500;
     cursor: pointer;
     flex-shrink: 0;
+    font-family: var(--font);
 }
 
 #btn-study-send:hover:not(:disabled) {
-    background: #4a7de0;
+    background: #4a7cc8;
 }
 
 #btn-study-send:disabled {
@@ -695,7 +1028,6 @@ body {
     white-space: nowrap;
 }
 
-/* Show actions on hover */
 .outline-node-actions {
     display: none;
     gap: 3px;
@@ -725,7 +1057,7 @@ body {
     color: var(--red);
 }
 
-/* Sidebar footer — add note */
+/* Sidebar footer */
 #outline-sidebar .sidebar-footer {
     padding: 10px 16px;
     border-top: 1px solid var(--border);
@@ -742,6 +1074,7 @@ body {
     font-size: 12px;
     padding: 6px 10px;
     outline: none;
+    font-family: var(--font);
 }
 
 #outline-sidebar .sidebar-footer input::placeholder {
@@ -826,7 +1159,7 @@ body {
     margin-top: 4px;
 }
 
-/* ── Scrollbar for input ────────────────────────────────────────────────── */
+/* ── Scrollbars ─────────────────────────────────────────────────────────── */
 
 #study-input::-webkit-scrollbar { width: 4px; }
 #study-input::-webkit-scrollbar-track { background: transparent; }
@@ -842,8 +1175,9 @@ body {
         border-color: #ccc !important;
     }
     html, body { height: auto; overflow: auto; }
-    #study-topbar, #outline-sidebar, #input-area, #wellbeing-nudge, #word-popup { display: none !important; }
+    #study-topbar, #outline-sidebar, #input-area, #wellbeing-nudge, #word-popup, #star-popup { display: none !important; }
     #study-main { display: block; }
     #conversation-column { overflow: visible; }
     #conversation-thread { overflow: visible; padding: 0; }
+    #card-area { overflow: visible; padding: 0; }
 }

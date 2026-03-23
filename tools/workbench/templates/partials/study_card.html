@@ -1,0 +1,63 @@
+<div class="study-card">
+    <div class="card-phase-label">{{ card.label }}</div>
+    <h3 class="card-prompt">{{ card.prompt }}</h3>
+    <p class="card-guidance">{{ card.guidance }}</p>
+
+    {% if resource_text %}
+    <div class="card-resource">
+        <div class="card-resource-label">{% if session.book >= 40 %}THGNT{% else %}BHS{% endif %}</div>
+        <div class="card-resource-text {% if session.book < 40 %}rtl{% endif %}">{{ resource_text }}</div>
+    </div>
+    {% endif %}
+
+    {% if study_bible_notes %}
+    <div class="study-bible-container">
+        <div class="sb-tabs">
+            {% for note in study_bible_notes %}
+            <button class="sb-tab {% if loop.first %}active{% endif %}"
+                    data-tab="{{ loop.index0 }}" onclick="switchTab(this)">{{ note.abbrev }}</button>
+            {% endfor %}
+        </div>
+        <div class="sb-panels-and-notes">
+            <div class="sb-panels">
+                {% for note in study_bible_notes %}
+                <div class="sb-panel {% if loop.first %}active{% endif %}" data-tab="{{ loop.index0 }}">
+                    <div class="sb-text" data-source="{{ note.abbrev }}">{{ note.text }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="sb-notepad-area">
+                <div class="sb-notepad-label">My Notes</div>
+                <textarea class="sb-notepad" placeholder="Capture your thinking..."
+                          oninput="debouncedSaveNotepad(this.value)">{{ notepad }}</textarea>
+                {% for a in annotations %}
+                <div class="sb-star-item">
+                    <span class="star-icon">&#9733;</span>
+                    <span class="star-source">{{ a.source }}:</span>
+                    <span class="star-text">"{{ a.starred_text }}"</span>
+                    {% if a.note %}<span class="star-note">&rarr; {{ a.note }}</span>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if card.has_textarea %}
+    <textarea class="card-textarea" id="card-response" placeholder="Your response..." rows="5">{{ prefilled }}</textarea>
+    {% endif %}
+
+    <div class="card-actions">
+        {% if phase_index > 0 %}
+        <form method="POST" action="/study/session/{{ session.id }}/card/back">
+            <button type="submit" class="btn btn-secondary">&larr; Back</button>
+        </form>
+        {% else %}<div></div>{% endif %}
+        <form method="POST" action="/study/session/{{ session.id }}/card/next" id="card-next-form">
+            <input type="hidden" name="response" id="hidden-response">
+            <button type="submit" class="btn btn-primary" onclick="copyCardResponse()">
+                {% if phase_index == total_phases - 1 %}Begin Conversation &rarr;{% else %}Next &rarr;{% endif %}
+            </button>
+        </form>
+    </div>
+</div>

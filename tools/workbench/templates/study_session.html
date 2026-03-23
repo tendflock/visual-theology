@@ -4,71 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ session.passage_ref }} — Study</title>
-    <link rel="stylesheet" href="/static/study.css?v=2">
+    <link rel="stylesheet" href="/static/study.css?v=3">
 </head>
 <body data-mode="{{ mode }}">
     <div id="study-app">
-        <!-- Top Bar -->
+
         <div id="study-topbar">
-            <span class="passage-name">{{ session.passage_ref }}</span>
-            <span class="spacer"></span>
-            <span class="session-clock" id="session-clock">0m</span>
+            <span class="topbar-passage">{{ session.passage_ref }}</span>
+            <div class="topbar-dots">
+                {% for i in range(total_phases) %}
+                <span class="phase-dot {% if i < phase_index %}done{% elif i == phase_index and mode == 'card' %}current{% endif %}"></span>
+                {% endfor %}
+                <span class="phase-divider"></span>
+                <span class="phase-dot {% if mode == 'conversation' %}current{% else %}future{% endif %}"></span>
+            </div>
+            <span id="session-clock">0m</span>
         </div>
 
-        <!-- Main Content -->
         <div id="study-main">
 
             {% if mode == "card" %}
-            <!-- Card Mode (phases 1-5) -->
-            <div id="study-card" class="study-card phase-{{ card.key }}">
-                <div class="card-header">
-                    <span class="card-phase">{{ phase_index + 1 }} / {{ total_phases }}</span>
-                    <h2 class="card-label">{{ card.label }}</h2>
-                </div>
-                <div class="card-body">
-                    <p class="card-prompt">{{ card.prompt }}</p>
-                    <p class="card-guidance">{{ card.guidance }}</p>
-
-                    {% if resource_text %}
-                    <div class="resource-text">{{ resource_text }}</div>
-                    {% endif %}
-
-                    {% if study_bible_notes %}
-                    <div class="study-bible-notes">
-                        {% for note in study_bible_notes %}
-                        <div class="sb-note">{{ note }}</div>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if card.has_textarea %}
-                    <form method="POST" action="/study/session/{{ session.id }}/card/next">
-                        <textarea name="response" class="card-textarea" rows="6">{{ prefilled }}</textarea>
-                        <div class="card-nav">
-                            {% if phase_index > 0 %}
-                            <button type="button" class="btn-card-back"
-                                    onclick="fetch('/study/session/{{ session.id }}/card/back', {method:'POST'}).then(()=>location.reload())">Back</button>
-                            {% endif %}
-                            <button type="submit" class="btn-card-next">Continue</button>
-                        </div>
-                    </form>
-                    {% else %}
-                    <div class="card-nav">
-                        {% if phase_index > 0 %}
-                        <form method="POST" action="/study/session/{{ session.id }}/card/back" style="display:inline">
-                            <button type="submit" class="btn-card-back">Back</button>
-                        </form>
-                        {% endif %}
-                        <form method="POST" action="/study/session/{{ session.id }}/card/next" style="display:inline">
-                            <button type="submit" class="btn-card-next">Continue</button>
-                        </form>
-                    </div>
-                    {% endif %}
-                </div>
+            <div id="card-area">
+                {% include "partials/study_card.html" %}
             </div>
 
             {% else %}
-            <!-- Conversation Mode (phase 6+) -->
             <div id="conversation-column">
                 <div id="conversation-thread">
                     {% for msg in messages %}
@@ -85,7 +45,6 @@
             </div>
             {% endif %}
 
-            <!-- Outline Sidebar -->
             <div id="outline-sidebar">
                 <div class="sidebar-header">
                     <input type="text" class="sidebar-title" id="outline-title"
@@ -93,7 +52,6 @@
                            placeholder="Sermon title...">
                 </div>
                 <div class="sidebar-body" id="outline-tree-container">
-                    <!-- Populated by JS -->
                 </div>
                 <div class="sidebar-footer">
                     <input type="text" id="outline-add-input" placeholder="+ add note">
@@ -107,14 +65,13 @@
             </div>
         </div>
 
-        <!-- Wellbeing Nudge -->
         <div id="wellbeing-nudge" class="hidden">
             <span class="nudge-text"></span>
             <button id="btn-dismiss-nudge">Got it</button>
         </div>
     </div>
 
-    <script src="/static/study.js?v=2"></script>
+    <script src="/static/study.js?v=3"></script>
     <script>
         window.studySessionId = {{ session.id }};
         window.studyMode = "{{ mode }}";
