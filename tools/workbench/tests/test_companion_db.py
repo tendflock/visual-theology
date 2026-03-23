@@ -76,3 +76,28 @@ def test_delete_outline_node_cascades(db):
     db.delete_outline_node(root)
     tree = db.get_outline_tree(sid)
     assert len(tree) == 0
+
+def test_save_and_get_card_annotations(tmp_path):
+    """Card annotations (stars + notepad) should round-trip."""
+    db = CompanionDB(str(tmp_path / "test.db"))
+    db.init_db()
+    sid = db.create_session("Romans 1:1-7", 66, 1, 1, 7, "epistle")
+
+    # Save a star annotation
+    aid = db.save_card_annotation(sid, phase="study_bibles", source="ESV SB",
+                                   starred_text="δοῦλος carries OT connotations",
+                                   note="Moses parallel for intro")
+    assert aid is not None
+
+    # Save notepad content
+    db.save_card_notepad(sid, phase="study_bibles",
+                         content="Key theme: covenant service language")
+
+    # Retrieve
+    annotations = db.get_card_annotations(sid, phase="study_bibles")
+    assert len(annotations) == 1
+    assert annotations[0]["starred_text"] == "δοῦλος carries OT connotations"
+    assert annotations[0]["note"] == "Moses parallel for intro"
+
+    notepad = db.get_card_notepad(sid, phase="study_bibles")
+    assert notepad == "Key theme: covenant service language"

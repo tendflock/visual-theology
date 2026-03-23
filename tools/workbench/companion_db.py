@@ -93,11 +93,30 @@ class CompanionDB:
                 resource_type TEXT DEFAULT 'none',
                 rank INTEGER NOT NULL DEFAULT 0
             );
+            CREATE TABLE IF NOT EXISTS card_annotations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id INTEGER NOT NULL REFERENCES sessions(id),
+                phase TEXT NOT NULL,
+                source TEXT,
+                starred_text TEXT,
+                note TEXT,
+                created_at TEXT DEFAULT (datetime('now'))
+            );
+            CREATE TABLE IF NOT EXISTS card_notepads (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id INTEGER NOT NULL REFERENCES sessions(id),
+                phase TEXT NOT NULL,
+                content TEXT NOT NULL DEFAULT '',
+                updated_at TEXT DEFAULT (datetime('now')),
+                UNIQUE(session_id, phase)
+            );
             CREATE INDEX IF NOT EXISTS idx_card_responses_session ON card_responses(session_id, phase);
             CREATE INDEX IF NOT EXISTS idx_conversation_session ON conversation_messages(session_id, phase);
             CREATE INDEX IF NOT EXISTS idx_outline_session ON outline_nodes(session_id);
             CREATE INDEX IF NOT EXISTS idx_outline_parent ON outline_nodes(parent_id);
             CREATE INDEX IF NOT EXISTS idx_questions_phase ON question_bank(phase, priority);
+            CREATE INDEX IF NOT EXISTS idx_card_annotations_session ON card_annotations(session_id, phase);
+            CREATE INDEX IF NOT EXISTS idx_card_notepads_session ON card_notepads(session_id, phase);
         """)
         conn.commit()
         conn.close()
@@ -314,3 +333,42 @@ class CompanionDB:
                      (self._now(), session_id))
         conn.commit()
         conn.close()
+
+    def save_card_annotation(self, session_id, phase, source, starred_text, note=""):
+        conn = self._conn()
+        cur = conn.execute(
+            "INSERT INTO card_annotations (session_id, phase, source, starred_text, note) VALUES (?, ?, ?, ?, ?)",
+            (session_id, phase, source, starred_text, note))
+        conn.commit()
+        aid = cur.lastrowid
+        conn.close()
+        return aid
+
+    def get_card_annotations(self, session_id, phase=None):
+        conn = self._conn()
+        if phase:
+            rows = conn.execute(
+                "SELECT id, source, starred_text, note, created_at FROM card_annotations WHERE session_id = ? AND phase = ? ORDER BY created_at",
+                (session_id, phase)).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT id, source, starred_text, note, created_at FROM card_annotations WHERE session_id = ? ORDER BY created_at",
+                (session_id,)).fetchall()
+        conn.close()
+        return [{"id": r[0], "source": r[1], "starred_text": r[2], "note": r[3], "created_at": r[4]} for r in rows]
+
+    def save_card_notepad(self, session_id, phase, content):
+        conn = self._conn()
+        conn.execute(
+            "INSERT INTO card_notepads (session_id, phase, content) VALUES (?, ?, ?) ON CONFLICT(session_id, phase) DO UPDATE SET content = ?, updated_at = datetime('now')",
+            (session_id, phase, content, content))
+        conn.commit()
+        conn.close()
+
+    def get_card_notepad(self, session_id, phase):
+        conn = self._conn()
+        row = conn.execute(
+            "SELECT content FROM card_notepads WHERE session_id = ? AND phase = ?",
+            (session_id, phase)).fetchone()
+        conn.close()
+        return row[0] if row else ""
