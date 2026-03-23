@@ -11,6 +11,7 @@ var studyClock = {
     startTime: null,
     interval: null,
     elapsed: 0,
+    paused: false,
     nudge2hShown: false,
     nudge4hShown: false,
 
@@ -20,17 +21,33 @@ var studyClock = {
         if (this.interval) return;
         var self = this;
         this.interval = setInterval(function() {
-            self.elapsed = Math.floor((Date.now() - self.startTime) / 1000);
+            if (!self.paused) {
+                self.elapsed = Math.floor((Date.now() - self.startTime) / 1000);
+                self.checkWellbeing();
+            }
             self.updateDisplay();
-            self.checkWellbeing();
         }, 1000);
+        this.updateDisplay();
+    },
+
+    toggle: function() {
+        if (this.paused) {
+            // Resume — adjust startTime so elapsed stays correct
+            this.startTime = Date.now() - (this.elapsed * 1000);
+            this.paused = false;
+        } else {
+            this.paused = true;
+        }
         this.updateDisplay();
     },
 
     updateDisplay: function() {
         var el = document.getElementById('session-clock');
         if (!el) return;
-        el.textContent = this.formatDuration(this.elapsed);
+        var text = this.formatDuration(this.elapsed);
+        if (this.paused) text += ' (paused)';
+        el.textContent = text;
+        el.classList.toggle('paused', this.paused);
     },
 
     formatDuration: function(totalSeconds) {
