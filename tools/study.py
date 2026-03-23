@@ -368,6 +368,45 @@ def find_commentaries_for_ref(ref, limit=10):
     return results[:limit]
 
 
+# ── Study Bibles ──────────────────────────────────────────────────────────
+
+STUDY_BIBLES = [
+    {"resource_id": "LLS:ESVSB", "abbrev": "ESV SB", "title": "ESV Study Bible", "file": "ESVSB.logos4"},
+    {"resource_id": "LLS:CSBANCIENTFAITHSB", "abbrev": "Ancient Faith", "title": "Ancient Faith Study Bible: Notes", "file": "CSBANCIENTFAITHSB.logos4"},
+    {"resource_id": "LLS:ESVREFSTBBL", "abbrev": "Reformation SB", "title": "The Reformation Study Bible", "file": "ESVREFSTBBL.logos4"},
+    {"resource_id": "LLS:FSB", "abbrev": "FSB", "title": "Faithlife Study Bible", "file": "FSB.logos4"},
+    {"resource_id": "LLS:GENEVABBL1560NOTE", "abbrev": "Geneva Notes", "title": "Geneva Bible: Notes", "file": "GENEVABBL1560NOTE.logos4"},
+    {"resource_id": "LLS:NVCLTRLBCBBLNTS", "abbrev": "NIV Cultural BG", "title": "NIV Cultural Backgrounds Study Bible", "file": "NVCLTRLBCBBLNTS.logos4"},
+    {"resource_id": "LLS:NIVZNDRVNSTBBL", "abbrev": "NIVBT SB", "title": "NIV Biblical Theology Study Bible", "file": "NIVZNDRVNSTBBL.logos4"},
+]
+
+
+def find_study_bible_notes(ref, max_chars=5000):
+    """Look up notes for a passage across all 7 study bibles.
+
+    Returns list of dicts: [{"title", "abbrev", "text"}, ...]
+    Only includes study bibles that returned content.
+    """
+    results = []
+    for sb in STUDY_BIBLES:
+        fpath = os.path.join(RESOURCES_DIR, sb["file"])
+        if not os.path.isfile(fpath):
+            continue
+        try:
+            text = find_commentary_section(fpath, ref)
+            if text:
+                if len(text) > max_chars:
+                    text = text[:max_chars] + "\n\n[... truncated ...]"
+                results.append({
+                    "title": sb["title"],
+                    "abbrev": sb["abbrev"],
+                    "text": text,
+                })
+        except Exception:
+            continue
+    return results
+
+
 def find_lexicons():
     """Find available lexicon resources."""
     conn = sqlite3.connect(CATALOG_DB)
