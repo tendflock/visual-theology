@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ session.passage_ref }} — Study</title>
-    <link rel="stylesheet" href="/static/study.css?v=1">
+    <link rel="stylesheet" href="/static/study.css?v=2">
 </head>
-<body>
+<body data-mode="{{ mode }}">
     <div id="study-app">
         <!-- Top Bar -->
         <div id="study-topbar">
@@ -15,9 +15,60 @@
             <span class="session-clock" id="session-clock">0m</span>
         </div>
 
-        <!-- Main: Conversation + Outline Sidebar -->
+        <!-- Main Content -->
         <div id="study-main">
-            <!-- Conversation Column -->
+
+            {% if mode == "card" %}
+            <!-- Card Mode (phases 1-5) -->
+            <div id="study-card" class="study-card phase-{{ card.key }}">
+                <div class="card-header">
+                    <span class="card-phase">{{ phase_index + 1 }} / {{ total_phases }}</span>
+                    <h2 class="card-label">{{ card.label }}</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-prompt">{{ card.prompt }}</p>
+                    <p class="card-guidance">{{ card.guidance }}</p>
+
+                    {% if resource_text %}
+                    <div class="resource-text">{{ resource_text }}</div>
+                    {% endif %}
+
+                    {% if study_bible_notes %}
+                    <div class="study-bible-notes">
+                        {% for note in study_bible_notes %}
+                        <div class="sb-note">{{ note }}</div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if card.has_textarea %}
+                    <form method="POST" action="/study/session/{{ session.id }}/card/next">
+                        <textarea name="response" class="card-textarea" rows="6">{{ prefilled }}</textarea>
+                        <div class="card-nav">
+                            {% if phase_index > 0 %}
+                            <button type="button" class="btn-card-back"
+                                    onclick="fetch('/study/session/{{ session.id }}/card/back', {method:'POST'}).then(()=>location.reload())">Back</button>
+                            {% endif %}
+                            <button type="submit" class="btn-card-next">Continue</button>
+                        </div>
+                    </form>
+                    {% else %}
+                    <div class="card-nav">
+                        {% if phase_index > 0 %}
+                        <form method="POST" action="/study/session/{{ session.id }}/card/back" style="display:inline">
+                            <button type="submit" class="btn-card-back">Back</button>
+                        </form>
+                        {% endif %}
+                        <form method="POST" action="/study/session/{{ session.id }}/card/next" style="display:inline">
+                            <button type="submit" class="btn-card-next">Continue</button>
+                        </form>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% else %}
+            <!-- Conversation Mode (phase 6+) -->
             <div id="conversation-column">
                 <div id="conversation-thread">
                     {% for msg in messages %}
@@ -32,6 +83,7 @@
                     <button id="btn-study-send">Send</button>
                 </div>
             </div>
+            {% endif %}
 
             <!-- Outline Sidebar -->
             <div id="outline-sidebar">
@@ -62,10 +114,13 @@
         </div>
     </div>
 
-    <script src="/static/study.js?v=1"></script>
+    <script src="/static/study.js?v=2"></script>
     <script>
         window.studySessionId = {{ session.id }};
-        studyClock.start({{ session.total_elapsed_seconds }});
+        window.studyMode = "{{ mode }}";
+        if (typeof studyClock !== 'undefined') {
+            studyClock.start({{ session.total_elapsed_seconds }});
+        }
     </script>
 </body>
 </html>

@@ -211,6 +211,70 @@ def test_study_clock_update(client):
 
 # ── Companion routes still work ──────────────────────────────────────────
 
+# ── Card Navigation ─────────────────────────────────────────────────────
+
+def test_study_session_shows_card_phase(client):
+    """GET /study/session/<id> should show card UI for phases 1-5."""
+    sid, _ = _make_study_session(client)
+    resp = client.get(f"/study/session/{sid}")
+    assert resp.status_code == 200
+    assert b"study-card" in resp.data or b"card" in resp.data
+
+
+def test_study_card_next(client):
+    """POST card/next should redirect back to session."""
+    sid, _ = _make_study_session(client)
+    resp = client.post(f"/study/session/{sid}/card/next",
+                       data={"response": "My prayer for this study"},
+                       follow_redirects=True)
+    assert resp.status_code == 200
+
+
+def test_study_card_back(client):
+    """POST card/back should go to previous phase."""
+    sid, _ = _make_study_session(client)
+    client.post(f"/study/session/{sid}/card/next",
+                data={"response": "prayer"}, follow_redirects=True)
+    resp = client.post(f"/study/session/{sid}/card/back", follow_redirects=True)
+    assert resp.status_code == 200
+
+
+def test_study_session_transition_to_conversation(client):
+    """After completing all 5 card phases, session should show conversation UI."""
+    sid, _ = _make_study_session(client)
+    for i in range(5):
+        client.post(f"/study/session/{sid}/card/next",
+                    data={"response": f"response {i}"}, follow_redirects=True)
+    resp = client.get(f"/study/session/{sid}")
+    assert resp.status_code == 200
+    assert b"conversation" in resp.data
+
+
+def test_study_bible_notes_route(client):
+    """GET study-bibles should return JSON."""
+    sid, _ = _make_study_session(client)
+    resp = client.get(f"/study/session/{sid}/study-bibles")
+    assert resp.status_code == 200
+
+
+def test_study_annotation_save(client):
+    """POST annotate should save a star annotation."""
+    sid, _ = _make_study_session(client)
+    resp = client.post(f"/study/session/{sid}/annotate",
+                       json={"source": "ESV SB", "starred_text": "test", "note": "important"})
+    assert resp.status_code == 200
+
+
+def test_study_notepad_save(client):
+    """POST notepad should save notepad content."""
+    sid, _ = _make_study_session(client)
+    resp = client.post(f"/study/session/{sid}/notepad",
+                       json={"phase": "study_bibles", "content": "My observations"})
+    assert resp.status_code == 200
+
+
+# ── Companion routes still work ──────────────────────────────────────────
+
 def test_companion_index_still_works(client):
     r = client.get('/companion/')
     assert r.status_code == 200

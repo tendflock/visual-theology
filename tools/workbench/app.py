@@ -40,7 +40,7 @@ from study import (
     find_bibles, find_commentaries_for_ref, find_lexicons,
     read_bible_chapter, extract_verses, clean_bible_text, read_annotations,
     get_interlinear_for_chapter, run_reader, read_article_text,
-    resolve_bible_files, CATALOG_DB, RESOURCE_MGR_DB,
+    resolve_bible_files, find_study_bible_notes, CATALOG_DB, RESOURCE_MGR_DB,
 )
 from companion_db import CompanionDB, PHASES_ORDER, PHASE_TIMERS
 from companion_agent import stream_companion_response, PHASE_DESCRIPTIONS
@@ -729,6 +729,79 @@ def companion_progress(session_id):
                            completed_phases=completed_phases)
 
 
+# ── Card Phases (Study phases 1-5 use cards, 6+ use conversation) ──────
+
+CARD_PHASES = [
+    {"key": "prayer", "label": "Prayer", "prompt": "Pray for your study of this passage.",
+     "guidance": "Ask the Spirit to open your eyes to see wonderful things in His word. Pray for your congregation.",
+     "has_textarea": True, "auto_resource": None},
+    {"key": "read_text", "label": "Read the Text", "prompt": "Read the passage in the original language.",
+     "guidance": "Read it slowly. Read it again. Let the words sit.",
+     "has_textarea": False, "auto_resource": "original_language"},
+    {"key": "translation", "label": "Working Translation", "prompt": "Write your own translation of the passage.",
+     "guidance": "Work from the Greek/Hebrew text above. Don't reach for a published translation — wrestle with the words yourself.",
+     "has_textarea": True, "auto_resource": "original_language"},
+    {"key": "digestion", "label": "Digestion", "prompt": "Pray through the text phrase by phrase.",
+     "guidance": "Take each phrase and turn it into prayer. What is God saying? What stirs in you?",
+     "has_textarea": True, "auto_resource": None},
+    {"key": "study_bibles", "label": "Study Bible Consultation", "prompt": "Review notes from your study bibles.",
+     "guidance": "Star passages that catch your eye. Use the notepad to capture your thinking. These feed into the conversation.",
+     "has_textarea": False, "auto_resource": "study_bibles"},
+]
+
+
+def _get_original_language_text(session):
+    """Get THGNT (NT) or BHS (OT) text for the session's passage."""
+    try:
+        ref = parse_reference(session["passage_ref"])
+        if not ref:
+            return None
+        version = "THGNTCROSSWAY" if ref["book"] >= 40 else "BHS"
+        files = resolve_bible_files([version])
+        if not files:
+            return None
+        text, _ = read_bible_chapter(files[0], ref["book"], ref["chapter"])
+        if text and ref.get("verse_start"):
+            text = extract_verses(text, ref["verse_start"], ref.get("verse_end"))
+        return text
+    except Exception:
+        return None
+
+
+def _get_study_bible_notes(session):
+    """Get study bible notes for the session's passage."""
+    try:
+        ref = parse_reference(session["passage_ref"])
+        if not ref:
+            return []
+        return find_study_bible_notes(ref, max_chars=5000)
+    except Exception:
+        return []
+
+
+def _save_card_summary_for_ai(session_id):
+    """Save a system message summarizing Bryan's card work for the AI."""
+    responses = companion_db.get_card_responses(session_id)
+    annotations = companion_db.get_card_annotations(session_id)
+    notepad_text = companion_db.get_card_notepad(session_id, "study_bibles")
+    parts = []
+    for resp in responses:
+        if resp.get("content"):
+            parts.append(f"[{resp['phase']}] {resp['content']}")
+    if annotations:
+        parts.append("\n[Study Bible Stars]")
+        for a in annotations:
+            line = f"  \u2605 {a['source']}: \"{a['starred_text']}\""
+            if a.get("note"):
+                line += f" \u2192 {a['note']}"
+            parts.append(line)
+    if notepad_text:
+        parts.append(f"\n[Study Bible Notepad]\n{notepad_text}")
+    if parts:
+        summary = "Bryan's card-phase work:\n" + "\n".join(parts)
+        companion_db.save_message(session_id, "context", "system", summary)
+
+
 # ── Study Routes (Conversation-First UI) ────────────────────────────────
 
 @app.route("/study/")
@@ -768,17 +841,53 @@ def study_new_session():
 
 @app.route("/study/session/<int:session_id>")
 def study_session_view(session_id):
-    """Main conversation + outline view."""
+    """Main session view — card UI for phases 1-5, conversation for 6+."""
     session = companion_db.get_session(session_id)
     if not session:
         return redirect(url_for("study_index"))
 
-    # Load all messages (not phase-scoped — full conversation)
-    messages = companion_db.get_messages(session_id, limit=200)
+    phase = session.get("current_phase", "prayer")
+    card_phase_keys = [p["key"] for p in CARD_PHASES]
 
-    return render_template("study_session.html",
-                           session=session,
-                           messages=messages)
+    if phase in card_phase_keys:
+        # Card mode (phases 1-5)
+        phase_index = card_phase_keys.index(phase)
+        card_def = CARD_PHASES[phase_index]
+        resource_text = None
+        study_bible_notes = None
+        if card_def["auto_resource"] == "original_language":
+            resource_text = _get_original_language_text(session)
+        elif card_def["auto_resource"] == "study_bibles":
+            study_bible_notes = _get_study_bible_notes(session)
+        responses = companion_db.get_card_responses(session_id, phase)
+        prefilled = responses[-1]["content"] if responses else ""
+        annotations = companion_db.get_card_annotations(session_id, phase) if phase == "study_bibles" else []
+        notepad = companion_db.get_card_notepad(session_id, phase) if phase == "study_bibles" else ""
+        return render_template("study_session.html",
+                               session=session, mode="card",
+                               card=card_def, phase_index=phase_index,
+                               total_phases=len(CARD_PHASES),
+                               resource_text=resource_text,
+                               study_bible_notes=study_bible_notes,
+                               prefilled=prefilled,
+                               annotations=annotations,
+                               notepad=notepad,
+                               messages=[],
+                               outline=companion_db.get_outline_tree(session_id))
+    else:
+        # Conversation mode (phase 6+)
+        messages = companion_db.get_messages(session_id, limit=200)
+        return render_template("study_session.html",
+                               session=session, mode="conversation",
+                               card=None, phase_index=5,
+                               total_phases=len(CARD_PHASES),
+                               resource_text=None,
+                               study_bible_notes=None,
+                               prefilled="",
+                               annotations=[],
+                               notepad="",
+                               messages=messages,
+                               outline=companion_db.get_outline_tree(session_id))
 
 
 @app.route("/study/session/<int:session_id>/discuss", methods=["POST"])
@@ -802,6 +911,74 @@ def study_discuss(session_id):
             "X-Accel-Buffering": "no",
         },
     )
+
+
+@app.route("/study/session/<int:session_id>/card/next", methods=["POST"])
+def study_card_next(session_id):
+    """Advance to the next card phase, saving any response."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "Session not found", 404
+    phase = session.get("current_phase", "prayer")
+    response_text = request.form.get("response", "").strip()
+    if response_text:
+        companion_db.save_card_response(session_id, phase, question_id=0, content=response_text)
+    card_phase_keys = [p["key"] for p in CARD_PHASES]
+    if phase in card_phase_keys:
+        idx = card_phase_keys.index(phase)
+        if idx < len(card_phase_keys) - 1:
+            next_phase = card_phase_keys[idx + 1]
+            companion_db.update_phase(session_id, next_phase)
+        else:
+            companion_db.update_phase(session_id, "context")
+            _save_card_summary_for_ai(session_id)
+    return redirect(url_for("study_session_view", session_id=session_id))
+
+
+@app.route("/study/session/<int:session_id>/card/back", methods=["POST"])
+def study_card_back(session_id):
+    """Go back to the previous card phase."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return "Session not found", 404
+    phase = session.get("current_phase", "prayer")
+    card_phase_keys = [p["key"] for p in CARD_PHASES]
+    if phase in card_phase_keys:
+        idx = card_phase_keys.index(phase)
+        if idx > 0:
+            companion_db.update_phase(session_id, card_phase_keys[idx - 1])
+    return redirect(url_for("study_session_view", session_id=session_id))
+
+
+@app.route("/study/session/<int:session_id>/study-bibles")
+def study_bible_notes_route(session_id):
+    """Return study bible notes for the session's passage as JSON."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return jsonify({"error": "not found"}), 404
+    notes = _get_study_bible_notes(session)
+    return jsonify(notes)
+
+
+@app.route("/study/session/<int:session_id>/annotate", methods=["POST"])
+def study_annotate(session_id):
+    """Save a star annotation from the study bible card."""
+    data = request.get_json()
+    aid = companion_db.save_card_annotation(
+        session_id, phase="study_bibles",
+        source=data.get("source", ""),
+        starred_text=data.get("starred_text", ""),
+        note=data.get("note", ""))
+    return jsonify({"id": aid})
+
+
+@app.route("/study/session/<int:session_id>/notepad", methods=["POST"])
+def study_notepad(session_id):
+    """Save notepad content for the current phase."""
+    data = request.get_json()
+    companion_db.save_card_notepad(session_id, phase=data.get("phase", "study_bibles"),
+                                   content=data.get("content", ""))
+    return jsonify({"ok": True})
 
 
 @app.route("/study/session/<int:session_id>/outline")
