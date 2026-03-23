@@ -1,0 +1,131 @@
+<h2>Hybrid Study UI — Card → Conversation Flow</h2>
+<p class="subtitle">Cards for phases 1-5 (Bryan drives), then conversation for 6+ (AI as interlocutor)</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Card Phase (Steps 1-5)</div>
+    <div class="mockup-body" style="background:#1a1a2e;color:#e0e0e0;font-family:system-ui;padding:0;">
+      <!-- Top bar -->
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #333;background:#12121f;">
+        <div style="font-size:13px;color:#8888aa;">Romans 1:1–7</div>
+        <div style="font-size:12px;color:#666;">0:04:32</div>
+      </div>
+
+      <!-- Phase stepper - minimal dots -->
+      <div style="display:flex;gap:6px;padding:12px 16px 8px;justify-content:center;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;" title="Prayer"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#5b8dd9;" title="Read Text"></div>
+        <div style="width:8px;height:8px;border-radius:50%;border:1.5px solid #5b8dd9;background:transparent;" title="Translation"></div>
+        <div style="width:8px;height:8px;border-radius:50%;border:1.5px solid #444;" title="Digestion"></div>
+        <div style="width:8px;height:8px;border-radius:50%;border:1.5px solid #444;" title="Study Bibles"></div>
+        <div style="width:1px;height:8px;background:#333;margin:0 4px;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;border:1.5px solid #333;" title="Conversation"></div>
+      </div>
+
+      <!-- Card content -->
+      <div style="padding:16px 20px;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#5b8dd9;margin-bottom:8px;">Step 3 — Working Translation</div>
+        <h3 style="font-size:16px;margin:0 0 8px;color:#ddd;">Write your own translation of the passage</h3>
+        <p style="font-size:13px;color:#888;margin:0 0 16px;line-height:1.5;">Work from the Greek text above. Don't reach for a published translation — wrestle with the words yourself.</p>
+
+        <!-- Original text shown (auto-loaded at step 2) -->
+        <div style="background:#111;border-left:3px solid #5b8dd9;padding:12px;margin-bottom:16px;border-radius:4px;">
+          <div style="font-size:10px;text-transform:uppercase;color:#5b8dd9;margin-bottom:6px;">THGNT</div>
+          <div style="font-size:14px;direction:rtl;text-align:right;color:#ccc;line-height:1.8;font-family:serif;">
+            Παῦλος δοῦλος Χριστοῦ Ἰησοῦ, κλητὸς ἀπόστολος ἀφωρισμένος εἰς εὐαγγέλιον θεοῦ...
+          </div>
+        </div>
+
+        <!-- Bryan's textarea -->
+        <textarea style="width:100%;box-sizing:border-box;background:#111;border:1px solid #333;color:#ddd;padding:12px;border-radius:6px;font-size:14px;line-height:1.6;resize:vertical;min-height:100px;" placeholder="Your working translation..."></textarea>
+
+        <div style="display:flex;justify-content:space-between;margin-top:12px;">
+          <button style="background:transparent;border:1px solid #444;color:#888;padding:6px 16px;border-radius:4px;font-size:13px;cursor:pointer;">← Back</button>
+          <button style="background:#5b8dd9;border:none;color:white;padding:8px 24px;border-radius:4px;font-size:13px;cursor:pointer;">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Conversation Phase (Steps 6+)</div>
+    <div class="mockup-body" style="background:#1a1a2e;color:#e0e0e0;font-family:system-ui;padding:0;">
+      <!-- Top bar -->
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #333;background:#12121f;">
+        <div style="font-size:13px;color:#8888aa;">Romans 1:1–7</div>
+        <div style="font-size:12px;color:#666;">0:32:15</div>
+      </div>
+
+      <!-- Phase stepper - all card dots filled -->
+      <div style="display:flex;gap:6px;padding:12px 16px 8px;justify-content:center;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#4a7c59;"></div>
+        <div style="width:1px;height:8px;background:#333;margin:0 4px;"></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#5b8dd9;"></div>
+      </div>
+
+      <!-- Conversation thread -->
+      <div style="padding:12px 16px;overflow-y:auto;max-height:280px;">
+        <!-- AI message -->
+        <div style="background:#1e1e35;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:13px;line-height:1.6;color:#ccc;">
+          You've done solid text work. Let's zoom out — what's the big picture context for Romans 1:1-7? What's Paul doing with this opening salvo?
+        </div>
+
+        <!-- User message -->
+        <div style="background:#1a2a3e;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:13px;line-height:1.6;color:#ccc;margin-left:40px;">
+          He's establishing his apostolic authority before writing to a church he didn't plant. The gospel summary in vv.2-4 is basically his credentials.
+        </div>
+
+        <!-- AI with tool result -->
+        <div style="background:#1e1e35;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:13px;line-height:1.6;color:#ccc;">
+          <div style="font-size:11px;color:#5b8dd9;background:#111;padding:4px 8px;border-radius:3px;margin-bottom:8px;display:inline-block;">📖 EDNT: ἀφορίζω</div>
+          Good instinct. Push harder on ἀφωρισμένος — "set apart." Is Paul just saying he was chosen, or is there a deliberate echo of Pharisee (פרושׁ = "separated one")?
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div style="border-top:1px solid #333;padding:12px 16px;">
+        <div style="display:flex;gap:8px;">
+          <input style="flex:1;background:#111;border:1px solid #333;color:#ddd;padding:10px 14px;border-radius:6px;font-size:13px;" placeholder="Type your response...">
+          <button style="background:#5b8dd9;border:none;color:white;padding:8px 16px;border-radius:6px;font-size:13px;cursor:pointer;">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top:32px;">Key Design Decisions</h3>
+<div class="options">
+  <div class="option" data-choice="stepper" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Minimal phase dots</h3>
+      <p>Small dots show progress without counting steps. Green = done, blue = current, dark = ahead. Divider separates card phases from conversation.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="auto-text" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>Original text persists</h3>
+      <p>THGNT/BHS auto-loads at step 2 and stays visible through steps 3-4 so Bryan can reference it while translating and digesting.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="transition" onclick="toggleSelect(this)">
+    <div class="letter">3</div>
+    <div class="content">
+      <h3>Seamless transition</h3>
+      <p>After step 5, the card area smoothly becomes the conversation thread. No page reload, no modal. The AI opens with a contextual question based on Bryan's card responses.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="outline" onclick="toggleSelect(this)">
+    <div class="letter">4</div>
+    <div class="content">
+      <h3>Outline sidebar (collapsible)</h3>
+      <p>Same outline sidebar from the existing study UI. Available in both card and conversation phases. Opens on right side when needed.</p>
+    </div>
+  </div>
+</div>
+<p class="subtitle" style="margin-top:16px;">Click any items you want to discuss or adjust. These are all included by default — click to flag concerns.</p>

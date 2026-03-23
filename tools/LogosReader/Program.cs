@@ -517,7 +517,7 @@ class Program
             IntPtr.Zero,
             resourceFile,
             IntPtr.Zero,
-            "2019-05-26T00:00:00Z",  // latest driver version
+            "2025-05-27T00:00:00Z",  // latest driver version
             "10.0.0",                 // latest data types version
             TitleLoadHint.Normal,
             out TitleLoadResult loadResult);

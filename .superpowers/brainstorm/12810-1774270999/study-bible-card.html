@@ -1,0 +1,106 @@
+<h2>Step 5 — Study Bible Consultation Card</h2>
+<p class="subtitle">Auto-pulls notes from your 7 study bibles. How should they be presented?</p>
+
+<div class="cards">
+  <div class="card" data-choice="accordion" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#5b8dd9;margin-bottom:12px;">Study Bible Notes — Romans 1:1-7</div>
+
+        <!-- Expanded -->
+        <div style="border:1px solid #333;border-radius:6px;margin-bottom:6px;overflow:hidden;">
+          <div style="background:#1e1e35;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+            <span style="font-size:13px;font-weight:600;color:#ddd;">ESV Study Bible</span>
+            <span style="color:#5b8dd9;font-size:11px;">▼</span>
+          </div>
+          <div style="padding:10px 12px;font-size:12px;color:#aaa;line-height:1.6;border-top:1px solid #333;">
+            1:1–17 The Gospel as the Revelation of the Righteousness of God. In this first main section, Paul includes his opening salutation (vv. 1–7)...
+          </div>
+        </div>
+
+        <!-- Collapsed -->
+        <div style="border:1px solid #333;border-radius:6px;margin-bottom:6px;">
+          <div style="background:#1e1e35;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+            <span style="font-size:13px;font-weight:600;color:#ddd;">Ancient Faith Study Bible</span>
+            <span style="color:#666;font-size:11px;">▶</span>
+          </div>
+        </div>
+        <div style="border:1px solid #333;border-radius:6px;margin-bottom:6px;">
+          <div style="background:#1e1e35;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+            <span style="font-size:13px;font-weight:600;color:#ddd;">Reformation Study Bible</span>
+            <span style="color:#666;font-size:11px;">▶</span>
+          </div>
+        </div>
+        <div style="border:1px solid #333;border-radius:6px;margin-bottom:6px;">
+          <div style="background:#1e1e35;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+            <span style="font-size:13px;font-weight:600;color:#ddd;">Faithlife Study Bible</span>
+            <span style="color:#666;font-size:11px;">▶</span>
+          </div>
+        </div>
+        <div style="font-size:11px;color:#666;text-align:center;padding:4px;">+ 3 more</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Accordion</h3>
+      <p>One open at a time. Click to expand/collapse. Keeps focus on one source. Least overwhelming for ADHD.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="scrollable" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#5b8dd9;margin-bottom:12px;">Study Bible Notes — Romans 1:1-7</div>
+
+        <div style="max-height:180px;overflow-y:auto;padding-right:4px;">
+          <!-- All visible, scrollable -->
+          <div style="border-left:3px solid #5b8dd9;padding:8px 12px;margin-bottom:12px;">
+            <div style="font-size:12px;font-weight:600;color:#5b8dd9;margin-bottom:4px;">ESV Study Bible</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.5;">1:1–17 The Gospel as the Revelation of the Righteousness of God. In this first main section, Paul includes his opening...</div>
+          </div>
+          <div style="border-left:3px solid #7c59a5;padding:8px 12px;margin-bottom:12px;">
+            <div style="font-size:12px;font-weight:600;color:#7c59a5;margin-bottom:4px;">Ancient Faith Study Bible</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.5;">1:1 Theodore of Mopsuestia: All things are servants of Christ, and he is Lord of all. Therefore Paul calls himself a servant...</div>
+          </div>
+          <div style="border-left:3px solid #59a57c;padding:8px 12px;margin-bottom:12px;">
+            <div style="font-size:12px;font-weight:600;color:#59a57c;margin-bottom:4px;">Reformation Study Bible</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.5;">1:1 Paul. Ancient letters began with the general formula, "A to B sends greetings." Using his Roman name, Paul fills out...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Stacked Scroll</h3>
+      <p>All notes visible with color-coded borders. Scroll through them. See everything but potentially overwhelming.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="tabs" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#5b8dd9;margin-bottom:12px;">Study Bible Notes — Romans 1:1-7</div>
+
+        <!-- Tab bar -->
+        <div style="display:flex;gap:2px;margin-bottom:8px;overflow-x:auto;">
+          <div style="padding:6px 10px;background:#5b8dd9;color:white;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">ESV SB</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">Ancient</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">Reform.</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">FSB</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">Geneva</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">NIV CB</div>
+          <div style="padding:6px 10px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:11px;white-space:nowrap;">NIVBT</div>
+        </div>
+
+        <!-- Tab content -->
+        <div style="background:#111;border-radius:0 0 6px 6px;padding:12px;font-size:12px;color:#aaa;line-height:1.6;min-height:80px;">
+          1:1–17 The Gospel as the Revelation of the Righteousness of God. In this first main section, Paul includes his opening salutation (vv. 1–7), thanksgiving (vv. 8–15), and his statement of the overall theme...
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Tabbed</h3>
+      <p>Tab bar to switch between sources. One at a time, full reading space. Clean but requires clicking through each tab.</p>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:16px;">All options include a textarea at the bottom for Bryan to capture observations before moving to conversation. Click your preferred layout.</p>

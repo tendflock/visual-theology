@@ -1,0 +1,119 @@
+<h2>Annotating Study Bible Notes</h2>
+<p class="subtitle">How should Bryan mark and annotate things worth discussing or wrestling with?</p>
+
+<div class="cards">
+  <div class="card" data-choice="highlight-popup" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <!-- Tab bar -->
+        <div style="display:flex;gap:2px;margin-bottom:8px;">
+          <div style="padding:5px 8px;background:#5b8dd9;color:white;border-radius:4px 4px 0 0;font-size:10px;">ESV SB</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Ancient</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Reform.</div>
+        </div>
+        <!-- Content with highlighted text -->
+        <div style="background:#111;border-radius:0 0 6px 6px;padding:10px;font-size:11px;color:#aaa;line-height:1.7;">
+          1:1 Paul, a servant. The word <span style="background:#5b8dd933;border-bottom:2px solid #5b8dd9;color:#ddd;padding:0 2px;">δοῦλος carries OT connotations of covenant service, echoing Moses and the prophets</span> who bore this title. Called to be an apostle — the Greek
+          <!-- Popup -->
+          <div style="position:relative;display:inline-block;">
+            <div style="position:absolute;bottom:24px;left:-60px;background:#2a2a45;border:1px solid #5b8dd9;border-radius:6px;padding:8px;width:200px;box-shadow:0 4px 12px rgba(0,0,0,0.5);z-index:10;">
+              <div style="font-size:10px;color:#5b8dd9;margin-bottom:4px;">Save this highlight?</div>
+              <input style="width:100%;box-sizing:border-box;background:#111;border:1px solid #333;color:#ddd;padding:4px 6px;border-radius:3px;font-size:10px;margin-bottom:6px;" placeholder="Why is this important?" value="δοῦλος = Moses parallel?">
+              <div style="display:flex;gap:4px;">
+                <button style="flex:1;background:#5b8dd9;border:none;color:white;padding:3px;border-radius:3px;font-size:10px;">💬 Discuss</button>
+                <button style="flex:1;background:#4a7c59;border:none;color:white;padding:3px;border-radius:3px;font-size:10px;">📌 Save</button>
+              </div>
+            </div>
+          </div>
+          κλητός suggests divine initiative...
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Select Text → Popup</h3>
+      <p>Highlight text, popup appears. Add a note, then either "Save" (keep for later) or "Discuss" (flag for conversation). Natural reading flow.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="clip-and-notes" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <!-- Tab bar -->
+        <div style="display:flex;gap:2px;margin-bottom:8px;">
+          <div style="padding:5px 8px;background:#5b8dd9;color:white;border-radius:4px 4px 0 0;font-size:10px;">ESV SB</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Ancient</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Reform.</div>
+          <div style="margin-left:auto;padding:5px 8px;background:#2a2a45;color:#d4a55a;border-radius:4px 4px 0 0;font-size:10px;font-weight:600;">📋 My Notes (2)</div>
+        </div>
+
+        <div style="display:flex;gap:8px;">
+          <!-- Content side -->
+          <div style="flex:1;background:#111;border-radius:0 0 0 6px;padding:8px;font-size:11px;color:#aaa;line-height:1.7;">
+            <div style="display:flex;align-items:start;gap:6px;margin-bottom:6px;">
+              <span style="color:#d4a55a;cursor:pointer;font-size:12px;flex-shrink:0;margin-top:2px;">☆</span>
+              <span>1:1 Paul, a servant. The word δοῦλος carries OT connotations of covenant service.</span>
+            </div>
+            <div style="display:flex;align-items:start;gap:6px;margin-bottom:6px;">
+              <span style="color:#d4a55a;cursor:pointer;font-size:12px;flex-shrink:0;margin-top:2px;">★</span>
+              <span style="background:#d4a55a15;padding:1px 3px;border-radius:2px;">Called to be an apostle — κλητός suggests divine initiative rather than self-appointment.</span>
+            </div>
+            <div style="display:flex;align-items:start;gap:6px;">
+              <span style="color:#d4a55a;cursor:pointer;font-size:12px;flex-shrink:0;margin-top:2px;">☆</span>
+              <span>Set apart for the gospel — ἀφωρισμένος may echo "Pharisee."</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes panel shown -->
+        <div style="background:#1a1a10;border:1px solid #3a3520;border-radius:6px;padding:8px;margin-top:6px;">
+          <div style="font-size:10px;color:#d4a55a;margin-bottom:4px;">Saved Notes</div>
+          <div style="font-size:10px;color:#ccc;background:#111;padding:6px;border-radius:3px;margin-bottom:4px;border-left:2px solid #d4a55a;">
+            <div style="color:#aaa;">"κλητός suggests divine initiative" — ESV SB</div>
+            <div style="color:#d4a55a;font-style:italic;margin-top:2px;">→ wrestle with: does calling precede or follow setting apart?</div>
+          </div>
+          <div style="font-size:10px;color:#ccc;background:#111;padding:6px;border-radius:3px;border-left:2px solid #d4a55a;">
+            <div style="color:#aaa;">"δοῦλος = covenant service" — ESV SB</div>
+            <div style="color:#d4a55a;font-style:italic;margin-top:2px;">→ Moses/prophets parallel for intro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Star Sentences + Notes Panel</h3>
+      <p>Star icon on each paragraph. Starred items collect in a notes panel below with space for your annotation. "My Notes" tab shows all saved across study bibles.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="split-annotate" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1a2e;padding:16px;">
+      <div style="font-family:system-ui;color:#e0e0e0;">
+        <!-- Tab bar -->
+        <div style="display:flex;gap:2px;margin-bottom:8px;">
+          <div style="padding:5px 8px;background:#5b8dd9;color:white;border-radius:4px 4px 0 0;font-size:10px;">ESV SB</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Ancient</div>
+          <div style="padding:5px 8px;background:#222;color:#888;border-radius:4px 4px 0 0;font-size:10px;">Reform.</div>
+        </div>
+
+        <div style="display:flex;gap:1px;">
+          <!-- Study bible content -->
+          <div style="flex:1;background:#111;border-radius:0 0 0 6px;padding:8px;font-size:11px;color:#aaa;line-height:1.7;">
+            1:1 Paul, a servant. The word δοῦλος carries OT connotations of covenant service, echoing Moses and the prophets who bore this title. Called to be an apostle...
+          </div>
+          <!-- Annotation column -->
+          <div style="width:120px;background:#1a1a10;border-radius:0 0 6px 0;padding:8px;">
+            <div style="font-size:9px;color:#d4a55a;margin-bottom:6px;text-transform:uppercase;">My annotations</div>
+            <textarea style="width:100%;box-sizing:border-box;background:#111;border:1px solid #3a3520;color:#d4a55a;padding:4px;border-radius:3px;font-size:10px;resize:none;height:100px;font-style:italic;" placeholder="Type notes as you read...">δοῦλος = covenant, not just slavery. Moses parallel is strong for intro.
+
+κλητός — calling vs. setting apart, what's the order?</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Side-by-side Notepad</h3>
+      <p>Free-form notepad next to the study bible text. Most flexible — just type as you read. Less structured but matches how you might use a physical notebook.</p>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:16px;">Whichever you pick, saved notes/annotations get passed to the AI when conversation starts at phase 6 — so it knows what caught your eye and what you want to wrestle with.</p>

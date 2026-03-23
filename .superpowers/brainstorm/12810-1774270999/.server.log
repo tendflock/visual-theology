@@ -1,0 +1,6 @@
+{"type":"server-started","port":61036,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:61036","screen_dir":"/Volumes/External/Logos4/.superpowers/brainstorm/12810-1774270999"}
+{"type":"screen-added","file":"/Volumes/External/Logos4/.superpowers/brainstorm/12810-1774270999/hybrid-layout.html"}
+{"type":"screen-added","file":"/Volumes/External/Logos4/.superpowers/brainstorm/12810-1774270999/study-bible-card.html"}
+{"type":"screen-added","file":"/Volumes/External/Logos4/.superpowers/brainstorm/12810-1774270999/annotation-patterns.html"}
+{"type":"screen-added","file":"/Volumes/External/Logos4/.superpowers/brainstorm/12810-1774270999/waiting.html"}
+{"type":"server-stopped","reason":"idle timeout"}

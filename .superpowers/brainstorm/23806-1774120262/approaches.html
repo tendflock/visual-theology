@@ -1,0 +1,90 @@
+<h2>Three Approaches — How Should the Companion Work?</h2>
+<p class="subtitle">Click the one that feels right for how your brain works. Each has trade-offs.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Conversation-First with Outline Sidebar</h3>
+      <p><strong>Primary interface is chat.</strong> The companion talks to you, guides the workflow, surfaces resources, challenges your thinking — all in a conversation stream. Your growing sermon outline lives in a collapsible sidebar that updates as you work.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>Most natural — feels like talking to a study partner</li>
+            <li>Easy to go off-script and come back</li>
+            <li>Chat history captures your thinking process</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>Chat can scroll past important things</li>
+            <li>Hard to see structure at a glance</li>
+            <li>Two things to look at (chat + outline) = split attention</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Focused Card Flow — One Thing at a Time</h3>
+      <p><strong>Primary interface is the current question.</strong> One card fills the screen: the question, the relevant resource (Bible text, commentary excerpt, interlinear data), and space for your response. When you're done, the next card appears. Chat is available via a slide-out drawer when you want to discuss. Your outline builds in the background from your responses.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>Maximum focus — literally one thing on screen</li>
+            <li>Built for ADHD: no visible mountain of steps</li>
+            <li>Timer is naturally scoped to each card</li>
+            <li>Outline assembles itself from your work</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>Less fluid than conversation — more structured</li>
+            <li>May feel constraining when you want to explore</li>
+            <li>Harder to jump back and revise earlier thinking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Hybrid — Card Focus with Conversation Mode</h3>
+      <p><strong>Starts as focused cards, but you can "open up" into conversation anytime.</strong> The default view is the current question/task (like B). But when you need to dig deeper — discuss an interpretation, chase a cross-reference, ask "what did Hodge say?" — you tap into conversation mode and the companion engages as a study partner. When you're ready, you snap back to the next card. Think of it like a book with footnotes you can expand.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>Focus when you need it, freedom when you want it</li>
+            <li>Best of both worlds: structure + exploration</li>
+            <li>Companion can pull you BACK from rabbit holes ("Good insight — let's capture that and move on. 12 minutes left.")</li>
+            <li>Natural transition between guided and freeform</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>Most complex to build</li>
+            <li>Mode switching needs to feel seamless or it's jarring</li>
+            <li>Risk of "conversation mode" becoming the default (defeating the purpose)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #888;">
+  <h3 style="margin-top:0">My Recommendation: C (Hybrid)</h3>
+  <p>Your ADHD needs the focus of B, but your intellect and preaching depth need the freedom of A. The key design challenge is making conversation mode feel like a <em>deepening</em> of the current step rather than an escape from it — and giving the companion authority to say "time to move on" when the timer runs low.</p>
+  <p>The "cons" of C (complexity, mode-switching) are engineering problems we can solve. The "cons" of A (split attention) and B (feels constraining) are fundamental UX problems that fight your brain.</p>
+</div>

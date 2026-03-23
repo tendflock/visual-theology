@@ -1398,21 +1398,45 @@ def _find_via_navindex(resource_file, ref):
             pass
 
     # Find best matching reference
+    # Some resources use 'bible+esv.66.1.1' format instead of 'bible.66.1.1'
+    # Normalize by extracting the book.chapter.verse portion after 'bible' prefix
+    def _ref_matches(nav_ref, target_ref, prefix):
+        """Check if nav_ref matches target, handling bible+version prefix."""
+        if nav_ref == target_ref or nav_ref.startswith(target_ref):
+            return True
+        # Handle 'bible+esv.66.1.1' format — strip version suffix from 'bible+xxx'
+        if nav_ref.startswith("bible+"):
+            normalized = "bible" + nav_ref[nav_ref.index("."):]
+            return normalized == target_ref or normalized.startswith(target_ref) or normalized.startswith(prefix)
+        return False
+
     best_article = None
     best_offset = 0
+    chapter_prefix = f"bible.{book_num}.{chapter}."
     for r in nav_data["references"]:
-        if r["ref"] == bible_ref:
+        ref_str = r["ref"]
+        if ref_str == bible_ref:
             best_article = r["article"]
             best_offset = r["offset"]
             break
+        # Handle bible+version prefix
+        if ref_str.startswith("bible+"):
+            normalized = "bible" + ref_str[ref_str.index("."):]
+            if normalized == bible_ref or normalized.startswith(bible_ref):
+                best_article = r["article"]
+                best_offset = r["offset"]
+                break
+            if best_article is None and normalized.startswith(chapter_prefix):
+                best_article = r["article"]
+                best_offset = r["offset"]
+                continue
         # Range match: 'bible.66.1.16-66.1.17' contains 'bible.66.1.16'
-        if r["ref"].startswith(bible_ref):
+        if ref_str.startswith(bible_ref):
             best_article = r["article"]
             best_offset = r["offset"]
             break
         # Chapter match fallback
-        chapter_prefix = f"bible.{book_num}.{chapter}."
-        if best_article is None and r["ref"].startswith(chapter_prefix):
+        if best_article is None and ref_str.startswith(chapter_prefix):
             best_article = r["article"]
             best_offset = r["offset"]
 
