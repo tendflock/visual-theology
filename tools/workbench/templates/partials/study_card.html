@@ -8,7 +8,7 @@
     <div class="card-side-by-side">
         <div class="card-resource side-by-side-left">
             <div class="card-resource-label">{% if session.book >= 40 %}THGNT{% else %}BHS{% endif %}</div>
-            <div class="card-resource-text {% if session.book < 40 %}rtl{% endif %}">{{ resource_text }}</div>
+            <div class="card-resource-text {% if session.book < 40 %}rtl{% endif %}" id="clickable-text">{{ resource_text }}</div>
         </div>
         <div class="side-by-side-right">
             <div class="card-resource-label">Your Working Translation</div>

@@ -557,6 +557,133 @@ function addOutlineNote(text, nodeType) {
     }).catch(function() {});
 }
 
+/* ── Word Popup (click Greek/Hebrew word for parsing) ──────────────────── */
+
+var _wordPopup = null;
+var _wordCache = {};
+
+function setupWordPopups() {
+    var textEl = document.getElementById('clickable-text');
+    if (!textEl) return;
+
+    // Wrap each Greek/Hebrew word in a clickable span using DOM methods
+    var walker = document.createTreeWalker(textEl, NodeFilter.SHOW_TEXT, null, false);
+    var textNodes = [];
+    var node;
+    while ((node = walker.nextNode())) textNodes.push(node);
+
+    var greekOrHebrew = /[\u0370-\u03FF\u1F00-\u1FFF\u0590-\u05FF\uFB1D-\uFB4F][\u0300-\u036F\u0370-\u03FF\u1F00-\u1FFF\u0590-\u05FF]*/;
+    textNodes.forEach(function(tn) {
+        var text = tn.textContent;
+        if (!greekOrHebrew.test(text)) return;
+        var frag = document.createDocumentFragment();
+        // Split into words and non-words
+        var parts = text.split(/([\u0370-\u03FF\u1F00-\u1FFF\u0590-\u05FF\uFB1D-\uFB4F][\u0300-\u036F\u0370-\u03FF\u1F00-\u1FFF\u0590-\u05FF\uFB1D-\uFB4F]*)/);
+        parts.forEach(function(part) {
+            if (greekOrHebrew.test(part)) {
+                var span = document.createElement('span');
+                span.className = 'clickable-word';
+                span.textContent = part;
+                frag.appendChild(span);
+            } else {
+                frag.appendChild(document.createTextNode(part));
+            }
+        });
+        tn.parentNode.replaceChild(frag, tn);
+    });
+
+    // Add click handler
+    textEl.addEventListener('click', function(e) {
+        var wordEl = e.target.closest('.clickable-word');
+        if (!wordEl) {
+            dismissWordPopup();
+            return;
+        }
+        var word = wordEl.textContent.trim();
+        if (word) showWordInfo(word, wordEl);
+    });
+
+    // Dismiss on click outside
+    document.addEventListener('click', function(e) {
+        if (_wordPopup && !e.target.closest('.clickable-word') && !e.target.closest('.word-popup')) {
+            dismissWordPopup();
+        }
+    });
+}
+
+function showWordInfo(word, anchorEl) {
+    dismissWordPopup();
+
+    // Check cache first
+    if (_wordCache[word]) {
+        renderWordPopup(_wordCache[word], anchorEl);
+        return;
+    }
+
+    // Show loading state
+    renderWordPopup({lemma: '...', gloss: 'loading...', parsing: '', root: ''}, anchorEl);
+
+    fetch('/study/session/' + window.studySessionId + '/word-info', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({word: word})
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (data.error) {
+            renderWordPopup({lemma: word, gloss: 'lookup failed', parsing: '', root: ''}, anchorEl);
+        } else {
+            _wordCache[word] = data;
+            renderWordPopup(data, anchorEl);
+        }
+    })
+    .catch(function() {
+        renderWordPopup({lemma: word, gloss: 'error', parsing: '', root: ''}, anchorEl);
+    });
+}
+
+function renderWordPopup(info, anchorEl) {
+    dismissWordPopup();
+    var popup = document.createElement('div');
+    popup.className = 'word-popup';
+
+    var lemmaDiv = document.createElement('div');
+    lemmaDiv.className = 'wp-lemma';
+    lemmaDiv.textContent = info.lemma || '';
+    popup.appendChild(lemmaDiv);
+
+    var glossDiv = document.createElement('div');
+    glossDiv.className = 'wp-gloss';
+    glossDiv.textContent = info.gloss || '';
+    popup.appendChild(glossDiv);
+
+    var parseDiv = document.createElement('div');
+    parseDiv.className = 'wp-parsing';
+    parseDiv.textContent = info.parsing || '';
+    popup.appendChild(parseDiv);
+
+    if (info.root && info.root !== info.lemma) {
+        var rootDiv = document.createElement('div');
+        rootDiv.className = 'wp-root';
+        rootDiv.textContent = 'Root: ' + info.root;
+        popup.appendChild(rootDiv);
+    }
+
+    // Position below the clicked word
+    document.body.appendChild(popup);
+    var rect = anchorEl.getBoundingClientRect();
+    popup.style.left = Math.max(8, rect.left) + 'px';
+    popup.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+    _wordPopup = popup;
+}
+
+function dismissWordPopup() {
+    if (_wordPopup) {
+        _wordPopup.remove();
+        _wordPopup = null;
+    }
+}
+
 /* ── DOMContentLoaded ───────────────────────────────────────────────────── */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -596,9 +723,10 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollConversation();
     }
 
-    // Card mode: set up star annotations
+    // Card mode: set up star annotations and word popups
     if (window.studyMode === 'card') {
         setupStarAnnotations();
+        setupWordPopups();
     }
 
     // Dismiss wellbeing nudge

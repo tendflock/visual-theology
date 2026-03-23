@@ -957,6 +957,44 @@ def study_bible_notes_route(session_id):
     return jsonify(notes)
 
 
+@app.route("/study/session/<int:session_id>/word-info", methods=["POST"])
+def study_word_info(session_id):
+    """Get parsing info for a Greek/Hebrew word using Claude Haiku."""
+    data = request.get_json() or {}
+    word = data.get("word", "").strip()
+    if not word:
+        return jsonify({"error": "word required"}), 400
+
+    session = companion_db.get_session(session_id)
+    if not session:
+        return jsonify({"error": "session not found"}), 404
+
+    is_nt = session.get("book", 66) >= 40
+    lang = "Greek" if is_nt else "Hebrew"
+
+    try:
+        import anthropic
+        api_key = os.environ.get('ANTHROPIC_API_KEY')
+        if not api_key:
+            return jsonify({"error": "API key not set"}), 500
+        client = anthropic.Anthropic(api_key=api_key)
+        resp = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=200,
+            messages=[{"role": "user", "content": f"Parse this {lang} word from the Bible: {word}\n\nReturn ONLY a JSON object with these fields:\n- \"lemma\": the dictionary form\n- \"gloss\": brief English meaning (2-4 words)\n- \"parsing\": full morphological parsing (e.g. \"Verb, Aorist Active Indicative, 3rd Person Singular\")\n- \"root\": the root/stem if different from lemma, otherwise same as lemma\n\nJSON only, no explanation."}],
+        )
+        import re
+        text = resp.content[0].text.strip()
+        # Extract JSON from response
+        match = re.search(r'\{.*\}', text, re.DOTALL)
+        if match:
+            info = json.loads(match.group())
+            return jsonify(info)
+        return jsonify({"error": "parse failed"}), 500
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/study/session/<int:session_id>/annotate", methods=["POST"])
 def study_annotate(session_id):
     """Save a star annotation from the study bible card."""

@@ -354,6 +354,55 @@ body {
     line-height: 2.2;
 }
 
+/* ── Clickable Words & Word Popup ───────────────────────────────────────── */
+
+.clickable-word {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0 1px;
+}
+
+.clickable-word:hover {
+    background: rgba(91, 141, 217, 0.2);
+}
+
+.word-popup {
+    position: absolute;
+    z-index: 1000;
+    background: #1e1e35;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-width: 200px;
+    max-width: 350px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.wp-lemma {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 4px;
+}
+
+.wp-gloss {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.wp-parsing {
+    font-size: 12px;
+    color: var(--text-muted, #888);
+    line-height: 1.4;
+}
+
+.wp-root {
+    font-size: 12px;
+    color: var(--text-muted, #888);
+    margin-top: 4px;
+}
+
 /* ── Side-by-Side Layout (Read & Translate) ────────────────────────────── */
 
 .card-side-by-side {
