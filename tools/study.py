@@ -514,7 +514,7 @@ def run_reader(*args, timeout=30):
         return batch_result
 
     # Fall back to subprocess
-    cmd = ["dotnet", "run", "--"] + list(args)
+    cmd = ["dotnet", "run", "--no-build", "--"] + list(args)
     try:
         result = subprocess.run(
             cmd,

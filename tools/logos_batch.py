@@ -302,7 +302,7 @@ class LogosBatchReader:
 
     def _start_process(self, timeout):
         """Launch the dotnet process and wait for it to be ready."""
-        cmd = ["dotnet", "run", "--", "--batch"]
+        cmd = ["dotnet", "run", "--no-build", "--", "--batch"]
         self._proc = subprocess.Popen(
             cmd,
             cwd=READER_DIR,
