@@ -24,6 +24,7 @@ from study import (
 # Resources confirmed readable, organized by use case.
 
 NT_LEXICONS = [
+    {"abbrev": "BDAG", "file": "BDAG.logos4", "desc": "Greek-English Lexicon of the NT (Bauer-Danker)"},
     {"abbrev": "EDNT", "file": "EXGDCTNT.logos4", "desc": "Exegetical Dictionary of the NT"},
     {"abbrev": "TDNTA", "file": "TDNTA.logos4", "desc": "Theological Dictionary of the NT (Abridged)"},
     {"abbrev": "Louw-Nida", "file": "LOUWNIDA.logos4", "desc": "Greek-English Lexicon by Semantic Domain"},
@@ -122,7 +123,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "lookup_lexicon",
-        "description": "Look up a Greek or Hebrew word in lexical resources from Bryan's library. Searches EDNT, Louw-Nida, TDNTA, TLNT, LSJ, BDB, HALOT, TDOT, and more. Use this for word studies, semantic range, morphological analysis, and theological significance of terms.",
+        "description": "Look up a Greek or Hebrew word in lexical resources from Bryan's library. Searches BDAG (gold standard), EDNT, Louw-Nida, TDNTA, TLNT, LSJ, BDB, HALOT, TDOT, and more. Use this for word studies, semantic range, morphological analysis, and theological significance of terms.",
         "input_schema": {
             "type": "object",
             "properties": {

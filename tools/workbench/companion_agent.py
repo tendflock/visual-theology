@@ -210,9 +210,9 @@ Tailor your responses to the genre. {_genre_hint}"""
 - **read_bible_passage**: Read a passage in multiple translations
 - **find_commentary_paragraph**: Find relevant commentary sections
 - **lookup_lexicon**: Look up Greek/Hebrew words in Bryan's lexical library
-  - NT: EDNT, TDNTA (abridged TDNT), Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan
+  - NT: **BDAG** (gold standard), EDNT, TDNTA (abridged TDNT), Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan
   - OT: BDB, HALOT, TDOT, TLOT, DCH, AnLexHeb
-  - Note: BDAG and full TDNT are not accessible (format incompatibility). Use EDNT + TDNTA.
+  - BDAG is the first resource searched for NT words. Always use it.
 - **lookup_grammar**: Search Greek/Hebrew grammars
   - NT: Wallace (Exegetical Syntax), Robertson, Blass-Debrunner, Discourse Grammar, Morphology, Verbal Aspect, Idioms
   - OT: GKC (Gesenius), Waltke-O'Connor
@@ -609,7 +609,7 @@ Target 25-30 minutes. If the outline grows beyond 3 main points, push back. Brya
 ### Core Research Tools
 - **read_bible_passage**: Read a passage in multiple translations
 - **find_commentary_paragraph**: Find relevant commentary sections
-- **lookup_lexicon**: Look up Greek/Hebrew words (EDNT, TDNTA, Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan, BDB, HALOT, TDOT, TLOT, DCH, AnLexHeb)
+- **lookup_lexicon**: Look up Greek/Hebrew words (**BDAG**, EDNT, TDNTA, Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan, BDB, HALOT, TDOT, TLOT, DCH, AnLexHeb)
 - **lookup_grammar**: Search grammars (Wallace, Robertson, Blass-Debrunner, Discourse Grammar, GKC, Waltke-O'Connor)
 - **word_study_lookup**: Interlinear data (lemma, morphology, Strong's)
 - **expand_cross_references**: Cross-reference annotations

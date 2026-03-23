@@ -1,68 +1,31 @@
-# Session Handoff: Hybrid Card→Conversation Study UI
+# Session Handoff: Interlinear Fix + BDAG Integration
 
 **Date:** 2026-03-23
-**Status:** Hybrid UI built and deployed. Word-level morphology from Logos blocked by native API crash — Haiku fallback in place.
+**Status:** Segfault fixed, BDAG integrated, conversation phase verified. 118 tests passing.
 
 ## What Was Done This Session
 
-### Major Breakthrough: Driver Version Update
-Updated LogosReader driver version from `2019-05-26` to `2025-05-27`, unlocking:
-- **All 7 study bibles** (ESV SB, Ancient Faith, Reformation, FSB, Geneva Notes, NIV Cultural BG, NIVBT SB)
-- **BDAG** (the gold-standard NT Greek lexicon)
-- Fixed navindex matching for `bible+version` prefix format
+### Critical Fix: NativeLogosResourceIndexer Segfault (RESOLVED)
+Root cause found via disassembly: `NativeLogosResourceIndexer_New` takes **7 parameters** (title, languageStr, callback, bool×4), not 2. The C# P/Invoke only declared 2 params, so the callback pointer was read as the language string → garbage callback → SIGSEGV.
 
-### Hybrid Study UI (BUILT AND DEPLOYED)
-Built the complete hybrid `/study/` UI:
+Also fixed: `AddResourceJump` delegate was 11 params but should be 13 params (same as AddReference), verified via demangled C++ constructor symbols.
 
-1. **4 card phases** (Bryan drives, AI quiet):
-   - Prayer — textarea for Bryan's prayer
-   - Read & Translate — side-by-side: THGNT/BHS on left, translation textarea on right
-   - Digestion — pray through text phrase by phrase
-   - Study Bible Consultation — tabbed view of 7 study bibles with star annotations + notepad
+**Result**: Indexer now works. 1179 English words extracted from Romans 1. However, the ProcessReverseInterlinearIndexData callback (morphology/Strong's/Louw-Nida) is never called — requires the full `Logos4Indexer` pipeline from `libSinaiBookBuilderAndIndexer.dylib`, which is too complex to invoke directly.
 
-2. **Conversation phase** (AI as interlocutor, phases 6-16):
-   - System prompt encodes Bryan's full 16-step Christ-Centered Sermon Prep workflow
-   - Phase-aware coaching: triages volume at steps 9-10-12, proactively surfaces confessional docs at step 11, pushes hardest at steps 13-14 (sermon construction)
-   - Card work (prayer, translation, digestion, starred study bible passages, notepad) feeds into conversation context
+### BDAG Integration (COMPLETE)
+- Added BDAG.logos4 to NT_LEXICONS (first position — gold standard)
+- Fixed resource_index.py to filter BDAG to only R.xxx entries (skipping 2300+ abbreviation articles)
+- Fixed Unicode NFC normalization mismatch: BDAG text uses decomposed Greek (ο+combining accent) but queries use precomposed (ό) — SQLite byte comparison was failing
+- 8110 entries indexed, all major Greek words lookup correctly (ἀγάπη, πίστις, λόγος, θεός, χάρις, δικαιοσύνη, σταυρός)
+- Updated system prompt references in both `build_system_prompt` and `build_study_prompt`
 
-3. **Features**:
-   - Click-to-parse Greek/Hebrew words (Haiku fallback — see below)
-   - Pause/resume session clock
-   - Auto-save textarea content (resumes on refresh)
-   - Star annotations on study bible text with notepad
-   - Outline sidebar throughout
-   - Session resume from front page
-
-### Word-Level Morphology (PARTIALLY DONE)
-- **Working**: Click any Greek word → popup shows lemma, gloss, parsing via Claude Haiku call (cached per word)
-- **Blocked**: Getting authoritative Logos morphology data. The ESV.logos4 file HAS the data (10 interlinear columns: Surface, Manuscript, Lemma, Root, Morphology, Strong's, Louw-Nida). But `NativeLogosResourceIndexer_IndexArticle` segfaults before any callback fires.
-- **Investigation documented**: See `memory/reference_interlinear_investigation.md`
-- **Next step**: Debug under lldb to catch exact crash location
-
-## What the Next Session Should Do
-
-### Priority 1: Debug Interlinear Segfault
-The ESV interlinear data is the key to authoritative word-level morphology. Debug the `NativeLogosResourceIndexer` crash:
-```
-cd /Volumes/External/Logos4/tools/LogosReader
-lldb -- dotnet run --no-build -- --interlinear ESV.logos4 0
-# Set breakpoint at NativeLogosResourceIndexer_IndexArticle
-# Run and catch the crash location
-```
-
-### Priority 2: Test & Refine the Conversation Phase
-The conversation phase uses the 16-step system prompt but hasn't been tested end-to-end. Test with a real passage and verify:
-- AI follows Bryan's lead in early conversation phases (6-8)
-- AI triages volume at steps 9-10-12
-- AI proactively surfaces confessional documents at step 11
-- AI pushes through sermon construction at steps 13-14
-- Illustration discipline coaching works
-
-### Priority 3: BDAG Integration
-BDAG is now readable but article IDs use a different format (A.xxx, R.xxx instead of transliterated Greek). Need to:
-- Map BDAG article IDs to Greek lemmas
-- Wire BDAG into the `lookup_lexicon` tool
-- Test with actual word lookups
+### Conversation Phase Verification
+- Verified all 25 key elements of the 16-step workflow in the study system prompt
+- Steps 9-10-12: Volume triaging present ("TRIAGE THE VOLUME", "PREVENT RABBIT HOLES")
+- Step 11: Confessional docs surfacing present ("PROACTIVELY SURFACE", Westminster references)
+- Steps 13-14: Sermon construction push present ("PUSH HARDEST HERE", "SHORT-CIRCUITS", all 8 substeps of step 13 encoded)
+- Card→conversation transition tested end-to-end via curl
+- Server restarted with all changes
 
 ## Test Status
 118 tests passing across 14 test files:
@@ -71,21 +34,33 @@ cd /Volumes/External/Logos4/tools/workbench
 python3 -m pytest tests/ -v
 ```
 
-## Key Files Changed This Session
+## Key Files Changed
 
 | File | What Changed |
 |------|-------------|
-| `tools/LogosReader/Program.cs` | Driver version 2019→2025, callback type investigation |
-| `tools/study.py` | `find_study_bible_notes()`, navindex `bible+version` fix, `--no-build` |
-| `tools/logos_batch.py` | `--no-build` for PM2 compatibility |
-| `tools/workbench/app.py` | Card routes, CARD_PHASES, auto-save, word-info endpoint |
-| `tools/workbench/companion_db.py` | `card_annotations`, `card_notepads` tables |
-| `tools/workbench/companion_agent.py` | 16-step system prompt, card work in conversation |
-| `tools/workbench/templates/study_session.html` | Hybrid card/conversation template |
-| `tools/workbench/templates/partials/study_card.html` | Card partial with side-by-side, tabs, stars |
-| `tools/workbench/static/study.css` | Full dark theme, side-by-side, word popup |
-| `tools/workbench/static/study.js` | Cards, tabs, stars, auto-save, word popup, SSE streaming |
-| `tools/workbench/templates/study_start.html` | Session resume with phase labels |
+| `tools/LogosReader/Program.cs` | Fixed NativeLogosResourceIndexer_New (7 params), AddResourceJump delegate (13 params), word extraction with charLen, cleaned up debug logging |
+| `tools/resource_index.py` | BDAG R.xxx filter, Unicode NFC normalization for headwords and queries |
+| `tools/workbench/companion_tools.py` | Added BDAG to NT_LEXICONS, updated tool description |
+| `tools/workbench/companion_agent.py` | Updated BDAG references in both system prompts |
+
+## What the Next Session Should Do
+
+### Priority 1: Live Conversation Phase Testing
+The system prompt is verified structurally, but needs live testing with Claude to confirm:
+- Does the AI actually triage volume at steps 9-10-12?
+- Does it proactively surface confessional docs at step 11?
+- Does it push through sermon construction at steps 13-14?
+- Does illustration discipline coaching work?
+Test by creating a study session for a real sermon passage and walking through the conversation.
+
+### Priority 2: MorphGNT Integration (Optional Enhancement)
+The Haiku fallback for word-level morphology works well enough. For authoritative data:
+- Load MorphGNT data into a SQLite cache
+- Provide lemma, morphology code (V-AAI-3S style), Strong's number for every GNT word
+- Much cheaper than per-word Haiku calls and fully authoritative
+
+### Priority 3: Encrypted Dataset Exploration
+The `Lemmas.lbslms` + `WordSenses.lbswsd` datasets together might provide lemma + part-of-speech + Louw-Nida data that supplements MorphGNT.
 
 ## Server
 ```bash

@@ -136,6 +136,10 @@ class ResourceIndex:
             for art_num, art_id in articles:
                 if art_id.startswith("ABBR") or art_id.startswith("FTN"):
                     continue
+                # BDAG: only index R.xxx lexicon entries (skip A.xxx abbreviations,
+                # NOTE, TITLE, FOREWORD, LET, DIV, etc.)
+                if resource_file.startswith("BDAG") and not art_id.startswith("R."):
+                    continue
 
                 text = reader.read_article(resource_file, art_num, max_chars=300)
                 if not text or len(text.strip()) < 3:
@@ -144,6 +148,10 @@ class ResourceIndex:
                 headword, translit, gloss = self._extract_headword(text)
                 if not headword and not translit:
                     translit = art_id.lower()
+
+                # Normalize Unicode to NFC for consistent matching
+                if headword:
+                    headword = unicodedata.normalize('NFC', headword)
 
                 batch.append((
                     resource_file, art_num, art_id,
@@ -273,6 +281,8 @@ class ResourceIndex:
 
     def lookup(self, query, resource_file, limit=5):
         conn = self._conn()
+        # Normalize query to NFC for consistent matching against stored headwords
+        query = unicodedata.normalize('NFC', query)
         query_lower = query.lower().strip()
         query_norm = unicodedata.normalize('NFKD', query_lower)
         query_norm = ''.join(c for c in query_norm if not unicodedata.combining(c))

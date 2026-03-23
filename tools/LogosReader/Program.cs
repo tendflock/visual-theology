@@ -280,11 +280,18 @@ class Program
         IntPtr ref2, int a, int b, int c, int d, int e,
         IntPtr ref3, int f, int g, int h, int i);
 
-    // AddWord: 11 params
+    // AddWord: 11 params — void(*)(void const*, int*5, void const*, int*4)
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     delegate void AddWordCallback(
         IntPtr word, int a, int b, int c, int d, int e,
         IntPtr word2, int f, int g, int h, int i2);
+
+    // AddResourceJump: 13 params — same signature as AddReference
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    delegate void AddResourceJumpCallback(
+        IntPtr ref1, int offset,
+        IntPtr ref2, int a, int b, int c, int d, int e,
+        IntPtr ref3, int f, int g, int h, int i2);
 
     // ProcessReverseInterlinearIndexData: 3 params
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -307,8 +314,18 @@ class Program
     [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
     static extern void NativeLogosResourceIndexerCallbackImpl_Delete(IntPtr callback);
 
+    // NativeLogosResourceIndexer_New takes 7 params (verified via disassembly):
+    //   CTitle*, char16_t const* languageStr, NativeLogosResourceIndexerCallback*, bool, bool, bool, bool
+    // Pass null for languageStr to use default. The 4 booleans control which data to index.
     [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
-    static extern IntPtr NativeLogosResourceIndexer_New(IntPtr title, IntPtr callback);
+    static extern IntPtr NativeLogosResourceIndexer_New(
+        IntPtr title,
+        IntPtr languageStr,
+        IntPtr callback,
+        [MarshalAs(UnmanagedType.U1)] bool b1,
+        [MarshalAs(UnmanagedType.U1)] bool b2,
+        [MarshalAs(UnmanagedType.U1)] bool b3,
+        [MarshalAs(UnmanagedType.U1)] bool b4);
 
     [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
     static extern void NativeLogosResourceIndexer_IndexArticle(IntPtr indexer, int article);
@@ -842,7 +859,7 @@ class Program
         AddMediaCallback addMedia = OnAddMedia;
         AddWordCallback addWord = OnAddWord;
         AddReferenceCallback addReference = OnAddReference;
-        AddWordCallback addResourceJump = OnAddResourceJump;
+        AddResourceJumpCallback addResourceJump = OnAddResourceJump;
         ProcessReverseInterlinearIndexDataCallback processRvi = OnProcessReverseInterlinearIndexData;
         SetLanguageCallback setLanguage = OnSetLanguage;
 
@@ -862,10 +879,10 @@ class Program
 
         try
         {
-            // Constructor takes 9 function pointers (derived from mangled C++ symbol):
-            // 1=AddDefaultSectionStart, 2=AddNamedSectionStart, 3=AddNamedSectionEnd,
-            // 4=AddMedia, 5=AddReference(13params), 6=AddWord(11params),
-            // 7=AddResourceJump(=AddWord), 8=ProcessRVI, 9=SetLanguage
+            // Constructor takes 9 function pointers (verified via demangled C++ symbols):
+            // 1=AddDefaultSectionStart(1p), 2=AddNamedSectionStart(2p), 3=AddNamedSectionEnd(2p),
+            // 4=AddMedia(10p), 5=AddReference(13p), 6=AddWord(11p),
+            // 7=AddResourceJump(13p, same as AddReference), 8=ProcessRVI(3p), 9=SetLanguage(1p)
             IntPtr callbackImpl = NativeLogosResourceIndexerCallbackImpl_New(
                 Marshal.GetFunctionPointerForDelegate(addDefaultSectionStart),
                 Marshal.GetFunctionPointerForDelegate(addNamedSectionStart),
@@ -886,7 +903,9 @@ class Program
 
             Console.Error.WriteLine($"[*] Created indexer callback: {callbackImpl}");
 
-            IntPtr indexer = NativeLogosResourceIndexer_New(title, callbackImpl);
+            // NativeLogosResourceIndexer_New(title, languageStr, callback, b1, b2, b3, b4)
+            // Pass null for language to use default. Enable all 4 boolean options.
+            IntPtr indexer = NativeLogosResourceIndexer_New(title, IntPtr.Zero, callbackImpl, true, true, true, true);
             if (indexer == IntPtr.Zero)
             {
                 Console.Error.WriteLine("[!] Failed to create indexer.");
@@ -990,17 +1009,34 @@ class Program
     }
 
     // AddWord: 11 params
+    // Params: (char16_t* word, int charLen, int absPos, int charLen2, int wordIndex, int flags,
+    //          char* surfaceType, int s1, int s2, int s3, int s4)
+    // word pointer is into a text buffer; use charLen to extract just this word
     static void OnAddWord(
-        IntPtr wordPtr, int a, int b, int c, int d, int e,
-        IntPtr word2Ptr, int f, int g, int h, int i2)
+        IntPtr wordPtr, int charLen, int absPos, int charLen2, int wordIndex, int flags,
+        IntPtr surfaceTypePtr, int f, int g, int h, int i2)
     {
         if (s_interlinearWords == null) return;
         try
         {
-            string? word = wordPtr != IntPtr.Zero ? Marshal.PtrToStringUni(wordPtr) : null;
+            string? word = null;
+            if (wordPtr != IntPtr.Zero && charLen > 0)
+            {
+                // Extract just this word using the character length
+                word = Marshal.PtrToStringUni(wordPtr, charLen);
+            }
+            else if (wordPtr != IntPtr.Zero)
+            {
+                word = Marshal.PtrToStringUni(wordPtr);
+            }
             if (!string.IsNullOrEmpty(word))
             {
-                s_interlinearWords.Add(new InterlinearWordEntry { Word = word, ColumnValues = null });
+                // Clean: strip BOM/ZWNBSP markers and footnote numbers
+                word = word.Replace("\uFEFF", "").Trim();
+                if (!string.IsNullOrEmpty(word))
+                {
+                    s_interlinearWords.Add(new InterlinearWordEntry { Word = word, ColumnValues = null });
+                }
             }
         }
         catch { }
@@ -1015,15 +1051,17 @@ class Program
         // No-op
     }
 
-    // AddResourceJump: 11 params (same as AddWord)
+    // AddResourceJump: 13 params (same signature as AddReference)
     static void OnAddResourceJump(
-        IntPtr refPtr, int a, int b, int c, int d, int e,
-        IntPtr ref2Ptr, int f, int g, int h, int i2)
+        IntPtr ref1, int offset,
+        IntPtr ref2, int a, int b, int c, int d, int e,
+        IntPtr ref3, int f, int g, int h, int i2)
     {
         // No-op
     }
 
     // ProcessReverseInterlinearIndexData: (char16_t const*, ReverseInterlinearColumnIndexData const*, int)
+    // NOTE: Only called by the full Logos4Indexer, not by NativeLogosResourceIndexer.IndexArticle.
     static void OnProcessReverseInterlinearIndexData(
         IntPtr wordPtr, IntPtr columnData, int columnCount)
     {
