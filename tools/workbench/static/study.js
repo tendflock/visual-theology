@@ -125,6 +125,25 @@ function copyCardResponse() {
     }
 }
 
+/* ── Card Auto-Save ────────────────────────────────────────────────────── */
+
+var _cardSaveTimer = null;
+
+function setupCardAutosave() {
+    var textarea = document.getElementById('card-response');
+    if (!textarea || !window.studySessionId) return;
+    textarea.addEventListener('input', function() {
+        clearTimeout(_cardSaveTimer);
+        _cardSaveTimer = setTimeout(function() {
+            fetch('/study/session/' + window.studySessionId + '/card/autosave', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({content: textarea.value})
+            });
+        }, 1500);
+    });
+}
+
 /* ── Star Annotations ───────────────────────────────────────────────────── */
 
 var starPopup = null;
@@ -740,10 +759,11 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollConversation();
     }
 
-    // Card mode: set up star annotations and word popups
+    // Card mode: set up star annotations, word popups, and auto-save
     if (window.studyMode === 'card') {
         setupStarAnnotations();
         setupWordPopups();
+        setupCardAutosave();
     }
 
     // Dismiss wellbeing nudge

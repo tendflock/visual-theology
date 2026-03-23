@@ -26,7 +26,7 @@
             {% for s in sessions %}
             <a href="/study/session/{{ s.id }}" class="recent-session-link">
                 <span class="passage">{{ s.passage_ref }}</span>
-                <span class="meta">{{ s.current_phase | replace('_', ' ') | title }}</span>
+                <span class="meta">{{ s.current_phase | replace('read_translate', 'Read & Translate') | replace('study_bibles', 'Study Bibles') | replace('_', ' ') | title }}</span>
             </a>
             {% endfor %}
         </div>

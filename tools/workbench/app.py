@@ -857,7 +857,10 @@ def study_session_view(session_id):
         elif card_def["auto_resource"] == "study_bibles":
             study_bible_notes = _get_study_bible_notes(session)
         responses = companion_db.get_card_responses(session_id, phase)
-        prefilled = responses[-1]["content"] if responses else ""
+        # Check auto-saved draft first, then last submitted response
+        prefilled = companion_db.get_card_notepad(session_id, f"card_{phase}")
+        if not prefilled:
+            prefilled = responses[-1]["content"] if responses else ""
         annotations = companion_db.get_card_annotations(session_id, phase) if phase == "study_bibles" else []
         notepad = companion_db.get_card_notepad(session_id, phase) if phase == "study_bibles" else ""
         return render_template("study_session.html",
@@ -955,6 +958,20 @@ def study_bible_notes_route(session_id):
         return jsonify({"error": "not found"}), 404
     notes = _get_study_bible_notes(session)
     return jsonify(notes)
+
+
+@app.route("/study/session/<int:session_id>/card/autosave", methods=["POST"])
+def study_card_autosave(session_id):
+    """Auto-save card textarea content without advancing phase."""
+    data = request.get_json() or {}
+    content = data.get("content", "")
+    session = companion_db.get_session(session_id)
+    if not session:
+        return jsonify({"error": "not found"}), 404
+    phase = session.get("current_phase", "prayer")
+    # Use notepad table for auto-save (upsert by session+phase)
+    companion_db.save_card_notepad(session_id, phase=f"card_{phase}", content=content)
+    return jsonify({"ok": True})
 
 
 @app.route("/study/session/<int:session_id>/word-info", methods=["POST"])
