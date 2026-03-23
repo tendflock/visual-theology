@@ -734,19 +734,16 @@ def companion_progress(session_id):
 CARD_PHASES = [
     {"key": "prayer", "label": "Prayer", "prompt": "Pray for your study of this passage.",
      "guidance": "Ask the Spirit to open your eyes to see wonderful things in His word. Pray for your congregation.",
-     "has_textarea": True, "auto_resource": None},
-    {"key": "read_text", "label": "Read the Text", "prompt": "Read the passage in the original language.",
-     "guidance": "Read it slowly. Read it again. Let the words sit.",
-     "has_textarea": False, "auto_resource": "original_language"},
-    {"key": "translation", "label": "Working Translation", "prompt": "Write your own translation of the passage.",
-     "guidance": "Work from the Greek/Hebrew text above. Don't reach for a published translation — wrestle with the words yourself.",
-     "has_textarea": True, "auto_resource": "original_language"},
+     "has_textarea": True, "auto_resource": None, "layout": "single"},
+    {"key": "read_translate", "label": "Read & Translate", "prompt": "Read the original text and write your working translation.",
+     "guidance": "Work from the Greek/Hebrew. Don't reach for a published translation — wrestle with the words yourself.",
+     "has_textarea": True, "auto_resource": "original_language", "layout": "side_by_side"},
     {"key": "digestion", "label": "Digestion", "prompt": "Pray through the text phrase by phrase.",
      "guidance": "Take each phrase and turn it into prayer. What is God saying? What stirs in you?",
-     "has_textarea": True, "auto_resource": None},
+     "has_textarea": True, "auto_resource": None, "layout": "single"},
     {"key": "study_bibles", "label": "Study Bible Consultation", "prompt": "Review notes from your study bibles.",
      "guidance": "Star passages that catch your eye. Use the notepad to capture your thinking. These feed into the conversation.",
-     "has_textarea": False, "auto_resource": "study_bibles"},
+     "has_textarea": False, "auto_resource": "study_bibles", "layout": "single"},
 ]
 
 

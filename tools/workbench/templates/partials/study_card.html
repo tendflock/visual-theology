@@ -3,6 +3,21 @@
     <h3 class="card-prompt">{{ card.prompt }}</h3>
     <p class="card-guidance">{{ card.guidance }}</p>
 
+    {% if card.layout == "side_by_side" and resource_text %}
+    <!-- Side-by-side: original language left, translation textarea right -->
+    <div class="card-side-by-side">
+        <div class="card-resource side-by-side-left">
+            <div class="card-resource-label">{% if session.book >= 40 %}THGNT{% else %}BHS{% endif %}</div>
+            <div class="card-resource-text {% if session.book < 40 %}rtl{% endif %}">{{ resource_text }}</div>
+        </div>
+        <div class="side-by-side-right">
+            <div class="card-resource-label">Your Working Translation</div>
+            <textarea class="card-textarea" id="card-response" placeholder="Write your translation here..." rows="12">{{ prefilled }}</textarea>
+        </div>
+    </div>
+
+    {% else %}
+
     {% if resource_text %}
     <div class="card-resource">
         <div class="card-resource-label">{% if session.book >= 40 %}THGNT{% else %}BHS{% endif %}</div>
@@ -43,8 +58,10 @@
     </div>
     {% endif %}
 
-    {% if card.has_textarea %}
+    {% if card.has_textarea and card.layout != "side_by_side" %}
     <textarea class="card-textarea" id="card-response" placeholder="Your response..." rows="5">{{ prefilled }}</textarea>
+    {% endif %}
+
     {% endif %}
 
     <div class="card-actions">

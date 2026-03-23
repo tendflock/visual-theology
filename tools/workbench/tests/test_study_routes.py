@@ -240,9 +240,9 @@ def test_study_card_back(client):
 
 
 def test_study_session_transition_to_conversation(client):
-    """After completing all 5 card phases, session should show conversation UI."""
+    """After completing all 4 card phases, session should show conversation UI."""
     sid, _ = _make_study_session(client)
-    for i in range(5):
+    for i in range(4):  # prayer, read_translate, digestion, study_bibles
         client.post(f"/study/session/{sid}/card/next",
                     data={"response": f"response {i}"}, follow_redirects=True)
     resp = client.get(f"/study/session/{sid}")
