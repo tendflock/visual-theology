@@ -85,10 +85,11 @@ def startup():
     init_batch_reader()
     # Initialize companion DB
     global companion_db, study_analytics
-    companion_db = CompanionDB(str(TOOLS_DIR / "workbench" / "companion.db"))
+    db_path = os.environ.get("COMPANION_DB_PATH", str(TOOLS_DIR / "workbench" / "companion.db"))
+    companion_db = CompanionDB(db_path)
     companion_db.init_db()
     # Initialize analytics DB
-    study_analytics = SessionAnalytics(str(TOOLS_DIR / "workbench" / "companion.db"))
+    study_analytics = SessionAnalytics(db_path)
     study_analytics.init_db()
     # Seed question bank if empty
     if not companion_db.get_questions('prayer'):
@@ -976,7 +977,11 @@ def study_card_autosave(session_id):
 
 @app.route("/study/session/<int:session_id>/word-info", methods=["POST"])
 def study_word_info(session_id):
-    """Get parsing info for a Greek/Hebrew word using Claude Haiku."""
+    """Get parsing info for a Greek/Hebrew word.
+
+    Uses MorphGNT cache for NT words (free, authoritative).
+    Falls back to Claude Haiku for OT words or cache misses.
+    """
     data = request.get_json() or {}
     word = data.get("word", "").strip()
     if not word:
@@ -986,9 +991,36 @@ def study_word_info(session_id):
     if not session:
         return jsonify({"error": "session not found"}), 404
 
-    is_nt = session.get("book", 66) >= 40
-    lang = "Greek" if is_nt else "Hebrew"
+    book = session.get("book", 66)
+    is_nt = book >= 40
 
+    # Try MorphGNT cache first for NT words
+    if is_nt:
+        from morphgnt_cache import get_cache
+        cache = get_cache()
+        result = cache.lookup_word(
+            word,
+            book=book,
+            chapter=session.get("chapter"),
+            verse=session.get("verse_start"),
+        )
+        if not result:
+            # Broaden search: same book, any verse
+            result = cache.lookup_word(word, book=book)
+        if not result:
+            # Broadest: any NT book
+            result = cache.lookup_word(word)
+        if result:
+            return jsonify({
+                "lemma": result["lemma"],
+                "gloss": result.get("gloss", ""),
+                "parsing": result["parsing_human"],
+                "root": result["lemma"],
+                "source": "morphgnt",
+            })
+
+    # Fall back to Haiku for OT words or MorphGNT misses
+    lang = "Greek" if is_nt else "Hebrew"
     try:
         import anthropic
         api_key = os.environ.get('ANTHROPIC_API_KEY')
@@ -1002,10 +1034,10 @@ def study_word_info(session_id):
         )
         import re
         text = resp.content[0].text.strip()
-        # Extract JSON from response
         match = re.search(r'\{.*\}', text, re.DOTALL)
         if match:
             info = json.loads(match.group())
+            info["source"] = "haiku"
             return jsonify(info)
         return jsonify({"error": "parse failed"}), 500
     except Exception as e:
@@ -1094,7 +1126,8 @@ def study_clock_update(session_id):
 
 if __name__ == "__main__":
     startup()
-    print("Sermon Research Workbench starting on http://localhost:5111", file=sys.stderr)
-    print("  Companion at http://localhost:5111/companion/", file=sys.stderr)
-    print("  Study at http://localhost:5111/study/", file=sys.stderr)
-    app.run(host="127.0.0.1", port=5111, debug=False, threaded=True)
+    port = int(os.environ.get("FLASK_PORT", "5111"))
+    print(f"Sermon Research Workbench starting on http://localhost:{port}", file=sys.stderr)
+    print(f"  Companion at http://localhost:{port}/companion/", file=sys.stderr)
+    print(f"  Study at http://localhost:{port}/study/", file=sys.stderr)
+    app.run(host="127.0.0.1", port=port, debug=False, threaded=True)

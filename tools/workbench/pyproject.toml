@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+markers = [
+    "e2e: End-to-end browser tests (Playwright)",
+    "tools: Tool integration tests (requires ANTHROPIC_API_KEY)",
+]
