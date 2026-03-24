@@ -1369,6 +1369,66 @@ def _score_verse_match(text, chapter, verse_start, verse_end):
     return score
 
 
+def _parse_verse_from_navref(ref_key, book_num, chapter):
+    """Parse a navindex ref key to extract verse range for a specific chapter.
+
+    Handles formats:
+      bible.66.1.24           -> (24, 24)
+      bible+esv.66.1.24       -> (24, 24)
+      bible+esv.66.1.26-66.1.27 -> (26, 27)
+      bible+esv.66.1.18-66.3.20 -> (18, None)  cross-chapter
+      page.2157               -> None
+      bible+esv.66.2.1        -> None  (wrong chapter)
+
+    Returns (verse_start, verse_end) or None if ref doesn't match book+chapter.
+    """
+    if not ref_key.startswith("bible"):
+        return None
+
+    # Normalize: strip version prefix (bible+esv.X -> bible.X)
+    if ref_key.startswith("bible+"):
+        dot_idx = ref_key.index(".")
+        ref_key = "bible" + ref_key[dot_idx:]
+
+    # Split on hyphen for ranges: "bible.66.1.26-66.1.27"
+    parts = ref_key.split("-", 1)
+    start_part = parts[0]  # "bible.66.1.26"
+
+    # Parse start: bible.{book}.{chapter}.{verse}
+    segs = start_part.split(".")
+    if len(segs) < 4:
+        return None  # Chapter-only ref like bible.66.1
+    try:
+        ref_book = int(segs[1])
+        ref_ch = int(segs[2])
+        ref_vs = int(segs[3])
+    except (ValueError, IndexError):
+        return None
+
+    if ref_book != book_num or ref_ch != chapter:
+        return None
+
+    # Single verse (no range)
+    if len(parts) == 1:
+        return (ref_vs, ref_vs)
+
+    # Parse end of range
+    end_part = parts[1]  # "66.1.27" or "66.3.20"
+    end_segs = end_part.split(".")
+    try:
+        end_book = int(end_segs[0])
+        end_ch = int(end_segs[1])
+        end_vs = int(end_segs[2])
+    except (ValueError, IndexError):
+        return (ref_vs, None)
+
+    # Cross-chapter range
+    if end_book != book_num or end_ch != chapter:
+        return (ref_vs, None)
+
+    return (ref_vs, end_vs)
+
+
 def _find_via_navindex(resource_file, ref):
     """Find commentary section using the native navigation index.
 

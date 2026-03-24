@@ -58,3 +58,59 @@ def test_get_article_navindex_refs():
         assert "article_num" in r
         assert "offset" in r
         assert r["article_num"] == 1603
+
+
+def test_parse_verse_from_navref_direct():
+    """Parse bible.66.1.24 format."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible.66.1.24", 66, 1)
+    assert result == (24, 24)
+
+
+def test_parse_verse_from_navref_versioned():
+    """Parse bible+esv.66.1.24 format (strip version prefix)."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible+esv.66.1.24", 66, 1)
+    assert result == (24, 24)
+
+
+def test_parse_verse_from_navref_range_same_chapter():
+    """Parse verse range within same chapter."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible+esv.66.1.26-66.1.27", 66, 1)
+    assert result == (26, 27)
+
+
+def test_parse_verse_from_navref_range_no_version_prefix():
+    """Parse bible.66.1.24-66.1.32 (no version prefix, range)."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible.66.1.24-66.1.32", 66, 1)
+    assert result == (24, 32)
+
+
+def test_parse_verse_from_navref_range_cross_chapter():
+    """Cross-chapter range: verse_end is None (indeterminate)."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible+esv.66.1.18-66.3.20", 66, 1)
+    assert result == (18, None)
+
+
+def test_parse_verse_from_navref_wrong_chapter():
+    """Ref in different chapter returns None."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible+esv.66.2.1", 66, 1)
+    assert result is None
+
+
+def test_parse_verse_from_navref_non_bible():
+    """Non-bible refs (page, topic) return None."""
+    from study import _parse_verse_from_navref
+    assert _parse_verse_from_navref("page.2157", 66, 1) is None
+    assert _parse_verse_from_navref("topic.salvation", 66, 1) is None
+
+
+def test_parse_verse_from_navref_chapter_only():
+    """Chapter-only ref like bible.66.1 returns None — no verse info."""
+    from study import _parse_verse_from_navref
+    result = _parse_verse_from_navref("bible.66.1", 66, 1)
+    assert result is None
