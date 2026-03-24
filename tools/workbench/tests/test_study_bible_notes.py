@@ -36,3 +36,25 @@ def test_find_study_bible_notes_truncates_long_text():
     for r in results:
         if r["text"]:
             assert len(r["text"]) <= 250  # 200 + allowance for truncation marker
+
+
+def test_get_article_navindex_refs():
+    """Cache should return all navindex refs for a given article."""
+    from logos_cache import LogosCache
+    cache = LogosCache()
+    # ESV SB article 1603 = Romans chapter 1 notes
+    refs = cache.get_article_navindex_refs(
+        "/Volumes/External/Logos4/Data/e3txalek.5iq/ResourceManager/Resources/ESVSB.logos4",
+        1603
+    )
+    assert isinstance(refs, list)
+    assert len(refs) > 10  # ESV SB has ~40 refs for Romans 1
+    # Should be sorted by offset
+    offsets = [r["offset"] for r in refs]
+    assert offsets == sorted(offsets)
+    # Each entry should have ref_key, article_num, offset
+    for r in refs:
+        assert "ref_key" in r
+        assert "article_num" in r
+        assert "offset" in r
+        assert r["article_num"] == 1603

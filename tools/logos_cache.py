@@ -101,6 +101,8 @@ class LogosCache:
                 ON navindex_cache(resource_file, ref_key);
             CREATE INDEX IF NOT EXISTS idx_navindex_file
                 ON navindex_cache(resource_file, entry_type);
+            CREATE INDEX IF NOT EXISTS idx_navindex_article
+                ON navindex_cache(resource_file, article_num);
         """)
         self._conn.commit()
 
@@ -378,6 +380,20 @@ class LogosCache:
         if row:
             return (row[0], row[1])
         return None
+
+    def get_article_navindex_refs(self, resource_file, article_num):
+        """Get all navindex refs for a specific article.
+
+        Returns list of dicts sorted by offset:
+        [{"ref_key": str, "article_num": int, "offset": int}, ...]
+        """
+        rows = self._conn.execute(
+            """SELECT ref_key, article_num, offset FROM navindex_cache
+               WHERE resource_file = ? AND article_num = ? AND entry_type = 'REF'
+               ORDER BY offset""",
+            (resource_file, article_num),
+        ).fetchall()
+        return [{"ref_key": r[0], "article_num": r[1], "offset": r[2]} for r in rows]
 
     # ── Utilities ─────────────────────────────────────────────────────────
 
