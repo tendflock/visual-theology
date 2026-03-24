@@ -1429,6 +1429,90 @@ def _parse_verse_from_navref(ref_key, book_num, chapter):
     return (ref_vs, end_vs)
 
 
+def _slice_article_by_offsets(text, navindex_refs, book_num, chapter,
+                               verse_start, verse_end):
+    """Slice article text to target verse range using navindex offsets.
+
+    Args:
+        text: full article text
+        navindex_refs: list of {"ref_key", "offset"} dicts, sorted by offset
+        book_num: target book number
+        chapter: target chapter number
+        verse_start: first target verse
+        verse_end: last target verse
+
+    Returns:
+        Sliced text covering the target verse range, or full text as fallback.
+    """
+    if not text or not navindex_refs:
+        return text
+
+    # Parse all refs into (verse_start, verse_end, offset) tuples
+    parsed = []
+    for r in navindex_refs:
+        vrange = _parse_verse_from_navref(r["ref_key"], book_num, chapter)
+        if vrange is not None:
+            vs, ve = vrange
+            parsed.append((vs, ve, r["offset"]))
+
+    if not parsed:
+        return text
+
+    # Sort by offset (should already be sorted, but ensure)
+    parsed.sort(key=lambda x: x[2])
+
+    # ── Find start offset ──
+    # Priority 1: narrowest finite section-range containing verse_start
+    # Cross-chapter ranges (ve=None) are skipped here — they're caught by Priority 3
+    best_section_offset = None
+    best_section_span = float('inf')
+    for vs, ve, offset in parsed:
+        if ve is not None and vs != ve and vs <= verse_start and ve >= verse_start:
+            # Section range that contains verse_start
+            span = ve - vs
+            if span < best_section_span:
+                best_section_span = span
+                best_section_offset = offset
+
+    # Priority 2: exact verse match
+    exact_offset = None
+    for vs, ve, offset in parsed:
+        if vs == verse_start and ve == verse_start:
+            exact_offset = offset
+            break
+
+    # Priority 3: nearest preceding verse
+    preceding_offset = None
+    for vs, ve, offset in parsed:
+        if vs is not None and vs <= verse_start:
+            preceding_offset = offset
+
+    # Pick best start
+    if best_section_offset is not None:
+        start_offset = best_section_offset
+    elif exact_offset is not None:
+        start_offset = exact_offset
+    elif preceding_offset is not None:
+        start_offset = preceding_offset
+    else:
+        return text  # No usable refs
+
+    # ── Find end offset ──
+    end_offset = len(text)
+    for vs, ve, offset in parsed:
+        if vs is not None and vs > verse_end:
+            end_offset = offset
+            break
+
+    result = text[start_offset:end_offset].strip()
+
+    # Fallback if slicing produced very little
+    if len(result) < 100:
+        return text
+
+    return result
+
+
 def _find_via_navindex(resource_file, ref):
     """Find commentary section using the native navigation index.
 

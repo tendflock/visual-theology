@@ -114,3 +114,67 @@ def test_parse_verse_from_navref_chapter_only():
     from study import _parse_verse_from_navref
     result = _parse_verse_from_navref("bible.66.1", 66, 1)
     assert result is None
+
+
+def test_slice_article_picks_narrowest_section():
+    """Should prefer 1:18-32 (narrow) over 1:18-3:20 (broad) as start."""
+    from study import _slice_article_by_offsets
+    text = "A" * 15000
+    refs = [
+        {"ref_key": "bible.66.1.1", "offset": 0},
+        {"ref_key": "bible.66.1.18-66.3.20", "offset": 8677},
+        {"ref_key": "bible.66.1.18-66.1.32", "offset": 8918},
+        {"ref_key": "bible.66.1.24", "offset": 11259},
+        {"ref_key": "bible.66.1.32", "offset": 13304},
+    ]
+    result = _slice_article_by_offsets(text, refs, 66, 1, 24, 32)
+    assert result == text[8918:]
+
+
+def test_slice_article_end_offset():
+    """End offset should be the first ref after verse_end."""
+    from study import _slice_article_by_offsets
+    text = "A" * 20000
+    refs = [
+        {"ref_key": "bible.66.1.1", "offset": 0},
+        {"ref_key": "bible.66.1.16", "offset": 6000},
+        {"ref_key": "bible.66.1.18", "offset": 8000},
+    ]
+    result = _slice_article_by_offsets(text, refs, 66, 1, 1, 7)
+    assert result == text[0:6000].strip()
+
+
+def test_slice_article_fallback_on_short_result():
+    """Should return full text if slicing produces < 100 chars."""
+    from study import _slice_article_by_offsets
+    text = "Short text but real content here."
+    refs = [
+        {"ref_key": "bible.66.1.24", "offset": 30},
+    ]
+    result = _slice_article_by_offsets(text, refs, 66, 1, 24, 32)
+    assert result == text
+
+
+def test_slice_article_no_matching_refs():
+    """Should return full text if no refs match target chapter."""
+    from study import _slice_article_by_offsets
+    text = "Full article text here."
+    refs = [
+        {"ref_key": "page.123", "offset": 0},
+    ]
+    result = _slice_article_by_offsets(text, refs, 66, 1, 24, 32)
+    assert result == text
+
+
+def test_slice_article_sparse_sections():
+    """Ancient Faith style: section-level refs only, no exact verse match."""
+    from study import _slice_article_by_offsets
+    text = "A" * 6000
+    refs = [
+        {"ref_key": "bible.66.1.1", "offset": 0},
+        {"ref_key": "bible.66.1.18-66.1.21", "offset": 3794},
+        {"ref_key": "bible.66.1.20", "offset": 4283},
+        {"ref_key": "bible.66.1.26-66.1.28", "offset": 4701},
+    ]
+    result = _slice_article_by_offsets(text, refs, 66, 1, 24, 32)
+    assert result == text[4283:].strip()
