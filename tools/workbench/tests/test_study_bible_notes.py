@@ -178,3 +178,21 @@ def test_slice_article_sparse_sections():
     ]
     result = _slice_article_by_offsets(text, refs, 66, 1, 24, 32)
     assert result == text[4283:].strip()
+
+
+def test_find_via_navindex_targets_verses():
+    """_find_via_navindex should return content for target verses, not chapter start."""
+    from study import _find_via_navindex, parse_reference
+    ref = parse_reference("Romans 1:24-32")
+    esvsb_path = "/Volumes/External/Logos4/Data/e3txalek.5iq/ResourceManager/Resources/ESVSB.logos4"
+    result = _find_via_navindex(esvsb_path, ref)
+    assert result is not None
+    # Must NOT start with 1:1–17 content (the old bug — full chapter from v1)
+    assert not result.startswith("1:1–17"), f"Result starts with chapter beginning: {result[:100]}"
+    assert not result.startswith("1:1 "), f"Result starts with verse 1:1: {result[:100]}"
+    # Should start with the section header containing our range (1:18)
+    assert "1:18" in result[:100], f"Expected section header near start: {result[:100]}"
+    # Should be significantly shorter than the full article (~13K chars)
+    assert len(result) < 8000, f"Result too long ({len(result)} chars), likely not sliced"
+    # Should contain verse 24 content
+    assert "1:24" in result, f"Result missing 1:24 content: {result[:200]}"

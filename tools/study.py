@@ -1525,6 +1525,19 @@ def _find_via_navindex(resource_file, ref):
     book_num = ref["book"]
     chapter = ref["chapter"]
     verse_start = ref["verse_start"]
+    verse_end = ref.get("verse_end") or verse_start
+
+    def _apply_verse_slicing(text, article_num):
+        """Apply offset-based slicing if we have verse-level targeting."""
+        if not text or not verse_start or not cache:
+            return text
+        article_refs = cache.get_article_navindex_refs(resource_file, article_num)
+        if article_refs:
+            return _slice_article_by_offsets(
+                text, article_refs, book_num, chapter,
+                verse_start, verse_end
+            )
+        return text
 
     # Build Logos reference format: bible.{book}.{chapter}.{verse}
     if verse_start:
@@ -1538,7 +1551,7 @@ def _find_via_navindex(resource_file, ref):
         if result:
             article_num, offset = result
             text = read_article_text(resource_file, article_num, max_chars=30000)
-            return text
+            return _apply_verse_slicing(text, article_num)
 
     # Not cached — try to build navindex via batch reader
     global _batch_reader
@@ -1625,7 +1638,7 @@ def _find_via_navindex(resource_file, ref):
 
     if best_article is not None:
         text = read_article_text(resource_file, best_article, max_chars=30000)
-        return text
+        return _apply_verse_slicing(text, best_article)
 
     return None
 
