@@ -196,3 +196,20 @@ def test_find_via_navindex_targets_verses():
     assert len(result) < 8000, f"Result too long ({len(result)} chars), likely not sliced"
     # Should contain verse 24 content
     assert "1:24" in result, f"Result missing 1:24 content: {result[:200]}"
+
+
+def test_find_study_bible_notes_targets_passage():
+    """Full integration: notes for Romans 1:24-32 should be about those verses."""
+    from study import find_study_bible_notes, parse_reference
+    ref = parse_reference("Romans 1:24-32")
+    results = find_study_bible_notes(ref)
+    assert len(results) > 0
+    for r in results:
+        # Should not start with 1:1 chapter-beginning content
+        assert not r["text"].startswith("1:1–17"), \
+            f"{r['abbrev']} starts with chapter beginning: {r['text'][:100]}"
+        assert not r["text"].startswith("1:1 "), \
+            f"{r['abbrev']} starts with verse 1:1: {r['text'][:100]}"
+        # Should not be truncated (targeted content is well under 20000)
+        assert "[... truncated ...]" not in r["text"], \
+            f"{r['abbrev']} was truncated ({len(r['text'])} chars)"

@@ -381,7 +381,7 @@ STUDY_BIBLES = [
 ]
 
 
-def find_study_bible_notes(ref, max_chars=5000):
+def find_study_bible_notes(ref, max_chars=20000):
     """Look up notes for a passage across all 7 study bibles.
 
     Returns list of dicts: [{"title", "abbrev", "text"}, ...]
@@ -1668,11 +1668,19 @@ def find_commentary_section(resource_file, ref, articles=None):
         if cached_arts:
             best = cached_arts[0]
             text = read_article_text(resource_file, best["article_num"], max_chars=30000)
+            if text and verse_start:
+                narrowed = _narrow_to_verses(text, verse_start, verse_end)
+                if narrowed:
+                    return narrowed
             if text:
                 return text
 
     # ── Try TOC-based navigation ──
     toc_text = find_commentary_section_via_toc(resource_file, ref)
+    if toc_text and verse_start:
+        narrowed = _narrow_to_verses(toc_text, verse_start, verse_end)
+        if narrowed:
+            return narrowed
     if toc_text:
         return toc_text
 
