@@ -31,7 +31,10 @@ if _env_file.exists():
             v = v.strip().strip('"').strip("'")
             os.environ.setdefault(k.strip(), v)
 
-from flask import Flask, Response, render_template, request, jsonify, redirect, url_for
+import bcrypt
+import sqlite3
+from functools import wraps
+from flask import Flask, Response, render_template, request, jsonify, redirect, url_for, session, make_response
 
 import workbench_db as db
 from workbench_agent import stream_agent_response, PHASES
@@ -50,6 +53,74 @@ from genre_map import get_genre
 from seed_questions import seed_question_bank
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
+
+# ── Auth (shared with MightyOaks LMS admin) ──────────────────────────────
+
+LMS_DB_PATH = "/Volumes/NetworkStorage/hybrid/data/lms.db"
+
+def verify_admin(username, password):
+    """Check credentials against MightyOaks LMS admins table."""
+    try:
+        conn = sqlite3.connect(LMS_DB_PATH)
+        row = conn.execute(
+            "SELECT password_hash FROM admins WHERE username = ?", (username,)
+        ).fetchone()
+        conn.close()
+        if row and bcrypt.checkpw(password.encode(), row[0].encode()):
+            return True
+    except Exception:
+        pass
+    return False
+
+LOGIN_PAGE = """<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sermon Tool — Login</title>
+<style>
+  body{font-family:system-ui,sans-serif;display:flex;justify-content:center;align-items:center;
+       min-height:100vh;margin:0;background:#1a1a2e;color:#e0e0e0}
+  form{background:#16213e;padding:2rem;border-radius:12px;width:320px;box-shadow:0 4px 24px rgba(0,0,0,.4)}
+  h2{margin:0 0 1.5rem;text-align:center;color:#a8d8ea}
+  input{width:100%;padding:.75rem;margin:.5rem 0;border:1px solid #333;border-radius:6px;
+        background:#0f3460;color:#e0e0e0;box-sizing:border-box;font-size:1rem}
+  button{width:100%;padding:.75rem;margin-top:1rem;border:none;border-radius:6px;
+         background:#e94560;color:#fff;font-size:1rem;cursor:pointer;font-weight:600}
+  button:hover{background:#c73e54}
+  .err{color:#e94560;text-align:center;margin-top:.5rem;font-size:.9rem}
+</style></head><body>
+<form method="POST" action="/login">
+  <h2>Sermon Tool</h2>
+  <input name="username" placeholder="Username" required autofocus>
+  <input name="password" type="password" placeholder="Password" required>
+  <button type="submit">Log In</button>
+  {error}
+</form></body></html>"""
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "GET":
+        return LOGIN_PAGE.replace("{error}", "")
+    username = request.form.get("username", "")
+    password = request.form.get("password", "")
+    if verify_admin(username, password):
+        session["authenticated"] = True
+        return redirect("/")
+    return LOGIN_PAGE.replace("{error}", '<p class="err">Invalid credentials</p>')
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/login")
+
+@app.before_request
+def require_auth():
+    if request.path == "/login" or request.path.startswith("/static/"):
+        return
+    if not session.get("authenticated"):
+        return redirect("/login")
+    # Redirect root to the study tool
+    if request.path == "/":
+        return redirect("/study/")
 
 
 # ── Jinja Filters ────────────────────────────────────────────────────────
@@ -810,6 +881,13 @@ def study_index():
     return render_template("study_start.html", sessions=sessions, error=error)
 
 
+@app.route("/study/session/<int:session_id>/delete", methods=["POST"])
+def study_delete_session(session_id):
+    """Delete a study session and all its data."""
+    companion_db.delete_session(session_id)
+    return redirect(url_for("study_index"))
+
+
 @app.route("/study/session/new", methods=["POST"])
 def study_new_session():
     """Create a new study session."""
@@ -1114,11 +1192,17 @@ def study_outline_delete(session_id, node_id):
 
 @app.route("/study/session/<int:session_id>/clock", methods=["PATCH"])
 def study_clock_update(session_id):
-    """Update elapsed time from client."""
+    """Update elapsed time from client (absolute, not delta)."""
     data = request.get_json() or {}
     elapsed = data.get("elapsed", 0)
     if elapsed:
-        companion_db.update_timer(session_id, 0, elapsed_delta=elapsed)
+        # Client sends total elapsed — set it directly, don't add as delta
+        conn = companion_db._conn()
+        conn.execute(
+            "UPDATE sessions SET total_elapsed_seconds = ?, updated_at = ? WHERE id = ?",
+            (elapsed, companion_db._now(), session_id))
+        conn.commit()
+        conn.close()
     return jsonify({"ok": True})
 
 
