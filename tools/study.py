@@ -1433,6 +1433,10 @@ def _slice_article_by_offsets(text, navindex_refs, book_num, chapter,
                                verse_start, verse_end):
     """Slice article text to target verse range using navindex offsets.
 
+    When a broad section header exists (e.g. 3:1-21 for studying 3:16),
+    extracts just the section header paragraph + the target verse notes,
+    skipping intermediate verse notes the user didn't ask for.
+
     Args:
         text: full article text
         navindex_refs: list of {"ref_key", "offset"} dicts, sorted by offset
@@ -1461,41 +1465,28 @@ def _slice_article_by_offsets(text, navindex_refs, book_num, chapter,
     # Sort by offset (should already be sorted, but ensure)
     parsed.sort(key=lambda x: x[2])
 
-    # ── Find start offset ──
-    # Priority 1: narrowest finite section-range containing verse_start
-    # Cross-chapter ranges (ve=None) are skipped here — they're caught by Priority 3
-    best_section_offset = None
+    # ── Find section header containing verse_start ──
+    best_section = None  # (vs, ve, offset)
     best_section_span = float('inf')
     for vs, ve, offset in parsed:
         if ve is not None and vs != ve and vs <= verse_start and ve >= verse_start:
-            # Section range that contains verse_start
             span = ve - vs
             if span < best_section_span:
                 best_section_span = span
-                best_section_offset = offset
+                best_section = (vs, ve, offset)
 
-    # Priority 2: exact verse match
+    # ── Find exact verse match ──
     exact_offset = None
     for vs, ve, offset in parsed:
         if vs == verse_start and ve == verse_start:
             exact_offset = offset
             break
 
-    # Priority 3: nearest preceding verse
+    # ── Find nearest preceding verse ──
     preceding_offset = None
     for vs, ve, offset in parsed:
         if vs is not None and vs <= verse_start:
             preceding_offset = offset
-
-    # Pick best start
-    if best_section_offset is not None:
-        start_offset = best_section_offset
-    elif exact_offset is not None:
-        start_offset = exact_offset
-    elif preceding_offset is not None:
-        start_offset = preceding_offset
-    else:
-        return text  # No usable refs
 
     # ── Find end offset ──
     end_offset = len(text)
@@ -1504,10 +1495,46 @@ def _slice_article_by_offsets(text, navindex_refs, book_num, chapter,
             end_offset = offset
             break
 
-    result = text[start_offset:end_offset].strip()
+    # ── Determine the best target verse start offset ──
+    # This is where the verse notes for the target begin
+    target_offset = exact_offset or preceding_offset
+
+    # ── Decide whether section header is "close" or "broad" ──
+    range_size = verse_end - verse_start + 1
+    section_gap_threshold = max(3, range_size)
+
+    if best_section is not None:
+        section_vs, section_ve, section_offset = best_section
+        gap = verse_start - section_vs
+
+        if gap <= section_gap_threshold:
+            # Section starts close to target — include it fully
+            start_offset = section_offset
+            result = text[start_offset:end_offset].strip()
+        elif target_offset is not None:
+            # Section starts far before target — extract header + target verse
+            # Header = from section start to the first verse note after it
+            header_end = section_offset
+            for vs, ve, offset in parsed:
+                if offset > section_offset:
+                    header_end = offset
+                    break
+            header = text[section_offset:header_end].strip()
+            verse_notes = text[target_offset:end_offset].strip()
+            if header and verse_notes:
+                result = header + "\n\n" + verse_notes
+            else:
+                result = verse_notes or header or text[section_offset:end_offset].strip()
+        else:
+            # No target offset, use section fully
+            result = text[section_offset:end_offset].strip()
+    elif target_offset is not None:
+        result = text[target_offset:end_offset].strip()
+    else:
+        return text  # No usable refs
 
     # Fallback if slicing produced very little
-    if len(result) < 100:
+    if len(result) < 20:
         return text
 
     return result
