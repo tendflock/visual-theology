@@ -1,139 +1,175 @@
-# Sermon Coach — Design Spec
+# Sermon Coach — Design Spec (MVP)
 
-**Date:** 2026-04-14
-**Author:** Bryan Schneider + Claude (with adversarial review by OpenAI Codex CLI)
-**Status:** Draft — pending user review
+**Date:** 2026-04-14 (rewritten after two consultant rounds)
+**Author:** Bryan Schneider + Claude (with adversarial review by OpenAI Codex CLI and an outside research consultant)
+**Status:** Draft — MVP scope, pending user approval before implementation
 **Parent project:** Logos 4 Library + Sermon Study Companion (`tools/workbench/`)
 
 ## Problem
 
-Bryan preps sermons in the existing 12-phase companion Monday through Saturday, preaches Sunday morning, then retrospects his delivery Monday or Tuesday. Today the retrospective is manual: he pastes his sermon transcript into an external Claude chat and asks for feedback. That feedback is context-free — it doesn't know his prep notes, outline, Christ thread, FCF, or time plan, and it doesn't know how last week's sermon ran. His wife's feedback crystallizes the gap that matters most: his sermons run long (40 min vs 25–30 target), they're too exegetically dense, and his homiletical bridge is his own known weak spot. All of those are **longitudinal patterns**, not one-off issues.
+Bryan preps sermons in the existing 12-phase companion Monday through Saturday, preaches Sunday morning, then retrospects his delivery Monday or Tuesday. Today the retrospective is manual: he pastes his sermon transcript into an external Claude chat and asks for feedback. That feedback is context-free — it doesn't know his prep notes, his outline, his FCF, or his time plan, and it doesn't know how last week's sermon ran. His wife's crystallizing feedback — *"too long, too dense, application comes late"* — is a pattern across sermons, not a one-off. What Bryan actually needs is a **weekly coaching loop** that helps him preach **shorter, clearer, warmer, and more pointedly**, grounded in his prep context and accumulating longitudinal signal over time.
 
-What's missing isn't another chat surface. It's a coach that:
-- knows every sermon Bryan has actually preached (via SermonAudio sync),
-- has deterministic metrics computed the same way every week,
-- reads his prep context when a prep session is linked,
-- can read deeper than the metrics when it needs to,
-- tracks patterns across months,
-- and stays in voice with the existing companion's Reformed, Chapell/Robinson/Beeke/Piper DNA.
+Two rounds of consultant review sharpened what that means in practice:
+
+1. **Build the spine, cut the limbs.** A first version should be ruthlessly scoped to deterministic metrics + one interpretive pass + one review page + one trends view. Override chains, provenance popovers, content-addressed stage caches, and elaborate locking are premature for a single-user weekly workflow.
+
+2. **Major on impact, not just analyzability.** The metrics that are easy to engineer from prep artifacts (outline fidelity, Christ-thread presence, density score) are not what rhetoric and sermon-listening research identify as the strongest predictors of *impact on hearers*. Impact comes from clarity of burden, movement, application specificity, ethos, and concreteness. Faithfulness metrics (Christ thread, exegetical grounding) matter for a Reformed pastor but are orthogonal to listener impact and belong in their own lane.
+
+This MVP is built on both corrections.
 
 ## Solution
 
-A **pipeline-first sermon coach** layered onto the existing companion. Deterministic code handles ingestion, matching, and metric extraction. A Claude Opus 4.6 coach agent reads the precomputed metrics **and** has agency to go deeper — pulling raw transcripts, full prep sessions, cross-sermon history, and recording structured overrides when it disagrees with the pipeline. Sermons auto-link to prep sessions via explicit rule tiers with a default-unlinked posture on ambiguity. All retrospection lives inside the linked study session's view; historicals and orphans live at a peer `/sermons/` surface that mirrors the same report card. Pattern tracking starts from day one via a 356-sermon historical bootstrap filtered by `speaker=Bryan Schneider AND eventType=Sunday Service`.
+A **pipeline-first sermon coach** layered onto the existing companion. A small number of deterministic modules handle ingestion, matching, and metric extraction from SermonAudio-synced transcripts. A single Opus 4.6 LLM pass scores each sermon against a three-tier rubric (impact / faithfulness / diagnostic) and emits a structured review. A coach chat surface lets Bryan interrogate the findings and read deeper — the coach has full read access to raw transcripts, prep sessions, and cross-sermon history, but it never computes canonical metrics on the fly. Everything is recomputable by re-running the analyzer. No overrides, no provenance graph, no stage cache — just the core loop.
 
-The architectural principle, in one line: **the pipeline is a floor, not a ceiling.** The deterministic layer is always recomputable, stable, and auditable. The LLM layer has full depth access and can override the floor with structured, rationale-bearing challenges. Disagreement is first-class data, not silent drift.
+The architectural line stays: **the pipeline is a floor, not a ceiling.** Metrics come from deterministic code and one structured LLM pass. The coach narrates from the floor, and when it sees something the pipeline missed, it says so in plain chat — coach disagreement is just a conversation message, not a structured override table.
+
+The **corpus-gated longitudinal rule** (research-derived) governs what the coach is allowed to claim:
+
+| Corpus | Coach voice |
+|---|---|
+| 1 sermon | single-sermon observations only — no pattern language |
+| 2–4 sermons | "early observations" — no "persistent" claims |
+| 5–9 sermons (~15,000 words) | "emerging pattern" framing allowed when ≥3/5 sermons share the trend |
+| 10+ sermons (~25,000 words) | full longitudinal voice ("pattern," "trajectory," "persistent") |
+
+This prevents the coach from over-speaking during the early weeks when there's not enough recent corpus to distinguish a real habit from a single sermon's quirk.
+
+---
+
+## MVP scope in one screen
+
+**In (MVP):**
+- SermonAudio ingest filtered to `speaker=Bryan Schneider` AND `eventType=Sunday Service` (heuristic fallback of Sunday + >20min)
+- Last-24 recent sermons backfill as the historical baseline (~$5 one-time, ~6 months)
+- Tier-based auto-matching (high confidence only; default unlinked, manual approval UI for candidates)
+- 8-table schema (sermons, passages, links, reviews, flags, coach_messages, sync_log, cost_log)
+- Deterministic stage pipeline: segmentation, outline alignment (when linked), timing, density hotspots
+- **One** combined Opus 4.6 LLM call per sermon emitting the full three-tier rubric as structured JSON
+- **Four-card review page**: Impact / Faithfulness / Diagnostic / Prescription
+- Streaming Opus 4.6 coach chat below the cards, reading precomputed review + full raw context
+- Trends page showing last 8–12 sermons across the Tier 1 impact dimensions + diagnostic trend lines
+- Corpus-gated longitudinal rule enforced in the coach prompt and at the `get_sermon_patterns` tool level
+- Manual "Sync now" button + 4h APScheduler cron
+- Simple file-based lock; idempotent upsert handles concurrent or crashed runs
+- Cost transparency via `sermon_analysis_cost_log`
+
+**Out (deferred to Phase 2+, see appendix):**
+- Structured override chains and effective-value views
+- Per-metric provenance + popovers + input-hash tracking
+- Content-addressed stage cache
+- Bootstrap resumability / checkpoint tables
+- Lease-based locking with heartbeat
+- Cross-session `/sermons/coach` standalone chat
+- `lookup_homiletics_book` tool (Chapell/Robinson/Beeke citations — available as a single tool but not promoted)
+- Per-metric rubric versioning and staleness gates
+- Coach notes table (coach writes chat messages instead)
+- Classification-review UI for unknown eventTypes
+- Health dashboard beyond `/sermons/sync-log`
+- Topical sermon handling (MVP only supports expository; topical get `sermon_type='topical'` and are excluded from auto-analysis)
+- Full 356-sermon historical backfill
 
 ---
 
 ## Architecture
 
-### Five layers with one direction of data flow
+### Five layers, one direction
 
 ```
                 ┌─────────────────────────────────────────────────┐
-                │  SermonAudio API (external)                     │
+                │  SermonAudio API (external, AI transcripts)     │
                 └──────────────────────┬──────────────────────────┘
-                                       │  pulled every ~4h cron
+                                       │  4h cron + manual trigger
                                        ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  LAYER 1 — INGEST            sermonaudio_sync.py             │
-  │  - API client (api key auth)                                 │
-  │  - Filter: speaker=Bryan Schneider ∩ eventType∈{Sunday       │
-  │    Service} ∪ heuristic (Sunday + duration>20min)            │
-  │  - Content-addressed fingerprints (transcript_hash,          │
-  │    metadata_hash, source_version counter)                    │
-  │  - Idempotent upsert; state machine transitions              │
+  │  - API client, speaker+eventType filter                      │
+  │  - Idempotent hash-based upsert                              │
+  │  - Simple state machine (pending → ready → analyzed)         │
+  │  - File-based lock, retry with SQL-enforced cooldown         │
   └──────────────────────┬───────────────────────────────────────┘
                          ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  LAYER 2 — MATCH             sermon_matcher.py               │
-  │  - Deterministic rule tiers (Tier 1 auto, Tier 2 candidate,  │
-  │    Tier 3 no row)                                            │
-  │  - Pure function + transactional orchestrator (BEGIN         │
-  │    IMMEDIATE)                                                │
+  │  - Three rule tiers (auto / candidate / no match)            │
+  │  - Pure function + transactional orchestrator                │
   │  - Default UNLINKED on ambiguity                             │
-  │  - Supports multi-range passages and topical exclusion       │
+  │  - Multi-range passages via sermon_passages                  │
   └──────────────────────┬───────────────────────────────────────┘
                          ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  LAYER 3 — ANALYZE           sermon_analyzer.py              │
-  │  - 8-stage pipeline, content-addressed stage cache           │
-  │  - Stages 1-4 pure code; 5-7 structured LLM calls            │
-  │    (claude-opus-4-6)                                         │
-  │  - Per-metric provenance captured in sermon_review_provenance│
-  │  - Recomputable from database alone (stable floor)           │
+  │  - Pure stages: segment, align_with_outline, timing, density │
+  │  - ONE combined LLM call (claude-opus-4-6) emitting the full │
+  │    three-tier rubric in structured JSON                      │
+  │  - Writes sermon_reviews + sermon_flags                      │
   │  - Calls homiletics_core.py pure functions                   │
+  │  - Recomputable: re-run overwrites rows                      │
   └──────────────────────┬───────────────────────────────────────┘
                          ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  LAYER 4 — NARRATE (COACH)   sermon_coach_agent.py           │
-  │  - Streaming claude-opus-4-6, Reformed voice                 │
-  │  - READS precomputed reviews AND has full read access to     │
-  │    raw transcript / prep session / cross-sermon history      │
-  │  - Cites Chapell, Robinson, Beeke, Piper, Greidanus, Clowney,│
-  │    Goldsworthy, Mathewson via lookup_homiletics_book tool    │
-  │  - OVERRIDES pipeline via sermon_overrides (structured,      │
-  │    rationale-bearing, supersession chain)                    │
+  │  - Streaming claude-opus-4-6                                 │
+  │  - Reads precomputed review + full raw context               │
+  │  - Corpus-gated longitudinal rule enforced in prompt         │
+  │  - Narrates from the review, can chat deeper                 │
+  │  - Disagreement = chat message, not structured override      │
   │  - Voice constants shared with companion_agent.py            │
   └──────────────────────┬───────────────────────────────────────┘
                          ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  LAYER 5 — UI                app.py + templates + static     │
-  │  - Review tab inside study_session.html (when linked)        │
-  │  - /sermons/ blueprint — authoritative review surface for    │
-  │    orphans + historicals + cross-session patterns            │
-  │  - Badge fires on review_ready transitions; compare-and-set  │
-  │    via ui_last_seen_version                                  │
-  │  - HTMX + SSE, partials, dark theme                          │
+  │  - /sermons/<id> = authoritative review surface              │
+  │  - Review tab inside study_session.html = linked shortcut    │
+  │  - /sermons/patterns = trends view                           │
+  │  - /sermons/sync-log = debug                                 │
+  │  - Badge on session card when review lands                   │
   └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Two durable invariants
 
-1. **Every downstream layer is recomputable from the database alone.** If the rubric changes, re-running the analyzer updates `sermon_reviews` + `sermon_flags` without touching overrides, and trends refresh automatically. Nothing is trapped in a chat log.
+1. **Recomputable from the database alone.** If the rubric changes or a transcript updates, re-running the analyzer overwrites `sermon_reviews` + `sermon_flags` and trends refresh automatically. No state lives outside tables.
 
-2. **The coach reads everything and writes structured overrides when it disagrees.** Pipeline values are the default. Coach overrides are explicit, auditable, and survive reanalysis. Neither layer is authoritative over the other — they keep each other honest via the `effective_value = latest_active_override ?? latest_pipeline_value` rule.
+2. **The coach reads everything, writes nothing canonical.** Pipeline values are the default. When the coach disagrees, it narrates the disagreement in chat — that disagreement is logged in `sermon_coach_messages` but doesn't silently rewrite metric values. If Bryan wants to make a coach disagreement persistent, he can flag it via a chat message that stays in the log.
 
 ### Module ownership
 
-| Module | Responsibility | Touches |
-|---|---|---|
-| `sermonaudio_sync.py` | Ingest + classify + upsert | `sermons`, `sermon_passages`, `sermon_sync_log`, `sermon_sync_checkpoint`, `sync_lock`, `event_type_classification` |
-| `sermon_matcher.py` | Deterministic session matching | `sermon_links`, reads `sermons`+`sessions` |
-| `sermon_analyzer.py` | Pipeline computation (stages 1-8) | `sermon_reviews`, `sermon_flags`, `sermon_analysis_cache`, `sermon_review_provenance`, `sermon_review_history`, `sermon_analysis_cost_log` |
-| `sermon_coach_agent.py` | Conversational coach | `sermon_coach_messages`, `sermon_overrides`, reads everything |
-| `homiletics_core.py` | Pure homiletical rules (FORM, Christ thread, density, "so what" gate, time estimator) | Imported by analyzer + coach; no DB access |
-| `voice_constants.py` | Shared voice DNA | Imported by companion_agent + coach_agent |
-| `app.py` (extended) | Flask routes, APScheduler setup | All new routes |
+| Module | Responsibility |
+|---|---|
+| `sermonaudio_sync.py` | Ingest, classify, upsert |
+| `sermon_matcher.py` | Deterministic session matching |
+| `sermon_analyzer.py` | Pure stages + one structured LLM call |
+| `sermon_coach_agent.py` | Streaming coach conversation |
+| `homiletics_core.py` | Pure rule functions (imported by analyzer) |
+| `voice_constants.py` | Shared voice DNA (imported by both companion_agent and coach_agent) |
+| `sermon_coach_tools.py` | Tools the coach uses for depth reads |
 
-Existing code **untouched**: `study.py`, `logos_batch.py`, LogosReader C# layer, `libSinaiInterop.dylib`, `companion_agent.py`'s prep phases, and the existing prep-side routes. `companion_db.py` grows new tables and two writer touches (`save_card_response`, `save_message` for homiletical phases) that maintain `sessions.last_homiletical_activity_at`.
+Existing code is untouched except:
+- `companion_db.py` grows the new tables and gains two writer touches in `save_card_response` / `save_message` for homiletical phases to maintain `sessions.last_homiletical_activity_at`
+- `tools/study.py` `parse_reference()` is extended for multi-range and chapter-span passages
 
 ---
 
 ## Data Model
 
-All new tables added to `companion_db.py`. No changes to existing tables except adding `last_homiletical_activity_at` to `sessions`.
+Eight new tables, one column added to `sessions`, one view. All new tables hang off existing schema via FKs and can be ripped out cleanly.
 
-### Primary entity: `sermons`
+### `sermons`
 
 ```sql
 CREATE TABLE sermons (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     sermonaudio_id TEXT UNIQUE NOT NULL,
-
-    -- Identity
     broadcaster_id TEXT NOT NULL,
     title TEXT NOT NULL,
     speaker_name TEXT,
     event_type TEXT,
     series TEXT,
     preach_date TEXT,
-    preach_date_source TEXT DEFAULT 'sermonaudio'
-        CHECK (preach_date_source IN ('sermonaudio','manual','inferred')),
     publish_date TEXT,
     duration_seconds INTEGER,
 
-    -- Passage (primary; secondaries in sermon_passages)
+    -- Primary passage (secondaries in sermon_passages)
     bible_text_raw TEXT,
     book INTEGER,
     chapter INTEGER,
@@ -144,37 +180,32 @@ CREATE TABLE sermons (
     audio_url TEXT,
     transcript_text TEXT,
     transcript_source TEXT DEFAULT 'sermonaudio',
-    transcript_quality TEXT CHECK (transcript_quality IN
-        ('full','partial','low_confidence','unavailable')),
 
-    -- Classification (see §3 Ingest)
+    -- Type and classification
     sermon_type TEXT NOT NULL DEFAULT 'expository'
         CHECK (sermon_type IN ('expository','topical')),
     classified_as TEXT NOT NULL
         CHECK (classified_as IN ('sermon','skipped')),
     classification_reason TEXT,
-    sermon_aim TEXT,   -- manual disambiguation for same-passage sermons
 
-    -- Source fingerprinting (content-addressed recomputability)
+    -- Fingerprint for idempotent upsert and stale detection
     metadata_hash TEXT,
     transcript_hash TEXT,
     source_version INTEGER NOT NULL DEFAULT 1,
     remote_updated_at TEXT,
 
-    -- State (closed enum — every value the codebase ever uses must be listed here)
+    -- State
     sync_status TEXT NOT NULL DEFAULT 'pending_sync' CHECK (sync_status IN (
         'pending_sync',
         'synced_metadata',
         'transcript_ready',
-        'transcript_stalled',
         'analysis_pending',
         'analysis_running',
         'review_ready',
         'sync_failed',
         'analysis_failed',
         'analysis_skipped',
-        'permanent_failure',
-        'archived'
+        'permanent_failure'
     )),
     sync_error TEXT,
     failure_count INTEGER NOT NULL DEFAULT 0,
@@ -188,14 +219,11 @@ CREATE TABLE sermons (
         )),
 
     -- Tombstones
-    deleted_at TEXT,
     is_remote_deleted INTEGER NOT NULL DEFAULT 0,
+    deleted_at TEXT,
 
-    -- Lease for in-flight analysis
-    analysis_lease_expires_at TEXT,
-
-    -- UI state — composite signature so badge fires on source, analyzer, AND rubric changes
-    ui_last_seen_review_signature TEXT,
+    -- UI state: simple monotonic version
+    ui_last_seen_version INTEGER NOT NULL DEFAULT 0,
 
     first_synced_at TEXT NOT NULL,
     last_synced_at TEXT NOT NULL,
@@ -211,7 +239,22 @@ CREATE INDEX idx_sermons_match_status ON sermons(match_status);
 CREATE INDEX idx_sermons_book_chapter ON sermons(book, chapter);
 ```
 
-### `sermon_passages` — multi-range passages per sermon
+**State machine transitions:**
+
+```
+pending_sync → synced_metadata → transcript_ready → analysis_pending → analysis_running → review_ready
+      │              │                  │                    │
+      └──► sync_failed                   └──► analysis_failed
+             │                                      │
+             │ (1h→4h→16h→64h SQL cooldown,          │ (retry)
+             │  then permanent_failure at ≥5)        │
+             ▼                                      ▼
+       pending_sync / permanent_failure      analysis_pending
+```
+
+Badge fires on transition into `review_ready` **OR** when `source_version > ui_last_seen_version` on a sermon that's already in `review_ready` (e.g., the source mutated and the sermon got re-analyzed).
+
+### `sermon_passages` — multi-range support
 
 ```sql
 CREATE TABLE sermon_passages (
@@ -220,10 +263,10 @@ CREATE TABLE sermon_passages (
     rank INTEGER NOT NULL,
     book INTEGER NOT NULL,
     chapter_start INTEGER NOT NULL,
-    verse_start INTEGER,              -- NULL = verse 1
+    verse_start INTEGER,           -- NULL = verse 1
     chapter_end INTEGER NOT NULL,
-    verse_end INTEGER,                -- NULL = end of chapter
-    raw_text TEXT,                    -- audit
+    verse_end INTEGER,             -- NULL = end of chapter
+    raw_text TEXT,
     created_at TEXT NOT NULL,
     UNIQUE(sermon_id, rank)
 );
@@ -231,9 +274,9 @@ CREATE INDEX idx_sermon_passages_sermon ON sermon_passages(sermon_id);
 CREATE INDEX idx_sermon_passages_lookup ON sermon_passages(book, chapter_start);
 ```
 
-Primary passage (rank 1) is also denormalized on `sermons` for cheap single-lookup filters.
+Primary passage (`rank=1`) is also denormalized on `sermons` for cheap single-lookup filters. `"Romans 8:1-11; Romans 9:1-5"` parses to two rows.
 
-### `sermon_links` — matched sessions with lifecycle
+### `sermon_links` — matched sessions
 
 ```sql
 CREATE TABLE sermon_links (
@@ -241,14 +284,9 @@ CREATE TABLE sermon_links (
     sermon_id INTEGER NOT NULL REFERENCES sermons(id),
     session_id INTEGER NOT NULL REFERENCES sessions(id),
     link_status TEXT NOT NULL
-        CHECK (link_status IN ('active','candidate','superseded','rejected')),
-    link_source TEXT NOT NULL
-        CHECK (link_source IN ('auto','manual')),
-    confidence REAL,                  -- debug breadcrumb, not a gate
+        CHECK (link_status IN ('active','candidate','rejected')),
+    link_source TEXT NOT NULL CHECK (link_source IN ('auto','manual')),
     match_reason TEXT NOT NULL,
-    superseded_at TEXT,
-    superseded_by_link_id INTEGER REFERENCES sermon_links(id),
-    superseded_reason TEXT,
     created_at TEXT NOT NULL,
     UNIQUE(sermon_id, session_id)
 );
@@ -258,7 +296,9 @@ CREATE INDEX idx_sermon_links_sermon ON sermon_links(sermon_id);
 CREATE INDEX idx_sermon_links_session ON sermon_links(session_id);
 ```
 
-### `sermon_reviews` — deterministic per-sermon metrics
+MVP drops `superseded` status (just delete and re-create), drops `confidence` (tier rules are enough), drops supersession audit fields. When the matcher finds a better link for an already-linked sermon, it updates the existing `active` row directly rather than creating a supersession chain.
+
+### `sermon_reviews` — three-tier rubric
 
 ```sql
 CREATE TABLE sermon_reviews (
@@ -266,70 +306,72 @@ CREATE TABLE sermon_reviews (
     analyzer_version TEXT NOT NULL,
     homiletics_core_version TEXT NOT NULL,
     model_version TEXT,
-
-    -- Version fingerprint of the inputs this review was computed against
-    analyzed_transcript_hash TEXT,
+    analyzed_transcript_hash TEXT NOT NULL,
     source_version_at_analysis INTEGER NOT NULL,
 
-    -- Length & timing
+    -- ── TIER 1: IMPACT PREDICTORS ────────────────────────────────
+    burden_clarity TEXT CHECK (burden_clarity IN
+        ('crisp','clear','implied','muddled','absent')),
+    burden_statement_excerpt TEXT,
+    burden_first_stated_at_sec INTEGER,
+
+    movement_clarity TEXT CHECK (movement_clarity IN
+        ('river','mostly_river','uneven','lake')),
+    movement_rationale TEXT,
+
+    application_specificity TEXT CHECK (application_specificity IN
+        ('localized','concrete','abstract','absent')),
+    application_first_arrived_at_sec INTEGER,
+    application_excerpts TEXT,            -- JSON array of {start_sec, excerpt}
+
+    ethos_rating TEXT CHECK (ethos_rating IN
+        ('seized','engaged','professional','detached')),
+    ethos_markers TEXT,                   -- JSON array of observations
+
+    concreteness_score INTEGER CHECK (concreteness_score BETWEEN 1 AND 5),
+    imagery_density_per_10min REAL,
+    narrative_moments TEXT,               -- JSON array of {start_sec, end_sec, excerpt}
+
+    -- ── TIER 2: FAITHFULNESS ─────────────────────────────────────
+    christ_thread_score TEXT CHECK (christ_thread_score IN
+        ('explicit','gestured','absent')),
+    christ_thread_excerpts TEXT,          -- JSON
+    exegetical_grounding TEXT CHECK (exegetical_grounding IN
+        ('grounded','partial','pretext')),
+    exegetical_grounding_notes TEXT,
+
+    -- ── TIER 3: DIAGNOSTIC (symptoms) ────────────────────────────
     actual_duration_seconds INTEGER NOT NULL,
     planned_duration_seconds INTEGER,
     duration_delta_seconds INTEGER,
-    section_timings TEXT,
+    section_timings TEXT,                 -- JSON: {intro, body, app, close}
+    length_delta_commentary TEXT,
+    density_hotspots TEXT,                -- JSON array of {start_sec, end_sec, note}
+    late_application_note TEXT,
+    outline_coverage_pct REAL,            -- NULL if unlinked
+    outline_additions TEXT,               -- JSON
+    outline_omissions TEXT,               -- JSON
+    outline_drift_note TEXT,
 
-    -- Bridge & Christ thread
-    bridge_score TEXT CHECK (bridge_score IN ('landed','partial','missed')),
-    bridge_evidence TEXT,
-    christ_thread_score TEXT CHECK (christ_thread_score IN
-        ('explicit','gestured','absent')),
-    christ_thread_evidence TEXT,
-
-    -- Density & delivery
-    density_score INTEGER CHECK (density_score BETWEEN 1 AND 5),
-    density_per_section TEXT,
-    jargon_density INTEGER,
-    application_concreteness INTEGER CHECK (application_concreteness BETWEEN 1 AND 5),
-
-    -- Structural fidelity (null if unlinked)
-    outline_coverage_pct REAL,
-    outline_additions TEXT,
-    outline_omissions TEXT,
-
-    -- Summary fields
-    top_encouragements TEXT,
-    top_concerns TEXT,
+    -- ── COACH SUMMARY (emitted by same LLM pass) ─────────────────
+    top_impact_helpers TEXT NOT NULL,     -- JSON array of 2-3 strings
+    top_impact_hurters TEXT NOT NULL,     -- JSON array of 2-3 strings
+    faithfulness_note TEXT,               -- one-line summary, nullable
+    one_change_for_next_sunday TEXT NOT NULL,
 
     computed_at TEXT NOT NULL
 );
 ```
 
-One row per sermon. Re-running the analyzer **overwrites** this row (bumping `analyzer_version` and `source_version_at_analysis`) and **preserves** `sermon_overrides`.
+One row per sermon. Re-running the analyzer overwrites this row.
 
-### `sermon_review_history` — append-only snapshots
-
-```sql
-CREATE TABLE sermon_review_history (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
-    review_snapshot_json TEXT NOT NULL,      -- full sermon_reviews row serialized
-    analyzer_version TEXT NOT NULL,
-    homiletics_core_version TEXT NOT NULL,
-    source_version_at_analysis INTEGER NOT NULL,
-    archived_at TEXT NOT NULL
-);
-CREATE INDEX idx_review_history_sermon ON sermon_review_history(sermon_id, archived_at DESC);
-```
-
-Populated on each `sermon_reviews` overwrite. Not for runtime; for debugging rubric drift.
-
-### `sermon_flags` — per-moment findings
+### `sermon_flags` — granular per-moment flags
 
 ```sql
 CREATE TABLE sermon_flags (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
-    target_key TEXT NOT NULL,              -- content-hash of flag type+location for override stability
-    flag_type TEXT NOT NULL,
+    flag_type TEXT NOT NULL,            -- 'density_spike','late_application','abstract_app','cold_ethos','narrative_moment','refrain','burden_restate','etc.'
     severity TEXT NOT NULL CHECK (severity IN ('info','note','warn','concern')),
     transcript_start_sec INTEGER,
     transcript_end_sec INTEGER,
@@ -337,185 +379,20 @@ CREATE TABLE sermon_flags (
     excerpt TEXT,
     rationale TEXT NOT NULL,
     analyzer_version TEXT NOT NULL,
-    homiletics_core_version TEXT NOT NULL,
     created_at TEXT NOT NULL
 );
 CREATE INDEX idx_sermon_flags_sermon ON sermon_flags(sermon_id);
-CREATE INDEX idx_sermon_flags_target_key ON sermon_flags(target_key);
+CREATE INDEX idx_sermon_flags_type ON sermon_flags(flag_type);
 ```
 
-Flags are deleted + reinserted per sermon on reanalysis. Overrides reference flags by `target_key` (content-based) so they survive the delete/reinsert cycle.
-
-### `sermon_overrides` — coach/user challenges to pipeline
-
-```sql
-CREATE TABLE sermon_overrides (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
-    target_table TEXT NOT NULL CHECK (target_table IN ('sermon_reviews','sermon_flags')),
-    target_key TEXT NOT NULL,              -- column name for reviews; content-hash for flags
-    pipeline_value TEXT,
-    coach_value TEXT NOT NULL,
-    rationale TEXT NOT NULL,
-    authored_by TEXT NOT NULL DEFAULT 'coach' CHECK (authored_by IN ('coach','user')),
-    supersedes_override_id INTEGER REFERENCES sermon_overrides(id),
-    is_active INTEGER NOT NULL DEFAULT 1,
-    created_at TEXT NOT NULL
-);
-CREATE INDEX idx_overrides_sermon_target
-    ON sermon_overrides(sermon_id, target_key, is_active);
-```
-
-Override chain: a new override on the same `(sermon_id, target_key)` sets its predecessor's `is_active=0` and records `supersedes_override_id` on the new row. Read-time composition:
-
-```sql
-SELECT coach_value FROM sermon_overrides
-WHERE sermon_id = ? AND target_key = ? AND is_active = 1
-ORDER BY created_at DESC LIMIT 1
-```
-
-### `sermon_effective_review` — composed view
-
-```sql
-CREATE VIEW sermon_effective_review AS
-SELECT
-    sr.sermon_id,
-    sr.analyzer_version,
-    sr.homiletics_core_version,
-    sr.model_version,
-    sr.analyzed_transcript_hash,
-    sr.source_version_at_analysis,
-    sr.actual_duration_seconds,
-    sr.planned_duration_seconds,
-    sr.duration_delta_seconds,
-    sr.section_timings,
-    COALESCE(
-        (SELECT json_extract(coach_value, '$') FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'bridge_score'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.bridge_score
-    ) AS effective_bridge_score,
-    sr.bridge_score AS pipeline_bridge_score,
-    sr.bridge_evidence,
-    COALESCE(
-        (SELECT json_extract(coach_value, '$') FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'christ_thread_score'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.christ_thread_score
-    ) AS effective_christ_thread_score,
-    sr.christ_thread_score AS pipeline_christ_thread_score,
-    sr.christ_thread_evidence,
-    COALESCE(
-        (SELECT CAST(json_extract(coach_value, '$') AS INTEGER) FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'density_score'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.density_score
-    ) AS effective_density_score,
-    sr.density_score AS pipeline_density_score,
-    sr.density_per_section,
-    sr.jargon_density,
-    COALESCE(
-        (SELECT CAST(json_extract(coach_value, '$') AS INTEGER) FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'application_concreteness'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.application_concreteness
-    ) AS effective_application_concreteness,
-    sr.application_concreteness AS pipeline_application_concreteness,
-    COALESCE(
-        (SELECT CAST(json_extract(coach_value, '$') AS REAL) FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'outline_coverage_pct'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.outline_coverage_pct
-    ) AS effective_outline_coverage_pct,
-    sr.outline_coverage_pct AS pipeline_outline_coverage_pct,
-    sr.outline_additions,
-    sr.outline_omissions,
-    COALESCE(
-        (SELECT coach_value FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'top_encouragements'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.top_encouragements
-    ) AS effective_top_encouragements,
-    sr.top_encouragements AS pipeline_top_encouragements,
-    COALESCE(
-        (SELECT coach_value FROM sermon_overrides so
-         WHERE so.sermon_id = sr.sermon_id AND so.target_key = 'top_concerns'
-           AND so.is_active = 1 ORDER BY so.created_at DESC LIMIT 1),
-        sr.top_concerns
-    ) AS effective_top_concerns,
-    sr.top_concerns AS pipeline_top_concerns,
-    sr.computed_at
-FROM sermon_reviews sr;
-```
-
-**Override-eligible metrics** (the target_keys the coach can override): `bridge_score`, `christ_thread_score`, `density_score`, `application_concreteness`, `outline_coverage_pct`, `jargon_density`, `top_encouragements`, `top_concerns`, plus per-flag overrides via content-based target_keys (`flag:<hash>`). Non-override-eligible metrics (e.g., `duration_delta_seconds`) are mechanical — the coach can narrate them but the view exposes the pipeline value as-is.
-
-UI renders from this view. Pattern queries read from this view. Trend aggregates read from this view. **Both pipeline and effective values are exposed** so the UI can render "pipeline says X, coach overrode to Y" side-by-side.
-
-### `sermon_review_provenance` — per-metric source tracking
-
-```sql
-CREATE TABLE sermon_review_provenance (
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
-    target_key TEXT NOT NULL,                -- 'bridge_score', 'christ_thread_score', etc.
-    source TEXT NOT NULL CHECK (source IN ('pure_code','llm','override','default')),
-    stage_name TEXT,
-    input_hash TEXT,
-    model_version TEXT,
-    homiletics_core_version TEXT,
-    computed_at TEXT NOT NULL,
-    PRIMARY KEY (sermon_id, target_key)
-);
-```
-
-One row per `(sermon, metric)`. Overwritten on each analysis (except override-source rows, which come from the override table's composition logic). Powers the UI's provenance popover — click an info icon next to any metric and see "computed by pipeline stage 5, LLM call at 11:23, input_hash abc123…, source_version 3, or overridden by coach with rationale Z."
-
-### `sermon_prep_snapshots` — frozen prep state for true recomputability
-
-Per codex's whole-spec review: without this table, the "recomputable from the database alone" invariant is broken because analyzer stages 2, 5, and 6 depend on live session data. If Bryan edits a session's outline after the sermon was analyzed, reanalysis would compute against different inputs with no record of what the original analysis actually saw.
-
-```sql
-CREATE TABLE sermon_prep_snapshots (
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
-    session_id INTEGER NOT NULL REFERENCES sessions(id),
-    source_version_at_snapshot INTEGER NOT NULL,
-    snapshot_hash TEXT NOT NULL,
-    snapshot_json TEXT NOT NULL,       -- full outline + card_responses + homiletical-phase messages
-    snapshotted_at TEXT NOT NULL,
-    PRIMARY KEY (sermon_id, source_version_at_snapshot)
-);
-CREATE INDEX idx_prep_snapshots_session ON sermon_prep_snapshots(session_id);
-```
-
-**Snapshot contract:**
-
-1. Analyzer first-run on a sermon: take a snapshot of the current linked session (outline + homiletical-phase card_responses + conversation_messages), compute `snapshot_hash`, write the row. All subsequent stages in this run read from the snapshot, not live session data.
-2. Reanalysis trigger for a stale review: re-snapshot the current session state. If the new snapshot_hash differs from the stored one, the reanalysis has new inputs and all downstream stages miss their caches. If it matches, the stages can cache-hit on the prior run.
-3. `sermon_review_history.review_snapshot_json` now has a companion: the corresponding `sermon_prep_snapshots` row is preserved for the full lifetime of the sermon. Both together reconstruct exactly what the analyzer saw.
-4. Orphan sermons (no linked session) have no prep_snapshot row; the analyzer skips outline-alignment stages entirely (`outline_coverage_pct` stays NULL).
-
-### `sermon_coach_notes` — standalone notes from `save_coach_note` tool
-
-```sql
-CREATE TABLE sermon_coach_notes (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sermon_id INTEGER REFERENCES sermons(id),     -- NULL for cross-sermon notes
-    note TEXT NOT NULL,
-    authored_by TEXT NOT NULL DEFAULT 'coach' CHECK (authored_by IN ('coach','user')),
-    visibility TEXT NOT NULL DEFAULT 'bryan' CHECK (visibility IN ('bryan','pinned')),
-    created_at TEXT NOT NULL
-);
-CREATE INDEX idx_coach_notes_sermon ON sermon_coach_notes(sermon_id);
-```
-
-Coach notes are small, retrievable per-sermon or globally. `save_coach_note` tool in Section 6.3 writes here. Notes are read-only from the UI (displayed in a collapsible panel on `/sermons/<id>`); they don't feed back into the analyzer.
+Deleted + reinserted per sermon on re-analysis. Clickable in UI to open a focused coach conversation.
 
 ### `sermon_coach_messages`
 
 ```sql
 CREATE TABLE sermon_coach_messages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sermon_id INTEGER REFERENCES sermons(id),     -- NULL for cross-session /coach
+    sermon_id INTEGER REFERENCES sermons(id),
     session_id INTEGER REFERENCES sessions(id),
     conversation_id INTEGER NOT NULL,
     role TEXT NOT NULL CHECK (role IN ('user','assistant','tool','tool_result')),
@@ -530,49 +407,15 @@ CREATE INDEX idx_coach_messages_session ON sermon_coach_messages(session_id);
 CREATE INDEX idx_coach_messages_conv ON sermon_coach_messages(conversation_id);
 ```
 
-### `sermon_analysis_cache` — content-addressed stage cache
+This table also holds any "coach-disagrees-with-the-pipeline" narration as an ordinary assistant turn. No separate override table in MVP.
 
-```sql
-CREATE TABLE sermon_analysis_cache (
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
-    stage TEXT NOT NULL,
-    input_hash TEXT NOT NULL,
-    output_json TEXT NOT NULL,
-    analyzer_version TEXT NOT NULL,
-    homiletics_core_version TEXT NOT NULL,
-    model_version TEXT,
-    computed_at TEXT NOT NULL,
-    PRIMARY KEY (sermon_id, stage, input_hash)
-);
-CREATE INDEX idx_analysis_cache_lookup ON sermon_analysis_cache(sermon_id, stage);
-```
-
-Each stage hashes ALL its inputs (transcript, outline snapshot, prior stage outputs, rubric version, prompt version, model version) into `input_hash`. Cache hit = exact input match. Cache miss = recompute. Upstream input change cascades via hash mismatch. Version snapshot taken at analysis-run start and held constant for the whole run.
-
-### `sermon_analysis_cost_log`
-
-```sql
-CREATE TABLE sermon_analysis_cost_log (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
-    stage TEXT NOT NULL,
-    model TEXT NOT NULL,
-    input_tokens INTEGER NOT NULL,
-    output_tokens INTEGER NOT NULL,
-    estimated_cost_usd REAL NOT NULL,
-    called_at TEXT NOT NULL
-);
-CREATE INDEX idx_cost_log_sermon ON sermon_analysis_cost_log(sermon_id);
-CREATE INDEX idx_cost_log_called ON sermon_analysis_cost_log(called_at DESC);
-```
-
-### `sermon_sync_log` + `sermon_sync_checkpoint` + `sync_lock`
+### `sermon_sync_log`
 
 ```sql
 CREATE TABLE sermon_sync_log (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     run_id TEXT NOT NULL,
-    trigger TEXT NOT NULL CHECK (trigger IN ('cron','manual','deep_sweep','bootstrap')),
+    trigger TEXT NOT NULL CHECK (trigger IN ('cron','manual','backfill')),
     started_at TEXT NOT NULL,
     ended_at TEXT,
     sermons_fetched INTEGER DEFAULT 0,
@@ -584,63 +427,22 @@ CREATE TABLE sermon_sync_log (
     error_summary TEXT,
     status TEXT NOT NULL CHECK (status IN ('running','completed','failed'))
 );
-
-CREATE TABLE sermon_sync_checkpoint (
-    name TEXT PRIMARY KEY,
-    phase TEXT,
-    last_page_processed INTEGER,
-    last_sermonaudio_id_processed TEXT,
-    total_pages INTEGER,
-    total_sermons_expected INTEGER,
-    started_at TEXT,
-    last_progress_at TEXT,
-    completed_at TEXT
-);
-
-CREATE TABLE sync_lock (
-    name TEXT PRIMARY KEY,
-    held_by TEXT,
-    acquired_at TEXT,
-    lease_expires_at TEXT,
-    last_heartbeat_at TEXT
-);
-INSERT OR IGNORE INTO sync_lock (name) VALUES ('steady_state'), ('bootstrap');
 ```
 
-### `event_type_classification` + `sermon_settings`
+### `sermon_analysis_cost_log`
 
 ```sql
-CREATE TABLE event_type_classification (
-    event_type TEXT PRIMARY KEY,
-    classification TEXT NOT NULL CHECK (classification IN ('sermon','devotional','ignore')),
-    classified_by TEXT DEFAULT 'user' CHECK (classified_by IN ('user','seed','heuristic_promoted')),
-    created_at TEXT NOT NULL,
-    updated_at TEXT NOT NULL
+CREATE TABLE sermon_analysis_cost_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
+    model TEXT NOT NULL,
+    input_tokens INTEGER NOT NULL,
+    output_tokens INTEGER NOT NULL,
+    estimated_cost_usd REAL NOT NULL,
+    called_at TEXT NOT NULL
 );
-
--- Seeds
-INSERT INTO event_type_classification (event_type, classification, classified_by, created_at, updated_at)
-VALUES
-    ('Sunday Service', 'sermon', 'seed', datetime('now'), datetime('now')),
-    ('Devotional', 'devotional', 'seed', datetime('now'), datetime('now')),
-    ('Daily Devotional', 'devotional', 'seed', datetime('now'), datetime('now'));
-
-CREATE TABLE sermon_settings (
-    key TEXT PRIMARY KEY,
-    value TEXT NOT NULL,
-    updated_at TEXT NOT NULL
-);
-
--- Seeds
-INSERT INTO sermon_settings (key, value, updated_at) VALUES
-    ('bryan_speaker_name', 'Bryan Schneider', datetime('now')),
-    ('matcher_tier1_days', '7', datetime('now')),
-    ('matcher_tier2_days', '14', datetime('now')),
-    ('matcher_cutoff_days', '30', datetime('now')),
-    ('cron_interval_hours', '4', datetime('now')),
-    ('analysis_transcript_min_words', '1000', datetime('now')),
-    ('coach_model', 'claude-opus-4-6', datetime('now')),
-    ('analyzer_model', 'claude-opus-4-6', datetime('now'));
+CREATE INDEX idx_cost_log_sermon ON sermon_analysis_cost_log(sermon_id);
+CREATE INDEX idx_cost_log_called ON sermon_analysis_cost_log(called_at DESC);
 ```
 
 ### `sessions` — one column added
@@ -649,27 +451,54 @@ INSERT INTO sermon_settings (key, value, updated_at) VALUES
 ALTER TABLE sessions ADD COLUMN last_homiletical_activity_at TEXT;
 ```
 
-Maintained by `save_card_response` and `save_message` in `companion_db.py` **only when the phase is in the homiletical set** (`exegetical_point`, `fcf_homiletical`, `sermon_construction`, `edit_pray`). Every homiletical write touches two rows: the card/message write AND this timestamp bump.
+Maintained by `save_card_response` and `save_message` in `companion_db.py` when the phase is in the homiletical set (`exegetical_point`, `fcf_homiletical`, `sermon_construction`, `edit_pray`).
 
-### `sermon_trends_recent` — view for aggregates
+### `sermon_trends_recent` — aggregate view
 
 ```sql
 CREATE VIEW sermon_trends_recent AS
 SELECT
     COUNT(*) AS n_sermons,
-    AVG(ser.duration_delta_seconds) AS avg_duration_delta,
-    1.0 * SUM(CASE WHEN ser.effective_bridge_score='landed' THEN 1 ELSE 0 END) / COUNT(*) AS bridge_landed_rate,
-    1.0 * SUM(CASE WHEN ser.effective_christ_thread_score='explicit' THEN 1 ELSE 0 END) / COUNT(*) AS christ_explicit_rate,
-    AVG(ser.effective_density_score) AS avg_density,
-    AVG(ser.effective_outline_coverage_pct) AS avg_outline_coverage  -- NULL-safe for orphans; AVG ignores NULLs
-FROM sermon_effective_review ser
-JOIN sermons s ON s.id = ser.sermon_id
-WHERE s.preach_date >= date('now', '-60 days')
+    SUM(LENGTH(s.transcript_text) - LENGTH(REPLACE(s.transcript_text, ' ', ''))) + COUNT(*)
+        AS approx_total_words,
+
+    -- Tier 1 aggregates
+    1.0 * SUM(CASE WHEN sr.burden_clarity IN ('crisp','clear') THEN 1 ELSE 0 END) / COUNT(*)
+        AS burden_clear_rate,
+    1.0 * SUM(CASE WHEN sr.movement_clarity IN ('river','mostly_river') THEN 1 ELSE 0 END) / COUNT(*)
+        AS movement_clear_rate,
+    1.0 * SUM(CASE WHEN sr.application_specificity IN ('localized','concrete') THEN 1 ELSE 0 END) / COUNT(*)
+        AS application_concrete_rate,
+    1.0 * SUM(CASE WHEN sr.ethos_rating IN ('seized','engaged') THEN 1 ELSE 0 END) / COUNT(*)
+        AS ethos_engaged_rate,
+    AVG(sr.concreteness_score) AS avg_concreteness,
+
+    -- Tier 2 aggregates
+    1.0 * SUM(CASE WHEN sr.christ_thread_score = 'explicit' THEN 1 ELSE 0 END) / COUNT(*)
+        AS christ_explicit_rate,
+    1.0 * SUM(CASE WHEN sr.exegetical_grounding = 'grounded' THEN 1 ELSE 0 END) / COUNT(*)
+        AS exegetical_grounded_rate,
+
+    -- Tier 3 aggregates
+    AVG(sr.duration_delta_seconds) AS avg_duration_delta_sec,
+    AVG(1.0 * sr.application_first_arrived_at_sec / sr.actual_duration_seconds)
+        AS avg_app_arrival_ratio,
+    AVG(sr.outline_coverage_pct) AS avg_outline_coverage,
+
+    -- Corpus gate computation
+    CASE
+        WHEN COUNT(*) >= 10 THEN 'stable'
+        WHEN COUNT(*) >= 5 THEN 'emerging'
+        ELSE 'pre_gate'
+    END AS corpus_gate_status
+FROM sermon_reviews sr
+JOIN sermons s ON s.id = sr.sermon_id
+WHERE s.preach_date >= date('now', '-90 days')
   AND s.classified_as = 'sermon'
   AND s.is_remote_deleted = 0;
 ```
 
-Pattern queries and trend cards read from this view. Always fresh, always respects overrides (all `effective_*` columns flow through `sermon_effective_review`). Orphan sermons (no linked session) still contribute to length, density, bridge, Christ aggregates — they just have NULL `effective_outline_coverage_pct`, which `AVG` correctly ignores.
+Pattern queries and trend cards read from this view. `corpus_gate_status` drives the coach's longitudinal permissions.
 
 ---
 
@@ -677,31 +506,31 @@ Pattern queries and trend cards read from this view. Always fresh, always respec
 
 ### 3.1 API client
 
-- Library: `sermonaudio` PyPI package, added to requirements.
-- Auth: API key from `.env` as `SERMONAUDIO_API_KEY` + `SERMONAUDIO_BROADCASTER_ID`.
-- Transport: serial requests, exponential backoff on 429/5xx (1s → 2s → 4s), 30s per-request timeout, max 3 retries per request.
-- Total run budget: 10 min for steady state, unbounded for bootstrap (lease-heartbeat protects against stuck processes).
+- Library: `sermonaudio` PyPI package, added to requirements
+- Auth: API key + broadcaster ID from `.env` (`SERMONAUDIO_API_KEY`, `SERMONAUDIO_BROADCASTER_ID`)
+- Transport: serial requests, exponential backoff (1s → 2s → 4s) on 429/5xx, 30s timeout per request, max 3 retries per request, soft 10-minute run budget
 
-### 3.2 Classification (AND filter: speaker ∩ event type)
+### 3.2 Classification
+
+Hard gate on speaker, then eventType + heuristic union:
 
 ```python
-def classify(sermon_remote, settings, classifications) -> tuple[str, str]:
+BRYAN_SPEAKER_NAME = 'Bryan Schneider'
+SERMON_EVENT_TYPES = frozenset({'Sunday Service'})
+DEVOTIONAL_EVENT_TYPES = frozenset({'Devotional', 'Daily Devotional'})
+
+def classify(sermon_remote) -> tuple[str, str]:
     speaker = (sermon_remote.speaker_name or '').strip()
     event_type = (sermon_remote.event_type or '').strip()
-    bryan_name = settings['bryan_speaker_name']
 
-    # Hard gate: only Bryan's sermons enter the pipeline
-    if speaker != bryan_name:
+    if speaker != BRYAN_SPEAKER_NAME:
         return ('skipped', f'speaker={speaker!r}')
 
-    # Event type via runtime table
-    row = classifications.get(event_type)
-    if row and row['classification'] == 'sermon':
+    if event_type in SERMON_EVENT_TYPES:
         return ('sermon', f'eventType={event_type}')
-    if row and row['classification'] in ('devotional', 'ignore'):
+    if event_type in DEVOTIONAL_EVENT_TYPES:
         return ('skipped', f'eventType={event_type}')
 
-    # Heuristic safety net: Sunday + duration
     pdate = sermon_remote.preach_date
     dur_min = (sermon_remote.duration_seconds or 0) / 60
     if pdate and pdate.weekday() == 6 and dur_min > 20:
@@ -710,64 +539,63 @@ def classify(sermon_remote, settings, classifications) -> tuple[str, str]:
     return ('skipped', f'eventType={event_type!r} (unknown)')
 ```
 
-Unknown event types surface in `/sermons/classification-review` for one-click approval into `event_type_classification`. Until approved, they rely on the heuristic (which catches Bryan's Sunday Services with high reliability per his account pattern).
+Constants live in code for MVP. If unknown eventTypes start accumulating, Phase 2 adds the runtime classification table.
 
-### 3.3 Idempotent upsert + source fingerprinting
+### 3.3 Idempotent upsert with source fingerprint
 
-- `metadata_hash` = sha256 over {title, event_type, series, preach_date, bible_text_raw, duration_seconds, remote_updated_at}.
-- `transcript_hash` = sha256 over transcript (or NULL if not yet available).
-- Upsert keyed on `sermonaudio_id`. On hash unchanged → touch `last_synced_at` only. On hash changed → bump `source_version`, update hashes, transition `sync_status` via `CASE` (recycle back to `analysis_pending` if already past that stage).
-- Every source change triggers downstream reanalysis via the stale-check rule (`sermons.source_version > sermon_reviews.source_version_at_analysis`).
-
-### 3.4 State machine (full transitions)
-
-```
-                          ┌─────────────────┐
-                          │  pending_sync   │◄───────────── retry cooldown (SQL-enforced)
-                          └────────┬────────┘
-                                   │
-                    ┌──────────────┴──────────────┐
-                    ▼                             ▼
-          ┌─────────────────┐           ┌─────────────────┐
-          │ synced_metadata │           │ sync_failed     │
-          └────────┬────────┘           └────────┬────────┘
-                   │                             │
-        ┌──────────┴─┐                           │ cooldown (1h→4h→16h→64h)
-        ▼            ▼                           │
-┌───────────────┐ ┌──────────────────┐           ▼
-│ transcript_   │ │transcript_stalled│    ┌──────────────────┐
-│   ready       │ │  (48h timeout)    │    │permanent_failure │
-└───────┬───────┘ └────────┬──────────┘    └──────────────────┘
-        │                  │
-        │                  └────► transcript arrives → transcript_ready
-        ▼
-┌─────────────────┐
-│analysis_pending │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐     crash + lease expiry
-│analysis_running │─────────┐
-└────────┬────────┘         │
-         │                  ▼
-         ▼           ┌──────────────────┐
-┌─────────────────┐  │ analysis_failed  │
-│  review_ready   │  └────────┬─────────┘
-└─────────────────┘           │
-   │    ▲   │                 │ retry
-   │    │   │                 ▼
-   │    │   └──► archived (user)
-   │    │
-   │    └── re-enter on source_version bump or rubric bump
-   │
-   └──► badge fires if source_version > ui_last_seen_version
+```python
+def compute_hashes(sermon_remote) -> tuple[str, Optional[str]]:
+    meta = json.dumps({
+        'title': sermon_remote.title, 'event_type': sermon_remote.event_type,
+        'series': sermon_remote.series, 'preach_date': str(sermon_remote.preach_date),
+        'bible_text_raw': sermon_remote.bible_text,
+        'duration_seconds': sermon_remote.duration,
+        'remote_updated_at': str(sermon_remote.update_date),
+    }, sort_keys=True)
+    meta_hash = hashlib.sha256(meta.encode()).hexdigest()[:16]
+    tx_hash = hashlib.sha256((sermon_remote.transcript or '').encode()).hexdigest()[:16] \
+              if sermon_remote.transcript else None
+    return meta_hash, tx_hash
 ```
 
-Retry cooldown is SQL-enforced in the sync query, keyed on `failure_count`:
+Upsert is keyed on `sermonaudio_id`. Unchanged hashes → no-op touch of `last_synced_at`. Changed hashes → bump `source_version`, update hashes, push `sync_status` back to `analysis_pending` if it had advanced past that.
+
+### 3.4 Fetch strategy
+
+- **Backfill mode** (one-shot, triggered manually via `POST /sermons/backfill?limit=24`):
+  - Pulls the most recent 24 classified-as-sermon items from the broadcaster, newest first
+  - No page-resumability: if it crashes, click the button again — idempotent upsert handles dupes
+  - Writes status and counters to `sermon_sync_log`
+- **Steady-state mode** (every 4h cron or manual `POST /sermons/sync`):
+  - Primary filter: `updated_since = last_successful_sync_at - 1 day` (small clock-skew overlap) if the SermonAudio SDK supports it
+  - Fallback: pull last 30 days by `publish_date` and compare `remote_updated_at` client-side
+
+### 3.5 Concurrency
+
+Simple file-based advisory lock at `/tmp/logos4_sermon_sync.lock` (or `app.instance_path`). Acquired via `fcntl.flock(LOCK_EX | LOCK_NB)`:
+
+```python
+def with_sync_lock(fn):
+    lock_path = os.path.join(app.instance_path, 'sermon_sync.lock')
+    with open(lock_path, 'w') as f:
+        try:
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return None  # caller returns 409
+        try:
+            return fn()
+        finally:
+            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+```
+
+If Flask crashes mid-run, the OS releases the lock when the process dies. Next cron run acquires cleanly. Idempotent upsert protects the rare concurrent-touch case.
+
+### 3.6 Retry cooldown (SQL-enforced)
 
 ```sql
 SELECT id FROM sermons
 WHERE sync_status = 'sync_failed'
+  AND failure_count < 5
   AND (last_failure_at IS NULL OR last_failure_at < datetime('now', '-' ||
         CASE failure_count
             WHEN 0 THEN '1 hours'
@@ -777,57 +605,21 @@ WHERE sync_status = 'sync_failed'
         END));
 ```
 
-### 3.5 Pagination
-
-**Bootstrap mode** (one-shot, manual trigger `/sermons/bootstrap`):
-- Paginate 100 per page via the library's pagination.
-- Persist every row (including skipped ones) for audit.
-- Commit a `sermon_sync_checkpoint` update every 5 pages (`phase='paginating'`, `last_page_processed`, `last_sermonaudio_id_processed`).
-- If process crashes, next run of bootstrap reads the checkpoint and resumes from `last_page_processed + 1`.
-- Completion sets `phase='completed'` and `completed_at`; re-triggering is a no-op unless the user explicitly forces a re-bootstrap.
-
-**Steady-state mode** (every 4h cron or manual):
-- Primary filter: `updated_since=last_successful_sync_at - 1 day` via the library's server-side filter.
-- Fallback: client-side filter on a wider `publish_date` window (90 days) comparing `remote_updated_at` against stored value.
-- Deep sweep: weekly Sunday-night cron (separate APScheduler job) pulls last 180 days by `publish_date` and diffs `remote_updated_at` against stored — catches anything the primary filter missed.
-
-### 3.6 Concurrency — lease-based lock
-
-```sql
--- Acquisition (atomic):
-UPDATE sync_lock
-SET held_by = :run_id,
-    acquired_at = datetime('now'),
-    lease_expires_at = datetime('now', '+90 seconds'),
-    last_heartbeat_at = datetime('now')
-WHERE name = :lock_name
-  AND (held_by IS NULL OR lease_expires_at < datetime('now'));
-```
-
-If `cursor.rowcount == 1`, the run holds the lock. Otherwise, return HTTP 409 to manual callers / abort silently for cron.
-
-Heartbeat thread extends the lease every 30s during active runs. Process death → lease expires in ≤90s → next run acquires cleanly.
-
-Separate lock names for `steady_state` and `bootstrap`; they don't block each other. Idempotent upsert protects the rare concurrent-touch case.
+`failure_count ≥ 5` → explicit `UPDATE sermons SET sync_status='permanent_failure'` inside the sync function. Permanent failures surface on `/sermons/sync-log` with a manual retry button that clears `failure_count`.
 
 ### 3.7 Cron + manual trigger
 
-- **Cron**: APScheduler `BackgroundScheduler` inside the Flask app, `IntervalTrigger(hours=settings.cron_interval_hours)`. Starts on Flask app boot, shuts down on app teardown.
-- **Weekly deep sweep**: `CronTrigger(day_of_week='sun', hour=22)` — runs Sunday 10 PM local, pulls last 180 days by `publish_date`.
-- **Manual**: `POST /sermons/sync` endpoint returns `run_id` immediately; UI polls `GET /sermons/sync-log/<run_id>`. `POST /sermons/bootstrap` kicks off a bootstrap run.
+- **Cron**: APScheduler `BackgroundScheduler` inside the Flask app, `IntervalTrigger(hours=4)`, added on app boot
+- **Manual**: `POST /sermons/sync` calls the same sync function, returns `run_id` immediately, UI polls `GET /sermons/sync-log/<run_id>`
 
-### 3.8 Error classification (full matrix)
+### 3.8 Error classification
 
-| Error | Classification | Action |
-|---|---|---|
-| HTTP 429 | Transient | Backoff, retry up to 3× within this run |
-| HTTP 5xx | Transient | Backoff, retry up to 3× |
-| Network timeout | Transient | Retry 3×; then mark sermon `sync_failed` |
-| HTTP 401 | Fatal-run | Abort, alert in `/sermons/sync-log` |
-| HTTP 403 | Fatal-run | Abort, alert in `/sermons/sync-log` |
-| HTTP 404 on detail fetch | Fatal-per-sermon | Mark `is_remote_deleted=1`, `deleted_at=now` |
-| JSON parse error | Fatal-per-sermon | Mark `sync_failed`, stacktrace in `sync_error`, increment `failure_count` |
-| Lock contention | Operational | Return 409 (manual); abort silently (cron) |
+| Error | Action |
+|---|---|
+| HTTP 429/5xx/timeout | In-run retry (backoff 1s→2s→4s), then mark `sync_failed`, escalate via cooldown |
+| HTTP 401/403 | Abort entire run, alert in `/sermons/sync-log` |
+| HTTP 404 on detail fetch | Mark `is_remote_deleted=1`, `deleted_at=now` |
+| Parse error | Mark `sync_failed`, stacktrace in `sync_error`, `failure_count++`, continue run |
 
 ---
 
@@ -837,27 +629,27 @@ Separate lock names for `steady_state` and `bootstrap`; they don't block each ot
 
 **Tier 1 — auto-link as `active`.** All must hold:
 
-1. **Passage match**: ANY `sermon_passages` row overlaps the session's `(book, chapter, verse_start, verse_end)` exactly (whole-chapter spans treated as covering the chapter).
-2. **Prep timing is realistic**: session's `last_homiletical_activity_at` is within `matcher_tier1_days` (default 7) before `preach_date`.
-3. **Session created before preach**: `session.created_at < sermon.preach_date`.
-4. **Exactly one session qualifies.** Ambiguity demotes to Tier 2.
-5. **No prior `rejected` link** between this sermon and the matching session.
-6. **`sermon_type = 'expository'`** — topical sermons skip matcher entirely.
+1. **Exact passage match**: at least one `sermon_passages` row's `(book, chapter_start, verse_start, chapter_end, verse_end)` tuple matches a session's `(book, chapter, verse_start, verse_end)` (whole-chapter semantics respected)
+2. **Prep timing realistic**: session's `last_homiletical_activity_at` is within 7 days before `preach_date`
+3. **Session created before sermon**: `session.created_at < sermon.preach_date`
+4. **Exactly one session qualifies** — ambiguity demotes to Tier 2
+5. **No prior `rejected` link** between this sermon and this session
+6. **`sermon_type = 'expository'`** — topical sermons never auto-match
 
-→ Writes one `sermon_links` row with `link_status='active'`, `link_source='auto'`, `match_reason='tier1:exact+timing'`.
+→ Write one `sermon_links` row with `link_status='active'`, `link_source='auto'`, `match_reason='tier1:exact+timing'`.
 
 **Tier 2 — surface as `candidate`.** Any one of:
 
-- Passage overlap but not exact (partial verse range mismatch).
-- Loose timing: `last_homiletical_activity_at` is 7–14 days (or 7–30 for long-lead) before `preach_date`.
-- Multiple Tier 1 qualifiers (ambiguity).
-- Session matches passage + timing but never reached a homiletical phase.
+- Passage overlaps but verse range differs (same book/chapter, non-exact verses)
+- Timing 7–14 days
+- Multiple Tier 1 qualifiers (ambiguity)
+- Session matches passage + timing but never reached a homiletical phase
 
-→ Writes one `sermon_links` row **per candidate** with `link_status='candidate'`. UI shows all, one-click approval flips selected to `active` and supersedes any existing active auto-link.
+→ Write one `sermon_links` row per candidate with `link_status='candidate'`. UI shows them in a "Candidates for this sermon" panel; one-click approval flips selected candidate to `active` and deletes the others (or leaves them as rejected if Bryan explicitly rejects).
 
-**Tier 3 — no row.** No overlap, `session.created_at > sermon.preach_date`, or beyond `matcher_cutoff_days` (default 30).
+**Tier 3 — no row.** No passage overlap, no session within 30 days, or session created after sermon.
 
-### 4.2 Pure function
+### 4.2 Pure function interface
 
 ```python
 def match_sermon_to_sessions(
@@ -865,223 +657,172 @@ def match_sermon_to_sessions(
     sessions: tuple[SessionInfo, ...],
     existing_links: tuple[SermonLink, ...],
     rejected_session_ids: frozenset[int],
-    settings: MatcherSettings,
-) -> MatchDecision:
-    """Deterministic, testable in isolation. No SQL."""
+) -> MatchDecision: ...
 ```
 
-Orchestrator wraps in `BEGIN IMMEDIATE` transaction to prevent read/decide/write races against UI rejections.
+Orchestrator (`apply_match_decision`) wraps in `BEGIN IMMEDIATE` to prevent races against UI rejections.
 
 ### 4.3 Triggers
 
-- Sermon → `transcript_ready` or `synced_metadata` with parseable passage.
-- `source_version` bump on the sermon.
-- `sessions.last_homiletical_activity_at` bump on a session with a matching-passage unlinked sermon within `matcher_cutoff_days`.
-- Manual "re-match" button per sermon.
-- Manual link via UI dropdown (creates `active`+`manual`).
-- Manual unlink → `rejected` (remembered).
+- Sermon transitions to `transcript_ready` with parseable passage
+- `source_version` bumps
+- A session's `last_homiletical_activity_at` updates AND an unlinked sermon with matching passage exists within 30 days
+- Manual "re-match" button per sermon
+- Manual link via UI (creates `active` + `manual`)
+- Manual unlink (flips to `rejected`)
 
-Short-circuit filters on session-update rematch sweeps:
+### 4.4 Pattern query scope
 
-```sql
-WHERE s.preach_date BETWEEN :session_created_at
-                        AND date(:session_created_at, '+' || :cutoff_days || ' days')
-  AND (s.last_match_attempt_at IS NULL
-       OR s.last_match_attempt_at < :session_last_homiletical_activity_at)
-  AND s.sermon_type = 'expository'
-  AND s.match_status NOT IN ('matched','rejected_all')
-```
+- **Queries that need prep context** (outline fidelity, outline additions/omissions) join through `sermon_links WHERE link_status='active'`
+- **Queries that don't need prep context** (length, density, Tier 1 impact aggregates) don't join `sermon_links` — orphan sermons still contribute; SQL `AVG` ignores NULLs for outline_coverage_pct
 
-### 4.4 Pattern filter scope
+### 4.5 Passage parsing extensions
 
-The `link_status='active'` filter is **scoped to queries that require prep-session context** — specifically outline fidelity metrics (`outline_coverage_pct`, `outline_additions`, `outline_omissions`) and any pattern that joins through `sessions`. For those queries:
+`parse_reference()` in `tools/study.py` extended to handle:
 
-```sql
-JOIN sermon_links sl ON sl.sermon_id = s.id AND sl.link_status = 'active'
-JOIN sessions sess ON sess.id = sl.session_id
-```
+- `"Romans 8:1-11; Romans 9:1-5"` → 2 `sermon_passages` rows
+- `"Psalm 1-2"` → 1 row, `(chapter_start=1, verse_start=NULL, chapter_end=2, verse_end=NULL)`
+- `"Romans 8"` → 1 row, whole chapter
+- Unparseable → zero rows, `match_status='unparseable_passage'` surfaces in attention queue
 
-**Pattern queries for sermon-only metrics** (length, density, bridge, Christ thread) do NOT filter on `sermon_links`. Orphan historicals and unlinked sermons still contribute to these aggregates — their `effective_outline_coverage_pct` is NULL and SQL `AVG` ignores NULLs correctly. The `sermon_trends_recent` view (in §2) reflects this split.
-
-Link-row filter invariant: whenever code reads from `sermon_links`, it reads only `WHERE link_status = 'active'`. Candidate, superseded, and rejected rows never feed pattern analysis. `link_source` is stored for audit; `confidence` is debug metadata, not a gate.
-
-### 4.5 Passage parsing
-
-`parse_reference()` in `tools/study.py` is extended to handle:
-
-- Multi-range: `"Romans 8:1-11; Romans 9:1-5"` → two `sermon_passages` rows
-- Chapter spans: `"Psalm 1-2"` → one row `(chapter_start=1, verse_start=NULL, chapter_end=2, verse_end=NULL)`
-- Whole chapters: `"Romans 8"` → one row `(chapter_start=8, verse_start=NULL, chapter_end=8, verse_end=NULL)`
-- Unparseable: zero rows, `match_status='unparseable_passage'`, surfaces in attention queue.
-
-### 4.6 Existing active link behavior
-
-- **Still Tier 1, no better candidate**: no-op.
-- **Better auto candidate emerges**: existing `active` auto-link → `superseded`, new → `active`. UI banner: *"Relinked from Session #42 to Session #87. [Revert]"*
-- **Existing link is manual**: never auto-superseded. New matches surface only as `candidate` rows.
+Topical sermons (`sermon_type='topical'`): MVP just marks them and excludes from auto-matching. Bryan can link them manually.
 
 ---
 
 ## Section 5 — Analyzer (`sermon_analyzer.py`)
 
-### 5.1 Eight-stage pipeline
+### 5.1 Pipeline (deterministic stages + one LLM pass)
 
 ```
-(inputs: transcript_text, sermon_passages, linked outline, settings, version snapshot)
+(input: sermon row + sermon_passages + optional linked session outline)
 
-[1] segment_transcript()       — pure, timing/marker-based segmentation
-[2] align_with_outline()       — pure, outline-to-segment alignment if linked
-[3] compute_timing_metrics()   — pure, durations and delta vs plan
-[4] compute_density_metrics()  — pure, Greek/Hebrew/jargon density
-[5] score_bridge()             — LLM (claude-opus-4-6), structured JSON
-[6] score_christ_thread()      — LLM, structured JSON
-[7] extract_flags()            — LLM, list of structured flag records
-[8] summarize_review()         — pure, top 3 encouragements + concerns from flags
+[1] segment_transcript()         — pure, rule-based on transcript markers and timing
+[2] align_with_outline()         — pure (only if linked), sections mapped to prep outline points
+[3] compute_timing_metrics()     — pure, durations per section + delta vs prep plan
+[4] compute_density_metrics()    — pure, Greek/Hebrew density, jargon count, density hotspots
 
-(outputs: sermon_reviews row, sermon_flags rows, sermon_review_provenance rows)
+[5] LLM RUBRIC PASS              — single claude-opus-4-6 call emitting the full three-tier JSON rubric
+                                    (see §5.2)
+
+[6] extract_flags()              — pure post-processing of LLM output + deterministic signals
+
+write → sermon_reviews (overwrite), sermon_flags (delete + insert)
+write → sermon_analysis_cost_log (LLM call metadata)
 ```
 
-### 5.2 Content-addressed stage cache
+**No stage cache.** If the source changes, re-run the whole pipeline. 30–60 seconds, ~$0.15–$0.25. Simpler than tracking per-stage cache keys, and the cost is well inside the $5–$13/year budget.
 
-Every stage's `input_hash` is computed over **all** its inputs:
+### 5.2 The LLM rubric prompt
 
-```python
-stage_1_input_hash = sha256(transcript_text + segmentation_algo_version)
-stage_2_input_hash = sha256(stage_1_output_hash + linked_outline_snapshot_hash + align_algo_version)
-stage_3_input_hash = sha256(stage_2_output_hash + timing_algo_version)
-stage_4_input_hash = sha256(stage_1_output_hash + density_algo_version)
-stage_5_input_hash = sha256(stage_2_output_hash + prep_session_snapshot_hash + bridge_prompt_version + homiletics_core_version + model_version)
-stage_6_input_hash = sha256(stage_2_output_hash + prep_session_snapshot_hash + christ_prompt_version + homiletics_core_version + model_version)
-stage_7_input_hash = sha256(stage_2_output_hash + stage_3_output_hash + stage_4_output_hash + flags_prompt_version + homiletics_core_version + model_version)
-stage_8_input_hash = sha256(stage_7_output_hash + summary_algo_version)
-```
+One structured call to `claude-opus-4-6` with the full review schema. System prompt anchors the three-tier framing and the impact-first posture. Input includes: transcript segments from stage 1, outline + prep context from stage 2 (if linked), timing + density output from stages 3-4, and the sermon metadata.
 
-Cache lookup: `SELECT output_json FROM sermon_analysis_cache WHERE sermon_id=? AND stage=? AND input_hash=?`. Hit → reuse. Miss → compute + insert.
+**Expected output (enforced via tool-use schema):**
 
-Any upstream input change cascades automatically: upstream cache miss → new output hash → downstream input hash changes → downstream cache miss. No dependency graph to maintain manually.
-
-### 5.3 Version snapshot at run start
-
-When analysis begins:
-
-```python
-version_snapshot = {
-    'analyzer_version': __version__,
-    'homiletics_core_version': homiletics_core.__version__,
-    'model_version': 'claude-opus-4-6',
-    'bridge_prompt_version': BRIDGE_PROMPT_VERSION,
-    'christ_prompt_version': CHRIST_PROMPT_VERSION,
-    'flags_prompt_version': FLAGS_PROMPT_VERSION,
-    'segmentation_algo_version': SEGMENTATION_VERSION,
-    'align_algo_version': ALIGN_VERSION,
-    'density_algo_version': DENSITY_VERSION,
-    'timing_algo_version': TIMING_VERSION,
-    'summary_algo_version': SUMMARY_VERSION,
+```json
+{
+  "tier1_impact": {
+    "burden_clarity": "crisp|clear|implied|muddled|absent",
+    "burden_statement_excerpt": "<verbatim from transcript, or null>",
+    "burden_first_stated_at_sec": 180,
+    "movement_clarity": "river|mostly_river|uneven|lake",
+    "movement_rationale": "<2-3 sentences>",
+    "application_specificity": "localized|concrete|abstract|absent",
+    "application_first_arrived_at_sec": 1860,
+    "application_excerpts": [{"start_sec": 1860, "excerpt": "..."}],
+    "ethos_rating": "seized|engaged|professional|detached",
+    "ethos_markers": ["<observation>", "..."],
+    "concreteness_score": 3,
+    "imagery_density_per_10min": 4.2,
+    "narrative_moments": [{"start_sec": 440, "end_sec": 520, "excerpt": "..."}]
+  },
+  "tier2_faithfulness": {
+    "christ_thread_score": "explicit|gestured|absent",
+    "christ_thread_excerpts": [{"start_sec": 2400, "excerpt": "..."}],
+    "exegetical_grounding": "grounded|partial|pretext",
+    "exegetical_grounding_notes": "<2-3 sentences>"
+  },
+  "tier3_diagnostic": {
+    "length_delta_commentary": "<contextual note, not just the number>",
+    "density_hotspots": [{"start_sec": 820, "end_sec": 1060, "note": "..."}],
+    "late_application_note": "<if application_first_arrived_at_sec > 0.75 * duration>",
+    "outline_drift_note": "<if linked session>"
+  },
+  "coach_summary": {
+    "top_impact_helpers": ["<3 bullets on what drove impact this sermon>"],
+    "top_impact_hurters": ["<3 bullets on what blocked impact this sermon>"],
+    "faithfulness_note": "<one line on faithfulness dimension>",
+    "one_change_for_next_sunday": "<single concrete actionable change>"
+  },
+  "flags": [
+    {"flag_type": "late_application", "severity": "concern",
+     "start_sec": 0, "end_sec": 1860,
+     "section": "intro+body", "excerpt": "...",
+     "rationale": "Application didn't arrive until 31:00; first 20 min was exegetical heat."}
+  ]
 }
 ```
 
-This dict is frozen for the entire run — even if another process bumps a version mid-run, this run uses the snapshot. The final `sermon_reviews` row records the snapshot so downstream consumers know the exact provenance.
+**Cost instrumentation**: the one call writes a row to `sermon_analysis_cost_log` with input/output tokens and estimated cost.
 
-### 5.4 Homiletical rules in `homiletics_core.py`
+**Retry**: on LLM failure, retry 2× with backoff. On JSON parse failure, one retry with a simplified prompt asking only for the required fields. Final failure → `sermon_reviews` row written with `NULL` for LLM-sourced fields, `sync_status='analysis_failed'`, UI shows deterministic stages' output only.
 
-Pure functions, importable by both analyzer and coach, no DB access:
+### 5.3 `homiletics_core.py` — pure rule functions
+
+Shared constants and small rule helpers used by analyzer and (optionally) coach tools:
 
 ```python
 __version__ = '1.0.0'
 
-def classify_bridge_landing(
-    outline_points: list[OutlinePoint],
-    transcript_segments: list[Segment],
-) -> BridgeAssessment: ...
+HOMILETICAL_PHASES = ('exegetical_point', 'fcf_homiletical',
+                       'sermon_construction', 'edit_pray')
 
-def classify_christ_thread(
-    segments: list[Segment],
-    prep_christ_notes: Optional[str],
-) -> ChristThreadAssessment: ...
+# Pure helpers analyzer uses in stages 2–4 before the LLM call
+def segment_transcript(transcript_text: str, duration_sec: int) -> list[Segment]: ...
+def align_segments_to_outline(segments: list[Segment],
+                               outline: Outline) -> list[AlignedSegment]: ...
+def compute_section_timings(segments: list[Segment]) -> dict: ...
+def detect_density_hotspots(segments: list[Segment]) -> list[Hotspot]: ...
+def count_jargon_terms(segments: list[Segment]) -> int: ...
 
-def compute_density_score(segments: list[Segment]) -> DensityAssessment: ...
+# Pure rule checks the coach can also call via tool
+def late_application(arrival_sec: int, duration_sec: int) -> bool:
+    return arrival_sec > 0.75 * duration_sec
 
-def chapell_form_check(outline: Outline, sermon_segments: list[Segment]) -> FormCheckResult: ...
-
-def so_what_gate(outline_point: OutlinePoint, segment: Segment) -> bool: ...
-
-def time_estimator(outline: Outline) -> int: ...  # seconds
+def corpus_gate_status(n_sermons: int) -> str:
+    if n_sermons >= 10: return 'stable'
+    if n_sermons >= 5: return 'emerging'
+    return 'pre_gate'
 ```
 
-Analyzer calls these as part of stages 4-7. Coach agent imports them via tools so it can re-run a specific check on a specific segment during conversation (e.g., *"Let me run the FORM check on your §3 conclusion..."*).
+`homiletics_core.__version__` is written to `sermon_reviews.homiletics_core_version`. If the code version bumps, downstream consumers can detect stale reviews and lazily re-analyze.
 
-### 5.5 LLM call contract for scoring stages
+### 5.4 Analysis dispatch
 
-- **Model**: `claude-opus-4-6` (per user preference).
-- **Output**: enforced via tool-use schema (structured JSON). Schema example for bridge scoring:
-
-```json
-{
-  "bridge_score": "landed|partial|missed",
-  "evidence": [
-    {"transcript_start_sec": 844, "transcript_end_sec": 880,
-     "excerpt": "So what does this mean for...", "rationale": "Explicit 'so what'"}
-  ],
-  "overall_rationale": "short paragraph"
-}
-```
-
-- **Cost instrumentation**: every call writes to `sermon_analysis_cost_log` with input/output tokens and estimated cost.
-- **Retry**: failed call retries 2× with backoff. Third failure → fall back to simpler prompt (enum-only, no evidence). Third failure of the fallback → stage 5 marked failed, review degrades to partial.
-
-### 5.6 Provenance writes
-
-After each analysis run, `sermon_review_provenance` gets one row per metric:
-
-| target_key | source | stage_name | input_hash | model_version |
-|---|---|---|---|---|
-| `duration_delta_seconds` | `pure_code` | `compute_timing_metrics` | `stage3_hash` | NULL |
-| `density_score` | `pure_code` | `compute_density_metrics` | `stage4_hash` | NULL |
-| `bridge_score` | `llm` | `score_bridge` | `stage5_hash` | `claude-opus-4-6` |
-| `christ_thread_score` | `llm` | `score_christ_thread` | `stage6_hash` | `claude-opus-4-6` |
-| `outline_coverage_pct` | `pure_code` | `align_with_outline` | `stage2_hash` | NULL |
-
-Override-sourced values don't write to this table; they come via `sermon_overrides` composition at read time and render as `source='override'` in the UI popover.
-
-### 5.7 Effective-value rule (coach override vs pipeline)
-
-```
-effective(target_key) =
-    latest override with is_active=1 for this target_key
-    if present
-    else pipeline value from sermon_reviews
-```
-
-Overrides **always** win when present. Reanalysis updates the pipeline value but **never** touches overrides. The `sermon_effective_review` view composes both. All pattern queries, trend aggregates, and UI rendering read from the view.
-
-### 5.8 Analysis dispatch and triggers
-
-**Dispatch mechanism.** No message queue. The analyzer runs as a function call immediately after each sync run completes (in-process, same APScheduler thread), polling:
+After each sync run completes, the analyzer polls:
 
 ```sql
 SELECT id FROM sermons
 WHERE sync_status = 'transcript_ready'
    OR (sync_status = 'review_ready'
        AND source_version > (SELECT source_version_at_analysis
-                             FROM sermon_reviews sr WHERE sr.sermon_id = sermons.id))
+                             FROM sermon_reviews sr
+                             WHERE sr.sermon_id = sermons.id))
 LIMIT 10
 ```
 
-Sermons are processed serially to keep LLM call ordering predictable and respect the one-job-per-sermon lease. Each sermon acquires `analysis_lease_expires_at = now + 10 minutes` before its run begins, releases on completion or expiry.
+Sermons are processed serially. No queue, no message bus.
 
-**Triggers that put a sermon into the dispatch queue:**
+### 5.5 Triggers
 
-- Sermon transitions to `transcript_ready` — sync flow moves the state; the dispatch poll picks it up next.
-- Stale detection: `sermons.source_version > sermon_reviews.source_version_at_analysis` (checked on every dispatch poll and on UI view).
-- Rubric version bump (`homiletics_core.__version__` change) → mark all reviews stale (`source_version_at_analysis` unchanged but `homiletics_core_version` differs); **lazy reanalysis on first view** of each sermon.
-- Manual "reanalyze" button per sermon → explicit state transition `review_ready → analysis_pending`.
-- Coach `request_reanalysis` tool call → same, respecting one-job-per-sermon lease (returns "busy" to coach if lease is held).
+- Sermon → `transcript_ready` (sync flow moves the state; dispatch poll picks it up)
+- `sermons.source_version > sermon_reviews.source_version_at_analysis` (stale)
+- `homiletics_core.__version__` bump (code-level; lazy re-analysis on first view)
+- Manual "reanalyze" button per sermon
 
-### 5.9 Errors
+### 5.6 Errors
 
-- LLM failure after retries and fallback → `sermon_reviews` row written with `bridge_score=NULL`, `bridge_evidence=NULL`. Review is `partial_ready` in the UI.
-- Transcript < `analysis_transcript_min_words` (default 1000) → `analysis_skipped`, status reason stored.
-- Analyzer crash mid-run → `analysis_lease_expires_at` expires, next run reaps and retries.
+- LLM failure after retry + fallback → partial review with deterministic fields populated, LLM fields NULL, `sync_status='analysis_failed'`
+- Transcript below 1000 words → `analysis_skipped`
 
 ---
 
@@ -1091,12 +832,13 @@ Sermons are processed serially to keep LLM call ordering predictable and respect
 
 ```
 1. Identity & Voice                  — from voice_constants.py
-2. Homiletical Framework             — references homiletics_core by rule name
+2. Homiletical Framework             — impact/faithfulness/diagnostic tiers, concepts not prompt strings
 3. Current Sermon Context            — passage, linked session, preach_date, duration
-4. Pipeline Findings (structured)    — metrics handed as a JSON block
-5. Your Agency + Override Protocol   — when to challenge, how to write overrides
+4. Pipeline Findings                 — the full sermon_reviews row, handed as a structured JSON block
+5. Your Agency                       — full read access to transcript, prep session, history; if you
+                                       disagree with a pipeline value, say so in chat with rationale
 6. Tools                             — inventory + usage guidance
-7. Longitudinal Posture              — operational rule (see 6.4)
+7. Longitudinal Posture              — corpus-gated rule, verbatim (see 6.3)
 8. Behavioral Constraints            — no auto-initiation, one action per turn
 ```
 
@@ -1108,312 +850,291 @@ HOMILETICAL_TRADITION = """..."""
 VOICE_GUARDRAILS = """..."""
 ```
 
-Both `companion_agent.py` (prep) and `sermon_coach_agent.py` (retrospective) import these constants. Voice drift is prevented by single source of truth — changes flow to both automatically.
+Both `companion_agent.py` (prep) and `sermon_coach_agent.py` (retrospective) import these. Voice drift is prevented by single source of truth.
 
-### 6.3 Tools
+### 6.3 Corpus-gated longitudinal rule (verbatim in the prompt)
+
+```
+LONGITUDINAL POSTURE — YOU MUST FOLLOW THIS:
+
+The system has analyzed N sermons. The current corpus gate is: {corpus_gate_status}
+
+If corpus_gate_status == 'pre_gate' (fewer than 5 recent sermons):
+  - You may NOT use any of these words: "pattern", "persistent", "always",
+    "every time", "trajectory", "tendency", "habit", "consistently".
+  - You may ONLY describe what you see in this specific sermon.
+  - If Bryan asks about patterns, say: "I don't have enough corpus yet to
+    speak to patterns — I need at least 5 recent sermons before I can. What
+    I see in THIS sermon is ..."
+
+If corpus_gate_status == 'emerging' (5-9 recent sermons):
+  - You may say "emerging pattern" when ≥3 of the last 5 sermons share the
+    same dimension in the same direction.
+  - You may NOT say "persistent" or "always" or "stable pattern."
+  - Always label: "emerging observation across the last 5 sermons..."
+
+If corpus_gate_status == 'stable' (10+ recent sermons):
+  - Full longitudinal voice is available.
+  - Always label observations explicitly: "current-sermon observation",
+    "historical pattern", or "trajectory".
+  - Never conflate the three.
+
+This rule is non-negotiable. Violating it damages Bryan's trust in the system.
+```
+
+The prompt always includes the current `corpus_gate_status` from `sermon_trends_recent`.
+
+### 6.4 Tools
 
 Reused from `companion_tools.py`:
-- `read_bible_passage`, `lookup_lexicon`, `lookup_grammar`, `find_commentary_paragraph`, `expand_cross_references`
+- `read_bible_passage`, `lookup_lexicon`, `lookup_grammar`, `find_commentary_paragraph`
 
-**NEW** tools in `sermon_coach_tools.py`:
+**NEW** in `sermon_coach_tools.py`:
 
 | Tool | Purpose |
 |---|---|
-| `lookup_homiletics_book` | Search Chapell / Robinson / Beeke / Piper / Greidanus / Clowney / Goldsworthy / Mathewson via the existing ResourceIndex |
-| `get_sermon_review(sermon_id)` | Full `sermon_effective_review` row |
-| `get_sermon_flags(sermon_id)` | All flags for a sermon |
-| `get_sermon_overrides(sermon_id)` | Prior override chain |
+| `get_sermon_review(sermon_id)` | Full `sermon_reviews` row |
+| `get_sermon_flags(sermon_id)` | All flags |
 | `get_transcript_full(sermon_id, start_sec?, end_sec?)` | Raw transcript slice |
-| `get_prep_session_full(session_id)` | Outline + card responses + conversation log |
-| `pull_historical_sermons(n, filter_expr)` | N prior sermons + their reviews |
-| `get_sermon_patterns(window)` | Rolling aggregates from `sermon_trends_recent` |
-| `override_metric(sermon_id, target_key, new_value, rationale)` | Writes `sermon_overrides` row with supersession chain |
-| `request_reanalysis(sermon_id, rubric_hint?)` | Queues analyzer re-run; respects one-job-per-sermon lease |
-| `compare_outline_to_transcript(session_id, sermon_id)` | Runs alignment stage on demand |
-| `save_coach_note(sermon_id, note)` | Persists a short coach note |
+| `get_prep_session_full(session_id)` | Outline + card responses + homiletical-phase messages |
+| `pull_historical_sermons(n, filter_expr?)` | N prior sermons + their reviews (for cross-sermon depth) |
+| `get_sermon_patterns(window?)` | Aggregate row from `sermon_trends_recent` including `corpus_gate_status` |
 
-### 6.4 Operational longitudinal rule (system prompt fragment)
+**Not in MVP:** `lookup_homiletics_book`, `override_metric`, `request_reanalysis`, `compare_outline_to_transcript`, `save_coach_note`. Coach can still mention Chapell/Robinson from training knowledge; dedicated library tool comes in Phase 2. Coach disagreements become ordinary assistant turns in `sermon_coach_messages`. Reanalysis is triggered by a UI button, not by the coach directly.
 
-> **Longitudinal posture.** Cite historical patterns only when:
-> - at least 3 prior sermons within the last 12 weeks show the same metric trend, OR
-> - the user explicitly asks about patterns, trends, or cross-sermon comparisons.
->
-> When citing, label your observations explicitly:
-> - **"current-sermon observation"** — something you see in this specific sermon
-> - **"historical pattern"** — something you see repeated across prior sermons
-> - **"trajectory"** — a direction of change across the last N sermons
->
-> Never conflate the three. A historical pattern does not override current-sermon judgment; a current-sermon observation does not claim a pattern.
+### 6.5 Interaction model
 
-### 6.5 Override vs reanalysis loop breaker
+- **Entry point 1 — from Review page**: coach greets with a narrated summary of the Impact / Faithfulness / Diagnostic / Prescription cards. Opens with the `one_change_for_next_sunday` framed as a conversation opener.
+- **Entry point 2 — flag click**: coach opens focused on that moment, calls `get_transcript_full(start_sec, end_sec)`, narrates from the flag's rationale.
+- Coach never auto-initiates.
 
-System prompt: *"Within a single turn, choose one action per `target_key`: either `override_metric` OR `request_reanalysis`. Not both. If reanalysis produces new evidence contradicting your override, you may author a new override in a subsequent turn with the updated rationale."*
+### 6.6 Streaming + persistence
 
-Enforcement at tool level: `override_metric` returns an error if a `request_reanalysis` call on the same `target_key` is pending (`sermons.analysis_lease_expires_at > now` AND the queued rubric_hint matches this metric).
-
-One reanalysis lease per sermon: acquiring a new `request_reanalysis` while one is pending returns a "busy" tool result; coach narrates the wait.
-
-### 6.6 Interaction entry points
-
-1. **Inline Review tab** — coach greets with structured summary narrated from `sermon_effective_review`.
-2. **Flag click** — coach opens focused on a specific moment, uses `get_transcript_full(start_sec, end_sec)`.
-3. **Cross-session `/coach`** — Bryan asks longitudinal questions; coach calls `get_sermon_patterns` + `pull_historical_sermons`.
-
-No entry point 4: coach never auto-initiates.
-
-### 6.7 Override authoring guardrails
-
-- `rationale` minimum 30 characters (enforced by tool).
-- Supersession chain enforced at write time.
-- UI shows a subtle "overridden" marker next to the metric with hover showing pipeline value + rationale.
+Same SSE + `anthropic.Client.messages.stream` pattern as `companion_agent.py`. Messages persist to `sermon_coach_messages` at each turn. `conversation_id` groups turns (one conversation per sermon, extended as Bryan returns over weeks).
 
 ---
 
 ## Section 7 — UI
 
-### 7.1 `/sermons/<id>` — authoritative review surface
+### 7.1 `/sermons/<id>` — authoritative review page
 
-Every sermon has a canonical page at `/sermons/<id>`. The Review tab inside `study_session.html` is a **shortcut** to this content when a link exists — identical partials render on both surfaces. Historicals, orphans, and unlinked sermons live solely at `/sermons/<id>` with full review functionality.
+Single canonical page per sermon. The Review tab inside `study_session.html` is a shortcut when a link exists; both surfaces render the same partials. Historicals, orphans, and unlinked sermons live solely at `/sermons/<id>`.
+
+**Four-card layout:**
+
+```
+┌─ IMPACT ─────────────────────────────────────────────────┐
+│  Burden:        CLEAR   "You stated the big idea at 2:58:│
+│                         'Paul's no-condemnation is real  │
+│                         because Jesus took the full..."  │
+│  Movement:      RIVER   Arc was coherent; transitions    │
+│                         felt natural through §3.         │
+│  Application:   ABSTRACT arrived at 31:00 of 38:42       │
+│  Ethos:         ENGAGED                                  │
+│  Concreteness:  3 / 5   4.2 images per 10 min             │
+│                                                          │
+│  What helped:                                            │
+│   ✓ Burden stated early and restated at 15:00            │
+│   ✓ Personal confession at 24:15 earned the turn         │
+│   ✓ Narrative at 7:40 carried the theological weight     │
+│                                                          │
+│  What hurt:                                              │
+│   ⚠ Application arrived at 31:00 — 81% through.          │
+│     Hearers were in exegesis mode for 20 min with no     │
+│     concrete pressure on their week.                     │
+│   ⚠ Abstract application ("we should trust the gospel")  │
+│     — no specific image of WHO or WHEN.                  │
+│   ⚠ Density spike in §2 held the genitive for 4 min      │
+└──────────────────────────────────────────────────────────┘
+
+┌─ FAITHFULNESS ───────────────────────────────────────────┐
+│  Christ Thread:    GESTURED  Implied in §1, explicit in  │
+│                              close. Didn't land mid-body.│
+│  Exegetical:       GROUNDED  Text is the sermon's center;│
+│                              not pretext.                │
+└──────────────────────────────────────────────────────────┘
+
+┌─ DIAGNOSTIC ─────────────────────────────────────────────┐
+│  Length:    38:42  /  28:00 planned   +10:42             │
+│             Length hurts here because application came   │
+│             late — cut §2 Greek hold by 2 min + start    │
+│             application at 22:00 = 31:00 sermon.         │
+│  Section timings: intro 02:15 · body 28:30 · app 05:20   │
+│                    · close 02:37                         │
+│  Outline fidelity: 83%  (added: families; omitted: v.7   │
+│                          participle)                     │
+│  Density hotspots:  §2 [13:40–17:20] genitive hold        │
+└──────────────────────────────────────────────────────────┘
+
+┌─ FOR NEXT SUNDAY ────────────────────────────────────────┐
+│  Start your application at the 22-minute mark, not 31.   │
+│  Cut the §2 Greek hold to a single sentence summary.     │
+└──────────────────────────────────────────────────────────┘
+
+[🎙 open coach conversation]
+```
 
 **Page states:**
 
 | State | Triggered by | Rendering |
 |---|---|---|
-| `no_link_no_candidates` | Match ran, no matches | Metadata + transcript + coach chat; no outline fidelity card |
-| `candidates_pending` | Tier 2 matches exist | Metadata + candidate list with approve/reject + preview report card |
-| `transcript_pending` | `sync_status='synced_metadata'` or `transcript_stalled` | "Transcript still processing on SermonAudio" |
+| `no_link` | Match ran, no matches | All four cards render; Outline fidelity shows "no linked session" |
+| `candidates_pending` | Tier 2 candidates exist | Candidate list at top + partial review below |
+| `transcript_pending` | `sync_status='synced_metadata'` | "Transcript still processing" |
 | `analysis_pending` | `sync_status='analysis_pending'` | "Analysis queued" |
-| `analysis_running` | `sync_status='analysis_running'` | "Analysis in progress..." with progress indicator |
-| `review_ready` | All 8 stages succeeded | Full report card + flag list + coach chat |
-| `partial_ready` | Some LLM stages failed, pure stages OK | Report card with per-card states; failed cards show "data pending" placeholders |
-| `reanalysis_in_progress` | Lease held during re-run | Report card with existing data + "Reanalyzing..." banner |
-| `analysis_failed` | All retries exhausted | Error card + retry button + partial pure-code metrics |
-| `stale` | `source_version > source_version_at_analysis` | Report card with "Source changed — reanalyzing" banner; data shown with stale badge |
-| `unreviewable_historical` | `sermon_type='topical'` with no passage or transcript too short | Metadata + transcript only; coach chat available but no pipeline card |
+| `analysis_running` | `sync_status='analysis_running'` | "Analysis in progress..." |
+| `review_ready` | All stages succeeded | Full four-card render |
+| `analysis_failed` | LLM retries exhausted | Deterministic cards + error banner + retry button |
+| `unreviewable` | `sermon_type='topical'` or transcript < 1000 words | Metadata + transcript only, no review cards |
 
-### 7.2 Report card per-card states
+### 7.2 Review tab inside `study_session.html`
 
-Each report card (Length / Bridge / Christ Thread / Density / Outline Fidelity) has its own state:
+New tab peer to the existing prep surface. Visible when the session has an `active` sermon link OR `candidate` pending. Renders the same partials as `/sermons/<id>`.
 
-- `ready` — compute succeeded; render normally
-- `partial` — pure-code succeeded, LLM stage failed; render available data + subtle warning
-- `failed` — stage fully failed; placeholder + retry link
-- `stale` — source_version mismatch; badge + reanalysis queued
-- `overridden` — pipeline value exists but override is effective; render override value + provenance info-icon
-
-### 7.3 Provenance popover
-
-Every metric rendered on a report card has a small `ⓘ` icon. Clicking opens a popover:
-
-```
-bridge_score: partial
-source:       llm (claude-opus-4-6)
-stage:        score_bridge
-computed:     2026-04-14 11:23 UTC
-input_hash:   4f8a2d...
-analyzer:     1.2.0
-rubric:       homiletics_core 1.0.0
-```
-
-For overridden values, the popover shows both pipeline and override:
-
-```
-bridge_score: landed   ← EFFECTIVE (override)
-pipeline:     partial
-source:       override (by coach)
-computed:     2026-04-14 11:47 UTC
-rationale:    "Bryan explicitly connected the text to FCF at 24:18..."
-```
-
-### 7.4 Review tab inside `study_session.html`
-
-New tab peer to the existing prep surface. Visible when the session has a linked sermon OR a candidate pending approval. Renders the same partials as `/sermons/<id>` (`sermon_report_card.html`, `sermon_flag_list.html`, `sermon_coach_chat.html`).
-
-### 7.5 Cross-session `/sermons/` pages
+### 7.3 Cross-session routes
 
 | Route | Purpose |
 |---|---|
-| `/sermons/` | List of all sermons; sortable; attention-queue badge |
-| `/sermons/<id>` | Authoritative per-sermon review page |
-| `/sermons/attention` | Sorted queue of `needs_attention` items (aging badges) |
-| `/sermons/patterns` | Trend cards (length delta, bridge rate, Christ rate, density trend) from `sermon_trends_recent` |
-| `/sermons/sync-log` | Debug view of recent sync runs + `sermon_analysis_cost_log` totals |
-| `/sermons/classification-review` | Unknown eventType queue with approval UI |
-| `/sermons/bootstrap` | One-shot historical import trigger |
-| `/sermons/coach` | Cross-session coach conversation (Bryan's "nice but unnecessary" surface) |
-| `/sermons/health` | Operational dashboard — counts by `sync_status`, attention depth, last run result |
+| `GET /sermons/` | List of all sermons, sortable, attention-queue badge |
+| `GET /sermons/<id>` | Authoritative review page |
+| `POST /sermons/sync` | Manual sync trigger |
+| `POST /sermons/backfill?limit=24` | One-shot historical backfill |
+| `POST /sermons/<id>/reanalyze` | Manual reanalysis |
+| `POST /sermons/<id>/link/<session_id>` | Manual link (creates `active` + `manual`) |
+| `POST /sermons/<id>/unlink` | Flip active link to `rejected` |
+| `POST /sermons/<id>/approve-candidate/<link_id>` | Promote candidate to active |
+| `GET /sermons/patterns` | Trends from `sermon_trends_recent` with corpus_gate_status |
+| `GET /sermons/sync-log` | Debug view + cost log totals |
+| `POST /sermons/<id>/coach/message` | Coach chat turn (SSE) |
 
-### 7.6 Badge logic — review signature
+### 7.4 Badge logic
 
-Badges must fire on **any** materially-new review, which includes three distinct triggers:
-1. Source change (`source_version` bumped by ingest)
-2. Analyzer version change (code bump)
-3. Rubric change (`homiletics_core.__version__` bump)
-
-Per codex: if badge logic keyed only on `source_version`, a rubric-only reanalysis would produce a fresh review but silently without notifying Bryan. Fix: composite signature.
-
-```python
-def review_signature(sermon_row, review_row) -> str:
-    return sha256(
-        f"{sermon_row.source_version}|"
-        f"{review_row.analyzer_version}|"
-        f"{review_row.homiletics_core_version}"
-    ).hexdigest()[:16]
-```
-
-Badge fires if:
-```
+```sql
+-- Badge fires when:
 sermon.sync_status = 'review_ready'
-AND current_review_signature(sermon) != sermon.ui_last_seen_review_signature
+AND sermon.source_version > sermon.ui_last_seen_version
 ```
 
-On opening any page that renders a sermon, a compare-and-set write:
+On opening the review page, compare-and-set:
+
 ```sql
 UPDATE sermons
-SET ui_last_seen_review_signature = :current_signature
-WHERE id = :sermon_id;
+SET ui_last_seen_version = source_version
+WHERE id = :sermon_id AND ui_last_seen_version < source_version;
 ```
 
-This is last-writer-wins across tabs. For a single-user Mac, race windows are tiny and the cost of a stale badge is negligible compared to the cost of a missed rubric-only reanalysis. Badges re-fire on any of the three triggers changing the signature.
+Simpler than the composite signature — good enough for a single-user Mac. If rubric version bumps become a real MVP pain point, Phase 2 upgrades the signature.
 
-### 7.7 HTMX + SSE
+### 7.5 HTMX + SSE
 
-Same infrastructure as the existing prep UI. New partials:
+Same infrastructure as existing prep UI. New partials:
 
 ```
 templates/partials/
-├── sermon_report_card.html
+├── sermon_impact_card.html
+├── sermon_faithfulness_card.html
+├── sermon_diagnostic_card.html
+├── sermon_prescription_card.html
 ├── sermon_flag_list.html
 ├── sermon_coach_chat.html
-├── sermon_candidates_list.html
-├── sermon_attention_row.html
-└── sermon_pattern_card.html
+└── sermon_candidates_list.html
 
 templates/sermons/
 ├── list.html
 ├── detail.html
-├── attention.html
 ├── patterns.html
-├── sync_log.html
-├── classification_review.html
-├── bootstrap.html
-├── coach.html
-└── health.html
+└── sync_log.html
 
 static/
 ├── sermons.css
 └── sermons.js
 ```
 
-Dark theme matches existing `companion.css` / `study.css`.
+Dark theme matches `companion.css` / `study.css`.
+
+### 7.6 `/sermons/patterns` trend view
+
+Shows `sermon_trends_recent` as trend cards. Corpus gate status displayed prominently:
+
+- **Pre-gate (< 5 sermons)**: grey-toned; "Not enough corpus yet. Need N more sermons to start speaking about patterns."
+- **Emerging (5-9)**: yellow-toned; trend lines visible with "emerging observation" labels.
+- **Stable (10+)**: full color; "persistent pattern" language permitted.
+
+Each of the five Tier 1 dimensions + the four Tier 3 diagnostics gets a small card with the rolling rate and a sparkline across the window.
 
 ---
 
-## Section 8 — Error handling & operational surface
+## Section 8 — Error handling
 
 Consolidated recovery matrix:
 
-| Layer | Failure mode | Recovery path |
+| Layer | Failure | Recovery |
 |---|---|---|
-| **Ingest** | API 429/5xx/timeout | Retry in-run (3×, exp backoff); on final failure, SQL-enforced escalating cooldown; terminal after `failure_count ≥ 5` → `permanent_failure` |
-| **Ingest** | API 401/403 | Abort entire run; alert on `/sermons/sync-log` |
-| **Ingest** | Lock contention | HTTP 409 for manual; silent abort for cron |
-| **Ingest** | Process crash mid-run | Lease expires in ≤90s; next run reaps; bootstrap resumes from checkpoint |
-| **Ingest** | Unknown eventType | Surfaces in `/sermons/classification-review` for one-click approval; heuristic catches it meanwhile |
-| **Match** | Unparseable passage | `match_status='unparseable_passage'` → `/sermons/attention` |
-| **Match** | UI rejection race | `BEGIN IMMEDIATE` transaction |
-| **Match** | Manual link | Sticky; auto-supersession disabled for `link_source='manual'` |
-| **Analyze** | LLM call failure | Retry 2×; fallback to simpler enum-only prompt; 3rd failure → `partial_ready` |
-| **Analyze** | JSON parse error | Retry; fallback prompt; log to `sermon_analysis_cost_log` |
-| **Analyze** | Transcript too short | `analysis_skipped` + reason |
-| **Analyze** | Cache miss on rubric bump | Lazy reanalysis on view |
-| **Analyze** | Crash mid-run | `analysis_lease_expires_at` expiry + reaper |
-| **Coach** | Tool error | Return error to LLM; coach narrates recovery or retries |
-| **Coach** | Override vs reanalyze conflict | Tool-level lock; returns "busy" to coach |
-| **UI** | Page crash | Flask 500 logged; friendly error with retry link |
+| Ingest | API 429/5xx/timeout | In-run retry + SQL cooldown + `permanent_failure` at `failure_count ≥ 5` |
+| Ingest | API 401/403 | Abort run, alert on `/sermons/sync-log` |
+| Ingest | Concurrent run | File lock returns 409 for manual; cron skips silently |
+| Ingest | Process crash | File lock released by OS; next run picks up |
+| Match | Unparseable passage | `match_status='unparseable_passage'` in attention queue |
+| Match | Race with UI rejection | `BEGIN IMMEDIATE` |
+| Analyze | LLM failure | Retry 2× + simplified fallback prompt → partial review with deterministic fields only |
+| Analyze | JSON parse | Retry simplified prompt → partial review |
+| Analyze | Transcript too short | `analysis_skipped` |
+| Analyze | Crash | Next dispatch poll picks it up again |
+| Coach | Tool error | Coach narrates recovery |
+| UI | Page crash | Flask 500 logged; friendly error with retry link |
 
-### 8.1 Health dashboard (`/sermons/health`)
-
-Read-only page showing:
-
-- Sermon counts by `sync_status`
-- Attention queue depth by `match_status`
-- Last 5 sync runs (trigger, counts, status)
-- Cost log rolling totals (24h / 7d / 30d)
-- Stale review count (`source_version > source_version_at_analysis`)
-- Lock state (held_by, expires_at)
-- Sermons in `permanent_failure` (with manual retry button)
+No separate health dashboard in MVP — `/sermons/sync-log` is the operational surface.
 
 ---
 
-## Section 9 — Testing strategy
+## Section 9 — Testing
 
-### 9.1 Unit tests (pytest, `tools/workbench/tests/`)
+### 9.1 Unit tests
 
 | File | Coverage |
 |---|---|
-| `test_sermonaudio_sync.py` | Classification rules, hash computation, upsert logic, state transitions, lock acquisition (race test), checkpoint resume, error classification |
-| `test_sermon_passages.py` | Multi-range parsing, chapter span parsing, whole-chapter parsing, unparseable → zero rows |
-| `test_sermon_type_topical.py` | Topical exclusion from matcher; matcher returns no_match for `sermon_type='topical'` |
-| `test_sermon_matcher.py` | 30+ scenario tests: Tier 1/2/3 rules, multi-passage overlap, rematch supersession, manual-link stickiness, rejected-link recovery, historical cutoff, `BEGIN IMMEDIATE` race |
-| `test_sermon_analyzer.py` | Stages 1-4 pure; stages 5-7 with canned `CannedLLMClient`; flag extraction; degradation to `partial_ready` on LLM failure |
-| `test_cache_invalidation.py` | Content-addressed cache hits/misses; upstream change cascades via hash mismatch; version snapshot held constant mid-run |
-| `test_effective_values.py` | `sermon_effective_review` view composition; override precedence; override survives reanalysis; null override returns pipeline value |
-| `test_provenance.py` | `sermon_review_provenance` writes per metric; override rows not written to provenance (composed at read time); popover data shape |
-| `test_homiletics_core.py` | Pure function rules: FORM check, Christ thread classifier, density score, time estimator, "so what" gate |
-| `test_sermon_coach_agent.py` | Prompt assembly with `voice_constants`; tool dispatch; `override_metric` 30-char rationale enforcement; one-action-per-turn lock; longitudinal posture labeling |
-| `test_sermon_coach_tools.py` | Each new tool: read access to transcripts/sessions/history; `override_metric` supersession chain; `request_reanalysis` lease check |
+| `test_sermonaudio_sync.py` | Classification (speaker + eventType + heuristic), hash computation, upsert logic, state transitions, file lock, error classification |
+| `test_sermon_passages.py` | Multi-range parsing, chapter span parsing, whole-chapter parsing, unparseable |
+| `test_sermon_type_topical.py` | Matcher excludes topical sermons; analyzer skips them with `sermon_type='topical'` |
+| `test_sermon_matcher.py` | 20+ scenario tests over Tier 1/2/3 rules, re-match behavior, manual-link stickiness, `BEGIN IMMEDIATE` race, historical cutoff |
+| `test_sermon_analyzer.py` | Pure stages (1–4); LLM stage with `CannedLLMClient`; full rubric schema validation; partial-review fallback on LLM failure |
+| `test_homiletics_core.py` | Segmentation, alignment, timing, density hotspots, `corpus_gate_status`, `late_application` |
+| `test_sermon_coach_agent.py` | Prompt assembly with `voice_constants`; corpus-gated longitudinal rule enforcement (prompt sanity check) |
+| `test_sermon_coach_tools.py` | Each new tool: read access, `get_sermon_patterns` returns `corpus_gate_status` |
 
 ### 9.2 Integration tests
 
 | File | Coverage |
 |---|---|
-| `test_sermon_pipeline_end_to_end.py` | Mock SermonAudio → sync → match → analyze → read review; asserts full path including all state transitions |
-| `test_sermon_rematch_flow.py` | Create sermon, no session; create session later (auto-match fires); update session non-homiletical (no churn); create competing session (supersession) |
-| `test_sermon_override_flow.py` | Analyze → coach overrides → effective view returns override → reanalysis → override persists → effective still returns override |
-| `test_sermon_bootstrap_resume.py` | Bootstrap mid-run crash → checkpoint persisted → restart resumes from last page |
-| `test_sermon_source_change_flow.py` | Sermon analyzed → SermonAudio updates transcript → source_version bump → stale detection → reanalysis → badge re-fire |
+| `test_sermon_pipeline_end_to_end.py` | Mock SermonAudio → sync → match → analyze → read review; asserts state transitions |
+| `test_sermon_rematch_flow.py` | Create sermon, no session. Create session later. Assert auto-match fires. Update session with non-homiletical write (no churn). Create competing session (ambiguity → candidate). |
+| `test_sermon_source_change_flow.py` | Sermon analyzed → source_version bumps → dispatch poll picks up → re-analyze → badge re-fires |
 
 ### 9.3 E2E Playwright
 
-Extends existing `tools/workbench/tests/test_e2e_*` pattern:
-
-- Bootstrap flow: click "Bootstrap" → mocked API → progress → completion
 - Manual sync: click "Sync now" → mocked new sermon → badge on session card
-- Review tab open → report card render → flag click → coach chat open → coach responds
-- Override flow: coach overrides bridge score → UI shows both values → popover shows rationale
-- Cross-session patterns: open `/sermons/patterns` → trend cards render
-- Unlinked historical: open `/sermons/<id>` directly → authoritative review surface renders
+- Review page render: open `/sermons/<id>` → four cards render → coach chat opens → coach responds
+- Candidate approval: approve candidate → link flips to active → pattern view updates
+- Trends page: open `/sermons/patterns` → corpus gate status visible → trend cards render
 
 ### 9.4 Backtest harness
 
-`scripts/backtest_matcher.py` — after bootstrap completes, runs matcher over the real 356 sermons × real sessions and writes a CSV:
-
-```csv
-sermon_id, preach_date, sermon_passage, decision, tier, reason, linked_session_id, linked_session_passage
-```
-
-Bryan eyeballs for bad decisions. Any surprise becomes a new unit test fixture. Rules get adjusted in `homiletics_core.py` / `sermon_matcher.py` and the CSV is re-run until clean.
+`scripts/backtest_matcher.py` runs the matcher over the last-24 backfilled sermons + real sessions and writes a CSV for eyeball audit. Same shape as the existing e2e-tests backtest script.
 
 ### 9.5 LLM test doubles
 
 ```python
-# test_fixtures.py
 class LLMClient(Protocol):
-    def call(self, prompt, schema) -> dict: ...
+    def call(self, prompt: str, schema: dict) -> dict: ...
 
 class CannedLLMClient:
-    def __init__(self, canned: dict[str, dict]): self.canned = canned
+    def __init__(self, fixtures: dict): self.fixtures = fixtures
     def call(self, prompt, schema):
-        key = sha256(prompt).hexdigest()[:16]
-        return self.canned.get(key) or {'error': 'no canned response'}
+        key = hashlib.sha256(prompt.encode()).hexdigest()[:16]
+        return self.fixtures.get(key, {'error': 'no canned response'})
 ```
 
-Analyzer takes `LLMClient` via dependency injection. Tests pass `CannedLLMClient`. Live API tests are marked `@pytest.mark.live_api` and excluded from CI by default.
-
-### 9.6 Test database
-
-Same pattern as existing workbench tests: a temp SQLite file seeded via `init_db()` + fixture sermons/sessions. No touching of the real `companion.db`.
+Analyzer takes an `LLMClient` via dependency injection. Unit tests pass `CannedLLMClient`; live-API tests are marked `@pytest.mark.live_api` and excluded from CI.
 
 ---
 
@@ -1421,43 +1142,74 @@ Same pattern as existing workbench tests: a temp SQLite file seeded via `init_db
 
 | Category | Estimate |
 |---|---|
-| **CPU** | ~0% idle; brief spikes during sync; LLM calls are network-bound |
-| **Memory** | +30 MB baseline (APScheduler + sermonaudio lib); +50 MB peak during sync |
-| **Disk** | +100 MB one-time for bootstrap; +5 MB/year steady state |
-| **Network** | ~5 MB per steady-state sync; ~100 MB one-time for bootstrap |
-| **LLM API** | $0 for ingest; $35–$90 one-time for full 356-sermon historical analysis (opt-in scope picker lets Bryan choose scope); $5–$13/year ongoing at 1 sermon/week |
-| **Other apps** | No meaningful impact on couple-companion / mighty-oaks / adhd-align / tendflock |
+| CPU | ~0% idle; brief spikes during sync and analysis |
+| Memory | +30 MB baseline; +50 MB peak during active sync |
+| Disk | +20–30 MB one-time for last-24 backfill; +5 MB/year ongoing |
+| Network | ~5 MB per steady-state sync; ~25 MB one-time for backfill |
+| LLM API | ~$0.15–$0.25 per sermon (single combined Opus 4.6 call); ~$4–$6 for last-24 backfill; ~$8–$13/year ongoing |
+| Other apps on this Mac | No meaningful impact |
 
-Cost telemetry persisted in `sermon_analysis_cost_log`; `/sermons/sync-log` shows running totals.
-
----
-
-## What is explicitly NOT in scope for this spec
-
-- **Multi-user support** — single-user Mac, no auth
-- **External push notifications** — badge-only per user's decision
-- **Sermon audio playback in the UI** — the audio URL is stored but playback is deferred (phase 2)
-- **Real-time patterns dashboard** — trend cards recompute on view, no live updates
-- **Automated sermon comparison mode** — coach can do this via tool calls, but no dedicated "compare two sermons" UI
-- **Manual transcript paste fallback** — SermonAudio AI transcription is the only source (phase 2 can add this if SA degrades)
-- **Automatic rubric tuning** — overrides are tracked, but tuning `homiletics_core.py` is manual review of override history
+Cost telemetry persisted per call in `sermon_analysis_cost_log`; rolling totals visible on `/sermons/sync-log`.
 
 ---
 
-## Open questions deferred to the implementation plan
+## What is explicitly NOT in MVP (Phase 2+ appendix)
 
-1. **APScheduler in-process vs separate PM2 worker** — spec goes with in-process; plan will revisit if testing surfaces Flask-scheduler coupling issues.
-2. **Live API cost budgets** — whether to add a per-day cost ceiling enforced at the analyzer level (cut off auto-analysis if the day's cost exceeds $X). YAGNI for MVP; revisit after first month's usage data.
-3. **Which homiletics books get indexed first for `lookup_homiletics_book`** — probably Chapell + Robinson + Beeke as MVP set; others added as the need surfaces in real use.
+The following were specified in detail in the pre-pruned design and are deliberately deferred. Each represents real future value but is not essential for the core weekly coaching loop.
+
+### Deferred Phase 2 features
+
+1. **Override system** — structured `sermon_overrides` table with supersession chain, `effective_value` rule, `sermon_effective_review` view composing pipeline + override. Phase 2 adds this only if "coach disagrees" becomes a recurring pattern that chat-only narration can't handle.
+
+2. **Per-metric provenance** — `sermon_review_provenance` table + UI popovers showing which stage, which model, which input hash produced each metric. Adds auditability; defer until debugging pressure demands it.
+
+3. **Content-addressed stage cache** — `sermon_analysis_cache` keyed on input hashes for partial re-runs. MVP re-runs the full pipeline on any source change; at one sermon/week this is cheap.
+
+4. **Frozen prep snapshots** — `sermon_prep_snapshots` table preserving an immutable snapshot of the linked session at analysis time. MVP accepts that later edits to the session can change re-analysis inputs; this matters more when you have 50+ sermons and want to audit rubric drift.
+
+5. **Bootstrap resumability** — `sermon_sync_checkpoint` table for resumable page-by-page bulk import. MVP backfill is last-24 and idempotent-upsert-safe; click the button again if it fails.
+
+6. **Lease-based locking with heartbeat** — atomic `sync_lock` table with heartbeat thread. MVP uses file-based `fcntl.flock`.
+
+7. **Cross-session `/sermons/coach`** — standalone coach chat surface without a specific sermon in context. MVP coach lives inside a sermon's Review page. The "nice but unnecessary" surface earns inclusion when Bryan actually finds himself wanting it.
+
+8. **`lookup_homiletics_book` tool** — Chapell/Robinson/Beeke/Piper library lookup via the existing ResourceIndex. MVP coach cites these from training knowledge when relevant but doesn't have a dedicated tool.
+
+9. **Runtime `event_type_classification` table** — UI approval flow for unknown eventTypes. MVP hardcodes `SERMON_EVENT_TYPES` and `DEVOTIONAL_EVENT_TYPES` as Python constants.
+
+10. **Review history / `sermon_review_history`** — append-only snapshots of reviews on each overwrite. Useful for debugging rubric drift; not needed before you've changed the rubric.
+
+11. **Standalone `sermon_coach_notes`** — persistent coach notes beyond conversation history. MVP folds this into conversation messages.
+
+12. **Composite badge signature** — `review_signature = sha256(source_version || analyzer_version || homiletics_core_version)` so rubric bumps re-notify. MVP uses source_version alone; if you find yourself missing rubric reanalysis notifications, Phase 2 adds this.
+
+13. **Health dashboard** — `/sermons/health` with per-status counts, attention queue depth, last runs. MVP has `/sermons/sync-log` only.
+
+14. **Deep sweep** — weekly Sunday-night 180-day sweep as insurance against `updated_since` filter gaps. MVP relies on primary filter + manual "resync" button.
+
+15. **Full 356-sermon historical backfill** — MVP backfills last-24 (~6 months). If pattern tracking wants deeper baseline, an explicit button runs "extend backfill" for another 24 at a time.
+
+16. **Topical sermon analysis** — MVP marks topical and excludes from auto-analysis. Phase 2 adds a topical-friendly analyzer variant.
+
+17. **Cost ceiling** — per-day LLM spend cap that pauses analysis if exceeded. MVP trusts the scope of last-24 backfill + weekly single sermon.
+
+18. **Classification review UI** — surface unknown eventTypes for one-click approval. MVP watches in `/sermons/sync-log`.
+
+19. **Coach-initiated reanalysis** — `request_reanalysis` tool for the coach. MVP only supports manual UI-driven reanalysis.
+
+### Why this split
+
+The MVP is ~60% of the pre-pruned design by surface area and ~30% by implementation complexity. The cuts protect the weekly coaching loop from getting delayed by engineering that doesn't yet have a user-demonstrated need. If any Phase 2 feature proves essential after 4-6 weeks of real use, it earns a place — and by then, the coach's weekly report is already helping Bryan preach shorter, clearer, warmer, and more pointedly.
 
 ---
 
 ## References
 
 - **CLAUDE.md** — project instructions
-- **`companion_agent.py`** — existing prep-side voice and guardrails (shared via `voice_constants.py`)
+- **`companion_agent.py`** — prep-side voice (shared via new `voice_constants.py`)
 - **`companion_db.py`** — existing schema (new tables attach via FKs; one `ALTER` on `sessions`)
-- **`companion_tools.py`** — tool layer reused by coach
+- **`companion_tools.py`** — tools reused by coach
 - **`tools/study.py`** — `parse_reference()` extended for multi-range + chapter spans
 - **SermonAudio API v2** — https://api.sermonaudio.com/ (key auth, `sermonaudio` PyPI package)
-- **Adversarial review trail** — codex CLI was consulted at four checkpoints during design (approaches, architecture + data model, ingest layer, remaining sections). Its critiques drove substantial revisions to cache invalidation, override precedence, state machines, matching rules, and auditability. The final design integrates those revisions; the review transcripts are archived in the brainstorm conversation for this session.
+- **Codex adversarial review trail** — 5 rounds over the pre-MVP design; critiques drove the major revisions
+- **Outside consultant rounds** — 2 rounds: first round cut the overbuilt machinery; second round reframed the metric set around impact predictors (Tier 1) separated from faithfulness (Tier 2) and diagnostic symptoms (Tier 3), and introduced corpus-gated longitudinal claims based on stylometry research
