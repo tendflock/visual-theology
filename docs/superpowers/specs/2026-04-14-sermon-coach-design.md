@@ -161,8 +161,21 @@ CREATE TABLE sermons (
     source_version INTEGER NOT NULL DEFAULT 1,
     remote_updated_at TEXT,
 
-    -- State
-    sync_status TEXT NOT NULL DEFAULT 'pending_sync',
+    -- State (closed enum — every value the codebase ever uses must be listed here)
+    sync_status TEXT NOT NULL DEFAULT 'pending_sync' CHECK (sync_status IN (
+        'pending_sync',
+        'synced_metadata',
+        'transcript_ready',
+        'transcript_stalled',
+        'analysis_pending',
+        'analysis_running',
+        'review_ready',
+        'sync_failed',
+        'analysis_failed',
+        'analysis_skipped',
+        'permanent_failure',
+        'archived'
+    )),
     sync_error TEXT,
     failure_count INTEGER NOT NULL DEFAULT 0,
     last_failure_at TEXT,
@@ -181,8 +194,8 @@ CREATE TABLE sermons (
     -- Lease for in-flight analysis
     analysis_lease_expires_at TEXT,
 
-    -- UI state
-    ui_last_seen_version INTEGER NOT NULL DEFAULT 0,
+    -- UI state — composite signature so badge fires on source, analyzer, AND rubric changes
+    ui_last_seen_review_signature TEXT,
 
     first_synced_at TEXT NOT NULL,
     last_synced_at TEXT NOT NULL,
@@ -457,6 +470,46 @@ CREATE TABLE sermon_review_provenance (
 
 One row per `(sermon, metric)`. Overwritten on each analysis (except override-source rows, which come from the override table's composition logic). Powers the UI's provenance popover — click an info icon next to any metric and see "computed by pipeline stage 5, LLM call at 11:23, input_hash abc123…, source_version 3, or overridden by coach with rationale Z."
 
+### `sermon_prep_snapshots` — frozen prep state for true recomputability
+
+Per codex's whole-spec review: without this table, the "recomputable from the database alone" invariant is broken because analyzer stages 2, 5, and 6 depend on live session data. If Bryan edits a session's outline after the sermon was analyzed, reanalysis would compute against different inputs with no record of what the original analysis actually saw.
+
+```sql
+CREATE TABLE sermon_prep_snapshots (
+    sermon_id INTEGER NOT NULL REFERENCES sermons(id),
+    session_id INTEGER NOT NULL REFERENCES sessions(id),
+    source_version_at_snapshot INTEGER NOT NULL,
+    snapshot_hash TEXT NOT NULL,
+    snapshot_json TEXT NOT NULL,       -- full outline + card_responses + homiletical-phase messages
+    snapshotted_at TEXT NOT NULL,
+    PRIMARY KEY (sermon_id, source_version_at_snapshot)
+);
+CREATE INDEX idx_prep_snapshots_session ON sermon_prep_snapshots(session_id);
+```
+
+**Snapshot contract:**
+
+1. Analyzer first-run on a sermon: take a snapshot of the current linked session (outline + homiletical-phase card_responses + conversation_messages), compute `snapshot_hash`, write the row. All subsequent stages in this run read from the snapshot, not live session data.
+2. Reanalysis trigger for a stale review: re-snapshot the current session state. If the new snapshot_hash differs from the stored one, the reanalysis has new inputs and all downstream stages miss their caches. If it matches, the stages can cache-hit on the prior run.
+3. `sermon_review_history.review_snapshot_json` now has a companion: the corresponding `sermon_prep_snapshots` row is preserved for the full lifetime of the sermon. Both together reconstruct exactly what the analyzer saw.
+4. Orphan sermons (no linked session) have no prep_snapshot row; the analyzer skips outline-alignment stages entirely (`outline_coverage_pct` stays NULL).
+
+### `sermon_coach_notes` — standalone notes from `save_coach_note` tool
+
+```sql
+CREATE TABLE sermon_coach_notes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sermon_id INTEGER REFERENCES sermons(id),     -- NULL for cross-sermon notes
+    note TEXT NOT NULL,
+    authored_by TEXT NOT NULL DEFAULT 'coach' CHECK (authored_by IN ('coach','user')),
+    visibility TEXT NOT NULL DEFAULT 'bryan' CHECK (visibility IN ('bryan','pinned')),
+    created_at TEXT NOT NULL
+);
+CREATE INDEX idx_coach_notes_sermon ON sermon_coach_notes(sermon_id);
+```
+
+Coach notes are small, retrievable per-sermon or globally. `save_coach_note` tool in Section 6.3 writes here. Notes are read-only from the UI (displayed in a collapsible panel on `/sermons/<id>`); they don't feed back into the analyzer.
+
 ### `sermon_coach_messages`
 
 ```sql
@@ -607,8 +660,8 @@ SELECT
     AVG(ser.duration_delta_seconds) AS avg_duration_delta,
     1.0 * SUM(CASE WHEN ser.effective_bridge_score='landed' THEN 1 ELSE 0 END) / COUNT(*) AS bridge_landed_rate,
     1.0 * SUM(CASE WHEN ser.effective_christ_thread_score='explicit' THEN 1 ELSE 0 END) / COUNT(*) AS christ_explicit_rate,
-    AVG(ser.density_score) AS avg_density,
-    AVG(ser.outline_coverage_pct) AS avg_outline_coverage
+    AVG(ser.effective_density_score) AS avg_density,
+    AVG(ser.effective_outline_coverage_pct) AS avg_outline_coverage  -- NULL-safe for orphans; AVG ignores NULLs
 FROM sermon_effective_review ser
 JOIN sermons s ON s.id = ser.sermon_id
 WHERE s.preach_date >= date('now', '-60 days')
@@ -616,7 +669,7 @@ WHERE s.preach_date >= date('now', '-60 days')
   AND s.is_remote_deleted = 0;
 ```
 
-Pattern queries and trend cards read from this view. Always fresh, always respects overrides.
+Pattern queries and trend cards read from this view. Always fresh, always respects overrides (all `effective_*` columns flow through `sermon_effective_review`). Orphan sermons (no linked session) still contribute to length, density, bridge, Christ aggregates — they just have NULL `effective_outline_coverage_pct`, which `AVG` correctly ignores.
 
 ---
 
@@ -839,13 +892,18 @@ WHERE s.preach_date BETWEEN :session_created_at
   AND s.match_status NOT IN ('matched','rejected_all')
 ```
 
-### 4.4 Pattern filter (used everywhere pattern data is consumed)
+### 4.4 Pattern filter scope
+
+The `link_status='active'` filter is **scoped to queries that require prep-session context** — specifically outline fidelity metrics (`outline_coverage_pct`, `outline_additions`, `outline_omissions`) and any pattern that joins through `sessions`. For those queries:
 
 ```sql
-WHERE link_status = 'active'
+JOIN sermon_links sl ON sl.sermon_id = s.id AND sl.link_status = 'active'
+JOIN sessions sess ON sess.id = sl.session_id
 ```
 
-That's it. `link_source` is stored for audit; `confidence` is debug metadata, not a gate.
+**Pattern queries for sermon-only metrics** (length, density, bridge, Christ thread) do NOT filter on `sermon_links`. Orphan historicals and unlinked sermons still contribute to these aggregates — their `effective_outline_coverage_pct` is NULL and SQL `AVG` ignores NULLs correctly. The `sermon_trends_recent` view (in §2) reflects this split.
+
+Link-row filter invariant: whenever code reads from `sermon_links`, it reads only `WHERE link_status = 'active'`. Candidate, superseded, and rejected rows never feed pattern analysis. `link_source` is stored for audit; `confidence` is debug metadata, not a gate.
 
 ### 4.5 Passage parsing
 
@@ -1185,24 +1243,38 @@ New tab peer to the existing prep surface. Visible when the session has a linked
 | `/sermons/coach` | Cross-session coach conversation (Bryan's "nice but unnecessary" surface) |
 | `/sermons/health` | Operational dashboard — counts by `sync_status`, attention depth, last run result |
 
-### 7.6 Badge logic
+### 7.6 Badge logic — review signature
 
-```sql
--- Badge fires if:
+Badges must fire on **any** materially-new review, which includes three distinct triggers:
+1. Source change (`source_version` bumped by ingest)
+2. Analyzer version change (code bump)
+3. Rubric change (`homiletics_core.__version__` bump)
+
+Per codex: if badge logic keyed only on `source_version`, a rubric-only reanalysis would produce a fresh review but silently without notifying Bryan. Fix: composite signature.
+
+```python
+def review_signature(sermon_row, review_row) -> str:
+    return sha256(
+        f"{sermon_row.source_version}|"
+        f"{review_row.analyzer_version}|"
+        f"{review_row.homiletics_core_version}"
+    ).hexdigest()[:16]
+```
+
+Badge fires if:
+```
 sermon.sync_status = 'review_ready'
-AND sermon.source_version > sermon.ui_last_seen_version
+AND current_review_signature(sermon) != sermon.ui_last_seen_review_signature
 ```
 
 On opening any page that renders a sermon, a compare-and-set write:
-
 ```sql
 UPDATE sermons
-SET ui_last_seen_version = :current_source_version
-WHERE id = :sermon_id
-  AND ui_last_seen_version < :current_source_version;
+SET ui_last_seen_review_signature = :current_signature
+WHERE id = :sermon_id;
 ```
 
-This is monotonic — a new tab can't regress another tab's clear. Badges re-fire on `source_version` bumps (new sync + reanalysis).
+This is last-writer-wins across tabs. For a single-user Mac, race windows are tiny and the cost of a stale badge is negligible compared to the cost of a missed rubric-only reanalysis. Badges re-fire on any of the three triggers changing the signature.
 
 ### 7.7 HTMX + SSE
 
