@@ -81,6 +81,35 @@ def _parse_passage_fields(bible_text: Optional[str]) -> dict:
     }
 
 
+def _write_sermon_passages(conn, sermon_id: int, bible_text: Optional[str]) -> tuple[str, str]:
+    """Write sermon_passages rows. Returns (sermon_type, match_status) for the parent sermon.
+
+    Deletes any prior rows for this sermon before inserting new ones.
+    """
+    conn.execute("DELETE FROM sermon_passages WHERE sermon_id = ?", (sermon_id,))
+    if not bible_text:
+        return ('topical', 'topical_no_match')
+
+    passages = parse_reference_multi(bible_text)
+    if not passages:
+        return ('topical', 'topical_no_match')
+
+    now = _now()
+    for rank, p in enumerate(passages, start=1):
+        conn.execute("""
+            INSERT INTO sermon_passages (
+                sermon_id, rank, book, chapter_start, verse_start,
+                chapter_end, verse_end, raw_text, created_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            sermon_id, rank, p['book'],
+            p['chapter_start'], p['verse_start'],
+            p['chapter_end'], p['verse_end'],
+            p.get('raw_text', bible_text), now,
+        ))
+    return ('expository', 'unmatched')
+
+
 def upsert_sermon(conn, sermon_remote) -> str:
     """Upsert a sermon row, keyed on sermonaudio_id. Returns 'new' | 'noop' | 'updated'."""
     row = conn.execute(
@@ -131,6 +160,13 @@ def upsert_sermon(conn, sermon_remote) -> str:
             getattr(sermon_remote, 'transcript', None),
             now, now, now, now, now,
         ))
+        sermon_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+        sermon_type, match_status = _write_sermon_passages(conn, sermon_id,
+                                                            getattr(sermon_remote, 'bible_text', None))
+        conn.execute(
+            "UPDATE sermons SET sermon_type = ?, match_status = ? WHERE id = ?",
+            (sermon_type, match_status, sermon_id),
+        )
         return 'new'
 
     if row[1] == new_meta and row[2] == new_tx:
@@ -178,6 +214,12 @@ def upsert_sermon(conn, sermon_remote) -> str:
         str(getattr(sermon_remote, 'update_date', None)),
         next_status, now, now, now, row[0],
     ))
+    sermon_type, match_status = _write_sermon_passages(conn, row[0],
+                                                        getattr(sermon_remote, 'bible_text', None))
+    conn.execute(
+        "UPDATE sermons SET sermon_type = ?, match_status = ? WHERE id = ?",
+        (sermon_type, match_status, row[0]),
+    )
     return 'updated'
 
 
