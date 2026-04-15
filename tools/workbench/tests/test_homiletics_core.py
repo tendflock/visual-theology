@@ -101,3 +101,10 @@ def test_detect_density_hotspots_finds_long_greek_holds():
     assert len(hotspots) >= 1
     assert hotspots[0]['start_sec'] == 60
     assert hotspots[0]['end_sec'] >= 180
+
+def test_late_application_exact_boundary():
+    # arrival_sec == 0.75 * duration_sec must be NOT late (strict >)
+    assert not late_application(arrival_sec=75, duration_sec=100)
+    # Just above is late
+    assert late_application(arrival_sec=76, duration_sec=100)
+

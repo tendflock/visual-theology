@@ -46,7 +46,7 @@ def late_application(arrival_sec: int, duration_sec: int) -> bool:
     """True if the application arrived later than 75% of the way through."""
     if duration_sec <= 0:
         return False
-    return arrival_sec >= 0.75 * duration_sec
+    return arrival_sec > 0.75 * duration_sec
 
 
 def segment_transcript(transcript_text: str, duration_sec: int) -> list[dict]:
