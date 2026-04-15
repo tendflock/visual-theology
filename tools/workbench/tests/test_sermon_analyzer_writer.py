@@ -43,13 +43,17 @@ def db_with_sermon():
 
 
 def _canned_for(db_with_sermon):
-    from sermon_analyzer import AnalyzerInput, run_pure_stages, build_rubric_prompt
+    from sermon_analyzer import (
+        AnalyzerInput, run_pure_stages, build_rubric_prompt,
+        DEFAULT_PLANNED_DURATION_SEC,
+    )
     conn = db_with_sermon._conn()
     row = conn.execute("SELECT id, transcript_text, duration_seconds, bible_text_raw FROM sermons").fetchone()
     conn.close()
     inp = AnalyzerInput(
         sermon_id=row[0], transcript_text=row[1], duration_sec=row[2],
-        planned_duration_sec=None, outline_points=[], bible_text_raw=row[3],
+        planned_duration_sec=DEFAULT_PLANNED_DURATION_SEC,
+        outline_points=[], bible_text_raw=row[3],
     )
     pure = run_pure_stages(inp)
     prompt = build_rubric_prompt(inp, pure)
@@ -160,3 +164,25 @@ def test_dispatch_picks_up_transcript_ready_sermons(db_with_sermon):
     client = CannedLLMClient(canned)
     processed = dispatch_pending_analyses(db_with_sermon, llm_client=client, limit=10)
     assert processed == 1
+
+
+def test_analyze_sermon_populates_duration_delta_with_default(db_with_sermon):
+    """Regression: planned_duration_sec defaults to 28 min so length delta is computed."""
+    canned = _canned_for(db_with_sermon)
+    client = CannedLLMClient(canned)
+    conn = db_with_sermon._conn()
+    sermon_id = conn.execute("SELECT id FROM sermons").fetchone()[0]
+    conn.close()
+
+    analyze_sermon(db_with_sermon, sermon_id, llm_client=client)
+
+    conn = db_with_sermon._conn()
+    review = conn.execute(
+        "SELECT actual_duration_seconds, planned_duration_seconds, duration_delta_seconds "
+        "FROM sermon_reviews WHERE sermon_id=?",
+        (sermon_id,)
+    ).fetchone()
+    conn.close()
+    assert review[0] == 2322  # actual from fixture
+    assert review[1] == 1680  # default planned
+    assert review[2] == 642   # delta = actual - planned (2322 - 1680)

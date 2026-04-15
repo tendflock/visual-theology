@@ -20,6 +20,12 @@ from homiletics_core import (
 
 ANALYZER_VERSION = '1.0.0'
 
+# Bryan's wife's stated target is 25-30 min; midpoint is 27.5 min ≈ 1650 sec.
+# Round to 28 min = 1680 sec for a slightly more forgiving default.
+# Phase 2 will read a per-session target from prep data; for MVP this default
+# makes duration_delta_seconds non-null for every sermon so the length signal works.
+DEFAULT_PLANNED_DURATION_SEC = 1680
+
 
 @dataclass(frozen=True)
 class AnalyzerInput:
@@ -252,7 +258,9 @@ def _load_analyzer_input(conn, sermon_id: int) -> AnalyzerInput:
         LIMIT 1
     """, (sermon_id,)).fetchone()
     outline_points = []
-    planned_duration_sec = None
+    # Phase 2 will read this from a per-session target field. For MVP, default to
+    # the midpoint of Bryan's wife's stated 25-30min target so length deltas fire.
+    planned_duration_sec = DEFAULT_PLANNED_DURATION_SEC
     if link_row:
         session_id = link_row[0]
         point_rows = conn.execute("""

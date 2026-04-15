@@ -63,3 +63,28 @@ def test_raw_text_preserved_per_row():
     result = parse_reference_multi("Romans 8:1-11; Romans 9:1-5")
     assert "Romans 8:1-11" in result[0]['raw_text']
     assert "Romans 9:1-5" in result[1]['raw_text']
+
+
+def test_comma_verse_extra_after_range():
+    result = parse_reference_multi("Romans 8:1-11,16")
+    assert len(result) == 2
+    assert result[0]['verse_start'] == 1
+    assert result[0]['verse_end'] == 11
+    assert result[1]['verse_start'] == 16
+    assert result[1]['verse_end'] == 16
+
+
+def test_comma_verse_single_then_range():
+    result = parse_reference_multi("Romans 8:1,3-5")
+    assert len(result) == 2
+    assert result[0]['verse_start'] == 1
+    assert result[0]['verse_end'] == 1
+    assert result[1]['verse_start'] == 3
+    assert result[1]['verse_end'] == 5
+
+
+def test_comma_verse_three_singles():
+    result = parse_reference_multi("Romans 8:1,3,5")
+    assert len(result) == 3
+    assert [r['verse_start'] for r in result] == [1, 3, 5]
+    assert [r['verse_end'] for r in result] == [1, 3, 5]

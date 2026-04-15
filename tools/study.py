@@ -268,11 +268,28 @@ def parse_reference_multi(ref_str):
     parts = [p.strip() for p in ref_str.split(';') if p.strip()]
     results = []
     for part in parts:
-        parsed = _parse_single_range(part)
-        if parsed:
-            parsed['raw_text'] = part
-            results.append(parsed)
+        for sub in _expand_comma_verses(part):
+            parsed = _parse_single_range(sub)
+            if parsed:
+                parsed['raw_text'] = sub
+                results.append(parsed)
     return results
+
+
+def _expand_comma_verses(segment):
+    """Expand 'Romans 8:1-11,16' into ['Romans 8:1-11', 'Romans 8:16'].
+
+    If the segment has a colon and the after-colon portion contains commas,
+    split into multiple segments sharing the same book+chapter prefix.
+    """
+    m = re.match(r'^(.+?\s+\d+:)(\S+)$', segment)
+    if not m:
+        return [segment]
+    prefix, after = m.groups()
+    if ',' not in after:
+        return [segment]
+    parts = [p.strip() for p in after.split(',') if p.strip()]
+    return [f"{prefix}{p}" for p in parts]
 
 
 def _parse_single_range(part):
@@ -286,8 +303,6 @@ def _parse_single_range(part):
     try:
         base = parse_reference(f"{book_name} {first_num}:1")
     except Exception:
-        return None
-    if not base or 'book' not in base:
         return None
     book = base['book']
     chapter_start = int(first_num)
