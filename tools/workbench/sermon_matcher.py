@@ -185,3 +185,103 @@ def match_sermon_to_sessions(
         )
     return MatchDecision(sermon_id=sermon.id, action='no_match',
                          reason_summary='no_sessions_qualified')
+
+
+def apply_match_decision_for_sermon(db, sermon_id: int) -> MatchDecision:
+    """Orchestrator: fetch state, compute decision, write sermon_links. BEGIN IMMEDIATE."""
+    conn = db._conn()
+    conn.execute("BEGIN IMMEDIATE")
+    try:
+        s_row = conn.execute("""
+            SELECT id, book, chapter, verse_start, verse_end, preach_date, sermon_type
+            FROM sermons WHERE id = ?
+        """, (sermon_id,)).fetchone()
+        if not s_row:
+            conn.execute("ROLLBACK")
+            conn.close()
+            return MatchDecision(sermon_id=sermon_id, action='no_match',
+                                  reason_summary='sermon_not_found')
+
+        passages = [dict(book=r[0], chapter_start=r[1], verse_start=r[2],
+                          chapter_end=r[3], verse_end=r[4])
+                    for r in conn.execute(
+                        "SELECT book, chapter_start, verse_start, chapter_end, verse_end "
+                        "FROM sermon_passages WHERE sermon_id = ? ORDER BY rank",
+                        (sermon_id,)
+                    ).fetchall()]
+        sermon = SermonInfo(
+            id=s_row[0], book=s_row[1], chapter=s_row[2],
+            verse_start=s_row[3], verse_end=s_row[4],
+            preach_date=s_row[5], sermon_type=s_row[6],
+            passages=passages,
+        )
+
+        session_rows = conn.execute("""
+            SELECT id, book, chapter, verse_start, verse_end,
+                   created_at, last_homiletical_activity_at
+            FROM sessions
+            WHERE book = ? AND chapter = ?
+        """, (s_row[1], s_row[2])).fetchall()
+        sessions = tuple(SessionInfo(
+            id=r[0], book=r[1], chapter=r[2], verse_start=r[3], verse_end=r[4],
+            created_at=r[5], last_homiletical_activity_at=r[6],
+        ) for r in session_rows)
+
+        link_rows = conn.execute("""
+            SELECT sermon_id, session_id, link_status, link_source
+            FROM sermon_links WHERE sermon_id = ?
+        """, (sermon_id,)).fetchall()
+        existing_links = tuple(SermonLink(sermon_id=r[0], session_id=r[1],
+                                            link_status=r[2], link_source=r[3])
+                                for r in link_rows)
+        rejected = frozenset(l.session_id for l in existing_links
+                              if l.link_status == 'rejected')
+
+        settings = MatcherSettings()
+        decision = match_sermon_to_sessions(
+            sermon, sessions, existing_links, rejected, settings,
+        )
+
+        now = datetime.now().isoformat()
+        if decision.action == 'auto_link' and decision.auto_link_target:
+            target = decision.auto_link_target.session_id
+            existing_auto_active = [l for l in existing_links
+                                     if l.link_status == 'active' and l.link_source == 'auto'
+                                     and l.session_id != target]
+            for l in existing_auto_active:
+                conn.execute(
+                    "DELETE FROM sermon_links WHERE sermon_id = ? AND session_id = ? AND link_source = 'auto'",
+                    (sermon_id, l.session_id),
+                )
+            has_manual_active = any(
+                l.link_status == 'active' and l.link_source == 'manual'
+                for l in existing_links
+            )
+            if not has_manual_active:
+                conn.execute("""
+                    INSERT OR REPLACE INTO sermon_links
+                        (sermon_id, session_id, link_status, link_source, match_reason, created_at)
+                    VALUES (?, ?, 'active', 'auto', ?, ?)
+                """, (sermon_id, target, decision.auto_link_target.reason, now))
+                conn.execute("UPDATE sermons SET match_status = 'matched', last_match_attempt_at = ? WHERE id = ?",
+                             (now, sermon_id))
+        elif decision.action == 'surface_candidates':
+            for c in decision.candidates:
+                conn.execute("""
+                    INSERT OR IGNORE INTO sermon_links
+                        (sermon_id, session_id, link_status, link_source, match_reason, created_at)
+                    VALUES (?, ?, 'candidate', 'auto', ?, ?)
+                """, (sermon_id, c.session_id, c.reason, now))
+            conn.execute("UPDATE sermons SET match_status = 'awaiting_candidates', last_match_attempt_at = ? WHERE id = ?",
+                         (now, sermon_id))
+        else:
+            conn.execute("UPDATE sermons SET last_match_attempt_at = ? WHERE id = ?",
+                         (now, sermon_id))
+
+        conn.execute("COMMIT")
+        return decision
+    except Exception:
+        conn.execute("ROLLBACK")
+        raise
+    finally:
+        conn.close()

@@ -359,10 +359,16 @@ class CompanionDB:
 
     def save_card_response(self, session_id, phase, question_id, content):
         conn = self._conn()
+        now = self._now()
         cur = conn.execute("""
             INSERT INTO card_responses (session_id, phase, question_id, content, created_at)
             VALUES (?, ?, ?, ?, ?)
-        """, (session_id, phase, question_id, content, self._now()))
+        """, (session_id, phase, question_id, content, now))
+        if phase in ('exegetical_point', 'fcf_homiletical', 'sermon_construction', 'edit_pray'):
+            conn.execute(
+                "UPDATE sessions SET last_homiletical_activity_at = ?, updated_at = ? WHERE id = ?",
+                (now, now, session_id),
+            )
         conn.commit()
         rid = cur.lastrowid
         conn.close()
@@ -379,10 +385,16 @@ class CompanionDB:
 
     def save_message(self, session_id, phase, role, content, tool_name=None, tool_input=None):
         conn = self._conn()
+        now = self._now()
         cur = conn.execute("""
             INSERT INTO conversation_messages (session_id, phase, role, content, tool_name, tool_input, created_at)
             VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (session_id, phase, role, content, tool_name, tool_input, self._now()))
+        """, (session_id, phase, role, content, tool_name, tool_input, now))
+        if phase in ('exegetical_point', 'fcf_homiletical', 'sermon_construction', 'edit_pray'):
+            conn.execute(
+                "UPDATE sessions SET last_homiletical_activity_at = ?, updated_at = ? WHERE id = ?",
+                (now, now, session_id),
+            )
         conn.commit()
         mid = cur.lastrowid
         conn.close()
