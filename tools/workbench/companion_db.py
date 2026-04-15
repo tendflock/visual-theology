@@ -151,7 +151,7 @@ class CompanionDB:
                     'sync_failed','analysis_failed','analysis_skipped','permanent_failure'
                 )),
                 sync_error TEXT,
-                failure_count INTEGER NOT NULL DEFAULT 0,
+                failure_count INTEGER NOT NULL DEFAULT 0 CHECK (failure_count >= 0),
                 last_failure_at TEXT,
                 last_state_change_at TEXT NOT NULL,
                 last_match_attempt_at TEXT,
@@ -159,7 +159,7 @@ class CompanionDB:
                     'unmatched','matched','awaiting_candidates',
                     'unparseable_passage','topical_no_match','rejected_all'
                 )),
-                is_remote_deleted INTEGER NOT NULL DEFAULT 0,
+                is_remote_deleted INTEGER NOT NULL DEFAULT 0 CHECK (is_remote_deleted IN (0, 1)),
                 deleted_at TEXT,
                 ui_last_seen_version INTEGER NOT NULL DEFAULT 0,
                 first_synced_at TEXT NOT NULL,
@@ -192,7 +192,7 @@ class CompanionDB:
 
             CREATE TABLE IF NOT EXISTS sermon_links (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                sermon_id INTEGER NOT NULL REFERENCES sermons(id),
+                sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
                 session_id INTEGER NOT NULL REFERENCES sessions(id),
                 link_status TEXT NOT NULL CHECK (link_status IN ('active','candidate','rejected')),
                 link_source TEXT NOT NULL CHECK (link_source IN ('auto','manual')),
@@ -206,7 +206,7 @@ class CompanionDB:
             CREATE INDEX IF NOT EXISTS idx_sermon_links_session ON sermon_links(session_id);
 
             CREATE TABLE IF NOT EXISTS sermon_reviews (
-                sermon_id INTEGER PRIMARY KEY REFERENCES sermons(id),
+                sermon_id INTEGER PRIMARY KEY REFERENCES sermons(id) ON DELETE CASCADE,
                 analyzer_version TEXT NOT NULL,
                 homiletics_core_version TEXT NOT NULL,
                 model_version TEXT,
@@ -265,7 +265,7 @@ class CompanionDB:
 
             CREATE TABLE IF NOT EXISTS sermon_coach_messages (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                sermon_id INTEGER REFERENCES sermons(id),
+                sermon_id INTEGER REFERENCES sermons(id) ON DELETE CASCADE,
                 session_id INTEGER REFERENCES sessions(id),
                 conversation_id INTEGER NOT NULL,
                 role TEXT NOT NULL CHECK (role IN ('user','assistant','tool','tool_result')),
@@ -297,7 +297,7 @@ class CompanionDB:
 
             CREATE TABLE IF NOT EXISTS sermon_analysis_cost_log (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                sermon_id INTEGER NOT NULL REFERENCES sermons(id),
+                sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
                 model TEXT NOT NULL,
                 input_tokens INTEGER NOT NULL,
                 output_tokens INTEGER NOT NULL,

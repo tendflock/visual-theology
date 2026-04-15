@@ -1,4 +1,5 @@
 import os
+import sqlite3
 import sys
 import tempfile
 import pytest
@@ -92,7 +93,21 @@ def test_partial_unique_index_one_active_link(fresh_db):
     conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1', datetime('now'))", (sermon_id, session_a))
     conn.commit()
     # Second active link to session_b — should fail due to partial unique index
-    with pytest.raises(Exception):
+    # (fires at INSERT time, not commit time — no conn.commit() needed)
+    with pytest.raises(sqlite3.IntegrityError):
         conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1-other-session', datetime('now'))", (sermon_id, session_b))
-        conn.commit()
     conn.close()
+
+
+def test_init_db_is_idempotent(fresh_db):
+    """Calling init_db() a second time on an already-initialized DB must not crash
+    and must not duplicate the sessions.last_homiletical_activity_at column."""
+    fresh_db.init_db()  # Second call — should be a no-op due to IF NOT EXISTS + PRAGMA guard
+    cols = _columns(fresh_db, 'sessions')
+    assert 'last_homiletical_activity_at' in cols
+    # Ensure we only have ONE last_homiletical_activity_at column
+    conn = fresh_db._conn()
+    rows = conn.execute("PRAGMA table_info(sessions)").fetchall()
+    count = sum(1 for r in rows if r[1] == 'last_homiletical_activity_at')
+    conn.close()
+    assert count == 1
