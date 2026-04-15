@@ -1,0 +1,17 @@
+{% if review %}
+<div class="sermon-card sermon-card-faithfulness">
+  <h2>Faithfulness</h2>
+  <div class="metric-row">
+    <span class="metric-label">Christ Thread</span>
+    <span class="metric-value metric-{{ review.christ_thread_score }}">{{ review.christ_thread_score|upper }}</span>
+  </div>
+  <div class="metric-row">
+    <span class="metric-label">Exegetical Grounding</span>
+    <span class="metric-value metric-{{ review.exegetical_grounding }}">{{ review.exegetical_grounding|upper }}</span>
+    <div class="metric-rationale">{{ review.exegetical_grounding_notes }}</div>
+  </div>
+  {% if review.faithfulness_note %}
+    <div class="faithfulness-note">{{ review.faithfulness_note }}</div>
+  {% endif %}
+</div>
+{% endif %}

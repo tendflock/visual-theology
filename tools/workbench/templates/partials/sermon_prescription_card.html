@@ -1,0 +1,6 @@
+{% if review and review.one_change_for_next_sunday %}
+<div class="sermon-card sermon-card-prescription">
+  <h2>For Next Sunday</h2>
+  <div class="prescription-text">{{ review.one_change_for_next_sunday }}</div>
+</div>
+{% endif %}

@@ -1,0 +1,17 @@
+{% if candidates %}
+<div class="sermon-card sermon-card-candidates">
+  <h2>Candidate prep sessions</h2>
+  <p>Not sure which session you prepped for this sermon. Pick one:</p>
+  <ul>
+    {% for c in candidates %}
+      <li>
+        <form method="post" action="/sermons/{{ sermon.id }}/approve-candidate/{{ c.id }}" style="display:inline">
+          <span>{{ c.passage_ref }}</span>
+          <span class="match-reason">{{ c.match_reason }}</span>
+          <button type="submit">Approve</button>
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
