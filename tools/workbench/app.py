@@ -1314,6 +1314,167 @@ def sermon_status(sermon_id):
     ))
 
 
+import os as _os_for_sync
+
+def _make_sermonaudio_client():
+    """Factory for the real API client. Tests monkeypatch this."""
+    from sermonaudio_sync import SermonAudioAPIClient
+    api_key = _os_for_sync.environ.get('SERMONAUDIO_API_KEY', '')
+    return SermonAudioAPIClient(api_key)
+
+
+def _broadcaster_id() -> str:
+    return _os_for_sync.environ.get('SERMONAUDIO_BROADCASTER_ID', '')
+
+
+@sermons_bp.route('/sync', methods=['POST'])
+def sermon_sync():
+    from sermonaudio_sync import run_sync_with_client
+    db = get_db()
+    client = _make_sermonaudio_client()
+    result = run_sync_with_client(
+        db, client, broadcaster_id=_broadcaster_id(), trigger='manual',
+    )
+    return jsonify(result), 202
+
+
+@sermons_bp.route('/backfill', methods=['POST'])
+def sermon_backfill():
+    from sermonaudio_sync import run_sync_with_client
+    limit = int(request.args.get('limit', 24))
+    db = get_db()
+    client = _make_sermonaudio_client()
+    result = run_sync_with_client(
+        db, client, broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit,
+    )
+    return jsonify(result), 202
+
+
+@sermons_bp.route('/<int:sermon_id>/reanalyze', methods=['POST'])
+def sermon_reanalyze(sermon_id):
+    from sermon_analyzer import analyze_sermon
+    from llm_client import AnthropicClient
+    db = get_db()
+    api_key = _os_for_sync.environ.get('ANTHROPIC_API_KEY', '')
+    client = AnthropicClient(api_key=api_key)
+    conn = db._conn()
+    conn.execute(
+        "UPDATE sermons SET sync_status = 'analysis_pending', last_state_change_at = datetime('now') WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    result = analyze_sermon(db, sermon_id, llm_client=client)
+    return jsonify(result)
+
+
+@sermons_bp.route('/<int:sermon_id>/link/<int:session_id>', methods=['POST'])
+def sermon_link(sermon_id, session_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute(
+        "DELETE FROM sermon_links WHERE sermon_id = ? AND link_status = 'active' AND link_source = 'auto'",
+        (sermon_id,),
+    )
+    conn.execute("""
+        INSERT OR REPLACE INTO sermon_links
+            (sermon_id, session_id, link_status, link_source, match_reason, created_at)
+        VALUES (?, ?, 'active', 'manual', 'user_linked', datetime('now'))
+    """, (sermon_id, session_id))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'matched', last_match_attempt_at = datetime('now') WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True, 'link_status': 'active', 'link_source': 'manual'})
+
+
+@sermons_bp.route('/<int:sermon_id>/unlink', methods=['POST'])
+def sermon_unlink(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute("""
+        UPDATE sermon_links SET link_status = 'rejected'
+        WHERE sermon_id = ? AND link_status = 'active'
+    """, (sermon_id,))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'rejected_all' WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True})
+
+
+@sermons_bp.route('/<int:sermon_id>/approve-candidate/<int:link_id>', methods=['POST'])
+def sermon_approve_candidate(sermon_id, link_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute(
+        "DELETE FROM sermon_links WHERE sermon_id = ? AND link_status = 'active'",
+        (sermon_id,),
+    )
+    conn.execute("""
+        UPDATE sermon_links SET link_status = 'active'
+        WHERE id = ? AND sermon_id = ?
+    """, (link_id, sermon_id))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'matched' WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True})
+
+
+@sermons_bp.route('/patterns', methods=['GET'])
+def sermon_patterns():
+    from sermon_coach_tools import get_sermon_patterns
+    db = get_db()
+    data = get_sermon_patterns(db)
+    return render_template('sermons/patterns.html', patterns=data)
+
+
+@sermons_bp.route('/sync-log', methods=['GET'])
+def sermon_sync_log_page():
+    db = get_db()
+    conn = db._conn()
+    runs = conn.execute("""
+        SELECT run_id, trigger, started_at, ended_at, sermons_new, sermons_updated,
+               sermons_failed, status, error_summary
+        FROM sermon_sync_log
+        ORDER BY started_at DESC LIMIT 20
+    """).fetchall()
+    cost_total = conn.execute(
+        "SELECT COALESCE(SUM(estimated_cost_usd), 0) FROM sermon_analysis_cost_log WHERE called_at >= date('now','-30 days')"
+    ).fetchone()[0]
+    conn.close()
+    return render_template('sermons/sync_log.html',
+                             runs=[dict(r) for r in runs], cost_30d=cost_total)
+
+
+@sermons_bp.route('/<int:sermon_id>/coach/message', methods=['POST'])
+def sermon_coach_message(sermon_id):
+    import json as _json
+    from sermon_coach_agent import stream_coach_response
+    from llm_client import AnthropicClient
+    user_message = request.json.get('message') if request.is_json else request.form.get('message', '')
+    conversation_id = int(request.json.get('conversation_id', 1)) if request.is_json else 1
+    db = get_db()
+    api_key = _os_for_sync.environ.get('ANTHROPIC_API_KEY', '')
+    client = AnthropicClient(api_key=api_key)
+
+    def generate():
+        for event in stream_coach_response(
+            db=db, sermon_id=sermon_id, conversation_id=conversation_id,
+            user_message=user_message, llm_client=client,
+        ):
+            yield f"data: {_json.dumps(event)}\n\n"
+
+    return Response(generate(), mimetype='text/event-stream')
+
+
 app.register_blueprint(sermons_bp)
 
 

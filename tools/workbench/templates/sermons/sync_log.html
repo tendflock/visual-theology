@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Sync Log</title></head>
+<body>
+<h1>Sync Log</h1>
+<p>30-day cost: ${{ '%.2f'|format(cost_30d) }}</p>
+<table>
+<tr><th>Run</th><th>Trigger</th><th>Started</th><th>Status</th></tr>
+{% for r in runs %}
+<tr><td>{{ r.run_id[:8] }}</td><td>{{ r.trigger }}</td><td>{{ r.started_at }}</td><td>{{ r.status }}</td></tr>
+{% endfor %}
+</table>
+</body></html>
