@@ -988,6 +988,39 @@ def study_session_view(session_id):
     if not session:
         return redirect(url_for("study_index"))
 
+    # Sermon-coach integration: is there a linked sermon for this session?
+    linked_sermon = None
+    review = None
+    candidates = []
+    conn = companion_db._conn()
+    try:
+        link_row = conn.execute("""
+            SELECT s.*
+            FROM sermons s
+            JOIN sermon_links sl ON sl.sermon_id = s.id
+            WHERE sl.session_id = ? AND sl.link_status = 'active'
+            LIMIT 1
+        """, (session_id,)).fetchone()
+        if link_row:
+            linked_sermon = dict(link_row)
+            r = conn.execute(
+                "SELECT * FROM sermon_reviews WHERE sermon_id = ?",
+                (linked_sermon['id'],)
+            ).fetchone()
+            review = dict(r) if r else None
+        candidate_rows = conn.execute("""
+            SELECT sl.id, sl.sermon_id, sl.match_reason, s.title, s.bible_text_raw
+            FROM sermon_links sl
+            JOIN sermons s ON s.id = sl.sermon_id
+            WHERE sl.link_status = 'candidate'
+              AND s.id IN (
+                  SELECT sl2.sermon_id FROM sermon_links sl2 WHERE sl2.session_id = ?
+              )
+        """, (session_id,)).fetchall()
+        candidates = [dict(c) for c in candidate_rows]
+    finally:
+        conn.close()
+
     phase = session.get("current_phase", "prayer")
     card_phase_keys = [p["key"] for p in CARD_PHASES]
 
@@ -1018,7 +1051,10 @@ def study_session_view(session_id):
                                annotations=annotations,
                                notepad=notepad,
                                messages=[],
-                               outline=companion_db.get_outline_tree(session_id))
+                               outline=companion_db.get_outline_tree(session_id),
+                               linked_sermon=linked_sermon,
+                               review=review,
+                               candidates=candidates)
     else:
         # Conversation mode (phase 6+)
         messages = companion_db.get_messages(session_id, limit=200)
@@ -1032,7 +1068,10 @@ def study_session_view(session_id):
                                annotations=[],
                                notepad="",
                                messages=messages,
-                               outline=companion_db.get_outline_tree(session_id))
+                               outline=companion_db.get_outline_tree(session_id),
+                               linked_sermon=linked_sermon,
+                               review=review,
+                               candidates=candidates)
 
 
 @app.route("/study/session/<int:session_id>/discuss", methods=["POST"])
