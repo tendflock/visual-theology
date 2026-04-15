@@ -34,7 +34,7 @@ if _env_file.exists():
 import bcrypt
 import sqlite3
 from functools import wraps
-from flask import Flask, Response, render_template, request, jsonify, redirect, url_for, session, make_response
+from flask import Flask, Response, render_template, request, jsonify, redirect, url_for, session, make_response, Blueprint, abort
 
 import workbench_db as db
 from workbench_agent import stream_agent_response, PHASES
@@ -150,6 +150,28 @@ def safe_assistant_filter(content):
 
 companion_db = None
 study_analytics = None
+
+# Module-level cache for get_db() — tests reset this via `_db_instance = None`
+# to force re-creation after monkeypatching COMPANION_DB_PATH.
+_db_instance = None
+
+def get_db():
+    """Return a cached CompanionDB instance, honoring COMPANION_DB_PATH.
+
+    This is the entrypoint used by the sermons blueprint (and tests).
+    It lazily instantiates a CompanionDB the first time it's called (or
+    after `_db_instance` is reset to None). Existing routes continue to
+    use the module-level `companion_db` global initialized by startup().
+    """
+    global _db_instance
+    if _db_instance is None:
+        db_path = os.environ.get(
+            "COMPANION_DB_PATH",
+            str(TOOLS_DIR / "workbench" / "companion.db"),
+        )
+        _db_instance = CompanionDB(db_path)
+    return _db_instance
+
 
 def startup():
     db.init_db()
@@ -1204,6 +1226,95 @@ def study_clock_update(session_id):
         conn.commit()
         conn.close()
     return jsonify({"ok": True})
+
+
+# ── Sermons Blueprint ────────────────────────────────────────────────────
+
+sermons_bp = Blueprint('sermons', __name__, url_prefix='/sermons')
+
+
+@sermons_bp.route('/', methods=['GET'])
+def sermons_list():
+    db = get_db()
+    conn = db._conn()
+    rows = conn.execute("""
+        SELECT id, title, preach_date, duration_seconds, sync_status, match_status,
+               ui_last_seen_version, source_version
+        FROM sermons
+        WHERE classified_as = 'sermon' AND is_remote_deleted = 0
+        ORDER BY preach_date DESC
+        LIMIT 100
+    """).fetchall()
+    sermons = [dict(
+        id=r[0], title=r[1], preach_date=r[2], duration_seconds=r[3],
+        sync_status=r[4], match_status=r[5],
+        badge=(r[6] < r[7]),
+    ) for r in rows]
+    conn.close()
+    return render_template('sermons/list.html', sermons=sermons)
+
+
+@sermons_bp.route('/<int:sermon_id>', methods=['GET'])
+def sermon_detail(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    sermon_row = conn.execute("SELECT * FROM sermons WHERE id = ?", (sermon_id,)).fetchone()
+    if not sermon_row:
+        conn.close()
+        abort(404)
+    sermon = dict(sermon_row)
+
+    review_row = conn.execute("SELECT * FROM sermon_reviews WHERE sermon_id = ?", (sermon_id,)).fetchone()
+    review = dict(review_row) if review_row else None
+
+    flags_rows = conn.execute("""
+        SELECT id, flag_type, severity, transcript_start_sec, transcript_end_sec,
+               section_label, excerpt, rationale
+        FROM sermon_flags WHERE sermon_id = ?
+        ORDER BY transcript_start_sec
+    """, (sermon_id,)).fetchall()
+    flags = [dict(r) for r in flags_rows]
+
+    candidates_rows = conn.execute("""
+        SELECT sl.id, sl.session_id, sl.match_reason, s.passage_ref
+        FROM sermon_links sl
+        JOIN sessions s ON s.id = sl.session_id
+        WHERE sl.sermon_id = ? AND sl.link_status = 'candidate'
+    """, (sermon_id,)).fetchall()
+    candidates = [dict(r) for r in candidates_rows]
+
+    # Compare-and-set: only bump ui_last_seen_version if it's behind source_version
+    conn.execute("""
+        UPDATE sermons SET ui_last_seen_version = source_version
+        WHERE id = ? AND ui_last_seen_version < source_version
+    """, (sermon_id,))
+    conn.commit()
+    conn.close()
+
+    return render_template(
+        'sermons/detail.html',
+        sermon=sermon, review=review, flags=flags, candidates=candidates,
+    )
+
+
+@sermons_bp.route('/<int:sermon_id>/status', methods=['GET'])
+def sermon_status(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    row = conn.execute("""
+        SELECT sync_status, match_status, source_version, ui_last_seen_version
+        FROM sermons WHERE id = ?
+    """, (sermon_id,)).fetchone()
+    conn.close()
+    if not row:
+        abort(404)
+    return jsonify(dict(
+        sync_status=row[0], match_status=row[1],
+        source_version=row[2], ui_last_seen_version=row[3],
+    ))
+
+
+app.register_blueprint(sermons_bp)
 
 
 # ── Main ─────────────────────────────────────────────────────────────────

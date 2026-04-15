@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>Sermons</title></head>
+<body>
+<h1>Sermons</h1>
+<ul>
+{% for s in sermons %}
+  <li><a href="/sermons/{{ s.id }}">{{ s.title }}</a> — {{ s.preach_date }}</li>
+{% endfor %}
+</ul>
+</body></html>
