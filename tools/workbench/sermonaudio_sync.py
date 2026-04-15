@@ -179,3 +179,123 @@ def upsert_sermon(conn, sermon_remote) -> str:
         next_status, now, now, now, row[0],
     ))
     return 'updated'
+
+
+import uuid
+import fcntl
+
+
+def run_sync_with_client(db, client, broadcaster_id: str, trigger: str = 'cron',
+                         since: Optional[str] = None, limit: int = 100) -> dict:
+    """Execute a sync run against an injected SermonAudio-shaped client.
+
+    This is the core logic; the file-lock + APScheduler wrapper lives in run_sync().
+    Returns the final sermon_sync_log row as a dict.
+    """
+    run_id = str(uuid.uuid4())
+    started_at = _now()
+    counters = {
+        'sermons_fetched': 0, 'sermons_new': 0, 'sermons_updated': 0,
+        'sermons_noop': 0, 'sermons_skipped': 0, 'sermons_failed': 0,
+    }
+
+    conn = db._conn()
+    conn.execute("""
+        INSERT INTO sermon_sync_log (run_id, trigger, started_at, status)
+        VALUES (?, ?, ?, 'running')
+    """, (run_id, trigger, started_at))
+    conn.commit()
+
+    error_summary = None
+    status = 'completed'
+    try:
+        remotes = client.list_sermons_updated_since(broadcaster_id, since=since, limit=limit)
+        counters['sermons_fetched'] = len(remotes)
+        for remote in remotes:
+            try:
+                result = upsert_sermon(conn, remote)
+                if result == 'new':
+                    counters['sermons_new'] += 1
+                elif result == 'updated':
+                    counters['sermons_updated'] += 1
+                elif result == 'noop':
+                    counters['sermons_noop'] += 1
+                conn.commit()
+            except Exception as e:
+                counters['sermons_failed'] += 1
+                try:
+                    conn.execute("""
+                        UPDATE sermons SET sync_status='sync_failed',
+                                           sync_error = ?,
+                                           failure_count = failure_count + 1,
+                                           last_failure_at = ?,
+                                           last_state_change_at = ?
+                        WHERE sermonaudio_id = ?
+                    """, (str(e), _now(), _now(), getattr(remote, 'sermon_id', None)))
+                    conn.commit()
+                except Exception:
+                    pass
+    except Exception as e:
+        status = 'failed'
+        error_summary = f'{type(e).__name__}: {e}'
+
+    conn.execute("""
+        UPDATE sermon_sync_log SET
+            ended_at = ?,
+            sermons_fetched = ?, sermons_new = ?, sermons_updated = ?,
+            sermons_noop = ?, sermons_skipped = ?, sermons_failed = ?,
+            error_summary = ?, status = ?
+        WHERE run_id = ?
+    """, (
+        _now(),
+        counters['sermons_fetched'], counters['sermons_new'], counters['sermons_updated'],
+        counters['sermons_noop'], counters['sermons_skipped'], counters['sermons_failed'],
+        error_summary, status, run_id,
+    ))
+    conn.commit()
+    conn.close()
+
+    return {'run_id': run_id, 'status': status, 'error_summary': error_summary, **counters}
+
+
+class SermonAudioAPIClient:
+    """Thin wrapper over the sermonaudio PyPI library with a testable shape."""
+
+    def __init__(self, api_key: str):
+        import sermonaudio
+        sermonaudio.set_api_key(api_key)
+        self._sa = sermonaudio
+
+    def list_sermons_updated_since(self, broadcaster_id, since=None, limit=100):
+        from sermonaudio.node.requests import Node
+        kwargs = {'broadcaster_id': broadcaster_id, 'page_size': limit}
+        if since:
+            kwargs['updated_since'] = since
+        try:
+            result = Node.get_sermons(**kwargs)
+        except TypeError:
+            result = Node.get_sermons(broadcaster_id=broadcaster_id, page_size=limit)
+        return list(getattr(result, 'results', result) or [])
+
+    def get_sermon_detail(self, sermon_id):
+        from sermonaudio.node.requests import Node
+        return Node.get_sermon(sermon_id)
+
+
+def _lock_path():
+    return os.path.join(os.path.dirname(__file__), '.sermon_sync.lock')
+
+
+def run_sync(db, api_key: str, broadcaster_id: str, trigger: str = 'cron') -> Optional[dict]:
+    """Acquire file lock, call run_sync_with_client using the real API client, release."""
+    lock_path = _lock_path()
+    with open(lock_path, 'w') as lock_file:
+        try:
+            fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return None
+        try:
+            client = SermonAudioAPIClient(api_key)
+            return run_sync_with_client(db, client, broadcaster_id, trigger=trigger)
+        finally:
+            fcntl.flock(lock_file.fileno(), fcntl.LOCK_UN)
