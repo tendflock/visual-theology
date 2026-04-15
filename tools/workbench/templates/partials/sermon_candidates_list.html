@@ -5,8 +5,8 @@
   <ul>
     {% for c in candidates %}
       <li>
-        <form method="post" action="/sermons/{{ sermon.id }}/approve-candidate/{{ c.id }}" style="display:inline">
-          <span>{{ c.passage_ref }}</span>
+        <form method="post" action="/sermons/{{ c.sermon_id }}/approve-candidate/{{ c.id }}" style="display:inline">
+          <span>{{ c.passage_ref or c.bible_text_raw or c.title or '(unknown)' }}</span>
           <span class="match-reason">{{ c.match_reason }}</span>
           <button type="submit">Approve</button>
         </form>

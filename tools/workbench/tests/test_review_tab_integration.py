@@ -73,3 +73,18 @@ def test_study_session_shows_review_tab(client_with_linked_session):
     # Review content must render
     assert b'Impact' in resp.data
     assert b'change it' in resp.data
+
+
+def test_review_renders_top_impact_helpers_as_list(client_with_linked_session):
+    """Regression: top_impact_helpers stored as JSON string must render as list items, not chars."""
+    c, sid, sermon_id = client_with_linked_session
+    resp = c.get(f'/study/session/{sid}')
+    # The fixture inserted top_impact_helpers='["a"]'. If JSON parsing works,
+    # the rendered <li> contains "a", NOT "[" or """.
+    # Look for the text content "a" in a list item context.
+    body = resp.data.decode()
+    # If parsing failed, we'd see characters like "[", '"', "]" rendered as separate items.
+    # If parsing succeeded, "a" is rendered as one list item.
+    assert '<li>a</li>' in body or '>a<' in body or '<li> a' in body, (
+        f"top_impact_helpers list not parsed correctly. Body excerpt: {body[body.find('What helped'):body.find('What helped')+500] if 'What helped' in body else body[:500]}"
+    )

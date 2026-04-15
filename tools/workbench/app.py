@@ -1003,11 +1003,8 @@ def study_session_view(session_id):
         """, (session_id,)).fetchone()
         if link_row:
             linked_sermon = dict(link_row)
-            r = conn.execute(
-                "SELECT * FROM sermon_reviews WHERE sermon_id = ?",
-                (linked_sermon['id'],)
-            ).fetchone()
-            review = dict(r) if r else None
+            from sermon_coach_tools import get_sermon_review as _get_review_parsed
+            review = _get_review_parsed(companion_db, linked_sermon['id'])
         candidate_rows = conn.execute("""
             SELECT sl.id, sl.sermon_id, sl.match_reason, s.title, s.bible_text_raw
             FROM sermon_links sl
@@ -1347,8 +1344,8 @@ def sermon_detail(sermon_id):
         abort(404)
     sermon = dict(sermon_row)
 
-    review_row = conn.execute("SELECT * FROM sermon_reviews WHERE sermon_id = ?", (sermon_id,)).fetchone()
-    review = dict(review_row) if review_row else None
+    from sermon_coach_tools import get_sermon_review as _get_review_parsed
+    review = _get_review_parsed(db, sermon_id)
 
     flags_rows = conn.execute("""
         SELECT id, flag_type, severity, transcript_start_sec, transcript_end_sec,
@@ -1359,7 +1356,7 @@ def sermon_detail(sermon_id):
     flags = [dict(r) for r in flags_rows]
 
     candidates_rows = conn.execute("""
-        SELECT sl.id, sl.session_id, sl.match_reason, s.passage_ref
+        SELECT sl.id, sl.sermon_id, sl.session_id, sl.match_reason, s.passage_ref
         FROM sermon_links sl
         JOIN sessions s ON s.id = sl.session_id
         WHERE sl.sermon_id = ? AND sl.link_status = 'candidate'
