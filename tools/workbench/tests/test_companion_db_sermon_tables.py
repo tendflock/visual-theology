@@ -79,13 +79,20 @@ def test_sessions_has_last_homiletical_activity_at(fresh_db):
 
 def test_partial_unique_index_one_active_link(fresh_db):
     conn = fresh_db._conn()
+    # Two distinct sessions
     conn.execute("INSERT INTO sessions (passage_ref, book, chapter, verse_start, verse_end, genre, current_phase, timer_remaining_seconds, created_at, updated_at) VALUES ('Romans 8:1-11', 45, 8, 1, 11, 'epistle', 'prayer', 900, datetime('now'), datetime('now'))")
-    sid = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    session_a = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.execute("INSERT INTO sessions (passage_ref, book, chapter, verse_start, verse_end, genre, current_phase, timer_remaining_seconds, created_at, updated_at) VALUES ('Romans 8:1-11', 45, 8, 1, 11, 'epistle', 'prayer', 900, datetime('now'), datetime('now'))")
+    session_b = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    assert session_a != session_b
+    # One sermon
     conn.execute("INSERT INTO sermons (sermonaudio_id, broadcaster_id, title, classified_as, sync_status, last_state_change_at, first_synced_at, last_synced_at, created_at, updated_at) VALUES ('rcf001', 'bcast', 'Test', 'sermon', 'review_ready', datetime('now'), datetime('now'), datetime('now'), datetime('now'), datetime('now'))")
     sermon_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
-    conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1', datetime('now'))", (sermon_id, sid))
+    # First active link to session_a — should succeed
+    conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1', datetime('now'))", (sermon_id, session_a))
     conn.commit()
+    # Second active link to session_b — should fail due to partial unique index
     with pytest.raises(Exception):
-        conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1-dup', datetime('now'))", (sermon_id, sid))
+        conn.execute("INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at) VALUES (?, ?, 'active', 'auto', 'tier1-other-session', datetime('now'))", (sermon_id, session_b))
         conn.commit()
     conn.close()
