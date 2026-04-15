@@ -52,6 +52,50 @@ from session_analytics import SessionAnalytics
 from genre_map import get_genre
 from seed_questions import seed_question_bank
 
+try:
+    from apscheduler.schedulers.background import BackgroundScheduler
+    from apscheduler.triggers.interval import IntervalTrigger
+    _APSCHEDULER_AVAILABLE = True
+except ImportError:
+    _APSCHEDULER_AVAILABLE = False
+
+_scheduler = None
+
+
+def _scheduled_sermon_sync():
+    """The 4h cron body. Swallows exceptions so a bad run doesn't kill the scheduler."""
+    try:
+        from sermonaudio_sync import run_sync_with_client
+        db = get_db()
+        client = _make_sermonaudio_client()
+        run_sync_with_client(
+            db, client, broadcaster_id=_broadcaster_id(), trigger='cron',
+        )
+    except Exception as e:
+        app.logger.error(f'Scheduled sermon sync failed: {e}')
+
+
+def get_scheduler():
+    """Return the singleton background scheduler. Lazy-initializes on first call.
+
+    NOTE: Calling this starts a daemon thread. Production code should call this
+    from the __main__ block. Tests can call it to inspect job registration.
+    """
+    global _scheduler
+    if not _APSCHEDULER_AVAILABLE:
+        raise RuntimeError('apscheduler not installed')
+    if _scheduler is None:
+        _scheduler = BackgroundScheduler(daemon=True)
+        _scheduler.add_job(
+            _scheduled_sermon_sync,
+            IntervalTrigger(hours=4),
+            id='sermon_sync_cron',
+            replace_existing=True,
+        )
+        _scheduler.start()
+    return _scheduler
+
+
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
 
@@ -1482,6 +1526,8 @@ app.register_blueprint(sermons_bp)
 
 if __name__ == "__main__":
     startup()
+    if _APSCHEDULER_AVAILABLE:
+        get_scheduler()
     port = int(os.environ.get("FLASK_PORT", "5111"))
     print(f"Sermon Research Workbench starting on http://localhost:{port}", file=sys.stderr)
     print(f"  Companion at http://localhost:{port}/companion/", file=sys.stderr)
