@@ -1,0 +1,142 @@
+/* Sermon coach — dark theme matching companion.css / study.css */
+
+:root {
+  --sermon-bg: #0d1117;
+  --sermon-surface: #161b22;
+  --sermon-surface-hover: #1c2028;
+  --sermon-border: #30363d;
+  --sermon-text: #c9d1d9;
+  --sermon-text-muted: #8b949e;
+  --sermon-accent: #58a6ff;
+  --sermon-good: #3fb950;
+  --sermon-warn: #d29922;
+  --sermon-bad: #f85149;
+  --sermon-impact: #388bfd;
+  --sermon-faithfulness: #a371f7;
+  --sermon-diagnostic: #db6d28;
+  --sermon-prescription: #3fb950;
+}
+
+body {
+  background: var(--sermon-bg);
+  color: var(--sermon-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+#sermon-review-page,
+#sermons-list-page,
+#sermon-patterns-page,
+#sermons-sync-log-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header { margin-bottom: 24px; }
+header h1 { margin: 0 0 8px; font-size: 24px; }
+.sermon-meta { color: var(--sermon-text-muted); font-size: 14px; }
+
+.sermon-card {
+  background: var(--sermon-surface);
+  border: 1px solid var(--sermon-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.sermon-card h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0.02em; }
+.sermon-card h2 .subtitle { font-size: 12px; color: var(--sermon-text-muted); font-weight: normal; }
+
+.sermon-card-impact { border-left: 3px solid var(--sermon-impact); }
+.sermon-card-faithfulness { border-left: 3px solid var(--sermon-faithfulness); }
+.sermon-card-diagnostic { border-left: 3px solid var(--sermon-diagnostic); }
+.sermon-card-prescription {
+  border-left: 3px solid var(--sermon-prescription);
+  background: rgba(63, 185, 80, 0.08);
+}
+
+.metric-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--sermon-border);
+}
+.metric-row:last-child { border-bottom: none; }
+.metric-label { color: var(--sermon-text-muted); min-width: 120px; font-size: 13px; }
+.metric-value { font-weight: 600; }
+.metric-rationale, .metric-commentary { width: 100%; color: var(--sermon-text-muted); font-size: 13px; }
+.metric-timestamp { width: 100%; color: var(--sermon-text-muted); font-size: 12px; }
+
+.metric-crisp, .metric-clear, .metric-landed, .metric-explicit, .metric-grounded,
+.metric-river, .metric-localized, .metric-concrete, .metric-seized, .metric-engaged { color: var(--sermon-good); }
+.metric-implied, .metric-partial, .metric-gestured, .metric-mostly_river, .metric-abstract,
+.metric-professional, .metric-uneven { color: var(--sermon-warn); }
+.metric-muddled, .metric-absent, .metric-missed, .metric-lake, .metric-detached, .metric-pretext { color: var(--sermon-bad); }
+
+.helpers-hurters { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; }
+.helpers h3, .hurters h3 { font-size: 13px; margin: 0 0 6px; color: var(--sermon-text-muted); }
+.helpers ul, .hurters ul { margin: 0; padding-left: 18px; }
+.helpers li { color: var(--sermon-good); }
+.hurters li { color: var(--sermon-warn); }
+
+.prescription-text { font-size: 16px; font-weight: 500; line-height: 1.6; }
+
+.flag-list { list-style: none; padding: 0; margin: 0; }
+.flag { padding: 12px; margin-bottom: 8px; background: var(--sermon-surface-hover); border-radius: 6px; cursor: pointer; }
+.flag-concern { border-left: 2px solid var(--sermon-bad); }
+.flag-warn { border-left: 2px solid var(--sermon-warn); }
+.flag-note { border-left: 2px solid var(--sermon-accent); }
+.flag-type { font-weight: 600; }
+.flag-timestamp { color: var(--sermon-text-muted); margin-left: 8px; font-size: 12px; }
+.flag-rationale { margin-top: 4px; }
+.flag-excerpt { font-style: italic; color: var(--sermon-text-muted); margin: 6px 0 0; padding-left: 12px; border-left: 2px solid var(--sermon-border); }
+
+.sermon-card-coach { background: var(--sermon-surface-hover); }
+#coach-messages { min-height: 120px; max-height: 420px; overflow-y: auto; margin-bottom: 12px; }
+#coach-messages .msg-user { color: var(--sermon-text); margin-bottom: 10px; }
+#coach-messages .msg-assistant { color: var(--sermon-accent); margin-bottom: 10px; }
+#coach-form textarea {
+  width: 100%; background: var(--sermon-bg); color: var(--sermon-text);
+  border: 1px solid var(--sermon-border); border-radius: 6px; padding: 8px;
+  font: inherit; resize: vertical;
+}
+#coach-form button {
+  background: var(--sermon-accent); color: #fff; border: none;
+  padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-top: 8px;
+}
+
+.sermons-table { width: 100%; border-collapse: collapse; }
+.sermons-table th, .sermons-table td { padding: 10px 8px; text-align: left; border-bottom: 1px solid var(--sermon-border); }
+.sermons-table tr.has-badge { background: rgba(88, 166, 255, 0.08); }
+.new-badge { background: var(--sermon-accent); color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.status-review_ready { color: var(--sermon-good); }
+.status-analysis_pending, .status-analysis_running { color: var(--sermon-warn); }
+.status-sync_failed, .status-analysis_failed, .status-permanent_failure { color: var(--sermon-bad); }
+
+.corpus-gate { padding: 16px; border-radius: 8px; margin-bottom: 24px; }
+.corpus-gate-pre_gate { background: rgba(139, 148, 158, 0.12); border: 1px solid var(--sermon-border); }
+.corpus-gate-emerging { background: rgba(210, 153, 34, 0.12); border: 1px solid var(--sermon-warn); }
+.corpus-gate-stable { background: rgba(63, 185, 80, 0.12); border: 1px solid var(--sermon-good); }
+
+.trend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.trend-card { background: var(--sermon-surface); border: 1px solid var(--sermon-border); border-radius: 8px; padding: 16px; }
+.trend-card h3 { margin: 0 0 8px; font-size: 13px; color: var(--sermon-text-muted); }
+.trend-value { font-size: 24px; font-weight: 600; }
+
+.cost-summary { padding: 12px; background: var(--sermon-surface); border-radius: 6px; margin-bottom: 16px; }
+.sync-runs-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sync-runs-table th, .sync-runs-table td { padding: 6px 8px; border-bottom: 1px solid var(--sermon-border); }
+.run-id { font-family: monospace; }
+
+.state-message { padding: 16px; background: var(--sermon-surface); border-radius: 8px; text-align: center; color: var(--sermon-text-muted); }
+.state-message.error { color: var(--sermon-bad); }
+
+nav { display: flex; gap: 12px; align-items: center; }
+nav a, nav button {
+  background: var(--sermon-surface); color: var(--sermon-text);
+  border: 1px solid var(--sermon-border); padding: 6px 12px; border-radius: 6px;
+  text-decoration: none; cursor: pointer; font: inherit;
+}
+nav button:hover, nav a:hover { background: var(--sermon-surface-hover); }
