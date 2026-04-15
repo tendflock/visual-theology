@@ -6,6 +6,8 @@ narrates the four review cards, runs a conversation over the sermon.
 
 from __future__ import annotations
 import json
+from dataclasses import dataclass
+from datetime import datetime, timezone
 from voice_constants import IDENTITY_CORE, HOMILETICAL_TRADITION, VOICE_GUARDRAILS
 from sermon_coach_tools import (
     get_sermon_review, get_sermon_flags, get_transcript_full,
@@ -196,3 +198,90 @@ def execute_tool(tool_name: str, tool_input: dict, session_context: dict) -> dic
         return {'error': f'unknown tool: {tool_name}'}
     except Exception as e:
         return {'error': f'{type(e).__name__}: {e}'}
+
+
+@dataclass
+class CoachTurnResult:
+    assistant_text: str
+    input_tokens: int
+    output_tokens: int
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def stream_coach_response(db, sermon_id: int, conversation_id: int,
+                          user_message: str, llm_client):
+    """Generator that streams coach output events and persists messages."""
+    conn = db._conn()
+    sermon_row = conn.execute("""
+        SELECT id, bible_text_raw, preach_date, duration_seconds
+        FROM sermons WHERE id = ?
+    """, (sermon_id,)).fetchone()
+    conn.close()
+    if not sermon_row:
+        yield {'type': 'error', 'error': 'sermon_not_found'}
+        return
+
+    conn = db._conn()
+    conn.execute("""
+        INSERT INTO sermon_coach_messages
+            (sermon_id, conversation_id, role, content, created_at)
+        VALUES (?, ?, 'user', ?, ?)
+    """, (sermon_id, conversation_id, user_message, _now()))
+    conn.commit()
+    conn.close()
+
+    review = get_sermon_review(db, sermon_id) or {}
+    patterns = get_sermon_patterns(db)
+    sermon_context = {
+        'passage': sermon_row[1],
+        'preach_date': sermon_row[2],
+        'duration_sec': sermon_row[3] or 0,
+    }
+    system = build_system_prompt(sermon_context, review, patterns['corpus_gate_status'])
+
+    conn = db._conn()
+    history_rows = conn.execute("""
+        SELECT role, content FROM sermon_coach_messages
+        WHERE sermon_id = ? AND conversation_id = ?
+        ORDER BY id
+    """, (sermon_id, conversation_id)).fetchall()
+    conn.close()
+    messages = [{'role': r[0], 'content': r[1]} for r in history_rows if r[1]]
+
+    assistant_text_parts = []
+    input_tokens = 0
+    output_tokens = 0
+    try:
+        for event in llm_client.stream_message(system=system, messages=messages,
+                                                 tools=TOOL_DEFINITIONS):
+            if event.get('type') == 'text_delta':
+                assistant_text_parts.append(event.get('text', ''))
+                yield event
+            elif event.get('type') == 'tool_use':
+                tool_result = execute_tool(
+                    event['tool_name'], event['tool_input'],
+                    session_context={'db': db, 'sermon_id': sermon_id},
+                )
+                yield {'type': 'tool_result', 'tool_name': event['tool_name'],
+                        'result': tool_result}
+            elif event.get('type') == 'message_complete':
+                usage = event.get('usage', {})
+                input_tokens = usage.get('input_tokens', 0)
+                output_tokens = usage.get('output_tokens', 0)
+                yield event
+    except Exception as e:
+        yield {'type': 'error', 'error': f'{type(e).__name__}: {e}'}
+        return
+
+    assistant_text = ''.join(assistant_text_parts)
+    conn = db._conn()
+    conn.execute("""
+        INSERT INTO sermon_coach_messages
+            (sermon_id, conversation_id, role, content, created_at)
+        VALUES (?, ?, 'assistant', ?, ?)
+    """, (sermon_id, conversation_id, assistant_text, _now()))
+    conn.commit()
+    conn.close()
