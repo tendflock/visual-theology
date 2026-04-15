@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html><head><title>Sync Log</title></head>
-<body>
-<h1>Sync Log</h1>
-<p>30-day cost: ${{ '%.2f'|format(cost_30d) }}</p>
-<table>
-<tr><th>Run</th><th>Trigger</th><th>Started</th><th>Status</th></tr>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Sync Log</title>
+<link rel="stylesheet" href="/static/sermons.css?v=1">
+</head><body>
+<div id="sermons-sync-log-page">
+<header>
+  <a href="/sermons/">← All sermons</a>
+  <h1>Sync Log</h1>
+</header>
+<div class="cost-summary">
+  <strong>30-day LLM cost:</strong> ${{ '%.2f' % cost_30d }}
+</div>
+<table class="sync-runs-table">
+<thead><tr><th>Run</th><th>Trigger</th><th>Started</th><th>Status</th><th>New</th><th>Updated</th><th>Failed</th><th>Error</th></tr></thead>
+<tbody>
 {% for r in runs %}
-<tr><td>{{ r.run_id[:8] }}</td><td>{{ r.trigger }}</td><td>{{ r.started_at }}</td><td>{{ r.status }}</td></tr>
+<tr class="status-{{ r.status }}">
+  <td class="run-id">{{ r.run_id[:8] }}</td>
+  <td>{{ r.trigger }}</td>
+  <td>{{ r.started_at }}</td>
+  <td>{{ r.status }}</td>
+  <td>{{ r.sermons_new }}</td>
+  <td>{{ r.sermons_updated }}</td>
+  <td>{{ r.sermons_failed }}</td>
+  <td class="error-cell">{{ r.error_summary or '' }}</td>
+</tr>
 {% endfor %}
+</tbody>
 </table>
+</div>
 </body></html>
