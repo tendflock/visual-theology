@@ -315,6 +315,68 @@ class CompanionDB:
             conn.execute("ALTER TABLE sermons ADD COLUMN transcript_segments TEXT")
         if 'transcript_quality' not in existing_sermon_cols:
             conn.execute("ALTER TABLE sermons ADD COLUMN transcript_quality TEXT CHECK (transcript_quality IN ('good', 'degraded'))")
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS analysis_runs (
+                id TEXT PRIMARY KEY,
+                sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
+                run_type TEXT NOT NULL CHECK (run_type IN ('review', 'tagging')),
+                review_run_id TEXT REFERENCES analysis_runs(id),
+                prompt_version TEXT NOT NULL,
+                model_name TEXT NOT NULL,
+                is_active INTEGER NOT NULL DEFAULT 1,
+                status TEXT NOT NULL CHECK (status IN ('running', 'completed', 'failed')),
+                created_at TEXT NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_analysis_runs_sermon ON analysis_runs(sermon_id, run_type, is_active);
+
+            CREATE TABLE IF NOT EXISTS sermon_moments (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                sermon_id INTEGER NOT NULL REFERENCES sermons(id) ON DELETE CASCADE,
+                analysis_run_id TEXT NOT NULL REFERENCES analysis_runs(id) ON DELETE CASCADE,
+                start_segment_index INTEGER NOT NULL,
+                end_segment_index INTEGER NOT NULL,
+                start_ms INTEGER NOT NULL,
+                end_ms INTEGER NOT NULL,
+                sermon_position_pct REAL NOT NULL CHECK (sermon_position_pct >= 0.0 AND sermon_position_pct <= 1.0),
+                excerpt_text TEXT NOT NULL,
+                context_text TEXT,
+                dimension_key TEXT NOT NULL CHECK (dimension_key IN (
+                    'burden_clarity', 'movement_clarity', 'application_specificity',
+                    'ethos_rating', 'concreteness_score', 'christ_thread_score', 'exegetical_grounding'
+                )),
+                section_role TEXT NOT NULL CHECK (section_role IN (
+                    'intro', 'setup', 'exposition', 'illustration_section', 'application',
+                    'transition', 'recap', 'appeal', 'conclusion', 'prayer', 'reading'
+                )),
+                homiletic_move TEXT CHECK (homiletic_move IS NULL OR homiletic_move IN (
+                    'big_idea_statement', 'structure_signpost', 'textual_observation', 'doctrinal_claim',
+                    'illustration', 'exhortation', 'application', 'christ_connection', 'gospel_implication',
+                    'objection_handling', 'direct_address', 'diagnostic_question', 'pastoral_comfort',
+                    'warning', 'summary_restatement', 'contextualization'
+                )),
+                valence TEXT NOT NULL CHECK (valence IN ('positive', 'negative')),
+                confidence REAL NOT NULL CHECK (confidence >= 0.0 AND confidence <= 1.0),
+                impact TEXT NOT NULL CHECK (impact IN ('minor', 'moderate', 'major')),
+                moment_rank INTEGER NOT NULL,
+                rationale TEXT NOT NULL,
+                review_source_ref TEXT,
+                prompt_version TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_sermon_moments_sermon_run ON sermon_moments(sermon_id, analysis_run_id);
+            CREATE INDEX IF NOT EXISTS idx_sermon_moments_dimension ON sermon_moments(sermon_id, dimension_key, valence);
+            CREATE INDEX IF NOT EXISTS idx_sermon_moments_position ON sermon_moments(sermon_id, start_segment_index, end_segment_index);
+        """)
+        # Unique index — separate statement since IF NOT EXISTS behavior varies
+        try:
+            conn.execute("""
+                CREATE UNIQUE INDEX uq_sermon_moment_span ON sermon_moments(
+                    sermon_id, analysis_run_id, dimension_key, valence,
+                    start_segment_index, end_segment_index
+                )
+            """)
+        except Exception:
+            pass  # Already exists
         conn.commit()
         conn.close()
 
