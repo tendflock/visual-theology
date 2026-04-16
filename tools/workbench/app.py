@@ -1636,7 +1636,10 @@ def sermon_coach_message(sermon_id):
     from sermon_coach_agent import stream_coach_response
     from llm_client import AnthropicClient
     user_message = request.json.get('message') if request.is_json else request.form.get('message', '')
-    conversation_id = int(request.json.get('conversation_id', 1)) if request.is_json else 1
+    try:
+        conversation_id = int(request.json.get('conversation_id', 1)) if request.is_json else 1
+    except (ValueError, TypeError):
+        conversation_id = 1
     db = get_db()
     api_key = anthropic_api_key()
     client = AnthropicClient(api_key=api_key)
