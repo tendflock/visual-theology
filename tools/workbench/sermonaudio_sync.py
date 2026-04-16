@@ -15,9 +15,68 @@ from typing import Optional
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from study import parse_reference_multi
 
+import re
+import urllib.request
+from types import SimpleNamespace
+
 BRYAN_SPEAKER_NAME = 'Bryan Schneider'
 SERMON_EVENT_TYPES = frozenset({'Sunday Service'})
 DEVOTIONAL_EVENT_TYPES = frozenset({'Devotional', 'Daily Devotional'})
+
+
+def _fetch_srt_as_text(url: str) -> Optional[str]:
+    """Download an SRT caption file and strip timestamps to plain text.
+
+    Uses the sermonaudio library's authenticated session since caption URLs
+    require API key auth (403 without it).
+    """
+    try:
+        import sermonaudio
+        resp = sermonaudio._session.get(url, timeout=30)
+        if not resp.ok:
+            return None
+        raw = resp.text
+        lines = []
+        for line in raw.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.isdigit():
+                continue
+            if re.match(r'\d{2}:\d{2}:\d{2}', line):
+                continue
+            lines.append(line)
+        return ' '.join(lines) if lines else None
+    except Exception:
+        return None
+
+
+def normalize_remote(sermon) -> SimpleNamespace:
+    """Convert a sermonaudio Sermon model object to the flat shape our code expects."""
+    audio = sermon.media.audio[0] if getattr(sermon, 'media', None) and sermon.media.audio else None
+    caption = sermon.media.caption[0] if getattr(sermon, 'media', None) and sermon.media.caption else None
+
+    transcript = None
+    if caption and caption.download_url:
+        transcript = _fetch_srt_as_text(caption.download_url)
+
+    event_type = getattr(sermon.event_type, 'value', str(sermon.event_type)) if sermon.event_type else None
+
+    return SimpleNamespace(
+        sermon_id=sermon.sermon_id,
+        broadcaster_id=sermon.broadcaster.broadcaster_id if sermon.broadcaster else None,
+        title=sermon.full_title,
+        speaker_name=sermon.speaker.display_name if sermon.speaker else None,
+        event_type=event_type,
+        series=sermon.series.title if sermon.series else None,
+        preach_date=sermon.preach_date,
+        publish_date=sermon.publish_timestamp.date() if getattr(sermon, 'publish_timestamp', None) else None,
+        duration=audio.duration if audio else None,
+        bible_text=sermon.bible_text,
+        audio_url=audio.stream_url if audio else None,
+        transcript=transcript,
+        update_date=sermon.update_date,
+    )
 
 
 def classify(sermon_remote) -> tuple[str, str]:
@@ -251,10 +310,11 @@ def run_sync_with_client(db, client, broadcaster_id: str, trigger: str = 'cron',
     error_summary = None
     status = 'completed'
     try:
-        remotes = client.list_sermons_updated_since(broadcaster_id, since=since, limit=limit)
-        counters['sermons_fetched'] = len(remotes)
-        for remote in remotes:
+        raw_remotes = client.list_sermons_updated_since(broadcaster_id, since=since, limit=limit)
+        counters['sermons_fetched'] = len(raw_remotes)
+        for raw in raw_remotes:
             try:
+                remote = normalize_remote(raw) if not isinstance(raw, SimpleNamespace) else raw
                 result = upsert_sermon(conn, remote)
                 if result == 'new':
                     counters['sermons_new'] += 1
