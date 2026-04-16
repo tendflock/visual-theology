@@ -193,7 +193,7 @@ def build_rubric_prompt(inp: AnalyzerInput, pure: PureStageOutput) -> str:
         '\n'.join(f"- [{p.get('id')}] {p.get('content', '')[:160]}" for p in inp.outline_points)
 
     segments_text = '\n'.join(
-        f"[{s['start_sec']}s-{s['end_sec']}s {s.get('section_label', 'body')}] {s['text'][:400]}"
+        f"[{s['start_sec']}s-{s['end_sec']}s {s.get('section_label', 'body')}] {s['text']}"
         for s in pure.segments
     )
 
