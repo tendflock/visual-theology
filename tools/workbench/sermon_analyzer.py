@@ -8,6 +8,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Optional
 import json
+import logging
 
 from homiletics_core import (
     __version__ as homiletics_core_version,
@@ -421,6 +422,17 @@ def analyze_sermon(db, sermon_id: int, llm_client) -> dict:
         conn.execute("UPDATE sermons SET sync_status='review_ready', last_state_change_at=? WHERE id=?",
                      (_now(), sermon_id))
         conn.commit()
+
+        # Dispatch tagging pass if SRT segments are available
+        if inp.srt_segments and inp.duration_sec > 0:
+            try:
+                from sermon_tagger import tag_sermon
+                tag_result = tag_sermon(db, sermon_id, llm_client)
+            except Exception as e:
+                # Tagging failure is non-fatal — the review is already saved
+                logging.getLogger(__name__).warning(
+                    f'Tagging failed for sermon {sermon_id}: {e}')
+
         return {'status': 'review_ready', 'cost_usd': cost,
                 'input_tokens': input_tokens, 'output_tokens': output_tokens}
     finally:
