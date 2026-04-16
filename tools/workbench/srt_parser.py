@@ -108,10 +108,14 @@ def validate_segments(segments, duration_sec):
     - Non-empty segments list
     - First segment starts within 30s
     - Monotonic timestamps (each start_ms >= previous end_ms)
-    - Non-empty text ratio > 80%
+    - Duration must be positive (0 or negative → degraded)
+    - Non-empty text ratio >= 80%
     - Last segment end_ms within 10% of duration
     """
     if not segments:
+        return "degraded"
+
+    if duration_sec <= 0:
         return "degraded"
 
     # First segment must start within 30 seconds
@@ -123,16 +127,16 @@ def validate_segments(segments, duration_sec):
         if segments[i]["start_ms"] < segments[i - 1]["end_ms"]:
             return "degraded"
 
-    # Non-empty text ratio must exceed 80%
+    # Non-empty text ratio >= 80%
     total = len(segments)
     non_empty = sum(1 for s in segments if s["text"].strip())
-    if non_empty / total <= 0.80:
+    if non_empty / total < 0.80:
         return "degraded"
 
     # Coverage: last segment's end_ms within 10% of duration
     duration_ms = duration_sec * 1000
     last_end = segments[-1]["end_ms"]
-    if duration_ms > 0 and last_end < duration_ms * 0.90:
+    if last_end < duration_ms * 0.90:
         return "degraded"
 
     return "good"

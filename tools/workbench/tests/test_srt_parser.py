@@ -218,6 +218,29 @@ class TestValidateSegments:
         # duration 60s, last ends at 55s — 55/60 = 91.7%, within 10%
         assert validate_segments(segs, duration_sec=60) == "good"
 
+    def test_zero_duration_degraded(self):
+        segs = self._make_segments([(0, 5000, "Hello")])
+        assert validate_segments(segs, duration_sec=0) == "degraded"
+
+    def test_negative_duration_degraded(self):
+        segs = self._make_segments([(0, 5000, "Hello")])
+        assert validate_segments(segs, duration_sec=-1) == "degraded"
+
+    def test_exactly_30s_start_degraded(self):
+        segs = self._make_segments([
+            (30000, 35000, "Exactly 30s"),
+            (35000, 40000, "More"),
+        ])
+        assert validate_segments(segs, duration_sec=40) == "degraded"
+
+    def test_exactly_80_percent_text_ratio_good(self):
+        segs = self._make_segments([
+            (0, 1000, "A"), (1000, 2000, "B"), (2000, 3000, "C"),
+            (3000, 4000, "D"), (4000, 5000, ""),
+        ])
+        # 4/5 = 80% — should pass with >= 80%
+        assert validate_segments(segs, duration_sec=5) == "good"
+
 
 # ── Task 3: Canonical Transcript Builder ──────────────────────────────
 
