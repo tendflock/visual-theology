@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const decoder = new TextDecoder();
     const assistantEl = appendMessage('assistant', '');
     let buffer = '';
+    let fullText = '';
 
     while (true) {
       const {done, value} = await reader.read();
@@ -57,9 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
           const event = JSON.parse(line.slice(6));
           if (event.type === 'text_delta') {
-            assistantEl.textContent += event.text;
+            fullText += event.text;
+            // Stream as plain text, render markdown at the end
+            assistantEl.textContent = 'Coach: ' + fullText;
           } else if (event.type === 'error') {
-            assistantEl.textContent += `\n[error: ${event.error}]`;
+            fullText += `\n[error: ${event.error}]`;
+            assistantEl.textContent = 'Coach: ' + fullText;
           }
         } catch (err) {
           console.error('parse error', err);
@@ -67,12 +71,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       messagesDiv.scrollTop = messagesDiv.scrollHeight;
     }
+    // Final render with markdown formatting
+    // Safe: renderMarkdown escapes HTML before processing markdown syntax
+    assistantEl.innerHTML = '<strong>Coach:</strong> ' + renderMarkdown(fullText); // eslint-disable-line no-unsanitized/property
   });
+
+  function renderMarkdown(text) {
+    // Escape HTML entities first to prevent XSS
+    let html = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    html = html.split(/\n{2,}/).map(p => {
+      p = p.trim();
+      if (!p) return '';
+      if (/^[-•]\s/.test(p)) {
+        const items = p.split(/\n/).map(l => '<li>' + l.replace(/^[-•]\s*/, '') + '</li>').join('');
+        return '<ul>' + items + '</ul>';
+      }
+      if (/^\d+[.)]\s/.test(p)) {
+        const items = p.split(/\n/).map(l => '<li>' + l.replace(/^\d+[.)]\s*/, '') + '</li>').join('');
+        return '<ol>' + items + '</ol>';
+      }
+      return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
+    }).join('');
+    return html;
+  }
 
   function appendMessage(role, text) {
     const el = document.createElement('div');
     el.className = `msg-${role}`;
-    el.textContent = (role === 'user' ? 'You: ' : role === 'assistant' ? 'Coach: ' : '') + text;
+    const label = role === 'user' ? 'You: ' : role === 'assistant' ? 'Coach: ' : '';
+    if (role === 'assistant' && text) {
+      // Safe: renderMarkdown escapes HTML before processing markdown syntax
+      el.innerHTML = '<strong>' + label + '</strong>' + renderMarkdown(text); // eslint-disable-line no-unsanitized/property
+    } else {
+      el.textContent = label + (text || '');
+    }
     messagesDiv.appendChild(el);
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
     return el;

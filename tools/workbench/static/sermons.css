@@ -95,8 +95,13 @@ header h1 { margin: 0 0 8px; font-size: 24px; }
 
 .sermon-card-coach { background: var(--sermon-surface-hover); }
 #coach-messages { min-height: 120px; max-height: 420px; overflow-y: auto; margin-bottom: 12px; }
-#coach-messages .msg-user { color: var(--sermon-text); margin-bottom: 10px; }
-#coach-messages .msg-assistant { color: var(--sermon-accent); margin-bottom: 10px; }
+#coach-messages .msg-user { color: var(--sermon-text); margin-bottom: 14px; padding: 8px 0; border-bottom: 1px solid var(--sermon-border); }
+#coach-messages .msg-assistant { color: var(--sermon-accent); margin-bottom: 14px; padding: 8px 0; border-bottom: 1px solid var(--sermon-border); line-height: 1.6; }
+#coach-messages .msg-assistant p { margin: 0 0 8px 0; }
+#coach-messages .msg-assistant strong { color: var(--sermon-text); }
+#coach-messages .msg-assistant ul, #coach-messages .msg-assistant ol { margin: 4px 0 8px 20px; padding: 0; }
+#coach-messages .msg-assistant li { margin-bottom: 4px; }
+#coach-messages .msg-assistant em { font-style: italic; opacity: 0.9; }
 #coach-form textarea {
   width: 100%; background: var(--sermon-bg); color: var(--sermon-text);
   border: 1px solid var(--sermon-border); border-radius: 6px; padding: 8px;
