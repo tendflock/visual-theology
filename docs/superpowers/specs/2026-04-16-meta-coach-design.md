@@ -34,7 +34,7 @@ SermonAudio provides SRT caption files with per-line timestamps. Current ingest 
 ```
 
 - **Milliseconds** (integers), not float seconds — avoids comparison bugs in queries
-- **segment_index** on each segment — stable anchor even after text normalization
+- **segment_index** on each segment — assigned after parsing, sorting, and deduplication (i.e., tracks normalized order, not original SRT block order). Stable for all downstream references within this ingest version.
 
 **Storage:** New TEXT column `sermons.transcript_segments` (JSON array). New TEXT column `sermons.transcript_quality` (`'good'` | `'degraded'` | `null`).
 
@@ -49,7 +49,14 @@ SermonAudio provides SRT caption files with per-line timestamps. Current ingest 
 
 **Backfill:** Re-fetch SRT for all existing sermons via SermonAudio API. Rebuild `transcript_text` from canonical builder. The canonical rebuild will change `transcript_hash`, triggering a full re-analysis cascade (review + tagging). Estimated one-time cost: ~$10-16 for 33 sermons ($0.15-0.25/review + $0.10-0.15/tagging). Consider using a whitespace-normalized content hash to avoid unnecessary re-review when only formatting changed. If an SRT file is no longer available for a sermon, leave `transcript_segments` null and `transcript_quality` null — the system falls back to linear approximation for that sermon.
 
-**Downstream:** The caller (`sermon_analyzer.py`) selects the segmentation strategy: if `transcript_segments` is populated, it converts the parsed SRT segments into the format expected by downstream functions and skips `segment_transcript()`. Otherwise it falls back to the existing `segment_transcript()` linear approximation. This preserves `homiletics_core.py`'s pure-function contract (no DB access, no side effects).
+**Downstream:** The caller (`sermon_analyzer.py`) selects the segmentation strategy. SRT caption lines are too fine-grained for the existing pure functions (`compute_section_timings()`, `detect_density_hotspots()`, `align_segments_to_outline()`) which expect paragraph-scale segments with synthesized `section_label` values like `intro`, `body`, `application`, `close`. Therefore:
+
+1. If `transcript_segments` is populated, a new **coarsening step** (`coarsen_srt_segments()`) merges adjacent caption lines into paragraph-scale chunks (splitting on sentence boundaries and natural pauses > 2s). Each coarsened segment gets real timestamps from its constituent SRT segments.
+2. The coarsened segments are then fed to the existing pure functions unchanged.
+3. The raw fine-grained SRT segments are preserved in `transcript_segments` for the tagging pass (Layer 2), which needs line-level precision for excerpt anchoring.
+4. If `transcript_segments` is null, fall back to `segment_transcript()` linear approximation.
+
+This preserves `homiletics_core.py`'s pure-function contract (no DB access, no side effects) while giving both the analyzer and tagger the granularity they need.
 
 ### SRT Parsing Robustness
 
@@ -131,7 +138,7 @@ Prompt includes examples for:
 - True positive (clear strong moment)
 - True negative (clear weak moment)
 - Borderline non-tag (abstention)
-- Multi-dimension excerpt (model picks primary)
+- Multi-dimension excerpt (model tags under both dimensions with separate rationales — not collapsed to one)
 - Abstention case (evidence depends on delivery)
 
 ### Schema
@@ -195,7 +202,7 @@ CREATE UNIQUE INDEX uq_sermon_moment_span ON sermon_moments(
 
 **`analysis_runs.id`**: generated via `uuid4()`. Tagging runs set `review_run_id` to the active review run they were calibrated against. If a review is re-run, all tagging runs referencing the old review become stale and should be re-triggered.
 
-**`sermon_position_pct`**: midpoint of moment as fraction of sermon duration: `min(1.0, (start_ms + end_ms) / 2 / duration_ms)`. Clamped to [0.0, 1.0] because SRT timestamps occasionally exceed reported duration.
+**`sermon_position_pct`**: midpoint of moment as fraction of sermon duration: `min(1.0, (start_ms + end_ms) / 2 / duration_ms)`. Clamped to [0.0, 1.0] because SRT timestamps occasionally exceed reported duration. If `duration_ms` is 0 or null, the sermon is excluded from tagging (the tagger requires a valid duration to compute positions).
 
 **`moment_rank`**: rank within `(sermon_id, analysis_run_id, dimension_key, valence)` — assigned pre-suppression. Enables deterministic top-N retrieval.
 
@@ -256,7 +263,7 @@ Note: no history GET endpoint — conversations are fresh each visit. Queries fo
 ### Conversation Model
 
 - **Fresh each visit** — no history reloaded on page open
-- `conversation_id` generated as `int(time.time())` on each page load — unique per visit, monotonically increasing, no collision risk for a single-user app
+- `conversation_id` generated as `int(time.time() * 1000)` (millisecond timestamp) on each page load — effectively unique per visit even with fast reloads or multiple tabs. In JS: `Date.now()`. Not cryptographically unique, but collisions require sub-millisecond page opens by the same user, which is not a real scenario.
 - Messages persisted to `sermon_coach_messages` with `sermon_id=NULL` for auditing
 - **Coach memory summary** injected into system prompt (see below for data source)
 
@@ -408,9 +415,10 @@ CREATE TABLE coaching_commitments (
     reviewed_at TEXT
 );
 CREATE INDEX idx_coaching_commitments_active ON coaching_commitments(status);
+CREATE UNIQUE INDEX uq_coaching_one_active ON coaching_commitments(status) WHERE status = 'active';
 ```
 
-- One active commitment at a time
+- One active commitment at a time (enforced by partial unique index — INSERT with `status='active'` fails if one already exists)
 - Behavioral, concrete, for next 1-3 sermons
 - `baseline_sermon_id` anchors the commitment: "check sermons preached after this one." Query: `WHERE s.preach_date > (SELECT preach_date FROM sermons WHERE id = baseline_sermon_id)`
 - Meta-coach checks if the behavior appeared in tagged moments from subsequent sermons
@@ -452,7 +460,7 @@ After your standard review, add a brief "Commitment check" section:
 - `sermon_tagger.py` — second-pass tagging LLM prompt, output parsing, post-processing
 - `priority_ranker.py` — pre-computed priority ranking logic with sub-score formulas
 - `templates/partials/meta_coach_chat.html` — chat widget with three buttons + free text input
-- `static/meta_coach.js` — SSE client for meta-coach (conversation_id from `int(Date.now()/1000)`)
+- `static/meta_coach.js` — SSE client for meta-coach (conversation_id from `Date.now()`)
 - `tests/test_meta_coach_agent.py`
 - `tests/test_meta_coach_tools.py`
 - `tests/test_priority_ranker.py`
@@ -461,7 +469,7 @@ After your standard review, add a brief "Commitment check" section:
 
 ### Modified Files
 - `sermonaudio_sync.py` — add `_parse_srt_segments()`, canonical transcript builder, store segments
-- `companion_db.py` — add `transcript_segments`, `transcript_quality` columns; add `analysis_runs`, `sermon_moments`, `coaching_commitments` tables with indexes
+- `companion_db.py` — add `transcript_segments`, `transcript_quality` columns via `ALTER TABLE sermons ADD COLUMN` migration (the existing DB uses `CREATE TABLE IF NOT EXISTS`, which won't add columns to an existing table); add `analysis_runs`, `sermon_moments`, `coaching_commitments` tables with `CREATE TABLE IF NOT EXISTS` + indexes
 - `sermon_analyzer.py` — select segmentation strategy (SRT segments vs linear fallback), dispatch tagging pass after main review, link tagging run to review run via `review_run_id`
 - `app.py` — add meta-coach routes (`POST /sermons/patterns/coach/message`, `GET/POST /sermons/patterns/coach/commitment`), update patterns route to pass commitment data
 - `templates/sermons/patterns.html` — add meta-coach chat widget below stat cards
