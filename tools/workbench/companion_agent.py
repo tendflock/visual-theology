@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from companion_tools import TOOL_DEFINITIONS, execute_tool
 from voice_constants import IDENTITY_CORE, HOMILETICAL_TRADITION, VOICE_GUARDRAILS
+from app_secrets import anthropic_api_key
 
 # ── Phase Descriptions ────────────────────────────────────────────────────
 
@@ -283,7 +284,7 @@ def stream_companion_response(session_id, user_message, db, model='claude-sonnet
         yield _sse_event('error', {'message': 'Anthropic SDK not installed. Run: pip install anthropic'})
         return
 
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = anthropic_api_key()
     if not api_key:
         yield _sse_event('error', {'message': 'ANTHROPIC_API_KEY not set'})
         return
@@ -650,7 +651,7 @@ def stream_study_response(session_id, user_message, db, analytics=None,
         yield _sse_event('error', {'message': 'Anthropic SDK not installed. Run: pip install anthropic'})
         return
 
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = anthropic_api_key()
     if not api_key:
         yield _sse_event('error', {'message': 'ANTHROPIC_API_KEY not set'})
         return

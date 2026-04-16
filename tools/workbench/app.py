@@ -51,6 +51,7 @@ from companion_agent import build_study_prompt, stream_study_response
 from session_analytics import SessionAnalytics
 from genre_map import get_genre
 from seed_questions import seed_question_bank
+from app_secrets import sermonaudio_api_key, sermonaudio_broadcaster_id, anthropic_api_key
 
 try:
     from apscheduler.schedulers.background import BackgroundScheduler
@@ -1201,7 +1202,7 @@ def study_word_info(session_id):
     lang = "Greek" if is_nt else "Hebrew"
     try:
         import anthropic
-        api_key = os.environ.get('ANTHROPIC_API_KEY')
+        api_key = anthropic_api_key()
         if not api_key:
             return jsonify({"error": "API key not set"}), 500
         client = anthropic.Anthropic(api_key=api_key)
@@ -1392,17 +1393,14 @@ def sermon_status(sermon_id):
     ))
 
 
-import os as _os_for_sync
-
 def _make_sermonaudio_client():
     """Factory for the real API client. Tests monkeypatch this."""
     from sermonaudio_sync import SermonAudioAPIClient
-    api_key = _os_for_sync.environ.get('SERMONAUDIO_API_KEY', '')
-    return SermonAudioAPIClient(api_key)
+    return SermonAudioAPIClient(sermonaudio_api_key())
 
 
 def _broadcaster_id() -> str:
-    return _os_for_sync.environ.get('SERMONAUDIO_BROADCASTER_ID', '')
+    return sermonaudio_broadcaster_id()
 
 
 @sermons_bp.route('/sync', methods=['POST'])
@@ -1433,7 +1431,7 @@ def sermon_reanalyze(sermon_id):
     from sermon_analyzer import analyze_sermon
     from llm_client import AnthropicClient
     db = get_db()
-    api_key = _os_for_sync.environ.get('ANTHROPIC_API_KEY', '')
+    api_key = anthropic_api_key()
     client = AnthropicClient(api_key=api_key)
     conn = db._conn()
     updated = conn.execute(
@@ -1543,7 +1541,7 @@ def sermon_coach_message(sermon_id):
     user_message = request.json.get('message') if request.is_json else request.form.get('message', '')
     conversation_id = int(request.json.get('conversation_id', 1)) if request.is_json else 1
     db = get_db()
-    api_key = _os_for_sync.environ.get('ANTHROPIC_API_KEY', '')
+    api_key = anthropic_api_key()
     client = AnthropicClient(api_key=api_key)
 
     def generate():
