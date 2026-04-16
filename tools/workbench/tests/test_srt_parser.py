@@ -3,7 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from srt_parser import build_canonical_transcript, parse_srt_segments, validate_segments
+from srt_parser import build_canonical_transcript, coarsen_srt_segments, parse_srt_segments, validate_segments
 
 
 # ── Task 1: Core Parsing ──────────────────────────────────────────────
@@ -269,3 +269,137 @@ class TestBuildCanonicalTranscript:
     def test_single_segment(self):
         segs = [{"segment_index": 0, "start_ms": 0, "end_ms": 5000, "text": "Only one."}]
         assert build_canonical_transcript(segs) == "Only one."
+
+
+# ── Task 4: SRT Coarsening ──────────────────────────────────────────
+
+
+class TestCoarsenSrtSegments:
+    """coarsen_srt_segments merges fine-grained captions into paragraph chunks."""
+
+    def _seg(self, index, start_ms, end_ms, text):
+        return {"segment_index": index, "start_ms": start_ms, "end_ms": end_ms, "text": text}
+
+    def test_merges_adjacent_short_segments(self):
+        """Adjacent segments with small gaps and no sentence boundaries merge."""
+        segs = [
+            self._seg(0, 0, 2000, "Welcome to"),
+            self._seg(1, 2100, 4000, "the sermon"),
+            self._seg(2, 4100, 6000, "today friends"),
+        ]
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 1
+        assert result[0]["text"] == "Welcome to the sermon today friends"
+
+    def test_splits_on_long_pause(self):
+        """Gap >= 2000ms forces a split even without sentence-ending punctuation."""
+        segs = [
+            self._seg(0, 0, 2000, "First part"),
+            self._seg(1, 4500, 6000, "second part after long pause"),
+        ]
+        # gap = 4500 - 2000 = 2500ms >= 2000ms threshold
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 2
+        assert result[0]["text"] == "First part"
+        assert result[1]["text"] == "second part after long pause"
+
+    def test_splits_on_sentence_end_with_moderate_pause(self):
+        """Sentence-ending punctuation + gap >= 500ms forces a split."""
+        segs = [
+            self._seg(0, 0, 2000, "This is a sentence."),
+            self._seg(1, 2600, 4000, "New thought begins"),
+        ]
+        # gap = 2600 - 2000 = 600ms >= 500ms AND prev ends with '.'
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 2
+        assert result[0]["text"] == "This is a sentence."
+        assert result[1]["text"] == "New thought begins"
+
+    def test_no_split_sentence_end_short_pause(self):
+        """Sentence-ending punctuation with gap < 500ms does NOT split."""
+        segs = [
+            self._seg(0, 0, 2000, "End of sentence."),
+            self._seg(1, 2300, 4000, "Continues quickly"),
+        ]
+        # gap = 300ms < 500ms — no split despite sentence-ending punctuation
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 1
+        assert result[0]["text"] == "End of sentence. Continues quickly"
+
+    def test_assigns_section_labels_by_position(self):
+        """Section labels based on chunk start position relative to duration."""
+        # duration = 100s = 100000ms
+        segs = [
+            self._seg(0, 0, 3000, "Intro text"),          # pct=0.0 → intro
+            self._seg(1, 5000, 8000, "Intro still"),       # merged if gap allows
+            self._seg(2, 30000, 33000, "Body content."),   # pct=0.3 → body
+            self._seg(3, 76000, 79000, "Application."),    # pct=0.76 → application
+            self._seg(4, 92000, 95000, "Closing words."),  # pct=0.92 → close
+        ]
+        result = coarsen_srt_segments(segs, duration_sec=100)
+        labels = {r["section_label"] for r in result}
+        # Verify we get the expected labels (exact count depends on merge logic)
+        assert "intro" in labels
+        assert "body" in labels
+        assert "application" in labels
+        assert "close" in labels
+        # Check specific label assignments
+        intro_chunks = [r for r in result if r["section_label"] == "intro"]
+        assert len(intro_chunks) >= 1
+        assert intro_chunks[0]["start_sec"] < 10  # within first 10% of 100s
+
+    def test_preserves_timing_from_constituents(self):
+        """start_sec/end_sec come from first/last constituent, in integer seconds."""
+        segs = [
+            self._seg(0, 1500, 3200, "First word"),
+            self._seg(1, 3300, 5800, "second word"),
+        ]
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 1
+        # 1500ms // 1000 = 1, 5800ms // 1000 = 5
+        assert result[0]["start_sec"] == 1
+        assert result[0]["end_sec"] == 5
+
+    def test_empty_input_returns_empty(self):
+        assert coarsen_srt_segments([], duration_sec=60) == []
+
+    def test_zero_duration_returns_empty(self):
+        segs = [self._seg(0, 0, 2000, "Hello")]
+        assert coarsen_srt_segments(segs, duration_sec=0) == []
+
+    def test_negative_duration_returns_empty(self):
+        segs = [self._seg(0, 0, 2000, "Hello")]
+        assert coarsen_srt_segments(segs, duration_sec=-5) == []
+
+    def test_single_segment_returns_one_chunk(self):
+        segs = [self._seg(0, 5000, 8000, "Only segment")]
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 1
+        assert result[0] == {
+            "start_sec": 5,
+            "end_sec": 8,
+            "text": "Only segment",
+            "section_label": "intro",  # pct = 5000/60000 = 0.083 < 0.1
+        }
+
+    def test_exclamation_and_question_end_sentences(self):
+        """! and ? are also sentence-ending punctuation."""
+        segs = [
+            self._seg(0, 0, 2000, "Can you believe it!"),
+            self._seg(1, 2600, 4000, "Yes indeed"),
+            self._seg(2, 4100, 6000, "Right?"),
+            self._seg(3, 6700, 8000, "Of course"),
+        ]
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        # ! with 600ms gap → split; ? with 600ms gap → split
+        assert len(result) == 3
+        assert result[0]["text"] == "Can you believe it!"
+        assert result[1]["text"] == "Yes indeed Right?"
+        assert result[2]["text"] == "Of course"
+
+    def test_output_format_matches_homiletics_core(self):
+        """Output dicts have exactly the keys expected by downstream functions."""
+        segs = [self._seg(0, 0, 3000, "Test")]
+        result = coarsen_srt_segments(segs, duration_sec=60)
+        assert len(result) == 1
+        assert set(result[0].keys()) == {"start_sec", "end_sec", "text", "section_label"}

@@ -142,6 +142,87 @@ def validate_segments(segments, duration_sec):
     return "good"
 
 
+def coarsen_srt_segments(segments, duration_sec):
+    """Merge fine-grained SRT segments into paragraph-scale chunks.
+
+    Takes the output of parse_srt_segments() and produces coarsened segments
+    matching the format expected by homiletics_core.py pure functions
+    (compute_section_timings, detect_density_hotspots, align_segments_to_outline).
+
+    Each output segment: {start_sec, end_sec, text, section_label}
+
+    Merging rules:
+    - Merge adjacent segments when gap < 2000ms AND previous text doesn't
+      end with sentence-ending punctuation (. ! ?)
+    - Split when: gap >= 2000ms, OR previous ends a sentence AND gap >= 500ms
+
+    Section labels assigned by position (pct = chunk_start_ms / duration_ms):
+    - pct < 0.1 → 'intro'
+    - pct > 0.9 → 'close'
+    - pct > 0.75 → 'application'
+    - else → 'body'
+    """
+    if not segments or duration_sec <= 0:
+        return []
+
+    duration_ms = duration_sec * 1000
+
+    def _ends_sentence(text):
+        stripped = text.rstrip()
+        return stripped and stripped[-1] in ".!?"
+
+    def _section_label(start_ms):
+        pct = start_ms / duration_ms if duration_ms else 0
+        if pct < 0.1:
+            return "intro"
+        elif pct > 0.9:
+            return "close"
+        elif pct > 0.75:
+            return "application"
+        else:
+            return "body"
+
+    def _flush_chunk(chunk_start_ms, chunk_end_ms, texts):
+        return {
+            "start_sec": chunk_start_ms // 1000,
+            "end_sec": chunk_end_ms // 1000,
+            "text": " ".join(texts),
+            "section_label": _section_label(chunk_start_ms),
+        }
+
+    result = []
+    chunk_start_ms = segments[0]["start_ms"]
+    chunk_end_ms = segments[0]["end_ms"]
+    chunk_texts = [segments[0]["text"]] if segments[0]["text"].strip() else []
+
+    for i in range(1, len(segments)):
+        prev = segments[i - 1]
+        curr = segments[i]
+        gap = curr["start_ms"] - prev["end_ms"]
+        prev_ends_sentence = _ends_sentence(prev["text"])
+
+        # Split conditions: long pause OR sentence-end + moderate pause
+        if gap >= 2000 or (prev_ends_sentence and gap >= 500):
+            # Flush current chunk
+            if chunk_texts:
+                result.append(_flush_chunk(chunk_start_ms, chunk_end_ms, chunk_texts))
+            # Start new chunk
+            chunk_start_ms = curr["start_ms"]
+            chunk_end_ms = curr["end_ms"]
+            chunk_texts = [curr["text"]] if curr["text"].strip() else []
+        else:
+            # Merge into current chunk
+            chunk_end_ms = curr["end_ms"]
+            if curr["text"].strip():
+                chunk_texts.append(curr["text"])
+
+    # Flush final chunk
+    if chunk_texts:
+        result.append(_flush_chunk(chunk_start_ms, chunk_end_ms, chunk_texts))
+
+    return result
+
+
 def build_canonical_transcript(segments):
     """Join segment texts into a single transcript string.
 
