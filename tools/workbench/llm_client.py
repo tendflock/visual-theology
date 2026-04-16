@@ -150,6 +150,16 @@ class AnthropicClient:
                             }
                             current_tool = None
                 response = stream.get_final_message()
+                # Convert SDK content blocks to plain dicts for JSON serialization
+                content_dicts = []
+                for block in response.content:
+                    if getattr(block, 'type', None) == 'text':
+                        content_dicts.append({'type': 'text', 'text': block.text})
+                    elif getattr(block, 'type', None) == 'tool_use':
+                        content_dicts.append({
+                            'type': 'tool_use', 'id': block.id,
+                            'name': block.name, 'input': block.input,
+                        })
                 yield {
                     'type': 'message_complete',
                     'usage': {
@@ -157,7 +167,7 @@ class AnthropicClient:
                         'output_tokens': response.usage.output_tokens,
                     },
                     'stop_reason': response.stop_reason,
-                    'content': response.content,
+                    'content': content_dicts,
                 }
         except Exception as e:
             yield {'type': 'error', 'error': f'{type(e).__name__}: {e}'}
