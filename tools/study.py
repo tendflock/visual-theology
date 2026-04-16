@@ -294,6 +294,21 @@ def _expand_comma_verses(segment):
 
 def _parse_single_range(part):
     """Parse one range segment. Returns dict or None."""
+    # Cross-chapter range: "Ecclesiastes 7:15-8:1"
+    m_cross = re.match(r'^(.+?)\s+(\d+):(\d+)-(\d+):(\d+)$', part)
+    if m_cross:
+        book_name, c1, v1, c2, v2 = m_cross.groups()
+        try:
+            base = parse_reference(f"{book_name} {c1}:1")
+        except Exception:
+            return None
+        return {
+            'book': base['book'],
+            'chapter_start': int(c1),
+            'verse_start': int(v1),
+            'chapter_end': int(c2),
+            'verse_end': int(v2),
+        }
     # Extract book name (everything before the first digit), then the first number,
     # then optional verse range OR chapter range.
     m = re.match(r'^(.+?)\s+(\d+)(?::(\d+)(?:-(\d+))?|(?:-(\d+)))?$', part)
