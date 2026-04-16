@@ -85,6 +85,11 @@ def _current_sermon_section(ctx: dict) -> str:
         parts.append(f"Preached: {ctx['preach_date']}")
     if 'linked_session_id' in ctx:
         parts.append(f"Linked prep session: #{ctx['linked_session_id']}")
+    if ctx.get('transcript'):
+        transcript = ctx['transcript']
+        if len(transcript) > 50000:
+            transcript = transcript[:50000] + '\n\n[... transcript truncated at 50K chars — use get_transcript_excerpt tool for later sections]'
+        parts.append(f"\n## Full Transcript\n\n{transcript}")
     return '\n'.join(parts)
 
 
@@ -133,8 +138,8 @@ TOOL_DEFINITIONS = [
         },
     },
     {
-        'name': 'get_transcript_full',
-        'description': 'Fetch raw transcript text. Optionally slice by seconds.',
+        'name': 'get_transcript_excerpt',
+        'description': 'Extract a time-sliced excerpt from the transcript by start/end seconds. The full transcript is already in your system prompt — use this only when you need a precise time-bounded slice (e.g. around a flagged moment).',
         'input_schema': {
             'type': 'object',
             'properties': {
@@ -142,7 +147,7 @@ TOOL_DEFINITIONS = [
                 'start_sec': {'type': 'integer'},
                 'end_sec': {'type': 'integer'},
             },
-            'required': ['sermon_id'],
+            'required': ['sermon_id', 'start_sec', 'end_sec'],
         },
     },
     {
@@ -181,11 +186,11 @@ def execute_tool(tool_name: str, tool_input: dict, session_context: dict) -> dic
             return get_sermon_review(db, tool_input['sermon_id']) or {'error': 'not found'}
         if tool_name == 'get_sermon_flags':
             return {'flags': get_sermon_flags(db, tool_input['sermon_id'])}
-        if tool_name == 'get_transcript_full':
+        if tool_name == 'get_transcript_excerpt':
             return {'transcript': get_transcript_full(
                 db, tool_input['sermon_id'],
-                start_sec=tool_input.get('start_sec'),
-                end_sec=tool_input.get('end_sec'),
+                start_sec=tool_input['start_sec'],
+                end_sec=tool_input['end_sec'],
             )}
         if tool_name == 'get_prep_session_full':
             prep = get_prep_session_full(db, tool_input['sermon_id'])
@@ -211,7 +216,7 @@ def stream_coach_response(db, sermon_id: int, conversation_id: int,
     """Generator that streams coach output events and persists messages."""
     conn = db._conn()
     sermon_row = conn.execute("""
-        SELECT id, bible_text_raw, preach_date, duration_seconds
+        SELECT id, bible_text_raw, preach_date, duration_seconds, transcript_text
         FROM sermons WHERE id = ?
     """, (sermon_id,)).fetchone()
     conn.close()
@@ -234,6 +239,7 @@ def stream_coach_response(db, sermon_id: int, conversation_id: int,
         'passage': sermon_row[1],
         'preach_date': sermon_row[2],
         'duration_sec': sermon_row[3] or 0,
+        'transcript': sermon_row[4],
     }
     system = build_system_prompt(sermon_context, review, patterns['corpus_gate_status'])
 

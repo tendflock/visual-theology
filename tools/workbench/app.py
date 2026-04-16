@@ -1613,6 +1613,23 @@ def sermon_sync_log_page():
                              runs=[dict(r) for r in runs], cost_30d=cost_total)
 
 
+@sermons_bp.route('/<int:sermon_id>/coach/history', methods=['GET'])
+def sermon_coach_history(sermon_id):
+    db = get_db()
+    try:
+        conversation_id = int(request.args.get('conversation_id', 1))
+    except (ValueError, TypeError):
+        conversation_id = 1
+    conn = db._conn()
+    rows = conn.execute("""
+        SELECT role, content FROM sermon_coach_messages
+        WHERE sermon_id = ? AND conversation_id = ? AND role IN ('user', 'assistant')
+        ORDER BY id
+    """, (sermon_id, conversation_id)).fetchall()
+    conn.close()
+    return jsonify([{'role': r[0], 'content': r[1]} for r in rows if r[1]])
+
+
 @sermons_bp.route('/<int:sermon_id>/coach/message', methods=['POST'])
 def sermon_coach_message(sermon_id):
     import json as _json

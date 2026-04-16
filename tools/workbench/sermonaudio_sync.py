@@ -373,14 +373,28 @@ class SermonAudioAPIClient:
 
     def list_sermons_updated_since(self, broadcaster_id, since=None, limit=100):
         from sermonaudio.node.requests import Node
-        kwargs = {'broadcaster_id': broadcaster_id, 'page_size': limit}
+        page_size = min(limit, 100)
+        kwargs = {'broadcaster_id': broadcaster_id, 'page_size': page_size}
         if since:
             kwargs['updated_since'] = since
-        try:
-            result = Node.get_sermons(**kwargs)
-        except TypeError:
-            result = Node.get_sermons(broadcaster_id=broadcaster_id, page_size=limit)
-        return list(getattr(result, 'results', result) or [])
+        all_results = []
+        page = 1
+        while len(all_results) < limit:
+            kwargs['page'] = page
+            try:
+                result = Node.get_sermons(**kwargs)
+            except TypeError:
+                fallback = {'broadcaster_id': broadcaster_id,
+                            'page_size': page_size, 'page': page}
+                if since:
+                    fallback['updated_since'] = since
+                result = Node.get_sermons(**fallback)
+            batch = list(getattr(result, 'results', result) or [])
+            all_results.extend(batch)
+            if len(batch) < page_size or not getattr(result, 'next_url', None):
+                break
+            page += 1
+        return all_results[:limit]
 
     def get_sermon_detail(self, sermon_id):
         from sermonaudio.node.requests import Node

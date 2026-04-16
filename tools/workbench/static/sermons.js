@@ -8,6 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const sermonId = form.dataset.sermonId;
   let conversationId = 1;
 
+  // Load existing chat history on page load (disable form until loaded to prevent race)
+  const submitBtn = form.querySelector('button[type=submit]');
+  submitBtn.disabled = true;
+  fetch(`/sermons/${sermonId}/coach/history?conversation_id=${conversationId}`)
+    .then(r => r.json())
+    .then(messages => {
+      for (const msg of messages) {
+        appendMessage(msg.role, msg.content);
+      }
+    })
+    .catch(err => console.error('Failed to load coach history:', err))
+    .finally(() => { submitBtn.disabled = false; });
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const textarea = form.querySelector('textarea[name=message]');

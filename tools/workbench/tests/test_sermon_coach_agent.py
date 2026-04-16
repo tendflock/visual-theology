@@ -68,7 +68,7 @@ def test_tool_definitions_list_all_read_tools():
     names = {t['name'] for t in TOOL_DEFINITIONS}
     assert 'get_sermon_review' in names
     assert 'get_sermon_flags' in names
-    assert 'get_transcript_full' in names
+    assert 'get_transcript_excerpt' in names
     assert 'get_prep_session_full' in names
     assert 'pull_historical_sermons' in names
     assert 'get_sermon_patterns' in names
