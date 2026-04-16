@@ -1506,6 +1506,51 @@ def sermon_backfill():
     return jsonify(result), 202
 
 
+@sermons_bp.route('/backfill-srt', methods=['POST'])
+def sermon_backfill_srt():
+    """Re-fetch SRT for all sermons and populate transcript_segments."""
+    import json as _json
+    from srt_parser import parse_srt_segments, validate_segments, build_canonical_transcript
+    from sermonaudio_sync import _fetch_srt_raw
+    db = get_db()
+    conn = db._conn()
+    rows = conn.execute("""
+        SELECT id, sermonaudio_id, duration_seconds FROM sermons
+        WHERE classified_as = 'sermon' AND transcript_segments IS NULL
+    """).fetchall()
+
+    results = {'total': len(rows), 'updated': 0, 'failed': 0, 'no_srt': 0}
+    for row in rows:
+        sermon_id, sa_id, duration = row[0], row[1], row[2] or 0
+        try:
+            from sermonaudio.node.requests import Node
+            detail = Node.get_sermon(sa_id)
+            caption = detail.media.caption[0] if detail.media and detail.media.caption else None
+            if not caption or not caption.download_url:
+                results['no_srt'] += 1
+                continue
+            srt_raw = _fetch_srt_raw(caption.download_url)
+            if not srt_raw:
+                results['no_srt'] += 1
+                continue
+            segments = parse_srt_segments(srt_raw)
+            if not segments:
+                results['failed'] += 1
+                continue
+            quality = validate_segments(segments, duration)
+            canonical = build_canonical_transcript(segments)
+            conn.execute("""
+                UPDATE sermons SET transcript_segments = ?, transcript_quality = ?,
+                    transcript_text = ? WHERE id = ?
+            """, (_json.dumps(segments), quality, canonical, sermon_id))
+            conn.commit()
+            results['updated'] += 1
+        except Exception as e:
+            results['failed'] += 1
+    conn.close()
+    return jsonify(results)
+
+
 @sermons_bp.route('/<int:sermon_id>/reanalyze', methods=['POST'])
 def sermon_reanalyze(sermon_id):
     from sermon_analyzer import analyze_sermon

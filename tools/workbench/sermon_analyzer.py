@@ -35,6 +35,7 @@ class AnalyzerInput:
     planned_duration_sec: Optional[int]
     outline_points: list = field(default_factory=list)
     bible_text_raw: str = ''
+    srt_segments: list = field(default=None)
 
 
 @dataclass(frozen=True)
@@ -52,7 +53,11 @@ class PureStageOutput:
 
 def run_pure_stages(inp: AnalyzerInput) -> PureStageOutput:
     """Stages 1-4: segment, align, timing, density. Pure and cheap."""
-    segments = segment_transcript(inp.transcript_text, inp.duration_sec)
+    if inp.srt_segments:
+        from srt_parser import coarsen_srt_segments
+        segments = coarsen_srt_segments(inp.srt_segments, inp.duration_sec)
+    else:
+        segments = segment_transcript(inp.transcript_text, inp.duration_sec)
     aligned = align_segments_to_outline(segments, inp.outline_points) if inp.outline_points else segments
     section_timings = compute_section_timings(aligned)
     density_hotspots = detect_density_hotspots(aligned)
@@ -245,11 +250,13 @@ def estimate_cost_usd(model: str, input_tokens: int, output_tokens: int) -> floa
 
 def _load_analyzer_input(conn, sermon_id: int) -> AnalyzerInput:
     row = conn.execute("""
-        SELECT id, transcript_text, duration_seconds, bible_text_raw
+        SELECT id, transcript_text, duration_seconds, bible_text_raw, transcript_segments
         FROM sermons WHERE id = ?
     """, (sermon_id,)).fetchone()
     if not row or not row[1]:
         raise ValueError(f"sermon {sermon_id} has no transcript")
+    srt_json = row[4]
+    srt_segments = json.loads(srt_json) if srt_json else None
 
     link_row = conn.execute("""
         SELECT s.id FROM sermon_links sl
@@ -277,6 +284,7 @@ def _load_analyzer_input(conn, sermon_id: int) -> AnalyzerInput:
         planned_duration_sec=planned_duration_sec,
         outline_points=outline_points,
         bible_text_raw=row[3] or '',
+        srt_segments=srt_segments,
     )
 
 
