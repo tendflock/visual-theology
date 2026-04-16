@@ -64,12 +64,16 @@ _scheduler = None
 
 
 def _scheduled_sermon_sync():
-    """The 4h cron body. Swallows exceptions so a bad run doesn't kill the scheduler."""
+    """The 4h cron body. Sync then analyze any pending sermons."""
     try:
         from sermonaudio_sync import run_sync
+        from sermon_analyzer import dispatch_pending_analyses
+        from llm_client import AnthropicClient
         db = get_db()
         run_sync(db, client=_make_sermonaudio_client(),
                  broadcaster_id=_broadcaster_id(), trigger='cron')
+        client = AnthropicClient(api_key=anthropic_api_key())
+        dispatch_pending_analyses(db, llm_client=client)
     except Exception as e:
         app.logger.error(f'Scheduled sermon sync failed: {e}')
 
@@ -1154,12 +1158,70 @@ def study_card_autosave(session_id):
     return jsonify({"ok": True})
 
 
+def _lookup_lexicon_gloss(lemma, is_nt=True):
+    """Look up a short English gloss from BDAG (NT) or BDB/HALOT (OT).
+
+    Tries the lemma as-is, then with middle→active form for Greek deponents.
+    Caches the result in the MorphGNT glosses table for future lookups.
+    Returns the gloss string or None.
+    """
+    from resource_index import ResourceIndex
+    from morphgnt_cache import _extract_gloss_from_bdag, _normalize_greek
+
+    idx_path = os.path.join(os.path.dirname(__file__), '..', 'resource_index.db')
+    idx = ResourceIndex(idx_path)
+    lemma_nfc = _normalize_greek(lemma)
+
+    if is_nt:
+        resources = [("BDAG.logos4", _extract_gloss_from_bdag)]
+    else:
+        resources = [
+            ("BDB.logos4", _extract_gloss_from_bdag),
+            ("HAL.logos4", _extract_gloss_from_bdag),
+        ]
+
+    for res_file, extractor in resources:
+        # Try exact lemma
+        results = idx.lookup(lemma_nfc, res_file, limit=1)
+
+        # For Greek: try active form if middle/passive lemma didn't match
+        if not results and lemma_nfc.endswith("ομαι"):
+            results = idx.lookup(lemma_nfc[:-4] + "ω", res_file, limit=1)
+        if not results and lemma_nfc.endswith("μαι"):
+            results = idx.lookup(lemma_nfc[:-3] + "μι", res_file, limit=1)
+
+        if not results or results[0].get("score", 0) < 80:
+            continue
+
+        text = read_article_text(res_file, results[0]["article_num"], max_chars=800)
+        gloss = extractor(text)
+        if gloss:
+            # Cache for next time
+            try:
+                from morphgnt_cache import get_cache, _normalize_greek as _nfcg
+                import sqlite3
+                cache = get_cache()
+                conn = cache._get_conn()
+                if conn:
+                    conn.execute(
+                        "INSERT OR IGNORE INTO glosses VALUES (?,?,?)",
+                        (_nfcg(lemma), gloss, "bdag-live"),
+                    )
+                    conn.commit()
+            except Exception:
+                pass
+            return gloss
+
+    return None
+
+
 @app.route("/study/session/<int:session_id>/word-info", methods=["POST"])
 def study_word_info(session_id):
     """Get parsing info for a Greek/Hebrew word.
 
-    Uses MorphGNT cache for NT words (free, authoritative).
-    Falls back to Claude Haiku for OT words or cache misses.
+    Uses MorphGNT cache for NT words (authoritative parsing).
+    Looks up BDAG/BDB/HALOT from the library for glosses.
+    Falls back to Claude Haiku only as last resort.
     """
     data = request.get_json() or {}
     word = data.get("word", "").strip()
@@ -1173,30 +1235,38 @@ def study_word_info(session_id):
     book = session.get("book", 66)
     is_nt = book >= 40
 
-    # Try MorphGNT cache first for NT words
+    morphgnt_result = None
+
+    # Try MorphGNT cache first for NT words (authoritative parsing)
     if is_nt:
         from morphgnt_cache import get_cache
         cache = get_cache()
-        result = cache.lookup_word(
+        morphgnt_result = cache.lookup_word(
             word,
             book=book,
             chapter=session.get("chapter"),
             verse=session.get("verse_start"),
         )
-        if not result:
-            # Broaden search: same book, any verse
-            result = cache.lookup_word(word, book=book)
-        if not result:
-            # Broadest: any NT book
-            result = cache.lookup_word(word)
-        if result:
-            return jsonify({
-                "lemma": result["lemma"],
-                "gloss": result.get("gloss", ""),
-                "parsing": result["parsing_human"],
-                "root": result["lemma"],
-                "source": "morphgnt",
-            })
+        if not morphgnt_result:
+            morphgnt_result = cache.lookup_word(word, book=book)
+        if not morphgnt_result:
+            morphgnt_result = cache.lookup_word(word)
+
+    if morphgnt_result:
+        gloss = morphgnt_result.get("gloss", "")
+        lemma = morphgnt_result["lemma"]
+
+        # If no cached gloss, look it up live from BDAG
+        if not gloss:
+            gloss = _lookup_lexicon_gloss(lemma, is_nt=True) or ""
+
+        return jsonify({
+            "lemma": lemma,
+            "gloss": gloss,
+            "parsing": morphgnt_result["parsing_human"],
+            "root": lemma,
+            "source": "morphgnt",
+        })
 
     # Fall back to Haiku for OT words or MorphGNT misses
     lang = "Greek" if is_nt else "Hebrew"
@@ -1406,23 +1476,33 @@ def _broadcaster_id() -> str:
 @sermons_bp.route('/sync', methods=['POST'])
 def sermon_sync():
     from sermonaudio_sync import run_sync
+    from sermon_analyzer import dispatch_pending_analyses
+    from llm_client import AnthropicClient
     db = get_db()
     result = run_sync(db, client=_make_sermonaudio_client(),
                       broadcaster_id=_broadcaster_id(), trigger='manual')
     if result is None:
         return jsonify({'error': 'sync already running'}), 409
+    client = AnthropicClient(api_key=anthropic_api_key())
+    analyzed = dispatch_pending_analyses(db, llm_client=client)
+    result['sermons_analyzed'] = analyzed
     return jsonify(result), 202
 
 
 @sermons_bp.route('/backfill', methods=['POST'])
 def sermon_backfill():
     from sermonaudio_sync import run_sync
+    from sermon_analyzer import dispatch_pending_analyses
+    from llm_client import AnthropicClient
     limit = int(request.args.get('limit', 24))
     db = get_db()
     result = run_sync(db, client=_make_sermonaudio_client(),
                       broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit)
     if result is None:
         return jsonify({'error': 'sync already running'}), 409
+    client = AnthropicClient(api_key=anthropic_api_key())
+    analyzed = dispatch_pending_analyses(db, llm_client=client)
+    result['sermons_analyzed'] = analyzed
     return jsonify(result), 202
 
 
