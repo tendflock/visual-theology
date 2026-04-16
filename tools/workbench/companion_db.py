@@ -310,6 +310,11 @@ class CompanionDB:
         existing_session_cols = {r[1] for r in conn.execute("PRAGMA table_info(sessions)").fetchall()}
         if 'last_homiletical_activity_at' not in existing_session_cols:
             conn.execute("ALTER TABLE sessions ADD COLUMN last_homiletical_activity_at TEXT")
+        existing_sermon_cols = {r[1] for r in conn.execute("PRAGMA table_info(sermons)").fetchall()}
+        if 'transcript_segments' not in existing_sermon_cols:
+            conn.execute("ALTER TABLE sermons ADD COLUMN transcript_segments TEXT")
+        if 'transcript_quality' not in existing_sermon_cols:
+            conn.execute("ALTER TABLE sermons ADD COLUMN transcript_quality TEXT CHECK (transcript_quality IN ('good', 'degraded'))")
         conn.commit()
         conn.close()
 
@@ -489,6 +494,17 @@ class CompanionDB:
         conn = self._conn()
         conn.execute("DELETE FROM outline_nodes WHERE parent_id = ?", (node_id,))
         conn.execute("DELETE FROM outline_nodes WHERE id = ?", (node_id,))
+        conn.commit()
+        conn.close()
+
+    def delete_session(self, session_id):
+        conn = self._conn()
+        conn.execute("DELETE FROM card_notepads WHERE session_id = ?", (session_id,))
+        conn.execute("DELETE FROM card_annotations WHERE session_id = ?", (session_id,))
+        conn.execute("DELETE FROM outline_nodes WHERE session_id = ?", (session_id,))
+        conn.execute("DELETE FROM conversation_messages WHERE session_id = ?", (session_id,))
+        conn.execute("DELETE FROM card_responses WHERE session_id = ?", (session_id,))
+        conn.execute("DELETE FROM sessions WHERE id = ?", (session_id,))
         conn.commit()
         conn.close()
 

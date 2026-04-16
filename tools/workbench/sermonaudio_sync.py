@@ -24,6 +24,31 @@ SERMON_EVENT_TYPES = frozenset({'Sunday Service'})
 DEVOTIONAL_EVENT_TYPES = frozenset({'Devotional', 'Daily Devotional'})
 
 
+def _fetch_srt_raw(url: str) -> Optional[str]:
+    """Download raw SRT caption file text."""
+    try:
+        import sermonaudio
+        resp = sermonaudio._session.get(url, timeout=30)
+        return resp.text if resp.ok else None
+    except Exception:
+        return None
+
+
+def _strip_srt_to_text(raw: str) -> Optional[str]:
+    """Strip timestamps and sequence numbers from raw SRT text to plain text."""
+    lines = []
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line.isdigit():
+            continue
+        if re.match(r'\d{2}:\d{2}:\d{2}', line):
+            continue
+        lines.append(line)
+    return ' '.join(lines) if lines else None
+
+
 def _fetch_srt_as_text(url: str) -> Optional[str]:
     """Download an SRT caption file and strip timestamps to plain text.
 
@@ -35,30 +60,37 @@ def _fetch_srt_as_text(url: str) -> Optional[str]:
         resp = sermonaudio._session.get(url, timeout=30)
         if not resp.ok:
             return None
-        raw = resp.text
-        lines = []
-        for line in raw.splitlines():
-            line = line.strip()
-            if not line:
-                continue
-            if line.isdigit():
-                continue
-            if re.match(r'\d{2}:\d{2}:\d{2}', line):
-                continue
-            lines.append(line)
-        return ' '.join(lines) if lines else None
+        return _strip_srt_to_text(resp.text)
     except Exception:
         return None
 
 
 def normalize_remote(sermon) -> SimpleNamespace:
     """Convert a sermonaudio Sermon model object to the flat shape our code expects."""
+    from srt_parser import parse_srt_segments, build_canonical_transcript, validate_segments
+
     audio = sermon.media.audio[0] if getattr(sermon, 'media', None) and sermon.media.audio else None
     caption = sermon.media.caption[0] if getattr(sermon, 'media', None) and sermon.media.caption else None
 
     transcript = None
+    srt_segments = None
+    srt_quality = None
+
     if caption and caption.download_url:
-        transcript = _fetch_srt_as_text(caption.download_url)
+        raw_srt = _fetch_srt_raw(caption.download_url)
+        if raw_srt:
+            segments = parse_srt_segments(raw_srt)
+            if segments:
+                transcript = build_canonical_transcript(segments)
+                duration_sec = audio.duration if audio else 0
+                srt_quality = validate_segments(segments, duration_sec)
+                srt_segments = json.dumps(segments)
+            else:
+                # SRT parsing failed — fall back to text stripping
+                transcript = _strip_srt_to_text(raw_srt)
+        else:
+            # Raw fetch failed — try the old authenticated text fetch
+            transcript = _fetch_srt_as_text(caption.download_url)
 
     event_type = getattr(sermon.event_type, 'value', str(sermon.event_type)) if sermon.event_type else None
 
@@ -75,6 +107,8 @@ def normalize_remote(sermon) -> SimpleNamespace:
         bible_text=sermon.bible_text,
         audio_url=audio.stream_url if audio else None,
         transcript=transcript,
+        srt_segments=srt_segments,
+        srt_quality=srt_quality,
         update_date=sermon.update_date,
     )
 
@@ -192,11 +226,13 @@ def upsert_sermon(conn, sermon_remote) -> str:
                 preach_date, publish_date, duration_seconds,
                 bible_text_raw, book, chapter, verse_start, verse_end,
                 audio_url, transcript_text, transcript_source,
+                transcript_segments, transcript_quality,
                 sermon_type, classified_as, classification_reason,
                 metadata_hash, transcript_hash, source_version, remote_updated_at,
                 sync_status, last_state_change_at,
                 first_synced_at, last_synced_at, created_at, updated_at
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+                      ?, ?,
                       'expository', ?, ?, ?, ?, 1, ?,
                       CASE WHEN ? IS NOT NULL THEN 'transcript_ready' ELSE 'synced_metadata' END,
                       ?, ?, ?, ?, ?)
@@ -216,6 +252,8 @@ def upsert_sermon(conn, sermon_remote) -> str:
             getattr(sermon_remote, 'audio_url', None),
             getattr(sermon_remote, 'transcript', None),
             'sermonaudio',
+            getattr(sermon_remote, 'srt_segments', None),
+            getattr(sermon_remote, 'srt_quality', None),
             classified_as, reason,
             new_meta, new_tx,
             str(getattr(sermon_remote, 'update_date', None)),
@@ -254,6 +292,7 @@ def upsert_sermon(conn, sermon_remote) -> str:
             preach_date = ?, publish_date = ?, duration_seconds = ?,
             bible_text_raw = ?, book = ?, chapter = ?, verse_start = ?, verse_end = ?,
             audio_url = ?, transcript_text = ?,
+            transcript_segments = ?, transcript_quality = ?,
             classified_as = ?, classification_reason = ?,
             metadata_hash = ?, transcript_hash = ?, source_version = ?, remote_updated_at = ?,
             sync_status = ?, last_state_change_at = ?, last_synced_at = ?, updated_at = ?
@@ -271,6 +310,8 @@ def upsert_sermon(conn, sermon_remote) -> str:
         passage_fields['verse_start'], passage_fields['verse_end'],
         getattr(sermon_remote, 'audio_url', None),
         getattr(sermon_remote, 'transcript', None),
+        getattr(sermon_remote, 'srt_segments', None),
+        getattr(sermon_remote, 'srt_quality', None),
         classified_as, reason,
         new_meta, new_tx, new_version,
         str(getattr(sermon_remote, 'update_date', None)),
