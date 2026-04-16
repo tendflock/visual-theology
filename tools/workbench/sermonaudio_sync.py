@@ -87,14 +87,17 @@ def classify(sermon_remote) -> tuple[str, str]:
     if speaker != BRYAN_SPEAKER_NAME:
         return ('skipped', f'speaker={speaker!r}')
 
+    dur_sec = getattr(sermon_remote, 'duration', 0) or 0
+    dur_min = dur_sec / 60
+
     if event_type in SERMON_EVENT_TYPES:
+        if dur_min < 20:
+            return ('skipped', f'eventType={event_type} but only {int(dur_min)}min')
         return ('sermon', f'eventType={event_type}')
     if event_type in DEVOTIONAL_EVENT_TYPES:
         return ('skipped', f'eventType={event_type}')
 
     pdate = getattr(sermon_remote, 'preach_date', None)
-    dur_sec = getattr(sermon_remote, 'duration', 0) or 0
-    dur_min = dur_sec / 60
     if pdate and hasattr(pdate, 'weekday') and pdate.weekday() == 6 and dur_min > 20:
         return ('sermon', f'heuristic: Sunday + {int(dur_min)}min')
 
