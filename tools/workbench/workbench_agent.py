@@ -21,6 +21,7 @@ sys.path.insert(0, str(TOOLS_DIR))
 from sermon_agent import TOOL_DEFINITIONS, execute_tool
 from study import init_batch_reader, shutdown_batch_reader
 import workbench_db as db
+from app_secrets import anthropic_api_key
 
 try:
     import anthropic
@@ -328,7 +329,7 @@ def stream_agent_response(project_id, user_message, model="claude-sonnet-4-20250
         yield _sse({"type": "error", "message": "anthropic package not installed"})
         return
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = anthropic_api_key()
     if not api_key:
         yield _sse({"type": "error", "message": "ANTHROPIC_API_KEY not set"})
         return

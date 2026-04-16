@@ -1,0 +1,30 @@
+{% if linked_sermon %}
+<div id="review-tab" class="study-tab">
+  <header class="review-header">
+    <h2>Sunday review</h2>
+    <a href="/sermons/{{ linked_sermon.id }}">Open full review &rarr;</a>
+  </header>
+
+  {% if candidates %}
+    {% include 'partials/sermon_candidates_list.html' %}
+  {% endif %}
+
+  {% set sermon = linked_sermon %}
+  {% if review %}
+    {% include 'partials/sermon_impact_card.html' %}
+    {% include 'partials/sermon_faithfulness_card.html' %}
+    {% include 'partials/sermon_diagnostic_card.html' %}
+    {% include 'partials/sermon_prescription_card.html' %}
+    {% include 'partials/sermon_flag_list.html' %}
+  {% else %}
+    <div class="state-message">Review not ready yet ({{ linked_sermon.sync_status }}).</div>
+  {% endif %}
+
+  {% include 'partials/sermon_coach_chat.html' %}
+</div>
+{% elif candidates %}
+<div id="review-tab" class="study-tab">
+  {% set sermon = None %}
+  {% include 'partials/sermon_candidates_list.html' %}
+</div>
+{% endif %}

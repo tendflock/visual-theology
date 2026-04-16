@@ -18,6 +18,9 @@
                 <span class="phase-divider"></span>
                 <span class="phase-dot {% if mode == 'conversation' %}current{% else %}future{% endif %}"></span>
             </div>
+            {% if linked_sermon or candidates %}
+            <button type="button" class="tab-button" data-tab="review" onclick="document.getElementById('review-tab').scrollIntoView({behavior:'smooth'})">Review{% if linked_sermon and linked_sermon.ui_last_seen_version < linked_sermon.source_version %}<span class="tab-badge">&bull;</span>{% endif %}</button>
+            {% endif %}
             <span id="session-clock" onclick="studyClock.toggle()" title="Click to pause/resume">0m</span>
         </div>
 
@@ -43,6 +46,10 @@
                     <button id="btn-study-send">Send</button>
                 </div>
             </div>
+            {% endif %}
+
+            {% if linked_sermon or candidates %}
+            {% include 'partials/sermon_review_tab.html' %}
             {% endif %}
 
             <div id="outline-sidebar">

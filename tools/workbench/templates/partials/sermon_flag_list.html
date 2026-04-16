@@ -1,0 +1,19 @@
+{% if flags %}
+<div class="sermon-card sermon-card-flags">
+  <h2>Flagged Moments</h2>
+  <ul class="flag-list">
+    {% for flag in flags %}
+      <li class="flag flag-{{ flag.severity }}" data-flag-id="{{ flag.id }}">
+        <span class="flag-type">{{ flag.flag_type|replace('_', ' ') }}</span>
+        {% if flag.transcript_start_sec is not none %}
+          <span class="flag-timestamp">@ {{ flag.transcript_start_sec // 60 }}:{{ '%02d' % (flag.transcript_start_sec % 60) }}</span>
+        {% endif %}
+        <div class="flag-rationale">{{ flag.rationale }}</div>
+        {% if flag.excerpt %}
+          <blockquote class="flag-excerpt">"{{ flag.excerpt }}"</blockquote>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

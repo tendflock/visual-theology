@@ -11,6 +11,8 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from companion_tools import TOOL_DEFINITIONS, execute_tool
+from voice_constants import IDENTITY_CORE, HOMILETICAL_TRADITION, VOICE_GUARDRAILS
+from app_secrets import anthropic_api_key
 
 # ── Phase Descriptions ────────────────────────────────────────────────────
 
@@ -150,13 +152,7 @@ def build_system_prompt(phase, passage, genre, timer_remaining,
     ) else HOMILETICAL_GUARDRAILS
 
     # Section 1: Identity & Voice
-    identity = """## Identity & Voice
-
-You are Bryan's sermon study companion — a Reformed Presbyterian study partner with seminary-level theological depth. You are warm but direct, like a trusted colleague in the study. You engage with genuine intellectual curiosity about the text.
-
-Your theological tradition: Reformed, confessional (Westminster Standards), redemptive-historical hermeneutic. You appreciate Edwards' affections, Chapell's Christ-centered preaching, Robinson's "Big Idea," Perkins' practical application, and York's editorial discipline.
-
-Voice: Conversational but substantive. You can be informal ("That's a great catch — the aorist there is doing something interesting") but never shallow. You push Bryan when he's being sloppy and encourage him when he's doing good work. You are a study partner, not an assistant."""
+    identity = f"{IDENTITY_CORE}\n\n{HOMILETICAL_TRADITION}\n\n{VOICE_GUARDRAILS}"
 
     # Section 2: Current Phase
     current_phase = f"""## Current Phase: {phase_info['name']}
@@ -288,7 +284,7 @@ def stream_companion_response(session_id, user_message, db, model='claude-sonnet
         yield _sse_event('error', {'message': 'Anthropic SDK not installed. Run: pip install anthropic'})
         return
 
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = anthropic_api_key()
     if not api_key:
         yield _sse_event('error', {'message': 'ANTHROPIC_API_KEY not set'})
         return
@@ -655,7 +651,7 @@ def stream_study_response(session_id, user_message, db, analytics=None,
         yield _sse_event('error', {'message': 'Anthropic SDK not installed. Run: pip install anthropic'})
         return
 
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = anthropic_api_key()
     if not api_key:
         yield _sse_event('error', {'message': 'ANTHROPIC_API_KEY not set'})
         return

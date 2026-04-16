@@ -42,3 +42,6 @@ Thumbs.db
 *~
 tools/word_number_cache.db
 tools/resource_index.db
+
+# Sync orchestrator file lock
+tools/workbench/.sermon_sync.lock

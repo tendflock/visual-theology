@@ -249,6 +249,93 @@ def parse_reference(ref_str):
     }
 
 
+def parse_reference_multi(ref_str):
+    """Parse a reference string that may contain multiple ranges.
+
+    Returns a list of dicts, each with:
+        book, chapter_start, verse_start, chapter_end, verse_end, raw_text
+
+    Handles:
+      - Single range: "Romans 8:1-11" -> 1 row
+      - Multi-range: "Romans 8:1-11; Romans 9:1-5" -> 2 rows
+      - Chapter span: "Psalm 1-2" -> 1 row, chapter_start=1, chapter_end=2, verses=None
+      - Whole chapter: "Romans 8" -> 1 row, verses=None
+      - Unparseable: returns []
+    """
+    if not ref_str or not isinstance(ref_str, str):
+        return []
+
+    parts = [p.strip() for p in ref_str.split(';') if p.strip()]
+    results = []
+    for part in parts:
+        for sub in _expand_comma_verses(part):
+            parsed = _parse_single_range(sub)
+            if parsed:
+                parsed['raw_text'] = sub
+                results.append(parsed)
+    return results
+
+
+def _expand_comma_verses(segment):
+    """Expand 'Romans 8:1-11,16' into ['Romans 8:1-11', 'Romans 8:16'].
+
+    If the segment has a colon and the after-colon portion contains commas,
+    split into multiple segments sharing the same book+chapter prefix.
+    """
+    m = re.match(r'^(.+?\s+\d+:)(\S+)$', segment)
+    if not m:
+        return [segment]
+    prefix, after = m.groups()
+    if ',' not in after:
+        return [segment]
+    parts = [p.strip() for p in after.split(',') if p.strip()]
+    return [f"{prefix}{p}" for p in parts]
+
+
+def _parse_single_range(part):
+    """Parse one range segment. Returns dict or None."""
+    # Extract book name (everything before the first digit), then the first number,
+    # then optional verse range OR chapter range.
+    m = re.match(r'^(.+?)\s+(\d+)(?::(\d+)(?:-(\d+))?|(?:-(\d+)))?$', part)
+    if not m:
+        return None
+    book_name, first_num, v_start, v_end, chap_end = m.groups()
+    try:
+        base = parse_reference(f"{book_name} {first_num}:1")
+    except Exception:
+        return None
+    book = base['book']
+    chapter_start = int(first_num)
+    if v_start is not None:
+        # "Romans 8:1" or "Romans 8:1-11"
+        vs = int(v_start)
+        ve = int(v_end) if v_end else vs
+        return {
+            'book': book,
+            'chapter_start': chapter_start,
+            'verse_start': vs,
+            'chapter_end': chapter_start,
+            'verse_end': ve,
+        }
+    if chap_end is not None:
+        # "Psalm 1-2"
+        return {
+            'book': book,
+            'chapter_start': chapter_start,
+            'verse_start': None,
+            'chapter_end': int(chap_end),
+            'verse_end': None,
+        }
+    # "Romans 8" (whole chapter)
+    return {
+        'book': book,
+        'chapter_start': chapter_start,
+        'verse_start': None,
+        'chapter_end': chapter_start,
+        'verse_end': None,
+    }
+
+
 def ref_to_logos_superset_pattern(ref):
     """Convert parsed ref to SQL LIKE pattern for ReferenceSupersets matching."""
     return f"bible.{ref['book']}%"

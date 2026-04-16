@@ -34,7 +34,7 @@ if _env_file.exists():
 import bcrypt
 import sqlite3
 from functools import wraps
-from flask import Flask, Response, render_template, request, jsonify, redirect, url_for, session, make_response
+from flask import Flask, Response, render_template, request, jsonify, redirect, url_for, session, make_response, Blueprint, abort
 
 import workbench_db as db
 from workbench_agent import stream_agent_response, PHASES
@@ -51,6 +51,49 @@ from companion_agent import build_study_prompt, stream_study_response
 from session_analytics import SessionAnalytics
 from genre_map import get_genre
 from seed_questions import seed_question_bank
+from app_secrets import sermonaudio_api_key, sermonaudio_broadcaster_id, anthropic_api_key
+
+try:
+    from apscheduler.schedulers.background import BackgroundScheduler
+    from apscheduler.triggers.interval import IntervalTrigger
+    _APSCHEDULER_AVAILABLE = True
+except ImportError:
+    _APSCHEDULER_AVAILABLE = False
+
+_scheduler = None
+
+
+def _scheduled_sermon_sync():
+    """The 4h cron body. Swallows exceptions so a bad run doesn't kill the scheduler."""
+    try:
+        from sermonaudio_sync import run_sync
+        db = get_db()
+        run_sync(db, client=_make_sermonaudio_client(),
+                 broadcaster_id=_broadcaster_id(), trigger='cron')
+    except Exception as e:
+        app.logger.error(f'Scheduled sermon sync failed: {e}')
+
+
+def get_scheduler():
+    """Return the singleton background scheduler. Lazy-initializes on first call.
+
+    NOTE: Calling this starts a daemon thread. Production code should call this
+    from the __main__ block. Tests can call it to inspect job registration.
+    """
+    global _scheduler
+    if not _APSCHEDULER_AVAILABLE:
+        raise RuntimeError('apscheduler not installed')
+    if _scheduler is None:
+        _scheduler = BackgroundScheduler(daemon=True)
+        _scheduler.add_job(
+            _scheduled_sermon_sync,
+            IntervalTrigger(hours=4),
+            id='sermon_sync_cron',
+            replace_existing=True,
+        )
+        _scheduler.start()
+    return _scheduler
+
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(32).hex())
@@ -150,6 +193,28 @@ def safe_assistant_filter(content):
 
 companion_db = None
 study_analytics = None
+
+# Module-level cache for get_db() — tests reset this via `_db_instance = None`
+# to force re-creation after monkeypatching COMPANION_DB_PATH.
+_db_instance = None
+
+def get_db():
+    """Return a cached CompanionDB instance, honoring COMPANION_DB_PATH.
+
+    This is the entrypoint used by the sermons blueprint (and tests).
+    It lazily instantiates a CompanionDB the first time it's called (or
+    after `_db_instance` is reset to None). Existing routes continue to
+    use the module-level `companion_db` global initialized by startup().
+    """
+    global _db_instance
+    if _db_instance is None:
+        db_path = os.environ.get(
+            "COMPANION_DB_PATH",
+            str(TOOLS_DIR / "workbench" / "companion.db"),
+        )
+        _db_instance = CompanionDB(db_path)
+    return _db_instance
+
 
 def startup():
     db.init_db()
@@ -922,6 +987,36 @@ def study_session_view(session_id):
     if not session:
         return redirect(url_for("study_index"))
 
+    # Sermon-coach integration: is there a linked sermon for this session?
+    linked_sermon = None
+    review = None
+    candidates = []
+    conn = companion_db._conn()
+    try:
+        link_row = conn.execute("""
+            SELECT s.*
+            FROM sermons s
+            JOIN sermon_links sl ON sl.sermon_id = s.id
+            WHERE sl.session_id = ? AND sl.link_status = 'active'
+            LIMIT 1
+        """, (session_id,)).fetchone()
+        if link_row:
+            linked_sermon = dict(link_row)
+            from sermon_coach_tools import get_sermon_review as _get_review_parsed
+            review = _get_review_parsed(companion_db, linked_sermon['id'])
+        candidate_rows = conn.execute("""
+            SELECT sl.id, sl.sermon_id, sl.match_reason, s.title, s.bible_text_raw
+            FROM sermon_links sl
+            JOIN sermons s ON s.id = sl.sermon_id
+            WHERE sl.link_status = 'candidate'
+              AND s.id IN (
+                  SELECT sl2.sermon_id FROM sermon_links sl2 WHERE sl2.session_id = ?
+              )
+        """, (session_id,)).fetchall()
+        candidates = [dict(c) for c in candidate_rows]
+    finally:
+        conn.close()
+
     phase = session.get("current_phase", "prayer")
     card_phase_keys = [p["key"] for p in CARD_PHASES]
 
@@ -952,7 +1047,10 @@ def study_session_view(session_id):
                                annotations=annotations,
                                notepad=notepad,
                                messages=[],
-                               outline=companion_db.get_outline_tree(session_id))
+                               outline=companion_db.get_outline_tree(session_id),
+                               linked_sermon=linked_sermon,
+                               review=review,
+                               candidates=candidates)
     else:
         # Conversation mode (phase 6+)
         messages = companion_db.get_messages(session_id, limit=200)
@@ -966,7 +1064,10 @@ def study_session_view(session_id):
                                annotations=[],
                                notepad="",
                                messages=messages,
-                               outline=companion_db.get_outline_tree(session_id))
+                               outline=companion_db.get_outline_tree(session_id),
+                               linked_sermon=linked_sermon,
+                               review=review,
+                               candidates=candidates)
 
 
 @app.route("/study/session/<int:session_id>/discuss", methods=["POST"])
@@ -1101,7 +1202,7 @@ def study_word_info(session_id):
     lang = "Greek" if is_nt else "Hebrew"
     try:
         import anthropic
-        api_key = os.environ.get('ANTHROPIC_API_KEY')
+        api_key = anthropic_api_key()
         if not api_key:
             return jsonify({"error": "API key not set"}), 500
         client = anthropic.Anthropic(api_key=api_key)
@@ -1206,10 +1307,262 @@ def study_clock_update(session_id):
     return jsonify({"ok": True})
 
 
+# ── Sermons Blueprint ────────────────────────────────────────────────────
+
+sermons_bp = Blueprint('sermons', __name__, url_prefix='/sermons')
+
+
+@sermons_bp.route('/', methods=['GET'])
+def sermons_list():
+    db = get_db()
+    conn = db._conn()
+    rows = conn.execute("""
+        SELECT id, title, preach_date, duration_seconds, sync_status, match_status,
+               ui_last_seen_version, source_version
+        FROM sermons
+        WHERE classified_as = 'sermon' AND is_remote_deleted = 0
+        ORDER BY preach_date DESC
+        LIMIT 100
+    """).fetchall()
+    sermons = [dict(
+        id=r[0], title=r[1], preach_date=r[2], duration_seconds=r[3],
+        sync_status=r[4], match_status=r[5],
+        badge=(r[6] < r[7]),
+    ) for r in rows]
+    conn.close()
+    return render_template('sermons/list.html', sermons=sermons)
+
+
+@sermons_bp.route('/<int:sermon_id>', methods=['GET'])
+def sermon_detail(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    sermon_row = conn.execute("SELECT * FROM sermons WHERE id = ?", (sermon_id,)).fetchone()
+    if not sermon_row:
+        conn.close()
+        abort(404)
+    sermon = dict(sermon_row)
+
+    from sermon_coach_tools import get_sermon_review as _get_review_parsed
+    review = _get_review_parsed(db, sermon_id)
+
+    flags_rows = conn.execute("""
+        SELECT id, flag_type, severity, transcript_start_sec, transcript_end_sec,
+               section_label, excerpt, rationale
+        FROM sermon_flags WHERE sermon_id = ?
+        ORDER BY transcript_start_sec
+    """, (sermon_id,)).fetchall()
+    flags = [dict(r) for r in flags_rows]
+
+    candidates_rows = conn.execute("""
+        SELECT sl.id, sl.sermon_id, sl.session_id, sl.match_reason, s.passage_ref
+        FROM sermon_links sl
+        JOIN sessions s ON s.id = sl.session_id
+        WHERE sl.sermon_id = ? AND sl.link_status = 'candidate'
+    """, (sermon_id,)).fetchall()
+    candidates = [dict(r) for r in candidates_rows]
+
+    # Compare-and-set: only bump ui_last_seen_version if it's behind source_version
+    conn.execute("""
+        UPDATE sermons SET ui_last_seen_version = source_version
+        WHERE id = ? AND ui_last_seen_version < source_version
+    """, (sermon_id,))
+    conn.commit()
+    conn.close()
+
+    return render_template(
+        'sermons/detail.html',
+        sermon=sermon, review=review, flags=flags, candidates=candidates,
+    )
+
+
+@sermons_bp.route('/<int:sermon_id>/status', methods=['GET'])
+def sermon_status(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    row = conn.execute("""
+        SELECT sync_status, match_status, source_version, ui_last_seen_version
+        FROM sermons WHERE id = ?
+    """, (sermon_id,)).fetchone()
+    conn.close()
+    if not row:
+        abort(404)
+    return jsonify(dict(
+        sync_status=row[0], match_status=row[1],
+        source_version=row[2], ui_last_seen_version=row[3],
+    ))
+
+
+def _make_sermonaudio_client():
+    """Factory for the real API client. Tests monkeypatch this."""
+    from sermonaudio_sync import SermonAudioAPIClient
+    return SermonAudioAPIClient(sermonaudio_api_key())
+
+
+def _broadcaster_id() -> str:
+    return sermonaudio_broadcaster_id()
+
+
+@sermons_bp.route('/sync', methods=['POST'])
+def sermon_sync():
+    from sermonaudio_sync import run_sync
+    db = get_db()
+    result = run_sync(db, client=_make_sermonaudio_client(),
+                      broadcaster_id=_broadcaster_id(), trigger='manual')
+    if result is None:
+        return jsonify({'error': 'sync already running'}), 409
+    return jsonify(result), 202
+
+
+@sermons_bp.route('/backfill', methods=['POST'])
+def sermon_backfill():
+    from sermonaudio_sync import run_sync
+    limit = int(request.args.get('limit', 24))
+    db = get_db()
+    result = run_sync(db, client=_make_sermonaudio_client(),
+                      broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit)
+    if result is None:
+        return jsonify({'error': 'sync already running'}), 409
+    return jsonify(result), 202
+
+
+@sermons_bp.route('/<int:sermon_id>/reanalyze', methods=['POST'])
+def sermon_reanalyze(sermon_id):
+    from sermon_analyzer import analyze_sermon
+    from llm_client import AnthropicClient
+    db = get_db()
+    api_key = anthropic_api_key()
+    client = AnthropicClient(api_key=api_key)
+    conn = db._conn()
+    updated = conn.execute(
+        "UPDATE sermons SET sync_status = 'analysis_pending', last_state_change_at = datetime('now') "
+        "WHERE id = ? AND sync_status NOT IN ('analysis_pending', 'analysis_running')",
+        (sermon_id,),
+    ).rowcount
+    conn.commit()
+    conn.close()
+    if not updated:
+        return jsonify({'error': 'analysis already pending or running'}), 409
+    result = analyze_sermon(db, sermon_id, llm_client=client)
+    return jsonify(result)
+
+
+@sermons_bp.route('/<int:sermon_id>/link/<int:session_id>', methods=['POST'])
+def sermon_link(sermon_id, session_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute(
+        "UPDATE sermon_links SET link_status = 'rejected' WHERE sermon_id = ? AND link_status = 'active'",
+        (sermon_id,),
+    )
+    conn.execute("""
+        INSERT INTO sermon_links
+            (sermon_id, session_id, link_status, link_source, match_reason, created_at)
+        VALUES (?, ?, 'active', 'manual', 'user_linked', datetime('now'))
+    """, (sermon_id, session_id))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'matched', last_match_attempt_at = datetime('now') WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True, 'link_status': 'active', 'link_source': 'manual'})
+
+
+@sermons_bp.route('/<int:sermon_id>/unlink', methods=['POST'])
+def sermon_unlink(sermon_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute("""
+        UPDATE sermon_links SET link_status = 'rejected'
+        WHERE sermon_id = ? AND link_status = 'active'
+    """, (sermon_id,))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'rejected_all' WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True})
+
+
+@sermons_bp.route('/<int:sermon_id>/approve-candidate/<int:link_id>', methods=['POST'])
+def sermon_approve_candidate(sermon_id, link_id):
+    db = get_db()
+    conn = db._conn()
+    conn.execute(
+        "DELETE FROM sermon_links WHERE sermon_id = ? AND link_status = 'active'",
+        (sermon_id,),
+    )
+    conn.execute("""
+        UPDATE sermon_links SET link_status = 'active'
+        WHERE id = ? AND sermon_id = ?
+    """, (link_id, sermon_id))
+    conn.execute(
+        "UPDATE sermons SET match_status = 'matched' WHERE id = ?",
+        (sermon_id,),
+    )
+    conn.commit()
+    conn.close()
+    return jsonify({'ok': True})
+
+
+@sermons_bp.route('/patterns', methods=['GET'])
+def sermon_patterns():
+    from sermon_coach_tools import get_sermon_patterns
+    db = get_db()
+    data = get_sermon_patterns(db)
+    return render_template('sermons/patterns.html', patterns=data)
+
+
+@sermons_bp.route('/sync-log', methods=['GET'])
+def sermon_sync_log_page():
+    db = get_db()
+    conn = db._conn()
+    runs = conn.execute("""
+        SELECT run_id, trigger, started_at, ended_at, sermons_new, sermons_updated,
+               sermons_failed, status, error_summary
+        FROM sermon_sync_log
+        ORDER BY started_at DESC LIMIT 20
+    """).fetchall()
+    cost_total = conn.execute(
+        "SELECT COALESCE(SUM(estimated_cost_usd), 0) FROM sermon_analysis_cost_log WHERE called_at >= date('now','-30 days')"
+    ).fetchone()[0]
+    conn.close()
+    return render_template('sermons/sync_log.html',
+                             runs=[dict(r) for r in runs], cost_30d=cost_total)
+
+
+@sermons_bp.route('/<int:sermon_id>/coach/message', methods=['POST'])
+def sermon_coach_message(sermon_id):
+    import json as _json
+    from sermon_coach_agent import stream_coach_response
+    from llm_client import AnthropicClient
+    user_message = request.json.get('message') if request.is_json else request.form.get('message', '')
+    conversation_id = int(request.json.get('conversation_id', 1)) if request.is_json else 1
+    db = get_db()
+    api_key = anthropic_api_key()
+    client = AnthropicClient(api_key=api_key)
+
+    def generate():
+        for event in stream_coach_response(
+            db=db, sermon_id=sermon_id, conversation_id=conversation_id,
+            user_message=user_message, llm_client=client,
+        ):
+            yield f"data: {_json.dumps(event)}\n\n"
+
+    return Response(generate(), mimetype='text/event-stream')
+
+
+app.register_blueprint(sermons_bp)
+
+
 # ── Main ─────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     startup()
+    if _APSCHEDULER_AVAILABLE:
+        get_scheduler()
     port = int(os.environ.get("FLASK_PORT", "5111"))
     print(f"Sermon Research Workbench starting on http://localhost:{port}", file=sys.stderr)
     print(f"  Companion at http://localhost:{port}/companion/", file=sys.stderr)

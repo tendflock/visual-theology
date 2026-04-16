@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Sermons</title>
+<link rel="stylesheet" href="/static/sermons.css?v=1">
+</head><body>
+<div id="sermons-list-page">
+<header>
+  <h1>Sermons</h1>
+  <nav>
+    <a href="/sermons/patterns">Patterns</a>
+    <a href="/sermons/sync-log">Sync log</a>
+    <form method="post" action="/sermons/sync" style="display:inline">
+      <button type="submit">Sync now</button>
+    </form>
+    <form method="post" action="/sermons/backfill?limit=24" style="display:inline">
+      <button type="submit">Backfill last 24</button>
+    </form>
+  </nav>
+</header>
+<table class="sermons-table">
+<thead><tr><th></th><th>Title</th><th>Preached</th><th>Duration</th><th>Status</th></tr></thead>
+<tbody>
+{% for s in sermons %}
+<tr class="{% if s.badge %}has-badge{% endif %}">
+  <td>{% if s.badge %}<span class="badge new-badge">NEW</span>{% endif %}</td>
+  <td><a href="/sermons/{{ s.id }}">{{ s.title }}</a></td>
+  <td>{{ s.preach_date }}</td>
+  <td>{{ (s.duration_seconds // 60) if s.duration_seconds else '?' }} min</td>
+  <td class="status status-{{ s.sync_status }}">{{ s.sync_status|replace('_', ' ') }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body></html>

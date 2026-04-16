@@ -1,0 +1,54 @@
+{% if review %}
+<div class="sermon-card sermon-card-impact">
+  <h2>Impact</h2>
+  <div class="metric-row">
+    <span class="metric-label">Burden</span>
+    <span class="metric-value metric-{{ review.burden_clarity }}">{{ review.burden_clarity|upper }}</span>
+    {% if review.burden_statement_excerpt %}
+      <blockquote>"{{ review.burden_statement_excerpt }}"</blockquote>
+      <div class="metric-timestamp">stated at {{ (review.burden_first_stated_at_sec or 0) // 60 }}:{{ '%02d' % ((review.burden_first_stated_at_sec or 0) % 60) }}</div>
+    {% endif %}
+  </div>
+  <div class="metric-row">
+    <span class="metric-label">Movement</span>
+    <span class="metric-value metric-{{ review.movement_clarity }}">{{ review.movement_clarity|upper|replace('_', ' ') }}</span>
+    <div class="metric-rationale">{{ review.movement_rationale }}</div>
+  </div>
+  <div class="metric-row">
+    <span class="metric-label">Application</span>
+    <span class="metric-value metric-{{ review.application_specificity }}">{{ review.application_specificity|upper }}</span>
+    {% if review.application_first_arrived_at_sec %}
+      <div class="metric-timestamp">arrived at {{ review.application_first_arrived_at_sec // 60 }}:{{ '%02d' % (review.application_first_arrived_at_sec % 60) }} of {{ review.actual_duration_seconds // 60 }}:{{ '%02d' % (review.actual_duration_seconds % 60) }}</div>
+    {% endif %}
+  </div>
+  <div class="metric-row">
+    <span class="metric-label">Ethos</span>
+    <span class="metric-value metric-{{ review.ethos_rating }}">{{ review.ethos_rating|upper }}</span>
+  </div>
+  <div class="metric-row">
+    <span class="metric-label">Concreteness</span>
+    <span class="metric-value">{{ review.concreteness_score }} / 5</span>
+    {% if review.imagery_density_per_10min %}
+      <div class="metric-sub">{{ '%.1f' % review.imagery_density_per_10min }} images per 10 min</div>
+    {% endif %}
+  </div>
+  <div class="helpers-hurters">
+    <div class="helpers">
+      <h3>What helped</h3>
+      <ul>
+      {% for item in (review.top_impact_helpers or []) %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="hurters">
+      <h3>What hurt</h3>
+      <ul>
+      {% for item in (review.top_impact_hurters or []) %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endif %}

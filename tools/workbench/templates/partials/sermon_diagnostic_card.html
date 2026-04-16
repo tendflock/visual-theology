@@ -1,0 +1,30 @@
+{% if review %}
+<div class="sermon-card sermon-card-diagnostic">
+  <h2>Diagnostic <span class="subtitle">(symptoms — causes live in Impact)</span></h2>
+  <div class="metric-row">
+    <span class="metric-label">Length</span>
+    <span class="metric-value">
+      {{ review.actual_duration_seconds // 60 }}:{{ '%02d' % (review.actual_duration_seconds % 60) }}
+      {% if review.planned_duration_seconds %}
+        / {{ review.planned_duration_seconds // 60 }}:{{ '%02d' % (review.planned_duration_seconds % 60) }} planned
+        <span class="delta">{{ '%+d' % (review.duration_delta_seconds // 60) }}:{{ '%02d' % ((review.duration_delta_seconds|abs) % 60) }}</span>
+      {% endif %}
+    </span>
+    {% if review.length_delta_commentary %}
+      <div class="metric-commentary">{{ review.length_delta_commentary }}</div>
+    {% endif %}
+  </div>
+  {% if review.late_application_note %}
+    <div class="metric-row"><strong>Late application:</strong> {{ review.late_application_note }}</div>
+  {% endif %}
+  {% if review.outline_coverage_pct is not none %}
+    <div class="metric-row">
+      <span class="metric-label">Outline fidelity</span>
+      <span class="metric-value">{{ '%d' % (review.outline_coverage_pct * 100) }}%</span>
+      {% if review.outline_drift_note %}
+        <div class="metric-rationale">{{ review.outline_drift_note }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endif %}

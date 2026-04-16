@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Sermon Patterns</title>
+<link rel="stylesheet" href="/static/sermons.css?v=1">
+</head><body>
+<div id="sermon-patterns-page">
+<header>
+  <a href="/sermons/">← All sermons</a>
+  <h1>Patterns</h1>
+</header>
+
+<div class="corpus-gate corpus-gate-{{ patterns.corpus_gate_status }}">
+  {% if patterns.corpus_gate_status == 'pre_gate' %}
+    <strong>Not enough corpus yet.</strong>
+    {{ patterns.n_sermons }} sermons analyzed. Need at least 5 before patterns can be
+    cited. Keep preaching and ingesting — the coach will open up soon.
+  {% elif patterns.corpus_gate_status == 'emerging' %}
+    <strong>Emerging patterns visible.</strong>
+    {{ patterns.n_sermons }} sermons in the last {{ patterns.window_days }} days.
+    The coach can cite patterns that show up in ≥3 of the last 5.
+  {% else %}
+    <strong>Stable corpus.</strong>
+    {{ patterns.n_sermons }} sermons — full longitudinal voice is available.
+  {% endif %}
+</div>
+
+<div class="trend-grid">
+  <div class="trend-card">
+    <h3>Duration delta (avg)</h3>
+    <div class="trend-value">
+      {% if patterns.avg_duration_delta_sec is not none %}
+        {{ '%+d' % ((patterns.avg_duration_delta_sec or 0) // 60) }} min
+      {% else %}—{% endif %}
+    </div>
+  </div>
+  <div class="trend-card">
+    <h3>Burden clear rate</h3>
+    <div class="trend-value">{% if patterns.burden_clear_rate is not none %}{{ '%d' % (patterns.burden_clear_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Movement clear rate</h3>
+    <div class="trend-value">{% if patterns.movement_clear_rate is not none %}{{ '%d' % (patterns.movement_clear_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Application concrete rate</h3>
+    <div class="trend-value">{% if patterns.application_concrete_rate is not none %}{{ '%d' % (patterns.application_concrete_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Ethos engaged rate</h3>
+    <div class="trend-value">{% if patterns.ethos_engaged_rate is not none %}{{ '%d' % (patterns.ethos_engaged_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Avg concreteness</h3>
+    <div class="trend-value">{% if patterns.avg_concreteness %}{{ '%.1f' % patterns.avg_concreteness }} / 5{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Christ explicit rate</h3>
+    <div class="trend-value">{% if patterns.christ_explicit_rate is not none %}{{ '%d' % (patterns.christ_explicit_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+  <div class="trend-card">
+    <h3>Exegetical grounded rate</h3>
+    <div class="trend-value">{% if patterns.exegetical_grounded_rate is not none %}{{ '%d' % (patterns.exegetical_grounded_rate * 100) }}%{% else %}—{% endif %}</div>
+  </div>
+</div>
+</div>
+</body></html>
