@@ -7,12 +7,14 @@ CannedLLMClient to pin LLM outputs without making real API calls.
 from __future__ import annotations
 import hashlib
 import json
-from typing import Protocol, Any, Optional
+from typing import Protocol, Optional, Iterator
 
 
 class LLMClient(Protocol):
     """Structural interface any LLM client must satisfy."""
     def call(self, prompt: str, schema: dict, **kwargs) -> dict: ...
+    def stream_message(self, system: str, messages: list, tools: list,
+                       max_tokens: int = 4096) -> Iterator[dict]: ...
 
 
 class CannedLLMClient:
@@ -28,6 +30,13 @@ class CannedLLMClient:
         if key in self.fixtures:
             return self.fixtures[key]
         return {'error': f'no canned response for prompt hash {key}'}
+
+    def stream_message(self, system: str, messages: list, tools: list,
+                       max_tokens: int = 4096) -> Iterator[dict]:
+        yield {'type': 'text_delta', 'text': 'canned streaming response'}
+        yield {'type': 'message_complete',
+               'usage': {'input_tokens': 0, 'output_tokens': 0},
+               'stop_reason': 'end_turn', 'content': []}
 
 
 class AnthropicClient:
@@ -96,3 +105,59 @@ class AnthropicClient:
             'output_tokens': response.usage.output_tokens,
             'model': self.model,
         }
+
+    def stream_message(self, system: str, messages: list, tools: list,
+                       max_tokens: int = 4096) -> Iterator[dict]:
+        """Stream a single model turn. Caller owns the tool-use loop."""
+        try:
+            client = self._get_client()
+        except Exception as e:
+            yield {'type': 'error', 'error': f'sdk_import_failed: {type(e).__name__}: {e}'}
+            return
+
+        tool_defs = [{'name': t['name'], 'description': t['description'],
+                      'input_schema': t['input_schema']} for t in tools]
+        try:
+            with client.messages.stream(
+                model=self.model, max_tokens=max_tokens,
+                system=system, messages=messages, tools=tool_defs,
+            ) as stream:
+                current_tool = None
+                for event in stream:
+                    if event.type == 'content_block_start':
+                        if getattr(event.content_block, 'type', None) == 'tool_use':
+                            current_tool = {
+                                'id': event.content_block.id,
+                                'name': event.content_block.name,
+                                'input_json': '',
+                            }
+                    elif event.type == 'content_block_delta':
+                        if hasattr(event.delta, 'text'):
+                            yield {'type': 'text_delta', 'text': event.delta.text}
+                        elif hasattr(event.delta, 'partial_json') and current_tool:
+                            current_tool['input_json'] += event.delta.partial_json
+                    elif event.type == 'content_block_stop':
+                        if current_tool:
+                            try:
+                                tool_input = json.loads(current_tool['input_json'])
+                            except json.JSONDecodeError:
+                                tool_input = {}
+                            yield {
+                                'type': 'tool_use',
+                                'tool_name': current_tool['name'],
+                                'tool_input': tool_input,
+                                'tool_use_id': current_tool['id'],
+                            }
+                            current_tool = None
+                response = stream.get_final_message()
+                yield {
+                    'type': 'message_complete',
+                    'usage': {
+                        'input_tokens': response.usage.input_tokens,
+                        'output_tokens': response.usage.output_tokens,
+                    },
+                    'stop_reason': response.stop_reason,
+                    'content': response.content,
+                }
+        except Exception as e:
+            yield {'type': 'error', 'error': f'{type(e).__name__}: {e}'}

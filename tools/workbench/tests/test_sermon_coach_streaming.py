@@ -6,7 +6,7 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from companion_db import CompanionDB
-from sermon_coach_agent import stream_coach_response, CoachTurnResult
+from sermon_coach_agent import stream_coach_response
 
 
 @pytest.fixture(scope="session", autouse=True)

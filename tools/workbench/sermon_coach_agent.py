@@ -6,7 +6,6 @@ narrates the four review cards, runs a conversation over the sermon.
 
 from __future__ import annotations
 import json
-from dataclasses import dataclass
 from datetime import datetime, timezone
 from voice_constants import IDENTITY_CORE, HOMILETICAL_TRADITION, VOICE_GUARDRAILS
 from sermon_coach_tools import (
@@ -200,11 +199,7 @@ def execute_tool(tool_name: str, tool_input: dict, session_context: dict) -> dic
         return {'error': f'{type(e).__name__}: {e}'}
 
 
-@dataclass
-class CoachTurnResult:
-    assistant_text: str
-    input_tokens: int
-    output_tokens: int
+MAX_TOOL_ROUNDS = 5
 
 
 def _now() -> str:
@@ -254,27 +249,51 @@ def stream_coach_response(db, sermon_id: int, conversation_id: int,
     assistant_text_parts = []
     input_tokens = 0
     output_tokens = 0
-    try:
-        for event in llm_client.stream_message(system=system, messages=messages,
-                                                 tools=TOOL_DEFINITIONS):
-            if event.get('type') == 'text_delta':
-                assistant_text_parts.append(event.get('text', ''))
-                yield event
-            elif event.get('type') == 'tool_use':
-                tool_result = execute_tool(
-                    event['tool_name'], event['tool_input'],
-                    session_context={'db': db, 'sermon_id': sermon_id},
-                )
-                yield {'type': 'tool_result', 'tool_name': event['tool_name'],
-                        'result': tool_result}
-            elif event.get('type') == 'message_complete':
-                usage = event.get('usage', {})
-                input_tokens = usage.get('input_tokens', 0)
-                output_tokens = usage.get('output_tokens', 0)
-                yield event
-    except Exception as e:
-        yield {'type': 'error', 'error': f'{type(e).__name__}: {e}'}
-        return
+
+    for _round in range(MAX_TOOL_ROUNDS):
+        tool_use_blocks = []
+        stop_reason = 'end_turn'
+        content = []
+        try:
+            for event in llm_client.stream_message(system=system, messages=messages,
+                                                     tools=TOOL_DEFINITIONS):
+                if event.get('type') == 'text_delta':
+                    assistant_text_parts.append(event.get('text', ''))
+                    yield event
+                elif event.get('type') == 'tool_use':
+                    tool_result = execute_tool(
+                        event['tool_name'], event['tool_input'],
+                        session_context={'db': db, 'sermon_id': sermon_id},
+                    )
+                    tool_use_blocks.append({'tool': event, 'result': tool_result})
+                    yield {'type': 'tool_result', 'tool_name': event['tool_name'],
+                            'result': tool_result}
+                elif event.get('type') == 'message_complete':
+                    usage = event.get('usage', {})
+                    input_tokens += usage.get('input_tokens', 0)
+                    output_tokens += usage.get('output_tokens', 0)
+                    stop_reason = event.get('stop_reason', 'end_turn')
+                    content = event.get('content', [])
+                    yield event
+                elif event.get('type') == 'error':
+                    yield event
+                    return
+        except Exception as e:
+            yield {'type': 'error', 'error': f'{type(e).__name__}: {e}'}
+            return
+
+        if stop_reason != 'tool_use' or not tool_use_blocks:
+            break
+
+        messages.append({'role': 'assistant', 'content': content})
+        tool_results = []
+        for block in tool_use_blocks:
+            tool_results.append({
+                'type': 'tool_result',
+                'tool_use_id': block['tool']['tool_use_id'],
+                'content': json.dumps(block['result']) if isinstance(block['result'], dict) else str(block['result']),
+            })
+        messages.append({'role': 'user', 'content': tool_results})
 
     assistant_text = ''.join(assistant_text_parts)
     conn = db._conn()

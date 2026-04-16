@@ -65,12 +65,10 @@ _scheduler = None
 def _scheduled_sermon_sync():
     """The 4h cron body. Swallows exceptions so a bad run doesn't kill the scheduler."""
     try:
-        from sermonaudio_sync import run_sync_with_client
+        from sermonaudio_sync import run_sync
         db = get_db()
-        client = _make_sermonaudio_client()
-        run_sync_with_client(
-            db, client, broadcaster_id=_broadcaster_id(), trigger='cron',
-        )
+        run_sync(db, client=_make_sermonaudio_client(),
+                 broadcaster_id=_broadcaster_id(), trigger='cron')
     except Exception as e:
         app.logger.error(f'Scheduled sermon sync failed: {e}')
 
@@ -1409,24 +1407,24 @@ def _broadcaster_id() -> str:
 
 @sermons_bp.route('/sync', methods=['POST'])
 def sermon_sync():
-    from sermonaudio_sync import run_sync_with_client
+    from sermonaudio_sync import run_sync
     db = get_db()
-    client = _make_sermonaudio_client()
-    result = run_sync_with_client(
-        db, client, broadcaster_id=_broadcaster_id(), trigger='manual',
-    )
+    result = run_sync(db, client=_make_sermonaudio_client(),
+                      broadcaster_id=_broadcaster_id(), trigger='manual')
+    if result is None:
+        return jsonify({'error': 'sync already running'}), 409
     return jsonify(result), 202
 
 
 @sermons_bp.route('/backfill', methods=['POST'])
 def sermon_backfill():
-    from sermonaudio_sync import run_sync_with_client
+    from sermonaudio_sync import run_sync
     limit = int(request.args.get('limit', 24))
     db = get_db()
-    client = _make_sermonaudio_client()
-    result = run_sync_with_client(
-        db, client, broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit,
-    )
+    result = run_sync(db, client=_make_sermonaudio_client(),
+                      broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit)
+    if result is None:
+        return jsonify({'error': 'sync already running'}), 409
     return jsonify(result), 202
 
 
@@ -1438,12 +1436,15 @@ def sermon_reanalyze(sermon_id):
     api_key = _os_for_sync.environ.get('ANTHROPIC_API_KEY', '')
     client = AnthropicClient(api_key=api_key)
     conn = db._conn()
-    conn.execute(
-        "UPDATE sermons SET sync_status = 'analysis_pending', last_state_change_at = datetime('now') WHERE id = ?",
+    updated = conn.execute(
+        "UPDATE sermons SET sync_status = 'analysis_pending', last_state_change_at = datetime('now') "
+        "WHERE id = ? AND sync_status NOT IN ('analysis_pending', 'analysis_running')",
         (sermon_id,),
-    )
+    ).rowcount
     conn.commit()
     conn.close()
+    if not updated:
+        return jsonify({'error': 'analysis already pending or running'}), 409
     result = analyze_sermon(db, sermon_id, llm_client=client)
     return jsonify(result)
 
@@ -1453,11 +1454,11 @@ def sermon_link(sermon_id, session_id):
     db = get_db()
     conn = db._conn()
     conn.execute(
-        "DELETE FROM sermon_links WHERE sermon_id = ? AND link_status = 'active' AND link_source = 'auto'",
+        "UPDATE sermon_links SET link_status = 'rejected' WHERE sermon_id = ? AND link_status = 'active'",
         (sermon_id,),
     )
     conn.execute("""
-        INSERT OR REPLACE INTO sermon_links
+        INSERT INTO sermon_links
             (sermon_id, session_id, link_status, link_source, match_reason, created_at)
         VALUES (?, ?, 'active', 'manual', 'user_linked', datetime('now'))
     """, (sermon_id, session_id))

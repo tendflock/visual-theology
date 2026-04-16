@@ -328,8 +328,9 @@ def _lock_path():
     return os.path.join(os.path.dirname(__file__), '.sermon_sync.lock')
 
 
-def run_sync(db, api_key: str, broadcaster_id: str, trigger: str = 'cron') -> Optional[dict]:
-    """Acquire file lock, call run_sync_with_client using the real API client, release."""
+def run_sync(db, api_key: str = '', broadcaster_id: str = '', trigger: str = 'cron',
+             client=None, since: Optional[str] = None, limit: int = 100) -> Optional[dict]:
+    """Acquire file lock, call run_sync_with_client, release. Returns None if locked."""
     lock_path = _lock_path()
     with open(lock_path, 'w') as lock_file:
         try:
@@ -337,7 +338,9 @@ def run_sync(db, api_key: str, broadcaster_id: str, trigger: str = 'cron') -> Op
         except BlockingIOError:
             return None
         try:
-            client = SermonAudioAPIClient(api_key)
-            return run_sync_with_client(db, client, broadcaster_id, trigger=trigger)
+            if client is None:
+                client = SermonAudioAPIClient(api_key)
+            return run_sync_with_client(db, client, broadcaster_id, trigger=trigger,
+                                        since=since, limit=limit)
         finally:
             fcntl.flock(lock_file.fileno(), fcntl.LOCK_UN)

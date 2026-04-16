@@ -393,7 +393,13 @@ def analyze_sermon(db, sermon_id: int, llm_client) -> dict:
 
         model = result.get('model', 'claude-opus-4-6')
         output = result.get('output', {})
-        _write_review(conn, sermon_id, inp, pure, output, model)
+        try:
+            _write_review(conn, sermon_id, inp, pure, output, model)
+        except Exception as e:
+            conn.execute("UPDATE sermons SET sync_status='analysis_failed', sync_error=?, last_state_change_at=? WHERE id=?",
+                         (f'write_review_failed: {e}', _now(), sermon_id))
+            conn.commit()
+            return {'status': 'analysis_failed', 'error': f'write_review_failed: {e}'}
 
         input_tokens = result.get('input_tokens', 0)
         output_tokens = result.get('output_tokens', 0)

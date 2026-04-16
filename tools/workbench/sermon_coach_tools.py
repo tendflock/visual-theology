@@ -115,7 +115,7 @@ def get_prep_session_full(db, sermon_id: int) -> Optional[dict]:
     }
 
 
-def pull_historical_sermons(db, n: int = 5, filter_expr: Optional[str] = None) -> list:
+def pull_historical_sermons(db, n: int = 5) -> list:
     """Return the N most recent classified-sermon rows with their review."""
     conn = db._conn()
     rows = conn.execute("""
@@ -147,7 +147,7 @@ def get_sermon_patterns(db, window_days: int = 90) -> dict:
     longitudinal voice it is allowed to use.
     """
     conn = db._conn()
-    row = conn.execute(f"""
+    row = conn.execute("""
         SELECT
             COUNT(*),
             AVG(sr.duration_delta_seconds),
@@ -167,9 +167,9 @@ def get_sermon_patterns(db, window_days: int = 90) -> dict:
             AVG(sr.outline_coverage_pct)
         FROM sermon_reviews sr
         JOIN sermons s ON s.id = sr.sermon_id
-        WHERE s.preach_date >= date('now', '-{window_days} days')
+        WHERE s.preach_date >= date('now', '-' || ? || ' days')
           AND s.classified_as = 'sermon' AND s.is_remote_deleted = 0
-    """).fetchone()
+    """, (int(window_days),)).fetchone()
     conn.close()
 
     n = row[0] or 0
