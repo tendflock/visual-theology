@@ -1700,32 +1700,35 @@ def get_commitment():
 
 @sermons_bp.route('/patterns/coach/commitment', methods=['POST'])
 def create_commitment():
-    db = get_db()
-    conn = db._conn()
     data = request.json or {}
     dimension_key = data.get('dimension_key', '')
     experiment = data.get('practice_experiment', '')
-    target = int(data.get('target_sermons', 2))
     if not dimension_key or not experiment:
         return jsonify({'error': 'dimension_key and practice_experiment required'}), 400
-    # Get most recent sermon as baseline
-    baseline = conn.execute(
-        "SELECT id FROM sermons WHERE classified_as='sermon' ORDER BY preach_date DESC LIMIT 1"
-    ).fetchone()
-    baseline_id = baseline[0] if baseline else None
-    from datetime import datetime, timezone
-    now = datetime.now(timezone.utc).isoformat()
-    # Supersede any existing active commitment
-    conn.execute("UPDATE coaching_commitments SET status='superseded' WHERE status='active'")
-    conn.execute("""
-        INSERT INTO coaching_commitments (dimension_key, practice_experiment, target_sermons,
-            baseline_sermon_id, status, created_at)
-        VALUES (?, ?, ?, ?, 'active', ?)
-    """, (dimension_key, experiment, target, baseline_id, now))
-    conn.commit()
-    new_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
-    conn.close()
-    return jsonify({'id': new_id, 'status': 'active'})
+    try:
+        target = int(data.get('target_sermons', 2))
+    except (ValueError, TypeError):
+        return jsonify({'error': 'target_sermons must be an integer'}), 400
+    db = get_db()
+    conn = db._conn()
+    try:
+        baseline = conn.execute(
+            "SELECT id FROM sermons WHERE classified_as='sermon' ORDER BY preach_date DESC LIMIT 1"
+        ).fetchone()
+        baseline_id = baseline[0] if baseline else None
+        from datetime import datetime, timezone
+        now = datetime.now(timezone.utc).isoformat()
+        conn.execute("UPDATE coaching_commitments SET status='superseded' WHERE status='active'")
+        conn.execute("""
+            INSERT INTO coaching_commitments (dimension_key, practice_experiment, target_sermons,
+                baseline_sermon_id, status, created_at)
+            VALUES (?, ?, ?, ?, 'active', ?)
+        """, (dimension_key, experiment, target, baseline_id, now))
+        new_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+        conn.commit()
+        return jsonify({'id': new_id, 'status': 'active'})
+    finally:
+        conn.close()
 
 
 @sermons_bp.route('/<int:sermon_id>/coach/history', methods=['GET'])
