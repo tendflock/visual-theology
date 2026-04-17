@@ -377,6 +377,25 @@ class CompanionDB:
             """)
         except Exception:
             pass  # Already exists
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS coaching_commitments (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                dimension_key TEXT NOT NULL,
+                practice_experiment TEXT NOT NULL,
+                target_sermons INTEGER NOT NULL DEFAULT 2,
+                baseline_sermon_id INTEGER REFERENCES sermons(id),
+                status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active', 'completed', 'superseded')),
+                created_at TEXT NOT NULL,
+                reviewed_at TEXT
+            );
+            CREATE INDEX IF NOT EXISTS idx_coaching_commitments_active ON coaching_commitments(status);
+        """)
+        try:
+            conn.execute("""
+                CREATE UNIQUE INDEX uq_coaching_one_active ON coaching_commitments(status) WHERE status = 'active'
+            """)
+        except Exception:
+            pass  # Already exists
         conn.commit()
         conn.close()
 
