@@ -212,3 +212,25 @@ def test_build_coaching_prompt_section_with_commitment(fresh_db):
 def test_build_coaching_prompt_section_empty_when_no_data(fresh_db):
     section = build_coaching_prompt_section(None, [])
     assert section == ''
+
+
+# ── build_study_prompt coaching_context tests ────────────────────────
+
+from companion_agent import build_study_prompt
+
+def test_build_study_prompt_includes_coaching_section():
+    prompt = build_study_prompt(
+        passage='Romans 8:1-11', genre='epistle',
+        session_elapsed_seconds=3600,
+        coaching_context='## Coaching Memory\n\nDimension: application_specificity',
+    )
+    assert 'Coaching Memory' in prompt
+    assert 'application_specificity' in prompt
+
+def test_build_study_prompt_omits_coaching_when_empty():
+    prompt = build_study_prompt(
+        passage='Romans 8:1-11', genre='epistle',
+        session_elapsed_seconds=3600,
+        coaching_context='',
+    )
+    assert 'Coaching Memory' not in prompt

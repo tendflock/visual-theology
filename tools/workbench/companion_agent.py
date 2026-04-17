@@ -458,7 +458,7 @@ def _format_outline_summary(tree, indent=0):
 
 def build_study_prompt(passage, genre, session_elapsed_seconds,
                        outline_summary='', conversation_history_summary='',
-                       card_work_summary=''):
+                       card_work_summary='', coaching_context=''):
     """Build system prompt for conversation-first study mode.
 
     Encodes Bryan's full 16-step Christ-Centered Sermon Prep workflow.
@@ -618,6 +618,7 @@ Target 25-30 minutes. If the outline grows beyond 3 main points, push back. Brya
 
 **Use tools proactively.** When the conversation touches on a word, pull the lexicon. When it touches on theology, check the cross-reference network. When Bryan is in the confessional phase, pull Westminster references automatically. Surface what Bryan's library has to say.
 
+{coaching_context}
 ## Behavioral Constraints
 
 1. **No walls of text.** 2-3 paragraphs max unless Bryan asks for depth.
