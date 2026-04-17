@@ -689,6 +689,12 @@ def stream_study_response(session_id, user_message, db, analytics=None,
         card_parts.append(f"\n[Study Bible Notepad]\n{card_notepad}")
     card_work_summary = "\n".join(card_parts) if card_parts else ""
 
+    # Load coaching context for the study prompt
+    from coaching_bridge import load_active_commitment, load_coaching_insights, build_coaching_prompt_section
+    commitment = load_active_commitment(db)
+    insights = load_coaching_insights(db)
+    coaching_context = build_coaching_prompt_section(commitment, insights)
+
     # Build system prompt
     system_prompt = build_study_prompt(
         passage=session['passage_ref'],
@@ -696,6 +702,7 @@ def stream_study_response(session_id, user_message, db, analytics=None,
         session_elapsed_seconds=session['total_elapsed_seconds'],
         outline_summary=outline_summary,
         card_work_summary=card_work_summary,
+        coaching_context=coaching_context,
     )
 
     # Build messages from FULL conversation history (not phase-scoped)
