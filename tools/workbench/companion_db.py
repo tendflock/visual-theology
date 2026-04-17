@@ -244,6 +244,10 @@ class CompanionDB:
                 top_impact_hurters TEXT NOT NULL,
                 faithfulness_note TEXT,
                 one_change_for_next_sunday TEXT NOT NULL,
+                per_dimension_growth_edges TEXT,
+                application_landing TEXT CHECK (application_landing IN ('pressed','touched','gestured','missed')),
+                opening_tension TEXT CHECK (opening_tension IN ('strong','adequate','weak','absent')),
+                opening_tension_note TEXT,
                 computed_at TEXT NOT NULL
             );
 
