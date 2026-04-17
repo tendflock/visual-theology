@@ -396,6 +396,28 @@ class CompanionDB:
             """)
         except Exception:
             pass  # Already exists
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS coaching_insights (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                dimension_key TEXT,
+                summary TEXT NOT NULL,
+                applies_when TEXT NOT NULL,
+                avoid_when TEXT NOT NULL,
+                source_sermon_id INTEGER REFERENCES sermons(id),
+                source_conversation_id INTEGER,
+                superseded_by INTEGER REFERENCES coaching_insights(id),
+                created_at TEXT NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS session_coaching_exposure (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id INTEGER NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
+                dimension_key TEXT NOT NULL,
+                escalation_level INTEGER NOT NULL CHECK (escalation_level BETWEEN 1 AND 5),
+                response TEXT NOT NULL DEFAULT 'pending' CHECK (response IN ('accepted', 'declined', 'deferred', 'pending')),
+                created_at TEXT NOT NULL,
+                UNIQUE(session_id, dimension_key)
+            );
+        """)
         conn.commit()
         conn.close()
 
