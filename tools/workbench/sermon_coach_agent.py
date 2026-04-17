@@ -200,19 +200,20 @@ def _load_sermon_context(db, sermon_id: int) -> dict | None:
     and optionally linked_session_id.  Returns None if the sermon doesn't exist.
     """
     conn = db._conn()
-    sermon_row = conn.execute("""
-        SELECT id, bible_text_raw, preach_date, duration_seconds, transcript_text
-        FROM sermons WHERE id = ?
-    """, (sermon_id,)).fetchone()
-    if not sermon_row:
-        conn.close()
-        return None
+    try:
+        sermon_row = conn.execute("""
+            SELECT id, bible_text_raw, preach_date, duration_seconds, transcript_text
+            FROM sermons WHERE id = ?
+        """, (sermon_id,)).fetchone()
+        if not sermon_row:
+            return None
 
-    link_row = conn.execute("""
-        SELECT session_id FROM sermon_links
-        WHERE sermon_id = ? AND link_status = 'active'
-    """, (sermon_id,)).fetchone()
-    conn.close()
+        link_row = conn.execute("""
+            SELECT session_id FROM sermon_links
+            WHERE sermon_id = ? AND link_status = 'active'
+        """, (sermon_id,)).fetchone()
+    finally:
+        conn.close()
 
     ctx = {
         'passage': sermon_row[1],

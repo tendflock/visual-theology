@@ -1772,26 +1772,30 @@ def sermon_coach_message(sermon_id):
 @sermons_bp.route('/coaching-insight', methods=['POST'])
 def create_coaching_insight():
     import json as _json
-    db = get_db()
     data = request.get_json()
+    if not data or not isinstance(data, dict) or not data.get('summary', '').strip():
+        return jsonify({'error': 'summary is required'}), 400
+    db = get_db()
     conn = db._conn()
-    conn.execute("""
-        INSERT INTO coaching_insights
-            (dimension_key, summary, applies_when, avoid_when,
-             source_sermon_id, source_conversation_id, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
-    """, (
-        data.get('dimension_key'),
-        data['summary'],
-        _json.dumps(data.get('applies_when', [])),
-        _json.dumps(data.get('avoid_when', [])),
-        data.get('source_sermon_id'),
-        data.get('source_conversation_id'),
-    ))
-    insight_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
-    conn.commit()
-    conn.close()
-    return jsonify({'id': insight_id, 'status': 'saved'}), 201
+    try:
+        conn.execute("""
+            INSERT INTO coaching_insights
+                (dimension_key, summary, applies_when, avoid_when,
+                 source_sermon_id, source_conversation_id, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+        """, (
+            data.get('dimension_key'),
+            data['summary'].strip(),
+            _json.dumps(list(data.get('applies_when', []))),
+            _json.dumps(list(data.get('avoid_when', []))),
+            data.get('source_sermon_id'),
+            data.get('source_conversation_id'),
+        ))
+        insight_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+        conn.commit()
+        return jsonify({'id': insight_id, 'status': 'saved'}), 201
+    finally:
+        conn.close()
 
 
 app.register_blueprint(sermons_bp)
