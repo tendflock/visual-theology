@@ -485,6 +485,9 @@ def tag_sermon(db, sermon_id: int, llm_client, review_run_id: str | None = None)
             'moments_stored': moments_stored,
             'moments_suppressed': suppressed,
             'status': 'completed',
+            'cost_usd': cost,
+            'input_tokens': input_tokens,
+            'output_tokens': output_tokens,
         }
 
     except Exception as e:
