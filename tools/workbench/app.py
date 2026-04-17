@@ -64,14 +64,16 @@ _scheduler = None
 
 
 def _scheduled_sermon_sync():
-    """The 4h cron body. Sync then analyze any pending sermons."""
+    """The 4h cron body. Sync → match → analyze."""
     try:
         from sermonaudio_sync import run_sync
+        from sermon_matcher import dispatch_matching
         from sermon_analyzer import dispatch_pending_analyses
         from llm_client import AnthropicClient
         db = get_db()
         run_sync(db, client=_make_sermonaudio_client(),
                  broadcaster_id=_broadcaster_id(), trigger='cron')
+        dispatch_matching(db)
         client = AnthropicClient(api_key=anthropic_api_key())
         dispatch_pending_analyses(db, llm_client=client)
     except Exception as e:
@@ -1476,6 +1478,7 @@ def _broadcaster_id() -> str:
 @sermons_bp.route('/sync', methods=['POST'])
 def sermon_sync():
     from sermonaudio_sync import run_sync
+    from sermon_matcher import dispatch_matching
     from sermon_analyzer import dispatch_pending_analyses
     from llm_client import AnthropicClient
     db = get_db()
@@ -1483,6 +1486,7 @@ def sermon_sync():
                       broadcaster_id=_broadcaster_id(), trigger='manual')
     if result is None:
         return jsonify({'error': 'sync already running'}), 409
+    result['sermons_matched'] = dispatch_matching(db)
     client = AnthropicClient(api_key=anthropic_api_key())
     analyzed = dispatch_pending_analyses(db, llm_client=client)
     result['sermons_analyzed'] = analyzed
@@ -1492,6 +1496,7 @@ def sermon_sync():
 @sermons_bp.route('/backfill', methods=['POST'])
 def sermon_backfill():
     from sermonaudio_sync import run_sync
+    from sermon_matcher import dispatch_matching
     from sermon_analyzer import dispatch_pending_analyses
     from llm_client import AnthropicClient
     limit = int(request.args.get('limit', 24))
@@ -1500,6 +1505,7 @@ def sermon_backfill():
                       broadcaster_id=_broadcaster_id(), trigger='backfill', limit=limit)
     if result is None:
         return jsonify({'error': 'sync already running'}), 409
+    result['sermons_matched'] = dispatch_matching(db)
     client = AnthropicClient(api_key=anthropic_api_key())
     analyzed = dispatch_pending_analyses(db, llm_client=client)
     result['sermons_analyzed'] = analyzed

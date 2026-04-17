@@ -285,3 +285,23 @@ def apply_match_decision_for_sermon(db, sermon_id: int) -> MatchDecision:
         raise
     finally:
         conn.close()
+
+
+def dispatch_matching(db, limit: int = 50) -> int:
+    """Match all unmatched sermons to prep sessions. Returns count matched."""
+    conn = db._conn()
+    rows = conn.execute("""
+        SELECT id FROM sermons
+        WHERE classified_as = 'sermon'
+          AND match_status = 'unmatched'
+        ORDER BY preach_date DESC
+        LIMIT ?
+    """, (limit,)).fetchall()
+    conn.close()
+
+    matched = 0
+    for (sid,) in rows:
+        decision = apply_match_decision_for_sermon(db, sid)
+        if decision.action in ('auto_link', 'surface_candidates'):
+            matched += 1
+    return matched
