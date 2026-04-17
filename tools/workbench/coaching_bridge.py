@@ -77,6 +77,15 @@ def record_coaching_exposure(db, session_id, dimension_key, escalation_level, re
 
     now = datetime.now(timezone.utc).isoformat()
     conn = db._conn()
+    # Check if already exists — don't overwrite declined/accepted state
+    existing = conn.execute(
+        "SELECT response FROM session_coaching_exposure "
+        "WHERE session_id = ? AND dimension_key = ?",
+        (session_id, dimension_key),
+    ).fetchone()
+    if existing and existing[0] in ('declined', 'accepted'):
+        conn.close()
+        return  # Don't resurface — anti-nagging guard
     conn.execute(
         "INSERT INTO session_coaching_exposure "
         "(session_id, dimension_key, escalation_level, response, created_at) "
@@ -250,13 +259,13 @@ def build_coaching_prompt_section(commitment, insights) -> str:
 
 
 def _parse_json_list(value):
-    """Parse a JSON string as a list, returning the raw string in a list on failure."""
+    """Parse a JSON string as a list of strings. Coerces non-string elements."""
     if not value:
         return []
     try:
         parsed = json.loads(value)
         if isinstance(parsed, list):
-            return parsed
+            return [str(item) for item in parsed]
         return [str(parsed)]
     except (json.JSONDecodeError, TypeError):
         return [value]
