@@ -103,6 +103,7 @@ REVIEW_SCHEMA = {
         'tier1_impact': {
             'type': 'object',
             'required': ['burden_clarity', 'movement_clarity', 'application_specificity',
+                         'application_landing', 'opening_tension',
                          'ethos_rating', 'concreteness_score'],
             'properties': {
                 'burden_clarity': {'type': 'string',
@@ -114,8 +115,13 @@ REVIEW_SCHEMA = {
                 'movement_rationale': {'type': 'string'},
                 'application_specificity': {'type': 'string',
                                              'enum': ['localized', 'concrete', 'abstract', 'absent']},
+                'application_landing': {'type': 'string',
+                                         'enum': ['pressed', 'touched', 'gestured', 'missed']},
                 'application_first_arrived_at_sec': {'type': ['integer', 'null']},
                 'application_excerpts': {'type': 'array', 'items': {'type': 'object'}},
+                'opening_tension': {'type': 'string',
+                                     'enum': ['strong', 'adequate', 'weak', 'absent']},
+                'opening_tension_note': {'type': ['string', 'null']},
                 'ethos_rating': {'type': 'string',
                                   'enum': ['seized', 'engaged', 'professional', 'detached']},
                 'ethos_markers': {'type': 'array', 'items': {'type': 'string'}},
@@ -154,6 +160,7 @@ REVIEW_SCHEMA = {
                 'top_impact_hurters': {'type': 'array', 'items': {'type': 'string'}, 'minItems': 1, 'maxItems': 3},
                 'faithfulness_note': {'type': ['string', 'null']},
                 'one_change_for_next_sunday': {'type': 'string'},
+                'per_dimension_growth_edges': {'type': 'object'},
             },
         },
         'flags': {
@@ -177,20 +184,125 @@ REVIEW_SCHEMA = {
 
 
 RUBRIC_SYSTEM_PROMPT = """You are scoring a preached sermon for Bryan, a Reformed Presbyterian pastor.
-Emit a structured review following the tool schema exactly. Ground every score in transcript evidence.
+Emit a structured review following the tool schema exactly.
 
-The three tiers:
-- Tier 1 (Impact): burden clarity, movement, application specificity, ethos, concreteness — these
-  are what rhetoric research identifies as the strongest impact predictors.
-- Tier 2 (Faithfulness): Christ thread + exegetical grounding — parallel crown for a Reformed pastor.
-- Tier 3 (Diagnostic): symptoms whose causes live in Tier 1 — length, density hotspots, late application.
+SCORING METHOD — for every dimension you must:
+1. Quote or paraphrase 1-2 specific transcript moments as evidence
+2. State what level you are scoring and why
+3. State why you did NOT score it one level higher (this prevents over-scoring)
 
-For the coach_summary:
-- top_impact_helpers: 2-3 concrete things that drove impact THIS sermon
-- top_impact_hurters: 2-3 concrete things that blocked impact THIS sermon
+## Tier 1: Impact (strongest predictors of whether the sermon lands)
+
+### burden_clarity — Can the congregation say what the sermon was about?
+- crisp: One sentence the congregation could repeat after leaving. Stated in the
+  first 25% of the sermon and returned to at least once. The sermon orbits this sentence.
+- clear: Identifiable theme, present throughout, but not crystallized into a single
+  quotable sentence. A listener could paraphrase it but wouldn't use the same words.
+- implied: The burden is inferable from the text but never explicitly stated. The
+  preacher assumes the congregation will connect the dots.
+- muddled: Multiple competing ideas. A listener would struggle to say what the sermon
+  was about. More than one candidate burden and none clearly governs.
+- absent: No discernible governing burden. The sermon covers material without a unifying claim.
+DISQUALIFIER: If the burden is stated only in the final 10% of the sermon, cap at 'clear.'
+
+### movement_clarity — Does the sermon move forward with intention?
+- river: Crystal clear architecture. Every section earns its place. Transitions are
+  signposted. The ending feels inevitable.
+- mostly_river: Clear forward momentum. Occasional eddies (redundant examples, digressions)
+  but overall direction is unmistakable.
+- uneven: Structure present but loose. Some sections circle or repeat. Listener may lose
+  the thread in places before it's recovered.
+- lake: No clear forward movement. The sermon stays in one place, circles back repeatedly,
+  or ends without a sense of arrival.
+
+### application_specificity — How specific is the application?
+- localized: Names a specific person, situation, or action the hearer can take THIS WEEK.
+  "Picture the coworker you've been avoiding this conversation with. That's where this
+  text meets your life." The listener can see their own Monday morning.
+- concrete: Gives clear behavioral direction but at category level. "Confess your sin
+  to a brother." "Read your Bible daily." True but not localized to the hearer's life.
+- abstract: Acknowledges application exists but stays theological. "We should trust Jesus
+  more." "Let us rest in grace." The hearer agrees but doesn't know what to DO differently.
+- absent: No application addressed to the hearer's life at any point.
+DISQUALIFIER: If application only appears in the final 10% of the sermon as a brief coda,
+cap at 'concrete' even if the content is specific.
+
+### application_landing — Does the application PRESS into the hearer's life? (NEW)
+- pressed: Application pauses, sits with the hearer, names their situation. The preacher
+  slows down and lets the weight land. The hearer feels personally addressed.
+- touched: Application makes contact with real life but moves on quickly. The preacher
+  gestures toward the hearer's world but returns to exposition before it lands.
+- gestured: Application is present as a rhetorical move but doesn't slow down enough to
+  press. The hearer hears the category but not the weight.
+- missed: Application either absent or so abstract it makes no contact with lived experience.
+
+### opening_tension — Does the sermon create urgency in the first 2 minutes? (NEW)
+- strong: Tension, question, or stakes established in the first 60 seconds. The listener
+  immediately knows why they need to keep listening.
+- adequate: Some tension emerges within the first 2 minutes, but preceded by logistics,
+  throat-clearing, or Bible navigation that delays engagement.
+- weak: Tension doesn't emerge until 3+ minutes in. The opening is primarily logistical
+  or expositional setup without urgency.
+- absent: No discernible tension or hook. The sermon begins with reading and exposition
+  without establishing why the listener should care.
+
+### ethos_rating — Does the preacher seem personally seized by the text?
+- seized: The preacher is visibly wrestling with the text. Personal confession, vulnerability,
+  or evident emotional weight. The congregation sees a man under the Word, not above it.
+- engaged: Warm, present, relational. The preacher clearly cares. But the personal stake
+  is professional rather than confessional.
+- professional: Competent delivery with appropriate tone but no personal exposure.
+  The preacher could be teaching anyone's sermon.
+- detached: Flat, distant, or going through the motions. No relational warmth.
+
+### concreteness_score — 1 to 5. How vivid and tangible is the language?
+5 = The sermon is full of images, stories, and sensory language. You can see, hear, feel it.
+4 = Strong imagery present. Most points are grounded in concrete examples.
+3 = Mixed. Some concrete moments, some stretches of abstract theological language.
+2 = Predominantly abstract. Theological propositions with few images or stories.
+1 = Entirely abstract. Dense theological discourse with no imagery.
+
+## Tier 2: Faithfulness (the Reformed pastoral crown)
+
+### christ_thread_score — Is Christ the resolution, not an appendix?
+- explicit: Christ is named as the text's resolution and the congregation's hope. The
+  Christological move is exegetically earned from the passage, not imported.
+- gestured: Christ is referenced but not developed. A brief mention at the end or a
+  formulaic "and this points to Jesus" without exegetical grounding.
+- absent: No Christological connection. The sermon could be preached in a synagogue.
+DISQUALIFIER: A last-minute "and this is why we need Jesus" without textual grounding
+from the passage caps at 'gestured.'
+
+### exegetical_grounding — Is the sermon driven by the text or decorating pre-existing points?
+- grounded: The sermon's claims arise from careful reading of the passage. Key terms are
+  explained, context is established, and the argument follows the text's logic.
+- partial: Some exegetical work present but the sermon also imports ideas not arising
+  from this text. The text is used but not fully governing.
+- pretext: The passage is read but the sermon's content could exist without it. Scripture
+  decorates rather than drives.
+
+## Tier 3: Diagnostic (symptoms — root causes live in Tier 1)
+
+Report these as factual observations, not scored dimensions:
+- length_delta_commentary: How far over/under plan and where the excess/deficit accumulates
+- density_hotspots: Specific timestamp ranges where the argument stalls, circles, or overloads
+- late_application_note: If application arrives late, when and why
+- outline_drift_note: Where the sermon departed from the prep outline (if linked)
+
+## Coach Summary
+
+- top_impact_helpers: 2-3 concrete things that drove impact THIS sermon (with timestamps)
+- top_impact_hurters: 2-3 concrete things that blocked impact THIS sermon (with timestamps)
+- faithfulness_note: Brief assessment of theological fidelity
 - one_change_for_next_sunday: ONE concrete actionable change
+- per_dimension_growth_edges: For each scored dimension, one sentence naming the specific
+  growth edge. Not generic advice — grounded in what THIS sermon did and what would make
+  it one level better. Format: {"burden_clarity": "...", "movement_clarity": "...", ...}
 
-For flags: return 3-8 per-moment observations tied to transcript timestamps."""
+## Flags
+
+Return 3-8 per-moment observations tied to transcript timestamps.
+Each flag needs: flag_type, severity (info/note/warn/concern), start_sec, excerpt, rationale."""
 
 
 def build_rubric_prompt(inp: AnalyzerInput, pure: PureStageOutput) -> str:
@@ -309,7 +421,8 @@ def _write_review(conn, sermon_id: int, inp: AnalyzerInput, pure: PureStageOutpu
             analyzed_transcript_hash, source_version_at_analysis,
             burden_clarity, burden_statement_excerpt, burden_first_stated_at_sec,
             movement_clarity, movement_rationale,
-            application_specificity, application_first_arrived_at_sec, application_excerpts,
+            application_specificity, application_landing, application_first_arrived_at_sec, application_excerpts,
+            opening_tension, opening_tension_note,
             ethos_rating, ethos_markers,
             concreteness_score, imagery_density_per_10min, narrative_moments,
             christ_thread_score, christ_thread_excerpts,
@@ -319,10 +432,11 @@ def _write_review(conn, sermon_id: int, inp: AnalyzerInput, pure: PureStageOutpu
             late_application_note, outline_coverage_pct, outline_additions, outline_omissions,
             outline_drift_note,
             top_impact_helpers, top_impact_hurters, faithfulness_note, one_change_for_next_sunday,
+            per_dimension_growth_edges,
             computed_at
         ) VALUES (?, ?, ?, ?, ?, ?,
-                  ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-                  ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                  ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+                  ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         sermon_id, ANALYZER_VERSION, homiletics_core_version, model,
         _transcript_hash(inp.transcript_text),
@@ -330,8 +444,10 @@ def _write_review(conn, sermon_id: int, inp: AnalyzerInput, pure: PureStageOutpu
         tier1.get('burden_clarity'), tier1.get('burden_statement_excerpt'),
         tier1.get('burden_first_stated_at_sec'),
         tier1.get('movement_clarity'), tier1.get('movement_rationale'),
-        tier1.get('application_specificity'), tier1.get('application_first_arrived_at_sec'),
+        tier1.get('application_specificity'), tier1.get('application_landing'),
+        tier1.get('application_first_arrived_at_sec'),
         json.dumps(tier1.get('application_excerpts', [])),
+        tier1.get('opening_tension'), tier1.get('opening_tension_note'),
         tier1.get('ethos_rating'), json.dumps(tier1.get('ethos_markers', [])),
         tier1.get('concreteness_score'), tier1.get('imagery_density_per_10min'),
         json.dumps(tier1.get('narrative_moments', [])),
@@ -350,6 +466,7 @@ def _write_review(conn, sermon_id: int, inp: AnalyzerInput, pure: PureStageOutpu
         json.dumps(summary.get('top_impact_hurters', [])),
         summary.get('faithfulness_note'),
         summary.get('one_change_for_next_sunday', ''),
+        json.dumps(summary.get('per_dimension_growth_edges', {})),
         now,
     ))
 
