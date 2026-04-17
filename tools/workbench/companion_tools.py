@@ -295,6 +295,72 @@ TOOL_DEFINITIONS = [
             "required": ["reference"]
         }
     },
+    # ── Coaching Bridge Tools ──────────────────────────────────────────
+    {
+        "name": "get_active_commitment",
+        "description": "Get Bryan's current coaching commitment — the specific, measurable change he agreed to work on. Returns the commitment text, target date, and progress status.",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "get_sermon_patterns",
+        "description": "Get aggregate sermon analysis patterns over a time window. Returns trends in timing, structure, delivery, and recurring strengths/weaknesses across multiple sermons.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "window_days": {
+                    "type": "integer",
+                    "description": "Number of days to look back for pattern analysis. Defaults to 90."
+                }
+            },
+            "required": []
+        }
+    },
+    {
+        "name": "get_representative_moments",
+        "description": "Get specific timestamped moments from past sermons that illustrate a pattern. Use to ground coaching feedback in concrete evidence rather than abstract claims.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dimension": {
+                    "type": "string",
+                    "description": "The sermon dimension to find moments for (e.g. 'pacing', 'illustration', 'application', 'transitions', 'exegetical_density')."
+                },
+                "valence": {
+                    "type": "string",
+                    "enum": ["positive", "negative"],
+                    "description": "Whether to find positive examples (strengths) or negative examples (areas for growth)."
+                }
+            },
+            "required": ["dimension", "valence"]
+        }
+    },
+    {
+        "name": "get_counterexamples",
+        "description": "Get sermons where a typically weak area was actually strong. Use to show Bryan he CAN do something well — it's not a fixed limitation, just inconsistent.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dimension": {
+                    "type": "string",
+                    "description": "The sermon dimension to find counterexamples for (e.g. 'pacing', 'illustration', 'application')."
+                }
+            },
+            "required": ["dimension"]
+        }
+    },
+    {
+        "name": "get_coaching_insights",
+        "description": "Get structured insights from past coaching conversations. Returns patterns the coaching agent has observed, what's been tried, and what's working.",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
 ]
 
 
@@ -330,6 +396,22 @@ def execute_tool(tool_name, tool_input, session_context):
             return _get_cross_reference_network(tool_input, session_context)
         elif tool_name == "get_passage_context":
             return _get_passage_context(tool_input, session_context)
+        # ── Coaching Bridge Tools ──────────────────────────────────────
+        elif tool_name == "get_active_commitment":
+            from coaching_bridge import load_active_commitment
+            return load_active_commitment(session_context['db']) or {'active': False}
+        elif tool_name == "get_sermon_patterns":
+            from sermon_coach_tools import get_sermon_patterns
+            return get_sermon_patterns(session_context['db'], window_days=tool_input.get('window_days', 90))
+        elif tool_name == "get_representative_moments":
+            from meta_coach_tools import get_representative_moments
+            return {'moments': get_representative_moments(session_context['db'], dimension=tool_input['dimension'], valence=tool_input['valence'])}
+        elif tool_name == "get_counterexamples":
+            from meta_coach_tools import get_counterexamples
+            return {'counterexamples': get_counterexamples(session_context['db'], dimension=tool_input['dimension'])}
+        elif tool_name == "get_coaching_insights":
+            from coaching_bridge import load_coaching_insights
+            return {'insights': load_coaching_insights(session_context['db'])}
         else:
             return {"error": f"Unknown tool: {tool_name}"}
     except Exception as e:
@@ -340,7 +422,8 @@ def _read_bible_passage(tool_input):
     """Read a Bible passage in one or more translations."""
     ref_str = tool_input["reference"]
     ref = parse_reference(ref_str)
-    # Default to original language: THGNT for NT (books 40-66), BHS for OT
+    # Default to original language: THGNT for NT, BHS for OT.
+    # parse_reference returns Logos native numbering where NT is 61-87.
     if "versions" not in tool_input or not tool_input["versions"]:
         versions = ["THGNT"] if ref["book"] >= 61 else ["BHS"]
     else:
@@ -495,16 +578,73 @@ def _lookup_grammar(tool_input, session_context):
 
 
 def _word_study_lookup(tool_input, session_context):
-    """Look up interlinear data for a word in the passage."""
+    """Look up interlinear/morphological data for a word in the passage.
+
+    Uses MorphGNT (authoritative) for NT, ESV interlinear fallback for OT.
+    """
     word = tool_input["word"]
     ref_str = tool_input["reference"]
     ref = parse_reference(ref_str)
+    book = ref["book"]
 
+    # NT: use MorphGNT for authoritative morphology
+    if book >= 40:
+        from morphgnt_cache import get_cache
+        import unicodedata
+        cache = get_cache()
+
+        verse_start = ref.get("verse_start", 1)
+        verse_end = ref.get("verse_end", verse_start)
+        word_nfc = unicodedata.normalize("NFC", word.strip().rstrip(".,;·"))
+
+        all_words = []
+        for v in range(verse_start, verse_end + 1):
+            all_words.extend(cache.lookup_verse(book, ref["chapter"], v))
+
+        if all_words:
+            # Find matches: search surface text, normalized, and lemma
+            matches = []
+            for w in all_words:
+                w_text = w["text"].rstrip(".,;·")
+                if (word_nfc.lower() == w_text.lower()
+                        or word_nfc.lower() == w["normalized"].lower()
+                        or word_nfc.lower() == w["lemma"].lower()
+                        or word.lower() in w.get("parsing_human", "").lower()):
+                    matches.append({
+                        "surface": w["text"],
+                        "lemma": w["lemma"],
+                        "morphology": w["parsing_human"],
+                        "pos": w["pos"],
+                    })
+
+            if matches:
+                return {
+                    "word": word,
+                    "reference": ref_str,
+                    "source": "morphgnt",
+                    "matches": matches,
+                }
+
+            # No exact match — return all verse words for context
+            return {
+                "word": word,
+                "reference": ref_str,
+                "source": "morphgnt",
+                "matches": [],
+                "verse_words": [
+                    {"surface": w["text"], "lemma": w["lemma"],
+                     "morphology": w["parsing_human"]}
+                    for w in all_words
+                ],
+                "note": f"No exact match for '{word}'. Showing all words in the verse for reference."
+            }
+
+    # OT or MorphGNT miss: fall back to ESV interlinear
     bible_files = resolve_bible_files(["ESV"])
     if not bible_files:
         return {"error": "No Bible available for interlinear data"}
 
-    interlinear = get_interlinear_for_chapter(bible_files[0], ref["book"], ref["chapter"])
+    interlinear = get_interlinear_for_chapter(bible_files[0], book, ref["chapter"])
     if not interlinear:
         return {"note": "Interlinear data not available for this passage. Use lookup_lexicon for word studies."}
 
@@ -586,6 +726,17 @@ def _save_to_outline(tool_input, session_context):
 
 # ── Dataset Tool Implementations ─────────────────────────────────────────
 
+def _logos_to_protestant_book(book):
+    """Convert Logos native book number (NT: 61-87) to Protestant (NT: 40-66).
+
+    dataset_tools functions expect Protestant numbering — they internally
+    convert back to Logos via _protestant_to_logos (book + 21 for NT).
+    parse_reference() returns Logos native, so all dataset_tools callers
+    must convert first or they'll query the wrong book.
+    """
+    return book - 21 if book >= 61 else book
+
+
 def _get_passage_data(tool_input, session_context):
     """Query pre-indexed passage datasets.
 
@@ -602,7 +753,7 @@ def _get_passage_data(tool_input, session_context):
     )
 
     ref = parse_reference(tool_input["reference"])
-    book, chapter = ref["book"], ref["chapter"]
+    book, chapter = _logos_to_protestant_book(ref["book"]), ref["chapter"]
     testament = "ot" if book <= 39 else "nt"
     phase = session_context.get("phase", "")
 
@@ -656,13 +807,14 @@ def _get_cross_reference_network(tool_input, session_context):
     from dataset_tools import query_curated_cross_refs, query_theology_xrefs
 
     ref = parse_reference(tool_input["reference"])
+    book = _logos_to_protestant_book(ref["book"])
     xref_type = tool_input.get("xref_type", "curated")
 
     if xref_type == "curated":
-        rows = query_curated_cross_refs(ref["book"], ref["chapter"],
+        rows = query_curated_cross_refs(book, ref["chapter"],
                                         ref.get("verse_start"), ref.get("verse_end"))
     else:
-        rows = query_theology_xrefs(ref["book"], ref["chapter"], xref_type=xref_type)
+        rows = query_theology_xrefs(book, ref["chapter"], xref_type=xref_type)
 
     return {
         "reference": tool_input["reference"],
@@ -679,7 +831,7 @@ def _get_passage_context(tool_input, session_context):
     )
 
     ref = parse_reference(tool_input["reference"])
-    book, chapter = ref["book"], ref["chapter"]
+    book, chapter = _logos_to_protestant_book(ref["book"]), ref["chapter"]
 
     requested = tool_input.get("context_types")
     if not requested:
