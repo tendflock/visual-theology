@@ -92,7 +92,12 @@ def _behavioral_constraints() -> str:
   disagreement becomes part of the conversation log.
 - Lead with the Impact card when Bryan opens the review. Tier 1 is the coaching crown.
 - When appropriate, cite Chapell's Christ-Centered Preaching, Robinson's Big Idea, Beeke, or
-  Piper — but only when the citation earns its place. Don't pepper quotes unnecessarily."""
+  Piper — but only when the citation earns its place. Don't pepper quotes unnecessarily.
+- When a conversation produces a refined coaching insight that would help future
+  sermon prep, propose: "Should I save this as a coaching note for your future
+  prep?" If Bryan confirms, summarize the insight as: what dimension it relates to,
+  a 1-2 sentence summary, and when it applies vs when to avoid it. The frontend
+  will save it via the coaching-insight endpoint."""
 
 
 TOOL_DEFINITIONS = [
@@ -188,16 +193,43 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def stream_coach_response(db, sermon_id: int, conversation_id: int,
-                          user_message: str, llm_client):
-    """Generator that streams coach output events and persists messages."""
+def _load_sermon_context(db, sermon_id: int) -> dict | None:
+    """Load sermon context including linked prep session ID if one exists.
+
+    Returns a dict with passage, preach_date, duration_sec, transcript,
+    and optionally linked_session_id.  Returns None if the sermon doesn't exist.
+    """
     conn = db._conn()
     sermon_row = conn.execute("""
         SELECT id, bible_text_raw, preach_date, duration_seconds, transcript_text
         FROM sermons WHERE id = ?
     """, (sermon_id,)).fetchone()
-    conn.close()
     if not sermon_row:
+        conn.close()
+        return None
+
+    link_row = conn.execute("""
+        SELECT session_id FROM sermon_links
+        WHERE sermon_id = ? AND link_status = 'active'
+    """, (sermon_id,)).fetchone()
+    conn.close()
+
+    ctx = {
+        'passage': sermon_row[1],
+        'preach_date': sermon_row[2],
+        'duration_sec': sermon_row[3] or 0,
+        'transcript': sermon_row[4],
+    }
+    if link_row:
+        ctx['linked_session_id'] = link_row[0]
+    return ctx
+
+
+def stream_coach_response(db, sermon_id: int, conversation_id: int,
+                          user_message: str, llm_client):
+    """Generator that streams coach output events and persists messages."""
+    sermon_context = _load_sermon_context(db, sermon_id)
+    if not sermon_context:
         yield {'type': 'error', 'error': 'sermon_not_found'}
         return
 
@@ -212,12 +244,6 @@ def stream_coach_response(db, sermon_id: int, conversation_id: int,
 
     review = get_sermon_review(db, sermon_id) or {}
     patterns = get_sermon_patterns(db)
-    sermon_context = {
-        'passage': sermon_row[1],
-        'preach_date': sermon_row[2],
-        'duration_sec': sermon_row[3] or 0,
-        'transcript': sermon_row[4],
-    }
 
     # Fetch active coaching commitment
     conn2 = db._conn()

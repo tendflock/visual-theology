@@ -234,3 +234,91 @@ def test_build_study_prompt_omits_coaching_when_empty():
         coaching_context='',
     )
     assert 'Coaching Memory' not in prompt
+
+
+# ── REST endpoint tests ──────────────────────────────────────────────
+
+def test_create_coaching_insight_route():
+    import tempfile, os
+    from app import app, get_db
+    db_fd, db_path = tempfile.mkstemp(suffix='.db')
+    os.close(db_fd)
+    os.environ['COMPANION_DB_PATH'] = db_path
+    import app as app_mod
+    app_mod._db_instance = None
+    app.config['TESTING'] = True
+    with app.test_client() as c:
+        with c.session_transaction() as sess:
+            sess['authenticated'] = True
+        from companion_db import CompanionDB
+        test_db = CompanionDB(db_path)
+        test_db.init_db()
+        resp = c.post('/sermons/coaching-insight', json={
+            'dimension_key': 'application_specificity',
+            'summary': 'Slow down at application moments',
+            'applies_when': ['outline construction'],
+            'avoid_when': ['textual observation'],
+        })
+        assert resp.status_code == 201
+        data = resp.get_json()
+        assert 'id' in data
+        conn = test_db._conn()
+        row = conn.execute("SELECT summary FROM coaching_insights WHERE id = ?",
+                           (data['id'],)).fetchone()
+        conn.close()
+        assert row[0] == 'Slow down at application moments'
+    os.unlink(db_path)
+
+
+# ── _load_sermon_context tests ──────────────────────────────────────
+
+def test_coach_loads_linked_session_id(fresh_db):
+    conn = fresh_db._conn()
+    conn.execute("""
+        INSERT INTO sermons (sermonaudio_id, broadcaster_id, title, classified_as,
+                              sync_status, preach_date, duration_seconds, bible_text_raw,
+                              transcript_text, last_state_change_at,
+                              first_synced_at, last_synced_at, created_at, updated_at)
+        VALUES ('sa-link-test', 'bcast', 'Test Linked', 'sermon', 'review_ready',
+                '2026-04-12', 2322, 'Romans 8:1-11', 'transcript here',
+                datetime('now'), datetime('now'), datetime('now'), datetime('now'), datetime('now'))
+    """)
+    sermon_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.execute("""
+        INSERT INTO sessions (passage_ref, book, chapter, verse_start, verse_end, genre,
+                              current_phase, timer_remaining_seconds, created_at, updated_at)
+        VALUES ('Romans 8:1-11', 66, 8, 1, 11, 'epistle', 'prayer', 900,
+                datetime('now'), datetime('now'))
+    """)
+    session_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.execute("""
+        INSERT INTO sermon_links (sermon_id, session_id, link_status, link_source, match_reason, created_at)
+        VALUES (?, ?, 'active', 'auto', 'tier1', datetime('now'))
+    """, (sermon_id, session_id))
+    conn.commit()
+    conn.close()
+    from sermon_coach_agent import _load_sermon_context
+    ctx = _load_sermon_context(fresh_db, sermon_id)
+    assert ctx.get('linked_session_id') == session_id
+
+
+def test_coach_context_omits_linked_session_when_no_link(fresh_db):
+    conn = fresh_db._conn()
+    conn.execute("""
+        INSERT INTO sermons (sermonaudio_id, broadcaster_id, title, classified_as,
+                              sync_status, preach_date, duration_seconds, bible_text_raw,
+                              transcript_text, last_state_change_at,
+                              first_synced_at, last_synced_at, created_at, updated_at)
+        VALUES ('sa-nolink-test', 'bcast', 'Test No Link', 'sermon', 'review_ready',
+                '2026-04-12', 1800, 'John 3:16', 'some transcript',
+                datetime('now'), datetime('now'), datetime('now'), datetime('now'), datetime('now'))
+    """)
+    sermon_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.commit()
+    conn.close()
+    from sermon_coach_agent import _load_sermon_context
+    ctx = _load_sermon_context(fresh_db, sermon_id)
+    assert ctx is not None
+    assert 'linked_session_id' not in ctx
+    assert ctx['passage'] == 'John 3:16'
+    assert ctx['duration_sec'] == 1800

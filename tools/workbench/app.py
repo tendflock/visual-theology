@@ -1769,6 +1769,31 @@ def sermon_coach_message(sermon_id):
     return Response(generate(), mimetype='text/event-stream')
 
 
+@sermons_bp.route('/coaching-insight', methods=['POST'])
+def create_coaching_insight():
+    import json as _json
+    db = get_db()
+    data = request.get_json()
+    conn = db._conn()
+    conn.execute("""
+        INSERT INTO coaching_insights
+            (dimension_key, summary, applies_when, avoid_when,
+             source_sermon_id, source_conversation_id, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+    """, (
+        data.get('dimension_key'),
+        data['summary'],
+        _json.dumps(data.get('applies_when', [])),
+        _json.dumps(data.get('avoid_when', [])),
+        data.get('source_sermon_id'),
+        data.get('source_conversation_id'),
+    ))
+    insight_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.commit()
+    conn.close()
+    return jsonify({'id': insight_id, 'status': 'saved'}), 201
+
+
 app.register_blueprint(sermons_bp)
 
 

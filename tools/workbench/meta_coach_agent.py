@@ -385,7 +385,12 @@ Evidence thresholds:
 - In pre_gate (<5 sermons): "Too early for corpus claims."
 - In emerging (5-9): prefer "emerging signal" and "watch area" language.
 - Must cite specific sermon count and moment count.
-- When evidence is thin, say so explicitly."""
+- When evidence is thin, say so explicitly.
+- When a conversation produces a refined coaching insight that would help future
+  sermon prep, propose: "Should I save this as a coaching note for your future
+  prep?" If Bryan confirms, summarize the insight as: what dimension it relates to,
+  a 1-2 sentence summary, and when it applies vs when to avoid it. The frontend
+  will save it via the coaching-insight endpoint."""
 
 
 # ── Streaming response generator ──────────────────────────────────
