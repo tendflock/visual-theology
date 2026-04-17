@@ -164,6 +164,10 @@ body {
     text-align: center;
 }
 
+.session-card {
+    margin-bottom: 12px;
+}
+
 .recent-session-link {
     display: flex;
     justify-content: space-between;
@@ -174,11 +178,29 @@ body {
     border-radius: var(--radius);
     color: var(--text);
     text-decoration: none;
-    margin-bottom: 8px;
 }
 
 .recent-session-link:hover {
     border-color: rgba(255, 255, 255, 0.15);
+}
+
+.session-delete-btn {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 6px;
+    border: none;
+    border-radius: var(--radius);
+    background: #c0392b;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.session-delete-btn:hover {
+    background: #e74c3c;
 }
 
 .recent-session-link .passage {
@@ -215,6 +237,25 @@ body {
     gap: 16px;
     z-index: 100;
 }
+
+.topbar-link {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+.topbar-link:hover { color: var(--accent); }
+
+.study-nav {
+    text-align: right;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.study-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+.study-nav a:hover { color: var(--accent); }
 
 .topbar-passage {
     font-size: 15px;

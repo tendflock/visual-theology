@@ -10,6 +10,7 @@
     <div id="study-app">
 
         <div id="study-topbar">
+            <a href="/sermons/" class="topbar-link">Sermons</a>
             <span class="topbar-passage">{{ session.passage_ref }}</span>
             <div class="topbar-dots">
                 {% for i in range(total_phases) %}
@@ -78,7 +79,7 @@
         </div>
     </div>
 
-    <script src="/static/study.js?v=3"></script>
+    <script src="/static/study.js?v=5"></script>
     <script>
         window.studySessionId = {{ session.id }};
         window.studyMode = "{{ mode }}";

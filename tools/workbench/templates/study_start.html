@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="study-start">
+        <div class="study-nav"><a href="/sermons/">Sermons</a> · <a href="/sermons/patterns">Patterns</a></div>
         <h1>Sermon Study</h1>
         <p class="subtitle">What are you preaching?</p>
 
@@ -24,10 +25,15 @@
         <div class="recent-sessions">
             <h3>Continue studying</h3>
             {% for s in sessions %}
-            <a href="/study/session/{{ s.id }}" class="recent-session-link">
-                <span class="passage">{{ s.passage_ref }}</span>
-                <span class="meta">{{ s.current_phase | replace('read_translate', 'Read & Translate') | replace('study_bibles', 'Study Bibles') | replace('_', ' ') | title }}</span>
-            </a>
+            <div class="session-card">
+                <a href="/study/session/{{ s.id }}" class="recent-session-link">
+                    <span class="passage">{{ s.passage_ref }}</span>
+                    <span class="meta">{{ s.current_phase | replace('read_translate', 'Read & Translate') | replace('study_bibles', 'Study Bibles') | replace('_', ' ') | title }}</span>
+                </a>
+                <form method="POST" action="/study/session/{{ s.id }}/delete" onsubmit="return confirm('Delete this session?')">
+                    <button type="submit" class="session-delete-btn">Delete</button>
+                </form>
+            </div>
             {% endfor %}
         </div>
         {% endif %}
