@@ -412,8 +412,8 @@ class CompanionDB:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 session_id INTEGER NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
                 dimension_key TEXT NOT NULL,
-                escalation_level INTEGER NOT NULL,
-                response TEXT CHECK (response IN ('accepted', 'declined', 'deferred', 'pending')),
+                escalation_level INTEGER NOT NULL CHECK (escalation_level BETWEEN 1 AND 5),
+                response TEXT NOT NULL DEFAULT 'pending' CHECK (response IN ('accepted', 'declined', 'deferred', 'pending')),
                 created_at TEXT NOT NULL,
                 UNIQUE(session_id, dimension_key)
             );
