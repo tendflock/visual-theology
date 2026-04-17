@@ -1635,9 +1635,11 @@ def sermon_approve_candidate(sermon_id, link_id):
 @sermons_bp.route('/patterns', methods=['GET'])
 def sermon_patterns():
     from sermon_coach_tools import get_sermon_patterns
+    from meta_coach_tools import get_active_commitment
     db = get_db()
     data = get_sermon_patterns(db)
-    return render_template('sermons/patterns.html', patterns=data)
+    commitment = get_active_commitment(db)
+    return render_template('sermons/patterns.html', patterns=data, commitment=commitment)
 
 
 @sermons_bp.route('/sync-log', methods=['GET'])
@@ -1656,6 +1658,68 @@ def sermon_sync_log_page():
     conn.close()
     return render_template('sermons/sync_log.html',
                              runs=[dict(r) for r in runs], cost_30d=cost_total)
+
+
+@sermons_bp.route('/patterns/coach/message', methods=['POST'])
+def meta_coach_message():
+    import json as _json
+    from meta_coach_agent import stream_meta_coach_response
+    from llm_client import AnthropicClient
+    user_message = request.json.get('message') if request.is_json else request.form.get('message', '')
+    try:
+        conversation_id = int(request.json.get('conversation_id', 0)) if request.is_json else 0
+    except (ValueError, TypeError):
+        conversation_id = 0
+    db = get_db()
+    api_key = anthropic_api_key()
+    client = AnthropicClient(api_key=api_key)
+
+    def generate():
+        for event in stream_meta_coach_response(
+            db=db, conversation_id=conversation_id,
+            user_message=user_message, llm_client=client,
+        ):
+            yield f"data: {_json.dumps(event)}\n\n"
+
+    return Response(generate(), mimetype='text/event-stream')
+
+
+@sermons_bp.route('/patterns/coach/commitment', methods=['GET'])
+def get_commitment():
+    from meta_coach_tools import get_active_commitment
+    db = get_db()
+    commitment = get_active_commitment(db)
+    return jsonify(commitment or {})
+
+
+@sermons_bp.route('/patterns/coach/commitment', methods=['POST'])
+def create_commitment():
+    db = get_db()
+    conn = db._conn()
+    data = request.json or {}
+    dimension_key = data.get('dimension_key', '')
+    experiment = data.get('practice_experiment', '')
+    target = int(data.get('target_sermons', 2))
+    if not dimension_key or not experiment:
+        return jsonify({'error': 'dimension_key and practice_experiment required'}), 400
+    # Get most recent sermon as baseline
+    baseline = conn.execute(
+        "SELECT id FROM sermons WHERE classified_as='sermon' ORDER BY preach_date DESC LIMIT 1"
+    ).fetchone()
+    baseline_id = baseline[0] if baseline else None
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc).isoformat()
+    # Supersede any existing active commitment
+    conn.execute("UPDATE coaching_commitments SET status='superseded' WHERE status='active'")
+    conn.execute("""
+        INSERT INTO coaching_commitments (dimension_key, practice_experiment, target_sermons,
+            baseline_sermon_id, status, created_at)
+        VALUES (?, ?, ?, ?, 'active', ?)
+    """, (dimension_key, experiment, target, baseline_id, now))
+    conn.commit()
+    new_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+    conn.close()
+    return jsonify({'id': new_id, 'status': 'active'})
 
 
 @sermons_bp.route('/<int:sermon_id>/coach/history', methods=['GET'])

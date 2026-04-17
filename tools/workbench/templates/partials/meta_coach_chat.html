@@ -1,0 +1,18 @@
+<div class="sermon-card sermon-card-coach" id="meta-coach-panel">
+  <h2>Coaching</h2>
+  {% if commitment %}
+  <div class="commitment-banner">
+    <strong>Active focus:</strong> {{ commitment.practice_experiment }}
+    <span class="commitment-dim">({{ commitment.dimension_key }})</span>
+  </div>
+  {% endif %}
+  <div id="meta-coach-messages"></div>
+  <div class="meta-coach-buttons">
+    <button type="button" class="coach-canned" data-prompt="Based on my sermon patterns so far, tell me the single highest-leverage thing to work on next. Use corpus evidence, not just averages. 1. Name the pattern category you see most clearly. 2. Cite the sermon count and moment count supporting it. 3. Tell me why this matters for sermon impact. 4. Distinguish whether this is recurring, improving, inconsistent, or possibly a one-off. 5. Give me one concrete practice experiment for my next 2 sermons. 6. If evidence is weak or mixed, say that plainly.">What should I work on?</button>
+    <button type="button" class="coach-canned" data-prompt="What positive patterns are emerging or strengthening in my recent sermons? Cite specific evidence and tell me what to keep reinforcing.">What's improving?</button>
+  </div>
+  <form id="meta-coach-form">
+    <textarea name="message" placeholder="Ask the meta-coach..." rows="2"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>

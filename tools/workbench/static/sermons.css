@@ -112,6 +112,37 @@ header h1 { margin: 0 0 8px; font-size: 24px; }
   padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-top: 8px;
 }
 
+/* Meta-coach (patterns page) — mirrors #coach-messages styles */
+#meta-coach-messages { min-height: 120px; max-height: 420px; overflow-y: auto; margin-bottom: 12px; }
+#meta-coach-messages .msg-user { color: var(--sermon-text); margin-bottom: 14px; padding: 8px 0; border-bottom: 1px solid var(--sermon-border); }
+#meta-coach-messages .msg-assistant { color: var(--sermon-accent); margin-bottom: 14px; padding: 8px 0; border-bottom: 1px solid var(--sermon-border); line-height: 1.6; }
+#meta-coach-messages .msg-assistant p { margin: 0 0 8px 0; }
+#meta-coach-messages .msg-assistant strong { color: var(--sermon-text); }
+#meta-coach-messages .msg-assistant ul, #meta-coach-messages .msg-assistant ol { margin: 4px 0 8px 20px; padding: 0; }
+#meta-coach-messages .msg-assistant li { margin-bottom: 4px; }
+#meta-coach-messages .msg-assistant em { font-style: italic; opacity: 0.9; }
+#meta-coach-messages .msg-error { color: var(--sermon-bad); margin-bottom: 14px; }
+#meta-coach-form textarea {
+  width: 100%; background: var(--sermon-bg); color: var(--sermon-text);
+  border: 1px solid var(--sermon-border); border-radius: 6px; padding: 8px;
+  font: inherit; resize: vertical;
+}
+#meta-coach-form button[type=submit] {
+  background: var(--sermon-accent); color: #fff; border: none;
+  padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-top: 8px;
+}
+.meta-coach-buttons { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.coach-canned {
+  background: var(--sermon-surface); color: var(--sermon-accent); border: 1px solid var(--sermon-border);
+  padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.coach-canned:hover { background: var(--sermon-surface-hover); }
+.commitment-banner {
+  background: rgba(88, 166, 255, 0.08); border: 1px solid var(--sermon-accent);
+  border-radius: 6px; padding: 10px 14px; margin-bottom: 14px; font-size: 14px;
+}
+.commitment-dim { color: var(--sermon-text-muted); font-size: 12px; }
+
 .sermons-table { width: 100%; border-collapse: collapse; }
 .sermons-table th, .sermons-table td { padding: 10px 8px; text-align: left; border-bottom: 1px solid var(--sermon-border); }
 .sermons-table tr.has-badge { background: rgba(88, 166, 255, 0.08); }
