@@ -1,77 +1,81 @@
-# Session Handoff: Sermon Coach MVP Live + Analysis Running
+# Session Handoff: Meta-Coach Built + All 33 Sermons Tagged
 
-**Date:** 2026-04-16
-**Status:** Sermon coach merged to main. 33 sermons synced, reanalysis in progress with full transcripts.
+**Date:** 2026-04-17
+**Status:** Meta-coach live on patterns page. Full corpus tagged. Ready for use.
 
 ## What Was Done This Session
 
-### Codex Adversarial Review
-- Ran codex (gpt-5.4) against entire `feat/sermon-coach-mvp` branch
-- Found 3 critical + 5 important bugs, all fixed in commit `e73a307`:
-  - Coach streaming broken (missing `stream_message()` on AnthropicClient)
-  - Tool-use loop never fed results back to model (bounded at 5 rounds now)
-  - Sync routes bypassed file lock (now routed through `run_sync()`)
-  - Manual link could 500 on partial unique index
-  - Analyzer could strand rows in `analysis_running`
-  - Reanalyze race (conditional UPDATE)
-  - SQL injection in `get_sermon_patterns` (parameterized)
+### Bug Fixes (pre meta-coach)
+- Coach chat history now loads on page navigation (GET endpoint + JS fetch)
+- Transcript injected into system prompt (was timing out via tool call)
+- SermonAudio API auto-pagination (was capped at 100/page)
+- Codex adversarial review: conversation_id validation, race guard, fallback filter fix
 
-### API Key Migration to macOS Keychain
-- Created `tools/workbench/app_secrets.py` — Keychain-first, env-var-fallback
-- Updated all 9 callsites across `app.py`, `companion_agent.py`, `workbench_agent.py`
-- Bryan stored all 3 keys in Keychain Access (verified working)
-- `keyring` package installed with macOS Keychain backend
+### Meta-Coach: 3-Layer System Built
+**Layer 1 — SRT Timestamp Preservation:**
+- `srt_parser.py`: parse, validate, coarsen SRT captions (43 tests)
+- Real millisecond timestamps stored in `sermons.transcript_segments`
+- Canonical transcript builder keeps plain text in sync
+- All 33 sermons backfilled with SRT data (26 good, 7 degraded quality)
 
-### SermonAudio Integration Fixes
-- API returns rich model objects, not flat dicts — added `normalize_remote()` adapter
-- Transcript is SRT caption behind auth — uses library's authenticated session to fetch + strip timestamps
-- Classification fix: Sunday Service < 20min → skipped (catches mistagged devotionals)
-- Synced 200 sermons (page 1 + page 2), 33 classified as real sermons
+**Layer 2 — Enriched Analysis Tagging:**
+- `sermon_tagger.py`: taxonomy-controlled moment extraction via second LLM pass
+- 7 dimensions, 11 section roles, 16 homiletic moves (all CHECK-constrained)
+- `analysis_runs` table tracks run provenance with `is_active` versioning
+- All 33 sermons tagged: 535 moments total, avg 16.2/sermon, avg confidence 0.88
 
-### Analysis Pipeline Fixes
-- `dispatch_pending_analyses()` now auto-runs after sync/backfill/cron (was missing)
-- Transcript truncation bug: segments were capped at 400 chars — LLM only saw 1% of transcript. Fixed.
-- Reanalysis running with full transcripts (was at 10/33 when session ended)
+**Layer 3 — Meta-Coach:**
+- `shared_prompts.py`: HOMILETICAL_FRAMEWORK + LONGITUDINAL_POSTURE_RULE extracted
+- `priority_ranker.py`: pre-computed priority ranking with 4 sub-scores
+- `meta_coach_tools.py`: 11 corpus-scoped read tools
+- `meta_coach_agent.py`: streaming Claude coach with tool-use loop
+- `coaching_commitments` table with partial unique index (one active at a time)
+- Chat widget on patterns page with "What should I work on?" + "What's improving?" buttons
+- Per-sermon coach receives active commitment as coaching lens
 
-## Fixed This Session
+### Cross-Navigation
+- Study pages link to Sermons/Patterns
+- Sermon pages link back to Study
 
-### 1. Coach chat history restored on page navigation (was bug #1)
-- Added `GET /sermons/<id>/coach/history` endpoint returning persisted messages as JSON
-- Frontend JS fetches and renders history on DOMContentLoaded
-- Submit button disabled until history loads (prevents race condition with first message)
-- Codex review: added try/except on `conversation_id` parsing to prevent 500s on bad input
+### Design Artifacts
+- Spec: `docs/superpowers/specs/2026-04-16-meta-coach-design.md` (3 rounds of adversarial review)
+- Plan: `docs/superpowers/plans/2026-04-16-meta-coach.md` (18 tasks)
 
-### 2. Coach transcript no longer causes timeouts (was bug #2)
-- Full transcript injected into the system prompt (coach already has it in context)
-- Tool renamed from `get_transcript_full` to `get_transcript_excerpt` — now requires `start_sec` + `end_sec` (time slicing only)
-- Added 50K char truncation cap on transcript in system prompt as safety net
-- Codex review: confirmed Opus 200K context handles 25K chars (~7K tokens) with plenty of room
-
-### 3. SermonAudio API auto-pagination (was bug #4)
-- `list_sermons_updated_since()` now loops through pages using `page` param and `next_url`
-- Stops when batch < page_size or no `next_url`, respects overall `limit`
-- Codex review: fixed TypeError fallback to preserve `since` filter (was silently dropped)
-
-## Known Bugs to Fix Next Session
-
-### 1. Patterns page needs interactive meta-coach
-`/sermons/patterns` currently shows aggregate stat cards only. Bryan wants:
-- A chat interface on this page (like the per-sermon coach but corpus-scoped)
-- Coach sees aggregate data and can drill into specific sermons
-- Pull best examples and worst examples to help develop his homiletic
-- This is the "where the metacoaching happens" page
-
-## Commits on Main Since Merge
+## Commits Since Last Handoff
 ```
-878be7a fix: send full transcript to LLM, not 400-char truncated segments
-645ab83 fix: auto-run analysis after sync/backfill/cron  
-71b8a29 fix: skip Sunday Service entries under 20min (mistagged devotionals)
-e76864c fix: normalize SermonAudio API objects + auth caption fetch
-74c7487 Merge feat/sermon-coach-mvp: sermon coach MVP
+6171741 fix: include cost_usd in tag_sermon() return dict
+3d8be68 feat: cross-navigation between Study and Sermons sections
+60bfe18 feat: add meta-coach routes + chat widget to patterns page
+2938d81 feat: add commitment lens to per-sermon coach system prompt
+82317df feat: add meta-coach agent with streaming tool-use loop
+e354d52 feat: add 11 corpus-scoped read tools for meta-coach agent
+02e7ece feat: priority ranker with sub-score formulas (6 tests)
+9ad6ef5 refactor: extract HOMILETICAL_FRAMEWORK + LONGITUDINAL_POSTURE_RULE to shared_prompts.py
+28928a6 feat: add coaching_commitments table to companion DB schema
+b63de36 fix: increase tagger max_tokens to 8192 (4096 truncated output to empty)
+4e790a8 feat: add tagger LLM prompt builder + tag_sermon() entry point
+edba174 feat: sermon tagger output parser with taxonomy validation (17 tests)
+5087921 feat: add analysis_runs + sermon_moments tables to companion DB
+1ae01ec feat: use real SRT timestamps in analyzer, add backfill-srt route
+b789c90 feat: store SRT segments during ingest, add transcript_segments/quality columns
+3425c60 feat: add coarsen_srt_segments to bridge SRT captions to analyzer
+b76bcf0 fix: SRT validator — zero duration guard, 80% threshold, boundary tests
+b03309d feat: SRT parser with validation and canonical transcript builder
+eaf3a74 spec: fix 7 findings from final Codex adversarial review
+abf724c spec: fix all PR review findings in meta-coach design
+f69285e spec: meta-coach longitudinal coaching system design
+a8eff2a plan: meta-coach implementation — 18 tasks across 3 gated layers
+5ec8a51 fix: validate conversation_id on POST coach/message endpoint
+4ff532d fix: coach history persistence, transcript tool timeout, API pagination
 ```
 
-## State When Stopped
-- 33 sermons classified as real sermons
-- Reanalysis in progress (~10/33 done, rest finishing in background)
-- PM2 `study-companion` process running with latest code
-- All 3 API keys in macOS Keychain (verified)
+## Known Issues / Next Steps
+- Meta-coach needs live browser smoke test (built but not tested end-to-end in browser)
+- New sermons auto-tag after analysis (already wired), but only 5 have been tested live
+- The `$0.000` cost display bug in tag_sermon was fixed but total cost for this session's tagging was $44.06
+- Patterns page only has aggregate stat cards + meta-coach — no trend visualizations yet
+
+## State
+- PM2 `study-companion` running with latest code
+- All 33 sermons: SRT segments + reviews + 535 tagged moments
+- No active coaching commitment yet (created via meta-coach conversation)
