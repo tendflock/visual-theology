@@ -74,6 +74,51 @@ document.addEventListener('DOMContentLoaded', () => {
     strong.textContent = 'Coach:';
     assistantEl.appendChild(strong);
     assistantEl.insertAdjacentHTML('beforeend', ' ' + rendered); // eslint-disable-line no-unsanitized/method -- input is HTML-escaped by renderMarkdown
+    addMetaSaveButtons(assistantEl, fullText);
+  }
+
+  function addMetaSaveButtons(el, text) {
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'margin-top:6px;display:flex;gap:8px;';
+
+    const noteBtn = document.createElement('button');
+    noteBtn.textContent = 'Save as coaching note';
+    noteBtn.className = 'coach-save-btn';
+    noteBtn.style.cssText = 'font-size:12px;padding:4px 10px;background:transparent;color:var(--sermon-accent);border:1px solid var(--sermon-border);border-radius:4px;cursor:pointer;';
+    noteBtn.addEventListener('click', async () => {
+      const summary = prompt('Edit the coaching insight to save:', text.slice(0, 300));
+      if (!summary) return;
+      const dim = prompt('Dimension? (application_specificity, burden_clarity, movement_clarity, ethos_rating, concreteness_score, christ_thread_score, exegetical_grounding)', 'application_specificity');
+      if (!dim) return;
+      const resp = await fetch('/sermons/coaching-insight', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ dimension_key: dim, summary: summary,
+          applies_when: ['sermon construction'], avoid_when: ['textual observation'] }),
+      });
+      if (resp.ok) { noteBtn.textContent = 'Saved'; noteBtn.disabled = true; }
+    });
+
+    const commitBtn = document.createElement('button');
+    commitBtn.textContent = 'Save as commitment';
+    commitBtn.style.cssText = 'font-size:12px;padding:4px 10px;background:var(--sermon-accent);color:#fff;border:none;border-radius:4px;cursor:pointer;';
+    commitBtn.addEventListener('click', async () => {
+      const practice = prompt('Edit the practice experiment:', text.slice(0, 300));
+      if (!practice) return;
+      const dim = prompt('Dimension?', 'application_specificity');
+      if (!dim) return;
+      const resp = await fetch('/sermons/patterns/coach/commitment', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ dimension_key: dim, practice_experiment: practice, target_sermons: 2 }),
+      });
+      if (resp.ok) { commitBtn.textContent = 'Committed'; commitBtn.disabled = true;
+        const banner = document.querySelector('.commitment-banner');
+        if (banner) banner.textContent = 'Active: ' + practice.slice(0, 80) + '...';
+      }
+    });
+
+    wrap.appendChild(noteBtn);
+    wrap.appendChild(commitBtn);
+    el.appendChild(wrap);
   }
 
   function renderMarkdown(text) {

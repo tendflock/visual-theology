@@ -74,7 +74,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Final render with markdown formatting
     // Safe: renderMarkdown escapes HTML before processing markdown syntax
     assistantEl.innerHTML = '<strong>Coach:</strong> ' + renderMarkdown(fullText); // eslint-disable-line no-unsanitized/property
+    addSaveInsightButton(assistantEl, sermonId, fullText);
   });
+
+  function addSaveInsightButton(el, sId, text) {
+    const btn = document.createElement('button');
+    btn.textContent = 'Save as coaching note';
+    btn.className = 'coach-save-btn';
+    btn.style.cssText = 'margin-top:6px;font-size:12px;padding:4px 10px;background:transparent;color:var(--sermon-accent);border:1px solid var(--sermon-border);border-radius:4px;cursor:pointer;';
+    btn.addEventListener('click', async () => {
+      const summary = prompt('Edit the coaching insight to save:', text.slice(0, 300));
+      if (!summary) return;
+      const dim = prompt('Which dimension? (application_specificity, burden_clarity, movement_clarity, ethos_rating, concreteness_score, christ_thread_score, exegetical_grounding)', 'application_specificity');
+      if (!dim) return;
+      const resp = await fetch('/sermons/coaching-insight', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          dimension_key: dim, summary: summary,
+          applies_when: ['sermon construction'], avoid_when: ['textual observation'],
+          source_sermon_id: sId ? parseInt(sId) : null,
+        }),
+      });
+      if (resp.ok) { btn.textContent = 'Saved'; btn.disabled = true; }
+      else { btn.textContent = 'Error saving'; }
+    });
+    el.appendChild(btn);
+  }
 
   function renderMarkdown(text) {
     // Escape HTML entities first to prevent XSS
