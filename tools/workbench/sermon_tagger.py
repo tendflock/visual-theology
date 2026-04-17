@@ -390,7 +390,7 @@ def tag_sermon(db, sermon_id: int, llm_client, review_run_id: str | None = None)
             'duration_sec': duration_sec,
         }
         prompt = build_tagger_prompt(transcript_segments, review, sermon_context)
-        result = llm_client.call(prompt=prompt, schema=TAGGER_OUTPUT_SCHEMA)
+        result = llm_client.call(prompt=prompt, schema=TAGGER_OUTPUT_SCHEMA, max_tokens=8192)
 
         if 'error' in result:
             conn.execute("""
