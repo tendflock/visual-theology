@@ -16,7 +16,8 @@ from sermon_coach_tools import (
 
 
 def build_system_prompt(sermon_context: dict, review_json: dict,
-                        corpus_gate_status: str) -> str:
+                        corpus_gate_status: str,
+                        active_commitment: dict = None) -> str:
     """Assemble the coach's system prompt."""
     sections = [
         IDENTITY_CORE,
@@ -25,6 +26,7 @@ def build_system_prompt(sermon_context: dict, review_json: dict,
         HOMILETICAL_FRAMEWORK,
         _current_sermon_section(sermon_context),
         _pipeline_findings_section(review_json),
+        _coaching_focus_section(active_commitment),
         LONGITUDINAL_POSTURE_RULE.replace('{corpus_gate_status}', corpus_gate_status),
         _tools_section(),
         _behavioral_constraints(),
@@ -57,6 +59,21 @@ def _pipeline_findings_section(review: dict) -> str:
     if not review:
         return "## Pipeline Findings\n\n(no review yet)"
     return "## Pipeline Findings (structured)\n\n```json\n" + json.dumps(review, indent=2, default=str) + "\n```"
+
+
+def _coaching_focus_section(commitment: dict) -> str:
+    if not commitment:
+        return ""
+    return f"""## Active Coaching Focus
+
+Bryan is currently working on: {commitment.get('practice_experiment', '')}
+Dimension: {commitment.get('dimension_key', '')}
+Target: next {commitment.get('target_sermons', 2)} sermons
+
+After your standard review, add a brief "Commitment check" section:
+- Did this sermon show the target behavior?
+- If yes, cite the specific moment(s). If no, note what happened instead.
+- Do not let the commitment lens override your independent assessment."""
 
 
 def _tools_section() -> str:
@@ -201,7 +218,21 @@ def stream_coach_response(db, sermon_id: int, conversation_id: int,
         'duration_sec': sermon_row[3] or 0,
         'transcript': sermon_row[4],
     }
-    system = build_system_prompt(sermon_context, review, patterns['corpus_gate_status'])
+
+    # Fetch active coaching commitment
+    conn2 = db._conn()
+    commitment_row = conn2.execute(
+        "SELECT dimension_key, practice_experiment, target_sermons FROM coaching_commitments WHERE status = 'active' LIMIT 1"
+    ).fetchone()
+    conn2.close()
+    active_commitment = {
+        'dimension_key': commitment_row[0],
+        'practice_experiment': commitment_row[1],
+        'target_sermons': commitment_row[2],
+    } if commitment_row else None
+
+    system = build_system_prompt(sermon_context, review, patterns['corpus_gate_status'],
+                                 active_commitment=active_commitment)
 
     conn = db._conn()
     history_rows = conn.execute("""
