@@ -45,3 +45,6 @@ tools/resource_index.db
 
 # Sync orchestrator file lock
 tools/workbench/.sermon_sync.lock
+
+# Scheduled-task runtime lock
+.claude/scheduled_tasks.lock
