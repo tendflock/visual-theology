@@ -68,12 +68,13 @@ Card UI + Discussion     companion_agent.py (streaming Claude)
 | `tools/study.py` | Bible reading, commentary lookup, interlinear, article search |
 | `tools/logos_batch.py` | Persistent reader subprocess for performance |
 | `tools/logos_cache.py` | SQLite cache for article lookups |
+| `tools/morphgnt_cache.py` | MorphGNT Greek NT morphology (137k words) + BDAG glosses |
 
 ## Available Library Resources (confirmed readable)
 ### Lexicons
-- **NT**: EDNT, TDNTA (abridged TDNT), Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan
+- **NT**: BDAG, EDNT, TDNTA (abridged TDNT), Louw-Nida, TLNT, LSJ, ANLEX, Moulton-Milligan
 - **OT**: BDB, HALOT, TDOT, TLOT, DCH, AnLexHeb
-- **Not readable** (VersionIncompatible): BDAG, full TDNT — updated to newer format by Logos
+- **Not readable** (VersionIncompatible): full TDNT — updated to newer format by Logos
 
 ### Grammars
 - **NT**: Wallace (Ex.Syn.), Robertson, Blass-Debrunner, Discourse Grammar, Morphology of Biblical Greek, Verbal Aspect, Idioms of GNT

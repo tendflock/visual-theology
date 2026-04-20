@@ -207,8 +207,9 @@ function setupStarAnnotations() {
                     starred_text: selectedText,
                     note: note
                 })
-            }).then(function() {
-                window.location.reload();
+            }).then(function(r) { return r.json(); }).then(function() {
+                appendStarItem(source, selectedText, note);
+                if (window.getSelection) window.getSelection().removeAllRanges();
             }).catch(function() {});
 
             if (starPopup) {
@@ -227,6 +228,38 @@ function setupStarAnnotations() {
             starPopup = null;
         }
     });
+}
+
+function appendStarItem(source, starredText, note) {
+    var area = document.querySelector('.sb-notepad-area');
+    if (!area) return;
+
+    var item = document.createElement('div');
+    item.className = 'sb-star-item';
+
+    var icon = document.createElement('span');
+    icon.className = 'star-icon';
+    icon.textContent = '\u2605';
+    item.appendChild(icon);
+
+    var src = document.createElement('span');
+    src.className = 'star-source';
+    src.textContent = source + ':';
+    item.appendChild(src);
+
+    var txt = document.createElement('span');
+    txt.className = 'star-text';
+    txt.textContent = '"' + starredText + '"';
+    item.appendChild(txt);
+
+    if (note) {
+        var noteEl = document.createElement('span');
+        noteEl.className = 'star-note';
+        noteEl.textContent = '\u2192 ' + note;
+        item.appendChild(noteEl);
+    }
+
+    area.appendChild(item);
 }
 
 /* ── Notepad Auto-save ──────────────────────────────────────────────────── */
@@ -738,10 +771,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Auto-resize
+            // Auto-resize. When content exceeds max-height, keep the cursor
+            // visible — otherwise the style.height reset causes the textarea's
+            // internal scroll to jump to the top, hiding what you're typing.
             inputEl.addEventListener('input', function() {
                 inputEl.style.height = 'auto';
-                inputEl.style.height = Math.min(inputEl.scrollHeight, 160) + 'px';
+                var contentHeight = inputEl.scrollHeight;
+                inputEl.style.height = Math.min(contentHeight, 160) + 'px';
+                if (contentHeight > 160) {
+                    inputEl.scrollTop = inputEl.scrollHeight;
+                }
             });
         }
 
