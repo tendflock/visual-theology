@@ -1,0 +1,24 @@
+{#
+  Dictation mic button + mic picker.
+
+  Args:
+    target    -- CSS selector of the textarea/input to dictate into (required)
+    session_id -- study session id for the /transcribe endpoint (required)
+    label     -- optional aria-label override (default: "Dictate")
+#}
+<div class="mic-button-wrap {{ placement|default('') }}"
+     data-mic-button
+     data-target="{{ target }}"
+     data-session-id="{{ session_id }}">
+    <button type="button" class="mic-button" aria-label="{{ label|default('Dictate') }}" title="Click to dictate (click again to stop)">
+        <svg class="mic-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a1 1 0 1 1 2 0 7 7 0 0 1-6 6.92V21a1 1 0 1 1-2 0v-2.08A7 7 0 0 1 5 12a1 1 0 1 1 2 0 5 5 0 0 0 10 0z"/>
+        </svg>
+        <span class="mic-status" aria-live="polite"></span>
+    </button>
+    <button type="button" class="mic-picker-toggle" aria-label="Choose microphone" title="Choose microphone">▾</button>
+    <div class="mic-picker" hidden>
+        <label class="mic-picker-label">Microphone</label>
+        <select class="mic-picker-select" aria-label="Select microphone"></select>
+    </div>
+</div>

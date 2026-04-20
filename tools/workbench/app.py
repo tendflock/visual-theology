@@ -1160,6 +1160,38 @@ def study_card_autosave(session_id):
     return jsonify({"ok": True})
 
 
+_TRANSCRIBE_MAX_BYTES = 25 * 1024 * 1024
+
+
+@app.route("/study/session/<int:session_id>/transcribe", methods=["POST"])
+def study_transcribe(session_id):
+    """Run voice-to-text on an uploaded audio blob and return the transcript."""
+    session = companion_db.get_session(session_id)
+    if not session:
+        return jsonify({"error": "session not found"}), 404
+
+    audio_file = request.files.get("audio")
+    if audio_file is None:
+        return jsonify({"error": "missing 'audio' field"}), 400
+
+    audio_bytes = audio_file.read()
+    if not audio_bytes:
+        return jsonify({"error": "empty audio"}), 400
+    if len(audio_bytes) > _TRANSCRIBE_MAX_BYTES:
+        return jsonify({"error": "audio exceeds 25 MB limit"}), 413
+
+    content_type = audio_file.mimetype or "audio/webm"
+
+    try:
+        import whisper_service
+        result = whisper_service.transcribe_audio(audio_bytes, content_type=content_type)
+    except Exception as e:
+        app.logger.exception("transcription failed")
+        return jsonify({"error": f"transcription failed: {e}"}), 500
+
+    return jsonify(result)
+
+
 def _lookup_lexicon_gloss(lemma, is_nt=True):
     """Look up a short English gloss from BDAG (NT) or BDB/HALOT (OT).
 

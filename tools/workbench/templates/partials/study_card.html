@@ -11,7 +11,12 @@
             <div class="card-resource-text {% if session.book < 40 %}rtl{% endif %}" id="clickable-text">{{ resource_text }}</div>
         </div>
         <div class="side-by-side-right">
-            <div class="card-resource-label">Your Working Translation</div>
+            <div class="card-resource-label">
+                <span>Your Working Translation</span>
+                {% with target='#card-response', session_id=session.id %}
+                    {% include 'partials/mic_button.html' %}
+                {% endwith %}
+            </div>
             <textarea class="card-textarea" id="card-response" placeholder="Write your translation here..." rows="12">{{ prefilled }}</textarea>
         </div>
     </div>
@@ -42,7 +47,12 @@
                 {% endfor %}
             </div>
             <div class="sb-notepad-area">
-                <div class="sb-notepad-label">My Notes</div>
+                <div class="sb-notepad-label">
+                    <span>My Notes</span>
+                    {% with target='.sb-notepad', session_id=session.id %}
+                        {% include 'partials/mic_button.html' %}
+                    {% endwith %}
+                </div>
                 <textarea class="sb-notepad" placeholder="Capture your thinking..."
                           oninput="debouncedSaveNotepad(this.value)">{{ notepad }}</textarea>
                 {% for a in annotations %}
@@ -59,6 +69,12 @@
     {% endif %}
 
     {% if card.has_textarea and card.layout != "side_by_side" %}
+    <div class="mic-toolbar">
+        <span></span>
+        {% with target='#card-response', session_id=session.id %}
+            {% include 'partials/mic_button.html' %}
+        {% endwith %}
+    </div>
     <textarea class="card-textarea" id="card-response" placeholder="Your response..." rows="5">{{ prefilled }}</textarea>
     {% endif %}
 

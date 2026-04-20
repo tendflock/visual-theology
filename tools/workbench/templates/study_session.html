@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ session.passage_ref }} — Study</title>
-    <link rel="stylesheet" href="/static/study.css?v=3">
+    <link rel="stylesheet" href="/static/study.css?v=5">
 </head>
 <body data-mode="{{ mode }}">
     <div id="study-app">
@@ -44,6 +44,9 @@
 
                 <div id="input-area">
                     <textarea id="study-input" placeholder="Ask your study partner..." rows="1"></textarea>
+                    {% with target='#study-input', session_id=session.id %}
+                        {% include 'partials/mic_button.html' %}
+                    {% endwith %}
                     <button id="btn-study-send">Send</button>
                 </div>
             </div>
@@ -63,6 +66,9 @@
                 </div>
                 <div class="sidebar-footer">
                     <input type="text" id="outline-add-input" placeholder="+ add note">
+                    {% with target='#outline-add-input', session_id=session.id %}
+                        {% include 'partials/mic_button.html' %}
+                    {% endwith %}
                     <select id="outline-add-type">
                         <option value="note">Note</option>
                         <option value="main_point">Main pt</option>
@@ -80,6 +86,7 @@
     </div>
 
     <script src="/static/study.js?v=5"></script>
+    <script src="/static/dictation.js?v=4"></script>
     <script>
         window.studySessionId = {{ session.id }};
         window.studyMode = "{{ mode }}";

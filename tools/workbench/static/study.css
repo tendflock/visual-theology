@@ -1318,3 +1318,122 @@ body {
     #conversation-thread { overflow: visible; padding: 0; }
     #card-area { overflow: visible; padding: 0; }
 }
+
+/* ── Dictation mic button ───────────────────────────────────────────────── */
+
+.mic-button-wrap {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 2px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.mic-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg-input);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 8px;
+    font-size: 12px;
+    font-family: var(--font);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.mic-button:hover { background: var(--bg-card); }
+.mic-button:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 1px; }
+.mic-button .mic-icon { flex: 0 0 auto; }
+.mic-button .mic-status { font-size: 11px; color: var(--text-muted); min-width: 0; }
+
+.mic-button-wrap.state-recording .mic-button {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+}
+.mic-button-wrap.state-recording .mic-button .mic-status { color: #fff; }
+
+.mic-button-wrap.state-processing .mic-button {
+    background: var(--gold);
+    color: #1a1a2e;
+    border-color: var(--gold);
+}
+.mic-button-wrap.state-processing .mic-button .mic-status { color: #1a1a2e; }
+
+.mic-button-wrap.state-error .mic-button {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.mic-button[disabled], .mic-button-wrap.state-processing .mic-button {
+    cursor: wait;
+}
+
+.mic-picker-toggle {
+    background: var(--bg-input);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 6px;
+    font-size: 10px;
+    cursor: pointer;
+    line-height: 1;
+}
+.mic-picker-toggle:hover { background: var(--bg-card); color: var(--text); }
+.mic-picker-toggle:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 1px; }
+
+.mic-picker {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    z-index: 50;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.mic-picker-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.mic-picker-select {
+    background: var(--bg-input);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 6px;
+    font-size: 12px;
+    font-family: var(--font);
+}
+
+/* Mic button lives in the label row above its textarea so it never overlaps text. */
+.card-resource-label,
+.sb-notepad-label,
+.mic-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.mic-toolbar {
+    min-height: 22px;
+    margin-bottom: 4px;
+}
+
+/* The picker dropdown can still open over the textarea — it's a modal overlay,
+   fine — but keep the button itself out of the text flow. */
+#input-area, .sidebar-footer {
+    position: relative;
+}
+
