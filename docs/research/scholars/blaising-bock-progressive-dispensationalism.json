@@ -1,0 +1,572 @@
+{
+  "scholarId": "blaising-bock-progressive-dispensationalism",
+  "authorDisplay": "Blaising & Bock",
+  "workDisplay": "Progressive Dispensationalism",
+  "resourceId": "LLS:PROGDISPNM",
+  "resourceFile": "PROGDISPNM.lbxlls",
+  "traditionTag": "progressive-dispensational",
+  "commitmentProfile": {
+    "strong": [
+      "K: Progressive dispensationalism (their own label) — whole book defends this position against both classical/revised disp and covenantalism",
+      "H: Inaugurated eschatology — the kingdom/new covenant are inaugurated now, full consummation future; signature move vs classical disp",
+      "I: Single unified eschatological kingdom with spiritual + political dimensions, centered in Christ, presently present in stages",
+      "F: Historic premillennialism with an intermediate millennial kingdom; tied to Rev 20 explicitly",
+      "O: Already/not-yet fulfillment — present blessings are partial, not allegorical fulfillment of OT promises"
+    ],
+    "moderate": [
+      "L: Apocalyptic genre requires historical-literary reading — rejection of historicist decoding of current events as Tribulation",
+      "J: Son of Man = Dan 7 referent Jesus appropriated for His apocalyptic return",
+      "C: Little horn / blaspheming imperial ruler portrait recurs across Dan 7–12; future Tribulation ruler"
+    ],
+    "tentative": [
+      "B: No explicit identification of the fourth kingdom's referent in the sections surveyed (discussed as generic 'Gentile kingdoms' rather than named empires)"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Unspecified/generic — Blaising & Bock discuss 'Gentile kingdoms' corporately rather than naming Greece or Rome as the fourth empire in the sections surveyed.",
+      "commitment": "tentative",
+      "rationale": "Within the chapters surveyed, Blaising & Bock do not commit to a specific historical referent for Daniel's fourth kingdom; they describe Daniel's kingdom sequence in categorical terms (Gentile political rule giving way to Messiah's eschatological kingdom) without tying it to Seleucid Greece or imperial Rome specifically. This reticence contrasts with both Walvoord (Rome, strong) and Collins (Greece, strong), and reflects progressive dispensationalism's broader resistance to classical dispensational specificity when the text's referent is contested.",
+      "compositional": null,
+      "citations": []
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure (already / not-yet)",
+      "position": "Inaugurated eschatology — new-covenant and kingdom blessings are partially inaugurated in the church now, awaiting full consummation at Christ's return. This is progressive dispensationalism's signature move, drawing on Ladd-style inaugurated eschatology against the classical/revised dispensational view that the kingdom is wholly future.",
+      "commitment": "strong",
+      "rationale": "B&B consistently frame present spiritual blessings as 'inaugurated' forms of the very new-covenant promises given to OT Israel — a move classical dispensationalism resisted because it blurred the Israel/Church distinction. They hold the inauguration in tension with a real future consummation (millennial + eternal), distinguishing themselves from amillennialism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 164,
+            "nativeSectionId": "PT1.CH1.6.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.3 — The Nature of the Church",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.3"
+          },
+          "quote": {
+            "text": "The fact that these blessings have been inaugurated in the church distinguishes the church from Jews and Gentiles of the past dispensation. But, only some of those blessings have been inaugurated.",
+            "sha256": "cc0fb3ac369ede5386cd1ca7a81aa60e1ebd9e60eda45bd63259eaadbbcf3a2c"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 166,
+            "nativeSectionId": "PT1.CH1.6.5"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.5 — The Biblical Covenants",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.5"
+          },
+          "quote": {
+            "text": "The new covenant is the form in which the Abrahamic covenant has been inaugurated in this dispensation and will be fulfilled in full in the future.",
+            "sha256": "93f1f5497478f4c06d03d1265e62f2450abc7b7cff62ea3236a975c89f2b6477"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 271,
+            "nativeSectionId": "PT3.CH8.1.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.1.3 — The Kingdom as Present in Jesus",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.1.3"
+          },
+          "quote": {
+            "text": "It was only after the cross that He inaugurated certain aspects of the kingdom in an institutional sense. Scripture speaks of these features as a deposit (Eph. 1:13–14), an initial structure which awaits completion at His glorious coming",
+            "sha256": "ca7d4bed78103fd8279b71f4eded579d3e4794029e3f01711c21bc978e2b8857"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "I",
+      "axisName": "Kingdom ontology",
+      "position": "One unified eschatological kingdom, centered in Christ, with both spiritual and political dimensions, revealed progressively in stages: present in Jesus' ministry, present in/through the church in mystery form, then intermediately in the millennium, finally consummated eternally. Sharply rejects revised dispensationalism's multiple-separate-kingdoms scheme.",
+      "commitment": "strong",
+      "rationale": "B&B insist the kingdom is numerically one across OT, NT, millennium, eternity — and explicitly that 'kingdom of heaven' = 'kingdom of God' (contra classical/Scofield). Dan 7 describes the same single coming kingdom; Jesus' presence and activity manifest it; the church form is a genuine presence of that same kingdom prior to consummation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 167,
+            "nativeSectionId": "PT1.CH1.6.6"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.6 — The Kingdom of God",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.6"
+          },
+          "quote": {
+            "text": "progressive dispensationalists see one promised eschatological kingdom which has both spiritual and political dimensions. That kingdom is always centered in Christ.",
+            "sha256": "832128d082287554255b108737e93b75e0d35542100a00b75dc2608a925e8153"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 272,
+            "nativeSectionId": "PT3.CH8.1.4"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.1.4 — A Presence of the Kingdom Prior to Christ’s Return",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.1.4"
+          },
+          "quote": {
+            "text": "the prediction of a form or stage of the kingdom’s presence prior to its full and apocalyptic establishment",
+            "sha256": "09970d6d6d17b91e6f0c66d3af6cef0605f823c8a78b16d0580574c603df387f"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 264,
+            "nativeSectionId": "PT3.CH7.5.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH7.5.1 — The Eschatological Kingdom in Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH7.5.1"
+          },
+          "quote": {
+            "text": "the coming kingdom will be especially manifested on the earth in replacement of, not just in conjunction with, existing Gentile political structures",
+            "sha256": "e86a31989e4f7a32a726801f3c103ccecb7478df58c646fe0effaa2d921ca919"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 237,
+            "nativeSectionId": "PT3.CH6.1.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH6.1.1 — The New Testament Presentation of Jesus, the Covenant King",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH6.1.1"
+          },
+          "quote": {
+            "text": "He then argues that this enthronement has taken place upon the entrance of Jesus into heaven, in keeping with the language of Psalm 110:1 that describes the seating of David’s son at God’s right hand.",
+            "sha256": "aa9e4e8d35ec4ab7d16717591598bbf3ca50b77060942b64766ecf804dfd844c"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Historic premillennialism (dispensational variant) — a future 1,000-year intermediate messianic kingdom on earth, inaugurated by Christ's bodily return, populated by resurrected saints alongside mortal nations, ending in the final judgment and eternal state. Rev 20 taken as the one explicit scriptural ground.",
+      "commitment": "strong",
+      "rationale": "B&B read Rev 20 'futurist' — the millennium is a genuine phase of the single eschatological kingdom (not a parenthesis, not the whole kingdom). They concede Rev 20 is the only explicit 1,000-year text and handle Paul's resurrection-stage logic (1 Cor 15) as implicit support rather than independent proof.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 276,
+            "nativeSectionId": "PT3.CH8.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.3 — An Intermediate Millennial Kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.3"
+          },
+          "quote": {
+            "text": "Premillennialism is the belief that a future messianic kingdom, 1,000 years in duration, will intervene between the return of Christ to earth and the everlasting eschatological kingdom.",
+            "sha256": "5233c0be152c5832b62e25cf3b15eecaeeca75a42e37fff3859612a2bcfc2d31"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 276,
+            "nativeSectionId": "PT3.CH8.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.3 — An Intermediate Millennial Kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.3"
+          },
+          "quote": {
+            "text": "The millennial kingdom, then, is a phase of the eschatological kingdom in which the returned, resurrected Christ, along with a company of resurrected saints, rules the nations of earth.",
+            "sha256": "b467acd7aa1b34624cfb10e0ec8e288f52483125a8c44fb9e6f4b39c69b887e0"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Dispensational vs covenantal; Israel/Church relation",
+      "position": "Progressive dispensationalism: the Church is redeemed humanity (Jew + Gentile) in the present dispensation, sharing the SAME inaugurated new-covenant blessings, NOT a separate anthropological category. National Israel retains a future hope within the one eschatological kingdom, but there is no 'wall' of two parallel redemption programs. Explicitly rejects classical disp's eternal heavenly/earthly dualism.",
+      "commitment": "strong",
+      "rationale": "This is the book's central theological contribution. B&B accept the disp label but reshape it: one plan of redemption, one eschatological kingdom, one Messiah over Jews AND Gentiles. They retain a distinct future for ethnic Israel (remnant to be saved, national/political fulfillment in millennium) but deny the Church is a separate 'people'.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 164,
+            "nativeSectionId": "PT1.CH1.6.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.3 — The Nature of the Church",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.3"
+          },
+          "quote": {
+            "text": "progressives do not view the church as an anthropological category in the same class as terms like Israel, Gentile Nations, Jews, and Gentile people. The church is neither a separate race of humanity",
+            "sha256": "5823b1ef6799e87d32d42bc28fad076b667c95bfa739f41803454e663bf2148c"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 162,
+            "nativeSectionId": "PT1.CH1.6.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.1 — Holistic Redemption in Progressive Revelation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.1"
+          },
+          "quote": {
+            "text": "progressive dispensationalism advocates a holistic and unified view of eternal salvation. God will save humankind in its ethnic and national plurality.",
+            "sha256": "df8ed888eae936392a490626bb67edada4043eb88d3654c89ae3ea22c7ea526d"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 162,
+            "nativeSectionId": "PT1.CH1.6.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.1 — Holistic Redemption in Progressive Revelation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.1"
+          },
+          "quote": {
+            "text": "Classical dispensationalism advocated an eternal heavenly/earthly dualism in order to explain the different purposes of redemption.",
+            "sha256": "c7c92a631f5e1b3e78673eeca20f6edec21df1a3fad563dc57ec365e951bbbaf"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 286,
+            "nativeSectionId": "PT4.CH9.2.2"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT4.CH9.2.2 — Theology and the Hope of Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT4.CH9.2.2"
+          },
+          "quote": {
+            "text": "The prophecies regarding the future glory of Israel will find their fulfillment in this remnant of faith constituted as the holy nation under the reign of Messiah, Son of David.",
+            "sha256": "86d19f41524dd79316d50075c2989095f3b65130b411987997c9c54493bcb716"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure of OT prophecy",
+      "position": "Already/not-yet, partial inaugurated fulfillment in the church age — then complete fulfillment at Christ's return. Explicitly NOT allegorical/spiritualized fulfillment, but genuinely partial/initial fulfillment of the historical-grammatical sense of the prophecies. Softens classical disp's hard future-only hermeneutic while rejecting covenantal 'transformation into the church.'",
+      "commitment": "strong",
+      "rationale": "B&B thread a narrow path: maintain historical-grammatical sense (contra covenantal 'transformation') while allowing the NT to disclose a partial present fulfillment (contra classical disp 'postponement'). Davidic covenant is already inaugurated (Christ enthroned at God's right hand), but territorial/national promises await the millennium.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 166,
+            "nativeSectionId": "PT1.CH1.6.5"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.5 — The Biblical Covenants",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.5"
+          },
+          "quote": {
+            "text": "The spiritual blessings being given today are blessings actually predicted by the new covenant. These blessings are given in a partial and inaugurated form, which looks forward to complete fulfillment at the return of Christ.",
+            "sha256": "0fabcd6f0b39105df1c223e33e3b943f382841daee2dcd0bd78c1e7dcdea292c"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 166,
+            "nativeSectionId": "PT1.CH1.6.5"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT1.CH1.6.5 — The Biblical Covenants",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT1.CH1.6.5"
+          },
+          "quote": {
+            "text": "All of these covenants will be fulfilled in a future dispensation consistent with the historical-grammatical sense of their promises. However, the progressive nature of the dispensations and the interconnection between the covenants is such that present blessings are a partial, not “allegorical,” fulfillment of those promises.",
+            "sha256": "20fb665860d90886a93458db5334da8ae1ec0a0bfe25e326198488335d428626"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Apocalyptic is a literary genre that must be read in historical-literary context, not decoded into current-events blueprints. Progressive dispensationalists explicitly disown the classical/revised disp practice of identifying specific modern political/military events with Tribulation prophecies.",
+      "commitment": "moderate",
+      "rationale": "Ch. 9 critique of 'Prophecy and Current Events' distinguishes progressive disp from popular prophecy-preaching forebears. B&B affirm a future Tribulation but deny any interpreter can identify today's news as its forming/onset without prophetic authority — a significant hermeneutical break from Lindsey-style dispensationalism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 285,
+            "nativeSectionId": "PT4.CH9.2.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT4.CH9.2.1 — Prophecy and Current Events",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT4.CH9.2.1"
+          },
+          "quote": {
+            "text": "progressive dispensationalists would question the claim of any Bible interpreter to have identified specific current events as that future tribulational fulfillment of the historically repetitive Day of the Lord descriptions or the mysterious visions of biblical apocalyptic.",
+            "sha256": "c9df4396c495382741aa2ff1c7d3fc269933581dcbd2fe6b5759ee979a41d1e1"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "The Danielic 'One like a Son of Man' refers to the coming Messiah/King who receives the everlasting kingdom from the Ancient of Days; Jesus self-identifies with this figure and synthesizes Dan 7 with Day-of-the-Lord imagery for his apocalyptic parousia. Corporate 'saints of the Most High' share in the reign, mediated through the human king chosen from among them.",
+      "commitment": "moderate",
+      "rationale": "B&B read Dan 7 straightforwardly: individual Son of Man = Messiah, saints are the corporate beneficiaries under his rule. The NT Son-of-Man sayings are Jesus' direct appropriation of Dan 7 for his return.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 264,
+            "nativeSectionId": "PT3.CH7.5.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH7.5.1 — The Eschatological Kingdom in Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH7.5.1"
+          },
+          "quote": {
+            "text": "In Daniel 7, Daniel envisions a time after the succession of Gentile kingdoms when “One like a Son of Man” will come on the clouds of heaven before the Ancient of Days",
+            "sha256": "497a81dbc590a73ff2da03056752cb3f3e27fb17e586975b2b53720f7974b1d4"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 277,
+            "nativeSectionId": "PT3.CH8.4"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.4 — Conclusion",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.4"
+          },
+          "quote": {
+            "text": "He continually referred to Himself as the Son of Man who will come in apocalyptic glory in a time of trouble and judgment described through a synthesis of elements from Daniel’s visions and Day of the Lord prophecies.",
+            "sha256": "0edf43bf8983f60dc66148aca600ba6e2d99bbcd0bfba9cdc03ae5f9f9d95090"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / blasphemous ruler",
+      "position": "A future imperial ruler — blasphemer, persecutor of the saints, perpetrator of war — whose portrait recurs across Dan 7–12 and forms part of the end-time Tribulation setting for Christ's return. B&B do not collapse this into a purely past/Antiochene referent; they keep the reference future-weighted, consistent with dispensational tradition.",
+      "commitment": "moderate",
+      "rationale": "Dan 7–12's blaspheming king appears in the eschatological-kingdom-in-Daniel section as a single recurring portrait — strongly futurist reading, though B&B don't engage critical scholarship on Antiochus IV in the pages surveyed.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 264,
+            "nativeSectionId": "PT3.CH7.5.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH7.5.1 — The Eschatological Kingdom in Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH7.5.1"
+          },
+          "quote": {
+            "text": "Daniel’s later visions foresee a future imperial ruler who arrogantly blasphemes God, persecutes the saints, and perpetrates war and suffering upon the earth. His portrait reappears in successive visions from Daniel 7–12.",
+            "sha256": "290b0c2e2d651cc0f32299bc6c9c530b168c35e86de0bbe8b74244c52f85fabb"
+          }
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 20 (Millennium)",
+      "positionSummary": "Rev 20 is the sole explicit scriptural witness to a 1,000-year intermediate messianic kingdom. B&B read it futurist: two resurrections divided by 1,000 years, resurrected saints reigning with Christ over mortal nations on earth, culminating in the devil's final release, defeat, and the universal judgment/new-earth. Paul's 1 Cor 15:23-28 resurrection-stages language is taken as supporting but not independently proving an intermediate kingdom.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 276,
+            "nativeSectionId": "PT3.CH8.3"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.3 — An Intermediate Millennial Kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.3"
+          },
+          "quote": {
+            "text": "Revelation 20 is the only Scripture which explicitly predicts (or envisions) an intermediate, millennial kingdom.",
+            "sha256": "3dbcd9f7423f313073f737b0760eb1141e1372effc53b2c09fd2ff5376aed6aa"
+          }
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 13 parables / kingdom mystery",
+      "positionSummary": "The Matt 13 parables reveal a 'mystery' phase of the kingdom between Jesus' advent and his apocalyptic return — the church-age form of the one eschatological kingdom. Wheat-and-tares presupposes a present kingdom containing both sons of the kingdom and sons of the evil one until the Son of Man's return; mustard-seed / leaven describe organic growth of the inaugurated kingdom toward consummation.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 272,
+            "nativeSectionId": "PT3.CH8.1.4"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH8.1.4 — A Presence of the Kingdom Prior to Christ’s Return",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH8.1.4"
+          },
+          "quote": {
+            "text": "the prediction of a form or stage of the kingdom’s presence prior to its full and apocalyptic establishment",
+            "sha256": "09970d6d6d17b91e6f0c66d3af6cef0605f823c8a78b16d0580574c603df387f"
+          }
+        }
+      ]
+    },
+    {
+      "targetPassage": "Acts 2 / Ps 110 (Davidic enthronement)",
+      "positionSummary": "Christ's ascension IS his enthronement on the Davidic throne — Peter's Pentecost argument (Ps 110:1, Ps 16) places Jesus in active Davidic reign now from heaven. This is a signature progressive-dispensational move that classical/revised dispensationalists resisted because it grants present Davidic kingship to Christ over the church.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PROGDISPNM",
+            "logosArticleNum": 237,
+            "nativeSectionId": "PT3.CH6.1.1"
+          },
+          "frontend": {
+            "author": "Blaising & Bock",
+            "title": "Progressive Dispensationalism",
+            "section": "§PT3.CH6.1.1 — The New Testament Presentation of Jesus, the Covenant King",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Blaising & Bock, Progressive Dispensationalism, §PT3.CH6.1.1"
+          },
+          "quote": {
+            "text": "He then argues that this enthronement has taken place upon the entrance of Jesus into heaven, in keeping with the language of Psalm 110:1 that describes the seating of David’s son at God’s right hand.",
+            "sha256": "aa9e4e8d35ec4ab7d16717591598bbf3ca50b77060942b64766ecf804dfd844c"
+          }
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Explicitly distinguishes 'progressive' from 'classical' and 'revised' dispensationalism and critiques both — the book IS the manifesto of the third form.",
+    "Adopts Ladd-style inaugurated eschatology: the kingdom and new covenant are partially present now, not wholly future.",
+    "Rejects classical dispensationalism's heavenly/earthly dualism (separate destinies for Israel/Church).",
+    "Reads 'kingdom of God' = 'kingdom of heaven' (contra Scofield) and treats all kingdom-forms as phases of one single eschatological kingdom.",
+    "Affirms that Christ is currently reigning on the Davidic throne (from heaven, post-ascension) — a sharp break from classical disp's 'postponed kingdom'.",
+    "Reads biblical apocalyptic (including Daniel) as a literary genre requiring historical-literary interpretation; rejects current-events decoding/prophecy-pundit methods.",
+    "Retains historical-grammatical hermeneutic while allowing partial/inaugurated (not allegorical) fulfillment of OT prophecy in the present dispensation.",
+    "Maintains national/territorial future for ethnic Israel in millennium, but places it inside ONE redemption plan rather than a parallel program.",
+    "Pastorally: explicitly calls dispensational churches to oppose uncritical endorsement of modern Israeli state policies; condemns Christian complicity in antisemitism as a major dispensational ministry concern."
+  ],
+  "uncertainties": [
+    "Axis B (fourth kingdom identity): no explicit named identification in the sections surveyed; B&B treat Dan 2/7 Gentile kingdoms corporately rather than name them.",
+    "Axis A (date/authorship of Daniel): not engaged — book is systematic theology, not critical intro; Danielic authorship apparently assumed rather than defended.",
+    "Axis N (70 weeks of Dan 9): no sustained exposition located in the sections surveyed; B&B reference Dan 9:24 in passing (everlasting righteousness / atonement motif) without engaging the week-seventy chronology debate.",
+    "Axis L (Tribulation timing, Rapture): pretribulationism implied but not the book's focus — Ch. 9 discusses but does not formally argue a rapture position.",
+    "Engagement with critical scholarship (Maccabean-date hypothesis, Antiochene fourth-kingdom) is absent in the surveyed sections — this is a dispensational systematic, not a Daniel commentary."
+  ]
+}

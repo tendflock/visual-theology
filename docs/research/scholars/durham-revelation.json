@@ -1,0 +1,371 @@
+{
+  "scholarId": "durham-revelation",
+  "authorDisplay": "Durham",
+  "workDisplay": "Commentary upon the Book of Revelation",
+  "resourceId": "LLS:COMMREVDURHAM",
+  "resourceFile": "COMMREVDURHAM.logos4",
+  "traditionTag": "historicist-reformation",
+  "commitmentProfile": {
+    "strong": [
+      "C: Little horn / Antichrist = papal Rome — Durham names the Pope 'that Antichrist' explicitly and repeatedly.",
+      "E: Revelation approach = historicist — the book unfolds church history from apostles to consummation under successive heads.",
+      "L: Apocalyptic hermeneutic = predictive-prophetic — 'things which must shortly come to passe,' concerning a successive series of Roman history.",
+      "N: Cross-book coherence — Daniel 7/8 beasts are the template; Revelation 'borrows types' from Daniel and applies Antiochus-language typologically to Antichrist.",
+      "J: 'one like the Son of man' (Rev 14:14) = Christ — 'can well agree to none other.'"
+    ],
+    "moderate": [
+      "F: Millennium = postmillennial-in-tendency — the thousand years is a future extended 'reigning' of the visible Church after Antichrist's height, not a present spiritual reality only."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "C",
+      "axisName": "Little horn / Antichrist",
+      "position": "Papal Rome — the Pope is the Antichrist; the Roman Church is the Whore; Rome on seven hills is the beast's seat.",
+      "commitment": "strong",
+      "rationale": "Durham treats the identification of the papacy as Antichrist as a 'main scope' of the book. In Rev 13 he argues the first beast cannot be the heathen Roman Empire, nor the Christian Emperors at Constantinople, nor the Frankish or German Emperors, but specifically the Roman Empire 'under its seventh and last government' — the papacy. In Rev 17 he reads the seven mountains as the seven literal hills of Rome (citing Virgil, Ovid, and even Bellarmine against himself) and concludes the Pope's 'chair is nailed to that seven hilled city, and cannot be removed.' The polemical edge is explicit: this is not a theological abstraction but a target for the awakening of Reformed 'zeal ... against that Beast, drunk with the bloud of Saints.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 1,
+            "nativeSectionId": "JUDI"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§JUDI — To the Judicious and Christian Reader",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §JUDI"
+          },
+          "quote": {
+            "text": "convincing proofes of the Pope of Rome his being that Antichrist",
+            "sha256": "280db459360163d6dd681c02fd6122e13d55b6d2a1527e3f634d5c044e95f8c5"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "the Pope and his Kingdom, supposing him to be Antichrist",
+            "sha256": "03c509d1220adef702668bc55105415d14115ef9f9bb5960db11ca8b421ffaef"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 139,
+            "nativeSectionId": "CH17.4"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH17.4 — Lecture IV (17:9–11)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH17.4"
+          },
+          "quote": {
+            "text": "if Rome be the seat, the Roman Church is the whore, and the Pope Antichrist",
+            "sha256": "d0d0b2380600b8d37128f4be24c7b6508cd0d6df4332142e55fa4ec1ed7b1aa4"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "it is here the Roman Empire under its seventh and last government",
+            "sha256": "10bb92176fc2c3e6a7408733b321aac1edb3bb44af1dab4c0eb0fe10e8d9694d"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Revelation approach",
+      "position": "Historicist — the book prophesies a successive series of church history, from the apostolic age through heathen Rome to papal Rome and ultimately the consummation.",
+      "commitment": "strong",
+      "rationale": "Durham reads Revelation as a continuous historical prophecy. The seven heads of the beast are seven successive governments of Rome ('five are past, one is'), and the present papal head answers to Rome's sixth-head-wounded-and-healed state, which Durham dates 'about the 6oo year, or a little after.' He uses dated referents — Constantine's transfer of the court, the rise of Pipin and Charlemagne 'about the 750 or 766,' Otho III and Charles IV — to rule historical candidates in or out. The method assumes fulfilled prophecy can be correlated with external history by spiritual wisdom.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "it is here the Roman Empire under its seventh and last government",
+            "sha256": "10bb92176fc2c3e6a7408733b321aac1edb3bb44af1dab4c0eb0fe10e8d9694d"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 5,
+            "nativeSectionId": "CH1.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH1.1 — Lecture I (1:1–4)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH1.1"
+          },
+          "quote": {
+            "text": "The subject of this Revelation, things which must shortly come to passe, not things past, nor so much things present",
+            "sha256": "d139aa0007c919843da062e6f200c69e9af4cd0baf0bcc681e47a59e8606961c"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Predictive-prophetic (Reformation Protestant style) — the visions disclose future history, not merely timeless symbols.",
+      "commitment": "strong",
+      "rationale": "Durham treats Revelation as Christ's 'last Will and Word' to the Church, given so that its contents may be made known to His servants. He explicitly rejects a purely past-tense or purely present-tense reading of 'things which must shortly come to passe,' insisting the prophecy's beginning was immediate but the full accomplishment stretches to the end of the world. He also insists the obscurity of the book does not argue against its fulfillment — Bellarmine's objection that Revelation is too dark to yield a Protestant application against Rome is answered by the parallel of Daniel and Ezekiel, whose prophecies are dark yet 'undoubtedly fulfilled.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 5,
+            "nativeSectionId": "CH1.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH1.1 — Lecture I (1:1–4)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH1.1"
+          },
+          "quote": {
+            "text": "The subject of this Revelation, things which must shortly come to passe, not things past, nor so much things present",
+            "sha256": "d139aa0007c919843da062e6f200c69e9af4cd0baf0bcc681e47a59e8606961c"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
+            "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Daniel <-> Revelation)",
+      "position": "Daniel 7/8 supplies the beast-typology that Revelation borrows and extends; the papal Antichrist is a typological escalation of Daniel's little horn / Antiochus.",
+      "commitment": "strong",
+      "rationale": "Durham opens his Rev 13 exposition with the proposition that it is 'ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts' (quote stored). That line supplies the beast-typology template directly; Durham's further moves — Revelation 'borrowing' Daniel's types, language literally true of Antiochus being reapplied by the Apostle to Antichrist, and the seven-headed beast as a papal successor of Daniel's four — are present in his exposition but are not reproduced here as additional verbatim quotes and should be treated as summary pointers into his Rev 13/17 lectures rather than independently evidenced claims.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
+            "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "The 'one like the Son of man' (Rev 14:14) is Christ personally, coming in glory to execute judgment.",
+      "commitment": "strong",
+      "rationale": "At Rev 14:14 Durham argues that the properties of the cloud-riding figure — sovereignty, a golden crown, a sharp sickle — can 'well agree to none other' than Christ. He cross-references Rev 1:13 and Matt 25 to anchor the identification. Though he allows 'inferiour instruments' (angelic or royal) in the judgment-act, the principal agent is Christ the King, 'King of Kings' (Rev 19).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 124,
+            "nativeSectionId": "CH14.5"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH14.5 — Lecture IV (14:12–20)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH14.5"
+          },
+          "quote": {
+            "text": "He is like the Son of man: by which Title Christ is described, Chap. 1 vers. 13 and it can well agree to none other.",
+            "sha256": "787c5b37696c630e0e2dbae31a784ebf405c775046994aa02428f0df5e887d3b"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "A future, extended good estate of the visible Church between Antichrist's fall and the final loosing of Satan — functionally postmillennial rather than premil or purely amil.",
+      "commitment": "moderate",
+      "rationale": "Durham reads Rev 20:4-6 as 'the whole Church and professors of the Faith sincerely, and not some few only' reigning after Antichrist's height. The computation of the thousand years begins when 'the Church getteh a living and being in any good condition and freedom after Antichrists height' — i.e., in the era of the vials, after the papal tyranny is broken. This is a visible, public, Church-wide 'reigning' distinct from martyr-era dying and from a merely inward spiritual life. It is not a physical resurrection, and it precedes a final loosing of Satan and the last judgment — the shape most modern taxonomies label postmillennial, though Durham himself hedges with 'darkest of this Prophesie' and sobriety.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 156,
+            "nativeSectionId": "CH20.5"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH20.5 — Lecture V (20:4–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH20.5"
+          },
+          "quote": {
+            "text": "that these reigning here, are the whole Church and professors of the Faith sincerely, and not some few only.",
+            "sha256": "4cb416ec6006a636c28f3e5dcc818eb58adeba8b2cc1fb63c54ba5d33dfe24cf"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 156,
+            "nativeSectionId": "CH20.5"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH20.5 — Lecture V (20:4–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH20.5"
+          },
+          "quote": {
+            "text": "the cumputation is to begin when the Church getteh a living and being in any good condition and freedom after Antichrists height",
+            "sha256": "b9f2c1b588d0e0731ce17efe0f473738a702c1e832b53fdcca35919d98c9cf57"
+          }
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Daniel 7 (read through Revelation 13/17)",
+      "positionSummary": "Durham never wrote a Daniel commentary, but in opening Rev 13 and Rev 17 he treats Daniel 7 as the controlling typological template. Daniel's four beasts map onto successive temporal monarchies; the little horn's career against the saints is replayed (on a larger canvas) by the seven-headed beast of Revelation. Durham insists that 'things literally agreeing to Antiochus are applied to Antichrist' — a typological move that lets him read Daniel 7's little horn not merely as past (Antiochus / Rome) but as prophetically extended to the papal antichrist who now occupies Rome's seventh head. Daniel 7:9-14 (Ancient of Days, Son of Man) returns in Rev 14:14, where Durham identifies the cloud-riding figure as Christ Himself.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 113,
+            "nativeSectionId": "CH13.1"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH13.1 — Lecture I (13:1–6)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH13.1"
+          },
+          "quote": {
+            "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
+            "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:COMMREVDURHAM",
+            "logosArticleNum": 124,
+            "nativeSectionId": "CH14.5"
+          },
+          "frontend": {
+            "author": "Durham",
+            "title": "A Commentary upon the Book of Revelation",
+            "section": "§CH14.5 — Lecture IV (14:12–20)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Durham, Commentary on Revelation, §CH14.5"
+          },
+          "quote": {
+            "text": "He is like the Son of man: by which Title Christ is described, Chap. 1 vers. 13 and it can well agree to none other.",
+            "sha256": "787c5b37696c630e0e2dbae31a784ebf405c775046994aa02428f0df5e887d3b"
+          }
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Dates papal Antichrist's public manifestation 'about the 6oo year, or a little after' — specifically tied to Rome's 'deadly wound' (the Emperors abandoning it for Constantinople) being healed by the papacy taking the vacated throne.",
+    "Uses classical Latin poets (Virgil, Ovid) and his opponent Bellarmine as hostile witnesses to confirm Rome's identification with the seven-hilled city of Rev 17.",
+    "Collapses the two beasts of Rev 13 into 'upon the matter, one' — civil and ecclesiastical powers unified in the papacy, rejecting Mede's 'universitas regum' civil/ecclesiastical split as a distinction without a difference.",
+    "Refuses gematria speculation on 666 ('of reckoning from the letters or figures of a name there is none') and redirects the 'number of a man' to a doctrinal reckoning of Antichrist's compacted blasphemies.",
+    "Treats Daniel 7/8 as the native grammar of Revelation's beast imagery — every beast-exposition begins by asserting the Daniel template.",
+    "Rhetorical voice: preaches the text as Sunday lectures to Glasgow laity ('fifteen hundred souls'), producing a pastoral-polemical tone that fuses exposition with active anti-Rome exhortation."
+  ],
+  "uncertainties": [
+    "Durham is cautious about fixing precise computational dates for the thousand years and for the final overthrow; he repeatedly flags Rev 20 as 'amongst the darkest' passages and invokes Augustine's earlier self-correction as a warning.",
+    "He does not resolve whether the seventh head and the eighth (Rev 17:11) are sequentially two or the same government 'diversly considered' — he prefers the latter but grants the former as an allowable reading.",
+    "Axis M (canonical placement of Revelation) is not directly engaged — Durham treats canonical status as settled.",
+    "Axis A/B (Daniel's compositional history, fourth kingdom) is not his question — his framework assumes Daniel's prophetic integrity and reads the fourth kingdom as Rome without historical-critical argumentation."
+  ]
+}

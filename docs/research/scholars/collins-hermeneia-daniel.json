@@ -1,0 +1,424 @@
+{
+  "scholarId": "collins-hermeneia-daniel",
+  "authorDisplay": "Collins",
+  "workDisplay": "Hermeneia Daniel",
+  "resourceId": "LLS:HRMNEIA27DA",
+  "resourceFile": "HRMNEIA27DA.lbxlls",
+  "traditionTag": "critical-modern",
+  "fullTitle": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+  "commitmentProfile": {
+    "strong": [
+      "A: Maccabean date — Dan 7 dated precisely to late 167 BCE on basis of 7:25 ‘change times and law’",
+      "B: Fourth kingdom = Greece/Seleucids — critical-consensus sequence Babylon-Media-Persia-Greece",
+      "C: Little horn = Antiochus IV — supported by coinage (ΘΕΟΥ ΕΠΙΦΑΝΟΥΣ), cultic-calendar suppression, three-horn uprooting",
+      "D: 70 weeks = schematic Maccabean chronology ending at Antiochene crisis; MT atnaḫ decisive against Christological reading",
+      "H: Apocalyptic-eschatological kingdom of holy ones, mediated through angelic two-tier cosmology",
+      "J: Son of Man = angelic (probably Michael), not Davidic messiah and not merely collective Israel",
+      "L: Religio-historical / historical-critical hermeneutic — Canaanite Chaoskampf underlies Dan 7 imagery",
+      "P: Genre as apocalypse constrains meaning — Dan 7 is a symbolic dream vision of the ‘historical type’"
+    ],
+    "moderate": [
+      "O: Single-referent Antiochene fulfillment, with downstream paradigmatic reuse (4 Ezra, Revelation) distinct from ‘fulfillments’"
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date of Daniel",
+      "position": "Maccabean (c. 167 BCE) for Dan 7; book of Daniel reached final form in the Antiochene crisis",
+      "commitment": "strong",
+      "rationale": "Collins dates Daniel 7 with precision to late 167 BCE, reading 7:25 (‘change times and law’) as the Antiochene decree suppressing traditional cult before the temple profanation of December 167. Chapter 7 was composed slightly before the Hebrew revelations of chaps. 8–12. The whole book of Daniel is a product of the persecution under Antiochus Epiphanes; the tales are older, but the visions arise from the Maccabean crisis. Pseudonymity is explained in part as a feature of the apocalyptic genre, rooted in authoritative-tradition ascription to a legendary hero.",
+      "compositional": "Collins accepts some traditional sources in ch. 7 (notably an older hymnic kernel behind vv. 9–10 / 13–14) but affirms the essential unity of the chapter as a Maccabean composition; he rejects pre-Maccabean base-layer theories (Sellin, Hölscher, Noth) on the grounds that the ‘little horn’ (v. 8) is integral and cannot be excised.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9261,
+            "nativeSectionId": "P...324"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...324 — Setting and Function",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...324"
+          },
+          "quote": {
+            "text": "we can date Daniel 7 rather precisely to late 167 b.c.e.",
+            "sha256": "baf34013029aa454930e43ef8b817f5b18672edf72689045dfb17c9e20d9c1ab"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece/Seleucids (sequence Babylon–Media–Persia–Greece)",
+      "commitment": "strong",
+      "rationale": "Collins treats the four-kingdom schema of Dan 2 and Dan 7 as a standard Hellenistic-period periodization in which the fourth kingdom is Greece culminating in the Seleucids, the empire of Antiochus IV. He states the identification as the critical consensus and operates within it throughout his exegesis of the beasts, the ten horns (understood as Seleucid kings plus perhaps Alexander), and the little horn.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9224,
+            "nativeSectionId": "P...295"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...295 — II. 7:2b–14. The Vision Report",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...295"
+          },
+          "quote": {
+            "text": "the beasts that rise out of the sea represent kings or kingdoms, which are generally identified as Babylon, Media, Persia, and Greece",
+            "sha256": "dbef0a52ecd55407c6b96288b603c9713ee5c5ac49920d7839b9cef112d769d3"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Antiochus IV Epiphanes",
+      "commitment": "strong",
+      "rationale": "The little horn of Dan 7:8, 20–21, 24–25 is Antiochus IV. Collins anchors this in two directly-cited moves: the 173/172 BCE divine-epithet coinage (‘God Manifest’) as the ‘great words against the Most High,’ and the reading of ‘change times and law’ as the Antiochene disruption of the Jewish cultic calendar. Collins also identifies the three uprooted horns and the ‘time, times, and half a time’ with specific Seleucid events (three Antiochid claimants supplanted; the 3.5-year profanation period), but those further identifications are not reproduced here as verbatim quotes.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9256,
+            "nativeSectionId": "P...322"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...322 — IV 7:19–27. The Fourth Beast",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...322"
+          },
+          "quote": {
+            "text": "Antiochus IV was the first Hellenistic king to introduce divine epithets such as “God Manifest” on his coins",
+            "sha256": "49a97bf625c3da3ee68592422045a7c596ec32354c52fe325a3fb77fa4768cc5"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9256,
+            "nativeSectionId": "P...322"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...322 — IV 7:19–27. The Fourth Beast",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...322"
+          },
+          "quote": {
+            "text": "The reference here is to the disruption of the cultic calendar.",
+            "sha256": "36dcd31aea15451f5395e9d83a5272adb65bb1633946e6b4a934f63bbfa721fe"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "D",
+      "axisName": "Seventy weeks (Dan 9)",
+      "position": "Schematic Maccabean chronology terminating at Antiochene crisis; not a precise chronology pointing to Messiah",
+      "commitment": "strong",
+      "rationale": "Collins reads Dan 9:24–27 as an ex eventu midrash on Jeremiah’s seventy years, recalculated as seventy weeks of years so that the end falls in the reign of Antiochus Epiphanes. The MT atnaḫ (7 weeks + 62 weeks, not 7+62 together) is decisive and excludes the patristic Christological identification of the anointed one. The ‘anointed’ of v. 25 is most probably Joshua the high priest; the anointed one ‘cut off’ in v. 26 is the murdered high priest Onias III; the ‘ruler who is to come’ is Antiochus; the ‘covenant’ of v. 27 is his alliance with Hellenizing Jews; ‘half a week’ is the three-and-a-half-year suppression of sacrifice. The specific numbers are schematic round numbers, not arithmetic.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9301,
+            "nativeSectionId": "P...356"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...356 — III. 9:20–27: The Revelation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...356"
+          },
+          "quote": {
+            "text": "In view of the schematic character of the seventy weeks and of the dating to the reign of Darius the Mede, the figure should be considered a round number rather than a miscalculation.",
+            "sha256": "c54ac7e5a7f41627bcd6a99492d151b4c507e7fd3daec8b6db0920789fab9ebf"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9301,
+            "nativeSectionId": "P...356"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...356 — III. 9:20–27: The Revelation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...356"
+          },
+          "quote": {
+            "text": "The modern critical interpretation requires that the sixty-two weeks end shortly before the advent of Antiochus Epiphanes.",
+            "sha256": "931ed536cbcba69fb7b8016a9519e47cf45176d4cdedf7736aebd3dca155ca07"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Apocalyptic-eschatological; the ‘kingdom of the holy ones’ is the final, everlasting kingdom replacing the gentile powers, mediated through angelic holy ones",
+      "commitment": "strong",
+      "rationale": "Collins reads Dan 7 as apocalyptic-eschatological in the strict Semeia-14 sense: the present gentile-dominion order is judged, and the kingdom given to the ‘one like a human being’ and the holy ones is eternal and divine in character, not merely a better earthly empire. The stored quote captures Collins’s anchoring claim that Dan 7 looks for ‘divine judgment’ against the present persecuting kingdom; his further Chaoskampf / two-tiered-angelic-struggle framing is developed in adjacent articles but is not reproduced as verbatim quote here.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9260,
+            "nativeSectionId": "PART7.9"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§PART7.9 — Setting and Function",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §PART7.9"
+          },
+          "quote": {
+            "text": "Chapter 7 considers no such possibility but looks for the divine judgment, where the most offensive and immediately present gentile kingdom will be destroyed.",
+            "sha256": "1c77dfbd49920e6dd542ece6301a2e78395d1c99380094c5dc4cbfbe7b8ec8b2"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Angelic/heavenly being — most probably the archangel Michael, Israel’s heavenly patron — not a Davidic messiah and not a mere collective symbol for the Jewish people",
+      "commitment": "strong",
+      "rationale": "Collins argues that ‘one like a human being’ (בר אנשׁ) is a description, not a title, and that in visionary symbolism human figures standardly represent angels (cf. Dan 8:15; 9:21; 10:5–6; Gen 18; Ezek 8). Within Daniel itself the only eschatological ‘prince’ of Israel acknowledged is Michael (10:21; 12:1). The messianic interpretation fails because Daniel shows no interest in the Davidic monarchy; the collective interpretation (son of man = the Jewish people) is weakened by the fact that the figure is not allegorically ‘interpreted’ the way the beasts are. The Qumran War Scroll (1QM 17:7–8), which pairs Michael’s authority among the angels with Israel’s dominion among all flesh, confirms this two-tiered reading. The ‘holy ones’ are primarily the angelic host; the ‘people of the holy ones’ is Israel as associated with them.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9240,
+            "nativeSectionId": "P...310"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...310 — Excursus: “One Like a Human Being”",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...310"
+          },
+          "quote": {
+            "text": "The view that Michael is the “one like a human being” was put forward by Nathaniel Schmidt in 1900",
+            "sha256": "6aa234514b2333d101a882d24bd2c3a2ae6d24e36d517e56be6aaa5fb995610e"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9240,
+            "nativeSectionId": "P...310"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...310 — Excursus: “One Like a Human Being”",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...310"
+          },
+          "quote": {
+            "text": "The identification of the “one like a human being” with Michael is greatly strengthened by the arguments below that the holy ones of the Most High are the angelic host",
+            "sha256": "21d4dfdf290ddbfc31d18ae9ec865677f74102d1044342d4267e4657190722f4"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9252,
+            "nativeSectionId": "P...319"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...319 — The Relation of the One Like a Human Being to the Holy Ones",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...319"
+          },
+          "quote": {
+            "text": "In Daniel 7, likewise, the “one like a son of man” and the holy ones mediate the sovereignty of God in the final, everlasting kingdom.",
+            "sha256": "bab46f3e2ea9bf07ae421bac8e52699a56a235d2fe58e1aaea235fc6f202969a"
+          }
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9239,
+            "nativeSectionId": "P...309"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...309 — Excursus: “One Like a Human Being”",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...309"
+          },
+          "quote": {
+            "text": "The decisive objection against the messianic interpretation is that nowhere in the book do we find either support for or interest in the Davidic monarchy.",
+            "sha256": "425b670a78c27c1b7f6230ee278065aff250345c856dae7c32bd6b71f8404922"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic",
+      "position": "Historical-critical with a strong religionsgeschichtlich (religio-historical) method — imagery of Dan 7 is illuminated by Canaanite/Ugaritic and Mesopotamian mythology (Chaoskampf, Ba‛al / Ancient of Days), mediated through biblical tradition",
+      "commitment": "strong",
+      "rationale": "Collins devotes the opening of his Dan 7 commentary to religio-historical background, defending Gunkel’s basic insight (imagery of beasts from the sea alludes to a mythic narrative with extra-biblical prototypes) against objections that demand ‘congeniality of ideological standpoint’ between pagan myth and Jewish author. Parallels operate at the level of sense, not reference; the Canaanite background (mediated through Israelite tradition) is the likeliest source for the sea/beast/rider-on-clouds complex. Method is avowedly comparative and diachronic, reading Daniel within early Jewish apocalypticism (1 Enoch, 4 Ezra) rather than projecting later Christian or rabbinic readings onto the text.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9203,
+            "nativeSectionId": "P...281"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...281 — The Religio-historical Background",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...281"
+          },
+          "quote": {
+            "text": "The parallels are of significance for the sense of the text rather than for the reference.",
+            "sha256": "85f16694f74e7abe9e739cbf7b922d2f0108f550e0c4d0afb022e194a5947a9e"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single Maccabean-era referent, with the text functioning as a reusable paradigm in subsequent history (without multiple ‘fulfillments’ in a prophetic sense)",
+      "commitment": "moderate",
+      "rationale": "The original referent of Dan 7 is the Antiochene crisis: the fourth beast is Greece, the little horn is Antiochus, the expected deliverance is the end of that crisis. Subsequent reuses (4 Ezra 11–13 retargeting the fourth beast to Rome; Christian identification of the Son of Man with Jesus; Revelation’s use of the beast imagery) are legitimate adaptations of the vision to new historical situations, not fulfillments of a single prophetic intent. Collins frames this as the text serving as ‘paradigm,’ not as layered prediction.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9261,
+            "nativeSectionId": "P...324"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...324 — Setting and Function",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...324"
+          },
+          "quote": {
+            "text": "Just as Daniel 7 assimilated a historical situation to a mythic pattern, so it in turn served as a paradigm for other events down through history.",
+            "sha256": "f942863a228d10b9d2af259bde28fcc9faaef4005928911dcec0e0bc4ab178e1"
+          }
+        }
+      ]
+    },
+    {
+      "axis": "P",
+      "axisName": "Meta: meaning-is-origin / genre",
+      "position": "Genre (apocalypse — symbolic dream vision with angelic interpreter, ex eventu survey, eschatological horizon) constrains and largely determines the ‘kind of meaning’ Daniel can bear",
+      "commitment": "strong",
+      "rationale": "Collins is the central architect of the SBL/Semeia 14 definition of apocalypse, and his Hermeneia commentary applies that genre definition to Daniel throughout. Dan 7 is explicitly classified as a ‘symbolic dream vision, the most common form of revelation in apocalypses of the historical type,’ aligned with 1 Enoch 83–84; 85–91; 4 Ezra 11–13; Revelation 17. The hermeneutical move is programmatic: the apocalypse genre (not free-floating prophecy) is the primary context for sense-making. This directly implies that a non-apocalyptic reading (e.g., Daniel as a long-range predictive roadmap of successive gentile empires down to Christ or the end-time Antichrist) is category-mistaken.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9259,
+            "nativeSectionId": "PART7.8"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§PART7.8 — Genre",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §PART7.8"
+          },
+          "quote": {
+            "text": "Daniel 7 is a symbolic dream vision, the most common form of revelation in apocalypses of the historical type",
+            "sha256": "5e48fdb00b494e7602878e03421540825b8241bb02ac9945d32b6828ee533a7f"
+          }
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1; Rev 13; Rev 14:14; Rev 17",
+      "positionSummary": "Collins notes that Christian appropriation of Dan 7 — identifying the ‘one like a human being’ with Christ and expecting a second coming — is a major downstream use but is not exegesis of Daniel’s original sense. Revelation’s beasts draw heavily on Daniel 7, and the fusion of the Ancient of Days with the one like a son of man in Rev 1:13–14 develops the Old Greek reading (‘he came as an Ancient of Days’) which Collins treats as a mechanical error of textual transmission, not as evidence of divine identity in Daniel itself. The fourth-beast symbolism is ‘retargeted’ to Rome in 4 Ezra 11–13 and in Christian reception.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIA27DA",
+            "logosArticleNum": 9261,
+            "nativeSectionId": "P...324"
+          },
+          "frontend": {
+            "author": "Collins",
+            "title": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
+            "section": "§P...324 — Setting and Function",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Collins, Hermeneia Daniel, §P...324"
+          },
+          "quote": {
+            "text": "In Christianity the vision had its main impact in the identification of the “one like a human being” with Jesus and the related hope for a second coming.",
+            "sha256": "0f297b3ff0fb844b2cfedef24c2d608d95fdf4ac873383bf33680666effb5d04"
+          }
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Applies the SBL/Semeia 14 genre definition of apocalypse as the primary hermeneutical context for Daniel, making genre prior to theological reading.",
+    "Defends the unity of Dan 7 against Sellin/Hölscher/Noth redaction theories while still acknowledging an older hymnic kernel behind vv. 9–10 and 13–14.",
+    "Identifies the ‘one like a human being’ with the archangel Michael, integrating Dan 7 with Dan 10–12 and with 1QM’s two-tiered angelology — a move distinctive even among critical scholars, many of whom prefer a collective or purely symbolic reading.",
+    "Reads ‘holy ones’ primarily as angels, with ‘people of the holy ones’ as Israel-in-association with the heavenly host — resisting the common collective-only reading.",
+    "Uses Canaanite/Ugaritic Chaoskampf (sea monsters, Ba‛al rider on clouds, El as Ancient of Days) as the controlling religio-historical background for Dan 7, with Gunkel’s Babylonian thesis relegated to secondary influence.",
+    "Treats Dan 9 seventy-weeks as ex eventu midrash on Jeremiah rather than as predictive chronology; numbers are schematic, not arithmetic.",
+    "Distinguishes carefully between Daniel’s own referent (Antiochus) and later reuse (Rome, Antichrist, Christ) — rejecting collapsing the latter back into the former."
+  ],
+  "uncertainties": [
+    "Does not engage axes E, F, K, N in any sustained way — these are Revelation-internal or covenantal-vs-dispensational axes not native to Daniel exegesis.",
+    "Hedges (in broader Collins corpus but present here) on whether the Dan 7 vision had a genuine experiential basis (cf. visionary practice) or is purely literary convention — he leans toward experiential but does not insist.",
+    "Notes disagreement among critical scholars on whether Alexander is included as the first of the ten horns, and on the identity of the three uprooted horns; Collins gives a best-guess rather than a dogmatic identification."
+  ]
+}
