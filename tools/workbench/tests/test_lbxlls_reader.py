@@ -46,28 +46,19 @@ def test_bare_stem_resolves_logos4_eec27da():
 # ── Category 2: bare-stem .lbxlls resolution (Fix 12) ──────────────────────
 
 
-def test_bare_stem_resolves_lbxlls_hermeneia():
-    """HRMNEIA27DA (bare stem) should resolve and open the .lbxlls file."""
-    resolved = resolve_bible_files(["HRMNEIA27DA"])
+@pytest.mark.parametrize("stem,expected_articles", [
+    ("HRMNEIA27DA", 9431),
+    ("GS_WALV_DANIEL", 988),
+    ("PROGDISPNM", 290),
+])
+def test_bare_stem_resolves_lbxlls(stem, expected_articles):
+    """Bare-stem ``.lbxlls`` resources must resolve via ResourceManager and
+    open through the native reader (Fix 12). Case-insensitive lookup matters
+    for Walvoord's `LLS:gs_walv_daniel` → `GS_WALV_DANIEL.lbxlls`."""
+    resolved = resolve_bible_files([stem])
     articles = get_resource_articles(resolved[0], timeout=60)
-    assert len(articles) == 9431, \
-        f"Expected 9431 articles for HRMNEIA27DA, got {len(articles)}"
-
-
-def test_bare_stem_resolves_lbxlls_walvoord():
-    """GS_WALV_DANIEL (bare stem) should resolve and open the .lbxlls file."""
-    resolved = resolve_bible_files(["GS_WALV_DANIEL"])
-    articles = get_resource_articles(resolved[0], timeout=60)
-    assert len(articles) == 988, \
-        f"Expected 988 articles for GS_WALV_DANIEL, got {len(articles)}"
-
-
-def test_bare_stem_resolves_lbxlls_progdispnm():
-    """PROGDISPNM (bare stem) should resolve and open the .lbxlls file."""
-    resolved = resolve_bible_files(["PROGDISPNM"])
-    articles = get_resource_articles(resolved[0], timeout=60)
-    assert len(articles) == 290, \
-        f"Expected 290 articles for PROGDISPNM, got {len(articles)}"
+    assert len(articles) == expected_articles, \
+        f"Expected {expected_articles} articles for {stem}, got {len(articles)}"
 
 
 # ── Category 3: full .lbxlls path works (native loader baseline) ───────────

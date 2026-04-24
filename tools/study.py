@@ -1958,13 +1958,10 @@ def _resolve_bare_stem(stem):
     # the requested stem, case-insensitively. This rejects directory-segment
     # matches like `/Data/e3txalek.5iq/.../CT.lbsct` for stem `e3txalek`.
     stem_lower = stem.lower()
-    matches = []
-    for r in rows:
-        full_path = remap_path(r[0])
-        basename = os.path.basename(full_path)
-        base_stem = os.path.splitext(basename)[0]
-        if base_stem.lower() == stem_lower:
-            matches.append(full_path)
+    matches = [
+        path for path in (remap_path(row[0]) for row in rows)
+        if os.path.splitext(os.path.basename(path))[0].lower() == stem_lower
+    ]
 
     if matches:
         # Warn when multiple distinct candidates share a basename stem so
