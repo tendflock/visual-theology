@@ -352,8 +352,17 @@ def _parse_single_range(part):
 
 
 def ref_to_logos_superset_pattern(ref):
-    """Convert parsed ref to SQL LIKE pattern for ReferenceSupersets matching."""
-    return f"bible.{ref['book']}%"
+    """Convert parsed ref to SQL LIKE pattern for ReferenceSupersets matching.
+
+    Uses ``bible%.{book}%`` so we pick up every reference-flavor prefix — not
+    only the unqualified ``bible.`` one. Collins Hermeneia (Daniel) stores its
+    superset as ``bible+bhs.27``; other resources use ``bible+lxx.``,
+    ``bible+sblgnt.``, ``bible+nrsv.``, ``bible+na27.``, ``bible+gnt.``, etc.
+    The looser LIKE can admit rows where ``{book}`` appears as a verse number
+    (e.g. ``bible.66.1.1-66.16.27``), but ``ref_covers_passage`` filters those
+    out downstream, so correctness is preserved.
+    """
+    return f"bible%.{ref['book']}%"
 
 
 def ref_covers_passage(superset_str, ref):
