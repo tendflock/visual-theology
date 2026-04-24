@@ -1893,8 +1893,39 @@ def resolve_bible_files(bible_names):
                 break
         if not found:
             # Try as filename directly
-            resolved.append(name if "." in name else name + ".logos4")
+            if "." in name:
+                resolved.append(name)
+            else:
+                resolved.append(_resolve_bare_stem(name))
     return resolved
+
+
+def _resolve_bare_stem(stem):
+    """Map a bare resource stem to its actual filename (extension included).
+
+    Consults ResourceManager.Resources.Location via a case-insensitive basename
+    match so lowercase-ResourceId / uppercase-filename mismatches resolve
+    (e.g. Walvoord's `LLS:gs_walv_daniel` → `GS_WALV_DANIEL.lbxlls`). Falls
+    back to a filesystem probe for `.logos4` / `.lbxlls` before defaulting to
+    the historical `.logos4` behavior so nonexistent stems still surface the
+    same error downstream.
+    """
+    conn = sqlite3.connect(RESOURCE_MGR_DB)
+    try:
+        row = conn.execute(
+            "SELECT Location FROM Resources "
+            "WHERE lower(Location) LIKE ? "
+            "ORDER BY length(Location) LIMIT 1",
+            (f"%/{stem.lower()}.%",),
+        ).fetchone()
+    finally:
+        conn.close()
+    if row:
+        return os.path.basename(remap_path(row[0]))
+    for ext in (".logos4", ".lbxlls"):
+        if os.path.exists(os.path.join(RESOURCES_DIR, stem + ext)):
+            return stem + ext
+    return stem + ".logos4"
 
 
 def main():

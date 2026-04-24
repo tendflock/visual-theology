@@ -29,12 +29,9 @@ def test_bare_stem_resolves_logos4_eec27da():
         f"Expected non-empty article list for EEC27DA, got {len(articles)}"
 
 
-# ── Category 2: xfail (bug reproduction) ───────────────────────────────────
-
-_XFAIL_REASON = "Fix 12 not yet implemented: bare-stem lookup force-appends .logos4"
+# ── Category 2: bare-stem .lbxlls resolution (Fix 12) ──────────────────────
 
 
-@pytest.mark.xfail(reason=_XFAIL_REASON, strict=True)
 def test_bare_stem_resolves_lbxlls_hermeneia():
     """HRMNEIA27DA (bare stem) should resolve and open the .lbxlls file."""
     resolved = resolve_bible_files(["HRMNEIA27DA"])
@@ -43,7 +40,6 @@ def test_bare_stem_resolves_lbxlls_hermeneia():
         f"Expected 9431 articles for HRMNEIA27DA, got {len(articles)}"
 
 
-@pytest.mark.xfail(reason=_XFAIL_REASON, strict=True)
 def test_bare_stem_resolves_lbxlls_walvoord():
     """GS_WALV_DANIEL (bare stem) should resolve and open the .lbxlls file."""
     resolved = resolve_bible_files(["GS_WALV_DANIEL"])
@@ -52,7 +48,6 @@ def test_bare_stem_resolves_lbxlls_walvoord():
         f"Expected 988 articles for GS_WALV_DANIEL, got {len(articles)}"
 
 
-@pytest.mark.xfail(reason=_XFAIL_REASON, strict=True)
 def test_bare_stem_resolves_lbxlls_progdispnm():
     """PROGDISPNM (bare stem) should resolve and open the .lbxlls file."""
     resolved = resolve_bible_files(["PROGDISPNM"])
