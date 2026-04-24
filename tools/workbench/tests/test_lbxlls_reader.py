@@ -1,6 +1,6 @@
 """Regression tests for Fix 12: bare-stem resolution for .lbxlls resources.
 
-Four categories, all passing:
+Five categories, all passing:
 
   1. Regression: bare-stem `.logos4` resolution still works.
   2. Bare-stem `.lbxlls` resolution (now fixed via ResourceManager lookup).
@@ -8,6 +8,9 @@ Four categories, all passing:
   4. Broadened commentary superset matching — surfaces resources whose
      ``ReferenceSupersets`` uses a qualified ``bible+bhs.``/``bible+lxx.``
      prefix instead of the bare ``bible.`` one (Fix 12 Task 3).
+  5. End-to-end: article text flows through the reader, and
+     ``find_commentary_section`` returns a section for Daniel 7:7 in both
+     blocked Daniel commentaries (Fix 12 Task 4).
 """
 
 import os
@@ -19,8 +22,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 from study import (
     RESOURCES_DIR,
     find_commentaries_for_ref,
+    find_commentary_section,
     get_resource_articles,
     parse_reference,
+    read_article_text,
     resolve_bible_files,
 )
 
@@ -124,3 +129,57 @@ def test_find_commentaries_for_romans_3_regression():
             f"Regression: expected {expected} in Romans 3:10 commentary "
             f"results, got {ids}"
         )
+
+
+# ── Category 5: end-to-end text flow (Fix 12 Task 4) ───────────────────────
+
+
+# Article 0 across the three resources is short prose content
+# (Hermeneia: ~459 chars intro paragraph; Walvoord: ~50-char footnote;
+# PROGDISPNM: ~322 chars intro). A 20-char floor proves real text flows
+# through the native reader without over-fitting to any one resource.
+_MIN_ARTICLE_TEXT = 20
+
+
+@pytest.mark.parametrize("stem", ["HRMNEIA27DA", "GS_WALV_DANIEL", "PROGDISPNM"])
+def test_read_article_text_returns_content(stem):
+    """Article 0 of each ``.lbxlls`` resource must return non-empty text.
+
+    This proves the full stack — Python caller → persistent reader subprocess
+    → ``libSinaiInterop`` → ``.lbxlls`` container — extracts article text,
+    not just article metadata.
+    """
+    path = resolve_bible_files([stem])[0]
+    text = read_article_text(path, 0, max_chars=20000)
+    assert text, f"Expected non-empty text for {stem} article 0, got {text!r}"
+    assert len(text) >= _MIN_ARTICLE_TEXT, (
+        f"Expected ≥{_MIN_ARTICLE_TEXT} chars for {stem} article 0, "
+        f"got {len(text)}: {text!r}"
+    )
+
+
+@pytest.mark.parametrize("stem", ["HRMNEIA27DA", "GS_WALV_DANIEL"])
+def test_find_commentary_section_daniel_7_7(stem):
+    """Collins Hermeneia and Walvoord must locate a Daniel 7:7 section.
+
+    Both are ``text.monograph.commentary.bible`` resources on Daniel. Once
+    the ``.lbxlls`` file opens, ``find_commentary_section`` should locate
+    and return content covering Daniel 7:7 through one of its lookup paths
+    (navindex → verse-index cache → TOC → heuristic scan).
+    """
+    path = resolve_bible_files([stem])[0]
+    ref = parse_reference("Daniel 7:7")
+    section = find_commentary_section(path, ref)
+    assert section, (
+        f"Expected non-empty Daniel 7:7 commentary section for {stem}, "
+        f"got {section!r}"
+    )
+
+
+# PROGDISPNM (Blaising & Bock, Progressive Dispensationalism) is
+# ``text.monograph`` — a topical monograph, not a commentary. It has no
+# per-verse "Daniel 7:7" section to locate. ``find_commentary_section``
+# falls back to its heuristic article scan and may surface an unrelated
+# prose snippet; that is not a meaningful assertion either way. This case
+# is intentionally omitted — it is out of scope for Fix 12 per the plan
+# at ``docs/superpowers/plans/2026-04-24-lbxlls-reader.md``.

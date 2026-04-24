@@ -177,6 +177,8 @@ Cases: `LLS:CSAMLLNLSM` returns `not-locally-installed`; `LLS:EEC27DA` returns `
 
 ## Fix 12: Read `.lbxlls` Resource Format
 
+**Status (2026-04-24): Implemented.** Delivered across commits `84a6466..HEAD` (baseline tests → bare-stem resolution → hardened LIKE escape → broadened commentary superset → end-to-end verification). Implementation plan at `docs/superpowers/plans/2026-04-24-lbxlls-reader.md`. Acceptance tests (`tools/workbench/tests/test_lbxlls_reader.py`, 15 tests across 5 categories) and the smoke script below all pass for the three previously blocked `.lbxlls` resources and for every `.logos4` regression resource.
+
 **Updated 2026-04-24 after codex investigation.** The initial framing ("reverse-engineer a new container format") is wrong. Investigation confirmed that `libSinaiInterop.dylib`'s generic `SinaiInterop_LoadTitleWithoutDataTypeOptions` already opens `.lbxlls` files successfully. Direct verification on 2026-04-24:
 - `HRMNEIA27DA.lbxlls` → 9,431 articles
 - `GS_WALV_DANIEL.lbxlls` → 988 articles
