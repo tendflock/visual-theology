@@ -176,21 +176,25 @@ cd tools/workbench && python3 -m pytest tests/test_resource_install_check.py -v
 Cases: `LLS:CSAMLLNLSM` returns `not-locally-installed`; `LLS:EEC27DA` returns `ok`.
 
 ## Fix 12: Read `.lbxlls` Resource Format
-Problem: Newer Logos resources ship in a `.lbxlls` container (magic header `LTES`), not the legacy `.logos4` container (magic header `LRES01`). The existing LogosReader handles only `.logos4`. Three important recent downloads are currently unreadable:
-- `HRMNEIA27DA.lbxlls` — Collins, *Daniel* (Hermeneia)
-- `GS_WALV_DANIEL.lbxlls` — Walvoord, *Daniel: The Key to Prophetic Revelation*
-- `PROGDISPNM.lbxlls` — Blaising & Bock, *Progressive Dispensationalism*
 
-More `.lbxlls` resources will appear as Logos migrates its catalog. This is a growing gap, not a one-off.
+**Updated 2026-04-24 after codex investigation.** The initial framing ("reverse-engineer a new container format") is wrong. Investigation confirmed that `libSinaiInterop.dylib`'s generic `SinaiInterop_LoadTitleWithoutDataTypeOptions` already opens `.lbxlls` files successfully. Direct verification on 2026-04-24:
+- `HRMNEIA27DA.lbxlls` → 9,431 articles
+- `GS_WALV_DANIEL.lbxlls` → 988 articles
+- `PROGDISPNM.lbxlls` → 290 articles
+
+The real problem is caller-side: filename-resolution code assumes `.logos4` and appends that extension as a fallback, which hides `.lbxlls` resources from bare-stem lookups.
+
+Full investigation at `docs/research/2026-04-24-codex-lbxlls-design.md`.
 
 Task:
-- Reverse-engineer the `.lbxlls` container (structure, encryption, index).
-- Identify which `libSinaiInterop.dylib` / `libsqlite3-logos.dylib` entry points support it. If the dylib already exposes `LTES`/`lbxlls`-aware loaders, wire them into the existing reader.
-- If the dylib does not, decide whether to add a second C# path or extend the current one.
-- Update `study.py` and `logos_batch.py` callers to dispatch on extension.
-- Emit clear diagnostics when a `.lbxlls` resource is still unsupported (pre-implementation) vs. when the new path succeeds.
+- Audit `study.py` filename resolution (especially `resolve_bible_files` and any bare-stem paths) — make extension handling symmetric (`.logos4` + `.lbxlls`), or prefer `ResourceManager.Resources.Location` as the source of truth.
+- Stop treating `SinaiInterop_TryGetResourceIdAndVersion` failure as proof a resource cannot open (it returns failure for `.lbxlls` but `LoadTitleWithoutDataTypeOptions` still succeeds).
+- Resolve adjacent commentary-discovery issues surfaced in the same investigation:
+  - `HRMNEIA27DA` has `ReferenceSupersets = bible+bhs.27` — commentary search may need to include OT supersets.
+  - `PROGDISPNM` is `text.monograph`, not `text.monograph.commentary.bible` — decide whether monographs surface in commentary search.
+- Update docs/help text to say the reader supports both `.logos4` and `.lbxlls`.
 
-Detailed design work proceeds at `docs/superpowers/plans/2026-04-24-lbxlls-reader.md` once codex's reverse-engineering pass completes.
+Detailed implementation plan: `docs/superpowers/plans/2026-04-24-lbxlls-reader.md`.
 
 Test:
 ```bash
@@ -198,9 +202,9 @@ cd tools/workbench && python3 -m pytest tests/test_lbxlls_reader.py -v
 ```
 
 Cases:
-- `HRMNEIA27DA.lbxlls` opens and returns a non-trivial article list including the introduction and Daniel 7.
-- `GS_WALV_DANIEL.lbxlls` opens and returns commentary content for Daniel 7.
-- Known-good `.logos4` resources continue to open and read identically (regression guard).
+- `HRMNEIA27DA.lbxlls`, `GS_WALV_DANIEL.lbxlls`, `PROGDISPNM.lbxlls` all open via bare-stem lookup (not just explicit full paths).
+- `find_commentaries_for_ref('Daniel 1:1')` surfaces Collins Hermeneia and Walvoord.
+- Known-good `.logos4` resources (e.g., `EEC27DA`) continue to open and read identically (regression guard).
 
 ## Completion Criteria
 - All existing workbench tests pass.
