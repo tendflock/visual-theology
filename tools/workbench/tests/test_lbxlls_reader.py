@@ -14,12 +14,7 @@ import sys
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
-from study import get_resource_articles, resolve_bible_files
-
-RESOURCES_DIR = (
-    "/Users/family/Library/Application Support/Logos4/"
-    "Data/e3txalek.5iq/ResourceManager/Resources"
-)
+from study import RESOURCES_DIR, get_resource_articles, resolve_bible_files
 
 
 # ── Category 1: regression guard ───────────────────────────────────────────
