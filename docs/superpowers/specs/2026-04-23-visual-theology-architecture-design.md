@@ -245,11 +245,14 @@ traditions: {
       "disp-cov": "covenantal"
     },
     primarySources: [
+      // Durham is the closest tradition-fit for a Reformed Presbyterian reader;
+      // Scottish Covenanter context, exegetically serious, not curious historiography.
+      { name: "James Durham",    work: "A Commentarie Upon the Book of the Revelation (1658)", publicDomain: true, scannedAt: "archive.org" },
       { name: "Joseph Mede",     work: "Clavis Apocalyptica (1627)",                 publicDomain: true },
       { name: "Isaac Newton",    work: "Observations upon the Prophecies of Daniel", publicDomain: true },
       { name: "Christopher Wordsworth", work: "The New Testament: Revelation",       publicDomain: true }
     ],
-    note: "Dominant 16th–19th c. Protestant reading; not held by any modern academic voice in the library. Included for historical awareness."
+    note: "Dominant 16th–19th c. Protestant reading; not held by any modern academic voice in the library. Included for historical awareness. Durham is primary for a Reformed Presbyterian teaching context (Scottish Covenanter; 1658) — more directly resonant than Mede or Newton."
   },
   "dispensational-premillennial-pretrib": { /* Walvoord, Patterson, Tanner (futurist elements) */ },
   "critical-maccabean-historical": { /* Collins, Newsom, Driver, Montgomery, Koester */ },

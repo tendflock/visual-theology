@@ -208,6 +208,58 @@ Cases:
 - `find_commentaries_for_ref('Daniel 1:1')` surfaces Collins Hermeneia and Walvoord.
 - Known-good `.logos4` resources (e.g., `EEC27DA`) continue to open and read identically (regression guard).
 
+## Fix 13: Empty-Name Bible Resolution Silently Maps to First Bible
+Problem: `resolve_bible_files` iterates names through a substring-match check (`name_lower in b["title"].lower()`). When `name` is an empty or whitespace-only string, `"" in anything` is always True, so the first Bible in the list silently wins. A caller that splits a CSV like `"ESV,,KJV"` gets a duplicate first entry instead of an error or a skip.
+
+Surfaced by silent-failure-hunter during the Fix 12 PR review. Pre-existing bug, not caused by Fix 12, but Fix 12 widened the resolver surface enough to warrant attention.
+
+Task:
+- Strip and skip (or raise) empty/whitespace names at the top of `resolve_bible_files`.
+- Require `name_lower` be non-empty before the substring-in-title fallback.
+
+Test:
+- `resolve_bible_files(["ESV", "", "KJV"])` either raises a clear error on the empty, or skips it and returns `["ESV.logos4", "KJV.logos4"]` — never an unexpected duplicate.
+- `resolve_bible_files(["   "])` same contract.
+
+## Fix 14: In-Process Article-List Cache Persists Empty Results
+Problem: `get_article_list_cached` at `tools/study.py:702-703` stores the article list in an in-memory dict regardless of whether the read succeeded. On failure, it caches `""` for the life of the process. Subsequent retries return the cached empty string instantly even if the resource subsequently becomes available (e.g., library re-indexed, Logos.app downloaded a missing file).
+
+The SQLite-backed cache is correctly gated on non-empty results (line 715). The in-memory dict isn't.
+
+Task:
+- Only populate the in-memory cache when `articles` is truthy.
+- Consider adding a TTL or a miss-marker with expiry if retries in the same process are valuable.
+
+Test:
+```bash
+cd tools/workbench && python3 -m pytest tests/test_reader_cache.py -v
+```
+Cases: a failing read doesn't poison the cache — a subsequent successful read surfaces new articles.
+
+## Fix 15: `ref_covers_passage` Regex Not End-Anchored
+Problem: `tools/study.py:381` matches `ReferenceSupersets` strings with `re.match(r"bible(?:\+\w+)?\.(\d+)...")`, which anchors at start but not at end. Catalog format drift (a future Logos release introducing a trailing qualifier) would pass silently through the filter rather than raising or logging. Combined with the broadened LIKE (Fix 12 Task 3), drift-related false positives would quietly surface in commentary-discovery results.
+
+Task:
+- Anchor the regex at end with `\s*$` or reject unexpected trailing content.
+- Add a `sys.stderr` breadcrumb when a superset-like segment ends with a wildcard-chapter default (currently at line 388) so future drift is visible during dev.
+
+Test:
+- Add an explicit unit test for `bible.1.12-1.5garbage` style inputs so regex laxity is pinned.
+
+## Fix 16: Narrow Batch-Reader Exception Handler + Observability for Silent Fallbacks
+Problem: `tools/study.py:611-612` catches `Exception` broadly in `_run_via_batch` and falls back to subprocess mode. Any real protocol error — `BrokenPipeError`, `ValueError` from int parsing, `RuntimeError`, etc. — is swallowed and retried in subprocess mode, which silently returns empty on its own failures.
+
+Also: `_resolve_bare_stem` (Fix 12) has a filesystem-probe fallback that can mask SQL-schema breakage. If the Resources table is ever renamed or the query errors silently, the filesystem branch hides the breakage for `.logos4` stems and only surfaces for `.lbxlls` lookups.
+
+Task:
+- Narrow the batch-reader exception clause to the specific exceptions the batch reader is known to raise.
+- Log unexpected exceptions to `sys.stderr` with type name + message before falling back.
+- Add a `sys.stderr` breadcrumb in `_resolve_bare_stem` when the SQL branch misses (vs. errors) so operators can see when the filesystem probe starts carrying the load.
+
+Test:
+- Inject a known exception into the batch reader mock and confirm it logs, not silent-swallows.
+- Confirm the filesystem-probe breadcrumb fires in a controlled SQL-miss scenario.
+
 ## Completion Criteria
 - All existing workbench tests pass.
 - Smoke test passes.
@@ -215,3 +267,4 @@ Cases:
 - Dataset queries for NT Use of OT and Psalms Explorer return structured rows or clear “no data” results.
 - Cataloged-but-not-installed resources return a clear diagnostic rather than silent empty results.
 - `.lbxlls` resources read through the standard reader API (Fix 12), with `.logos4` behavior unchanged.
+- No silent-failure fallbacks (Fixes 13-16): empty-name lookups fail loud; in-process cache doesn't persist misses; regex drift is visible; batch-reader exception handling narrows and logs.
