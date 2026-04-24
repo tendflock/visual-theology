@@ -11,6 +11,7 @@ Usage:
         articles = reader.list_articles("KJV1900.logos4")
 """
 
+import json
 import os
 import subprocess
 import sys
@@ -162,6 +163,22 @@ class LogosBatchReader:
                     except ValueError:
                         pass
         return {"references": refs, "topics": topics}
+
+    def get_article_meta(self, resource_file, article_num):
+        """Get per-article metadata JSON.
+
+        Returns a dict with keys: resourceId, resourceVersion, logosArticleNum,
+        nativeSectionId, heading, articleStart, articleEnd, hasMilestoneIndex,
+        pageStart, pageEnd.  Returns None on failure.  See
+        ``study.get_article_meta`` for field semantics.
+        """
+        stdout = self._send_command(f"article-meta {resource_file} {article_num}")
+        if not stdout:
+            return None
+        try:
+            return json.loads(stdout.strip())
+        except (ValueError, TypeError):
+            return None
 
     def get_article_title(self, resource_file, article_num):
         """Get the title of an article.

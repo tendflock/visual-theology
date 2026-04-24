@@ -1,14 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.Json;
 
 namespace LogosReader;
 
 class Program
 {
     // Native library path
-    const string SinaiInterop = "/Applications/Logos.app/Contents/Frameworks/FaithlifeDesktop.framework/Versions/48.0.0.0238/Frameworks/ApplicationBundle.framework/Resources/lib/libSinaiInterop.dylib";
+    const string SinaiInterop = "/Applications/Logos.app/Contents/Frameworks/FaithlifeDesktop.framework/Versions/Current/Frameworks/ApplicationBundle.framework/Versions/Current/Resources/lib/libSinaiInterop.dylib";
 
     // Delegates
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -214,7 +216,7 @@ class Program
     // ── SQLite C API (from libsqlite3-logos.dylib bundled with Logos) ────
     // Used to query the raw sqlite3* handle returned by EncryptedVolume_OpenDatabase.
 
-    const string SqliteLib = "/Applications/Logos.app/Contents/Frameworks/FaithlifeDesktop.framework/Versions/48.0.0.0238/Frameworks/ApplicationBundle.framework/Resources/lib/libsqlite3-logos.dylib";
+    const string SqliteLib = "/Applications/Logos.app/Contents/Frameworks/FaithlifeDesktop.framework/Versions/Current/Frameworks/ApplicationBundle.framework/Versions/Current/Resources/lib/libsqlite3-logos.dylib";
 
     [DllImport(SqliteLib, EntryPoint = "sqlite3_prepare_v2")]
     static extern int sqlite3_prepare_v2(IntPtr db, byte[] sql, int nByte, out IntPtr stmt, out IntPtr tail);
@@ -233,6 +235,15 @@ class Program
 
     [DllImport(SqliteLib, EntryPoint = "sqlite3_column_type")]
     static extern int sqlite3_column_type(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_blob")]
+    static extern IntPtr sqlite3_column_blob(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_column_bytes")]
+    static extern int sqlite3_column_bytes(IntPtr stmt, int col);
+
+    [DllImport(SqliteLib, EntryPoint = "sqlite3_bind_int")]
+    static extern int sqlite3_bind_int(IntPtr stmt, int idx, int value);
 
     [DllImport(SqliteLib, EntryPoint = "sqlite3_finalize")]
     static extern int sqlite3_finalize(IntPtr stmt);
@@ -375,7 +386,28 @@ class Program
         uint articleNum,
         [MarshalAs(UnmanagedType.LPWStr)] out string articleTitle);
 
+    // Article length (chars) — used with GetAbsoluteCharacterOffsetForArticle to compute [start, end).
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    static extern int CTitle_GetArticleLength(IntPtr title, int nArticle);
+
+    // ResourceVolume_HasEmbeddedMilestoneIndex — the reliable gate for whether
+    // the resource has an accessible MilestoneIndexCerodDb.mstidx inside it.
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.U1)]
+    static extern bool SinaiInterop_ResourceVolume_HasEmbeddedMilestoneIndex(IntPtr volumeBase);
+
+    // ResourceVolume_GetFullPath — returns the container file path; used to
+    // reopen via EncryptedVolume_Open when we want to read the milestone DB.
+    [DllImport(SinaiInterop, CharSet = CharSet.Ansi, ExactSpelling = true)]
+    [return: MarshalAs(UnmanagedType.LPWStr)]
+    static extern string SinaiInterop_ResourceVolume_GetFullPath(IntPtr volumeBase);
+
     static ManagedDebuggerBreakDelegate s_debugBreakDelegate = OnDebugBreak;
+
+    // License manager pointer made accessible to ExecuteOperation helpers that
+    // need to reopen the resource as an EncryptedVolume (e.g. article-meta
+    // reads the embedded milestone DB). Set by Main and RunBatchMode.
+    static IntPtr s_licMgr = IntPtr.Zero;
 
     static void OnDebugBreak()
     {
@@ -401,6 +433,7 @@ class Program
             Console.WriteLine("  LogosReader --interlinear <file> <article#>     Extract interlinear data");
             Console.WriteLine("  LogosReader --navindex <file>                   Export navigation index (ref→article map)");
             Console.WriteLine("  LogosReader --article-title <file> <article#>   Get article title");
+            Console.WriteLine("  LogosReader --article-meta <file> <article#>    Article metadata JSON (section ID, heading, page range)");
             Console.WriteLine("  LogosReader --batch                             Batch mode (read commands from stdin)");
             Console.WriteLine();
             Console.WriteLine("Batch mode commands (one per line on stdin):");
@@ -412,6 +445,7 @@ class Program
             Console.WriteLine("  interlinear <file> <article#>");
             Console.WriteLine("  navindex <file>");
             Console.WriteLine("  article-title <file> <article#>");
+            Console.WriteLine("  article-meta <file> <article#>");
             Console.WriteLine("Each result is delimited by a line containing only '---END---'.");
             Console.WriteLine("Empty line or EOF exits batch mode.");
             Console.WriteLine();
@@ -469,6 +503,12 @@ class Program
             resourceFile = args[1];
             int.TryParse(args[2], out articleNum);
         }
+        else if (args[0] == "--article-meta" && args.Length >= 3)
+        {
+            mode = "article-meta";
+            resourceFile = args[1];
+            int.TryParse(args[2], out articleNum);
+        }
         else if (args[0] == "--find-article" && args.Length >= 3)
         {
             mode = "find-article";
@@ -500,6 +540,7 @@ class Program
             }
             LicenseManagerCore_LoadCore(licMgr);
             Console.Error.WriteLine("[*] License manager loaded.");
+            s_licMgr = licMgr;
 
             IntPtr title = OpenResource(licMgr, resourceFile);
             if (title == IntPtr.Zero)
@@ -511,6 +552,7 @@ class Program
             ExecuteOperation(title, mode, articleNum, maxChars, findPattern);
 
             // Cleanup
+            s_licMgr = IntPtr.Zero;
             LogosLibraryInitializationWrapper_Uninitialize();
             LicenseManagerCore_Delete(licMgr);
         }
@@ -778,7 +820,212 @@ class Program
                     Console.Error.WriteLine("[!] Could not get ResourceVolume");
                 }
                 break;
+
+            case "article-meta":
+                ExecuteArticleMeta(title, articleNum);
+                break;
         }
+    }
+
+    /// <summary>
+    /// Emit per-article metadata as a single-line JSON object on stdout.
+    /// See docs/research/2026-04-24-codex-logos-metadata-design.md for the design.
+    /// </summary>
+    static void ExecuteArticleMeta(IntPtr title, int articleNum)
+    {
+        if (!SinaiInterop_CTitle_IsArticle(title, articleNum))
+        {
+            Console.Error.WriteLine($"[!] Article {articleNum} does not exist.");
+            return;
+        }
+
+        // Core identity fields
+        string resourceId = SinaiInterop_CTitle_GetResourceId(title) ?? "";
+        string resourceVersion = SinaiInterop_CTitle_GetResourceVersion(title) ?? "";
+
+        SinaiInterop_CTitle_ArticleNumberToArticleId(title, articleNum, out string nativeSectionId);
+
+        // Absolute character offsets: [articleStart, articleEnd).
+        // GetAbsoluteCharacterOffsetForArticle(...,true) has historically been
+        // used in ExecuteOperation as the "end" offset, but it is actually the
+        // start of the article-with-full-text (including the ending chunk).
+        // For article ranges, the safer pair is:
+        //   start = GetAbsoluteCharacterOffsetForArticle(..., false)
+        //   end   = start + CTitle_GetArticleLength(...)
+        // (matches the codex probe that produced 2007383..2011146 for R48.2.)
+        int articleStart = SinaiInterop_CTitle_GetAbsoluteCharacterOffsetForArticle(title, articleNum, false);
+        int articleLen = CTitle_GetArticleLength(title, articleNum);
+        int articleEnd = articleStart + articleLen;
+
+        // Heading via GetArticleTitle (requires ResourceVolume)
+        IntPtr resource = CTitle_GetResource(title);
+        IntPtr resVol = resource != IntPtr.Zero
+            ? SinaiInterop_ResourceVolumeFromResource(resource)
+            : IntPtr.Zero;
+
+        string? heading = null;
+        bool hasMilestoneIndex = false;
+        string? volumeFullPath = null;
+
+        if (resVol != IntPtr.Zero)
+        {
+            SinaiInterop_GetArticleTitle(title, resVol, (uint)articleNum, out string artTitle);
+            string? cleaned = StripLanguageTags(artTitle);
+            if (!string.IsNullOrWhiteSpace(cleaned))
+                heading = cleaned;
+
+            try { hasMilestoneIndex = SinaiInterop_ResourceVolume_HasEmbeddedMilestoneIndex(resVol); }
+            catch { hasMilestoneIndex = false; }
+
+            if (hasMilestoneIndex)
+            {
+                try { volumeFullPath = SinaiInterop_ResourceVolume_GetFullPath(resVol); }
+                catch { volumeFullPath = null; }
+            }
+        }
+
+        int? pageStart = null;
+        int? pageEnd = null;
+
+        if (hasMilestoneIndex && !string.IsNullOrEmpty(volumeFullPath) && s_licMgr != IntPtr.Zero)
+        {
+            (pageStart, pageEnd) = ReadPageRangeFromMilestoneDb(
+                s_licMgr, volumeFullPath!, articleStart, articleEnd);
+        }
+
+        var payload = new Dictionary<string, object?>
+        {
+            ["resourceId"] = string.IsNullOrEmpty(resourceId) ? null : resourceId,
+            ["resourceVersion"] = string.IsNullOrEmpty(resourceVersion) ? null : resourceVersion,
+            ["logosArticleNum"] = articleNum,
+            ["nativeSectionId"] = string.IsNullOrEmpty(nativeSectionId) ? null : nativeSectionId,
+            ["heading"] = heading,
+            ["articleStart"] = articleStart,
+            ["articleEnd"] = articleEnd,
+            ["hasMilestoneIndex"] = hasMilestoneIndex,
+            ["pageStart"] = pageStart,
+            ["pageEnd"] = pageEnd,
+        };
+
+        // Single-line JSON; stderr gets progress info, stdout gets only the JSON.
+        string json = JsonSerializer.Serialize(payload);
+        Console.WriteLine(json);
+    }
+
+    /// <summary>
+    /// Reopen the resource as an EncryptedVolume, query SegmentReferences_page
+    /// for milestone rows overlapping [articleStart, articleEnd), and return
+    /// (min page, max page) decoded from the Reference BLOBs.
+    ///
+    /// Returns (null, null) if no overlapping rows or on any failure.
+    /// </summary>
+    static (int? start, int? end) ReadPageRangeFromMilestoneDb(
+        IntPtr licMgr, string volumePath, int articleStart, int articleEnd)
+    {
+        IntPtr vol = IntPtr.Zero;
+        IntPtr db = IntPtr.Zero;
+        IntPtr stmt = IntPtr.Zero;
+        try
+        {
+            vol = EncryptedVolume_New();
+            if (vol == IntPtr.Zero)
+                return (null, null);
+            if (!EncryptedVolume_Open(vol, licMgr, volumePath))
+                return (null, null);
+
+            db = EncryptedVolume_OpenDatabase(vol, "MilestoneIndexCerodDb.mstidx");
+            if (db == IntPtr.Zero)
+                return (null, null);
+
+            const string sql =
+                "SELECT Reference FROM SegmentReferences_page " +
+                "WHERE TextSegmentOffset < ?1 AND TextSegmentPastEnd > ?2";
+            byte[] sqlBytes = Encoding.UTF8.GetBytes(sql + "\0");
+            int rc = sqlite3_prepare_v2(db, sqlBytes, -1, out stmt, out IntPtr _tail);
+            if (rc != SQLITE_OK)
+                return (null, null);
+
+            sqlite3_bind_int(stmt, 1, articleEnd);
+            sqlite3_bind_int(stmt, 2, articleStart);
+
+            var blobs = new List<byte[]>();
+            while (sqlite3_step(stmt) == SQLITE_ROW)
+            {
+                if (sqlite3_column_type(stmt, 0) == SQLITE_NULL)
+                    continue;
+                IntPtr blobPtr = sqlite3_column_blob(stmt, 0);
+                int nBytes = sqlite3_column_bytes(stmt, 0);
+                if (blobPtr == IntPtr.Zero || nBytes <= 0)
+                    continue;
+                byte[] buf = new byte[nBytes];
+                Marshal.Copy(blobPtr, buf, 0, nBytes);
+                blobs.Add(buf);
+            }
+
+            return DecodePageRange(blobs);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"[!] ReadPageRangeFromMilestoneDb error: {ex.GetType().Name}: {ex.Message}");
+            return (null, null);
+        }
+        finally
+        {
+            if (stmt != IntPtr.Zero) sqlite3_finalize(stmt);
+            // Do NOT finalize db — it is owned by the EncryptedVolume.
+            if (vol != IntPtr.Zero) EncryptedVolume_Delete(vol);
+        }
+    }
+
+    /// <summary>
+    /// Strip Unicode language-tag characters (U+E0000..U+E007F) from a string.
+    /// Returns null for null input. These appear as a BOM-like prefix on
+    /// GetArticleTitle output (e.g. "\u{E0001}\u{E0065}\u{E006E}...A Failed Expectation").
+    /// </summary>
+    static string? StripLanguageTags(string? s)
+    {
+        if (s == null) return null;
+        var sb = new StringBuilder(s.Length);
+        for (int i = 0; i < s.Length; i++)
+        {
+            char c = s[i];
+            // Surrogate pair check: language tags are in plane 14 (U+E0000..U+E007F),
+            // so they are encoded as high-surrogate (0xDB40) + low-surrogate (0xDC00..0xDCFF).
+            if (char.IsHighSurrogate(c) && i + 1 < s.Length && char.IsLowSurrogate(s[i + 1]))
+            {
+                int cp = char.ConvertToUtf32(c, s[i + 1]);
+                if (cp >= 0xE0000 && cp <= 0xE007F)
+                {
+                    i++; // skip low surrogate too
+                    continue;
+                }
+            }
+            sb.Append(c);
+        }
+        return sb.ToString();
+    }
+
+    /// <summary>
+    /// Decode a list of SegmentReferences_page.Reference BLOBs to (min, max) pages.
+    /// Each BLOB has a 3-byte header (00 03 02) followed by a little-endian page integer.
+    /// </summary>
+    static (int? start, int? end) DecodePageRange(List<byte[]> referenceBlobs)
+    {
+        var pages = new List<int>();
+        foreach (var b in referenceBlobs)
+        {
+            if (b.Length < 4 || b[0] != 0x00 || b[1] != 0x03 || b[2] != 0x02)
+                continue;
+            int page = 0;
+            for (int i = b.Length - 1; i >= 3; i--)
+            {
+                page = (page << 8) | b[i];
+            }
+            pages.Add(page);
+        }
+        if (pages.Count == 0)
+            return (null, null);
+        return (pages.Min(), pages.Max());
     }
 
     // Thread-local storage for interlinear extraction results
@@ -1135,6 +1382,7 @@ class Program
             }
             LicenseManagerCore_LoadCore(licMgr);
             Console.Error.WriteLine("[*] License manager loaded.");
+            s_licMgr = licMgr;
 
             // Cache of opened resources: filepath -> title pointer
             var resourceCache = new Dictionary<string, IntPtr>();
@@ -1258,6 +1506,18 @@ class Program
                                 continue;
                             }
                             mode = "article-title";
+                            resourceFile = tokens[1];
+                            int.TryParse(tokens[2], out articleNum);
+                            break;
+
+                        case "article-meta":
+                            if (tokens.Count < 3)
+                            {
+                                Console.Error.WriteLine("[!] article-meta requires: article-meta <file> <article#>");
+                                Console.WriteLine("---END---");
+                                continue;
+                            }
+                            mode = "article-meta";
                             resourceFile = tokens[1];
                             int.TryParse(tokens[2], out articleNum);
                             break;
@@ -1432,6 +1692,7 @@ class Program
             Console.Error.WriteLine("[*] Batch mode: shutting down...");
 
             // Cleanup
+            s_licMgr = IntPtr.Zero;
             LogosLibraryInitializationWrapper_Uninitialize();
             LicenseManagerCore_Delete(licMgr);
             Console.Error.WriteLine("[*] Batch mode: done.");

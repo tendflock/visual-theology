@@ -603,6 +603,12 @@ def _run_via_batch(args):
             # conflicts with open resources). Always use subprocess for this.
             return None
 
+        if len(args) >= 3 and args[0] == "--article-meta":
+            meta = _batch_reader.get_article_meta(args[1], int(args[2]))
+            if meta is None:
+                return ("", "")
+            return (json.dumps(meta), "")
+
         # Positional args: resource_file article_num [max_chars]
         if len(args) >= 2 and not args[0].startswith("--"):
             resource_file = args[0]
@@ -921,6 +927,52 @@ def read_article_text(resource_file, article_num, max_chars=20000):
     """Read text from a specific article number."""
     stdout, _ = run_reader(resource_file, str(article_num), str(max_chars), timeout=30)
     return stdout if stdout else None
+
+
+def get_article_meta(resource_file, article_num, timeout=30):
+    """Return structured metadata for an article, or ``None`` on failure.
+
+    Shape matches the JSON emitted by ``LogosReader --article-meta``:
+
+    .. code-block:: json
+
+        {
+          "resourceId": "LLS:RFRMDSYSTH04",
+          "resourceVersion": "2024-05-06T15:46:37Z",
+          "logosArticleNum": 4718,
+          "nativeSectionId": "R48.2",
+          "heading": "A Failed Expectation",
+          "articleStart": 2007383,
+          "articleEnd": 2011146,
+          "hasMilestoneIndex": true,
+          "pageStart": 1497,
+          "pageEnd": 1498
+        }
+
+    ``pageStart`` / ``pageEnd`` are ``None`` when the resource lacks an
+    embedded milestone index or when no milestone row overlaps the article's
+    character range. ``heading`` is ``None`` when no non-whitespace title
+    is available.
+
+    Args:
+        resource_file: Resource filename (bare, e.g. ``"RFRMDSYSTH04.logos4"``)
+            or full path.
+        article_num: Logos article number (integer).
+        timeout: Seconds to wait for the reader to respond.
+
+    Returns:
+        ``dict`` with the fields above, or ``None`` if the reader fails or
+        returns empty stdout.
+    """
+    stdout, _ = run_reader(
+        "--article-meta", resource_file, str(article_num), timeout=timeout
+    )
+    if not stdout:
+        return None
+    try:
+        return json.loads(stdout)
+    except (ValueError, TypeError):
+        return None
 
 
 def get_interlinear_data(bible_file, article_num):
