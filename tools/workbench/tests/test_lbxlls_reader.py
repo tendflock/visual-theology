@@ -1,10 +1,9 @@
-"""Baseline tests for Fix 12: bare-stem resolution for .lbxlls resources.
+"""Regression tests for Fix 12: bare-stem resolution for .lbxlls resources.
 
-These tests capture current behavior before fixing resolve_bible_files so the
-fix has a regression harness. Three categories:
+Three categories, all passing:
 
   1. Regression: bare-stem `.logos4` resolution still works.
-  2. xfail: bare-stem `.lbxlls` resolution is broken (force-appends `.logos4`).
+  2. Bare-stem `.lbxlls` resolution (now fixed via ResourceManager lookup).
   3. Baseline: full `.lbxlls` paths work through the native loader.
 """
 

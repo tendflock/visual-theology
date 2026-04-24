@@ -1910,13 +1910,20 @@ def _resolve_bare_stem(stem):
     the historical `.logos4` behavior so nonexistent stems still surface the
     same error downstream.
     """
+    if not stem:
+        raise ValueError("_resolve_bare_stem: empty stem")
+    # Escape LIKE metacharacters so stems containing `%` or `_` don't turn into
+    # wildcards. Underscores show up naturally in real stems (e.g. GS_WALV_DANIEL),
+    # and callers may pass arbitrary strings, so this must be defensive.
+    escaped = stem.lower().replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+    pattern = f"%/{escaped}.%"
     conn = sqlite3.connect(RESOURCE_MGR_DB)
     try:
         row = conn.execute(
             "SELECT Location FROM Resources "
-            "WHERE lower(Location) LIKE ? "
+            "WHERE lower(Location) LIKE ? ESCAPE '\\' "
             "ORDER BY length(Location) LIMIT 1",
-            (f"%/{stem.lower()}.%",),
+            (pattern,),
         ).fetchone()
     finally:
         conn.close()
