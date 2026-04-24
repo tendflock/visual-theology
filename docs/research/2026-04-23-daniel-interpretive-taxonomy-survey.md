@@ -483,6 +483,77 @@ These three are particularly consequential because they are the primary voices f
 
 Menn is an irenic post-tribulation covenantal-amillennial voice at book length across Daniel, Revelation, and millennial debates. Not a Logos resource; the project's EPUB ingestion tooling is deferred until after the `.lbxlls` fix and the Daniel 7 pilot, at which point Menn becomes a primary source for follow-on topic sites. For now the book is a human-read reference for Bryan, not an agent-queryable source.
 
+## Second-Pass Survey (2026-04-24): Nine New Voices
+
+After the initial 2026-04-23 survey, 12 resources were acquired through Logos; 9 were readable through the existing reader, and three parallel research agents surveyed them in detail. This section integrates those findings into the taxonomy. The three agent reports are preserved in the session record; direct quotes below cite article numbers for traceability.
+
+### What the new voices changed
+
+**Three structural findings reshape the taxonomy:**
+
+1. **Two new meta-axes surface from the Bauckham / Wright / Collins stream.** They are hermeneutical axes *about* interpretation, not positions on Daniel's content — but they are load-bearing because serious scholars divide on them before they divide on anything else.
+
+2. **Fulfillment structure (Axis O) now has five distinct positions** populated from real scholars, not three as initially drafted. The new positions — symbolic-recurrence (Bauckham), transhistorical-recurrence-with-climactic-singular (Riddlebarger), near-far with canonical-Christological extension (Lucas) — break the flat-enum assumption.
+
+3. **Son of Man (Axis J) requires more granularity than the prior four positions.** Collins and Newsom hold angelic-Michael as primary (with corporate secondary). Wright holds corporate-literary-transformed-by-Jesus-to-sociological-reality (a dynamic position). Longman holds messianic-office proleptically-Christological. Lucas holds theophanic-holy-ones with prospective-Christological extension. The "corporate" label in the v1 taxonomy was underspecified.
+
+The codex critique about **commitment strength** is strongly validated across all three surveys. Every scholar shows tiered convictions — central confessional commitments (Sproul: bodily resurrection; Riddlebarger/Hoekema: amil; Longman: 6c dating; Collins: Maccabean dating) alongside tentatively-held sub-positions (Hoekema on progressive parallelism; Sproul on millennium; Longman at Dan 11:39/40 transition). A schema that flattens conviction to binary misrepresents the shape of scholarship.
+
+### Expanded axis catalog (v2)
+
+Axes A through O as before, with new positions noted in bold. Axes P and Q are new.
+
+| # | Axis | Positions (v2) |
+|---|---|---|
+| A | Dating | Traditional/sixth-century; Maccabean/second-century/critical; **Bifurcated/compositional (Persian-Diaspora stories + Antiochene visions, Lucas)** |
+| B | Fourth kingdom | Greece; Rome; **Unspecified/symbolic (Longman)** |
+| C | Little horn | Antiochus IV; future Antichrist; Antiochus-foreshadowing-Antichrist; transhistorical evil; papal Rome (historiographical); **Literary/corporate symbol of oppressor, no personal identity (Wright)** |
+| D | Seventy sevens | Messianic; Maccabean; Symbolic; dispensational-gap; **Sabbatical-within-continuing-exile (Wright)** |
+| E | Revelation approach | Preterist (partial/full); Historicist; Futurist (historic/dispensational); Idealist (radical/modified/eclectic); Eclecticism |
+| F | Millennium | Premil (historic/dispensational); Amil; Postmil; Inaugurated-millennial; **Symbolic-vindication millennium (Bauckham)**; **Realized millennium (Hoekema's preferred label for amil)**; **Heavenly-reigning-souls amil (Hoekema)** vs. **Earthly-church-militant amil (Riddlebarger)** |
+| G | Rapture timing | Pretrib; Midtrib; Posttrib; Pre-wrath; Partial; **Rejected/non-applicable (most amil, preterist, critical)** |
+| H | Eschatological structure | Consistent (Schweitzer/Weiss); Realized (Dodd); Inaugurated (Ladd/Hoekema/Vos/Bavinck); Restoration (Sanders/Wright); **Cosmic-consistent (Collins — retribution beyond death is the apocalyptic innovation)** |
+| I | Kingdom ontology | Reign (dynamic) vs. Realm (territorial); Political/Spiritual/Cosmic; **Heaven-located (Hoekema)** vs. **Earth-located-present (Riddlebarger)** |
+| J | Son of Man | Circumlocution ("a human one"); Corporate (Israel/saints); Messianic-office; Foreign-import; **Angelic-Michael (Collins, Newsom, critical consensus)**; **Literary-representation-transformed-to-sociological-reality (Wright)**; **Proleptic-Christological-office (Longman)**; **Theophanic-holy-ones-with-prospective-Christology (Lucas)** |
+| K | Disp vs Cov | Classical dispensationalism; Progressive dispensationalism; Covenantal/Reformed; Historic premillennialism (covenantal premil) |
+| L | Apocalyptic hermeneutic | Historical-critical; Literary/canonical; Theological/canonical-unfolding; Allegorical (patristic); **Critical-realism (Wright)**; **Literary-theological-with-anti-cosmological-dualism (Wright)** |
+| M | Canonical placement | Writings (MT Ketubim — implies wisdom-apocalyptic); Prophets (LXX/Christian — implies predictive prophecy) |
+| N | Cross-book coherence | Strict coherence; Loose coherence; No requirement; **NT-reinterprets-Daniel (Riddlebarger, Wright)** |
+| O | Fulfillment structure | Single-fulfillment (Newsom, Collins); Near-far (Lucas); Typological-chain (Davis, Longman); Transhistorical-recurrence (Longman's unspecified-beasts); **Transhistorical-recurrence-with-climactic-singular (Riddlebarger's two-threats-merging)**; **Symbolic-recurrence (Bauckham: Rome-as-beast-of-its-hour without implying final-beast)** |
+| **P** | **Meaning-locus** (new) | **(a) Meaning-is-origin (Collins: 2c author's intent exhausts meaning)**; **(b) Meaning-is-reception (Wright: 1c Jewish reading is the text's real meaning)**; **(c) Meaning-is-canonical-unfolding (Bauckham: symbols have surplus that develops canonically)**; **(d) Meaning-is-literal-future (Walvoord/Lindsey per Collins' critique: text predicts specific future events)** |
+| **Q** | **Genre–eschatology relation** (new) | **(a) Genre defines eschatology (Collins: apocalypse as genre determines apocalyptic-eschatology as idea-set)**; **(b) Genre serves prophecy (Bauckham: "prophetic apocalypse"; John uses the genre for prophetic purposes)**; **(c) Genre resists definition (Wright: describe rather than define)**; **(d) Genre as allegorical code (dispensational literalism per Collins' critique)** |
+
+### Per-source key findings
+
+**Bauckham, *The Theology of the Book of Revelation*** — "prophetic-apocalypse" hybrid resists Collins's genre-boxing (art. 119). **Key move:** millennium-as-vindication-image, not literal period, not simple spiritualization (art. 149): "the millennium's theological point … is solely to demonstrate the triumph of the martyrs." Daniel 7 is John's "major Old Testament source" (art. 120, 145); 1260 days/3.5 years treated as unambiguously symbolic (art. 164). Kingdom ontology: cosmic reign turning earthly realm. Eschatological-worship frame inverts earthly perception.
+
+**Wright, *The New Testament and the People of God*** — **Continuing-exile framework** is the signature move: 2nd-Temple Jews read Daniel 9's 490 years within a perception of continuing exile (art. 1591). Daniel 7's son of man is **literary representation for Israel** surrounded by beast-metaphors for pagan nations (art. 1589). Jesus's "bold move" was making symbol into sociological reality. Strong anti-cosmological-dualism in apocalyptic reading (art. 1590): apocalyptic language "invests space-time reality with its full, that is, its theological, significance." Three-kind representation theory (literary / sociological / metaphysical) offers finer-grained hermeneutical granularity than the v1 axis L.
+
+**Collins, *The Apocalyptic Imagination* (3rd ed)** — Maccabean lock-in (art. 1323): "the second-century date for the visions of Daniel (chaps. 7–12) is accepted as beyond reasonable doubt by critical scholarship." Son of Man as angelic Michael-type with corporate saints as earthly counterpart (art. 1328). 70 weeks terminus = Onias III murder + temple profanation (art. 1331). Dan 12:11's 1290 + 12:12's 1335 = evidence of **recalculation after the original prediction went unfulfilled** (art. 1334) — a distinctive source-critical argument. Genre trichotomy (apocalypse / apocalypticism / apocalyptic-eschatology, art. 1283) and historical-vs-otherworldly-journey typology (art. 1284) are Collins's methodological contributions. Modern dispensationalism read as "reductive archaism" (art. 1415).
+
+**Newsom & Breed, *Daniel* (OTL 2014)** — Antiochene persecution lock-in (art. 422). Compositional stratification of Daniel 7 into pre-Antiochene kernel + Antiochene redaction (art. 485). Little horn unreservedly Antiochus IV; three uprooted horns = Seleucus IV and his two sons (art. 487). **Son of Man = angelic, specifically Michael** (art. 488) — the subsequent chapters "reinterpret this figure with increasing specificity, as prince of the host (8:11) and as Michael (10:21; 12:1)." 70 sevens symbolic-chronographic terminating in Antiochan crisis; Onias III = anointed one cut off (art. 506). Breed's reception-history chapters layer "what the text has meant" beside "what the text meant" — methodologically distinctive.
+
+**Longman, *Daniel* (NIVAC)** — Paradigmatic evangelical mediator on Axis O. **Refuses to specify fourth kingdom** (art. 518): "the multivalent imagery intends to prohibit definite historical identifications." Transhistorical-recurrence with no specific final Antichrist fixed as interpretive requirement. 6c dating but "the standpoint of the writer (sixth or second century b.c.) cannot be ascertained for certain does not greatly affect the interpretation" (art. 456). 70 weeks: all chronology attempts "unpersuasive to any but a few devoted followers" (art. 534). Son of Man: proleptic Christology — "only God rides the ethereal war chariot" (art. 520); Jesus is the figure.
+
+**Lucas, *Daniel* (AOTC)** — The *other* evangelical mediator. **Bifurcated composition thesis** (art. 367): Persian-period Diaspora stories + Antiochene visions, same tradent-group, both inspired. Pseudonymity reframed as group-identity rather than deception. Fourth beast = Macedonia; little horn = Antiochus IV (art. 312) — traditional Greek-sequence critical reading held by an evangelical. Son of Man = holy-ones with theophanic investiture (art. 311); prospectively Jesus found in 7:13 "a ready-made image for his own self-understanding" (art. 314). Axis O = clean near-far: original Antiochene discharge + canonical Christological extension.
+
+**Hoekema, *The Bible and the Future*** — Textbook amillennial synthesis. Already/not-yet framework imported from Ridderbos/Cullmann (arts. 722, 726, 730). Accepts "realized millennialism" as more accurate label (art. 743). Millennium = "present reign of the souls of deceased believers with Christ in heaven" (art. 743) — **heaven-located amil**. Absorbs Hendriksen's progressive parallelism (art. 749). Critiques dispensational Dan 9 gap (art. 744).
+
+**Riddlebarger, *A Case for Amillennialism*** — Beale-era updated amil, not classic Hendriksen-era. Explicitly integrates preterist + historicist elements inside an idealist frame ("combination of historicist, preterist, and futurist elements," art. 617). **Earth-located amil**: millennium = church militant on earth, martyrs reigning (art. 702), distinguishing him from Hoekema. **Two-threats Antichrist**: beasts of Rev 13 as two recurring threats merging into one end-time Antichrist (art. 667) — distinct axis O position "transhistorical-recurrence-with-climactic-singular." Dan 9 Kline/jubilee reading (art. 682–685). 70th week = entire church age (art. 685), no gap. Covenantal-Klinean.
+
+**Sproul, *The Last Days According to Jesus*** — **Moderate (partial) preterism named explicitly** (art. 188). Sub-systemic: commits hard on preterism, refuses to commit on millennium (art. 234, 240). Antichrist = first-century Nero-coded, no end-time Antichrist required (art. 230). Rejects full preterism on resurrection grounds (art. 240: "fatal flaw"). **Commitment-strength gradients** are textually explicit: "I must confess that I am still unsettled on some crucial matters" (art. 225) — this sentence is the clearest validation of the commitment-strength critique in the entire survey.
+
+### Net effect on the architecture spec
+
+The v2 axis catalog (16 axes, with expanded positions) is larger than codex's critique anticipated. Two implications:
+
+- **The spec's schema must support axis composition.** Davis's "antichrists-before-the-Antichrist," Riddlebarger's "two-threats," Wright's "symbol-transformed-to-reality," and Lucas's "near-far" are all compositional positions that resist flat-enum classification. The `basePosition + fulfillmentMode + extendsTo + scope` schema codex proposed handles this correctly.
+- **The spec needs a `commitment` field** — `strong / moderate / tentative` — separate from confidence tiers. This is codex's critique, validated by every source.
+
+Axes P and Q (meaning-locus, genre-eschatology relation) should be added to the master catalog but **flagged as optional** for individual site invocations. Daniel 7 pilot probably does not need P and Q as top-level axes — they're more useful as framing moves in the editorial voice (what kind of disagreement is this?) than as first-order positions. Later topic sites (e.g., "Apocalyptic Genre," "Son of Man") may elevate them.
+
+The pilot Daniel 7 site should now invoke: **A, B, C, E, F, H, J, K, L, N, O** — eleven of sixteen axes — with commitment-strength tags throughout.
+
 ## File Paths Surveyed
 
 All paths rooted at `/Users/family/Library/Application Support/Logos4/Data/e3txalek.5iq/ResourceManager/Resources/`:
