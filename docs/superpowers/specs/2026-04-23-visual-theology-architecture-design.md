@@ -1,7 +1,7 @@
 # Visual Theology Architecture — Design Spec
 
-Date: 2026-04-23
-Status: Draft (for review)
+Date: 2026-04-23 (revised 2026-04-24)
+Status: Draft v2 (integrates codex creative review + second-pass library survey)
 Author: Bryan + Claude (with parallel research delegated to multiple subagents)
 
 ## Project Context
@@ -19,7 +19,7 @@ Build a repeatable, Logos-library-grounded, research-backed visual theology syst
 1. Teaches a first-time learner (including the author) the interpretive landscape of a passage or topic.
 2. Represents each interpretive school in its own best terms, with cited proponents, without strawman summaries.
 3. Uses layered disclosure — scroll for narrative, click for detail, confidence tiers for trust, attribution footer for outbound sources — rather than modal toggles.
-4. Adapts the visual argument per topic/passage (the "multilane interstate" metaphor: schools as lanes that converge, branch, borrow, and reconverge).
+4. Adapts the visual argument per topic/passage. The working metaphor is **decision cascade** — Daniel's interpretive disagreements are rule-driven and upstream-downstream (an answer on axis A constrains axis B, N governs whether Revelation can override Daniel, M is a rule about how you enter the map), not parallel lanes. An interstate metaphor was an early draft; codex's creative review flagged that it fails under five axes with five traditions. Final visual metaphor is deferred to design/UX exploration (WS4).
 5. Produces sibling static sites that share schema, editorial rules, and tooling.
 
 Daniel 7 is the pilot. If the architecture holds, Daniel 9:24-27, Daniel 11-12, and topic sites ("Son of Man", "The Seventy Weeks") follow.
@@ -62,6 +62,9 @@ Inherited from the Romans 3 build, with Daniel-specific additions.
 - **Source discipline.** The research backbone is the Logos library. Vetted external sources (e.g., peer-reviewed articles, the PureBibleForum textual-criticism thread on Psalm 14/Romans 3/Vaticanus) may be cited as aids. Facebook posts, general-web blogs, and AI-generated summaries are excluded.
 - **Schools as vectors, not flat labels.** A scholar's position is a combination of positions across multiple axes (see Data Model §). Compound labels ("Reformed inaugurated amillennial," "dispensational pretribulational premillennial futurist") are welcome; flat single-axis labels are usually wrong.
 - **No school caricature in narrative.** If the narrative has to describe what a school believes in its own voice, use its proponents' vocabulary. "Dispensationalists think history is divided into watertight dispensations" fails. "Classical dispensationalists distinguish Israel and the church as two peoples of God with distinct plans, following Darby, Scofield, and Chafer" passes.
+- **Name the kind of disagreement.** Before reporting a disagreement, name it: textual, historical, typological, theological, or inferential. Readers handle heat better when they know whether the split is over Daniel's date, over Revelation's control on Daniel, or over eschatological system-building. This habit lowers temperature without abdicating judgment.
+- **Pastoral de-escalation register.** Frame each position as a careful host would: "here is why serious readers are drawn to this position; here is the cost of adopting it." Not an end-times cage match. Write like a pastor introducing a newcomer to the sanctuary, not a debater.
+- **Text / inference / system distinction.** Keep the three layers visibly separate in the narrative. What the text says. What the reader must infer to apply it. What eschatological system the inference belongs to. Worked example: *"Daniel 7 shows a blasphemous persecuting power hostile to the saints of the Most High. Identifying that power as Antiochus IV, future Antichrist, a typological pattern, or a transhistorical principle is the next interpretive move."* That sentence holds text, inference, and system apart in one breath.
 
 ## Source Discipline
 
@@ -75,15 +78,17 @@ All claims trace to one of three source tiers:
 
 ## Data Model
 
-### Three-layer structure
+### Five-layer structure (v2)
 
-1. **Axis catalog** — global, reusable across all sibling sites. Each axis is a named question with named positions.
-2. **Traditions catalog** — global, optional. Named clusters of correlated positions across axes (e.g., "Reformed amillennial," "dispensational premillennial"). Shortcuts for pedagogy; not ontological claims.
-3. **Topics** — site-level. Each topic invokes specific axes and cites positions with library sources.
+The v1 schema (axes → traditions → topics) has been revised after codex's creative review and the v2 library survey. The changes are substantive: scholars become the primary index with traditions as tags; positions become compositional; canonical placement and cross-book coherence move into a separate `readingRules` layer; and every position gets a `commitment` field distinct from claim confidence.
+
+1. **Axes catalog** — global. Sixteen named questions with named positions. Axes A–O cover first-order content positions on the text. Axes P (meaning-locus) and Q (genre-eschatology relation) are optional meta-axes used for framing in editorial voice rather than first-order positions. See `docs/research/2026-04-23-daniel-interpretive-taxonomy-survey.md` for the full catalog.
+2. **Reading rules** — global. Meta-hermeneutical constraints separate from first-order axes: canonical placement (was M), cross-book coherence (was N), meaning-locus (P), and genre-eschatology relation (Q). These govern how positions combine, not what positions exist. A scholar's reading rules affect many axes at once.
+3. **Scholars catalog** — global, primary. Every named scholar is a record with a compositional position per axis. Scholars are the atomic unit of citation; traditions are aggregations over scholars.
+4. **Traditions catalog** — global, optional. Named clusters of correlated positions for pedagogical shortcut (e.g., "Reformed inaugurated amillennial"). Members may diverge from the characteristic vector on some axes (e.g., Hoekema and Riddlebarger both amil but diverge on kingdom ontology, heaven vs. earth). Includes reception-history traditions (e.g., Reformation historicism) explicitly labeled as non-live.
+5. **Topics** — site-level. Each topic invokes specific axes + reading rules, lists the scholars in play, and collects citations. Convergence and divergence are topic-level summaries.
 
 ### Axes
-
-Derived from the library survey at `docs/research/2026-04-23-daniel-interpretive-taxonomy-survey.md`. The full list (13 axes) appears there. The Daniel 7 pilot invokes axes A, B, C, E, F, J, K, L, N.
 
 ```javascript
 axes: {
@@ -91,61 +96,169 @@ axes: {
     id: "dating",
     question: "When was the book of Daniel composed?",
     positions: [
-      {
-        id: "traditional-6c",
-        label: "Traditional (sixth-century)",
-        shortLabel: "6th c.",
-        color: "oklch(0.55 0.09 25)",
-        tint: "oklch(0.96 0.025 25)",
-        ink: "oklch(0.35 0.09 25)"
-      },
-      {
-        id: "maccabean-2c",
-        label: "Maccabean (second-century)",
-        shortLabel: "2nd c.",
-        color: "oklch(0.55 0.09 265)",
-        tint: "oklch(0.96 0.025 265)",
-        ink: "oklch(0.35 0.09 265)"
-      }
+      { id: "traditional-6c", label: "Traditional (sixth-century)" },
+      { id: "maccabean-2c",   label: "Maccabean (second-century)" },
+      { id: "bifurcated",     label: "Bifurcated: Persian-Diaspora stories + Antiochene visions (Lucas)" }
     ]
   },
-  // ... one entry per axis
+  "little-horn": {
+    id: "little-horn",
+    question: "Who or what is the little horn of Daniel 7?",
+    positions: [
+      { id: "antiochus-iv",          label: "Antiochus IV Epiphanes" },
+      { id: "future-antichrist",     label: "Future Antichrist" },
+      { id: "papal-rome",            label: "Papal Rome (Reformation historicist)" },
+      { id: "transhistorical",       label: "Transhistorical evil power" },
+      { id: "literary-symbol",       label: "Literary symbol of oppressor, no personal identity (Wright)" }
+    ]
+  },
+  // ... 16 axes total
 }
 ```
 
-### Traditions
+No `color` field on positions. Color lives at a higher level (chapter identity or argument role, not position identity) — see Open Decisions §4.
+
+### Reading rules (separate from axes)
+
+```javascript
+readingRules: {
+  "cross-book-coherence": {
+    id: "cross-book-coherence",
+    question: "Must Daniel and Revelation readings cohere? In which direction?",
+    positions: [
+      { id: "strict",               label: "Strict coherence (Beale, dispensationalists)" },
+      { id: "loose",                label: "Loose coherence (Davis, Longman)" },
+      { id: "nt-reinterprets",      label: "NT reinterprets Daniel (Riddlebarger, Wright)" },
+      { id: "none",                 label: "No coherence requirement" }
+    ]
+  },
+  "meaning-locus": { /* Axis P — origin / reception / canonical / literal-future */ },
+  "genre-eschatology": { /* Axis Q */ },
+  "canonical-placement": { /* Writings / Prophets */ }
+}
+```
+
+### Scholars (primary)
+
+```javascript
+scholars: {
+  "davis-dale-ralph": {
+    id: "davis-dale-ralph",
+    name: "Dale Ralph Davis",
+    work: "The Message of Daniel: His Kingdom Cannot Fail (BST)",
+    resource: "BST27DA",
+    positions: {
+      "dating": {
+        basePosition: "traditional-6c",
+        commitment: "strong",
+        citation: { article: 379, quote: "..." }
+      },
+      "little-horn": {
+        // Compositional position — codex's schema recommendation
+        basePosition: "future-antichrist",
+        fulfillmentMode: "typological-chain",
+        extendsTo: ["antiochus-iv", "other-historical-antichrists"],
+        scope: "both-past-and-future",
+        commitment: "strong",
+        citation: { article: 381, quote: "antichrists before the Antichrist..." }
+      }
+      // ... one entry per axis the scholar addresses
+    },
+    readingRules: {
+      "cross-book-coherence": { position: "loose", commitment: "moderate" }
+    }
+  },
+  "riddlebarger-kim": {
+    id: "riddlebarger-kim",
+    name: "Kim Riddlebarger",
+    work: "A Case for Amillennialism: Understanding the End Times",
+    resource: "CSAMLLNLSM",
+    positions: {
+      "little-horn": {
+        basePosition: "transhistorical",
+        fulfillmentMode: "transhistorical-recurrence-with-climactic-singular",
+        // "Two threats merging into a single end-time figure" (art. 667)
+        commitment: "strong",
+        citation: { article: 667, quote: "these two distinct threats merge into a single threat at the time of the end..." }
+      },
+      "millennium": {
+        basePosition: "amil",
+        subPosition: "earth-located-church-militant",
+        commitment: "strong",
+        citation: { article: 702, quote: "There is a real millennium despite the amillennial nomenclature..." }
+      }
+      // ...
+    }
+  },
+  "hoekema-anthony": {
+    // Amil like Riddlebarger, diverges on kingdom-locus
+    id: "hoekema-anthony",
+    positions: {
+      "millennium": {
+        basePosition: "amil",
+        subPosition: "heaven-located-reigning-souls",
+        commitment: "strong",
+        citation: { article: 743, quote: "the present reign of the souls of deceased believers with Christ in heaven" }
+      }
+    }
+  },
+  "walvoord-john": { /* dispensational-premillennial-pretrib */ },
+  "newsom-carol": { /* Maccabean critical; angelic-Michael Son of Man */ },
+  "longman-tremper": { /* 6c dating + unspecified fourth-kingdom + transhistorical-recurrence */ },
+  "lucas-ernest": { /* bifurcated dating + Greek fourth-kingdom + near-far fulfillment */ }
+  // ... many more
+}
+```
+
+Compositional positions (`basePosition` + `fulfillmentMode` + `extendsTo` + `scope`) handle mediating positions that break flat enums: Davis's "antichrists before the Antichrist," Riddlebarger's "two threats merging," Koester's Antiochus-expanding-to-imperial-type, Lucas's near-far with Christological extension.
+
+`commitment` (`strong` / `moderate` / `tentative`) is separate from claim confidence (`documented` / `strong-judgment` / `noted-gap`). Confidence is about the claim's evidential standing; commitment is about how central the position is to the scholar's system. Sproul's "I must confess that I am still unsettled on some crucial matters" (art. 225) is a `tentative` commitment on the millennium but a `strong` commitment on partial preterism.
+
+### Traditions (cluster tags)
 
 ```javascript
 traditions: {
   "reformed-inaugurated-amillennial": {
     label: "Reformed inaugurated amillennial",
-    shortLabel: "Reformed/amil",
-    representativePositions: {
-      dating: "traditional-6c",
+    characteristicVector: {
+      "dating": "traditional-6c",
       "fourth-kingdom": "rome",
       "little-horn": "transhistorical",
+      "millennium": "amil",
       "rev-approach": "modified-idealist-eclectic",
-      "millennium": "amillennial",
-      "rapture-timing": null,
-      "eschatological-structure": "inaugurated",
       "disp-cov": "covenantal",
-      "son-of-man": "messianic-corporate"
+      "eschatological-structure": "inaugurated"
     },
-    exemplars: [
-      { name: "G. K. Beale", resource: "NIGTCREV", article: 3819, work: "The Book of Revelation (NIGTC)" },
-      { name: "Anthony Hoekema", resource: "RFRMDSYSTH04", article: 4716, work: "cited in Beeke and Smalley, Reformed Systematic Theology, Vol. 4" },
-      { name: "Geerhardus Vos", resource: "BBLCLTHNTSTMNTS", article: null, work: "Biblical Theology: Old and New Testaments" }
+    members: ["beale-gk", "hoekema-anthony", "riddlebarger-kim", "vos-geerhardus"],
+    // Intra-tradition divergences must be surfaced, not averaged away:
+    intraTraditionNotes: [
+      "Hoekema and Riddlebarger both amil but diverge on kingdom ontology — Hoekema heaven-located, Riddlebarger earth-located.",
+      "Riddlebarger is Beale-era updated amil; Hoekema is Hendriksen-era classic amil."
     ]
   },
-  "dispensational-premillennial-pretrib": { /* ... */ },
-  "critical-maccabean-historical": { /* ... */ },
-  "historic-premillennial-covenantal": { /* ... */ }
+  "historicist-reformation": {
+    label: "Historicist Reformation tradition",
+    status: "reception-history",  // Not a live academic option; preserved for pedagogy
+    characteristicVector: {
+      "little-horn": "papal-rome",
+      "rev-approach": "historicist",
+      "disp-cov": "covenantal"
+    },
+    primarySources: [
+      { name: "Joseph Mede",     work: "Clavis Apocalyptica (1627)",                 publicDomain: true },
+      { name: "Isaac Newton",    work: "Observations upon the Prophecies of Daniel", publicDomain: true },
+      { name: "Christopher Wordsworth", work: "The New Testament: Revelation",       publicDomain: true }
+    ],
+    note: "Dominant 16th–19th c. Protestant reading; not held by any modern academic voice in the library. Included for historical awareness."
+  },
+  "dispensational-premillennial-pretrib": { /* Walvoord, Patterson, Tanner (futurist elements) */ },
+  "critical-maccabean-historical": { /* Collins, Newsom, Driver, Montgomery, Koester */ },
+  "historic-premillennial-covenantal": { /* Ladd, Spurgeon via Beeke&Smalley */ },
+  "irenic-evangelical-mediating": { /* Longman, Lucas, Davis — the pattern codex flagged as real */ }
 }
 ```
 
 ### Topics
-
-A topic is the unit the narrative renders. Each topic invokes one or more axes and collects position citations.
 
 ```javascript
 topics: [{
@@ -153,70 +266,32 @@ topics: [{
   passage: "Daniel 7:7-8, 19-25",
   question: "Who or what is the little horn?",
   relevantAxes: ["little-horn", "dating", "fourth-kingdom", "rev-approach", "disp-cov"],
+  relevantRules: ["cross-book-coherence", "meaning-locus"],
 
-  convergence: [
-    {
-      text: "All surveyed schools agree the little horn is a specific persecuting power hostile to the saints of the Most High.",
-      confidence: "documented",
-      sources: [
-        { resource: "EEC27DA", article: 2557 },
-        { resource: "NAC18", article: null },
-        { resource: "ICC_DA", article: null },
-        { resource: "CAMBC27DA", article: 365 }
-      ]
-    }
+  convergence: [{
+    text: "All surveyed scholars agree the little horn is a specific persecuting power hostile to the saints of the Most High.",
+    confidence: "documented",
+    sources: [ /* named scholars + article numbers */ ]
+  }],
+
+  divergence: [{
+    axis: "little-horn",
+    text: "Scholars split on temporal placement, personal identity, and fulfillment structure.",
+    confidence: "documented"
+  }],
+
+  // Scholars in play — the primary index. Tradition-level patterns surface as notes.
+  scholarsInPlay: [
+    "beale-gk", "hoekema-anthony", "riddlebarger-kim", "walvoord-john",
+    "patterson-paige", "driver-sr", "montgomery-james", "koester-craig",
+    "davis-dale-ralph", "longman-tremper", "lucas-ernest", "tanner-j-paul",
+    "newsom-carol", "collins-john-j", "sproul-rc"
   ],
 
-  divergence: [
-    {
-      axis: "little-horn",
-      text: "Schools split on temporal placement and identity: past (Antiochus IV), future (Antichrist), typological (Antiochus foreshadowing Antichrist), or transhistorical (principle of evil across history).",
-      confidence: "documented"
-    }
-  ],
-
-  positions: [
-    {
-      axis: "little-horn",
-      positionId: "antiochus-iv",
-      heldBy: [
-        {
-          tradition: "critical-maccabean-historical",
-          source: "CAMBC27DA",
-          article: 365,
-          quote: "the Book of Daniel must have been written not earlier than c. 300 b.c., and in Palestine; and there are considerations which make it highly probable that it was, in fact, composed during the persecution of Antiochus Epiphanes, between b.c. 168 and 165"
-        },
-        {
-          tradition: "critical-maccabean-historical",
-          source: "ICC_DA",
-          article: null,
-          quote: "..."
-        }
-      ],
-      strongestCase: "The little horn's specific acts (stops sacrifices, breaks weekly cycles, speaks against the Most High for 'time, times, and half a time' = 3.5 years) match Antiochus IV's persecution precisely (167–164 BC). Daniel 8 explicitly identifies its little horn with the king arising from the Greek empire's fourfold division; the consistency of symbolism across Dan 7 and Dan 8 suggests the same referent.",
-      strongestChallenge: "Dan 7's fourth kingdom is not the Greek empire in the traditional reading; on that reading the little horn cannot be Antiochus IV (who arose from the Greek empire, which is then the third kingdom)."
-    },
-    {
-      axis: "little-horn",
-      positionId: "future-antichrist",
-      heldBy: [
-        {
-          tradition: "dispensational-premillennial-pretrib",
-          source: "NAC39",
-          article: null,
-          quote: "..."
-        },
-        {
-          tradition: "traditional-evangelical-futurist",
-          source: "EEC27DA",
-          article: 2557,
-          quote: "..."
-        }
-      ],
-      strongestCase: "...",
-      strongestChallenge: "..."
-    }
-    // ... more positions
+  traditionPatterns: [
+    { tradition: "critical-maccabean-historical", summary: "All hold Antiochus IV with single fulfillment; Newsom adds angelic-Michael Son of Man interpretation." },
+    { tradition: "reformed-inaugurated-amillennial", summary: "Transhistorical / symbolic-recurrence readings; Riddlebarger adds two-threats climactic-singular mechanic." },
+    { tradition: "irenic-evangelical-mediating", summary: "Refuse to fix identity flat-enum — Davis types, Longman transhistorical-unspecified, Lucas near-far." }
   ]
 }]
 ```
@@ -302,17 +377,25 @@ Non-negotiable checks before a topic advances:
 
 ## Visual Modalities
 
-Deferred for codex's design/UX collaboration. The research gives us the data; codex and Bryan work out how to render it per topic. A first set of candidate modalities:
+A vocabulary of rendering moves — not a menu one picks from per topic. Each topic's visual treatment is argumentative and specific; this list is the vocabulary design/UX collaboration (WS4) draws from.
 
-- **Interpretation grid** — rows = axes invoked by a topic; columns = traditions; cells = positions with citation popovers.
-- **Multilane interstate** — axes as parallel horizontal lanes, traditions as paths through the lanes, convergence and divergence visible spatially.
-- **Symbol-to-referent overlay** — for symbols (beasts, little horn, weeks), the symbol at center, candidate referents ringing it, confidence per tradition.
+**Core modalities:**
+
+- **Courtroom transfer map** (added from codex review). Data: thrones, court session, verdict, beastly dominion removed, Son of Man receiving kingdom, saints receiving kingdom, with each scholar's sequencing and referent claims attached. What it teaches: Daniel 7 is a judicial transfer scene before it is anything else. Beale, Patterson, and Koester disagree on timing and referents, but all must account for the same transfer of authority. Cross-domain analogy: baseball win-probability charts where the same game state is read through changing leverage.
+- **Typology escalator** (added from codex review). Data: candidate fulfillments arranged in layers (Antiochus IV → Rome/imperial oppression → final Antichrist), with scholars placed at the layer where they stop or continue. What it teaches: mediating readings (Davis, Morris, Koester) are not fuzzy compromises; they are structured escalation claims. Cross-domain analogy: phylogenetic trees or malware-family lineage maps.
+- **Interpretation grid** — rows = axes invoked; columns = scholars (not traditions); cells = positions with citation popovers. Scholar-indexed, following codex's "scholars first" critique. Tradition grouping is an optional overlay.
+- **Symbol-to-referent overlay** — for symbols (beasts, little horn, weeks), the symbol at center, candidate referents ringing it, commitment + confidence per scholar. Includes a **symbol-pressure meter**: what features each scholar treats as literal-historical, typological, or transhistorical.
 - **Timeline bands** — stacked chronologies, one band per tradition, showing where each places events.
-- **Intertext graph** — Daniel passage at center, NT allusions ringing it, weight of allusion per tradition.
-- **Confidence ribbon** — visual indicator next to every claim showing tier.
-- **Chapter-paced narrative (Romans 3 pattern)** — the default frame.
+- **Intertext graph** — Daniel passage at center, NT allusions ringing it, weight of allusion per scholar.
+- **Confidence ribbon** — visual indicator next to every claim showing both confidence tier and commitment strength.
+- **Chapter-paced narrative (Romans 3 pattern)** — the default frame; scroll-as-argument.
 
-Visual treatment varies per topic. The `data.js` schema supports multiple modalities because the axis/tradition/topic structure is flexible enough to render any of them.
+**Key motion moment (Daniel 7 signature — codex proposal):**
+- **Branch-and-lock animation** — the user toggles one upstream decision (e.g., fourth-kingdom = Greek vs. Rome), and downstream readings visibly re-route and then lock into place. This replaces Romans 3's back-absorption autoplay. Daniel's pedagogy is cascade, not absorption; branch-and-lock argues cascade visibly.
+
+Back-absorption (Romans 3's final motion) does NOT transfer to Daniel. In Romans 3 it argued source-formation; in Daniel it would imply a canonical sink that dissolves live disagreement.
+
+The `data.js` schema supports all of these because the scholars + compositional-positions + reading-rules structure is rich enough to render any of them.
 
 ## Tooling Requirements
 
@@ -346,47 +429,54 @@ Fix 11 (cataloged-but-not-installed detection) in `docs/plans/2026-04-23-logos-r
 
 ## Pilot Scope: Daniel 7
 
-First deliverable sibling site. Scope:
+First deliverable sibling site. Scope (tightened from 5 topics to 3 on codex's creative-review recommendation).
 
-- **Passage:** Daniel 7 (Aramaic vision of four beasts, Son of Man, Ancient of Days).
-- **Topics (3-5 for the pilot):**
-  1. The Four Beasts / The Four Kingdoms (invokes axes A, B, L, M)
-  2. The Little Horn (invokes axes A, B, C, E, F, K)
-  3. The Son of Man (invokes axes J, C, N)
-  4. The Saints Receiving the Kingdom (invokes axes F, H, I)
-  5. Optional: The Ancient of Days (invokes axes H, I)
-- **Traditions in play (5, confirmed against survey):**
-  1. Reformed inaugurated amillennial (Beale, Hoekema, Vos via Beeke/Smalley, Goldingay)
-  2. Dispensational premillennial pretribulational (Patterson NAC, Tanner EEC futurist elements)
-  3. Historic premillennial covenantal (Ladd, Spurgeon via Beeke/Smalley)
-  4. Critical-Maccabean historical (Driver CBSC, Montgomery ICC, Koester)
-  5. Idealist-modified / eclectic (Beale's own, Wilcock BST implicitly)
-- **Motion moments (argumentative, to be designed with codex):**
-  - One structural — how the four-beast sequence maps to the two fourth-kingdom traditions.
-  - One interactive — symbol-to-referent mapping on the little horn.
-  - Optional third — Son-of-Man intertext animation to Rev 1, Rev 14, Mt 24.
-- **Confidence tiers applied throughout.**
-- **Attribution footer** listing every Logos resource with resource ID, edition, and article numbers.
+- **Passage:** Daniel 7 (Aramaic vision of four beasts, Son of Man, Ancient of Days, saints receiving kingdom).
+
+- **Three pilot topics:**
+  1. **The Four Beasts / The Four Kingdoms** — backbone. Invokes axes A, B, L, M (canonical placement as reading rule). Without this, later disagreements float.
+  2. **The Little Horn** — sharpest divergence point and best stress test for the compositional schema. Invokes axes A, B, C, E, F, K, O (fulfillment structure); reading rules include cross-book coherence and meaning-locus.
+  3. **The Son of Man** — theological payoff and Daniel-to-Gospels-to-Revelation intertextual hinge. Invokes axes J, C, N (cross-book coherence rule).
+
+  Saints Receiving the Kingdom and Ancient of Days are folded in rather than separate: Saints→the courtroom transfer map embedded in the four-kingdoms chapter; Ancient of Days→opening frame of the Son of Man chapter.
+
+- **Scholars in play across the pilot** (from v2 survey; ~15 primary voices, more as auxiliary):
+  Beale, Koester, Beeke/Smalley (+Hoekema, Vos via), Riddlebarger, Hoekema directly, Bauckham, Wright, Collins (Hermeneia pending Fix 12; Apocalyptic Imagination available), Newsom, Longman, Lucas, Davis, Tanner, Patterson, Walvoord (pending Fix 12), Driver, Montgomery, Sproul.
+
+- **Traditions surfaced as pedagogical tags** (not primary containers):
+  Critical-Maccabean historical · Reformed inaugurated amillennial · Irenic evangelical mediating (Davis/Longman/Lucas) · Dispensational premillennial pretribulational · Historic premillennial covenantal · Historicist Reformation tradition (reception-history only, clearly labeled).
+
+- **Signature motion moment:** **branch-and-lock** on the fourth-kingdom decision. User toggles Greek or Rome, the little-horn identity, seventy-sevens terminus, and fourth-beast referent re-route and lock. Argues the cascade of consequences.
+
+- **Secondary motion moments (Romans 3 motifs that transfer):**
+  - **Hinge thread** for dependency chains (fourth kingdom ↔ little horn).
+  - **Mosaic hover** for Son of Man intertexts (Dan 7:13 → Mt 24, Mk 14, Rev 1:7, Rev 14:14) and beast imagery.
+
+- **Confidence tiers + commitment strength** shown on every claim.
+- **Attribution footer** listing every Logos resource with resource ID, edition, and article numbers. Public-domain historicist sources (Mede, Newton) linked separately.
 
 ## Workstream Decomposition (Parallelizable)
 
 Each workstream can run in a separate session.
 
-- **WS1 — Schema + Daniel 7 stub** (Claude). Lock the axis/tradition/topic schema. Populate a Daniel 7 `data.js` stub with the little-horn topic fully populated, to validate the schema against real data.
-- **WS2 — Editorial charter** (Claude, codex reviews). Adapt the Romans 3 `STYLE.md` + `CLAUDE.md` to the Daniel project. Add the steelman rule, the axis vocabulary protocol, and how topic-level content maps to HTML chapters.
-- **WS3 — Research tooling** (Claude). Build `steelman_query`, `citation_verifier`, `claim_extractor`, `schema_validator`. Extend `companion_tools.py`. Depends on hardening Fix 11.
-- **WS4 — Design/UX exploration** (codex). Sketch per-topic visual modalities in rough HTML prototypes. Not final design; a vocabulary of moves to draw from per topic. Visual-companion browser useful here.
-- **WS5 — Pilot research** (subagents per tradition, then Claude integrates). One subagent per tradition produces a steelman dossier from Logos sources. Runs after WS1-3 provide the schema, charter, and tooling. Output: `studies/daniel-7/research/steelman/*.md`.
+- **WS1 — Schema + Daniel 7 stub** (Claude). Lock the scholar/axis/tradition/reading-rule schema. Populate a Daniel 7 `data.js` stub with the little-horn topic fully populated — including compositional positions (Davis, Riddlebarger) and commitment-strength fields — to validate the schema against real data.
+- **WS2 — Editorial charter** (Claude, codex reviews). Adapt the Romans 3 `STYLE.md` + `CLAUDE.md` to the Daniel project. Add the steelman rule, the three new voice habits (disagreement-kind naming, pastoral de-escalation, text/inference/system distinction), the axis vocabulary protocol, and how topic-level content maps to HTML chapters.
+- **WS3 — Research tooling** (Claude). Build `steelman_query`, `citation_verifier`, `claim_extractor`, `schema_validator`. Extend `companion_tools.py`. Depends on hardening Fix 11 and Fix 12 (`.lbxlls` support for Collins Hermeneia + Walvoord + Blaising/Bock).
+- **WS4 — Design/UX exploration** (codex). Sketch per-topic visual modalities in rough HTML prototypes — courtroom transfer, typology escalator, branch-and-lock motion, interpretation grid. Not final design; a vocabulary of moves. **Overlaps with WS1** — schema and visual requirements co-evolve. If a modality needs a schema field we haven't encoded (e.g., `mediates`, `escalatesTo`), it gets added to WS1 before WS5 kicks off.
+- **WS5 — Pilot research** (subagents per scholar-cluster, then Claude integrates). Subagents produce steelman dossiers from Logos sources, one per tradition-cluster. Runs after WS1-3 provide the schema, charter, and tooling. Output: `studies/daniel-7/research/steelman/*.md`.
 - **WS6 — Pilot writing** (Bryan primary, Claude support). Narrative arc → dossier → layman → proofing for Daniel 7.
 - **WS7 — Pilot site build** (Claude builds, codex reviews design). Renders `data.js` into the site matching the Romans 3 pattern.
 
 ## Open Decisions (must resolve before WS5 kicks off)
 
-1. **Final traditions list for Daniel 7.** The five listed in Pilot Scope are the proposed default. Bryan ratifies.
-2. **Final topic list for Daniel 7.** Five proposed; can tighten to three if scope is too big for the pilot.
-3. **Per-topic visual modality.** WS4 output feeds this. No commitment until codex explores.
-4. **Color protocol for multi-axis topics.** Romans 3 used one color per source (6 sources = 6 hues). A topic that invokes 5 axes with 3 positions each has up to 15 colors. Either (a) color on one primary axis per topic, other axes use neutral styling; or (b) color per tradition, not per position, giving us 5 colors total. Leaning (b); needs design review.
-5. **Sibling vs. single-repo deployment.** Five sibling sites as separate repos (like Romans 3 lives separately) or one monorepo with five subdirectories. Leaning separate repos for the GitHub Pages URL discipline Bryan already uses.
+1. **Scholars-primary schema validated against real data.** WS1 populates a little-horn stub; if Davis's "antichrists before the Antichrist" and Riddlebarger's "two threats merging" cleanly encode with the compositional-position fields, schema is ratified. If they don't, schema gets revised.
+2. **Tradition list and intra-tradition divergences.** Current six traditions named in Pilot Scope. Intra-tradition divergences (Hoekema vs. Riddlebarger on kingdom-locus) are encoded as notes — but do we surface them as first-class in the site, or leave them for attentive readers? Bryan decides.
+3. **Topic list for Daniel 7 pilot — confirmed at three.** Four Beasts, Little Horn, Son of Man. Saints and Ancient of Days fold in. Bryan can expand if momentum allows.
+4. **Per-topic visual modality.** WS4 output feeds this. Codex explores the vocabulary (courtroom transfer, typology escalator, branch-and-lock, interpretation grid, symbol-to-referent). The chosen motion for each topic is argumentative, not decorative.
+5. **Color protocol — dropped per-tradition coloring** (codex critique: five tradition colors = tribal design). Color is reserved for argument role (textual / historical / typological / theological / inferential) or chapter identity. Scholar and tradition identity are encoded by **line style, badges, proximity, typography** — not hue. Design review in WS4.
+6. **Sibling vs. single-repo deployment.** Three sibling sites as separate repos (like Romans 3 lives separately) or one monorepo with subdirectories. Leaning separate repos for GitHub Pages URL discipline.
+7. **Axes P and Q elevation.** P (meaning-locus) and Q (genre-eschatology relation) live in the reading-rules layer; they do not surface as first-order axes in the Daniel 7 pilot. Later topic sites (e.g., "Son of Man," "Apocalyptic Genre") may elevate them. Bryan decides topic-by-topic.
+8. **Historicist Reformation tradition rendering.** Included as reception-history with public-domain sources (Mede, Newton, Wordsworth). Render as a labeled "historical tradition, no longer widely held" voice, not as a live academic option. Final visual treatment determined in WS4.
 
 ## Spec Review Next Steps
 
@@ -397,31 +487,42 @@ Per the brainstorming workflow, this spec needs:
 3. Revision based on feedback.
 4. Then the plan: `docs/superpowers/plans/YYYY-MM-DD-visual-theology-daniel-7.md`.
 
-### What Bryan Should Look For
+### What Bryan Should Look For (v2)
 
-- Does the axis/tradition/topic model fit how you teach?
-- Is the steelman rule strong enough?
-- Are the five proposed traditions for Daniel 7 the right cut, or are we missing a live voice (e.g., Dale Ralph Davis's mediating "antichrists/Antichrist" position as a distinct tradition)?
-- Is the 5-topic pilot scope right, or should we tighten to 3?
-- Is the editorial charter import from Romans 3 complete, or are there Daniel-specific rules we should add?
-- Is the workstream decomposition parallelizable in practice?
+- Does the scholars-primary schema with compositional positions fit how you teach? Specifically: can you see Davis's mediating position ("antichrists before the Antichrist") correctly encoded?
+- The three new editorial voice habits (disagreement-kind naming, pastoral de-escalation, text/inference/system distinction) — these are *your* voice habits. Do they fit what you want to sound like? Would you write differently?
+- Axes P and Q live in the reading-rules layer, not the main axis list. Is that the right demotion, or should meaning-locus (especially) be a first-class axis?
+- Tradition-level intra-divergences (Hoekema heaven-located vs. Riddlebarger earth-located amil) — surface these in the site for pedagogy, or leave them as dossier notes?
+- Pilot tightened from 5 to 3 topics. Does that feel right, or would you expand?
 
-### What Codex Should Look For
+### What Codex Should Look For (v2 changes addressed; new questions)
 
-- Design and UX soundness for multi-tradition rendering.
-- Per-topic visual-modality proposals (the current list is a starting vocabulary, not a final set).
-- Editorial voice adjustments for eschatological material.
-- Risks in the schema, especially for axes we didn't foreground here (canonical placement M, cross-book coherence N).
-- Opportunities to reuse Romans 3's specific motion moments vs. inventing new ones.
-- Whether the "multilane interstate" metaphor survives contact with actual visual design, or whether a different organizing metaphor serves the material better.
+Addressed from first-round review:
+- Schema inverted to scholars-primary with traditions as tags (✓)
+- Compositional positions (basePosition / fulfillmentMode / extendsTo / scope) (✓)
+- Commitment-strength field distinct from confidence tiers (✓)
+- Reading rules layer for axes M, N, P, Q (✓)
+- Multilane interstate replaced with decision cascade; final visual metaphor deferred to WS4 (✓)
+- Three voice habits added to editorial charter (✓)
+- Back-absorption dropped; branch-and-lock is signature motion (✓)
+- Pilot tightened to 3 topics; Saints and Ancient of Days fold in (✓)
+- No per-tradition coloring; color for argument role or chapter identity only (✓)
+- WS1 and WS4 now overlap (schema + visuals co-evolve) (✓)
+- Historicism added as reception-history tradition with public-domain sources (✓)
+- Axis O (fulfillment structure) added (✓)
+
+New questions for codex's next review:
+- Does the scholars-primary encoding actually support the courtroom transfer and typology escalator modalities at the data level, or do we need more compositional structure?
+- Is the "irenic evangelical mediating" tradition (Davis/Longman/Lucas) a real tradition or a pedagogical grouping that should stay a note rather than a cluster tag?
+- The six-tradition list — is one still missing, given that partial preterism (Sproul) doesn't fit any of them?
 
 ---
 
 ## Appendices
 
-### Appendix A: The 13 Axes
+### Appendix A: The 16 Axes (14 content + 2 meta)
 
-Full axis catalog with positions lives in `docs/research/2026-04-23-daniel-interpretive-taxonomy-survey.md` §"The 13 Axes of Interpretation."
+Full axis catalog with positions lives in `docs/research/2026-04-23-daniel-interpretive-taxonomy-survey.md` §"The 13 Axes of Interpretation" (v1) and §"Second-Pass Survey (2026-04-24): Nine New Voices" → "Expanded axis catalog (v2)." Axes P and Q are meta-hermeneutical and live in the `readingRules` layer of the data model rather than the primary `axes` catalog.
 
 ### Appendix B: Research Backbone
 
@@ -434,4 +535,6 @@ Editorial charter, visual system, and file architecture: `/Users/family/Download
 ### Appendix D: Dependencies
 
 - `docs/plans/2026-04-23-logos-reader-hardening.md` Fix 11 (cataloged-but-not-installed detection) is a prerequisite for WS3 claim verification.
+- **Fix 12** (`.lbxlls` caller-level audit — design at `docs/research/2026-04-24-codex-lbxlls-design.md`) unblocks Collins *Daniel* (Hermeneia), Walvoord *Daniel*, and Blaising & Bock *Progressive Dispensationalism*. These are the primary voices for critical-modern Daniel, classical-dispensational Daniel, and progressive dispensationalism respectively.
+- Codex's first-round creative review archived at `docs/research/2026-04-24-codex-review-visual-theology-spec.md`. This spec v2 integrates those recommendations.
 - Existing companion infrastructure in `tools/workbench/` is the tooling foundation. No new Flask app needed; the visual theology sites are pure static.
