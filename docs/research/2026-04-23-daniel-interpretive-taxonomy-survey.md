@@ -451,6 +451,38 @@ The Logos reader's `get_resource_articles` returns 0 articles silently for missi
 
 User-side fix for Riddlebarger: open Logos.app to trigger download, or manually acquire on next sync. No code change can recover a file that isn't on disk.
 
+## Supplementary Acquisitions (2026-04-24)
+
+Twelve additional Logos resources were added to the library on 2026-04-24, plus one EPUB. Nine of the twelve are readable through the existing reader and are being surveyed in a second research pass (forthcoming update to this document). Three are blocked by a newer Logos file format (`.lbxlls`, magic header `LTES`) which the existing reader does not support; reader extension tracked as Fix 12 in `docs/plans/2026-04-23-logos-reader-hardening.md`.
+
+### Readable (9)
+
+These are being surveyed now via three parallel research subagents:
+
+- Bauckham, *The Theology of the Book of Revelation* (`NTTHEO87REV.logos4`, 168 articles)
+- Wright, *The New Testament and the People of God* (`NTPPLOFGOD.logos4`, 1,668 articles)
+- Collins, *The Apocalyptic Imagination* 3rd ed (`PCLYPTCMGNTNPLT.logos4`, 1,436 articles)
+- Newsom & Breed, *Daniel* (OTL, 2014) (`OTL27DA.logos4`, 719 articles)
+- Longman, *Daniel* (NIVAC, 1999) (`NIVAC27DA.logos4`, 554 articles)
+- Lucas, *Daniel* (Apollos OT Commentary, 2002) (`AOT27DA.logos4`, 389 articles)
+- Riddlebarger, *A Case for Amillennialism* (`CSAMLLNLSM.logos4`, 832 articles — now locally installed, resolving the earlier catalog-only gap)
+- Hoekema, *The Bible and the Future* (`BBLANDTHEFUTURE.logos4`, 802 articles)
+- Sproul, *The Last Days According to Jesus* (`LSTDYSCCRDNGJSS.logos4`, 310 articles)
+
+### Blocked by `.lbxlls` format (3)
+
+- Collins, *Daniel* (Hermeneia, 1993) — `HRMNEIA27DA.lbxlls`. Modern critical standard for Daniel.
+- Walvoord, *Daniel: The Key to Prophetic Revelation* — `GS_WALV_DANIEL.lbxlls`. Primary classical-dispensational Daniel voice.
+- Blaising & Bock, *Progressive Dispensationalism* — `PROGDISPNM.lbxlls`. The progressive-dispensational reference.
+
+These three are particularly consequential because they are the primary voices for critical-modern Daniel, classical-dispensational Daniel, and progressive dispensationalism respectively. Reader extension is scheduled as Fix 12; codex is currently producing a reverse-engineering design at `/tmp/lbxlls_design.md`.
+
+### Supplementary EPUB (1)
+
+- Menn, Jonathan. *Biblical Eschatology*, 2nd ed. Resource Publications, 2018. ISBN 9781532643194. Stored at `/Users/family/Downloads/9781532643194.epub`.
+
+Menn is an irenic post-tribulation covenantal-amillennial voice at book length across Daniel, Revelation, and millennial debates. Not a Logos resource; the project's EPUB ingestion tooling is deferred until after the `.lbxlls` fix and the Daniel 7 pilot, at which point Menn becomes a primary source for follow-on topic sites. For now the book is a human-read reference for Bryan, not an agent-queryable source.
+
 ## File Paths Surveyed
 
 All paths rooted at `/Users/family/Library/Application Support/Logos4/Data/e3txalek.5iq/ResourceManager/Resources/`:

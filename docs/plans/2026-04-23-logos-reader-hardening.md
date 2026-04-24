@@ -175,9 +175,37 @@ cd tools/workbench && python3 -m pytest tests/test_resource_install_check.py -v
 
 Cases: `LLS:CSAMLLNLSM` returns `not-locally-installed`; `LLS:EEC27DA` returns `ok`.
 
+## Fix 12: Read `.lbxlls` Resource Format
+Problem: Newer Logos resources ship in a `.lbxlls` container (magic header `LTES`), not the legacy `.logos4` container (magic header `LRES01`). The existing LogosReader handles only `.logos4`. Three important recent downloads are currently unreadable:
+- `HRMNEIA27DA.lbxlls` — Collins, *Daniel* (Hermeneia)
+- `GS_WALV_DANIEL.lbxlls` — Walvoord, *Daniel: The Key to Prophetic Revelation*
+- `PROGDISPNM.lbxlls` — Blaising & Bock, *Progressive Dispensationalism*
+
+More `.lbxlls` resources will appear as Logos migrates its catalog. This is a growing gap, not a one-off.
+
+Task:
+- Reverse-engineer the `.lbxlls` container (structure, encryption, index).
+- Identify which `libSinaiInterop.dylib` / `libsqlite3-logos.dylib` entry points support it. If the dylib already exposes `LTES`/`lbxlls`-aware loaders, wire them into the existing reader.
+- If the dylib does not, decide whether to add a second C# path or extend the current one.
+- Update `study.py` and `logos_batch.py` callers to dispatch on extension.
+- Emit clear diagnostics when a `.lbxlls` resource is still unsupported (pre-implementation) vs. when the new path succeeds.
+
+Detailed design work proceeds at `docs/superpowers/plans/2026-04-24-lbxlls-reader.md` once codex's reverse-engineering pass completes.
+
+Test:
+```bash
+cd tools/workbench && python3 -m pytest tests/test_lbxlls_reader.py -v
+```
+
+Cases:
+- `HRMNEIA27DA.lbxlls` opens and returns a non-trivial article list including the introduction and Daniel 7.
+- `GS_WALV_DANIEL.lbxlls` opens and returns commentary content for Daniel 7.
+- Known-good `.logos4` resources continue to open and read identically (regression guard).
+
 ## Completion Criteria
 - All existing workbench tests pass.
 - Smoke test passes.
 - A Romans 3:10-18 research run can retrieve BECNT, NICNT, NIGTC, WBC, ICC, COMNTUSEOT, LHB, Logos LXX, and Swete apparatus without manual filename lookup.
 - Dataset queries for NT Use of OT and Psalms Explorer return structured rows or clear “no data” results.
 - Cataloged-but-not-installed resources return a clear diagnostic rather than silent empty results.
+- `.lbxlls` resources read through the standard reader API (Fix 12), with `.logos4` behavior unchanged.
