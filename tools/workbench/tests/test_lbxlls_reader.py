@@ -21,6 +21,7 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 from study import (
     RESOURCES_DIR,
+    _resolve_bare_stem,
     find_commentaries_for_ref,
     find_commentary_section,
     get_resource_articles,
@@ -183,3 +184,45 @@ def test_find_commentary_section_daniel_7_7(stem):
 # prose snippet; that is not a meaningful assertion either way. This case
 # is intentionally omitted — it is out of scope for Fix 12 per the plan
 # at ``docs/superpowers/plans/2026-04-24-lbxlls-reader.md``.
+
+
+# ── Category 6: Fix 12 cleanup — hardened _resolve_bare_stem ───────────────
+
+
+def test_find_commentaries_for_daniel_7_excludes_romans_and_leviticus():
+    """Broadened LIKE admits rows where 27 appears as a verse number
+    (e.g. Romans 66.1.1-66.16.27). ref_covers_passage must filter them out."""
+    ref = parse_reference("Daniel 7:1")
+    ids = {r["resource_id"] for r in find_commentaries_for_ref(ref, limit=100)}
+    for wrong in ("LLS:NICNT66RO", "LLS:EBTC66RO", "LLS:LANGE66RO"):
+        assert wrong not in ids, (
+            f"{wrong} is not a Daniel commentary but surfaced for Daniel 7:1. "
+            f"ref_covers_passage failed to filter the broadened-LIKE over-match."
+        )
+
+
+def test_resolve_bare_stem_empty_raises():
+    """Empty stem must raise ValueError, not silently produce '.logos4'."""
+    with pytest.raises(ValueError, match="empty stem"):
+        _resolve_bare_stem("")
+
+
+def test_resolve_bare_stem_underscore_is_literal():
+    """LIKE ESCAPE must neutralize the underscore in 'GS_WALV_DANIEL'
+    so it matches literally, not as a single-character wildcard."""
+    assert _resolve_bare_stem("GS_WALV_DANIEL") == "GS_WALV_DANIEL.lbxlls"
+
+
+def test_resolve_bare_stem_is_case_insensitive():
+    """Docstring promises case-insensitive basename match: lowercase stem
+    resolves to the on-disk (uppercase) filename."""
+    assert _resolve_bare_stem("hrmneia27da") == "HRMNEIA27DA.lbxlls"
+    assert _resolve_bare_stem("gs_walv_daniel") == "GS_WALV_DANIEL.lbxlls"
+
+
+def test_resolve_bare_stem_nonexistent_raises():
+    """After F2: an unknown stem must raise FileNotFoundError rather than
+    silently fabricating 'stem + ".logos4"'. The caller (resolve_bible_files)
+    catches this and falls back, but the helper itself must not hide the failure."""
+    with pytest.raises(FileNotFoundError, match="no resource matches stem"):
+        _resolve_bare_stem("DEFINITELY_NOT_A_REAL_RESOURCE_ZZZ_9999")

@@ -358,9 +358,11 @@ def ref_to_logos_superset_pattern(ref):
     only the unqualified ``bible.`` one. Collins Hermeneia (Daniel) stores its
     superset as ``bible+bhs.27``; other resources use ``bible+lxx.``,
     ``bible+sblgnt.``, ``bible+nrsv.``, ``bible+na27.``, ``bible+gnt.``, etc.
-    The looser LIKE can admit rows where ``{book}`` appears as a verse number
-    (e.g. ``bible.66.1.1-66.16.27``), but ``ref_covers_passage`` filters those
-    out downstream, so correctness is preserved.
+    The looser LIKE can admit false positives: for example, when the caller
+    asks about Daniel (book 27), the pattern ``bible%.27%`` also matches
+    supersets like ``bible.66.1.1-66.16.27`` where ``27`` happens to be a
+    verse number in Romans. Downstream ``ref_covers_passage`` rejects those
+    false positives.
     """
     return f"bible%.{ref['book']}%"
 
@@ -1901,11 +1903,20 @@ def resolve_bible_files(bible_names):
                 found = True
                 break
         if not found:
-            # Try as filename directly
+            # Path contains a ".", use as-is; otherwise resolve the bare stem
+            # via ResourceManager.
             if "." in name:
                 resolved.append(name)
             else:
-                resolved.append(_resolve_bare_stem(name))
+                try:
+                    resolved.append(_resolve_bare_stem(name))
+                except FileNotFoundError as e:
+                    # Preserve historical behavior for unknown stems so
+                    # callers that intentionally pass through arbitrary names
+                    # still get a ".logos4" path, but emit a warning so the
+                    # failure is observable rather than silent.
+                    sys.stderr.write(f"[warn] resolve_bible_files: {e}\n")
+                    resolved.append(name + ".logos4")
     return resolved
 
 
@@ -1915,33 +1926,67 @@ def _resolve_bare_stem(stem):
     Consults ResourceManager.Resources.Location via a case-insensitive basename
     match so lowercase-ResourceId / uppercase-filename mismatches resolve
     (e.g. Walvoord's `LLS:gs_walv_daniel` → `GS_WALV_DANIEL.lbxlls`). Falls
-    back to a filesystem probe for `.logos4` / `.lbxlls` before defaulting to
-    the historical `.logos4` behavior so nonexistent stems still surface the
-    same error downstream.
+    back to a filesystem probe for `.logos4` / `.lbxlls`. Raises
+    ``FileNotFoundError`` if no candidate is found so callers can decide how
+    to handle unknown stems — silent fabrication masked downstream failures.
     """
     if not stem:
         raise ValueError("_resolve_bare_stem: empty stem")
-    # Escape LIKE metacharacters so stems containing `%` or `_` don't turn into
-    # wildcards. Underscores show up naturally in real stems (e.g. GS_WALV_DANIEL),
-    # and callers may pass arbitrary strings, so this must be defensive.
+    # Backslash-escape must run first; later replaces add their own
+    # backslashes that must not be re-escaped.
     escaped = stem.lower().replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+    # LIKE pattern hugs the basename boundary (`/stem.`), but Logos paths
+    # include `.../e3txalek.5iq/...` so `/e3txalek.%` still admits rows where
+    # the stem appears as a directory segment. The Python post-filter below
+    # anchors the match to the actual basename (stem + extension).
     pattern = f"%/{escaped}.%"
     conn = sqlite3.connect(RESOURCE_MGR_DB)
     try:
-        row = conn.execute(
+        # Shortest-Location tiebreaker favors the tightest filename match
+        # (avoids compound-path false positives from .lbxcllctn / container
+        # entries). Fetch 2 so we can log if multiple candidates tie.
+        rows = conn.execute(
             "SELECT Location FROM Resources "
             "WHERE lower(Location) LIKE ? ESCAPE '\\' "
-            "ORDER BY length(Location) LIMIT 1",
+            "ORDER BY length(Location) LIMIT 2",
             (pattern,),
-        ).fetchone()
+        ).fetchall()
     finally:
         conn.close()
-    if row:
-        return os.path.basename(remap_path(row[0]))
+
+    # Post-filter to rows whose basename (without extension) actually equals
+    # the requested stem, case-insensitively. This rejects directory-segment
+    # matches like `/Data/e3txalek.5iq/.../CT.lbsct` for stem `e3txalek`.
+    stem_lower = stem.lower()
+    matches = []
+    for r in rows:
+        full_path = remap_path(r[0])
+        basename = os.path.basename(full_path)
+        base_stem = os.path.splitext(basename)[0]
+        if base_stem.lower() == stem_lower:
+            matches.append(full_path)
+
+    if matches:
+        # Warn when multiple distinct candidates share a basename stem so
+        # observers can spot base-resource-vs-sidecar tie-breaks.
+        if len(matches) > 1:
+            sys.stderr.write(
+                f"[warn] _resolve_bare_stem: multiple candidates for stem {stem!r}: "
+                f"{matches}; choosing shortest ({matches[0]})\n"
+            )
+        chosen = matches[0]
+        # F1: verify the resolved row still points to a real file before
+        # trusting it — a stale ResourceManager row would silently yield an
+        # empty article list downstream. Fall through to the filesystem
+        # probe if the file has moved or been deleted.
+        if os.path.exists(chosen):
+            return os.path.basename(chosen)
     for ext in (".logos4", ".lbxlls"):
         if os.path.exists(os.path.join(RESOURCES_DIR, stem + ext)):
             return stem + ext
-    return stem + ".logos4"
+    raise FileNotFoundError(
+        f"_resolve_bare_stem: no resource matches stem {stem!r}"
+    )
 
 
 def main():
