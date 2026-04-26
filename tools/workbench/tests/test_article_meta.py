@@ -18,6 +18,16 @@ import sys
 
 import pytest
 
+
+# Override the session-scoped Flask `base_url` fixture from conftest.py.
+# pytest-base-url plugin auto-injects `base_url`; without this override
+# these pure-tool tests would pull in the conftest fixture and abort
+# with a port-5111 conflict.
+@pytest.fixture(scope="session")
+def base_url():
+    return None
+
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 from study import get_article_meta  # noqa: E402
 

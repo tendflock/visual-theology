@@ -219,7 +219,32 @@ def _match_scholar_key(heading_text: str) -> str | None:
 STATUSES = ["verified", "partial", "quote-not-found", "resource-unreadable"]
 
 
-def render_report(results: list[SweepResult]) -> str:
+_LEGACY_PARAPHRASE_RE = re.compile(
+    r"\(paraphrase;\s*verbatim quote not located in art\.\s*([0-9]+)",
+    re.IGNORECASE,
+)
+
+
+def count_legacy_paraphrase_demotions(md_path: Path | None) -> int:
+    """Count places in a legacy markdown research doc where a previously-quoted
+    claim has been explicitly demoted to a paraphrase (the form
+    ``(paraphrase; verbatim quote not located in art. N — …)``).
+
+    These are NOT verified quotations; they're claims retained as research-doc
+    summary. The verification sweep's regex will not match them (they don't
+    have surrounding double-quotes), so without this counter they would
+    disappear silently from the totals — making the verification rate look
+    higher than it is in fact.
+    """
+    if md_path is None or not md_path.exists():
+        return 0
+    text = md_path.read_text(encoding="utf-8")
+    return len(_LEGACY_PARAPHRASE_RE.findall(text))
+
+
+def render_report(
+    results: list[SweepResult], demoted_paraphrases: int = 0
+) -> str:
     tally = {s: 0 for s in STATUSES}
     for r in results:
         tally[r.status] = tally.get(r.status, 0) + 1
@@ -233,6 +258,23 @@ def render_report(results: list[SweepResult]) -> str:
     for s in STATUSES:
         pct = 100.0 * tally[s] / total
         lines.append(f"- `{s}`: {tally[s]} ({pct:.1f}%)")
+    if demoted_paraphrases:
+        lines.append(
+            f"- `demoted-to-paraphrase` (legacy doc, not counted in totals): "
+            f"{demoted_paraphrases}"
+        )
+        lines.append("")
+        lines.append(
+            "> **Counting note.** The sweep's quote-extraction regex matches "
+            "only material wrapped in double-quotes adjacent to an `(art. N)` "
+            "reference. When a previously-quoted claim is repaired by removing "
+            "the quotation marks and adding a `(paraphrase; verbatim quote not "
+            "located...)` note, it is no longer counted as a quotation — and "
+            "therefore not counted in the verified total. The line above tracks "
+            "those demotions so the methodology is transparent: a demoted "
+            "claim is research-doc summary, not a verified quotation, and "
+            "should be treated as such by downstream consumers."
+        )
     lines.append("")
 
     # Group results by source
@@ -295,7 +337,8 @@ def main(argv: list[str]) -> int:
             sweep_legacy_markdown(args.legacy_md, max_samples=args.legacy_sample)
         )
 
-    report = render_report(results)
+    demoted = count_legacy_paraphrase_demotions(args.legacy_md)
+    report = render_report(results, demoted_paraphrases=demoted)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(report, encoding="utf-8")
 

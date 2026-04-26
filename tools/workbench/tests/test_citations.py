@@ -19,10 +19,20 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from citations import (  # noqa: E402
+    SUPPORT_STATUS_VALUES,
     build_citation,
     sha256_of,
     verify_citation,
 )
+
+
+# Override the session-scoped Flask `base_url` fixture from conftest.py.
+# The pytest-base-url plugin auto-injects `base_url` into every test's
+# fixture graph; without this override these pure-tool tests would
+# pull in the conftest fixture and abort with a port-5111 conflict.
+@pytest.fixture(scope="session")
+def base_url():  # noqa: D401  (intentionally short)
+    return None
 
 
 # ── sha256 ──────────────────────────────────────────────────────────────────
@@ -90,12 +100,10 @@ def test_build_citation_hermeneia_no_pages():
     assert "p." not in c["frontend"]["citationString"]
 
 
-def test_build_citation_single_page_not_range():
-    """When pageStart == pageEnd, frontend.page is set and pageEnd is null."""
-    # Article 4716 of RFRMDSYSTH04 spans a different page range; use 4718
-    # with hand-crafted short quote so the article metadata is real but we
-    # test a case where the caller gives a single page.
-    # We do this by fetching fresh metadata and then asserting the pattern.
+def test_build_citation_multi_page_range_renders_pp():
+    """Articles spanning multiple printed pages get pageStart != pageEnd and
+    a 'pp. N–M' rendering in citationString. RFRMDSYSTH04 article 4718
+    spans pp. 1497–1498."""
     c = build_citation(
         resource_file="RFRMDSYSTH04.logos4",
         article_num=4718,
@@ -103,7 +111,6 @@ def test_build_citation_single_page_not_range():
         author="Beeke & Smalley",
         short_title="RST 4",
     )
-    # Sanity: article 4718 spans 1497–1498, so pageEnd must differ from page.
     assert c["frontend"]["page"] == 1497
     assert c["frontend"]["pageEnd"] == 1498
     assert "pp. 1497–1498" in c["frontend"]["citationString"]
@@ -187,6 +194,65 @@ def test_verify_citation_paraphrase_only_ok():
     v = verify_citation(c)
     assert v["status"] == "verified", v
     assert v.get("notes", "").startswith("paraphrase") or v.get("paraphrase") is True
+
+
+def test_support_status_default_directly_quoted_when_quote_present():
+    c = build_citation(
+        resource_file="RFRMDSYSTH04.logos4",
+        article_num=4718,
+        quote_text="A Failed Expectation",
+        author="Beeke & Smalley",
+        short_title="RST 4",
+    )
+    assert c["supportStatus"] == "directly-quoted"
+
+
+def test_support_status_default_uncited_gap_when_no_quote():
+    c = build_citation(
+        resource_file="HRMNEIA27DA.lbxlls",
+        article_num=1,
+        quote_text=None,
+        author="Collins",
+        short_title="Hermeneia Daniel",
+    )
+    assert c["supportStatus"] == "uncited-gap"
+
+
+def test_support_status_explicit_paraphrase_anchored():
+    c = build_citation(
+        resource_file="RFRMDSYSTH04.logos4",
+        article_num=4718,
+        quote_text=None,
+        author="Beeke & Smalley",
+        short_title="RST 4",
+        support_status="paraphrase-anchored",
+    )
+    assert c["supportStatus"] == "paraphrase-anchored"
+    assert c["quote"] is None
+
+
+def test_support_status_directly_quoted_without_quote_raises():
+    with pytest.raises(ValueError, match="directly-quoted"):
+        build_citation(
+            resource_file="RFRMDSYSTH04.logos4",
+            article_num=4718,
+            quote_text=None,
+            author="Beeke & Smalley",
+            short_title="RST 4",
+            support_status="directly-quoted",
+        )
+
+
+def test_support_status_invalid_value_raises():
+    with pytest.raises(ValueError, match="support_status"):
+        build_citation(
+            resource_file="RFRMDSYSTH04.logos4",
+            article_num=4718,
+            quote_text="A Failed Expectation",
+            author="Beeke & Smalley",
+            short_title="RST 4",
+            support_status="totally-made-up",
+        )
 
 
 def test_verify_citation_json_roundtrip():

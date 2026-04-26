@@ -43,11 +43,62 @@ them with the verbatim text and a tamper-evidence hash.
 
 ### `backend` (machine handle — required)
 
+The backend dispatches on a `kind` field (defaults to `"logos"` for back-compat).
+Required fields and shape vary per kind.
+
+#### `kind: "logos"` (default)
+
 | field | type | source | notes |
 |---|---|---|---|
+| `kind` | string \| absent | implicit | Optional; absent means logos. |
 | `resourceId` | string | `study.get_article_meta(...).resourceId` | Logos LLS identifier. Stable across Logos library rebuilds. |
 | `logosArticleNum` | integer | `study.get_article_meta(...).logosArticleNum` | Sequential article ordinal within the resource. Not scholarly. |
 | `nativeSectionId` | string | `study.get_article_meta(...).nativeSectionId` | `ArticleNumberToArticleId`. Stable human-readable anchor (e.g., `R48.2`, `DA.7.13`, `GDANIEL0416`). Required. |
+
+#### `kind: "external-epub"` (WS0c-7)
+
+For citations against EPUBs in `external-resources/epubs/` (currently Lacocque, Menn).
+
+| field | type | required | notes |
+|---|---|---|---|
+| `kind` | string | required | Literal `"external-epub"`. |
+| `filename` | string | required | Path relative to `external-resources/` root, e.g. `"epubs/9781498221689.epub"`. Absolute paths and path traversal are rejected. |
+| `spineSection` | string | optional | Human-readable spine-section hint (e.g. `"ch. 7"`). |
+| `passageRef` | string | optional | Free-form descriptor (e.g. `"Lacocque on Dan 7:13"`). |
+
+The verifier extracts text from every XHTML chapter, strips HTML tags + the social-DRM
+watermark documented in `external-resources/epubs/README.md`, and runs the same
+normalize-and-match logic as the Logos path.
+
+#### `kind: "external-greek-ocr"` (WS0c-7)
+
+For citations against OCR'd Greek text files in `external-resources/greek/` (currently
+Theodoret PG 81).
+
+| field | type | required | notes |
+|---|---|---|---|
+| `kind` | string | required | Literal `"external-greek-ocr"`. |
+| `filename` | string | required | Path relative to `external-resources/`, e.g. `"greek/theodoret-pg81-dan7.txt"`. |
+| `tlgCanon` | string | optional | TLG canon work id (e.g. `"4089.028"` for Theodoret on Daniel). |
+| `mignePgVolume` | integer | optional | Migne PG volume number (e.g. `81`). |
+| `migneColumn` | integer | optional | Migne column anchor (e.g. `1411`). |
+| `passageRef` | string | optional | Free-form (e.g. `"Theodoret on Dan 7:9"`). |
+
+#### `kind: "external-pdf"` (WS0c-7)
+
+For citations against PDFs in `external-resources/pdfs/` (currently the Hippolytus
+*On Christ and Antichrist* + *On the End of the World* anthology). Verifier shells out
+to `pdftotext -layout` (Poppler) for text extraction.
+
+| field | type | required | notes |
+|---|---|---|---|
+| `kind` | string | required | Literal `"external-pdf"`. |
+| `filename` | string | required | Path rel to `external-resources/`, e.g. `"pdfs/Hippolytus-EndTimes.pdf"`. |
+| `page` | integer | optional | Print-page anchor when known. |
+| `passageRef` | string | optional | Free-form. |
+
+For all non-`logos` kinds, the validator forbids the Logos-only fields
+(`resourceId`, `logosArticleNum`, `nativeSectionId`) on the same backend.
 
 ### `frontend` (human anchor — required except as noted)
 
@@ -60,16 +111,100 @@ them with the verbatim text and a tamper-evidence hash.
 | `pageEnd` | integer \| null | `get_article_meta(...).pageEnd` | Only present when the article spans multiple printed pages and `pageEnd > page`. Omit (or null) otherwise. |
 | `citationString` | string | derived | Pre-rendered scholarly citation. Pattern below. |
 
-### `quote` (the verifiable substance — required for every cited claim)
+### `quote` (the verifiable substance)
 
 | field | type | source | notes |
 |---|---|---|---|
 | `text` | string | verbatim article text | The exact quoted fragment, UTF-8. Prefer 40+ chars for robust matching. Verification normalizes whitespace to single spaces and matches case-insensitively (so sentence-initial capitalization drift still verifies). Preserve punctuation and diacritics exactly. |
 | `sha256` | string (64-hex lowercase) | derived | `sha256(text.encode("utf-8")).hexdigest()`. Tamper-evidence: future verifier runs confirm the stored `text` hasn't drifted. |
 
-If a claim is paraphrased rather than quoted, `quote` may be `null` — but in that case, the
-`backend` must still pin a specific article (not a vague range), and the research doc's narrative
-must make the paraphrase explicit.
+`quote` may be `null`, but only when paired with a `supportStatus` other than `directly-quoted`.
+
+### `supportStatus` (required) — the evidential posture
+
+Every citation carries one of four labels. The label tells consumers (and the WS0.5-6 audit) what
+kind of scrutiny each citation deserves; "verified quote exists" is *not* the same as "claim is
+warranted."
+
+| value | meaning | requires |
+|---|---|---|
+| `directly-quoted` | The quote is verbatim and the rationale's relevant sub-claim is pinned to that quote. | non-null `quote.text`; quote must verify against the article. |
+| `paraphrase-anchored` | The cited article supports the claim, but the cited fragment is a representative paraphrase rather than a verbatim quote of the exact wording. | `quote` may be null. The article must still address the claim. |
+| `summary-inference` | The claim summarizes a position spanning multiple articles, sections, or implicit logic; this single citation is one anchor, not a proof. | `quote` may be null. The author should add a `notes` paragraph in the rationale explaining what the inference draws on. |
+| `uncited-gap` | The position is acknowledged (often `commitment: tentative`) but no supporting quote or article was found in the surveyed material. Honest "I tried, nothing was there." | `quote: null`. Use sparingly — these are landmines that need follow-up reading. |
+
+The default produced by `tools/citations.build_citation` is `directly-quoted` when a `quote_text`
+is supplied, `uncited-gap` otherwise. Override with the `support_status=` keyword argument when
+the cite is a paraphrase or summary inference.
+
+The validator (`tools/validate_scholar.py`) enforces:
+
+- `supportStatus ∈ {directly-quoted, paraphrase-anchored, summary-inference, uncited-gap}`.
+- `directly-quoted` requires a non-null `quote.text`.
+- Otherwise `quote` may be null; structural fields (backend/frontend) still required.
+
+## Scholar-file passage coverage (WS0c-8)
+
+Each scholar JSON now carries a top-level `passageCoverage[]` array — the list of biblical
+verse-blocks the surveyed material engages substantively. This makes per-passage coverage a
+first-class diagnostic: the validator + a small reporting tool can answer "who covers
+Dan 7:9–12?" without re-reading every rationale.
+
+```json
+{
+  "scholarId": "...",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 9:24-27",
+    "Rev 13"
+  ]
+}
+```
+
+### Vocabulary
+
+The validator enforces a controlled vocabulary. For the Daniel 7 pilot, the locked
+verse-blocks are:
+
+| value | passage |
+|---|---|
+| `Dan 7:1-6` | first three beasts (lion / bear / leopard) |
+| `Dan 7:7-8` | fourth beast + little horn |
+| `Dan 7:9-12` | Ancient of Days, court scene, judgment |
+| `Dan 7:13-14` | Son of Man, kingdom transfer |
+| `Dan 7:15-18` | Daniel's distress + interpreter, saints receive kingdom |
+| `Dan 7:19-22` | fourth-beast detail, little horn waging war on saints |
+| `Dan 7:23-27` | full angelic interpretation |
+
+Adjacent passages a Daniel 7 site reasonably cross-references (also accepted):
+
+| value | passage |
+|---|---|
+| `Dan 2:31-45` | Nebuchadnezzar's statue / Four Kingdoms parallel |
+| `Dan 8:1-27` | ram and goat |
+| `Dan 9:1-19` | Daniel's prayer of confession |
+| `Dan 9:20-27` | seventy weeks |
+| `Dan 10:1-21` | mourning + angelic vision on the Tigris |
+| `Dan 11:1-45` | the king of the north |
+| `Dan 12:1-13` | resurrection + final visions |
+| `Rev 1` | Christ as one like a son of man |
+| `Rev 13` | beast from the sea + beast from the land |
+| `Rev 17` | seven heads, seven hills |
+| `Rev 20` | thousand years |
+| `Matt 24` | Olivet Discourse (Dan 9:27 reference) |
+| `Mark 13` | Olivet Discourse (Markan parallel) |
+| `1 En 37-71` | Book of Parables (Second Temple Son of Man) |
+
+Future topic sites can extend the vocabulary by appending entries; the validator reads it from
+`tools/validate_scholar.py:PASSAGE_COVERAGE_VOCAB`.
+
+`passageCoverage` is optional today (legacy files predate it); strict-mode validation will warn
+but not fail when the field is absent. After WS0c-8 back-population the field is required for new
+scholars.
 
 ## Null rules, explicit
 
