@@ -1,0 +1,1753 @@
+# Theodoret of Cyrus, Commentary on Daniel — PG 81 cols 1362-1410
+# Source: Migne PG 81 (1864), archive.org Google Books scan
+# Tag: dan5_6
+# Extracted 26 PDF pages via pdftoppm 200dpi + tesseract grc+lat psm 4
+# Generated 2026-04-26 05:20:08
+# WARNING: OCR-quality. Greek and Latin parallel text are interleaved.
+# Citations should use whitespace + typographic-normalized matching.
+
+==== PDF page 0708 (Migne PG 81 cols ~1363-1364) ====
+1361 IN DANIELIS CAP. IV. 1563
+ια΄. € Καὶ ἐφώνησεν ἐν ἰσχύϊ, xoi οὕτως einsv^s- A — Vens. 14. « Et clamavit in fortitudine, et ita dixit:
+Ἐχχόψατε τὸ δένδρον, xol ἐχτίλατε τοὺς χλάδουις — Exscindite arborem, et evellite ramos ejus, et
+αὐτοῦ, xal ἐκτινάξατοε τὰ φύλλα αὐτοῦ "" xal διασχορ- — exculite folia ejus, et dispergite fructum cjus. » Et
+πίσατε τὸν χαρπὸν αὐτοῦ. » Kal βλέπει μὲν τὸν videt angelumqui de ccelo descendit, ut disceret,
+ἄγγελον ἀπ᾽ οὐρανοῦ χαταδεθηχότα, ἵνα μάθῃ, ὡς . omnium rerum 1145 Dominum ipsum esse quem
+αὐτὸς ὁ τῶν ὅλων Δεσπότης τὴν κατ᾽ αὐτοῦ ἀπόφα- — jam experius erat judicem. Docetur autem quoque,
+σιν ἐποιήσατο. Διδάσχεται δὲ καὶ τίς ὁ δεδωχὼς — amittens regnum, quis ei regnum tradiderit, Videt
+αὐτῷ τὴν βασιλείαν, καὶ ἀποτιθέμενος τὴν βασιλείαν. — enim arborem excisam οἱ ramos separatos, hoc est,
+ὁρᾷ γὰρ τὸ μὲν δένδρον ἐχτεμνόμενον, τοὺς δὲ x.ld- — principes et praefectos, οἱ satrapas, et illos quibus
+δους χωριζομέγους, τουτέστι, τοὺς ὑπάρχους, xai aliquis alius magistratus ab eo mandatus fuerat;
+τοὺς στρατηγοὺς, xal σατράπας, xoi τοὺς ἄλλην τινὰ — folia autem excussa, quam sibi gloriam compara-
+ἡγεμονίαν παρ᾽ αὐτοῦ πεπιστευμένους " τὰ δὲ ρύλ1α verat, foliorum instar fluentem et tabescentem ;
+ἐχτινασσόμενα 35 ἣν περιεδέδλητο δόξαν δίχην — frucium. vero dispersum, quia cum rex in illam
+φύλλων ἐχρέουσάν τε xol μαραινομένην" τὸν bb — calamitatem incidisset, ninisui qui tributum exi-
+καρπὸν διασκορπιζόμενογ" τοῦ γὰρ βασιλέω;  gebant, ad seipsos de reliquo sineullo metu lucrum
+ἐχείνῃ περιπεσόντος τῇ συμφορᾷ, ol «bv δασμὸν p convertebant. « Commoveantur, inquit, bestie
+ἀπαιτοῦντες εἰς ἑαυτοὺς λοιπὸν ἀδεῶς τὸ κέρδος  subler eam, et aves de ramis cjus.» Qui enim
+παρέπεμπον. « Σαλευθήτω "", φησὶ, τὰ θηρία Ómo- — preter voluntatem ei servire coacti fuerant, inventa
+χάτωθεν αὐτοῦ, καὶ τὰ ὄρνεα ἀπὸ τῶν χλάδιυν αὐτοῦ.ν — occasione regis mutatione, ab ejus imperio desci-
+Οἱ γὰρ παρὰ γνώμην δουλεύειν ἠναγχασμένοι, ápop- — verunt.
+μὴν εὑρόντες τὴν τοῦ βασιλέως μεταθολὴν, τοῦ ὑπ-
+αχούειν ἀπέστησαν. ,
+
+ι8', « Πλὴν τὴν φυὴν τῶν ῥιζῶν αὑτοῦ ἐν τῇ γῇ Vens. 12. « Veruntamen germen radicum ejus
+ἐάσατε" xal ἐν δεσμῷ, φησὶ, σιδηοῷ xol χαλχῷ, xa — in terra sinite, et in vinculo , inquit , ferreo, et
+ἐν τῇ χλόῃ τῇ ἔξω, xal ἐν τῇ δρόσῳ τοῦ οὐρανοῦ aü- — :reo , et in herba qua foris est, et in rore clt
+λισθήσεται. » Ὡς γὰρ φρενοδλαθείᾳ, xai παρα- —pernoctabit. » Velut enim qui dementiz οἱ insa-
+πληξίᾳ, καὶ φρενίτιδι νόσῳ περιπεσὼν, xal μεμη- — nie ae phrenetico niorbo correptus crat, οἱ Cory-
+γὼς, xai χορυδαντιῶν, xal χατὰ πάντων λυττῶν, —bantum more furore agitatus, conwra omnes rabie
+ἀναγκαίω: δεσμὰ περιέχειτο " ἀλλ᾽ ὅμως οὐδὲ ταῦτα insaniebat , necessario vinculis constrictus fuerat :
+Xv ἱκανὰ ἔνδον αὐτὸν χατέχειν " ἀλλὰ δραπετεύων — qux tamen haud idonea erant, ut ipsum intus
+ἐν ἐρήμοις διέτριθεν, ὑπαίθριος ταλαιπωρῶν, καὶ C detinerent , sed vagabundus desertis in locis
+χτηνῶν δίχην τὴν πόαν σιτούμενος. Τοῦτο γὰρ σης morabatur, sub dio confliclans ,  jumentoru:n
+μαίνει εἰρηχώ; * instar depascens herbam. Hoc enim significat ,
+
+dicens :
+
+« Καὶ μετὰ τῶν θηρίων ἡ μερὶ; αὐτοῦ" ἐν * Et cum bestiis pars ejus, in herba terre cor
+τῷ χόρτῳ τῆς γῆς ἡ χαρδία " αὑτοῦ - ἀπὸ τῶν àv- ejus, ab hominibus commutabitur, (VkRs. 13.) Et
+θρώπων ἀλλοιωθήσεται. (ιγ΄.) Καὶ καρδία θηρίου δοθῆ-ὀ — cor bestiz; dabitur * ei , et septem tempora muta-
+σεται αὐτῷ, xal ἑπτὰ χαιροὶ ἀλλαγήσονται ἐπ᾽ aó- — buntur super ipsum. » Hoc itidem 1146 Dci
+τόν. » Καὶ τοῦτο δὲ τὴν τοῦ Θεοῦ μαχροθυμίαν 5n. — longanimitatem declarat. Brevi enim tempore suj:-
+Aoi* χρόνῳ γὰρ βραχεῖ τὴν τιμωρίαν περιορίζει, — plicium definit, exspectans penitentiam, quam sit
+ἀναμένων τὴν ἀπὸ τῆς παιδείας τεχθησομένην peva- — paritura castigatio. Deinde ostendit , qua dicta,
+μέλειαν. Elsa δείχνυσιν, ὡς ἀναντιῤ ῥήτως ἔσται τὰ — fucrant, sine controversia esse eventura.
+εἰρημένα,
+
+ιδ΄, € Διὰ συγχρίματος, φησὶν, eip ὁ λόγος, xal Vgns. 14. « Per decretum, inquit, vigilis, sermo,
+ῥῆγμα ἁγίων ** τὸ ἐπερώτημα. » ᾿Αψευδὴς, φησὶν, D et. verbum sanctorum interrogatio, » Mendacio,
+ὁ λόγος" ἄγγελος γὰρ ἅγιο; ὁ εἰρηχὼς, ἐγρηγορὼς, inquil, verba carent. Angelus enim sanctus.est ,
+ἀσώματος. Εἴρηται δὲ ταῦτα, φησὶ, xal γίνεται 7", — qui illa dixit, vigilans , corpore carens. Dicta 2u-
+οὗ μάτην, ἀλλ᾽ « Ἵνα γνῶσιν ol ζῶντες, ὅτι xvpisóec?* — tem sunt hac, inquit, et fiunt , non temere, sed
+ὁ Ὕψιστος τῆς βασιλείας τῶν ἀνθρώπων, χαὶ Q « Ut cognoscant viventes, dominium habere Altis-
+ἐὰν " δόξῃ, δύσει αὐτὴν, καὶ ἐξουθένημα * ἀνθρὼώ- — simum in regnum hominum, qui cuicunque visum
+mov "' ἀναστήσει ἐπ᾽ αὐτήν. » Ταῦτα, φησὶν, ὁ &y- — fuerit dat. illud , et quod contemnitur ab lomini-
+Ὑέλος ἔφη, ὅτι τούτου χάριν τὰ xazà τὸ δένδρον ys- — bus exsurgere facit ad illud. » Hac, inquit, ange-
+νήσεται, ἵνα διὰ τούτου μάθωσιν ἅπαντες, ἕνα εἶναι lus dixil; idcirco eventura esse ca, qua ad arbo-
+
+VARLE LECTIONES.
+
+95x. οὔτ. cm. Des. in B. 3 xg b. «. φ. αὐτοῦ, Ex B suppl. 33 B τιναστόμενα, ?* A σαλευθή-
+τωταν. δ᾽ ἡ xap5., x. τ᾿ A. Hzc puncto primisso cum sequentibus juncta, initium. vers. 13 faciunt
+apud LXX. 36 B ἅγιον, 5" B xxi γάρ ἐστιν. B Κύριός ἔστιν, 9 B ἄν, 99 A ἐξονδένωμα. "Δ οἱ
+B. ἀνθρώπων.
+
+==== PDF page 0709 (Migne PG 81 cols ~1365-1366) ====
+1303 THEODORETI EPISCOPI CYRENSIS Yi
+rem pertinent , ut hinc discant omnes, unum esse A Θεὸν ** Δεσπότην xol βασιλέα, τοὺς ἐπὶ γῆς xot.
+Deun Dominum ac regem, qui in terris reges ιστῶντα βασιλέας, xai ἐγχειρίζοντα, ᾧ ἐὰν " θέλῃ,
+constituit , οἱ regnum cui voluerit. committi, τὴν βασιλείαν. Δεικνὺς γὰρ τὴν ἑαυτοῦ ἐξουσίαν, xal
+Ostendens enim potestatem suam , etiam tenuis- τὸν εὐτελέστατον ἔστιν ὅτε, xal οὐδὲν εἶναι νομιζό-
+simum interdum , et qui nullius pretii censetur, μενον, ἀποφαίνει βασιλέα, xal τοὺς ἐν τοῖς μεγίστοις
+regem declarat : et cos, qui maximis utuntur ὄντας ἀξιώμασιν ὑπαχούειν αὐτῷ παρασχευάζε:,
+honoribus, eo redigit, ut illi dicto sint. obedien- Οὕτω πληρώσας τὸ τοῦ ἐνυπνίου διήγημα, φησὶ πρὸς
+tes. lta absoluta somnii narratione, Danielem sic τὸν Δανιήλ᾽
+
+alloquitur :
+
+Vzns. 15. « Hoc somnium viai ego Nabuchodono- ιε΄. € Τοῦτο τὸ ἐνύπνιον εἶδον ^ ἐγὼ Ναδουχοδο-
+sor rex, et tu Baltasar interpretationem dic apcr- νόσορ ὁ βασιλεύς “ καὶ σὺ, Βαλτάσαρ, τὸ σύγχριμα
+te, » hoc est, vere οἵ accurate, « quia omnes 81- εἰπὲ χατέναντι "δ᾽ » ἀντὶ τοῦ, ἀληθῶς xa &xpibix
+pientes regui mei non possunt interpretationem ε ὅτι πάντες οἱ σοφοὶ τῆς βασιλείας μου οὐ δύνανται:
+ipsius exhibere mihi, tu autem potes. » Causamque τὸ σύγκριμα αὐτοῦ δηλῶσαί μοι, σὺ δὲ δύνασαι t. »
+ostendens : « Quia Spiritus, inquit, sanctus Dei in— Kal τὴν αἰτίαν δεικνὺς, € Ὅτι, φησὶ, Πνεῦμα θεὼ
+te.» llli enim humanis ratiocinationibus innituntur, B ἅγιον ἐν σοί. » Οἱ μὲν γὰρ ἀνθρωπίνοις χέχρηνται
+tu autem a Deo oceulta et arcana discis. λογισμοῖς, σὺ δὲ παρὰ Θεοῦ μανθάνεις τὰ xexpup-
+
+μένα.
+
+Vas. 16. « Tunc Daniel , cujus 11.4.7 nomen ις΄. « Τότε Δανιὴλ, οὗ τὸ ὄνομα Βαλτάσαρ, ἐπ-
+Baltasar, obsiupefactus est circiter per boram ^ ηνεώθη ὡσεὶ ὥραν μίαν, καὶ οἱ διαλογισμοὶ αὐτοῦ
+unam, et cogitationes ipsius conturbabant eum. » συνετάρασσον αὐτόν. » "Ἔδει γὰρ δειχθῆναι τὴν ἀν-
+Ostendenda cnim erat humana imbecillitas, et tunc θρωπίνην ἀσθένειαν, xat τότε ἀναφανῆνα!: τὴν ἐμ-
+gratia inspirans aperienda. « Respondit itaque πνέουσαν χάριν. « ᾿Ἀπεχρίθη τοίνυν ὁ βασιλεὺς, xai
+rcx, et dixit: Baltasar, somnium hoc el inter- εἶπε" Βαλτάσαρ, τὸ ἐνύπνιον τοῦτο " xai ἡ σύγχρι-
+pretatio ejus, ne conturbent te.» Vidit enim ipsum — σις αὐτοῦ " μὴ κατασπευσάτω σε. » Εἰδς γὰρ αὐτὸν
+perturbatumn, et convenienter consolans demulcet, θορυδούμενον, xal ἀναγκαίως ψυχαγωγεῖ, μαθεῖν
+cupiens id quod ignorat cognoscere, alque ila ἐφιέμενος ὅπερ ἀγνοεῖ * λέγει τοίνυν αὐτῷ " Μὴ ov
+cum eo loquitur : Ne valde festines , sed paulaiim ρα ἐπείγου, ἀλλὰ χατὰ σχολὴν τὰ μηνυόμενα διὰ
+inventis iis qux» per somniuin significantur, ea τοῦ ἐνυπνίου εὑρὼν, ταῦτά μοι Ova κατάστησον.
+mihi perspieua facito. « Respondit itaque Baltasar C « ᾿Απεχρίθη τοίνυν " ὁ Βαλτάσαρ, xoi εἶπε "'
+et dixit, Domine mi rex, somnium hoc iis (ob- Κύριέ μου βασιλεῦ δ', τὸ δ. ἐνύπνιον τοῦτο '* τοῖς
+lingat) qui te oderunt, et interpretatio ejus ini- — μισοῦσί ce, xa ἡ σύγκρισις αὑτοῦ τοῖς ἐχθροῖς σου.»
+micis tuis. » Sapientissime .ac prudenlissime €i — Xzó6pa σοφῶς xal συνετῶς ἀπεύχεται μὲν αὐτῷ àv-
+molesta deprecatur , hoc ' prooemium exorsus, πηρὰ δ᾽ τοῦ προοιμίου ἀρξάμενος, σημαίνει δὲ Opus
+veritatem tamen declarat. τὴν ἀλήθειαν.
+
+Vens. 17, 18. «Arbor, inquit, magnificata et v, ny. € Τὸ δένδρον, φησὶ, τὸ δ μεγαλυνθὲν xi
+corroborata , cujus altitudo pervenit in coelum , e&— igyuxbz **, οὗ τὸ ὕψος ἔφθασεν εἰς τὸν οὐρανὸν, xil
+latitudo ejus in omnen terram. Et folia ejus flo- τὸ χῦτος αὐτοῦ εἰς πᾶσαν τὴν γῆν. Καὶ τὰ φύλα
+rentia, et fructus ipsius multus, et cibus omnibus αὐτοῦ εὐθαλῇ, xaló χαρπὸς αὐτοῦ πολὺς, xal τρογὴ
+in ea, subter eam habitabant besti agri, et in πᾶσιν ἐν αὐτῷ, ὑποχάτω αὐτοῦ xacdxet "! τὰ θηρία
+ramis ejus domicilium habebant aves cceli, lu es, — τὰ ἄγρια, xa ἐν τοῖς χλάδοις αὐτοῦ χατεσχήνουν τὰ
+rex. » Operz pretium est Danielis admirari $a- ὄρνεα τοῦ οὐρανοῦ, σὺ εἶ, βασιλεῦ. » “Ἄξιον δὲ θαυ-
+pientiam. Neque enim simpliciter dixit, « Arbor μάσαι τοῦ Δανιὴλ τὴν σοφίαν " οὐ γὰρ ἁπλῶς εἶπε,
+magna, » sed, « magnificata et corroboraia : » Τὸ δένδρον τὸ μέγα, ἀλλὰ, « Τὸ μεγαλυνθὲν xai τὸ
+hoc est : Non ab initio fuisti magnus, sed paula- D ἰσχυχός *» τουτέστιν, Οὐχ ἄνωθεν ἦσθα μέγας, ἀλλὰ
+lim factus es, et potentiam non ab ortu adeptus χατὰ μέρος γεγένησα! ὅδ, xai τὴν ἰσχὺν δὲ ox &
+€8 , Sed sensim eam tibi comparasti. Quare rursus ὠδίνων ἔσχες, ἀλλὰ κατὰ βραχὺ ταύτην προυσέλαθες.
+subjicit : Διὸ πάλιν ἐπάγει"
+
+γεκβ. 19. « Quia magnificatus es, et 1 148 inva- ιθ΄, € Ὅτι ἐμεγαλύνθης, xal ἴσχυσας, χαὶ ἡ μεγα-
+luisti, et magnitudo tua magnificata est et pervenit λωσύνη σου ἐμεγαλύνθη xaX ἔφθασεν εἰς τὸν οὐρανὸν,
+ad celum, et dominatio tua in fines terrz.» ΕἸ liec καὶ ἡ κυρεία σου εἰς τὰ πέρατα τῆς γῆς. » Καὶ ταῦτα
+apte admodum et opportune cclo et terre accom- δὲ σφόδρα ἁρμοδίως xal προσφόρως οὐρανῷ καὶ γῇ
+modavit. Dominationem enim dixit pervenisse ad προσήρμοσε᾽ τὴν μὲν γὰρ χυρείαν εἶπεν ἐφθαχένει
+
+VARLE LECTIONES.
+
+M Θεόν, Des. in B. δ᾽ Β ἄν, * ὃ ἴδον. * xax. Des. in A. ** δύν' A praim. Δανιήλ, ὁ" τοῦτο.
+Des. in A eL B. 58 αὖτ, Des. in Α.  xolv, D οὖν, 9? εἶπε, B λέγει. δ' μι Bac. Des, in A..." τό.
+A prim. Égzt. " τοῦτο. Des. in A. δ᾽ Jom. B prm. τά, δ᾽ τό, A prem. ὃ εἶδες. "ig, ἃ εἰ Β
+prem. τό, 9 A χατῴχηυν. δ᾽ γεγ. B add. μέγοες.
+
+
+==== PDF page 0710 (Migne PG 81 cols ~1367-1368) ====
+1365 IN DANIELIS CAP. 1V. 1366
+εἰς τὰ πέρατα τῆς γῆς, τουτέστι τὴν ἐξουσίαν * εἰς A fines terrz, hoc est potestatem : ad eclum vere
+δὲ τὸν οὐρανὸν οὐκέτι τὴν χυρείαν, ἀλλὰ τὴν usya- — non item dominationem , sed magnitudinem , hoc
+λωσύνην, τουτέστι, τὴν τοῦ λογισμοῦ φαντασίαν. est, cogitationis phantasiam.
+
+X', κα΄, « Kat ὅτι εἶδεν, φησὶν '*, ὁ βασιλεὺς cp Υ̓εββ. 20, 21. « Et quia vidit, inquit , rex vigi-
+καὶ ἅγιον χαταδαίνοντα ἐχ τοῦ οὐρανοῦ, xal εἶπεν: — lem et sanctum descendentem de celo, et dixit :
+"Exslare τὸ δένδρον, xal διαφθείρετε 9? αὐτό" πλὴν — Evellite arborem , et corrumpite ipsam, verumta-
+τὴν φυὴν τῶν ῥιζῶν αὐτοῦ ἐν τῇ γῇ ἐάσατε, καὶ ἐν — men germen radicum ejus in terra sinite , et in
+δεσμῷ σιδηρῷ καὶ χαλχῷ, καὶ ἐν τῇ χλόῃ τῇ ἔξω, —Vinculo ferreo et zereo , et in herba quz foris est,
+xa ἐν τῇ δρόσῳ τοῦ οὐρανοῦ αὐλισθήσεται, καὶ μετὰ Εἰ in rore cceli pernociabit, οἱ cum bestiis agresti-
+θηρίων ἀγρίων ἡ μερὶς αὐτοῦ, ἕως οὗ ἑπτὰ καιροὶ bus pars ejus , donec septem tempora immutentur
+ἀλλοιωθῶσιν ἐπ᾽ αὐτόν *!, Kal τοῦτο ἡ σύγκρισις — Super eum. Et hzc interpretatio ejus, o rex. » Et
+αὑτοῦ, βασιλεῦ. » Kal ἀξιόπιστον ποιῶν τὸν λόγον, fidem orationi faciens, apposite subjecit : « Et
+ἀναγχαίως ἐπήγαγε" « Kal σύγχριμα Ὑψίστου decretum Altissimi est, quod pervenit super domi-
+ἐστὶν '*, ὃ ἔφθασεν ἐπὶ τὸν κύριόν μου τὸν βασιλέα.» — num meum regem. » llinc plane discere licet opa-
+Ἐντεῦθεν ἔστιν ἀχριδῶς καταμαθεῖν τῆς ἀποστολι- , Stolicze doctrinz utilitatem. « Omnis enim anima ,
+κῆς διδασχαλία; τὸ χρήσιμον. « Πᾶσα γὰρ, φησὶ, Β inquit , potestatibus sublimioribus subdita sit 5. »
+Ψυχὴ ἐξουσίαις ὑπερεχούσαις ὑπυταττέσθω.» Καὶ γὰρ Etenim beatus quoque Daniel dominum ipsum
+xai ὁ μαχάριος Δανιὴλ χύριον αὑτὸν «by δυσσεδῆ impium regem vocat, et legi potestatis obedieus
+βασιλέα χαλεῖ, xol τῷ νόμῳ τῆς ἐξουσίας πειθόμενος, — congruis usus est appellationibus, ac molestam esse
+ταῖς πρεπούσαις προσηγορίαις χέχρηται, καὶ λυπη- — somnii veritatem ostendit.
+ρὰν οὖσαν τοῦ ἐνυπνίου τὴν ἀλήθειαν ὑποδείχνυσιν.
+
+κβ΄. « Ἐχδιώξουσι γάρ σε, φησὶν, ἀπὸ τῶν ἀνθρώ- - Υεκβ. 22. « Expellent enim te, inquit, ab homi-
+πων, χαὶ μετὰ θηρίων ἀγρίων ἔσται ἡ κατοιχία — nibus, et cum bestiis agrestibus erit habitatio
+Gov, xal χόρτον ὡς βοῦν ψωμιοῦσί σε, xal ἀπὸ τῆς dua: εἰ feno ut bovem cibabunt te, et rore coli
+δρόσου τοῦ οὐρανοῦ τὸ ** σῶμά σου βαφήσεται, xo — corpus tuum humectabitur, et septem tempora
+ἑπτὰ χαιροὶ ἀλλαγήσονται ἐπὶ σοί “δ, » 'Exri bà — mutabuntur super te. » Septem autem tempora alii
+καιροὺς οἱ μὲν ἔφασαν ἑπτὰ ἔτη, οἱ δὲ πρία καὶ septem annos 1149 lixerunt, alii tres cum dimi-
+ἥμισυ. Οὐ γὰρ εἰς τέσσαρας τροπὰς ἡ θεία Γραφὴ dio. Neque enim in quatuor conversiones divina
+τὸν ἐνιαυτὸν διαιρεῖ, ἀλλ᾽ εἰς δύο τὰς γενιχωτάτας, — Scriptura annum dividit, sed in duas nobiliores
+χειμῶνα xal θέρος " ἑπτὰ οὖν τοιαῦτα τμήματα τρία (, partes, hiemem et zstatem. ϑορίοπι igitur hujusce-
+καὶ ἥμισυ πληροῖ ἔτη **^ Τοσοῦτον δὲ, φησὶν, ἐν τῇ — modi partes tres annos cum * dimidio perficiunt :
+συμφορᾷ διατελέσεις χρόνον" « ἕως οὗ γνῷς, ὅτε aC tanlum temporis , inquit, in calamitate deges :
+χυριεύει ὁ Ὕψιστος τῆς βασιλείας τῶν ἀνθρώπων, « donec cognoscas, Aliissimum regnare regno lio-
+xal ᾧ ἐὰν δόξῃ, δώσει αὐτήν. » Ἐπειδὴ γὰρ ὀνειρο- minum, et cuicunque visum fuerit, dare illud. »
+Asl; εἶναι θεὸς, μᾶλλον δὲ xoi χρείττων Θεοῦ, — Quia eniin somnias, te deum esse, imo vero etiam
+αἱ σου Θεὸς xal τὸν ἀνθρώπινον λογισμὸν, — Superiorem Deo, adimet tibi Deus etiam humanam
+θηρίοις *' σε ἐοιχέναι ποιήσει, ἵνα τῇ πείρᾳ — cogitationem eflicietque ut similis evadas bestiis
+μάθῃς, τί μὲν ἄνθρωπος, τί δὲ Θεὸς, xol τί μὲν ἀν. — feris , ut experientia discas, quid homo, quid
+θρωπίνη εὐχληρία 48, τί δὲ θεία βασιλεία, χαὶ ὅτι — Deus , et quid humana felicitas , et quid regnum
+ταύτης τυχεῖν ἀδύνατον μὴ βουλομένου Θεοῦ. divinum, et fieri non posse , ut quis illud conse-
+
+quatur invito Deo.
+
+Xy'. € Καὶ ὅτι εἶπε, φησίν: Ἑάσατε τὴν φυὴν τῶν γεμβ. 96. «Et quod dixerit, inquit : Siniteplan-
+ῥιζῶν τοῦ δένδρου **, ἡ βατιλεία σου σοὶ μενεῖ, ἀφ’ — tam radicum arboris, regnum tuum tibi manebit,
+ἧς ἂν γνῷς τὴν βασιλείαν 9 τὴν οὐράνιον "". » 'Amo- ex quo cognoveris regnum celeste. » Cum enim
+στερηθεὶς γὰρ τῆς βασιλείας, xàxeiva ὑπομείνας D regno spoliatus, et illa omnia perpessus fueris,
+ἅπαντα, ἐπιγνώσῃ τῆς βασιλείας τὸν χορηγὸν, εἶτα — agnosces regni largitorem, quo agnito pristinam
+Ὑνοὺς ἀπολήγῃ πάλιν τὴν προτέραν ἐξουσίαν " ἵνα potestatem recuperabis, ut et ademplione οἱ reddi-.
+xai τῇ ἀφαιρέσει, xal τῇ ἀποδόσει, μάθῃς ἀχριδῶς, — tione plane pereipias, quis omnium rerum sit gu-
+τίς ὁ τῶν ὅλων χυδερνήτης, τίς ὁ σοφῶς ἅπαντα — bernator, quis sapienter omnia regat et moderetur.
+ἰθύνων xal πρυτανεύων. Οὕτως εἰρηκὼς τὰ ἐσόμενα, [τὰ predictis futuris, admonitionem et consilium,
+παραίνεσιν εἰσφέρει xai συμθουλὴν ἀρίστην, xai — optimum affert, remediumque adhibet vulneri
+φάρμαχον προσφέρει συμδαῖνον τῷ τραύματι. valde consentaneum.
+
+b Rom. xiu, 11.
+VARIA LECTIONES.
+8. ons. Des. in B. ** A et B διαφθείρατε. “ B αὐτῷ. 4 ἐστ. A pram. τοῦτ᾽ — ** αὖτ. Des. in B.
+
+** «b — pag. A αὐλισθέσῃ. 46 B σέ. ** à. in B post ἔτη ponitur. *' B θηρίῳ. ** B εὐημερίᾳ.
+39 δένδρου. À addit, ἐν τῇ γῇ. "6 fac. Α ἐξουσίαν. "! A ἐπουράνιον, B τῶν οὐρανῶν.
+
+==== PDF page 0711 (Migne PG 81 cols ~1369-1370) ====
+136] THEODORETI EPISCOPI CYRENSIS S 158
+Vens. 24 « ldcirco enim, rex, inquit, consilium A — x8. « Διὰ τοῦτο γὰρ, φησὶ. βασιλεῦ, ἡ βουλὴ μευ
+meum placeat tibi, et peccata tua eleemosynis re- ἀρεσάτω σοι, καὶ τὰς 15 ἁμαρτίας σου ἐν ἐλεημοσύ-
+dime,et injustitias Luas miserationibrs pauperum.» ναῖς λύτρωσαι, καὶ τὰς ἀδικίας 5 σου ἐν οἰκτιρμοῖς
+His autem inexplebilem illius crudelitatem decla- πενήτων. » Δηλοῖ δὲ διὰ τούτων τὴν ἄπληστον ὡμό.
+rat, quam in sibi subjectos 115 exercuerat. Vis, τητα fj κατὰ τῶν ὑπηχόων ἐχρήσατο. Βούλει", rot,
+inquit, clementize fructum percipere? hanc eam- — φιλανθρωπίας ἀπολαῦσαι ; ἐπίδειξα: ταύτην εἰς τοὺς
+dem erga eos ostendito, qui unam tecum sortiti τὴν αὐτὴν σοὶ φύσιν λαχόντας " οὕτω γὰρ πείσεις
+sunt naturam, Ita enim judici persuadere poteris, τὸν δικαστὴν σδέσαι τὴν ἀπειλὴν, καὶ χαταλιπεῖν
+wt minas exstinguat, neque sinat eas ad exilum — ἀτέλεστον. « Ἴσως γὰρ, φησὶν, ἔσται μαχροθυμία
+perduci. « Forte enim, inquit, obtingat longanimi- τοῖς παραπτώμασί cov**. » 'O μὲν οὖν προφήτης
+ias delictis tuis. » Propheta igitur hanc senten- ταύτην εἰσηγήσατο τὴν γνώμην " ὁ δὲ μείνας ἀτερά-
+tiam exposuit: ille vero cum amplius durum οἱ μὼν καὶ ἀχαμπὴς, ἐδέξατο τῆς παρανομίας τὰ ἐπί-
+inexorabilem sc praebuisse, scelerum przemia tulit, χεῖρα, xat ἅπερ ἤχουσεν ἀλγεινὰ, ταῦτα τοῖς ὀφβαλ-
+et qu: audiverat tristia, hzc oculis conspicatus pol; ἐθεάσατο. Εἶτα χαὶ σημαίνει τῆς θείας pa-
+est. [25] Deinde tempus etiam indicat divinz lon- κροθυμίας τὸν χρόνον * δυοχαίδεχα γὰρ διαδραμόήν-
+ganimitatis, Nam eum duodecim menses eflluxis- των μηνῶν, ἐδέξατο ἡ διὰ τῆς προῤῥήσεως ἀπειλὴ
+sent, praedicle min: certo rerum comprobat sunt τῶν πραγμάτων τὸ τέλος. Καὶ τοσοῦτον χρόνον εἰς
+eventu : οἵ cum tantum temporis ei ad resipiscendum μεταμέλειαν εἰληφὼς, χαχῶς τὴν τῆς μεταμελείας
+datum fuisset, male transegit deflnitum poenitentis ἀνάλωστε προθεσμίαν. Πρὸς ὄν ὁ μαχάριος εἴποι
+tempus. Ad quem beatus Paulus merito dixerit: ἂν Παῦλος εἰχότως " « Ἢ τοῦ πλούτου τῆς χρηστό-
+* Àn divitias bonitatis ejus, et patienti, et lon- τητος αὐτοῦ, καὶ τῆς ἀνοχῆς, καὶ μαχροθυμίας χατα-
+ganimitatis contemnis, ignorans, benignitatem Dei φρονεῖς, ἀγνοῶν, ὅτ: τὸ χρηστὸν ποῦ Θεοῦ si; μττά-
+ad poenitentiam te adducere? secundum duritiam νοιάν σε ἄγει; Κατὰ δὲ τὴν σχληρότητά σου χαὶ
+iuam autem οἱ impoenilens cor, instar thesauri ἀμετανόητον χαρδίαν, θησαυρίζεις σεσυτῷ ὀργὴν ἐν
+libi rcponis iram in diem * ire et revelationis et ἡμέρᾳ ὀργῆς, καὶ ἀποχαλύψεως, χαὶ 7" δικαιοχρ'σίας
+justi judicii Dei, qui reddet unicuique secundum τοῦ Θεοῦ, ὃς ἀποδώσει ἐκάστιυ χατὰ τὰ ἔργα αὐτοῦ"
+opera ejus; iis quidem, qui per patientiam boni τοῖς μὲν καθ᾽ ὑπομονὴν ἔργου ἀγαθοῦ δόξαν, χαὶ
+eperis gloriam, et honorem, et incorruptionem τιμὴν, καὶ ἀφθαρσίαν ζητοῦσι, ζωὴν Ἴ7 αἰώνιον" τοῖς
+quxrunt, vitam :ernam; iis vero qui sunt ex δὲ ἐξ ἐριθείας, καὶ ἀπειθοῦσι μὲν τῇ ἀληθείᾳ, πει-
+vontentione, ct qui non obediunt veritati, credunt (; θομένοις δὲ τῇ ἀδιχίᾳ, θυμὸς καὶ ὀργή “ θλίψις"
+autem iniquitati, ira et indignatio : tribulatio εἰ χαὶ στενοχωρία ἐπὶ πᾶσαν ψυχὴν ἀνθρώπου τοῦ
+angustia in omnem animam hominis operantis χατεργαζομένου τὸ κακόν. » Ταῦτα γὰρ συνέβη xi
+malum !.» Hxc enim etiam Nabuchodonosori τῷ Ναδουχοδονόσορ, τῇ τοῦ Θεοῦ μακροθυμίᾳ εἰς δέον
+evenere, qui Dei longanimitate non opportune οὗ χρησαμένῳ. Καὶ τυύτου 1 μάρτυς αὐτὸς οὐτωτὶ “
+usus est : cujus 1151 rci testis est ipse, qui ita λέγων "
+narrat : .
+Vgns. 98, 27. « Etenim post duodecim menses, xc', xg. « Καὶ μετὰ δώδεχα μῆνας, ἐν τῷ ναῷ
+in templo regni sui in Babylone deambulabat, et τῆς βασιλείας αὑτοῦ ἐν Βαδυλῶνι περιπατῶν TU
+super mo.iia civitatis cum omni gloria sua, et su- — xat ἐπὶ τῶν τειχῶν τῆς πόλεως μετὰ πάσης τῆς δό-
+per turres suas incedebat. Et respondit rex οἱ ξης αὑτοῦ, καὶ ἐπὶ τῶν πύργων αὐτοῦ διεπορεύετο,
+isit ; Nonne hzc est. Babylon magna, quam ego Καὶ ἀπεχρίθη ὁ βασιλεὺς xal εἶπεν" Οὐκ αὐτή"
+:eificavi in domum regni, in. potentia fortitudinis ἔστι Βαδυλὼν ἡ μεγάλη, ἣν ἐγὼ ᾧχοδόμησα d
+mez, in honorem gloriz mez? » Intuere mentis οἶχον βασιλείας, £v χράτει ** τῆς ἰσχύος μον, εἰς st
+fastum, inspice arrogantie exsuperantiam. Ego μὴν τῆς δόξης μου; » Βλέπε τοῦ φρονήματος τὸν
+euim ipsam, inquit, regiam urbem feci, regia in D ὄγχον, βλέπε τὴν τῆς ἀλαζονείας ὑπερδολήν. Ἐγὼ
+ipsa constituta in honorem glorie mez: feciau- γὰρ αὐτὴν, φησὶ, βασιλικὴν πόλιν ἐποιησάμην
+lem hzc polentia maxima przditus, ac omnibus βασίλεια χαταστησάμενος ἐν αὐτῇ, εἰς τιμὴν τῆς
+politus. Verum hzc glorians οἱ fremens locutus δόξης μὸν * ἐποίησα δὲ ταῦτα "* ἰσχὺν ἔχων yeti-
+esl : at Dominus Deus statim supplicium intulit. στὴν, xai πάντων χεχρατηχώς. ᾿Αλλὰ μὴν" φρυαῖ-
+πόμενος καὶ βρενθυόμενος, τοιούτοις ἐχρήσατο τοῖς " λόγοις * ὁ δὲ Δεσπότης Θεὸς παραυτέχα τὴν τιμωρίαν
+ἐπήγαγεν.
+
+i Rom. νι, 4,9.
+
+VARLE LECTIONES.
+
+τὸ τὰς — λύτρωσαι. Supra, t. 1. p. 1449, erat, τὰς ἀνομίας σου iv ἔλεημ. ἀπόλουσαι. lta fere leg.
+infra, Her. fab., l. v, c. 38. 15 àà. Supra, t. 1, 1. c. erat, ἁμαρτίας, 7" βούλ. B praem. ei, —"* A paxp-
+θυμος τ. παρ. σου ὁ Θεός. "* xal. Abesse quidem solet 1. c. vers. δι sed a Nostro semper additur.
+τ ζωήν. B pram. xat. "^ 64. Β prem. xaí. 7? Β τούτων. δ δὶ οὗτος. "fv — διεπορ. Des. in A.
+* Β οὐχ αὕτη. " εἰς. B ὡς. 5* xp. A prem. τῷ. δ B αὐτά. ** B ἀλλ᾽ ὁ μέν. *! τοῖς. Des. in Β.
+
+==== PDF page 0712 (Migne PG 81 cols ~1371-1372) ====
+1369 IN DANIELIS CAP. IV. . 1310
+
+xm. € Ἔτι γὰρ, φησὶ, τοῦ λόγου ὄντος àv τῷ στό. Α Vens. 98. « Cum enim sermo, inquit, adliue es-
+pat τοῦ" βασιλέως, φωνὴ ἀπ᾽ οὐρανοῦ ἐγένετο. » set in ore regis, vox de ccelo facta est. » Nam,
+Ἐπειδὴ γὰρ εἰς τὸν οὐρανὸν ἀνελθεῖν ὠνειροπόλη- — quia in ccelum se ascendere somniavit, illinc sen-
+σεν P, ἐχεῖθεν δέχεται τὴν ἀπόφασιν " xal ἐπειδὴ — tentiam in se latam sentit : et quia ei non satis
+οὐχ ἀπέχρησεν αὐτῷ τὰ χάτιυ βασίλεια, ἀλλ᾽ ἅμα 9 — fuere ades regime in terris deorsum, sed simul
+xal τῶν ἄνω μανιχῶς ἐπεθύμησεν, ἔρημος γίνεται etiam superiores dementer appetiit, iis quoque pri-
+χαὶ τῶν χάτω΄ xal τὸν οὐρανὸν ἁρπάσαι: θελήσας, — vatur, quas deorsum obtinebat : et qui caelum ra-
+καὶ τῆς γῆς ἐξελαύνεται. «€ Φωνὴ τοίνυν ἦλθεν ám' — pere voluerat, et terra quoque expellitur, « Vox ita-
+οὐρανοῦ " Σοὶ, σοὶ λέγεται, Naouyobovósop βασι- que de colo venit: Tibi, tibi dicitur Nabucho-
+λεῦ. » Ὁ δὲ τῆς ἀντωνυμίας διπλασιασμὸς οὐχ ἁπλῶς — donosor rex. » Pronominis auiem dupiicatio non
+πρόσχειται, ἀλλ᾽ εἰς ἔλεγχον ἐναργέστερον τοῦ mpbg — temere apponitur, sed ad evidentiorem illius re-
+9v ταῦτα λέγεται. Καλεῖ δὲ αὐτὸν ἕτι βασιλέα, xa — prehensionem, cui hzc dicuntur. Ipsam vero ad-
+τὴν παροῦσαν ἔτι δόξαν, xal τὴν ἐσομένην οὐχ εἰς — huc regem vocat, et priesentem adhuc gloriam, et
+μαχρὰν ἀτιμίαν δειχνύς. haud multo post futuram 1152 ignominiam
+
+. . - . . OBlendens. ]
+
+« Ἢ βασιλεία σου "", φησὶ, παρῆλθεν ἀπὸ σοῦ. B (Regnum tuuni, inquit, transiit a te. (Vens.29.)
+(χθ'.) Καὶ ἀπὸ τῶν ἀνθρώπων σε ἐχδιώξουσι, χαὶ μετὰ — pi ab hominibus te expellent, et cum bestiis agre-
+θηρίων ἀγρίων ἡ κατοιχία σου xal χόρτον ὡς βοῦν gibus habitatio tua, et feno quasi bovem ciba-
+Ψωμιοῦσί et, xal ἑπτὰ χαιροὶ ἀλλαγήσονται ἐπὶ — pant qe, et septem tempora mutabuntur super te,
+σοὶ "", ἕω; οὗ ** γνῷς, ὅτι χυριεύει ὁ Ὕψιστος τῆς — donec cognoscas, Altissimum dominari regno ho-
+βασιλεία; τῶν ἀνθρώπων, xal ᾧ ἐὰν δόξῃ, δώσει αὖ- minum, et cuicunque visum fuerit, dare illud. »
+τήν. » Εἶτα δειχνὺς τὴν τῆς τιμωρίας ὀξύτητα, καὶ — Deinde ostendens supplicii celeritatem , illico
+παραυτίκα *!, φησὶ ν᾽, τῷ λόγῳ τὸ ἔργον ἐπηχο- orationem, inquit, res secuta est.
+λούθησεν.
+
+X. « Αὐτῇ, φησὶ, τῇ ὥρᾳ συνετελέσθη ὁ λόγος ἐπι Vgns. 50. « Eadem, inquit, hora sermo com-
+ἹΝαδουχοδονόσορ, xai ἀπὸ τῶν ἀνθρώπων ἐδιώχθη.» — pletus est super * Nabuchodonosorem, et ab ho-
+Ἐξεδιώχθη δὲ πρῶτον μὲν bi αὐτὸ τὸ πάθος * μανίᾳ — minibus expulsus est. » Expulsus autem primum
+Yàp παρεδόθη καὶ λύττῃ xoi μυρία ἂν εἰργάσατο — est propter ipsum morbum : furore enim et rabie
+xaxà, εἴπερ ἀδείας ἀπήλαυσεν" ἔπειτα δὲ καὶ δὰ — correptus infinita mala perpetrasset, δὶ modo ei
+πὴν ἀπέχθειαν, ἣν περὶ αὐτὸν ἅπαντες ἔχοντες, | facultas data fuisset : deinde vero propter odium,
+ἡνίκα μὲν ἔῤῥωτο, ἐπειρῶντο λανθάνειν, συμφορᾷ δὲ c quod in illum omnes habentes, cum valeret, oc-
+περιπεσόντι ἐπέθεντο, τῆς ὠμότητος αὐτὸν βδελυξά- — eultare conabantur, cum vero in calamitatem in-
+μένοι. « Καὶ χόρτον ὡς βοῦς, φησὶν **, ἤσθιεν. » — cidisset, omnes ei insultlabant, ob crudelitatem
+Ἴδιον γὰρ τῶν παραπαιόντων, οὐ μόνον τὸ λέγειν χαὶ ipsum abominati. « Et fenum, inquit, ut bos. co-
+πράττειν ἀλόγιστά τε xal ἄταχτα, ἀλλὰ xal τὸ medit. » Est enim proprium desipientium, non
+ἐσϑίειν ἅπαντα τὰ προσπίπτοντα " τοῦτο δ᾽ ἄν τις ἴδοι solum dicere ac facere ea qua ratione et ordine
+καὶ νῦν τοὺς ὑπὸ δαιμόνων ἐνοχλουμένους ποιοῦντας — careant, scd omnia eliam in quacunque incide-
+καὶ πάσχοντας. Οὐ μόνον δὲ ὡς βοῦς ἤσθιε τὸν *' — pint, comedere : quod cerni etiam nunc potest. in iis
+χόρτον, ἀλλὰ « Kal ἀπὸ τῆς δρόσου τοῦ Ὀὐρανοῦ τὸ — quia daemonibus vexantur : talia enim et faciunt,
+σῶμα αὐτοῦ ἐδάφη.» Ὑπαίθριος ** γὰρ ταλαιπωρῶν, et patiuntur. Neque solum ut bos comedit fenum,
+καὶ γυμνῷ τῷ σώμχτι χρυμῷ τε mposmalalov xal — verum « Etiam rore coli corpus ejus infectum
+φλογμῷ, &vayxalug ἑτέραν ἐδέξατο χρόαν. « Ἕως est. » Sub dio enim agens in zrumna, nudoque
+οὗ αἱ τρίχες αὐτοῦ, ὡς λεόντων, ἐμεγαλύνθησαν, καὶ — corpore cum gelu et zstu conflictans, necessario
+οἱ ὄνυγες αὐτοῦ, ὡς ὀρνέων. » Μὴ ἀποχειρόμενος — alium colorem accepit. « Donec capilli ejus, quasi
+γὰρ συνήθως, μηδὲ ἀφαιρούμενος τῶν ὀνύχων" τὰ Ὁ leonum, magni facti sunt, et ungues ejus, quasi
+περιττὰ, ἀναγχαίως ἐν ! τοσούτῳ χρόνῳ τοιαύτας — avium. » Non detonsus enim usitato more, neque
+ἔσχτχε " xol τρίχας καὶ ὄνυχας. Διὰ δὲ τούτων — reseciis unguium excrementis, 1159 necessario
+ἁπάντων ἐσήμαινε τὸ ἀτημέλητον αὐτὸν " xal ἀχη- — tam diu ejuscemodi babuit εἰ capillos et ungues.
+δεμόνευτον εἶναι". Τῆς yàp θείας ἔρημος γενόμενος — Bis autem omnibus significabat, neglectum ipsum
+προμηθείας, οὐδὲ τῆς παρὰ τῶν οἰχείων ἐπιμελείας et nulli cure alicui fuisse. Divina enim Providen-
+ἀπήλαυσεν, xal ταῦτα Yovatxbz* οὔσης, χαὶ παίδων, — tia destitutus, ne propinquorum quidem cura po-
+καὶ συγγενῶν" ἀλλὰ θηρίου " δίχην τοὺς ἀοικήτους — titus esl, cum tamen ipsi adessent. uxor, liberi,
+χώρους διετέλει περινοστῶν, τὴν τῶν ἀλόγων τροφὴν — el cognati : sed instar ferz inculta loca semper
+πῇ γαστρὶ παραπέμπων "ἐπειδὴ γὰρ, « ΓΑνθρωπος ὧν peragrabat, bestiarum cibum ventri indulgens.
+
+VARLE LECTIONES.
+
+*' τοῦ, Β praem. αὐτοῦ. 59 B ὠνειροπολήσατο. 39 ἀλλ᾽ ἅμα. B ἀλλά. ?! σου. Des. in Α. * A σέ. "" οὗ.
+Β ἄν 5 παρ. D praem. ὅτι. ** φησί, Des. in B. "» B ἐξεδιώχθη. ** φησ, In B. ponitur ante. ὡς βοῦς.
+*! τόν, Des. in B. "* B ὅπα! pos. 9! «, óv. ln B post περιττὰ ponitur, — "iv. Β ἐπί, * B ἔσχε. ὁ Βὶ αὐ-
+τοῦ. " εἶναι. Des. in B.— * vuv. B prem. χαί. * BOrpéov.
+
+
+==== PDF page 0713 (Migne PG 81 cols ~1373-1374) ====
+1371 THEODORETI EPISCOPI CYRENSIS 1:2
+
+Nau quia « Homo cum esset, et in honore maximo, A καὶ ἐν τιμῇ ὧν μεγίστῃ, οὐ συνῆχεν, ἀλλὰ παρασυν-
+non intellexit, sed comparatus est jumentis insi- εὔθλήθη τοῖς χτήνεσι τοῖς ἀνοήτοις, xal ὡμοιώθη a5-
+pientibus, et similis factus est illis 3, » etin sibi τοῖς, » xai θηριώδει γνώμῃ κατὰ τῶν ὑπηχόων
+subjectos ferina mente et animo fuit, meritoetiam ἐχέχρητο᾽, εἰκότως xat μάλα διχαίως τὸν χτηνώδη
+ad ferinam et agrestem vitam justissime damnatus — xoi θηριώδη βίον χατεδιχάσθη. ᾿Αλλ᾽ ὁ ςιλάνθρωπος
+est. Verum clemens Dominus remisso supplicio, Δεσπότης, λύσας τὴν τιμωρίαν, ὡς ἀγαθὸς, xoi τῇ
+αἱ benignus, quique experientia docuerat, se esse πείρᾳ διδάξας, ὡς αὐτός ἐστι τῶν ἀπάντων Κύριος,
+omnium Dominum, rursus ipsum reduxit, ac pri- πάλιν αὐτὸν ἐπανήγαγε, καὶ τὴν βασιλείαν αὐτῷ τὴν
+sinum ei regnum commisit. προτέραν ἐπίστευσε.
+
+γεκβ. 54. « Post finem enim dierum, inquit, Aa'. « Μετὰ γὰρ τέλος, φησὶ ", τῶν ἡμερῶν, ἐγὼ
+ego Nabuchodonosor oculos meos in celum sus- Ναθουχοδονόσορ τοὺς ὀφθαλμούς μον εἰς τὸν οὐρα-
+|uli. » Non sine causa autem adjecit ego, sed αὐ. νὸν ἀνέλαθον. ν Οὐχ ἁπλῶς δὲ προστέθεικε τὸ ἐγὼ,
+omnes liomines doceret : quasi ita dicat, Illeego, ἀλλὰ διδάσχων ἅπαντας ἀνθρώπους, ὡς Ὃ τῇ ἀλαζο-
+qui tanta olim arrogantia dixeram : « Qui est Deus, νείᾳ ἐχείνῃ χρησάμενος, ὁ εἰρηκώς " € Τίς ἔστιν ὁ
+qui eruat vos e manibus ineis k? » qui somniave- θεὸς, ὃς ἐξελεῖται! ὑμᾶς ix τῶν χειρῶν pov ; »ó
+ram, fore ut in celum ascenderem, et super astra P ὀνειροπολήσας εἰς τὸν οὐρανὸν ἀναθῆναι, καὶ ἐπάνω
+ponerem thronum meum, experientia doctus didi- τῶν ἀστέρων" θεῖναι τὸν θρόνον μου !^, ἐδιδάχθην τῇ
+οἱ quid deceat, meo ^ supplicio sapere didici, πείρᾳ τὸ δέον, ἔμαθον διὰ τῆς τιμωρίας !! σωφρονεῖν,
+meum servitutem agnovi, Idcirco etiam in 11544 τὴν ἐμαυτοῦ δουλείαν ἐπέγνων. Διὸ καὶ ἀνέλαδον
+colum oculos meos sustuli ; quod simul ac feci : τοὺς ὀφθαλμούς μου εἰς τὸν οὐρανὸν, χαὶ ἅμα τε
+« Et mens mea ad me reversa esi. » ld est, ab “τοῦτο ἐποίησα, « Καὶ αἱ φρένες μου ἐπεστράφη-
+insania liberatus fui, statimque ratione convalui,  Gav!*. » ᾿Αντὶ τοῦ, Τῆς παραφροσύνης ἐλεύθερος
+et mentem recepi. « Et Altissimo benedixi, et vi- ἐγενόμην, καὶ τὸν λογισμὸν ἐῤῥώσθην * παραυτίκα
+ventem in sscula laudavi, quia potestas ejus po- δὲ ὑγιῆ τὸν νοῦν ἀπέλαδον. « Καὶ τῷ '"Yylow"
+testas φίογπδ, et regnum ejus in generationem εἰ εὐλόγησα, xat τὸν ζῶντα !* εἰς τοὺς αἰῶνας ἤνεσα "",
+yenerationem. » Cum enim experientia didicerit, ὅτι ἡ ἐξουσία αὐτοῦ ἐξουσία αἰώνιος, καὶ ἡ βασιλεία
+quid homo, quid Deus, hunc quidem Altissimum αὐτοῦ εἰς γενεὰν xal γενεάν.» Γνοὺς γὰρ τῇ πείρᾳ, τί
+et viventem appellat, et regem sempiternum vocat, μὲν ἄνθρωπος, τί δὲ Θεὸς, τὸν μὲν “ ψιστον καὶ ζῶντα
+
+suam vero tenuitatem agnoscit. Quare : προσαγορεύει, xat βασιλέα αἰώνιον ἀποχαλεῖ "*, τὴν
+C δὲ οἰκείαν εὐτέλειαν ἐπιγινώσχει. Διό φησι *
+ὕεκβ. 52. « Et omnes, inquit, habitantes in Mf. «Καὶ πάντες ol κατοικοῦντες τὴν γῆν εἰς οὐδὲν
+
+lerra pro nihilo reputati sunt. » Nam usque ad ἐλογίσθησαν. » Μέχρι μὲν γὰρ τοῦ παρόντος ᾧμην
+presens tempus existimaveram meipsum maximum εἶναι ἐμαυτὸν μέγιστόν τε xol ὑψηλότατον, νῦν δὲ
+et allissimum esse : nunc autem aperte cognovi, ἔγνων σαφῶς, ὡς πᾶσα τῶν ἀνθρώπων ἡ φύσις θεῷ
+omnem hominum naturam, si Deo comparetur, παραδαλλομένη οὐδέν ἐστι. Καὶ ζητήσας εὐτελείας
+nihil esse. Cumque quasivisset tenuitatis nomen, προσηγορίαν, καὶ μὴ εὑρὼν ἀξίαν, τὸ οὐδὲν' τέθειχεν,
+ac nullum dignum invenisset, illud nihil posuit, ἔμφασιν ἔχον ἱκανὴν τοῦ σφαλεροῦ xal εὐδιαλύτου
+« quod lubric et Πυχ παίυγα idoneam habei de- τῆς φύσεως. Καὶ τὸν μὲν Θεὸν καὶ " Yyrtecor, xol
+clarationem. Et Deum quidem, et Altissimum, οἱ Δεσπότην, καὶ ζῶντα "Ἶ καὶ βασιλέα αἰώνιον
+Dominum, et viventem, οἱ regem sempiternum voca- ἀπεχάλεσεν, ἅπαντας δὲ ἀνθρώπους οὐδὲν mpos-
+vit : omnes vero homines mihil appellavit. lta ηγόρευσεν. Οὕτω δὲ xal ὁ μαχάριος 'Hoatag τοῖς
+etiam beatus Isajas divinam simulacris comparans εἰδώλοις τὴν θείαν παραθάλλων φύσιν, τὸ τῶν àv-
+maturam, humanum genus in medium protulit, θρώπων εἰς μέσον παρήγαγε γένος. « Εἰ γὰρ πάντα
+* Si enim omnes gentes, inquit, sicut stilla ἃ si- τὰ ἔθνη, φησὶν, ὡς σταγὼν ἀπὸ κάδου, xai ὡς ῥοπῇ
+ἰυΐα, et sicut monumentum staterz reputat» eunt, D ζυγοῦ ἐλογίσθησαν, καὶ ὡς σίελος λογισθήσονται " ὁ
+et quasi saliva reputabuntur; Libanus autem non δὲ Λίδανος οὐχ ἱχανὸς εἰς καῦσιν, xxi πάντα τὰ τε-
+idoneus ad comburendum, et omnia quadrupedia τράποδα οὐχ ἱκανὰ εἰς ὁλοκάρπωσιν, καὶ πάντα τὰ
+non sufficiunt ad holocaustum, et omnes gentes ἔθνη εἰς οὐδέν εἰσι, καὶ εἰς οὐδὲν ἐλογίσθησαν αὑτῷ"
+quasi nihilum sunt, ei pro nihilo reputat sunt τίν: ὁμοιώσετε !* Κύριον ; καὶ τίνει ὁμοιώματι ὁμοιώ-
+»pud eum, cui assimilabitis 11585 Dominum? et σετε αὑτόν; » Τοσαύτην ὠφέλειαν ὁ ΝΝαθουχυδονόσορ
+cui imagini assimilabitis eum 1 ?» Tantum utilita- — ix τῶν συμφορῶν ἐδέξατο, ὅτι προφητιχῶς περὶ θεοῦ
+tis ex calamitatibus percepit Nabuchodonosor, ut — xoi φρονεῖ xai φθέγγεται * xal ὡς ix. συμφωνίας
+
+3 Psol. xcvi, 15. & IV Reg. xvi, ὅδ. ! Isa, xL, 15-18.
+VARIA LECTIONES,
+ΤΒ ἐχρήσατο. " B φησὶ, τὸ τέλος. " B ἄστρων. !* pou. Des. in Β. !! «tg. B πείρας. !* ἔπεστι .À
+
+praem. ἐπ᾿ ἐμέ. 15 Ed. prior hab. τὸν Ὕψιστον. !* A τῷ ζῶντι. "" fiv. A addit, καὶ ἐδόξασα. ' A ἅπε-
+χαλεῖται. "7 x, ζῶντα, Des. in Β. !* Uh. l. et post pauca, ὡμοιώσατε.
+
+==== PDF page 0714 (Migne PG 81 cols ~1375-1376) ====
+1313 IN DANIELIS CAP. IV. 1.1
+
+τινὸς ἀπὸ τῆς χτίσεως πᾶσαν τὴν ὑμνῳδίαν ὑφαίνει. A instar proplietie de Deo et sentiat οἱ loquatur. Et
+« Πάντες, φησὶν, οἱ κατοιχοῦντες τὴν γῆν ὡς οὐδὲν quasi ex concentu quodam a creatura totam lau-
+ἐλογίσθησαν, καὶ χατὰ τὸ θέλημα αὑτοῦ ποιεῖ ἐν τῇ — dationem orditur. « Omnes, inquit, habitantes in
+δυνάμει τοῦ οὐρανοῦ, χαὶ ἐν τῇ χατοιχίᾳ τῆς γῆς. » terraquasi nihilum reputati sunt, et secundum
+Καὶ αὕτη δὲ ἑτέρου προφήτου διδασχαλία. Ὁ γὰρ — voluntatem suam facil, in virtute cceli, et in lia-
+μακάριος Δαδὶδ Aéyev!*- c Πάντα ὅσα ἠθέλησεν ὁ — bitatione terra. » Atque hzc etiam alius Prophetze
+Κύριος, ἐποίησεν ἐν τῷ οὐρανῷ xai ἐν τῇ yf. » — doctrina egt ; etenim beatus David : « Omnia, in-
+Τοῦτο xal οὗτος κηρύττει. « "A γὰρ " θέλει, φησὶ, quit, quecunque voluerit Dominus, fecit, in colo
+καὶ ἐν τῇ δυνάμει τοῦ οὐρανοῦ, xai ἐν τῇ χατοιχίςχ — et in terra m, » Hoc etiam iste przdicat. « Quze
+τῆς γῆς, » πρυτανεύει καὶ δεσπόξει, οὐ μόνον τῆς — enim vull, inquit, et in virtute cceli, et in liabita-
+γῆς, ἀλλὰ δὴ xal αὐτῶν τῶν οὐρανῶν. Εἶτα xai tione terrz, » moderatur, ac dominatur non modo
+ἄμαχον δεικνὺς" τῆς δυνάμεως * « Kat οὐχ ἔστι,  lerre, sed eliam colis ipsis. Deinde ostendens
+φησὶν, ὃς ἀντιστήσεται τῇ χειρὶ αὐτοῦ, xol ἐρεῖ — potestatem * ejus inexpugnabilem : « Et non est,
+αὐτῷ * Τί cobro?! ἐποίησας ; » "Aváyxr yàp στέργειν inquit, qui resistat manui ejus, et dicat οἱ : Cur
+τὰ ὑπ᾽ αὐτοῦ γινόμενα, ἐάν τε θυμήρη, ἐάν τε ἀλγεινὰ — hoc fecisli? » Necesse est enim, cum iis quz ab
+T^ τολμηρὸν γὰρ τὸ ἀντιτείνειν, xal αἰτιᾶσθαι τὰ ὑπ’ D eo flunt, sive jucunda sint, sive molesta, esse
+αὐτοῦ σοφῶς πρυτανευόμενα. Ταῦτα, φησὶ, γνοὺς — contentum, cum temerarium sit adversari, οἱ ea
+καὶ ὁμολογήσας, xal τὸν Ὕψιστον δοξάσας, el;  culpare, quz; ab ipso sapienter administrantur.
+ἐμαυτὸν ἐπανῆλθον, καὶ τὴν προτέραν βασιλείαν μετ΄ — Hac, inquit, cum cognovissem el confessus essem,
+
+&03e6:laq ἀπέλαθδον. et gloriam Altissimo tribuissem, ad meipsum re-
+: dii, et pristinum recepi cum pielate regnum.
+Ay. « Αὐτῷ γὰρ τῷ καιρῷ ai φρένες μου ἐστρά- Vens. ὅδ. « Eo enim tempore mens mea reversa
+
+φῆσαν πρός με "5, καὶ εἰς τὴν τιμὴν τῆς βασιλείας — est ad ine, et ad honorem regni mei veni, et for-
+uou ἦλθον, καὶ ἡ μορφή μου ἐπέστρεψεν ἐπ᾽ ἐμέ. » ma mea rediit ad me. » Squalens enim situ, ut par
+Αὐχμῶν γὰρ, ὡς εἰχὺς, καὶ ῥυπῶν, ἀποχειράμενος — erat, et sordescens, detonsus, abjectisque unguium
+xal τὰ περιττὰ τῶν ὀνύχων ἀφελόμενο:, xai τὸν — exorementis, sordibusque ablutis, divinz grati
+ῥύπον ἀπονιψάμενος, καὶ τῆς θείας χάριτος ἀπολαύ- — compos factus, agnitus est, quod esset homo ille,
+σας, ἐπεγνώσθη ὅτι ἄνθρωπος ἣν ἐχεῖνος, ὁ πρότε- — qui prius maximum administrabat regnum. 1156
+pov ** τὴν μεγίστην διέπων βασιλείαν. « Καὶ οἱ τύ- « Et tyranni mei, inquit, et optimates mei quare-
+ραννοί μου, φησὶ, xat οἱ μεγιστᾶνές μου ἐπεζήτουν "δ΄, bant we. » Eteniin illi, abjecto odio, benevolo animo
+με. ν ᾿Αποθέμενοι γὰρ χἀχεῖνοι τὸ μῖσος, διάθεσιν erya me affecti sunt, mihique reconciliati. « Et in
+περὶ ἐμὲ καὶ φῶτρον ἔλαδον. « Καὶ ἐπὶ τὴν βασι- — regnum meum confortatus sum, et magnitudo am-
+λείαν pou ἐκραταιώθην, xal μεγαλωσύνη περισσο-  plior addita est mihi. » Et hoc item pielatis ple-
+πέρα προπετέθη μοι. » Καὶ τοῦτο δὲ πάλιν εὐσεδείας — num est verbum ; neque enim dixit: Magnitudinem
+γέμει τὸ ῥῆμα" ob γὰρ εἶπε, Μεγαλωσύνην περισ- — ampliorem adeptus sum, sed « Addita est mihi, »
+σοτέραν ἐχτησάμην, ἀλλὰ, « Προσετέθη μοι,» τὸν largitorem significans, et bonorum commendans
+χορηγὸν ὑποδεικνὺς, xal τῶν ἀγαθῶν χηρύττων τὸν — auctorem.
+αἴτιον.
+
+λδ΄, « Νῦν οὖν, φησὶν, ἐγὼ Ναθδουχοδονόσορ αἰνῶ, γεβ8. ὅ8. « Nunc. igitur, inquit , ego Nabucho-
+καὶ ὑψῶ **, xal δοξάζω τὸν βασιλέα τοῦ οὐρανοῦ, ὅτε — donosor laudo, et extollo, et glorifico regem coeli,
+πάντα τὰ ἔργα αὐτοῦ ἀληθινὰ, xal αἱ τρίδοι αὐτοῦ — quia omnia opera ejus vera, et vize ejus judicia , et
+χρίσεις, καὶ πάντας τοὺς πορευομένους ἐν ὑπερηφα- Omnes incedentes in superbia potest humiles Lx
+νίᾳ δύναται ταπεινῶσαι "» Λαβὼν γὰρ πεῖραν τῶν — Cere. » Expertus enim molesta, deinde ab ipsis
+λυπηρῶν, εἶτα τούτων͵ ἀπαλλαγεὶς, αἰνῶ καὶ ὑμνῶ — liberutus, laudo el celebro eun. qui hac e illa
+τὸν ταῦτά μοι χἀχεῖνα λυσιτελῶς ἐπαγαγόντα, xoi D mihi utiliter inuilil. et sapientissime : ac novi ipsum
+λίαν σοφῶς * xa οἶδα αὐτὸν οὐρανοῦ βασιλέα xol τῶν — cceli regem et omnium Dominum, veritate et justi-
+ἁπάντων Δεσπότην, ἀληθείᾳ χριύμενον καὶ δικαίως — tia. omnia moderantem, quique superbia elatos
+ἅπαντα πρυτανεύοντα, xal τοὺς ὑπερηφανίᾳ, χρωμέ- — potest ad bumililatem redigere. Cum itaque didice-
+νους ταπεινῶσαι δυνάμενον. Μαθόντες τοίνυν, ὅπως — rimus, quantum superbia el fastus howinibus affe-
+ὑπερηφανία xal τῦφος τοὺς χρωμένους λωδᾶται, xài ταὶ detrimenti, eosque qui his vitiis gaudeant
+ὡς ὁ τούτοις χαίρων τρυγᾷ καρποὺς " οὐχ ἀγαθοὺς, haud bonos fructus colligere, parentem bonorum
+τὴν μητέρα τῶν ἀγαθῶν ταπεινοφροσύνην ᾽" χτησώ- — humilitatem acquiramus. llanc enim Dominus quo-
+
+δι Psal. οὐ, 1].
+
+VARLE LECTIONES,
+
+wMy.B φησί, "* γάρ. B add, ἄν. "" Β τὸ ἄμαχον δείχνυσι, !* τοῦ τε. Des. in A. * Α ἐπεστράφησαν
+ἐπ᾽ ἐμέ. 1᾽ mp. Des. dn B. ᾽ ἐζήτουν. 5 À ὑπερυψῶ. 5" D τοιούτους τρυγᾷ χσρπούς. ? sax, B
+prz.n. τήν.
+
+==== PDF page 0715 (Migne PG 81 cols ~1377-1378) ====
+1315 THEODORETI EPISCOPI CYRENSIS 1518
+que possessionem beatam censet, quasi eam quiz A μεθα΄ τοῦτο γὰρ xat ὁ Κύριος μαχαρίξε: τὸ χτῆμα,
+proventum habeat regnum celorum. « Beati enim, ὡς πρόσοδον ἔχον τὴν βασιλείαν τῶν οὐρανῶν. « Ma-
+inquit, pauperes spiritu, quoniam ipsorum est re- χάριοι yàp, φησὶν, οἱ πτωχοὶ τῷ πνεύματι, ὅτι a5-
+gnum colorum ἃ, » Et seipsum exemplar iis qui τῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν. » Προτίθησι δὲ
+juvari voluerint proponens : « Discite a me, inquit, καὶ ἑαυτὸν ἀρχέτυπον volg ὠφελεῖσθαι: βουλομένοις,
+quia mitis sum, et humilis corde ?. » Et ostendens, λέγων" « Μάθετε ἀπ᾽ ἐμοῦ, ὅτι πρᾶός εἶμι, χαὶ
+qualis et quantus horum sit fructus, statim * subje- ταπεινὸς τῇ xapóía. » Καὶ δειχνὺς, ἡλίχος τούτων ὁ
+cit : « Et invenietis 1157 requiem animabus ve- καρπὸς, εὐθὺς ἐπήγαγε" « Καὶ εὑρήσετε ἀνάπαυσιν
+stris P. » Quodsi vero omnium auctor et Dominus ταῖς ψυχαῖς ὑμῶν. » Ei δὲ τῶν ἁπάντων ὁ Ποιητῆς
+humilem seipsum vocat ac rebus ipsis ostendit, καὶ Δεσπότης ταπεινὸν ἑαυτὸν χαλεῖ καὶ διὰ τῶν πραγ-
+quonam alio consilio indiget homo, pulvis, lutum, μάτων δείχνυσι, ποίας ἑτέρας συμβουλῇ: δεῖται ἄν-
+gleba, cinis, vauitas, flos, fenum? his enim nomi- θρωπος, ὁ χοῦς, ὁ πηλὺς, ἡ βῶλος, ἡ σποδὸς, ἡ μα-
+nibus omnibus in divina Scriptura indigitantur. ταιότης, τὺ ἄνθος. ὁ χόρτος ; Ταῦτα γὰρ ἅπαντα ὑτὸ
+Erubescamus itaque ob Domini modestiam, qui τῆς θείας Γραφῆς προσαγορεύεται. Αἰτχυνθῶμεν
+cum dives esset, propter nos mendicus factus est, τοίνυν τὴν τοῦ πότου μετριότητα, ὃς, πλούσιος
+ut nos illius egestate divites essemus 4, et morta- τ ὧν, δι᾽ ἡμᾶς ἐπτώχευσεν, ἵνα ἡ μεῖς τῇ ἐχείνου πτω-
+ς τὸ θνητὸν χα-
+latis. brevitatem: contemplantes, nihil arrogans ταμάθωμεν" χαὶ παρούσης εὐημερίας θεώμενοι
+propler praesentem rerum statum cogitemus : quin τὸ Blomow, μηδὲν piv àlalovwxbv ἐπὶ 9 τοῖς
+potius ipsarum cadueam brevitatem et inconstan- παροῦσι φρονήσωμεν " γελάσωμεν δὲ μᾶλλον αὑτῶν
+liam rideamus, et bona illa consequi expetamus, τὸ εὔτρεπτον χαὶ ἀδέθαιον, καὶ ἐπιθυμῶμεν "" ἐχεί-
+qui ita comparata sunt natura, ut perpetua siut. vov ἐπιτυχεῖν" τῶν ἀγαθῶν, ἃ διαρχῇ τὴν φύσιν χαὶ
+atque stabilia : quibus frui nobis omnibus liceat, μόνιμον ἔχει" ὧν γένοιτο πάντα; ἡ μᾶς ἀπολαῦσαι,
+gratia et clementia Domini nostri Jesu Christi, χάριτι xatquiavOpuniz τοῦ Κυρίου ἡμῶν Ἰησοῦ Χρι-
+cum quo Patri sit gloria cum sancto Spiritu, nunc. στοῦ, μεθ᾽ οὗ τῷ Πατρὶ δόξα, σὺν τῷ ἁγίῳ Πνεύματι,
+et semper, et in secula szculorum. Amen. ' νῦν καὶ ἀεὶ, xal εἰς τοὺς αἰῶνας τῶν αἰώνων. ᾿Αμήν.
+
+8 Matth. v, 5. 9 Matth. x1,29.. P ibid. 4 Il Cor. viu, 9.
+
+VARLE LECTIONES.
+? xal. B prem. xai ἡμᾶς αὐτοὺς ἐπιγνῶμεν. Ent. B ἐν. 3 B ἐπιθυμήσωμεν. ᾽" B τυχεῖν.
+
+lem naturam agnosceremus:et przsentis prosperi- χείᾳ πλουτήσωμεν, xai *? τῆς qo:
+
+ΤΟΜΟΣ E.
+
+LIBER QUINTUS.
+
+CAPUT Y. c KE9AAAION Ε΄,
+Nabuchodonosor, Evilad Marodach , Baltasar. Na6ovxoborócop, Εὐϊλὰδ Μαροδὰχ, Ba.trácof.
+Vins. 1. « Baltasar rex apparavit coenam lautom qd. « Βαλτάσαρ ὁ βασιλεὺς ἐποίησε δεῖπνον μέγα "ὦ
+
+optimatibus suis. » Hic filius quidera est Nabucho- τοῖς μεγιστᾶσιν αὑτοῦ. ν Οὗτος υἱὸς μέν ἔστι τοῦ
+donosoris, non autem statim ipsi successit : Evilad Na6ovyobovósop, οὐχ εὐθὺς δὲ αὐτὸν διεδέξατο" ὁ
+Marodach enim frater ipsius major natu, regnavit. γὰρ Εὐϊλὰδ Μαροδὰχ ἀδελφὸς αὐτοῦ ὧν πρεσθύτερος
+Idque 1158 nos docet regum historia, οἱ beatus ἐδασίλευσε, καὶ τοῦτο ἡ τῶν Βασιλειῶν ἡμᾶς ἱστορία
+Jeremias propheta, qui ita narrat : « Εἰ faetum εδὲ διδάσκει, καὶ ὁ μαχάριος Ἱερεμίας ὁ προφήτης,
+anno tricesimo septimo transmigrationis Joacimi οὑτωσὶ λέγων " « Καὶ ἐγένετο ἐν τῷ τριαχοστῷ xa
+regis Jude, mense duodecimo, (die) vicesimo quarto ἐδδόμῳ ἔτει ἀπωχισθέντος τοῦ "Iuaxsig. βασιλέως
+wrensis, sumpsit Evilad Marodach, rex Babylonis, Ἰούδα, ἐν τῷ δωδεχάτῳ ?*. μηνὶ. xal ἐν τῇ τετράδι
+anno illo quo regnavit, caput Joacimi regis Juda, — xa εἰχάδι τοῦ μηνὸς, ἔλαθεν Εὐτλὰδ Mapobiy, βα-
+et eduxit ipsum e domo, ubi custodiebatur, et lo- σιλεὺς Βαδυλῶνος, tv ᾧ ἐνιαυτῷ "5 ἐδασίλευσε, τὴν
+cutus est ei bona, et delit ei sedem supra tronos χεφαλὴν Ἰωαχεὶμ ?* βασιλέως ᾿Ιούδα, καὶ ἐξέγαγεν
+
+W Beg. 15,9 seq VARLE LECTIONES
+
+9) μέγα. Des. in Α. 3) Β δεχάτῳ, ὁ D τῷ ἐνιαυτῷ, ᾧ, 386. "Joax. Des.iu B.
+
+==== PDF page 0716 (Migne PG 81 cols ~1379-1380) ====
+1511’ IN.DANIELIS CAP. Y. 1378
+αὐτὸν ἐξ οἴχον, οὗ ἐφυλάττετο, καὶ ἐλάλησεν αὐτῷ A regnum illorum. qui cum eo erant in Babylone :
+X973, καὶ ἔδωχεν αὐτῷ τὸν δίφρον ἐπάνω τῶν θρό- εἰ mulavit vestem carceris ejus, et comedeliat
+νων τῶν βασιλέων τῶν μετ᾽ αὐτοῦ ἐν Βαδυλῶνι, xat — semper panem ante faciem illius per omnes dies
+ἤλλαξε τὴν στολὴν τῆς φυλακῆς αὐτοῦ, xoi ἤσθιε quos vixit *. » Hic aütem Joacim ille est, qui etiam
+διαπαντὸ: ἄρτον χατὰ πρόσωπον αὐτοῦ πάσας τὰς — Jechonias diclus fuit : nam^ Joscimum hujus
+ἡμέρας ἃς ἔζησεν. » Ἰωαχεὶμ δὲ οὗτός ἐστιν ὁ xol — patrem, qui et Eliacim nominatus est, sub quo
+Ἰεχωνίας" Ἰωαχεὶμ γὰρ τὸν τούτου πατέρα, τὸν — beatus Daniel in servitutem redactus est, in Hie-
+xai Ἐλιαχεὶμ, ἐφ᾽ οὗ ὁ paxápto; ἠχμαλωτεύθη àa- — rosolyma occisum Nabuchodonosor projecit extra
+vthÀ, ἐν τῇ Ἱερουσαλὴμ ἀνελὼν ὁ Ναθουχοδονόσορ, — murum, ut divina docet Scriptura. Post Nabucho-
+ἔῤῥιψεν ἔξω τοῦ τείχους, ὡς ἡ θεία διδάσκει Γραφῇ. — donosorem itaque Evilad Marodach regnat, post
+Μετὰ τὸν Ναδουχοδονόσορ τοίνυν Εὐϊλὰδ Μαροδὰχ "7 — illum.vero Baltasar, illius autem memoriam onmi-
+βασιλεύει" μετὰ δὲ τοῦτον ὁ Βαλτάσαρ. Καταλέλοιπε — sit sanctissunus Daniel, quandoquidem non abso-
+δὲ τούτου τὴν μνήμην ὁ θειότατος Δανιὴλ, ἐπειδὴ — lute historiam, sed prophetiam conscribit : quam-
+οὐχ ἱστορίαν ἁπλῶς, ἀλλὰ προφητείαν συγγράφει" οὗ — obrem ne omnia quidem qua a Nabuchodono-
+χάριν οὐδὲ ἅπαντα τὰ ὑπὸ τοῦ Na6ouyoóovócop Ys- , sore gesta sunt litteris consignavit, sed illa dun-
+γενημένα συνέγραψεν, ἀλλ᾽ ἐκεῖνα μόνον, ὧν avr. P laxat, quorum necessaria utilitatis ergo erat
+xala ἦν διὰ τὴν ὠφέλειαν ἡ μνήμη. Ἐπειδὴ τοίνυν — memoria. Quando itaque maximum etiam in
+xai ἐπὶ τοῦ Βαλτάσαρ μέγιστον ἔδειξεν "" ὁ Θεὸς — Baltasare Deus ostendit miraculum, quod et ido-
+θαῦμα, καὶ ἱκανὸν, οὐ μόνον τοῖς τηνιχάδε ἀνθρώ- — neum esset ad ingenerandum timorem cum reve-
+ποις, ἀλλὰ xat τοῖς ὕστερον ποτὲ γενομένοις 9, εὐλά- — rentia, non solum iis qui unc vivebant, sed etium
+θειαν ἐνθεῖναι xai δέος, xal πρὸς εὐσέδειαν ποῦ- — posteris, quodque duceret ad veram pietatem :
+ηγῆσαι, οὐχ φήθη δίχαιον τοσαύτην εὐεργεσίανχατα-. 1159 nonezxistimavit equum esse tantam bene-
+χρύψαι σιγῇ, ὅσιον δὲ ποιεῖν νενόμιχεν ἀνάγραφον " — ficium silentio occultare, sed opinatus est se
+αὑτὸ, καὶ πᾶσιν ὑπόμνημα διδασκαλίας χαταλιπεῖν ". — peligiose facturum, si litteris illud proderet, et
+Διό φησιν" « Βαλτάσαρ βασιλεὺς " ἐποίησε δεῖπνον — omnibus doctrin:e monimentum rel:nqueret. Quare,
+μέγα" τοῖς μεγιστᾶσιν αὑτοῦ χιλίοις ", καὶ Évavit*— « Baltasar, inquit, rex apparavit ceenam lautam
+τῶν χιλίων ὁ οἶνος. » Τουτέστι, τοῖς χιλίοις ἀρχῶν, — optimatibus suis wille, et coram mille vinum. »
+πρὸς τὸν τοσοῦτον ἀριθμὸν ηὑτρεπισμένος. Hoc est, vinum pro nillenis sufficiens, al tantum
+pumerum paratum.
+
+8. « Πίνων δὲ, φησὶν, ὁ Βαλτάσαρ εἶπεν ἐν τῇ Q ΥὙὟεπβ, . « Bibens autem , inquit, Baltasar dixit
+γεύσει τοῦ οἴνου, τοῦ ** ἐνεγχεῖν τὰ σχεύη τὰ χρυσᾶ — cum gustaret vinum , ut. afferrentur vasa aurea ,
+xai ἀργυρᾶ "1, ἃ ἐξήνεγχε Ναδουχοδονόσορ, ὁ πατὴρ εἰ argentea, quae deportaverat pater ejus Nabucho-
+αὐτοῦ, Ex τοῦ ναοῦ τοῦ ἐν Ἱερουσαλήμ" xoi ἔπινον  — donosor e templo quod est in Hierosolyma : εἰ bi-
+Ἐν αὐτοῖς ὁ βασιλεὺς, xai οἱ μεγιστᾶνες αὐτοῦ, xal — bebant ex eis rez, οἱ optimates ejus , et concubinz
+αἱ παράχοιτοι 9 αὐτοῦ, xat αἱ παλλαχαὶ "᾽ αὐτοῦ.» — ejus, ct pellices ejus. » His autem docet nos pro-
+Διδάσχει δὲ ἡμᾶς διὰ τούτων ὁ προφήτης, οὐ μόνον — phela, non solum impietatis exsuperantiam , sed
+τὴν τῆς ἀσεδείας ὑπερθολὴν, ἀλλὰ καὶ τὴν ix τῆς — cliam damnum ab iummodico vini usu profectum.
+ἀμετρίας τοῦ οἴνου γενομένην βλάδην. e Πίνων γὰρ, « Bibens enim rex, inquit, dixit cum gustaret
+φηκὶν, ὁ βασιλεὺς εἶπεν ἐν τῇ γεύσει τοῦ οἴνου, τοῦ vinum, ut afferrentur vasa aurea et argentea : »
+ἐνεγχεῖν τὰ σχεύη τὰ χρυσᾶ xa τὰ ἀργυρᾶ. » Kax- — Obruit enim rationem ebrictas , et. incontinentia
+ἐχωσε γὰρ ἡ μέθη τὸν λογισμὸν, καὶ ἡ ἀκρασία "' «hy — peperit contra Deum insaniam ; et dedicata divino
+κατὰ τοῦ Θεοῦ μανίαν ἐγέννησε" xal τὰ ἀφιερωμένα τῇ — cultui vasa , quae Nabuchodonosor pater ipsius ut
+τοῦ Θεοῦ θεραπείᾳ σχεύη, ἃ Nafouyobovósop, ὁ πατὴρ ἃ Deo sibi tradita accepit quidem, sed in honore,
+αὐτοῦ, ἔλαδε μὲν, τοῦ Θεοῦ προδεδωχότος, ἐτίμησε δῇ’ — ut existimabat, babuit, et ab humanis usibus ea
+ὡς ἐνόμισε, καὶ τῆς τῶν ἀνθρώπων ἠλευθέρωσε xpf- D vindicavit; his iste ut communibus et profanis
+σεως, τούτοις ὡς χοινοῖς οὗτος ἐτόλμησε χρήσασθαι.’ — ausus est uti. Neque solum dixit, sed etiam τὸ ipsa
+οὗ γὰρ εἶπε μόνον, ἀλλὰ xal τὸ ἔργον τοῖς λόγοις — exsecutus est.
+
+ἐπέθηχεν.
+Y- € Ἠνέχθησαν γὰρ, φησὶ, τὰ σχεύη τὰ χρυσᾷ Vens. ὅ. « Allata enim sunt vasa, inquit, aurea
+
+xai τὰ ἀργυρᾶ, ἃ ἐξήνεγχε Ναδουχοδονόσορ ** àx — eL argentea, qua: deportaverat Nabuchodonosor e
+ποῦ ναοῦ τοῦ Θεοῦ δ᾽ τοῦ bv Ἱερουσαλήμ. » Καλῶς — templo Dei, quod est in Hierosolyma.» Recte autem
+δὲ τὴν τῆς ἀτοπίας ἔδειξεν ὑπορδολὴν, πρὸς τῷ vap — 1160 insolentix ostendit exsuperantiam , dum
+
+᾿
+8 Jercm. tu, 51-53.
+
+VARLE LECTIONES.
+
+3: Eb. B prm. ὁὅ. 38 Eb. In B post Θεὸς ponitur. ?* γεν, Β ἐσομένοις. 5" B ἀναγράφων. 5 B xa-
+ταλιμπάνων. "Bac. B. prem. ὁ. "5 μέγα, Des. ἰὰ Β. δ χιλ. A pies ἀνδράσ:. ΜᾺ et B κατέναντι.
+** ποῦ, Des, in B. ápy. B prem. τά. ^ A οἱ B πιέτωσαν. A παλλακαί, "5Α πάροιχοι. *' Dàxa-
+θαρσία. 4: Na6. Des. iu ἃ. δ᾽ τοῦ Θεοῦ. Ex A el B suppl.
+
+
+==== PDF page 0717 (Migne PG 81 cols ~1381-1382) ====
+1319 THEODORETI EPISCOPI CYRENSIS 1380
+preter templi mentionem , Dei quoque meminit A xat τοῦ Θεοῦ μνημονεύσας, καὶ «οὔ ναοῦ δὲ δ᾽
+templique ostendens nobilitatem , Hierosolyma δειχνὺς τὸ ἐπίσημον, τὴν τῆς Ἱερουσαλὴμ cpos-
+nomen apposuit. * Hzc enim vasa, inquit, non ηγορίαν προστέθειχε. Ταῦτα γὰρ, φησὶ, τὰ σχεύη οὐ
+aliquibus ex iis qui solum videntur, et solum no- τισὶ τῶν δοχούντων, xal ὄνομα μόνον ἐχόντων, ἀνέ-
+men habent deorum, sed ipsi qui preestomnibus, χειντο"δ θεῶν, ἀλλ᾽ αὐτῷ τῷ ἐπὶ πάντων θεῷ, ὃς
+Dco, dicata erant, qui llierosolymam elegit, εἰ «fjv τε Ἱερουσαλὴμ ἐξελέξατο, xal τὸν ἐν αὐτῇ νεὼν
+lemplum, quod in ipsa est, sua gloria complevit. τῆς olxelac ἐπλήρωσε δόξης. ᾿Αλλὰ ταῦτα τὰ ἄψαυ-
+Verum hzc, qui nefas erat attingere, οἱ qua στα, καὶ τῷ Θεῷ τῶν ὅλων ἀναχείμενα, οὐχ ὡς δεο-
+omnium rerum Deo eramt consecrata, non tan- μένῳ, ἀλλ᾽ ὡς ἀποδεχομένῳ τῶν προσφερόντων τὸ
+quam indigenti, sed tanquam eorum qui offer- εὔγνωμον, ὁ δυσσεδὴς βασιλεὺς εἰς μέσον ἐνεγχὼν,
+rent, gratum animum, approbanli, impius rex in ἔπινεν ἐν αὐτοῖς “ οὐ μόνον δὲ αὐτὸς, ἀλλὰ χαὶ οἱ
+medium afferri jussit, et ex ipsis bibit: neque μεγιστᾶνες αὐτοῦ, xal αἱ παράχοιτοι αὐτοῦ, xav αἱ
+solum ipse, sed optimates illius, et concubing παλλαχαὶ αὑτοῦ ἔπινον οἶνον * τουτέστι, μέθης ἐποίη-
+illius , et pellices illius bibebant vinum : hoc est σεν ὄργανα τῆς θείας λειτουργίας τὰ ὄργανα, xol
+ebrietatis instrumenta fecit divini ministerii in- τὰς τῆς ἀχολασίας αὐτὸν ἐμφορούσας διὰ τούτων
+sirumenta, praecepitque u& que suam explebant B ἀπολαύειν τοῦ οἴνου προσέταξεν. Ἕπειτα τῆς ἀσε-
+lasciviam, per hzc vino fruerentur. Deinde ex- θείας τὸ ἔσχατον ὑποδεικνὺς ὁ προφήτης ἐπήγαγε"
+temam ostendens impietatem, propheta subjecit :
+
+Vins. 4. « Et laudarunt deos aureos , et argen- &. « Καὶ ἤνεσαν τοὺς θεοὺς τοὺς χρυσοῦς, xal áp-
+1608, et :reos, et ferreos, et ligneos, et lapideos.» γυροῦς, xai χαλχοῦς, xat σιδηροῦς, xai ξυλίνους,
+Crapulans enim improbissimus, etdivinis vasis χαὶ λιθίνους. » Κραιπαλῶν γὰρ ὁ παμμίαρος, xat
+deliciarum causa utens, omnium rerum Domini τοῖς θείοις σκεύεσιν ἐντρυφῶν, λήθην μὲν ἔσχε τοῦ
+obliviscebatur, laudibus vero eos , qui non essent τῶν ἀπάντων Δεσπότου, ὕμνοις δὲ τοὺς οὐχ ὄντας
+dii, celebrabat, ex inanima maleria eonfecios; ἐγέραιρε θεοὺς, ἐξ ὕλης ἀψύχου πεποτημένους "t, χαὶ
+quique ab arte non eam vim acceperant, qua effü- οὐδὲ ἀπὸ τῆς τέχνης τὸ ἐνεργεῖν ἢρανισμένους " μό-
+cere aliquid possent, sed solam formam eflicaci- γὴν δὲ μορφὴν δεξαμένους ἐνεργείας ἑἐστερημένην,
+tatis expertem. Verum non permisit omnium rerum — *A2)* οὐχ ἠνέσχετο τῶν ὅλων ὁ Πρύτανις, τῇ μαχρο-
+1noderator, pro sua longanimitate, ut et homines θυμίᾳ, καὶ τοὺς τηνιχάδε ἀνθρώπους, xat τοὺς ue
+qui tunc vivebant, el posteri lxederentur: sed sta- ἐχείνους λυμήνασθαι" παραυτίκα δὲ τὴν οἰχείαν
+tim suam potentiam ostendit. δείχνυσιν δύναμιν.
+
+Vems. ὅ. «In ipsa 116] enim hora, inquit, C “0. Ἐν αὐτῇ γὰρ, φησὶ, τῇ ὥρᾳ ἐξῆλθον ἀστρά-
+exierunt articuli manus hominis, et scripserunt γαλοι 51 χειρὸς ἀνθρώπου, xal ἔγραφον κατέναντι
+conira lampadem, in tectorio parietis domus regis, τῆς λαμπάδος, ἐπὶ τὸ χονίαμα τοῦ τοέχου τοῦ ofxou τοῦ
+εἰ rex contemplabatur articulos. manus scriben- βασιλέως, καὶ ὁ βασιλεὺς ἐθεώρει τοὺς ἀστραγάλους
+tis. » Quando enim ab omni efficacitate vacua lau- τῆς χειρὸς τῆς γραφούσης. » Ἐπειδὴ γὰρ τὰ ἕνερ-
+davit simulacra, et omnium Deum contempsit , γείας ἀπάσης ἐστερημένα ὕμνησεν εἴδωλα, xol τοῦ
+docet ipsum omnium rerum Opifex, suam naturam τῶν ἁπάντων Θεοῦ κατεφρόνησε, διδάσχει αὐτὸν ὁ
+ejusmodi esse, 4πὲ cerni nequeat, et corpore τῶν ὅλων "ὃ Δημιουργὸς τῆς θείας αὑτοῦ φύσεως τὸ
+careat. Solos enim digitos ipsi scribentes oslen- ἀόρατον καὶ ἀσώματον. Μόνους γὰρ αὐτῷ δαχτύλους
+debat , erudiens illum , ne sic quidem hos ab illo ὑποδείχνυσι γράφοντας, παιδεύων αὐτὸν, ὡς οὐδ᾽ ἂν
+conspici potuisse, misi ipse usus eorum prabuissel τούτους ἐθεάσατο, εἰ μὴ παρέσχεν αὐτὸς "" τῆς
+occasionem. Maximam aulem conviva linc ctiam χρείας τὴν ἀφορμήν’ μεγίστην δὲ xal οἱ σύτσιτοι
+percipiebant utilitatem , qui docebantur Dei pote- εν ὠφέλειαν ἐλάμθανον, διδασχόμενοι τοῦ μὲν
+statem : preterquam quod intelligebant eum cor- θεοῦ πρὸς τῷ ἀσωμάτῳ καὶ ἀοράτῳ, τὸ δυνατόν᾽
+poris expertem esse, et oculis cerni minime posse: τῶν δὲ ὑπ᾽ αὐτῶν ὑμνηθέντων θεῶν, πρὸς τῷ ὑλιχῷ
+deorum vero , quos ipsi laudaverant , imbecillita- Ὁ καὶ ἀψύχῳ, τὸ παντελῶ; ἀδρανές τε xal ἀσθενές.
+tem, εἰ ejusmodi naturam, quz nihil omnine posset, Ὅτι δὲ πολὺ δέος ἅπασιν ἐνειργάσατο τοῦτο τὸ
+cum ex sola inanima materia constarent. Hoc au- θαῦμα, ὁ προφήτης μεμαρτύρηκεν, οὕτως εἰπών"
+tem — miraeulo ingehtem * metum omnibus incussum fuisse, testatus est propheta, qui ili
+dixit. :
+
+VmRs. 6. « Tunc regis forma immutata est , ς΄. « Τότε τοῦ βασιλέως ἡ μορφὴ ἢλλοιώθη, xal οἱ
+et cogitationes ejus conturbabant ipsum, et com- διαλογισμοὶ αὐτοῦ συνετάραξαν “ὁ αὐτὸν, xal οἱ σύν-
+pages lumborum illius dissolvebantur, et genua ὅὄεσμοι τῆς ὀσφύος αὐτοῦ διελύοντο, καὶ và γόνατα
+ejus ad se invicem collidebantur. » Quod si digi- αὐτοῦ τοῦτο τούτῳ συνεχρούοντο *. » Εἰ δὲ dax
+torum scribentium species ita perterruit eum, qui λων γραφόντων *. θεωρία οὕτως ἐξεδειμάτωσε τὴν
+
+VARLE LECTIONES.
+
+* δέ, Des. in B. " B ἀνέχειτο. "! πεπ, D γεγενημένους. "' ἀστρ. A δάχτυλοι, 3" ὅλ. B ἁπάντων,
+"Β αὐτῷ. *" A et Β συνετάρασσον. “ τ. τ. σὺν. ἃ συνεχροτοῦντο. 5“ yp. B prom. μόνων.
+
+==== PDF page 0718 (Migne PG 81 cols ~1383-1384) ====
+1381 IN DANIELIS CAP. V. 1382
+τὴν μεγίστην διέποντα βασιλείαν, ὡς xal τῶν ἄρ- A maximum administrabat regnum, ut etiam articu-
+θρων τὰς ἁρμονίας ὑπὸ τοῦ δέους διαλυθῆναι, τρόμον — lorum eompages pra metu dissolverentur, εἰ artus
+τΞ xal χλόνον δ" ὑπομεῖναι τὰ μέλη, τί οὐχ ἂν bm. tremore occupati concuterentur : quid nom susti-
+ἐμενεν ὁ θεομισὴς, πρηστῆρας ἡ χεραυνοὺς θεασά- πυΐδδοί Deo infestus, si presteras aut fulmina
+μενο;, fj ἀγγέλους βλοσυρὸν βλέποντας, xai τῷ — conspexisset , aut angelos torve intuentes, et
+χαινοπρεπεῖ τῶν σχημάτων δεδιττομένονς. Τούτων novo figure babitu delerrentes ? Horum enim
+γὰρ τὴν θέαν οὐδὲ ὁ μέγας Δανιὴλ ἀδεῶς ἐνεγχεῖν «1169. conspectum ue magnus quidem Daniel
+ἠδυνήθη. ᾿Αληθῶς, « Τί ὑπερηφανεύεται γῇ xai — absque melu ferre potuit. Vere, « Quid superbit
+
+σπηδός ; » Τοσούτου τοίνυν δέους ἀναπλησθεὶς, lerra et cinis * ? » Tanto ilaque terrore percul-
+δὺδ:
+ζ΄. € Ἐφώνησεν ** ἐν ἰσχύϊ τοῦ εἰσαγαγεῖν μάγους, Vegas. 7. « Exclamavit voce magna, ut intro-
+
+Χαλδαίους, Γαζαρηνούς "5. » Ὁ γὰρ φόδος εἰργάζετο — ducerentur magi, Chaldzei , Gazareni. » Metus
+τὴν βοὴν, καὶ τῆς ψυχῆς ὁ θόρυδος μαθεῖν χατήπειγςε — enim vocem exculiebat , el animi perturbatio sti-
+τὴν ἀπόφασιν. Εἶτα προτίθησιν ἄθλον τῷ τὴν γρα- — mulabat, ut sententiam intelligeret. Tum premium
+φὴν ἀναγινώσχοντι xal τὴν ἑρμηνείαν ἐπάγοντι, — Scripturam legenti ejusque interpretationem affe-
+ἐσθῆτα βασιλιχὴν, xal χρυσοῦν περιδέῤῥαιον, χαὶ τὸ B renii proponit, vestem regiam, et auream torquem,
+τὴν ** τρίτην τάξιν ἔχειν μετὰ τὸν βασιλέα. ᾿Αλλὰ εἰ ut tertium locum post regem obtineret. [8] Sed
+τῶν μὲν μάγων xai Χαλδαίων τὸ ἄθεον ἐξηλέγχετο" — magorum et Chaldstorum convincebatur impietas ,
+εὑρεῖν γὰρ οὐκ ἴσχνον τὴν τῶν θείων γραμμάτων — qui ralionem invenire non poterant, qua divinas
+ἀνάγνωσιν, καὶ ταῦτα ἄθλου τοσούτου mooxetpévou, litteras legerent , prosertim tanto proposito pree-
+xaX λίαν αὐτοὺς προτρέποντος. mio, quod ipsos valde incitabat.
+
+θ΄, « Ὁ δὲ βασιλεὺς Βαλτάσαρ ἐταράχθη, xot ἡ Vias. 9. « Bex autem Baltasar perturbatus est ,
+μορφὴ αὐτοῦ ἠλλοιώθη ἐπ᾽ αὐτῷ, καὶ ob μεγιστᾶνες — et forma cjus immutata est super eum , et opti-
+αὐτοῦ συνεταράττοντο. » Ἐντεῦθεν δῆλον, ὅτι τῆς — mates ipsius conturbabantur. » Hine perspicuum
+τῶν ἄλμυν ὠφελείας προμηθούμενος ὁ Δεσπότης, est, Dominum, quia curs illi erat aliorum utilitas,
+οὔκ εὐθὺς τοῦ βασιλέως ἀφείλετο τὴν ζωήν" ἀλλὰ — non slatim regi vitam ademisse, sed primum seri-
+πρῶτον μὲν ὑπέδειξε τοῦ γράφοντος τοὺς δαχτύλου;. — bentis digitos ostendisse. Quare cum ipsum regem
+Τούτῳ δὲ καταπλήξας καὶ δέος ἐντεθειχὼς, παρ-  perculisset, terroremque ei injecisset, effecil ut
+εσχεύασε μὲν χληθῆναι τοὺς σοφοὺς τῶν Χαλδαίων, ^ Chaldzorum sapientes accerserentur , quorum
+ἐξήλεγξε δὲ αὐτῶν τὸ ψευδές τε χαὶ ἀσθενὲς, ἐν ς mendaciuni coarguit et imbecillitatem , eoque ade-
+χρείᾳ δὲ τῆς τοῦ Δανιὴλ σοφίας κατέστησεν, ἵνα " git ( regem) ut sapientia Danielis opus haberet ,
+διὰ τῆς τούτον γλώττης, καὶ τοῦτον ἐλέγξῃ, xol — cujus lingua et ipsum redargucret , el aliis bene-
+ποὺς ἄλλους εὐεργετήτῃ, xal τούτων οὕτω γενομέ- faceret, et his ita gestis, tunc impio regi suppli-
+νων, τηνικαῦτα τὴν τιμωρίαν ἐπαγάγῃ τῷ δυσσεθεῖ — cium inferret. Perturbato itaque εἰ rege, οἱ con-
+βασιλεῖ. Ταραττομένων τοίνυν xal τοῦ βασιλέως, xal — vivis,
+τῶν δαιτυμόνων,
+
+v. € Ἢ βασίλισσα κατέναντι “΄ τῶν λόγων τοῦ Vrns. 10. « Regina inter sermomes regis,
+βασιλέως, καὶ τῶν μεγιστάνων αὑτοῦ, εἰς τὸν οἶκον 1168 et optimatum ejus, in domum convivii
+τοῦ πότου εἰσῆλθε "5. » Τουτέστι, βουλευομένων aj- ἰηφγοββᾶ est. » Hoc est, consullantibus ipsis ,
+τῶν τί 9 πραχτέον, καὶ ἄλλων ἄλλα εἰσηγουμένων, — quidnam facto opus esset , et aliis alia aflerenti-
+ἃ τὸ δέος ἠνάγχαζεν, ἡ βασίλισσα εἰσελήλυθε. Aoxel — bus quae metus cogebat, regina ingressa esl. Vidc-
+δέ μοι αὐτὴ "5 μήτηρ αὐτοῦ εἶναι - αἱ yàp mapá- — tur autem. hzc mihi mater ipsius esse: uxores
+xotvot σὺν ταῖς παλλαχίσι τοῦ δείπνου μετεῖχον" — enim cum * pellicibus convivii participes erant.
+Emivoy γὰρ ἐν τοῖς σχεύεσι τοῖς χρυσοῖς xui ἀργυ- — Bibebant enim ex vasis aureis et argenteis ipse el
+pole, αὐτὸς xal ol μεγιστᾶνες αὐτοῦ, xa al παρά- D optimates ejus, et coneubinz ipsius, hoc est,
+xottot αὐτοῦ, τουτέστιν, al γαμεταὶ αὐτοῦ, xalal — uxores ejus , et pellices ejus, quz non legitime ,
+παλλαχαὶ αὐτοῦ, al οὐ κατὰ νόμον, ἀλλὰ δι᾽ ἀχολα- sed lascivite causa cum illo consueverant. lpsa
+σίαν συνοῦσαι. Αὐτὴ 7 δὲ μετὰ τὸν θόρυβον clac)f- — autem post perturbationem ingressa est : el veri-
+λυθς, xai el; ἣν ὡς γεγηραχυῖαν τῆς μέθης — simile erat, eam, ut senio confectam, neque
+ἐχείνης xal τῶν χορδαχισμῶν, ἤγουν ὀρχησμῶν 7", — ebrietati , neque lusibus, aut saltationibus cum
+τηνιχαῦτα μὴ μετέχειν. « Καὶ ἀπεχρίθτ,, φησὶν, ἢ — aliis tanc indulsisse. « Et respondit, inquit, regina,
+βατίλισσα. καὶ sime * Βασιλεῦ, εἰς τοὺς αἰῶνας εἱ dixit: Rex, in secula vive. » Hec autem, ut
+ζῆθι. » Τοῦτο δὲ, ὡς ἔοιχε, πρόσρησις ἣν τοῖς τότε — videtur, erat prefatio, qua subjecti regibus eos
+
+Eccli. x, 9.
+VARLE LECTIONES.
+
+*! B χλόνον τε xal τρόμον. ** A Καὶ ἐδόησεν ὁ βαρὺς ἐν ἰσχύϊ. *^ A Ζαγαρηνούς, ex errore librarii.
+** τὴν, Des. in B. *' xav. — αὐτοῦ. Des. apud LXX, et in A, exstat autem in textu Chald. — ** A εἰσ
+ἐλήλυθεν, “8 τό. 7* B αὕτη. "' fiy. ὀρχ. in D. des.
+
+==== PDF page 0719 (Migne PG 81 cols ~1385-1386) ====
+ὃν
+
+1383 THEODORETI EPISCOPI CYRENSIS 1384
+tune salutabant. Et ad hoc usque tempus liic imos A βασιλεῦσιν ὑπὸ τῶν ἀρχομένων προσφερομένγ,. Καὶ
+invaluit : quidam enim imperiti , reges eos qui μέχρι δὲ νῦν τὸ ἔθος τοῦτο γεχράτηχεν - αἰωνίους
+nunc sunt Gíernos vocare cousueverunt, in syn- γὰρ χαλεῖν τινες τῶν ἀνοήτων xal τοὺς νῦν βασιλεῖς
+graphis quoque commerciorum boc quidam aseri- εἰώθασι, καὶ ἐν ταῖς συγγραφαῖς δὲ τῶν συμθολαίων
+bunt, stultitia magis quam impietatis damnandi. τοῦτό τινες προσγράφουσιν, ἀμαθίᾳ μᾶλλον ἣ ἀσε-
+Ait itaque regina : « Ne conturbent te cogitatio- είᾳ δουλεύοντες. Φησὶ τοίνυν ἡ βασίλισσα " «Mh
+wes tue, el forma tua non immutetur. » Deinde ταραττέτωσάν σε ol λογισμοί σου, xol ἡ μορφῇ"
+
+causam affert , cur metum abjiciat : σου μὴ ἀλλοιούσθω. » Εἶτα τὴν αἰτίαν ἐπάγει, δι᾿ fiv
+ἐχθάλλει τὸ δέος “
+γεκβ. 11. « Est adhuc vir, inquit, in regno tuo, ια΄. € Ἔστιν ἔτι", φησὶν, ἀνὴρ ἐν τῇ βασιλεία
+
+in quo Spiritus sanctus est, et in diebus patris tui σου, ἐν ᾧ Πνεῦμα Θεοῦ 1" ἅγιον ἐν αὐτῷ "5, χαὶ ἐν
+vigilantia et intelligentia inventa est ineo. » Hinc ταῖς ἡμέραις τοῦ πατρὸς cou γρηγόρησις "* χαὶ
+etiam dicere licet, pro matre illius hane potius σύνεσις εὑρέθη ἐν αὐτῷ. » Ἔστι δὲ xal ἐντεῦθεν
+haberi : 1164/4 idcirco et ea qua pridem gesta κατανοῆσαι, ὡς μήτηρ αὐτοῦ μᾶλλόν " ἔστιν αὕτη"
+fuerant, ut ignarum, docet, et beatum ei Danielem B διὸ xal τὰ πάλαι γεγενημένα ὡς ἀγνοοῦντα διδάσκει,
+indicat, quem divino Spiritu plenum esse confite- "xat τὸν μαχάριον Δανιὴλ δῆλον αὐτῷ ποιεῖ, xil
+tur, et iisdem verbis, quibus olim Nabucbodono- θείου Πνεύματος ἀνάπλεων elvat ὁμολογεῖ, xai o5-
+sor, usa est. Eadem enim ille quoque de Daniele τοῖς τοῖς τοῦ Ναβουχοδονόσορ χέχρηται λόγοις.
+dixit addiditque : « Et in. diebus patris tui vigi- Ταυτὰ γὰρ xàxelvog ἔφη περὶ τοῦ Δανιῆλ, προστέ-
+lantia et inteliigentia inventae sunt in eo. » Et vi- θεῖκε δὲ, ὅτι « Καὶ àv ταῖς ἡμέραις τοῦ πατρός σου
+gilantiam vocavit animi sobrielatem, intelligentiam Ὑρηγόρησις '* xal σύνεσις εὑρέθη ἐν αὐτῷ. ν Γρηγό-
+vero occultorum cognitionem, el eorum que mul- — pcr δὲ ἐκάλεσε τὴν τῆς ψυχῆς νῆψιν xal τὴν σύν-
+tos lalerent, contemplationem. « Et rex, inquit, 6C: 7*, τῶν χεχρυμμένων τὴν χατανόησιν, xal τῶν
+peter tuus Nabuchodonosor, principem ineanta- τοὺς πολλοὺς λανθανόντων τὴν θεωρίαν. « Καὶ ὁ
+torum, magorum, Claldzorum, Gazarenorum con- βασιλεὺς, φησὶ, Ναδουχοδονόσορ ὁ πατήρ σου ἄρ-
+
+stituit ipsum. » Tum eliam causam adjicit : χοντα ἐπαοιδῶν, μάγων, Χαλδαίων, Γαζαρηνῶν
+χατέστησεν αὐτόν. » Εἶτα καὶ τὴν αἰτίαν mpos-
+
+τίθησιν *
+Vins. 12. « Quia. spiritus excellens in ipso. » ιβ΄. € Ὅτι πνεῦμα περισσὸν ἐν αὐτῷ. » ᾿Αντὶ τοῦ,
+
+Hoc est, excellentem habet Spiritus gratiam. Tum - Ὑπερδάλλουσαν ἔχει τὴν τοῦ Πνεύματος χάριν.
+spiritualis virtutis species connumerat, « Et pru- Ἔπειτα καταλέγει τῆς πνευματιχῇς ἐνεργείας τὰ
+dentia, inquit, et intelligentia interpretans somuia, εἴδη. « Καὶ φρόνησις, φησὶ, xal σύνεσις, συγχρί-
+et annuntians quz nimís ardua sunt, et solvens νων ἐνύπνια, xal ἀναγγέλλων κρατούμενα **, xol
+colligationes, Daniel. » Hie enim. divini Spiritus λύων συνδέσμους, Δανιήλ. » Οὗτος δ' γὰρ θείου
+vas effectus, sapienter omnia consulit, et pruden- Πνεύματος δοχεῖον γενόμενος, σοφῶς 5! μὲν ἅπαντα
+ter omnia loquitur, εἰ somniorum zgnimata de- βουλεύεται, συνετῶς δὲ ἅπαντα φθέγγεται τὰ δὲ
+clarat, et ea quz obscuritate aliqua occulta sunt, τῶν ἐνυπνίων αἰνίγματα δῆλα ποιεῖ, xal τὰ ἀσαφίᾳ
+ab obscuritate vindicat, et veluti subligaeula quae — «vA χεχρυμμένα τῆς ἀσαφίας ἐλευθεροῖ, καὶ οἷον
+dam* et sigilla, et quasi ea qux in penu custo- ὑποδέσμους τινὰς ὄντα " xal σήμαντρα, xoi ὡς ἐν
+diuntur, a vinculis liberans, solvit et aperit, οἱ δά ταμιείοις φρουρούμενα τῶν δεσμῶν ἀπαλλάττων,
+ipsa quicunque velint introducit. lloc enim signi- διαλύει τε καὶ ἀνοίγνυσι, xai εἴσω τούτων τοὺς βω-
+ficat : « Annuntians ecculta, et solvens colligatio- λομένους ποιεῖ * τοῦτο γὰρ σημαίνει τό" « "Avay-
+nes, Daniel. » Et hac de causa, « Rex, inquit, γέλλων χρατούμενα xat λύων συνδέσμους, Δανιήλ. »
+inposuit ei nomen Baltasar. » 1165 Quia enim Τούτου, φησὶ, χάριν « Ὁ βασιλεὺς ἐπέθηχεν αὐτῷ
+vidit ipsum divina virtute illuminatum, Dei sui D ὄνομα Βαλτάσαρ. » Ἐπειδὴ γὰρ εἶδεν αὐτὸν ὑπὸ
+nomine eum appellandum esse censuit. « Nunc θείας φωτιζόμενον ἐνεργείας, τῆς τοῦ Θεοῦ αὑτοῦ
+igitur vocelur Daniel, et interpretationem ejus προσηγορίας ἠξίωσε. « Νῦν οὖν χληθήτω Aavil,
+annuntiabit tibi. » Neque dicit, Vocetur Baltasar: — xai τὴν σύγχρισιν αὐτοῦ ἀναγγελεῖ ** σοι. » Καὶ οὐ
+cum enim experientia educii cognovissent propne- λέγει, Κληθήτω Βαλτάσαρ " τῇ γὰρ πείρᾳ μεμαθη-
+t virtutem, antéponunt Chald Hebraam appel- χότες τοῦ προφήτου τὴν δύναμιν, προτιμῶσι τῆς
+lationem : qua de causa deinceps ipsum nomi- Χαλδαίας τὴν Ἑδραίαν προσηγορίαν * οὗ χάριν ἐφ-
+
+nant. Danielem. ᾿ εξῆς λοιπὸν αὑτὸν "δ Δανιὴλ ὀνομάζουσι.
+Vens. 1ὅ. « Tunc enim, inquit, Daniel ingressus τ΄. € Τότε γὰρ, qnot, Δανιὴλ εἰσῆλθεν "' ἐνώπιον
+
+VARLE LECTIONES.
+
+7* μορφή. B adscriptom habetlectionem χαρδία. 75 ἔτι, Des. in A et Β, '* Θεοῦ. Ex A et Β suppl.
+1. ἅγια αὐτῷ. Des. in Α. "* B ἐγρήγορσις. 17 μᾶλλ. Des. in B. '* B ἐγρήγορσις, et deinde, ἐγρήγορσιν.
+TOT. σύν. Des. in. Β. ** xp. lta À et B. sed prasstat lectio ed. Compl. χρυπτόμενα. 5' Οὗτ. Β τοῦ.
+
+ΜΒ σοφός. 58 ὄντα, ltacum Blegimus. Sirm. ὄντας. 5. B ἀπαγγελεῖ, 85 αὐτί In Bpost Δανιὴλ posi
+tur.— 56 A εἰσήχθη. .
+
+==== PDF page 0720 (Migne PG 81 cols ~1387-1388) ====
+1385 ᾿ IN DANIELIS CAP. V. 1325
+τοῦ βασιλέως, xal εἶπεν ὁ βασιλεὺς τῷ Δανιήλ * Σὺ A est. in conspectu regis, el dixit rex Danieli: An tu
+εἴ Δανιὴλ ὁ ἀπὸ τῶν υἱῶν τῆς αἰχμαλωσία: τῆς — es Daniel de filiis captivitatis Judzz? » Videtur
+Ὑουδαίας "1 ; » "Eo:xsv οὗτος ὑπὸ πολλῆς δυσσεδείας — iste ob magnam impietatem post patris obitum
+μετὰ τὴν τοῦ πατρὸς τελευτὴν τὴν τοῦ Δαν:ἢλ suv- — Danielis consustudinem fugisse : quare statim
+ουσίαν φυγῶν " διὸ παραυτίχα τῷ δέει χαταπλαγεὶς,Ἠ terrore perculsus magos quidem et Chald:zeos vo-
+τοὺς μὲν μάγους xoi τοὺς Χαλδαίους χαχεῖ, τοῦ ὃὲ — cat, propliete: autem memoriam prorsus animo
+προφήτου καὶ τὴν μνήμην τῆς διανοῖας ἐξέδαλεν. ejecerat. Verum ubi ipsius mater ea comimemora-
+Ἐπειδὴ δὲ ἡ μήτηρ αὐτοῦ "5 ἀνέμνησε τῶν ἐπὶ τοῦ — vit miracula, qu: patris illius tempore facta fuc-
+πατρὸς γεγενημένων θαυμάτων, xat χληθεὶς À-  rant,etaccersitus Daniel ingressus est, stalim
+θεν ὁ Δανιὴλ, ἐπέγνω μὲν αὐτὸν παραντίχα “ οὐ γὰρ — ipsum agnovit : neque enim, si non agnovisset ,
+ἂν, εἴπερ ἠγνόησε, τοῦ γένους ἀνέμνησε, xxi τὴν generis illius mentionem fecisset, et Judae capti-
+αἰχμαλωσίαν τῆς Ἰουδαία; εἰς μέσον παρήγαγεν. vitatem in medium protulisset. Attamen percon-
+Πυνθάνεται δὲ ὅμως, xal φησι" « Σὺ εἴ Δανιὴλ ὁ — latur, et ait : « An tu es Daniel de filiis captivitatis
+ἀπὸ τῶν υἱῶν τῆς αἰχμαλωτίας τῆς Ἰουδαίας; » — Judae ? » Cumque ille nondum hoc confessus
+Kat μηδέπω συνομολογήσαντος ἐχεΐνου * esset :
+
+ιδ΄. « Ἤχουσα, φησὶ, περὶ σοῦ, ὅτι Πνεῦμα ἅγιον "ἢ B ovens, 44. « Audivi, inquit, de te, Spiritum
+ἐν σοὶ, xol γρηγόρησις ", xai σύνεσις, καὶ σορία — sanctum in te esse, et. vigilantiam, et. intelligen-
+περισσὴ εὑρέθη ἐν σοί. » ᾿Αρμόττει xal περὶ τούτου Liam, et sapientiam excellentiorem inveniam esse
+λέγεσθαι, ὃ περὶ τοῦ Ἰσραὴλ ἔλεγεν ὁ Προφήτης" — in te. » Illud de hoc queque dici congruenter po-
+« Ὅταν ἀπέχτεινεν αὐτοὺς, τότε ἐξεζήτουν αὐτόν. » — test, quod de Israele dicebat Propheta : « Cui
+Ἰδοὺ γὰρ καὶ τοῦτον τὸ τῆς θείας δυνάμεως xar- occideret eos, tunc quzrebant eum". » [15,16]
+ἠνάγχασε δέος, τὸν ὄντα Θεὸν ἀντὶ τῶν οὐκ ὄντων — Ecce enim istum quoque divine sententie metus
+ὀνομάζειν Θεὸν, χαὶ τοὺ ἁγίου Πνεύματος τὴν χάριν coegit, Deum qui vere est, 1166 pro iis qui non
+ὑμνεῖν, xai χατηγορεῖν μὲν τῶν σοφῶν Βαδυλῶνος, sunt dii, Deum appellare, et sancti. Spiritus gra-
+ὡς τὴν θείαν o) δυνηθέντων γνῶναι γραφὴν *', πα- tiam celebrare, et Babylonis quidem sapientes
+ραχαλεῖν"" δὲ τὸν τοῦ Θεοῦ προφήτην δῆλα ποιῆσαι — accusare, qui divinam scripturam agnoscere ue-
+πὰ ἀγνοούμενα. Ὑπισχνεῖται 65 αὐτῷ xa τὴν πορ- — quiverint, hortari vero Bei prophetam, ut ca quee
+φυρίξα δώσειν, xal τὸν μανιάχην, xal τρίτην ?! — ignorabat indicaret. Ipsi autem pollicetur pur-
+τάξιν τῆς βασιλείας. ᾿Αλλ᾽ ὁ μαχάριος Δανιὴλ, γελά- — purcam se vestein largiturum, et torquem, et ter-
+σας τοῦ δυσσεθοῦς τὰς βασιλιχὰς ὑποσχέσεις, εἶπεν C tium in regno locum. [17] Sed beatus Daniel, irrisis
+αὐτῷ * « Τὰ δόματά σου σοὶ ἔστω, xal τὴν δωρεὰν — impii regis pollicitationibus, dixit ei : « Dona tua
+τῆς olxíaz cou ἑπέρῳ δός " ἐγὼ δὲ ypaqhv?* ἀνσ- iibi sint, et munus domus tuz aMeri da : ego autem
+γνώσομα: τῷ βασιλεῖ, καὶ τὴν σύγχρισιν γνωρίσω" — scripturam legam regi, et. interpretationem indi-
+σοὶ, βαπιλεῦ. » ᾿Αποστολιχὴ τῷ ὄντι τῶν προφη-  cabotibi, rex. » Apostolica revera* proplietarum
+τῶν ** ἡ φωνή. Καὶ γὰρ Exslvov; ὁ Κύριος κήρυχας — voxest. Etenim illos Dominus praecones mittens
+ἀποστέλλων πᾶσιν ἀνθρώποις, παρεκελεύσατο", ad omnes homines ila hortatus est : « Gratis ac-
+λέγων * « Δωρεὰν ἐλάδετε, δωρεὰν δύτε. » Καὶ Ó — cepistis, gratis date". » Εἰ beatus hic propheta
+μαχάριος οὗτος προφήτης ἔλεγε τῷ βασιλεῖ " « Τὰ — regi dixit : « Dona tua tibi sint, et munus domus
+δόματά cou Gui ἔστω, xa τὴν δωρεὰν τοῦ ofxou cou — tuz alteri da : ego autem scripturam legam regi,
+ἑτέρῳ δός" ἐγὼ δὲ τὴν γραφὴν ἀναγνώσομα: τῷ — et interpretationem | indicabo tibi, rex. » Neque
+Basel, καὶ τὴν σύγχρισιν γνωρίσω " cot, βασιλεῦ.» — enim divina vendere didici, neque humanam
+Οὐ γὰρ ἔμαθον τὰ θεῖα πωλεῖν, οὐδὲ μισθὸν ἀνθρώ- — mercedem pro divinis mysteriis accipere. Gratis
+πινον ὑπὲρ τῶν θείων μυστηρίων λαμδάνειν " προῖκα itaque accipe eorum quietu ignoras, cognitionem.
+ποΐνυν δέχου τῶν ἀγνοουμένων τὴν γνῶσιν.
+
+τη’, ιθ΄, « Ὁ θεὸς, φησὶν, ὁ ὕψιστος, τὴν βασι- p — Vens. 18,19. « Deus, inquit, altissimus, regnum
+λείαν xai τὴν μεγαλωσύνην, xal τὴν τιμὴν, καὶ τὴν — et magnificentiam, el bonorem et gloriam dedit
+δόξαν ἔδωχε Na6ouyobovócop, τῷ πατρί σου. Ka — Nabuchodenosori patri tuo. Et propter magnifi-
+ἀπὸ τῆς μεγαλωσύνης, ἧς ἔδωχεν αὐτῷ, πάντες — centiam, quam dedit ei, omnes populi, et tribus,
+λαοὶ», xal! φυλαὶ, xol γλῶσσαι ἦσαν τρέμοντες οἱ linguse tremebant, et. metuebant ἃ facie cjus. »
+αὑτὸν *, καὶ φοδούμενο: ἀπὸ προσώπου αὐτοῦ. » Μὴ — Ne existimaveris, inquit, propriis viribus parentem
+νομίσῃς, φησὶν, ὅτι τῇ οἰχείᾳ ῥώμῃ χρησάμενος  — 1167 tugm omnem terrarum orbem subegisse,
+σὴς πατὴρ ἅπασαν τὴν οἰχουμένην ὑπέταξε, καὶ τὰ et infinita nationum genera diversis linguis utentia
+
+* Psal. Lxsvii, 54. τ Matth. x, 8.
+
+VARLE LECTIONES.
+41 Ἰουδ, Des. reliqua vers. 15. ^ Β αὐτόν. ** &y. Α Θεοῦ. " B ἐγρήγορσις. *' B γραφὴν εὑρεῖν.
+
+** Βὶ παρακαλεῖ. " «p. B prem. τήν. ?* yp. B praem. τήν. "" B γνωριῶ. ?* τοῦ προφήτου. "B
+mapaseledecat. "B ΤΕΡΟΝ ἢ» λαοί. À nom oí. * xal. Des. in À et B hi. 1. et post pauca. * αὖτ,
+Des. in Α.
+
+PaTROr. Gn. LXXXI. M.
+
+==== PDF page 0721 (Migne PG 81 cols ~1389-1390) ====
+1587 THEODORETI EPISCOPI CYRENSIS 1}
+sub rum redegisse imperium, Nam omnium re- A μυρία τῶν ἐθνῶν γένη γλώσσαις χρώμενα taz
+run Dominus, qui omnia fecit, sapienter omnia ὑπὸ μίαν ἐποιήσατο βασιλείαν. Ὃ γὰρ τῶν ὃνι
+moderans, lioc οἱ regnum dedit, et propterea quod Δεσπότης, τῶν ἁπάντων Ποιητὴς ᾽, ὁ σοφῶς ἅπαντα
+ita a Dco definitum οἱ decretum erat, parentis tui πρυτανεύων, αὐτῷ " δέδωχε τὴν βασιλείαν, xi διὰ
+metus subjectos illi populos invadebat. « Et quos τὸν θεῖον ὄρον ὁ τοῦ πατρός σου «6o; tol; ὑπηχόνις
+volebat, ipse extollebat, et quos volebat, ipse liu- ἐπέχειτο, « Καὶ οὗ: ἐδούλετο αὐτὸ: " ὕψου, xà
+miles faciebat, » Tantam, inquit, a Deo potesta- — oo; ἐδούλετο αὐτὸς ἐ - ? Τοσαύτην, φησὶν",
+tem accepit, ut posset et eos qui in altissimo gradu ἔλαδε παρὰ τοῦ Θεοῦ τὴν ἐξουσίαν, ὡς δύνασθαι
+positi erant, humiles reddere, et eos qui admodum — xai τοὺς ἐν ὕψει ὄντα; ταπεινοὺς ἀποφαίνειν,
+
+obscuri essent et viles, illustres efficere. x3 τοὺς ἀφανεῖς λίαν xai εὐτελεῖς περιθλέπτους
+ποιεῖν.
+Vens. 20. « Et quando elatum cst cor ejus, et x. «Καὶ ὅτε ὑτώθη ἡ xaxp?la" αὐτοῦ, χαὶ
+
+spiritus ejus corroboratus est, ul superbirel, 46- πνεῦμα αὐτοῦ ἐκραταιώθη τοῦ ὑπερηφανεύσασθαι",
+jectus est a throno regni sui. » Quemadmodum χατηνέχθη ἀπὸ θρόνου" τῆς βασιλείας αὐτοῦ ",, ν
+enim « quos volebat, inquit, ipse extollebat, εἰ “Ὥσπερ γὰρ, φησὶν, « αὑτὸς οὺς ἐξούλετο "" ὕψου, vai
+quos volebat, humiles reddebat, » non justo omnino Β 65; ἐθούλετο Exams vou, » οὐ ψήφῳ πάντως δικαία τοῦτο
+id suffragio faciens : ita omnium rex et Dominus ποιῶν" οὕτως ὁ τῶν ἁπάντων Πασιλεὺς xal Acazz-
+dedit, ut voluit, patri tuo regnum : sed cum vidisset τῆς ἔδωχε μὲν ὡς ἐθέλησε, τῷ πατρί σου τὴν βατ:-
+ipsum animo immodice elatum, superbiaque in- λείαν !*, θεασάμενος δὲ αὐτὸν ἀμέτρῳ φρονήματι
+flatum arroganter et insolenter regnum admini χεχρημένον, ἀλαζονιχῶς τε xaY τετυφωμένως τὴν
+strare, et ipsius superbie morbo laborare, et regiis βασιλείαν ἰθύνοντα, καὶ τῆς ὑπερηφανίας τὴν νόσον
+ihronis eum spoliavit, et honorem, quiab omnibus δεξά ὧν βασ!λιχῶν αὐτὸν ἐστέρησε θρόνων,
+εἰ habebatur, ademit. [21] Neque vero solo regno 9 παρὰ πάντων αὐτῷ προσφερομένην τιμὴν
+spoliavit, sed etiam a communibus hominum ἐο- το '5, Οὐ μόνης !* δὲ αὐτὸν τῆς βασιλείας ἐγύ-
+libus expulit, et dementia ac rabie correplum μνωσε, ἀλλὰ xal τῶν χοινῶν συλλόγων ἐξήλασε, χαὶ
+cum onagris ac bestiis degere coegit. Quorum φςρενοθδλαθείᾳ καὶ λύττῃ παραδοὺς, ὄνοις ἀγρίοι; xal
+1168 enim feritatem imitatus fuerat, eorum vite θηρίοις συνδιάγειν παρεσχεύασεν. Ὧν γὰρ τὸ ἄγριον
+genus accepit, Commermorat autem ipsum herbam ἐμιμέσατο, τούτων τὸν βίον ἐδέξατο. ᾿Αναμεβνήσχει
+more boum comedisse ,* nudumque vagatum esse, δὲ αὐτὸν, ὅτ! xal πόαν ἤσθιεν δέχην βοῶν, χαὶ γυμνὸ;
+ac sub dio miserum degentem, pristinum corporis ( περινοστῶν, καὶ ὑπαίθριος ταλαιπωρῶν, τὴν μὲν
+colorem amisisse, aliumque induisse, qualem gelu προτέραν τοῦ σώματος ἀπέθαλε χρόαν,
+et zestus attulerat. Et hoc omne, inquit, sustinuit, εἰσεδέξατο, ἣν ὁ χρυμός τε xal ὁ φλογμὸς ἀπε!
+« Donec. agnovit Altissimum dominium habere in σατο, Καὶ ταῦτα πάντα, φησὶν, ὑπέμεινεν, ("Ex
+regnum hominum, et cui visum fueril, tradere οὗ ἔγνω, ὅτι κυριεύει ὁ Ὕψιστος " τῆς βασιλείας τῶν
+illud. » Vérum ille experientia quid opus facto ἀνθρώπων, καὶ ᾧ ἐὰν δόξῃ δίδωσιν" αὐτὴν. » AX
+essel didicit, et ipsis rebus edoclus est, humanis ἐχεῖνος μὲν τῇ πείρᾳ τὸ δέον μεμάθηχε, xal! oi-
+in rebus stabile nibil esse, omnium vero Deum τῶν ἐδιδάχθη τῶν πραγμάτων, ὡς τῶν μὲν ἀνῦρω-
+sempiterna potentia perinde ac velit humana gu- πίνων βέδαιον οὐδὲν, ὁ δὲ τῶν ἁπάντων Θεὸς, αἰώνιον
+hernare, οἱ quibuscunque voluerit, regni munus — ἔχων τὸ χράτος, ὡς θέλει xv6. ρνᾷ τὰ ἀνθρώπινα,
+
+largiri. ᾿ xal οἷς ἂν "" ἐθελήσῃ τῆς βασιλείας ὀρέγει τὴν u-
+ρεάν.
+Vens. 22. «Tu autem, inquit, filius ejus Baltasar, B. «Σὺ δὲ, φησὶν, ὁ υἱὸς αὐτοῦ Βαλτάσαρ, οὐχ
+
+non submisisti cor tuum in conspectu Dei, nonne ἐταπείνωσας τὴν χαρδίαν σου χατενώπιον τοῦ .
+hec omnia noras? » Parentis enim tui infortunii? οὐ ταῦτα "8 πάντα ἔγνως ;» Τοῖς γὰρ τοῦ σοῦ πατρὸς
+:audquaquam  resipuisti, neque ex iis, qu: i'le D οὐχ ἐσωφρονίσθης χαχοῖς, οὐδὲ μανθάνειν" ἠθέλησλς
+perpessus est, discere voluisti divinam potentiam. ἐξ ὧν ἐχεῖνος πέπονθεν, τοῦ Θεοῦ τὴν ἰσχύ
+
+Vins. 25. « Sed contra Dominum coeli exaltatus xy'. € ᾽Αλλ᾽ ἐπὶ τὸν Κύριον τοῦ * οὐρανοῦ ὑψώθης.»
+€s. » Recte docet. praesentes, ne ea quie conspi- Καλῶς διδάσχει τοὺς παρόντας, μὴ προσχυνεῖν τὰ
+ciuntur, sed ipsorum Opificem ac Dominum, ad- ὁρώμενα, ἀλλὰ τὸν τούτων Δημιουργὸν καὶ Δεσπότην"
+orent: et simul regis reprehenditfastum, docetque καὶ κατὰ ταὐτὸν χαὶ τοῦ βασιλέως διελέγχει"" τὸν
+maximum celum opificem habere Deum, qui oculis τύφον, xal διδάσχει, ὡς ὁ μέγιστος; οὐρανὸς δημι-
+cerni nequeat. Tu autem, inquit, celsius ostendisti ουργὼν ἔχει τὺν ἀόρατον Θεόν. Σὺ δὲ, φησὶν, ὑψηλο-
+
+VARLE LECTIONES.
+
+* ποιητ. R prem. ὁ. " aj. D praem. ταύτην. ὃ aüs. A el DB przm. φησὶν, αὐτὸ; àvípe, x5
+οὖς ἐδούλετο. (Α add. αὐτὸς ἔτυπτε, καὶ οὺς ἐδούλετο.)  * φησ. In D post ἔλαδε ponitur. 7 χαρὸ,
+h βασιλεία. 5.Α ὑπερηφανεύεσθαι. " 0p. B praem. τοῦ. "5 αὑτι À pra. xal ἡ τιμὴ ἀφῃρέθη à:
+*! B οὖς αὐτὸς ἠδούλετο. Bas. B ἐξουτίαν. "5 ἀφ. In B ponitur ante τιμήν. — '* B μόνον. " ὁ
+A μοι, ὁ Θεός. '* A el B δώσει, 178 ἐάν. !'* Β οὗ τά. "9 B μαθεῖν. ?* τοῦ. B. praem. τὸν θεόν.
+5.8} διελέγχει τοῦ βασιλέως. ν
+
+
+==== PDF page 0722 (Migne PG 81 cols ~1391-1392) ====
+1389 TN DANIELIS CAP. V. 1230
+τέραν ἀπέφηνας τὴν xaphiav cou, οὐ τοῦ οὐρανοῦ, À Cor tuum, non ccelo, sed Deo cceli, omnis creatu-
+ἀϊλὰ τοῦ Θεοῦ τοῦ οὐρανοῦ, τοῦ Κυρίου πάσης κτί- rre Domino. Neque cnim vasa domus ejus, nisi
+σεως", Οὐ γὰρ ἂν, ei μὴ τοσοῦτον "3 τύφον ἐνόση- — lanto fastu elatus esses, tibi afferri pracepisses
+31;, τὰ σχεύη τοῦ οἴχου αὐτοῦ ἐνεχθῆναι mpoc- « Et tu, et optimates tui, et 1169 uxores tus, et
+ἔταξας 'δ, € Καὶ σὺ xal οἱ μεγιστᾶνές σον, χαὶ αἱ — concubina tus, bibistis vinum ex ipsis.» Hoc est,
+παράχοιτοί σου, καὶ αἱ παλλακαί σου ἐπίνετε οἶνον" — ad vinolentiam et ebrietatem Deo dicatis vasis
+» τουτέστιν, εἰς οἰνοφλυγίαν xai μέθην — usus es. Deinde impietatis exsuperantiam de-
+ἀπεχρήσω τοῖς τῷ θεῷ ἀναχειμέγοις "ὁ σχεύεσιν. Εἶτα plorans : « Et deos, inquit, aureos, et argenteos,
+τὴν τῆς ἀσεδείας ὑπερβολὴν τραγῳδῶν, « Καὶ τοὺς Εἰ aereos, οἱ ferreos, ligneesque. et lapideos lau-
+9, φησὶ, τοὺς χρυσοῦς, καὶ ἀργυροῦς, καὶ χαλ- — dasli. » ἘΠῚ commorans in reprehensione, ait :
+χοῦς, xa σιδηρηοῦ;, xai ξυλίνους, καὶ λιθίνους $-  « Qui non vident, et non audiunt, et non €ogno-
+νσας. » Καὶ ἐπιμένων τῇ χωμῳδίᾳ " «OL οὐ βλέ- — scunt. » Atqui potuisti illorum imbecillitatem, tum
+moust, xal οὐχ ἀχούουσι, καὶ οὐ γινώσχουσι. » Kal — eX materia, tum ex. arte, quz ad illam fingendam
+δὴν ἠδύνασαι"5 συνιδεῖν τὸ ἐχείνων ἀδρανὲς, Ex τε — incubuit, cognoscere, et preterea ex partibus omni
+τῆς ὕλης, καὶ ἐχ τῆς ἐπιχειμένης αὐτῇ τέχνης, καὶ — SCnsu carentibus : siquidem cognitione, visu et
+πρὸς τούτοις ix τῆς τῶν μορίων ἀναισθησίας " γνώ- P auditu orbale eunt, δἰ sensuum nullam omuiuo
+σεως; γὰρ, xal ὄψεως, xat ἀχοῆς ἐστέρηντα:, xai τῶν — efficaciam habent, verum nuda tantum sunt. simu-
+αἰσθήσεων οὐδὲ τὴν μίαν ἐνέργειαν ἔσχον "", ἀλλὰ μόνα — lacra. Tu vero ne ita quidem adduci potuisti, ut
+γυμνὰ τὰ ἰνδάλματα. Σὲ δὲ οὐδὲ τοῦτο ἔπεισε συν- — quid deceret iatelligeres; imo deos, qui nihil pro-
+εδεῖν τὸ δέον, ἀλλὰ τοὺς μὲν θεοὺς "5 ὠφελεῖν gi — desse queunt, laudare non desinis. « Deum vero,
+δυναμένους alvüv διατελεῖς ᾽". « Τὸν δὲ Θεὸν, οὗ ἡ Wi Cujus manu spirilus tuus, et onmes vig tux,
+πνοή τοῦ ἐν τῇ ᾽" χειρὶ αὐτοῦ, xol πᾶσαι ai ὁδοί ipsum non gleriflcasti. » Recte autem et sapien-
+σου, αὐτὸν οὐχ ἐδόξασας. » Καλῶς δὲ, xaX μάλα co- Ussime, cum comparasset idola cam omnium au-
+φῶς ix παραλλήλου τεθειχὼς τά τε εἴδωλα καὶ τὸν — Clore Deo,' propter audientium utilitatem, osten-
+τῶν ἀπάντων Θεὸν, διὰ τὴν τῶν ἀχουόντων ὠφέλειαν, dissetque illa ueque, videre, neque audire, nou
+xal δείξας ἐκεῖνα μήτε βλέποντα μήτε ἀκούοντα, οὐκ adjecit de ipso omnium rerum auctore Deo, illum
+ἐπήγαγε περὶ τοῦ τῶν ὅλων θεοῦ, ὅτι βλέπει, xai — el videre, et audire, et cognoscere, sed quod
+ἀχούει, xal "γινώσχει, ἀλλὰ «b μεῖζον ἁπάντων "3 τές omnium maximum est, addidit, « quia vita tua
+θειχεν, ὅτ: ε 'H ζωή σον xal αἱ ὁδοί σου ἐν τῇ χειρὲ Εἰ vize Luze in mana ejus. » Id enim vita majus est,
+αὐτοῦ" » μεῖζον γάρ ἐστι τοῦ ζῇν τὸ xal τοῖς ἄλλοις C Aliis etiam vitam przbere, et rursus ipsam pro
+παρέχειν ζωὴν, καὶ ἀφαιρεῖσθαι πάλιν αὐτὴν ὅταν lubitu adimere. Ostendit igitur idola et vita. ct
+θέλῃ. Ἔδειξε τοίνυν, ὅτε τὰ μὲν εἴδωλα xal ζωῆς — Omni sensu carere : sed emnium rerum Dominum
+xii αἰσθήσεως ἀπάσης tovépnvsav: ὁ δὲ τῶν ὅων 1170 Deum esse, qui vitam emnibus submini-
+Δεσπότης Θεὸς ᾽"" πάσης τῆς ζωῆς ἐστι χορηγὸς, xol — Siret, eamque et. largiatur, et adimat, pro lubitu
+παύτην δίδωσί τε xal λαμθάνει, κυδερνῶν ὡς θέλει, gubernans. Attamen hunc, inquit, talem ac tantum,
+"AX ὅμως, φησὶ, τοῦτον τὸν τοιοῦτον, τὸν τοσοῦ-  CUi vilae necisque potestas est, reges eligentem,
+πον, τὸν τῆς "5 ζωῆς xal τελευτῆς ἐξουσίαν ἔχοντα, — eosdemque regno abdicantem, hunc, inquam, non
+πὸν βασιλέας χειροτονοῦντα xai χαταλύοντα, τοῦτον — Solum celebrare omitiis, sed potius ludibrio ha-
+οὐ μόνον οὐχ ὑμνήσας ᾽ν, μᾶλλον δὲ xa ἐμπαροινῶν — bere perseveras, dedicatis ipsi vasis insultans.
+διατελεῖς "7, τοῖς ἀφορισθεῖσιν αὐτῷ σχεύεσιν ἐν-
+τρυφῶν.
+
+xU. «Διὰ τοῦτο ix προσώπου αὑτοῦ ἀπεστάλη Vins. 24. « Idcirco a facie ejus missus est arti-
+ἀστράγαλος χειρὸς, xal τὴν γραφὴν ταύτην ἐνέταξεν.ν culus manus, et scripturam hanc ordinavit. D
+Καὶ οὐχ εἴπεν, Αὐτὸς γέγραφεν, ἀλλ᾽, ε«᾿Ἀπεστάλη ix — Neque dixit : Ipse scripsit, sed, « Missus est a
+προσώπου αὐτοῦ ἀστράγαλος χειρός" » τουτέστι, γρα- p facie ejus articulus manus ;» lioc est, scribi jussit :
+φῖναι προσέταξε, καὶ οὐδὲ ὅλον EO σοι τὸν γρά- neque eum totum qui scripsit, ostendit übi, verum,
+ψαντα, ἀλλ᾽ ἐξελέγξαι ᾽8 σου τὸν τύφον ἐθελήσας, — cum tuum redarguere fastum vellet, solis te digitis
+μόνοις σε δακτύλοις ἐξέπληξε t, xol ποσούτου δέυυς perculit, ac tanto metu cemplevit. Disce autem,
+ἐνέπλησε. Μάθε δὲ, φησὶ, καὶ αὐτὴν τὴν γραφὴν, xa inquit, et ipsam scripturam, et scfipture inter-
+A mec ἑρμηνείαν. pretationem.
+E i» οὖν γραφὴ ἔστιν αὕτη" Μανὴ ", γεκϑ. 25, 20. « Scriptura igitur est Lo : Mane,
+Θεχὲλ, Φαρές" τὸ δὲ σύγχριμα τοῦ ῥήματος τοῦτον — Thecel, Phares; et interpretatio verbi hac est. »
+
+VARLE LECTIONES.
+
+4 τῆς. 3 060. ;em. τοῦτο. " B προστάξας. ' A παλλαχαί σον, xal ai παράκοιτηΐ
+
+ΒΝ or ἔδείνετε τς Β RODA v Οἱ — quud. In A hec Donuntir Pri fueras um Vis
+τῆν ἐνέργειαν εἶχον. " θεούς. Des. in B. ?' :ετέλεις. «τῇ. Des. in A et B.
+
+rin v I eu bes BE AX Des. ibid. 36 Edit, prior hab. οὐχ ὕμνησας μόνον. ἢ Β sustine.
+
+"5 ἐλέγξαι. ΕΧῚ χατέπληξε. 3" τῆς. B praem. τῆν. ^1 A Καὶ αὕτη ἡ γραφὴ ἡ ἐντεταγμένη. * A Μάνη.
+
+ΔΑ τοῦτο τὸ σύγχριμα τοῦ ῥήματος.
+
+==== PDF page 0723 (Migne PG 81 cols ~1393-1394) ====
+1591 TIIEODORETI EPISCOPI CYRENSIS 1592
+Σύγχριμα interpretationem vocat. « Mavh, mensus Α Σύγχριμα"" δὲ τὴν ἑρμηνείαν καλεῖ. « Μαγή" ty£-
+est Ucus regnum tuum, et complevit illud; » hoc τρησεν ὁ Θεὸς τὴν βασιλείαν σου, xai ἐπλήρωσεν
+est, novit te regno indignum, et ipso te spolian- ὀ αὐτήν" » τουτέστιν, εἶδέ σε τῆς βασιλείας ἀνάξιον,
+dum censuit. ἡ xai ταύτης γυμνὸν ** ἐδοχίμασέν ἀποφῆναι.
+
+Vegas. 97. «Θεχὲλ, appensum est in statera, et in- xQ. « 8exéA " ἐστάθη ἐν ζυγῷ, xal nóp£8n ὕστε-
+ventum est minus habens.» Docuit autem per hzc ροῦσα. » Ἐδίδαξε δὲ οὐχ ἐχεῖνον μόνον, ἀλλὰ xal
+non illum solum, sed nosipsos etiam, propheta, ἡμᾶς διὰ τούτων ὁ προφήτης, ὡς οὐδὲν ἀστάθμη-
+nihil esse quod apud Deum non ponderetur; quin τον παρὰ τῷ θεῷ, ἀλλὰ καὶ ὁ ἔλεος xxt ἡ μαχροθυμία
+etiam misericordiam ac longanimitatem mensura μέτρῳ τινὶ xal σταθμῷ τοῖς ἀνθρώποις παρέχεται.
+quadam et pondere hominibus adhiberi. Quando Ἐπειδὴ τοίνυν, φησὶ, ὑπερέδης τῆς φιλανθρωπίας
+itque transgressus es, inquit, elementi fines, τοὺς ὄρους, δέχου τὴν θείαν ἀπόφασιν.
+accipe divinam sententiam.
+
+Vzns. 28. «Φαρὲς, 1171 divisum est regnum κη΄. « Φαρές " διῃρέθη " ἡ βασιλεία σου, xat ἐδόϑη
+tuum, et datum est Medis et Persis. » lllud inqui- Μήδοις xai Πέρσαις. ν ᾿Αναγχαῖον δὲ ζητῆσαι, τί
+rendum est, cur auctor omnium rerum Deus ca- δήποτε τὸν μὲν Ναδουχοδονόσορ παιδεύσας ὁ τῶν
+stigatum Nabuchodonosorem rursus in regnum B ὅλων θεὸς πάλιν εἰς τὴν βασιλείαν ἐπανήγαγε, τοῦ-
+reduxerit, istum vero statim οἱ regno privarit, οἱ τὸν δὲ παραυτίχα xai τῆς βασιλείας ἐστέρησε, xal
+vita. Considerantes itaque comperimus, primum, τῆς ζωῆς", Σχοποῦντες τοίνυν εὑρίσχομεν "ἢ, πρῶ
+quia Nabuelodonosor alterum impietatis poenas — tov μὲν, ὅτι ΝΝαδουχοδονόσορ ἕτερον ἀσεδείας τίσαντα
+luentem non conspexerat, ideirco cum venia di- δίχας οὐκ ἐθεάσατο, διὸ xal συγγνώμης αὐτὸν ἐξίω-
+gnum justo Dei judicio existimatum * esse: sed iste σεν ἡ δικαία τοῦ Θεοῦ ψῆφος * οὗτο; δὲ, τὴν μεγίσττν
+summus patris supplicium conspicatus, nihil inde τοῦ πατρὸς θεασάμενος τιμωρίαν, οὐδὲν ἔκχεῖϑεν
+percepit utilitatis. Jure itaque justus judex illi ἀπώνατο. Εἰκότως τοίνυν ὁ δίκαιος κριτὴς ἐπ᾽ Exet-
+definito tempore supplicium prescripsit, istum — vou μὲν ῥητῷ χρόνῳ τὴν τιμωρίαν περιώρισε, τοῦτον
+autem nulla venia dignum censuit. Alioquin et δὲ οὐδεμιᾶς συγγνώμης ἠξίωσεν. “Ἄλλως τε xat πάντα
+omnia futura previdens Deus, et zque aperte ea προορῶν ὁ θεὸς τὰ ἐσόμενα, xa οὕτως αὐτὰ σαφῶς
+cognoscens, ac preterita, praecognita illius poeni- γινώσχων ὡς ἤδη γενόμενα, ἐχείνου μὲν προειδὼς
+tentia, ita quz ad eum pertinebant moderatus est: τὴν μεταμέλειαν, οὕτω τὰ κατ᾽ αὑτὸν Qxovóprct,
+istius autem precognoscens perpetuam impieta- τούτου δὲ προγινώσχων τὴν μέχρι τέλους ἀσέδειαν,
+tem, morte occurrit impietatis incremento. (, τῷ θανάτῳ καταλύει τῆς ἀσεδείας τὴν αὔξησιν.
+[39] Statimque »uditis iis, quz Daniel interpreta- Εὐθὺς δὲ ἀχούσας Βαλτάσαρ τῶν ὑπὸ τοῦ Δαντὴλ ἐρ-
+tus fuerat, Baltasar jussit illum propositum prz- μηνευθέντων, ἐχέλευσεν αὐτὸν τὸ προχείμενον ἄδλον
+mium accipere, purpuream vestem et torquem — Aafelv, τὴν πορφύραν, χαὶ τὸν μανιάχην τὸν yov-
+auream : deinde, cum illum ita ornasset, subjectos σοῦν * εἶτα τοῦτον αὐτὸν διαχοσμήσας τὸν τρότον, τῇ
+sibi populos praconis voce curavit edocendos, τοῦ χήρυχος χρώμενος φωνῇ τοὺς ὑπηκόους ἐδίδ;-
+ipsum tertium regni principem a se esse declara-  oxsv, ὡς τρίτον αὐτὸν τῆς βασιλείας ἀπέξηνεν
+itum. Verum nihil horum divinam sententiam ἄρχοντα. 'AX)' οὐδὲν τούτων τὴν θείαν ἀπόφασιν
+mutavit. ἔλυσεν.
+
+Vxns. ὅ0. « Eadem enim nocte, inquit, interfectus X. € Ἐν αὐτῇ γὰρ, φησὶ, τῇ νυχτὶ ἀνῃρέθη Bai-
+est Baliasar rex Chaldzeus. » Chaldeum ipsum hoc τάσαρ, ὁ βασιλεὺς Χαλδαίων "5, » Χαιϊδαῖον δὲ αὐτὸν
+Joco appellavit, αἱ ostenderet Chaldaici demum ἐνταῦθα προσηγόρευσεν, ἵνα δείξῃ λοιπὸν τῆς Χαλ-
+regni finem. Revera « Horrendum est incidere in δαϊκῆς βασιλείας τὸ τέλος, ᾿Αληθῶς ε φοδερὸν τὸ ἐμ-
+manus Dei viventis,» secundum divum Apostolum*; πεσεῖν εἰς χεῖρας Θεοῦ ζῶντος, » χατὰ τὸν Orkw
+1272 horrendum, « divitias bonitatis illius, et Ἀπόστολον " φοδερὸν, « τοῦ πλούτου τῆς χρηστότητες
+λαιιομίαο, οἱ longanimilatis contemnere, » et non D αὐτοῦ, καὶ τῆς ἀνοχῇς, καὶ μαχροθυμίας 9! χατα-
+adorare εἰ colere pro viribus. Quis enim durus φρονεῖν, » ἀλλὰ μὴ προσχυνεῖν xai θεραπεύειν ek;
+electus, ut ait propheta, coram Domino stetit? δύναμιν. Τίς yàp σκληρὸς" γενόμενος, fj φησιν ὁ
+ldcireo beatus quoque David precipit: « Hodie, si προφήτης, ἐναντίον Κυρίου ὑπέμεινε ; Τούτου χάριν
+vocem ejus audieritis, nolite obdurarecorda vestra, καὶ ὁ μαχάριος παρεγγυᾷ Δαδίδ - « Σήμερον ἐὰν τῆς
+sicut in exacerbatione*. » Quod interpretans φωνῆς αὐτοῦ ἀκούσητε, μὴ σχληρύνητε τὰς καρδίας
+beatus Paulus hortatur : «Videte, fratres, ne forte ὑμῶν, ὡς ἐν τῷ παροργισμῷ "5, ». Καὶ τοῦτο ἐρμη-
+sit in aliquo. vestrum cor malum ἱπογουυιδι18,. νεύων ὁ μακάριος παραινεῖ ** Παῦλος “ « Βλέπετε,
+
+x Hebr. x, 91. » Rom. u, ὁ. * Psal. xciv. 8. 9.
+
+VARLE LÉCTIONES.
+
+*& Xóyxp. — χαλεῖ, Vid. supra, p. 1079, schol. 20. ** γυμν. B. praem. «o£. — ** διὰ τούτ. In R pes
+προφήτης ponitur. *' A διΐρηται. ^ B χαὶ αὐτῆς ἐστέρησε «ἧς ζωῆς. "V B εὑρήσομεν. "* ὁ Bac. Xoà.
+A46 Χαλδαῖος. "' μαχρ. B. prim. τῆς. ** oxX. B praem. φησί. * B παραπιχρασμῷ. lta quoque supra,
+1. ἢ, 5. 1287. 3p. In B pst Παῦλος; pon'tur, 5 $1. D praem. λέγων.
+
+==== PDF page 0724 (Migne PG 81 cols ~1395-1396) ====
+1393 IN DANIELIS CAP. VI. 1394
+ἀδελφοὶ, μήποτε ἔσται ἕν τινι ὑμῶν χαρδία πονηρὰ A discedendo a Deo vivo ; sed adhortamini vosmet-
+ἀπιστίας, ἐν τῷ ἀποστῆναι ἀπὸ Θεοῦ ζῶντος * ἀλλὰ — ipsos per singulos dies, quoad hodie cognominatur,
+παρακαλεῖτε ἑαυτοὺς καθ᾽ ἑχάστην ἡμέράν, μέχρις ne quis ex vobis obduretur fallacia peccati. » Con-
+ἂν οὗ" τὸ σήμερον χαλεῖται, ἵνα μὴ σχληρυνθῇ ἐξ — suevit enm spe peccatum, voluptatibus nos de-
+ὑμῶν τις ἀπάτῃ τῆς ἁμαρτίας. » Οἶδε γὰρ πολλάχις — mulcens, quemadmodum stultum illum regem per
+ἡ ἁμαρτία ταῖς ἡδοναῖς ἡμᾶς χκαταθέλγουσα, χαθάπερ — ebrietatem, ita cor nostrum, durum reddere et
+ἐκεῖνον τὸν ἀνόητον βασιλέα διὰ τῆς μέθης, οὕτω adversarium efficere, ut etiam impietatis morbum
+σχληρύνειν ἡμῶν τὴν καρδίαν καὶ ἀντίτυπον ἀπο- — facile excipiat. Hinc fugiamus, queso, diaboli dolos,
+φαίνειν, ὡς καὶ τῆς ἀσεδείας τὴν νόσον ῥᾳδίως εἰσ- — stabilemque virtutem peccato brevi cum voluptate :
+δέχεσθαι. Φύγωμεν τοίνυν, παρακαλῶ, τοῦ διαδόλου — conjuncto anteponamus, uta societate Baltasaris
+τὴν ἐξαπάτην, καὶ τὴν ἐπίμονον " ἀρετὴν τῆς ἡδονῇ — alieni reddamur, et Danielis societate fruamur, im
+βραχείᾳ χεχρημένης προτιμήσωμεν ἁμαρτίας, ἵνα Christo Jesu Domino nostro, cum quo Patri gloria,
+τῆς μὲν τοῦ Βαλτάσαρ χοινωνίας ἀποφανθῶμεν àÀ- — cum sancto Spiritu, in szcula seculorum. Amen,
+λότριοι, τῆς δὲ τοῦ Δανιὴλ συμμορίας ἀπολαύσωμεν, Ev Χριστῷ Ἰησοῦ τῷ Κυρίῳ ἡμῶν, μεθ᾽ οὗ τῷ Ila-
+τρὶ δόξα, σὺν τῷ ἁγίῳ Πνεύματι, εἰς τοὺς αἰῶνας τῶν αἰώνων "8, ᾿Αμήν.
+
+* Hebr. τι, 42, 15.
+VARLE LECTIONES.
+** B ἄχρις οὗ. 5" B ἐρίπονον. ὅδ τ. αἰών. Des. in B.
+
+ΤΟΜΟΣ Q*.
+
+1173 ΓΠΙΒΕᾺ SEXTUS.
+
+Ναδουχοδονόσορ, Εὐιλὰδ Μαροδὰχ υἱὸς αὐτοῦ, B Nabuchodonosor, Evilad Marodach filius ejus, Bai-
+Βαλτάσαρ ἀδελφὸς αὐτοῦ" Δαρεῖος Μῆδος, tasar ipsius frater : Darius Medus, secundum
+κατὰ ᾿Ιὐσηππον, υἱὸς τοῦ ᾿Αστυάγους, τοῦ δὲ Josephum filius Astyagis εἰ Cyri avunculus, Cyrus.
+Κύρου θεῖος πρὸς μητρός " ὁ δὲ Κῦρος Πέρσης" autem Persa, quem Cyaxarem Graci vocant.
+Ἕλληνες Κυαξάρην αὐτὸν zxpoaxaAoUctr.
+λα΄. Καὶ Δαρεῖος ὁ Μῆδος "καρέλαδε τὴν βασιλείαν ὧν Υεββ. ὅ1. « Et Darius Medus accepit regnum
+
+ἐτῶν ἑξήχοντα δύο. » Ἡ μὲν τῶν Χαλδαίων βασιλεία — sexaginta duos natus.annos. » Chaldzorum regnum
+
+τὸ τέλος ἔλαδε χατὰ τὴν θείαν πρόῤῥησιν " εἰς δὲ Mf- — secundum divinam pradictionem ad exitum per-
+δους μεταδέδηχεν ἡ τῆς οἰχουμένης ἡγεμονία, Οὕτω — venit, ad Medos autem translatum est orbis terra-
+δὲ xal ὁ Δανιὴλ προηγόρευσε, xai «b Φαρές ἡρμὴ- rum imperium. Sic vero Daniel etiam przdixit, et
+νεῦσε" εΔιῃρέθη yàp, φησὶν, ἡ βασιλεία σου, xai — illud Phares interpretatus est : « Divisum est enim
+ἐδόθη Μήδοις xa Πέρσαις. » ᾿Αλλὰ χρόνον ὀλίγον — regnum tuum, inquit, et datum est Medis et
+Δαρείου τοῦ Μήδου βασιλεύσαντος, Κῦρος, napaAa- Persis. » Sed cum breve tempus Darius Medus
+δὼν τὴν ἀρχὴν, εἰς Πέρσας αὐτὴν μετατίθησιν. Ἰώ- — regnasset, Cyrus exceptum imperium ad Persas
+σηππος " δὲ ὁ ἱστοριογράφος τὸν Δαρεῖον μὲν "' viby — transtulit. Josephus autem historicus Darium
+ποῦ ᾿Αστυάγους εἶναί φησι, τοῦ δὲ Κύρου θεῖον πρὸς ( Astyagis filium asserit, et Cyri avunculum ; verum
+μητρὸς", τοὺς δὲ τῶν Ἑλλήνων συγγραφέας ἑτέρως Gracos scriptores aliter ipsum appellasse : Cyaxa-
+αὐτοῦ τὸ διομα vsüsuxfvui* Κυαξάρην γὰρ αὐτὸν rem quippe illum vocaverunt. Narratque, cum
+ἐχεῖνοι προσηγορεύχασι. Λέγει δὲ, ὅτι κατὰ ταὐτὸν — eodem tempore exercitum ad Babylonem adduxis-
+ἐπιστρατεύσαντες τῇ Βαδυλῶνι Δαρεῖός τε xal Κῦρος, — sent Darius οἱ Cyrus, ejus sororis filius, per ob-
+
+ὁ τούτου ἀδελφιδοῦς, ἐχράτησαν τῆς πόλεως πολιορ- .Sidionem eos urbe potitos esse, et Baltasarem ab
+
+xig χρησάμενοι, xal «bv Βαλτάσαρ ἀνεῖλον κατ᾽ — ipsis illa nocte interfectum esse, qua scriptas illas
+
+ἐχείνην τὴν νύχτα, χαθ᾽ ἣν ἐν τῷ τοίχῳ τὰς συλλαδὰς syllabas in pariete conspexerat. Verum non ita
+ἐκείνας γραφομένας ἐθεάσατο. ᾿Αλλ᾽ οὐχ ἐᾷ οὕτω πι- — rem se habere docent ea qus ἃ beato Daniele
+
+VARLE LECTIONES.
+
+3? Na6, — προσχαλ. Des. in Β, '* Ἰώσηππος. Ant. Jud., lib. x, c. 41, sect. ὁ. *! μέν. In B post υἱόν
+ponitur. ** uns. D πατρός.
+
+==== PDF page 0725 (Migne PG 81 cols ~1397-1398) ====
+1385. THEODORETI EPISCOPI CYRENSIS n»
+*onseripta sunt. Docet autem nos in postrema A στεύειν τὰ ὑπὸ τοῦ μαχαρίου Δανιὴλ συγγεγραμ-
+parte eorum, quae de Dario commemoranturb, μένα διδάσχει δὲ ἡμᾶς iv τῷ τέλει τοῦ xavk τὸν
+Danielem. 11744 prospere egisse sub imperio Δαρεῖον διηγήματος, ὅτι χατηύθυνε Δαν:ἣλ iv
+Darii, et regnante Cyro Persa, osteuditque, aliud τῇ βασιλείᾳ Δαρείου xal ἐν τῇ βασιλείᾳ Κύρου
+Darii regnum esse, aliud Cyri. Quodsi una eorum τοῦ Πέρσου, xai δείχνυσιν ἑτέραν uiv τοῦ" Aa-
+luisset contra Babylonem cum exercitu profectio, ρείου βασιλείαν, ἑτέραν δὲ τοῦ Κύρου. Ei δὲ μία
+unum ΟΠ ΠΒΟ regnum fuisset: nunc autem aliud αὐτοῖς χατὰ τῆς Βαδυλῶνος ἐγεγόνει στρατεία, μία
+hoc, aliud illud esse ait. Et in (ine propheti ἃ ἄρα ἦν καὶ ἡ βασιλεία - νῦν δὲ, ἄλλην piv ταύτην,
+dicit Daniel : « Et rex Astyages appositus est ad ἄλλην δ' ἐχείνην εἶναί δ" φησι, Καὶ ἐν τῷ τέλει 55 δὲ
+patres suos, et accepit Cyrus l'ersa regnum ejus. » πῆς προφητείας οὕτω φησὶν ὁ Δανιήλ * « Καὶ ὁ βαστι-
+Non igitur eodem tempore Darius et Cyrus regnum λεὺς ᾿Αστυάγης προσετέθη πρὸς τοὺς πατέρας αὑτοῦ,
+obtinentes, Baltasarem interfecerunt, verum θὰ- 44; παρέλαδε τὴν βασιλείαν Κῦρος ὁ Πέρτης. » Οὐ «oi-
+vius Assueri prior, Cyrus posterior regnavit. Νὰ- — y, Δαρεῖος καὶ Κῦρος κατὰ ταὐτὸν βασιλεύσαντες, viv
+«que etiam quz ἃ Josepho. dicuntur, cum γα εἰ Βαλτάσαρ ἀνεῖλον * ἀλλ᾽ ὁ μὲν Δαρεῖος ὁ ᾿Ασσουέρου
+historiis consentanea sunt. Nec enim in illis facile πρότερον, ὕστερον δὲ Κῦρος ἐδασίλευσεν. ΟἹ
+licet invenire, Cyaxarem Astyagis filium * eumdem ;mvoxatg ἱστορίαις * τὰ ὑπὸ τοῦ Ἰωσέππου
+,esse Darium, quem iste narrat una cum Cyro a συμθαίνε:. Οὐδὲ γὰρ ἐν ἐχείνα:ς ἔστιν ep: -
+eontra Babylonem cum exercitu profectum : ita ut Κυαξάρην τὸν τοῦ ᾿Αστυάγους υἱὸν αὐτὸν εἶναι τὸν Aa-
+emnino Josephi oratio a fide abhorreat. Ego autem, getov, ὃν οὗτος ἔφη σὺν τῷ Κύρῳ τὴν στρατείαν χατὰ
+divinam Scripturam sequens, hunc ipsius Nabu- «ἧς Βαδυλῶνος ποιησάμενον * ὥστε παντάπασιν à
+chodonosoris invenio ex filia nepotem. Cum enim θᾳνον εἶναι τὸν τοῦ Ἰωσήππου λόγον. Ἐγὼ 85 τῇ
+przcepisset Deus Jeremiz, ut sibi vincula cireum- πειθόμενος Γραφῇ, τοῦ Naovyotovósop εὑρίσχω
+daret, eaque mitteret Gnitimis regibus Idumierum, τον θυγατριδοῦν " τῷ γὰρ Ἱερεμίᾳ παραχελευσάμενο;
+et Moabitarum, et Amanitarum, Tyriorumque εἰ ὁ 855; δεσμὰ ἑαυτῷ περιθεῖναι, xal ταῦτα mépqa: '
+Sidoniorum, hzc ipsis ut diceret, imperavit: τοῖς πλησιοχώροις βασιλεῦσι, τῷ τῶν Ἰδουμαίων, χαὶ
+* Sic dixit Dominus Deus fsraelis : lta dicetis ad ᾿ γωαδιτῶν, καὶ ᾿Αμανιτῶν, Τυρίων τε καὶ Σιδωνέοων,
+dominos vestros : Ego feci terram in fortitudine mea ταῦτα εἰπεῖν αὐτοῖς παρεγγύησεν - « Οὕτως εἶπε
+magna, et in brachio meo excelso, et dabo eam cui κύριος ὁ Θεὸ; Ἰσραήλ" Οὕτως ἐρεῖτε πρὸς τοὺς
+1175 placuerit in oculis meis: dedi omncm χυρίους ópüv* Ἐγὼ ἐποίησα cv γῆν ἐν “ τῇ
+terram Nabuchodenoseri regi Babylonis, ut serviat c ἰσχύϊ μου τῇ μεγάλῃ, καὶ τῷ Bozylovi μου τῷ ὑψη-
+ei, et servient ipsi omnes gentes, et filio ejus, εἰ ji), xol δώσω αὐτὴν, ᾧ ἂν δξῃ ἐν ὀφθαλ) μεῖς
+filio filii ejus, donec veniat tempus terrgipsorum.? μου" ἔδωχα πᾶσαν τὴν γὴν τῷ βασιλεῖ Ναθουχο-
+Cum itaque Baltasar ἃ Daniele filius appellatur, δονόσορ Βαδυλῶνος, δουλεύειν αὐτῷ, καὶ boo
+inquirendus est nepos. Quod si quis eontradicat, σρυσιν αὐτῷ πάντα τὰ ἔθνη, xai τῷ υἱῷ αὐτοῦ, χαὶ
+Darium asserens Medum appellari, disest ille τῷ υἱῷ τοῦ υἱοῦ αὐτοῦ, ἕως ἂν ἔλθῃ ὁ χαιρὸς τῆς
+mostra senlentiz id nihil obesse. Etenim Cyrus γῆς αὐτῶν. » Τοῦ τοίνυν Βαλτάσαρ υἱοῦ προσ-
+ex filia nepos Astyagis, qui Medus fuit, et Medo- αγορευθέντος ὑπὸ τοῦ Δανιὴλ, ζητητέον τὸν ἔχγονον 5,
+rum regno politus est, Persa nuncupatur. Ex ΕἸ δέ τις ἀντιλέγει, Μῆδον τὸν Δαρεῖον ὀνομάζεσθαι
+patria enim cognatione consuevere homines λέγων, μαθέτω, ὡς οὐδὲν τοῦτο τῷ λόγῳ λυμαίνεται.
+gentilia imponere cognomenta. Verisimile est Καὶ γὰρ ὁ Κῦρος θυγατριδοῦς ὧν τοῦ ᾿Αστυάγους,
+itaque, et Darium a Medo patre esse, εἰ ἃ Chald:iea ὃς Μῆδος ἦν, καὶ Μήδων ἐδασίλευσε, Πέρσης ὀνομᾶ-
+smatre, paterno autem cognomine vocari. Quod si ζεται ἐχ γὰρ τῆς πατρῴας συγγενείας φιλοῦσιν c
+hzc non ita se habeant, ostendant, qui velint, Nabu- ἄνθρωποι τὰς ἐθνιχὰς τιθέναι προσηγορίας. ExN
+eliodonosoris nepotem avitum regnum hzreditate τοίνυν voi τὸν Δαρεῖον εἶναι μὲν Μήδου πατρὸς.
+ebtinuisse, et plane non repugnabimus. Verissi- D Χαλδαίας δὲ μητρὺς, χαλεῖσθαι δὲ τοῦτο "* ὅπερ i
+mam enim esse magni Jeremie predictionem, ὁ πατήρ. Ei δ᾽ οὐχ οὕτως ταῦτ᾽ ἔχει, δειξάτωσαν οἱ
+quicunque recle sentit, confitebitur. Quod si βουλόμενοι τοῦ Ναδουχοδονόσορ τὸν ἔχτονον τῆς π|
+alicui magis probetur, non 6556 δχ filia nepotem πῴας βασιλείας χληρονομήσαντα, xci οὐδὲν Ξερὲ
+Nabuchodonosoris Darium, sed ex filio, propterea τούτου ζυγομαχήσομεν. Ὅτι γὰρ παναληθὴς "* τοῦ
+quod propheta dixerit : « Servient ipsi, et filio μεγάλου Ἱερεμίου ἡ πρόῤῥησις, πᾶς τις εὖ φρονῶν
+ejus, el filio filii illius, » discat divine Seripturz ὁμολογήσειεν. Εἰ δέ τινι προΐσταται μῇ εἶνα: θυγα-
+idioma, qua cum consueverit genealogiam a τριδοῦν τοῦ Ναδουχοδονόσορ τὸν Δαρεῖον ἀλλ᾽ ὑϊδοῦν.
+maribus tradere, velueritque nepotem dicere, διὰ τὸ τὸν προφήτην εἰρηχένα: " € δου;
+
+39231) αὐτὸς
+» Dan. v, 8.
+
+VARLE LECTIONES.
+
+* «oj. B prim. τὴν, lta quoque post pauca. 5) εἶν, Des. im B. 58 ἐν τῷ τέλει, x. -- ἃ. Ex ini-
+tio historie Belis et draconis desumpta sunt illa, Kat ὁ βατιλ. "Aoc. x. τ᾿ 2. Éd. prior ad warginem
+habebat, Dan. xit. 5* ioz. B priem. δέ. “7 πέμψας, "in D addit φησί, δ᾽ ἐν, Des. in B. "* Edit.
+prior hab. ἔγγονον, Τ' B τοῦτον. 7) B ἀληθές.
+
+
+==== PDF page 0726 (Migne PG 81 cols ~1399-1400) ====
+1391 IN DANIELIS CAP. VI. ᾿ 1393
+καὶ τῷ υἱῷ αὐτοῦ, xol τῷ υἱῷ τοῦ υἱοῦ αὐτοῦ " » A filium filii appellavit. Verum fllii non esse filium ,
+μαθέτω τῆς θείας Γραφῆς τὸ ἰδίωμα - ἐξ ἀῤῥένων 65ι18 est beatus Daniel, qui ita loquitur: « Darius
+γὰρ γενεαλογεῖν εἰωθυζα, xal τὸν ἔχγονον εἰπεῖν — Medus accepit regnum. » Usque ad nepotes autem
+ἐθελήσασα, υἱὸν τοῦ υἱοῦ προσηγόρευσεν. 'AXX ὅτι — Nabuchodonosorem transmissurum esse regnum,
+μὲν τοῦ υἱοῦ οὐχ ἔστιν υἱὸς, ὁ μαχάριος Δανιὴλ — divinus Jeremias praedixit 9. 1176 Ex utraque
+μαρτυρεῖ, λέγων ^ « Δαρεῖος ὁ Μῆδος παρέλαθε τὴν — igitur prophetia rei veritas percipi potest : ex ea
+βασιλείαν. » Ὅτι δὲ μέχρις ἐχγόνων παραπέμψει — Jeremise nepotem ipsius Nabuchodonosoris * re-
+τὴν βασιλείαν ὁ Ναδουχοδονόσορ, ὁ θεῖος προεῖπεν — gnum obtenturum esse, ex bac vero beati Danielis,
+Ἱερεμίας. Ἐξ ἑχατέρας τοίνυν προφητείας εὑρεῖν — Dallasare filio Nabuchodonosoris divina sententia
+δυνατὸν ᾽5 τὸ ἀληθές * bx μὲν τῆς Ἱερεμίου, ὅτι xo — mortuo, Darium Medum regnum excepisse. Hac
+ὁ ἔχγονος τοῦ NaÓouyobovósop τῆς βασιλείας ἀνθέξες- — considerantes, et propfMetas minime mentiri pro
+ται" Ex δὲ τῆς τοῦ paxapiov** Δανιὴλ, ὅτι Βαλτάσαρ — comperto habentes, reperimus; hunc paterno
+ποῦ υἱοῦ τοῦ Na6ouyobovósop, τῇ θείᾳ ψήφῳ τελευτήῆ- — genere Medum, materno Chaldzum esse, et ipsius
+σαντος, Δαρεῖος ὁ Μῆδος παρέλαδε τὴν βασιλείαν. — Nabuchodonosoris nepotem. llc igitur nos ex
+Ἐντεῦθεν σχοπούμενοι, xal τὸ ἀψευδὲς τῶν mpogr- ^ ulraque prophetia investigata, rei veritate inveni-
+τῶν ἐπιττάμενοι, εὑρίσκομεν τοῦτον Μῆδον μὲν ὄντα B mus : qua de re quilibet. pro lubitu sentiat. Nihil
+πατρόθεν, Χαλδαῖον 8b ὄντα “δ μητρόθεν, xal τοῦ — enim ex ambiguitate generis oriri potest detri-
+Na60vy05ovócop ἔχγονον. Ταῦτα μὲν οὖν ἡμεῖς Éxavé- — menti. Age itaque reliqua sigillatim interpretemur,
+(us προφητείας τὸ ἀληθὲς ζητήσαντες ηὕρομεν 16." ὡς δὲ φίλον ἑκάστῳ περὶ; τούτου φρονείτω * οὐδεμία
+γὰρ ix τῆς περὶ τὸ γένος ἀμφιθολίας γενήσεται βλάθη. dips τοίνυν, τῆς κατὰ μέρος ἑρμηνείας ἁψώμεθα.
+ΚΕΦΑΛΑΙΟΝ ζ΄. CAPUT VI.
+
+Βασιλεύσας, φησὶν, ὁ Δαρεῖος (a', β΄.) «"Eovnoev'" Regno potitus, inquit, Darius [Vgns. 1, 9.] «Con-
+ἐπὶ τῆς βασιλείας αὐτοῦ σατράπας ἑκατὸν εἴχοσι, τοῦ Sliluit super regnum suum satrapas centum et
+εἶναι αὑτοὺς ἐν ὅλῃ τῇ βασιλείᾳ αὐτοῦ. Καὶ ἐπάνω — viginti, ut essent ipsi in toto regno ejus. Et super
+αὐτῶν 15 ταχτιχοὺς τρεῖς, καὶ 19 ἦν Δανιὴλ εἷς ἐξ αὐ- — eos ordinatores tres, et erat Daniel unus ex eis,
+τῶν, τοῦ ἀποδιδόναι αὐτοῖς τοὺς σατράπας λόγον, Ut redderent illis satrapa rationem, ut nulla ino-
+ὅπως ὁ βατιλεὺς μὴ ἐνοχλῆτα:. » ᾿Αληθῶς οὐδὲν ἀμ- — lestia rex afliceretur. » Nibil revera potest obscu-
+δλύνειν δύναται τὴν εὐσέδειαν, ἀλλὰ τὰς olxe(ag — rare pietatem, qua ubicunque sit, proprios emittit
+παυταχοῦ àxzivag ἀφίησι, xüv ἐν δούλῳ γένηται, — radios, sive illa in servo, sive in captivo repcria-
+χἂν ἐν αἰχμαλώτῳ, xat οὐδὲν ταύτης συσχιάσαι τὴν C tur : neque quidquam est, quod ipsius splendori
+αἴγλην ἰσχύξι, ἀλλὰ τὴν οἰκείαν ἀρίησιν ἀστραπήν. tenebras queat offundere, imo illa fulgur suum
+Καὶ τοῦτο πολλαχόθεν μὲν xal ἀλλαχόθεν ἔστιν ἰδεῖν, eiittit. Quod cum multis aliis ex locis perspici
+μάλιστα δὲ Ex τῶν xazk τὸν μαχάριον Δανιὴλ, ὃς δοῦ- — potest, tum vero ex iis, quae beato Danieli usu
+Aog xaX δορυάλωτος γεγονὼς, καὶ ξένην oixüv, xai  veneruni: qui, cum servus esset bello 1177
+μεταξὺ βαρδάρων στρεφόμενος, διέλαμψε - ἐπὶ" μὲν Captus, εἰ exteram regionem incoleret, οἱ inter
+γὰρ ET Ναθουχοδονόσορ προσεχυνήθη ὑπὸ" τοῦ barbaros versaretur , splenduit, et regnante
+φοδερωτάτου βασιλέως. Διέπρεψε δὲ xal** ἐπὶ τοῦ Nabuchodonosore a maxime terribili rege ad-
+Βαλτάσαρ, περίδλεπτος δὲ ὡσαύτως ἦν καὶ ἐπὶ — Oratus est. Regnante item Baltasare floruit, ncc
+τοῦ Δαρείου " καὶ al τῶν βασιλέων διαδοχαὶ peva6o- — minus illustris fuit, Dario tenente sceptra: regum-
+λὴν αὐτῷ τῆς τιμῆς οὐκ εἰργάσαντο" ἀλλ᾽ οἱ μὲν Que successiones niliil de ejus honore detraxerunt,
+ἐσθέννυντο τῷ ὑανάτῳ, ὁ δὲ τὴν ἴσην ἐπὶ «πάντων — Sed illi quidem morte exstincti sunt, at Daniel
+ἐχέχτητο λαμπηδόνα. Καὶ μὴν εἰώθασιν οἱ βασιλείαν ?qualem illis omnibus regnantibus semper splen-
+ἢ τινα ἄλλην ἀρχὴν ἐγχειριζόμενοι, ἥκιστα θαῤῥεῖν dorem obtinuit. Atqui consuevere reges, vel quibus
+tolg τῶν προτέρι τάτοις "οὗτος δὲ παρὰ πᾶσι aliquis alius inagistratus mandetur, minime con-
+τὴν αὐτὴν ἐκέχ ταῤῥησίαν, χαὶ τοῦ ἴσου γέρως fiderc iis, qui priorum regum intimi fuerint: hic
+ἐτύγχανε, τὴν αὑτήν τε ἡγεμονίαν ἐπιστεύετο: ὥσ-  ulemm apud omnes eamdem nactus est. loquendi
+ap ἀμέλει xai ἐπὶ τοῦ Δαρείου εἷς τῶν τριῶν ἐγέ- libertatem, zequale honoris premium consecutus,
+veto ταχτιχῶν. Τακτειχοὺς δὲ ἡγοῦμαι mposayopsüs- idemque ei committebatur imperium ; sicuti deni-
+σθαι τοὺς νῦν χαλουμένους ὑπάρχους, σατράπας δ que regnante Dario unus fuit ex illis tribus ordi-
+ποὺς τῶν ἐθνῶν ἡγεμόνας " ἀλλὰ καὶ τῶν ταχτιχῶν — natoribus. Ordinatores vero arbitror appellari eos
+εἷς ὧν ὁ μαχάριος Δανιήλ qui nunc vocantur hyparchi ;* satrapas autem
+
+nationum przesides. Verum cum unus esset beatus.
+Daniel ex ordinatoribus :
+
+€ Jerem. xxvii, 4-7; vel xxxiv, 4-7 juxta LXX.
+
+VARLE LECTIONES.
+
+?* εὑρ. δυν. In B post ἀληθές ponitur. 715 pax. Des. in B. 15 ὄντα. Des. in B. 7? B εὑρήχαμεν. 7" A
+χατέττησεν. 7*5 αὐτῶν, Ex A suppl. D zai, A ὦν. '" Β παν τὰς ἰδίας. δ΄ καί, Des. in B.
+9 B ὑπό. δ᾽ ὑπ. Des. in D. ** zat, Des, in B. ,* B £v ὡταύτω.
+
+
+==== PDF page 0727 (Migne PG 81 cols ~1401-1402) ====
+1399 TIIEODORETI EPISCOPI CYRENSIS I]
+Vens. δ. « Superabat, inquit, et ordinatores, eL A γ'. « "Y repevixa, φησὶ, xal τοὺς vaxtxoUc!*, xal
+satrapas, » scilicet nationum praesides, contra, id τοὺς σατράπας, » τοὺς τῶν ἐθνῶν ἡγεμόνας, χατ-
+est, ex adverso illis oppositus, comparatus, et ἐναντι, τουτέστιν ἐχ δ᾽ παραλλήλου, τιθέμενος, avy-
+examinatus. Deinde causam affert, cur eos. vin- — κρινόμενος xa παρεξεταζόμενος. Εἶτα λέγει τὴν al-
+ceret : « Quia spiritus, inquit, amplioreratin eo, » τίαν τῆς νίχης. « Ὅτι πνεῦμα, φησὶ, περισοὺν ἐν
+hoc est, mulio majorem εἰ copiosiorem a Deo αὐτῷ" » τουτέστι, πολλῷ μείζονα xal πλείονα t
+' gratiam acceperat. Discimus autem ex hoc loco, παρὰ τοῦ Θεοῦ τὴν χάριν ἐδέχετο. Μανθάνομεν δὲ
+His quoque quibus ssmcularis magistratus deman- ἐντεῦθεν, ὅτι xai τοῖς βιωτιχὰς 99. ἐγχειριζομένοις
+datur, etiamsi pietatis expertes fuerint, quoddam ἀρχὰς, xàv εὐσεθείας ὥσιν ἄμοιροι, δίδοταί τις θεό-
+tamen sapientiz: munus ad subjectum sibi populum θεν χάρις σοφίας διὰ τὴν τῶν ἀρχομένων olxovopíaw.
+gubernandum divinitus concedi. Idque innuit Καὶ τοῦτο ἠνίξατο ὁ μαχάριος Δανιὴλ, εἰρηχώς" 0a
+beatus Daniel, dicens; « Quia spiritus amplior πνεῦμα περισσὸν ἣν ἐν αὑτῷ,» τουτέστιν, ἀναλογοῦ-
+erat in illo, » 1178 hoc est, gratiam pietati DTO- σαν τῇ εὐσεθδείᾳ τὴν χάριν ἐδέδεχτο. Καὶ τοῦτο θεα-
+Ρυγιΐοπθ respondentem acceperat. Quod eum  cápevog, φησὶν, « Ὁ βασιλεὺς κατέστησεν abs
+conspexisset , « Rex constituit ipsum, inquit , ἐφ᾽ ὅλης τῆς βασιλείας αὐτοῦ. » Συνιεὶς γάρ, ὅτι 0:o-
+Super omni regno suo. » Intelligens enim. illum B φιλὴς ὁ ἀνὴρ xa τῆς ἄνωθεν ἀπολαύων ῥοπῆς, πᾶ-
+*sse virum Dco gratum, quique superna vinitere- σαν αὐτὸν ἐπέτρεψε τὴν βασιλείαν οἰχονομεῖν" ἀλλὰ
+Ur, omne ipsi regnum administrandum commisit: τὸ μέγεθος τῆς τιμῆς τὸν φθόνον ἢ ρέθισεν " «Οἱ Bh
+sed honoris magnitudo invidiam excitavit. [4] ταχτιχοὶ xal οἱ σατράπαι ἐζήτουν, φησὶ, πρόφασιν
+« Ordinatores autem. οἱ satrapee quierebant, inquit, εὑρεῖν xatà τοῦ Δανιὴλ Ex. τῆς βασιλείας,» ἢ, à;
+occasionem invenire contra Danieleni ex TegnO,. τινα τῶν ἀντιγράφων ἔχει, € &x πλαγίων' τῆς Bas:
+vel ut quadam exemplaria hahent, « ex lateribus λείας *** » τουτέστι, πάντα ἐπραγματεύοντο, εἰς
+regni. » Hoc est, omnia moliebantur, cupientes τοὺς τῆς βασιλείας νόμους πλημμελοῦντα αὐτὸν εὖ-
+juvenire eum aliquid in. regni leges deliquisse : ρεῖν ἐφιέμενοι * ἀντὶ τοῦ, τὴν νῦν χαλουμένην χαϑ-
+quasi diceret, kesw majestatis ili crimen impin- — osíucty πλέξαι αὑτῷ βουλόμενοι. ᾿Αλλὰ διήμαρτον
+gere cupientes, ut nunc loquimur. Sed a proposito τοῦ σχοποῦ. « Πᾶσαν γὰρ πρόφασιν"), φησὶ, xai πᾶν
+consiHo aberrarunt. « Occasionem enim, inquit, παράπτωμα, xay ἀμπλάχημα οὐχ ηὗρον Ev αὐτῷ, ὅτι
+«t delictum, et peccatum plane non invenerunt in πιστὸς ἦν. » Καὶ τὴν μαρτυρίαν ταύτην ἔσχηχεν ὁ
+eo, quia fidelis erat. » Et hoc testimonium datum μαχάριος Δανιὴλ, οὐ παρὰ τῶν ἀγαπώντων μόνον,
+68ὲ beato Danieli, non ab iis tantum. qui eum ( ἀλλὰ xal παρὰ τῶν ἐπιδουλευόντων. « Τὴν γὰρ περὶ
+diligebant, sed etiam ab iis qui ejus vitae insi- τὸν Θεὸν φυλάττων εὐτέθειαν, εὐνοίᾳ πολλῇ χαὶ
+diabantur. Pietatem enim observans erga Deum, περὶ τοὺς βασιλέας ἐχέχρητο. "gj δὲ μυρία τυρεύ-
+multam quoque sibi regum benevolentiam conci- σαντες οὐχ ηὗρον αὐτὸν εἰς τοὺς τῆς βασιλείας
+liarat, Verum ubi illi infinitas vias persecuti, non πλημμελοῦντα νόμους,
+invenerunt ipsum quidpiam in regni leges commi-
+sisse :
+
+Vrns. 5, « Dixerunt, inquit, ordinatores: Non ε΄. « Εἴπον, φησὶν, οὗ ταχτιχοΐ Οὐχ εὑρήσομεν
+inveniemus contra Danielem occasionem nisiin κατὰ Δανιὴλ πρόφασιν, εἰ μὴ ἐν νομέμοις θεοῦ αὖ-
+legitimis Dei ejus. » Cum enim exploratam habe- τοῦ, ν Εἰδύτες γὰρ αὐτοῦ τῆς εὐφεθείας τὸ ἀχριδὲς,
+rent perfectam illius pietatem, ibi improbitatis ἐχεῖ τὰ θήρατρα τῆς πονηρίας ἱστᾶσι.
+retia ipsi ponunt.
+
+Vens. 0-9. « Εἰ adeuntes ad regem ordinatores — c'-0.« Καὶ προσίασι "" τῷ βασιλεῖ of τε saxi
+et satrapee, ita eum alloquuntur : Dari rex, in sa- καὶ οἱ σατράπαι, xal λέγουσιν αὐτῷ " Aap Ban
+cula vive. Consilium inierunt omnes in regno tuo λεῦ, εἰς τοὺς αἰῶνας ζῆθι. Συνεθουλεύσαντο πόντις
+duces, 1179 et toparchz, consules, et " satrapze, Ὁ οἱ ἐν τῇ βασιλείᾳ ᾽" σου στρατηγοὶ, καὶ τοπάρχαι""
+ut constituerent statuto rcgio, et conflrmarent ὕπατοι, καὶ σατράπαι "5, τοῦ στῆσαι στάσει βασι-
+decretum, ui quicunque petierit petitionem ab λικῇ, καὶ ἐνισχῦσαι ὁρισμὸν, ὅπως ὃς ἐὰν" αἰτήσῃ
+omni deo, vel homine, usque ad dies triginta, αἴτημα παρὰ παντὸς θεοῦ, ἢ "" ἀνθρώπου, ἕως ἧμδ-
+praeterquam ἃ te, conjieiatur in laeum leonum. ρῶν τριάκοντα, ἀλλ᾽ ἢ παρὰ σοῦ 3, ἐμδληθήσεται
+Nune igitur, rex, confirma. decretum, et expone εἰς τὸν λάκχον τῶν λεόντων. Νῦν οὖν, βασιλεῦ, Tu
+scripturam, ut. decretum. Medorum et Persarum σον τὸν ὁρισμὸν, καὶ ἔχθες τὴν γραφὴν ', ὅπως μὴ
+non immutetur, ut nihit contra. illud immutetur. ἀλλοιωθῇ τὸ δόγμα Μήδων xoi Περσῶν, ὅπι Sb
+
+VARLE LECTIONES.
+
+Mon "T ς ἢ ^ a y zi τωτ. D prem.
+S A Καὶ ἣν Δανιὴλ ὑπὲρ αὐτούς. 5 ix. Des. in B. 55 Dom, xal μείζονα. 5᾽ Bios. -
+πὰς. " PR e ur ix πλαγ. τ. Bac. Vid. Montf, Hexapla ad h.l. SA xal A fisueh
+zo οὐχ εὑρέθη. 9! A παρέστησαν. "" δὲ ἐπὶ τῆς βασιλείας. 5 A σατράται. prd
+
+"DB ὥστε 0; ἄν. "5" f. A καί, "σοῦ, A ct B addunt βασι τῇ. ὅπ. — 0507.
+
+n A.
+
+
+==== PDF page 0728 (Migne PG 81 cols ~1403-1404) ====
+1201 IN DANIELIS CAP. VI. 703
+μὴ παραλλαγῇ κατέναντι τούτου. Τότε ὁ βασιλεὺς A Tunc rex Darius precepit exponi seripturam et.
+Δαρεῖος ἐπέταξε τὴν συγγραφὴν xxi τὸ δόγμα.» — decretum. » Nihil est invidia sceleratius, qu: et
+Οὐδὲν τοῦ φθόνου μιαρώτερον᾽ οὗτος xal ἀσεδῆσαι — istos inipios esse coegit, et impium produxit edi-
+τούτους ἠνάγχασε, xo δυσσεδὲς προθεῖναι πεποίηχε — ctum, quo illi arcebantur, qui Deo preces et vota
+δόγμα, ἀπεῖργον τοὺς βουλομένους εὐχὰς προσφέ- afferre yellent. Neque enim solum seipsos hoc
+ρΞιν Θεῷ. Οὐ γὰρ μόνον σφᾶς αὑτοὺς τοῦτο ποιεῖν — facere prohibent, verum etiam alios omnes qui
+χωλύουσιν, ἀλλὰ καὶ τοὺς ἄλλους ἅπαντας τοὺς ὑπὸ — sub ejus regno degebant. Et ne malitiosum facinus
+τῆς βασιλείας ὄντας. Καὶ tva μὴ δῆλον γένηται τὸ conspicuum fleret, adjiciunt, neque ab homine
+xaxoópynua, προστιθέασι τὸ μηδὲ παρὰ ἀνθρώπου aliquid petendum aut accipiendum intra triginta
+αἰτῆσαί τι καὶ Aa6siv ἐντὸς τῶν τριάχοντα ἡμερῶν’ — dies, et a solo rege omnibus bis diebus ut petatur,
+παρὰ μόνου δὲ τοῦ βασιλέως ἐν ἁπάσαις ταύταις ταῖς — denuntiandum esse. Neque intellexerunt — ipsi,
+ἡμέραις ἐπαγγέλλειν τὴν χρείαν. Καὶ οὐ συνεῖδον — quorum mentis aciem preestrinxerat invidia, non
+οἱ τὸ ὁπτιχὸν τῆς διανοίας τῷ φθόνῳ παραδεδωχότες, posse omnia regem prebere petentibus, neque
+ὡς οὐ πάντα δύναται παρασχεῖν τοῖς αἰτοῦσιν ὁ βασι- bonam valetudinem, neque vitam, neque ut sint
+λεύς - οὔτε γὰρ ὑγείαν, οὔτε ζωὴν, οὔτε τὸ γενέσθαι — filiorum parentes, neque pluviarum vim, neque alia
+παίδων πατέρας, οὔτε ὑετῶν ἀφθονίαν, οὔτ᾽ ἄλλα Β omnia, qux ἃ (solo) Deo petentes accipimus. 705
+πάντα, ἃ τὸν Θεὸν αἰτοῦντες λαμδάνομεν. ᾿Αλλὰ τὸ rum amissa mentis sanitate ea regi attribuunt,
+φρονεῖν ἀπολέσαντες ἀνατιθέασι τῷ βασιλεῖ τὰ τῷ Θεῷ — quz Deo duntaxat conveniunt, persuadentque in-
+προσήχοντα, πείθουσι δὲ xal τὸν ἀνόητον βασιλέα sano regi, ut sanciat οἱ rata faciat qux impie
+συμψηφίσασθαι καὶ χυρῶσαι τὰ δυσσεθῶς αἰτηθέντα. — petierant. [10] Verum beatus Daniel ne porum
+Ἀλλ᾽ ὁ μαχάριος Δανιὴλ οὐδὲ βραχὺ τῶν δυσσεδῶν — 118 quidem impias istas leges curans: « Statim
+τούτων" νόμων qpovziaac,« Εὐθὺς εἰς τὸν οἶχον aü- — in domum suam, inquit, ingressus, fenestris aper-
+ποῦ, φησὶν, εἰσελθὼν, τῶν θυρίδων ἀνεῳγμένων, ἐν lis, in ccenaculis suis, versus llierosolymam, ter
+olg ὑπερῴοις αὑτοῦ, κατέναντι Ἱερουσαλὴμ τρεῖς — quotidie flectebat genua sua, et orabat, et conflte-
+χαιροὺς" τῆς ἡμέρας fjv κάμπτων ἐπὶ τὰ γόνατα αὐ- — batur coram Deo, sicut antea faciebat. » Vide
+ποῦ, xal προσευχόμενος, καὶ ἐξομολογούμενος ivav- autem, quot simul hzc oratio innuat, quz beati
+lov τοῦ Θεοῦ, χαθὼς ἦν ποιῶν ἔμπροσθεν.» Ὅρα — Danielis pietatem ac fortitudinem declarat. Primum
+δὲ πόσα κατὰ ταὐτὸν ὁ λόγος ἠνίξατο, τοῦ μακαρίου — enim Daniel, inquit, ubi cognovit statutum decre-
+Δανιεἣλ τὴν εὐσέθειαν xol τὴν ἀνδρείαν μηνύοντα. — tum, « Ingressus est in domum suam ; » hoc est,
+Πρῶτον μὲν γὰρ Δανιὴλ, φησὶν, ἡνίχα ἔγνω, ὅτι C cutn didicisse! positam legem, vehementer eam
+ἐνετάγη τὸ δόγμα, «€ Εἰσῆλθεν εἰς τὸν οἶχον αὑτοῦ,» — contemnens, aperte contraria facere perseverabat.
+τουτέστι, μαθὼν τὸν τεθέντα νόμον, xal σφόδρα Deinde etiam aliud addidit, quod aperte illius
+καταφρονῶν, ἀντιχρὺς ἐναντία δρῶν διετέλει" εἶτα animi magnitudinem indicat: « Fenestr:e enim,
+xai ἕτερον τέθειχεν, ὃ σαφῶ; αὐτοῦ τὴν ἀνδρείαν — inquit, erant aperlz. » Neque enim clam, inquit,
+μηνύει 7“ «Αἱ γὰρ θυρίδες, φησὶν, ἀνεῳγμέναιλ, ν» precabatur, sed palam, omnibusque inspectan-
+Οὐ γὰρ χρύδδην, φησὶ, τὰς εὐχὰς ἐποιεῖτο, ἀλλὰ — tibus, non ambitionis studio, sed impiam legem
+“προφανῶς, καὶ πάντων ὁρώντων, οὐ φιλοτιμούμενος, contemnens. Aliud etiam appositum est, * quod
+ἀλλὰ τῆς δυσσεδείας τοῦ νόμου xavagpovüv. Πρόσ- — hanc ipsius fortitudinem non minus ostendit, sci-
+χειται δὲ xal ἕτερον, ταύτην αὐτοῦ τὴν ἀνδρείαν licet: « In ccenacuiis enim suis. » Non in plano
+παραδηλοῦν * « Ἐν γὰρ τοῖς ὑπερῴοις αὑτοῦ. » Οὐ" — enim, sed velut in specula quadam preces Deo
+Ὑὰρ ἐν ἐπιπέδῳ, ἀλλ᾽ dz ἐν περιωπῇ τινι προσέφε- — efferebat, omnibus censpicuus, et quod in edito et
+psv τῷ Θεῷ τὰς εὐχὰς, κατάδηλος ὧν ἅπασι, vip τε excelso loco staret, et quod fenestras apertas
+ἐφ᾽ ὑψηλοῦ ἑστᾶναι, καὶ τῷ" τὰς θυρίδας ἀναπε- — haberet. « Orabat autem, inquit, versus [lieroso-
+πταμένας ἔχειν. « Ηὔχετο δὲ, φησὶ, κατέναντι "le-.— lymam, » quod non solum accusatores provocans
+ρουσαλήμ᾽ » τοῦτο δὲ οὐ μόνον τοὺς χατηγόρους D faciebat, sed etiam antiquam legem observans.
+παροξύνων ἐποίει, ἀλλὰ xa παλαιὸν νόμον πλη- Salomo enim, cum templum illud. zdificasset, et
+£v. Ὁ γὰρ Σολομὼν τὸν νεὼν ἐλεῖνον δειμάμε- — encsniorum perageret publicum conventum, sup-
+vOg , καὶ τῶν ἐγχαινίων ἐπιτελῶν τὴν πανήγυριν, — plicavit divinam gratiam implorans, ut ea templum
+προτηύξατο μὲν τὴν θείαν χάριν ἐπιχαλούμε- — compleretur. 1181 Ac preter alia. plurima, boc
+νος, xai ταύτης πλήρη γενέσθα: τὸν νεὼν ἱχετεύων. — quoque adjecit: « Et erit, inquit, si. tradideris
+Ἱερὸς δὲ ἑτέροις πλείστοις καὶ τοῦτο προστέθειχε “ — populum tuum coram inimicis cjus, ct. captivum
+« Καὶ ἔσται, φησὶν, ἐὰν παραδῷς τὸν λαόν cou &v- — duxerint ipsum captivantes, in lerram longinquam,
+ὠπιον τῶν ἐχθρῶν αὐτῶν, καὶ αἰχμαλωτεύσουσιν — vel propinquam, et converterint corda sua in
+αὐτὸν" οἱ αἰχμαλωτίζοντες el; γῆν μσχρὰν, ἢ"  terraad quam delati fuerint, et. supplicaverint
+
+VARUE LECTIONES.
+* A γραφῆναι τὸ δόγμα. " τούτ. Jn Β post νόμων ponitur. * A et Β xol χαιροὺς τρεῖς. “ Θεοῦ A eL B
+
+aljunt αὑτοῦ. " μην. B ἐμνημόνευσεν. * D fvepygiva:. 5 Edit. prior hab. Quos, — !* τῷ. Ex DB suppl
+M 8. αὐτούς, "OW Edit pror ab καὶ o eli D Mi U di
+
+==== PDF page 0729 (Migne PG 81 cols ~1405-1406) ====
+1402 THEODORETI EPISCOPI CYRENSIS Hd
+Ubi in terra transmigralionis sus, dicentes : Α ἐγγὺς, καὶ ἐπιστρέψωσι xapblac αὐτῶν ἐν τῇ Yo»
+Peccavimus, inique. egimus, impie nos gessimus, μετηνέχθησαν ἐχεῖ, xax δεηθῶσί σου iv γῇ μετοι-
+
+! et reversi fuerint ad (6 oto corde suo, εἰ tota χίας αὑτῶν, λέγοντες - Ἡμάρτομεν, ἠδικήσαμεν !t,
+
+! anima sua, in terra inimicorum suorum, quo de- ἠνομήσαμεν, xal ἐπιστρέψωτι πρὸς σὲ iv ὅλῃ χαρ-
+duxisti eos, et oraverint ad te pro via terra suz, δίᾳ αὑτῶν, xal £v ὅλῃ τῇ ψυχῇ αὑτῶν, ἐν τῇ γῇ τῶν
+quam dedisü patribus eorum, ei civitatis quam ἐχθρῶν αὑτῶν οὗ μετήγαγες αὐτοὺς, xa προτεῦ.
+elegisti, et domus quam zdificavi nomini tuo, et — ξωνται πρὸς σὲ ὁδὺν γῆς αὑτῶν, ἧς δέδωχα:" τὰς
+exaudies e colo, e parato habitaculo luo, et pro- πατράσιν αὐτῶν, xal τῆς πόλεως, ἧς ἐξελέξω, xi
+pitius eris peccatis eorum, qux peccaverunt tibi, τοῦ οἴχου, οὗ Oxob ursa τῷ ὀνόματί σου, xa εἰτ-
+et secundum omnes iniquitates corum quibus ἀκούσῃ ix τοῦ οὐρανοῦ, ἐξ ἑτοίμου χατοιχητηρίου
+yravaricati sunt erga tc, et dabis illis miseratio- σου, xat (ie; ἔσῃ ταῖς ἁμαρτίαις αὐτῶν αἷς ἦμαρ.
+nes coram illis qui eos captivos duxerint d.» Haee τόν σοι , χαὶ κατὰ πάντα τὰ ἀθετήματα αὐτῶν, ἃ
+autem edoctus beatus Daniel versus llierosolymam — ἠθέτησάν σε, xai δῴης ') αὐτοὺς εἰς οἰχτιρμοὺς
+vonvereus precabatur: neque semel quovis die, ἐνώπιον τῶν αἰχμαλωτευσάντων αὐτούς. » Ταῦτα
+Sed ter id facere perseverabat. Et figura mentis δὲ '* πεπαιδευμένος ὁ μαχάριος Δανιὴλ, χατέναντι
+ilius ostendit. contritionem. Suis enim genibus B ἹἹΞρουσαλὴμ "7 τετραμμένος τὴν προσευχὴν 'δ ἔποι-
+innixus non desistebat Deo confiteri. [11-15] Cum — εἶτο οὐχ ἅπαξ δὲ τῆς ἡμέρας, ἀλλὰ xal τρὶς τοῦτο
+hiec ita fierent, illi qui effecti erant invidig vasa, ποιῶν διετέλει. Καὶ τὸ σχῆμα δὲ. τὴν τῆς διανοίας
+iniquitatis Danielem accusant, et constitutam δείκνυσι συντριθήν. Κάμπτων γὰρ ἐπὶ τὰ γόνατα
+recitant legem, et Dauielem deferunt, eumque αὑτοῦ διετέλει "9 τὴν ἐξομολόγησιν προσφέρων τῷ
+arguunt. 1182 illam violasse. At rex doluit Θεῷ. Τούτων οὕτως γινομένων, οἱ τοῦ φθόνου δοχεῖα
+audita accusatione, eLadvocatus pro judice factus, γενόμενοι γράφονται παρανομίας τὸν Δανιὴλ, χαὶ
+insontem Danielem ostendere conabatur. Hoc enim — «àv τεθέντα γόμον ἀναγινώσχουσι, xal τόν τε Javi.
+Scriptura innuit, dicens : εἰσαγγέλλουσι, xal τὴν παράδασιν ἐξελέγχουσιν.
+Ὁ δὲ βασιλεὺς ἤλγησε μὲν τῆς γραφῆς ἀκούων, συνήγορος δὲ ἀντὶ χριτοῦ γενόμενος, ἀθῶον δειχνύναι
+τὸν Δανιὴλ ἐπειρᾶτο * τοῦτο γὰρ ἠνίξατο ἡ συγγραφὴ ?* λέγουσα *
+
+Vgns. 14. « Tunc rex, ut verbum audivit, multum ιδ', « Τότε ὁ βαοιλεὺς, ὡς τὸ ῥῆμα ἤκουσε, πολὺ
+contristatus est cjus causa, et pro Dauiele conten- ἐλυπήθη ἐπ᾽ αὐτῷ, xal περὶ τοῦ Δανιὴλ ἐγωνίσατο
+dit, ut liberaret eum. » [15] Sed malitiosi homines τοῦ ἐξελέσθαι αὐτόν. » ᾿Αλλ᾽ οἱ καχοήθεις ἄνδρες
+illi, e& sceleribus innutriti, consilium regis agno- ἐχεῖνοι, xal καχουργίᾳ συζῶντες,, ἔγνωσαν τὸν τοῦ
+verunt. lloc cnim significat illud, « Anteverteruut C βασιλέως σχοπόν. Τοῦτο γὰρ σημαίνει τὸ, « Παρῃτή-
+precibus viri illi regem, » hoc est, intellexerunt σαντο" oi ἄνδρες ἐπὶ τὸν βασιλέα " » ἀντὶ τῶ,
+eum Danieli opitulari.* Deinde dicunt regi: συνῆκαν ὡς τῷ Δανιὴλ συναγωνίξεται. Εἶτα À
+* Scito, rex, quod decretum Medis el Persis sit, τῷ βασιλεῖ" « Γνῶθι, βασιλεῦ, ὅτι τὸ δόγμα Μήδοις
+omne decretum et constitutionem, quam rex con- καὶ Πέρσαις, τοῦ πάντα ὁρισμὸν xal στάσιν, ἣν
+stituerit, non oportere immutari. » Non est, in- — éàv!! ὁ βασιλεὺς στήσῃ "5, οὐ δεῖ παραλλάξαι.»
+quiunt, in tua potestate, ut ea quz lege sanxisii Οὐχ eT, φασὶ, xóptog , ἃ νενομοθέτηκας ἀνατρέψαι
+evertas. Medorum enim et Persarum leges jubent, Μήδων yàp xal Περσῶν oi νόμοι παρακελεύονται,
+wt late leges a primo rege observentur. [16] Vi τοὺς «0 υς ** νόμους παρὰ πρώτου zArpo)düs:
+nutem coactus rex, probabilitate scilicet orationis, τοῦ ῥασιλέως. Βιασθεὶς δὲ ὁ βασιλεὺς τῷ τε δῆθεν
+οὐ multitudine aceusatorum, beatum Danielem leo- εὐλόγῳ τῶν λόγων xal τῷ πλήθει τῶν χατηγόρων,
+nibus tradit, et pro eo ita bene precatur : « Deus, τοῖς λέουσι τὸν μαχάριον Δανιῆλ᾽
+cui servis continue, ipse liberabit te. » Pium ver- ὑτῷ σωτηρίαν "5 λέγων" « Ὁ θεὶς
+Tum, et pristinis minime consentaneum. Si enim ὥς, αὐτὸς ἐξελεῖταί σε. » Ei-
+lantam testaris esse. Dei. virtutem, quomodo lege ὁ πρώτοις ἀσύμφωνον.
+sanxisti, ne quis ipsi triginta dierum spatio sup- Ὁ τοσαύτην τῷ Θεῷ προσμαρτυρεῖς δύναμιν, πὶ
+plicaret ? Sed videtur Darius probus quidem fuisse, μοθέτησας μηδένα τούτῳ εἰς τριάχοντα ἡμέρας"
+et moribus zquus, poliusque pietatis studiosus, ξασθαι; ᾿Αλλ᾽ ἔοιχεν ὁ Δαρεῖος χρηστὶ ah
+meticulosus tamen, et admodum facilis deceptu. σθαι "7, xal τὸν τρόπον ἐπιειχῆς, xai bá
+Regnum enim non administrabat, ut sibi subjectos s6:iq προτέχων, ψοφοδεὴς δὲ ὅμως xai λίαν εὖ-
+duceret, 1183 sed ab iis ducebatur, videturque — ca. . Οὐ γὰρ àv βασιλείαν διέπων, ἀντὶ τῷ
+Danielem valde admiratus fuisse : « Deus enim, ἄγειν, ὑπὸ τῶν ἀρχομένων ἤγετο" φαίνεται δὲ χαὶ
+inquit, eui servis continue, » propter quem etiam σφόδρα θαυμάζων τὸν Δανιήλ' « Ὃ Θεὸς γὰρ, exis
+
+3 ME Reg. vir, 46 50; 11 Paral, vi, 56 seqq.
+
+YARLE LECT;ONES. .
+U $3. In B post jou. ponitur. 1" ἔδωχας. "Ὁ" B δώσε ς. !*66. Des. in B. !7 Lo B praem, τῆς.
+D τὰς προσευγάς. 1 Gus. Des. in D, qui deinde habet προσέ * D γραφῆ. δ! Παρ. --- βασι-
+
+£a. Des, apud. LXX, et in textu. Chald.— 55 ἐᾷ in B. 8 στήσει. 5) Β τεθειμένους. CU coU
+fiv. Vx Bosuppl. 95 D ἐν τριάχοντα ἐπέ ἐσῆαι,
+
+
+==== PDF page 0730 (Migne PG 81 cols ~1407-1408) ====
+1105 ΙΝ DANIELIS CAP. VI. 1406
+€» λατρεύεις ἐνδελεχῶς, » δι᾽ ὃν, φησὶ, καὶ τῶν ἐμῶν A meas, inquil, leges aspernatus es, οἱ quem assiduo
+xazsopóvroae νόμων, xai διηνεχῇ τὴν θεραπείαν — cultu veneraris, tuam pietatem. remunerabitur, ct
+αὐτῷ προσφέρεις, ἀμείψεταί σε τῆς εὐσεδείας, xal — a malis te opprimentibus liberandum curabit.
+πῶν κατεχόντων δεινῶν ἀπαλλάξειεν. Εἶτα καὶ θα. — [17] Deinde etiam divina virtute fretus, ac suspe-
+ῥὲὼῶν τῇ τοῦ Θεοῦ δυνάμει, xol τὰς τῶν κατηγόρων — clas habens accusotorum insidias, lapide obstruit
+ὠφορώμενος ἐπιδουλὰς, λίθῳ μὲν ἐμφράττει τοῦ ostium lacus, et annuli effigie imponit. sigilla, ne
+Δλάχχου τὸ στόμα, τοῖς δὲ τοῦ δακτυλίου ἐκτυπώ- — quem illi contra Danielem dolum machinarentur.
+ἔλασιν ἐπιτίθησι σήμαντρα, ἵνα μή τις ὑπ᾽ ἐχείνων Confidebat enim fore ut. Deus Danielis non. per-
+cepi τὸν Δανιὴλ γένηται χαχουργία " ἐθάῤῥει ᾽5 γὰρ mitteret, sacrosanctum ejus corpus a leonibus
+ὡς τοὺς λέοντας οὐχ ἐάσει τοῦ Aavitl ὁ Θεὸς τὸ lodi. Παῖς itaque cum fecisset,
+
+ξερὺν αὐτοῦ ᾿" xai ἅγιον λυμήνασθαι σῶμα. Ταῦτα
+
+τοίνυν ποιήσας,
+
+Ur. € Ἀπῆλθεν ὁ βασιλεὺς
+καὶ ἐχοιμήθη ἄδειπνος, xal ἐδέ
+
+ig τὸν οἶχον αὑτοῦ, γεββ. 18. « Abiit rex in domum suar, οἱ dor-
+ματα οὐκ ἤνεγχαν — mivit inccnatus, et cibos non attulerunt ei , ct
+αὐτῷ, x3i ὁ ὕπνος ἀπέστη ἀπ᾽ αὑτοῦ, » Τούτων δὲ |, somnus recessit ab eo. » Unumquodque horum et
+ἕκαστον καὶ φιλανθρωπίαν αὐτῷ καὶ δειλίαν προτ- .— Dumanilatem illius testatur, et metum, Quod enim
+sl Φιλανθρωπίας μὲν γὰρ τὸ μήτε σιτίων cibis vesci noluerit, neque somnum oculis capere,
+ἦσαι μετασχεῖν, μήτε ὕπνον τοῖς βλεφάροις — sed vigil permanserit injusto Danielis supplicio
+πως δέξασθαι "", ἀλλ᾽ ἄγρυπνον διατελέσαι, ἀλγοῦντα — dolens, id humanitatis est : quod vero ita affertus
+ἐπὶ τῇ ἀδίχῳ τοῦ Δαν:ὴλ τιμωρίᾳ" non restiterit accusatoribus, regio imperio ae
+οὕτω διαχεέμενον μὴ ἀντιστῆναι τοῖς x potestate utens, et eum qui injuria puniebatur
+xai τῇ βασιλικῇ ἐξουσίᾳ xai δυνάμει γρησάμε non servarit, id metui est ascribendum. lta autem
+σῶσα: τὸν ἀδιχωύμενον. Οὕτω 0i cvv! νύχτα δια- — transacta nocte,
+
+πελέσας,
+
+t0. € Ὁ βασιλεὺς Δαρεῖος ?* ἀνέστη tonpui ἐν Vens. 19. « Darius rex surrexit mane orta luce.»
+τῷ φωτί, » Τουτέστιν, ἔτι σχότους ὄντος, περὶ τὸ lloc est, cum adliuc tenebrz essent, circa dilucu-
+»uxógog**, ὡς χαὶ δεηθῆναι λαμπάδων δ΄ τὸ γὰρ — lum, ita ut opus haberet lampadibus : illud enim
+Ev τῷ φωτὶ τοῦτο παραδηλοῖ. in luce hoc significat.
+
+« Καὶ σπουδῇ ** ἦλθεν ἐπὶ τὸν λάκχον τῶν λεόντων" « Εἰ celerrime. venitad lacum leonum ; (VE&s.
+(χκ΄.) Καὶ ἐν τῷ ἐγγίζειν αὐτὸν τῷ λάχχῳ, » τουτ- C 90. ) Et cum * appropinquaret ipse lacui, »
+ἐστι, μηδέπω παρ᾽ αὐτὸν γενόμενος, « τῷ Δανιὴλ iv — hioc est, 1168/4 cum nondum ad ipsum pervenis-
+φωνῇ ἰσχυρᾷ ἐδόησε, xal! ἀπεχρίθη ὁ βασιλεὺς, set, « ad Danielem voce magna clamavit, respon-
+χαὶ εἶπε τῷ Δανιήλ. » Μηδέπω γὰρ παρ᾽ αὐτὸν τὸν ditque rex, et dixit Danieli. » Cum enim ad ipsum
+λάχκον γενόμενος, ὑπὸ θερμῆς διαθέσεως βοᾶν fvay- lacum nondum pervenisset, pre ardente animi
+χκάζετο, xai τὸν Δανιὴλ καλεῖν, xai πυνθάνεσθαι, affectione exclamare cogebatur, et Danielem vo-
+εἰ 9 τῆς θείας ἀπολαύσας ῥοπῆς, κρείττων ἐφάνη sz; — care, ac de eo percontari, an divinam opem sen-
+πῶν λεόντων ὠμότητος. « Δανιὴλ γὰρ, φησὶν, ὁ δοῦ- — sisset, et leonum crudelitatem superasset, « Daniel
+Xo; τοῦ Θεοῦ τοῦ ζῶντος, ὁ Θεός cou, ᾧ λατρεύεις — enim, inquit, serve Dei viventis, an Deus, cui tu
+ἐνδελεχῶς, el ἠδυνέθη ἐξελέσθα:ι σε ἀπὸ δ᾽ στόματος — servis continue, potuit liberare te ex ore leonum?»
+πῶν λεόντων ; » Ἕχαστον δὲ τῶν εἰρημένων εὐλαδῇ — Unumquodque autem eorum quz dicta sunt, reli-
+δείχνυσι τὸν βασιλέα, καὶ διὰ τὴν εὐτέδειαν χαίροντα — giosum ostendit regem, qui propter pietatem ex
+τῷ Δαν:ἦλ. Πρῶτον μὲν γὰρ δοῦλον αὐτὸν οὐχ ἑαυ- — Daniele gaudium perciperet. Primum enim ipsum
+κοῦ, ἀλλὰ τοῦ Θεοῦ προσαγορεύει " εἶτα ζῶντα τὸδ — non suum, sed Dei servum. appellat : deinde Da-
+τοῦ Δανιὴλ ὀνομάξε, Θεόν" Em θεὰν | nielis. Deum virentem ποπλῖηδί : tum pietatem
+ἐπαινῶν, (7 σὺ, φησὶν, λατρεύεις ἐνδελεχῶς. » " commendans, « Cui tu, inquit, servis continue, »
+πουτέστιν, ὁ μηδὲ διὰ τὴν τοῦ νόμου ἀνάγχην v1ó- — hoc est, qui ne propter eam quidem vim, qua
+πῆς χωλυθεὶς τῆς θεραπείας. Th δὲ, « EL** ἐδυνήθη ^ cogebaris per legem, revocatus es ab hoc cu'tu.
+ἐξελέσθαι gs ἀπὸ στόματο; τῶν λεόντων; » omuzl- — Mud vero : « An potuit libcrarete ex ore leonum?»
+νει El ἐδουλέθη κρείττονά σε τῶν λεόντων &mo- significat : An voluit superiorem te leonibus red-
+φῆναι; Οὐ γὰρ àv ἐχάλεσεν ἀδύνατον τὸν Θεὸν, ἦν — dere? neque. enim impotentem Deum vocasset,
+ζῶντα προσηγόρευσε, Τούτων  àwojsag , ὁ Δανιὴλ — quem viventem nuncupavit. Mis auditis, Daniel
+ἀπεχρίνατο λέγων * respondit dicens :
+
+xa'. Βασιλεῦ, εἰς τοὺς αἰῶνας ζῆθ:, » Τὴν συνέθη Vena, 21. « Rex, in βαευϊδ vive. » Usitatam salu-
+
+τα τὴν €
+
+VARLE LECTIONES
+
+31D προτδέξασθαι. 5 τὴν
+3 αὶ λαμπάδος.  " Gm. À
+Des. in B. *! B τοῦτο δέ.
+
+* B θαῤῥεῖ. Κ᾽ aoc. In. B. post. ἅγιον ponitur.
+B prem. φησί. 35 Aap. In li ante ὁ 825. ponitur. k
+prem. ἕν. "1 χαὶ---Αανιήλ, Des. in. 3 si. Ex Δ suppl. ? ἀπὸ A£x.
+
+
+==== PDF page 0731 (Migne PG 81 cols ~1409-1410) ====
+10 THEODORETI EPISCOPI CYRENSIS 1408
+lationem suis sermonibus preponit : videlicet, À πρόσρησιν τῶν οἰχείων λόγων προτάττει, ἀντὶ τοῦ -
+liceat tibi, rex, diutissime vivere. Etenim in prz- — l'évorzó σοι" ἐπὶ πλεῖστον ζῆν. Καὶ γὰρ xai ἐπὶ
+senti etiam, ut jam ante diximus, sempiternos τοῦ παρόντος, ὡς xai ἤδη mposipfixagev, αἰωνίους
+reges in tabulis contractuum quidam appellare τοὺς βασιλέας ἐν τοῖς τῶν συμδολαίων γραμματείοις
+consueverunt. τινὲς προσαγορεύειν εἰώθασιν.
+
+Vens. 22. « Deus meus, inquit, misit angelum x9'. « Ὁ Θεός μου, φησὶν, ἀπέστειλε τὸν ἄγγελον
+suum, etobturavit ora leonum, et non leserunt αὐτοῦ, xa! ἐνέφραξε V τὸ στόμα " τῶν λεόντων, xai
+1185 we, quia et coram ipso rectitndo et justi- οὐκ ἐλυμήναντό με, ὅτι καὶ ἔναντι" αὑτοῦ εὐθύτης
+lia inventa est in me, in conspectu autem tuo, rex, καὶ δικαιοσύνη "" εὑρέθη μοι, xa ἐνώπιον δέ co,
+delictum non est inventum. in me.» Justus enim — βασιλεῦ, παράπτωμα οὐχ εὑρέθη" ἐν ἐμοΐ. » Δί-
+cum sit Deus, et juste, inquit, omnia moderetur, — xato; γὰρ ὧν, φησὶν, ὁ Θεὸς, xot δικαίως ἅπαν:
+quia vidit impiis legibus ipsius cullum a me ante- πρυτανεύων, θεασάμενος ὅτι τῶν δυστεδῶν νόμων
+latum fuisse, atque in tuum regnum nihil un- τὴν αὐτοῦ προτετίμηχα θεραπείαν, καὶ εἰς τὴν σὴν
+quam me admisisse, prestantiorem me reddidit, δὲ" βασιλείαν οὐδὲν πώποτε" πεπλη μι μέληχ,
+quam eui possent leones nocere, potiusque leo- η χρείττονά με τῆς τῶν λεόντων ἀπέφηνε λύμης, χαὶ
+num imagines, quam leoncs mihi obtulit. μᾶλλον εἰκόνας λεόντων ἣ λέοντας ἔδειξεν.
+
+Vrns. 25. « Tunc rex, inquit, vehementér ga- xy'. € Τότε ὁ βασιλεὺς, φησὶ, πολὺ ἠγαθύνθη tz
+visus est super eo, et Danielem przcepit educi αὐτῷ, καὶ τὸν Δανιὴλ εἶπεν ἀνενέγχαι x. τοῦ Xix-
+de lacu. » Gavisus enim supra modum, et letitig — xov. » Περιχαρὴς yàp** γενόμενος, xai θυμηδίες
+plenus, quippe cum et Dei virtutem cognovisset, ἀνάπλεως, ἅτε δὴ xal τοῦ Θεοῦ τὴν δύναμιν γνοὺς,
+et illius, quem diligebat, salutem didicisset, sta- καὶ τοῦ ἀγαπωμένου τὴν σωτηρίαν μαθὼν, xapav-
+tim ipsum e lacu educi jussit. [24] Deinde con- τίχα αὐτὸν ix τοῦ λάχχου ἀνενεχθῆναι προσέταξε,
+spicatus ipsum salvum ac recte valentem, nili] Εἶτα θεασάμενος αὐτὸν σῶον xal ἐῤῥωμένον, xs
+detrimenti passum * ex impetu leonum, Danielis οὐδεμίαν ἐσχηχότα διαφθορὰν ix τῆς τῶν λεόντων
+accusatores imperavit leonibus cum filiis et uxo- προσδολῆς, τοὺς τοῦ Δανιὴλ χατηγόρους τεροσέταξ:
+ribus projici. « Et. nondum pervenerant, inquit, τοῖς λέουσι σὺν τοῖς υἱέσι xal γυναιξὶ ῥιφῆναι",
+usque ad pavimentum lacus cum jam potiti cssent — « Kol οὐχ ἔφθασαν, φησὶν", εἰς τὸ ἔδαφος τοῦ
+illis leones, eLomnia ossa eorum comminuerunt. » λάχκχου, ἕως οὗ ἐχυρίευσαν αὐτῶν οἱ λέοντες, vx
+loc quoque divinz justitize opus est, et sapienti, πάντα τὰ ὀστᾶ αὑτῶν ἐλέπτυναν. » Καὶ τοῦτο γὰρ"
+Ne erii dicerent, propter expletionem ac satie- C τῆς θείας ἔργον διχαιοσύνης τε xat σοφίας. Ἵνα γὸρ
+tatem leones ἃ Daniele abstinuisse, et invidia exte- μὴ λέγωσιν, ὡς διὰ πλησμονὴν καὶ xópov εἰ
+nuarent factum miraculum, injecti testimonium λέοντες ἀπείχοντο ' τοῦ Δανιὴλ, xal σμιχρύνωτι
+perhibuere leonum crudelitati. Corripuerunt enim τῷ φθόνῳ τὸ γενόμενον θαῦμα, ἐμδληθέντες ἐμαρ-
+ipsos leones, cum deorsum ferrentur, et cum τύρησαν τῇ τῶν λεόντων ὠμότητι " ἐξήρπαζον rip
+1186 demissi ad terram nondum pervenissent, αὐτοὺς καταφερομένους ol λέοντες, xat μηδέπω τοὺς
+€x ipso aere rapientes, alimenta sibi fecerunt. χαλωμένους elg γῆν ἐφιχνουμένους δ᾽ ἐξ αὑτοῦ τοῦ
+Quod igitur dignas poenas. persolverint, justitiam — ἀέρος λαμδάνοντες ἐποιοῦντο τροφήν. Δίχας μὲν οἷν
+Dei commendant : quod autem ita facillime con- ἀξίας ** δεδωχότες τὸ δίχαιον χηρύττουσ: τοῦ Θεοῦ"
+sumpti fuerint a feris, Dei sapientiam indieant, οὕτω δὲ ῥᾷστα καταναλωθέντες ὑπὸ τῶν Or plu τὴν
+omnesque docent, non leonum saturitate, sed Da- τοῦ Θεοῦ σοφίαν ὑποδειχνύουσι, xal διδάσκουσι
+nielis erga Deum studio illum prstantiorem effe. ἅπαντας, ὡς οὐχ ὁ τῶν λεόντων xópog , ἀλλ᾽ 6
+cium esse, quam cui possent leones nocere. Hac περὶ τὸν Θεὸν τοῦ Δανιὴλ πόθος, τῆς τῶν λεόντων a3-
+contemp'atus, τὸν κ΄ λύμης ἀπέφηνε χρείττονα. Ταῦτα θεασάμενο;,
+
+Vens. 25. « Darius rex scripsit omnibus populis, Ὁ κε΄. « Δαρεῖος ὁ βασιλεὺς ἔγραψε πᾶσι τοῖς λαοῖς,
+tribubus, linguis, habitantibus in omni ferra. » φυλαῖς, γλώσσαις, τοῖς οἰκοῦσιν ἐν mdsr, τῇ γῇ.»
+Impium ratus, tantum occultare. miraculum, et — 'Avóstov ἡγησάμενος τοσαύτην χρύψαι θαυματοωυρ-
+non omnes homines socios et participes pietatis γίαν, καὶ μὴ πάντας ἀνθρώπους χοινωνοὺς τῆς εὖ-
+accipere. Seribit itaque in hane sententiam :« Ραχ σεδείας λαβεῖν. Γράφει τοίνυν οὕτως “ « Eipia
+vobis multiplicetur. » Hoc est, liceat vobis per- ὑμῖν πληθυνθείη" » τουτέστι, Γένοιτο ὑμᾶς &azsy-
+petua pace frui. Et similis liec est nostrae salu- τὸς εἰρήνης ἀπολαύειν. "Eoixe δὲ τοῦτο τῇ παρ᾽
+lationi, qui cum epistolas alicui mittimus, initio ἡμῶν γινομένῃ "5 προσηγορίᾳ" xal γὰρ ἡμεῖς ix-
+scribere consuevimus : In Domino salutem. Deinde στέλλοντες προγράφειν εἰώθαμεν τό: Ἔν Κυρίῳ
+
+VARLE LECTIONES.
+
+* B σέ. 9 B ἔφραξε, ** A τὰ στόματα. "5 A el D κατέναντι. ** xal δικ. Des. in Α. A οὐκ ἐποίησα.
+Μὲ δέ, Des inB. 55 Β οὐδέποτε. '"váp.Des.in B. '" B παραθεῖναι τοῖς λέουσι σὺν τοῖς υἱέσι καὶ γυναιξί.
+πε φησ, Des. in Βι 5) γάρ. B δέ, δ᾽ B ἀπέσχοντο. 56 B τῆς γῆς ἀφιχουμένους. " ἀξ. B praem. τάς
+9^ avs. In D ponitur post λύμης. 5 γιν. Des. in D.
+
+==== PDF page 0732 (Migne PG 81 cols ~1411-1412) ====
+1109 ΙΝ DANIELIS CAP. VI. 1110
+χαίρειν. Ἐἴτα διηγεῖται τὸ ἐπωφολὲς καὶ ἐπιχερδὲς A narrat id, quod et utilitatis et lueri plurimum
+διήγημα. possit afferre.
+
+XG'. ("Ex προσώπου μου " ἐτέθη δόγμα ἐν πάσῃ Vens. 26. « A facie mea positum est decretum
+ἀρχῇ τῆς βασιλεία; μου, εἶναι πάντας "5 τρέμοντας — in omni imperio regni inei, ut fiant omnes tre-
+xai φοβουμένους ἀπὸ mposi mou τοῦ Θεοῦ Δανιήλ. » — mentes et timentes a facie Dei Danielis. » Volo,
+Βούλομαι, φησὶ, πάντας ἀνθρώπους τοὺς ὑπὸ τὴν inquit, omnes homines qui sub mea potestate de-
+ἐμὴν τελοῦντας ἐξουσίαν *!, τὸν τοῦ Δανιὴλ mpos- gunt, Deum Danielis adorare, neque lemere ac
+κυνεῖν Θεὸν, xal μὴ ἁπλῶς καὶ ὡς ἔτυχεν, ἀλλὰ μετὰ — foviuito, sed cuui metu. et horrore ei adoratiouis
+δέους καὶ φρίκης προσφέρειν αὐτῷ τὴν προσχύνησιν. — Cullum impendere. Causamque subjiciens, ait :
+Καὶ τὸ» αἰτίαν ἐπάγει, xal φησιν" « Ὅτι αὐτός « Quia ipse est Deus vivens, et manens in szcula. »
+£st: Θεὸς ζῶν, καὶ μένων εἰς τοὺς αἰῶνας. » Διαρχὴς — Ejusmodi enim est, qui perpetuus, ac nulli muta-
+γάρ ἔστι, καὶ τροπὴν οὐδεμίαν δεχόμενος, xal ἀεὶ — tioni obnoxius, et semper eodem modo se habet,
+ὡσαύτως ἔχει, xat εἰς τοὺς αἰῶνα: διαμένει. Τούτοις εἴ in szcula permanet. llis subjicit : « Et regnum
+ἐπάγει" « Kal ἡ βασιλεία αὑτοῦ οὐ διαφθαρήσεται, ejus non corrumpetur, 1187 et dominatio ejus
+xai ἡ xopiía αὐτοῦ ἕως τέλους. (χζ΄.) ᾿Αντιλαμδά. Usque in finem. (Yrns. 27.) Defendit, et liberat. »
+νεται, xal ῥύεται. » Εἰσαεὶ δὲ, φησὶ, διαμένει, xat Bn perpetuum , inquit, permanet, et regnum ejus-
+βασιλείαν ἔχων ἀνώλεθρον, xaX δεσποτείαν τέλος οὐ — modi obtinet, quod corrumpi nequit, ac domi-
+δεχομένην, ῥυομένην δὲ xal λυτρουμένην τοὺς εἰς — niuu) fine carens, quod quidein liberat ac redimit
+αὐτὸν πεπιστευχότας. « Καὶ σημεῖα δὲ ποιεῖ ἐν τῷ omnes qui in eum crediderunt. « Et. signa facit
+οὐρανῷ * xal ἐπὶ τῆς γῆς.» Ἔστι δὲ ἰδεῖν αὐτοῦ — in coelo el in terra. ν Licetque contemplari ipsius
+πὰς θαυματουργίας, τάς τε ἐν τῷ οὐρανῷ γινομένας, — miracula, et quz in coclo, et. qua in lerra fiunt,
+καὶ τὰς ἐπὶ τῆς γῆς, δι᾽ ὧν τὴν ἑαυτοῦ δείκνυσι δύ. — quibus suam ille potentiam ostendit: quam in
+ναμιν, Ταύτην ἡμὶν 5) χαὶ ἐπὶ τοῦ παρόντος ὑπέδε-:- — praesenti quoque nobis declaravit. « Liberavit enim,
+ξεν" « Ἐξείλατο γὰρ, φησὶ, τὸν Δανιὴλ £x. στόματος — inquit, Danielem ex ore leonum. » Et feris fame
+τῶν λεόντων, » xai τῶν λιμῷ xal θυμῷ τεθηγμένων — atque iracundia concitatis eum superiorem effecit.
+θηρίων ἀπέφηνε χρείττονα. Ἢ μὲν οὖν ἐπιστολὴ Epistola igitur liec orbem terrarum edocuit,
+ταῦτα τὴν οἰχουμένην χε. Τὸ δὲ τοῦ διηγήμα- [28] Finis autem narrationis id. continet, αἱ pro-
+τος τέλος περιέχει, ὅτι χατηύθυνε Δανιὴλ ἐν τῇ βα- — spere successerint Danieli res regnante Dario et
+σιλείᾳ Δαρείου χαὶ ἐν τῇ βασιλείᾳ Κύρου τοῦ Πέρσου: — Cyro Persa, hoc est, ut. sub utriusque regno flo-
+
+ουτέστιν, ἐν ἑχατέρᾳ βασιλείᾳ διαλάμπων διετέλεσε, c ruerit, et omnibus conspicuus ac illustris fuerit
+xai ἐν πᾶσι διαπρέπων. ἹΠμᾶς δὲ προσήχει τῆς e9- — honoribus. Nos autem decet, percepta pietatis vi,
+σεδείας μεμαθηχότας τὴν δύναμιν, ταύτην προχι- hanc eligere, et omnibus rebus ipsam anteponere,
+ρεῖσθαι, καὶ πάντων αὐτὴν προτιθέναι, καὶ μηδεμιᾷ — aC nullis periculis territos abea desciscere : imo
+περιστάσει παραχωρεῖν" ἀλλὰ xiv &mavieg ἄνθρωποι — etiamsi omnes homines simul propter ipsam contra
+κατὰ ταὐτὸν καθ᾽ ἡμῶν διὰ ταύτην στρατεύωσι, δέ- — nos pugnent, alaeriter eorum impetum excipere,
+χεσθαι προθύμως τὴν mpocfolhv τῇ ταύτης δυνάμει — hujusce vi fretos. Ita enim beatorum quoque apo-
+θαῤῥοῦντας. Οὕτω yàp xal τῶν μαχαρίων ἀποστόλων — Stolorum chorus, toto propemodum orbe terrarum
+ὁ χορὸς, ἀπὸ πάσης, ὡς ἔπος εἰπεῖν, τῆς οἰχουμένης — Obsessus, inexpugnabilis permansit, atque hostes
+πολιορχούμενος, ἄμαχος μεμένηχε, xal τοὺς mole- Sibi diclo obedientes fecit. Pari ratione beatus
+Βίους ὑπηχόους ἐποιήσατο. Οὕτως ὁ μαχάριος Δα- Daniel, cui tot βαίγαρῷ οἱ ordinatores moliebantur
+νιῆλ, ὑπὸ τοσούτων σατραπῶν xal ταχτιχῶν ἐπιδους — insidias, sibi adversantes ac veluti bello pugnantes
+λευόμενος;, ἀμείνων ἀπεφάνθη τῶν πολεμούντων: — Vicit : el cum inimici jam se victorian adeptos
+xa ἡνίχα δὲ 5" οἱ δυσμενεῖς νενικηχέναι φήθησαν, — existimarent, tunc funditus interiere. Talia itaque
+πκηνικαῦτα πανωλεθρίαν ὑπέμειναν. Τοιαῦτα τοίνυν — babentes exempla, sinceram erga Deum 1188 be-
+ἔχοντες παραδείγματα, εἰλικρινῆ τὴν περὶ τὸν Θεὸν p nevolentiam conservemus, ut ejus auxilio semper
+φυλάξωμεν εὔνοιαν, ἵνα τῆς παρ᾽ αὐτοῦ ῥοπῆς δι- fruamur: quod utinam nos omnes consequamur,
+ηνεχῶς ἀπολαύσωμεν᾽ ἧς γένοιτο πάντας ἡμᾶς ἐπιτυι — gratia et benignitate Domini nostri Jesu Christi,
+xslv, χάριτι καὶ φιλανθρωπίᾳ τοῦ Κυρίου ἡμῶν "In- cum quo Patri gloria cum sancto Spiritu, in se-
+σοῦ Χριστοῦ, μεθ᾽ οὗ τῷ Πατρὶ ἡ δόξα, σὺν τῷ — cula saculorum. Amen.
+
+ἁγίῳ “ Πνεύματι, εἰς τοὺς αἰῶνας τῶν αἰώνων.
+
+᾿Αμήν.
+
+VARLE LECTIONES.
+
+L2 . Des. in B. “ πάντ, Des. in ἃ. *! ἐξ, B βασιλείαν. ** A xal ποιεῖ σημεῖα xal τέρατα àv
+οὐρανῷ, 4“ du. B prata. ἣν, ** δέ, Des. in B. ** B παναγίῳ. ils
+
+==== PDF page 0733 (Migne PG 81 cols ~1413-1414) ====
+1.1 TIIEODORETI EPISCOPI CYRENSIS 1:3
+
+ΤΟΜΟΣ Ζ.
+
+LIBER SEPTIMUS.
+
+CAPUT VII. A ΚΕΦΑΛΑΙΟΝ Z'.
+
+Vrns. 1. « Anno primo Baltasaris regis Chal- a'. « Ἐν τῷ πρώτῳ ἔτει Βαλτάταρ, τοῦ βασιλέως
+dxorum, Daniel somnium vidit, et visio capitis ejus Χαλδαίων, Δανιὴλ ἐνύπνιον εἶδε, καὶ ἡ ὕρασις “ τῆς
+in cubili ejus, et somnium seripsit. » Ad hxc χεφαλῆς αὐτοῦ ἐπὶ τῆς χοίτης αὐτοῦ, xai τὸ ἐν-
+usque verba beatus Daniel magis historico more ὕπνιον ἔγραψε *'.» Μέχρι μὲν ** τούτων τῶν λόγων
+prophetiam conscripsit. Primum enim exorsus ab ὁ μαχάριος Δανιὴλ ἱστοριχώτερον τὴν προφητείαν
+initio statim qu:e ipsis bello captis accidere, com- συνέγραψε. Πρῶτον μὲν yàp εὐθὺς ἀρξάμενος τὰ
+memoravit, * adjecitque una quante auctori om- συμδεδηχότα αὐτοῖς δορυαλώτοις γεγενημένοις t):
+nium rerum Deo curz fuerint. Deinde narravit δαξε" προστέθειχε δὲ xal ὅσης παρὰ τοῦ Θεοῦ τῶ»
+quantas Nabuchodonosor et crudelitatis et super- ὅλων χηδεμονίας ἀπήλαυσαν. Ἔπειτα διηγήσατο,
+Lig ponas persolverit; tum quale supplicium ἡλίχὰς ὁ Ναδουχοδονόσορ τῆς ὠμότητός τε xal ἀλα-
+Baltasar ob sacra vasa ludibrio habita luerit. Quo ζονείας ἔδωχε δίχας " μετὰ ταῦτα οἵαν ὁ Βαλτάσαρ
+divina plaga interfecto, et ad Medos imperio trans* ἕτισε τιμωρίαν. τῶν ἱερῶν καταφρονήσας σχευῶν.
+Jato, quz sibi el Dario aecidere, conscripsit, Τούτου δὲ θείᾳ πληγῇ χαταλυθέντος, xal εἰς Μήδους
+docuitque, quomodo erga se affectum habuerit τῆς βασιλείας μετατεθείσης, τὰ καθ᾽ ἑαυτὸν xal τὸν
+ilum, quales autem ipse sustinuerit insidias a " Δαρεῖον συνέγραψε, διδάξας, ὅπως μὲν ἐκεῖνος περὶ
+ducibus et satrapis , a quibus divino auxilio sit αὐτὸν διετέθη, οἵας δὲ αὐτὸς ὑπομείνας ἐπιδηυλὰ
+vindicatus. Quibns veluti historice relatis, dein- — ὑπό τε τῶν στρατηγῶν xai τῶν σατραπῶν, τῆς θείας
+€eps exponere incipil eas predictiones, quas per ἔτυχεν ἀντιλήψεως. Ταῦτα οἱονεὶ συγγραφιχῶς “᾽
+revelationes eductus. 1189 cst. Ac primum διηγησάμενος, ἄρχεται λοιπὸν διδάσχειν, ἃς διὰ τῶν
+quatuor bestiarum revelationem ponit, Nabucho- ἃχλοκαλύψεων ἐδιδάχθη προῤῥήσεις. Καὶ πρῶτον
+donosoris somnio admodum similem. Etenim ille μὲν τίθησι τὴν τῶν τεττάρων θηρίων ἀποχάλυψιν,
+in una. imagine quadruplicem vidit materiam : et — σφόδρα ἑοιχυῖαν τῷ τοῦ Ναδουχοδονόσορ ἐνυπνίῳ.
+hie ab uno mari quatuor bestias ascendentes. Καὶ γὰρ ἐχεῖνο; ἐν εἰχόνι μιᾷ τέτταρας ἐθεάσατο
+Verum ne bis eadem repetere cogamur, ad singula ὕλας, xoi οὗτος ἀπὸ θαλάττης μιᾶς τέτταρα ἀνιόντα
+interpretanda aggrediamur, unde hoc apertius θηρία. "AXX ἵνα μὴ δὶς 19 τὰ αὐτὰ λέγειν ἀναγχα-
+ostendetur. « Anno primo Baltasaris regis Chul- σθῶμεν, τῆς χατὰ μέρος ἑρμηνείας ἀρξώμεθα᾽ σα-
+deorum, Daniel somnium vidil, et visiones capitis φέστερον γὰρ ἐχεῖθεν τοῦτο δειχθήσεται T. ε Ἐν
+ejus in cubili ejus. » IIoc est, dormiens hane re- τῷ πρώτῳ ἕτει Βαλτάσαρ, βασιλέως Χαλδαίων, As-
+velationem conspesit : cum enim illa etiam qui , νιὴλ ἐνύπνιον εἶδε, xat αἱ ὁράσεις τῆς χεφαλῆς αὐτοῦ
+interdiu vidit, conscripturus sit, merito nos docet, “ ἐπὶ τῆς χοίτης αὐτοῦ.» Τουτέστι, καθεύδων vfi:
+el que in somnis, e que vigilans viderit. « Et τὴν ἀποχάλυψιν ἐθεάσατο' ἐπειδὴ γὰρ μέλλει χαὶ
+somnium, inqult, scripsit. » Neque enim sustinuit ἃ μεθ᾽ ἡμέραν εἶδε συγγράφειν, εἰχότως ἡμᾶς "'
+Sibi divinitus ostensa occultare, sed ad omnium — διδάσχει, τίνα μὲν ὄναρ εἶδε, τίνα δὲ ὕπαρ. « Καὶ τὸ
+utilitatem ea. conseripsit. « Principium verborum ἐνύπνιον, φησὶν, ἔγραψεν.» Οὐ γὰρ ἠνέσχετο κρύψαι
+ipsius. Et respondens dixit. » Hoc est, exorsus τὰ θεόθεν αὐτῷ δειχθέντα, ἀλλ᾽ εἰς ὠφέλειαν ἀπάν-
+est narrationem suam hoc modo : ^o» συνέγραψεν. ε ᾿Αρχὴ '* λόγων αὖ à
+ze '*.» Τουτέστιν, ἤρξατο 75 τῆς διηγήσεως
+
+χριθεὶς εἶ
+
+οὕτως"
+VsRs. 2,5. « Ego Daniel videbam in visione. mea β΄, γ΄. « Καὶ 5 ἐγὼ Δανιὴλ ἐθεώρουν Ev ὁράσε:
+noctu, et ecce quatuor venti coeli impellebant mare μου τῆς νυχτὸς, καὶ ἰδοὺ οἱ τέσσαρες ἄνεμοι τοῦ
+magnum. Et quatuor besti:? magna ascendebant οὐρανοῦ προσέθαλον εἰς τὴν θάλασσαν τὴν μεγάλην.
+e mari, diferentes inter se. » Nabuchodonosor Καὶ τέσσαρα θηρία μεγάλα ἀνέδαινον ἐκ τῆς θαλάτ-
+igitur imaginem vidct, qua docetur rerum przsen- σῆς, διαφέροντα ἀλλήλων.» Ὃ μὲν οὖν Ναβουχοδονό-
+
+VARLE LECTIONES.
+
+** A et B ai ὁράσεις. lta quoque. a m Nostrum post pauca leg." ἔγρ. A add. ἀρχὴν λόγων αὐτοῦ
+
+"piv. Des. N^ “8 PARS τι ᾿ w. "" δίς, Des. in B. "' B ἐδαχθησόμεθα, τι fu. Des.
+in B. 75 ἀρχή. Vid. schol. *. Des. in ἃ. ΤῊ B ἤρξατο, φησί. 16 xat. Des. in A.
+
+
