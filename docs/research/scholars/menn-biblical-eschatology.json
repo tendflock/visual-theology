@@ -1,0 +1,554 @@
+{
+  "scholarId": "menn-biblical-eschatology",
+  "authorDisplay": "Menn",
+  "workDisplay": "Biblical Eschatology",
+  "resourceId": "LLS:EPUB-MENN-BIBESCH2",
+  "resourceFile": "epubs/9781532643194.epub",
+  "traditionTag": "covenantal-amillennial-eclectic",
+  "fullTitle": "Biblical Eschatology, 2nd Edition",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:7-8",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Matt 24",
+    "Mark 13",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "F: Amillennialism — Menn explicitly defends amillennialism as the position that 'best accords with the biblical data,' grounded in the 'two-age' structure and the recapitulative reading of Rev 19–20. He also explicitly critiques historic premillennialism (the position the briefing assigned him).",
+      "H: Inaugurated 'two-age' eschatology — the qualitative this-age / age-to-come distinction is the structural key; the second coming is THE end, with no intervening millennial age.",
+      "B: Fourth kingdom = Rome (traditional Babylon-Persia-Greece-Rome sequence), with Dan 7 typologically extended through John's beasts to the eschatological enemy.",
+      "C: Little horn (Dan 7:7-8, 20-25) refers historically to Antiochus Epiphanes but is typologically reapplied by Paul (2 Thess 2) and John (Rev 13) to a future Antichrist; Menn favors the personification reading of Antichrist over the single-individual reading.",
+      "K: Anti-dispensationalist — covenantal hermeneutic, church is 'remnant Israel,' rejects the Israel/church bifurcation and the 'prophetic clock' reading of Dan 9.",
+      "N: Strong cross-book integration — Dan 2 + Dan 7 universal-judgment frame is the primary lens for Rev 13/17, Olivet Discourse, and 2 Thess 2; explicit Dan 7→Rev 20 amillennial mapping."
+    ],
+    "moderate": [
+      "J: Son of Man (Dan 7:13-14) — both Christ's ascension/enthronement AND his second coming are involved in fulfilling Daniel's prophecy (he favors Goldsworthy's both/and reading; the original direction in Dan 7 is upward, vindicated after suffering).",
+      "O: Typological-but-not-literal future fulfillment — Daniel's imagery is reapplied (not 'literally' fulfilled in every detail) by Jesus, Paul, and John."
+    ],
+    "tentative": [
+      "L: Apocalyptic numerology — symbolic; the three-and-a-half/1260/'time times and half a time' figures from Dan 7:25 / 9:27 / 12:7 are all 'figurative, not literal,' originally Antiochus and reapplied archetypally to the church age."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — the traditional Babylon / Medo-Persia / Greece / Rome sequence; Dan 2 and Dan 7 are parallel and both contemplate universal (not local) judgment, with the messianic kingdom inaugurated during Rome's reign and consummated at Christ's return.",
+      "commitment": "strong",
+      "rationale": "Menn treats Daniel 7's four beasts as a 'world-historical, geopolitical scheme' parallel to Nebuchadnezzar's statue in Daniel 2. He follows the consensus identification of the beasts as Babylon, Medo-Persia, Greece, and Rome, noting that 'God will inaugurate his messianic kingdom' during Rome's tenure. Crucially, he reads Dan 2 and Dan 7 as contemplating universal — not local — judgment, which becomes his key argument against preterist readings of Revelation that limit the beasts to first-century Israel. The fourth beast also extends typologically into Revelation's beasts: 'The Bible always uses the term \"beast\" to describe empires, not individuals. The description of the \"beast\" in Revelation 13 is drawn from Daniel 7, which describes four empires as four different beasts.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn on Dan 7 four beasts / four kingdoms"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › The prophecies of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › The prophecies of Daniel"
+          },
+          "quote": {
+            "text": "the four beasts represent four successive kingdoms and are parallel to the four parts of the statue in Nebuchadnezzar's dream in Daniel",
+            "sha256": "5f29997ca00be5a805966ddf1dab4db97891c481ca6eef8ed0ce720305ddca62"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn identifies fourth beast as Rome"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › The prophecies of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › The prophecies of Daniel"
+          },
+          "quote": {
+            "text": "most interpret the first beast as Babylon, the second as Medo-Persia, the third as Greece, and the fourth as Rome during which God will inaugurate his messianic kingdom",
+            "sha256": "fb7d1e96de5066e453919dedce3a71a5d273603d4cc5fe109c35edc80458cf7b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 11 (Revelation)",
+            "passageRef": "Menn: beasts of Revelation drawn from Dan 2/7, universal judgment"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 11 — The Book of Revelation › Critique of preterism",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 11 — Revelation › Critique of preterism"
+          },
+          "quote": {
+            "text": "Revelation's depiction of the \"beasts\" comes largely from Daniel",
+            "sha256": "e947cc45dd760736b8d3d59b432a44fa9c03cfebb1ec8d5cc2f84d519125f0a8"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn (Dan 7:8, 24-25)",
+      "position": "Historically Antiochus Epiphanes (along with Dan 8's small horn and Dan 11's 'despicable person'), typologically reapplied by Paul (2 Thess 2) and John (Rev 13) as imagery for an end-time 'Antichrist' figure. Menn ultimately leans toward Antichrist as the personification of evil systems rather than a single eschatological individual.",
+      "commitment": "strong",
+      "rationale": "Menn flatly identifies the historical referent: 'The \"little horn\" of Dan 7:7–8, 20–25; 8:9–26 and the \"despicable person\" of Dan 11:21–37 appear to refer to Antiochus Epiphanes.' But he also affirms the typological reapplication: Daniel's vision 'extends beyond Antiochus,' and 'just as Jesus in the Olivet Discourse applied Daniel's \"abomination of desolation\" references to the events of AD 70, so Paul in 2 Thessalonians 2 and John in Revelation apply Daniel's themes and imagery to Antichrist.' On the contemporary identification debate, Menn notes that 'the Bible always uses the term \"beast\" to describe empires, not individuals' — pushing the personification reading of Antichrist as 'anti-Christian social-political-religious systems' over the single-future-individual reading favored by dispensationalists and many evangelicals.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn: little horn = Antiochus Epiphanes (historical referent)"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › The prophecies of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › The prophecies of Daniel"
+          },
+          "quote": {
+            "text": "The \"little horn\" of Dan 7:7-8, 20-25; 8:9-26 and the \"despicable person\" of Dan 11:21-37 appear to refer to Antiochus Epiphanes",
+            "sha256": "19041c14930d0c47ccfda73c81024a8236b97b4acc7dc4df6d31fa7a07e9e07e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn: beast = empire, not individual"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › Antichrist as a person",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › Antichrist as a person"
+          },
+          "quote": {
+            "text": "The Bible always uses the term \"beast\" to describe empires, not individuals. The description of the \"beast\" in Revelation 13 is drawn from Daniel 7, which describes four empires as four different beasts. The fourth beast in Dan 7:7-8, 11-12, 19-25 refers to the Roman Empire, not an individual.",
+            "sha256": "63682b59c041e0fba94adaa0e3f70247472f5f78d975b93ce3851805020012ba"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Amillennial. The 1000 years of Rev 20 is symbolic of the church age between Christ's first and second advents; Rev 20 recapitulates rather than chronologically follows Rev 19. Menn explicitly critiques both historic premillennialism and dispensational premillennialism. (NOTE: this contradicts the briefing's classification of Menn as historic-premil; the work itself self-identifies as amillennial — see distinctiveMoves.)",
+      "commitment": "strong",
+      "rationale": "Menn's signature contribution is in fact NOT historic premillennialism but a sustained amillennial defense. Appendix 2 — 'The Millennium: An Amillennial Synthesis of the Biblical Data' — opens by stating the thesis directly: 'The amillennial position best accords with the biblical data. This conclusion is based on the overall structure of biblical eschatology and the structure and language of Revelation 20.' He grounds amillennialism in the 'two-age' structure that 'rules out premillennialism' and in a recapitulative (not sequential) reading of Rev 19–20: 'premillennialist exegesis does not take into account the pattern of recapitulation throughout the book of Revelation or the many indications that Rev 19:11—20:6 are not chronologically sequential but are parallel and recapitulative.' He summarizes the amil/non-premil package as: one general resurrection and judgment at the second coming, Rev 20 recapitulates Rev 19, no co-existence of glorified and natural humans after the parousia, and the new heavens/earth introduced at Christ's return — not 1000 years later.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "Appendix 2 (Amillennial Synthesis)",
+            "passageRef": "Menn's amil thesis statement"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "App. 2 — The Millennium: An Amillennial Synthesis of the Biblical Data",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, App. 2 — Amillennial Synthesis"
+          },
+          "quote": {
+            "text": "The amillennial position best accords with the biblical data. This conclusion is based on the overall structure of biblical eschatology and the structure and language of Revelation",
+            "sha256": "c945841dd772510abb62813a37b6cff9af1dbc26ba7d653d4a95a3f3686a8444"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 7 (The Millennium)",
+            "passageRef": "Menn's critique of historic premil — recapitulation"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 7 — The Millennium › Critique of historic premillennialism",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 7 — Millennium › Critique of historic premillennialism"
+          },
+          "quote": {
+            "text": "premillennialist exegesis does not take into account the pattern of recapitulation throughout the book of Revelation or the many indications that Rev",
+            "sha256": "d00f1485d488fe71ada837d41adc1e4ccbba8576c259eab20d913e82ad8c3864"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 7 (The Millennium)",
+            "passageRef": "Menn summary of amil position vs premil"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 7 — The Millennium › Overview of major millennial positions",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 7 — Millennium › Overview"
+          },
+          "quote": {
+            "text": "two bodily resurrections and two judgments: the resurrection and judgment of believers at the time of the second coming",
+            "sha256": "5362e6d6d51b87d762ba6a1bd98c20ab6db13397fe0d6f81ade22cbd15914ddf"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Inaugurated 'two-age' eschatology: 'this age' (temporal, sin, death) and 'the age to come' (eternal, holiness, resurrected life). The two ages exhaust all of time; the age to come immediately succeeds this age at Christ's parousia, with no intervening millennial age. Already/not-yet kingdom in Christ's first coming, consummated at the second.",
+      "commitment": "strong",
+      "rationale": "The two-age structure is Menn's master interpretive grid: 'The terminology of the two ages is the key concept for understanding biblical eschatology. A proper understanding of how this age and the age to come fit together renders biblical eschatology both understandable and coherent.' He explicitly leverages this against premillennialism: the two-age scheme 'rules out premillennialism' because Scripture knows no third age between the parousia and the eternal state. He pairs it with Hoekema-style inaugurated eschatology — most OT prophecy was fulfilled in Christ's first coming; what remains (the 'not yet' of the kingdom) is interpreted within the two-age frame.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 4 (Overall Structure)",
+            "passageRef": "Menn on two-age structure"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 4 — Interpreting Biblical Eschatology in Light of its Overall Structure › The 'two-age' model",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 4 — Overall Structure › Two-age model"
+          },
+          "quote": {
+            "text": "The terminology of the two ages is the key concept for understanding biblical eschatology. A proper understanding of how this age and the age to come fit together renders biblical eschatology both understandable and coherent.",
+            "sha256": "86ab18dd26a3347cf137350f50fe727dc1e4a4792dab5abf07b7c25f923bac70"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13-14)",
+      "position": "Christological — the Dan 7:13 'Son of Man coming on the clouds' is fulfilled BOTH in Christ's ascension (the 'upward' direction in Dan 7, where the Son of Man comes TO the Ancient of Days) AND in his return at the parousia. Menn endorses Goldsworthy/Carson's combined ascension-and-return reading rather than restricting Dan 7:13 to either pole.",
+      "commitment": "moderate",
+      "rationale": "Menn first acknowledges N. T. Wright's correction that Dan 7 'conceives the scene from the perspective of heaven, not earth. The \"son of man\" figure \"comes\" to the Ancient of Days. He comes from earth to heaven, vindicated after suffering.' But he refuses to settle for a one-sided ascension reading. Quoting Goldsworthy: 'In Daniel 7 he comes in the clouds to God and receives the kingdom. This takes care of the ascension and the fact that some of Jesus' contemporaries would witness it [see Matt 16:28; Mark 9:1]. Daniel then tells how this kingdom becomes the possession of the saints of the Most High. This takes care of the \"like manner\" return of Jesus and the fact that the second coming is also spoken of in Daniel 7 terms.' So Menn's J-position is structurally inaugurated/already-not-yet: the Son-of-Man text is fulfilled at the ascension/enthronement and again at the parousia.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 8 (Olivet Discourse)",
+            "passageRef": "Menn on Son of Man fulfilling Dan 7 in ascension and return"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 8 — The Olivet Discourse › Son of Man coming on the clouds",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 8 — Olivet Discourse › Son of Man"
+          },
+          "quote": {
+            "text": "In Daniel 7 he comes in the clouds to God and receives the kingdom. This takes care of the ascension and the fact that some of Jesus' contemporaries would witness it",
+            "sha256": "07db4aad35e118a2d29c22a0905f7f9a848c2a30a65136baae6c864e6ea10f46"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 8 (Olivet Discourse)",
+            "passageRef": "Menn quoting Wright on direction in Dan 7"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 8 — The Olivet Discourse › Son of Man coming on the clouds",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 8 — Olivet Discourse"
+          },
+          "quote": {
+            "text": "the Danielic background of Jesus' reference \"would not advance the cause of those who read [Matt",
+            "sha256": "f9070e1bff550669272a8b5a9c36a9ce334aed4a35f4a96bbff2d1aa8698c93c"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Dispensationalism vs covenantalism",
+      "position": "Covenantal, anti-dispensationalist. The church IS 'remnant Israel' / 'the Israel of God' (Gal 6:16); rejects Israel/church bifurcation, rejects the dispensational reading of Dan 9:24-27 as a 'prophetic clock' with a parenthetical church age, and rejects literalist OT-prophecy hermeneutics.",
+      "commitment": "strong",
+      "rationale": "Menn argues the standard covenantal case: 'The NT clarifies that the church is \"remnant Israel\" and, indeed, represents a great worldwide expansion of remnant Israel.' He attacks the dispensationalist reading of Dan 9:24-27 as 'fundamentally different from the historic Christian view,' and frames dispensationalism's 'prophetic clock' construct as a fabrication unsupported by the actual NT use of Daniel. His critique of historic premillennialism is exegetical (recapitulation, two-age structure); his critique of dispensational premillennialism is everything in the historic-premil critique PLUS the additional charges of unwarranted Israel/church bifurcation, fabricated millennium content, and inconsistent literalism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 3 (OT eschatological expectations)",
+            "passageRef": "Menn: church is remnant Israel"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 3 — OT Eschatological Expectations › Christ's first coming and the fulfillment of OT prophecies concerning Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 3 — OT prophecies concerning Israel"
+          },
+          "quote": {
+            "text": "The NT clarifies that the church is \"remnant Israel\" and, indeed, represents a great worldwide expansion of remnant Israel",
+            "sha256": "1ed8ff907e43fad03d0627fcdefab197396fdca42eba1160cdf90fcc6f462cf4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 7 (The Millennium)",
+            "passageRef": "Menn on dispensationalist Dan 9 reading"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 7 — The Millennium › Dispensational premillennialism",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 7 — Millennium › Dispensational premillennialism"
+          },
+          "quote": {
+            "text": "The dispensationalist interpretation is fundamentally different from the historic Christian view",
+            "sha256": "c340ca238d4c242af9c677f22cdfc1c401bb5df88e78f0bb9b042b4c19adef6e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book Dan 7 ↔ Rev / NT integration",
+      "position": "Strong cross-book integration: Daniel 2 + 7 are the primary lens for Revelation 13/17 (the beasts), the Olivet Discourse (Son of Man + abomination), and 2 Thess 2 (man of lawlessness). The integration is typological-reapplicative, not strict-literal: NT writers take Daniel's imagery and reapply it to Christ's first and second comings and the inter-advent church age.",
+      "commitment": "strong",
+      "rationale": "Menn's whole architecture in chapters 8 (Olivet), 10 (Antichrist), and 11 (Revelation) is built on cross-book Dan→NT mapping. He devotes a section explicitly titled 'Antichrist seen in parallels between Daniel, 2 Thessalonians 2, and Revelation,' arguing that 'Just as Jesus in the Olivet Discourse applied Daniel's \"abomination of desolation\" references to the events of AD 70, so Paul in 2 Thessalonians 2 and John in Revelation apply Daniel's themes and imagery to Antichrist.' On Revelation specifically: 'Revelation's depiction of the \"beasts\" comes largely from Daniel 2 and 7. Daniel's beasts describe four world empires, which also are the subject of God's ultimate judgment.' This cross-book reading drives both his anti-preterist and anti-dispensationalist arguments.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn: Antichrist parallels Daniel/2 Thess/Revelation"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › Antichrist seen in parallels between Daniel, 2 Thess 2, and Revelation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › Daniel/2 Thess/Revelation parallels"
+          },
+          "quote": {
+            "text": "Antichrist seen in parallels between Daniel,",
+            "sha256": "bff1aa139deadaccb2871e85f44799beaaabfa1839597c5c59de20bea4af154f"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 11 (Revelation)",
+            "passageRef": "Menn: Rev beasts come from Dan 2 and 7"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 11 — The Book of Revelation › Critique of preterism",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 11 — Revelation › Critique of preterism"
+          },
+          "quote": {
+            "text": "Daniel's beasts describe four",
+            "sha256": "13576c1f9c39880687a807bcf0ee21cf03b99cc9b67a994b9621e4731fd21293"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure (literal vs typological)",
+      "position": "Typological-reapplicative, not strict-literal. Daniel's prophecies have a primary historical referent (Antiochus, Rome) AND are 'reapplied' by Jesus, Paul, and John to events of AD 70 and to the eschatological end. 'Future fulfillment cannot be \"literal\"' in every detail because the AD 70 fulfillment of Dan's abomination of desolation already shows the prophecy operating typologically.",
+      "commitment": "moderate",
+      "rationale": "Menn explicitly heads a section 'Future fulfillment cannot be \"literal\"' arguing that 'because Matt 24:15; Mark 13:14 (\"abomination of desolation\") and Matt 24:21; Mark 13:19 (\"great tribulation\") have already been fulfilled in the events of AD 70, we cannot apply what Jesus says \"literally\" in every detail to any end-time tribulation.' This typological reading runs through his Daniel exegesis: numbers are figurative (1260 days, time-times-half), beasts symbolize empires not individuals, and the same passage can have both an Antiochene/AD 70 fulfillment and an eschatological reapplication.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 8 (Olivet Discourse)",
+            "passageRef": "Menn: future fulfillment cannot be literal"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 8 — The Olivet Discourse › Future fulfillment cannot be 'literal'",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 8 — Olivet Discourse › Future fulfillment cannot be 'literal'"
+          },
+          "quote": null,
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Revelation 13's beast is drawn directly from Daniel 7's beasts ('the beast' in Rev 13 is composed from the four beasts of Dan 7). Menn explicitly argues against reading the Rev 13 beast as a single end-time individual: the biblical pattern is that 'beast' refers to empires, not persons. The Rev 13 beast is best read as a personification of recurring anti-Christian socio-political-religious systems, climaxing in a final eschatological manifestation. This disambiguates Menn from both dispensational ('one future Antichrist') and full-preterist ('only Rome AD 70') readings.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 10 (Antichrist)",
+            "passageRef": "Menn on Rev 13 beast as empire imagery from Dan 7"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 10 — The 'Antichrist' › Antichrist as a person",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 10 — Antichrist › Antichrist as a person"
+          },
+          "quote": {
+            "text": "The Bible always uses the term \"beast\" to describe empires, not individuals. The description of the \"beast\" in Revelation 13 is drawn from Daniel 7, which describes four empires as four different beasts.",
+            "sha256": "68274bc2fa947c2caa1c9b4dc2d30779df3388296b75c2071beb3137cc829d8b"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Rev 20's millennium is symbolic of the church age between Christ's resurrection/ascension and the parousia, NOT a literal future thousand-year earthly reign. Rev 20 recapitulates Rev 19 (does not chronologically follow it). The 'first resurrection' of Rev 20 is the believer's spiritual life / participation in Christ's resurrection, not a bodily resurrection separated from the general resurrection by 1000 years. Menn defends this with the 'two-age' structural argument and with detailed exegesis of recapitulation patterns in Revelation.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "Appendix 2 (Amillennial Synthesis)",
+            "passageRef": "Menn's amillennial reading of Rev 20"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "App. 2 — The Millennium: An Amillennial Synthesis of the Biblical Data",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, App. 2 — Amillennial Synthesis"
+          },
+          "quote": {
+            "text": "The amillennial position best accords with the biblical data. This conclusion is based on the overall structure of biblical eschatology and the structure and language of Revelation",
+            "sha256": "c945841dd772510abb62813a37b6cff9af1dbc26ba7d653d4a95a3f3686a8444"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Olivet Discourse uses Daniel's imagery (Son of Man coming on clouds, abomination of desolation, great tribulation) with a primary AD-70 referent ('this generation') and a secondary eschatological reapplication. The Son-of-Man-on-clouds language draws Dan 7:13 into both the AD 70 vindication AND the parousia; the 'abomination of desolation' was already fulfilled in AD 70, so future fulfillment must be typological rather than 'literal' in every detail.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781532643194.epub",
+            "spineSection": "ch. 8 (Olivet Discourse)",
+            "passageRef": "Menn on Dan 7 background of Olivet Son-of-Man saying"
+          },
+          "frontend": {
+            "author": "Menn",
+            "title": "Biblical Eschatology, 2nd Edition",
+            "section": "Ch. 8 — The Olivet Discourse › Son of Man coming on the clouds",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Menn, Biblical Eschatology, ch. 8 — Olivet Discourse › Son of Man"
+          },
+          "quote": {
+            "text": "the Danielic background of Jesus' reference \"would not advance the cause of those who read [Matt",
+            "sha256": "f9070e1bff550669272a8b5a9c36a9ce334aed4a35f4a96bbff2d1aa8698c93c"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "MAJOR CORRECTION TO BRIEFING: Menn is amillennial, not historic-premillennial. Appendix 2 is titled 'The Millennium: An Amillennial Synthesis of the Biblical Data' and opens 'The amillennial position best accords with the biblical data.' Chapter 7 contains explicit critiques of BOTH historic and dispensational premillennialism. The traditionTag 'covenantal-historic-premil-eclectic' assigned by the briefing does not match the work's self-identification — Menn is better classified as 'covenantal-amillennial-eclectic' (he draws heavily on Hoekema, Riddlebarger, Beale, Storms, Venema, Kline, and is sympathetic to Mealy's 'new-creation millennialism' as a partial amil/premil bridge).",
+    "Uses the 'two-age' structure (this age / age to come) as the master interpretive grid that 'rules out premillennialism' a priori — making his case structural-systematic before turning to Rev 20 exegesis.",
+    "Treats Antichrist primarily as a personification of recurring anti-Christian systems (drawing on Hoekema, Beale, Johnson, Milligan, Ford) rather than a single end-time individual, while preserving room for a final climactic manifestation.",
+    "Catalogues four millennial views in a comparative table (Appendix 1) before staking out the amil position — pedagogically eirenic and explicit about disagreements.",
+    "Engages dispensationalism on its own ground: he grants that 'premillennialism is founded principally on interpretation of the Old Testament' and then dismantles dispensational OT exegesis (Dan 9 'prophetic clock,' Israel/church bifurcation, literalist hermeneutics) book-by-book.",
+    "On Dan 7:13 / Son of Man: refuses to choose between Wright's 'ascension only' reading and the traditional 'parousia only' reading, endorsing Goldsworthy/Carson's both/and combination.",
+    "Reads Dan 7's fourth beast as Rome historically AND typologically — the 'final act of the drama involving the fourth beast lies in the future' and is corroborated by Rev 13/17, Matt 24, 2 Thess 2."
+  ],
+  "uncertainties": [
+    "Menn does not engage Daniel 7 verse-by-verse (no commentary chapter on Dan 7); his Dan 7 reading is distributed across ch. 10 (Antichrist), ch. 11 (Revelation), and Appendix 4 (Dan 9). The Daniel 7 court scene (vv. 9-12) and the saints-receiving-the-kingdom material (vv. 15-22, 27) are touched only briefly in passing — so passageCoverage is narrower than for a Daniel-focused commentary.",
+    "He does not develop a position on the divinity of the Dan 7:13 Son of Man as such (axis J Christology is treated through Goldsworthy/Carson rather than independently); the Hamilton-style 'son of man as divine in Daniel itself' argument is not engaged.",
+    "On future ethnic Israel: the briefing flagged this as a Menn distinctive, but the passages I sampled treat the church as 'remnant Israel' / 'the Israel of God' without obviously developing a future-role-for-ethnic-Israel position. (Appendix 6 covers Rom 11:25-26 'and so all Israel will be saved' but I did not read it deeply within the time budget.)",
+    "Axes A (date/genre), E (community of saints), and L (numerology) are treated only briefly in passing within the eschatology framework — expected, since this is a systematic eschatology, not a Daniel commentary."
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "scholarId": "theodoret-pg81-daniel",
+  "authorDisplay": "Theodoret",
+  "workDisplay": "Commentary on Daniel",
+  "resourceId": "LLS:TLG4089.028",
+  "resourceFile": "external/theodoret-pg81-dan.txt",
+  "traditionTag": "patristic-greek-antiochene",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Sixth-century Daniel taken as load-bearing premise — Theodoret treats the prophecy as an authentic vaticinium given to the historical exilic Daniel and grounds his refutation of the Maccabean-fourth-kingdom view on the chronological impossibility of the Hasmoneans inheriting Daniel's eternal kingdom",
+      "B: Fourth kingdom = Rome — repeated, explicit, methodologically defended via the third-beast / four-Diadochi mismatch, the simultaneity of the ten kings, and the post-Antichrist fulfilment scheme; he is 'astonished' (θαυμάζω) that any teacher of piety would identify the fourth bestia with Macedon",
+      "C: Little horn = Antichrist directly, with Antiochus IV functioning as eikōn / imago of the eschatological archetypon — the typological extension is built on explicit citation of 2 Thessalonians 2",
+      "J: Son of Man = Christ in his incarnate Second Coming — the ascent to the Ancient of Days is interpreted via Matt 24:30 and 1 Thess 4:16, so Dan 7:13–14 is read as a prophecy of the parousia, not merely heavenly enthronement",
+      "K: Saints' kingdom = the one true unending kingdom prepared by 'the God of saints,' contrasted with the four evanescent earthly kingdoms — explicitly eschatological and post-Antichrist, not chiliastic-earthly",
+      "L: Antiochene historical-grammatical hermeneutic with restrained typology — beasts are read as named historical empires (Assyria/Chaldea, Persia, Macedon, Rome) before any spiritual extension; he refuses the Alexandrian reflex to allegorise"
+    ],
+    "moderate": [
+      "F: 'Time, times, and half a time' = three-and-a-half years of the Antichrist's reign — explicit equation in dan7 §25, paralleled to Dan 12:11",
+      "O: Two-stage fulfillment structure — the historical referent (Antiochus IV in Dan 11) is the eikōn, the eschatological referent (Antichrist) is the archetypon; the prophecy migrates from the one to the other, and the migration is signalled by features that no longer fit the historical type"
+    ],
+    "tentative": [
+      "E: Engagement with anti-Christian Maccabean reading is implicit (anonymous 'some teachers of piety') rather than naming Porphyry — but the structural argument against the Maccabean fourth kingdom is fully developed at the close of the Daniel-7 commentary"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — explicitly named and defended as the only intelligible referent of the fourth bestia",
+      "commitment": "strong",
+      "rationale": "Theodoret states without hedging that the fourth beast is the kingdom of the Romans; he notes that the prophet leaves it unnamed because the Roman polity was 'composed of many nations' (cycling through monarchy, democracy, aristocracy, then back to monarchy). He locates the iron teeth in Roman tribute-extraction and the trampling feet in the Roman army. At the close of Dan 7 he argues by elimination: the third beast had four heads (the Diadochi), so the Macedonian succession is already accounted for under the third kingdom; the fourth beast has ten simultaneous kings, not four sequential ones; the prophecy promises the kingdom to the saints after the fourth beast's destruction, which the Maccabees plainly never received; and after Antiochus the Hasmoneans were extinguished by Herod, not crowned with an 'eternal kingdom.' Therefore 'it remains' (Λείπεται τοίνυν) that the fourth beast must be Rome.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1419,
+            "passageRef": "Theodoret on Dan 7:7"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:7 — fourth-beast identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.7 (PG 81:1419)"
+          },
+          "quote": {
+            "text": "θηρίον τὴν Ῥωμαϊχὴν χαλεῖ βασιλείαν",
+            "sha256": "3940319e2b84287eb161333f1a009aa9ff68f457c6c667a2e0b95a486c4e3b0b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1419,
+            "passageRef": "Theodoret on Dan 7:7 — 'Romans bound the dominion'"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:7 — Roman supremacy clause",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.7 (PG 81:1419)"
+          },
+          "quote": {
+            "text": "Ῥωμαῖοι τὸ χατὰ πάντων ἀνεδήσαντο χράτος",
+            "sha256": "20814bd95facc3b3ac0e56c72a98a7fc8403a50c2c08d206375da36bf4939e6f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1437,
+            "passageRef": "Theodoret on Dan 7:27 — concluding identification"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:27 — closing summary against Maccabean reading",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.27 (PG 81:1437)"
+          },
+          "quote": {
+            "text": "τὴν Ῥωμαϊχὴν βασιλείαν νοεῖν τὸ τέταρτον θηρίον",
+            "sha256": "7b8b36fbd4daf85d8a14b138a7952291a2d06621d3fb1d18bb32f14599d92262"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Eschatological Antichrist — Antiochus IV functions as a typological imago (eikōn) but is not the referent of Dan 7's little horn",
+      "commitment": "strong",
+      "rationale": "On Dan 7:8 Theodoret writes that the prophet 'here hints at the Antichrist, appearing in the midst of the ten horns,' and immediately fuses the exegesis with 2 Thessalonians 2 — the man of lawlessness who exalts himself above every god and sits in the temple of God. The little horn's mouth speaking great things, his three-and-a-half-year reign, his war against the saints, and his destruction at the parousia are all referred to a future eschatological figure, not to Antiochus Epiphanes. In the Daniel 11 commentary he makes the typology explicit and structural: 'the archetype of Antiochus is the Antichrist, and the image of Antichrist is Antiochus' (ἀρχέτυπον δὲ τοῦ Ἀντιόχου ὁ ἀντίχριστος, καὶ τοῦ Ἀντιχρίστου εἰκὼν ὁ Ἀντίοχος). The prophecy migrates from imago to archetype precisely where its predicates cease to fit Antiochus.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1421,
+            "passageRef": "Theodoret on Dan 7:8 — Antichrist identification"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:8 — little horn = Antichrist",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.8 (PG 81:1421)"
+          },
+          "quote": {
+            "text": "᾿Αντίχριστον αἰνίττεται, μεταξὺ τῶν δέχα κεράτων",
+            "sha256": "a9070c64d0d95203042f5d4b9edc3732b8845dbcb1403f8c44b0b3ffbba7b145"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1421,
+            "passageRef": "Theodoret on Dan 7:8 — Pauline cross-reference (2 Thess 2)"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:8 — bridge to 2 Thess 2",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.8 (PG 81:1421)"
+          },
+          "quote": {
+            "text": "Σαφῶς δὲ ἡμᾶς ὁ μακάριος Παῦλος",
+            "sha256": "f886d26c8afe697a441da72356e5d862300b57161cc249da345beeefdebf4066"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan11_12.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1525,
+            "passageRef": "Theodoret on Dan 11:35 — Antiochus/Antichrist typology formula"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 11:35 — eikōn / archetypon formula",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 11.35 (PG 81:1525)"
+          },
+          "quote": {
+            "text": "ἀρχέτυπον δὲ τοῦ ᾿Αντιόχου ὁ ἀντίχριστος",
+            "sha256": "ffa6283bf0ca17755db215c95e9f0cb601ab68a0a96da6da9c124bebb065f31d"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "position": "Three-and-a-half literal years of the Antichrist's reign",
+      "commitment": "moderate",
+      "rationale": "Theodoret reads 'a time, and times, and half a time' (Dan 7:25) as a literal three-and-a-half-year span during which the little horn 'shall prevail.' He cross-references the more explicit '1290 days' figure of Dan 12:11, and uses the same number again in his Dan 11–12 exposition — the temporal index is part of the eschatological-Antichrist payload, not part of the Antiochene historical layer.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1429,
+            "passageRef": "Theodoret on Dan 7:25 — 3.5 years"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:25 — three and a half years",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.25 (PG 81:1429)"
+          },
+          "quote": {
+            "text": "τρία ἥμισυ ἔτη λέγει",
+            "sha256": "e444e16f28048a36a5d5ed5abfca0e361017ac2f86704e6f4e7ad56daa8b5524"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Christ in his incarnate Second Coming — Dan 7:13–14 is read directly as a prophecy of the parousia",
+      "commitment": "strong",
+      "rationale": "Theodoret reads the figure who 'comes with the clouds of heaven as a Son of Man' as Christ unambiguously, but specifically as Christ in his Second Coming, not as a heavenly-court enthronement scene divorced from incarnation. He stitches the verse to Matt 24:30 ('you shall see the Son of Man coming on the clouds with his angels') and 1 Thess 4:16 ('the Lord himself shall descend from heaven with a shout, with the voice of the archangel'), and reads 'as Son of Man' as denoting the assumed human nature, the coming on clouds as denoting authority, and the receiving of honor and rule from the Ancient of Days as 'as a man' — the human-natured Christ glorified at the parousia. Psalm 2 ('Thou art my Son') is invoked as the inner-Trinitarian counterpart. The Son of Man is therefore not a corporate personification of saints (against the Maccabean reading he will refute later) but the incarnate Lord at the consummation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1426,
+            "passageRef": "Theodoret on Dan 7:13–14 — Second-Coming reading"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:13-14 — parousia interpretation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.13-14 (PG 81:1426)"
+          },
+          "quote": {
+            "text": "ἐπιφάνειαν προθεσπίζων",
+            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1426,
+            "passageRef": "Theodoret on Dan 7:13–14 — Psalm 2 cross-reference"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:13-14 — Psalm 2 anchor",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.13-14 (PG 81:1426)"
+          },
+          "quote": {
+            "text": "Κύριος εἶπε πρός με",
+            "sha256": "de2e9bcd21506f19e07b5e4e9e26290710fe5b131cab996add392dcdf6bc81b6"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Kingdom of the saints",
+      "position": "The single eternal kingdom that succeeds the four transient empires — eschatological, prepared by the God of saints, contrasted point-by-point with the temporality of earthly polities",
+      "commitment": "strong",
+      "rationale": "From his very first comment on Dan 7 Theodoret juxtaposes the four mortal beasts with the one ἀτελεύτητος (unending) kingdom 'which the God of saints prepared for the saints.' On vv. 17–18 he says 'these regna, then, will be dissolved, and the true and unending kingdom will be given to the holy ones of the Most High,' urging the reader 'longing for that kingdom, count the kingdoms of this present age as nothing.' On v. 27 he reasserts that the saints reign and serve God in eternal subordination — αἰώνιος γὰρ αὐτοῦ ἡ βασιλεία (his kingdom is eternal). This is consistently post-judgment / post-Antichrist; nothing about a Maccabean or any other earthly proto-fulfilment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1414,
+            "passageRef": "Theodoret on Dan 7:3-4 — one unending kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:3-4 — eternal kingdom contrast",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.3-4 (PG 81:1414)"
+          },
+          "quote": {
+            "text": "μία Bb μόνη ἡ ἀτελεύτητος μένει",
+            "sha256": "da8fb3720df345d552eb55cbbcb7ceee690b5b3eace0280e7c4b7968a4ee8b77"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1427,
+            "passageRef": "Theodoret on Dan 7:18 — true and unending kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:18 — true and unending kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.18 (PG 81:1427)"
+          },
+          "quote": {
+            "text": "ἡ ἀληθὴς",
+            "sha256": "50c9dc4321ff75df0e7a05278af96d7d920141cf65169aa2c1889ba372f7c5c9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Antiochene historical-grammatical first, with controlled typological extension — beasts identified as named historical empires before any eschatological migration is allowed",
+      "commitment": "strong",
+      "rationale": "Theodoret's procedure in Dan 7 is to name each beast historically before any spiritual move: the lioness is 'the kingdom of the Assyrians (or Chaldeans), since this first held most of the inhabited world,' the bear 'hints at the Persian kingdom' with three ribs for the tribute-paying portions of empire, the leopard with four heads and four wings is the Macedonian kingdom of Alexander divided after his death among Ptolemy, Seleucus, Antigonus, and Antipater (or Philip Aridaeus). Only after this historical anchor does he move to the typological / eschatological layer (the little horn = Antichrist; the Son of Man = the parousia). This is the Antiochene hyponoia method — a deeper sense built on, not against, the historical referent. He explicitly grounds eschatological prediction in lived experience: 'these things the ancients learned by means of riddles, but we have learned them by experience' (πείρᾳ μεμαθήκαμεν).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1413,
+            "passageRef": "Theodoret on Dan 7:4 — first beast = Assyrian kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:4 — Assyrian/Chaldean identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.4 (PG 81:1413)"
+          },
+          "quote": {
+            "text": "Τὴν ᾿Ασσυρίων βασιλείαν",
+            "sha256": "789029bcf2aeb4f0ff16060166218d3fce8c233ab299abb3342e140b5b362f78"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1416,
+            "passageRef": "Theodoret on Dan 7:5 — second beast = Persian kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:5 — Persian identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.5 (PG 81:1416)"
+          },
+          "quote": {
+            "text": "Περσιχὴν ἐνταῦθα βασιλείαν αἰνίττεται",
+            "sha256": "61bceefd1b7e6c034ecf42eb59866320a92ba26f08074b0f0baf28985c6337a2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1418,
+            "passageRef": "Theodoret on Dan 7:6 — third beast = Macedonian kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:6 — Macedonian identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.6 (PG 81:1418)"
+          },
+          "quote": {
+            "text": "χεδονιχὴν βασιλείαν διὰ τούτων αἰνίττεται",
+            "sha256": "ca1977b16c5d540cd4ab130eb74e3a9bf044404456b6f11766c667482834d852"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1432,
+            "passageRef": "Theodoret on Dan 7:23 — experience confirms the prophecy"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:23 — fulfillment in lived experience",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.23 (PG 81:1432)"
+          },
+          "quote": {
+            "text": "ἡμεῖς δὲ τῇ πείρᾳ μεμαθήκαμεν",
+            "sha256": "307cd0d271f7a5afbdd883dfb33b34fbfe986dc16dafa2e94d21ba0de1262c62"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Antiochene single-then-typologically-extended fulfillment — the historical referent (Antiochus IV in Dan 11; the named beasts in Dan 7) is the eikōn whose features no longer fit at the point where the prophecy migrates to the eschatological archetypon (Antichrist; the Roman tenfold succession; the Second Coming)",
+      "commitment": "moderate",
+      "rationale": "The structural move is most explicit in the Dan 11 commentary: 'Having said these things about Antiochus Epiphanes, [the prophet] now passes from the image to the archetype: the archetype of Antiochus is the Antichrist, and the image of the Antichrist is Antiochus' (μεταδαίνει λοιπὸν ἀπὸ τῆς εἰκόνος ἐπὶ τὸ ἀρχέτυπον). The migration is signalled by predicates that fail Antiochus — refusal of ancestral gods (Antiochus was an aggressive idolater), tabernacling between two seas, indifference to women — and accomplished by Pauline cross-reference (2 Thess 2). In Dan 7 the same scheme operates from the start: Theodoret never reads the little horn as Antiochus at all, because the text places it in the fourth (Roman) kingdom; Antiochus in this scheme belongs to the third (Macedonian) bestia and serves only as predictive type for the eschatological figure of Dan 7's fourth bestia.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan11_12.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1525,
+            "passageRef": "Theodoret on Dan 11:35 — passage from image to archetype"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 11:35 — from eikōn to archetypon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 11.35 (PG 81:1525)"
+          },
+          "quote": {
+            "text": "μεταδαίνει λοιπὸν ἀπὸ τῆς",
+            "sha256": "bb3b21e992d76ec2e07b8f8193bbae48184e08d40784916952aa0780431673b7"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Engagement with anti-Christian / Maccabean reading",
+      "position": "Implicit anti-Maccabean refutation — does not name Porphyry but argues structurally against 'some teachers of piety' who identify the fourth bestia with Macedon",
+      "commitment": "tentative",
+      "rationale": "Theodoret never names Porphyry in the Dan 7 commentary (he engages Porphyry by name elsewhere in the work). At the close of Dan 7 he expresses astonishment (θαυμάζω κομιδῇ τῶν τῆς εὐσεβείας διδασκάλων τινάς) at certain 'teachers of piety' who call the Macedonian kingdom the fourth beast. The four-fold structural argument that follows is a sustained refutation of the Maccabean reading: (1) the third beast already has four heads = the Diadochi, so Macedon is exhausted in the third bestia; (2) the fourth bestia has ten simultaneous kings, but only four sequential kings followed Alexander; (3) prophet says the kingdom passes to the saints after the fourth bestia's destruction, but the holy ones did not receive the kingdom after Antiochus Epiphanes — the brief Hasmonean rule (Judas 3 years, Jonathan 19, Simon 8) was extinguished by Herod, not crowned with eternal dominion; (4) not all Hasmoneans were 'holy' and even granting them sainthood, none of them ruled an αἰώνιος βασιλεία.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1437,
+            "passageRef": "Theodoret on Dan 7:27 — astonishment at Maccabean reading"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:27 — refutation of Macedonian-fourth-kingdom view",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.27 (PG 81:1437)"
+          },
+          "quote": {
+            "text": "θαυμάζω χομιδῇ",
+            "sha256": "3f35a0702393c6ccf11fafb9d7a3d3213989080e59cf2cf7c5b54babcc70ef69"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1437,
+            "passageRef": "Theodoret on Dan 7:27 — Hasmoneans did not receive eternal kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:27 — anti-Maccabean structural argument",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.27 (PG 81:1437)"
+          },
+          "quote": {
+            "text": "οἱ δὲ ἅγιοι τοῦ Ὑψίστου οὐ μετὰ ᾿Αντίο",
+            "sha256": "a3e0e8197ab6007580d60ea988fecd74e4878ca8154235c89ab7ae4f26bc361f"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1437,
+            "passageRef": "Theodoret on Dan 7:27 — even granting sainthood, no eternal kingdom"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:27 — qualifying the Maccabean candidates",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.27 (PG 81:1437)"
+          },
+          "quote": {
+            "text": "οὔτε πάντες ἅγιοι",
+            "sha256": "a04501273cab88bd91656ea6431df5feca60c015ae3b8a94165f896cf2371401"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Ten horns / kings of Dan 7:24",
+      "position": "Ten simultaneous (not sequential) kings at the end of the Roman empire — the simultaneity is the key argument against any Diadochi reading",
+      "commitment": "strong",
+      "rationale": "Theodoret reads the angel's gloss in Dan 7:24 with painstaking attention: 'It is to be noted that he did not say they will arise one by one, succeeding each other, but [will arise] together at the same time.' He then drives the philological point home: 'the next clause testifies as much, for after them shall arise another king who will surpass the former in evil and shall humble three kings — but if they did not reign at the same time but one succeeded another, how could this last one humble three of his predecessors at the same time?' This is, for Theodoret, the load-bearing exegetical objection to identifying the ten horns with the Diadochi succession. Antichrist arises last, after the ten, conquers three of them, and reigns until the parousia.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1432,
+            "passageRef": "Theodoret on Dan 7:24 — ten kings simultaneous"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:24 — simultaneity argument",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.24 (PG 81:1432)"
+          },
+          "quote": {
+            "text": "δέκα κατὰ ταὐτὸν ἀναστήσονται",
+            "sha256": "4e015e01ab3400fee1d542feeead89e2c6e52f9060c17b2fb843f46bec44e363"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Theology proper / divine vision",
+      "position": "Apophatic — God is bodiless, simple, unfigured, uncircumscribed; the prophetic vision figures him 'as he wills' for our profit",
+      "commitment": "moderate",
+      "rationale": "On Dan 7:9 (Ancient of Days) Theodoret pauses to defend a strong apophatic theology: 'It is necessary to know that God, being incorporeal, simple, without form, admitting no circumscription but having a nature that cannot be circumscribed, often shapes the visions for utility, as he wills.' He cites Hosea 12:11 ('I have multiplied visions and have been likened in the hands of the prophets') with the gloss 'he said likened, not seen — for he figures the visions as he wills.' This is exegetical philology recruited for orthodox doctrine of God's simplicity and incorporeality, characteristic of the Antiochene-school engagement with theophanies. By 'antiquity' (παλαιότης) of the figure he reads not literal age but the divine eternity, wisdom, and gentleness; the throne of fire = divine power; the white garments = inculpate sanctity; the river of fire = the wrath that issues from judgment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1424,
+            "passageRef": "Theodoret on Dan 7:9 — apophatic doctrine of God"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:9 — God as bodiless, simple, unfigured",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.9 (PG 81:1424)"
+          },
+          "quote": {
+            "text": "ἀσώματος ὧν ὁ Θεὸς, ἁπλοῦς τε xol ἀσχημάτιστος",
+            "sha256": "84926aa4ca8e76a7e23409e6326dc87b14b398bd9e3f967f29ccdd84aa766dd6"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Theodoret reads Dan 7:13–14 directly into the Matthean apocalyptic discourse: the Son of Man coming on the clouds at Dan 7:13 is the Son of Man whom Christ promises in Matt 24:30 his hearers shall see 'coming on the clouds of heaven with his angels.' The Antichrist's brief 3.5-year reign at Dan 7:25 is paired with Matt 24:21–22 ('there shall be tribulation such as has not been from the beginning of the world… for the elect's sake those days shall be shortened'), and Christ's warning against premature messianic claims at Matt 24:23–27 ('do not believe… as the lightning comes from the east') is the hermeneutical key Theodoret uses to defer the prophecy's full payload to the parousia rather than collapse it onto Antiochus.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-greek-ocr",
+            "filename": "greek/theodoret-pg81-dan7.txt",
+            "tlgCanon": "4089.028",
+            "mignePgVolume": 81,
+            "migneColumn": 1426,
+            "passageRef": "Theodoret on Dan 7:13–14 cross-referencing Matt 24"
+          },
+          "frontend": {
+            "author": "Theodoret of Cyrus",
+            "title": "Commentary on the Visions of the Prophet Daniel (PG 81)",
+            "section": "In Dan. 7:13-14 — Matt 24:30 anchor",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Theodoret, In Dan. 7.13-14 (PG 81:1426)"
+          },
+          "quote": {
+            "text": "ἐπιφάνειαν προθεσπίζων",
+            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Antiochene 'eikōn / archetypon' typology made structurally explicit at Dan 11:35 — the prophecy migrates from the historical image (Antiochus) to the eschatological archetype (Antichrist) at the precise point where its predicates cease to fit the historical referent",
+    "Reading Dan 7:13–14 as the parousia (not heavenly enthronement of Christ at his ascension), via direct citation of Matt 24:30 and 1 Thess 4:16 — distinct from a strictly liturgical-eternal Christological reading",
+    "Apophatic excursus on the Ancient of Days as a controlled defense of divine simplicity and incorporeality against any literal-figurative slide — the figuration is for our utility, not in God",
+    "Four-part structural argument against the Maccabean fourth-kingdom view at Dan 7:27, deployed without naming Porphyry but evidently aimed at any reader who would collapse the eschaton into the Hasmonean revolt",
+    "Insistence that the ten horns must be simultaneous, not sequential, with the philological gloss that the angel's own clause about the eleventh humbling 'three' demands simultaneity — the load-bearing argument against Diadochi-as-ten-horns",
+    "Historical-grammatical naming of every beast (Assyrian/Chaldean, Persian, Macedonian, Roman) before any spiritual move — the Antiochene order of operations against Alexandrian allegorical reflex",
+    "Use of lived experience as confirmation of prediction ('we have learned by experience' what the ancients learned 'in riddles') — pastoral-empirical hermeneutic at Dan 7:23"
+  ],
+  "uncertainties": [
+    "Theodoret does not name Porphyry in the Dan 7 commentary itself — the anti-Maccabean argument is targeted at unnamed 'teachers of piety,' so axis E sits at 'tentative' rather than 'strong' for this passage even though Theodoret engages Porphyry by name elsewhere in the work",
+    "No explicit engagement with the Old Greek vs. Theodotion textual question in the Dan 7 sections sampled — the lemma he prints is the Theodotionic text (which became the church's standard) and he proceeds without comment on the Septuagintal alternative",
+    "Pages are null because Migne PG uses column numbers, not pages; backend.migneColumn carries the locative information",
+    "Dan 9 (the seventy weeks) was outside the pilot's primary OCR coverage and is not surveyed here; expected to engage axis D substantively",
+    "OCR garble in some Greek phrases (mixed Latin glyphs) means certain quotes are shorter than ideal; longer canonical Greek strings are sometimes not exactly extractable from the OCR even when the underlying Greek is readable to a human eye",
+    "Quote 'μία Bb μόνη ἡ ἀτελεύτητος μένει' contains an OCR artifact (Latin 'Bb' for Greek 'δὲ'); the normalized substring nonetheless verifies, but a future re-OCR pass could clean these up"
+  ]
+}

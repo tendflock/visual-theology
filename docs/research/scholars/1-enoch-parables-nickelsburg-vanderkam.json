@@ -1,0 +1,621 @@
+{
+  "scholarId": "1-enoch-parables-nickelsburg-vanderkam",
+  "authorDisplay": "Nickelsburg & VanderKam",
+  "workDisplay": "1 Enoch 2 (Hermeneia, Parables)",
+  "resourceId": "LLS:HRMNEIAENCH1B",
+  "resourceFile": "HRMNEIAENCH1B.logos4",
+  "traditionTag": "second-temple-reception",
+  "fullTitle": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+  "passageCoverage": [
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "1 En 37-71",
+    "Rev 1"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "J: Son of Man — the Parables' figure is a transcendent, preexistent heavenly judge introduced via Dan 7:9-14 in 1 En 46:1-3 and named Chosen One/Righteous One/Anointed One/Son of Man; not a human messianic title in the source-text sense.",
+      "N: Cross-book coherence — Daniel is the Parables' 'next of kin' among Jewish apocalypses; chap. 46 reshapes Dan 7:9, 13 and chap. 47 reshapes Dan 7:9–10; chaps. 48–49 develop the 'Son of Man' figure with Servant/royal-messianic language.",
+      "L: Apocalyptic hermeneutic — the Parables operate by exegetical conflation of authoritative texts (Dan 7, Isa 11, Isa 42-53, Ps 2, Prov 8) producing a single composite heavenly figure; Second Temple apocalypticism reads scripture as 'Scripture interpreted'.",
+      "O: Eschatological structure — Daniel's enthronement of the bar enash after judgment is transformed: in the Parables the Son of Man is enthroned in order to execute judgment against the kings and the mighty who oppress the righteous and chosen.",
+      "H: Two-age framework — Parables anticipate the great final judgment, the resurrection of the dead, the eschatological banquet, and 'a newly created earth'; the Son of Man's enthronement on the throne of glory inaugurates this final reckoning."
+    ],
+    "moderate": [
+      "Dating: Parables composed between the late decades B.C.E. and the early decades C.E. (between Herod's later reign and the early 1st c. C.E.) — pre-Christian, contesting older 'post-Christian' dating.",
+      "Reception: Revelation to John provides the closest parallel to the Parables; Nickelsburg sees 'some knowledge of the Parables' but not literary quotation."
+    ],
+    "tentative": [
+      "Whether 1 En 71's identification of Enoch as the Son of Man was original to the Parables — Nickelsburg argues chap. 71 is a later appendix on the basis of its differing use of the Book of the Watchers and its altered Son-of-Man function, against scholars who treat it as the climactic conclusion."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13)",
+      "position": "The Parables' protagonist is a transcendent, preexistent heavenly figure designated by four interchangeable titles — Chosen One, Righteous One, Son of Man, Anointed One — produced by an exegetical conflation of Dan 7:13-14 with Isa 42/49/52-53 (the Servant), Isa 11 / Ps 2 (Davidic king), and Prov 8 (preexistent Wisdom). 'Son of Man' is introduced in 1 En 46:1-3 as a deliberate reshaping of Dan 7:9, 13, but the figure is not a human enthroned after judgment; he is the heavenly judge enthroned to execute it.",
+      "commitment": "strong",
+      "rationale": "Nickelsburg & VanderKam argue extensively (Excursus on the Chosen One; comm. on chaps. 46, 48-49, 61-63) that the Parables present a 'composite figure' whose four titles refer to one heavenly being. Each designation derives from a strand of biblical tradition: 'Chosen One' and 'Righteous One' from Second Isaiah, 'Son of Man' from Daniel 7, 'Anointed One' from Psalm 2 and Isaiah 11. The figure is preexistent (named before creation, 1 En 48:2-3, 6), hidden until the eschaton, and — decisively for the relationship to Daniel — is the active agent of judgment, not merely its recipient. 'In the Parables, with the exception of 71:14 (and Daniel) the figure is not human but transcendent.' Crucially, the judicial function 'missing from Daniel 7' enters from the conflation with royal messianic ideology (Ps 2; Isa 11). Whether 71:13-17 originally identified Enoch with this figure remains debated; Nickelsburg holds chap. 71 is an appendix, so the body of the Parables is silent on Son-of-Man-as-Enoch.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5131,
+            "nativeSectionId": "PT1.INTRO.5.2.2.3"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.5.2.2.3 — 4.2.2.3. The Righteous and Chosen One/Son of Man/Anointed One",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.5.2.2.3"
+          },
+          "quote": {
+            "text": "the heavenly “one like a son of man” to whom—after the judgment of the royal oppressors of the people of the holy ones of the Most High—the Ancient of Days gives dominion, glory, and kingly power (Dan 7:13–14*; cf. 1 Enoch 46:1–3). Through his conflation of these traditions, the author of the Parables transforms all three of them.",
+            "sha256": "e3cdf537a2a7900de266f417f5f8eede32a06ee00ad116f4426be320700743fd"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5131,
+            "nativeSectionId": "PT1.INTRO.5.2.2.3"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.5.2.2.3 — 4.2.2.3. The Righteous and Chosen One/Son of Man/Anointed One",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.5.2.2.3"
+          },
+          "quote": {
+            "text": "The one like a son of man, who according to Daniel is enthroned after the judgment of the last kingdom and its king, is now the one who is enthroned in order to execute judgment against the kings and the mighty who have oppressed the righteous and chosen.",
+            "sha256": "672c5a1cb04395f62d8a060a20960b9907ae5c5ae37fd47cbe64a4a9852496a1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5235,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.1.5"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.1.5 — A Composite Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.1.5"
+          },
+          "quote": {
+            "text": "the Parables’ portrait of its protagonist reflects an exegetical conflation of several strands of Israelite religious thought.",
+            "sha256": "97f1412636e633fe877c60802771d44c403537ba5ee64389556a739da8d90885"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5231,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.1.1"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.1.1 — Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.1.1"
+          },
+          "quote": {
+            "text": "in the Parables, with the exception of 71:14 (and Daniel) the figure is not human but transcendent",
+            "sha256": "fa8b83da4303e284f55735f67d27bf67f43b1aa740af0da1391aadea1d75c60f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5236,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.2 — Function: The Eschatological Judge",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.2"
+          },
+          "quote": {
+            "text": "the judicial function of the Son of Man, missing from Daniel 7, derives from the conflation of the Danielic tradition with royal messianic ideology.",
+            "sha256": "2f1bd36cdb26786806f1fb4bef84b1076cf7e84eda9b449004af56dd7cc81d26"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5257,
+            "nativeSectionId": "PT1.COMM.6.4"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.6.4 — 48–49 The Son of Man/Chosen One Is Named",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.6.4"
+          },
+          "quote": {
+            "text": "the function of the scene is to depict the commissioning of the Son of Man as the one who will execute the judgment that the heavenly court has determined in 47:3, to identify that Son of Man as the Chosen One and Anointed One of the Lord",
+            "sha256": "1381bcccdaaceec47895667253e6510c1300d98788b867a217ea999fd0efbdf0"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Daniel ↔ 1 Enoch)",
+      "position": "Daniel 7 is the literary and conceptual matrix for the Parables' Son-of-Man scenes. 1 En 46–48 transparently reshapes Dan 7:9–14: 'one who had a head of days' parallels Dan 7:9, 'his head was like white wool' parallels Dan 7:9, 'whose face was like the appearance of a man' parallels Dan 7:13, and the convening of the heavenly court in 1 En 47:3 parallels Dan 7:9-10. The Parables are not, however, slavish citation; they omit the four beasts, the cloud-coming, and the giving of dominion-after-judgment, and they ascribe judicial functions to the Son of Man that Daniel reserves for the Ancient of Days.",
+      "commitment": "strong",
+      "rationale": "In §5.3.2 Daniel is named the Parables' 'next of kin among the Jewish apocalypses' on two grounds: shared introduction of a 'Son of Man' figure and shared apocalyptic-imperial-persecution context. The chap. 46 commentary lays out a side-by-side phrase comparison with Dan 7:9, 13 and concludes that 'There is no vestigial remain of these elements in Daniel 7 that would suggest that the Enochic author had access to a pre-Danielic tradition' — i.e., the Parables depend on Daniel, not on a shared earlier source. The author then traces the integrated Daniel-7 sequence (court → judgment → Son-of-Man-before-deity → enthronement → judgment of kings) across 1 En 46 → 47 → 48-49 → 61:8 → 62-63.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5178,
+            "nativeSectionId": "PT1.INTRO.6.3.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.3.2 — 5.3.2. Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.3.2"
+          },
+          "quote": {
+            "text": "In two important respects Daniel is the Parables’ next of kin among the Jewish apocalypses.",
+            "sha256": "b4e115004e910fff5c1901a40ff57f5b58ee767f0ec5e2f2ec9e32878f2a110e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5178,
+            "nativeSectionId": "PT1.INTRO.6.3.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.3.2 — 5.3.2. Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.3.2"
+          },
+          "quote": {
+            "text": "The Parables echo the vision in Daniel 7 when they introduce the “Son of Man” (see comm. on 46:1–8), and the apocalypticism in both texts and the judgment they proclaim function in the context of the imperial persecution of the righteous.",
+            "sha256": "0a5921afa1f9038a926cf30fd53f21884cab6b57daffc82b3e6daa530d9bd5c0"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5255,
+            "nativeSectionId": "PT1.COMM.6.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.6.2 — 46 The Head of Days and the Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.6.2"
+          },
+          "quote": {
+            "text": "Surprisingly for a first reader, he is introduced (46:1) not as “the Righteous One” or “the/my Chosen One” as before, but as the humanlike figure (“one like a son of man”) known from Dan 7:13–14",
+            "sha256": "b30728a1737c3f036dc0d9ab1e8c9a4040532aa4c318fc70de9fd8c8c0e93d79"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5255,
+            "nativeSectionId": "PT1.COMM.6.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.6.2 — 46 The Head of Days and the Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.6.2"
+          },
+          "quote": {
+            "text": "There is no vestigial remain of these elements in Daniel 7 that would suggest that the Enochic author had access to a pre-Danielic tradition.",
+            "sha256": "2c4d1ffb8640de6193a3df33a2a415cf7e5d937cb15cf33eb66b5a005cc34ace"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5159,
+            "nativeSectionId": "PT1.INTRO.6.1.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.1.2 — 5.1.2. The Sources of the Parables’ “Messianology”",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.1.2"
+          },
+          "quote": {
+            "text": "Alongside their substantial dependence on the Enochic Book of the Watchers, the Parables draw on Israelite ideas about enthroned figures: the Davidic king; Second Isaiah’s exalted Servant of Yhwh; and Daniel’s “one like a son of man”",
+            "sha256": "3735b6e880fbb576767cbe36b65891e454473e9f4a17157b6da38a9ac6d13660"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5231,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.1.1"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.1.1 — Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.1.1"
+          },
+          "quote": {
+            "text": "Introduced in 46:1–2 in a passage that reshapes Dan 7:9–14",
+            "sha256": "81e75bcd5e0924550f7e329ce81d5445f55b8424a1171139e53c18cb1a02b5aa"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "The Parables exhibit Second Temple apocalypticism's signature mode of reading scripture: 'exegetical conflation' that treats authoritative texts (Dan 7; Isa 11; Isa 42-53; Ps 2; Prov 8) as a single intertextual reservoir from which a composite figure can be constructed. Visions are not free invention but rewriting, and the rewriting moves freely between Enochic tradition, prophetic corpus, and royal psalms.",
+      "commitment": "strong",
+      "rationale": "The 'Composite Figure' section uses 'exegetical' advisedly, 'because the texts reflect familiarity with the wording of texts that had authoritative status at the time of the Parables' composition' — Isaiah, Psalm 2, Second Isaiah, and Daniel. The conclusion of the Excursus on the Chosen One frames the Parables as a moment in 'a stream of tradition' working with 'a flexible religious tradition that was not limited to the written word'; 'Scripture, if we use that term, was Scripture interpreted, and interpreted in diverse ways.' This is the apocalyptic-hermeneutic axis at work — visionary form encoding inner-biblical exegesis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5235,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.1.5"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.1.5 — A Composite Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.1.5"
+          },
+          "quote": {
+            "text": "the Parables’ portrait of its protagonist reflects an exegetical conflation of several strands of Israelite religious thought.",
+            "sha256": "97f1412636e633fe877c60802771d44c403537ba5ee64389556a739da8d90885"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5244,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.5"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.5 — Conclusion",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.5"
+          },
+          "quote": {
+            "text": "the Parables provide one window into the world in which “Judaism” and “Christianity” would go their separate ways.",
+            "sha256": "2242acc5010c1ca98bd6caa75c45a90098c9ec108cfac571975a3aade80b379b"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "The Parables transform Daniel 7's eschatological sequence: where Daniel narrates a heavenly court that judges the beasts and then gives dominion to the bar enash, the Parables relocate the Son of Man inside the judging act itself. He is enthroned by the Lord of Spirits on the throne of glory in order to judge — angels, the kings and the mighty, and the demonic seducers. Fulfillment is therefore not transfer-of-dominion but enacted vindication of the righteous and chosen against their oppressors.",
+      "commitment": "strong",
+      "rationale": "Comm. on 1 En 46 calls the Parables' move 'strikingly different' from Daniel 7: the Son of Man is 'the agent of judgment against the kings rather than the bearer of God's kingly rule after their demise.' The 61:6-13 commentary describes the moment when 'the deity seats on his own glorious throne the Chosen One who will judge the angels and the kings and the mighty.' Chaps. 62-63 (the Parables' climax) stage the dramatic confrontation between the enthroned Son of Man and the kings/mighty, fulfilling what 46-49 anticipated and what Daniel only sketched.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5236,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.2 — Function: The Eschatological Judge",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.2"
+          },
+          "quote": {
+            "text": "Strikingly different from the figure in Daniel 7, he is the agent of judgment against the kings rather than the bearer of God’s kingly rule after their demise",
+            "sha256": "3dc403a7f61892f92df5d589a32129692a66a09dd72fcc34ba3ad845598e28dc"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5278,
+            "nativeSectionId": "PT1.COMM.7.6"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.7.6 — 61:6–13 The Enthronement of the Chosen One",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.7.6"
+          },
+          "quote": {
+            "text": "the deity seats on his own glorious throne the Chosen One who will judge the angels and the kings and the mighty",
+            "sha256": "a4e9e8799465b97961015c9b4d799327b1ea264a9f9902b0af1f44907c6fb9f4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5257,
+            "nativeSectionId": "PT1.COMM.6.4"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.6.4 — 48–49 The Son of Man/Chosen One Is Named",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.6.4"
+          },
+          "quote": {
+            "text": "the function of the scene is to depict the commissioning of the Son of Man as the one who will execute the judgment that the heavenly court has determined in 47:3, to identify that Son of Man as the Chosen One and Anointed One of the Lord",
+            "sha256": "1381bcccdaaceec47895667253e6510c1300d98788b867a217ea999fd0efbdf0"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "The Parables operate within a two-age apocalyptic framework: a problematic 'this world' marked by the oppression of the righteous and chosen by the kings and the mighty, and an eschatological reversal involving resurrection, the great final judgment executed by the Chosen One/Son of Man on the throne of glory, the eschatological banquet of the righteous with their heavenly champion, and life on a renewed earth. The figure who effects this transition is the same one who reshapes Daniel 7's bar enash.",
+      "commitment": "strong",
+      "rationale": "The introduction (§4.2.6) and the Function-as-Judge section trace the Parables' eschatological scenario centered on the Son of Man: 'The day of judgment is the day of the Chosen One' (61:5), associated with resurrection (chap. 51), enthronement on the throne of glory (61:8; 62:1-2; 69:27), judgment of the host of heaven (61:9), of the kings and mighty (chaps. 62-63), and of the demonic seducers (69:28). The chaps. 62-63 climax is 'the dramatic interaction of the Chosen One/Son of Man with the kings and the mighty.' The end-state is the eschatological fellowship of the righteous with their champion-savior 'forever.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5131,
+            "nativeSectionId": "PT1.INTRO.5.2.2.3"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.5.2.2.3 — 4.2.2.3. The Righteous and Chosen One/Son of Man/Anointed One",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.5.2.2.3"
+          },
+          "quote": {
+            "text": "The one like a son of man, who according to Daniel is enthroned after the judgment of the last kingdom and its king, is now the one who is enthroned in order to execute judgment against the kings and the mighty who have oppressed the righteous and chosen.",
+            "sha256": "672c5a1cb04395f62d8a060a20960b9907ae5c5ae37fd47cbe64a4a9852496a1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5236,
+            "nativeSectionId": "PT1.COMM.5.6.1.3.2"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.5.6.1.3.2 — Function: The Eschatological Judge",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.5.6.1.3.2"
+          },
+          "quote": {
+            "text": "the judicial function of the Son of Man, missing from Daniel 7, derives from the conflation of the Danielic tradition with royal messianic ideology.",
+            "sha256": "2f1bd36cdb26786806f1fb4bef84b1076cf7e84eda9b449004af56dd7cc81d26"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Date and provenance",
+      "position": "The Parables are pre-Christian Jewish, composed between c. 40 B.C.E. (Parthian invasion as terminus post quem) and the early decades of the first century C.E., during the latter part of Herod the Great's reign or shortly after. This dating contests the older 'post-Christian' hypothesis built on the Parables' absence from Qumran.",
+      "commitment": "moderate",
+      "rationale": "Nickelsburg's §5.2.1.7 collects the converging evidence: Parthian menace (a terminus post quem of 40 B.C.E.), absence from Qumran is explicable on multiple grounds, the apparent reference to Herod at Kallirrhoë, parallels with 4 Ezra and Wisdom of Solomon, and the kings-and-the-mighty critique fitting Herodian-era socio-political conditions. He concludes for a date 'between the latter part of Herod's reign and the early decades of the first century c.e., with some preference for the earlier part of this time span.' This places the Parables' Daniel-7 reception independent of and prior to NT Son-of-Man Christology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5169,
+            "nativeSectionId": "PT1.INTRO.6.2.1.7"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.2.1.7 — 5.2.1.7. A Date between the Late Decades B.C.E. And the Early Decades C.E",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.2.1.7"
+          },
+          "quote": {
+            "text": "I date the Parables between the latter part of Herod’s reign and the early decades of the first century c.e., with some preference for the earlier part of this time span.",
+            "sha256": "c9e1d10f18bd7b872465f6915862ef25bbd2d934a91917548d3711464493e34e"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "The Revelation to John of Patmos, near-contemporary with the Parables, is 'the closest parallel' to them in its content. John ascends in the spirit (Rev 1:10; 4:2) to the heavenly throne room; he sees the four living creatures and a heavenly Trisagion (Rev 4:8 || 1 En 39:11-12) and the souls under the altar pleading vindication (Rev 6:9-11 || 1 En 47:1-4). The judgment-bearer is John's counterpart to the Parables' Son of Man/Chosen One/Anointed One: 'one like a son of man' (Rev 1:13; cf. Dan 7:13; 1 En 46:1) bearing Servant traits (the slain Lamb, Rev 5:6 ~ Isa 53:7) and Davidic-royal traits (Rev 11:15; 19:15 ~ Ps 2; Isa 11), sharing God's throne (Rev 22:1 || 1 En 62:1-2). Nickelsburg suggests John may have known the Parables but not in a quotation-grade sense; rather they share a common 'universe of revelation' in which Daniel 7, Servant traditions, and apocalyptic ascent merge.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5182,
+            "nativeSectionId": "PT1.INTRO.6.3.6"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.3.6 — 5.3.6. The Revelation to John of Patmos",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.3.6"
+          },
+          "quote": {
+            "text": "The Revelation to John of Patmos, also from the end of the first century c.e., provides the closest parallel to the Book of Parables.",
+            "sha256": "549f495c7b39e2224086671b1d8000b0787e8dc80adacfd536b197983c3429e3"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5182,
+            "nativeSectionId": "PT1.INTRO.6.3.6"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.INTRO.6.3.6 — 5.3.6. The Revelation to John of Patmos",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.INTRO.6.3.6"
+          },
+          "quote": {
+            "text": "He is “one like a son of man” (Dan 7:13*; 1 Enoch 46:1), who is depicted with traits of the Servant of Yhwh",
+            "sha256": "ada515e23bd87976b80337c70bb5b0e3e3ca31f17251725f805be951918ced3b"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "1 En 71:13-17 culminates by addressing Enoch as 'that Son of Man who was born for righteousness' — apparently identifying the patriarch with the heavenly figure who has dominated the Parables. Nickelsburg's editorial judgment is that chap. 71 is an appendix to the original Parables, not their organic conclusion: it differs in tenor (vivid Watchers-style throne-vision terror absent from the body), in the Son of Man's function (only eschatological companion of the righteous, no kings-and-mighty), and in narrative logic (a third-person final ascension followed by first-person post-ascension narrative). 'If these sections, and especially chap. 71, are additions to the three Parables, there are no grounds for asserting that the “author(s)” and first transmitters of the Parables believed that the Righteous One/Chosen One, Anointed One/Son of Man was or would be the ancient patriarch Enoch.' This editorial decision matters for how 1 Enoch is read against NT Son-of-Man Christology.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5304,
+            "nativeSectionId": "PT1.COMM.9.5"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.9.5 — 71:13–17 Enoch Is Identified as the Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.9.5"
+          },
+          "quote": {
+            "text": "“You (are) that Son of Man who was born for righteousness",
+            "sha256": "ba84d2a9309cac5a104a052f014fc2feca28eace093f16133496ecb56b0802de"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5304,
+            "nativeSectionId": "PT1.COMM.9.5"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.9.5 — 71:13–17 Enoch Is Identified as the Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.9.5"
+          },
+          "quote": {
+            "text": "Chapter 71 is an appendix to the Book of Parables the function of which is to identify the patriarch Enoch as the Son of Man who has dominated the action throughout the book.",
+            "sha256": "9f5045512c060e2c22510323219703114f70a6edf88f96dd58cab086337cac6c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAENCH1B",
+            "logosArticleNum": 5305,
+            "nativeSectionId": "PT1.COMM.9.6"
+          },
+          "frontend": {
+            "author": "Nickelsburg & VanderKam",
+            "title": "1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82",
+            "section": "§PT1.COMM.9.6 — Excursus: The Relationship of Chapter 71 to the Body of the Parables",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Nickelsburg & VanderKam, 1 Enoch 2 (Hermeneia, Parables), §PT1.COMM.9.6"
+          },
+          "quote": {
+            "text": "if these sections, and especially chap. 71, are additions to the three Parables, there are no grounds for asserting that the “author(s)” and first transmitters of the Parables believed that the Righteous One/Chosen One",
+            "sha256": "82001593b07bd2a551bb1eec76c7671a4bfd8fe4c7d82d7ce1de051d88b49aeb"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Methodological emphasis on 'exegetical conflation': the Parables are best read as a sustained inner-biblical interpretation that fuses Dan 7's bar enash with the Servant of Second Isaiah, the Davidic king of Ps 2 / Isa 11, and the preexistent Wisdom of Prov 8 into a single composite heavenly figure with four interchangeable titles.",
+    "Argues that the Parables transform Daniel 7's narrative logic: where Daniel's bar enash receives dominion after the heavenly court has judged the beasts, the Parables' Son of Man is enthroned in order to execute the judgment himself — relocating the bar enash inside the judicial act.",
+    "Holds that chap. 71's identification of Enoch as the Son of Man is a later editorial appendix, not original to the three Parables — reasoned not from the standard arguments but from chap. 71's distinct (chap.-14-style) treatment of the heavenly throne room and its altered Son-of-Man function.",
+    "Dates the Parables to the late B.C.E. / early C.E. window (Herod's later reign forward), making the Parables' Daniel-7 reception decisively pre-Christian and independent of NT Son-of-Man Christology.",
+    "Treats Revelation to John as the 'closest parallel' to the Parables — a sibling apocalyptic appropriation of Dan 7 + Servant + royal-messianic traditions, rather than a direct literary borrowing in either direction."
+  ],
+  "uncertainties": [
+    "Whether the author of the Parables drew on an extant pre-Danielic Son-of-Man tradition or worked directly from Daniel 7 plus the prophetic / royal corpus — Nickelsburg argues against a pre-Danielic source on the basis of phrase-level parallels with Dan 7:9, 13 and 7:9-10, but acknowledges this is contested.",
+    "Whether 'Chosen One' and 'Son of Man' designations in the Parables reflect two distinct underlying source-strands (the older Charles-style hypothesis) or a single author freely conflating biblical figures — Nickelsburg favors the latter but does not rule out underlying source material in chaps. 62-63 + 69:26-29.",
+    "The precise sociopolitical setting of the 'kings and the mighty' polemic (Herodian elites? Roman client kings? both?) — Nickelsburg treats it as Herodian-era oppression of righteous Jews but does not name specific historical persons.",
+    "Pilot-axes A, B, C, E, F: largely silent. The Parables do not engage Daniel's four-kingdom scheme, the little horn, antichrist typology, or millennial structures; their Daniel reception is concentrated almost entirely on the throne-scene of Dan 7:9-14."
+  ]
+}

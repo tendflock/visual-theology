@@ -5,6 +5,20 @@
   "resourceId": "LLS:gs_walv_daniel",
   "resourceFile": "GS_WALV_DANIEL.lbxlls",
   "traditionTag": "classical-dispensational",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 7:7-8",
+    "Dan 9:1-19",
+    "Dan 9:20-27",
+    "Mark 13",
+    "Matt 24",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
   "commitmentProfile": {
     "strong": [
       "A: Sixth-century date — treats it as the pre-critical unanimous view and traces higher-critical rejection to anti-supernaturalist premises.",
@@ -49,7 +63,8 @@
           "quote": {
             "text": "Except for the attack of the pagan Porphyry (third century a.d.), no question was raised concerning the traditional sixth century b.c. date, the authorship of Daniel the prophet, or the genuineness of the book until the rise of higher criticism in the seventeenth century",
             "sha256": "a7182afc79320515dacbc35073a9e34c5f273c025044715c8e8564034ca26315"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -68,7 +83,8 @@
           "quote": {
             "text": "conservative scholars have given almost universal recognition to the book of Daniel as an authentic sixth century b.c. composition of Daniel, the captive of Nebuchadnezzar",
             "sha256": "b59c70e5f348ac1dcb903d60fbbb183b80de045d1a960c2493d1976d0768887a"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -87,7 +103,8 @@
           "quote": {
             "text": "It should be noted at the outset (1) that the theory had an anti-Christian origination; (2) that no new facts had been determined to change the previous judgment of the church",
             "sha256": "a2a9d7d56cca803601b5809478d840374a2cbecd4dc3ce3873c63c65c4cb6dd1"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -116,7 +133,8 @@
           "quote": {
             "text": "The crucial issue in the interpretation of the entire book of Daniel, and especially of chapter 7, is the identification of the fourth beast. On this point, liberal critics generally insist that the fourth beast is Greece or the kingdom of Alexander the Great. Conservative scholars with few exceptions generally identify the fourth beast as Rome.",
             "sha256": "ef5309187d8c1764e72cce1ebc930af4d23419956687b0aff29bb6e9ad474f3b"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -135,7 +153,8 @@
           "quote": {
             "text": "The interpretation of chapter 2 is confirmed by chapter 7, which has special revelation concerning the fourth empire in its yet future stage",
             "sha256": "483735180933753ce845faad664055778f6c84d7e5584b6f2060be281f8bca1a"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -154,7 +173,8 @@
           "quote": {
             "text": "If the ten kings are in power at the end of the age, which also seems to be supported by the ten kings of Revelation 13:1; 17:12, it follows that they must be still future. The fact that they appear in the book of Revelation, written long after the fall of the Grecian Empire, plainly relates them to the Roman Empire in its final stage.",
             "sha256": "8d9c01d71b5b608a405c1b72a3eccfb216233739cf1d70215e7cbc51d5a41ad5"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -183,7 +203,8 @@
           "quote": {
             "text": "Just as there is special emphasis upon the fourth beast in the vision, so in the prophetic interpretation particular attention is given to the little horn, the outstanding personage at the end of the age, who will be destroyed with the inauguration of the kingdom from heaven.",
             "sha256": "a283998eb83a171641bc948c00b8975c0cd425b61cbecf7b41d6150695f875ca"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -202,7 +223,8 @@
           "quote": {
             "text": "Critics relate this to Antiochus Epiphanes.83 While Antiochus may foreshadow the activities of the little horn of Daniel 7, the complete fulfillment will be much more severe and extensive.",
             "sha256": "0978b192937ec3c56a90fc0ee2ffd2609fd1c1d93e27c1fd8fd14b5cea157d55"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -221,7 +243,8 @@
           "quote": {
             "text": "A better identification of the king, the second identification, however, is to relate him to the Roman world ruler, the same individual as the little horn of Daniel 7 and the beast out of the sea of Revelation 13:1–10.",
             "sha256": "a37052d699ece6258513aaad31f9b73044f2fcd1dd67eb38f1c052fad78f92a2"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -250,7 +273,8 @@
           "quote": {
             "text": "Here the choice is clearly between literal fulfillment, which requires a futuristic interpretation with a gap between the sixty-ninth and seventieth week, or several other options which admittedly do not provide any clear fulfillment of verse 27.",
             "sha256": "23037187cd1a23ee46cfb3fa0759448be0df1ff8925b2530ddc751fb6c5b391a"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -269,7 +293,8 @@
           "quote": {
             "text": "If the normal rule be followed that the antecedent is the nearest preceding possibility, it would go back to the prince that shall come of verse 26. This is the normal premillennial interpretation which postulates that the reference is to a future prince who may be identified with the Antichrist",
             "sha256": "7555636ffe3c8f20f8824759d65894359056f28c22786dacb0af659de667b2c3"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -288,7 +313,8 @@
           "quote": {
             "text": "the meaning seems clearly to refer to the last three and one-half years preceding the second advent of Christ, which will bring in the final form of the kingdom of God on earth. The three and one-half year computation is confirmed by the forty-two months, or three and one-half years, in Revelation 11:2 and 13:5",
             "sha256": "0b59b4da504a4c4aadc3ba70fbcb16c01839e01ff45e02977069d17c7b10a75f"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -317,7 +343,8 @@
           "quote": {
             "text": "The fact that a book is apocalyptic does not necessarily mean that its revelation is obscure or uncertain, and conservative scholarship has recognized the legitimacy of apocalyptic revelation as a genuine means of divine communication.",
             "sha256": "2bc2b115910795586bf3a8a2ea41a5ed96aef9e8b1eed80a5d436adc012583b7"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -336,7 +363,8 @@
           "quote": {
             "text": "Interpreted in this way, the chapter forms a major outline of future events to which additional details are given later in the book of Daniel and in the New Testament, especially in the Revelation.",
             "sha256": "37572777c818f23580307e283f7abdba9a79ba0026703aa285b5aad0cc7ee999"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -355,7 +383,8 @@
           "quote": {
             "text": "This is made clear from a further study of Revelation 6–19, where the great catastrophies which overtake the world in the breaking of the seals, the blowing of the trumpets, and the emptying of the vials of divine judgment decimate the world’s population.",
             "sha256": "749c2826ea000d053f5e4cfa55477bf0ab0bbf2ae247703c9f43743c838fea9b"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         }
       ]
     },
@@ -384,7 +413,8 @@
           "quote": {
             "text": "Among all these works, however, no thorough commentary from the pre-millennial conservative point of view has appeared. The important works of H. C. Leupold and Edward Young, standard commentaries on Daniel, present only the amillennial view",
             "sha256": "0d1b839a6dd44e9582aea556f05167964a326f155fef9209613cd952c0e2e7e2"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -403,7 +433,8 @@
           "quote": {
             "text": "the interpretation of verses 23–27 demands that, for the fifth kingdom to overcome the fourth, the fifth must be basically a sovereign and political kingdom, whatever its spiritual characteristics. By so much, it also demands that this be a future fulfillment, inasmuch as nothing in history corresponds to this.",
             "sha256": "caea60067312fb43fc930f28259052e5579d46b98e915f32786bcbf17d99be57"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -422,7 +453,8 @@
           "quote": {
             "text": "The description of Him as being worthy of ruling all nations is obviously in keeping with many passages in the Bible referring to the millennial rule of Jesus Christ, as for instance, Psalm 2:6–9 and Isaiah 11.",
             "sha256": "ebcd2d16a1a7db16bfd084ca6fc225f444dd5470f3bab07de0030627b00c52ca"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -451,7 +483,8 @@
           "quote": {
             "text": "Of the three prophetic programs revealed in Scripture, outlining the course of the nations, Israel, and the church, Daniel alone reveals the details of God’s plan for both the nations and Israel.",
             "sha256": "8c992c2820e0a3246bc4537dd6b98243bd6d55fa18b8e8112db0f77b5a05befa"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -470,7 +503,8 @@
           "quote": {
             "text": "The passage, therefore, is to be considered as contemporaneous with the climax of chapter 2, the destruction of the image, and the destruction of the little horn of Daniel 7, a period described in the book of Revelation, chapters 6–19.",
             "sha256": "a076e8e40caf9b9037860d9a53d2e7890f11d1e1e92b4f9e5faf496445c7284a"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -489,7 +523,8 @@
           "quote": {
             "text": "This description of the time of the end confirms Daniel’s revelation that the time of the end will be a period of trouble such as the world has never known",
             "sha256": "ff3abe1ff89c7808b6b418f147f965ac33802107f99b1337b7ad3b4ecd45db75"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -518,7 +553,8 @@
           "quote": {
             "text": "Conservative scholars are agreed that the Son of man is a picture of the Lord Jesus Christ rather than an angelic agency.",
             "sha256": "50bd82f874d0e444cbe99197cd08bc390749120c9e8f4321f779563ff4564d90"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -537,7 +573,8 @@
           "quote": {
             "text": "Only Christ will come with clouds of heaven, and be the King of kings and Lord of lords over all nations throughout eternity. Inasmuch as all the nations which survive His purging judgment and come under His dominion are saints, it would be tautology to make the Son of man the personification of the saints.",
             "sha256": "02aa7dc0656ec3fb89bda7ec55c11e1bdc92450d32de669c77ac28b1d4483a54"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -556,7 +593,8 @@
           "quote": {
             "text": "The Ancient of days seems to correspond to God the Father, as distinct from God the Son who is introduced in Daniel 7:13 as Son of man.",
             "sha256": "baa34470853c6255c9a7bba7df9a9802b3fd6ae5a3f642d8d06d13b7150c1b91"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -585,7 +623,8 @@
           "quote": {
             "text": "Of the three prophetic programs revealed in Scripture, outlining the course of the nations, Israel, and the church, Daniel alone reveals the details of God’s plan for both the nations and Israel.",
             "sha256": "8c992c2820e0a3246bc4537dd6b98243bd6d55fa18b8e8112db0f77b5a05befa"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -604,7 +643,8 @@
           "quote": {
             "text": "The repeated reference to “thy people,” twice in one verse, seems to limit this to the people of Israel, rather than to all the saints as Young and Leupold interpret it, after Calvin.",
             "sha256": "0c13b83e40afd4c358599ec6b16903a53594833dfa9b99aa15eeffdf09c6ba27"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -623,7 +663,8 @@
           "quote": {
             "text": "Culver’s point of view, which he credits to Auberlen,14 has much to commend itself and is especially theologically discerning because it distinguishes the two major programs of God in the Old Testament, namely, the program for the Gentiles and the program for Israel.",
             "sha256": "d81f665fdc51c02c1b7aa13d588a1ac5bc1d08a6154ae290673a853e73993f6d"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -652,7 +693,8 @@
           "quote": {
             "text": "In attempting an interpretation of the book of Daniel, the principle has been followed of interpreting prophecy in its normal sense while, at the same time, recognizing the apocalyptic character of its revelation.",
             "sha256": "d91c76c42b8652a9cfde6b533f072c42d93318891e237e39189d7f5378ef3cb9"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -671,7 +713,8 @@
           "quote": {
             "text": "If the premise be granted that the book of Daniel is genuine Scripture and that detailed prediction of the future as in Daniel may be admitted as genuine, the problems of interpretation are then reduced to determining what the text actually says.",
             "sha256": "7118b98aa5fd7a1664d2c12b1973b49d5b9053d1944c45ebd0551367340a6430"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -700,7 +743,8 @@
           "quote": {
             "text": "The scene as a whole corresponds to what John saw and recorded in Revelation 4–5. The Ancient of days seems to correspond to God the Father, as distinct from God the Son who is introduced in Daniel 7:13 as Son of man.",
             "sha256": "f8d7ad9da9e49c65cff6d855743544335404914c33e592088d4143fc6ca27e63"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -719,7 +763,8 @@
           "quote": {
             "text": "Prophecies of the book of Revelation written late in the first century also anticipate as future the fulfillment of parallel prophecies in Daniel. For example, Revelation 13 parallels the final stage of Daniel’s fourth empire.",
             "sha256": "31cf4cce840ab347c01006f7ad29287b63ead4f08597b8ac670c42f050160096"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -738,7 +783,8 @@
           "quote": {
             "text": "A better identification of the king, the second identification, however, is to relate him to the Roman world ruler, the same individual as the little horn of Daniel 7 and the beast out of the sea of Revelation 13:1–10.",
             "sha256": "a37052d699ece6258513aaad31f9b73044f2fcd1dd67eb38f1c052fad78f92a2"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -767,7 +813,8 @@
           "quote": {
             "text": "third, they could find these prophecies to be distinctly future and not at all fulfilled by the first coming of Christ, the decline of the Roman Empire, or that which is historic. The third view, which is the futuristic interpretation, is the only one which provides the possibility of literal fulfillment of this prophecy.",
             "sha256": "0de1cb1fe9425341b9dbc3f27d22993d683bc2ff95191099bfc3ad505f70d63e"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -786,7 +833,8 @@
           "quote": {
             "text": "Beginning with verse 36, however, an entirely different situation obtains. No commentator claims to find precise fulfillment in the remainder of this chapter.",
             "sha256": "07d1844a370d92cdcc5125db77623987d61beefff2bd18cc55ba1e60e2a70789"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     }
@@ -813,7 +861,8 @@
           "quote": {
             "text": "If the ten kings are in power at the end of the age, which also seems to be supported by the ten kings of Revelation 13:1; 17:12, it follows that they must be still future.",
             "sha256": "27fcd2d3fff11f8e71ce2615f4f98076b1778c79433c0b8a90ca67a1addd7b62"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -832,7 +881,8 @@
           "quote": {
             "text": "A better identification of the king, the second identification, however, is to relate him to the Roman world ruler, the same individual as the little horn of Daniel 7 and the beast out of the sea of Revelation 13:1–10.",
             "sha256": "a37052d699ece6258513aaad31f9b73044f2fcd1dd67eb38f1c052fad78f92a2"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -857,7 +907,8 @@
           "quote": {
             "text": "Christ Himself in Matthew 24:15 predicted the abomination of desolation of Daniel 12:11 as future, not past.",
             "sha256": "c976d813eeb7276087dbe6337388b5946464abaae01cd7c98860b29512c34f9d"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -876,7 +927,8 @@
           "quote": {
             "text": "Christ described the great tribulation as beginning with “the abomination of desolation, spoken of by Daniel the prophet” (Mt 24:15), a reference to the breaking of the covenant and desecration of the temple in Daniel 9:27.",
             "sha256": "cc257bd31298cb0f3d56cbb8bfbea57c71e71499111952281266131ec95208f1"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     }

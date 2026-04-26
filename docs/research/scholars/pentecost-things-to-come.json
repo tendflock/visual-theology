@@ -1,0 +1,786 @@
+{
+  "scholarId": "pentecost-things-to-come",
+  "authorDisplay": "Pentecost",
+  "workDisplay": "Things to Come",
+  "resourceId": "LLS:9780310873952",
+  "resourceFile": "9780310873952.logos4",
+  "traditionTag": "classical-dispensational-systematic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:7-8",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Matt 24",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom is Rome with future ten-king phase — but continuous with historical Rome rather than revived after death.",
+      "C: Little horn = future Antichrist over revived Roman empire, identical with Dan 9 prince, Dan 8 fierce king, Dan 11 wilful king, 2 Thess 2 man of sin, Rev 13 beast.",
+      "D: Classical-dispensational gap reading of Dan 9:24-27, with day-precise Sir Robert Anderson chronology to A.D. 32 triumphal entry.",
+      "E: Futurist — Rev 4-19 expounds Daniel's 70th week chronologically.",
+      "F: Premillennial-dispensational thousand-year theocratic kingdom; literal Rev 20 millennium fulfills all unconditional Israel covenants.",
+      "G: Pretribulational rapture (28 ancillary arguments).",
+      "K: Classical dispensationalism — Israel and church as two distinct programs; church a NT mystery, OT promises fulfilled to ethnic Israel.",
+      "L: Strict literal/grammatical-historical hermeneutic; allegorical method = source of all amillennial errors.",
+      "N: Tight cross-book coherence Dan ↔ Olivet ↔ 2 Thess 2 ↔ Rev structured by Daniel's 70th week."
+    ],
+    "moderate": [
+      "O: Single-fulfillment futurism — Antiochus not in view as fulfillment of Dan 7's little horn or Dan 9's prince."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — but the ten-horn / ten-toed phase is not yet historical; the Roman empire continues in some form and recasts itself into a final ten-king federation in the end time.",
+      "commitment": "strong",
+      "rationale": "Pentecost identifies the fourth beast unambiguously with Rome on the strength of Daniel 2 + Daniel 7 + Revelation 13/17 read together. His distinctive move within classical dispensationalism: he refuses the older 'fall-of-Rome-476' periodization. The ten kings rise 'out of' the fourth beast (Dan 7:24), so the fourth kingdom does not die and resurrect — it continues until its final ten-horn phase emerges. He treats the historic Roman Empire as still in some sense extant ('the continued existence of the Roman Empire') and the eschatological ten-king federation as a still-future recasting of that continuing sphere of power, brought together by mutual consent rather than conquest (Rev 17:13). The boundaries of the final empire need not match Rome's ancient borders and may exceed them (Rev 13:7) — even, on Jennings whom he cites approvingly, encompassing every region of apostate Christendom including the Americas.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1034,
+            "nativeSectionId": "SEC4.5.2.2"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.2 — B. Daniel 7",
+            "page": 705,
+            "pageEnd": 706,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.2 (pp. 705–706)"
+          },
+          "quote": {
+            "text": "the course of that power is revealed through the four voracious beasts",
+            "sha256": "f37a9c84b9960e2957b866b0445fdb67cc3631209fbeb59cda7c1eea09dc92d5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1034,
+            "nativeSectionId": "SEC4.5.2.2"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.2 — B. Daniel 7",
+            "page": 705,
+            "pageEnd": 706,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.2 (pp. 705–706)"
+          },
+          "quote": {
+            "text": "It is clear from Daniel 7:24 that these ten kings are the heads of ten kingdoms which come out of the fourth great world kingdom. The fact that the ten rise “out of” the fourth kingdom seems to suggest that the fourth is not viewed as having passed out of existence, to be resurrected again, but rather, to have continued in some form until the ten horn condition merges.",
+            "sha256": "b7965b4e9a9e9dc983b139b9c7a53057aa9155c01325e36ab0378f913ad6fcf8"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1033,
+            "nativeSectionId": "SEC4.5.2.1"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.1 — A. Daniel 2",
+            "page": 702,
+            "pageEnd": 705,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.1 (pp. 702–705)"
+          },
+          "quote": {
+            "text": "It would seem best to view this Roman empire as a continuous development from its form at the time of the first coming of Christ until its final form at the second coming of Christ.",
+            "sha256": "813ee5296a5be1d933d1162fc3081578c1dd9fb9ad9be42220efa5ecc9c66fb9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1037,
+            "nativeSectionId": "SEC4.5.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.3 — III. The Boundaries of the Last Form of the Roman Empire",
+            "page": 708,
+            "pageEnd": 710,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.3 (pp. 708–710)"
+          },
+          "quote": {
+            "text": "the future ten kingdoms to conform to any historical boundaries. These ten kingdoms are only the outgrowth from the former stage of development, not the revival of that exact former condition",
+            "sha256": "aac53687745b29cedc5a35359397acca8e1283c8e12c63a4b0084e2d6ac24a09"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / Antichrist",
+      "position": "A future individual ruler arising from the revived Roman empire — identical with the 'prince that shall come' of Dan 9:26, the 'king of fierce countenance' of Dan 8:23, the 'wilful king' of Dan 11:36, the 'man of sin' of 2 Thess 2, and the 'beast out of the sea' of Rev 13. Antiochus is not in view.",
+      "commitment": "strong",
+      "rationale": "Pentecost compiles a 29-point synthetic profile of the Beast/little horn from Ezekiel 28, Daniel 7-11, 2 Thessalonians 2, and Revelation 13/17, treating these as descriptions of one and the same end-time figure. He rules over the ten-king federation (Dan 7:8, 24; Rev 17:12), eliminates three rivals in his rise, persecutes the saints for three-and-a-half years (Dan 7:25), confirms and breaks the seven-year covenant with Israel (Dan 9:27), sets himself up as God in the temple (Dan 11:36-37; 2 Thess 2:4), and is destroyed by direct divine judgment at Christ's second advent (Dan 7:22, 26). Pentecost rejects the popular pretribulationist 'resurrected Nero / Judas' reading of the death-and-revival of Rev 13:3: the wound healed is the resurgence of the Gentile kingdom itself, not the literal resurrection of an individual, because Satan does not have power over life.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1042,
+            "nativeSectionId": "SEC4.5.5"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.5 — V. The Person and Ministry of the Beast, the Head of the Empire",
+            "page": 716,
+            "pageEnd": 719,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.5 (pp. 716–719)"
+          },
+          "quote": {
+            "text": "Scripture has a great deal to say concerning the individual who will appear in the end time as the head of the Gentile powers in their ten kingdom federation. His person and work are presented in Ezekiel 28:1–10; Daniel 7:7–8, 20–26; 8:23–25; 9:26–27; 11:36–45; 2 Thessalonians 2:3–10; Revelation 13:1–10; 17:8–14.",
+            "sha256": "58fd3664282dab92f1d4c525b933adec248ec198edb13173fb975b6b244bf1fe"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1042,
+            "nativeSectionId": "SEC4.5.5"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.5 — V. The Person and Ministry of the Beast, the Head of the Empire",
+            "page": 716,
+            "pageEnd": 719,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.5 (pp. 716–719)"
+          },
+          "quote": {
+            "text": "He has eliminated three rulers in his rise to power (Dan 7:8, 24)",
+            "sha256": "18b58df724091d1973ff631e45f87c879f16b916834f2f7a078806aba21c82ca"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1042,
+            "nativeSectionId": "SEC4.5.5"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.5 — V. The Person and Ministry of the Beast, the Head of the Empire",
+            "page": 716,
+            "pageEnd": 719,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.5 (pp. 716–719)"
+          },
+          "quote": {
+            "text": "As the head of the federated empire he makes a seven year covenant with Israel (Dan. 9:27), which is broken after three and one-half years",
+            "sha256": "03c52f21eae623dba39cbaad459c6ae9b4aefc0bde57e3f45d1c077aed93454a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1043,
+            "nativeSectionId": "SEC4.5.5.1"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.5.1 — A. Will the Beast Be a Resurrected Individual?",
+            "page": 719,
+            "pageEnd": 720,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.5.1 (pp. 719–720)"
+          },
+          "quote": {
+            "text": "Since Christ alone has the power of resurrection, Satan could not bring one back to life.",
+            "sha256": "1798f5832532891148cbb8dde1345ac00c7ee7709cf48dbf115cbf752c118844"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "D",
+      "axisName": "Daniel 9 seventy weeks",
+      "position": "Seventy literal weeks of years (490 prophetic 360-day years). The 69 weeks ran from Artaxerxes' decree (Nisan 1, 445 B.C.) to Christ's triumphal entry (April 6, A.D. 32). A gap of indefinite length (the present church age) separates the 69th and 70th weeks. The 70th week is Antichrist's seven-year covenant with Israel, broken at the midpoint.",
+      "commitment": "strong",
+      "rationale": "Pentecost's 70-weeks chapter is the standard classical-dispensational reference. He follows McClain in arguing 'shabua' = sevens (of years, on Sabbatical-year analogy) and in showing the prophetic year is 360 days (proven by Gen 7-8 and by the 1260 days = 42 months = time-times-half-time equivalence across Dan 7:25, 12:7, Rev 12, 13). He follows Sir Robert Anderson's Coming Prince calculation: 173,880 days = 7 × 69 × 360, dating from Nisan 1 / 445 B.C. (Neh 2:1-8 decree) to 10 Nisan / Sunday April 6 / A.D. 32 (the triumphal entry). The gap is defended (a) from a dozen analogous prophetic parentheses including Isa 61:2, Dan 11:35-36, Hos 5:15-6:1, Ps 22:22-23, (b) from the events of Dan 9:26 (Messiah's death and Jerusalem's destruction) requiring a gap of at least forty years between week 69 and week 70, (c) from Matt 23:37-39 setting Israel aside until restitution. The 70th week begins not with Pentecost or Christ's death (the posttribulationist/amillennialist view, which Pentecost rejects) but with the 'prince that shall come' confirming a covenant with Israel. The six promised blessings of Dan 9:24 — finishing transgression, ending sin, atoning, everlasting righteousness, sealing vision, anointing the most holy — are unfulfilled to Israel and await the millennium.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 973,
+            "nativeSectionId": "SEC4.1.2.4.1"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.1 — 1. The Importance of Daniel’s Prophecy of the Seventy Weeks",
+            "page": 495,
+            "pageEnd": 496,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.1 (pp. 495–496)"
+          },
+          "quote": {
+            "text": "The seventy weeks of Daniel are totally in reference to Israel and her relation to Gentile powers and the rejection of Israel’s Messiah. The peculiar purpose of God in calling out a people from every nation to form the church and the program of the present age are nowhere in view in this prophecy.",
+            "sha256": "b0d82065065639ecc516522944a0c4f48da78b2349823fe93abb47b9d50baa26"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 975,
+            "nativeSectionId": "SEC4.1.2.4.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.3 — 3. The Meaning of Weeks",
+            "page": 498,
+            "pageEnd": 500,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.3 (pp. 498–500)"
+          },
+          "quote": {
+            "text": "the prophetic year of Scripture is composed of 360 days, or twelve months of 30 days",
+            "sha256": "427659c07b5a799e09fe5d0107889f38160702ba86f4fe4b10f6172b994d6177"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 977,
+            "nativeSectionId": "SEC4.1.2.4.5"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.5 — 5. The Fulfillment of the Sixty-Nine Weeks",
+            "page": 501,
+            "pageEnd": 502,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.5 (pp. 501–502)"
+          },
+          "quote": {
+            "text": "THE INTERVAL CONTAINED EXACTLY AND TO THE VERY DAY 173,880 DAYS, OR SEVEN TIMES SIXTY-NINE PROPHETIC YEARS OF 360 DAYS, the first sixty-nine weeks of Gabriel’s prophecy",
+            "sha256": "8d2898a515bfce8cc47f426a9cad162af8d8007d057bd56fc9b125a50c34141e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 978,
+            "nativeSectionId": "SEC4.1.2.4.6"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.6 — 6. Is There a Gap between the Sixty-Ninth and Seventieth Week?",
+            "page": 502,
+            "pageEnd": 505,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.6 (pp. 502–505)"
+          },
+          "quote": {
+            "text": "The fallacy of this consecutive view is seen in the fact that only by spiritualizing the prophecy can the results of Messiah’s work, as outlined in Daniel 9:24, be said to have been fulfilled. The nation Israel, to whom the prophecy was addressed, simply has not experienced a single one of the prophesied benefits of Messiah’s coming as yet.",
+            "sha256": "4c8720f6452d1fe62188c38cae60446f07b626114f7c686c88634f56275cfbb2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 979,
+            "nativeSectionId": "SEC4.1.2.4.7"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.7 — 7. The Beginning of the Seventieth Week",
+            "page": 505,
+            "pageEnd": 506,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.7 (pp. 505–506)"
+          },
+          "quote": {
+            "text": "“Out of the Roman empire there shall arise in the future a prince. This prince or chief of the fourth empire is identical with the little horn of Daniel 7.",
+            "sha256": "849902d0d6f5dd24d3460d32932c2948945816632fd1baa1a9785946ba176d3d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 980,
+            "nativeSectionId": "SEC4.1.2.4.8"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.8 — 8. The Program of the Seventieth Week",
+            "page": 506,
+            "pageEnd": null,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.8 (p. 506)"
+          },
+          "quote": {
+            "text": "The Seventieth Week will begin with the making of a “firm covenant” between the coming Roman prince and the Jewish people.",
+            "sha256": "f25a200fd86b27155ad5637ab115a2369c8027e672b90f08a63a94581c5a4abe"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Literal one-thousand-year earthly theocratic kingdom following Christ's second advent, in which all the unconditional covenants made with Israel (Abrahamic land, Davidic throne, Palestinian, New) reach complete literal fulfillment.",
+      "commitment": "strong",
+      "rationale": "Pentecost gives the largest single block of Things to Come (Section Six, chapters XXV-XXXI) to the millennium. He defends the literal thousand years of Rev 20 against amillennial spiritualization on the simple consistency argument: if the angel, the pit, Satan, the nations, and the resurrections are literal, the time element must be literal too. He cites Alford and the consensus of the first three centuries. The millennium is a theocratic kingdom in which the Abrahamic land promise, the Davidic throne promise, the Palestinian regathering, and the New Covenant all reach their complete fulfillment to ethnic Israel. This is required because (a) those covenants are unconditional and have not been fulfilled in Israel's history to date, (b) literal fulfillment is the consistent method of all already-fulfilled prophecy, and (c) the church does not absorb Israel's promises. The eternality of Christ's reign (Dan 7:14, 27; Luke 1:33; etc.) is reconciled with the thousand years via 1 Cor 15:24-28: the millennial theocracy is the time-bound expression of the eternal kingdom and is delivered up to the Father as 'all in all.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1197,
+            "nativeSectionId": "SEC6.4.6"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC6.4.6 — VI. The Duration of the Millennium",
+            "page": 1002,
+            "pageEnd": 1006,
+            "citationString": "Pentecost, Things to Come, §SEC6.4.6 (pp. 1002–1006)"
+          },
+          "quote": {
+            "text": "It is generally held, even by those denying the literalness of the thousand year period, that the angel, heaven, the pit, Satan, the nations, the resurrections mentioned in this chapter are literal. It would be folly to accept the literalness of those and deny the literalness of the time element.",
+            "sha256": "2d153847d541a9008cb64aed1d5ef068fe9c39b7559bf4dbc67e227e251ddeb3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1158,
+            "nativeSectionId": "SEC6.4.1"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC6.4.1 — I. The Millennium and Israel’s Covenants",
+            "page": 988,
+            "pageEnd": null,
+            "citationString": "Pentecost, Things to Come, §SEC6.4.1 (p. 988)"
+          },
+          "quote": {
+            "text": "this age will see the complete fulfillment of all the covenants that God made with Israel",
+            "sha256": "827b4f034d995663fc5a86ee953fa447a13c0fb5b53cf57a8218082950ae2798"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 836,
+            "nativeSectionId": "SEC2.1.4.4"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC2.1.4.4 — D. The Partial Fulfillment of the Covenants Supports the Premillennial View",
+            "page": 82,
+            "pageEnd": 84,
+            "citationString": "Pentecost, Things to Come, §SEC2.1.4.4 (pp. 82–84)"
+          },
+          "quote": {
+            "text": "It should be obvious that the method used by God to fulfill prophecies that have been fulfilled historically will be His method in the fulfillment of all prophecies. Inasmuch as all prophecies that have been fulfilled have been fulfilled literally, consistency demands that this method must be adopted for those portions of the prophetic Scriptures that, as yet, may be unfulfilled.",
+            "sha256": "4c6b85e6775b592bc65a47d964b3f37181a4a68b932a440629bfd4703817ef58"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "G",
+      "axisName": "Rapture timing",
+      "position": "Pretribulational: the church is raptured before Daniel's 70th week / the tribulation begins. (Note G is outside the official pilot 11 axes but is Pentecost's most-developed contribution.)",
+      "commitment": "strong",
+      "rationale": "Pentecost devotes Chapter XIII (28 sub-arguments, A through BB) to the pretribulation rapture position — the most exhaustive case in print circa 1958. The position rests on one root premise: consistent literal interpretation, which requires a dispensational distinction between Israel and the church. The 70th week of Daniel is exclusively Israel's, the church is a NT mystery unrevealed in the OT, and so the church cannot be present in Rev 4-19. The 24 Chafer-derived contrasts between Israel and the church (purpose, headship, covenants, divine dealing, dispensations, missionary commission, relation to Christ's death, etc.) make their identification within one program impossible.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 919,
+            "nativeSectionId": "SEC3.5.1"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC3.5.1 — I. The Essential Basis of the Pretribulation Rapture Position",
+            "page": 449,
+            "pageEnd": null,
+            "citationString": "Pentecost, Things to Come, §SEC3.5.1 (p. 449)"
+          },
+          "quote": {
+            "text": "Pretribulation rapturism rests essentially on one major premise—the literal method of interpretation of the Scriptures. As a necessary adjunct to this, the pretribulationist believes in a dispensational interpretation of the Word of God.",
+            "sha256": "7d6126ea66b278ec02a074d50cd85fd344350e0c0525ceb0314e095f11c46a0a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 928,
+            "nativeSectionId": "SEC3.5.2.8"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC3.5.2.8 — H. The Distinctions between Israel and the Church",
+            "page": 457,
+            "pageEnd": 458,
+            "citationString": "Pentecost, Things to Come, §SEC3.5.2.8 (pp. 457–458)"
+          },
+          "quote": {
+            "text": "These clear contrasts, which show the distinction between Israel and the church, make it impossible to identify the two in one program, which it is necessary to do if the church goes through the seventieth week.",
+            "sha256": "81517f1b596760bbac4b4cda71babe74c53286c206a544c7303f7b545fc63bb1"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Dispensationalism vs covenantalism",
+      "position": "Classical dispensationalism: Israel and the church are two distinct programs of God; the church is a NT mystery unrevealed in the OT; OT promises to Israel must be fulfilled to ethnic Israel literally and on earth, not transferred to the church.",
+      "commitment": "strong",
+      "rationale": "Pentecost's framing of the entire eschatology turns on the Israel/church distinction. He argues from Rom 9-11 + 1 Cor 10:32 + Gal 6:15-16 + the post-Pentecost continued use of 'Israel' that Gentile believers are 'a seed' of Abraham but not 'the seed' through whom national promises will be fulfilled. The church does not supplant Israel; it intervenes parenthetically between the 69th and 70th weeks. The amillennial inconsistency he targets: it cannot simultaneously claim that the covenants were conditional/already fulfilled AND that the church is fulfilling them now. The covenants are unconditional, await fulfillment to literal Israel in the millennium, and that fulfillment is the structural reason a literal millennium is required at all.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 841,
+            "nativeSectionId": "SEC2.1.5.4"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC2.1.5.4 — D. The Church Is Not Israel",
+            "page": 88,
+            "pageEnd": 89,
+            "citationString": "Pentecost, Things to Come, §SEC2.1.5.4 (pp. 88–89)"
+          },
+          "quote": {
+            "text": "the church today is not Israel in whom these covenants are fulfilled. It is strange that the amillennialist, who argues that the covenants need not be fulfilled because they were conditional and the conditions were not met by Israel, and who argues further that they will not be fulfilled because they have been historically fulfilled in the Solomonic kingdom, now argues that they are being fulfilled by the church.",
+            "sha256": "4aed70edb83e2795ea813afb73ce3e13aa8045caf2a0d853155c2b6403d80a7d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 928,
+            "nativeSectionId": "SEC3.5.2.8"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC3.5.2.8 — H. The Distinctions between Israel and the Church",
+            "page": 457,
+            "pageEnd": 458,
+            "citationString": "Pentecost, Things to Come, §SEC3.5.2.8 (pp. 457–458)"
+          },
+          "quote": {
+            "text": "Chafer has set forth twenty-four contrasts between Israel and the church which show us conclusively that these two groups can not be united into one",
+            "sha256": "dd78198cc8d13494cc896bbf5ab20c4dea02689fed2e279e4f25a63f51a5a4c8"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic",
+      "position": "Strict literal (grammatical-historical) interpretation, including for prophecy. Allegorical method rejected as the source of all amillennial and Roman Catholic eschatological errors.",
+      "commitment": "strong",
+      "rationale": "Pentecost's opening chapter (Section One) makes the literal hermeneutic the foundation on which everything else stands. He argues from Ramm that literal interpretation is normal, that all secondary meanings depend on a prior literal sense, that it is the only check on imagination, and that it alone fits the doctrine of plenary verbal inspiration. The decisive empirical argument: every prophecy already fulfilled was fulfilled literally — therefore consistency requires literal fulfillment of the unfulfilled prophecies as well. This argument carries Pentecost's whole eschatology — the 70 weeks, the millennium, the Abrahamic land grant, the Davidic throne — by direct extrapolation from the literal-fulfillment-of-Christ's-first-advent template.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 779,
+            "nativeSectionId": "SEC1.1.3.2"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC1.1.3.2 — B. The Evidence for the Literal Method",
+            "page": 9,
+            "pageEnd": 11,
+            "citationString": "Pentecost, Things to Come, §SEC1.1.3.2 (pp. 9–11)"
+          },
+          "quote": {
+            "text": "Perhaps one of the strongest evidences for the literal method is the use the New Testament makes of the Old Testament. When the Old Testament is used in the New it is used only in a literal sense.",
+            "sha256": "67d877fd3a49b3e9d663915458078be43981136602bae2519978e6797d54e2b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 779,
+            "nativeSectionId": "SEC1.1.3.2"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC1.1.3.2 — B. The Evidence for the Literal Method",
+            "page": 9,
+            "pageEnd": 11,
+            "citationString": "Pentecost, Things to Come, §SEC1.1.3.2 (pp. 9–11)"
+          },
+          "quote": {
+            "text": "No prophecy which has been completely fulfilled has been fulfilled any way but literally.",
+            "sha256": "066869270db86b64c1ba5d5249cab6a36bcf3ae86d18f82137098a7ce5edf931"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Approach to apocalyptic / Revelation",
+      "position": "Futurist: Revelation 4-19 expounds the 70th week of Daniel chronologically; Daniel 7 and Revelation 13/17 describe the same future Beast / ten-king empire.",
+      "commitment": "strong",
+      "rationale": "Pentecost reads Daniel and Revelation as a single coordinated prophetic chronology. The 70th week of Daniel 'provides the exact chronological framework for the great events recorded in chapters six to nineteen of the Book of Revelation' (citing McClain). The fourth beast of Dan 7, the composite leopard-bear-lion of Rev 13:2, the seven-headed ten-horned beast of Rev 17 are not different visions of different powers; they are the same future Roman empire viewed from different angles. The seven seals of Rev 6 parallel the early Olivet predictions of Matt 24:4-8. The harlot of Rev 17 is the apostate church riding (and then destroyed by) the political beast.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 980,
+            "nativeSectionId": "SEC4.1.2.4.8"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.8 — 8. The Program of the Seventieth Week",
+            "page": 506,
+            "pageEnd": null,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.8 (p. 506)"
+          },
+          "quote": {
+            "text": "This Seventieth Week also provides the exact chronological framework for the great events recorded in chapters six to nineteen of the Book of Revelation.",
+            "sha256": "9b456eef502a7a6e44c289b962e8d4b5ecc6fea4f04c562665f6d7313793d380"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1035,
+            "nativeSectionId": "SEC4.5.2.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.3 — C. Revelation 13:1–3",
+            "page": 706,
+            "pageEnd": 707,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.3 (pp. 706–707)"
+          },
+          "quote": {
+            "text": "the beast that arises is a composite beast, partaking of the features of the leopard, the bear, and the lion (Rev. 13:2)",
+            "sha256": "310306ef559a211c13a29b96c919890e9b445db325a261b8122389a83f017e48"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Tight, programmatic coherence: Daniel 2/7/9/11 ↔ Matthew 24 (Olivet) ↔ 2 Thessalonians 2 ↔ Revelation 6/13/17/20 are read as one continuous prophetic program, with the 70th week of Daniel as the structural backbone.",
+      "commitment": "strong",
+      "rationale": "Pentecost treats 'the prince that shall come' (Dan 9:26), the little horn (Dan 7), the king of fierce countenance (Dan 8:23), the wilful king (Dan 11:36), the man of sin (2 Thess 2), and the beast (Rev 13) as one figure described from multiple angles. The Olivet Discourse (Matt 24) maps onto Daniel's 70th week and onto the Revelation seal/trumpet/bowl progression. The 'time, times, and half a time' of Dan 7:25 (in the Aramaic) is set in equivalence with the 1260 days of Rev 12:6, the 42 months of Rev 13:5, and the second-half of Daniel's 70th week — with these inter-canonical equivalences themselves used to prove the prophetic 360-day year.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 975,
+            "nativeSectionId": "SEC4.1.2.4.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.3 — 3. The Meaning of Weeks",
+            "page": 498,
+            "pageEnd": 500,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.3 (pp. 498–500)"
+          },
+          "quote": {
+            "text": "Dan. 7:24–25 speaks of the same Roman Prince and the same persecution fixing the duration as “a time and times and the dividing of time”—in the Aramaic, three and a half times. Rev. 13:4–7 speaks of the same great political Ruler and his persecution of the Jewish “saints” lasting “forty and two months.”",
+            "sha256": "5fc22148998fc866101397aa728339c80b71244026214eb75c6676a8d5658125"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 979,
+            "nativeSectionId": "SEC4.1.2.4.7"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.1.2.4.7 — 7. The Beginning of the Seventieth Week",
+            "page": 505,
+            "pageEnd": 506,
+            "citationString": "Pentecost, Things to Come, §SEC4.1.2.4.7 (pp. 505–506)"
+          },
+          "quote": {
+            "text": "He is further to be identified with the “king of fierce countenance” of Daniel 8:23, with the “wilful king” of Daniel 11:36, with the “man of sin” of 2 Thessalonians 2, and with the “beast out of the sea” of Revelation 13:1–10.",
+            "sha256": "f0f473f84de48bff090ff75a1a6501aedf28a7063df764948c2ba49a212a35a7"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13 describes the same fourth-kingdom Beast revealed in Dan 7, with the leopard-bear-lion composite explicitly summing up the prior beasts of Dan 7. The ten horns of Rev 13:1 are the ten kings of the federated revived Roman empire (=Rev 17:12, =Dan 7:24). The 'deadly wound that was healed' (Rev 13:3) is not the resurrection of an individual but the resurgence of the imperial form of Roman government over the federated ten-kingdom empire (citing Scofield). The 42 months of Rev 13:5 = the second half of Daniel's 70th week = Dan 7:25's time-times-half-time.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1035,
+            "nativeSectionId": "SEC4.5.2.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.3 — C. Revelation 13:1–3",
+            "page": 706,
+            "pageEnd": 707,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.3 (pp. 706–707)"
+          },
+          "quote": {
+            "text": "the beast that arises is a composite beast, partaking of the features of the leopard, the bear, and the lion (Rev. 13:2)",
+            "sha256": "310306ef559a211c13a29b96c919890e9b445db325a261b8122389a83f017e48"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1035,
+            "nativeSectionId": "SEC4.5.2.3"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.3 — C. Revelation 13:1–3",
+            "page": 706,
+            "pageEnd": 707,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.3 (pp. 706–707)"
+          },
+          "quote": {
+            "text": "It was the imperial form of government which ceased; the one head wounded to death. What we have prophetically in Rev. 13:3 is the restoration of the imperial form as such, though over a federated empire of ten kingdoms",
+            "sha256": "9fdc7ceaa41a41a18ebb45660a703dc15e9a4b962f8a46149953806ebaf33b07"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Rev 17:8-14 gives the seat of authority (Rome, the seven-hilled city) and the structure of the end-time empire: an 'eighth' king who comes from the seven, a federation of ten kings who give their authority to the Beast 'with one mind' (not by force), and the Beast as the heir of all prior Gentile world powers. The harlot is the apostate religious system that initially elevates the Beast and is then destroyed by him so he can rule unhindered.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1036,
+            "nativeSectionId": "SEC4.5.2.4"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.5.2.4 — D. Revelation 17:8–14",
+            "page": 707,
+            "pageEnd": 708,
+            "citationString": "Pentecost, Things to Come, §SEC4.5.2.4 (pp. 707–708)"
+          },
+          "quote": {
+            "text": "There will be a federation of ten separate kings, which will bring their kingdoms under the authority of the head of the empire (Rev. 17:12). (4) The empire is not built by force, but by mutual consent (Rev. 17:13).",
+            "sha256": "4fa2c989788b34a51ef44782852c5fd7e91c3396332f88dd36499d46d2801e2e"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "The Olivet Discourse is a Jewish-program prophecy, not a church-age prophecy. Its content maps directly onto Daniel's 70th week and onto Revelation 6-19. Pentecost surveys four pretribulationist sub-views (Chafer, Scofield, English, etc.) and adopts the position that Matt 24:4-8 = the first half of the tribulation = parallel to the seal judgments of Rev 6, while 24:9-26 = the second half. The 'abomination of desolation' of Matt 24:15 is Antichrist's mid-week breaking of the covenant of Dan 9:27.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:9780310873952",
+            "logosArticleNum": 1003,
+            "nativeSectionId": "SEC4.4.1.4"
+          },
+          "frontend": {
+            "author": "Pentecost",
+            "title": "Things to Come: A Study in Biblical Eschatology",
+            "section": "§SEC4.4.1.4 — D. The Tribulation Period",
+            "page": 661,
+            "pageEnd": 664,
+            "citationString": "Pentecost, Things to Come, §SEC4.4.1.4 (pp. 661–664)"
+          },
+          "quote": {
+            "text": "If this is the correct interpretation … then there must be a perfect harmony between that part of the Olivet discourse contained in Matthew 24 and the part of Revelation beginning with the sixth chapter.",
+            "sha256": "e1780e403698770683429c7717a172d1e23c90410c0a15d8f970e7c7023071d2"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Refuses the older dispensational 'Rome fell in 476' periodization — the Roman Empire continues in some form through medieval Europe to the present and is recast (not resurrected) into its final ten-kingdom phase.",
+    "Adopts Sir Robert Anderson's day-precise Coming Prince calculation (173,880 days from Nisan 1 / 445 B.C. to 10 Nisan / April 6 / A.D. 32) as definitive proof of Daniel 9's literal 360-day prophetic year.",
+    "Rejects the popular pretribulationist 'Beast = resurrected Nero/Judas' move — the Rev 13:3 deadly wound healed is the empire's imperial form revived, not an individual raised, because Satan has no power to raise the dead.",
+    "Frames the entire eschatology synthetically rather than exegetically: the chapter structure is topical (covenants, kingdom, rapture, tribulation, millennium, eternal state) and Pentecost reasons by compiling cross-passage syntheses (e.g., the 29-point Beast profile from Ezek-Dan-2 Thess-Rev).",
+    "Argues the bona fide first-advent offer of the kingdom: Christ genuinely offered the Davidic theocratic kingdom to Israel at his first coming; its rejection (not its design) postponed it to the millennium and inaugurated the church-age parenthesis.",
+    "Cites secular historians and chronologers (e.g., on Artaxerxes' regnal dates, the Julian date of 1 Nisan 445 B.C., the Roman imperial succession) as evidentiary controls — uncommon for the genre.",
+    "Treats the pretribulation rapture as logically derivable from prior commitments (literal hermeneutic → Israel/church distinction → 70th week is Israel's → church absent), then defends it with 28 ancillary arguments (A through BB) rather than from any single decisive proof-text."
+  ],
+  "uncertainties": [
+    "Axis A (dating): Pentecost takes the sixth-century B.C. composition for granted as a topical eschatology, not a Daniel commentary; he does not engage Maccabean-date arguments at length.",
+    "Axis J (Son of Man): Pentecost references Dan 7:13-14 and 7:27 in passing as proof of Christ's eternal kingdom but does not exposit the figure of the Son of Man as a christological identity question; the focus is the kingdom received, not the receiver.",
+    "Pentecost's hermeneutic is asserted more than argued at the level of apocalyptic genre — he treats the Daniel 7 beasts as obvious symbols requiring decoding into literal future political entities, but does not theorize apocalyptic as a genre with its own conventions distinct from prediction.",
+    "The post-1948 state of Israel postdates the 1958 first edition; Pentecost speaks of the future regathering and covenant with Antichrist as still wholly future without integrating the 1948 events."
+  ]
+}

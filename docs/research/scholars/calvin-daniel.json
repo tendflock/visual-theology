@@ -1,0 +1,656 @@
+{
+  "scholarId": "calvin-daniel",
+  "authorDisplay": "Calvin",
+  "workDisplay": "Commentary on Daniel",
+  "resourceId": "LLS:CALCOM27DA",
+  "resourceFile": "CALCOM27DA.logos4",
+  "traditionTag": "reformed-exegetical-historic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Matt 24",
+    "Rev 13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Rome — fourth kingdom is the Roman empire on the traditional sequence.",
+      "C: Roman Caesars — little horn is the Julio-Claudian dynasty absorbing senatorial power.",
+      "J: Christological Mediator — Son of Man comes to the Ancient of Days at the ascension.",
+      "F: Inaugurated kingdom — Christ's reign begins with the gospel ('partially fulfilled').",
+      "L: Indefinite times — 'time, times, half a time' is symbolic of God's secret counsel.",
+      "O: Pastoral consolation — Daniel mirrors the Reformed church under persecution.",
+      "A: 6th-c Daniel — predictive prophecy from Alexander down to Syria/Egypt is the apologetic.",
+      "E: Visible Church — saints of the Most High = elect pilgrims, not angels."
+    ],
+    "moderate": [
+      "N: Cross-book — leans on Matt 24 / Mark 13 as canonical companion; cautious of Rev 13's 42 months."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date / authorship",
+      "position": "Sixth-century Daniel; genuinely predictive prophecy",
+      "commitment": "strong",
+      "rationale": "Calvin treats Daniel as an authentic 6th-c BCE prophet who, by the dictation of the Holy Spirit, predicted Alexander, the diadochi, and the Roman empire centuries in advance. The argument from fulfilled prediction (esp. ch. 11's detail on Syria/Egypt) functions as his standing apologetic for Daniel's authenticity and, by implication, against any Maccabean redating. He never entertains the ex-eventu hypothesis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 649,
+            "nativeSectionId": "VOL1.DA.LEC1"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL1.DA.LEC1 — Lecture First",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL1.DA.LEC1"
+          },
+          "quote": {
+            "text": "how could he divine concerning Alexander the Great and his Successors? for long before Alexander was born, Daniel predicted what he should accomplish",
+            "sha256": "a8d3fcc01b1500e3a1f47a6e1f5942ef12e7bf811d5492f250e851b34d532a0b"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome (traditional sequence: Babylon, Medo-Persia, Macedonia, Rome)",
+      "commitment": "strong",
+      "rationale": "Calvin holds the classical four-empire scheme: lion = Chaldean (Babylonian-Assyrian), bear = Medo-Persian, leopard = Macedonian (Alexander, with the four heads = diadochi), and the unnamed terrible beast = Rome. He explicitly rejects both the Jewish view that absorbs the Turkish empire into the fourth and the futurist extension of the fourth beast's life past the first advent. Rome's character as a republic-turned-empire — 'neither a republic nor a kingdom, but a confused compound' — is for Calvin precisely why no animal-name fits it.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 754,
+            "nativeSectionId": "VOL2.DA.CH7.LEC33"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC33 — Lecture Thirty-Third",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC33"
+          },
+          "quote": {
+            "text": "I have no doubt that in this vision the Prophet was shewn the figure of the Roman Empire",
+            "sha256": "8a458698e5b0ae5d5bc3844e1223673f17096e225fc23b62fd70f2bf67a0923b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 754,
+            "nativeSectionId": "VOL2.DA.CH7.LEC33"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC33 — Lecture Thirty-Third",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC33"
+          },
+          "quote": {
+            "text": "There is greater difficulty in this Fourth Monarchy. Those who are endued with moderate judgment, confess this vision to be fulfilled in the Roman Empire",
+            "sha256": "6136ef764137a2bfb3a22e148a05d94368e7ed3d4f177bcee93a0d55d073bf22"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "we know it to have been more extensive and powerful than the other monarchies",
+            "sha256": "2427bcecdfeb3c991ab07b3e514a4daaa3a85ac39e9b3e308c8a3f4ed023ca4a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 752,
+            "nativeSectionId": "VOL2.DA.CH7"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7 — Chapter Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7"
+          },
+          "quote": {
+            "text": "all agree in understanding the vision of the Chaldean Empire, which was joined with the Assyrian",
+            "sha256": "a9d08832b5ffd8caf74606fdc6a84976064a05de6dfd25fc662470e8999618d2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 754,
+            "nativeSectionId": "VOL2.DA.CH7.LEC33"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC33 — Lecture Thirty-Third",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC33"
+          },
+          "quote": {
+            "text": "Interpreters agree in the necessity for referring this vision to the Macedonian Empire. He compares this kingdom to a leopard",
+            "sha256": "07dce855e2fccce6d8832a15f7bf5ac43f5c71c1e34b2391ba5d0ac65ee66d31"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "The Roman Caesars (Julius/Augustus dynasty), not Antiochus IV and not directly the papacy",
+      "commitment": "strong",
+      "rationale": "Strikingly for a Reformer, Calvin pins the little horn on the Julio-Claudian Caesars who absorbed the senate's authority while preserving its forms. The 'three horns plucked' = senatorial provinces transferred to imperial control under Augustus; the 'eyes of a man' = the Caesars' civilian disguise; the 'great words' = imperial edicts and persecution decrees against Christians. Calvin reserves anti-papal polemic for his pastoral application (dedicatory epistle), but resists the futurist Antichrist reading at the exegetical level.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 756,
+            "nativeSectionId": "VOL2.DA.CH7.LEC34"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC34 — Lecture Thirty-Fourth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC34"
+          },
+          "quote": {
+            "text": "the small horn being endued with human eyes, implies a kind of modesty, as the Cæsars acted like private persons",
+            "sha256": "14dbc55409d6745e71d77ca4a42dc0fce9ad5d6e65573aa2a782434e69057278"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 756,
+            "nativeSectionId": "VOL2.DA.CH7.LEC34"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC34 — Lecture Thirty-Fourth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC34"
+          },
+          "quote": {
+            "text": "the eyes of a man appeared in the little horn, that is, after this change took place and the senate and people were deprived of their liberty",
+            "sha256": "bcf04775a4f69e5bf55752e805f5d27baed292b36a3fafb172460a6f47cab9ae"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "the Cæsars dared to promulgate their edicts throughout the whole world, urging all the proconsuls to punish the Christians",
+            "sha256": "6f96136191188a8249d1625051ee01310bcb8db550b4fb533e1e7419bf92df10"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Saints of the Most High",
+      "position": "The visible Church (people of God / sons of God), not angels and not Israel ethnically",
+      "commitment": "strong",
+      "rationale": "Calvin reads 'saints of the lofty ones' (qaddishe elyonin) as the elect Church, pilgrims on earth whose citizenship is heavenly. Their reception of the kingdom begins at Christ's first advent and the gospel's promulgation, when the Church emerged from imperial persecution to public confession — not deferred to a future millennium.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 760,
+            "nativeSectionId": "VOL2.DA.CH7.LEC36"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC36 — Lecture Thirty-Sixth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC36"
+          },
+          "quote": {
+            "text": "I have no doubt about the Prophet meaning sons of God by sacred lofty ones",
+            "sha256": "adb417eabbf2416474275f568ba2adc8bbac41673727f74b43f5b8838860d17d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 764,
+            "nativeSectionId": "VOL2.DA.CH7.LEC38"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC38 — Lecture Thirty-Eighth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC38"
+          },
+          "quote": {
+            "text": "this vision ought not to be explained of the final advent of Christ, but of the intermediate state of the Church. The saints began to reign under heaven, when Christ ushered in his kingdom by the promulgation of his Gospel",
+            "sha256": "353bfebc303500d9eacd1463895e11f528a0ebd73c2ce0ca1c006eae7ec6ad92"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Kingdom of God",
+      "position": "Present, spiritual, Christological reign inaugurated at the gospel — already / not yet",
+      "commitment": "strong",
+      "rationale": "Calvin denies that 'kingdom under the whole heavens' implies an earthly political regime (against Abarbanel and Jewish chiliasts) and equally denies that it must be deferred to Christ's second coming (against contemporaneous futurist Christians). It is 'partially fulfilled' at the gospel's first triumph and progressively extended through history; full consummation is reserved but does not exhaust the prophecy's reference.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 764,
+            "nativeSectionId": "VOL2.DA.CH7.LEC38"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC38 — Lecture Thirty-Eighth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC38"
+          },
+          "quote": {
+            "text": "This was partially fulfilled when the Gospel emerged from persecution: then the name of Christ was everywhere celebrated",
+            "sha256": "8b88db3dc66b1eed635cd57424d9e351e24435d9ddf8635e66097c50f89a3ad1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 764,
+            "nativeSectionId": "VOL2.DA.CH7.LEC38"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC38 — Lecture Thirty-Eighth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC38"
+          },
+          "quote": {
+            "text": "we know the reign of God and of Christ, although existing in the world, not to be of it",
+            "sha256": "66c8536c5305bb21cdd10aa53d9613c228193b8b01f1b4294a76e99e19a6db32"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Christ the Mediator; the coming-to-the-Ancient-of-Days = the ascension/enthronement",
+      "commitment": "strong",
+      "rationale": "Calvin explicitly Christological: Daniel sees the pre-incarnate Word in the 'figure' (kĕ-) of a man — a prelude to the incarnation (he cites Irenaeus and Tertullian). The coming with clouds 'to the Ancient of days' is not the parousia but the ascension and enthronement at the Father's right hand. The dominion in v. 14 is therefore presently held by Christ as Mediator, not a future earthly kingship.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 758,
+            "nativeSectionId": "VOL2.DA.CH7.LEC35"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC35 — Lecture Thirty-Fifth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC35"
+          },
+          "quote": {
+            "text": "Without doubt this is to be understood of Christ, and the Jews, perverse as they are, are ashamed to deny it",
+            "sha256": "ce6283d405995de9f325b9b6f8d604d8aff2a17fd2c337c654eb877ae03a216c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 758,
+            "nativeSectionId": "VOL2.DA.CH7.LEC35"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC35 — Lecture Thirty-Fifth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC35"
+          },
+          "quote": {
+            "text": "He came to the Ancient of days. This, in my judgment, ought to be explained of Christ’s ascension; for he then commenced his reign",
+            "sha256": "62a8f027e95c38a31a06aa839b895325edfd672933bd220a9a9940290c448b69"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 758,
+            "nativeSectionId": "VOL2.DA.CH7.LEC35"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC35 — Lecture Thirty-Fifth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC35"
+          },
+          "quote": {
+            "text": "a Mediator is here set before us who is God manifest in flesh",
+            "sha256": "d1dd975f1f59683acd4bc3ca208711b26fb6c60f7dc9cff117a6eadaec438a1c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Historic-grammatical with christological / ecclesial application; numbers (time, times, half-time) are indefinite — God's secret counsel, not a calendar",
+      "commitment": "strong",
+      "rationale": "Calvin systematically resists three contemporaneous reading-strategies: (1) Jewish futurism that defers the prophecy to Messiah, (2) Christian futurism that maps Daniel 7 onto a final Antichrist, and (3) day-year computations from the Apocalypse. He insists 'a time' is 'any period whose termination is in the secret counsel of God,' stretchable to the centuries-long Roman persecution from Nero through Trajan and beyond. His method is sober historical correlation tied to consolation for the suffering Church.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "Those who understand this of Antichrist, think their opinion confirmed by the conduct of other tyrants who carried on their warfare against God with arms and violence, but not by words. But the Prophet does not speak so subtlely here",
+            "sha256": "0ea8f276a790fbbc835b3ab3145d12e9ac099fb5bb8171f7fcdf66c23eb13c96"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 764,
+            "nativeSectionId": "VOL2.DA.CH7.LEC38"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC38 — Lecture Thirty-Eighth",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC38"
+          },
+          "quote": {
+            "text": "Daniel or the angel does not predict here occurrences connected with the advent of Christ as Judge of the world, but with the first preaching and promulgation of the Gospel",
+            "sha256": "2e77f077eaf7d259b99ed47c420e66e44b80a987c40733d96f4d90897ea2448c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "A \"time,\" then, is not put for a certain number of months or days, nor yet for a single year, but for any period whose termination is in the secret counsel of God",
+            "sha256": "68a1b8a27d37c243e4b20a0fc1d419bb89485c4cb78316503ef4d78ca35de9c9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book / NT integration",
+      "position": "Daniel 7 read through the Synoptic Olivet (Matt 24/Mark 13); cautious about importing Revelation 13's 42 months as a calendrical key",
+      "commitment": "moderate",
+      "rationale": "Calvin grounds his 'shortened days' reading of Daniel 7's time-times-half on Christ's Olivet discourse, treating the two prophecies as mutually illuminating with respect to the Church's tribulations between the advents. He rejects, however, the common Reformed move of importing Rev 13's forty-two months as a numerical proof for a three-and-a-half-year scheme, judging the Apocalyptic year itself 'figurative for any indeterminate time.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "The language of our Lord to his Apostles concerning the various commotions of the earth, corresponds very well with this view",
+            "sha256": "5fd6613ba3218a284ae02ca99ea4fc6216b76d5c76394f40d7092f8a9129c2c4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "They cite the forty-two months of the Apocalypse, (chap. 13:5,) which make three years and a half; but that argument is not conclusive",
+            "sha256": "45fd747327ab13cfd1a2059adaabfd922d30c73d013875807e228d79ad072d38"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Pastoral / political application",
+      "position": "Daniel as mirror for the persecuted Reformed church under Roman-Catholic / French-crown pressure",
+      "commitment": "strong",
+      "rationale": "The Dedicatory Epistle (1561) addresses 'all the pious worshippers of God who desire the kingdom of Christ to be rightly constituted in France,' explicitly framing the lectures as consolation under contemporary persecution. Calvin draws a parallel between the 'Roman Priest' (the Pope) with his cohort of clergy and the persecuting tyrants of Daniel — but does so as homiletical / polemical *application*, not as exegetical identification of the little horn (cf. axis C).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 646,
+            "nativeSectionId": "VOL1.DEDI"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL1.DEDI — Dedicatory Epistle",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL1.DEDI"
+          },
+          "quote": {
+            "text": "Meanwhile, the Roman Priest—a Heliogabalus—with his red and sanguinary cohorts and horned beasts",
+            "sha256": "61da30352bbe9ebf0aa9d59dcfd7de34f1a3b78399a6460879495df6c0845072"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 646,
+            "nativeSectionId": "VOL1.DEDI"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL1.DEDI — Dedicatory Epistle",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL1.DEDI"
+          },
+          "quote": {
+            "text": "how God proves the faith of his people in these days by various trials; and how with wonderful wisdom he has taken care to strengthen their minds by ancient examples",
+            "sha256": "84e361508d6b8d390f02c58ffe93340ca8baaf34cb6f9383853b9951b0a5faa4"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Calvin engages Rev 13 only to dismiss its '42 months' as a controlling key for Daniel 7:25's 'time, times, half a time.' He treats the apocalyptic year as itself figurative — refusing the day-year computation that other Reformed exegetes (and later historicists) made foundational. This is a distinctive restraint.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "They cite the forty-two months of the Apocalypse, (chap. 13:5,) which make three years and a half; but that argument is not conclusive",
+            "sha256": "45fd747327ab13cfd1a2059adaabfd922d30c73d013875807e228d79ad072d38"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Calvin appeals to the Olivet Discourse — wars, rumors, days shortened for the elect — as the canonical companion to Daniel 7:25. The 'time, times, and half a time' is shortened by God in mercy to the Church, just as Christ promised.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CALCOM27DA",
+            "logosArticleNum": 762,
+            "nativeSectionId": "VOL2.DA.CH7.LEC37"
+          },
+          "frontend": {
+            "author": "Calvin",
+            "title": "Commentary on the Book of the Prophet Daniel",
+            "section": "§VOL2.DA.CH7.LEC37 — Lecture Thirty-Seventh",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Calvin, Commentary on Daniel, §VOL2.DA.CH7.LEC37"
+          },
+          "quote": {
+            "text": "The language of our Lord to his Apostles concerning the various commotions of the earth, corresponds very well with this view",
+            "sha256": "5fd6613ba3218a284ae02ca99ea4fc6216b76d5c76394f40d7092f8a9129c2c4"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Identifies the little horn with the Roman Caesars themselves (Julio-Claudian), not Antiochus and not directly the papacy — atypical for both later historicism and dispensational futurism.",
+    "Reads Daniel 7:13 'coming to the Ancient of Days' as Christ's ascension, not the parousia — anchoring the kingdom of the saints in the inaugurated reign begun at Pentecost.",
+    "Treats 'time, times, half a time' as deliberately indefinite — God's secret counsel — and explicitly rejects calendrical day-year computations from Rev 13.",
+    "Frames the entire commentary as consolation for the persecuted Reformed church (esp. France 1561), placing the four-monarchies scheme in a pastoral-political register without collapsing exegesis into application.",
+    "Argues Daniel's authenticity from the precision of fulfilled prediction (esp. Alexander, the diadochi, Syria/Egypt) — a positional commitment to predictive prophecy that anchors his entire 6th-c date.",
+    "Rejects Jewish futurist readings (still awaiting Messiah) and Christian futurist readings (final Antichrist) with equal force, locating Daniel 7's referent in the Roman empire and the Church's intermediate state."
+  ],
+  "uncertainties": [
+    "Calvin does not explicitly engage the date-of-composition debate as a critical question; the Maccabean hypothesis postdates him, and his commitments are presupposed rather than argued from internal evidence.",
+    "On the papacy as Antichrist: Calvin polemicizes against the Roman Priest in the dedicatory epistle, but at the exegetical level keeps the little horn attached to the Caesars. Later Reformed historicism (Durham, Westminster) extends the trajectory more directly to the papacy than Calvin himself does.",
+    "He does not treat the genre of apocalyptic as a distinct category (the term is anachronistic). His hermeneutic is grammatical-historical with typological-pastoral application, not a theory of apocalyptic discourse.",
+    "Calvin says little about the Aramaic / Hebrew bilingualism of Daniel as a structural or compositional question."
+  ]
+}

@@ -1,0 +1,623 @@
+{
+  "scholarId": "duguid-rec-daniel",
+  "authorDisplay": "Duguid",
+  "workDisplay": "REC Daniel",
+  "resourceId": "LLS:REC27DA",
+  "resourceFile": "REC27DA.logos4",
+  "traditionTag": "reformed-contemporary-expository",
+  "fullTitle": "Daniel (Reformed Expository Commentary)",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:1-19",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Rev 13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom — refuses to identify the four beasts with specific empires; reads four as completeness symbol covering all human empires from Babylon through Antiochus, Nero, Hitler, and modern persecutors.",
+      "C: Little horn (Dan 7) — deliberately leaves identity 'ultimately uncertain'; sees a recurring antichrist trajectory climaxing in the Rev 13 composite beast, NOT a single future-future Antichrist.",
+      "F: Amillennial — kingdom is both 'past and future'; established by Christ, consummated at his return; explicit already/not-yet structure.",
+      "J: Son of Man is the divine-human Christ — combines mortal humanity with the cloud-riding prerogatives of God himself; Jesus is 'son of man and Son of Man, very man and Very God'.",
+      "K: Reformed-covenantal, explicitly anti-dispensational — rejects the premillennial 'parenthesis between the sixty-ninth and seventieth weeks' reading of Dan 9 by name; affirms the amill/postmill new-covenant reading inaugurated at the cross.",
+      "L: Apocalyptic hermeneutic — defines biblical apocalyptic as comfort/exhortation literature for the persecuted; insists interpretation must focus on what is 'central and clear' rather than chasing identification puzzles.",
+      "O: Typological-Christological fulfillment — the climactic 'abomination of desolation' of Dan 9:27 IS the crucifixion of Christ; Dan 7 fulfilled in Christ's first advent (humanity) and second advent (glory)."
+    ],
+    "moderate": [
+      "E: Daniel 8 little horn — clearly identifies Antiochus IV with 'the benefit of historical hindsight' (in distinction from Dan 7's deliberately unfixed horn).",
+      "N: Cross-book Dan 7 → Rev — repeatedly threads Daniel into Revelation 13 (composite beast), Revelation 14 (Son of Man with sickle), Revelation 20 (Satan into lake of fire)."
+    ],
+    "tentative": [
+      "B: Whether the four kingdoms include Rome — Duguid mentions both the Babylon-Media-Persia-Greece and Babylon-Medo-Persia-Greece-Rome schemes without endorsing either; argues the data are 'not sufficiently precise' to resolve."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Refuses specific identification — four = symbol of completeness; the beasts represent the entire pattern of human empire from Daniel's day to ours.",
+      "commitment": "strong",
+      "rationale": "Duguid frames the long-running scholarly debate (Babylon-Media-Persia-Greece vs Babylon-Medo-Persia-Greece-Rome) and immediately argues commentators 'will never resolve the discussion, since the data the vision provides are not sufficiently precise for that purpose.' More importantly, he notes the angelic interpreter himself does not clarify the identity, which he reads as a methodological signal: 'a proper understanding of the vision does not rest on resolving this question.' He goes further — chasing identifications actually inverts the apocalyptic message, since it implies the beasts are over and 'things are supposedly different and less beastly' now. Better to take four as completeness: the beasts persist through Nebuchadnezzar, Alexander, Antiochus, Nero, Domitian, the Inquisition, Hitler, Stalin, Kim Il Jung, and modern persecutors in Sudan and China. This is a distinctively pastoral-amill reading designed to keep the text live for the suffering church.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH8.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.3 — The Meaning of the Beasts",
+            "page": 110,
+            "pageEnd": 112,
+            "citationString": "Duguid, REC Daniel, §CH8.3 (pp. 110–112)"
+          },
+          "quote": {
+            "text": "It is therefore better to take the number of the beasts as representing a symbol of completeness rather than a particular number of world empires.",
+            "sha256": "eac59e2702c0bf888ad263df75f0eee5a99c5830b5932b3ae272f09d0c6da994"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH8.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.3 — The Meaning of the Beasts",
+            "page": 110,
+            "pageEnd": 112,
+            "citationString": "Duguid, REC Daniel, §CH8.3 (pp. 110–112)"
+          },
+          "quote": {
+            "text": "The beasts of the present world order may change their shape as the centuries pass, but their violence and lust for power continues. Nebuchadnezzar turns into a Darius, who becomes an Alexander the Great and then an Antiochus Epiphanes",
+            "sha256": "7d04f151854aae874592b273ddd1d1d10b33c5e5f22e95655fb2358c772bd65a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Identity 'ultimately uncertain' — fits Antiochus among others; trajectory climaxes in the Rev 13 antichrist composite beast, but Duguid refuses to fix it on a single future figure.",
+      "commitment": "strong",
+      "rationale": "Duguid reads the angel's deliberate vagueness as itself the point: the horn is plural in its manifestations. 'Whatever our location in space and time, frightening monsters array themselves against the Lord and his anointed.' He explicitly reads the beasts of Daniel 7 as forerunners of the Revelation 13 composite beast (lion-bear-leopard with ten horns), and treats the antichrist not as a single future-future figure but as the 'persecuting power' that has manifested itself in every age — the work of 'the Great Dragon, Satan himself.' Notably, Duguid distinguishes Daniel 7's horn (deliberately unspecific) from Daniel 8's horn (explicitly Antiochus IV by 'historical hindsight') — a careful exegetical move that resists collapsing the two visions.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 189,
+            "nativeSectionId": "CH8.4"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.4 — The End of the Beasts",
+            "page": 112,
+            "pageEnd": 114,
+            "citationString": "Duguid, REC Daniel, §CH8.4 (pp. 112–114)"
+          },
+          "quote": {
+            "text": "The description of the time of trial and judgment under the fourth kingdom is vague enough to describe plausibly several historical tyrants, including Antiochus Epiphanes, yet at the same time nonspecific enough to leave the identity of this horn ultimately uncertain.",
+            "sha256": "f8d8e30d5b1c10889516efd7b9b314cddcb35a78fba35101cfe2ad0eab5dff64"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH8.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.3 — The Meaning of the Beasts",
+            "page": 110,
+            "pageEnd": 112,
+            "citationString": "Duguid, REC Daniel, §CH8.3 (pp. 110–112)"
+          },
+          "quote": {
+            "text": "In Revelation 13, we see a beast rising from the sea representing the persecuting power of the antichrist, a beast that combines aspects of each of Daniel’s creatures into one, a lionbear-leopard with ten horns.",
+            "sha256": "44fd2e9c6899e3606bfb43159a45c7a559d7d003f27e3ce2b76e9456d7cc88be"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 196,
+            "nativeSectionId": "CH9.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH9.3 — The Vision of a Little Horn",
+            "page": 127,
+            "pageEnd": 385,
+            "citationString": "Duguid, REC Daniel, §CH9.3 (pp. 127–385)"
+          },
+          "quote": {
+            "text": "with the benefit of historical hindsight, we can clearly identify the little horn of Daniel 8 as a historical figure, Antiochus Epiphanes IV (175–164 b.c.).",
+            "sha256": "5e54e0b33f146943eeaa7b00ca75b768f5c7956ecfb5db13ad328f15c78bfb6a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Amillennial — already/not-yet kingdom; Christ has come and established his kingdom (Mark 1:15) and will return to consummate it; no intervening earthly millennium.",
+      "commitment": "strong",
+      "rationale": "Duguid frames the kingdom of God as inaugurated at Christ's first advent and consummated at his return — the classic amillennial structure. Of the Dan 2 stone he writes that the rock cut without hands IS Jesus, and the kingdom was inaugurated when 'Jesus came proclaiming that, with his arrival, the kingdom of God was at hand (Mark 1:15).' He repeatedly distinguishes 'past and future' aspects of the kingdom and roots Christian hope in Christ's return rather than in any earthly millennial reign. In Dan 9 he treats the seventieth week as 'dawning' with Christ's death-and-resurrection and presently underway ('we still drink the cup of the new covenant time after time, proclaiming the Lord's death until he comes'), which is a structurally amillennial inaugurated-eschatology reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 152,
+            "nativeSectionId": "CH3.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH3.6 — God’s Rock",
+            "page": 40,
+            "pageEnd": 42,
+            "citationString": "Duguid, REC Daniel, §CH3.6 (pp. 40–42)"
+          },
+          "quote": {
+            "text": "For us, however, the coming of the Rock is both past and future. Jesus Christ has come into the world and established his kingdom.",
+            "sha256": "4770502e7cd59c260582baab128ee51b118727bbc441bac43fce6befc95ae9df"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 217,
+            "nativeSectionId": "CH12.5"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH12.5 — The Destruction of the Sanctuary and the Confirming of the Covenant",
+            "page": 426,
+            "pageEnd": 429,
+            "citationString": "Duguid, REC Daniel, §CH12.5 (pp. 426–429)"
+          },
+          "quote": {
+            "text": "If that is correct, then clearly it is the Messiah who confirms the covenant with many and brings an end to sacrifice and offering. With the coming of Jesus into the world, and especially with his death and resurrection, the seventieth week has dawned.",
+            "sha256": "fc0be2cc09124b3b1eb1e1adffc266609e0515a9ae9976f0ca9ad8d23690f702"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Divine-human Christ — combines undiminished deity (rides clouds, receives universal worship) with mortal humanity ('one like a son of man'); the title is uniquely fitted to Jesus.",
+      "commitment": "strong",
+      "rationale": "Duguid argues exegetically that the figure cannot be merely an angel, a personified Israel, or a divine theophany. Coming on the clouds is in the OT exclusively a divine prerogative (Ps 68:4; Isa 19:1); receiving the worship of all peoples is a divine prerogative (cf. Dan 5:18 where mere human kingship is something different); but 'one like a son of man' pointedly distinguishes him from the Ancient of Days who is also depicted in human form. The figure must therefore be a God-man. Duguid then explicitly anchors this in the incarnate Christ: the title was 'perfect... for Jesus to bear' precisely because it holds together humanity and unparalleled divine glory. Notably, he shows the New Testament reads this two ways — first-advent reception (Peterson's lunches with prostitutes and tax collectors) AND second-advent reception (Rev 14 sickle-of-judgment).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 191,
+            "nativeSectionId": "CH8.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.6 — A Vision of the Coming Son of Man",
+            "page": 116,
+            "pageEnd": 118,
+            "citationString": "Duguid, REC Daniel, §CH8.6 (pp. 116–118)"
+          },
+          "quote": {
+            "text": "So what are we to make of this vision of a God-man—one who shares our humanity, yet at the same time endows it with the fullness of undiminished deity?",
+            "sha256": "9c7d3a996dff48c3399f84c5332b8174f1224d22840aabf7aa53aaebacb2cf66"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 191,
+            "nativeSectionId": "CH8.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.6 — A Vision of the Coming Son of Man",
+            "page": 116,
+            "pageEnd": 118,
+            "citationString": "Duguid, REC Daniel, §CH8.6 (pp. 116–118)"
+          },
+          "quote": {
+            "text": "“The son of man” was the perfect title for Jesus to bear on his incongruous mission precisely because it combined in itself the incongruous ideas of “mere humanity” with the unparalleled glory of God himself.",
+            "sha256": "b086b8dc4cd132577d7664b5a6e3a7587b588fb953919e16477a9c363039c72f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 191,
+            "nativeSectionId": "CH8.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.6 — A Vision of the Coming Son of Man",
+            "page": 116,
+            "pageEnd": 118,
+            "citationString": "Duguid, REC Daniel, §CH8.6 (pp. 116–118)"
+          },
+          "quote": {
+            "text": "Christ is not eternally suffering upon the cross, but when the time is ripe, he will return (as the Son of Man!) in glory on the clouds, bearing a sharp sickle to bring final judgment on his enemies (Rev. 14:14–20).",
+            "sha256": "ae69462683c5c8cc47a6788fd87730198b6addd64e6a2469681688c76a171320"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Dispensational vs covenantal",
+      "position": "Explicitly covenantal/anti-dispensational — names and rejects the premillennial gap-theory reading of Dan 9:24-27 by name; affirms the new-covenant inauguration reading.",
+      "commitment": "strong",
+      "rationale": "This is Duguid's most overt polemical move. In the Dan 9:20-27 sermon he presents the dispensational reading on its own terms ('parenthesis in between the sixty-ninth and the seventieth weeks, during which the history of the church plays itself out, after which the antichrist will come and destroy Jerusalem and its rebuilt temple') and the amill/postmill alternative ('the covenant mentioned here is God's new covenant with his people, inaugurated by the Messiah, Jesus, and that the desolation and destruction of the temple took place in the first century a.d.'). He grants that both views are held by people who 'love the Lord and take the prophecy of Daniel seriously' but argues the immediate context — Daniel's prayer for new-covenant fulfillment per Jeremiah 31 — decisively favors the covenantal reading. The Messiah (not antichrist) confirms the covenant; the temple destruction is A.D. 70; the seventieth week began with the cross. This is exactly the move that distinguishes contemporary confessional Reformed Daniel exegesis from dispensationalism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 217,
+            "nativeSectionId": "CH12.5"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH12.5 — The Destruction of the Sanctuary and the Confirming of the Covenant",
+            "page": 426,
+            "pageEnd": 429,
+            "citationString": "Duguid, REC Daniel, §CH12.5 (pp. 426–429)"
+          },
+          "quote": {
+            "text": "According to some believers—those we described as premillennial in an earlier study—these last events represent a jump far into the future from the preceding context. There is, they argue, a parenthesis in between the sixty-ninth and the seventieth weeks, during which the history of the church plays itself out, after which the antichrist will come and destroy Jerusalem and its rebuilt temple.",
+            "sha256": "457e160b4eee2dca5f4530ada5b194172f6c812d1feef59d090a2bed8c350f9b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 217,
+            "nativeSectionId": "CH12.5"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH12.5 — The Destruction of the Sanctuary and the Confirming of the Covenant",
+            "page": 426,
+            "pageEnd": 429,
+            "citationString": "Duguid, REC Daniel, §CH12.5 (pp. 426–429)"
+          },
+          "quote": {
+            "text": "On the other hand, amillennial and postmillennial Christians believe that the covenant mentioned here is God’s new covenant with his people, inaugurated by the Messiah, Jesus, and that the desolation and destruction of the temple took place in the first century a.d.",
+            "sha256": "f3274af12f5f29b0b5291a2b2aa3815ee57eb36ce79cb5a3ed4b6c5dfdd5488d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 217,
+            "nativeSectionId": "CH12.5"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH12.5 — The Destruction of the Sanctuary and the Confirming of the Covenant",
+            "page": 426,
+            "pageEnd": 429,
+            "citationString": "Duguid, REC Daniel, §CH12.5 (pp. 426–429)"
+          },
+          "quote": {
+            "text": "If that is correct, then clearly it is the Messiah who confirms the covenant with many and brings an end to sacrifice and offering. With the coming of Jesus into the world, and especially with his death and resurrection, the seventieth week has dawned.",
+            "sha256": "fc0be2cc09124b3b1eb1e1adffc266609e0515a9ae9976f0ca9ad8d23690f702"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Apocalyptic = pastoral comfort/exhortation literature; obscure interpreted by clear; refuses to chase identification puzzles, focuses on the central message of God's victory.",
+      "commitment": "strong",
+      "rationale": "Duguid opens the Dan 7 sermon with a methodological pre-amble. He defines biblical apocalyptic as 'a revelation of the ending of this present age... unfolded in complex and mysterious imagery, and has the purpose of comforting and exhorting the faithful.' He warns against the 'cocktail of two parts Daniel, three parts Revelation, and a dash of Ezekiel' end-times scenarios that resemble the very composite beasts of Dan 7 they purport to interpret. His controlling rule is: 'focus on what is central and clear, rather than what is challenging and complicated.' This is a covenantal-Christological-pastoral hermeneutic that consciously distances itself from speculative end-times calculation — and is the methodological premise of his entire reading of Dan 7.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH8.1"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.1 — Understanding Apocalyptic",
+            "page": 106,
+            "pageEnd": 107,
+            "citationString": "Duguid, REC Daniel, §CH8.1 (pp. 106–107)"
+          },
+          "quote": {
+            "text": "Biblical apocalyptic is a revelation of the ending of this present age, which is an age characterized by conflict, and its replacement by the final age of peace.",
+            "sha256": "290149403ddc296c8e5a5520d40251421763c9a0e880de1725bbea1aaa9e9fdf"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 185,
+            "nativeSectionId": "CH8"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8 — Chapter 8: The Triumph of the Son of Man (Daniel 7:1–28)",
+            "page": 105,
+            "pageEnd": 106,
+            "citationString": "Duguid, REC Daniel, §CH8 (pp. 105–106)"
+          },
+          "quote": {
+            "text": "If we understand the central purpose of these passages and focus our attention on what is clear and straightforward rather than on what is complicated and obscure, then we will find blessing and encouragement in the apocalyptic portions of the Bible.",
+            "sha256": "7264c3746de01babc7073bd49c32a79e172671f64f3d66c24f541eb0df1dfec4"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Typological-Christological with already/not-yet — Christ's first advent fulfills the humanity of the Son of Man and the 'cutting off' of Dan 9:26; his return fulfills the cloud-coming glory.",
+      "commitment": "strong",
+      "rationale": "Duguid's most distinctive (and pastorally striking) fulfillment move is his reading of Dan 9:27's 'abomination that causes desolation' as the crucifixion itself: 'this extreme abomination that caused the destruction of Jerusalem and its temple is nothing other than the crucifixion of Christ.' This is a typological-Christological reading that collapses the climax into the cross while still preserving an already/not-yet structure (we still await the consummation; we still drink the new-covenant cup 'until he comes'). For Dan 7 he splits the Son of Man fulfillment across the two advents — first humanity (Mark 10:45 ransom), then glory (Rev 14 sickle of judgment). The pattern is uniformly Christ-centered: every Daniel apocalyptic feature finds its referent in Christ rather than in modern geopolitical events.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 218,
+            "nativeSectionId": "CH12.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH12.6 — The Climactic Abomination and the Ultimate Hope",
+            "page": 429,
+            "pageEnd": 431,
+            "citationString": "Duguid, REC Daniel, §CH12.6 (pp. 429–431)"
+          },
+          "quote": {
+            "text": "this extreme abomination that caused the destruction of Jerusalem and its temple is nothing other than the crucifixion of Christ, the rejection and cutting off of God’s appointed Messiah.",
+            "sha256": "8611afff431e6de73d39f10c9f6f08528f82eb7e660c1f36d88adba6c9aa9e60"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 191,
+            "nativeSectionId": "CH8.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.6 — A Vision of the Coming Son of Man",
+            "page": 116,
+            "pageEnd": 118,
+            "citationString": "Duguid, REC Daniel, §CH8.6 (pp. 116–118)"
+          },
+          "quote": {
+            "text": "Christ is not eternally suffering upon the cross, but when the time is ripe, he will return (as the Son of Man!) in glory on the clouds, bearing a sharp sickle to bring final judgment on his enemies (Rev. 14:14–20).",
+            "sha256": "ae69462683c5c8cc47a6788fd87730198b6addd64e6a2469681688c76a171320"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book Dan 7 → Revelation",
+      "position": "Daniel 7 systematically read into Revelation — Dan 7 beasts → Rev 13 composite beast; Dan 7 Son of Man → Rev 14 cloud-coming judge; Dan 7 fourth-beast judgment → Rev 20 lake of fire for Satan.",
+      "commitment": "moderate",
+      "rationale": "Duguid does not write a Revelation commentary, but he repeatedly threads Daniel into Revelation as part of the canonical apocalyptic witness. The Rev 13 composite beast is read as the consummation of Dan 7's individual beasts ('a beast that combines aspects of each of Daniel's creatures into one, a lion-bear-leopard with ten horns'). The Son of Man's return on the clouds in glory is read via Rev 14:14-20's sickle-bearing judge. The final judgment of the fourth beast is read via Rev 20:10's casting of Satan into the lake of fire ('the Great Beast, Satan himself, will be bound and brought before the throne; he will answer for his crimes and be cast into the lake of fire forever'). This is canonical-apocalyptic reading characteristic of Reformed expository tradition.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH8.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.3 — The Meaning of the Beasts",
+            "page": 110,
+            "pageEnd": 112,
+            "citationString": "Duguid, REC Daniel, §CH8.3 (pp. 110–112)"
+          },
+          "quote": {
+            "text": "In Revelation 13, we see a beast rising from the sea representing the persecuting power of the antichrist, a beast that combines aspects of each of Daniel’s creatures into one, a lionbear-leopard with ten horns.",
+            "sha256": "44fd2e9c6899e3606bfb43159a45c7a559d7d003f27e3ce2b76e9456d7cc88be"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 191,
+            "nativeSectionId": "CH8.6"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.6 — A Vision of the Coming Son of Man",
+            "page": 116,
+            "pageEnd": 118,
+            "citationString": "Duguid, REC Daniel, §CH8.6 (pp. 116–118)"
+          },
+          "quote": {
+            "text": "Christ is not eternally suffering upon the cross, but when the time is ripe, he will return (as the Son of Man!) in glory on the clouds, bearing a sharp sickle to bring final judgment on his enemies (Rev. 14:14–20).",
+            "sha256": "ae69462683c5c8cc47a6788fd87730198b6addd64e6a2469681688c76a171320"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Historical referents (Antiochus)",
+      "position": "Antiochus IV is explicitly identified as the Daniel 8 little horn 'with the benefit of historical hindsight'; deliberately NOT identified as the sole referent of Daniel 7's horn.",
+      "commitment": "moderate",
+      "rationale": "Duguid carefully distinguishes the two horns. For Daniel 8 he writes plainly: 'we can clearly identify the little horn of Daniel 8 as a historical figure, Antiochus Epiphanes IV (175–164 b.c.).' He details Antiochus's banning of circumcision, ending of temple sacrifice (167 BC), defilement with pig flesh and Zeus, the Maccabean revolt, and the rededication. But for Daniel 7 he refuses the same fixation — the description is 'vague enough to describe plausibly several historical tyrants, including Antiochus Epiphanes' but 'nonspecific enough to leave the identity of this horn ultimately uncertain.' This is a methodologically careful move: Daniel 8 is concretely Antiochus, Daniel 7 is the recurring pattern of which Antiochus is one instance.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 196,
+            "nativeSectionId": "CH9.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH9.3 — The Vision of a Little Horn",
+            "page": 127,
+            "pageEnd": 385,
+            "citationString": "Duguid, REC Daniel, §CH9.3 (pp. 127–385)"
+          },
+          "quote": {
+            "text": "with the benefit of historical hindsight, we can clearly identify the little horn of Daniel 8 as a historical figure, Antiochus Epiphanes IV (175–164 b.c.).",
+            "sha256": "5e54e0b33f146943eeaa7b00ca75b768f5c7956ecfb5db13ad328f15c78bfb6a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 189,
+            "nativeSectionId": "CH8.4"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.4 — The End of the Beasts",
+            "page": 112,
+            "pageEnd": 114,
+            "citationString": "Duguid, REC Daniel, §CH8.4 (pp. 112–114)"
+          },
+          "quote": {
+            "text": "The description of the time of trial and judgment under the fourth kingdom is vague enough to describe plausibly several historical tyrants, including Antiochus Epiphanes, yet at the same time nonspecific enough to leave the identity of this horn ultimately uncertain.",
+            "sha256": "f8d8e30d5b1c10889516efd7b9b314cddcb35a78fba35101cfe2ad0eab5dff64"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Duguid reads the Revelation 13 sea-beast as the consummation of Daniel 7's four beasts collapsed into a single antichrist figure — 'a lion-bear-leopard with ten horns' representing 'the persecuting power of the antichrist.' This is canonical-apocalyptic continuity, but on Duguid's covenantal-amill frame the antichrist is a recurring trans-historical pattern, not a single future-future individual.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH8.3"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.3 — The Meaning of the Beasts",
+            "page": 110,
+            "pageEnd": 112,
+            "citationString": "Duguid, REC Daniel, §CH8.3 (pp. 110–112)"
+          },
+          "quote": {
+            "text": "In Revelation 13, we see a beast rising from the sea representing the persecuting power of the antichrist, a beast that combines aspects of each of Daniel’s creatures into one, a lionbear-leopard with ten horns.",
+            "sha256": "44fd2e9c6899e3606bfb43159a45c7a559d7d003f27e3ce2b76e9456d7cc88be"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Daniel 7's fourth-beast judgment ('the beast was slain and its body destroyed and thrown into the blazing fire,' Dan 7:11) is read as fulfilled in Revelation 20:10's casting of Satan into the lake of fire — 'the Great Beast, Satan himself, will be bound and brought before the throne.'",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:REC27DA",
+            "logosArticleNum": 192,
+            "nativeSectionId": "CH8.7"
+          },
+          "frontend": {
+            "author": "Duguid",
+            "title": "Daniel (Reformed Expository Commentary)",
+            "section": "§CH8.7 — The Message of the Vision",
+            "page": 118,
+            "pageEnd": 121,
+            "citationString": "Duguid, REC Daniel, §CH8.7 (pp. 118–121)"
+          },
+          "quote": {
+            "text": "in the midst of this beastly world, our challenge is to live our lives with our eyes firmly fixed on the heavenly throneroom. Instead of being terrified by the beasts, we must daily live remembering the one who will deliver the final and decisive judgment.",
+            "sha256": "f0fbe487c28544742cf8d62dccdd68a75aa4cf438253d5dee1e115f24aa9baed"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Sermon-shaped Christological landing on every chapter — each Daniel passage culminates in an explicit, pastorally weighted application of the gospel ('the human Christ of the crucifix is not the end of the story').",
+    "Reads Dan 9:27's climactic 'abomination of desolation' as the crucifixion of Christ — a typological-Christological move that is distinctive even within Reformed amillennialism (most amills locate the abomination at A.D. 70).",
+    "Refuses to identify the four beasts of Dan 7 with specific empires — treats four as a completeness symbol for all human empire from Babylon to modern Sudan, China, and North Korea, keeping the text live pastorally.",
+    "Distinguishes Dan 7's deliberately unspecific little horn from Dan 8's explicitly-Antiochus little horn — a careful exegetical move resisting collapse of the two visions.",
+    "Names dispensationalism explicitly ('premillennial... parenthesis in between the sixty-ninth and the seventieth weeks') and refutes it on contextual grounds (Daniel's prayer is the controlling context, and it concerns new-covenant fulfillment per Jeremiah 31, not future restoration of Israel).",
+    "Methodologically anti-end-times-speculation — opens the Dan 7 sermon by mocking the 'cocktail of two parts Daniel, three parts Revelation, and a dash of Ezekiel' end-times reconstructions as themselves resembling the composite beasts they purport to interpret.",
+    "Quotes Samuel Rutherford and Reformed hymnody ('Immanuel's land') to frame Dan 7 within historic Reformed pastoral piety — a confessional-tradition move absent from academic Daniel commentaries."
+  ],
+  "uncertainties": [
+    "Axis A (dating) — Duguid does not directly engage the second-century vs sixth-century authorship debate in any of the chapter sermons sampled; this is a sermon series, and historical-critical questions are outside his pulpit purpose.",
+    "Axis H (genre) — engaged only at the level of pastoral hermeneutic ('biblical apocalyptic'); does not engage the academic apocalypse-genre literature (Collins, etc.) directly.",
+    "Axis P/Q (meta-axes on theological method) — implicit (Westminster Confession, redemptive-historical Christ-centered reading per the REC series introduction) but not argued separately."
+  ]
+}

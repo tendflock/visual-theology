@@ -1,0 +1,487 @@
+{
+  "scholarId": "lacocque-book-of-daniel",
+  "authorDisplay": "LaCocque",
+  "workDisplay": "The Book of Daniel",
+  "resourceId": "LLS:EPUB-LACOCQUE-9781498221689",
+  "resourceFile": "epubs/9781498221689.epub",
+  "traditionTag": "critical-continental-catholic",
+  "fullTitle": "The Book of Daniel (Cascade Books, 2nd ed., 2018; orig. Knox 1979)",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Maccabean date — Dan 7 in present form written ca. 168 BCE during the Antiochene persecution; whole apocalyptic part (Daniel B) composed 166–164 BCE",
+      "B: Fourth kingdom = Greece (Macedonia/Alexander) — sequence Babylon, Media, Persia, Macedonia, with Medes and Persians as separate kingdoms (the patristic-Syriac line continued into French criticism)",
+      "C: Little/eleventh horn = Antiochus IV Epiphanes — 'without a doubt'; Antiochus is the personage in view of whom everything which precedes is written",
+      "J: Son of Man = the angel Michael, patron-representative of the 'people of the Saints' (a corporate-personality figure, not an individual messianic title in Daniel itself, though messianic elements are present)",
+      "L: Apocalyptic hermeneutic = remythologization — the Apocalypticist deliberately revives mythopoetic categories that the prophets had demythologized; LaCocque's framework draws explicitly on Ricoeur and Bentzen",
+      "H: Kingdom is corporate-priestly-Adamic — Dan 7 'democratizes' the High Priesthood; the 'one like a son of man' is the personification of the righteous People",
+      "O: Single-Antiochene fulfillment with theological surplus — heavenly imagery anchored in the Temple referent, but the Temple is taken in 'its transcendent and ultimate form'"
+    ],
+    "moderate": [
+      "E: Compositional layering — Daniel A (tales) was Maccabean, then Dan 7 added in Aramaic as transition into Daniel B (apocalyptic chs 8–12); follows Rowley with modifications",
+      "Christian reception: explicit echoes of Dan 7's son-of-man figure in Revelation 12 (Michael overcoming the Dragon so that the Kingdom is given to Christ) — affirmed but kept distinct from Daniel's own meaning"
+    ],
+    "tentative": [
+      "Sub-axis: precise referent of the ten horns ('ten kings, who are difficult to identify precisely')",
+      "Pre-history of the Son-of-Man title — open to multiple background candidates (Adam, Ezekiel, ancient Near Eastern royal ideology); does not pin to one"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date of Daniel",
+      "position": "Maccabean — Dan 7 in present form ca. 168 BCE; Daniel B as a whole 166–164 BCE; Daniel A (tales) earlier but reshaped in the same Maccabean crisis",
+      "commitment": "strong",
+      "rationale": "LaCocque is unambiguous on the second-century BCE setting: he treats the Antiochene persecution as 'the first pogrom in history' and as the historical key to the entire book. Dan 7 in its present form, he argues, was written in 168 BCE, at the time of religious persecution and the profanation of the Temple, with the High Priest Onias III ousted and Jason installed in his place. The author writes pseudonymously as 'Daniel' but the actual referent is always the Antiochene crisis — the Babylonian rulers in Daniel A are 'at times Antiochus in disguise.'",
+      "compositional": "Daniel A (tales) reshaped in the Maccabean period; Dan 7 added in Aramaic as a hinge into the apocalyptic Daniel B (chs 8–12). Follows H. H. Rowley's hybridism-of-language hypothesis with modifications.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "LaCocque dates Dan 7 to 168 BCE"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "In its present form, therefore, Dan 7 seems to have been written about 168 BCE, at the time of religious persecution and the profanation of the Temple.",
+            "sha256": "275e9ca6117ce89c90dd649d6a64c9fe4b34d5cdac41e1011358537072ce6e2b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "Introduction",
+            "passageRef": "Maccabean second-century setting"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, Introduction"
+          },
+          "quote": {
+            "text": "all these events point, as a matter of fact, to the religious persecution of the Jews—the first pogrom in history—by Antiochus IV",
+            "sha256": "42a12a7e77efe668148afebaf4e5a1ac7d605e93a30c964f8efadf3647dd28ce"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece (Macedonia, the empire founded by Alexander the Great) — with Medes and Persians treated as separate second and third kingdoms",
+      "commitment": "strong",
+      "rationale": "LaCocque holds the standard critical four-kingdom sequence: Babylon, Media, Persia, Macedonia. He notes that this is 'already understood in the Syriac version and by St. Ephrem,' tying the French-Catholic critical reading back to the patristic Eastern tradition rather than treating it as a modern invention. The fourth empire is 'the one founded by Alexander the Great,' and its 'last representative' — Antiochus Epiphanes — is the figure in view throughout.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Four kingdoms = Babylon, Media, Persia, Macedonia"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "The first is the Neo-Babylonian Empire.517 The fourth empire is the one founded by Alexander the Great.",
+            "sha256": "0fa473f6aff1bde26b127e1d7242bff888d8ae41e77f943ff117889c3d6f9ab7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Medes and Persians as separate kingdoms"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "the second and third kingdoms are those of the Medes (v. 5) and the Persians (v. 6). This was already understood in the Syriac version520 and by St. Ephrem.",
+            "sha256": "95bd650262aa5641e949a5d418ec952eb1d11dd9819820731c0416a46d7589c9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Antiochus IV Epiphanes, 'without a doubt' — the supreme expression of savagery and inhumanity, the 'last representative' of the fourth (Hellenistic) empire",
+      "commitment": "strong",
+      "rationale": "LaCocque calls the identification of the eleventh horn with Antiochus IV Epiphanes one made 'without a doubt.' Antiochus is 'the personage in view of whom everything which precedes is written' in Dan 7. The little horn's destruction in the divine judgment scene is the climactic destruction of the fourth empire's last representative — thrown into the fire of vv. 9–11.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Little/eleventh horn = Antiochus IV"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "the eleventh horn is without a doubt Antiochus IV Epiphanes, who is, according to the author, the supreme expression of savagery and inhumanity.",
+            "sha256": "5f16a8a20db2c3d7879eec8ab7cf3416c61e271e24279a56c596d3a2bc1d2366"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Fourth empire's last representative is Antiochus"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "the fourth empire is condemned to be destroyed because of the arrogance of its last representative, Antiochus Epiphanes. He is thrown into the fire which was mentioned in the preceding verses.",
+            "sha256": "fe40fb71955345c6efadf36d946788025ee961a6e1555282da1d74a878dedb71"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Compositional layering",
+      "position": "Two-stage growth: Daniel A (Aramaic tales) reshaped in the Maccabean period; Dan 7 added in Aramaic as transition into the wholly apocalyptic Daniel B (chs 8–12, in Hebrew)",
+      "commitment": "moderate",
+      "rationale": "LaCocque follows H. H. Rowley's account of the bilingualism: Daniel A was Maccabean in its present form; later, Dan 7 was added (also in Aramaic, like the former stories) precisely to serve as an introduction to the apocalyptic part (Daniel B). This is more compositionally cautious than full multi-author models but more layered than single-author Maccabean theories.",
+      "compositional": "Stage 1: Daniel A (chs 1–6) Aramaic tales, Maccabean re-shaping. Stage 2: Dan 7 added in Aramaic as hinge. Stage 3: Daniel B (chs 8–12) composed in Hebrew, 166–164 BCE.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "Introduction",
+            "passageRef": "Dan 7 added to Daniel A as introduction to Daniel B"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, Introduction"
+          },
+          "quote": {
+            "text": "later, Dan 7 was added, also in Aramaic like the former stories, all of which serve as an introduction to the apocalyptic part (Daniel B).",
+            "sha256": "0d19ff802d9bff215e61f43fef4fe314d7799eab536bbba989eec7b5867e5692"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Apocalyptic kingdom (nature)",
+      "position": "A corporate-personality kingdom — the 'one like a son of man' personifies the righteous People; Dan 7 effects a 'democratization' of the High Priesthood as Adamic",
+      "commitment": "strong",
+      "rationale": "The 'corporate personality' concept — drawn from H. Wheeler Robinson's school but central to LaCocque's reading — is, in his words, 'at the very heart of Dan 7.' The community is corporate on both horizontal (whole > sum of members) and vertical (telescoped generations) planes. The kingdom that the Son of Man receives is therefore not transferred to an individual messianic figure first and the people second; it is given to a single corporate-priestly-Adamic reality in which Michael (heavenly patron), the saints, and faithful Israel together constitute the recipient.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Corporate personality at heart of Dan 7"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "This concentration arises from the conception of a “corporate personality,”524 which is at the very heart of Dan 7.",
+            "sha256": "4c5a38ee173ee8422ea18b6463a5e1e8729d21b2a786cb824b24ab019cf6a44d"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man identity",
+      "position": "The angel Michael, patron and representative of the 'people of the Saints' — implicitly in ch. 7, explicitly in chs 8–12 — who functions as a corporate-personality figure including 'angelicized' humans; messianic elements are present but the title is angelic in Daniel itself",
+      "commitment": "strong",
+      "rationale": "This is LaCocque's most distinctive Daniel-7 move and where he sharpens the disagreement with the older Catholic-Christological tradition while remaining sharper-than-Collins on the Michael identification. The Author 'identified [the son of man], not only with the heavenly-earthly community of the Most Lofty Saints, but also—implicitly in chapter 7, explicitly in several passages of chapters 8–12—with the angel Michael.' LaCocque endorses Schmidt's 1900 thesis. Crucially, this is a hybrid identification: Michael is the patron-angel whose heavenly career corresponds to the earthly community's; together they constitute one corporate-priestly-Adamic figure. The title 'ben adam' is angelic in Dan 7, but messianic resonance is acknowledged (cf. 1 Enoch 48:10; 52:4; preexistence at 1 Enoch 48:3).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Son of Man = corporate Saints + the angel Michael"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "the Author identified him, not only with the heavenly-earthly community of “the Most Lofty Saints,” but also—implicitly in chapter 7, explicitly in several passages of chapters 8–12—with the angel Michael.",
+            "sha256": "66f5a9e707ccc33c06014ecf3b0642e392a2a0a547d9601826abf91f0f2a2999"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Son of Man identified with archangel Michael as patron"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "We recognize in this “one” the angel Michael, patron and representative of the “people of the saints,” which included a complex assembly of angels and “angelicized” human beings.",
+            "sha256": "8327ef30e837b9c57d9cb96954295373c6041377fe9e535c1b3aa4f7a72f547e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Son of Man as democratized priestly Adamic figure"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "in Dan 7 we witness a “democratization” of the High Priesthood, seen once again—and definitively—as Adamic.",
+            "sha256": "6e5317942e8cd1020cbcfb96343a5a1692dfee1d3d76f9c56a5743fb246a56a2"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Apocalypticism is a deliberate REMYTHOLOGIZATION — the Apocalypticist revives mythopoetic language and categories that the prophets had demythologized; this is a French literary-critical method explicitly drawing on Ricoeur and Bentzen",
+      "commitment": "strong",
+      "rationale": "LaCocque's signature methodological move is to read apocalyptic not as failed prophecy or coded history but as a positive remythologization. He writes that 'a characteristic trait of apocalypticism is precisely the revivification of mythopoetic language and categories, thus resuming a fashion that preceded the prophetic process of demythologization.' He aligns himself explicitly with Bentzen ('Dan 7 is the fruit of a remythologization') and frames the whole project through Ricoeur's hermeneutic of symbol — citing 'Ricoeur in conversation' on how a symbol becomes 'utilizable again when it distanciates itself from [contingent] connotations.' Paul Ricoeur wrote the Foreword to the volume and is the methodological touchstone throughout. This is what differentiates LaCocque from Anglo-American criticism (which more often reads apocalyptic as resistance literature first, symbol-philosophy second) and from German criticism (which more often reads it as failed eschatological calculation).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Apocalyptic = remythologization after prophetic demythologization"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "a characteristic trait of apocalypticism is precisely the revivification of mythopoetic language and categories, thus resuming a fashion that preceded the prophetic process of demythologization.",
+            "sha256": "ad87907934ec294bc74a85b34f2a551ef14f69440e8909024f6d89195370d17a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 12",
+            "passageRef": "Dan 7 as remythologization (Ricoeur framing)"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 12",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 12"
+          },
+          "quote": {
+            "text": "Bentzen is fundamentally in agreement with us when he says that Dan 7 is the fruit of a remythologization (of Ps 2, for example) because mythological language",
+            "sha256": "399a3f95a8c80218b0e8ed4d31856d4467aa5e1bc7c4d966583787c7bea0f447"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single-Antiochene historical referent with theological surplus — the heavenly imagery is anchored in the Temple-in-Jerusalem referent, but the Temple is taken in its 'transcendent and ultimate form'",
+      "commitment": "strong",
+      "rationale": "LaCocque cautions against being 'carried away by the heavenly decor of Dan 7:13ff.' The Son-of-Man enthronement scene has 'its place entirely within its normal framework of the Temple' — but a Temple now considered 'in its transcendent and ultimate form,' that is, 'the Temple in Jerusalem such that eternity finally changes it into itself.' The fulfillment is therefore single (Antiochene crisis, Temple desecration, Maccabean-era hopes) but the referent is theologically surplus — the eschatological-priestly Temple is what the Son of Man enters, not Antiochus's profaned building. This is distinct from a flatly historical reading (which only sees the crisis) and from a flatly typological reading (which evaporates the Antiochene anchor).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Heavenly imagery anchored in Temple referent (single-historical with theological surplus)"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "We must not allow ourselves therefore to be carried away by the heavenly decor of Dan 7:13ff. The enthronement of the “son of man” as High Priest has its place entirely within its normal framework of the Temple",
+            "sha256": "7977360c822f5338a41f4b54442d2e68dc5dfa7224f168ff2aca7286f5cd8acb"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "LaCocque sees Daniel's animal symbolism as flowing forward into Revelation, especially through the dragon-and-beast typology. He notes that in Rev 12:10 'Michael and his angels overcome the Dragon . . . so that the Kingdom is given to Christ,' which extends the Dan 7 son-of-man / Michael / Saints complex into Christological reception. The four-beasts material in Dan 7:3 anticipates the post-exilic apocalyptic catalogue (Ezek 29:3ff.; Isa 27:1; Pss. Sol. 2:29; 1 Enoch 85–90) that itself feeds Revelation.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "Dan 7 Michael / Son of Man flows into Rev 12 Christology"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "he is also intimately associated with the Messiah in the book of Revelation, 12:10, where Michael and his angels overcome the Dragon . . . so that the Kingdom is given to Christ.",
+            "sha256": "15f1259065d7c2eaa32cdcf28f0699b0cbd0c01ae7fb1b08a827d190d97685a6"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "LaCocque uses the Parables of Enoch as the primary intertestamental witness for the messianic-preexistent reading of Daniel's son-of-man figure. He notes that 1 Enoch 48:10 and 52:4 call this figure 'Messiah' and that 1 Enoch 48:3 describes him as preexistent — but treats this as a development OF Dan 7's angelic-corporate base, not as evidence that Daniel itself meant a discrete messianic individual.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-epub",
+            "filename": "epubs/9781498221689.epub",
+            "spineSection": "ch. 7",
+            "passageRef": "1 Enoch Parables individualize the Danielic figure (LaCocque cites Collins)"
+          },
+          "frontend": {
+            "author": "LaCocque",
+            "title": "The Book of Daniel",
+            "section": "ch. 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "LaCocque, The Book of Daniel, ch. 7"
+          },
+          "quote": {
+            "text": "the human righteous and elect have an individual counterpart, the Righteous ([Sim. 1 Enoch] 38.2) or Elect One (45.3-4; 49.2; etc.), who is also called",
+            "sha256": "09ca128bd137dbe13e22749714293e789eb6c1858ab60e92bb30ecc36cdca135"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Reads apocalyptic as REMYTHOLOGIZATION — the Apocalypticist deliberately revives mythopoetic categories the prophets had demythologized. Frames this through Ricoeur's hermeneutic of symbol (Ricoeur wrote the volume's Foreword and is cited 'in conversation').",
+    "Identifies Son of Man with the angel Michael more sharply and explicitly than Collins does, while still holding the corporate dimension. The figure is BOTH Michael (heavenly patron) AND the people of the Saints in a single corporate-personality reality.",
+    "Anchors the four-kingdom critical reading in the Eastern patristic tradition (Syriac version, St. Ephrem) rather than treating it as a modern critical invention — a distinctly Catholic-historical move.",
+    "Uses 'corporate personality' (H. Wheeler Robinson) as a structural rather than just incidental category — it is what holds the Michael / Saints / Adamic / priestly threads together.",
+    "The 'democratization of the High Priesthood as Adamic' reading: Dan 7's son-of-man enthronement is a priestly enthronement, with strong Temple framing even when the Temple is profaned — the eschatological Temple becomes the referent.",
+    "Engages contemporary critical scholarship (Collins, Bentzen, Schmidt, Rowley, Charles, Plöger, Goldingay) in a continental-French dialogical voice, citing Hebrew/Aramaic philology (e.g., 'qedishei elionim' = 'most lofty Saints' rather than 'saints of the Most High') with patristic-Eastern precedent."
+  ],
+  "uncertainties": [
+    "F (millennium) — silent; LaCocque does not engage millennial schemes, treating the kingdom-language as eschatological-corporate rather than chronological.",
+    "K (saints' identity, fine-grained) — LaCocque integrates angels and humans into a single corporate-priestly category rather than choosing between them; this may be read as a hedge but is a deliberate methodological move.",
+    "Precise referent of the ten horns ('ten kings, who are difficult to identify precisely') — LaCocque does not commit to a particular Hellenistic-king-list mapping.",
+    "Pre-history of the 'Son of Man' title — open to Adam (Ps 8), Ezekiel, and ancient Near Eastern royal-Adamic backgrounds; does not pin to one ('Whatever the case may be on this latter point — which, in my view, we should not press too far')."
+  ]
+}

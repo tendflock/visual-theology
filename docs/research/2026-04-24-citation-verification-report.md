@@ -1,36 +1,77 @@
 # Citation Verification Report
 
-Total citations swept: **98**
+Total citations swept: **418**
 
-- `verified`: 94 (95.9%)
+- `verified`: 418 (100.0%)
 - `partial`: 0 (0.0%)
-- `quote-not-found`: 4 (4.1%)
+- `quote-not-found`: 0 (0.0%)
 - `resource-unreadable`: 0 (0.0%)
+
+## 1-enoch-parables-nickelsburg-vanderkam.json
+
+Summary: verified=25
+
+## beale-use-of-daniel-in-revelation.json
+
+Summary: verified=34
 
 ## blaising-bock-progressive-dispensationalism.json
 
 Summary: verified=22
 
+## calvin-daniel.json
+
+Summary: verified=25
+
 ## collins-hermeneia-daniel.json
 
 Summary: verified=15
+
+## duguid-rec-daniel.json
+
+Summary: verified=23
 
 ## durham-revelation.json
 
 Summary: verified=14
 
+## goldingay-wbc-daniel.json
+
+Summary: verified=25
+
+## hamilton-clouds-of-heaven.json
+
+Summary: verified=29
+
+## hartman-dilella-anchor-daniel.json
+
+Summary: verified=23
+
+## jerome-commentary-on-daniel.json
+
+Summary: verified=23
+
+## lacocque-book-of-daniel.json
+
+Summary: verified=16
+
+## menn-biblical-eschatology.json
+
+Summary: verified=19
+
+## pentecost-things-to-come.json
+
+Summary: verified=31
+
+## theodoret-pg81-daniel.json
+
+Summary: verified=22
+
 ## walvoord-daniel.json
 
 Summary: verified=38
 
-## 2026-04-23-daniel-interpretive-taxonomy-survey.md
+## young-prophecy-of-daniel.json
 
-Summary: verified=5, quote-not-found=4
-
-### Flagged
-
-- `quote-not-found` | Bauckham (art. 119) — quote text (len=20) not found in article LLS:NTTHEO87REV #119 (article len=8229)
-- `quote-not-found` | Bauckham (art. 120) — quote text (len=18) not found in article LLS:NTTHEO87REV #120 (article len=6876)
-- `quote-not-found` | Collins (art. 1415) — quote text (len=18) not found in article LLS:PCLYPTCMGNTNPLT #1415 (article len=9177)
-- `quote-not-found` | Lucas (art. 314) — quote text (len=49) not found in article LLS:AOT27DA #314 (article len=18352)
+Summary: verified=34
 

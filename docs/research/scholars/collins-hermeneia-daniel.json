@@ -5,6 +5,18 @@
   "resourceId": "LLS:HRMNEIA27DA",
   "resourceFile": "HRMNEIA27DA.lbxlls",
   "traditionTag": "critical-modern",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 7:7-8",
+    "Dan 9:1-19",
+    "Dan 9:20-27",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17"
+  ],
   "fullTitle": "Daniel: A Commentary on the Book of Daniel (Hermeneia)",
   "commitmentProfile": {
     "strong": [
@@ -48,7 +60,8 @@
           "quote": {
             "text": "we can date Daniel 7 rather precisely to late 167 b.c.e.",
             "sha256": "baf34013029aa454930e43ef8b817f5b18672edf72689045dfb17c9e20d9c1ab"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -77,7 +90,8 @@
           "quote": {
             "text": "the beasts that rise out of the sea represent kings or kingdoms, which are generally identified as Babylon, Media, Persia, and Greece",
             "sha256": "dbef0a52ecd55407c6b96288b603c9713ee5c5ac49920d7839b9cef112d769d3"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -106,7 +120,8 @@
           "quote": {
             "text": "Antiochus IV was the first Hellenistic king to introduce divine epithets such as “God Manifest” on his coins",
             "sha256": "49a97bf625c3da3ee68592422045a7c596ec32354c52fe325a3fb77fa4768cc5"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         },
         {
           "backend": {
@@ -125,7 +140,8 @@
           "quote": {
             "text": "The reference here is to the disruption of the cultic calendar.",
             "sha256": "36dcd31aea15451f5395e9d83a5272adb65bb1633946e6b4a934f63bbfa721fe"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         }
       ]
     },
@@ -154,7 +170,8 @@
           "quote": {
             "text": "In view of the schematic character of the seventy weeks and of the dating to the reign of Darius the Mede, the figure should be considered a round number rather than a miscalculation.",
             "sha256": "c54ac7e5a7f41627bcd6a99492d151b4c507e7fd3daec8b6db0920789fab9ebf"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -173,7 +190,8 @@
           "quote": {
             "text": "The modern critical interpretation requires that the sixty-two weeks end shortly before the advent of Antiochus Epiphanes.",
             "sha256": "931ed536cbcba69fb7b8016a9519e47cf45176d4cdedf7736aebd3dca155ca07"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -202,7 +220,8 @@
           "quote": {
             "text": "Chapter 7 considers no such possibility but looks for the divine judgment, where the most offensive and immediately present gentile kingdom will be destroyed.",
             "sha256": "1c77dfbd49920e6dd542ece6301a2e78395d1c99380094c5dc4cbfbe7b8ec8b2"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -231,7 +250,8 @@
           "quote": {
             "text": "The view that Michael is the “one like a human being” was put forward by Nathaniel Schmidt in 1900",
             "sha256": "6aa234514b2333d101a882d24bd2c3a2ae6d24e36d517e56be6aaa5fb995610e"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         },
         {
           "backend": {
@@ -250,7 +270,8 @@
           "quote": {
             "text": "The identification of the “one like a human being” with Michael is greatly strengthened by the arguments below that the holy ones of the Most High are the angelic host",
             "sha256": "21d4dfdf290ddbfc31d18ae9ec865677f74102d1044342d4267e4657190722f4"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -269,7 +290,8 @@
           "quote": {
             "text": "In Daniel 7, likewise, the “one like a son of man” and the holy ones mediate the sovereignty of God in the final, everlasting kingdom.",
             "sha256": "bab46f3e2ea9bf07ae421bac8e52699a56a235d2fe58e1aaea235fc6f202969a"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -288,7 +310,8 @@
           "quote": {
             "text": "The decisive objection against the messianic interpretation is that nowhere in the book do we find either support for or interest in the Davidic monarchy.",
             "sha256": "425b670a78c27c1b7f6230ee278065aff250345c856dae7c32bd6b71f8404922"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -317,7 +340,8 @@
           "quote": {
             "text": "The parallels are of significance for the sense of the text rather than for the reference.",
             "sha256": "85f16694f74e7abe9e739cbf7b922d2f0108f550e0c4d0afb022e194a5947a9e"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -346,7 +370,8 @@
           "quote": {
             "text": "Just as Daniel 7 assimilated a historical situation to a mythic pattern, so it in turn served as a paradigm for other events down through history.",
             "sha256": "f942863a228d10b9d2af259bde28fcc9faaef4005928911dcec0e0bc4ab178e1"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -375,7 +400,8 @@
           "quote": {
             "text": "Daniel 7 is a symbolic dream vision, the most common form of revelation in apocalypses of the historical type",
             "sha256": "5e48fdb00b494e7602878e03421540825b8241bb02ac9945d32b6828ee533a7f"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     }
@@ -402,7 +428,8 @@
           "quote": {
             "text": "In Christianity the vision had its main impact in the identification of the “one like a human being” with Jesus and the related hope for a second coming.",
             "sha256": "0f297b3ff0fb844b2cfedef24c2d608d95fdf4ac873383bf33680666effb5d04"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     }

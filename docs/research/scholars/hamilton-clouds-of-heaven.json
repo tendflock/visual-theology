@@ -1,0 +1,750 @@
+{
+  "scholarId": "hamilton-clouds-of-heaven",
+  "authorDisplay": "Hamilton",
+  "workDisplay": "With the Clouds of Heaven",
+  "resourceId": "LLS:NSBT32",
+  "resourceFile": "NSBT32.logos4",
+  "traditionTag": "evangelical-biblical-theology",
+  "fullTitle": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Matt 24",
+    "Mark 13",
+    "Rev 1",
+    "Rev 13",
+    "Rev 20"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom is Rome — historically and typologically; final beast in Rev 13 is the composite climax.",
+      "C: Little horn is the eschatological personal Antichrist, typified by Antiochus Epiphanes; identified with Paul's man of lawlessness and John's beast.",
+      "F: Historic premillennial — Christ slays the desolator at his return, then reigns 1,000 years with resurrected saints on earth; explicitly anti-postmillennial.",
+      "H: Inaugurated-but-future eschatology — seventieth week = inter-advent period whose second half is the final tribulation under Antichrist.",
+      "J: Son of Man is both Davidic king-priest and divine — enthroned beside the Ancient of Days, travels as Yahweh travels; resolution awaited Jesus' incarnation but the divine reading 'arises naturally from the text of Daniel 7 itself.'",
+      "L: Apocalyptic numerals are symbolic (seventy weeks = symbolic tenfold jubilee; seventy years = a typical lifespan), but anchored in real history.",
+      "N: Strong cross-book coherence — Daniel's visions are complementary, John's Revelation is 'an inspired interpretation' of Daniel, Olivet Discourse is 'almost a commentary' on Daniel.",
+      "O: Typological-Christological fulfilment — Daniel intended the typology; pattern climaxes in a final Antichrist and Christ's everlasting kingdom."
+    ],
+    "moderate": [],
+    "tentative": [
+      "Whether Daniel himself grasped the divinity of the Messiah as Trinitarian doctrine — Hamilton declines to say more than 'what Daniel saw and described fits perfectly with what would later be revealed.'",
+      "Specific identification of the ten horns / number of pre-Antichrist kings — Hamilton notes the angel discusses 'a few more than ten kings from the third kingdom' without pressing a literal scheme."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — historically the kingdom in control of the land of promise between Greece and the inauguration of God's kingdom in Christ; also typological of end-time human governments.",
+      "commitment": "strong",
+      "rationale": "Hamilton argues that 'though the fourth kingdom is not overtly identified as Rome, Rome is the kingdom in control in the land of promise between the third kingdom, identified as Greece, and the inauguration of God's kingdom through Jesus of Nazareth.' The four-kingdom sequence (Babylon, Medo-Persia, Greece, Rome) is both historical and symbolic — it serves as a typological pattern for the kingdoms of the world that will continue until the final Antichrist arises and is destroyed. John in Revelation 13 then presents the final beast as a composite of all four Daniel-7 beasts, locating the climactic enemy at the end of history.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 256,
+            "nativeSectionId": "CH4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH4 — Chapter Four: Four Kingdoms; Then Everlasting Dominion: The History of the Future",
+            "page": 85,
+            "pageEnd": 87,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH4 (pp. 85–87)"
+          },
+          "quote": {
+            "text": "though the fourth kingdom is not overtly identified as Rome, Rome is the kingdom in control in the land of promise between the third kingdom, identified as Greece, and the inauguration of God’s kingdom through Jesus of Nazareth",
+            "sha256": "39d43a4e2645eefede7db4af28121ecbe210ec4c2a80c3f4974b3ed6dca1b4eb"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 314,
+            "nativeSectionId": "CH9.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.4 — John’s Clarification of Daniel’s Revelations",
+            "page": 468,
+            "pageEnd": 475,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.4 (pp. 468–475)"
+          },
+          "quote": {
+            "text": "We have seen that Daniel identified the first beast as Babylon (2:38), the second as Medo-Persia (8:20; 11:1–2), the third as Greece (8:21; 11:3) and the fourth is left unidentified, though it corresponds to Rome.",
+            "sha256": "50b4f3d0a8ce8034b61e8ce66db1cfa4284cf7d0ab96f19326855974218b4cf8"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn (Dan 7:8, 24-25)",
+      "position": "An eschatological Antichrist figure typified by Antiochus Epiphanes (the little horn from the third kingdom in Dan 8/11) and identified with the 'man of lawlessness' (2 Thess 2) and the beast from the sea (Rev 13). The little horn is a personal end-time king at whose appearance the Ancient of Days returns.",
+      "commitment": "strong",
+      "rationale": "Hamilton defends a typological-Christological reading: the little horn from the third kingdom (Antiochus) and the little horn from the fourth kingdom 'correspond point for point' and together typify a final Antichrist whose three-and-a-half-year persecution will provoke the return of Christ. He explicitly affirms Jerome's classic typology: Antiochus is a type of the Antichrist, and what happened to Antiochus 'in a preliminary way' will be 'completely fulfilled in the case of the Antichrist.' Paul in 2 Thess 2 'blends the personal man of lawlessness, which he would derive from Daniel 9:27, with the figure of Antiochus Epiphanes described in Daniel 11:36–45.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 260,
+            "nativeSectionId": "CH4.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH4.4 — Kings of South and North in Daniel 10–12",
+            "page": 98,
+            "pageEnd": 100,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH4.4 (pp. 98–100)"
+          },
+          "quote": {
+            "text": "Jerome articulated this perspective long ago: ‘since many of the details … are appropriate to the person of Antiochus, he is to be regarded as a type of the Antichrist, and those things which happened to him in a preliminary way are to be completely fulfilled in the case of the Antichrist’",
+            "sha256": "88dc741580bc41fcb4e00afa5c90191b2ca249a588ef8a21d49e07e5e3792152"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 258,
+            "nativeSectionId": "CH4.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH4.2 — The Beasts in Daniel 7",
+            "page": 90,
+            "pageEnd": 94,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH4.2 (pp. 90–94)"
+          },
+          "quote": {
+            "text": "He then describes how the little horn speaks against the Most High, persecutes God’s people, and rewrites the rules and times, noting that this will continue ‘for a time, times, and half a time’ (7:25). The little horn’s self-aggrandizing antichrist activity will come to an end, however, when ‘the court shall sit in judgement’",
+            "sha256": "44da8fffd05c9a69a480cae24de639d6a1333c7a1bdf2a6f30603b6f4fb97896"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 273,
+            "nativeSectionId": "CH5.2.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH5.2.2 — Scripture Interprets Scripture: Daniel 9:24–27 in the Light of Other Passages in Daniel",
+            "page": 117,
+            "pageEnd": 122,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH5.2.2 (pp. 117–122)"
+          },
+          "quote": {
+            "text": "This would match the way that in 2 Thessalonians 2:3–8 Paul seems to blend the personal ‘man of lawlessness’, which he would derive from Daniel 9:27, with the figure of Antiochus Epiphanes described in Daniel 11:36–45.",
+            "sha256": "fe2de1703121b45a94a86e82379e44e9046dac156d9b063788aa3eff69f94876"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Historic premillennial: after Christ kills the desolator at his return (2 Thess 2:8) he 'will then reign for a thousand years with his saints in fulfilment of Daniel 7' on earth (Rev 5:10). The 'rest of the beasts' of Dan 7:12 whose dominion was removed but whose lives were prolonged correspond to the nations during the millennium who join Satan's final failed revolt.",
+      "commitment": "strong",
+      "rationale": "Hamilton reads Rev 20:4-6 as the explicit fulfilment of Dan 7:14, 18, 22, 27. The sequence — Christ returns, slays the Antichrist, reigns 1,000 years with the resurrected saints, then Satan is loosed, the surviving nations rebel, are destroyed at the great white throne (when Dan 12:2's resurrection happens) — is unambiguously historic premillennial. He also notes John 'depicts this as being fulfilled when Christ reigns in the millennium, his resurrected faithful reigning with him (Rev 20:4) on earth (5:10).' Hamilton explicitly rules out postmillennial optimism: 'There is no postmillennial optimism in Daniel about the people of God somehow taking over the world.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 312,
+            "nativeSectionId": "CH9.3.1"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.3.1 — Predictive Fulfilments",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.3.1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "John depicts this as being fulfilled when Christ reigns in the millennium, his resurrected faithful reigning with him (Rev. 20:4) on earth (5:10).",
+            "sha256": "6e024c5adba1a2ae5f7bf218fc892b5f2bf0940e0eff51acccb4e85b143498f8"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 314,
+            "nativeSectionId": "CH9.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.4 — John’s Clarification of Daniel’s Revelations",
+            "page": 468,
+            "pageEnd": 475,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.4 (pp. 468–475)"
+          },
+          "quote": {
+            "text": "Jesus will then reign for a thousand years with his saints in fulfilment of Daniel 7 (Rev. 20:4–6), and the beasts whose lives were prolonged after their dominion was removed (Dan. 7:12) will join Satan’s final failed putsch (Rev. 20:7–10).",
+            "sha256": "7819f1f899e9643f48bd650f410555bbe5135385b675118f0afd0bd15b5648d8"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 275,
+            "nativeSectionId": "CH5.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH5.3 — Conclusion > Chapter Five: Seventy Weeks and Seventy Weeks of Years: Daniel’s Prayer and Gabriel’s Revelation",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH5.3 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "There is no postmillennial optimism in Daniel about the people of God somehow taking over the world. Rather, the people of God are told in plain terms that the world will be against them, but that the arch-persecutor will be destroyed, and then God’s purposes will be consummated when the son of man receives the kingdom and they reign with him.",
+            "sha256": "fcc39f5b1475b4ece104f6b43403559d64552770f4d239c69c520b36e790002c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Inaugurated-but-future: the seventy weeks span the inter-advent period; the Messiah was cut off after the sixty-ninth week (Christ's first coming), the church age is the seventieth week (or the gap before its second half), and the seventieth week's second half is the eschatological tribulation under the personal Antichrist, ending at Christ's return.",
+      "commitment": "strong",
+      "rationale": "Hamilton's chapter-10 conclusion summarizes: 'Daniel’s seventy-week prophecy informs John, who interprets Daniel’s seventieth week as the inter-advent period.' At the same time he sees the second half of the seventieth week as the climactic three-and-a-half-year tribulation under a personal end-time Antichrist — neither pure futurism nor pure preterism, but inaugurated-with-final-consummation. The decisive interpretive principle is that Daniel's halving of the seventieth week (9:27) controls 'time, times and half a time' in 7:25 and the 1,290/1,335 day periods in chapter 12.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 323,
+            "nativeSectionId": "CH10.7"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH10.7 — Conclusion > Chapter Ten: Typological Patterns: Daniel in Biblical Theology",
+            "page": 491,
+            "pageEnd": null,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH10.7 (p. 491)"
+          },
+          "quote": {
+            "text": "Daniel’s seventy-week prophecy (chapter 5) informs John, who interprets Daniel’s seventieth week as the inter-advent period (chapter 9).",
+            "sha256": "68f0b1703d087bffb98b717519e0b1c1450e0c39ca37a92120a57095af296b19"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 274,
+            "nativeSectionId": "CH5.2.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH5.2.3 — Daniel 9:24–27 in History and Scripture",
+            "page": 122,
+            "pageEnd": 389,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH5.2.3 (pp. 122–389)"
+          },
+          "quote": {
+            "text": "The halving of the seventieth week is a key to interpreting the book of Daniel because it demonstrates that the different visions in Daniel are to be understood as interlocked presentations. Thus the halving of that seventieth week informs the reference to the saints being given into the hand of the little horn from the fourth kingdom ‘for a time, times, and half a time’ in Daniel 7:25",
+            "sha256": "c061bc797559169da82de53851817e427e78d921e33dfa1da5b87972b996a4c3"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13-14)",
+      "position": "The 'one like a son of man' is simultaneously a Davidic king-priest, a member of the heavenly court who travels as Yahweh travels (on the clouds), and a figure 'identified with and distinguished from' the Ancient of Days — a vision whose mystery is resolved only when Jesus, Son of David and incarnate Yahweh, applies it to himself before the high priest. Hamilton stops short of saying Daniel grasped Trinitarian doctrine; he insists Daniel's text fits perfectly with what was later revealed.",
+      "commitment": "strong",
+      "rationale": "Hamilton's chapter-six argument moves through four converging lines: (1) the plural 'thrones' in 7:9 (interpreted via Ps 110:1) implies the Son of Man is enthroned alongside Yahweh; (2) coming 'with the clouds' is a Yahweh-only mode of travel — citing Peter Gentry, the only exception in roughly seventy OT instances; (3) Aramaic distinguishes 'Most High' applied to the Ancient of Days ('illāyā') from the form ('elyônîn) used in connection with the Son of Man and his saints, marking both as Most High while distinguishing them; (4) Jesus' explicit linking of Dan 7:13 with Ps 110:1 in Matt 26:64 / Mark 14:62 shows the messianic priest-king reading 'arises naturally from the text of Daniel 7 itself.' Hamilton resists Caragounis's claim that Daniel had abandoned Davidic hope; the Davidic and divine threads are inseparable.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 279,
+            "nativeSectionId": "CH6.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH6.3 — The One like a Son of Man",
+            "page": 403,
+            "pageEnd": 409,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH6.3 (pp. 403–409)"
+          },
+          "quote": {
+            "text": "As Peter Gentry notes, ‘The coming on clouds suggests an appearance or theophany of Yahweh himself. If Daniel 7:13 does not refer to an appearance of deity, it is the only exception in about seventy instances in the OT’",
+            "sha256": "2c3a81979e054b1098580ebf7fd23808a4d1e2388034fd9a7f657eac5a99335a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 279,
+            "nativeSectionId": "CH6.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH6.3 — The One like a Son of Man",
+            "page": 403,
+            "pageEnd": 409,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH6.3 (pp. 403–409)"
+          },
+          "quote": {
+            "text": "Daniel contributes to the progress of revelation by describing the Daniel 7:13–14 one like a son of man in undeniably divine terms.",
+            "sha256": "c171b5301e9858555b31a479e57e342af8eda0bdcb8a7e2cc42445bb6c0fe737"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 280,
+            "nativeSectionId": "CH6.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH6.4 — Conclusion > Chapter Six: The One like a Son of Man and Other Heavenly Beings in Daniel",
+            "page": 409,
+            "pageEnd": 410,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH6.4 (pp. 409–410)"
+          },
+          "quote": {
+            "text": "Having examined the way that Daniel describes these other heavenly beings, the remarkable features of Daniel 7 present a figure both human and divine, identified with and distinguished from the Ancient of Days, who represents the saints as their king.",
+            "sha256": "9cbb950486653b8353cd6234cc46bde4d64492ab1f0b289eb3eef8d123f8a6fa"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 297,
+            "nativeSectionId": "CH8.3.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH8.3.3 — The Son of Man, Priest and King: Daniel 7:13 in Matthew 26:64 and Mark 14:62",
+            "page": 445,
+            "pageEnd": 446,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH8.3.3 (pp. 445–446)"
+          },
+          "quote": {
+            "text": "Jesus identified the son of man from Daniel 7:13 with the Davidic king, and at the same time he asserted that the Davidic king is David’s Psalm 110 Lord",
+            "sha256": "16c73d2ff1a2d0252f094e8935ecb4af2aeed3dc7ce1b22de1e7426e3c050a7f"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic numerals and symbolism",
+      "position": "Symbolic-but-anchored: the seventy weeks of Dan 9 are a 'symbolic tenfold jubilee', not a literal 490-year count; Jeremiah's seventy years are likewise 'roughly seventy years' on the Isa 23:15 / Ps 90:10 model of 'the days of one king'. Yet the symbolism is anchored in real history — Ezek 4's 390+40 days are symbolic of the 430-year sojourn — and the half-week of Dan 9:27 (= 'time, times and half a time' = 1,290/1,335 days in ch. 12) controls the eschatological timetable.",
+      "commitment": "strong",
+      "rationale": "Hamilton spends three sub-chapters arguing the seventy weeks are a typological/symbolic schematization of the inter-advent age, drawing the analogy from Ezek 4 (where 390+40 days = 430 years = the Egyptian sojourn). He explicitly rejects literal-day-for-year arithmetic: 'I do not think that Daniel intended the seventy weeks to be understood literally either.' Yet he insists the halving of the seventieth week is decisive structurally and that the various 3.5-year periods in Daniel are 'roughly three-and-a-half years' that 'join to pronounce a blessing on the one who keeps the faith through the time when the Antichrist will do his worst.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 274,
+            "nativeSectionId": "CH5.2.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH5.2.3 — Daniel 9:24–27 in History and Scripture",
+            "page": 122,
+            "pageEnd": 389,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH5.2.3 (pp. 122–389)"
+          },
+          "quote": {
+            "text": "Read in the light of Isaiah 23:15, Jeremiah’s seventy years for Babylon were not intended to be interpreted literally, and thus Daniel, correctly, does not demand that they be literally completed. In keeping with this, I do not think that Daniel intended the seventy weeks to be understood literally either.",
+            "sha256": "b1175212310df5692d3ecd9e8424a59a822910262962bf43f49e43a7d7cd9152"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 275,
+            "nativeSectionId": "CH5.3"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH5.3 — Conclusion > Chapter Five: Seventy Weeks and Seventy Weeks of Years: Daniel’s Prayer and Gabriel’s Revelation",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH5.3 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "Gabriel then revealed to Daniel that the remainder of human history would comprise a symbolic tenfold jubilee, that there would be a period of rebuilding, followed by a time of trouble; then the Messiah would be cut off.",
+            "sha256": "0c72731988659cedadaf6b3971119ab93cfd47802f07aa1eb85d5f8afd44fe32"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Strong canonical-coherence reading: Daniel's visions are 'complementary presentations of the same realities'; John's Apocalypse provides 'an inspired interpretation of what Daniel predicted', deliberately reusing Daniel's language, imitating his structure, and presenting predictive and typological fulfilments; Jesus in the Olivet Discourse and at trial likewise interprets Daniel and Ps 110 together; Paul's man of lawlessness blends Dan 9:27 with Dan 11:36-45.",
+      "commitment": "strong",
+      "rationale": "Hamilton's organising thesis is that the canon coheres. His chapter 9 thesis — 'if we can determine how John interpreted Daniel’s seventieth week in Revelation, we will know how Daniel intended that seventieth week to be understood' — is the methodological keystone. He then traces: Olivet Discourse ↔ Dan 11/12 (abomination, great tribulation, gathering of elect); Matt 26:64 / Mark 14:62 ↔ Dan 7:13 + Ps 110:1; 2 Thess 2 ↔ Dan 9:27 + Dan 11:36-45; Rev 13's composite beast ↔ all four Dan 7 beasts; Rev 20:4 ↔ Dan 7:18, 22, 27.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 314,
+            "nativeSectionId": "CH9.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.4 — John’s Clarification of Daniel’s Revelations",
+            "page": 468,
+            "pageEnd": 475,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.4 (pp. 468–475)"
+          },
+          "quote": {
+            "text": "My thesis here is simple: if we can determine how John interpreted Daniel’s seventieth week in Revelation, we will know how Daniel intended that seventieth week to be understood. John does interpret Daniel’s seventieth week in Revelation, and his inspired interpretation and development of Daniel’s prophecy aids our understanding of what Daniel meant.",
+            "sha256": "67ce6c56cde8500f38de644e88a82bd87f6d194b225cc067cdbdc2bbe1d3022e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 296,
+            "nativeSectionId": "CH8.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH8.3.2 — The Olivet Discourse: Daniel 7:13 in Matthew 24:30 and Mark 13:26",
+            "page": 441,
+            "pageEnd": 445,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH8.3.2 (pp. 441–445)"
+          },
+          "quote": {
+            "text": "the way that Matthew and Mark present Jesus interpreting Daniel in the Olivet Discourse matches the way that Paul (2 Thess. 2) and John (e.g. Rev. 13) interpret Daniel.",
+            "sha256": "53aeb5a45069654a8cedb3a711ec51ccbcdc392480332ca8020c736a5a6eb840"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 312,
+            "nativeSectionId": "CH9.3.1"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.3.1 — Predictive Fulfilments",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.3.1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "These texts in Revelation show that John identified Jesus as the ‘one like a son of man’ whom Daniel saw, and John envisioned Jesus enacting the fulfilment of Daniel’s prophecy when he returns to judge his enemies and save his people.",
+            "sha256": "646e1de32c8e853c6a6967a8c1492261883b40f774d1c144751252c5d6f65124"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfilment structure",
+      "position": "Typological-Christological with predictive overlay: Daniel's history-narratives (chs 1-6) prototype his apocalyptic visions (chs 7-12); the visions in turn prototype Christ's first coming (Messiah cut off, Dan 9:26) AND a future Antichrist climax. Daniel saw a 'pattern' culminating in 'a final king of shocking power, desolating sacrilege and unholy success.' John makes both predictive and typological fulfilment claims.",
+      "commitment": "strong",
+      "rationale": "Hamilton splits John's use of Daniel into 'predictive fulfilments' (Dan 7:14 → Rev 11:15; Dan 7:18 → Rev 22:5; Dan 7:21-22 → Rev 13:7) and 'typological fulfilments' (Dan 3 image-worship pattern → Rev 13 beast-worship; Dan 2:35 → Rev 12:8; 20:11). The 'pattern' Daniel intended his audience to see is one that 'culminates in a final king' — historic episodes (Nebuchadnezzar, Antiochus) escalate into final eschatological climax. This is methodologically distinctive: Hamilton claims Daniel himself intended the typological reading, not merely that NT writers retrofitted it.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 268,
+            "nativeSectionId": "CH4.5"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH4.5 — Conclusion > Chapter Four: Four Kingdoms; Then Everlasting Dominion: The History of the Future",
+            "page": 104,
+            "pageEnd": null,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH4.5 (p. 104)"
+          },
+          "quote": {
+            "text": "This pattern is clear. The book of Daniel portrays this pattern in Daniel’s own day, predicts that it will continue as history weaves its long tapestry (think little horn from third kingdom) and promises that it will culminate in a final king of shocking power, desolating sacrilege and unholy success.",
+            "sha256": "87a7621f709bc2e2e6af76a1bb9e58c70fb6bbb4da402b7fe3602a1eb3599874"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 313,
+            "nativeSectionId": "CH9.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.3.2 — Typological Fulfilments",
+            "page": 466,
+            "pageEnd": 468,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.3.2 (pp. 466–468)"
+          },
+          "quote": {
+            "text": "If John has claimed fulfilment of a typological pattern, I contend that Daniel understood that he was communicating elements of a pattern that would indeed come to the kind of climactic expression we mean when we use the word ‘fulfilment’.",
+            "sha256": "4abf0d4769b277a4495892642d29d67576c58ff2bba84ba6f4640efad044ed53"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 322,
+            "nativeSectionId": "CH10.6"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH10.6 — Fulfilment in Christ",
+            "page": 490,
+            "pageEnd": 491,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH10.6 (pp. 490–491)"
+          },
+          "quote": {
+            "text": "Joseph, Daniel, Jehoiachin, Esther and Mordecai, and Nehemiah all played their parts in a wider pattern that was ultimately fulfilled in Jesus, the new-exodus pattern that provides the conceptual and theological framework used by the New Testament authors",
+            "sha256": "1fd1f5d3cc7621332b9081d0a3e6b428ba654d02666241065ced74df2c62e522"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13's beast is John's composite climax of all four Dan 7 beasts: 'like a leopard … feet … like a bear’s … mouth like a lion’s mouth' (Rev 13:2 = Dan 7:4-6) plus the ten horns and the war on the saints from Dan 7:7, 21. John recognizes both the historical correspondence (the Daniel beasts = Babylon/Persia/Greece/Rome) and the typological — the final composite beast climaxes the whole sequence. The 42 months (Rev 13:5) = the second half of Daniel's seventieth week = 'time, times and half a time' (Dan 7:25). The Dan 3 image-worship pattern is also typologically fulfilled in Rev 13:14-18.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 314,
+            "nativeSectionId": "CH9.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.4 — John’s Clarification of Daniel’s Revelations",
+            "page": 468,
+            "pageEnd": 475,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.4 (pp. 468–475)"
+          },
+          "quote": {
+            "text": "the beast who symbolizes the end-time world-power is a composite of the four beasts of Daniel 7.",
+            "sha256": "92e3b0e624292853213054fa3f8fb269cfb11c265b36200aade926977dd91647"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 313,
+            "nativeSectionId": "CH9.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.3.2 — Typological Fulfilments",
+            "page": 466,
+            "pageEnd": 468,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.3.2 (pp. 466–468)"
+          },
+          "quote": {
+            "text": "This historical pattern is typologically fulfilled by what John symbolically depicts in Revelation 13. John describes a fake-christ beast (Rev. 13:1–4) whom all but the elect worship (13:5–10); then a false-prophet beast arises, who makes an image of the fake-christ beast and demands that all worship the image",
+            "sha256": "286e2f553c20b06ddf7fec5ca94f8a477dc65a154ee5a312ffeb5fe803e0fe1e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Rev 1:7 ('coming with the clouds, every eye will see him') and 1:13-14 (the risen Christ as 'one like a son of man' described with Dan 7:9 Ancient-of-Days imagery) prove John identified Jesus as the Dan 7:13 figure AND blended Son-of-Man with Ancient-of-Days descriptors — a 'creative development' confirming Hamilton's thesis that the Son of Man's mode of travel is Yahweh's mode of travel.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 312,
+            "nativeSectionId": "CH9.3.1"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.3.1 — Predictive Fulfilments",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.3.1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "Perhaps recognizing the way that the son of man was identified with and distinguished from the Ancient of Days in Daniel 7, John quotes the description of the Ancient of Days in Daniel 7:9 as he describes the risen Christ in Revelation 1:14",
+            "sha256": "153baf2ba26589bbe2437356b802b0b05df820f70e03c8e6ff6278303d6dc75a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Rev 20:4-6 is the explicit fulfilment of Dan 7:14/18/22/27. The thousand-year reign 'fits as the time during which the “rest of the beasts” have “their … dominion taken away, but their lives were prolonged for a season and a time”' (Dan 7:12). Christ kills the desolator at his return and reigns with the resurrected faithful on earth; afterwards Satan loosed → Gog/Magog rebellion → great white throne where Dan 12:2's resurrection unto life or shame occurs.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 314,
+            "nativeSectionId": "CH9.4"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH9.4 — John’s Clarification of Daniel’s Revelations",
+            "page": 468,
+            "pageEnd": 475,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH9.4 (pp. 468–475)"
+          },
+          "quote": {
+            "text": "The thousand-year reign of Christ with his saints (Rev. 20:4) fits as the time during which the ‘rest of the beasts’ have ‘their … dominion taken away, but their lives were prolonged for a season and a time’ (Dan. 7:12).",
+            "sha256": "83a74d65786db6e000fc6b1e4198ad9d6f7ed231f235d05cb71e8a9b07c4ca03"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Hamilton calls the Olivet Discourse 'almost a commentary on what Daniel indicates about the consummation of the ages.' Wars and rumours of wars = Dan 11; abomination of desolation = Dan 9:27 / 11:31 / 12:11 (and Mark's masculine participle modifying neuter 'abomination' clinches that the abomination is a person); the great tribulation parallels Dan 12:1; the gathering of the elect by trumpet = Dan 12:1's deliverance. Hamilton denies a pre-tribulation rapture: 'There is no indication that those who belong to Jesus will be raptured prior to the tribulation.'",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 296,
+            "nativeSectionId": "CH8.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH8.3.2 — The Olivet Discourse: Daniel 7:13 in Matthew 24:30 and Mark 13:26",
+            "page": 441,
+            "pageEnd": 445,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH8.3.2 (pp. 441–445)"
+          },
+          "quote": {
+            "text": "The Olivet Discourse in Matthew 24 and Mark 13 is almost a commentary on what Daniel indicates about the consummation of the ages.",
+            "sha256": "484a33c77cbdf8ebb7f6db4aa043e20ccec26742ac233d8585531fe78c1cef64"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 296,
+            "nativeSectionId": "CH8.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH8.3.2 — The Olivet Discourse: Daniel 7:13 in Matthew 24:30 and Mark 13:26",
+            "page": 441,
+            "pageEnd": 445,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH8.3.2 (pp. 441–445)"
+          },
+          "quote": {
+            "text": "There is no indication that those who belong to Jesus will be raptured prior to the tribulation, but at his coming the ‘loud trumpet’ will be sounded and his elect gathered",
+            "sha256": "a1d111eb08a9f1cc1a2e50e94c5dad0ed642e5f69d8ca9df9f7a8b65510c86cd"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Mark 13",
+      "positionSummary": "Treated together with Matt 24 in Hamilton's CH8.3.2; Mark's grammatically masculine participle modifying the neuter 'abomination' demonstrates that the abomination of desolation is a person, the eschatological Antichrist, the little horn of the fourth kingdom from Dan 7:8/24-25 fulfilling Dan 9:27.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NSBT32",
+            "logosArticleNum": 296,
+            "nativeSectionId": "CH8.3.2"
+          },
+          "frontend": {
+            "author": "Hamilton",
+            "title": "With the Clouds of Heaven: The Book of Daniel in Biblical Theology (NSBT 32)",
+            "section": "§CH8.3.2 — The Olivet Discourse: Daniel 7:13 in Matthew 24:30 and Mark 13:26",
+            "page": 441,
+            "pageEnd": 445,
+            "citationString": "Hamilton, With the Clouds of Heaven, §CH8.3.2 (pp. 441–445)"
+          },
+          "quote": {
+            "text": "Moo writes, ‘The fact that Mark uses a masculine participle after the neuter bdelygma (\"abomination\") shows that he is thinking of a person’",
+            "sha256": "1e7bd8b11dd7545a1f9efe839e0b0ca63db53724b89cd18e2b837064ed9437dc"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Reads Daniel's narrative chapters (1-6) as historical prototypes that the apocalyptic visions (7-12) typologically extend — the same pattern is dramatized first historically then symbolically.",
+    "Argues that John in Revelation supplies the *interpretive key* for Daniel's seventieth week, not the other way around: 'if we can determine how John interpreted Daniel's seventieth week in Revelation, we will know how Daniel intended that seventieth week to be understood.'",
+    "Defends the Son-of-Man-as-divine reading on a four-strand argument (plural thrones + Ps 110:1; 'with the clouds' as Yahweh's mode of travel; differentiated Aramaic terms for 'Most High'; Jesus' own Matt-26 self-application).",
+    "Treats the seventy weeks as a 'symbolic tenfold jubilee' — symbolic time-reckoning anchored in Ezek-4-style typology rather than literal-arithmetic dispensational schemes.",
+    "Reads Rev 20:4-6 as the millennial fulfilment of Dan 7's everlasting kingdom — historic premillennial, with Dan 7:12's 'rest of the beasts' supplying the millennial-then-loosed-Satan plot.",
+    "Insists that Daniel himself intended the typological pattern (not merely that NT writers retrofitted it onto him), grounding biblical-theology trajectories in authorial intent."
+  ],
+  "uncertainties": [
+    "Hamilton does not develop a full 1 Enoch 37-71 (Similitudes) discussion in depth — he discusses 1 Enoch and 4 Ezra in chapter 7 but the surveyed sub-chapters are weighted toward Qumran and Maccabees; cross-confirmation with Beale-school Second Temple work would be needed.",
+    "While historic premillennial overall, Hamilton hedges on whether the 'inter-advent period' = the entire seventieth week or only the gap before its second half; the chapter-9-vs-chapter-10 framing could read either way.",
+    "Hamilton leaves the question of Daniel's authorial knowledge of Trinity / Christ's divine identity 'tentative' — he refuses to assert that Daniel knew the Messiah would be God incarnate while affirming the text 'fits perfectly' with that conclusion."
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "scholarId": "hartman-dilella-anchor-daniel",
+  "authorDisplay": "Hartman & Di Lella",
+  "workDisplay": "Anchor Bible Daniel",
+  "resourceId": "LLS:ANCHOR27DA",
+  "resourceFile": "ANCHOR27DA.logos4",
+  "traditionTag": "critical-modern-catholic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Rev 13"
+  ],
+  "fullTitle": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+  "commitmentProfile": {
+    "strong": [
+      "A: Maccabean date — basic stratum of Dan 7 dated 169–167 BCE; book finalized c. 140 BCE by Hasidic editor-compiler",
+      "B: Fourth kingdom = Greece/Seleucids — Babylon–Media–Persia–Greece sequence, identical to critical consensus but argued from internal numerology (3 tusks, 1 side, 4 heads, 10 horns map to known kings)",
+      "C: Little/small horn = Antiochus IV — but assigned to a glossator distinct from the chapter's primary author; tenth horn (also = Antiochus) is the original referent",
+      "E: Compositional layering — primary stratum + Hasidic glossator (probably author of ch. 9) added all small-horn passages (vv. 8, 11a, 20b–22, 24b–25)",
+      "H: Apocalyptic kingdom — non-violent, divinely effected; God of heaven sets up the kingdom, not human/military action",
+      "J: Son of Man = symbol of 'Israel of faith' / 'the holy ones of the Most High' = the historically recognizable persecuted Jews; explicitly NOT angels, NOT Michael, NOT primarily messianic in Daniel itself",
+      "L: Apocalyptic genre method — Daniel's apocalypses must be defined from the work itself (Sitz im Leben, intent, literary characteristics), not by importing external typologies",
+      "O: Single-referent Antiochene fulfillment in Daniel; later messianic-Son-of-Man reading is a post-Daniel apocalyptic shift (Parables of Enoch, IV Ezra)"
+    ],
+    "moderate": [
+      "Compositional pluralism: 'middle ground' between single-Maccabean-author (Driver, Rowley) and multi-author/redactor (Montgomery, Ginsberg) views — accepts multiple like-minded authors with a final editor-compiler",
+      "Cautious openness to Catholic Christological reception: notes Jesus 'borrowed the term from Dan 7:13, as is clear from Mark 14:62,' while insisting this is 'solely a New Testament problem' separate from Daniel's own meaning"
+    ],
+    "tentative": [
+      "Religio-historical background of bar ʾĕnāš: skeptical of Canaanite/El–Baal hypothesis (Colpe, Emerton) and Iranian/Babylonian/Gnostic parallels; prefers to credit Daniel's author with creative recombination of biblical materials"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date of Daniel",
+      "position": "Maccabean for the apocalypses (basic stratum of Dan 7 dated 169–167 BCE; small-horn glosses ca. 167); whole book finalized c. 140 BCE by a Hasidic editor-compiler",
+      "commitment": "strong",
+      "rationale": "Hartman & Di Lella adopt a 'middle ground hypothesis' between single-Maccabean-author and multi-author models. They posit several like-minded authors over the third and second centuries BCE, with the writer of ch. 9 acting as final editor-compiler ca. 140 BCE. The basic stratum of ch. 7 was composed between 169 BCE (Antiochus's plundering of the Temple) and December 167 (the Temple desecration), since the primary stratum makes no allusion to either the desecration or the bloody persecution. The book as a whole is read as a 'pacifistic manifesto of the Ḥasidim' urging steadfastness during the Antiochene persecution of 167–164 BCE.",
+      "compositional": "Two-layer model for Dan 7: a primary stratum (vv. 1–7, 9–14, 15–17, 18, 23–24a, 26, 27) composed 169–167 BCE, and a 'glossator' (probably the same writer as the ch. 9 apocalypse) who in 167 BCE inserted all references to the small/eleventh horn (vv. 8, 11a, 20b–22, 24b–25) to identify Antiochus more sharply and predict the persecution's three-and-a-half-year duration.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 535,
+            "nativeSectionId": "INTRO.3.4"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.3.4 — 4. A Proposed Solution",
+            "page": 16,
+            "pageEnd": 18,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.3.4 (pp. 16–18)"
+          },
+          "quote": {
+            "text": "the present book was composed, according to the rather intricate reconstruction I outlined above, by several like-minded authors, the last of whom (the writer of the core apocalypse in ch. 9) acted as final editor-compiler of the whole book",
+            "sha256": "4ba0e4baeb48fb6e1d38053b48650e6db036eed7c90973cfb5f6c4d2c574ce9f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 547,
+            "nativeSectionId": "INTRO.7"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.7 — VII. The Hasidic Origin of the Book",
+            "page": 43,
+            "pageEnd": 45,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.7 (pp. 43–45)"
+          },
+          "quote": {
+            "text": "composed and widely circulated to urge and encourage the faithful Jews to remain steadfast in the practice of the religion of their fathers during the brutal persecution of Antiochus IV Epiphanes, particularly in the last years of his reign, from 167 to 164 b.c.",
+            "sha256": "76bff8bb4b5394fce9ae70aff9aee88c33d4a3262f126c02ff34dbbc7ee112fe"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 641,
+            "nativeSectionId": "DA.PT7.COMM2.3"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.3 — The Fourth Beast (7:7, 11b, 19–20a, 23–24a, 26)",
+            "page": 469,
+            "pageEnd": 470,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.3 (pp. 469–470)"
+          },
+          "quote": {
+            "text": "the primary stratum of ch. 7 can safely be dated between 169 and 167 b.c.",
+            "sha256": "86d489c62c844bac2175423476c9f3a24651a24c151d7bab20ccd1d0e4547d1c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece/Seleucids (sequence Babylon–Media–Persia–Greece)",
+      "commitment": "strong",
+      "rationale": "Hartman & Di Lella treat the four-empire sequence as Babylonian–Median–Persian–Greek, with the Greek kingdom culminating in the Seleucids of Antiochus IV's day. Their distinctive contribution is a numerological argument: each beast carries a number that maps to the kings of its empire known to the author — three tusks (Nebuchadnezzar, Evil-merodach, Belshazzar), one raised side ('Darius the Mede'), four heads (Cyrus, Ahasuerus, Artaxerxes, Darius II), and ten horns (Alexander through Antiochus IV). This internal evidence anchors the Greek identification of the fourth beast.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 637,
+            "nativeSectionId": "DA.PT7.COMM1"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM1 — Comment: General",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "in both cases symbolizing the four successive empires of the Babylonians, the Medes, the Persians, and the Greeks",
+            "sha256": "5abb55938781b3338848253816d3774c5285b60147f895101422ec0cc19d1d6a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 641,
+            "nativeSectionId": "DA.PT7.COMM2.3"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.3 — The Fourth Beast (7:7, 11b, 19–20a, 23–24a, 26)",
+            "page": 469,
+            "pageEnd": 470,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.3 (pp. 469–470)"
+          },
+          "quote": {
+            "text": "a fitting description of the Greek kingdom of the Seleucids in our author’s day",
+            "sha256": "c0ee26667bf6d047674165b3d8dc857f8a2bcc4384ff642a659da51511af8035"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Antiochus IV Epiphanes — but the 'small horn' (vv. 8, 11a, 20b–22, 24b–25) is a glossator's intensification of the original tenth-horn referent, who was already Antiochus",
+      "commitment": "strong",
+      "rationale": "Distinctive among critical commentators: Hartman & Di Lella argue that the chapter's original author already identified the tenth horn of the fourth beast as Antiochus IV. The 'small horn' material is a later Hasidic glossator's insertion, made because that author 'felt the author of ch. 7 was not specific enough in his description of Epiphanes' and wanted to set a precise time limit. The glossator describes the small horn in terms 'that would unmistakably identify it with Epiphanes' — eyes like a man's, mouth uttering arrogance, planning to change feast days and law (= 1 Macc 1:44–50). The three uprooted horns are identified, following Porphyry, as Artaxias of Armenia, Ptolemy VI, and Ptolemy VII — reflecting the glossator's view of the ten horns as contemporaneous pagan rulers rather than sequential Seleucids.",
+      "compositional": "The small-horn passages are secondary; the primary stratum already pointed to Antiochus through the tenth horn alone.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 642,
+            "nativeSectionId": "DA.PT7.COMM2.4"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.4 — The Small Horn (7:8, 11a, 20b–22, 24b–25)",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.4 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "he added “another horn, a small one” (7:8) which he described in terms that would unmistakably identify it with Epiphanes",
+            "sha256": "96d175b475b9a7c30d9a6444253e4002957500398d379ec363b2b0f7d290edc6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 642,
+            "nativeSectionId": "DA.PT7.COMM2.4"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.4 — The Small Horn (7:8, 11a, 20b–22, 24b–25)",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.4 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "The king symbolized by the eleventh horn, in his persecution of the Jews, planned “to change the feast days and the law” (vs. 25), which is precisely what Epiphanes endeavored to do",
+            "sha256": "ab3706b967df3da793c4f41d87b46d4f1163a0e2fbc8e43766a152d046526c39"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 641,
+            "nativeSectionId": "DA.PT7.COMM2.3"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.3 — The Fourth Beast (7:7, 11b, 19–20a, 23–24a, 26)",
+            "page": 469,
+            "pageEnd": 470,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.3 (pp. 469–470)"
+          },
+          "quote": {
+            "text": "The tenth ruler of this kingdom that is like a monstrous beast in tearing its prey to pieces and trampling it down is surely the king who tried to Hellenize the Jews, Antiochus IV Epiphanes.",
+            "sha256": "e8a95f5283e9dd98348ba0fd4f0a4a04d1dca14ac145367297dd6c3b2de08e75"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Source/redaction (compositional history of Dan 7)",
+      "position": "Two-stage composition: a primary apocalypse (169–167 BCE) plus a glossator (probably the ch. 9 author, ca. 167 BCE) responsible for all small-horn material",
+      "commitment": "strong",
+      "rationale": "Following Hölscher, Sellin, and especially Ginsberg, Hartman & Di Lella isolate the small-horn verses as a later insertion on three grounds: (1) v. 8 uses ʾălû for 'behold' twice while the primary text uses only ʾărû; (2) v. 8 has perfect-tense verbs after ʾălû while the primary text uses participles after ʾărû; (3) v. 8 employs 'man' as a symbol of arrogance, while the primary text uses 'man' as a symbol of holiness. They also adopt Ginsberg's transposition of the descriptions of the lion and the bear (vv. 4–5), arguing the original copyist accidentally swapped phrases, and supporting this with Rev 13:2's combination of features that presupposes the unswapped order.",
+      "compositional": "Primary stratum (Antiochene but pre-desecration): vv. 1–7, 9–14, 15–17, 18, 23–24a, 26, 27. Glossator (post-desecration, prognostic): vv. 8, 11a, 20b–22, 24b–25.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 637,
+            "nativeSectionId": "DA.PT7.COMM1"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM1 — Comment: General",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "Ginsberg recognized: (1) that in the description of the first two beasts, the words which the MT uses in reference to the lion",
+            "sha256": "adaf2b085117afe829858da1dbbea76c85492c6247e5675e7c503169fa2ef2ab"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 637,
+            "nativeSectionId": "DA.PT7.COMM1"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM1 — Comment: General",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "all the passages that speak about the “small horn” (vss. 8, 11a, 20b, 21, 22, 24b, 25) constitute a later addition to the original apocalypse",
+            "sha256": "5d38d4f5b0ece48cd84ad2eae7a74c848666b62eb173ff48c0703877f0c7e186"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Nature of the kingdom",
+      "position": "Apocalyptic, non-violent, divinely effected kingdom of God on earth — bestowed on the persecuted Jewish nation (the 'people of the holy ones of the Most High')",
+      "commitment": "strong",
+      "rationale": "Hartman & Di Lella read Dan 7's kingdom as God's own kingdom on earth, replacing the four pagan empires. Crucially, this kingdom is achieved 'not because of human activity or military might on Israel's part but because the Lord of history fulfills the great expectations.' They link this to a 'pristine form of non-violent resistance and pacifism' characteristic of original Hasidism — Mattathias and Judas Maccabee are only 'a little help' (Dan 11:34). The kingdom is given to the 'people of the holy ones of the Most High' (vs. 27), explicitly identified as the persecuted Jewish nation, not to angelic beings.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 558,
+            "nativeSectionId": "INTRO.10.2"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.10.2 — 2. The Intention and Theme of the Authors",
+            "page": 65,
+            "pageEnd": 67,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.10.2 (pp. 65–67)"
+          },
+          "quote": {
+            "text": "All these mighty acts will take place not because of human activity or military might on Israel’s part but because the Lord of history fulfills the great expectations and desire for deliverance of those who put their faith in him.",
+            "sha256": "5d5d279d720da2129db759d62400b66cf254f4972813e03310c01753ce3a5330"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 637,
+            "nativeSectionId": "DA.PT7.COMM1"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM1 — Comment: General",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "the manlike figure that receives universal dominion after the fourth beast is slain (vss. 11–14)—in both cases symbolizing the coming of God’s kingdom on earth to supplant the pagan kingdoms of men.",
+            "sha256": "8c8994f834ccd05b6929f4489fa7091c6e5bace54f088b97c8fdde2476e8019d"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Pure symbol of 'the Israel of faith' / 'the holy ones of the Most High' = historically identifiable persecuted Jews. NOT angels, NOT Michael, NOT messianic within Daniel itself.",
+      "commitment": "strong",
+      "rationale": "Di Lella's most distinctive contribution: a sustained, polemical case against Collins's angelic-Michael interpretation. He argues from rhetorical consistency that Daniel 7 employs 'unireferential' (one-to-one) symbols: the four beasts = four pagan empires, the little horn = Antiochus, the Ancient One = God of Israel. Thus the 'one in human likeness' must also be unireferential — a symbol of only one referent, namely 'the holy ones of the Most High,' i.e. the historically recognizable Jews who suffered and died rather than apostatize. He further argues that an angelic interpretation would empty the apocalypse of meaning for its addressees — the persecuted Jews of 167 BCE would derive 'small comfort' from being told that the angels would receive the kingdom. He grants that Jesus borrowed the title from Dan 7:13 (citing Mark 14:62) but treats this as 'solely a New Testament problem' separate from Daniel's own meaning. Di Lella's reading is therefore the corporate-Israel position, but argued from rhetoric rather than nationalist sentiment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 644,
+            "nativeSectionId": "DA.PT7.COMM2.6"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.6 — The One in Human Likeness (7:13–14, 18, 27)",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.6 (pp. 474–475)"
+          },
+          "quote": {
+            "text": "That the human figure is a symbol here for the holy ones of the Most High is evident from the interpretation of the vision",
+            "sha256": "d72e3eda1edf9685915151c9f585da59066156b7fb2b894d29590f6af0ead65c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 644,
+            "nativeSectionId": "DA.PT7.COMM2.6"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.6 — The One in Human Likeness (7:13–14, 18, 27)",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.6 (pp. 474–475)"
+          },
+          "quote": {
+            "text": "In Daniel 7 the symbolic manlike figure has no messianic meaning, except perhaps as connected with messianism in the broad sense",
+            "sha256": "2a73c3eaefc64da2d760f6c14dad319da040974bb7845ebe508eeebe216edd89"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 574,
+            "nativeSectionId": "INTRO.13.4"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.13.4 — 4. The Interpretation of bar ʾĕnāš and qaddîšê ʿelyônîn",
+            "page": 89,
+            "pageEnd": 101,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.13.4 (pp. 89–101)"
+          },
+          "quote": {
+            "text": "the “one in human likeness” must be a unireferential symbol of only “the holy ones of the Most High,” i.e. the historically recognizable Jews who suffered and died rather than apostatize.",
+            "sha256": "0a833d6002c0af2c53f4bc7ab262284ab0f59141da94fb36fa48f3a93628d438"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 574,
+            "nativeSectionId": "INTRO.13.4"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.13.4 — 4. The Interpretation of bar ʾĕnāš and qaddîšê ʿelyônîn",
+            "page": 89,
+            "pageEnd": 101,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.13.4 (pp. 89–101)"
+          },
+          "quote": {
+            "text": "if we substitute “the angels” wherever “the holy ones (of the Most High)” appear, we shall see that there would be small comfort for the persecuted community",
+            "sha256": "d84d41b6d8b4c9680e79bdba3e8ed3ae848f2c924c9b4eb3eaf390fdd5881f34"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 575,
+            "nativeSectionId": "INTRO.13.5"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.13.5 — 5. Conclusion",
+            "page": 101,
+            "pageEnd": 102,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.13.5 (pp. 101–102)"
+          },
+          "quote": {
+            "text": "the “one in human likeness,” the Israel of faith, comes “with the clouds of the heavens” and arrives at the throne of the Ancient One",
+            "sha256": "a743551de3907dfdc4fb19c196a76fb0dc527dab93ce41fed0cbd2f9f0209ce4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 644,
+            "nativeSectionId": "DA.PT7.COMM2.6"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.6 — The One in Human Likeness (7:13–14, 18, 27)",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.6 (pp. 474–475)"
+          },
+          "quote": {
+            "text": "Jesus borrowed the term from Dan 7:13, as is clear from Mark 14:62.",
+            "sha256": "cc1702f96f17b960e10168d82f0a9c5bbfbfb93686288266ee5c564857adb61f"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Historical-critical method with cautious resistance to comparative-religion reductionism; define apocalyptic from Daniel itself, not by importing Lindblom's or Russell's typologies a priori",
+      "commitment": "strong",
+      "rationale": "Hartman & Di Lella explicitly classify Dan 2:13–45 and chs. 7–12 as apocalyptic literature, but methodologically they refuse to subordinate Daniel to a precooked apocalyptic schema. They insist it is 'methodologically more sound to derive a definition of the genre used by the authors of the book from a careful study of the work itself, rather than a priori to accept a definition of apocalyptic and then try to understand how Daniel fits into that genre.' Similarly, on the bar ʾĕnāš background, they survey the comparative proposals (Iranian, Babylonian Marduk, Canaanite El/Baal, Gnostic Urmensch, etc.) and conclude that Daniel's author is best understood as a creative biblical writer combining traditional images, not as a passive transmitter of pagan myth — 'his true genius lay in combining traditional elements with his own ideas.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 556,
+            "nativeSectionId": "INTRO.10"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.10 — X. Apocalyptic",
+            "page": 62,
+            "pageEnd": 64,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.10 (pp. 62–64)"
+          },
+          "quote": {
+            "text": "Apocalyptic is the literary genre of 2:13–45 (the inner core of the second midrashic story) and chs. 7–12.",
+            "sha256": "09cf97f0a48d1da23412e5f7dc5e744d52e80b0be53d70ad919ca65ca1ba217a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 573,
+            "nativeSectionId": "INTRO.13.3"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§INTRO.13.3 — 3. The Alleged Background of Bar ʾĕnāš in Daniel",
+            "page": 87,
+            "pageEnd": 89,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §INTRO.13.3 (pp. 87–89)"
+          },
+          "quote": {
+            "text": "his true genius lay in combining traditional elements with his own ideas into a colorful and imaginative drama of compelling interest.",
+            "sha256": "f360d4501de4d1db60f2fab87bff14fdafaffeda8545e43011e3a0ac7526cc60"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single-referent Antiochene fulfillment for the original Daniel; later messianic-Son-of-Man reading (Parables of Enoch, IV Ezra) is a post-Daniel apocalyptic development; NT use is a separate question",
+      "commitment": "strong",
+      "rationale": "Hartman & Di Lella locate Daniel's fulfillment in the Antiochene crisis and the cessation of the Greek kingdom. They distinguish three layers: (1) Daniel's own meaning, where the Son of Man symbol has 'no messianic meaning, except perhaps as connected with messianism in the broad sense'; (2) post-Daniel Jewish apocalyptic reception (Parables of Enoch, IV Ezra), where 'son of man' shifted to denote a real Messianic person; (3) NT Christological appropriation by Jesus himself. They affirm Jesus borrowed from Dan 7:13 (Mark 14:62) but treat this as a NT problem distinct from Daniel exegesis — a Catholic-critical posture more open than Collins's but more restrained than Christological commentators.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 644,
+            "nativeSectionId": "DA.PT7.COMM2.6"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.6 — The One in Human Likeness (7:13–14, 18, 27)",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.6 (pp. 474–475)"
+          },
+          "quote": {
+            "text": "in later Jewish apocalyptic literature (the Parables of Enoch and II Esdras) the term “son of man” soon shifted from a mere personification to a real person, the Messiah.",
+            "sha256": "ca46c7ca492ea1203ea663143cf02a61f6e9d783548ac3540d6623addd0aca5c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 644,
+            "nativeSectionId": "DA.PT7.COMM2.6"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM2.6 — The One in Human Likeness (7:13–14, 18, 27)",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM2.6 (pp. 474–475)"
+          },
+          "quote": {
+            "text": "Jesus borrowed the term from Dan 7:13, as is clear from Mark 14:62.",
+            "sha256": "cc1702f96f17b960e10168d82f0a9c5bbfbfb93686288266ee5c564857adb61f"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Hartman & Di Lella treat Rev 13:1–2 as direct evidence for a textual variant in Dan 7:4–5: the Apocalypse seer 'surely read a text of Dan 7:4f that was like the one emended here' (with the bear standing on hind legs and the lion's mouth, not as the MT now reads). They explicitly note that the Revelation beast 'symbolizes the Roman empire' and 'combines characteristics taken from the description of all the four beasts of Daniel 7' — a paradigmatic, not predictive, reuse of Daniel's imagery against a different empire (Rome vs. Greece in Daniel itself).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ANCHOR27DA",
+            "logosArticleNum": 637,
+            "nativeSectionId": "DA.PT7.COMM1"
+          },
+          "frontend": {
+            "author": "Hartman & Di Lella",
+            "title": "The Book of Daniel: A New Translation with Notes and Commentary (Anchor Bible 23)",
+            "section": "§DA.PT7.COMM1 — Comment: General",
+            "page": 464,
+            "pageEnd": 466,
+            "citationString": "Hartman & Di Lella, Anchor Bible Daniel, §DA.PT7.COMM1 (pp. 464–466)"
+          },
+          "quote": {
+            "text": "All admit that the description of the beast from the sea in Revelation 13, symbolizing the Roman empire, combines characteristics taken from the description of all the four beasts of Daniel 7.",
+            "sha256": "d2d5d441337bf288a92f1b96c160a92d27c0ef6d108d89c33910ce39bbe35a88"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Two-stage compositional model for Dan 7 (primary stratum + Hasidic glossator who is probably the ch. 9 author) — methodologically more granular than Collins's broadly Maccabean unity argument.",
+    "Numerological reading of beast features (3 tusks, 1 raised side, 4 heads, 10 horns) as enumerating known kings, anchoring the Greek identification of the fourth empire from internal evidence.",
+    "'Unireferential symbol' argument against the angelic Son of Man: rhetorical consistency demands the 'one in human likeness' map one-to-one to 'the holy ones,' which must be the persecuted Jews, not angels.",
+    "Pacifist/Hasidic reading of Daniel as a 'pacifistic manifesto' — Mattathias and Judas Maccabee are only 'a little help' (11:34); kingdom is given without a hand being put to it (2:34).",
+    "Catholic-critical openness to NT Christological reception while sharply distinguishing Daniel's own meaning from that reception (Mark 14:62 is acknowledged but bracketed as a NT problem).",
+    "Adoption of Ginsberg's transposition of lion/bear descriptions in vv. 4–5, with Rev 13:2 cited as ancient textual evidence for the unswapped reading.",
+    "Acceptance of Porphyry's identification of the three uprooted horns as Artaxias, Ptolemy VI, and Ptolemy VII — implying the glossator viewed the ten horns as contemporaneous pagan rulers rather than sequential Seleucids."
+  ],
+  "uncertainties": [
+    "Acknowledged hedging on the unity-and-date hypothesis: 'If the hypothesis detailed here appears unusually intricate and perhaps overly ingenious, if indeed not fully satisfying, based as it is in part on a series of probabilities and conjectures' — Hartman & Di Lella concede their compositional model is cumulative-probabilistic, not demonstrative.",
+    "Deliberately silent on Axis F (Christological/typological hermeneutic for Christian appropriation) within the Daniel commentary itself — directs the reader to NT commentaries (cites R. E. Brown's AB 29) for the question of why Jesus used the Son of Man title.",
+    "Limited engagement with Axis K (chronology of weeks/seasons) within the Dan 7 articles — the seventy-weeks chronology is treated in the Dan 9 section, not integrated into Dan 7 exegesis.",
+    "Largely silent on Axis N (modern political/contemporary application) — true to the historical-critical method, no extension to twentieth-century political theology."
+  ]
+}

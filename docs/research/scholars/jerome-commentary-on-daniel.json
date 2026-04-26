@@ -1,0 +1,622 @@
+{
+  "scholarId": "jerome-commentary-on-daniel",
+  "authorDisplay": "Jerome",
+  "workDisplay": "Commentary on Daniel",
+  "resourceId": "LLS:JRMSCMMDNL",
+  "resourceFile": "JRMSCMMDNL.logos4",
+  "traditionTag": "patristic-latin-jerome",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Rev 1",
+    "Rev 13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: 6th-century date — c. 407 CE composition is itself a refutation of Porphyry; Daniel as predictive prophet is the load-bearing premise of the entire commentary",
+      "B: Fourth kingdom = Rome — explicit, repeated, contrasted point-by-point with Porphyry's Greek-kingdoms reading",
+      "C: Little horn = future Antichrist (not Antiochus) — invokes 'traditional interpretation of all the commentators of the Christian Church'",
+      "J: Son of Man = Christ incarnate — fused with the stone-cut-without-hands of Dan 2",
+      "K: Saints' kingdom = heavenly, not earthly — explicit anti-chiliasm ('Cesset ergo mille annorum fabula')",
+      "L: Predictive-prophecy + typology hermeneutic — Antiochus as type, Antichrist as antitype, framed as a general scriptural habit"
+    ],
+    "moderate": [
+      "D: 70 weeks — surveys nine views (Africanus, Eusebius, Hippolytus, Apollinarius, Clement, Origen, Tertullian, Hebrews, Apollinarius again) without final adjudication, but the messianic-Christ reference is treated as the shared baseline",
+      "F: 'Time, times, and half a time' = 3.5 years of Antichrist's persecution"
+    ],
+    "tentative": [
+      "O: Method — refutational engagement with Porphyry is foregrounded in the Prologue and threaded throughout, but Jerome insists the work is exposition, not polemic"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date and authorship",
+      "position": "Sixth-century BCE composition by the historical Daniel; Maccabean redating is Porphyry's heretical evasion",
+      "commitment": "strong",
+      "rationale": "Jerome opens with Porphyry's claim that Daniel was forged in Judaea under Antiochus Epiphanes, and inverts the argument: the very fact that the prophecies map so precisely onto post-exilic history is for Porphyry the proof of forgery, but for Jerome the proof of authentic predictive prophecy. The catalogue of historians Jerome consults (Sutorius, Callinicus, Diodorus, Polybius, Posidonius, Livy, Trogus) is marshalled to defend the reliability of Daniel against Porphyry's reconstruction. He treats Eusebius (3 vols.) and Apollinarius (1 vol.) as having already substantively refuted Porphyry; his own task is exposition that incidentally answers Porphyry where the text demands.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 179,
+            "nativeSectionId": "PROL"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§PROL — Prologue",
+            "page": 15,
+            "pageEnd": 18,
+            "citationString": "Jerome, Commentary on Daniel, §PROL (pp. 15–18)"
+          },
+          "quote": {
+            "text": "Porphyry wrote his twelfth book against the prophecy of Daniel, (A) denying that it was composed by the person to whom it is ascribed in its title, but rather by some individual living in Judaea at the time of the Antiochus who was surnamed Epiphanes.",
+            "sha256": "93a5f8b54bbd5300541be9f08691e1dad841f3dc0a9a054275e336c27a9a99d1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 179,
+            "nativeSectionId": "PROL"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§PROL — Prologue",
+            "page": 15,
+            "pageEnd": 18,
+            "citationString": "Jerome, Commentary on Daniel, §PROL (pp. 15–18)"
+          },
+          "quote": {
+            "text": "And because Porphyry saw that all these things had been fulfilled and could not deny that they had taken place, he overcame this evidence of historical accuracy by taking refuge in this evasion, contending that whatever is foretold concerning Antichrist at the end of the world was actually fulfilled in the reign of Antiochus Epiphanes",
+            "sha256": "1d60e60662489239b3e5ae4b8a9a4568f772ef76612f5691e06d1d152ca5fe1f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 179,
+            "nativeSectionId": "PROL"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§PROL — Prologue",
+            "page": 15,
+            "pageEnd": 18,
+            "citationString": "Jerome, Commentary on Daniel, §PROL (pp. 15–18)"
+          },
+          "quote": {
+            "text": "For so striking was the reliability of what the prophet foretold, that he could not appear to unbelievers as a predicter of the future, but rather a narrator of things already past.",
+            "sha256": "97aed45726b41ad9301db91943e4e05cb1d28b3e3bfb254b98e4d639c254f888"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — the iron empire of Daniel 2 and the unnamed terrible beast of Daniel 7; the iron-and-clay feet describe the Roman empire weakened in Jerome's own day by reliance on barbarian foederati",
+      "commitment": "strong",
+      "rationale": "Jerome's identification is doubly distinctive: (1) it is the explicit foundation for rejecting Porphyry's collapse of the third and fourth kingdoms into 'Greek successors,' and (2) it is contemporized — the iron-and-clay is read against the declining Western Empire of c. 407 CE, where 'we require the assistance of barbarian tribes both in our civil wars and against foreign nations.' This becomes the source for the entire Western reading of the Roman empire as a divinely-sanctioned penultimate kingdom whose dissolution will trigger the ten-king division and the Antichrist.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "The fourth empire is the Roman Empire, which now occupies the entire world, and concerning which it was said in connection with the image, “Its lower legs were of iron, and part of its feet were of iron, and part of clay.”",
+            "sha256": "25c3f96de4cb3a90032dfc6ad2f4290d34750d6d187644077597c34cf3330258"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 181,
+            "nativeSectionId": "CH2"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH2 — Chapter Two",
+            "page": 24,
+            "pageEnd": 34,
+            "citationString": "Jerome, Commentary on Daniel, §CH2 (pp. 24–34)"
+          },
+          "quote": {
+            "text": "Now the fourth empire, which clearly refers to the Romans, is the iron empire which breaks in pieces and overcomes all others. But its feet and toes are partly of iron and partly of earthenware, a fact most clearly demonstrated at the present time. For just as there was at the first nothing stronger or hardier than the Roman realm, so also in these last days there is nothing more feeble",
+            "sha256": "8c0f4f97a05308d4071129053f073d1f6369301fba5b3d09b05a7f9c90709861"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "We should therefore concur with the traditional interpretation of all the commentators of the Christian Church, that at the end of the world, when the Roman Empire is to be destroyed, there shall be ten kings who will partition the Roman world amongst themselves.",
+            "sha256": "7a34aed0e472359c5584202c217ae52d06bc7bfa0c984393c49e31440cde7a8c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Future eschatological Antichrist — a human individual indwelt by Satan, arising from the dissolution of Rome to overthrow three of ten partitioning kings (Egypt, North Africa, Ethiopia); Antiochus Epiphanes is a partial type, not the referent",
+      "commitment": "strong",
+      "rationale": "Jerome rejects Porphyry's identification of the three uprooted horns with Ptolemy VI, Ptolemy VII, and Artaxias of Armenia on chronological grounds (the two Ptolemies died before Antiochus was born) and replaces it with a future-eschatological scheme drawn from 'the traditional interpretation of all the commentators of the Christian Church.' Crucially, he resists demonological reduction: the Antichrist is 'one of the human race, in whom Satan will wholly take up his residence in bodily form' — a precise, anti-docetic anthropology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "Porphyry vainly surmises that the little (p. 531) horn which rose up after the ten horns is Antiochus Epiphanes",
+            "sha256": "2c17ffac6964d8e8ad7bcdc972c91affbc73a6314b32bac453f2494e602eddf3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "Then an insignificant eleventh king will arise, who will overcome three of the ten kings, that is, the king of Egypt, the king of [North] Africa, and the king of Ethiopia",
+            "sha256": "ac396b433c0c839fefe4afc145e676876661ece7f188a6c38b8afd364c1d7f7e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "Let us not follow the opinion of some commentators and suppose him to be either the Devil or some demon, but rather, one of the human race, in whom Satan will wholly take up his residence in bodily form.",
+            "sha256": "d11ab8c8a6bec6b039a702e02fd5865d13551216f6c05fea6b2dde4301ba3b94"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 190,
+            "nativeSectionId": "CH11"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH11 — Chapter Eleven",
+            "page": 118,
+            "pageEnd": 400,
+            "citationString": "Jerome, Commentary on Daniel, §CH11 (pp. 118–400)"
+          },
+          "quote": {
+            "text": "Those of our school insist also that since many of the details which we are subsequently to read and explain are appropriate to the person of Antiochus, he is to be regarded as a type of the Antichrist, and those things which happened to him in a preliminary way are to be completely fulfilled in the case of the Antichrist.",
+            "sha256": "4b5eda0efeffa5ef04c12690162147f169d2470df1af7e4c87ce08d77a8349b9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "D",
+      "axisName": "Seventy weeks",
+      "position": "Predictive of Christ's advent and passion; surveys nine prior interpretations (Africanus, Eusebius x2, Hippolytus, Apollinarius, Clement of Alexandria, Origen, Tertullian, the Hebrew tradition) without final adjudication, but the messianic terminus is shared by the Christian readings",
+      "commitment": "moderate",
+      "rationale": "Uniquely among ancient commentators, Jerome refuses to legislate. He recites each view at length, marks chronological errors, and explicitly leaves the choice to the reader: 'because it is unsafe to pass judgment upon the opinions of the great teachers of the Church and to set one above another, I shall simply repeat the view of each.' The structural commitment is that Daniel 9 is a Christological prediction; the chronological mechanics are open. This sets a remarkable precedent for later medieval and Reformation treatments.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH9"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH9 — Chapter Nine",
+            "page": 90,
+            "pageEnd": 110,
+            "citationString": "Jerome, Commentary on Daniel, §CH9 (pp. 90–110)"
+          },
+          "quote": {
+            "text": "I realize that this question has been argued over in various ways by men of greatest learning, and that each of them has expressed his views according to the capacity of his own genius. And so, because it is unsafe to pass judgment upon the opinions of the great teachers of the Church and to set one above another, I shall simply repeat the view of each, and leave it to the reader’s judgment as to whose explanation ought to be followed.",
+            "sha256": "2ae7e36c5d6824793cee0f3d5fb1212c4f4815e1b2ab776ce4b523720bfd8056"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 188,
+            "nativeSectionId": "CH9"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH9 — Chapter Nine",
+            "page": 90,
+            "pageEnd": 110,
+            "citationString": "Jerome, Commentary on Daniel, §CH9 (pp. 90–110)"
+          },
+          "quote": {
+            "text": "There is no doubt but what it constitutes a prediction of Christ’s advent, for He appeared to the world at the end of seventy weeks.",
+            "sha256": "71b0d6b35713397c25af6696d881d1b1d0e8edf06e9e19b26e89083efd8ac6b2"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "position": "3.5 years — a literal duration during which the saints are delivered into Antichrist's power; explicitly tied to Matt 24:22 ('unless those days had been cut short')",
+      "commitment": "moderate",
+      "rationale": "Jerome treats 'time' = year, 'times' = two years (taking the Aramaic as dual), 'half a time' = six months — the standard 3.5-year Antichrist reign. Archer notes in a footnote that the Aramaic ending is plural not dual, so Jerome's grammar is contestable, but the doctrinal commitment is firm.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "“Time” is equivalent to “year.” The word “times,” according to the idiom of the Hebrews (who also possess the dual number) represents “two years.” [The Aramaic original here, according to the Massoretic vowel pointing, has the plural ending —ïyn, not the dual ending —ayin. To be sure, the consonantal text could also be pointed as dual.] The half a year signifies “six months.” During this period the saints are to be given over to the power of the Antichrist",
+            "sha256": "9fe426022b4e8100e6c750550d8a202ada151aae0e098cd9501b401c87ebc4ed"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13-14)",
+      "position": "Christ incarnate — the One who 'took upon Himself human flesh,' identified with the stone-cut-without-hands of Dan 2 and brought before the Ancient of Days; the bestowal of dominion is read through Phil 2:6-8 (kenosis) as anti-Arian",
+      "commitment": "strong",
+      "rationale": "Jerome consolidates the patristic Christological reading by fusing Dan 2 and Dan 7: the same figure who shatters the kingdoms in Nebuchadnezzar's dream is now revealed as the incarnate Son of Man. Against Porphyry's Maccabean reduction, Jerome poses the rhetorical challenge: how could Judas Maccabaeus be said to come with the clouds of heaven? The Phil 2 cross-reference fuses Daniel-7 enthronement with Pauline kenotic Christology and turns the passage into a polemic against Arian subordinationism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "He who was described in the dream of Nebuchadnezzar as a rock cut without hands, which also grew to be a large mountain, and which smashed the earthenware, the iron, the bronze, the silver, and the gold is now introduced as the very person of the Son of man, so as to indicate in the case of the Son of God how He took upon Himself human flesh",
+            "sha256": "5c3d6b3df8f486955d969afd053f986a1580d0c4af5913368d8c8d8384fbfea1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "Let Porphyry answer the query of whom out of all mankind this language might apply to, or who this person might be who was so powerful as to break and smash to pieces the little horn, whom he interprets to be Antiochus? If he replies that the princes of Antiochus were defeated by Judas Maccabaeus, then he must explain how Judas could be said to come with the clouds of heaven like unto the Son of man",
+            "sha256": "065be8f805234098548fcd0fd9e5325bf870a2cdda7a6bace888a419e83d830e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints / fifth kingdom",
+      "position": "Heavenly, never earthly — explicit anti-chiliasm ('Cesset ergo mille annorum fabula' — 'Let the fable about a millennium cease!'); the kingdom that succeeds Rome is the abode of the saints, not a terrestrial reign",
+      "commitment": "strong",
+      "rationale": "Jerome refuses Hippolytan/Lactantian millenarianism on Daniel 7's own terms. Verse 18's 'they shall possess the kingdom' is read as the heavenly inheritance — 'everything which is of the earth shall return to earth.' This becomes the dominant Western reading and lays the foundation for Augustine's amillennial spiritualization in De civitate Dei XX.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "But the saints shall never possess an earthly kingdom, but only a heavenly. Away, then, with the fable about a millennium! [Cesset ergo mille annorum fabula.]",
+            "sha256": "ed09eaf8c42868bfdcaf9abbdac31f97431fa08cc512edbed84e17e619669524"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "And the [succeeding] empire shall not be an earthly empire at all, but it is simply the abode of the saints which is spoken of here, and the advent of the conquering Son of God.",
+            "sha256": "dde2304cc44bdc85bdb551230ad805d706df760a9223dfa38f22c273ccdb6065"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic for apocalyptic",
+      "position": "Predictive prophecy fulfilled point-by-point in history, with typological recurrence — historical events (Antiochus, the persecution of the Maccabean martyrs) prefigure end-time realities (Antichrist, persecution of the saints); Scripture's habit is to 'set forth by means of types the reality of things to come'",
+      "commitment": "strong",
+      "rationale": "This is Jerome's most consequential methodological move: he refuses to choose between Porphyry's 'all past history' and a purely futurist reading. The Antichrist had Antiochus 'as a type of himself,' just as Christ had Solomon as a type. The comparison legitimates the layered reading. This founds the entire Western typological tradition for prophetic literature — Joachim of Fiore, the medieval Antichrist tradition, and even Reformation polemics all assume the type/antitype framework Jerome consolidates here.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 190,
+            "nativeSectionId": "CH11"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH11 — Chapter Eleven",
+            "page": 118,
+            "pageEnd": 400,
+            "citationString": "Jerome, Commentary on Daniel, §CH11 (pp. 118–400)"
+          },
+          "quote": {
+            "text": "We hold that it is the habit of Holy Scripture to set forth by means of types the reality of things to come",
+            "sha256": "3fc2b56dfdd623a1ed5b86ad2bbac1c32668493dd831e7797766fde98999b9d4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 179,
+            "nativeSectionId": "PROL"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§PROL — Prologue",
+            "page": 15,
+            "pageEnd": 18,
+            "citationString": "Jerome, Commentary on Daniel, §PROL (pp. 15–18)"
+          },
+          "quote": {
+            "text": "I wish to stress in my preface this fact, that none of the prophets has so clearly spoken concerning Christ as has this prophet Daniel.",
+            "sha256": "3b3e9947687581c50a248aa1d10e4ee7c328135362d44357ec3c82c37b201344"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Stance toward critical/historical method",
+      "position": "Refutational — Porphyry's source-critical attack is named, quoted, and answered point-by-point; but Jerome insists the goal is exposition for Christians, not formal polemic",
+      "commitment": "strong",
+      "rationale": "Jerome explicitly disclaims wholesale refutation ('it is not our purpose to make answer to the false accusations of an adversary, a task requiring lengthy discussion') while in practice threading anti-Porphyry rebuttals through every chapter from 7 onward. Where Porphyry has a chronological error (the Ptolemies dying before Antiochus), Jerome catches it. Where Porphyry's exegesis is internally consistent but theologically intolerable (Son of Man = Judas Maccabaeus), Jerome forces the absurdity into the open.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 179,
+            "nativeSectionId": "PROL"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§PROL — Prologue",
+            "page": 15,
+            "pageEnd": 18,
+            "citationString": "Jerome, Commentary on Daniel, §PROL (pp. 15–18)"
+          },
+          "quote": {
+            "text": "And so wherever occasion arises in the course of explaining this volume, I shall attempt briefly to answer his malicious charge, and to controvert by simple explanation (p. 492) the philosophical skill, or rather the worldly malice, by which he strives to subvert the truth and by specious legerdemain to remove that which is so apparent to our eyes.",
+            "sha256": "05f2dc5519aeb1de5f6d81913c049c2ce3753cee78b17065a4459eda973820c7"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Jerome reads Daniel 7:9-14 through Revelation 4-5: the multiple thrones in Daniel = the 24 thrones of Rev 4; the Ancient of Days = the One on the throne in Rev 4; the Son of Man = the Lion of the tribe of Judah / Root of David in Rev 5. This is the foundational patristic synthesis of Daniel's throne-vision with the Apocalypse, and it controls subsequent Christian iconography and lectionary reception.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "We read something similar in John’s Apocalypse: (Rev. 4:2 ff.) “After these things I was immediately in the Spirit, and lo, a throne was set up in heaven, and one was seated upon the throne",
+            "sha256": "6b2224cc84f5f4c6f42ffa75f73641f2717e04f20863bd7ac7e068f91995d577"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "And the Ancient (C) of days is the One who, according to John (p. 532) sits alone upon His throne. Likewise the Son of man, who came unto the Ancient of days, is the same as He who, according to John, is called the Lion of the tribe of Judah (Rev. 5)",
+            "sha256": "54b9a213a0f6a6396c744972893d87e35ca8ea93caf2910ecff89b809482e0c8"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Jerome reads the little horn through 2 Thessalonians 2: the Antichrist is 'the man of sin, the son of perdition' who 'sits in the temple of God, making himself out to be like God.' Though he does not cite Rev 13 directly at Dan 7, his Antichrist figure (a human individual, indwelt by Satan, blaspheming, persecuting the saints for 3.5 years, ultimately destroyed by Christ) is the canonical Western synthesis of Dan 7, 2 Thess 2, and Rev 13. Note: he does NOT identify Rome as the persecuting beast — Rome is the penultimate Christian empire in his day; the Antichrist arises from its dissolution.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JRMSCMMDNL",
+            "logosArticleNum": 186,
+            "nativeSectionId": "CH7"
+          },
+          "frontend": {
+            "author": "Jerome",
+            "title": "Commentary on Daniel (trans. Gleason L. Archer)",
+            "section": "§CH7 — Chapter Seven",
+            "page": 71,
+            "pageEnd": 82,
+            "citationString": "Jerome, Commentary on Daniel, §CH7 (pp. 71–82)"
+          },
+          "quote": {
+            "text": "For this is the man of sin, the son (668) of perdition, and that too to such a degree that he dares to sit in the temple of God, making himself out to be like God.",
+            "sha256": "2879590e2bb55a5c204931f0c09b8427109b7372be83c7079eebe92bcfa5ccba"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Treats Porphyry's lost Adversus Christianos book 12 as a worthy interlocutor — quotes him substantively, names his historical sources (Sutorius, Callinicus, Polybius, etc.), and answers him with chronological precision rather than mere anathema. This is a high-water mark of patristic engagement with pagan source criticism.",
+    "Contemporizes Daniel 2's iron-and-clay to the late-fourth-century Western Empire's reliance on barbarian foederati ('a fact most clearly demonstrated at the present time') — prophecy is being lived out as he writes.",
+    "Establishes the type/antitype framework for Antiochus → Antichrist as a general hermeneutic principle ('it is the habit of Holy Scripture to set forth by means of types the reality of things to come'), legitimating layered fulfillment for all subsequent Western readers.",
+    "On the seventy weeks, refuses to adjudicate among nine prior Christian views and explicitly defers to the reader — a remarkable scholarly modesty that becomes a pattern for later medieval encyclopedic commentary.",
+    "Polemicizes against premillennialism on Daniel 7 itself ('Cesset ergo mille annorum fabula') — anti-chiliasm is built into the Latin Daniel tradition from this point forward.",
+    "Positions Theodotion (not the Septuagint) as the church's read text for Daniel, anticipating the textual judgments embedded in the Vulgate.",
+    "Distinguishes Susanna and Bel-and-Dragon as non-Hebrew additions and defends his use of critical obeli/asterisks against complaints that he has 'truncated the book' — an early model of canonical-textual criticism."
+  ],
+  "uncertainties": [
+    "On Axis E (genre): Jerome does not explicitly theorize Daniel as a distinct apocalyptic genre; he treats it as prophecy with visionary form. The genre question is anachronistic.",
+    "On Axis H (compositional unity): Jerome treats the book as a single Daniel-authored composition; the chiastic Aramaic core (Dan 2-7) and Hebrew frame are not flagged. The Hebrew/Aramaic linguistic shift at 7:28 is noted as a textual fact without compositional inference.",
+    "On Axis N (political theology): Jerome's stance toward Rome is layered and shifts — the present empire is divinely-sanctioned and Christianized (his patrons Pammachius and Marcella are Roman aristocrats), yet its dissolution is the necessary precondition for Antichrist. He does NOT identify Rome with the beast or the little horn; later anti-Roman readings (esp. Reformation-era) cannot claim Jerome.",
+    "On the seventy weeks (Axis D), Jerome surveys but declines to commit — leaving the precise mechanics of the Christological computation genuinely open. Subsequent traditions that claim Jerome for a specific seventy-weeks scheme are over-reading him.",
+    "Jerome assumes a single future Antichrist; he does not anticipate the medieval/Reformation development of corporate or institutional Antichrist (papal Rome, the Caliphate, etc.). Reading him as proto-anti-papal is anachronistic by centuries."
+  ]
+}

@@ -1,0 +1,829 @@
+{
+  "scholarId": "young-prophecy-of-daniel",
+  "authorDisplay": "Young",
+  "workDisplay": "Prophecy of Daniel",
+  "resourceId": "LLS:PRPHCYDNLCMM",
+  "resourceFile": "PRPHCYDNLCMM.logos4",
+  "traditionTag": "reformed-conservative-critical",
+  "fullTitle": "The Prophecy of Daniel: A Commentary",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Matt 24",
+    "Mark 13",
+    "Rev 13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Sixth-century date — defended by argument from Babylonian colouring of ch. 7 plus the inescapable forgery-consequence of the Maccabean alternative.",
+      "B: Fourth kingdom is Rome — defended in Appendix V across four converging lines, with a three-phase Roman trajectory.",
+      "C: Little horn is the eschatological Antichrist (2 Thess 2's man of sin); explicitly rejects Antiochus identification.",
+      "F: Amillennial — the kingdom of vv. 14/18/27 is everlasting and therefore not millennial; it is the Church's eternal possession.",
+      "J: Son of Man is a supernatural divine Person, vindicated by Jesus' own self-application of the title.",
+      "K: Reformed-covenantal — explicit and repeated refutation of Gaebelein's dispensational scheme.",
+      "L: Apocalyptic numerals are symbolic; obscure interpreted by plain (esp. Dan 2:44 controlling Dan 7)."
+    ],
+    "moderate": [
+      "Cross-book Rev 13 / Matt 24 reading — present and decisive but not separately developed at length (Young's commentary is on Daniel only)."
+    ],
+    "tentative": [
+      "Pre-incarnate humanity reading of 'like a son of man' — Tertullian/Rollock not entirely rejected, not strongly affirmed.",
+      "Specific identification of three uprooted horns and modern ten — refuses to press."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Dating",
+      "position": "Sixth-century B.C. authorship by Daniel himself; the Maccabean hypothesis renders the book a fraud, not merely a literary genre.",
+      "commitment": "strong",
+      "rationale": "Young insists the early-Church and Synagogue position is right: Daniel wrote the book in Babylon in the 6th century. He concedes the Maccabean theory has been advocated by 'men of profound learning,' but argues it carries an inescapable consequence: if Daniel originated in the Maccabean age the book is a forgery, since it claims to be canonical revelation, not romance. He pointedly endorses Pusey's 'battle-ground' line and grounds the case ultimately on Christ's own use of Daniel in the New Testament. Distinctively, Young also engages historical evidence — the Babylonian colouring of ch. 7 — to argue affirmative grounds for sixth-century origin, not just a refusal of critical conclusions.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 133,
+            "nativeSectionId": "INTRO.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§INTRO.5 — VI",
+            "page": 23,
+            "pageEnd": 26,
+            "citationString": "Young, Prophecy of Daniel, §INTRO.5 (pp. 23–26)"
+          },
+          "quote": {
+            "text": "the book was written by Daniel himself in Babylon in the 6th cent. B. C., and that the contents of the book were given to Daniel by special, Divine revelation",
+            "sha256": "e37499ce6e478dc1fb00435362196a61948aa4ac0b20c5314872995ac5ecc301"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 133,
+            "nativeSectionId": "INTRO.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§INTRO.5 — VI",
+            "page": 23,
+            "pageEnd": 26,
+            "citationString": "Young, Prophecy of Daniel, §INTRO.5 (pp. 23–26)"
+          },
+          "quote": {
+            "text": "If the book of Daniel is the product of the Maccabean age, then it is not a book of predictive prophecy, but a forgery",
+            "sha256": "0aa9af050d5bc182b9715416fc262a91636d347472c87272c02befc7cd0cf80b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 133,
+            "nativeSectionId": "INTRO.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§INTRO.5 — VI",
+            "page": 23,
+            "pageEnd": 26,
+            "citationString": "Young, Prophecy of Daniel, §INTRO.5 (pp. 23–26)"
+          },
+          "quote": {
+            "text": "It is one thing to issue a harmless romance under a pseudonym; it is an entirely different thing to issue under a pseudonym a book claiming to be a revelation of God",
+            "sha256": "534fd29dae4a082d0666f279e8c442a69b7eadaa3aca2f468ee5b2af95bb1cb4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "the accuracy of this symbol is evidence that the book was written by someone who knew Babylon well",
+            "sha256": "93413ada1a88e57a28b57d7fe711d7824e081f63320c21e7bb961e69f3830068"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — historic Roman Empire, then a 'second period' of kingdoms historically rooted in Rome (modern Europe), culminating in the little-horn Antichrist.",
+      "commitment": "strong",
+      "rationale": "Young defends the Roman identification at length in Appendix V, arguing (1) the little horn of ch. 7 cannot equal the horn of ch. 8 (Antiochus) because the chapters' beasts and ends differ in kind; (2) the second kingdom must be Medo-Persia, leaving no room for an extra Median kingdom that critical readers need to make Greece the fourth; (3) the fourth beast is unique, crushing, universal — fitting Rome, not Greece; (4) Daniel 2:44 says the Messianic kingdom would arise 'in the days of these kings,' which fits Rome at Christ's birth, not Greece. Distinctively, Young then unfolds Rome in three phases: the historic empire, a 'second period' of European-derived kingdoms (he identifies the number ten as a symbol of completeness, not a literal ten contemporary kings), and a final little-horn period — explicitly rebuking dispensational schemes that posit a 'revived' Roman empire dying and being raised.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "Upon the basis of reasons given in App. V I think that the beast represents the Roman Empire",
+            "sha256": "ff7d4e5f5206fbf72e0715bf0c06a907eecdec8e8706d02a929711f489f52b7d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "The beast itself stands for the Roman Empire as it appeared at the birth of Christ and in the years subsequent",
+            "sha256": "d13cb0f0e47283a26f2ee51c83c02a2d8d690c84e85a67fd09735138d737cd72"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "if the he-goat of ch. 8 stands for Greece, the nameless beast of ch. 7, since it is the last beast in the vision must stand for the empire which followed Greece, namely Rome",
+            "sha256": "fac0da75570f311faf56ebe0dfdcf87cd6fbe4b1398a514961ee56b7ef098dc7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "Christ did not appear upon earth in the days of the Grecian empire, but when Rome was mistress of the world",
+            "sha256": "4c74615c545387ef20a56e0b3069a3e069abef018267429abe7cda57dd9b6b37"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "The beast does not die and come to life again in its ten horns. Rather, these horns grow out of the live beast",
+            "sha256": "7668000edb3628d5db976cafce47dfa65f6b5f4b70ff862174d3a575de56b5cc"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "An end-time Antichrist arising from the post-Roman kingdoms — explicitly the 'man of sin' of 2 Thess 2; rejects Antiochus identification.",
+      "commitment": "strong",
+      "rationale": "Young identifies the little horn with the eschatological Antichrist, citing Paul's man of sin (2 Thess 2:3-4) and connecting Daniel 7's horn to Revelation 13's blasphemous mouth. He explicitly refutes the Antiochus identification (whether classical-Maccabean or Rowley-style ten-horn schemes) on the ground that the horn's destruction is final whereas Antiochus had successors who continued to afflict the Jews. He resists pressing 'three uprooted horns' to specific identifications and treats the number ten symbolically. Distinctively, where Walvoord ties the little horn into a pretribulational seven-year framework, Young keeps the picture amillennial and historicist — the church suffers under the horn until Christ's return, with no mid-tribulation/covenant gap.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "This one is the Anti-Christ. Thus, in one remarkable picture, the entire course of history is given from the appearance of the historical Roman Empire until the end of human government",
+            "sha256": "a9980631c487d996e9e4d72d3215d88a5f82e26209edefe2c1da30d97876d1b9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "with the destruction of the little horn, the power of the fourth beast disappears entirely. It will not do, with Stuart, to say, “The minutiae of subsequent history are out of his (i.e., Daniel’s) circle of vision, and aside from his design.”",
+            "sha256": "9c96a0463af988b3a2b13ca48b84c7a51218d9c92a58456c1c0a32b8147d827f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "If, therefore, the little horn has reference to the Anti-Christ, there is no point in referring these conflicts to the persecutions of the Caesars, as does Calvin",
+            "sha256": "af5922b470a17aa50b7e810c3e7f77b3735c33269b4213c632ea9ed0fd44616f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "this tyranny will endure for a definite period, a time, times and the dividing of a time",
+            "sha256": "ed469ea0829f49fecae89510dfab9525b81bae0663b5b849805f59ab1abebe37"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "Amillennial — the kingdom given to the saints is the eternal kingdom of Christ (the Church), not a future 1000-year political reign.",
+      "commitment": "strong",
+      "rationale": "Young reads the kingdom of vv. 14, 18, 27 as 'clearly described as everlasting' and therefore not a millennial interim. He explicitly rejects Gaebelein's identification of this judgment with one preceding the final judgment by 1000 years and Gaebelein's restriction of the saints to 'Godfearing Jews who pass through the great tribulation.' For Young the saints are the elect of God across both covenants — 'the congregation of the New Covenant, consisting of Israel and the faithful of all nations' (quoting Keil). Calvin's gloss that the kingdom passage describes 'the empire of the Church' is endorsed.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "This kingdom cannot be millennial, since it is clearly described as everlasting",
+            "sha256": "b2dcff14133a9df345a297dc8496474c31e18fc6e33511ebe1ff99316fea7a2a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "Gaebelein maintains that this is a judgment which preceded the final judgment by 1000 years. He identifies the Ancient of Days with Jesus Christ, but also identifies the Son of Man with Jesus Christ. This is an impossible interpretation",
+            "sha256": "f431e199b45fd0ad8e6e05c65c12a991a40d6687ce595bc07311d8c3d1c2fc2d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "What is meant is the “empire of the Church” (Calvin)",
+            "sha256": "8d56a705a03024643e461c5c862349db7044c09ff37f730b86470e3cd29f05eb"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Supernatural divine Person — the Messiah/Christ — vindicated by Jesus' own self-application of the title; not corporate Israel.",
+      "commitment": "strong",
+      "rationale": "Young treats the figure of v. 13 as 'a supernatural Person' whose coming with clouds is itself an attribute of Deity; he supports this with NT cross-references (Mark 13:26, Matt 24:30, 26:64, Rev 1:7) and argues that 'Position upon the clouds … is indicative of Deity.' He distinguishes the messianic interpretation from the corporate-Israel reading (defended by Montgomery and others on the basis of vv. 18, 27) and decisively grounds the messianic view in Jesus' own use of 'Son of Man' for Himself. Where Young is open is on whether the figure also signals the pre-incarnate humanity of Christ — he gives a careful nod to Tertullian and Rollock without committing.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "the Figure like unto a Son of Man, represents a supernatural Person, for He comes with the clouds, is conducted to the throne of God, and a universal and eternal kingdom is given Him",
+            "sha256": "447f9cfe82c55fc95657bb90bf27cd55f21a44be0febb447643baa4f3d166e2e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "the conclusive proof that this view is correct is the application of the title to Himself by our Lord, e. g., Matt. 25:31; Mk. 10:45, Luke 17:24",
+            "sha256": "bcd91f5b2b63ec2e2f3210869e7a0b6a4498c4d1df7d3fc7ff837d5712537d2c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "The employment of this title by Jesus Christ is one of the strongest evidences that He attributed Deity to Himself",
+            "sha256": "aa8cc010d9714ba753e66ace7a6e8d03ee4423396be22721f1e4df9a93d1c125"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "this vs. cannot be employed to identify the heavenly Figure like a Son of Man. That Figure is presented as a truly supernatural Being, whereas such is not the case with the saints",
+            "sha256": "75934457b6803e1a09e27b90077c0519321b5fdeaef4cfc109990f346c6d1c35"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Dispensational vs Covenantal",
+      "position": "Reformed-covenantal; argues directly against Gaebelein's dispensational scheme of revived Roman Empire, 70th-week gap, and Jewish-only saints.",
+      "commitment": "strong",
+      "rationale": "Young engages the dispensational position by name (Gaebelein chiefly, since he writes before Walvoord) and specifically attacks (a) the revived-Roman-Empire reading of the ten horns ('the beast does not die and come to life again'); (b) the seven-year tribulation framework reading the time-times-half a time as a literal final 3.5 years equated with Daniel 9's seventieth week; (c) the limitation of the 'saints' to ethnic Israel during the tribulation. Distinctively, Young flags Gaebelein's identification of Ancient of Days with Christ (which destroys the Father–Son distinction needed by the vision) as 'an impossible interpretation.' He explicitly defers the full refutation of the seventy-weeks gap-theory to chapter 9.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "The Roman Empire, argues Gaebelein, is to be revived and divided into ten kingdoms. This, however, is to go contrary to the symbolism",
+            "sha256": "193adcf07b68d973668f9fd988304507cad7c9a744e1ccdf0c60e26956445ee1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "Gaebelein and other expositors of the same school are not at this point true to the symbolism",
+            "sha256": "1d22377ae79c6757499bee846b095ba194e5ec2ec9fa172af5ba466db6fd1ff2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "Some equate this period with the 3½ years or 1260 days which are said to constitute the last half of Dan.’s 70th week, the period of the great tribulation. The refutation of this position must be reserved for the discussion of 9:24–27",
+            "sha256": "14d42861040c2b194c6a5d145fc3a92c0607844d6ac465782a305e612a303efc"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Predictive prophecy in symbolic form — numbers (ten, time-times-half) read symbolically not literal-mathematically; 'plain interprets obscure.'",
+      "commitment": "strong",
+      "rationale": "Young's working rule is that the obscure must be interpreted in light of the more plain (he applies this both to ch. 8 vs ch. 7 and to ch. 2:44 vs the ch. 7 visions). He repeatedly takes apocalyptic numerals symbolically: ten horns are 'a multiplicity of rulers, or an indefinitely large number of kings,' four heads are 'the four corners of the earth,' time-times-half-a-time is a 'symbolically' bounded period of testing 'shortened for the sake of God's people.' This sets him apart from dispensational literalism while still affirming genuine predictive content (rejecting vaticinium ex eventu).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "the number ten may be merely indicative of completeness and need not necessarily be taken as absolutely literal",
+            "sha256": "2c65e98a1e1411f83920fe0a1d628cf689c0aa5d9c6c58c605792308360d213d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 178,
+            "nativeSectionId": "CH7.2"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.2 — The Interpretation of the Vision (vv. 15–28)",
+            "page": 412,
+            "pageEnd": 420,
+            "citationString": "Young, Prophecy of Daniel, §CH7.2 (pp. 412–420)"
+          },
+          "quote": {
+            "text": "a chronological determination of the period is not in view, but that the designation of time is to be understood symbolically",
+            "sha256": "5bdd8721fa401fed0d3fd07e9c8bfa017b0517ea1703d3a24f7c4aad9b1063dc"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "the time-honored rule of interpretation that the obscure must be interpreted in the light of that which is more plain",
+            "sha256": "ae83bf5d7747b7f27696cd42c8c57da55fa0747890120fa911974bffcfc75b06"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "the four heads, representing the four corners of the earth, symbolize the ecumenicity of the kingdom",
+            "sha256": "463a803628ec404de396c58cf04be7d98d7c12a5be67e5323bbc85bf83505d4a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Young treats Rev 13 as built directly on Daniel 7's symbolism — the ten-horned beast with a 'mouth speaking great things and blasphemies' is the apocalyptic reuse of Dan 7:8/25. Importantly, he uses the NT use of Daniel's symbolism — Rev 13 + 2 Thess 2 + the Lord's own Son-of-Man self-identification — as the decisive interpretive key showing that the fourth empire is Rome (not Greece), and that the little horn is the eschatological Antichrist.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "Rev. 13:5, where the beast with ten horns has “a mouth speaking great things and blasphemies.”",
+            "sha256": "a82c648bdf23ddb312a3c5bb2dea751ca17a40936c0fa469d389363b3f846263"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "Paul used the language of Daniel 7 to describe the Antichrist, and the Book of Revelation employed the symbolism of Daniel 7 to refer to powers that were then existent and future",
+            "sha256": "7e8f06e005bb4cd39f265522ed76a9c9389c99aa6be196bfeaaf9c9bdd789d1d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "This is enough. This was the very voice of God interpreting the Prophecies of Daniel",
+            "sha256": "c8361198b71e6fdc9a25d3e924c7420797bc50cbd0c88ec4971c262cb802a3d9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Young appeals to Jesus' own use of Daniel — particularly Matt 24:30, Mark 13:26, Matt 26:64 — both as proof that the Son of Man comes 'with' the clouds in a manner that 'is indicative of Deity,' and as the decisive vindication of the messianic interpretation against critical and corporate-Israel readings. The Lord's connection of Daniel's 'abomination' to the Temple's destruction is given as a structural argument for the Roman view of the fourth kingdom.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "When our Lord uttered these words, there can be no doubt but that He had in mind this passage in Dan",
+            "sha256": "0e67bad602caac255d253e47b6ccf6ab7295be97ad1d17251f15a5e4a0cf2171"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "Our Lord identified Himself as the Son of Man, the heavenly Figure of Daniel 7, and connected the “abomination of desolation” with the future destruction of the Temple",
+            "sha256": "dded902951ee524666c972d1e4cc838553197390cdb8a67a7ef7f23f9ef3a758"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Young insists Dan 7 is the symbolic restatement and expansion of Dan 2 — the iron of the image equals the fourth beast — and uses Dan 2:44's 'in the days of these kings' as decisive proof that the fourth empire must be Rome (the empire reigning at Christ's first advent). He treats the chapters as mutually interpreting: ch. 2 supplies the explicit 'in the days of these kings' interpretive principle, and ch. 7 supplies the close-up on the fourth beast's terminal phase.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 177,
+            "nativeSectionId": "CH7.1"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§CH7.1 — The Vision of the Four Beasts (vv. 1–14)",
+            "page": 397,
+            "pageEnd": 412,
+            "citationString": "Young, Prophecy of Daniel, §CH7.1 (pp. 397–412)"
+          },
+          "quote": {
+            "text": "There can be no question but that it is intended to be identical with the iron of the image of ch. 2",
+            "sha256": "7e9ca818327ed3911c314507839cdb12bfb8eccc6df765c34ed281f1bd36f293"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:PRPHCYDNLCMM",
+            "logosArticleNum": 225,
+            "nativeSectionId": "APP.5"
+          },
+          "frontend": {
+            "author": "Young",
+            "title": "The Prophecy of Daniel: A Commentary",
+            "section": "§APP.5 — V: The Identity of the Fourth Empire",
+            "page": 659,
+            "pageEnd": 678,
+            "citationString": "Young, Prophecy of Daniel, §APP.5 (pp. 659–678)"
+          },
+          "quote": {
+            "text": "In ch. 2:44 it is expressly stated that the Messianic kingdom will be erected “in the days of these kings,” i.e., the four kingdoms",
+            "sha256": "f28c4444cf535f67102ed6cfe4a43588e222bbd48e723a261c90ce9206953d9c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Two-front polemic: argues against critical Maccabean dating (Driver, Bevan, Rowley, Charles, Montgomery, Haller) AND against dispensational literalism (Gaebelein chiefly, Lang) — neither side gets a pass.",
+    "Three-phase Roman scheme: historical empire → 'second period' of kingdoms historically rooted in Rome (modern Europe, ten as symbol of completeness) → little-horn Antichrist phase. This avoids both Calvin's purely-Caesarean reading and dispensationalism's revived-empire scheme.",
+    "Textual concession with confessional firmness: regularly grants critical scholars' linguistic/textual observations (e.g., Aramaic peculiarities, the difficulty of v. 11) before refusing their dating conclusions; willing to side with Keil/Pusey against AV translations and with M against Stuart on syntax.",
+    "Forensic table-comparisons: Appendix V uses two-column tabular comparison of the Dan 7 little horn vs Dan 8 horn, and of the nondescript beast vs the he-goat, to argue analytically rather than dogmatically that the horns/beasts cannot be identified.",
+    "Anti-mythological apologetics: explicitly refutes Gunkel's Tiamat-derivation, Haller's Persian-judgment-borrowing, and W. R. Smith on grounds that they smuggle in a naturalistic premise — 'trying to explain the supernatural upon purely naturalistic grounds.'",
+    "Christological anchor: the entire argument for the messianic Son of Man and ultimately for the fourth kingdom = Rome rests on the New Testament's reuse of Daniel as 'the very voice of God interpreting the Prophecies of Daniel.'"
+  ],
+  "uncertainties": [
+    "Hedges on the precise referent of the Hebrew/Aramaic bilingualism (Intro V) — endorses the 'Aramaic for world-empires' explanation but writes 'no desire to be dogmatic upon the point.'",
+    "Pre-incarnate humanity of the Son of Man: gives a careful 'I am not ready entirely to reject the interpretation of Tertullian and others' on whether 'like a son of man' connotes the not-yet-incarnate Christ — a rare Young hedge.",
+    "Three uprooted horns: explicitly refuses to identify ('I am not sure that the number three is to be pressed').",
+    "Identity of the modern ten: refuses to specify particular European kingdoms — 'To seek to identify these kingdoms, when Scripture furnishes no clue as to their identity, is very precarious and probably unwarranted.'",
+    "Silent on ax E (genre/apocalyptic-as-genre) in formal terms — does not address the Collins-style apocalyptic-genre argument because it post-dates him; engages only the older Bertholdt/Driver source-critical apparatus.",
+    "Silent on ax H/N/O at the level of Daniel-Revelation cross-fertilization in detail — those questions are present but subordinated to the Christ-as-key argument; he defers most of the Revelation-detail work."
+  ]
+}

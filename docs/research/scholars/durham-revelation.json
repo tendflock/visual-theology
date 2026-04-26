@@ -5,6 +5,16 @@
   "resourceId": "LLS:COMMREVDURHAM",
   "resourceFile": "COMMREVDURHAM.logos4",
   "traditionTag": "historicist-reformation",
+  "passageCoverage": [
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 7:7-8",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
   "commitmentProfile": {
     "strong": [
       "C: Little horn / Antichrist = papal Rome — Durham names the Pope 'that Antichrist' explicitly and repeatedly.",
@@ -44,7 +54,8 @@
           "quote": {
             "text": "convincing proofes of the Pope of Rome his being that Antichrist",
             "sha256": "280db459360163d6dd681c02fd6122e13d55b6d2a1527e3f634d5c044e95f8c5"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -63,7 +74,8 @@
           "quote": {
             "text": "the Pope and his Kingdom, supposing him to be Antichrist",
             "sha256": "03c509d1220adef702668bc55105415d14115ef9f9bb5960db11ca8b421ffaef"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         },
         {
           "backend": {
@@ -82,7 +94,8 @@
           "quote": {
             "text": "if Rome be the seat, the Roman Church is the whore, and the Pope Antichrist",
             "sha256": "d0d0b2380600b8d37128f4be24c7b6508cd0d6df4332142e55fa4ec1ed7b1aa4"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -101,7 +114,8 @@
           "quote": {
             "text": "it is here the Roman Empire under its seventh and last government",
             "sha256": "10bb92176fc2c3e6a7408733b321aac1edb3bb44af1dab4c0eb0fe10e8d9694d"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         }
       ]
     },
@@ -130,7 +144,8 @@
           "quote": {
             "text": "it is here the Roman Empire under its seventh and last government",
             "sha256": "10bb92176fc2c3e6a7408733b321aac1edb3bb44af1dab4c0eb0fe10e8d9694d"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -149,7 +164,8 @@
           "quote": {
             "text": "The subject of this Revelation, things which must shortly come to passe, not things past, nor so much things present",
             "sha256": "d139aa0007c919843da062e6f200c69e9af4cd0baf0bcc681e47a59e8606961c"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -178,7 +194,8 @@
           "quote": {
             "text": "The subject of this Revelation, things which must shortly come to passe, not things past, nor so much things present",
             "sha256": "d139aa0007c919843da062e6f200c69e9af4cd0baf0bcc681e47a59e8606961c"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -197,7 +214,8 @@
           "quote": {
             "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
             "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -226,7 +244,8 @@
           "quote": {
             "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
             "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -255,7 +274,8 @@
           "quote": {
             "text": "He is like the Son of man: by which Title Christ is described, Chap. 1 vers. 13 and it can well agree to none other.",
             "sha256": "787c5b37696c630e0e2dbae31a784ebf405c775046994aa02428f0df5e887d3b"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -284,7 +304,8 @@
           "quote": {
             "text": "that these reigning here, are the whole Church and professors of the Faith sincerely, and not some few only.",
             "sha256": "4cb416ec6006a636c28f3e5dcc818eb58adeba8b2cc1fb63c54ba5d33dfe24cf"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -303,7 +324,8 @@
           "quote": {
             "text": "the cumputation is to begin when the Church getteh a living and being in any good condition and freedom after Antichrists height",
             "sha256": "b9f2c1b588d0e0731ce17efe0f473738a702c1e832b53fdcca35919d98c9cf57"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     }
@@ -330,7 +352,8 @@
           "quote": {
             "text": "It is ordinary to the Prophets, especially to Daniel, to set out temporall Monarchies, by great beasts, as Chap. 7 and 8",
             "sha256": "d1cec4a399e3a466582232e6421bc20dd9d1164744c0d8eef6b0ce62166f9b83"
-          }
+          },
+          "supportStatus": "summary-inference"
         },
         {
           "backend": {
@@ -349,7 +372,8 @@
           "quote": {
             "text": "He is like the Son of man: by which Title Christ is described, Chap. 1 vers. 13 and it can well agree to none other.",
             "sha256": "787c5b37696c630e0e2dbae31a784ebf405c775046994aa02428f0df5e887d3b"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     }

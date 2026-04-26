@@ -5,6 +5,14 @@
   "resourceId": "LLS:PROGDISPNM",
   "resourceFile": "PROGDISPNM.lbxlls",
   "traditionTag": "progressive-dispensational",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 7:7-8",
+    "Rev 20"
+  ],
   "commitmentProfile": {
     "strong": [
       "K: Progressive dispensationalism (their own label) — whole book defends this position against both classical/revised disp and covenantalism",
@@ -57,7 +65,8 @@
           "quote": {
             "text": "The fact that these blessings have been inaugurated in the church distinguishes the church from Jews and Gentiles of the past dispensation. But, only some of those blessings have been inaugurated.",
             "sha256": "cc0fb3ac369ede5386cd1ca7a81aa60e1ebd9e60eda45bd63259eaadbbcf3a2c"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -76,7 +85,8 @@
           "quote": {
             "text": "The new covenant is the form in which the Abrahamic covenant has been inaugurated in this dispensation and will be fulfilled in full in the future.",
             "sha256": "93f1f5497478f4c06d03d1265e62f2450abc7b7cff62ea3236a975c89f2b6477"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -95,7 +105,8 @@
           "quote": {
             "text": "It was only after the cross that He inaugurated certain aspects of the kingdom in an institutional sense. Scripture speaks of these features as a deposit (Eph. 1:13–14), an initial structure which awaits completion at His glorious coming",
             "sha256": "ca7d4bed78103fd8279b71f4eded579d3e4794029e3f01711c21bc978e2b8857"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -124,7 +135,8 @@
           "quote": {
             "text": "progressive dispensationalists see one promised eschatological kingdom which has both spiritual and political dimensions. That kingdom is always centered in Christ.",
             "sha256": "832128d082287554255b108737e93b75e0d35542100a00b75dc2608a925e8153"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -143,7 +155,8 @@
           "quote": {
             "text": "the prediction of a form or stage of the kingdom’s presence prior to its full and apocalyptic establishment",
             "sha256": "09970d6d6d17b91e6f0c66d3af6cef0605f823c8a78b16d0580574c603df387f"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -162,7 +175,8 @@
           "quote": {
             "text": "the coming kingdom will be especially manifested on the earth in replacement of, not just in conjunction with, existing Gentile political structures",
             "sha256": "e86a31989e4f7a32a726801f3c103ccecb7478df58c646fe0effaa2d921ca919"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -181,7 +195,8 @@
           "quote": {
             "text": "He then argues that this enthronement has taken place upon the entrance of Jesus into heaven, in keeping with the language of Psalm 110:1 that describes the seating of David’s son at God’s right hand.",
             "sha256": "aa9e4e8d35ec4ab7d16717591598bbf3ca50b77060942b64766ecf804dfd844c"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -210,7 +225,8 @@
           "quote": {
             "text": "Premillennialism is the belief that a future messianic kingdom, 1,000 years in duration, will intervene between the return of Christ to earth and the everlasting eschatological kingdom.",
             "sha256": "5233c0be152c5832b62e25cf3b15eecaeeca75a42e37fff3859612a2bcfc2d31"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -229,7 +245,8 @@
           "quote": {
             "text": "The millennial kingdom, then, is a phase of the eschatological kingdom in which the returned, resurrected Christ, along with a company of resurrected saints, rules the nations of earth.",
             "sha256": "b467acd7aa1b34624cfb10e0ec8e288f52483125a8c44fb9e6f4b39c69b887e0"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -258,7 +275,8 @@
           "quote": {
             "text": "progressives do not view the church as an anthropological category in the same class as terms like Israel, Gentile Nations, Jews, and Gentile people. The church is neither a separate race of humanity",
             "sha256": "5823b1ef6799e87d32d42bc28fad076b667c95bfa739f41803454e663bf2148c"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -277,7 +295,8 @@
           "quote": {
             "text": "progressive dispensationalism advocates a holistic and unified view of eternal salvation. God will save humankind in its ethnic and national plurality.",
             "sha256": "df8ed888eae936392a490626bb67edada4043eb88d3654c89ae3ea22c7ea526d"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -296,7 +315,8 @@
           "quote": {
             "text": "Classical dispensationalism advocated an eternal heavenly/earthly dualism in order to explain the different purposes of redemption.",
             "sha256": "c7c92a631f5e1b3e78673eeca20f6edec21df1a3fad563dc57ec365e951bbbaf"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -315,7 +335,8 @@
           "quote": {
             "text": "The prophecies regarding the future glory of Israel will find their fulfillment in this remnant of faith constituted as the holy nation under the reign of Messiah, Son of David.",
             "sha256": "86d19f41524dd79316d50075c2989095f3b65130b411987997c9c54493bcb716"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -344,7 +365,8 @@
           "quote": {
             "text": "The spiritual blessings being given today are blessings actually predicted by the new covenant. These blessings are given in a partial and inaugurated form, which looks forward to complete fulfillment at the return of Christ.",
             "sha256": "0fabcd6f0b39105df1c223e33e3b943f382841daee2dcd0bd78c1e7dcdea292c"
-          }
+          },
+          "supportStatus": "directly-quoted"
         },
         {
           "backend": {
@@ -363,7 +385,8 @@
           "quote": {
             "text": "All of these covenants will be fulfilled in a future dispensation consistent with the historical-grammatical sense of their promises. However, the progressive nature of the dispensations and the interconnection between the covenants is such that present blessings are a partial, not “allegorical,” fulfillment of those promises.",
             "sha256": "20fb665860d90886a93458db5334da8ae1ec0a0bfe25e326198488335d428626"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -392,7 +415,8 @@
           "quote": {
             "text": "progressive dispensationalists would question the claim of any Bible interpreter to have identified specific current events as that future tribulational fulfillment of the historically repetitive Day of the Lord descriptions or the mysterious visions of biblical apocalyptic.",
             "sha256": "c9df4396c495382741aa2ff1c7d3fc269933581dcbd2fe6b5759ee979a41d1e1"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -421,7 +445,8 @@
           "quote": {
             "text": "In Daniel 7, Daniel envisions a time after the succession of Gentile kingdoms when “One like a Son of Man” will come on the clouds of heaven before the Ancient of Days",
             "sha256": "497a81dbc590a73ff2da03056752cb3f3e27fb17e586975b2b53720f7974b1d4"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         },
         {
           "backend": {
@@ -440,7 +465,8 @@
           "quote": {
             "text": "He continually referred to Himself as the Son of Man who will come in apocalyptic glory in a time of trouble and judgment described through a synthesis of elements from Daniel’s visions and Day of the Lord prophecies.",
             "sha256": "0edf43bf8983f60dc66148aca600ba6e2d99bbcd0bfba9cdc03ae5f9f9d95090"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     },
@@ -469,7 +495,8 @@
           "quote": {
             "text": "Daniel’s later visions foresee a future imperial ruler who arrogantly blasphemes God, persecutes the saints, and perpetrates war and suffering upon the earth. His portrait reappears in successive visions from Daniel 7–12.",
             "sha256": "290b0c2e2d651cc0f32299bc6c9c530b168c35e86de0bbe8b74244c52f85fabb"
-          }
+          },
+          "supportStatus": "directly-quoted"
         }
       ]
     }
@@ -496,7 +523,8 @@
           "quote": {
             "text": "Revelation 20 is the only Scripture which explicitly predicts (or envisions) an intermediate, millennial kingdom.",
             "sha256": "3dbcd9f7423f313073f737b0760eb1141e1372effc53b2c09fd2ff5376aed6aa"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -521,7 +549,8 @@
           "quote": {
             "text": "the prediction of a form or stage of the kingdom’s presence prior to its full and apocalyptic establishment",
             "sha256": "09970d6d6d17b91e6f0c66d3af6cef0605f823c8a78b16d0580574c603df387f"
-          }
+          },
+          "supportStatus": "summary-inference"
         }
       ]
     },
@@ -546,7 +575,8 @@
           "quote": {
             "text": "He then argues that this enthronement has taken place upon the entrance of Jesus into heaven, in keeping with the language of Psalm 110:1 that describes the seating of David’s son at God’s right hand.",
             "sha256": "aa9e4e8d35ec4ab7d16717591598bbf3ca50b77060942b64766ecf804dfd844c"
-          }
+          },
+          "supportStatus": "paraphrase-anchored"
         }
       ]
     }

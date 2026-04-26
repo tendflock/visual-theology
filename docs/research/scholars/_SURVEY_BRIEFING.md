@@ -86,6 +86,25 @@ txt = read_article_text("<RESOURCE_FILE>", article_num, max_chars=200000)
 7. **Assemble JSON.** See canonical shape below. Write to
    `docs/research/scholars/<SCHOLAR_SLUG>.json`.
 
+## passageCoverage (REQUIRED — added WS0c-8)
+
+Every scholar JSON must include a top-level `passageCoverage[]` array — the list of
+biblical verse-blocks the surveyed material engages substantively. The validator
+enforces a controlled vocabulary; pick from this list (extend in
+`tools/validate_scholar.py:PASSAGE_COVERAGE_VOCAB` if you genuinely need a new one):
+
+- Daniel 7 verse-blocks: `Dan 7:1-6`, `Dan 7:7-8`, `Dan 7:9-12`, `Dan 7:13-14`,
+  `Dan 7:15-18`, `Dan 7:19-22`, `Dan 7:23-27`
+- Adjacent Daniel: `Dan 2:31-45`, `Dan 8:1-27`, `Dan 9:1-19`, `Dan 9:20-27`,
+  `Dan 10:1-21`, `Dan 11:1-45`, `Dan 12:1-13`
+- NT cross-refs: `Rev 1`, `Rev 13`, `Rev 17`, `Rev 20`, `Matt 24`, `Mark 13`
+- Second-Temple reception: `1 En 37-71`
+
+A scholar who only engages Dan 7 + Rev 13 has `passageCoverage: ["Dan 7:13-14",
+"Rev 13"]`. A systematic theology engaging the kingdom across multiple Dan chapters
+might have 8+ entries. Be honest about scope; this drives per-passage coverage
+diagnostics across the corpus.
+
 ## Output JSON shape
 
 ```json

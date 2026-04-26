@@ -1,0 +1,857 @@
+{
+  "scholarId": "beale-use-of-daniel-in-revelation",
+  "authorDisplay": "Beale",
+  "workDisplay": "Use of Daniel in Revelation",
+  "resourceId": "LLS:SDNLJWSHRVSTJHN",
+  "resourceFile": "SDNLJWSHRVSTJHN.logos4",
+  "traditionTag": "evangelical-cross-book-reception",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Matt 24",
+    "Mark 13",
+    "1 En 37-71"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "J: Daniel 7 'son of man' is the formative reception trajectory through 1 Enoch 46-48 (Parables) -> 4 Ezra 13 -> Mark 13/Matt 24 -> Rev 1/13/14 -- Beale's signature thesis demonstrated by detailed allusion-density and structural-pattern analysis.",
+      "N: Revelation 13 has been moulded by the threefold authorization scheme of Daniel 7:3-6, 13-14; Daniel is 'the most formative influence on the thought and structure of Revelation.'",
+      "C: Rev 13 beast = ironic re-working / parody of the Daniel 7 fourth-beast complex and the 'son of man' authorization, inheriting little-horn warring-against-saints and forty-two-month / time-times-half-time periods.",
+      "O: Inaugurated-eschatological / 'already and not yet' fulfillment structure; Johannine claims described as 'beginning fulfillments of Daniel's prophecy' rather than purely future."
+    ],
+    "moderate": [
+      "B: Implicit Roman identification of the fourth-kingdom horns/heads (notes the 'usual' identification of seven mountains with the seven hills of Rome without strongly arguing it).",
+      "K (method): Apocalyptists, including John, respect O.T. context; against the older 'atomistic' caricature of apocalyptic exegesis.",
+      "L: Mark 13 / Synoptic Olivet discourse is itself a Danielic midrash that mediates Daniel into Revelation (following Hartman, Farrer, Sweet, Vos)."
+    ],
+    "tentative": [
+      "Synchronous-parallel reading of Revelation's vision-cycles (seals/trumpets/bowls) corresponding to the parallel structure of Daniel's five visions (Dan 2; 7; 8; 9; 10-12)."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "J",
+      "axisName": "Son of Man trajectory",
+      "position": "Dan-7 'son of man' is the formative reception-history pivot: through 1 Enoch's Parables (chs. 46-48 as midrash on Dan 7:9-27), 4 Ezra 13 (Dan 2 stone + Dan 7 man combined), Mark 13/Matt 24 Olivet-discourse Danielic-midrash, into Rev 1:7, 1:13-20, 13, 14:14, 17. Christ as 'son of man' is identified with the suffering/reigning saints (Dan 7:18, 22, 27) yet retains individuality.",
+      "commitment": "strong",
+      "rationale": "Beale traces the trajectory inductively. In 1 Enoch 46-47 he identifies ~13 Daniel allusions in two chapters and a parallel 7-element thought-structure with Daniel 7, concluding the chapters constitute a 'midrash' on Dan 7:9-27 that creatively develops the 'son of man's' role as judge -- a development from the 'judgment given to the saints' of Dan 7:22 not yet explicit in Daniel itself. In Rev 1, vv. 8-20 are likewise a 'midrash' on Daniel 7 and 10, with Dan 7 'more influential than Daniel 10', and Rev 1:5-7, 1:9, 1:13-16, 5:7-13, 17:14 identify Christ-as-Son-of-Man with the saints in suffering and reign. Mediated through a Christian-Danielic tradition reflected in the Synoptic Olivet discourse.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 810,
+            "nativeSectionId": "CH2.2.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH2.2.3.3 — c. Conclusion > 3. The Use of Daniel in 1 Enoch 46–48",
+            "page": 103,
+            "pageEnd": 106,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH2.2.3.3 (pp. 103–106)"
+          },
+          "quote": {
+            "text": "1 Enoch 46–47 can be considered a “midrash” of Daniel 7:9–27 because of the repetition of Daniel allusions",
+            "sha256": "89ac746e2d0fa6f31734ee66ed1b7fef9586f756c02e11b992b71ed94b2a97f9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 810,
+            "nativeSectionId": "CH2.2.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH2.2.3.3 — c. Conclusion > 3. The Use of Daniel in 1 Enoch 46–48",
+            "page": 103,
+            "pageEnd": 106,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH2.2.3.3 (pp. 103–106)"
+          },
+          "quote": {
+            "text": "the most outstanding development is seen in the “son of man’s” role as judge, which is not clear in Daniel 7",
+            "sha256": "c99b9ca34ecc3b3662128b16e9d2b53ea08677cce874d6bcfacd589670fc4242"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 835,
+            "nativeSectionId": "CH3.1.1.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.5 — e. Conclusion > 1. The Vision of the Man-like Figure in Revelation 1:12–20",
+            "page": 426,
+            "pageEnd": 433,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.5 (pp. 426–433)"
+          },
+          "quote": {
+            "text": "vv. 8–20 are a “midrash” on these two chapters from Daniel",
+            "sha256": "f6c2235b8597fb936625691f30e44a0cc5ca7ecdb3b7a05f0a32b44dba3f7754"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 835,
+            "nativeSectionId": "CH3.1.1.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.5 — e. Conclusion > 1. The Vision of the Man-like Figure in Revelation 1:12–20",
+            "page": 426,
+            "pageEnd": 433,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.5 (pp. 426–433)"
+          },
+          "quote": {
+            "text": "indicates that Daniel 7 is more influential than Daniel 10",
+            "sha256": "2989fe8c750296b81d7d6e6ef7193696be6daa5d2d54dc327ecf37af09d3cf99"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 885,
+            "nativeSectionId": "CH3.5.6"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.6 — 6. Conclusion",
+            "page": 681,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.6 (p. 681)"
+          },
+          "quote": {
+            "text": "As is the case in Daniel 7, John identifies the victory and reign of Christ—the “son of man”—with that of the saints",
+            "sha256": "66de3755b3d10625b564a4e6d747fec5734fb6487400b599a22d9a0a2ccf524c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Dan <-> Rev)",
+      "position": "Daniel is the most formative O.T. influence on the thought and structure of the Apocalypse -- exceeding Ezekiel, Isaiah and Zechariah. This is shown by (a) Danielic models / Vorbilder structuring Rev 1; 4-5; 13; 17; (b) Dan 2:28-29, 45 allusions in Rev 1:1, 1:19, 4:1, 22:6 as macro-structural sign-posts; (c) shared three-part Leitmotiv (cosmic eschatological judgment, divine sovereignty, faithful saints under tribulation); (d) high allusion density (50% of Rev 1:7-20, ~two-thirds of Rev 13).",
+      "commitment": "strong",
+      "rationale": "Beale's overall thesis. He builds it cumulatively across four chapter-length exegeses (Rev 1; 4-5; 13; 17), demonstrating in each that a Danielic 'Vorbild' organizes the imagery and that other O.T. references are drawn into the Daniel framework via thematic/catchword links acting as a 'hermeneutical magnet.' The Dan 2:28-29 allusion-cluster (1:1, 1:19, 4:1, 22:6) is read as deliberate macro-marker dividing the book into intro / churches / vision-proper / conclusion.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 885,
+            "nativeSectionId": "CH3.5.6"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.6 — 6. Conclusion",
+            "page": 681,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.6 (p. 681)"
+          },
+          "quote": {
+            "text": "The results of the study indicate the probability that Daniel is the most formative influence on the thought and structure of Revelation",
+            "sha256": "fdf166f11cb03acc33a63a76598db2705f3df21abf39efe997668d89083912a5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 884,
+            "nativeSectionId": "CH3.5.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.5 — 5. Summary",
+            "page": 680,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.5 (p. 680)"
+          },
+          "quote": {
+            "text": "John can be seen to have used the Daniel 2 allusions as sign-posts which represent the larger O.T. text plot",
+            "sha256": "5361b9b9e457f478d9091e3375393933870cea49252fa3a9026464866106bab6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 871,
+            "nativeSectionId": "CH3.5.2"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.2 — 2. The Common Themes of Daniel and the Apocalypse",
+            "page": 656,
+            "pageEnd": 659,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.2 (pp. 656–659)"
+          },
+          "quote": {
+            "text": "historical and cosmic eschatological judgment of evil nations and consequent establishment of God’s historical reign",
+            "sha256": "4518da519194380698146ac0191cfdce53205cf1d0e9656699e4dfd0321ee478"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn -> eschatological adversary lineage",
+      "position": "Rev 13 beast is a creative re-working of the Dan 7 four-beast complex with the 'little horn' character collapsed into the singular beast: the 'seven heads' are a composite of the four Daniel beasts; ten horns/diadems are Daniel's ten kings (Dan 7:24); blasphemous mouth, war on saints, forty-two-month time-period are Dan 7:25 + Dan 12:7. The whole functions as an ironic parody of the Dan 7:14 Son-of-Man authorization.",
+      "commitment": "strong",
+      "rationale": "The Rev 13 exegesis (CH3.3.1) annotates verse-by-verse Dan-7 allusion density and concludes Rev 13 is 'modelled on Daniel 7' via Daniel 7:3-6, 13-14's 'threefold authorization scheme' (agent steps forward -> power given -> effect). Beale stresses ironic re-application: the same wording Daniel uses for the Son of Man's reception of universal worship (7:14) is applied to the beast, making the beast a 'parody of the son of man's final triumph.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 858,
+            "nativeSectionId": "CH3.3.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.3.1 — 1. The Exegesis of Revelation 13:1–8: The First Beast",
+            "page": 485,
+            "pageEnd": 496,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.3.1 (pp. 485–496)"
+          },
+          "quote": {
+            "text": "The first two verses are a creative re-working of Daniel 7:1–7",
+            "sha256": "5a0ee1ca652cf8d90a74d9357352a2d4639a982aa1deba4bf59bd77e078937f3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 858,
+            "nativeSectionId": "CH3.3.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.3.1 — 1. The Exegesis of Revelation 13:1–8: The First Beast",
+            "page": 485,
+            "pageEnd": 496,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.3.1 (pp. 485–496)"
+          },
+          "quote": {
+            "text": "the beast’s conquering efforts are but an ironic parody of the “son of man’s” final triumph",
+            "sha256": "3bfb47c3936743447b43a0c728b9f4df1f6103c0556323f2aed44d3201239162"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 860,
+            "nativeSectionId": "CH3.5A"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5A — 3. Conclusion to the Exegesis of Revelation 13",
+            "page": 500,
+            "pageEnd": 505,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5A (pp. 500–505)"
+          },
+          "quote": {
+            "text": "that Revelation 13 is modelled on Daniel 7 is the best conclusion when so many allusions from Daniel are found together with such a Danielic framework",
+            "sha256": "b4d4ab4a80ad12e7c544509a4aec0bfdaaec4ca2d0601a48462ec983a9c14e2c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 860,
+            "nativeSectionId": "CH3.5A"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5A — 3. Conclusion to the Exegesis of Revelation 13",
+            "page": 500,
+            "pageEnd": 505,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5A (pp. 500–505)"
+          },
+          "quote": {
+            "text": "Revelation 13 has been moulded by the recurring threefold authorization scheme of Daniel 7:3–6, 13–14",
+            "sha256": "e5cb84ab0e83fa235766cec3026b99f220b161736cfa30e6e4107c0d623d9fd0"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Inaugurated / 'already and not yet': Christ's reign and the saints' kingdom are described as 'beginning fulfillments' of Daniel's prophecy -- Christ's death-resurrection inaugurate the Dan-7 son-of-man-and-saints reign, with consummation still future. The five Daniel visions (Dan 2; 7; 8; 9; 10-12) are read synchronously, and Beale reads Revelation's vision-cycles (seals/trumpets/bowls) as similarly recapitulatory rather than strictly chronological.",
+      "commitment": "strong",
+      "rationale": "Beale commits explicitly to inaugurated eschatology: the Dan-7 prophecy of the son-of-man and saints 'has its initial fulfillment in the overcoming of both through suffering and apparent defeat' beginning at the cross/resurrection; 'for the saints, it occurs throughout the church age until the victory is finally completed.' Revelation's vision cycles parallel rather than succeed each other, on analogy with Daniel's parallel visions.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 885,
+            "nativeSectionId": "CH3.5.6"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.6 — 6. Conclusion",
+            "page": 681,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.6 (p. 681)"
+          },
+          "quote": {
+            "text": "all of these Johannine ideas are described as, at least, beginning fulfillments of Daniel’s prophecy",
+            "sha256": "29e9978da2985684034154c7b65836ebcafd973bc2b5e2da32db5d3f3b1cb67d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 879,
+            "nativeSectionId": "CH3.5.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.3.3 — b. The Significance of the Overall Structure of Daniel",
+            "page": 667,
+            "pageEnd": 669,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.3.3 (pp. 667–669)"
+          },
+          "quote": {
+            "text": "all of Daniel’s five visions reflect a basic synchronous parallelism",
+            "sha256": "67216bcc6fadce01f20cafeaaf9ee25ef9186bfb67a63a600db7ab02e1dc1263"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 879,
+            "nativeSectionId": "CH3.5.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.3.3 — b. The Significance of the Overall Structure of Daniel",
+            "page": 667,
+            "pageEnd": 669,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.3.3 (pp. 667–669)"
+          },
+          "quote": {
+            "text": "to be understood in an “already and not yet” sense",
+            "sha256": "cf7b99786a01911fbc568ff0376e4e5bf286c8f71a8952ccd20fc4093d0bea89"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "NT use of Daniel (Synoptic mediation)",
+      "position": "John's use of Daniel in Revelation is mediated, at least in part, by an early Christian Danielic-midrashic tradition reflected in the Olivet discourse (Mark 13 / Matt 24 / Luke 21). Following Hartman, Farrer, Sweet and Vos, Beale argues that Mark 13 is itself a coherent meditation on Dan 7-9, 11-12, and that John's repeated Danielic models build on this Christian-Daniel tradition rather than purely on Daniel directly.",
+      "commitment": "moderate",
+      "rationale": "Beale endorses Hartman's case that 'the main part of the eschatological discourse [in Mark 13 and Matthew 24] is based on a coherent exposition of or meditation on' texts from Daniel 7-9, 11-12, and notes that Synoptic allusions occur in Revelation precisely where Beale has independently identified Dan-based models (Rev 1, Rev 6:2-17 woes, Rev 13:7-8). Hedges on directness -- 'whether John knew the Synoptics or a pre-synoptic tradition' -- but commits to the mediation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 880,
+            "nativeSectionId": "CH3.5.4"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.4 — 4. The Use of a Danielic Midrash in the Eschatological Discourse of the Synoptics and Its Relation to Revelation",
+            "page": 670,
+            "pageEnd": 671,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.4 (pp. 670–671)"
+          },
+          "quote": {
+            "text": "the main part of the eschatological discourse [in Mark 13 and Matthew 24] is based on a coherent exposition of or meditation on",
+            "sha256": "3f484b523076bc6e894436b5887a9b79f8b3040524959b3346643ab766278a04"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Saints of the Most High",
+      "position": "The 'saints' of Dan 7:18, 22, 27 are read corporately and Christologically through Revelation: their reign is identified with the Son of Man's reign (per Dan 7), and Rev 1:5-9; 5:7-13; 17:14 explicitly fuse the two. The Christian community as 'maskilim' from Dan 11:33-35 / 12:3, 10 is identified with the saints in Rev 13:18 and 17:9 who exercise discerning 'wisdom' against the beast.",
+      "commitment": "moderate",
+      "rationale": "Beale reads the saints corporately, with Christ as their representative head ('John identifies the victory and reign of Christ -- the son of man -- with that of the saints'). The wisdom/insight references in Rev 13:18 and 17:9 are read as the church standing in the role of the eschatological wise (maskilim) of Daniel's persecuted faithful, with Rev 13:9-10 functioning as a Danielic exhortation to perseverance under persecution.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 885,
+            "nativeSectionId": "CH3.5.6"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.6 — 6. Conclusion",
+            "page": 681,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.6 (p. 681)"
+          },
+          "quote": {
+            "text": "As is the case in Daniel 7, John identifies the victory and reign of Christ—the “son of man”—with that of the saints",
+            "sha256": "66de3755b3d10625b564a4e6d747fec5734fb6487400b599a22d9a0a2ccf524c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 886,
+            "nativeSectionId": "CH3.5.7"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.7 — 7. Additional Conclusions concerning the Theological Significance of the Use of Daniel in Revelation",
+            "page": 681,
+            "pageEnd": 689,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.7 (pp. 681–689)"
+          },
+          "quote": {
+            "text": "John associates those who go along with pagan society with",
+            "sha256": "ee39a156954c57782fef76e0999f5914a0dc325b20f42de8bc40aa82572632ff"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Genre -- apocalyptic and method",
+      "position": "Apocalyptic = revelation of secrets concerning future events of history or hidden divine operation, typically in vision form. Apocalyptic authors, including Qumran, 1 Enoch, 4 Ezra, 2 Baruch and John, exhibit a strong tendency to respect the broader O.T. context from which their allusions are drawn -- i.e., 'contextual' rather than 'atomistic' use, against the older Strack-Billerbeck-style caricature.",
+      "commitment": "moderate",
+      "rationale": "Beale's methodological contribution: by inductively examining the surrounding allusions (not just the cited verse) in each apocalyptic context studied, he demonstrates a recurring 'Danielic Vorbild' or controlling pattern within which other O.T. references cohere thematically. The corollary is that to read apocalyptic well, one must inquire whether a given allusion is part of a larger source-context pattern.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 907,
+            "nativeSectionId": "CH4.2.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH4.2.1 — 1. The Implications of the Study with Respect to Exegetical Method",
+            "page": 711,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH4.2.1 (p. 711)"
+          },
+          "quote": {
+            "text": "Repeatedly the various authors have been shown to exhibit a strong tendency to respect the meaning of the O.T. contexts from which they draw allusions",
+            "sha256": "b5365bf6ff0d5147473f96bc8b30522af393d1aa81c7f8f2046acb24382cb27b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 758,
+            "nativeSectionId": "CH1.5.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH1.5.1 — 1. The Problem of Definition",
+            "page": 6,
+            "pageEnd": null,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH1.5.1 (p. 6)"
+          },
+          "quote": {
+            "text": "By “apocalyptic” will be meant the revelation of secrets concerning future events of history or other hidden information about the divine operation of the cosmos",
+            "sha256": "7235eca8817d277ae3aa1c282a3539d0ff3d4fa6e09727798104bc39dd1b3c1b"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Implicit Roman identification: Beale notes the standard identification of the seven mountains of Rev 17:9 with the seven hills of Rome without strongly arguing for a specific kingdom-number identification of Daniel 7's fourth beast. His main move is collapsing Dan 7's four-beast complex into the single Rev 13/17 beast (universal eschatological world-system) rather than committing to a Greek-vs-Roman fourth-kingdom thesis.",
+      "commitment": "tentative",
+      "rationale": "Beale focuses on reception trajectory rather than the Maccabean-vs-Roman dating debate over Daniel itself. In Rev 17 he treats the seven heads as 'usually identified by commentators with the seven hills of Rome' alongside a more cosmic reading, and concludes the symbol is 'closely identified with the world political system' without forcing a single referent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 886,
+            "nativeSectionId": "CH3.5.7"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.7 — 7. Additional Conclusions concerning the Theological Significance of the Use of Daniel in Revelation",
+            "page": 681,
+            "pageEnd": 689,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.7 (pp. 681–689)"
+          },
+          "quote": {
+            "text": "The crucial issue for the author of Revelation is that of true worship of the legitimate divine sovereign",
+            "sha256": "38d0c89f74661612b0a2275d142867ecf7eb344c0b257da1d4895daebc415807"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Rev 1:7-20 is a Dan-7 + Dan-10 midrash. Roughly 50% of O.T. references in vv. 7-20 come from Daniel; v. 7 cites Dan 7:13 + Zech 12:10 (perhaps via Matt 24:30); vv. 12-16 fuse the Daniel 7 (Ancient of Days, son-of-man) and Daniel 10 (white-robed heavenly figure) descriptions and apply both to the risen Christ. A nine-element image-sequence in Rev 1:4-20 parallels Daniel 7 (throne, surrounding heavenly beings, son-of-man's universal rule, saints made a kingdom, coming on clouds, book of judgment, detailed description, seer's distress, interpretation). Daniel 2:28-29 in Rev 1:1, 1:19 frames the whole as Danielic mystery-revelation.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 835,
+            "nativeSectionId": "CH3.1.1.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.5 — e. Conclusion > 1. The Vision of the Man-like Figure in Revelation 1:12–20",
+            "page": 426,
+            "pageEnd": 433,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.5 (pp. 426–433)"
+          },
+          "quote": {
+            "text": "vv. 8–20 are a “midrash” on these two chapters from Daniel",
+            "sha256": "f6c2235b8597fb936625691f30e44a0cc5ca7ecdb3b7a05f0a32b44dba3f7754"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 835,
+            "nativeSectionId": "CH3.1.1.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.5 — e. Conclusion > 1. The Vision of the Man-like Figure in Revelation 1:12–20",
+            "page": 426,
+            "pageEnd": 433,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.5 (pp. 426–433)"
+          },
+          "quote": {
+            "text": "indicates that Daniel 7 is more influential than Daniel 10",
+            "sha256": "2989fe8c750296b81d7d6e6ef7193696be6daa5d2d54dc327ecf37af09d3cf99"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 831,
+            "nativeSectionId": "CH3.1.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.1 — a. Introduction to the Vision (1:7ff.)",
+            "page": 410,
+            "pageEnd": 412,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.1 (pp. 410–412)"
+          },
+          "quote": {
+            "text": "Revelation 1:7a speaks of the eschatological coming of Christ by referring to Daniel 7:13 and Zechariah 12:10–12; Matthew 24:30 may have suggested this combination to John",
+            "sha256": "401d6ac9b2f11d98d7c1ee08dfa326e7d0f9eac6e1f1f618284067fd4680ae37"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13 is moulded on Daniel 7 throughout. Two-thirds of O.T. references come from Daniel; vv. 1-2 are 'a creative re-working of Daniel 7:1-7' (the seven heads composite the four Dan-7 beasts; ten diadems = Dan 7:24's ten kings). The whole chapter follows Dan 7's threefold authorization-scheme (agent steps forward -> power conferred -> effect on world), repeated for both first beast (vv. 1-8) and second beast (vv. 11-17). Most strikingly, Dan 7:14 (Son-of-Man's reception of universal authority and worship) is ironically applied to the beast in Rev 13:7b-8a, making the beast an anti-Christ parody -- confirmed by 'wounded head' (13:3) and 'horns like a lamb' (13:11) as parodies of the slain Lamb in Rev 5.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 858,
+            "nativeSectionId": "CH3.3.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.3.1 — 1. The Exegesis of Revelation 13:1–8: The First Beast",
+            "page": 485,
+            "pageEnd": 496,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.3.1 (pp. 485–496)"
+          },
+          "quote": {
+            "text": "The first two verses are a creative re-working of Daniel 7:1–7",
+            "sha256": "5a0ee1ca652cf8d90a74d9357352a2d4639a982aa1deba4bf59bd77e078937f3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 858,
+            "nativeSectionId": "CH3.3.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.3.1 — 1. The Exegesis of Revelation 13:1–8: The First Beast",
+            "page": 485,
+            "pageEnd": 496,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.3.1 (pp. 485–496)"
+          },
+          "quote": {
+            "text": "the beast’s conquering efforts are but an ironic parody of the “son of man’s” final triumph",
+            "sha256": "3bfb47c3936743447b43a0c728b9f4df1f6103c0556323f2aed44d3201239162"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 860,
+            "nativeSectionId": "CH3.5A"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5A — 3. Conclusion to the Exegesis of Revelation 13",
+            "page": 500,
+            "pageEnd": 505,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5A (pp. 500–505)"
+          },
+          "quote": {
+            "text": "Revelation 13 has been moulded by the recurring threefold authorization scheme of Daniel 7:3–6, 13–14",
+            "sha256": "e5cb84ab0e83fa235766cec3026b99f220b161736cfa30e6e4107c0d623d9fd0"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Rev 17 reprises and develops the Dan-7 beast complex with further ironic Daniel use. Rev 17:8's 'was, is not, is about to come up out of the abyss and goes to destruction' is a collective paraphrase of Dan 7:3, 11, 17, 23, 26 -- the threefold rise/destruction of the Dan-7 beast(s) -- set as ironic parody of the divine 'who was and is and is to come.' Rev 17:14a uses Dan 7:21 (horn warring against saints) with 'polemical irony': now the Lamb conquers the beast with the same warring-language. The 'King of kings, Lord of lords' title (17:14b) derives from Dan 4:37 (LXX). The ten horns = Dan 7:24's ten kings; the seven heads = Dan 7:4-7 composite.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 865,
+            "nativeSectionId": "CH3.4.2.2"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.4.2.2 — b. The Interpretation of the Beast and Its Horns (17:12–14)",
+            "page": 643,
+            "pageEnd": 647,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.4.2.2 (pp. 643–647)"
+          },
+          "quote": {
+            "text": "17:14a should be seen as involving the use of Daniel 7:21 with polemical irony",
+            "sha256": "e3668ca35e52088d5b285f84a1986344f3b80e10b540cd6030bc60c3b1e9344d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 864,
+            "nativeSectionId": "CH3.4.2.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.4.2.1 — a. The Interpretation of the Beast and Its Seven Heads (17:7c–11)",
+            "page": 508,
+            "pageEnd": 642,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.4.2.1 (pp. 508–642)"
+          },
+          "quote": {
+            "text": "The angel is to interpret to the seer the symbolic meaning of the woman and the beast",
+            "sha256": "66259a24dcfa4f761d5ed37e408287294bca26a742165863a19c38311c654133"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "1 Enoch 46-48 (within the Parables / Similitudes, dated no later than late first century AD) is a midrash on Daniel 7:9-27. Beale tabulates ~13 Daniel allusions across 1 En 46-47 and identifies a parallel 7-element thought-structure (Head of Days, son-of-man's designation for judgment, judgment on persecutors, persecutors' sins, saints' deliverance/prayer, vindication). The most outstanding non-Danielic development is the Son of Man's role as active judge -- an extension Beale traces to Dan 7:22's 'judgment given for the saints.' This grounds the post-Daniel Son-of-Man reception trajectory.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 810,
+            "nativeSectionId": "CH2.2.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH2.2.3.3 — c. Conclusion > 3. The Use of Daniel in 1 Enoch 46–48",
+            "page": 103,
+            "pageEnd": 106,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH2.2.3.3 (pp. 103–106)"
+          },
+          "quote": {
+            "text": "1 Enoch 46–47 can be considered a “midrash” of Daniel 7:9–27 because of the repetition of Daniel allusions",
+            "sha256": "89ac746e2d0fa6f31734ee66ed1b7fef9586f756c02e11b992b71ed94b2a97f9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 810,
+            "nativeSectionId": "CH2.2.3.3"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH2.2.3.3 — c. Conclusion > 3. The Use of Daniel in 1 Enoch 46–48",
+            "page": 103,
+            "pageEnd": 106,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH2.2.3.3 (pp. 103–106)"
+          },
+          "quote": {
+            "text": "the most outstanding development is seen in the “son of man’s” role as judge, which is not clear in Daniel 7",
+            "sha256": "c99b9ca34ecc3b3662128b16e9d2b53ea08677cce874d6bcfacd589670fc4242"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Mark 13",
+      "positionSummary": "Following Hartman, Farrer and Sweet, Beale endorses the view that Mark 13 (with parallels in Matt 24 / Luke 21) is itself a Danielic midrash 'based on a coherent exposition of or meditation on' Daniel 7-9 and 11-12. This tradition -- what Beale calls 'a Christian-Daniel tradition' -- mediates Daniel into Revelation, explaining the convergence of Synoptic-discourse parallels with Beale's independently-identified Daniel-models in Rev 1, Rev 6 (woes), and Rev 13. Rev 1:1 / 1:19 / 4:1's 'what must take place' phrase echoes the same Dan 2:28-29, 45 phrase used in Mark 13:7 / Matt 24:6 / Luke 21:9.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 880,
+            "nativeSectionId": "CH3.5.4"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.4 — 4. The Use of a Danielic Midrash in the Eschatological Discourse of the Synoptics and Its Relation to Revelation",
+            "page": 670,
+            "pageEnd": 671,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.4 (pp. 670–671)"
+          },
+          "quote": {
+            "text": "the main part of the eschatological discourse [in Mark 13 and Matthew 24] is based on a coherent exposition of or meditation on",
+            "sha256": "3f484b523076bc6e894436b5887a9b79f8b3040524959b3346643ab766278a04"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 881,
+            "nativeSectionId": "CH3.5.4.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.5.4.1 — a. John’s Probable Acquaintance with the Danielic Midrash of Mark 13",
+            "page": 672,
+            "pageEnd": 678,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.5.4.1 (pp. 672–678)"
+          },
+          "quote": {
+            "text": "John has not been influenced merely by some apocalyptic Daniel-Jewish tradition",
+            "sha256": "6f6fff411dccdec9e1db879df4406d9e530198a774fd39ee86fad4b633e8f3cc"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Matt 24:30's combination of Dan 7:13 (the coming Son-of-Man on clouds) with Zech 12:10 (mourning of all tribes) likely 'suggested' to John the same combination at Rev 1:7. The Olivet discourse stands in the same Christian-Danielic tradition as Mark 13 (see Mark 13 entry); Matt 24:24's false-prophet language is paralleled in Rev 13:11ff..",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:SDNLJWSHRVSTJHN",
+            "logosArticleNum": 831,
+            "nativeSectionId": "CH3.1.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Use of Daniel in Jewish Apocalyptic Literature and in the Revelation of St. John",
+            "section": "§CH3.1.1.1 — a. Introduction to the Vision (1:7ff.)",
+            "page": 410,
+            "pageEnd": 412,
+            "citationString": "Beale, Use of Daniel in Revelation, §CH3.1.1.1 (pp. 410–412)"
+          },
+          "quote": {
+            "text": "Revelation 1:7a speaks of the eschatological coming of Christ by referring to Daniel 7:13 and Zechariah 12:10–12; Matthew 24:30 may have suggested this combination to John",
+            "sha256": "401d6ac9b2f11d98d7c1ee08dfa326e7d0f9eac6e1f1f618284067fd4680ae37"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Methodological insistence that O.T. allusions in apocalyptic literature carry their broader contexts with them ('contextual' rather than 'atomistic' usage), demonstrated inductively across Qumran, 1 Enoch, 4 Ezra, 2 Baruch and Revelation.",
+    "Treats Daniel 2 allusions in Rev 1:1, 1:19, 4:1, 22:6 as deliberate 'sign-posts' marking the macro-structure of the Apocalypse.",
+    "Identifies an ironic / parodic re-application of Dan 7:14 (Son-of-Man authorization) to the beast in Rev 13:7-8 -- the beast as anti-Son-of-Man.",
+    "Argues the 'son of man as judge' development in 1 Enoch's Parables is a creative (non-Danielic) extension of Dan 7:22's 'judgment given for the saints' construct.",
+    "Treats Rev 1:12-20 not just as a Dan-10 christophany but as a Dan-7+10 midrash, with a nine-element shared image-sequence demonstrating Dan-7 dominance.",
+    "Reads the beast complex (Rev 13/17) corporately and chronologically: 'seven heads' = composite of all four Dan-7 beasts, with its own Christ-parody arc (was/is-not/coming up vs. Christ's death/resurrection/parousia)."
+  ],
+  "uncertainties": [
+    "Does not adjudicate the 'on-going son of man debate' in Gospels research (explicitly brackets it in CH1.2).",
+    "Holds the 'whether John knew the Synoptics directly or via a pre-synoptic Danielic tradition' question open -- only that some Christian-Daniel tradition mediates.",
+    "Hedges on whether 1 Enoch 48 forms part of the Dan-7 midrash with chs. 46-47 ('it is just as possible that any dominance of Daniel 7 has ceased').",
+    "Says little about the dating of Daniel itself (work treats Daniel as the source-text without entering Maccabean-vs-sixth-century date debates)."
+  ]
+}

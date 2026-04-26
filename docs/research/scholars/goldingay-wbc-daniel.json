@@ -1,0 +1,635 @@
+{
+  "scholarId": "goldingay-wbc-daniel",
+  "authorDisplay": "Goldingay",
+  "workDisplay": "WBC Daniel (rev. 2019)",
+  "resourceId": "LLS:WBC30REVED",
+  "resourceFile": "WBC30REVED.logos4",
+  "traditionTag": "critical-mediating",
+  "fullTitle": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+  "commitmentProfile": {
+    "strong": [
+      "A: Maccabean date for the visions, retained as theologically authoritative — explicitly dates Dan 7 to mid-167 BC and treats this as compatible with divinely inspired pseudonymity",
+      "B: Fourth kingdom = Greece (Seleucid line) — required by the tight integration of Dan 7 with Dan 8–11 and by the four-empire scheme that distinguishes Media and Persia",
+      "C: Little horn = Antiochus IV Epiphanes — identifies the three uprooted horns as Seleucus IV, Demetrius, and the young Antiochus",
+      "L: Apocalyptic as multi-modal discourse (myth + symbol + scriptural allusion + revelation) that reveals AND conceals — refuses to reduce it to either coded history or pure literary fiction"
+    ],
+    "moderate": [
+      "J: 'One like a human being' is a celestial/angelic symbol (probably Michael-shaped), but stands corporately for Israel/holy ones; rejects single-individual identifications as the surface meaning while affirming Christological reception",
+      "O: Fulfillment is structured for the second-century crisis but the visions retain genuine forward valence — Rome, anti-Christ, and later applications are not simply errors though they are not the surface referent",
+      "E: Pseudonymity is a legitimate ancient literary device that does not compromise inspiration"
+    ],
+    "tentative": [
+      "Identification of the second and third kingdoms (Media vs. Persia) — Goldingay considers each scheme 'slightly artificial' on the available evidence"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date / authorship of the visions",
+      "position": "Maccabean (mid-167 BC) for Dan 7; visions are quasi-prophecy still divinely inspired",
+      "commitment": "strong",
+      "rationale": "Goldingay locates Dan 7 to mid-167 because the chapter presupposes Antiochus's actions against Jerusalem (cf. 1 Macc 1:29–40) but does not yet refer to the offensive temple worship (which appears in 8:13; 9:27; 11:31), and because Jewish deliverance is still future at the moment of writing. Crucially he refuses both poles of the impasse: critical scholarship's a-priori that long-range prophecy is impossible, and conservative scholarship's a-priori that pseudonymity is incompatible with inspiration. He argues that pseudonymity was a recognized Hellenistic literary practice and that 'whether the stories are history or fiction, whether the visions are actual prophecy or quasi-prediction' makes 'surprisingly little difference' to exegesis. The book remains divinely inspired Scripture addressed first to Second-Temple Jews under Antiochus.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3012,
+            "nativeSectionId": "CH7.4.3"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.4.3 — Setting",
+            "page": 736,
+            "pageEnd": 739,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.4.3 (pp. 736–739)"
+          },
+          "quote": {
+            "text": "Its date is thus mid-167.",
+            "sha256": "7b65a8509432b54825937acb443f006417c5e2022b09b43849f994a2d3a970c4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2941,
+            "nativeSectionId": "INTRO.18"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.18 — The Impasse",
+            "page": 127,
+            "pageEnd": 385,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.18 (pp. 127–385)"
+          },
+          "quote": {
+            "text": "no serious commentator would now question Porphyry’s demonstration that the work belongs in the 160s under Antiochus IV Epiphanes",
+            "sha256": "8a2a0091973fab1ce9a2d5a0c572364dcb5a11e8de6ca63b2e95025192a09f86"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2944,
+            "nativeSectionId": "INTRO.21"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.21 — Further Questions that Emerge",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.21 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "the divinely inspired forward projections in Daniel were designed to bring a message that was meaningful to people in the Second Temple period",
+            "sha256": "917cae642c3c6d9431afc30dbdb4ca412fa23aa305022b1bc00403c8f71fb0c8"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2944,
+            "nativeSectionId": "INTRO.21"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.21 — Further Questions that Emerge",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.21 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "Actually, it makes surprisingly little difference to the book’s exegesis whether the stories are history or fiction, whether the visions are actual prophecy or quasi-prediction",
+            "sha256": "6d034de36507387c5c04c35c5cbec4c0a8461050e52e972bee560bc0290cd280"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece (Seleucid line)",
+      "commitment": "strong",
+      "rationale": "Goldingay holds that the four kingdoms are Babylon — Media — Persia — Greece, with the fourth animal corresponding to the Hellenistic empires culminating in the Seleucids. He grounds this in the tight integration of Dan 7 with Dan 8–12 (where the small horn is incontrovertibly Antiochus): isolating Dan 7 to allow Rome as the fourth empire is methodologically unsound. He acknowledges that the second/third assignments are evidentially thin and 'each interpretation gives a slightly artificial picture,' but the fourth-as-Greece identification is firm. He notes that the oldest external attestation, Sib. Or. 3.388–400, presupposes the same Greek-as-fourth scheme.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "If we are to identify the empires in Dan 7, the first is Nebuchadnezzar’s Babylon, the fourth is Greece.",
+            "sha256": "ec0f4acd26ef3cab105ece5e52b750ef587d04cc5686a37259e0494eb4a04ba2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The major obstacle to these theories is that they involve taking ch. 7 in isolation both from Dan 1–6 and from Dan 8–12.",
+            "sha256": "f178015f63258e159c5a813b22bf72a86685780e5b6c88dc3976674fe1753970"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Antiochus IV Epiphanes — same referent as the small horn in Dan 8",
+      "commitment": "strong",
+      "rationale": "Goldingay treats the convergence of Dan 7's small horn with Dan 8's small horn as decisive: both arise from the fourth/Greek kingdom, both make great statements against God, both oppress the holy ones, and both are limited to a 'time, times, and half a time' / 2,300 evenings-mornings frame that fits Antiochus's persecution. He works out the three uprooted horns (vv. 8, 24) as the three Seleucid claimants Antiochus displaced — most plausibly Seleucus IV (Antiochus's predecessor), Demetrius I (the legitimate heir held hostage in Rome), and the young Antiochus (the boy co-regent later murdered).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The small horn in ch. 8 is Antiochus. The parallels just considered suggest that he is also the last king in ch. 7",
+            "sha256": "7acb336109243d9d2788e759ce1ca6bf037b262af9131d72e0fb7d7e843a231e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "Seleucus IV, Demetrius, and the young Antiochus seem most likely to be the three referred to in vv. 8 and 24",
+            "sha256": "aab11a51b5ea4b5ba463641a78bcb3f3503892387eeb7bd3609c47f39940ecd9"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Compositional / authorial profile",
+      "position": "Pseudonymous Maccabean apocalyptist working with older Daniel-stories tradition; pseudonymity is theologically permissible",
+      "commitment": "moderate",
+      "rationale": "Goldingay explicitly rejects Pusey's claim that pseudonymity makes an author a liar incompatible with inspiration. He argues that ancient pseudonymous writing — especially in Hellenistic apocalyptic, testaments, and prophecy — was a recognized literary device used for both ethical and unethical reasons; modern Western unfamiliarity with the convention should not constrain our judgment of what God could inspire. He maintains the older form-critical view that the stories (chs. 1–6) likely predate the visions (chs. 7–12), with the latter composed in the 160s.",
+      "compositional": "Two-stage composition: pre-Maccabean Aramaic Daniel-stories cycle, supplemented by mid-160s vision cycle in Hebrew and Aramaic; final form ca. 165 BC.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2944,
+            "nativeSectionId": "INTRO.21"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.21 — Further Questions that Emerge",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.21 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "in the ancient world, and in the Hellenistic age in particular, pseudonymity was a common practice used for a variety of reasons",
+            "sha256": "9fa66580e952e1987d30a25382ffbb3ba02bc995aba609d156a8ac85ed9936b2"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man / 'one like a human being'",
+      "position": "Symbol for a celestial being (most likely Michael) who represents Israel/the holy ones; rejects messianic-individual as surface referent but affirms NT Christological reading as legitimate reception",
+      "commitment": "moderate",
+      "rationale": "Goldingay weighs four candidates carefully: (1) collective Israel, (2) a Davidic messianic individual, (3) a celestial being / angelic prince, (4) God himself. He concludes the figure is most plausibly a celestial being — likely Michael, Israel's heavenly patron, who appears in 10:13, 21 and 12:1 — while still functioning corporately because the holy ones whom the figure represents include both heavenly beings and the people of God on earth. He grants that Jewish and Christian tradition reads the figure messianically and treats this as a valid reception, but argues the surface symbolism points elsewhere. The juxtaposition of two figures (Ancient of Days + humanlike one) reflects mythic background (Ugaritic El + Baal) and points toward an early 'two powers in heaven' tradition that later Jewish and Christian theology developed in different directions. On the linked 'holy ones' question (vv. 15–18, 22, 25, 27): Goldingay's extended philological essay on קדישין עליונין concludes that the term primarily denotes heavenly beings in Daniel's usage (cf. Ps 89:5, 7; Job 5:1; 15:15; chs. 4–5; 8:13, 24), while functionally including Israel through angelic representation. The kingship is 'acquired' (קבל מלכותא — the ordinary succession term) as real authority, not metaphor.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "So the humanlike figure is a symbol for some entity given authority by God. But whom does he represent?",
+            "sha256": "b3612ff59cab3e8ddf9dee35f90e4694e813aaf72fe374eb9d1fd6a168cb61be"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The humanlike figure might thus be a celestial being who represents Israel in the heavens",
+            "sha256": "800e33f5455ffb5363462be0c4b05dcd42c3bf320c8a8b343aed356295da87ec"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The role of the humanlike figure is closer to that of Michael himself in 10:13, 21; 12:1.",
+            "sha256": "d21103bf4e7f560b7528eb18849fcb4fda45bcbcfb688eb4a117cb216b5181ed"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "In the OT קדושים most commonly denotes heavenly beings.",
+            "sha256": "bfa1e166cfb633a54f91edb6d40069189b32f69af3ad7095997f05355f548bc9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "Those who will “acquire the kingship” (קבל מלכותא, the ordinary term for succeeding to the throne, used in 5:31 [6:1]), when the regular sequence",
+            "sha256": "e75b15eacde28c393ea72080e4c941f28c4f8ed685a03ab6d64984e19ca302b7"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Apocalyptic is a multi-modal symbolic discourse that simultaneously reveals and conceals; it must be read literarily, critically, AND theologically — none alone suffices",
+      "commitment": "strong",
+      "rationale": "Goldingay refuses to reduce apocalyptic to any single register. The vision involves 'myth, symbol, allegory, scriptural allusion, and revelation concerning things above and things future.' Against pure-coded-history readings he insists symbols are 'tensive' not 'steno-symbols' — they bring resonances, not just substitutions. Against pure-literary readings he affirms genuine revelatory content. Against pure-historical readings he affirms theological surplus: 'apocalyptic pulls away the façade of apparent benevolence that human governments like to construct.' He treats the political prophecies as 'quasi-predictions, not actual ones' (i.e. ex-eventu narration), but treats this not as a defect but as a recognized form whose theological work is to affirm that history unfolds within God's purview. This hermeneutic is illustrated concretely in his per-verse-block philology: on Dan 7:1–6 he reads each beast as a hybrid anomaly drawn from OT animal imagery (Hos 13:7–8; Jer 5:6) and Mesopotamian Šumma izbu omen-tradition, with the lion-eagle's positive transformation paralleling Nebuchadnezzar's restoration in ch. 4. On Dan 7:9–12 (the under-covered throne scene) he locates the Ancient of Days in the heavens (against Calvin's earthly reading), reads the unusual plural 'thrones' as anticipating a second throne for the humanlike figure, and links the configuration to 1 En. 14, 4 Ezra 13, and the Second-Temple 'two powers in heaven' tradition.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3010,
+            "nativeSectionId": "CH7.4.1"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.4.1 — Form",
+            "page": 722,
+            "pageEnd": 731,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.4.1 (pp. 722–731)"
+          },
+          "quote": {
+            "text": "The dream involves myth, symbol, allegory, scriptural allusion, and revelation concerning things above and things future.",
+            "sha256": "1650eec9fc1b3cc887393bb524635136071c895aecbd39d6ed3cb0ea3341462b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3010,
+            "nativeSectionId": "CH7.4.1"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.4.1 — Form",
+            "page": 722,
+            "pageEnd": 731,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.4.1 (pp. 722–731)"
+          },
+          "quote": {
+            "text": "the political prophecies are quasi-predictions, not actual ones",
+            "sha256": "1ae367baa9fe946cab9f0d60bd84a4e023f723cd38fdf8663f92bdc2c3601bd2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3012,
+            "nativeSectionId": "CH7.4.3"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.4.3 — Setting",
+            "page": 736,
+            "pageEnd": 739,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.4.3 (pp. 736–739)"
+          },
+          "quote": {
+            "text": "Apocalyptic pulls away the façade of apparent benevolence that human governments like to construct",
+            "sha256": "4c34a1ff5911403383380cbba8330f4b031581529290aa97173bdd32faca8c61"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The features of a lion to which the OT appeals are ferocity, strength, destructiveness, courage, rapacity, and fearsomeness",
+            "sha256": "9f31e2d5705a19a0f68daf9798b532ab0d739917c1f880b58ad6c54405928bb9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "If the bear had a large mouthful of ribs through having bitten them from a victim, one might expect it to be told to eat up",
+            "sha256": "b194ba4058ef3d79f337690b2b8889a741d9709017e721981fe020523c2b3380"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "A number of descriptions of God on his throne of fire surrounded by numerous attendants locate the scene in the heavens",
+            "sha256": "323cb7b65745d7d155cee2a61f064d3567e8846c54713e90c1755c2b81224090"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3013,
+            "nativeSectionId": "CH7.5"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.5 — Comment",
+            "page": 740,
+            "pageEnd": 766,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.5 (pp. 740–766)"
+          },
+          "quote": {
+            "text": "The thousands and myriads of courtiers attend upon the one advanced in years",
+            "sha256": "7191b40de12a5041016bb3bf41216a5b0776fb8fc88c3f71d04b586ecc8a1886"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure (near vs. far)",
+      "position": "Primary referent is the Antiochene crisis; subsequent applications (Rome, anti-Christ, Christ) are not the surface meaning but are legitimate theological appropriations the text invites",
+      "commitment": "moderate",
+      "rationale": "Goldingay walks a third way between strict critical (only-Antiochus) and traditional (only-Rome / only-eschatological) readings. He grants that 'a plausible case' can be made for Rome as the fourth animal — and that interpreters across centuries who related the visions to events in their own day were not 'simply wrong': 'their sense that these visions were significant for a time long after Daniel's was quite valid.' But he insists the surface, exegetical referent is the second-century crisis, with Antiochus as cosmic figure of evil. The Explanation sections of his commentary then deliberately reach forward — to Christ, to Rome, even to nuclear-age tyranny — as theological extensions rather than original referents.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 3014,
+            "nativeSectionId": "CH7.6"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§CH7.6 — Explanation",
+            "page": 766,
+            "pageEnd": 912,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §CH7.6 (pp. 766–912)"
+          },
+          "quote": {
+            "text": "It is possible to make out a plausible case for identifying Rome as the fourth animal",
+            "sha256": "79dae1cd1bd7d1934e7b9b54ef12e502cfb61ca0bb77eed3d414404cadc5e1c1"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2944,
+            "nativeSectionId": "INTRO.21"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.21 — Further Questions that Emerge",
+            "page": 389,
+            "pageEnd": 390,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.21 (pp. 389–390)"
+          },
+          "quote": {
+            "text": "Their sense that these visions were significant for a time long after Daniel’s was quite valid.",
+            "sha256": "d77cfb93262ed2ee1d182dd59469d45d3bed6b733548c0e4fbc9ab9938344d31"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Goldingay reads Revelation 13 (and Rev 17) as deliberate Christian re-appropriation of Dan 7's animal sequence in a new historical key. John of Patmos saw Rome occupying the structural position that Daniel's author had given to the Seleucid empire. This is not a 'fulfillment' that overrides Daniel's original Antiochene referent but a typological extension: the same beast-symbolism reactivates whenever an empire claims divine prerogative against the people of God. He notes that Daniel exerts greater influence on Revelation than any other OT book — including the throne-room (Rev 1, 5, 20), the angelic appearance imagery (from Dan 10), and the beast-from-the-sea (Rev 13) drawn directly from Dan 7.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2930,
+            "nativeSectionId": "INTRO.7"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.7 — Daniel in the New Testament",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.7 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "no biblical work has greater influence on the formulation of John",
+            "sha256": "0776272f7c4f837962bbb4f204d68fd78ee4bcb93caf72745ec2db45c7c92ffa"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:WBC30REVED",
+            "logosArticleNum": 2930,
+            "nativeSectionId": "INTRO.7"
+          },
+          "frontend": {
+            "author": "Goldingay",
+            "title": "Word Biblical Commentary, Volume 30: Daniel (Revised Edition)",
+            "section": "§INTRO.7 — Daniel in the New Testament",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Goldingay, WBC Daniel (rev. 2019), §INTRO.7 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the animals of Dan 7 are an important source for the vision of the animal in Rev 13; 17; the beast terrorizing the people of God is now Rome.",
+            "sha256": "d878c2dc77ef694d4fe69c9c23de2a4fdd4f20fadec96a4c19f085e4e4f59992"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Refuses the false dichotomy between critical and conservative readings: holds Maccabean date AND theological authority together by accepting pseudonymity as a legitimate ancient literary device that does not compromise inspiration",
+    "Treats apocalyptic symbols as 'tensive' (resonance-bearing) rather than 'steno' (one-to-one ciphers) — symbols cannot be substituted away without loss",
+    "Restructures the WBC introduction around reception history (the original 1989 edition's signature move, expanded in 2019) — making history-of-interpretation a hermeneutical control rather than a postscript",
+    "Argues the 'one like a human being' is most plausibly Michael-shaped (a celestial individual representing Israel) but treats the messianic Christological reception as legitimate theological extension, not error",
+    "Develops the 'mid-167 BC' dating with unusual precision by triangulating which Antiochene actions the text presupposes (1 Macc 1:29–40) versus which it does not yet mention (the temple desecration of 8:13; 9:27; 11:31)",
+    "Provides the deepest WS0b-corpus philological coverage of Dan 7:1–6 (first three beasts), 7:9–12 (throne scene), and 7:15–18 (holy ones on high) — folded under axes L and J — drawing on the Aramaic Notes section as well as comparative Ugaritic and Mesopotamian material",
+    "Reads the throne-scene's plural 'thrones' as anticipating a second throne for the humanlike figure, connecting Dan 7 to the Second-Temple 'two powers in heaven' debate"
+  ],
+  "uncertainties": [
+    "Identification of second and third kingdoms (Media vs. Persia) — Goldingay grants 'each interpretation gives a slightly artificial picture'",
+    "Whether the 'three uprooted horns' (vv. 8, 24) refer to Seleucus IV + Demetrius + young Antiochus or some other combination — multiple candidates fit imperfectly",
+    "Whether the 3½ 'times' (v. 25) refer to the period from the Antiochene persecution generally or specifically to events after 168 — both readings remain in play",
+    "Whether the holy ones are primarily celestial beings, primarily Israel, or constitutively both — Goldingay leans celestial but acknowledges the boundary is porous in Daniel's usage"
+  ],
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Rev 13",
+    "1 En 37-71"
+  ]
+}
