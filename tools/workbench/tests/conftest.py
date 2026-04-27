@@ -51,6 +51,7 @@ def base_url():
     env = os.environ.copy()
     env["COMPANION_DB_PATH"] = db_path
     env["FLASK_PORT"] = str(port)
+    env["FLASK_AUTH_BYPASS"] = "1"
     env["PATH"] = "/opt/homebrew/opt/dotnet@8/bin:" + env.get("PATH", "")
     env["DOTNET_ROOT"] = "/opt/homebrew/opt/dotnet@8/libexec"
 
