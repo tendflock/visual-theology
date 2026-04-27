@@ -26,22 +26,51 @@
     }
 
     function pickMimeType() {
-        var candidates = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4', 'audio/ogg'];
+        var candidates = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/ogg'];
         for (var i = 0; i < candidates.length; i++) {
             if (MediaRecorder.isTypeSupported(candidates[i])) return candidates[i];
         }
         return '';
     }
 
-    function setState(wrap, state) {
-        wrap.classList.remove('state-idle', 'state-recording', 'state-processing', 'state-error');
+    function getAudioConstraints(deviceId) {
+        if (!deviceId) return { audio: true };
+        return { audio: { deviceId: deviceId } };
+    }
+
+    function shouldRetryWithDefaultMic(err) {
+        if (!err) return false;
+        var name = err.name || '';
+        var message = err.message || '';
+        return name === 'OverconstrainedError' ||
+            name === 'ConstraintNotSatisfiedError' ||
+            name === 'TypeError' ||
+            /invalid constraint/i.test(message);
+    }
+
+    function setState(wrap, state, label) {
+        wrap.classList.remove('state-idle', 'state-starting', 'state-recording', 'state-processing', 'state-error');
         wrap.classList.add('state-' + state);
         var statusEl = wrap.querySelector('.mic-status');
-        if (!statusEl) return;
-        if (state === 'recording') statusEl.textContent = '● REC';
-        else if (state === 'processing') statusEl.textContent = '…';
-        else if (state === 'error') statusEl.textContent = '!';
-        else statusEl.textContent = '';
+        var readout = wrap.querySelector('.mic-readout');
+        var readoutStatus = wrap.querySelector('.mic-readout-status');
+        var text = '';
+        if (label) text = label;
+        else if (state === 'starting') text = 'Starting...';
+        else if (state === 'recording') text = 'Recording';
+        else if (state === 'processing') text = 'Transcribing';
+        else if (state === 'error') text = 'Error';
+        if (statusEl) statusEl.textContent = text;
+        if (readoutStatus) readoutStatus.textContent = text || 'Idle';
+        if (readout) readout.hidden = state === 'idle';
+    }
+
+    function setLevel(wrap, ratio) {
+        var pct = Math.max(2, Math.min(100, Math.round((ratio || 0) * 100)));
+        var bars = wrap.querySelectorAll('.mic-level span, .mic-readout-meter span');
+        bars.forEach(function (bar) {
+            bar.style.width = pct + '%';
+        });
     }
 
     function clearChildren(node) {
@@ -85,10 +114,12 @@
         function openPicker() {
             populatePicker(wrap);
             picker.hidden = false;
+            toggle.setAttribute('aria-expanded', 'true');
             wrap.classList.add('picker-open');
         }
         function closePicker() {
             picker.hidden = true;
+            toggle.setAttribute('aria-expanded', 'false');
             wrap.classList.remove('picker-open');
         }
 
@@ -129,6 +160,11 @@
         this.recognition = null;
         this.previewStart = null;
         this.previewLen = 0;
+        this.processing = false;
+        this.audioContext = null;
+        this.analyser = null;
+        this.levelData = null;
+        this.levelRaf = null;
 
         var self = this;
         this.btn.addEventListener('click', function () { self.toggle(); });
@@ -146,6 +182,7 @@
             alert('Dictation is not supported in this browser.');
             return;
         }
+        if (this.processing) return;
         if (this.recording) this.stop();
         else this.start();
     };
@@ -174,9 +211,12 @@
 
     Dictation.prototype.startLivePreview = function () {
         var SR = getSpeechRecognitionCtor();
-        if (!SR) return;
+        if (!SR) {
+            setState(this.wrap, 'recording', 'Recording - stop for transcript');
+            return false;
+        }
         var target = this.getTarget();
-        if (!target) return;
+        if (!target) return false;
 
         var start = (typeof target.selectionStart === 'number') ? target.selectionStart : target.value.length;
         this.previewStart = start;
@@ -193,12 +233,14 @@
             for (var i = 0; i < e.results.length; i++) {
                 text += e.results[i][0].transcript;
             }
+            setState(self.wrap, 'recording', 'Live text ready');
             self.writePreview(text);
         };
 
         rec.onerror = function (e) {
             // Don't alert — live preview is best-effort. Whisper still runs on the audio.
             console.warn('dictation: SpeechRecognition error', e.error);
+            if (self.recording) setState(self.wrap, 'recording', 'Recording - stop for transcript');
         };
 
         rec.onend = function () {
@@ -211,9 +253,13 @@
         try {
             rec.start();
             this.recognition = rec;
+            setState(this.wrap, 'recording', 'Live text ready');
+            return true;
         } catch (err) {
             console.warn('dictation: SpeechRecognition.start failed', err);
             this.recognition = null;
+            setState(this.wrap, 'recording', 'Recording - stop for transcript');
+            return false;
         }
     };
 
@@ -226,10 +272,66 @@
         this.recognition = null;
     };
 
+    Dictation.prototype.startLevelMeter = function (stream) {
+        this.stopLevelMeter();
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if (!AC) {
+            setLevel(this.wrap, 0);
+            return;
+        }
+
+        try {
+            var ctx = new AC();
+            var analyser = ctx.createAnalyser();
+            analyser.fftSize = 256;
+            ctx.createMediaStreamSource(stream).connect(analyser);
+            this.audioContext = ctx;
+            this.analyser = analyser;
+            this.levelData = new Uint8Array(analyser.frequencyBinCount);
+            if (ctx.state === 'suspended' && ctx.resume) ctx.resume();
+            this.tickLevelMeter();
+        } catch (err) {
+            console.warn('dictation: audio level meter failed', err);
+            setLevel(this.wrap, 0);
+        }
+    };
+
+    Dictation.prototype.tickLevelMeter = function () {
+        if (!this.analyser || !this.levelData) return;
+        this.analyser.getByteTimeDomainData(this.levelData);
+        var sum = 0;
+        for (var i = 0; i < this.levelData.length; i++) {
+            var centered = this.levelData[i] - 128;
+            sum += centered * centered;
+        }
+        var rms = Math.sqrt(sum / this.levelData.length) / 128;
+        setLevel(this.wrap, Math.min(1, rms * 8));
+
+        var self = this;
+        this.levelRaf = window.requestAnimationFrame(function () {
+            self.tickLevelMeter();
+        });
+    };
+
+    Dictation.prototype.stopLevelMeter = function () {
+        if (this.levelRaf) {
+            window.cancelAnimationFrame(this.levelRaf);
+            this.levelRaf = null;
+        }
+        if (this.audioContext) {
+            try { this.audioContext.close(); } catch (e) { /* ignore */ }
+        }
+        this.audioContext = null;
+        this.analyser = null;
+        this.levelData = null;
+        setLevel(this.wrap, 0);
+    };
+
     Dictation.prototype.start = function () {
         var self = this;
         var deviceId = localStorage.getItem(STORAGE_KEY) || '';
-        var constraints = { audio: deviceId ? { deviceId: { exact: deviceId } } : true };
+        setState(this.wrap, 'starting', 'Starting...');
+        setLevel(this.wrap, 0);
 
         // Seed the preview range from the current cursor position even if Web
         // Speech is unavailable — Whisper's writePreview() call still needs it.
@@ -237,7 +339,16 @@
         this.previewStart = tgt ? ((typeof tgt.selectionStart === 'number') ? tgt.selectionStart : tgt.value.length) : 0;
         this.previewLen = 0;
 
-        navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
+        function openMic(constraints) {
+            return navigator.mediaDevices.getUserMedia(constraints);
+        }
+
+        openMic(getAudioConstraints(deviceId)).catch(function (err) {
+            if (!deviceId || !shouldRetryWithDefaultMic(err)) throw err;
+            console.warn('dictation: selected microphone failed, retrying with system default', err);
+            localStorage.removeItem(STORAGE_KEY);
+            return openMic(getAudioConstraints(''));
+        }).then(function (stream) {
             populatePicker(self.wrap);
 
             var mime = pickMimeType();
@@ -253,7 +364,9 @@
 
             self.recorder.start();
             self.recording = true;
-            setState(self.wrap, 'recording');
+            self.processing = false;
+            setState(self.wrap, 'recording', 'Recording - click mic to stop');
+            self.startLevelMeter(stream);
 
             self.startLivePreview();
         }).catch(function (err) {
@@ -268,8 +381,10 @@
         if (this.recorder && this.recording) {
             try { this.recorder.stop(); } catch (e) { /* already stopped */ }
             this.recording = false;
-            setState(this.wrap, 'processing');
+            this.processing = true;
+            setState(this.wrap, 'processing', 'Transcribing...');
         }
+        this.stopLevelMeter();
         if (this.stream) {
             this.stream.getTracks().forEach(function (t) { t.stop(); });
             this.stream = null;
@@ -281,7 +396,8 @@
         var blob = new Blob(this.chunks, { type: (this.recorder && this.recorder.mimeType) || 'audio/webm' });
         this.chunks = [];
         if (!blob.size) {
-            setState(this.wrap, 'idle');
+            this.processing = false;
+            setState(this.wrap, 'error', 'No audio captured');
             return;
         }
 
@@ -296,9 +412,26 @@
                 return r.json();
             })
             .then(function (data) {
-                self.writePreview(data.text || '');
+                var text = (data.text || '').trim();
+                if (!text) {
+                    var seconds = Number(data.duration_sec || 0);
+                    var detail = seconds ? ('No words recognized (' + seconds.toFixed(1) + 's audio)') : 'No words recognized';
+                    console.warn('dictation: empty transcript', {
+                        blobSize: blob.size,
+                        blobType: blob.type,
+                        durationSec: data.duration_sec,
+                        language: data.language
+                    });
+                    self.previewStart = null;
+                    self.previewLen = 0;
+                    self.processing = false;
+                    setState(self.wrap, 'error', detail);
+                    return;
+                }
+                self.writePreview(text);
                 self.previewStart = null;
                 self.previewLen = 0;
+                self.processing = false;
                 setState(self.wrap, 'idle');
             })
             .catch(function (err) {
@@ -306,6 +439,7 @@
                 // Keep whatever live-preview text landed — it's still useful.
                 self.previewStart = null;
                 self.previewLen = 0;
+                self.processing = false;
                 setState(self.wrap, 'error');
                 alert('Whisper cleanup failed (live preview text was kept): ' + err.message);
             });

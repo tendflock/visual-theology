@@ -1327,12 +1327,13 @@ body {
     gap: 2px;
     vertical-align: middle;
     position: relative;
+    max-width: min(100%, 420px);
 }
 
 .mic-button {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     background: var(--bg-input);
     color: var(--text);
     border: 1px solid var(--border);
@@ -1347,7 +1348,26 @@ body {
 .mic-button:hover { background: var(--bg-card); }
 .mic-button:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 1px; }
 .mic-button .mic-icon { flex: 0 0 auto; }
-.mic-button .mic-status { font-size: 11px; color: var(--text-muted); min-width: 0; }
+.mic-button .mic-status { font-size: 11px; color: var(--text-muted); min-width: 0; white-space: nowrap; }
+
+.mic-level {
+    display: none;
+    width: 34px;
+    height: 5px;
+    flex: 0 0 34px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+}
+
+.mic-level span {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: currentColor;
+    border-radius: inherit;
+    transition: width 80ms linear;
+}
 
 .mic-button-wrap.state-recording .mic-button {
     background: var(--red);
@@ -1355,6 +1375,7 @@ body {
     border-color: var(--red);
 }
 .mic-button-wrap.state-recording .mic-button .mic-status { color: #fff; }
+.mic-button-wrap.state-recording .mic-level { display: block; }
 
 .mic-button-wrap.state-processing .mic-button {
     background: var(--gold);
@@ -1370,6 +1391,81 @@ body {
 
 .mic-button[disabled], .mic-button-wrap.state-processing .mic-button {
     cursor: wait;
+}
+
+.mic-button-wrap.state-starting .mic-button {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.mic-readout {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 190px;
+    max-width: 260px;
+    background: var(--bg-surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.mic-readout[hidden] {
+    display: none;
+}
+
+.mic-readout-status {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mic-readout-meter {
+    width: 52px;
+    height: 6px;
+    flex: 0 0 52px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+}
+
+.mic-readout-meter span {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: var(--blue);
+    border-radius: inherit;
+    transition: width 80ms linear;
+}
+
+.mic-button-wrap.state-recording .mic-readout {
+    border-color: var(--red);
+}
+
+.mic-button-wrap.state-starting .mic-readout {
+    border-color: var(--blue);
+}
+
+.mic-button-wrap.state-recording .mic-readout-meter span {
+    background: var(--red);
+}
+
+.mic-button-wrap.state-processing .mic-readout {
+    border-color: var(--gold);
+}
+
+.mic-button-wrap.state-processing .mic-readout-meter span {
+    background: var(--gold);
+}
+
+.mic-button-wrap.state-error .mic-readout {
+    border-color: var(--red);
+    color: var(--red);
 }
 
 .mic-picker-toggle {
@@ -1399,6 +1495,9 @@ body {
     flex-direction: column;
     gap: 4px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.mic-picker[hidden] {
+    display: none;
 }
 .mic-picker-label {
     font-size: 10px;
@@ -1436,4 +1535,3 @@ body {
 #input-area, .sidebar-footer {
     position: relative;
 }
-

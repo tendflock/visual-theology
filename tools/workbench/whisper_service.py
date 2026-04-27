@@ -27,6 +27,8 @@ def _suffix_for(content_type):
         'audio/mp3': '.mp3',
         'audio/wav': '.wav',
         'audio/x-wav': '.wav',
+        'video/mp4': '.mp4',
+        'video/webm': '.webm',
     }
     return mapping.get(ct, '.webm')
 
