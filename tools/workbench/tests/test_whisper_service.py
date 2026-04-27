@@ -12,6 +12,13 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import pytest
 
 
+# Override pytest-base-url's autouse _verify_url fixture so these pure unit
+# tests don't trigger conftest.py's Flask-server `base_url` fixture.
+@pytest.fixture(scope="session", autouse=True)
+def _verify_url():
+    yield
+
+
 class _FakeSegment:
     def __init__(self, text):
         self.text = text
@@ -104,6 +111,12 @@ def test_transcribe_uses_suffix_matching_content_type():
     assert fake.last_audio_path.endswith('.wav')
 
     whisper_service.transcribe_audio(b'x', content_type='audio/webm;codecs=opus')
+    assert fake.last_audio_path.endswith('.webm')
+
+    whisper_service.transcribe_audio(b'x', content_type='video/mp4')
+    assert fake.last_audio_path.endswith('.mp4')
+
+    whisper_service.transcribe_audio(b'x', content_type='video/webm')
     assert fake.last_audio_path.endswith('.webm')
 
 
