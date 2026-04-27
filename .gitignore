@@ -48,3 +48,8 @@ tools/workbench/.sermon_sync.lock
 
 # Scheduled-task runtime lock
 .claude/scheduled_tasks.lock
+
+# Copyrighted source files — local-only, never push
+external-resources/epubs/*.epub
+external-resources/pdfs/*.pdf
+external-resources/greek/migne-pg81-archiveorg/
