@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from citations import (  # noqa: E402
     SUPPORT_STATUS_VALUES,
+    _resource_id_to_file,
     build_citation,
     sha256_of,
     verify_citation,
@@ -268,3 +269,37 @@ def test_verify_citation_json_roundtrip():
     round = json.loads(raw)
     v = verify_citation(round)
     assert v["status"] == "verified"
+
+
+# ── _resource_id_to_file (resolution-order regression) ─────────────────────
+
+
+def test_resource_id_to_file_dotted_catalog_id_resolves_via_resourcemanager():
+    """LLS:6.60.2 → NPNF02.logos4 (dotted catalog ID; filename ≠ stem).
+
+    Regression: prior implementation only did basename-LIKE match against the
+    stem and could not resolve dotted catalog IDs whose filename was decoupled
+    (e.g. LLS:6.60.2 lives at .../Resources/NPNF02.logos4 per RM.Resources).
+    The fix routes through get_resource_file() which queries
+    Resources.ResourceId directly.
+    """
+    assert _resource_id_to_file("LLS:6.60.2") == "NPNF02.logos4"
+
+
+def test_resource_id_to_file_alphabetic_stem_still_works():
+    """LLS:GS_WALV_DANIEL → GS_WALV_DANIEL.lbxlls (filename equals stem).
+
+    Existing alphabetic-stem behavior must continue to work whether
+    get_resource_file() resolves it directly or it falls through to
+    _resolve_bare_stem.
+    """
+    assert _resource_id_to_file("LLS:GS_WALV_DANIEL") == "GS_WALV_DANIEL.lbxlls"
+
+
+def test_resource_id_to_file_unknown_stem_raises():
+    """Unknown stems must raise FileNotFoundError, not silently fabricate.
+
+    Both the catalog and the filesystem fallback must miss before raising.
+    """
+    with pytest.raises(FileNotFoundError):
+        _resource_id_to_file("LLS:NONEXISTENT_STEM_XYZ_2026")

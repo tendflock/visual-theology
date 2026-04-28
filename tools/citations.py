@@ -31,7 +31,7 @@ from typing import Any
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from study import _resolve_bare_stem, get_article_meta, read_article_text  # noqa: E402
+from study import _resolve_bare_stem, get_article_meta, get_resource_file, read_article_text  # noqa: E402
 
 
 _MAX_ARTICLE_CHARS = 500_000  # Covers the longest articles in the library.
@@ -408,9 +408,21 @@ def _resource_id_to_file(resource_id: str) -> str:
 
     The reader's ``--article-meta`` path resolves bare stems via the
     ResourceManager catalog, but ``read_article_text`` goes through the
-    positional-arg path which requires a filename with extension. Use
-    ``_resolve_bare_stem`` to look it up.
+    positional-arg path which requires a filename with extension.
+
+    Resolution order:
+      1. Direct catalog lookup by full ``ResourceId`` (handles dotted-stem IDs
+         like ``LLS:6.60.2`` whose filename does not match the stem; e.g.
+         ``LLS:6.60.2`` → ``NPNF02.logos4``).
+      2. Bare-stem basename match via ``_resolve_bare_stem`` (handles
+         alphabetic-stem IDs whose filename equals the stem case-insensitively;
+         e.g. ``LLS:GS_WALV_DANIEL`` → ``GS_WALV_DANIEL.lbxlls``).
+
+    Raises ``FileNotFoundError`` if neither path resolves.
     """
+    full_path = get_resource_file(resource_id)
+    if full_path:
+        return os.path.basename(full_path)
     stem = resource_id[4:] if resource_id.startswith("LLS:") else resource_id
     return _resolve_bare_stem(stem)
 
