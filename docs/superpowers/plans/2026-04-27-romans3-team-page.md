@@ -2557,3 +2557,9 @@ After all tasks complete, run this verification before claiming done:
 9. GitHub Pages URL `https://tendflock.github.io/romans-3-9-20-team/` returns 200.
 
 If all 9 verifications pass, the implementation matches the spec.
+
+---
+
+## Completion
+
+Completed 2026-04-28. Live at https://tendflock.github.io/romans-3-9-20/. GitHub repo renamed from `romans3_chalk_and_talk` to `romans-3-9-20` (passage-only, sibling of `Romans3`). Tag `v1.0-romans-3-9-20` marks the v1 ship. After the plan-verbatim build, an Apple-product-page redesign pass was driven inline with Bryan (commit `f919f94`) followed by the threaded-pearls catena animation (commit `3886bbc`). Codex adversarial review skipped at user's choice. The `codex-chalkboard-v1` tag preserves the original codex implementation as archaeology.
