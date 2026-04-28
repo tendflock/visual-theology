@@ -88,6 +88,11 @@ PASSAGE_COVERAGE_VOCAB: tuple[str, ...] = (
     "Rev 20",
     "Matt 24",
     "Mark 13",
+    "John 5",
+    "Acts 7",
+    "2 Thess 2",
+    "Heb 1",
+    "Heb 2",
     # Second-Temple reception
     "1 En 37-71",
 )
