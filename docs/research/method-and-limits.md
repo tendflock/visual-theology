@@ -125,9 +125,12 @@ explicitly rather than hidden):
   unobtainable online (out of stock at SBL Press / Brill paywall / dokumen.pub
   intermittent).
 - **Hippolytus on Daniel in Greek** (Lefèvre SC 14 1947). Subscription / library.
-- **Wright, *Jesus and the Victory of God*** (1996). Would deepen Wright on Dan 7
-  → Jesus self-understanding beyond what *NTPG* (already surveyed) provides. Not
-  in the Logos library.
+- **Wright, *Jesus and the Victory of God*** (Christian Origins and the Question
+  of God Vol 2, 1996) — IN-LIBRARY at `LLS:JESUSVICTYGOD` (sqlite3-verified
+  2026-04-26). The earlier "would deepen but not in library" framing was
+  incorrect; the resource was always in the Logos catalog and was missed in the
+  WS0a cataloging pass. Wright JVG is now JSON-backed via WS0c Wave 1 survey at
+  docs/research/scholars/wright-jesus-victory-of-god.json.
 - **Lay-popular eschatology** (Lindsey, LaHaye, Hagee). Referenced negatively
   through Collins's *Apocalyptic Imagination* §1415 critique; not surveyed as
   primary voices because they don't engage the academic axes.
