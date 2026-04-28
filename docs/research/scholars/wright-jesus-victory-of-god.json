@@ -1,0 +1,831 @@
+{
+  "scholarId": "wright-jesus-victory-of-god",
+  "authorDisplay": "Wright",
+  "workDisplay": "Jesus and the Victory of God",
+  "resourceId": "LLS:JESUSVICTYGOD",
+  "resourceFile": "JESUSVICTYGOD.logos4",
+  "traditionTag": "critical-mediating",
+  "passageCoverage": [
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 9:20-27",
+    "Mark 13",
+    "Matt 24"
+  ],
+  "fullTitle": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+  "commitmentProfile": {
+    "strong": [
+      "E: Apocalyptic language is metaphor for socio-political upheaval, not literal cosmic catastrophe — Mark 13 sun-darkened/stars-falling is regular Jewish prophetic imagery, not the end of the space-time universe.",
+      "J: Son of Man = Jesus’s own self-understanding via Daniel 7’s vindication-after-suffering pattern; Jesus aligned himself with the people of the saints of the Most High and expected vindication via the destruction of Jerusalem.",
+      "L: Post-critical historical-plausibility hermeneutic — reads Daniel 7 as it would have been heard in the first century, against pre-critical literalism AND Schweitzer-school apocalyptic literalism.",
+      "N: Tight Synoptic+Daniel integration — Dan 2 + Dan 7 + Dan 9 + Psalm 110 form a single complex shaping Mark 13’s Olivet Discourse, Mark 14:62’s trial answer, and Jesus’ self-understanding; Caiaphas as new Antiochus, Sanhedrin as Fourth Beast.",
+      "O: Vindication-not-evacuation, single-trajectory inaugurated eschatology — kingdom climactically inaugurated in Jesus’ death/resurrection, manifest in AD 70 vindication; no further literal-cosmic parousia required for Mark 13."
+    ],
+    "moderate": [
+      "B: Daniel’s kingdom-of-god theology (Dan 2 + Dan 7) supplies the messianic-prophecy frame Jesus inherited; kingdom theology runs through JVG but the work is centered on Jesus, not Daniel directly.",
+      "H: Inaugurated eschatology — kingdom present in Jesus’ ministry, consummation tied to AD 70 vindication-event; Wright distances himself from Schweitzer’s consistent eschatology while keeping eschatology central."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Kingdom theology",
+      "position": "Daniel 2 + Daniel 7’s kingdom theology supplies the messianic-prophecy framework that, more than anything else, shaped first-century Jewish revolutionary hope and Jesus’ own self-understanding; the kingdom is yhwh becoming king through the vindication of his true representative.",
+      "commitment": "moderate",
+      "rationale": "Wright reads Dan 2, 7, and 9 as the controlling messianic-prophetic complex of first-century Judaism, citing Beasley-Murray that this complex more than anything else incited the Jews to revolt. Daniel 7’s kingdom-transfer scene is not a cosmological end but the moment yhwh becomes king through the vindication of his suffering people; Jesus identified himself with that representative-figure, so the kingdom Jesus announced in Galilee and enacted in Jerusalem is the long night of Israel’s exile coming to an end at last, culminating in the destruction of the Temple as the sign of yhwh’s kingship.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "Daniel 2, 7 and 9, taken together, provided the messianic prophecy that, ‘more than anything else, incited the Jews to revolt’",
+            "sha256": "d70776691f0270c40e9ac16216cdca42668f87b9d61d615ec3a8fe319582b466"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2569,
+            "nativeSectionId": "PT3.2.7.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.2.7.5 — (v) The Victory of God",
+            "page": 1249,
+            "pageEnd": 1250,
+            "citationString": "Wright, JVG, §PT3.2.7.5 (pp. 1249–1250)"
+          },
+          "quote": {
+            "text": "the long night of Israel’s exile would be over at last",
+            "sha256": "ca2947021b67258b5113900adbec002009f747b8719778f955c5ab7684080a14"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Revelation/apocalyptic approach",
+      "position": "Apocalyptic language (in Daniel and in Jesus’ teaching that draws on it) is metaphor for socio-political upheaval and divine vindication of yhwh’s people within history — NOT literal prediction of the end of the space-time universe. The coming of the Son of Man on the clouds is vindication-imagery, not cloud-borne space-travel.",
+      "commitment": "strong",
+      "rationale": "This is Wright’s signature move and the load-bearing thesis of his Mark 13 reading. He argues that within the mainline Jewish writings of this period there is virtually no evidence Jews were expecting the end of the space-time universe. First-century Jews knew a good metaphor when they saw one and used cosmic imagery for cataclysmic socio-political events. He rebukes both fundamentalist and Schweitzer-school readings: it is crass literalism to insist Mark 13’s darkened-sun language refers to physical cosmic collapse. The son of man coming on the clouds is vindication after suffering (Daniel’s perspective is heaven-ward; the figure rises from earth to heaven), not a downward space-travel parousia. Wright explicitly polemicizes against Mack/Crossan/Jesus Seminar’ non-apocalyptic Jesus, calling that thesis a perpetuation of the classic false reading of apocalyptic which he has already argued to be historically inadmissible.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2454,
+            "nativeSectionId": "PT2.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.1 — 1. Introduction",
+            "page": 704,
+            "pageEnd": 706,
+            "citationString": "Wright, JVG, §PT2.4.1 (pp. 704–706)"
+          },
+          "quote": {
+            "text": "There is virtually no evidence that Jews were expecting the end of the space-time universe",
+            "sha256": "6765267adf7b0dbdb304820dd522e83207bc8a95eada4ea067fef8da32b90a7d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2454,
+            "nativeSectionId": "PT2.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.1 — 1. Introduction",
+            "page": 704,
+            "pageEnd": 706,
+            "citationString": "Wright, JVG, §PT2.4.1 (pp. 704–706)"
+          },
+          "quote": {
+            "text": "knew a good metaphor when they saw one, and used cosmic imagery to bring out the full theological significance of cataclysmic socio-political events",
+            "sha256": "22b7ba62731d336ff2b5c4e421eb07f0e4797f67b01b39eb0c57b579ad636d65"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2454,
+            "nativeSectionId": "PT2.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.1 — 1. Introduction",
+            "page": 704,
+            "pageEnd": 706,
+            "citationString": "Wright, JVG, §PT2.4.1 (pp. 704–706)"
+          },
+          "quote": {
+            "text": "Metaphors have teeth; the complex metaphors available to first-century Jews had particularly sharp ones",
+            "sha256": "b03e5905da6360375274cd6e1624707ccfa61d3d7ddad8f937c3b976c7f264ad"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2463,
+            "nativeSectionId": "PT2.4.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.1 — (i) Introduction",
+            "page": 723,
+            "pageEnd": 727,
+            "citationString": "Wright, JVG, §PT2.4.4.1 (pp. 723–727)"
+          },
+          "quote": {
+            "text": "the coming of the Son of Man on the clouds of heaven was never conceived as a primitive form of space travel, but as a symbol for a mighty reversal of fortunes within history and at the national level",
+            "sha256": "79bdc2cda842c43f9fb09575b713b677ced1cc99f2be0274bcf08b2a9fcc8794"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "It is crass literalism, in view of the many prophetic passages in which this language denotes socio-political and military catastrophe, to insist that this time the words must refer to the physical collapse of the space-time world",
+            "sha256": "ee87d13939ad5b75cb25b364743f963d4cf0309a7609fddf3c65d31e21ac7bb6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "Jesus is not, then, suggesting that Caiaphas will witness the end of the space-time order",
+            "sha256": "641b432ca0050fc54ed9e5c1013c5e8233a40b672560913cdb89dd88a8e2056d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2416,
+            "nativeSectionId": "PT2.2.2.1.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.2.2.1.2 — (b) A Non-apocalyptic Kingdom?",
+            "page": 466,
+            "pageEnd": 470,
+            "citationString": "Wright, JVG, §PT2.2.2.1.2 (pp. 466–470)"
+          },
+          "quote": {
+            "text": "perpetuates the classic false reading of ‘apocalyptic’ which I have already argued to be historically inadmissible",
+            "sha256": "63ce329c4b2ca5ac185eca201d512b2913755431e603d9fae6814feb8bb233b9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2582,
+            "nativeSectionId": "PT3.3.3.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.3.3.2 — (ii) Riddles of Exaltation",
+            "page": 1410,
+            "pageEnd": 1412,
+            "citationString": "Wright, JVG, §PT3.3.3.2 (pp. 1410–1412)"
+          },
+          "quote": {
+            "text": "It would be a serious misreading of the Daniel reference, and a serious misjudging of its first-century meaning, to see this as a reference to Jesus flying downwards towards the earth",
+            "sha256": "994c8ff92f5f0dfcdaab000da7ba19c0c7c4e36f9d16969c928eface224eb9ca"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Daniel 7:13-14)",
+      "position": "The Son of Man of Daniel 7 is Jesus’ own self-understanding via the vindication-after-suffering pattern. Jesus aligned himself with the people of the saints of the Most High — the one-like-a-son-of-man — and his sayings about the Son of Man’s coming/exaltation refer to his own messianic vindication, not to a transcendent figure traveling downward on a cloud.",
+      "commitment": "strong",
+      "rationale": "This is the load-bearing chapter (Ch 8 Stories of the Kingdom (3): Judgment and Vindication) and Wright’s signature exegetical move. Reading Daniel 7’s heavenly court-scene from heaven’s perspective (not earth’s), the son of man figure comes from earth to heaven, vindicated after suffering. The Danielic story is fundamentally one of vindication and exaltation, retold thus in 4 Ezra 11–13, 2 Baruch 35–40, 1 Enoch 37–71, and (Wright argues) by Jesus himself. In Mark 13:26 the coming of the son of man refers to the destruction of Jerusalem and Temple as the vindication-event of Jesus and his people. In Mark 14:62, before Caiaphas, Jesus claims to be the true representative of yhwh’s people who will be vindicated as such — exalted as in Psalm 110, coming on the clouds of heaven as in Daniel 7. There is nothing particularly modest or understated about the vindication of the son of man in Daniel 7:14, 18, and 27. He was the one in and through whom the real return from exile would come about, indeed, was already coming about: the Messiah.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "He comes from earth to heaven, vindicated after suffering.",
+            "sha256": "0cbcc0a50284794b6c2600b1091ee54027ebf80d48d4666aaa50fd83d08f79ca"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "The Danielic story always was one of vindication and exaltation, and was retold as such in the first century",
+            "sha256": "ac388558a361956af4480832c5d2d456cf81bdd63769242e5e41c8ea9566ba4a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "the form that this vindication will take, as envisaged within Mark 13 and its parallels, will be precisely the destruction of Jerusalem and the Temple",
+            "sha256": "495206cd454503ed053fbb7edeed9254ce52f35da9a4d5151697ecbb36171764"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "as the kingdom-bearer, he had constantly been acting, as we shall see later on, in a way which invited the conclusion that he thought he had the right to do and be what the Temple was and did",
+            "sha256": "90f9a6d3120bfa75d5227b52403debef08ef1b9ec0aace4300e8fe56ae1283cd"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "Jesus, as part of his prophetic work of announcing the kingdom, aligned himself with the ‘people of the saints of the most high’, that is, with the ‘one like a son of man’",
+            "sha256": "bbbbe7ff02ac4a6e88b98d068331aabdde230ecbbb3ff6802daae5e5281bce86"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "He was the one in and through whom the real ‘return from exile’ would come about, indeed, was already coming about. He was the Messiah.",
+            "sha256": "ea52a806b3e64164be3cc2466cf3f8afea528b6b05f06f25e7c8d2f3e995a23e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "in the vindication of the son of man, Jesus’ people too will be vindicated",
+            "sha256": "877d170498e82806bb01ffa780b4d8e93524a28f14af99e5d44c924439061f2c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "It speaks of exaltation: of one who, representing ‘the people of the saints of the most high’, is raised up from suffering at the hands of the beasts and given a throne to sit on, exercising royal power",
+            "sha256": "0797b439e81dd27d06d80d092bd023c12ed60e40a5627c7bc685fa2d2f45b8e4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "There is nothing particularly modest or understated about the vindication of the ‘son of man’ in Daniel 7:14, 18 and 27",
+            "sha256": "76bfe1a4789a6abe0f41365cd6695b5f60f9d9b31aeac8f6386b677cd352aafd"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "He is the true representative of yhwh’s people, and will be vindicated as such",
+            "sha256": "b97caae3aa80f03c020aade6229863334beec19e6f527a5f17ea74d0f20f5a8c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2582,
+            "nativeSectionId": "PT3.3.3.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.3.3.2 — (ii) Riddles of Exaltation",
+            "page": 1410,
+            "pageEnd": 1412,
+            "citationString": "Wright, JVG, §PT3.3.3.2 (pp. 1410–1412)"
+          },
+          "quote": {
+            "text": "in Mark 14:62 and parallels Jesus predicts that Caiaphas and his colleagues will see him vindicated, enthroned as Messiah at yhwh’s right hand as in Psalm 110, and ‘coming on the clouds of heaven’ as in Daniel 7",
+            "sha256": "6ef95002bc1e0c661ee199e6fb79b8151dddca80cb5e1fea1214b8936fc7b3fd"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Post-critical historical-plausibility hermeneutic. Daniel 7 must be read as it would have been heard in the first century — within a turbulent Jewish kingdom-aspiration matrix in which beasts symbolize real Roman rulers and son of man symbolizes Israel-vindicated. Polemical against pre-critical futurist literalism AND Schweitzer-school apocalyptic literalism (which Wright treats as the same mistake on opposite sides).",
+      "commitment": "strong",
+      "rationale": "Wright’s hermeneutic is programmatically against turning ancient symbols into flat and literal prose. In Caird’s words (which Wright endorses): is it credible that Jesus, the heir to the linguistic and theological riches of the prophets, should have turned their symbols into flat and literal prose? First-century Jews reading Daniel 7 would think of being oppressed not by mythical monsters but by real Romans. Wright’s three guiding threads for reading Mark 13 are explicit: (1) the nature of apocalyptic language as metaphor, (2) the first-century re-reading of Daniel 7, (3) coherence with the rest of Jesus’ ministry. He insists the world of first-century Jewish expectation, of which apocalyptic is one form, gives us far and away the most obvious context within which to understand Jesus’ retelling of the story of Israel and her god — a polemic against both Mack/Crossan’ Hellenistic sapiential Jesus AND against literalist readings of apocalyptic.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2463,
+            "nativeSectionId": "PT2.4.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.1 — (i) Introduction",
+            "page": 723,
+            "pageEnd": 727,
+            "citationString": "Wright, JVG, §PT2.4.4.1 (pp. 723–727)"
+          },
+          "quote": {
+            "text": "Is it indeed credible that Jesus, the heir to the linguistic and theological riches of the prophets, and himself a greater theologian and master of imagery than them all, should ever have turned their symbols into flat and literal prose?",
+            "sha256": "a791073538ccde22de5a8d706e048b90debaf088ec68b3a36124e7b1084f611c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "first-century Jews, reading a passage like Daniel 7, would think of being oppressed, not by mythical monsters, but by real Romans",
+            "sha256": "e7a1a60860663903de921f3a1ad8502fb9343ce54761b0f0bf9f9c9373e974cc"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2416,
+            "nativeSectionId": "PT2.2.2.1.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.2.2.1.2 — (b) A Non-apocalyptic Kingdom?",
+            "page": 466,
+            "pageEnd": 470,
+            "citationString": "Wright, JVG, §PT2.2.2.1.2 (pp. 466–470)"
+          },
+          "quote": {
+            "text": "the world of first-century Jewish expectation, expressed in a wide variety of forms of which ‘apocalyptic’ is one, gives us far and away the most obvious context within which to understand Jesus’ retelling of the story of Israel and her god",
+            "sha256": "178165b6451c02cf502105c53b547554e4d135393547ac0cee1c890bd95f5bcf"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Tight Synoptic+Daniel integration: Daniel 2 + Daniel 7 + Daniel 9 + Psalm 110 form the messianic-prophetic complex that shapes Mark 13’s Olivet Discourse, Mark 14:62’s trial-scene answer, and Jesus’ whole self-understanding. The Sanhedrin trial scene IS Daniel 7 played out: Caiaphas as the new Antiochus, the Sanhedrin as the Fourth Beast, Jesus as the suffering-and-vindicated Son of Man.",
+      "commitment": "strong",
+      "rationale": "Wright reads Mark 13’s Olivet Discourse and Mark 14:62’s trial answer as a single Daniel-7-driven complex — Jesus does not invoke Daniel 7 as a discrete proof-text but reuses the entire Daniel narrative (chs 2, 7, 9 jointly) as the controlling story for his own messianic vocation. The trial scene is the cross-book hinge: the Sanhedrin was playing the Fourth Beast to Jesus’ Son of Man. Daniel 9’s seventy-weeks framework feeds directly into Mark 13’s abomination-of-desolation citation and Daniel 7 supplies the answer to Caiaphas. Behind Mark 13 there stand three passages in Daniel — Wright explicitly works with Dan 7:25, 11:31, and 9:26-27 as overlapping vindication/desolation texts. This tight integration means the Daniel 7 Son of Man is not a free-floating christological title but a narrative-position Jesus claims for himself.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "The Sanhedrin was playing the Fourth Beast to Jesus’ Son of Man.",
+            "sha256": "f593d0b75855ea6ee3bf8a844959e74229f22b7cc7a05b1156e13b1cc9d00cc9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "Behind this in turn, of course, there stand three passages in Daniel",
+            "sha256": "a2bda047dbebc6190f6b12167a280b388e0156fbd9fe3c40793b7360217b9c16"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Vindication-not-evacuation, single-trajectory inaugurated eschatology. Daniel 7 is fulfilled in Jesus’ death-resurrection-AD-70-Jerusalem-destruction sequence treated as one composite vindication-event. The kingdom is already present in Jesus’ ministry, climactically inaugurated in his death and resurrection; AD 70 is the Daniel-7 vindication of the Son of Man and his people; no further literal-cosmic parousia is required for Mark 13’s prophecy.",
+      "commitment": "strong",
+      "rationale": "Wright’s fulfillment structure refuses both the dispensational/futurist still-to-come literal-cosmic parousia reading and the Schweitzer Jesus-expected-the-world-to-end-and-was-wrong reading. Instead: within the historical world of the first century, Daniel was read as a revolutionary kingdom-of-god text, in which Israel’s true representative(s) would be vindicated after their trial and suffering at the hands of the pagans. Jesus inhabits this story; his own death-resurrection-vindication sequence, climaxing in AD 70, IS the fulfillment of Daniel 7’s vision. Already present in Jesus’ ministry, and climactically inaugurated in his death and resurrection, the divine kingdom will be manifest within a generation, when Jesus and his followers are vindicated in and through the destruction of Jerusalem. The vindication of the son of man would see the once-for-all defeat of evil and the establishment of a worldwide kingdom — Wright’s eschatology is inaugurated with a single vindication-trajectory, not split into two cosmic comings.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2526,
+            "nativeSectionId": "PT3.1.3.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.1 — (a) Temple Destroyed, Jesus Vindicated",
+            "page": 1022,
+            "pageEnd": 1159,
+            "citationString": "Wright, JVG, §PT3.1.3.4.1 (pp. 1022–1159)"
+          },
+          "quote": {
+            "text": "Within the historical world of the first century, Daniel was read as a revolutionary kingdom-of-god text, in which Israel’s true representative(s) would be vindicated after their trial and suffering at the hands of the pagans",
+            "sha256": "91b97c162ebe2bcf201e4259f55481158a132d000c7b44a9cc97a2a92e4918db"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2569,
+            "nativeSectionId": "PT3.2.7.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.2.7.5 — (v) The Victory of God",
+            "page": 1249,
+            "pageEnd": 1250,
+            "citationString": "Wright, JVG, §PT3.2.7.5 (pp. 1249–1250)"
+          },
+          "quote": {
+            "text": "The vindication of the ‘son of man’ would see the once-for-all defeat of evil and the establishment of a worldwide kingdom.",
+            "sha256": "aed98416d9b35b198cb2078753d5b366a5c0bcd11b1092d461b9915646d8d152"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "Already present in Jesus’ ministry, and climactically inaugurated in his death and resurrection, the divine kingdom will be manifest within a generation, when Jesus and his followers are vindicated in and through the destruction of Jerusalem",
+            "sha256": "043e08ebfbf499bdb1f641a5665ec1ba37b52393b0ac110e0b2c5fe0f615f87e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Mark 13",
+      "positionSummary": "Wright’s reading of Mark 13 is the load-bearing test case for his apocalyptic-as-metaphor thesis. Mark 13:24-27 (sun darkened, son of man coming on clouds, gathering of the elect) refers NOT to a future literal-cosmic parousia but to the AD 70 destruction of Jerusalem and the Temple, read as the vindication of Jesus and his followers after suffering at the hands of the pagan-collaborator Jewish establishment. The Daniel 7 son of man coming on clouds is reframed from heaven’s perspective: the figure comes from earth to heaven, vindicated after suffering. Daniel 9’s seventy-weeks supplies the abomination-of-desolation citation; Daniel 7 supplies the vindication-imagery. The disciples’ question of when Jesus will be installed as king is answered by predicting the Temple’s destruction, since that destruction IS Jesus’ vindication and enthronement.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2463,
+            "nativeSectionId": "PT2.4.4.1"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.1 — (i) Introduction",
+            "page": 723,
+            "pageEnd": 727,
+            "citationString": "Wright, JVG, §PT2.4.4.1 (pp. 723–727)"
+          },
+          "quote": {
+            "text": "the coming of the Son of Man on the clouds of heaven was never conceived as a primitive form of space travel, but as a symbol for a mighty reversal of fortunes within history and at the national level",
+            "sha256": "79bdc2cda842c43f9fb09575b713b677ced1cc99f2be0274bcf08b2a9fcc8794"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "the form that this vindication will take, as envisaged within Mark 13 and its parallels, will be precisely the destruction of Jerusalem and the Temple",
+            "sha256": "495206cd454503ed053fbb7edeed9254ce52f35da9a4d5151697ecbb36171764"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Mark 14:53-65 (Trial Scene)",
+      "positionSummary": "Wright reads Mark 14:62 (You will see the Son of Man seated at the right hand of Power and coming with the clouds of heaven) as Jesus’ most explicit messianic claim — a fusion of Psalm 110:1 and Daniel 7:13 deployed as vindication-language, not as a prediction of literal future flight. Standing before Caiaphas, Jesus claims to be the Daniel-7 one like a son of man who, after suffering at the hands of the beasts (here, the Sanhedrin), will be exalted to share yhwh’s throne and vindicated as Messiah. Wright’s striking reading: the courtroom is reversed — Caiaphas, the High Priest, has become the new Antiochus Epiphanes, the great tyrant oppressing yhwh’s people. The Sanhedrin was playing the Fourth Beast to Jesus’ Son of Man. Caiaphas’ blasphemy charge follows from Jesus claiming Daniel-7 enthronement (sharing yhwh’s throne) plus Temple-action authority — both inseparable from messianic claim plus implicit divine-glory-sharing.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "It speaks of exaltation: of one who, representing ‘the people of the saints of the most high’, is raised up from suffering at the hands of the beasts and given a throne to sit on, exercising royal power",
+            "sha256": "0797b439e81dd27d06d80d092bd023c12ed60e40a5627c7bc685fa2d2f45b8e4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2527,
+            "nativeSectionId": "PT3.1.3.4.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.1.3.4.2 — (b) Jesus on Trial",
+            "page": 1159,
+            "pageEnd": 1168,
+            "citationString": "Wright, JVG, §PT3.1.3.4.2 (pp. 1159–1168)"
+          },
+          "quote": {
+            "text": "The Sanhedrin was playing the Fourth Beast to Jesus’ Son of Man.",
+            "sha256": "f593d0b75855ea6ee3bf8a844959e74229f22b7cc7a05b1156e13b1cc9d00cc9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2582,
+            "nativeSectionId": "PT3.3.3.2"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT3.3.3.2 — (ii) Riddles of Exaltation",
+            "page": 1410,
+            "pageEnd": 1412,
+            "citationString": "Wright, JVG, §PT3.3.3.2 (pp. 1410–1412)"
+          },
+          "quote": {
+            "text": "in Mark 14:62 and parallels Jesus predicts that Caiaphas and his colleagues will see him vindicated, enthroned as Messiah at yhwh’s right hand as in Psalm 110, and ‘coming on the clouds of heaven’ as in Daniel 7",
+            "sha256": "6ef95002bc1e0c661ee199e6fb79b8151dddca80cb5e1fea1214b8936fc7b3fd"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Wright treats Matthew’s Olivet Discourse alongside Mark 13 as a single Synoptic complex serving the same vindication-not-evacuation function: Matt 24:3, 27, 37, 39’ parousia-language is read as arrival of a royal personage (vindication-event) rather than second coming as cosmic descent. The abomination-of-desolation citation (Dan 9:27) anchors the Synoptic prediction of AD 70. Wright integrates Matthew’ parousia-language with Mark’ son-of-man-coming-on-clouds language as both metaphorical descriptions of the AD 70 vindication of Jesus and his followers; the crass literalism he polemicizes against applies to both Matt 24 and Mark 13.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:JESUSVICTYGOD",
+            "logosArticleNum": 2467,
+            "nativeSectionId": "PT2.4.4.5"
+          },
+          "frontend": {
+            "author": "Wright",
+            "title": "Jesus and the Victory of God (Christian Origins and the Question of God, Vol. 2)",
+            "section": "§PT2.4.4.5 — (v) The Vindication of the Son of Man",
+            "page": 744,
+            "pageEnd": 749,
+            "citationString": "Wright, JVG, §PT2.4.4.5 (pp. 744–749)"
+          },
+          "quote": {
+            "text": "It is crass literalism, in view of the many prophetic passages in which this language denotes socio-political and military catastrophe, to insist that this time the words must refer to the physical collapse of the space-time world",
+            "sha256": "ee87d13939ad5b75cb25b364743f963d4cf0309a7609fddf3c65d31e21ac7bb6"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Reads Daniel 7’ son of man coming on clouds from heaven’ perspective: the figure rises from earth to heaven (toward the Ancient of Days), vindicated after suffering — NOT downward space-travel toward earth. This single hermeneutical pivot reorients all of Jesus’ son-of-man sayings.",
+    "Identifies the destruction of Jerusalem (AD 70) as the Daniel-7 vindication of the Son of Man and his people; Mark 13:24-27 is fulfilled within a generation as Jesus predicted, not awaiting a future literal cosmic parousia.",
+    "Treats apocalyptic language as metaphor with sociopolitical reference, polemicizing equally against literalist-fundamentalist and literalist-Schweitzerian readings as making the same category mistake on opposite sides.",
+    "Reads Mark 14:62’ trial answer as Jesus’ most explicit messianic claim, fusing Psalm 110:1 + Daniel 7:13 as twin texts of enthronement-vindication; the courtroom is reversed: Caiaphas as new Antiochus, Sanhedrin as Fourth Beast, Jesus as Son of Man.",
+    "Argues against Mack/Crossan/Jesus Seminar’ sapiential / non-apocalyptic Jesus on the grounds that it both misreads apocalyptic AND fails to fit Jesus into a credibly Jewish first-century context.",
+    "Anchors his entire reading of Daniel 7 in second-Temple reception: 4 Ezra 11–13, 2 Baruch 35–40, 1 Enoch 37–71, Ezekiel the Tragedian — these texts establish that Daniel 7 was read messianically and as vindication-after-suffering by Jesus’ contemporaries, supplying the historical-plausibility argument for Jesus’ own use.",
+    "Embeds Daniel 7 inside a Daniel 2 + Daniel 7 + Daniel 9 complex (with Psalm 110 alongside) — Jesus does not pluck a single Danielic text but reuses the entire Daniel narrative as a controlling story for his own messianic vocation."
+  ],
+  "uncertainties": [
+    "Wright says little about Daniel 7 in its original Maccabean / second-century context — he is interested in the first-century AD reception of Daniel 7, not in the original sense (axes A, B’ earlier-history strands, and C [identity of little horn] are not directly his quarry).",
+    "Axes F (millennium) and K (dispensational vs covenantal framework) are not his categories at all — JVG is a historical-Jesus monograph, not a systematic theology, so he doesn’t engage millennial schemes or covenantal-vs-dispensational debates as such.",
+    "On axis H (eschatological structure): Wright’ inaugurated/vindication-at-AD-70 reading raises but does not fully settle the question of further future eschatology beyond AD 70 (resurrection, new creation) — those questions are deferred to later volumes (RSG, PFG).",
+    "On the second-Temple Son-of-Man reception: Wright’ argument that 1 Enoch 37–71 (Parables) is increasingly regarded as non-Christian and reflects a related messianic development is asserted but not extensively defended in JVG — he leans on NTPG’ earlier work.",
+    "A separate session is fixing the §3a method-and-limits Wright-not-in-library record-correction error in docs/research/2026-04-23-daniel-interpretive-taxonomy-survey.md — this scholar JSON is in scope but the survey’ earlier negative claim about Wright’ resource availability needs separate correction."
+  ]
+}

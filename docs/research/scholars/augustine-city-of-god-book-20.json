@@ -1,0 +1,1421 @@
+{
+  "scholarId": "augustine-city-of-god-book-20",
+  "authorDisplay": "Augustine",
+  "workDisplay": "City of God, Book XX",
+  "resourceId": "LLS:6.60.2",
+  "resourceFile": "NPNF02.logos4",
+  "traditionTag": "patristic-latin-non-jerome",
+  "passageCoverage": [
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 12:1-13",
+    "Rev 13",
+    "Rev 20",
+    "Matt 24",
+    "Mark 13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "F: Amillennial / anti-chiliast — the 'thousand years' of Rev 20 is the present church age, not a future earthly Sabbath; Augustine repudiates his own earlier chiliasm explicitly ('I myself, too, once held this opinion').",
+      "H: Two-resurrection eschatology — first (spiritual, regeneration, now) + second (bodily, future); one final judgment; world renewed by transmutation, not destroyed.",
+      "K: The Church now IS the kingdom of Christ; saints reign already; universal priesthood (1 Pet 2) realized in present age.",
+      "L: Allegorical-numerological hermeneutic for apocalyptic — thousand = the cube of ten / fullness; Gog/Magog = totality of wicked nations; abyss = multitude of the wicked.",
+      "N: Recapitulation reading — Daniel 7 + Rev 20 unified as the same church age viewed from different angles; integrates the 3.5-year Antichristic persecution across both.",
+      "O: Auto-revisionist — explicitly recants his earlier millenarian view; names the chiliast position to refute it.",
+      "C: Antichrist is a future eschatological persecutor whose 3.5-year reign Christ will end at parousia, BUT Augustine refuses to harden speculation about the precise nature."
+    ],
+    "moderate": [
+      "B: Fourth kingdom — Augustine concedes Assyria/Persia/Macedonia/Rome as the standard view but defers to Jerome's commentary for substantive defense; he does not himself argue the Roman identification.",
+      "J: Son of Man = Christ — affirmed in passing but undeveloped in Book XX; no throne-vision Christology comparable to Jerome's."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Open / deferred — Augustine reports the four-kingdoms-as-Assyria/Persia/Macedonia/Rome interpretation but explicitly defers detailed defense to Jerome's commentary on Daniel; he is more interested in the Antichrist conclusion than in identifying the empires.",
+      "commitment": "moderate",
+      "rationale": "In XX.23 Augustine summarizes the standard four-kingdoms identification (Assyrians, Persians, Macedonians, Romans) and then explicitly directs readers to Jerome's Daniel commentary for the substantive defense — 'They who desire to understand the fitness of this interpretation may read Jerome's book on Daniel.' Crucially, this delegation means Augustine never personally argues the Roman-empire identification the way Jerome does. His own focus is on what comes after the four kingdoms — the Antichrist's persecution and the eternal kingdom of Christ. This is a notable contrast to later Western readers who blend Augustine and Jerome into a unified Roman-fourth-kingdom orthodoxy: Augustine alone is deliberately less committed.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "Some have interpreted these four kingdoms as signifying those of the Assyrians, Persians, Macedonians, and Romans.",
+            "sha256": "fe2425717abe91f8fc1ce2844dbbe5761af18d4ce8b0e4e917e65a2e7a23cd4a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "They who desire to understand the fitness of this interpretation may read Jerome",
+            "sha256": "db51bb4a56de1f9650e6cbecd9b85e38595e47296f48259f2c01e5e908993700"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "For when in prophetic vision he had seen four beasts, signifying four kingdoms, and the fourth conquered by a certain king, who is recognized as Antichrist, and after this the eternal kingdom of the Son of man, that is to say, of Christ",
+            "sha256": "b37ea0cad1670551f4f7eb82202e071945156ba92970e5d50c76f88cb78bc97d"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / Antichrist",
+      "position": "A future eschatological persecutor whose 3.5-year reign Christ will end at the second advent; Augustine surveys multiple options on the precise nature (single individual prince vs. corporate body, sitting in Solomon's temple ruin vs. in the Church) without committing to one.",
+      "commitment": "strong",
+      "rationale": "Augustine is firm that Antichrist is future and personal-or-corporate, that he persecutes for 3.5 years, that he sits in 'the temple of God' (whether the Solomonic ruin, the Church, or himself as anti-temple), and that Christ destroys him at the parousia. But he distinctively refuses to harden the speculation: 'But I wonder that men can be so audacious in their conjectures.' The 'one who restrains' of 2 Thess 2 is provisionally identified with the Roman empire ('it is not absurd to believe…'), but he hedges. The ten kings of Daniel 7 he treats as possibly symbolic of totality, not literal: 'I own I am afraid we may be deceived in this.' This methodological restraint is itself the position. NOTE: XX.19 paragraph-fragments 2946-2948 carry the substantive content; the chapter article 2945 is mostly a header.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2946,
+            "nativeSectionId": "PAR (299)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (299) — Chapter 19",
+            "page": 949,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (299) (p. 949)"
+          },
+          "quote": {
+            "text": "No one can doubt that he wrote this of Antichrist and of the day of judgment",
+            "sha256": "3537267b8f863238b2123f38132324e168fc5393069a088d6e5a3c09717615fb"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2946,
+            "nativeSectionId": "PAR (299)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (299) — Chapter 19",
+            "page": 949,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (299) (p. 949)"
+          },
+          "quote": {
+            "text": "And on this account some think that in this passage Antichrist means not the prince himself alone, but his whole body, that is, the mass of men who adhere to him",
+            "sha256": "e6a2367a0673db1b654341642bf287dc22b59534921de2f5b33fd948ed8477ff"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2947,
+            "nativeSectionId": "PAR (300)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (300) — Chapter 19",
+            "page": 950,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (300) (p. 950)"
+          },
+          "quote": {
+            "text": "But I wonder that men can be so audacious in their conjectures.",
+            "sha256": "b60e7476b9337f7a840a01050cf1df562163df20cc4b5e71206962091b7ae0f6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2947,
+            "nativeSectionId": "PAR (300)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (300) — Chapter 19",
+            "page": 950,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (300) (p. 950)"
+          },
+          "quote": {
+            "text": "However, it is not absurd to believe that these words of the apostle, “Only he who now holdeth, let him hold until he be taken out of the way,” refer to the Roman empire",
+            "sha256": "075cd4aa9f54468ac2c316c4010ca2125457c6c618aaef46a861431803b2722b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2948,
+            "nativeSectionId": "PAR (301)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (301) — Chapter 19",
+            "page": 950,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (301) (p. 950)"
+          },
+          "quote": {
+            "text": "Christ will not come to judge quick and dead unless Antichrist, His adversary, first come to seduce those who are dead in soul",
+            "sha256": "872267946807391df8ef03113a0f4b568f3144194aa2005b1573dacb9177804b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "As for the ten kings, whom, as it seems, Antichrist is to find in the person of ten individuals when he comes, I own I am afraid we may be deceived in this",
+            "sha256": "fe33becd9de90738c308c1cc9ecb78a96f3ddb345ee6c86709247fa0997e6ed3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2939,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch13"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch13 — Chapter 13",
+            "page": 945,
+            "pageEnd": 946,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch13 (pp. 945–946)"
+          },
+          "quote": {
+            "text": "This last persecution by Antichrist shall last for three years and six months, as we have already said, and as is affirmed both in the book of Revelation and by Daniel the prophet.",
+            "sha256": "d75166c185981f2f5090607238f64b3e71801afe219470bb9b2a4c73c9496fcd"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium / chiliasm",
+      "position": "Amillennial / recapitulationist — the 'thousand years' of Rev 20 is the present church age, beginning at Christ's first advent and continuing until His return; the saints already reign with Christ; the binding of Satan is already accomplished; chiliasm (literal earthly millennium) is rejected, including Augustine's own earlier embrace of it.",
+      "commitment": "strong",
+      "rationale": "Augustine's anti-chiliastic reading of Revelation 20 is the most consequential exegetical move in Book XX and arguably in the whole patristic-Latin reception of Daniel/Apocalypse. In XX.7 he autobiographically discloses that he himself once held the millenarian view, but now repudiates the carnal Sabbath-rest construal: 'I myself, too, once held this opinion. But, as they assert that those who then rise again shall enjoy the leisure of immoderate carnal banquets… such assertions can be believed only by the carnal.' He then offers two non-literal readings of the thousand years: either (a) the remainder of the sixth millennium since creation, or (b) the entire church age as a perfect-number figure ('the thousand is the cube of ten'). The saints reign with Christ NOW, in the time of His first coming, and the Church 'even now is the kingdom of Christ.' The binding of Satan is already accomplished as restraint of his power to seduce the elect, 'from the first coming of Christ to the end of the world.' This is not a deferred or future hope — it is realized eschatology in present-day Augustinian dress. The chiliasts (Millenarians) are explicitly named and refuted.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "And this opinion would not be objectionable, if it were believed that the joys of the saints in that Sabbath shall be spiritual, and consequent on the presence of God; for I myself, too, once held this opinion.",
+            "sha256": "f3ddc4ec59420f43dcc1f9adae6eb93616c9883ddd5947ac0e5d958d2ddfc1b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "They who do believe them are called by the spiritual Chiliasts, which we may literally reproduce by the name Millenarians.",
+            "sha256": "cc5880aeafe2b2ae59c4ea0f7f90ed3e0d7abda9b930fb53bf615ab8fb7c477e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "have been moved, among other things, specially by the number of a thousand years, as if it were a fit thing that the saints should thus enjoy a kind of Sabbath-rest during that period",
+            "sha256": "3fe3c423cf083f3c7c7ce41630819f9f821b481abc4ad3e20983708e49078b2c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2926,
+            "nativeSectionId": "PAR (291)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (291) — Chapter 7",
+            "page": 938,
+            "pageEnd": 939,
+            "citationString": "Augustine, City of God, §PAR (291) (pp. 938–939)"
+          },
+          "quote": {
+            "text": "Now the thousand years may be understood in two ways, so far as occurs to me",
+            "sha256": "3c16b24b5f9c19ce9e24cf159ed43b02c65bd8e799c63a3053f043d4b19cb3a3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2926,
+            "nativeSectionId": "PAR (291)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (291) — Chapter 7",
+            "page": 938,
+            "pageEnd": 939,
+            "citationString": "Augustine, City of God, §PAR (291) (pp. 938–939)"
+          },
+          "quote": {
+            "text": "or he used the thousand years as an equivalent for the whole duration of this world, employing the number of perfection to mark the fullness of time.",
+            "sha256": "be10e7a41cd6ebf58a0232e7a3df9b6f55e2731a1972d8637651b742ddfe84ca"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2929,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch8"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch8 — Chapter 8",
+            "page": 940,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch8 (p. 940)"
+          },
+          "quote": {
+            "text": "The devil, then, is not bound during the whole time which this book embraces,—that is, from the first coming of Christ to the end of the world, when He shall come the second time",
+            "sha256": "e9fdf7d7b9ebba6a12bc1df0943be9a2e91e5b83caa39a4b328b3f8f9a8f8d2d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2929,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch8"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch8 — Chapter 8",
+            "page": 940,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch8 (p. 940)"
+          },
+          "quote": {
+            "text": "But the binding of the devil is his being prevented from the exercise of his whole power to seduce men",
+            "sha256": "2da1a7ed99ec2f3ba821318d70eb5ac8345d46df8133f8b85c6a697041538c30"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "But while the devil is bound, the saints reign with Christ during the same thousand years, understood in the same way, that is, of the time of His first coming.",
+            "sha256": "2b82942eb16d568197c379648c35b49370b4874925d284f09c82522d0874fe4d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "Therefore the Church even now is the kingdom of Christ, and the kingdom of heaven.",
+            "sha256": "cc640c409117b7b65b2a0bd538ab7d185206ea6457f4365bcad09ea9a7c92ee7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "In fine, they reign with Him who are so in His kingdom that they themselves are His kingdom.",
+            "sha256": "b30c410f89d2f1a5d89e4cfc5f44043f4c79d72758fa7eb14b253830a5dc5650"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Two-resurrection, two-judgment frame: a present spiritual 'first resurrection' (regeneration of souls now), a future bodily 'second resurrection' (general resurrection at the parousia); a brief Antichristic persecution at the very end; one final judgment from a single throne, both books of life and books of works opened, then new heaven and new earth.",
+      "commitment": "strong",
+      "rationale": "Augustine's eschatological structure in Book XX is the most influential one in the Latin West. Two resurrections, not three; one final judgment, not multiple; the present age (the 'thousand years') as the time of the Church's reign with Christ; Antichrist's brief 3.5-year persecution as a clarifying terminus before the parousia, NOT a separate millennial age. He explicitly denies that Antichrist's persecution constitutes a different 'age' — it may or may not be reckoned within the thousand years, but in either case the structure is unitary. The world is renewed by transmutation, not destruction. Final judgment is administered by Christ before the new heaven and earth appear.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2923,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch6"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch6 — Chapter 6",
+            "page": 937,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch6 (p. 937)"
+          },
+          "quote": {
+            "text": "Now this resurrection regards not the body, but the soul. For souls, too, have a death of their own in wickedness and sins",
+            "sha256": "576a23765dfb332b941f3bed5a2138d2ba12c5f86d84273ee420981555fc6d6c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2923,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch6"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch6 — Chapter 6",
+            "page": 937,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch6 (p. 937)"
+          },
+          "quote": {
+            "text": "As yet He does not speak of the second resurrection, that is, the resurrection of the body, which shall be in the end, but of the first, which now is.",
+            "sha256": "d49aad27e71a1c7de9867885696a5f5e8c2857d15ef23f9c52ca3a8da009d33f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2923,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch6"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch6 — Chapter 6",
+            "page": 937,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch6 (p. 937)"
+          },
+          "quote": {
+            "text": "For in this first resurrection none have a part save those who shall be eternally blessed",
+            "sha256": "e5ce6d680712d1320ccaf7038fdf8b8a12486488e856ac0317d44e67004fbb95"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2939,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch13"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch13 — Chapter 13",
+            "page": 945,
+            "pageEnd": 946,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch13 (pp. 945–946)"
+          },
+          "quote": {
+            "text": "And thus the reign of the saints with Christ shall last longer than the bonds and imprisonment of the devil",
+            "sha256": "d5ac3de6db4c7c6ba5d6bc33ac08d8b6db233a829cf9f15fc00da0bf10010371"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2940,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch14"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch14 — Chapter 14",
+            "page": 946,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch14 (p. 946)"
+          },
+          "quote": {
+            "text": "After this he gives a brief narrative of the last judgment itself, which shall take place at the second or bodily resurrection of the dead",
+            "sha256": "10df66050fa16c5699f506926b7113a8aa00b484feb8c77b9a51e78e4e4f483b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2940,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch14"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch14 — Chapter 14",
+            "page": 946,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch14 (p. 946)"
+          },
+          "quote": {
+            "text": "We must therefore understand it of a certain divine power, by which it shall be brought about that every one shall recall to memory all his own works",
+            "sha256": "f343dd203fafe6444988d7d22fa95741e61f17d4eb16e5c49ac3a6dcc9bb90ec"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2940,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch14"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch14 — Chapter 14",
+            "page": 946,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch14 (p. 946)"
+          },
+          "quote": {
+            "text": "For this world shall pass away by transmutation, not by absolute destruction.",
+            "sha256": "fc526c5dd726d22d87a9a8aa3c3a94add83a98b5bb99d186896967ae5028671a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13-14)",
+      "position": "Identifies the Son of Man with Christ — 'the eternal kingdom of the Son of man, that is to say, of Christ' — but does not develop a full Christology from Daniel 7:13-14 the way Jerome does; Augustine's interest in XX.23 is the Antichrist sequence, not the Son-of-Man enthronement.",
+      "commitment": "moderate",
+      "rationale": "Augustine's engagement with Daniel 7:13-14 in Book XX is comparatively thin. He acknowledges the standard Christological identification ('the eternal kingdom of the Son of man, that is to say, of Christ') but does not offer the dense exegesis of the figure that Jerome does. His attention is instead on what follows — the temporal sequence (four kingdoms → Antichrist → eternal kingdom) — because his project is to defend the futurity of the last judgment, not to construct a Christological exegesis of the throne-vision. The Ancient of Days, the plural thrones, and the coming with the clouds — none of these features get the kind of patristic-typological treatment they receive in Jerome.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "For when in prophetic vision he had seen four beasts, signifying four kingdoms, and the fourth conquered by a certain king, who is recognized as Antichrist, and after this the eternal kingdom of the Son of man, that is to say, of Christ",
+            "sha256": "b37ea0cad1670551f4f7eb82202e071945156ba92970e5d50c76f88cb78bc97d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "Daniel prophesies of the last judgment in such a way as to indicate that Antichrist shall first come",
+            "sha256": "ec373c75f53389315623d4d3736ea5ef063602925c32e98d4f8f14065eb34301"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints / kingdom of the saints",
+      "position": "The Church now IS the kingdom of Christ; the saints reign with Christ already; their universal priesthood is realized in the present age; the kingdom is not deferred to a future earthly reign; the eschatological consummation is heavenly bliss in the presence of God, not an earthly Sabbath of carnal banquets.",
+      "commitment": "strong",
+      "rationale": "Augustine's ecclesial reading of the saints' kingdom is the corollary of his amillennialism. The Church is not a waiting room for the kingdom; it IS the kingdom, in inaugurated form: 'the Church even now is the kingdom of Christ, and the kingdom of heaven… In fine, they reign with Him who are so in His kingdom that they themselves are His kingdom.' The royal priesthood of 1 Peter is invoked to argue that all believers — not just bishops and presbyters — are the priests-and-kings of Rev 20:6. The eschatological consummation is heavenly Sabbath rest in praise of God, where God 'shall be all in all' (XXII.30 — adjacent-book; flagged) — explicitly contrasted with the chiliast-carnal version Augustine had once entertained.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "Therefore the Church even now is the kingdom of Christ, and the kingdom of heaven.",
+            "sha256": "cc640c409117b7b65b2a0bd538ab7d185206ea6457f4365bcad09ea9a7c92ee7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "In fine, they reign with Him who are so in His kingdom that they themselves are His kingdom.",
+            "sha256": "b30c410f89d2f1a5d89e4cfc5f44043f4c79d72758fa7eb14b253830a5dc5650"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2936,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch10"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch10 — Chapter 10",
+            "page": 943,
+            "pageEnd": 944,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch10 (pp. 943–944)"
+          },
+          "quote": {
+            "text": "and this refers not to the bishops alone, and presbyters, who are now specially called priests",
+            "sha256": "56c5aad4eb1e4e424f5bf0441814ed0f74cc3c31949a3dfd4331547ceb00f925"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 3110,
+            "nativeSectionId": "s2.v2.a1.w1.b22.ch30"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b22.ch30 — Chapter 30",
+            "page": 1021,
+            "pageEnd": 1022,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b22.ch30 (pp. 1021–1022)"
+          },
+          "quote": {
+            "text": "How great shall be that felicity, which shall be tainted with no evil, which shall lack no good, and which shall afford leisure for the praises of God, who shall be all in all!",
+            "sha256": "b5e216ae232d77dc234899e51bc698e2853bfa30e36e80283f0e8f11d5a1bc89"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 3110,
+            "nativeSectionId": "s2.v2.a1.w1.b22.ch30"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b22.ch30 — Chapter 30",
+            "page": 1021,
+            "pageEnd": 1022,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b22.ch30 (pp. 1021–1022)"
+          },
+          "quote": {
+            "text": "God Himself, who is the Author of virtue, shall there be its reward",
+            "sha256": "87ce6bf8a7b1896e2c7be9f3fa8466287ebc789bdb085573a3e612c6434d59ad"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic for apocalyptic",
+      "position": "Allegorical-spiritual reading: numbers symbolize wholeness ('the cube of ten'), Gog/Magog symbolize the totality of nations not just ethnic groups, the abyss is the multitude of the wicked, the binding is restraint not chronological imprisonment, the 'first resurrection' is regeneration of the soul not of the body, the millennium is the church age. Numerology decodes to perfection-language, not literal duration.",
+      "commitment": "strong",
+      "rationale": "Augustine reads Revelation 20 as a recapitulation rather than a chronological extension of the preceding chapters, and consistently allegorizes the apocalyptic imagery. The thousand years 'may be understood in two ways' (sixth-millennium remnant OR whole-age figure); a thousand is the cube of ten and signifies 'the fullness of time.' The abyss is 'the countless multitude of the wicked.' Gog and Magog 'are not to be understood of some barbarous nations in some part of the world, whether the Getae and Massagetae… [but as] the nations… spread over the whole earth.' The 'beloved city' is 'the Church of Christ extending over the whole world.' This anti-literal hermeneutic for apocalyptic numerology and imagery is Augustine's distinctive Latin contribution — it both rescues Revelation from chiliasm and licenses centuries of allegorical eschatology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2926,
+            "nativeSectionId": "PAR (291)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (291) — Chapter 7",
+            "page": 938,
+            "pageEnd": 939,
+            "citationString": "Augustine, City of God, §PAR (291) (pp. 938–939)"
+          },
+          "quote": {
+            "text": "or he used the thousand years as an equivalent for the whole duration of this world, employing the number of perfection to mark the fullness of time.",
+            "sha256": "be10e7a41cd6ebf58a0232e7a3df9b6f55e2731a1972d8637651b742ddfe84ca"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2926,
+            "nativeSectionId": "PAR (291)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (291) — Chapter 7",
+            "page": 938,
+            "pageEnd": 939,
+            "citationString": "Augustine, City of God, §PAR (291) (pp. 938–939)"
+          },
+          "quote": {
+            "text": "meaning by the strong man the devil, because he had power to take captive the human race",
+            "sha256": "f2edadcb0edb7d838ce07dd93cace64a34505fe8018bed5a48ccfe8b606d868d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2927,
+            "nativeSectionId": "PAR (292)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (292) — Chapter 7",
+            "page": 939,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (292) (p. 939)"
+          },
+          "quote": {
+            "text": "By the abyss is meant the countless multitude of the wicked whose hearts are unfathomably deep in malignity against the Church of God",
+            "sha256": "9d81ea3117cca52679b524fc1ab68d3703e545eb7430d27565455558f323e631"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2937,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch11"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch11 — Chapter 11",
+            "page": 944,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch11 (p. 944)"
+          },
+          "quote": {
+            "text": "For these nations which he names Gog and Magog are not to be understood of some barbarous nations in some part of the world",
+            "sha256": "5f6f178f30fa10e2096b7f21cc58e91d92b294dffd901d5e8753bb827934ee65"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2937,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch11"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch11 — Chapter 11",
+            "page": 944,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch11 (p. 944)"
+          },
+          "quote": {
+            "text": "they are therefore the nations in which we found that the devil was shut up as in an abyss",
+            "sha256": "80e228afccb8fc36aca89f14800289ee9f0b764b8558a8e312c4322443dbf3ac"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2937,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch11"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch11 — Chapter 11",
+            "page": 944,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch11 (p. 944)"
+          },
+          "quote": {
+            "text": "for this camp is nothing else than the Church of Christ extending over the whole world",
+            "sha256": "1def784c73659250e582b3f3a6062837969504bda35dd1e291b9f3fbbe6c54b3"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book Daniel and Revelation integration",
+      "position": "Daniel 7 and Revelation 20 are integrated such that the Antichrist's 3.5-year persecution is the same event in both books; Daniel 7's eternal kingdom of the Son of Man is read as Revelation 20's reign of saints with Christ for a thousand years; the prophets' and the Apocalypse's eschatology is unified.",
+      "commitment": "strong",
+      "rationale": "Book XX is structurally an integration project: Augustine moves systematically from Apocalypse passages (XX.7-22, on Rev 20) to Daniel passages (XX.23) and back out to Pauline / OT material (XX.24-30). The Antichrist's 3.5-year persecution he treats as a single event 'affirmed both in the book of Revelation and by Daniel the prophet.' The kingdom that follows the four beasts is Christ's kingdom; the binding of Satan in Rev 20 is the same kind of restraint that frames the church age between the two advents. The integration is not a chronological harmonization (premillennial style) but a recapitulation: the same age viewed from different angles.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2939,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch13"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch13 — Chapter 13",
+            "page": 945,
+            "pageEnd": 946,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch13 (pp. 945–946)"
+          },
+          "quote": {
+            "text": "This last persecution by Antichrist shall last for three years and six months, as we have already said, and as is affirmed both in the book of Revelation and by Daniel the prophet.",
+            "sha256": "d75166c185981f2f5090607238f64b3e71801afe219470bb9b2a4c73c9496fcd"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "it is patent from the context that the time, times, and half a time, means a year, and two years, and half a year, that is to say, three years and a half.",
+            "sha256": "99b40fe64b472995bb0712f3b2bdcb5173af7a37592f9230129421f85d2d2e8b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "The evangelist John has spoken of these two resurrections in the book which is called the Apocalypse",
+            "sha256": "8bd174c47f0d23e0447bd61a47faaf4df02c36c0ebdc08982845802723ff67b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2957,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch23"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch23 — Chapter 23",
+            "page": 955,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch23 (p. 955)"
+          },
+          "quote": {
+            "text": "For when in prophetic vision he had seen four beasts, signifying four kingdoms, and the fourth conquered by a certain king, who is recognized as Antichrist, and after this the eternal kingdom of the Son of man, that is to say, of Christ",
+            "sha256": "b37ea0cad1670551f4f7eb82202e071945156ba92970e5d50c76f88cb78bc97d"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Stance toward earlier positions / revisionism",
+      "position": "Revisionist on his own earlier chiliasm — Augustine explicitly says 'I myself, too, once held this opinion' (i.e., the future-Sabbath millenarian reading) and now repudiates it; this autobiographical recantation is rare in patristic literature and frames Book XX's whole anti-chiliast argument as Augustine's mature correction of his own error. Also notably refuses end-time computation (XVIII.53 — adjacent-book) and refuses to fix the count of pre-Antichrist persecutions (XVIII.52 — adjacent-book).",
+      "commitment": "strong",
+      "rationale": "Augustine is explicit that the spiritual-Sabbath reading of the thousand years 'would not be objectionable, if it were believed that the joys of the saints in that Sabbath shall be spiritual, and consequent on the presence of God; for I myself, too, once held this opinion.' What he now rejects is the carnal version, where 'those who then rise again shall enjoy the leisure of immoderate carnal banquets.' This auto-revisionism is doubly significant: (1) it shows Latin chiliasm was a real, named option in the 4th-5th centuries (not a strawman), and (2) it gives Augustine's amillennial reading the rhetorical force of a confessional correction rather than an outsider's polemic. Subsequent Latin amillennialism inherits both the position and the reformer's self-positioning. The agnostic stance toward computing the world's remaining years (XVIII.53, adjacent-book) and toward fixing the persecution count (XVIII.52, adjacent-book) reinforce the same posture: Augustine is principled in refusing to systematize what Scripture leaves open.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "And this opinion would not be objectionable, if it were believed that the joys of the saints in that Sabbath shall be spiritual, and consequent on the presence of God; for I myself, too, once held this opinion.",
+            "sha256": "f3ddc4ec59420f43dcc1f9adae6eb93616c9883ddd5947ac0e5d958d2ddfc1b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "They who do believe them are called by the spiritual Chiliasts, which we may literally reproduce by the name Millenarians.",
+            "sha256": "cc5880aeafe2b2ae59c4ea0f7f90ed3e0d7abda9b930fb53bf615ab8fb7c477e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2865,
+            "nativeSectionId": "s2.v2.a1.w1.b18.ch53"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b18.ch53 — Chapter 53",
+            "page": 906,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b18.ch53 (p. 906)"
+          },
+          "quote": {
+            "text": "In vain, then, do we attempt to compute definitely the years that may remain to this world, when we may hear from the mouth of the Truth that it is not for us to know this.",
+            "sha256": "33a72db1ca4c57dea2bc47367fcef342940262eccdd619ceb3387e3d318fb052"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2864,
+            "nativeSectionId": "s2.v2.a1.w1.b18.ch52"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b18.ch52 — Chapter 52",
+            "page": 905,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b18.ch52 (p. 905)"
+          },
+          "quote": {
+            "text": "When I think of these and the like things, it does not seem to me that the number of persecutions with which the Church is to be tried can be definitely stated.",
+            "sha256": "caaad74894d1b0e884caecded7fe67f39f8e102bffa9cf5c8283a2683fe7426e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Augustine's reading of Revelation 20 is the load-bearing patristic-Latin amillennialism. The thousand years = the present church age; the binding of Satan = the restraint of the devil's seductive power over the elect, beginning at Christ's first advent; the first resurrection = regeneration of the soul (now); the saints' reign with Christ = the present life of the Church as Christ's kingdom; the second resurrection = the future bodily resurrection at the parousia; the loosing of Satan + Gog/Magog = the brief final persecution before judgment. The 'fire from heaven' is allegorized as the saints' steadfastness. The whole sequence is recapitulation, not chronology. This reading rescues Revelation 20 from chiliasm without forcing a futurist millennial scheme — it simply treats the text as a symbolic description of the church age viewed from another angle. Augustine confesses he himself once read it chiliastically and now rejects that view.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "And this opinion would not be objectionable, if it were believed that the joys of the saints in that Sabbath shall be spiritual, and consequent on the presence of God; for I myself, too, once held this opinion.",
+            "sha256": "f3ddc4ec59420f43dcc1f9adae6eb93616c9883ddd5947ac0e5d958d2ddfc1b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2925,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch7"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch7 — Chapter 7",
+            "page": 938,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch7 (p. 938)"
+          },
+          "quote": {
+            "text": "The evangelist John has spoken of these two resurrections in the book which is called the Apocalypse",
+            "sha256": "8bd174c47f0d23e0447bd61a47faaf4df02c36c0ebdc08982845802723ff67b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2929,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch8"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch8 — Chapter 8",
+            "page": 940,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch8 (p. 940)"
+          },
+          "quote": {
+            "text": "The devil, then, is not bound during the whole time which this book embraces,—that is, from the first coming of Christ to the end of the world, when He shall come the second time",
+            "sha256": "e9fdf7d7b9ebba6a12bc1df0943be9a2e91e5b83caa39a4b328b3f8f9a8f8d2d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2929,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch8"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch8 — Chapter 8",
+            "page": 940,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch8 (p. 940)"
+          },
+          "quote": {
+            "text": "But the binding of the devil is his being prevented from the exercise of his whole power to seduce men",
+            "sha256": "2da1a7ed99ec2f3ba821318d70eb5ac8345d46df8133f8b85c6a697041538c30"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2932,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch9"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch9 — Chapter 9",
+            "page": 941,
+            "pageEnd": 942,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch9 (pp. 941–942)"
+          },
+          "quote": {
+            "text": "But while the devil is bound, the saints reign with Christ during the same thousand years, understood in the same way, that is, of the time of His first coming.",
+            "sha256": "2b82942eb16d568197c379648c35b49370b4874925d284f09c82522d0874fe4d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2923,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch6"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch6 — Chapter 6",
+            "page": 937,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch6 (p. 937)"
+          },
+          "quote": {
+            "text": "Now this resurrection regards not the body, but the soul. For souls, too, have a death of their own in wickedness and sins",
+            "sha256": "576a23765dfb332b941f3bed5a2138d2ba12c5f86d84273ee420981555fc6d6c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2923,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch6"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch6 — Chapter 6",
+            "page": 937,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch6 (p. 937)"
+          },
+          "quote": {
+            "text": "As yet He does not speak of the second resurrection, that is, the resurrection of the body, which shall be in the end, but of the first, which now is.",
+            "sha256": "d49aad27e71a1c7de9867885696a5f5e8c2857d15ef23f9c52ca3a8da009d33f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2936,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch10"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch10 — Chapter 10",
+            "page": 943,
+            "pageEnd": 944,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch10 (pp. 943–944)"
+          },
+          "quote": {
+            "text": "There are some who suppose that resurrection can be predicated only of the body, and therefore they contend that this first resurrection (of the Apocalypse) is a bodily resurrection.",
+            "sha256": "46dae31b391824894c6f3e98b727a81eddd040afe1fc395bad4ad46d638e4ff5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2936,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch10"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch10 — Chapter 10",
+            "page": 943,
+            "pageEnd": 944,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch10 (pp. 943–944)"
+          },
+          "quote": {
+            "text": "If, then, rising again belongs to things that fall, and souls fall, it must be owned that souls also rise again.",
+            "sha256": "16fce0afb5e74b3241040ab5f2cd5870f95eb41551f231251b16295f01ef1295"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2937,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch11"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch11 — Chapter 11",
+            "page": 944,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch11 (p. 944)"
+          },
+          "quote": {
+            "text": "for this camp is nothing else than the Church of Christ extending over the whole world",
+            "sha256": "1def784c73659250e582b3f3a6062837969504bda35dd1e291b9f3fbbe6c54b3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2940,
+            "nativeSectionId": "s2.v2.a1.w1.b20.ch14"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§s2.v2.a1.w1.b20.ch14 — Chapter 14",
+            "page": 946,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §s2.v2.a1.w1.b20.ch14 (p. 946)"
+          },
+          "quote": {
+            "text": "After this he gives a brief narrative of the last judgment itself, which shall take place at the second or bodily resurrection of the dead",
+            "sha256": "10df66050fa16c5699f506926b7113a8aa00b484feb8c77b9a51e78e4e4f483b"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Augustine reads the Antichrist via 2 Thessalonians 2 (XX.19) more than via Revelation 13 directly. The 'man of sin' / 'son of perdition' sits in 'the temple of God' — variously identified as the Solomonic ruin, the Church, or Antichrist himself as anti-temple — and is restrained until 'he who now holdeth' is taken out of the way. Augustine entertains the Roman-empire-as-restrainer reading as 'not absurd' but does not commit. Christ destroys Antichrist 'with the breath of His mouth' at the parousia. The Revelation 13 beast imagery is folded into the broader Antichrist account but not given dedicated exegesis in Book XX. This citation cluster therefore points at how Augustine's Antichrist-doctrine functions for Rev 13 rather than at Augustine's direct exposition of Rev 13.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2946,
+            "nativeSectionId": "PAR (299)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (299) — Chapter 19",
+            "page": 949,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (299) (p. 949)"
+          },
+          "quote": {
+            "text": "No one can doubt that he wrote this of Antichrist and of the day of judgment",
+            "sha256": "3537267b8f863238b2123f38132324e168fc5393069a088d6e5a3c09717615fb"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2946,
+            "nativeSectionId": "PAR (299)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (299) — Chapter 19",
+            "page": 949,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (299) (p. 949)"
+          },
+          "quote": {
+            "text": "And on this account some think that in this passage Antichrist means not the prince himself alone, but his whole body, that is, the mass of men who adhere to him",
+            "sha256": "e6a2367a0673db1b654341642bf287dc22b59534921de2f5b33fd948ed8477ff"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2947,
+            "nativeSectionId": "PAR (300)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (300) — Chapter 19",
+            "page": 950,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (300) (p. 950)"
+          },
+          "quote": {
+            "text": "However, it is not absurd to believe that these words of the apostle, “Only he who now holdeth, let him hold until he be taken out of the way,” refer to the Roman empire",
+            "sha256": "075cd4aa9f54468ac2c316c4010ca2125457c6c618aaef46a861431803b2722b"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.2",
+            "logosArticleNum": 2948,
+            "nativeSectionId": "PAR (301)"
+          },
+          "frontend": {
+            "author": "Augustine",
+            "title": "The City of God Against the Pagans (NPNF Series 1, vol. 2; trans. Marcus Dods)",
+            "section": "§PAR (301) — Chapter 19",
+            "page": 950,
+            "pageEnd": null,
+            "citationString": "Augustine, City of God, §PAR (301) (p. 950)"
+          },
+          "quote": {
+            "text": "Christ will not come to judge quick and dead unless Antichrist, His adversary, first come to seduce those who are dead in soul",
+            "sha256": "872267946807391df8ef03113a0f4b568f3144194aa2005b1573dacb9177804b"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "The auto-revisionist disclosure: Augustine names his own earlier millenarian view and publicly repudiates it ('I myself, too, once held this opinion'), giving Book XX's amillennialism the rhetorical weight of a confessional correction rather than a third-party polemic.",
+    "The 'recapitulation' reading of Revelation 20 — the chapter does not chronologically follow chs. 12-19 but recapitulates the same church age from another angle, dissolving the perceived sequence-problem that drove premillennial readings.",
+    "The mathematical-numerological argument that 'a thousand is the cube of ten' (perfection × perfection × perfection), licensing the church-age reading on numerological grounds rather than just hermeneutical preference.",
+    "The dual binding-of-Satan logic: Satan is bound in the sense that he cannot seduce the elect (predestinarian floor), not in the sense that he cannot tempt anyone — a careful distinction that handles the obvious objection that the devil clearly remains active throughout the church age.",
+    "The 'first resurrection = regeneration / spiritual resurrection of the soul' move, anchored in John 5:25 ('the hour is coming, and now is') against literal-bodily readings.",
+    "The deferral on the four kingdoms — Augustine concedes the Assyria/Persia/Macedonia/Rome reading but explicitly directs readers to Jerome's commentary for the substantive defense, marking that Daniel's empire-identification is not Augustine's own pet question.",
+    "The treatment of Gog and Magog as symbolic of the universal church-age opposition (the totality of the wicked nations) rather than ethnic Scythian/Gothic invaders, dispatching the etymological-literal reading dominant in some patristic predecessors.",
+    "The principled agnosticism on chronology — XVIII.53 explicitly rebukes attempts to compute the world's remaining years ('In vain, then, do we attempt to compute definitely the years…'), which reinforces the amillennial structure by deactivating the millennial-countdown impulse.",
+    "Numerological agnosticism on the ten kings: 'I am afraid we may be deceived in this' — Augustine refuses to count actual end-time kings, treating ten as possibly figurative for totality.",
+    "Universal priesthood in Rev 20:6 — 'this refers not to the bishops alone, and presbyters' but to all believers, providing an ecclesial floor for the saints-reign-with-Christ-now position."
+  ],
+  "uncertainties": [
+    "On Axis B (fourth kingdom): Augustine does NOT himself defend the Roman identification — he reports it and defers to Jerome. Reading Augustine as a Reformed-amillennial source for the Rome-as-fourth-kingdom commitment risks attributing Jerome's position to him.",
+    "On Axis J (Son of Man / Dan 7:13-14): Augustine's engagement is comparatively thin in Book XX — he affirms Christ as the Son of Man of Daniel 7 but does not develop the throne-vision Christology that Jerome and later Eastern fathers do. The 'Ancient of Days,' the plural thrones, and the 'coming with the clouds' do not receive sustained patristic-typological treatment.",
+    "On the precise nature of Antichrist (single individual prince vs. corporate body, sitting in Solomonic ruin vs. in the Church): Augustine surveys options and refuses to commit ('I wonder that men can be so audacious in their conjectures'). This methodological restraint can be misread by later traditions as endorsement of one option or another.",
+    "On Axis A (dating) and Axis E (genre as apocalyptic): the questions are anachronistic for Augustine. He treats Daniel as authentic prophecy from the historical Daniel, but does not defend this against critical attack — Porphyry's Adversus Christianos engagement happens elsewhere in his corpus, not in Book XX.",
+    "Book XX's adjacent-book references (XVIII.52-54 on persecutions; XXII.30 on final felicity) are supplemental and should not be over-read as Daniel-7 commitments. They contribute to Augustine's broader eschatological frame but do not engage Daniel 7 directly. Where this survey cites adjacent-book material it is flagged in the rationale (XVIII.52 art. 2864, XVIII.53 art. 2865, XXII.30 art. 3110).",
+    "Augustine assumes a single future Antichrist with a literal 3.5-year persecution but rejects literal counting of ten kings. The combination is internally consistent (Augustine: numerals can be either literal or symbolic depending on context) but generates an exegesis that resists tidy categorization in modern dispensational/historicist taxonomies."
+  ]
+}

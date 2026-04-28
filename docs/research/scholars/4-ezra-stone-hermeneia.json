@@ -1,0 +1,908 @@
+{
+  "scholarId": "4-ezra-stone-hermeneia",
+  "authorDisplay": "Stone",
+  "workDisplay": "Fourth Ezra (Hermeneia)",
+  "resourceId": "LLS:HRMNEIAEZR4",
+  "resourceFile": "HRMNEIAEZR4.lbxlls",
+  "traditionTag": "second-temple-reception",
+  "fullTitle": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+  "passageCoverage": [
+    "Dan 7:7-8",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 2:31-45"
+  ],
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "4 Ezra 11-12 deliberately reidentifies Daniel 7's fourth beast as Rome rather than Greece. The Eagle is explicitly named the 'fourth beast' of Dan 7 in 4 Ezra 12:11, but where Daniel's fourth empire was the Greek (Antiochus IV) realm, 4 Ezra updates the schema to the Roman empire of the late first century c.e. The triple equivalence eagle = fourth empire = Rome is the central interpretive move of the vision; the eagle symbolism itself is determined by the eagle on Roman legionary standards. This is a self-conscious reuse of Daniel's four-kingdoms schema in a post-70 c.e. setting where Daniel's identifications no longer fit historical reality.",
+      "commitment": "strong",
+      "rationale": "Stone's commentary on 12:11 (the angel's interpretation) lays out this triple equivalence as the central exegetical move of the eagle vision. The four-empires schema, says Stone, 'holds a prominent position in Jewish apocalyptic historiography from the time of Daniel on, and 4 Ezra is consciously reinterpreting Daniel's traditions.' Stone is explicit: 'In Daniel 7 the fourth kingdom is clearly the Greeks, but here it is Rome.' The selection of the eagle as Rome's symbol is anchored by the Roman legionary standards. This is not generic 'sea-beast' imagery; it is a self-conscious updating of Daniel's specific schema, using Daniel's own form (four empires + fifth messianic) to deliver a contemporary post-70 reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8302,
+            "nativeSectionId": "C37.2"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§C37.2 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §C37.2"
+          },
+          "quote": {
+            "text": "In Daniel 7 the fourth kingdom is clearly the Greeks, but here it is Rome.",
+            "sha256": "dfdd57ca52274494d76cc1c6dcb268c8c7717f9859aee3f13a33d8a748915e9b"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8302,
+            "nativeSectionId": "C37.2"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§C37.2 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §C37.2"
+          },
+          "quote": {
+            "text": "whatever its origins, the four empires conception holds a prominent position in Jewish apocalyptic historiography from the time of Daniel on, and 4 Ezra is consciously reinterpreting",
+            "sha256": "d5f1c56f9ce58ede32b03befa42b3a0246a6e1d719531e44913e48925c20f5ef"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "this verse sets up the triple equivalation of eagle/fourth empire/Rome",
+            "sha256": "6b0aed6d1657d65988d4d839a976fc22cd9d5ee5b14c33ec03a91edd4d407d00"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "The eagle is the fourth beast, a reference to the theory of four kingdoms of which it represents the last.",
+            "sha256": "d8b96f0e90ac5c2a2c0945cfa0541963d804b6e514970a8830cd336ddc952674"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "Specifically the eagle is identified with the fourth beast mentioned in Dan 7:7",
+            "sha256": "2e57ce2464555fe257ea910a313c3609f0e74f418e12798fa46fd5c06ad164e6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8286,
+            "nativeSectionId": "P...348"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...348 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...348"
+          },
+          "quote": {
+            "text": "The selection of the eagle to represent Rome is probably determined by the symbol found on the standards of the Roman legions",
+            "sha256": "ce19e28da95175818df65a768892bd633e1d29a4ae7c117eb53154e91170777c"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13)",
+      "position": "The Man-from-the-Sea in 4 Ezra 13 is a transcendent Redeemer figure dependent on Dan 7:13 — flying with clouds, melting enemies like wax — combined with divine-warrior epiphany imagery (Ezekiel, Isaiah, Psalm 18) and Dan 2 stone-cut-without-hands. In the dream, the figure is cosmic: weaponless, destroying enemies by fiery breath. Crucially, however, the angelic interpretation in 13:25-52 strips most cosmic features and recasts the man as 'my servant' the Davidic Messiah whose primary function is forensic — judging Rome by his reproof rather than military destruction. Stone reads this dream/interpretation tension as evidence the author is reinterpreting an existing tradition of a 'cosmic redeemer' (cognate with the Similitudes' Son of Man) into the book's own forensic-messianic key. The Greek behind the four 'son of God' references is most likely παῖς (servant), not υἱός (son); the figure is 'servant' not 'son.'",
+      "commitment": "strong",
+      "rationale": "Stone's Excursus on the Redeemer Figure (pp. 207-13 = articles 8109-8114) is the central treatment. Box's identification of the man as 'transcendent Son of Man' is endorsed: 'Box rightly discerns a transcendent redeemer, a Son of man figure.' The commentary on 13:3 says explicitly, 'Clearly the figure here is dependent on Daniel; see particularly chapter 7,' and 'The man flew with the clouds, an image drawn from Dan 7:13.' Yet the actual form 'son of man' is not in the text — and the cosmic features 'have been freed from the concept of God as warrior before the time of 4 Ezra,' so the figure has accreted divine-warrior characteristics independently of the biblical theophanies. Most importantly: Stone observes that the author 'has shorn this figure of all of its particular characteristics in the interpretation and treated it as a symbol.' This dream-vs.-interpretation gap is the load-bearing observation: 4 Ezra preserves a Dan 7:13-derived cosmic redeemer in the dream but interprets it through a forensic-Davidic key in the angel's exegesis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8333,
+            "nativeSectionId": "P...385"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...385 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...385"
+          },
+          "quote": {
+            "text": "Box rightly discerns a transcendent redeemer, a Son of man figure",
+            "sha256": "0001e81c7011d2391c5e31a5076553c2f982983303f3ae55e16b0af3ec9cac3e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8333,
+            "nativeSectionId": "P...385"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...385 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...385"
+          },
+          "quote": {
+            "text": "Clearly the figure here is dependent on Daniel; see particularly chapter 7",
+            "sha256": "e9538545451d6160af974bcc62c57dd201ae3734ac1ecb33440e4a5d21ea1cca"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8333,
+            "nativeSectionId": "P...385"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...385 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...385"
+          },
+          "quote": {
+            "text": "The man flew with the clouds, an image drawn from Dan 7:13",
+            "sha256": "c9740a80eb5ed48a8b44613782ce6846bc21aa35576f8cedc23bcd5c1f7bbfe2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8112,
+            "nativeSectionId": "P...211"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...211 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...211"
+          },
+          "quote": {
+            "text": "Box characterized the figure described in the vision as the transcendent “Son of man.”",
+            "sha256": "0cfeaeafe1dd7f56b4488f0b741b33aae3b893e29f56e63cda72ad7dba7c8650"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8112,
+            "nativeSectionId": "P...211"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...211 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...211"
+          },
+          "quote": {
+            "text": "even if \"the man\" in the dream was the traditional \"Son of man,\" the figure seems to have needed intepretation",
+            "sha256": "431c1b8de6b506ee3810ee6e09ea728a2379a905f0d5e67e97877d4c8f06329a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8112,
+            "nativeSectionId": "P...211"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...211 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...211"
+          },
+          "quote": {
+            "text": "shorn this figure of all of its particular characteristics in the interpretation and treated it as a symbol",
+            "sha256": "4b87d8eaa636cfb080760702a281a572a08787ee731552e08d0358c49f6d1da5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8113,
+            "nativeSectionId": "P...212"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...212 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...212"
+          },
+          "quote": {
+            "text": "the man is described using symbolic language that is drawn largely from biblical descriptions of God, particularly his epiphanies as warrior",
+            "sha256": "57b6e9b7b60d5fa79876b462d6b86f3d2824b78a3ba7238d5238402e02e31025"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8113,
+            "nativeSectionId": "P...212"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...212 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...212"
+          },
+          "quote": {
+            "text": "These elements also feature in Daniel 7, which is clearly at play in some way here in 4 Ezra",
+            "sha256": "0b84157df27b868faea80d82eaff21c35e3f3e509163d48b09a2c1e71c74f89e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8113,
+            "nativeSectionId": "P...212"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...212 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...212"
+          },
+          "quote": {
+            "text": "all of these elements have been freed from the concept of God as warrior before the time of 4 Ezra",
+            "sha256": "c3c26fe9291a2c8be4d4c50f52b5686d90875eef570f5abcae0b101dbad9b443"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Dan 7 reception)",
+      "position": "4 Ezra is one of the rare apocalypses that explicitly cites a prior apocalypse: at 12:11 the angel says the eagle is the fourth beast 'which was revealed to your brother Daniel.' Stone treats this as load-bearing: 4 Ezra's author 'sees himself as part of a tradition of apocalyptic teaching, has contemplated and developed prior writing (Daniel), and views his own role as like that of Daniel, whom he terms brother.' The author's relationship to Daniel is not exegetical-commentary but inner-meaning revelation: he claims his own vision 'supersedes Daniel's,' delivering the same end-of-times revelation but in a new, post-70 form. The reuse spans Dan 7 (eagle = fourth beast, three heads, little horn / antichrist tropes; clouds, sea, divine warrior in the man-from-sea), Dan 2 (the mountain carved out without hands), and includes 'fourth-beast' indictment language explicitly drawing on Dan 7:7, 19, 23 + Dan 7:8, 11, 25 'pride' tropes.",
+      "commitment": "strong",
+      "rationale": "Stone calls 4 Ezra's explicit citation of Daniel by name 'a fairly rare instance of explicit reference by an apocalypse to prior apocalyptic writings,' making 4 Ezra exegetically distinctive among Second Temple apocalypses. The 5.1 section ('An Apocalypse') treats this as the book's defining intertextual move: 'The author places himself solidly within apocalyptic tradition. The eagle in Vision 5 is explicitly identified with the fourth of the beasts revealed to your brother Daniel.' The Dan-7 reception is multi-layered: 11:1-2 reuses Dan 7:2 (winds, sea); 11:39, 12:13-14 explicitly reuses Dan 7:7, 19, 23 (fourth-beast terror); 11:43 draws Dan 7:8, 11, 25 'pride' rhetoric; 13:2-3 reuses Dan 7:13 (clouds, son-of-man arising); 13:6 reuses Dan 2:34, 45 (mountain cut without hands). These are not allusions but conscious reapplications.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "The angel adds “which was revealed to your brother Daniel.” This marks the present vision and intepretation as developments of Daniel 7",
+            "sha256": "9eae31f058108c1b511f2e7c2f24be5a6a5d2ea5ba9ccdadac096da037e8e920"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "He sees himself as part of a tradition of apocalyptic teaching, has contemplated and developed prior writing (Daniel)",
+            "sha256": "be64401abaebedb59109c4eda7dfe15f84aecbf64238fcf735c2b9a34fca000f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "It is a claim to possess an inner meaning of scripture, for the Book of Daniel by this time was surely regarded as sacred scripture",
+            "sha256": "55d71548a1ba67569bdc3fbc27d19fec97e663300bc919c6532026b0185b6f0c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "his vision here supersedes Daniel’s",
+            "sha256": "ee8eb966020d64aa60414439aa1e59f04fbe3b6551758acdebddf20c2badb0b7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 7882,
+            "nativeSectionId": "P...37"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...37 — 5.1. An Apocalypse",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...37"
+          },
+          "quote": {
+            "text": "The author places himself solidly within apocalyptic tradition. The eagle in Vision 5 is explicitly identified with the fourth of the beasts revealed “to your brother Daniel.”",
+            "sha256": "18eadef01d720f28d85ab4b050ac6c90abfdfb6eb5cb5438cc5cea898051f707"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8286,
+            "nativeSectionId": "P...348"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...348 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...348"
+          },
+          "quote": {
+            "text": "The general inspiration of this vision is drawn, of course, from Daniel 7",
+            "sha256": "ca2fbafbfd699a548707d7b8eba15672c03099558c3873ce92a195837555f9c0"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Critical-historical method",
+      "position": "Stone interprets 4 Ezra through the standard tools of mid-twentieth-century historical-critical apocalyptic scholarship: source criticism, redaction analysis, tradition history, comparative apocalyptic, and a measured form/structure analysis of each pericope. He defends substantial unity of the book against Box's source-divisive treatment while acknowledging that Vision 6 (the Man-from-Sea) likely incorporates a preexistent allegorical source whose cosmic features the author has overlaid with a forensic-Davidic interpretation. The eagle vision's date is anchored by Schürer's and Gunkel's three-Flavian-emperors identification (Vespasian, Titus, Domitian), placing composition c. 90s c.e. Stone treats apocalyptic visions as deliberate literary compositions whose structural features (introductory phrases, sequence, dream/interpretation gap) carry their meaning.",
+      "commitment": "strong",
+      "rationale": "Stone explicitly engages the principal methodological alternatives — Box's source theory, Brandenburger and Harnisch's dialogical-source theory, Gunkel's allegory-vs.-symbolic-structure distinction — and adjudicates among them by close attention to the book's literary structure and the comparative material from 2 Apocalypse of Baruch, the Similitudes of Enoch, and other Second Temple apocalypses. He uses the dream/interpretation tension in Vision 6 as a critical-historical signal: where the dream and interpretation diverge sharply, an underlying preexistent tradition is likely. Stone is comfortable arbitrating between three major dating theories and concludes for the Schürer/Gunkel three-Flavian-heads identification on the grounds that the details given in the text 'admirably suit' contemporary knowledge of the Flavians. This is not pure form-criticism nor ahistorical literary reading but the standard Hermeneia historical-critical synthesis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8305,
+            "nativeSectionId": "P...365"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...365 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...365"
+          },
+          "quote": {
+            "text": "Therefore, the three heads should be regarded as the three Flavian emperors",
+            "sha256": "b0d96e387d8b0be98f046573ef4d3345c4ef3267415bf8630b28dea1da773019"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8305,
+            "nativeSectionId": "P...365"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...365 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...365"
+          },
+          "quote": {
+            "text": "the date of the composition of the vision in the time of Domitian (81–96 c.e.)",
+            "sha256": "c015eb99b06ee4d45636c852a609fd282d1e5dd345c08531c2a9c349f88b71ff"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 7810,
+            "nativeSectionId": "P...10"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...10 — 2.1. Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...10"
+          },
+          "quote": {
+            "text": "composed in the time of Domitian (81–96 c.e.)",
+            "sha256": "08e0e479406aba292e096b54dc7904c5f3609cae9a897052f0f0a3801d668346"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "4 Ezra inserts a temporary messianic kingdom between the destruction of Rome and the final day of judgment. The Messiah/Man-from-the-Sea destroys the wicked empire by his pronouncement (rebuke / fiery breath = forensic word), then rules over the surviving righteous in the holy land; this kingdom is explicitly NOT eternal and ends with the Messiah's death (cf. 7:29) before the cosmic resurrection and final judgment. Stone reads this as a paradigmatic re-use of Daniel 7's plot rather than single-fulfillment exegesis: 4 Ezra reuses Daniel's judgment-then-kingdom-transfer plot but inserts a transitional messianic interregnum, keeping cosmic universal final judgment as God's prerogative alone. The author lacks Daniel's cosmic universality at the messianic stage; the messianic kingdom is national/regional (in the holy land), the cosmic universal judgment follows after.",
+      "commitment": "strong",
+      "rationale": "Stone observes that the Messiah's judgment in 4 Ezra differs sharply from Daniel 7's: 'as distinct from the judgment in Daniel 7 or in the Similitudes of Enoch, which is unmistakably cosmic in scope, here the elements of universality and resurrection, usually associated by 4 Ezra with final judgment, do not appear.' He reconstructs the underlying plot logic as 'a separation of the eschatological battle from final judgment and a subsequent legalization of the eschatological battle.' This is not fulfillment in a single eschatological event but a multi-stage paradigmatic reuse: Rome destroyed → temporary messianic kingdom → final cosmic judgment by God. The eagle vision exemplifies this: in it, the Messiah's activity is described in legal terms reminiscent of God's own judicial activity.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8111,
+            "nativeSectionId": "P...210"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...210 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...210"
+          },
+          "quote": {
+            "text": "Yet as distinct from the judgment in Daniel 7 or in the Similitudes of Enoch, which is unmistakably cosmic in scope",
+            "sha256": "cf35535e955f1c5ec5e565edbfff0487ead66bc33941918c9ac33e4c4a4b5422"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8111,
+            "nativeSectionId": "P...210"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...210 — Excursus on the Redeemer Figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...210"
+          },
+          "quote": {
+            "text": "a legalization of the eschatological battle, as is already to be observed in Daniel 7",
+            "sha256": "0a8de889a87e6a59f2ac923315b6148c68f8f2babd2fee4de84fbbe59460d75e"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / antichrist typology",
+      "position": "Stone reads 4 Ezra 11:38-43 (the lion's indictment of the eagle) as drawing 'antichrist' tropes directly from Dan 7:8, 11, 25 (the little horn) and Isa 14 (the king of Babylon's pride). The eagle's pride, deceit, oppression of meek, and ascent 'before the Most High' echo Daniel 7's little horn and Isaiah 14's Lucifer. In 4 Ezra, however, these tropes are not assigned to a single individual end-time figure but to the whole eagle/Roman empire collectively (the plural 'them' in 12:32-33), with the three Flavian emperors each carrying the typological burden. Stone treats the 'antichrist' associations of the eagle's heads as cumulatively weighted toward the third head (Domitian), but resists a single-individual identification.",
+      "commitment": "moderate",
+      "rationale": "Stone's commentary on 11:43 lists Dan 7:8, 11, 25 as the loci classici for the pride-of-the-wicked-king tradition that 4 Ezra reapplies to the eagle. He notes the eagle's 'antichrist associations' explicitly. He observes that 'the antichrist associations may be less powerful' in the interpretation than the dream, and that the plural 'them' in 12:32-33 'softens the antichrist associations of the great head.' So the typology is real and load-bearing but not single-individual: 'the plural then would refer, presumably, to the Roman emperors in general.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8290,
+            "nativeSectionId": "P...352"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...352 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...352"
+          },
+          "quote": {
+            "text": "The pride of sinners recurs in the book in an eschatological context",
+            "sha256": "6cedf3463c968b14e6ef8cec94e84edf908a7ef0a23d344d644830844b796e53"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Date and provenance",
+      "position": "4 Ezra was composed in Hebrew in the land of Israel about 100 c.e., specifically in the time of Domitian (81-96 c.e.) and probably in the latter part of his reign. The book is post-70-c.e. and responds directly to the destruction of the Second Temple. Stone follows the Schürer/Gunkel reconstruction in which the eagle's three heads are the Flavian emperors Vespasian, Titus, and Domitian.",
+      "commitment": "strong",
+      "rationale": "Stone treats the dating as solidly anchored by internal evidence (the eagle vision's three-heads identification with the Flavians), external evidence (the book's citation by Clement of Alexandria c. 190 c.e. as a terminus ante quem), and contextual evidence (the centrality of the destruction of Jerusalem to the author's thought). The 5.2.1 introduction frames this clearly: '4 Ezra seems to have been written in the land of Israel, in Hebrew, about 100 c.e.' The eagle-vision date analysis in section 2.1 places the book 'in the time of Domitian (81-96 c.e.), probably in the latter part of his reign, when his cruelty and oppression reached unprecedented heights.' This pre-Christian-but-post-70 dating makes 4 Ezra one of the most important non-Christian Jewish reception events for Daniel 7.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 7891,
+            "nativeSectionId": "S5.2.1"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§S5.2.1 — 5.2.1. Evidence from Messianism",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §S5.2.1"
+          },
+          "quote": {
+            "text": "4 Ezra seems to have been written in the land of Israel, in Hebrew, about 100 c.e.",
+            "sha256": "b5c7f5de14477bd05d0f2df0d03b82ad77e46f0dae03d63adad674dda417a12d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 7810,
+            "nativeSectionId": "P...10"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...10 — 2.1. Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...10"
+          },
+          "quote": {
+            "text": "composed in the time of Domitian (81–96 c.e.)",
+            "sha256": "08e0e479406aba292e096b54dc7904c5f3609cae9a897052f0f0a3801d668346"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "4 Ezra exhibits a multi-stage apocalyptic eschatology: present age dominated by Rome (eagle / fourth empire); messianic woes / age of distress; appearance of the Davidic Messiah (Man-from-Sea / Lion); destruction of Rome by the Messiah's reproof; temporary messianic kingdom in the holy land for a fixed period (cf. 4 Ezra 7:28-29 = 400 years); death of the Messiah and all humans; cosmic chaos; resurrection; cosmic final judgment by God alone. The messianic kingdom is not eternal; final judgment is the dividing point between the two ages.",
+      "commitment": "moderate",
+      "rationale": "Stone's commentary across the redeemer-figure excursus, 7:28-29, and 12:34 establishes this multi-stage scheme as the book's settled framework. The Excursus on the Redeemer concludes that the Messiah and his kingdom are 'consistently held to be temporary. Thus they cannot be the final resolution of the writer's problems.' The day-of-judgment-as-division-point is identified explicitly with 7:113 as the book's framing distinction between the two ages. This is not a Daniel-7-only structure but a more elaborated multi-tier apocalyptic eschatology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8311,
+            "nativeSectionId": "P...370"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...370 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...370"
+          },
+          "quote": {
+            "text": "The messianic kingdom will come to an end; it is not eternal.",
+            "sha256": "7b5b884cead8b3f9b5b11df87e1ca264c679861f3aefa51b12858c2cb8d6c359"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 7:13-14",
+      "positionSummary": "Stone treats Dan 7:13 as the most consequential intertext for the Man-from-the-Sea Vision in 4 Ezra 13. The man's flight 'with the clouds' is unambiguously drawn from Dan 7:13's 'one like a son of man coming with the clouds of heaven.' The cosmic, transcendent characteristics of the man — his rising from the sea, his fiery breath — combine Dan 7:13's son-of-man motif with divine-warrior epiphany imagery (Ps 18:9, Isa 11:4) and Dan 2:34, 45 (the stone cut without hands becomes the mountain on which the man stands). The interpretation in 13:25-52, however, strips most of these features and recasts the figure as 'my servant' — most likely παῖς, not υἱός — performing forensic rather than military judgment. The dream/interpretation tension makes 4 Ezra 13 a uniquely revealing window into Second Temple Son-of-Man speculation: the dream preserves a cosmic Daniel-7-derived redeemer that the author (or his successor) deliberately reformats into a Davidic-messianic key.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8330,
+            "nativeSectionId": "P...383"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...383 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...383"
+          },
+          "quote": {
+            "text": "This element is close to or derived from Dan 7:13",
+            "sha256": "ceba570e9adfb9b02bc786dd1f4827161751aee8aa91c140e2560021aafd7deb"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8330,
+            "nativeSectionId": "P...383"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...383 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...383"
+          },
+          "quote": {
+            "text": "This is reminiscent of Dan 7:2",
+            "sha256": "758fa205caa675d413277de13e1a5237acd5ea9b7e54556e76feda0bc288f7e6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8330,
+            "nativeSectionId": "P...383"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...383 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...383"
+          },
+          "quote": {
+            "text": "In Daniel the monstrous beasts arise from the sea",
+            "sha256": "38e61cbeecebf28690074a7307c6bc5fed594d6a2b282d716f52be8c8d47a690"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8333,
+            "nativeSectionId": "P...385"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...385 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...385"
+          },
+          "quote": {
+            "text": "The man flew with the clouds, an image drawn from Dan 7:13",
+            "sha256": "c9740a80eb5ed48a8b44613782ce6846bc21aa35576f8cedc23bcd5c1f7bbfe2"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 7:23-27",
+      "positionSummary": "Stone reads 4 Ezra 11-12 as a deliberate, comprehensive reuse of Daniel 7's fourth-beast and judgment-of-the-fourth-empire vision. The eagle is explicitly named the 'fourth beast' of Dan 7 in 12:11, with cross-references to Dan 7:7 (the dreadful fourth beast) and 7:23 (the angelic interpretation). The 'fourth kingdom' theme is the explicit organizational principle of the eagle's interpretation; Stone treats Dan 2 + Dan 7 together as 4 Ezra's primary intertextual matrix. Where Daniel 7:23-27 envisions the kingdom transferred to the saints of the Most High after judgment of the fourth beast, 4 Ezra inserts a temporary Davidic-messianic kingdom in the holy land before final cosmic judgment.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8307,
+            "nativeSectionId": "P...366"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...366 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...366"
+          },
+          "quote": {
+            "text": "Specifically the eagle is identified with the fourth beast mentioned in Dan 7:7",
+            "sha256": "2e57ce2464555fe257ea910a313c3609f0e74f418e12798fa46fd5c06ad164e6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8302,
+            "nativeSectionId": "C37.2"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§C37.2 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §C37.2"
+          },
+          "quote": {
+            "text": "The expression \"fourth kingdom\" refers to a widespread theory in the Jewish apocalypses that there will be four great empires",
+            "sha256": "5260d8b327c729dfd7e74f06cdbf429b06c251c06936cf402a0d4287f3e9187d"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Stone identifies Dan 2 (Nebuchadnezzar's statue and the stone cut without hands) as a second major Daniel intertext for 4 Ezra. The four-kingdoms schema in 12:11 follows 'Daniel 2 and 7' jointly. Most striking, 4 Ezra 13:6's description of the Man-from-Sea carving out a great mountain on which to fly is 'clearly dependent on Dan 2:34, 2:45, where a stone is referred to that is cut out without hands.' In the angel's interpretation (13:36), the mountain is identified as Zion, manifesting itself as a 'built city' — and the phrase 'carved out without hands' is added by the interpreter even though the dream said the man himself carved out the mountain. So 4 Ezra reuses Dan 2's redemption-stone motif, but transforms it: the stone becomes a mountain, the mountain becomes the man's vehicle, and finally the mountain becomes Zion — a serial reinterpretation that compounds the Danielic intertext.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8333,
+            "nativeSectionId": "P...385"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...385 — Commentary",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...385"
+          },
+          "quote": {
+            "text": "The verse is clearly dependent on Dan 2:34﻿*﻿ and 2:45﻿*﻿, where a stone is referred to that is cut out “without hands”",
+            "sha256": "a57d335fbfa591d1cbbec639f97c82b5ad76dc83f589227778e5fae74f09b353"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:HRMNEIAEZR4",
+            "logosArticleNum": 8348,
+            "nativeSectionId": "P...398"
+          },
+          "frontend": {
+            "author": "Stone",
+            "title": "Fourth Ezra: A Commentary on the Book of Fourth Ezra (Hermeneia)",
+            "section": "§P...398 — Function and Content",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Stone, Hermeneia 4 Ezra, §P...398"
+          },
+          "quote": {
+            "text": "The image is most likely drawn from Daniel 2",
+            "sha256": "d27251fb058aa42329f0127ba9232e01aa25921228cd8054729bfe60c5de73ba"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Reads 4 Ezra 11-12 as the locus classicus for the Jewish post-70-c.e. reidentification of Daniel 7's fourth beast as Rome rather than Greece — making 4 Ezra one of the most consequential Daniel-7 reception events of the Second Temple period.",
+    "Treats 4 Ezra 12:11 ('your brother Daniel') as a 'rare instance of explicit reference by an apocalypse to prior apocalyptic writings' — 4 Ezra is unusual in citing its Vorlage by name, claiming inner-meaning revelation that 'supersedes Daniel's.'",
+    "Uses the dream/interpretation tension in Vision 6 (cosmic Son-of-Man-from-Sea in dream vs. forensic 'my servant' in interpretation) as a critical-historical signal that the author is reformatting an existing Dan-7-derived cosmic-redeemer tradition into the book's Davidic-messianic key — preserving the pre-existing tradition while overlaying a new reading.",
+    "Defends the substantial unity of the book against Box's source-divisive treatment, but allows Vision 6's vision-segment to derive from a preexistent allegorical source the author has glossed.",
+    "Observes that the Greek word translated 'son' (filius) in the Latin's 'son of God' references is most likely παῖς ('servant'), with Hebrew Vorlage עבד ('servant'), so the figure is Servant/Davidic, not Son-of-God in the Christian-titular sense — placing 4 Ezra's Christology firmly inside Jewish messianic boundaries.",
+    "Anchors the eagle vision's three-Flavian-emperor identification (Vespasian, Titus, Domitian) following Schürer/Gunkel, dating the book to the latter part of Domitian's reign — making 4 Ezra a near-contemporary of Revelation that nonetheless represents a parallel and distinct Jewish Dan-7 reception."
+  ],
+  "uncertainties": [
+    "Pilot axes A (genre framework — historical/figural for Daniel 7 itself), E (the 'one like a son of man' as individual-vs.-corporate at the Daniel 7 source level), and F (atemporal vs. dispensational reading of Daniel 7 itself) are not Stone's questions; he is interpreting 4 Ezra's reception of Daniel 7, not Daniel 7 directly. His positions on these axes can only be inferred indirectly from how 4 Ezra repurposes Daniel 7.",
+    "Whether 4 Ezra 13:1-13a (the dream of the Man-from-Sea) is a preexistent traditional source or the author's own composition: Stone leans toward preexistent on the basis of the dream/interpretation tension, but acknowledges the literary evidence is ambiguous.",
+    "Stone is silent on whether 4 Ezra's redactor knew Revelation or vice versa — he treats them as parallel post-70 Jewish/Christian Dan-7 receptions without claiming literary dependence in either direction.",
+    "The PASSAGE_COVERAGE_VOCAB does not yet include 4 Ezra 11-13 entries (the actual primary text Stone is interpreting); passageCoverage[] therefore lists the Daniel verse-blocks Stone substantively engages while interpreting 4 Ezra's reuse of them. A future vocab extension could add '4 Ezra 11-12' and '4 Ezra 13' as explicit Second-Temple reception entries parallel to '1 En 37-71'."
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom — 4 Ezra deliberately reidentifies Daniel 7's fourth beast as Rome rather than Greece; the Eagle Vision (chs. 11-12) is a self-conscious post-70 c.e. rewriting of Daniel 7 in the late Domitianic period.",
+      "J: Son of Man — the Man-from-the-Sea in 4 Ezra 13 is a transcendent Redeemer figure whose superhuman, divine-warrior, cloud-flying characteristics derive directly from Dan 7:13 (combined with Dan 2 stone-cut-without-hands and divine-warrior epiphany traditions); but the interpretation in 13:25-52 strips these cosmic features and recasts the man as a forensic, Davidic-Messianic figure.",
+      "N: Cross-book coherence (Dan 7 reception) — 4 Ezra is one of the rare apocalypses that explicitly cites a prior apocalypse: 4 Ezra 12:11 names Daniel as the seer's brother and identifies the eagle as the fourth beast of Dan 7, claiming to receive an inner-meaning revelation that supersedes Daniel's.",
+      "L: Critical-historical method — Stone reads 4 Ezra through redaction-critical, source-critical, and tradition-historical lenses while defending the book's substantial unity against earlier source-divisive treatments (esp. Box); the eagle-vision date is anchored by the Schürer/Gunkel three-Flavian-emperors identification (Vespasian, Titus, Domitian).",
+      "O: Fulfillment structure — the Messiah/man does not bring final eschatological judgment but a temporary messianic kingdom that ends in death and final judgment; 4 Ezra paradigmatically reuses Daniel 7's plot (judgment of last empire → kingdom transfer) while inserting an intermediate messianic interregnum, keeping cosmic final judgment as God's prerogative alone.",
+      "K: Date — composition in the time of Domitian (81-96 c.e.), probably in the latter part of his reign; the book is post-70-c.e., written in Hebrew in the land of Israel, c. 100 c.e."
+    ],
+    "moderate": [
+      "C: 'Antichrist' / oppressive-king typology — Stone notes that 4 Ezra's indictment of the eagle in 11:38-43 draws directly on the 'little horn' of Dan 7:8, 11, 25 plus the Isa 14 oppressor, but does not fully systematize a 'little horn = antichrist = specific Roman emperor' identification; he sees a typology spread across the three heads (Flavian emperors) rather than a single individual.",
+      "H: Two-age structure — 4 Ezra holds an apocalyptic two-age framework (this age, the messianic kingdom as a temporary transition, and final judgment dividing the ages), with the messianic kingdom expected to come to an end."
+    ],
+    "tentative": [
+      "Whether 4 Ezra 13:1-13a (the Man-from-Sea dream) is a preexistent traditional source the author has glossed with a divergent forensic-Davidic interpretation, or his own composition; Stone leans toward the former on the basis of the dream/interpretation tension."
+    ]
+  }
+}

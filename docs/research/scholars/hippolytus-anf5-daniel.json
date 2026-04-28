@@ -1,0 +1,1150 @@
+{
+  "scholarId": "hippolytus-anf5-daniel",
+  "authorDisplay": "Hippolytus of Rome",
+  "workDisplay": "Fragments on Daniel + On Christ and Antichrist + On the End of the World (ANF 5)",
+  "resourceId": "LLS:6.50.5",
+  "resourceFile": "anf05.logos4",
+  "traditionTag": "patristic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 9:20-27",
+    "Dan 12:1-13",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20",
+    "Matt 24"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome - explicit, repeated, present-tense (the kingdom that still stands); the most influential pre-Augustinian Latin/Greek precedent for the Roman identification.",
+      "C: Little horn = future eschatological Antichrist - uproots three of ten kings (Egypt, Libya, Ethiopia), restores the kingdom of Judah, rules 3.5 years; Antiochus Epiphanes is a partial type only.",
+      "F: Chiliastic chronology - pre-Augustinian millenarianism: 6,000 years from Adam, Christ at year 5500, 500 years remaining to a literal Sabbath-millennium of saints reigning with Christ. This is the position Jerome will later excoriate (Cesset ergo mille annorum fabula).",
+      "J: Son of Man = pre-existent divine Christ enthroned with the Father - fused with Dan 2 stone-cut-without-hands; explicit Father-Son distinction at Dan 7:13-14.",
+      "K: Saints kingdom = literal millennial reign with Christ on earth before the eternal state - distinct from Jerome later spiritualized-only reading.",
+      "L: Predictive prophecy + typological recapitulation + anti-mimetic christology - Antichrist mimics Christ at every point (lamb-form, royal claim, dispersed sheep, seal, temple-building); Antiochus is type, Antichrist is antitype.",
+      "N: Tight cross-book synthesis - Dan 7 -> Rev 13 (sea-beast + earth-beast = Antichrist + false prophet) -> Rev 17 (seven hills, ten kings) -> 2 Thess 2 (man of sin) -> Matt 24 (abomination); the canonical Western synthesis is constructed here."
+    ],
+    "moderate": [
+      "B-prime: Mystical-political reading of the iron-and-clay toes as democracies (demokratiai) - an unusual Greek-political reading not picked up by later Latin tradition.",
+      "H: Eschatology with two advents and dual forerunners (John the Baptist for the first; Enoch + Elijah for the second)."
+    ],
+    "tentative": [
+      "A: Sixth-century date - assumed but not argued (Hippolytus precedes Porphyry by a generation; the question was not yet live).",
+      "O: Method - exegetical-typological, not refutational; he engages Greek philosophical heresy in Refutation of All Heresies but treats Daniel itself as transparent prophecy.",
+      "Antichrist tribe = Dan (Christ and Antichrist sec. 15) - speculative tribal genealogy; an interpretive curiosity not engaged by the pilot axes."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Dating / authorship",
+      "position": "Sixth-century BCE composition by the historical Daniel - assumed without argument; the Maccabean redating is post-Hippolytan (Porphyry Against the Christians appeared only c. 270 CE, a generation after Hippolytus death).",
+      "commitment": "tentative",
+      "rationale": "Hippolytus opens the Fragments with a straightforward rehearsal of Daniel biography (born in the time of the prophetic ministry of the blessed Jeremiah, and in the reign of Jehoiakim). He treats the prophecies as Daniel own predictions, fulfilled in real history. Critical-date debate did not yet exist as a live question; this commitment is implicit, not defended. Reading him as an explicit anti-critical voice is anachronistic.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6029,
+            "nativeSectionId": "s1.v5.a0.w2.b1.ch23"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, I (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. s1.v5.a0.w2.b1.ch23 - Fragments on Daniel, I",
+            "page": 433,
+            "pageEnd": 434,
+            "citationString": "Hippolytus, Fragments on Daniel, I, sec. s1.v5.a0.w2.b1.ch23 (pp. 433-434) (ANF 5)"
+          },
+          "quote": {
+            "text": "to discuss the prophecies contained in the visions of the blessed Daniel, (as well as) his manner of life from his boyhood in Babylon",
+            "sha256": "c23ff3718011f609d9e684e938c139c6c6940a0fe1aa42f71d91554d24fa9c0e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6029,
+            "nativeSectionId": "s1.v5.a0.w2.b1.ch23"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, I (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. s1.v5.a0.w2.b1.ch23 - Fragments on Daniel, I",
+            "page": 433,
+            "pageEnd": 434,
+            "citationString": "Hippolytus, Fragments on Daniel, I, sec. s1.v5.a0.w2.b1.ch23 (pp. 433-434) (ANF 5)"
+          },
+          "quote": {
+            "text": "I too shall proceed to bear my testimony to that holy and righteous man, a prophet and witness of Christ, who not only declared the visions of Nebuchadnezzar the king",
+            "sha256": "bcf82ce0bb94e6ca65128f3d631de6a943f7f8fe1cbf742ee362b37bc4fe9063"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome - present-tense, contemporaneously ruling at the time of writing; the iron of Daniel 2 and the iron-toothed terrible beast of Daniel 7. The toes/clay-iron mix represents future democracies (Greek: demokratiai) into which Rome will fragment.",
+      "commitment": "strong",
+      "rationale": "Hippolytus identification is doubly distinctive: (1) he uses the present tense - the kingdom that still stands, the kingdom which is now established, already the iron rules - collapsing the prophetic horizon with his own moment; (2) he reads the iron-and-clay toes as democracies (demokratiai), an unusual Greek-political category not taken up by later Latin tradition. This Roman identification is pre-Origenist and arguably the load-bearing precedent for the entire Western anti-Roman eschatological reception of Daniel 7.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6030,
+            "nativeSectionId": "s1.v5.a0.w2.b1.ch24"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. s1.v5.a0.w2.b1.ch24 - Fragments on Daniel, II",
+            "page": 434,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. s1.v5.a0.w2.b1.ch24 (p. 434) (ANF 5)"
+          },
+          "quote": {
+            "text": "Who, then, are meant by this but the Romans, whose kingdom, the kingdom that still stands, is expressed by the iron?",
+            "sha256": "9a9692bc225e233a10a91968e7920f42c7c7221b7fc8e451f083c54a6224a4c7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6087,
+            "nativeSectionId": "PAR.351"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.351 - Scholia on Daniel",
+            "page": 442,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.351 (p. 442) (ANF 5)"
+          },
+          "quote": {
+            "text": "After them came the Romans, who were the iron legs of the image, for they were strong as iron.",
+            "sha256": "3fa23c81ff1935004c257a776ac96d07ea0ee4903bea5541ee86303ec42b7401"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6354,
+            "nativeSectionId": "PAR.577"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 25 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.577 - Treatise on Christ and Antichrist, sec. 25",
+            "page": 465,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 25, sec. PAR.577 (p. 465) (ANF 5)"
+          },
+          "quote": {
+            "text": "And who are these but the Romans? which (kingdom) is meant by the iron-the kingdom which is now established",
+            "sha256": "5994079f6d05543d2006b10bd8e6eccb352117bf6b5d01e1bce51f63b1412ccf"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6362,
+            "nativeSectionId": "PAR.585"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 33 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.585 - Treatise on Christ and Antichrist, sec. 33",
+            "page": 466,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 33, sec. PAR.585 (p. 466) (ANF 5)"
+          },
+          "quote": {
+            "text": "Already the iron rules; already it subdues and breaks all in pieces; already it brings all the unwilling into subjection; already we see these things ourselves.",
+            "sha256": "ef688c2ca0c8d7ddbb22420ede6ce4c9709329d513f50711614150f000e3d06a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Future eschatological Antichrist - a personal individual who arises after the dissolution of Rome into ten contemporaneous kings, uproots three of them (Egypt, Libya, Ethiopia), restores the kingdom of Judah, persecutes the saints for 3.5 years, and is destroyed at Christ return. Antiochus IV is a partial historical type, not the eschatological referent.",
+      "commitment": "strong",
+      "rationale": "Hippolytus is the foundational source for the canonical Western Antichrist tradition: a personal future tyrant who restores the Jewish kingdom, uproots three specific kings (Egypt-Libya-Ethiopia - repeated identically in Christ and Antichrist sec. 25 and Scholia sec. 19), and persecutes the saints for 3.5 years. Jerome (c. 407) inherits this scheme verbatim and credits all the commentators of the Christian Church; Hippolytus is the earliest extant articulation. His distinctive twist is that the Antichrist mimics Christ point-by-point (lamb-form, royal claim, Jewish lineage, signs and wonders) - an anti-mimetic christology unique to him.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6031,
+            "nativeSectionId": "PAR.297"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.297 - Fragments on Daniel, II",
+            "page": 434,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.297 (p. 434) (ANF 5)"
+          },
+          "quote": {
+            "text": "by which none other is meant than the antichrist that is to rise; and he shall set up the kingdom of Judah",
+            "sha256": "851caa5a88c7da3c6f98a472f2990e24f2d709b9fb0b415503a3a3f3b10c6ef7"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6111,
+            "nativeSectionId": "PAR.375"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.375 - Scholia on Daniel",
+            "page": 445,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.375 (p. 445) (ANF 5)"
+          },
+          "quote": {
+            "text": "the little horn, which is Antichrist, shall appear suddenly in their midst, and righteousness shall be banished from the earth",
+            "sha256": "9c8b3012652bb74db2af6bfceac0aa34b9649f4d5e9cd86cc93c78bf6645a647"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6354,
+            "nativeSectionId": "PAR.577"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 25 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.577 - Treatise on Christ and Antichrist, sec. 25",
+            "page": 465,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 25, sec. PAR.577 (p. 465) (ANF 5)"
+          },
+          "quote": {
+            "text": "And under this was signified none other than Antichrist, who is also himself to raise the kingdom of the Jews. He says that three horns are plucked up by the root by him, viz., the three kings of Egypt, and Libya, and Ethiopia",
+            "sha256": "2c5b961c67c3c6752b44eac72c88edc05d90ea2ce63f2969db423d290a63bada"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6117,
+            "nativeSectionId": "PAR.381"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.381 - Scholia on Daniel",
+            "page": 446,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.381 (p. 446) (ANF 5)"
+          },
+          "quote": {
+            "text": "And amid these another little horn shall rise, which is that of Antichrist. And it shall pluck by the roots the three others before it; that is to say, he shall subvert the three kings of Egypt, Libya, and Ethiopia",
+            "sha256": "14f919b474bced7d8258d85752d346262bb7aa385b0716cfaf0fa273d8227b7b"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, half a time + chiliastic chronology",
+      "position": "3.5 literal years of Antichrist persecution (time = 1 yr, times = 2 yrs, half = 0.5 yr); embedded in a 6,000-year world chronology with Christ at year 5,500 and a Sabbath-millennium of the saints reigning with Christ comprising the seventh thousand.",
+      "commitment": "strong",
+      "rationale": "Hippolytus 6,000-year scheme - drawn from Ps 90:4 / 2 Pet 3:8 (a day is as a thousand years) and the Genesis 1 hexaemeron - places Christ incarnation at year 5,500 (calculated mystically from the 5.5 cubits of the Ark of the Covenant), giving 500 years until the millennial Sabbath. The fourth beast will reign 500 years (Frags. on Daniel II sec. 7) is a near-eschatological calculation: Hippolytus expects the Antichrist within his own historical horizon. This explicit chiliasm is what Augustine (City of God XX.7-9) and Jerome (Comm. Dan. 7) will later reject as the mille annorum fabula.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6072,
+            "nativeSectionId": "PAR.338"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.338 - Fragments on Daniel, II",
+            "page": 441,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.338 (p. 441) (ANF 5)"
+          },
+          "quote": {
+            "text": "By the stretching forth of His two hands He signified His passion",
+            "sha256": "8efdfec5e2331b68c0e04c05d868f8c12dba08d36e0315603971c81aa34816bc"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6072,
+            "nativeSectionId": "PAR.338"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.338 - Fragments on Daniel, II",
+            "page": 441,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.338 (p. 441) (ANF 5)"
+          },
+          "quote": {
+            "text": "He indicated the three years and a half of Antichrist",
+            "sha256": "b94873342a74dac6ddc5a0b4aa860e6c16d6d4926c14c29ba870c00e87a3c6c6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6131,
+            "nativeSectionId": "PAR.395"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.395 - Scholia on Daniel",
+            "page": 446,
+            "pageEnd": 447,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.395 (pp. 446-447) (ANF 5)"
+          },
+          "quote": {
+            "text": "By this he indicated the three and a half years of Antichrist. For by a time he means a year; and by times, two years; and by an half time, half a year.",
+            "sha256": "b3369b628d39a96d358be055c0ecff094510e33f4995bbbfbd0874a466e9818a"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological architecture",
+      "position": "Two advents of Christ (humble-incarnate, glorious-judicial); dual forerunners (John the Baptist for the first; Enoch + Elijah for the second); resurrection of the just to everlasting life, of the wicked to shame; final judgment + lake of fire.",
+      "commitment": "moderate",
+      "rationale": "Hippolytus articulates the two-advent schema with explicit cross-referencing to Isaiah 53 (humble first coming) and Daniel 7:13-14 (glorious second coming). His dual-forerunner reading (Enoch + Elijah for the second advent) is grounded in Rev 11:3 and the assumption of Enoch in Sirach 44:16. The resurrection-judgment synthesis pulls from Dan 12:2, Isa 26:19, John 5:25 - Hippolytus is unusually attentive to Daniel resurrection text alongside the rest of his eschatology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6373,
+            "nativeSectionId": "PAR.596"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 44 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.596 - Treatise on Christ and Antichrist, sec. 44",
+            "page": 469,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 44, sec. PAR.596 (p. 469) (ANF 5)"
+          },
+          "quote": {
+            "text": "For as two advents of our Lord and Saviour are indicated in the Scriptures, the one being His first advent in the flesh, which took place without honour by reason of His being set at nought",
+            "sha256": "2335a20c36d1c4f640ef9af18e1768c039f87e04fb9aba4f24163a11ec969cea"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6376,
+            "nativeSectionId": "PAR.599"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 47 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.599 - Treatise on Christ and Antichrist, sec. 47",
+            "page": 469,
+            "pageEnd": 470,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 47, sec. PAR.599 (pp. 469-470) (ANF 5)"
+          },
+          "quote": {
+            "text": "He, being now elated in heart, begins to exalt himself, and to glorify himself as God, persecuting the saints and blaspheming Christ",
+            "sha256": "ff2a116226936cc907f1a76f17bea5e02974ce232f488e15a4b1f855f45aef10"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6394,
+            "nativeSectionId": "PAR.617"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 65 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.617 - Treatise on Christ and Antichrist, sec. 65",
+            "page": 474,
+            "pageEnd": 475,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 65, sec. PAR.617 (pp. 474-475) (ANF 5)"
+          },
+          "quote": {
+            "text": "And many of them that sleep in the dust of the earth shall arise, some to everlasting life",
+            "sha256": "660e05d27ee109051eb56af91698e717054a13aaff7a27f110483ae0c1bdf6ab"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Dan 7:13-14)",
+      "position": "Pre-existent divine Christ enthroned with the Father - explicitly distinguished from the Ancient of Days, identified with the stone-cut-without-hands of Daniel 2, and granted dominion as the Father gives all power to the Son.",
+      "commitment": "strong",
+      "rationale": "Hippolytus systematically fuses Daniel 7:13-14 with Daniel 2: the Son of Man IS the stone-cut-without-hands. This identification - independently asserted in three loci (Frags. II sec. 3, Other Fragments, Christ and Antichrist sec. 26) - becomes the canonical patristic synthesis. He is also explicit on Father-Son distinction at the throne scene: By the Ancient of days he means none other than the Lord and God and Ruler of all, and even of Christ Himself - a phrase that anticipates the Trinitarian formulations made explicit only after Nicaea, but already implicit in Hippolytus anti-Modalist polemics elsewhere.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6135,
+            "nativeSectionId": "s1.v5.a0.w2.b1.ch28"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Other Fragments on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. s1.v5.a0.w2.b1.ch28 - Other Fragments on Daniel",
+            "page": 447,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Other Fragments on Daniel, sec. s1.v5.a0.w2.b1.ch28 (p. 447) (ANF 5)"
+          },
+          "quote": {
+            "text": "This is the stone which becomes a great mountain, and fills the earth",
+            "sha256": "52464bde7d74aa474bb009e4def58aad195057facfdbbf9d11cd8825dc6cdee9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6113,
+            "nativeSectionId": "PAR.377"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.377 - Scholia on Daniel",
+            "page": 445,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.377 (p. 445) (ANF 5)"
+          },
+          "quote": {
+            "text": "By the Ancient of days he means none other than the Lord and God and Ruler of all, and even of Christ Himself, who maketh the days old, and yet becometh not old Himself by times and days.",
+            "sha256": "ed9a8752ef55ad04fd8cf9eeb7a025f98990cafe91df8b2d6df4076a0fcff6c8"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6114,
+            "nativeSectionId": "PAR.378"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.378 - Scholia on Daniel",
+            "page": 445,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.378 (p. 445) (ANF 5)"
+          },
+          "quote": {
+            "text": "The Father, having put all things in subjection to His own Son, both things in heaven and things on earth, showed Him forth by all as the first-begotten of God",
+            "sha256": "e3f6db8e53c6c2ca2169e2fbad93a7ba2a19271d9107ff9e16e14112aaaadf93"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6355,
+            "nativeSectionId": "PAR.578"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 26 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.578 - Treatise on Christ and Antichrist, sec. 26",
+            "page": 465,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 26, sec. PAR.578 (p. 465) (ANF 5)"
+          },
+          "quote": {
+            "text": "He showed all power given by the Father to the Son",
+            "sha256": "2f1045dc9f297d3ab3cc453f48cc89791e03d4d37bcf6db8bfc907bbda89df58"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6355,
+            "nativeSectionId": "PAR.578"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 26 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.578 - Treatise on Christ and Antichrist, sec. 26",
+            "page": 465,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 26, sec. PAR.578 (p. 465) (ANF 5)"
+          },
+          "quote": {
+            "text": "ordained Lord of things in heaven, and things on earth, and things under the earth, and Judge of all",
+            "sha256": "9693b0700cbfab2f3b4832487d8563f0dd0e107e4b059744badad550a2c99946"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints / fifth kingdom",
+      "position": "Chiliastic millennium of saints reigning with Christ on earth (corresponding to the Sabbath-thousand-year of the cosmic week), followed by the eternal state - distinct from Jerome later spiritualized never-earthly reading.",
+      "commitment": "strong",
+      "rationale": "Hippolytus saints inherit a literal millennial reign on earth (the cosmic Sabbath = the 7th thousand of years), then enter the eternal state. This is the position the Latin tradition will later REJECT under Augustinian-Tyconian influence. Hippolytus reading is the closest patristic precedent for modern dispensationalist premillennialism, though without dispensationalism Israel/church distinction. The kingdom of the saints is BOTH the heavenly endless enjoyment AND the millennial reign - Hippolytus does not segregate the two.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6033,
+            "nativeSectionId": "PAR.299"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.299 - Fragments on Daniel, II",
+            "page": 435,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.299 (p. 435) (ANF 5)"
+          },
+          "quote": {
+            "text": "And 6,000 years must needs be accomplished, in order that the Sabbath may come, the rest, the holy day",
+            "sha256": "24b0491bc2883d3c4234af03d4ba94de5c6cde13ba9e4d6377c3532db2a19a74"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6033,
+            "nativeSectionId": "PAR.299"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.299 - Fragments on Daniel, II",
+            "page": 435,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.299 (p. 435) (ANF 5)"
+          },
+          "quote": {
+            "text": "For the Sabbath is the type and emblem of the future kingdom of the saints",
+            "sha256": "0179cad4a97e84ace503406d97741902fbe74e3b1088178631772fd5b78c0845"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6118,
+            "nativeSectionId": "PAR.382"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.382 - Scholia on Daniel",
+            "page": 446,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.382 (p. 446) (ANF 5)"
+          },
+          "quote": {
+            "text": "But to His servants, and prophets, and martyrs, and to all who fear Him, He will give an everlasting kingdom; that is, they shall possess the endless enjoyment of good.",
+            "sha256": "fb08e11cad751b24c5aeb3568d5bce607f02fad93aff9be4ae7c2f69dfd0660e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6135,
+            "nativeSectionId": "s1.v5.a0.w2.b1.ch28"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Other Fragments on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. s1.v5.a0.w2.b1.ch28 - Other Fragments on Daniel",
+            "page": 447,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Other Fragments on Daniel, sec. s1.v5.a0.w2.b1.ch28 (p. 447) (ANF 5)"
+          },
+          "quote": {
+            "text": "the stone that smites the image, and breaks it; and it will subvert all the kingdoms, and give the kingdom to the saints of the Most High",
+            "sha256": "7932e45215d23179ecd87292ce95a28288d11c1bb5580ff7306d8991dfb95583"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic for apocalyptic",
+      "position": "Predictive prophecy fulfilled point-by-point in history, layered with typological recapitulation: Antiochus -> Antichrist; Babylon -> Rome -> eschatological tyranny; Christ -> Antichrist (anti-mimetic).",
+      "commitment": "strong",
+      "rationale": "Hippolytus hermeneutic move that becomes most influential is anti-mimetic christology - the Antichrist mimics Christ at every point (lion-figure, lamb-form, royal claim, dispersed sheep, seal, temple-building). This is the foundational structure for the entire later Christian Antichrist literature (Adso, Joachim of Fiore, Reformation polemics). Its source is Hippolytus reading of Daniel 7 beasts AS perverse-images-of-Christ, not just as foreign empires. The image shown at Nebuchadnezzar furnished a type of the whole world (Scholia sec. 31) - typology is universalized as the basic mode of prophetic reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6087,
+            "nativeSectionId": "PAR.351"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.351 - Scholia on Daniel",
+            "page": 442,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.351 (p. 442) (ANF 5)"
+          },
+          "quote": {
+            "text": "How, then, should we not mark the things prophesied of old in Babylon by Daniel, and now yet in the course of fulfilment in the world?",
+            "sha256": "e8026c82efac9dfe31d8dc928305a8b730dd37d8485297bb3e8f8950bfa9b409"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6087,
+            "nativeSectionId": "PAR.351"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.351 - Scholia on Daniel",
+            "page": 442,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.351 (p. 442) (ANF 5)"
+          },
+          "quote": {
+            "text": "the image shown at that time to Nebuchadnezzar furnished a type of the whole world.",
+            "sha256": "5fd7307c6df55360430a64932ab14492edd1960124ad9031441dcca8bef97f6a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6111,
+            "nativeSectionId": "PAR.375"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Scholia on Daniel (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.375 - Scholia on Daniel",
+            "page": 445,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Scholia on Daniel, sec. PAR.375 (p. 445) (ANF 5)"
+          },
+          "quote": {
+            "text": "But if those former things did happen in their proper seasons, as was foretold, these things also shall certainly be fulfilled.",
+            "sha256": "1bb11e8c43970977a5fe773c30ec56678fb4bd68a40b1458e20a306fde00e485"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6335,
+            "nativeSectionId": "PAR.558"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 6 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.558 - Treatise on Christ and Antichrist, sec. 6",
+            "page": 462,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 6, sec. PAR.558 (p. 462) (ANF 5)"
+          },
+          "quote": {
+            "text": "Now, as our Lord Jesus Christ, who is also God, was prophesied of under the figure of a lion",
+            "sha256": "a0a834350224eba3425e5ee5854d15ca2f029f831b0914f309a81a01394e3ec6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6335,
+            "nativeSectionId": "PAR.558"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 6 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.558 - Treatise on Christ and Antichrist, sec. 6",
+            "page": 462,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 6, sec. PAR.558 (p. 462) (ANF 5)"
+          },
+          "quote": {
+            "text": "on account of His royalty and glory, in the same way have the Scriptures also aforetime spoken of Antichrist as a lion, on account of his tyranny and violence.",
+            "sha256": "0cdd7084b472b38f7a44c589dac188863667a6584668fa8d5c1ab4b8bdd47da9"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6335,
+            "nativeSectionId": "PAR.558"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 6 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.558 - Treatise on Christ and Antichrist, sec. 6",
+            "page": 462,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 6, sec. PAR.558 (p. 462) (ANF 5)"
+          },
+          "quote": {
+            "text": "For the deceiver seeks to liken himself in all things to the Son of God.",
+            "sha256": "aced9fc9572e99fa650d37453072da148bdea9a86be53612d57f28b24317e135"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book political theology",
+      "position": "Tight integration of Daniel 7, Revelation 13/17, 2 Thessalonians 2, and Matthew 24: the sea-beast + earth-beast of Rev 13 are Antichrist + false prophet; Rev 17 seven hills and ten kings overlay Dan 7 fourth beast; the Latinus name speculation links the Roman empire law-pattern to Antichrist future rule.",
+      "commitment": "strong",
+      "rationale": "Hippolytus produces the canonical Western synthesis: Daniel fourth beast = Revelation beast = Paul man of sin = Christ abomination of desolation. His reading that the second beast (Rev 13:11) is the false prophet rather than a separate political power becomes standard. His tentative gematria for Latinus (Lateinos = 666) - though offered with hedge (it is not in our power to explain it exactly) - is the earliest extant identification, and feeds directly into all later Roman-Catholic-Antichrist Reformation polemics by way of Irenaeus (whom Hippolytus follows). The law of Augustus parallel to Antichrist empire is a striking political-theological move: the future tyrant rules under a Roman-imperial juridical pattern.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "By the beast, then, coming up out of the earth, he means the kingdom of Antichrist; and by the two horns he means him and the false prophet after him.",
+            "sha256": "4d40c04ec55eec6c8a6ec3caf598948ffd5c0736bba999df8250c9a9f0a9d192"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "after the manner of the law of Augustus, by whom the empire of Rome was established, he too will rule and govern, sanctioning everything by it, and taking greater glory to himself.",
+            "sha256": "de8e07ee95fffc4836192dc111e3e0730c4366a1cbd807934c9261d65528fbbd"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "the fourth beast, whose head was wounded and healed again",
+            "sha256": "302acd8f8974f3c867965275ee4088fde0e844ddacc8491800fc0a849b376233"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6379,
+            "nativeSectionId": "PAR.602"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 50 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.602 - Treatise on Christ and Antichrist, sec. 50",
+            "page": 470,
+            "pageEnd": 471,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 50, sec. PAR.602 (pp. 470-471) (ANF 5)"
+          },
+          "quote": {
+            "text": "Many names indeed we find",
+            "sha256": "0f34a2f9cb39ff51eae3ede8f03f80c46c7c08c6c1f36c8ad76e563915106780"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6379,
+            "nativeSectionId": "PAR.602"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 50 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.602 - Treatise on Christ and Antichrist, sec. 50",
+            "page": 470,
+            "pageEnd": 471,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 50, sec. PAR.602 (pp. 470-471) (ANF 5)"
+          },
+          "quote": {
+            "text": "the letters of which are the equivalent of this number: such as, for instance, the word Titan",
+            "sha256": "293d3645ce3f975abcefbb972778567226e2915a9be4a31e706ccc374f07b354"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6379,
+            "nativeSectionId": "PAR.602"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 50 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.602 - Treatise on Christ and Antichrist, sec. 50",
+            "page": 470,
+            "pageEnd": 471,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 50, sec. PAR.602 (pp. 470-471) (ANF 5)"
+          },
+          "quote": {
+            "text": "If, then, we take the name as the name of a single man, it becomes Latinus.",
+            "sha256": "21c4901d112d0147abc117d84948d78cc5f4269223241f4191b012ffebacbadc"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6392,
+            "nativeSectionId": "PAR.615"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 63 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.615 - Treatise on Christ and Antichrist, sec. 63",
+            "page": 474,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 63, sec. PAR.615 (p. 474) (ANF 5)"
+          },
+          "quote": {
+            "text": "Now we beseech you, brethren, concerning the coming of our Lord Jesus Christ, and our gathering together",
+            "sha256": "1c526f3402b6d3ae391bfe66ab2b12b658b3c493e021f43170ecb3be040e914b"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Stance toward critical / historical method",
+      "position": "Pre-critical exegetical engagement; not refutational vis-a-vis source-criticism (which did not yet exist as a project against Daniel); the Refutation of All Heresies addresses Greek philosophical heresy, not Daniel-text criticism.",
+      "commitment": "tentative",
+      "rationale": "Critical-historical methods of the kind Porphyry would later mount against Daniel did not yet exist when Hippolytus wrote. His method is straightforward typological-predictive exegesis - he calls his readers to take the Holy Scriptures themselves in hand (Christ and Antichrist sec. 5) and proceeds by exegetical exposition. Reading Hippolytus as an anti-critical voice (in the way Walvoord or even Jerome can be so read) is anachronistic; this is a paraphrase-anchored citation because Hippolytus does not formally theorize his own method.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6334,
+            "nativeSectionId": "PAR.557"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 5 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.557 - Treatise on Christ and Antichrist, sec. 5",
+            "page": 461,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 5, sec. PAR.557 (p. 461) (ANF 5)"
+          },
+          "quote": {
+            "text": "it is proper that we take the Holy Scriptures themselves in hand, and find out from them what, and of what manner, the coming of Antichrist is",
+            "sha256": "10335bb6bd2c39ed18b85b36c6873980b32764b36f14d01cafafc4a69eb1735f"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "The sea-beast (Rev 13:1-10) is the Antichrist kingdom; the earth-beast (Rev 13:11-18) is the false prophet who animates the image, enforces the mark, and operates after the manner of the law of Augustus. Hippolytus reads the wounded-and-healed head of the beast as the fourth beast (Daniel) wounded by Alexander partition and healed by Antichrist revival of imperial unity. The 666 cipher is tentatively glossed as Latinus (Lateinos).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "He will give life unto the image, and the image of the beast will speak.",
+            "sha256": "a54d0bb0a6959856839eff4eda6d772c48ed7eafa234cc4af8618f1eeafe77e6"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "all those who will not worship the image of the beast to be put to death",
+            "sha256": "7f9a4759779f6010869bcbd3ba54c13df4e3760e88bc1e09a49ac5efadac0a34"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6378,
+            "nativeSectionId": "PAR.601"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 49 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.601 - Treatise on Christ and Antichrist, sec. 49",
+            "page": 470,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 49, sec. PAR.601 (p. 470) (ANF 5)"
+          },
+          "quote": {
+            "text": "By the beast, then, coming up out of the earth, he means the kingdom of Antichrist; and by the two horns he means him and the false prophet after him.",
+            "sha256": "4d40c04ec55eec6c8a6ec3caf598948ffd5c0736bba999df8250c9a9f0a9d192"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "The whore on many waters is identified with eschatological Babylon and read against contemporary Rome. The seven heads as seven mountains is taken straight from Rev 17:9; the ten horns as ten future kings overlap Dan 7 ten horns of the fourth beast. This is the foundational fusion of Dan 7 and Rev 17 that drives all later Reformation-era papal-Rome readings (though Hippolytus does not himself draw that conclusion).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6365,
+            "nativeSectionId": "PAR.588"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 36 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.588 - Treatise on Christ and Antichrist, sec. 36",
+            "page": 467,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 36, sec. PAR.588 (p. 467) (ANF 5)"
+          },
+          "quote": {
+            "text": "I will show unto thee the judgment of the great whore that sitteth upon many waters; with whom the kings of the earth have committed fornication",
+            "sha256": "362affbef80d641354682f38f763ccbb330516e808a64e34252e2d56c9b19a13"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6367,
+            "nativeSectionId": "PAR.590"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 38 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.590 - Treatise on Christ and Antichrist, sec. 38",
+            "page": 467,
+            "pageEnd": 468,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 38, sec. PAR.590 (pp. 467-468) (ANF 5)"
+          },
+          "quote": {
+            "text": "The seven heads are seven mountains, on which the woman sitteth. And there are seven kings: five are fallen, and one is, and the other is not yet come",
+            "sha256": "5e052b34e23d09a95f4fcecf5cae53dfc76281db33517c34f413b05293d4d9f7"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "The abomination of desolation in the holy place (Matt 24:15, citing Dan 9:27 / 11:31 / 12:11) is identified with Antichrist eschatological temple desecration. Christ instruction to flee to the mountains becomes the church pattern of withdrawal during the 3.5-year persecution.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6391,
+            "nativeSectionId": "PAR.614"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 62 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.614 - Treatise on Christ and Antichrist, sec. 62",
+            "page": 473,
+            "pageEnd": 474,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 62, sec. PAR.614 (pp. 473-474) (ANF 5)"
+          },
+          "quote": {
+            "text": "When ye shall see the abomination of desolation stand in the holy place",
+            "sha256": "670cc2d156d79a2313e02c76105afba7d4dcd13b6ba4f3646d9f80707ca617c3"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6391,
+            "nativeSectionId": "PAR.614"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Treatise on Christ and Antichrist, sec. 62 (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.614 - Treatise on Christ and Antichrist, sec. 62",
+            "page": 473,
+            "pageEnd": 474,
+            "citationString": "Hippolytus, Treatise on Christ and Antichrist, sec. 62, sec. PAR.614 (pp. 473-474) (ANF 5)"
+          },
+          "quote": {
+            "text": "let them which be in Judea flee into the mountains",
+            "sha256": "55c01a1295edb3651d9a98004a85bcac0b94911b01a22dad5a579a1a91532766"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "The millennium of Rev 20 is read as the cosmic Sabbath: the 7th day of the cosmic week, the saints reigning with Christ for a literal thousand years before the eternal state. Though Hippolytus does not extensively cite Rev 20:1-6 directly, his entire 6,000-year + 1,000-year-Sabbath schema in Frags. on Daniel sec. 3-7 is unintelligible without a Rev 20 millennial reading.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6033,
+            "nativeSectionId": "PAR.299"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.299 - Fragments on Daniel, II",
+            "page": 435,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.299 (p. 435) (ANF 5)"
+          },
+          "quote": {
+            "text": "For the Sabbath is the type and emblem of the future kingdom of the saints",
+            "sha256": "0179cad4a97e84ace503406d97741902fbe74e3b1088178631772fd5b78c0845"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.5",
+            "logosArticleNum": 6033,
+            "nativeSectionId": "PAR.299"
+          },
+          "frontend": {
+            "author": "Hippolytus",
+            "title": "Hippolytus, Fragments on Daniel, II (ANF Vol. 5, ed. Roberts-Donaldson)",
+            "section": "sec. PAR.299 - Fragments on Daniel, II",
+            "page": 435,
+            "pageEnd": null,
+            "citationString": "Hippolytus, Fragments on Daniel, II, sec. PAR.299 (p. 435) (ANF 5)"
+          },
+          "quote": {
+            "text": "a day with the Lord is as a thousand years",
+            "sha256": "6df4de268229b99bfdc669b87a280e4aa6c965bfb53999774da9fde6b6bd4dfa"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Anti-mimetic christology of Antichrist - the deceiver imitates Christ at every point (lamb-form, royal claim, gathered followers, seal, temple-building, signs). This is Hippolytus signature contribution and becomes the structural pattern of all later Christian Antichrist literature.",
+    "Present-tense Roman identification - the kingdom that still stands, already the iron rules. Hippolytus collapses prophetic horizon with his own moment, anticipating only the post-Roman fragmentation into ten democracies (demokratiai), an unusual Greek-political category.",
+    "Tribal genealogy of Antichrist - Hippolytus identifies Antichrist as arising from the tribe of Dan (Christ and Antichrist sec. 15), drawing on Gen 49:17 (Dan shall be a serpent), Jer 8:16, and Dan omission from Rev 7 twelve tribes. This tribe-of-Dan tradition flowers in medieval and early-modern Antichrist literature but is not picked up by Jerome or the Latin mainstream.",
+    "Tentative Latinus gematria - the earliest extant identification of the Rev 13:18 number 666 with Lateinos (Greek), offered with explicit hedge (it is not in our power to explain it exactly). Feeds directly into Reformation-era papal-Rome polemics via Irenaeus (his teacher).",
+    "Three-uprooted-kings = Egypt + Libya + Ethiopia - a specific North-African geographic identification repeated identically in three loci (Frags. II sec. 2, Christ and Antichrist sec. 25, Scholia sec. 19). Jerome inherits this scheme word-for-word in c. 407.",
+    "6,000-year world chronology with mystical numerology - the Ark 5.5 cubits = Christ incarnation at year 5,500; the cosmic Sabbath = the 7th thousand of years = the millennium. This blends Genesis 1, Ps 90:4, 2 Pet 3:8, and Rev 20 into a single chronological scheme.",
+    "Read in pairs with Irenaeus - Hippolytus is Irenaeus disciple (per ANF 5 introductory notice and Eusebius HE VI.20). Many of his Daniel positions (especially the chiliastic millennium and the Lateinos gematria) descend from Adv. Haer. V.25-30, but Hippolytus systematizes them into a sustained Daniel-7 commentary."
+  ],
+  "uncertainties": [
+    "On the seventy weeks (Axis D), Hippolytus identifies Daniel 9:24-27 as a Christological prediction - 7+62 weeks to Christ the Prince, the 70th week split between the two prophets and Antichrist (3.5 + 3.5 years). His chronology is somewhat self-contradictory across the Daniel scholia (49+434=483 years from Babylon to Christ in one place, but 245 yr Persians + 300 yr Greeks does not align elsewhere). The pilot seventy-weeks axis is not pursued as a strong commitment because the chronology is unsystematic.",
+    "On Axis E (genre), Hippolytus does not theorize Daniel as a distinct apocalyptic genre; he reads it as straightforward prophecy with visionary form. The genre question is anachronistic.",
+    "On Axis I (compositional unity), Hippolytus assumes single Daniel-authored composition; the Hebrew/Aramaic split, Greek additions (Susanna, Bel-and-Dragon), and chiastic structure are not engaged. He cites the Greek additions (Song of the Three Children, Susanna) as Daniel own work without remark.",
+    "Lefevre SC 14 unobtainable - the full Greek-French Commentary on Daniel edited by Maurice Lefevre (Sources Chretiennes 14, 1947) is not in Bryan Logos library; the ANF 5 Fragments on Daniel are the maximum freely-available content. The Salmond translation in ANF 5 covers the catena fragments and the major Daniel exegesis preserved in patristic citation chains, but cannot substitute for the SC 14 critical edition. Future work should consult SC 14 to verify the breadth of Hippolytus coverage of Daniel chapters 4-6 and 8 (sparse here) and the Greek text-critical apparatus.",
+    "The Discourse On the End of the World, on Antichrist, and on the Second Coming (Appendix b3, articles 6486-6701 of ANF 5) is editorially flagged as dubious and spurious - ANF 5 vol. ed. Coxe places it in the Appendix with explicit warning. Modern patristics generally regards it as pseudo-Hippolytus (likely 4th-c or later), substantially derivative of the genuine Christ and Antichrist treatise. I have NOT cited it in axis positions; it is preserved here as a parallel-tradition witness only, not as a primary Hippolytan voice. Any reader checking my coverage of On the End should recognize it as deutero-Hippolytan.",
+    "Rev 20 / Axis K: Hippolytus chiliastic premillennialism is robust but is constructed from the cosmic Sabbath-week schema + Rev 20 implication rather than direct Rev 20 verse-citation. Reading him as a Rev 20 expositor overstates the textual base; he is an exegete of Daniel 7 + Rev 13 + the cosmic-week schema who implies a Rev 20 millennium.",
+    "On Antichrist tribal origin from Dan (Christ and Antichrist sec. 15-16): this speculative tribe-of-Dan tradition is not picked up by the pilot axes. It is a notable interpretive curiosity but does not bear on Daniel 7 primary exegesis."
+  ]
+}

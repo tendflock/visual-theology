@@ -1,0 +1,942 @@
+{
+  "scholarId": "newsom-breed-otl-daniel",
+  "authorDisplay": "Newsom & Breed",
+  "workDisplay": "OTL Daniel",
+  "resourceId": "LLS:OTL27DA",
+  "resourceFile": "OTL27DA.logos4",
+  "traditionTag": "critical-modern",
+  "fullTitle": "Daniel: A Commentary (Old Testament Library)",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Bifurcated/compositional dating — pre-Antiochene proto-Dan 7 (Eastern Diaspora response to the Diadochi wars) plus Antiochene-period redaction (167-164 BCE) inserting horns and little horn",
+      "B: Fourth kingdom = Greece, with the fourth beast in ch. 7 narrowed to the Seleucid kingdom (vs. the broader Hellenistic horizon in ch. 2)",
+      "C: Little horn = Antiochus IV Epiphanes; three uprooted horns = Seleucus IV and his two sons; 3.5 years = profanation period; \"change times and law\" reads as challenge to divine sovereignty",
+      "E: Apocalypse-genre approach (SBL/Semeia 14) plus Newsom's distinctive \"epiphanic rhetoric\" analysis — apocalypses persuade by disclosure, not argument",
+      "H: Earth-located, two-tiered eschatology — Israel-on-earth corresponds to angelic holy-ones in heaven, mediated by Michael; judgment takes place on earth",
+      "J: Son of Man = angelic being, specifically the archangel Michael; subsequent visions in Daniel itself reinterpret with increasing specificity (prince of host -> Michael)",
+      "L: Historical-critical with religio-historical method, but methodologically reflexive — distinguishes compositional intertextuality from reader intertextuality; Breed adds reception-history program",
+      "O: Single Antiochene-era referent for original prophetic intent, with reception-history layer cataloging subsequent reuses without collapsing into \"fulfillment\""
+    ],
+    "moderate": [
+      "N: Cross-book coherence as reception phenomenon — rejects prophetic-coherence framing but extensively traces NT, patristic, rabbinic, and Islamic reuses of Dan 7 symbolic resources as legitimate adaptations"
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Date of Daniel",
+      "position": "Bifurcated/compositional: pre-Antiochene proto-Dan 7 (likely Eastern Diaspora, late fourth / early third century BCE, responding to the Diadochi wars) was redacted in the Antiochene crisis of 167-164 BCE to insert the horns/little horn material and lock the chapter to its present form.",
+      "commitment": "strong",
+      "rationale": "Newsom resists both the unitary-Maccabean reading (Collins, Goldingay) and the unitary-traditional reading. She accepts that the final form reflects the Antiochene persecution but argues the simplest model identifies vv. 7f-8, 11b, 20-22, 24-25 as Antiochene additions to an earlier eschatological complement to Dan 1-6. Her argued provenance for the proto-text is the Eastern Diaspora — a parallel to the Babylonian Dynastic Prophecy — rather than Judea. The introduction frames the broader critical paradigm: the late-19th-century critical consensus locates the apocalyptic chapters (and at least their final form) in the Antiochene context.",
+      "compositional": "Pre-Antiochene proto-Dan 7 + Antiochene redaction. Antiochene additions: 7:7f-8 (horns), 7:11b (resumptive perception + arrogant words), 7:20-22 (paraphrase + war on holy ones), 7:24-25 (interpretation of horns + change times and law). Newsom suggests vv. 9-10 and 13-14 may be older hymnic kernel integrated into the redacted whole.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 485,
+            "nativeSectionId": "DA2.1.2"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.2 — Date, Provenance, Structure, and Outline",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.2 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "The final form of the chapter clearly assumes the context of the persecutions of Antiochus IV Epiphanes (in 167–164 b.c.e.).",
+            "sha256": "1aede0c9e4d1a9078b5c48b7375835080af3e55be42c9f17699d2241ba86df77"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 485,
+            "nativeSectionId": "DA2.1.2"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.2 — Date, Provenance, Structure, and Outline",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.2 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "a persuasive case exists for positing a two-stage development of ch. 7, even if the details remain contestable.",
+            "sha256": "d454d495d5302fc8c5964514c0c23936d5aad4d6bf19e9c6a5cbbfe5ec701259"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 485,
+            "nativeSectionId": "DA2.1.2"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.2 — Date, Provenance, Structure, and Outline",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.2 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "make it plausible that ch. 7 was originally composed as an eschatological complement to the cycle of Daniel narratives in chs. 1–6, perhaps as early as the late fourth or early third century b.c.e.",
+            "sha256": "e8c7eabe8bdfe2c2f17683cb00e4f74dbcde0a289feb0bae05dfd280adb0ae4f"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 417,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO.4 — Composition and Development of Daniel MT",
+            "page": 6,
+            "pageEnd": 12,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO.4 (pp. 6–12)"
+          },
+          "quote": {
+            "text": "By the late nineteenth century, however, critical biblical scholarship had been persuaded by the arguments of those who saw at least the apocalypses, if not also the narratives, as originating in the context of the Antiochene persecutions of the second century b.c.e.",
+            "sha256": "2660ac414efd1ccf49e43d5ca7126646c3b941ea3b50aefa8ba652fafa779c9e"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece (Hellenistic kingdom of Alexander), with the fourth-beast in ch. 7 narrowed to the Seleucid kingdom — distinguishing the broader Hellenistic horizon of ch. 2 from the more specific Seleucid focus of ch. 7.",
+      "commitment": "strong",
+      "rationale": "Newsom reads the fourth beast of Dan 7 as more specifically identified with the Seleucid kingdom than the parallel fourth kingdom of Dan 2 — supported by the iron-teeth/devouring imagery (read as Seleucid war elephants), the specific Seleucid horn-iconography (Seleucus I and Antiochus I bull-horn coinage), and the entire cluster of Antiochene-era references that lock the fourth-beast / horn material to the Antiochene crisis. The fourth-beast-equals-Greece axis follows the standard critical four-kingdom schema Babylon-Media-Persia-Greece.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "the fourth beast is identified as a fourth \"kingdom,\" that is, the Hellenistic kingdom of Alexander the Great",
+            "sha256": "97f1bae49c4e3298b8d60e5d75b6212eaaf7c7cda260c6fdea1454b504a1fd77"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "in ch. 7, however, the fourth beast appears to be more specifically identified with the Seleucid kingdom.",
+            "sha256": "a6d78ec5e2b52b14577c63961cec84b476ff54f13f343cf9f24245688f7276e5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "leading a number of interpreters to speculate that the much-feared Seleucid war elephants are the inspiration for this creature",
+            "sha256": "ec77819efed7ab959c3371a5a3389c8dfeffd7746451d4319538ef66f9e51d32"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn (Daniel 7)",
+      "position": "Antiochus IV Epiphanes — anchored in the cluster of Antiochene-period references (blasphemy, war on the holy ones, attempt to change times and law, the 3.5-year period). The three uprooted horns are most plausibly Seleucus IV plus his two sons, given Antiochus's actual usurpation of the Seleucid throne.",
+      "commitment": "strong",
+      "rationale": "Newsom treats the little-horn-as-Antiochus-IV identification as required by the dense cluster of Antiochene markers in ch. 7 interpretive material. The three uprooted horns are best identified with Seleucus IV (assassinated by Heliodorus) and his two sons (the heir Demetrius held hostage in Rome and the young Antiochus murdered by Antiochus IV). The time, times, and half a time is read as 3.5 years tied to the Antiochene profanation. The change times and law Newsom reads as Antiochus challenge to the Most High prerogative to determine sovereignty — a metaphysical-theological reading she prefers over Collins narrower cultic-calendar-disruption reading. The God manifest coinage is also factored as one possible referent for the arrogant words.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "The details associated with the \"little horn\" throughout ch. 7—its blasphemy and arrogance, its war against the holy ones, and its attempt to change \"the times set by decree\"—point to Antiochus IV Epiphanes and the persecutions of 167–164 b.c.e.",
+            "sha256": "081114e8a85780d96e7300856233310b6aa78208c5378012be9a0a0948e9df95"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "Thus the three horns that were uprooted in order to make way for Antiochus IV are probably to be identified with Seleucus IV and his two sons",
+            "sha256": "a86fbb20fcbc0ae6a6c9e562de66d2975ecf093f3f945bc571e9ff5835ef104e"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "the time allotted for Antiochus to exercise power over the holy ones is specified as \"a time, and times, and half a time,\" probably to be understood as three and a half years.",
+            "sha256": "28506215f91b166c3a75e9b5c7590b4ad98786f906b886cecdc07fb461f8ebb5"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "This phrase should be understood as an allusion to Antiochus’s violation of the holiness of the Jerusalem temple",
+            "sha256": "b54edd44599fffcbf1d43dcc593a1c0b152706b55a8e89ce45c6eff5f183c540"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "The arrogant words are sometimes interpreted in light of the divine titles (e.g., \"God manifest [Epiphanes]\") used by Antiochus on some of his coinage",
+            "sha256": "0e85a54d69a6e70e89ac91d07efb430a7006f0b7279806e96a923ce45c178cb7"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Apocalyptic / revelation approach",
+      "position": "Apocalypse-genre approach following the SBL/Semeia 14 definition (revelation mediated by an otherworldly being to a human recipient, disclosing transcendent reality), supplemented by Newsom's distinctive analysis of apocalyptic rhetoric as epiphanic — the genre persuades by disclosure of transcendent reality rather than argument.",
+      "commitment": "strong",
+      "rationale": "Newsom adopts the SBL/Semeia 14 genre definition for apocalypse but pushes past genre-classification into a rhetorical analysis: apocalypses do not argue, they disclose. The reader is constructed as the intended audience of secret writings; first-person speech, vivid bodily descriptions of seers, and overwhelming theophanic imagery generate a sublime that establishes the seer authority and the audience privileged-insider status. Numerical patterns (4, 7, 70, 1290/1335) participate in the rhetoric of transcendent order. This is a methodologically richer frame than the classical preterist/historicist/futurist/idealist Revelation-axis schema — Newsom does not engage that schema at all.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 421,
+            "nativeSectionId": "INTRO.5.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO.5.3 — The Apocalyptic Dream Visions: Origins, Genre, and Rhetoric",
+            "page": 18,
+            "pageEnd": 21,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO.5.3 (pp. 18–21)"
+          },
+          "quote": {
+            "text": "Apocalypse is a genre of revelatory literature with a narrative framework, in which a revelation is mediated by an otherworldly being to a human recipient, disclosing a transcendent reality",
+            "sha256": "4586ff9e4cfd6240b1f420101c628fbc180e88694f351d543729990cb4740fb4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 421,
+            "nativeSectionId": "INTRO.5.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO.5.3 — The Apocalyptic Dream Visions: Origins, Genre, and Rhetoric",
+            "page": 18,
+            "pageEnd": 21,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO.5.3 (pp. 18–21)"
+          },
+          "quote": {
+            "text": "the Danielic apocalypses can be described as epiphanic rhetoric. They persuade by disclosing a transcendent reality in vivid terms that make it compelling.",
+            "sha256": "d2902090f317f924084421a456d685faf593b16fe77785f570888c82b1f9c425"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 421,
+            "nativeSectionId": "INTRO.5.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO.5.3 — The Apocalyptic Dream Visions: Origins, Genre, and Rhetoric",
+            "page": 18,
+            "pageEnd": 21,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO.5.3 (pp. 18–21)"
+          },
+          "quote": {
+            "text": "Numerical patterns of various sorts are an important part of the rhetoric of knowledge: they organize historical phenomena into discernible patterns that do not have their origin in the raw events of history themselves but in an order that transcends history.",
+            "sha256": "cb7e8657800fc1046b4f344faebea850fd6f51ad2bafc4ce4b56c1f7eb8397fa"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Earth-located, two-tiered eschatology: the kingdom of God / people of the holy ones of the Most High is a sovereign-political reality manifested on earth, with Israel-on-earth corresponding to the angelic holy ones in heaven. The judgment of the four kingdoms takes place on earth, not in a wholly heavenly realm. The fundamental theological claim is that God has temporarily delegated sovereignty to Gentile empires and will take it back.",
+      "commitment": "strong",
+      "rationale": "Newsom argues the location of the throne-set-up scene in Dan 7:9 is on earth, not heaven, citing parallels in 4Q530 and 1 En. 90:20 (both explicit earthly settings). The judgment of the beasts is therefore an earthly judgment of earthly kingdoms. Sovereignty is transferred to the people of the holy ones of the Most High — Israel — who assume earthly rule corresponding to the angelic rule in heaven (citing 1QM 17:7-8). The chapter underlying theological problem is the divine delegation of sovereignty to Gentile empires for a determined period (a problem inherited from postexilic texts) intensified by the Antiochene crisis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 486,
+            "nativeSectionId": "DA2.1.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.3 — Literary and Traditio-Historical Features",
+            "page": 473,
+            "pageEnd": 476,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.3 (pp. 473–476)"
+          },
+          "quote": {
+            "text": "The basic issue with which this chapter is concerned, as with the dream in ch. 2, is God’s decision to delegate universal sovereignty to Gentile empires for a period of time and then to take back that sovereignty.",
+            "sha256": "2b1d4a9eba6dcafa3e6d7e3ea34e0a738d0696b24b450a2b5bf8d7777bfdbe0d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "Israel assumes sovereignty on earth, as do God’s angels in heaven (cf. 1QM 17.7–8).",
+            "sha256": "aadb8028003d468d881f3b9c046c509c4141804e37f4bc0ec818172e41c2b065"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "Thus here, too, the judgment of the four kingdoms takes place on earth.",
+            "sha256": "6793950a10c8c5bffb44a80653f63bc1ca953211456f128cfd7096e6e88fc417"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Daniel 7:13-14)",
+      "position": "Angelic/heavenly being — specifically the archangel Michael, Israel's heavenly patron — not a Davidic messiah, not Christ, and not merely a collective symbol for Israel. The holy ones the figure represents are primarily angelic; the people of the holy ones is Israel-as-associated-with-the-angelic-host.",
+      "commitment": "strong",
+      "rationale": "Newsom argues the case for identifying the humanlike figure with Michael is strong, integrating Dan 7 with the rest of the book angelology (Gabriel and Michael in 8:16, 9:21, 10:13, 10:21, 12:1) and with Qumran War Scroll (1QM 17:7-8), which explicitly pairs Michael heavenly authority with Israel earthly dominion. The argument is cumulative within Daniel itself: the subsequent visions in Daniel reinterpret this figure with increasing specificity, as prince of the host (8:11) and as Michael. The holy ones (qaddisin) standardly refers to angels in HB and Second-Temple usage. RECEPTION-HISTORY DIMENSION: Breed article 491 catalogs the alternative trajectories — corporate-Maccabean (Porphyry, Aphrahat, Ephrem), rabbinic-messianic (Sanhedrin, Tanhuma, Rashi, Ibn Ezra), Christological (Didache, Justin, Hippolytus, Cyprian) — without collapsing them into Newsom exegetical claim about the original referent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "The case for identifying this figure with an angelic being, specifically the archangel Michael, is strong, since angels play a critical role in the apocalyptic sections of Daniel.",
+            "sha256": "e49fe5d9a8306a60e1a2e3fc9689465de6281b8b80827bb80cddfba22127fa5a"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "the subsequent visions in Daniel reinterpret this figure with increasing specificity, as prince of the host (8:11) and as Michael (10:21; 12:1; Willis 77).",
+            "sha256": "0cb9eab540c44cfad155eadd7f5e05d5e76e8e474c4acaa7f7e8db7814aeec69"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "But it has long been recognized that the more common referent of \"holy ones\" (qĕdōšîm) in the Hebrew Bible is to angels",
+            "sha256": "c0dad005e01a44c5b26b0ff19d11512a2a5fb123b3178690544d40754969a38d"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 488,
+            "nativeSectionId": "DA2.1.4.BREAK"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4.BREAK — Comments",
+            "page": 484,
+            "pageEnd": 499,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4.BREAK (pp. 484–499)"
+          },
+          "quote": {
+            "text": "The earliest implicit interpretation of Daniel’s angelic kingdom is to be found in the Qumran War Scroll, which is in many ways deeply influenced by the book of Daniel.",
+            "sha256": "afe308f4d138dd93b115d26bfe021d4b5aac458766a79fee25c8ca562a17a20c"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "The overwhelming majority of interpreters understand the humanlike one as an eschatological messianic figure—human, angelic, or divine—in a manner similar to the Similitudes of Enoch (in 1 En. 27–71), 4 Ezra, and the New Testament books of Mark (13:26; 14:62) and Revelation (1:7).",
+            "sha256": "70027297ce91136a36e8978e15bddafdc824c12f83a34787eea8e9e051cd2993"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 490,
+            "nativeSectionId": "DA2.1.6.1"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.1 — The Humanlike One and the Stone Cut without Hands: Corporate Deliverance and Rule",
+            "page": 499,
+            "pageEnd": 501,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.1 (pp. 499–501)"
+          },
+          "quote": {
+            "text": "Throughout history many readers have assumed that, because of the structural similarities between chs. 2 and 7, the comments about the humanlike one refer also to the stone cut \"not by human hands\" that smashed the statue in Nebuchadnezzar’s dream",
+            "sha256": "ce82a0dc6a8466f3629cf8fc47516fcd5145620210f521d5d89195545288da5f"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Historical-critical plus religio-historical, but methodologically reflexive: Newsom distinguishes compositional intertextuality (what the author actually drew on) from reader intertextuality (what modern scholars notice). She privileges intrabiblical allusion as the primary explanatory frame and treats Ugaritic Baal-myth parallels with measured skepticism. Breed adds a reception-history layer asking what can the book of Daniel do? rather than what does it really mean?",
+      "commitment": "strong",
+      "rationale": "Newsom defends Gunkel basic insight that some imagery in Dan 7 has mythological resonance — but resists the more confident Ugaritic-Baal genealogy championed by Day and Collins. The critical move is methodological: she insists on distinguishing what the author set of cultural materials made plausible from what modern scholars project. Her preferred explanation for the four-animal sequence is intrabiblical allusion (Hos 13:7-8) rather than recourse to Mesopotamian astral geography or omen literature. RECEPTION-HISTORY DIMENSION: Breed framing chapter (article 424, INTRO.8) reframes the reception-history project as a question of what the text can do rather than what it has meant — a deliberate methodological alternative to both confessional meaning-recovery and scholarly meaning-policing. The two articles methodological self-consciousness is the joint distinctive of this commentary.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 486,
+            "nativeSectionId": "DA2.1.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.3 — Literary and Traditio-Historical Features",
+            "page": 473,
+            "pageEnd": 476,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.3 (pp. 473–476)"
+          },
+          "quote": {
+            "text": "scholars claimed to see a more striking similarity between that mythic pattern and the figures and events in Dan 7",
+            "sha256": "ff6d3678c3a563050eeda764232dcded8ebfb0e79634d72fb4fd85d111210aea"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 486,
+            "nativeSectionId": "DA2.1.3"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.3 — Literary and Traditio-Historical Features",
+            "page": 473,
+            "pageEnd": 476,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.3 (pp. 473–476)"
+          },
+          "quote": {
+            "text": "Methodologically, one needs to distinguish between what one might call a compositional or authorial intertextuality on the one hand and intertextual connections made by a reader on the other hand.",
+            "sha256": "a8460e7e08f915298cc9cf432c84fa472cc2de460cf0b5cc8c86265ddfc92328"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "Probably the motivation for the particular animals named in Dan 7 can be found in intrabiblical allusions.",
+            "sha256": "18a641b84b8781a77a3e8b1dcd62ee4fb13ae7cd2fe0f058dbcaf3d95564ba0f"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 424,
+            "nativeSectionId": "INTRO.8"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Daniel's Reception by Brennan W. Breed",
+            "section": "§INTRO.8 — History of Daniel’s Reception, by Brennan W. Breed",
+            "page": 28,
+            "pageEnd": 32,
+            "citationString": "Breed, OTL Daniel, §INTRO.8 (pp. 28–32)"
+          },
+          "quote": {
+            "text": "the guiding question is not \"What has the book of Daniel meant?\" but rather \"What can the book of Daniel do?\"",
+            "sha256": "77127ca304b51f2fd9a7f3d19f88e65f694b6b4facd04a0dd72f6483ac41cac7"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Cross-book coherence is a *reception-history* phenomenon, not a prophetic-coherence requirement. Daniel symbolic resources (Son of Man, Ancient of Days, four beasts, river of fire, last-judgment, clouds-of-heaven) get massively reused in 1 Enoch Similitudes, 4 Ezra, the NT (Mark, Matthew, Revelation), patristic and medieval Christianity, rabbinic Judaism, and Islam — but these are legitimate adaptations of the text symbolic resources to new historical situations, not fulfillments of a single prophetic intent that the original author held.",
+      "commitment": "moderate",
+      "rationale": "Newsom does not articulate a cross-book coherence rule in the canonical sense. The chapter exegesis treats Dan 7 referent as the Antiochene crisis. RECEPTION-HISTORY DIMENSION: Breed reception-history articles (490-491, 511) catalog the wave of subsequent appropriations: the Didache (Dan 7:13 as second coming), Cyprian and Lactantius (Dan 7:14 as resurrection-ascension), Justin Martyr (the like in 7:13 implies divinity), Cosmas Indicopleustes (clouds and stone as virgin birth), Joseph Smith (Adam-Michael-Ancient-of-Days conflation), Islamic apocalyptic preachers (humanlike one as Muhammad). The textual variant in Dan 7:13 OG (as the Ancient of Days) becomes the engine for medieval Christological conflation that drives Western and Byzantine iconography of the last judgment. Breed presents these as the text continuing capacity to circulate, not as evidence of single prophetic intent the canon executes.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "The final words of the Didache, a Christian pastoral manual of the late first or early second century, refer to the eschatological second coming of Jesus Christ with an allusion to Dan 7:13",
+            "sha256": "d5c4da521f89f0d3adc6d0cc15b381921dbc32ecb5c6421cebcc9d6d3523eaa2"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "Many other Christians understood the reference to the clouds to contrast the meekness of his first advent with the power and terror of his return",
+            "sha256": "87411fdae798a04711de73de7f7933cf57c4f57ab542a761db6b2a65f39697f0"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "Christ and the Ancient of Days are often conflated in medieval theology and iconography because of the textual variant in Dan 7:13 og that depicts the humanlike one approaching \"as,\" instead of \"up to,\" the Ancient of Days.",
+            "sha256": "1291a153fe3ecbc1796a71cf1fe6f8488a12942364103153e7d003979c3f0895"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single Antiochene-era referent for the original prophetic intent, with an explicit reception-history program tracing subsequent reuses (Roman crisis, Christian/Christological, rabbinic-messianic, Islamic, modern political) — these reuses are catalogued and respected but not collapsed into fulfillment. The text subsequently provided an attractive locus for updating and reapplication.",
+      "commitment": "strong",
+      "rationale": "Newsom locks the original referent of Dan 7 exegesis to the Antiochene crisis. The ten horns are symbolic of totality; the three uprooted horns are tied specifically to Seleucus IV house; the 3.5 years are tied to the temple profanation. Beyond that single referent, the text gets reused — reinterpreted and reapplied to the Roman suppression of the Jewish revolt, then to ongoing Christian and Jewish situations across two millennia. The methodological move is conscious and explicit: instead of multiple fulfillments, Newsom and Breed offer updating and reapplication as a category that respects the text polyvalence without smuggling in a typology-of-fulfillment metaphysics. RECEPTION-HISTORY DIMENSION: Breed framing in INTRO.8 makes the reception-history program a first-class methodological commitment of the commentary, not a tacked-on appendix.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 485,
+            "nativeSectionId": "DA2.1.2"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.2 — Date, Provenance, Structure, and Outline",
+            "page": 471,
+            "pageEnd": 473,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.2 (pp. 471–473)"
+          },
+          "quote": {
+            "text": "As an anti-Seleucid text, proto-Dan 7 subsequently provided an attractive locus for updating and reapplication in response to the persecutions of Antiochus in 167–164 b.c.e.",
+            "sha256": "f0539eb073e4a2ca4a19c445defa4271fc99d85e9ca9abd5dce3b60fc19f2850"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 411,
+            "nativeSectionId": "INTRO"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO — Introduction",
+            "page": 1,
+            "pageEnd": 2,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO (pp. 1–2)"
+          },
+          "quote": {
+            "text": "the Danielic apocalypses were able to be reinterpreted and reapplied to later periods of political crisis.",
+            "sha256": "f066941a2f5921ada9472317fc8b726e62986f1e7ed5d7db73fe8e7afc3c7a10"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 423,
+            "nativeSectionId": "INTRO.7"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§INTRO.7 — The Historical Context of Daniel 7–12",
+            "page": 23,
+            "pageEnd": 28,
+            "citationString": "Newsom & Breed, OTL Daniel, §INTRO.7 (pp. 23–28)"
+          },
+          "quote": {
+            "text": "Hence arose the millennia-long tradition of interpreting Dan 7–12 in relation to the current events of the interpreter.",
+            "sha256": "b4768f238f12964d3b59d68a48d6f264c42cb3119affcb29309cd86b1757aaf4"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 424,
+            "nativeSectionId": "INTRO.8"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Daniel's Reception by Brennan W. Breed",
+            "section": "§INTRO.8 — History of Daniel’s Reception, by Brennan W. Breed",
+            "page": 28,
+            "pageEnd": 32,
+            "citationString": "Breed, OTL Daniel, §INTRO.8 (pp. 28–32)"
+          },
+          "quote": {
+            "text": "Daniel’s legacy is incredibly complex.",
+            "sha256": "21b270894a7e77b93004d3a0e5988d772cb2b17f4b621cf09c4c8a9007829225"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "1 En 37-71 (Similitudes/Parables of Enoch)",
+      "positionSummary": "Breed catalogs the Similitudes as one of the principal reception-trajectories that develop Dan 7 humanlike-one figure into an eschatological messianic figure (alongside 4 Ezra and the NT). Newsom additionally notes the Similitudes elevated Elect One or Son of Man as one of the Second-Temple texts in which seated angelic beings exercise judgment in the divine presence — a parallel to the throne-set-up scene in Dan 7:9-10. The Animal Apocalypse (1 Enoch 83-90) parallels Dan 7 judgment scene more directly: thrones erected in a pleasant land, books opened, judgment of the seventy shepherds.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "in a manner similar to the Similitudes of Enoch (in 1 En. 27–71), 4 Ezra, and the New Testament books of Mark (13:26; 14:62) and Revelation (1:7).",
+            "sha256": "a8614f7bd6abc640eee335c2df127435baaa376e18835bc4a0425ca1dc2c422d"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 487,
+            "nativeSectionId": "DA2.1.4"
+          },
+          "frontend": {
+            "author": "Newsom & Breed",
+            "title": "Daniel: A Commentary (Old Testament Library)",
+            "section": "§DA2.1.4 — Comments",
+            "page": 476,
+            "pageEnd": 484,
+            "citationString": "Newsom & Breed, OTL Daniel, §DA2.1.4 (pp. 476–484)"
+          },
+          "quote": {
+            "text": "1 En. 14:18–23 and Dan 7:9–10 provide details concerning the divine throne and the appearance of God",
+            "sha256": "986441e0059979a60797a9524b4ac4f1bb3c4b45444e51804158366d687dadfd"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 1; Rev 13",
+      "positionSummary": "Breed treats Christian appropriation of Dan 7 — particularly the identification of the humanlike one with Christ and the consequent expectation of a second coming — as the dominant reception trajectory. The OG textual variant in Dan 7:13 (humanlike one approaches as, not up to, the Ancient of Days) becomes the engine for Christological conflation of Christ with the Ancient of Days in Rev 1:13-14, generating centuries of Western and Byzantine iconography of the last judgment. Newsom does not engage Rev 13 beasts directly in the Dan 7 chapter; Breed cites Rev 1:7 (mourning over the one who comes with clouds) as the primary NT echo of Dan 7:13.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "Christ and the Ancient of Days are often conflated in medieval theology and iconography because of the textual variant in Dan 7:13 og that depicts the humanlike one approaching \"as,\" instead of \"up to,\" the Ancient of Days.",
+            "sha256": "1291a153fe3ecbc1796a71cf1fe6f8488a12942364103153e7d003979c3f0895"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTL27DA",
+            "logosArticleNum": 491,
+            "nativeSectionId": "DA2.1.6.2"
+          },
+          "frontend": {
+            "author": "Breed",
+            "title": "Daniel: A Commentary (Old Testament Library) — History of Reception by Brennan W. Breed",
+            "section": "§DA2.1.6.2 — The Humanlike One and the Stone Cut without Hands: The Messiah",
+            "page": 501,
+            "pageEnd": 508,
+            "citationString": "Breed, OTL Daniel, §DA2.1.6.2 (pp. 501–508)"
+          },
+          "quote": {
+            "text": "In the Coptic Fourteenth Vision of Daniel of the eighth–twelfth century, for example, the Son of Man and the Ancient of Days are understood to be identical",
+            "sha256": "198c6f89ab483eeb17843235c9b857b66d4f3d2544ffb20350c3a97d3a247d50"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Bifurcated/compositional dating thesis: distinguishes a pre-Antiochene proto-Dan 7 (Eastern Diaspora response to the Diadochi wars) from the Antiochene-period redaction. Differs sharply from Collins/Goldingay unitary-Maccabean position by accepting Sellin/Holscher/Noth two-stage model in modified form, with specific verse-level identification of additions (vv. 7f-8, 11b, 20-22, 24-25).",
+    "Privileges intrabiblical allusion (Hos 13:7-8 for the four animals) over Ugaritic Baal-myth or Mesopotamian astral-omen explanations — a methodologically restrained version of the religio-historical method that explicitly disciplines its own tendency to overread parallels.",
+    "Reads change times and law as Antiochus metaphysical-theological challenge to the Most High prerogative to determine sovereignty — preferring this over Collins cultic-calendar-disruption reading and over the calendrical 364->360 day reading championed by VanderKam, Lebram, and Portier-Young.",
+    "Earth-located judgment scene: argues from 4Q530 and 1 En. 90:20 parallels that the throne-set-up scene in Dan 7:9 takes place on earth, not in heaven — God descends to judge, against Hartman/DiLella, Montgomery, and Goldingay heaven-locating reading.",
+    "Reception-history methodology (Breed contribution): the reception-history articles are not appended as illustrations but are first-class commentary structure. The guiding question is reframed from what has the book of Daniel meant? to what can the book of Daniel do? — privileging the text continuing capacity to circulate over the search for a single correct interpretation.",
+    "Epiphanic-rhetoric analysis: Newsom distinctive analytical move beyond genre-classification, characterizing apocalyptic rhetoric as persuasion-by-disclosure rather than persuasion-by-argument, and reading first-person-speech, sublimity, numerical patterns, and book-mediation as elements of a coherent rhetorical strategy.",
+    "Internal-Daniel angelological reading of the humanlike one: argues from the trajectory within Daniel later visions (8:11 prince of host -> 10:21, 12:1 Michael) that subsequent chapters in Daniel itself reinterpret the humanlike one with increasing specificity. The Qumran War Scroll (1QM 17:7-8) is treated as the earliest implicit interpretation."
+  ],
+  "uncertainties": [
+    "Newsom is silent on axes E (in the classical preterist/historicist/futurist/idealist Revelation-school sense), F (millennium), G (rapture), I (kingdom-ontology in the political/spiritual/cosmic typology), K (dispensational vs. covenantal), and M (canonical placement). These are not the categories within which she frames the work.",
+    "The compositional thesis (proto-Dan 7 in the Eastern Diaspora) is offered as plausible rather than as established consensus. Newsom acknowledges that arguments about redactional development of texts where no independent evidence exists are of necessity somewhat circular and are never conclusive. She treats it as the simplest model rather than the only model.",
+    "The identification of the three uprooted horns as Seleucus IV plus his two sons is probably rather than certainly — she follows Ploger and Collins on this, but other reconstructions (Porphyry Ptolemy VI / Ptolemy VII / Artaxias of Armenia; Bickerman Ptolemy VI / Cleopatra II / Ptolemy VII) remain in play.",
+    "Breed reception-history articles do not adjudicate among the surveyed traditions — by design. Reception-history catalogs and contextualizes; it does not rank traditions or pronounce on which reading is right. Readers seeking adjudication will not find it.",
+    "Newsom does not engage the modern dispensational reading of Daniel as a target of critique — that work is left to Collins Apocalyptic Imagination. The dispensational tradition is essentially absent from her exegetical horizon.",
+    "Newsom acknowledges the original critical collective (Israel) reading of the humanlike one but argues against it on intra-Daniel grounds (8:11 prince of host, 10:21 Michael) and noncanonical grounds (1QM). Yet she affirms that functionally the transfer of sovereignty to the patron angel of Israel (Michael?) and to the angelic figures associated with him in heaven also entails transfer of sovereignty to Israel — so the angelic and corporate readings are layered, not strictly opposed in her framework."
+  ]
+}
