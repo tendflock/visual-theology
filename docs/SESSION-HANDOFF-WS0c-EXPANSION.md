@@ -1,3 +1,6 @@
+> **SUPERSEDED 2026-04-28** by `docs/SESSION-HANDOFF-WS0c-WAVE1-COMPLETE.md`.
+> Kept on disk as historical record. Do not start a session from this doc.
+
 # Session Handoff — WS0c Daniel-7 Pilot Corpus Expansion
 
 **Date:** 2026-04-26
