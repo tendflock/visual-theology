@@ -36,6 +36,7 @@ Exits 0 when every input validates, 1 otherwise.
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import os
 import re
@@ -43,12 +44,15 @@ import sys
 from pathlib import Path
 from typing import Any, Iterable
 
-# Single source of truth for what counts as a fetchable Sefaria URL — the
-# document validator and the runtime fetch path must agree, otherwise
-# malformed URLs land in the corpus and only fail at sweep time. See
-# tools/citations.py:validate_sefaria_url.
+# Shared constants and validators imported from citations.py — the document
+# validator and the runtime fetch path MUST agree, otherwise malformed inputs
+# land in the corpus and only fail at sweep time. The import direction is
+# always validate_scholar → citations; citations does NOT import from this
+# module (would be a circular import). See tools/citations.py for:
+#   - validate_sefaria_url: shared Sefaria URL validator
+#   - OCR_LANGUAGE_DIRS: language ISO code → external-resources/ subdirectory
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from citations import validate_sefaria_url  # noqa: E402
+from citations import OCR_LANGUAGE_DIRS, validate_sefaria_url  # noqa: E402
 
 
 # Locked axis taxonomy (see docs/research/2026-04-23-daniel-interpretive-
@@ -288,25 +292,12 @@ _BACKEND_KINDS = (
 
 _SEFARIA_LANGUAGES = ("he", "en")
 
-# Languages accepted on quote.language. Required for kind=external-ocr
-# (anchors which per-language subdirectory under external-resources/ holds
-# the OCR file). Optional elsewhere; defaults to "en" when absent. Keep in
-# lockstep with tools/citations.py:OCR_LANGUAGE_DIRS.
-_QUOTE_LANGUAGES: tuple[str, ...] = (
-    "en", "la", "grc", "he", "arc", "jrb", "de", "fr",
-)
-_OCR_LANGUAGES: tuple[str, ...] = (
-    "la", "grc", "he", "arc", "jrb", "de", "fr",
-)
-_OCR_LANGUAGE_DIR_MAP = {
-    "grc": "greek",
-    "la": "latin",
-    "he": "hebrew",
-    "arc": "aramaic",
-    "jrb": "judeo-arabic",
-    "de": "german",
-    "fr": "french",
-}
+# Languages accepted on quote.language. The OCR-eligible subset is sourced
+# from citations.py:OCR_LANGUAGE_DIRS (single source of truth); _QUOTE_LANGUAGES
+# adds English on top, since "en" is a legitimate quote.language for any
+# non-OCR backend but no external-resources/english/ subdirectory exists.
+_OCR_LANGUAGES: tuple[str, ...] = tuple(OCR_LANGUAGE_DIRS.keys())
+_QUOTE_LANGUAGES: tuple[str, ...] = ("en",) + _OCR_LANGUAGES
 
 _TRANSLATION_METHODS: tuple[str, ...] = (
     "llm", "human-published", "human-volunteer",
@@ -314,7 +305,12 @@ _TRANSLATION_METHODS: tuple[str, ...] = (
 _TRANSLATION_REGISTERS: tuple[str, ...] = (
     "modern-faithful", "wooden-literal", "paraphrastic",
 )
-_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# method=llm requires "<provider>:<model>" — provider is one or more
+# [a-z0-9_-] chars, model is one or more [a-z0-9._-] chars (model names
+# carry dots like "claude-3.5-sonnet"). Single colon, no whitespace, no
+# uppercase. Tightened in D-2.5 from a permissive ":" substring check
+# that accepted ":", "x:", "X:Y", and "x:y:z".
+_LLM_TRANSLATOR_RE = re.compile(r"^[a-z0-9_-]+:[a-z0-9._-]+$")
 
 
 def _validate_citation(
@@ -463,7 +459,7 @@ def _validate_citation(
             f"{path}.quote.language: {q['language']!r} not in {_OCR_LANGUAGES} "
             f"(required for external-ocr)",
         )
-        expected_dir = _OCR_LANGUAGE_DIR_MAP[q["language"]]
+        expected_dir = OCR_LANGUAGE_DIRS[q["language"]]
         filename = b.get("filename", "")
         _require(
             filename.startswith(f"{expected_dir}/"),
@@ -497,17 +493,46 @@ def _validate_citation(
                 t["register"] in _TRANSLATION_REGISTERS,
                 f"{tpath}.register: {t['register']!r} not in {_TRANSLATION_REGISTERS}",
             )
-            _require(
-                _DATE_RE.match(t["translatedAt"]),
-                f"{tpath}.translatedAt: must be YYYY-MM-DD, got {t['translatedAt']!r}",
-            )
+            try:
+                datetime.date.fromisoformat(t["translatedAt"])
+            except ValueError:
+                raise ValidationError(
+                    f"{tpath}.translatedAt: must be a valid ISO-8601 date "
+                    f"(YYYY-MM-DD), got {t['translatedAt']!r}"
+                )
             if t["method"] == "llm":
                 _require(
-                    ":" in t["translator"],
+                    bool(_LLM_TRANSLATOR_RE.match(t["translator"])),
                     f"{tpath}.translator: method='llm' requires "
-                    f"'<provider>:<model>' format (e.g. 'anthropic:claude-opus-4-7'), "
-                    f"got {t['translator']!r}",
+                    f"'<provider>:<model>' format (lowercase, single colon; "
+                    f"e.g. 'anthropic:claude-opus-4-7'), got {t['translator']!r}",
                 )
+
+    # translations[] is REQUIRED whenever the source quote is in a
+    # non-English language, AND must include at least one entry with
+    # language="en". Without an English-target translation the site
+    # renders only Greek/Latin/Hebrew that most readers cannot parse;
+    # the rule keeps the corpus presentable even in legacy paths (i.e.,
+    # the validator catches the missing translation rather than waiting
+    # for it to surface in production). Additional non-English
+    # translations are permitted alongside the required English entry.
+    if q is not None and q.get("language") is not None and q["language"] != "en":
+        translations = c.get("translations")
+        _require(
+            isinstance(translations, list) and len(translations) >= 1,
+            f"{path}: translations[] required when quote.language is "
+            f"non-English (got language={q['language']!r}, no "
+            f"translations[] array)",
+        )
+        _require(
+            any(
+                isinstance(t, dict) and t.get("language") == "en"
+                for t in translations
+            ),
+            f"{path}: translations[] must contain ≥1 entry with "
+            f"language='en' when quote.language is non-English (got "
+            f"quote.language={q['language']!r}, no en entry in translations)",
+        )
 
     # supportStatus — required when enforced
     if require_support_status:

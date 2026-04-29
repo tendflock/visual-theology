@@ -65,6 +65,16 @@
             "sha256": "3940319e2b84287eb161333f1a009aa9ff68f457c6c667a2e0b95a486c4e3b0b",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He calls the Roman empire a beast.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -89,6 +99,16 @@
             "sha256": "20814bd95facc3b3ac0e56c72a98a7fc8403a50c2c08d206375da36bf4939e6f",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The Romans took up dominion over all.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -113,6 +133,16 @@
             "sha256": "7b8b36fbd4daf85d8a14b138a7952291a2d06621d3fb1d18bb32f14599d92262",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "to understand the fourth beast as the Roman empire.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -147,6 +177,16 @@
             "sha256": "a9070c64d0d95203042f5d4b9edc3732b8845dbcb1403f8c44b0b3ffbba7b145",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He hints at the Antichrist, [appearing] in the midst of the ten horns.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -171,6 +211,16 @@
             "sha256": "f886d26c8afe697a441da72356e5d862300b57161cc249da345beeefdebf4066",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the blessed Paul clearly [teaches] us …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "paraphrase-anchored"
         },
         {
@@ -195,6 +245,16 @@
             "sha256": "ffa6283bf0ca17755db215c95e9f0cb601ab68a0a96da6da9c124bebb065f31d",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the archetype of Antiochus is the Antichrist.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -229,6 +289,16 @@
             "sha256": "e444e16f28048a36a5d5ed5abfca0e361017ac2f86704e6f4e7ad56daa8b5524",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He means three and a half years.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -263,6 +333,16 @@
             "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "foretelling [his] manifestation.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         },
         {
@@ -287,6 +367,16 @@
             "sha256": "de2e9bcd21506f19e07b5e4e9e26290710fe5b131cab996add392dcdf6bc81b6",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The Lord said to me …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         }
       ]
@@ -321,6 +411,16 @@
             "sha256": "da8fb3720df345d552eb55cbbcb7ceee690b5b3eace0280e7c4b7968a4ee8b77",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "but only one, the unending [kingdom], remains.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -345,6 +445,16 @@
             "sha256": "50c9dc4321ff75df0e7a05278af96d7d920141cf65169aa2c1889ba372f7c5c9",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "the true [kingdom] …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -379,6 +489,16 @@
             "sha256": "789029bcf2aeb4f0ff16060166218d3fce8c233ab299abb3342e140b5b362f78",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "the kingdom of the Assyrians …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -403,6 +523,16 @@
             "sha256": "61bceefd1b7e6c034ecf42eb59866320a92ba26f08074b0f0baf28985c6337a2",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Here he hints at the Persian kingdom.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -427,6 +557,16 @@
             "sha256": "ca1977b16c5d540cd4ab130eb74e3a9bf044404456b6f11766c667482834d852",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Through these he hints at the Macedonian kingdom.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         },
         {
@@ -451,6 +591,16 @@
             "sha256": "307cd0d271f7a5afbdd883dfb33b34fbfe986dc16dafa2e94d21ba0de1262c62",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "But we have learned by experience.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -485,6 +635,16 @@
             "sha256": "bb3b21e992d76ec2e07b8f8193bbae48184e08d40784916952aa0780431673b7",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He now passes over from the [image to the archetype] …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -519,6 +679,16 @@
             "sha256": "3f35a0702393c6ccf11fafb9d7a3d3213989080e59cf2cf7c5b54babcc70ef69",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "I am utterly astonished …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         },
         {
@@ -543,6 +713,16 @@
             "sha256": "a3e0e8197ab6007580d60ea988fecd74e4878ca8154235c89ab7ae4f26bc361f",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "But the saints of the Most High did not [receive the kingdom] after Antio[chus] …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         },
         {
@@ -567,6 +747,16 @@
             "sha256": "a04501273cab88bd91656ea6431df5feca60c015ae3b8a94165f896cf2371401",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "nor were they all holy …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         }
       ]
@@ -601,6 +791,16 @@
             "sha256": "4e015e01ab3400fee1d542feeead89e2c6e52f9060c17b2fb843f46bec44e363",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Ten will arise at the same time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "directly-quoted"
         }
       ]
@@ -635,6 +835,16 @@
             "sha256": "84926aa4ca8e76a7e23409e6326dc87b14b398bd9e3f967f29ccdd84aa766dd6",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "God, being bodiless, simple, and without form …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         }
       ]
@@ -667,6 +877,16 @@
             "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb",
             "language": "grc"
           },
+          "translations": [
+            {
+              "language": "en",
+              "text": "foretelling [his] manifestation.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
           "supportStatus": "summary-inference"
         }
       ]

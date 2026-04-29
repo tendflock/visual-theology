@@ -67,8 +67,10 @@ BACKEND_KINDS = (
 )
 
 # Languages accepted on quote.language and on backend filename prefix for the
-# external-ocr backend. ISO 639-1/-2/-3 codes. Keep in lockstep with
-# tools/validate_scholar.py:_QUOTE_LANGUAGES.
+# external-ocr backend. ISO 639-1/-2/-3 codes. Single source of truth;
+# tools/validate_scholar.py imports OCR_LANGUAGE_DIRS from this module and
+# layers "en" on top to form its _QUOTE_LANGUAGES tuple (D-2.5 centralized
+# the relationship to a one-way import).
 OCR_LANGUAGE_DIRS = {
     "grc": "greek",
     "la": "latin",
@@ -410,6 +412,12 @@ def _load_ocr_text(
             None,
             f"<external-ocr:{filename}>",
             "external-ocr citation missing quote.language",
+        )
+    if not isinstance(language, str):
+        return (
+            None,
+            f"<external-ocr:{filename}>",
+            f"quote.language is not a string (got {type(language).__name__})",
         )
     expected_dir = OCR_LANGUAGE_DIRS.get(language)
     if expected_dir is None:

@@ -372,6 +372,19 @@ def _greek_ocr_citation() -> dict:
             "sha256": "0" * 64,
             "language": "grc",
         },
+        # Non-English quotes require translations[] (D-2.5). Tests that
+        # exercise the no-translations failure path remove this field
+        # explicitly.
+        "translations": [
+            {
+                "language": "en",
+                "text": "Ancient of Days",
+                "translator": "anthropic:claude-opus-4-7",
+                "translatedAt": "2026-04-29",
+                "method": "llm",
+                "register": "modern-faithful",
+            }
+        ],
         "supportStatus": "directly-quoted",
     }
 
@@ -432,3 +445,263 @@ def test_external_ocr_typed_extras():
     c["backend"]["mignePgVolume"] = "eighty-one"  # wrong type
     with pytest.raises(ValidationError, match="mignePgVolume"):
         validate_scholar(_wrap(c))
+
+
+# ── translations[] requirement for non-English quotes (D-2.5) ──────────────
+
+
+def test_non_english_quote_requires_translations():
+    """Non-English quote.language with no translations[] is rejected."""
+    c = _greek_ocr_citation()
+    del c["translations"]
+    with pytest.raises(ValidationError, match="translations\\[\\] required"):
+        validate_scholar(_wrap(c))
+
+
+def test_non_english_quote_empty_translations_array_fails():
+    """An empty translations[] array does not satisfy the rule."""
+    c = _greek_ocr_citation()
+    c["translations"] = []
+    with pytest.raises(ValidationError, match="translations\\[\\] required"):
+        validate_scholar(_wrap(c))
+
+
+def test_non_english_quote_null_translations_fails():
+    """translations: null is treated the same as missing."""
+    c = _greek_ocr_citation()
+    c["translations"] = None
+    with pytest.raises(ValidationError, match="translations\\[\\] required"):
+        validate_scholar(_wrap(c))
+
+
+def test_english_quote_does_not_require_translations():
+    """quote.language='en' citations don't need translations[]."""
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"]["language"] = "en"
+    validate_scholar(s)  # no raise
+
+
+def test_quote_without_language_does_not_require_translations():
+    """Absent quote.language defaults to English; no translations[] required."""
+    s = _minimal_scholar()
+    # _minimal_scholar's quote has no language field at all
+    assert "language" not in s["positions"][0]["citations"][0]["quote"]
+    validate_scholar(s)  # no raise
+
+
+def test_null_quote_does_not_require_translations():
+    """A null quote (paraphrase-anchored) has no language to translate."""
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"] = None
+    c["supportStatus"] = "paraphrase-anchored"
+    validate_scholar(s)  # no raise
+
+
+# ── translatedAt ISO-8601 enforcement (D-2.5) ──────────────────────────────
+
+
+@pytest.mark.parametrize("bad_date", [
+    "2026-99-99",   # impossible month
+    "2026-13-32",   # impossible month + day
+    "26-04-29",     # 2-digit year
+    "garbage",      # not a date
+    "2026-04-31",   # April has 30 days
+    "2026/04/29",   # wrong separator
+    "",             # empty (also caught by non-empty check, but exercise here)
+])
+def test_translated_at_invalid_date_rejected(bad_date):
+    c = _greek_ocr_citation()
+    c["translations"][0]["translatedAt"] = bad_date
+    with pytest.raises(ValidationError, match="translatedAt"):
+        validate_scholar(_wrap(c))
+
+
+def test_translated_at_valid_iso_date_accepted():
+    c = _greek_ocr_citation()
+    c["translations"][0]["translatedAt"] = "2024-02-29"  # leap-day
+    validate_scholar(_wrap(c))  # no raise
+
+
+# ── translator regex enforcement for method=llm (D-2.5) ────────────────────
+
+
+@pytest.mark.parametrize("bad_translator", [
+    ":",           # both sides empty
+    "x:",          # empty model
+    ":model",      # empty provider
+    "x:y:z",       # extra colon
+    "X:Y",         # uppercase
+    "no-colon",    # no colon at all
+    "anth ropic:claude",  # whitespace in provider
+    "anthropic:claude opus",  # whitespace in model
+])
+def test_llm_translator_invalid_format_rejected(bad_translator):
+    c = _greek_ocr_citation()
+    c["translations"][0]["translator"] = bad_translator
+    with pytest.raises(ValidationError, match="translator"):
+        validate_scholar(_wrap(c))
+
+
+@pytest.mark.parametrize("good_translator", [
+    "anthropic:claude-opus-4-7",
+    "anthropic:claude-3.5-sonnet",
+    "openai:gpt-4o",
+    "a:b",
+    "a-b_c:d.e_f-g",
+])
+def test_llm_translator_valid_format_accepted(good_translator):
+    c = _greek_ocr_citation()
+    c["translations"][0]["translator"] = good_translator
+    validate_scholar(_wrap(c))  # no raise
+
+
+def test_human_published_translator_not_subject_to_llm_regex():
+    """method='human-published' allows free-form translator string (e.g. 'Salmond, ANF 5')."""
+    c = _greek_ocr_citation()
+    c["translations"][0]["method"] = "human-published"
+    c["translations"][0]["translator"] = "Salmond, ANF 5"
+    validate_scholar(_wrap(c))  # no raise
+
+
+# ── filename ↔ language mismatch (defensive D-2.5 coverage) ────────────────
+
+
+def test_external_ocr_language_filename_mismatch_rejected():
+    """quote.language='grc' but backend.filename starts with 'latin/' is rejected."""
+    c = _greek_ocr_citation()
+    c["backend"]["filename"] = "latin/some-source.txt"  # mismatch
+    with pytest.raises(ValidationError, match="must start with"):
+        validate_scholar(_wrap(c))
+
+
+# ── language-field type defenses (D-2.5) ────────────────────────────────────
+
+
+def test_quote_language_explicit_null_accepted():
+    """An explicit None on quote.language is treated as absent (no rule fires)."""
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"]["language"] = None
+    validate_scholar(s)  # no raise
+
+
+def test_quote_language_non_string_rejected():
+    """quote.language as a list/dict is rejected by the type check."""
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"]["language"] = ["grc"]  # list, not string
+    with pytest.raises(ValidationError, match="quote.language"):
+        validate_scholar(s)
+
+
+# ── translations[] must contain ≥1 en entry when non-English (D-2.6) ───────
+
+
+def test_non_english_quote_translations_missing_en_entry_rejected():
+    """translations[] with only a non-en entry on a grc quote is rejected.
+
+    D-2.5 enforced "translations[] required when non-English"; D-2.6 closes
+    the gap where translations[] could carry only Latin/German/etc. and pass
+    while leaving the visualization tier with no English to render.
+    """
+    c = _greek_ocr_citation()
+    c["translations"] = [
+        {
+            "language": "de",
+            "text": "Tier nennt es das römische Reich",
+            "translator": "anthropic:claude-opus-4-7",
+            "translatedAt": "2026-04-29",
+            "method": "llm",
+            "register": "modern-faithful",
+        }
+    ]
+    with pytest.raises(ValidationError, match="language='en'"):
+        validate_scholar(_wrap(c))
+
+
+def test_non_english_quote_with_en_entry_accepted():
+    """A single en entry satisfies the rule (the baseline case)."""
+    c = _greek_ocr_citation()
+    # _greek_ocr_citation already carries one en translation
+    assert any(t["language"] == "en" for t in c["translations"])
+    validate_scholar(_wrap(c))  # no raise
+
+
+def test_non_english_quote_with_multiple_translations_including_en_accepted():
+    """en + de + fr on a grc quote validates — extra translations are allowed."""
+    c = _greek_ocr_citation()
+    c["translations"] = [
+        {
+            "language": "en",
+            "text": "Ancient of Days",
+            "translator": "anthropic:claude-opus-4-7",
+            "translatedAt": "2026-04-29",
+            "method": "llm",
+            "register": "modern-faithful",
+        },
+        {
+            "language": "de",
+            "text": "Alter der Tage",
+            "translator": "anthropic:claude-opus-4-7",
+            "translatedAt": "2026-04-29",
+            "method": "llm",
+            "register": "modern-faithful",
+        },
+        {
+            "language": "fr",
+            "text": "l'Ancien des jours",
+            "translator": "anthropic:claude-opus-4-7",
+            "translatedAt": "2026-04-29",
+            "method": "llm",
+            "register": "modern-faithful",
+        },
+    ]
+    validate_scholar(_wrap(c))  # no raise
+
+
+def test_non_english_quote_empty_translations_array_still_rejected_under_d2_6():
+    """Pin the D-2.5 rule: an empty array does not satisfy the requirement.
+
+    Duplicates the D-2.5 test deliberately — D-2.6 layered the
+    English-target check on top, and it would be easy to refactor in a
+    way that lets `[]` slip through the new check without tripping the
+    presence check. Pin both side-by-side.
+    """
+    c = _greek_ocr_citation()
+    c["translations"] = []
+    with pytest.raises(ValidationError, match="translations\\[\\] required"):
+        validate_scholar(_wrap(c))
+
+
+def test_english_quote_no_translations_accepted():
+    """quote.language='en' with no translations[] passes (en-original)."""
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"]["language"] = "en"
+    assert "translations" not in c
+    validate_scholar(s)  # no raise
+
+
+def test_english_quote_with_only_non_english_translation_accepted():
+    """quote.language='en' with translations[] containing only fr is fine.
+
+    For en-original quotes translations are aspirational (e.g. a French
+    rendering of an English systematic-theology quote); the English-target
+    rule does not apply because the original is already English.
+    """
+    s = _minimal_scholar()
+    c = s["positions"][0]["citations"][0]
+    c["quote"]["language"] = "en"
+    c["translations"] = [
+        {
+            "language": "fr",
+            "text": "une attente déçue",
+            "translator": "anthropic:claude-opus-4-7",
+            "translatedAt": "2026-04-29",
+            "method": "llm",
+            "register": "modern-faithful",
+        }
+    ]
+    validate_scholar(s)  # no raise

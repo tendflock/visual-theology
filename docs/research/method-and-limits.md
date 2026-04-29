@@ -86,7 +86,7 @@ listed as out-of-corpus:
 - **Theodoret of Cyrus, *In visiones Danielis prophetae*** (Migne PG 81 cols 1411–1437,
   TLG canon 4089.028; OCR'd from archive.org PG 81 scan to
   `external-resources/greek/theodoret-pg81-dan7.txt` plus Dan 5–6 and Dan 11–12 ranges).
-  To be surveyed using the new `external-greek-ocr` citation backend.
+  Surveyed via the `external-ocr` citation backend (with `quote.language="grc"`).
 - **André LaCocque, *The Book of Daniel*** (Cascade Books reissue, EPUB at
   `external-resources/epubs/9781498221689.epub`) — to be surveyed using the
   `external-epub` citation backend. Continental-French Catholic critical.

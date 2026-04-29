@@ -1575,3 +1575,144 @@ def test_build_citation_no_translations_field_when_omitted():
         short_title="RST 4",
     )
     assert "translations" not in c
+
+
+# ── _load_ocr_text type defenses (D-2.5) ────────────────────────────────────
+
+
+def test_load_ocr_text_rejects_non_string_language():
+    """quote.language passed as a list/dict returns resource-unreadable, not TypeError."""
+    citation = _build_external_ocr_citation(
+        filename="greek/theodoret-pg81-dan7.txt",
+        quote_text="anything",
+        language="grc",
+    )
+    citation["quote"]["language"] = ["grc"]  # list, not string
+    v = verify_citation(citation)
+    assert v["status"] == "resource-unreadable", v
+    assert "string" in v["notes"], v
+
+
+def test_load_ocr_text_rejects_dict_language():
+    citation = _build_external_ocr_citation(
+        filename="greek/theodoret-pg81-dan7.txt",
+        quote_text="anything",
+        language="grc",
+    )
+    citation["quote"]["language"] = {"code": "grc"}
+    v = verify_citation(citation)
+    assert v["status"] == "resource-unreadable", v
+    assert "string" in v["notes"], v
+
+
+# ── codex-flagged validator-coverage gaps (D-2.5) ──────────────────────────
+
+
+def _wrap_doc(citation: dict) -> dict:
+    """Wrap a single citation in a minimal scholar doc for the validator."""
+    return {
+        "scholarId": "ocr-test",
+        "authorDisplay": "Test",
+        "workDisplay": "Test",
+        "resourceId": "external/test",
+        "resourceFile": "greek/theodoret-pg81-dan7.txt",
+        "traditionTag": "patristic",
+        "commitmentProfile": {"strong": [], "moderate": [], "tentative": []},
+        "positions": [
+            {
+                "axis": "A",
+                "axisName": "x",
+                "position": "x",
+                "commitment": "strong",
+                "rationale": "x",
+                "citations": [citation],
+            }
+        ],
+    }
+
+
+def test_validator_external_ocr_requires_non_null_quote():
+    """external-ocr citations MUST have a non-null quote (per schema doc)."""
+    sys.path.insert(
+        0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "tools")
+    )
+    from validate_scholar import ValidationError, validate_scholar
+
+    citation = _build_external_ocr_citation(
+        filename="greek/theodoret-pg81-dan7.txt",
+        quote_text="anything",
+        language="grc",
+        translations=[
+            {
+                "language": "en",
+                "text": "x",
+                "translator": "anthropic:claude-opus-4-7",
+                "translatedAt": "2026-04-29",
+                "method": "llm",
+                "register": "modern-faithful",
+            }
+        ],
+    )
+    citation["quote"] = None
+    citation["supportStatus"] = "paraphrase-anchored"
+    with pytest.raises(ValidationError, match="external-ocr"):
+        validate_scholar(_wrap_doc(citation))
+
+
+def test_validator_external_ocr_explicit_null_language_rejected():
+    """quote.language=null on external-ocr → rejected (the kind requires a language)."""
+    sys.path.insert(
+        0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "tools")
+    )
+    from validate_scholar import ValidationError, validate_scholar
+
+    citation = _build_external_ocr_citation(
+        filename="greek/theodoret-pg81-dan7.txt",
+        quote_text="anything",
+        language="grc",
+    )
+    citation["quote"]["language"] = None
+    with pytest.raises(ValidationError, match="quote.language"):
+        validate_scholar(_wrap_doc(citation))
+
+
+def test_validator_external_ocr_english_language_rejected():
+    """language='en' on external-ocr is rejected — no english/ subdir, OCR is for non-English."""
+    sys.path.insert(
+        0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "tools")
+    )
+    from validate_scholar import ValidationError, validate_scholar
+
+    citation = _build_external_ocr_citation(
+        filename="greek/theodoret-pg81-dan7.txt",
+        quote_text="anything",
+        language="en",
+    )
+    with pytest.raises(ValidationError, match="quote.language"):
+        validate_scholar(_wrap_doc(citation))
+
+
+def test_validator_external_ocr_filename_language_dir_mismatch_rejected():
+    """filename starts with latin/ but language is grc → rejected."""
+    sys.path.insert(
+        0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "tools")
+    )
+    from validate_scholar import ValidationError, validate_scholar
+
+    citation = _build_external_ocr_citation(
+        filename="latin/something.txt",  # but language is grc
+        quote_text="anything",
+        language="grc",
+        translations=[
+            {
+                "language": "en",
+                "text": "x",
+                "translator": "anthropic:claude-opus-4-7",
+                "translatedAt": "2026-04-29",
+                "method": "llm",
+                "register": "modern-faithful",
+            }
+        ],
+    )
+    with pytest.raises(ValidationError, match="must start with"):
+        validate_scholar(_wrap_doc(citation))

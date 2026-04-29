@@ -212,7 +212,7 @@ Greek text in J.-P. Migne, ed., *Patrologiae Cursus Completus, Series Graeca*, v
 `external-resources/greek/theodoret-pg81-{dan5_6, dan7, dan11_12}.txt`, sourced from
 the archive.org Google Books scan (`migne-pg81-archiveorg/`). [Tradition cluster:
 patristic-greek-antiochene. WS0c primary voice (Greek-OCR ingestion via
-`backend.kind: external-greek-ocr`). Hill's English translation (WGRW 7, SBL 2006)
+`backend.kind: external-ocr` with `quote.language: grc`). Hill's English translation (WGRW 7, SBL 2006)
 referenced bibliographically but not in project corpus.]
 
 ## W

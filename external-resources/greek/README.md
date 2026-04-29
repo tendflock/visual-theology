@@ -149,21 +149,25 @@ material remains a future capture.
 
 ## Citation backend
 
-WS0c-7 schema extension (in progress) will add a `backend.kind: external-greek-ocr`
-discriminator with this shape:
+The schema discriminator is `backend.kind: external-ocr` (D-2 generalization
+of the prior `external-greek-ocr` kind so the same backend serves Latin,
+Hebrew, Aramaic, Judeo-Arabic, German, and French sources). The citation's
+`quote.language` selects the per-language subdirectory; for files in this
+directory, `quote.language` is always `"grc"` and `backend.filename`
+begins with `greek/`. Shape:
 
 ```json
 {
   "backend": {
-    "kind": "external-greek-ocr",
-    "filename": "theodoret-daniel-pg81-ocr.txt",
+    "kind": "external-ocr",
+    "filename": "greek/theodoret-pg81-dan7.txt",
     "tlgCanon": "4089.028",
     "mignePgVolume": 81,
     "migneColumn": 1265,
     "passageRef": "Theodoret on Dan 2:23"
   },
   "frontend": { "...standard frontend fields..." },
-  "quote": { "text": "...verbatim Greek...", "sha256": "..." }
+  "quote": { "text": "...verbatim Greek...", "sha256": "...", "language": "grc" }
 }
 ```
 

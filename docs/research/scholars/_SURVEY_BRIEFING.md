@@ -168,28 +168,41 @@ field, and `backend.filename` must begin with the language-dir prefix
 Every citation whose `quote.language != "en"` MUST carry a `translations[]`
 array sibling to `quote` containing at least one English-target entry.
 This is what the site renders alongside the original; without it the
-reader sees only Greek/Latin/Hebrew that they may not read.
+reader sees only Greek/Latin/Hebrew that they may not read. The
+validator (`tools/validate_scholar.py`) enforces this rule.
 
-The translation must be produced by the latest Opus model and the
-record must declare so:
+**English-target rule (non-negotiable):** every `translations[]` array
+on a non-English quote MUST include at least one entry with
+`language: "en"`. Additional translations in other languages (e.g. a
+German modern rendering of a Latin source, or a Hebrew vocalization
+note) are optional and may be added alongside the English entry, but an
+array containing only non-English entries is rejected by the validator
+with *"translations[] must contain ≥1 entry with language='en' when
+quote.language is non-English"*.
+
+Read `docs/research/scholars/_TRANSLATION_CONFIG.md` before emitting
+any `translations[]` entry; use the `translator`/`method`/`register`
+values exactly as specified there. That file is the single source of
+truth for the current Opus identifier.
 
 ```json
 "translations": [
   {
     "language": "en",
     "text": "<modern-faithful English>",
-    "translator": "anthropic:claude-opus-4-7",
+    "translator": "<see _TRANSLATION_CONFIG.md>",
     "translatedAt": "<YYYY-MM-DD>",
-    "method": "llm",
-    "register": "modern-faithful"
+    "method": "<see _TRANSLATION_CONFIG.md>",
+    "register": "<see _TRANSLATION_CONFIG.md>"
   }
 ]
 ```
 
 The validator enforces all six fields; `method == "llm"` requires the
-`provider:model` colon-format in `translator`. If a long-PD published
-English translation exists (Salmond ANF 5, Migne's facing Latin, etc.),
-you may add a second entry alongside the LLM rendering with
+`provider:model` colon-format in `translator`
+(regex: `^[a-z0-9_-]+:[a-z0-9._-]+$`). If a long-PD published English
+translation exists (Salmond ANF 5, Migne's facing Latin, etc.), you
+may add a second entry alongside the LLM rendering with
 `method: "human-published"` and the translator as `<editor>, <short-cite>`.
 
 ### Translation prompt (use verbatim for LLM translations)
@@ -224,9 +237,8 @@ use this prompt template (substitute the bracketed parts):
 > ```
 
 The subagent should set `translatedAt` to today's date (project clock,
-`Today's date is YYYY-MM-DD` in the session header) and
-`translator: "anthropic:claude-opus-4-7"` (or the current latest Opus
-ID if it has rolled forward — confirm via the system context).
+`Today's date is YYYY-MM-DD` in the session header) and pull
+`translator` from `_TRANSLATION_CONFIG.md` rather than hardcoding it.
 
 ### Verifier behavior
 

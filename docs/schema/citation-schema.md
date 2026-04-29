@@ -171,11 +171,14 @@ For all non-`logos` kinds, the validator forbids the Logos-only fields
 
 `quote` may be `null`, but only when paired with a `supportStatus` other than `directly-quoted`.
 
-### `translations` (optional, D-2)
+### `translations` (D-2; globally optional, required for non-English quotes)
 
-When the source's `quote.text` is in a non-English language, an optional
-`translations[]` array sibling to `quote` carries derivative
-modern-English (or other-target-language) renderings with provenance.
+A `translations[]` array sibling to `quote` carries derivative
+modern-English (or other-target-language) renderings of the source's
+`quote.text` with provenance. The array is globally optional, but
+**required** when `quote.language` is non-English (with at least one
+entry having `language: "en"`) — see *When `translations[]` is required*
+below.
 Translations are **not** verified against the source by `verify_citation` —
 only `quote.text` is the verifier's anchor; translations are
 human/LLM-produced editorial artifacts.
@@ -213,6 +216,41 @@ Translations are **derivative** and explicitly not subject to verification
 against the source — `quote.text` remains the verifier anchor. The site
 renders the translation alongside the original and discloses the
 translator/method/register so readers can judge fidelity.
+
+#### When `translations[]` is required
+
+`translations[]` is **required** whenever the citation carries a non-null
+`quote` whose `quote.language` is set and not equal to `"en"`. Without
+at least one entry in the array, `tools/validate_scholar.py` rejects the
+citation with the message
+*"translations[] required when quote.language is non-English"*. The rule
+keeps the corpus presentable: the site renders the translation alongside
+the original, and a missing translation would leave readers staring at
+Greek/Latin/Hebrew they may not parse.
+
+When `quote.language` is non-English, `translations[]` must additionally
+contain **at least one entry with `language: "en"`** (the visualization
+tier displays English alongside original-language primary text per the
+PM-ratified architecture). Additional translations into other languages
+(e.g. a German rendering of a Latin source) are permitted alongside the
+required English entry; an array with only non-English entries is
+rejected by the validator with the message *"translations[] must contain
+≥1 entry with language='en' when quote.language is non-English"*.
+
+`translations[]` remains optional when:
+
+- `quote` is `null` (paraphrase-anchored or summary-inference citations
+  with no needle to translate).
+- `quote.language` is absent (defaults to English) or explicitly `"en"`.
+  When `quote.language == "en"` (or absent), `translations[]` is fully
+  optional and entries may be in any supported language — the
+  English-target rule does not apply because the original is already
+  English.
+
+The single source of truth for the LLM-method translator identifier is
+`docs/research/scholars/_TRANSLATION_CONFIG.md`. Subagents emitting
+`translations[]` entries must read that file rather than hardcoding a
+provider/model string.
 
 ### `supportStatus` (required) — the evidential posture
 
