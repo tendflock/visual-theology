@@ -45,7 +45,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -62,13 +62,14 @@
           },
           "quote": {
             "text": "θηρίον τὴν Ῥωμαϊχὴν χαλεῖ βασιλείαν",
-            "sha256": "3940319e2b84287eb161333f1a009aa9ff68f457c6c667a2e0b95a486c4e3b0b"
+            "sha256": "3940319e2b84287eb161333f1a009aa9ff68f457c6c667a2e0b95a486c4e3b0b",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -85,13 +86,14 @@
           },
           "quote": {
             "text": "Ῥωμαῖοι τὸ χατὰ πάντων ἀνεδήσαντο χράτος",
-            "sha256": "20814bd95facc3b3ac0e56c72a98a7fc8403a50c2c08d206375da36bf4939e6f"
+            "sha256": "20814bd95facc3b3ac0e56c72a98a7fc8403a50c2c08d206375da36bf4939e6f",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -108,7 +110,8 @@
           },
           "quote": {
             "text": "τὴν Ῥωμαϊχὴν βασιλείαν νοεῖν τὸ τέταρτον θηρίον",
-            "sha256": "7b8b36fbd4daf85d8a14b138a7952291a2d06621d3fb1d18bb32f14599d92262"
+            "sha256": "7b8b36fbd4daf85d8a14b138a7952291a2d06621d3fb1d18bb32f14599d92262",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -124,7 +127,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -141,13 +144,14 @@
           },
           "quote": {
             "text": "᾿Αντίχριστον αἰνίττεται, μεταξὺ τῶν δέχα κεράτων",
-            "sha256": "a9070c64d0d95203042f5d4b9edc3732b8845dbcb1403f8c44b0b3ffbba7b145"
+            "sha256": "a9070c64d0d95203042f5d4b9edc3732b8845dbcb1403f8c44b0b3ffbba7b145",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -164,13 +168,14 @@
           },
           "quote": {
             "text": "Σαφῶς δὲ ἡμᾶς ὁ μακάριος Παῦλος",
-            "sha256": "f886d26c8afe697a441da72356e5d862300b57161cc249da345beeefdebf4066"
+            "sha256": "f886d26c8afe697a441da72356e5d862300b57161cc249da345beeefdebf4066",
+            "language": "grc"
           },
           "supportStatus": "paraphrase-anchored"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan11_12.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -187,7 +192,8 @@
           },
           "quote": {
             "text": "ἀρχέτυπον δὲ τοῦ ᾿Αντιόχου ὁ ἀντίχριστος",
-            "sha256": "ffa6283bf0ca17755db215c95e9f0cb601ab68a0a96da6da9c124bebb065f31d"
+            "sha256": "ffa6283bf0ca17755db215c95e9f0cb601ab68a0a96da6da9c124bebb065f31d",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -203,7 +209,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -220,7 +226,8 @@
           },
           "quote": {
             "text": "τρία ἥμισυ ἔτη λέγει",
-            "sha256": "e444e16f28048a36a5d5ed5abfca0e361017ac2f86704e6f4e7ad56daa8b5524"
+            "sha256": "e444e16f28048a36a5d5ed5abfca0e361017ac2f86704e6f4e7ad56daa8b5524",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -236,7 +243,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -253,13 +260,14 @@
           },
           "quote": {
             "text": "ἐπιφάνειαν προθεσπίζων",
-            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb"
+            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -276,7 +284,8 @@
           },
           "quote": {
             "text": "Κύριος εἶπε πρός με",
-            "sha256": "de2e9bcd21506f19e07b5e4e9e26290710fe5b131cab996add392dcdf6bc81b6"
+            "sha256": "de2e9bcd21506f19e07b5e4e9e26290710fe5b131cab996add392dcdf6bc81b6",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         }
@@ -292,7 +301,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -309,13 +318,14 @@
           },
           "quote": {
             "text": "μία Bb μόνη ἡ ἀτελεύτητος μένει",
-            "sha256": "da8fb3720df345d552eb55cbbcb7ceee690b5b3eace0280e7c4b7968a4ee8b77"
+            "sha256": "da8fb3720df345d552eb55cbbcb7ceee690b5b3eace0280e7c4b7968a4ee8b77",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -332,7 +342,8 @@
           },
           "quote": {
             "text": "ἡ ἀληθὴς",
-            "sha256": "50c9dc4321ff75df0e7a05278af96d7d920141cf65169aa2c1889ba372f7c5c9"
+            "sha256": "50c9dc4321ff75df0e7a05278af96d7d920141cf65169aa2c1889ba372f7c5c9",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -348,7 +359,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -365,13 +376,14 @@
           },
           "quote": {
             "text": "Τὴν ᾿Ασσυρίων βασιλείαν",
-            "sha256": "789029bcf2aeb4f0ff16060166218d3fce8c233ab299abb3342e140b5b362f78"
+            "sha256": "789029bcf2aeb4f0ff16060166218d3fce8c233ab299abb3342e140b5b362f78",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -388,13 +400,14 @@
           },
           "quote": {
             "text": "Περσιχὴν ἐνταῦθα βασιλείαν αἰνίττεται",
-            "sha256": "61bceefd1b7e6c034ecf42eb59866320a92ba26f08074b0f0baf28985c6337a2"
+            "sha256": "61bceefd1b7e6c034ecf42eb59866320a92ba26f08074b0f0baf28985c6337a2",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -411,13 +424,14 @@
           },
           "quote": {
             "text": "χεδονιχὴν βασιλείαν διὰ τούτων αἰνίττεται",
-            "sha256": "ca1977b16c5d540cd4ab130eb74e3a9bf044404456b6f11766c667482834d852"
+            "sha256": "ca1977b16c5d540cd4ab130eb74e3a9bf044404456b6f11766c667482834d852",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -434,7 +448,8 @@
           },
           "quote": {
             "text": "ἡμεῖς δὲ τῇ πείρᾳ μεμαθήκαμεν",
-            "sha256": "307cd0d271f7a5afbdd883dfb33b34fbfe986dc16dafa2e94d21ba0de1262c62"
+            "sha256": "307cd0d271f7a5afbdd883dfb33b34fbfe986dc16dafa2e94d21ba0de1262c62",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -450,7 +465,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan11_12.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -467,7 +482,8 @@
           },
           "quote": {
             "text": "μεταδαίνει λοιπὸν ἀπὸ τῆς",
-            "sha256": "bb3b21e992d76ec2e07b8f8193bbae48184e08d40784916952aa0780431673b7"
+            "sha256": "bb3b21e992d76ec2e07b8f8193bbae48184e08d40784916952aa0780431673b7",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -483,7 +499,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -500,13 +516,14 @@
           },
           "quote": {
             "text": "θαυμάζω χομιδῇ",
-            "sha256": "3f35a0702393c6ccf11fafb9d7a3d3213989080e59cf2cf7c5b54babcc70ef69"
+            "sha256": "3f35a0702393c6ccf11fafb9d7a3d3213989080e59cf2cf7c5b54babcc70ef69",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -523,13 +540,14 @@
           },
           "quote": {
             "text": "οἱ δὲ ἅγιοι τοῦ Ὑψίστου οὐ μετὰ ᾿Αντίο",
-            "sha256": "a3e0e8197ab6007580d60ea988fecd74e4878ca8154235c89ab7ae4f26bc361f"
+            "sha256": "a3e0e8197ab6007580d60ea988fecd74e4878ca8154235c89ab7ae4f26bc361f",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         },
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -546,7 +564,8 @@
           },
           "quote": {
             "text": "οὔτε πάντες ἅγιοι",
-            "sha256": "a04501273cab88bd91656ea6431df5feca60c015ae3b8a94165f896cf2371401"
+            "sha256": "a04501273cab88bd91656ea6431df5feca60c015ae3b8a94165f896cf2371401",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         }
@@ -562,7 +581,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -579,7 +598,8 @@
           },
           "quote": {
             "text": "δέκα κατὰ ταὐτὸν ἀναστήσονται",
-            "sha256": "4e015e01ab3400fee1d542feeead89e2c6e52f9060c17b2fb843f46bec44e363"
+            "sha256": "4e015e01ab3400fee1d542feeead89e2c6e52f9060c17b2fb843f46bec44e363",
+            "language": "grc"
           },
           "supportStatus": "directly-quoted"
         }
@@ -595,7 +615,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -612,7 +632,8 @@
           },
           "quote": {
             "text": "ἀσώματος ὧν ὁ Θεὸς, ἁπλοῦς τε xol ἀσχημάτιστος",
-            "sha256": "84926aa4ca8e76a7e23409e6326dc87b14b398bd9e3f967f29ccdd84aa766dd6"
+            "sha256": "84926aa4ca8e76a7e23409e6326dc87b14b398bd9e3f967f29ccdd84aa766dd6",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         }
@@ -626,7 +647,7 @@
       "citations": [
         {
           "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -643,7 +664,8 @@
           },
           "quote": {
             "text": "ἐπιφάνειαν προθεσπίζων",
-            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb"
+            "sha256": "c9ffd21d6ff23decfaaae11f3157e596fff94a50782e77624174fb5b2545dfbb",
+            "language": "grc"
           },
           "supportStatus": "summary-inference"
         }

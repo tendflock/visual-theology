@@ -37,10 +37,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
 from typing import Any, Iterable
+
+# Single source of truth for what counts as a fetchable Sefaria URL — the
+# document validator and the runtime fetch path must agree, otherwise
+# malformed URLs land in the corpus and only fail at sweep time. See
+# tools/citations.py:validate_sefaria_url.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from citations import validate_sefaria_url  # noqa: E402
 
 
 # Locked axis taxonomy (see docs/research/2026-04-23-daniel-interpretive-
@@ -274,8 +282,39 @@ _BACKEND_KINDS = (
     "logos",
     "external-epub",
     "external-pdf",
-    "external-greek-ocr",
+    "external-ocr",
+    "external-sefaria",
 )
+
+_SEFARIA_LANGUAGES = ("he", "en")
+
+# Languages accepted on quote.language. Required for kind=external-ocr
+# (anchors which per-language subdirectory under external-resources/ holds
+# the OCR file). Optional elsewhere; defaults to "en" when absent. Keep in
+# lockstep with tools/citations.py:OCR_LANGUAGE_DIRS.
+_QUOTE_LANGUAGES: tuple[str, ...] = (
+    "en", "la", "grc", "he", "arc", "jrb", "de", "fr",
+)
+_OCR_LANGUAGES: tuple[str, ...] = (
+    "la", "grc", "he", "arc", "jrb", "de", "fr",
+)
+_OCR_LANGUAGE_DIR_MAP = {
+    "grc": "greek",
+    "la": "latin",
+    "he": "hebrew",
+    "arc": "aramaic",
+    "jrb": "judeo-arabic",
+    "de": "german",
+    "fr": "french",
+}
+
+_TRANSLATION_METHODS: tuple[str, ...] = (
+    "llm", "human-published", "human-volunteer",
+)
+_TRANSLATION_REGISTERS: tuple[str, ...] = (
+    "modern-faithful", "wooden-literal", "paraphrastic",
+)
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def _validate_citation(
@@ -301,9 +340,42 @@ def _validate_citation(
         _require_type(b["resourceId"], str, f"{path}.backend.resourceId")
         _require_type(b["logosArticleNum"], int, f"{path}.backend.logosArticleNum")
         _require_type(b["nativeSectionId"], str, f"{path}.backend.nativeSectionId")
+    elif kind == "external-sefaria":
+        # Sefaria-API citations: resourceUrl + language + verseRef. No filename
+        # (this backend is URL-fetched, not file-backed) and no Logos-only
+        # fields.
+        for f in ("resourceUrl", "language", "verseRef"):
+            _require(
+                f in b, f"{path}.backend(external-sefaria): missing required field {f!r}"
+            )
+        _require_type(b["resourceUrl"], str, f"{path}.backend.resourceUrl")
+        try:
+            validate_sefaria_url(b["resourceUrl"])
+        except ValueError as e:
+            raise ValidationError(f"{path}.backend.resourceUrl: {e}")
+        _require_type(b["language"], str, f"{path}.backend.language")
+        _require(
+            b["language"] in _SEFARIA_LANGUAGES,
+            f"{path}.backend.language: {b['language']!r} not in {_SEFARIA_LANGUAGES}",
+        )
+        _require_type(b["verseRef"], str, f"{path}.backend.verseRef")
+        _require(b["verseRef"].strip(), f"{path}.backend.verseRef: must be non-empty")
+        if "commentator" in b and b["commentator"] is not None:
+            _require_type(b["commentator"], str, f"{path}.backend.commentator")
+        for forbidden in (
+            "resourceId",
+            "logosArticleNum",
+            "nativeSectionId",
+            "filename",
+        ):
+            _require(
+                forbidden not in b,
+                f"{path}.backend(external-sefaria): field {forbidden!r} not allowed",
+            )
     else:
-        # External resources require backend.filename (path rel to
-        # external-resources/) and forbid the Logos-only fields.
+        # File-backed external kinds (epub/pdf/ocr) require
+        # backend.filename (path rel to external-resources/) and forbid the
+        # Logos-only fields.
         _require(
             "filename" in b,
             f"{path}.backend({kind}): missing required field 'filename'",
@@ -319,7 +391,7 @@ def _validate_citation(
                 f"{path}.backend({kind}): field {forbidden!r} is Logos-only",
             )
         # Optional kind-specific extras (no enforcement, just type if present)
-        if kind == "external-greek-ocr":
+        if kind == "external-ocr":
             for opt in ("tlgCanon", "mignePgVolume", "migneColumn", "passageRef"):
                 if opt in b and b[opt] is not None:
                     if opt == "mignePgVolume" or opt == "migneColumn":
@@ -364,6 +436,78 @@ def _validate_citation(
             _SHA256_RE.match(q["sha256"]),
             f"{path}.quote.sha256: must be 64 lowercase hex chars",
         )
+        # quote.language (D-2) — optional everywhere except external-ocr,
+        # where it anchors the per-language subdirectory under
+        # external-resources/. When present, must be in _QUOTE_LANGUAGES.
+        if "language" in q and q["language"] is not None:
+            _require_type(q["language"], str, f"{path}.quote.language")
+            _require(
+                q["language"] in _QUOTE_LANGUAGES,
+                f"{path}.quote.language: {q['language']!r} not in {_QUOTE_LANGUAGES}",
+            )
+
+    # external-ocr requires quote + quote.language naming the per-language
+    # subdirectory; the verifier rejects the citation otherwise. Mirror the
+    # constraint here so a malformed citation never lands in the corpus.
+    if kind == "external-ocr":
+        _require(
+            q is not None,
+            f"{path}: external-ocr citation must carry a quote with language",
+        )
+        _require(
+            "language" in q and q["language"] is not None,
+            f"{path}.quote: external-ocr citation requires quote.language",
+        )
+        _require(
+            q["language"] in _OCR_LANGUAGES,
+            f"{path}.quote.language: {q['language']!r} not in {_OCR_LANGUAGES} "
+            f"(required for external-ocr)",
+        )
+        expected_dir = _OCR_LANGUAGE_DIR_MAP[q["language"]]
+        filename = b.get("filename", "")
+        _require(
+            filename.startswith(f"{expected_dir}/"),
+            f"{path}.backend.filename: must start with {expected_dir!r}/ "
+            f"for quote.language={q['language']!r}, got {filename!r}",
+        )
+
+    # translations[] (D-2) — optional list of derivative-translation records
+    # paired with the citation's quote. Each entry carries 6 required fields;
+    # translations are NOT verified against the source by verify_citation
+    # (only quote.text is the verifier's anchor).
+    if "translations" in c and c["translations"] is not None:
+        _require_type(c["translations"], list, f"{path}.translations")
+        for k, t in enumerate(c["translations"]):
+            tpath = f"{path}.translations[{k}]"
+            _require_type(t, dict, tpath)
+            for f in ("language", "text", "translator", "translatedAt", "method", "register"):
+                _require(f in t and t[f] is not None,
+                         f"{tpath}: missing required field {f!r}")
+                _require_type(t[f], str, f"{tpath}.{f}")
+                _require(t[f], f"{tpath}.{f}: must be non-empty")
+            _require(
+                t["language"] in _QUOTE_LANGUAGES,
+                f"{tpath}.language: {t['language']!r} not in {_QUOTE_LANGUAGES}",
+            )
+            _require(
+                t["method"] in _TRANSLATION_METHODS,
+                f"{tpath}.method: {t['method']!r} not in {_TRANSLATION_METHODS}",
+            )
+            _require(
+                t["register"] in _TRANSLATION_REGISTERS,
+                f"{tpath}.register: {t['register']!r} not in {_TRANSLATION_REGISTERS}",
+            )
+            _require(
+                _DATE_RE.match(t["translatedAt"]),
+                f"{tpath}.translatedAt: must be YYYY-MM-DD, got {t['translatedAt']!r}",
+            )
+            if t["method"] == "llm":
+                _require(
+                    ":" in t["translator"],
+                    f"{tpath}.translator: method='llm' requires "
+                    f"'<provider>:<model>' format (e.g. 'anthropic:claude-opus-4-7'), "
+                    f"got {t['translator']!r}",
+                )
 
     # supportStatus — required when enforced
     if require_support_status:

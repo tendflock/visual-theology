@@ -1,0 +1,13 @@
+[Test fixture for D-2 external-ocr backend, language=la]
+
+(PL 25, col. 533) Itaque post Macedonum imperium, in quattuor partes
+divisum est regnum: cum Ptolemaeus, Seleucus, Philippus et Antigonus,
+inter se principatum dividerent. Quartum autem regnum, manifeste pertinet
+ad Romanos, qui nunc tenent imperium.
+
+(PL 25, col. 537) De cornu autem parvulo, quod inter decem cornua
+exortum est, et tria de prioribus radicitus eradicavit, omnes scriptores
+ecclesiastici tradiderunt: in fine mundi, quando regnum destruendum est
+Romanorum, decem futuros reges qui orbem Romanum inter se dividant.
+
+(end test fixture)

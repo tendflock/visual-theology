@@ -147,6 +147,95 @@ diagnostics across the corpus.
 }
 ```
 
+## Multilingual surveys (Wave 6 + Wave 7)
+
+When the source is in a non-English language (Latin, Greek, Hebrew, Aramaic,
+Judeo-Arabic, German), follow these additional rules. The supporting
+infrastructure landed in D-2 (2026-04-29):
+
+### `quote.text` stays in the original language
+
+The verifier matches `quote.text` against the OCR'd source file directly —
+do **not** translate the quote into English in the `quote.text` field.
+Set `quote.language` to the ISO code (`la`, `grc`, `he`, `arc`, `jrb`,
+`de`, `fr`). For `external-ocr` citations the validator requires this
+field, and `backend.filename` must begin with the language-dir prefix
+(`latin/`, `greek/`, `hebrew/`, `aramaic/`, `judeo-arabic/`, `german/`,
+`french/`).
+
+### `translations[]` is REQUIRED for non-English quotes
+
+Every citation whose `quote.language != "en"` MUST carry a `translations[]`
+array sibling to `quote` containing at least one English-target entry.
+This is what the site renders alongside the original; without it the
+reader sees only Greek/Latin/Hebrew that they may not read.
+
+The translation must be produced by the latest Opus model and the
+record must declare so:
+
+```json
+"translations": [
+  {
+    "language": "en",
+    "text": "<modern-faithful English>",
+    "translator": "anthropic:claude-opus-4-7",
+    "translatedAt": "<YYYY-MM-DD>",
+    "method": "llm",
+    "register": "modern-faithful"
+  }
+]
+```
+
+The validator enforces all six fields; `method == "llm"` requires the
+`provider:model` colon-format in `translator`. If a long-PD published
+English translation exists (Salmond ANF 5, Migne's facing Latin, etc.),
+you may add a second entry alongside the LLM rendering with
+`method: "human-published"` and the translator as `<editor>, <short-cite>`.
+
+### Translation prompt (use verbatim for LLM translations)
+
+When asking the latest Opus to render a non-English quote into English,
+use this prompt template (substitute the bracketed parts):
+
+> Translate this **[Greek/Latin/Hebrew/etc.]** passage from **[Author,
+> Work, locator]** into modern English.
+>
+> Register: modern-faithful — neither wooden-literal (preserving
+> source-language word-order at the cost of fluency) nor paraphrastic
+> (sense-for-sense, looser). Aim for what an educated reader of theology
+> would write if asked to render the source's specific theological
+> claims into 21st-century English without embellishment.
+>
+> Constraints:
+> 1. Preserve theological precision: render technical terms (Antichrist,
+>    parousia, hypostasis, eschaton, Targum, Kingdom-of-the-Saints) as
+>    the source uses them; do not modernize them out of recognition.
+> 2. Preserve sentence-level structure as far as fluency allows;
+>    do not merge or split sentences without reason.
+> 3. Quote the translation only — no commentary, no notes, no "Here is
+>    the translation:" preface. Begin with the first English word.
+> 4. If the passage contains an OCR garble that cannot be confidently
+>    reconstructed, render `[?]` at that point in the English; do not
+>    guess.
+>
+> Source:
+> ```
+> [exact quote.text, no surrounding context]
+> ```
+
+The subagent should set `translatedAt` to today's date (project clock,
+`Today's date is YYYY-MM-DD` in the session header) and
+`translator: "anthropic:claude-opus-4-7"` (or the current latest Opus
+ID if it has rolled forward — confirm via the system context).
+
+### Verifier behavior
+
+`tools/citations.py:verify_citation` only verifies `quote.text` against
+the source. The `translations[]` records are NOT verified against the
+source — they are derivative artifacts. Any factual error in a
+translation is a translation bug to fix in `translations[].text`, not a
+verification failure on the citation.
+
 ## Discipline
 
 - **Fabrication kill-switch:** every `quote.text` must appear in the named article (case-insensitive

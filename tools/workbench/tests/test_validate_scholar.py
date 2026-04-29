@@ -353,7 +353,7 @@ def _external_epub_citation() -> dict:
 def _greek_ocr_citation() -> dict:
     return {
         "backend": {
-            "kind": "external-greek-ocr",
+            "kind": "external-ocr",
             "filename": "greek/theodoret-pg81-dan7.txt",
             "tlgCanon": "4089.028",
             "mignePgVolume": 81,
@@ -367,7 +367,11 @@ def _greek_ocr_citation() -> dict:
             "pageEnd": None,
             "citationString": "Theodoret, In Dan., PG 81 col. 1411",
         },
-        "quote": {"text": "Παλαιὸς τῶν ἡμερῶν", "sha256": "0" * 64},
+        "quote": {
+            "text": "Παλαιὸς τῶν ἡμερῶν",
+            "sha256": "0" * 64,
+            "language": "grc",
+        },
         "supportStatus": "directly-quoted",
     }
 
@@ -383,7 +387,7 @@ def test_external_epub_backend_validates():
     validate_scholar(_wrap(_external_epub_citation()))
 
 
-def test_external_greek_ocr_backend_validates():
+def test_external_ocr_backend_validates():
     validate_scholar(_wrap(_greek_ocr_citation()))
 
 
@@ -423,7 +427,7 @@ def test_logos_backend_default_when_kind_absent():
     validate_scholar(s)  # no raise
 
 
-def test_external_greek_ocr_typed_extras():
+def test_external_ocr_typed_extras():
     c = _greek_ocr_citation()
     c["backend"]["mignePgVolume"] = "eighty-one"  # wrong type
     with pytest.raises(ValidationError, match="mignePgVolume"):

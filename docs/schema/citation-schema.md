@@ -70,19 +70,44 @@ The verifier extracts text from every XHTML chapter, strips HTML tags + the soci
 watermark documented in `external-resources/epubs/README.md`, and runs the same
 normalize-and-match logic as the Logos path.
 
-#### `kind: "external-greek-ocr"` (WS0c-7)
+#### `kind: "external-ocr"` (WS0c-7 → D-2)
 
-For citations against OCR'd Greek text files in `external-resources/greek/` (currently
-Theodoret PG 81).
+For citations against OCR'd plain-text files in any language under
+`external-resources/{language-dir}/`. Generalized from the prior
+`external-greek-ocr` kind (D-2, 2026-04-29) so Wave 6 / Wave 7 multilingual
+surveys (patristic Latin, Reformation Latin/German, Jewish-reception Hebrew /
+Aramaic / Judeo-Arabic) can share a single backend with per-language
+pre-processing concentrated in the OCR pipeline rather than at the backend
+level.
+
+The citation's `quote.language` field selects the per-language subdirectory:
+
+| `quote.language` | dir | typical sources |
+|---|---|---|
+| `grc` | `greek/` | Theodoret PG 81 (Migne); future Greek patristic OCR |
+| `la` | `latin/` | Migne PL; e-rara/BSB Reformation editions |
+| `he` | `hebrew/` | HebrewBooks scans, archive.org, MG facsimiles |
+| `arc` | `aramaic/` | Targumic / Talmudic Aramaic from local scans |
+| `jrb` | `judeo-arabic/` | Karaite + Geonic Arabic-in-Hebrew-script scans |
+| `de` | `german/` | Wittenberg-1545, BSB; future Fraktur scans |
+| `fr` | `french/` | reserved; not yet populated |
+
+The verifier (`tools/citations.py:_load_ocr_text`) requires the citation's
+`backend.filename` to begin with the language-dir prefix matching
+`quote.language`, e.g. a `quote.language == "grc"` citation must have
+`filename` starting with `greek/`. Mismatches return `resource-unreadable`.
 
 | field | type | required | notes |
 |---|---|---|---|
-| `kind` | string | required | Literal `"external-greek-ocr"`. |
-| `filename` | string | required | Path relative to `external-resources/`, e.g. `"greek/theodoret-pg81-dan7.txt"`. |
+| `kind` | string | required | Literal `"external-ocr"`. |
+| `filename` | string | required | Path relative to `external-resources/`, e.g. `"greek/theodoret-pg81-dan7.txt"`. First path segment must match the language-dir for `quote.language`. |
 | `tlgCanon` | string | optional | TLG canon work id (e.g. `"4089.028"` for Theodoret on Daniel). |
-| `mignePgVolume` | integer | optional | Migne PG volume number (e.g. `81`). |
-| `migneColumn` | integer | optional | Migne column anchor (e.g. `1411`). |
+| `mignePgVolume` | integer | optional | Migne PG/PL volume number. |
+| `migneColumn` | integer | optional | Migne column anchor. |
 | `passageRef` | string | optional | Free-form (e.g. `"Theodoret on Dan 7:9"`). |
+
+`external-ocr` citations MUST carry a non-null `quote` whose `quote.language`
+is in the table above; the validator rejects the citation otherwise.
 
 #### `kind: "external-pdf"` (WS0c-7)
 
@@ -96,6 +121,31 @@ to `pdftotext -layout` (Poppler) for text extraction.
 | `filename` | string | required | Path rel to `external-resources/`, e.g. `"pdfs/Hippolytus-EndTimes.pdf"`. |
 | `page` | integer | optional | Print-page anchor when known. |
 | `passageRef` | string | optional | Free-form. |
+
+#### `kind: "external-sefaria"` (WS0c-expansion)
+
+For citations against verse text fetched from the [Sefaria](https://www.sefaria.org)
+REST API. Used by Wave 6 medieval-Jewish reception surveys (Rashi, Ibn Ezra,
+Joseph ibn Yahya, Malbim, Steinsaltz) and any future free-online Hebrew/English
+text whose canonical edition lives on Sefaria.
+
+| field | type | required | notes |
+|---|---|---|---|
+| `kind` | string | required | Literal `"external-sefaria"`. |
+| `resourceUrl` | string | required | Full Sefaria text-API URL, e.g. `"https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.13"`. The trailing `Work.chapter.verse` form is what the verifier fetches and caches. |
+| `language` | string | required | One of `"he"` or `"en"`. Selects which field of the Sefaria response (`he` or `text`) is the canonical text for the citation. Sefaria entries may have one or both. |
+| `verseRef` | string | required | Human-readable reference, e.g. `"Daniel 7:13"`. Frontend-only; the verifier does not parse it. |
+| `commentator` | string | optional | Display name (e.g. `"Rashi"`, `"Ibn Ezra"`). |
+
+The verifier (`tools/citations.py:_load_sefaria_text`) fetches the API URL
+(disk-cached under `external-resources/sefaria-cache/`), pulls the array named
+by `language`, joins segments with newlines, strips inline HTML tags (Sefaria
+wraps lemmata in `<b>` and similar), and NFC-normalizes — Hebrew niqqud and
+cantillation marks differ between NFC and NFD forms, so quote and source must
+be normalized to the same form before matching.
+
+Forbidden on `external-sefaria` backends: `resourceId`, `logosArticleNum`,
+`nativeSectionId`, and `filename`.
 
 For all non-`logos` kinds, the validator forbids the Logos-only fields
 (`resourceId`, `logosArticleNum`, `nativeSectionId`) on the same backend.
@@ -117,8 +167,52 @@ For all non-`logos` kinds, the validator forbids the Logos-only fields
 |---|---|---|---|
 | `text` | string | verbatim article text | The exact quoted fragment, UTF-8. Prefer 40+ chars for robust matching. Verification normalizes whitespace to single spaces and matches case-insensitively (so sentence-initial capitalization drift still verifies). Preserve punctuation and diacritics exactly. |
 | `sha256` | string (64-hex lowercase) | derived | `sha256(text.encode("utf-8")).hexdigest()`. Tamper-evidence: future verifier runs confirm the stored `text` hasn't drifted. |
+| `language` | string | author / `build_citation` default | ISO 639-1/-2/-3 code of the quote's original language. Defaults to `"en"` when `build_citation` is given an English source and no explicit `language=` kwarg. **Required** when `backend.kind == "external-ocr"`. Accepted: `en`, `la`, `grc`, `he`, `arc`, `jrb`, `de`, `fr`. |
 
 `quote` may be `null`, but only when paired with a `supportStatus` other than `directly-quoted`.
+
+### `translations` (optional, D-2)
+
+When the source's `quote.text` is in a non-English language, an optional
+`translations[]` array sibling to `quote` carries derivative
+modern-English (or other-target-language) renderings with provenance.
+Translations are **not** verified against the source by `verify_citation` —
+only `quote.text` is the verifier's anchor; translations are
+human/LLM-produced editorial artifacts.
+
+```json
+{
+  "quote": {
+    "text": "θηρίον τὴν Ῥωμαϊχὴν χαλεῖ βασιλείαν",
+    "sha256": "3940...",
+    "language": "grc"
+  },
+  "translations": [
+    {
+      "language": "en",
+      "text": "[the prophet] calls the Roman empire a beast",
+      "translator": "anthropic:claude-opus-4-7",
+      "translatedAt": "2026-04-29",
+      "method": "llm",
+      "register": "modern-faithful"
+    }
+  ]
+}
+```
+
+| field | type | required | notes |
+|---|---|---|---|
+| `language` | string | required | ISO code of the translation's target language. Same accepted set as `quote.language`. |
+| `text` | string | required | The translation. |
+| `translator` | string | required | When `method == "llm"`, must be `"<provider>:<model>"` format (e.g., `"anthropic:claude-opus-4-7"`). When `method == "human-published"`, the translator's name + short-cite (e.g., `"Salmond, ANF 5"`). When `method == "human-volunteer"`, the volunteer's name. |
+| `translatedAt` | string | required | ISO date `YYYY-MM-DD`. |
+| `method` | string | required | One of `"llm"`, `"human-published"`, `"human-volunteer"`. |
+| `register` | string | required | One of `"modern-faithful"` (neither wooden-literal nor paraphrastic; preferred for LLM survey-time translations), `"wooden-literal"` (preserves source-language word-order at the cost of fluency), `"paraphrastic"` (sense-for-sense, looser). |
+
+Translations are **derivative** and explicitly not subject to verification
+against the source — `quote.text` remains the verifier anchor. The site
+renders the translation alongside the original and discloses the
+translator/method/register so readers can judge fidelity.
 
 ### `supportStatus` (required) — the evidential posture
 

@@ -25,6 +25,10 @@ import json
 import os
 import re
 import sys
+import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -40,9 +44,55 @@ _MAX_ARTICLE_CHARS = 500_000  # Covers the longest articles in the library.
 # OCR'd Greek text use paths relative to this directory.
 EXTERNAL_RESOURCES_DIR = Path(__file__).resolve().parent.parent / "external-resources"
 
-# Backend kinds (WS0c-7). Default is "logos" for back-compat with all existing
-# citations; new external-resource citations declare their kind explicitly.
-BACKEND_KINDS = ("logos", "external-epub", "external-pdf", "external-greek-ocr")
+# Disk cache for Sefaria API responses. Gitignored. Each cache file is the
+# trailing component of the API URL (e.g. ``Rashi_on_Daniel.7.13.json``)
+# storing the raw JSON Sefaria returned. We cache full responses so future
+# changes to extraction (HTML stripping, language selection) replay over the
+# original payload without re-hitting the network.
+SEFARIA_CACHE_DIR = EXTERNAL_RESOURCES_DIR / "sefaria-cache"
+
+# Backend kinds (WS0c-7 + WS0c-expansion + D-2). Default is "logos" for
+# back-compat with all existing citations; new external-resource citations
+# declare their kind explicitly. ``external-sefaria`` (WS0c-expansion)
+# supports Wave 6 medieval-Jewish reception surveys via the free Sefaria.org
+# REST API. ``external-ocr`` (D-2) generalizes the prior ``external-greek-ocr``
+# kind to handle OCR'd plain-text in any language; the citation's quote.language
+# field selects the per-language subdirectory under ``external-resources/``.
+BACKEND_KINDS = (
+    "logos",
+    "external-epub",
+    "external-pdf",
+    "external-ocr",
+    "external-sefaria",
+)
+
+# Languages accepted on quote.language and on backend filename prefix for the
+# external-ocr backend. ISO 639-1/-2/-3 codes. Keep in lockstep with
+# tools/validate_scholar.py:_QUOTE_LANGUAGES.
+OCR_LANGUAGE_DIRS = {
+    "grc": "greek",
+    "la": "latin",
+    "he": "hebrew",
+    "arc": "aramaic",
+    "jrb": "judeo-arabic",
+    "de": "german",
+    "fr": "french",
+}
+
+SEFARIA_LANGUAGES = ("he", "en")
+SEFARIA_API_PREFIX = "https://www.sefaria.org/api/texts/"
+_SEFARIA_HOSTS = ("www.sefaria.org", "sefaria.org")
+
+# Positive allowlist for the ref segment after /api/texts/. Sefaria refs are
+# uniformly ASCII alphanumeric with underscores, dots, and hyphens
+# (e.g. ``Rashi_on_Daniel.7.13``, ``Joseph_ibn_Yahya_on_Daniel``). Anything
+# outside this set — backslash, whitespace, zero-width joiners, RTL overrides,
+# non-breaking spaces, or any non-ASCII letter — is suspect and rejected.
+_REF_SEGMENT_RE = re.compile(r"^[A-Za-z0-9_.-]+$")
+
+# Sefaria's text-API names the English field ``text`` (not ``en``) and the
+# Hebrew field ``he``. Map our schema-level language code to the response key.
+_SEFARIA_LANGUAGE_FIELD = {"en": "text", "he": "he"}
 
 # Social-DRM watermark stripped from EPUB-extracted text (see
 # external-resources/epubs/README.md).
@@ -70,10 +120,24 @@ def build_citation(
     short_title: str | None = None,
     full_title: str | None = None,
     support_status: str | None = None,
+    language: str | None = None,
+    translations: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Compose a canonical dual-citation dict.
 
     See ``docs/schema/citation-schema.md`` for field semantics.
+
+    ``language`` (D-2) attaches an ISO 639 code to the quote. Defaults to
+    ``"en"`` when a ``quote_text`` is supplied. Required for non-English
+    quotes; for ``external-ocr``-backed citations the surveyor's caller
+    constructs the citation directly (Logos-backend ``build_citation`` is
+    not used for OCR text), but the field round-trips through here so a
+    multilingual scholar JSON can still be assembled if needed.
+
+    ``translations`` (D-2) is an optional list of derivative-translation
+    records. Each record is preserved verbatim; the validator enforces
+    structure. Translations are NOT verified by ``verify_citation`` — only
+    ``quote.text`` is the verifier's anchor.
     """
     meta = get_article_meta(resource_file, article_num)
     if meta is None:
@@ -102,11 +166,12 @@ def build_citation(
         logos_article_num=article_num,
     )
 
-    quote: dict[str, str] | None
+    quote: dict[str, Any] | None
     if quote_text is None:
         quote = None
     else:
         quote = {"text": quote_text, "sha256": sha256_of(quote_text)}
+        quote["language"] = language if language is not None else "en"
 
     if support_status is None:
         support_status = "directly-quoted" if quote is not None else "uncited-gap"
@@ -119,7 +184,7 @@ def build_citation(
             "support_status='directly-quoted' requires a non-null quote_text"
         )
 
-    return {
+    citation: dict[str, Any] = {
         "backend": {
             "resourceId": meta["resourceId"],
             "logosArticleNum": article_num,
@@ -136,6 +201,9 @@ def build_citation(
         "quote": quote,
         "supportStatus": support_status,
     }
+    if translations:
+        citation["translations"] = list(translations)
+    return citation
 
 
 def verify_citation(citation: dict[str, Any]) -> dict[str, Any]:
@@ -143,8 +211,10 @@ def verify_citation(citation: dict[str, Any]) -> dict[str, Any]:
 
     Dispatches by ``backend.kind``: ``logos`` (default; uses the LogosReader),
     ``external-epub`` (extracts plain text from a watermarked EPUB),
-    ``external-greek-ocr`` (reads an OCR'd Greek .txt file), or
-    ``external-pdf`` (extracts plain text via ``pdftotext``).
+    ``external-ocr`` (reads an OCR'd plain-text file in any language —
+    succeeds the WS0c-7 ``external-greek-ocr`` kind),
+    ``external-pdf`` (extracts plain text via ``pdftotext``), or
+    ``external-sefaria`` (fetches verse text from the Sefaria REST API).
 
     Returns a dict with ``status`` ∈ {``verified``, ``partial``,
     ``quote-not-found``, ``resource-unreadable``} plus diagnostic fields.
@@ -156,10 +226,12 @@ def verify_citation(citation: dict[str, Any]) -> dict[str, Any]:
         article_text, source_label, error = _load_logos_text(backend)
     elif kind == "external-epub":
         article_text, source_label, error = _load_epub_text(backend)
-    elif kind == "external-greek-ocr":
-        article_text, source_label, error = _load_text_file(backend)
+    elif kind == "external-ocr":
+        article_text, source_label, error = _load_ocr_text(backend, citation)
     elif kind == "external-pdf":
         article_text, source_label, error = _load_pdf_text(backend)
+    elif kind == "external-sefaria":
+        article_text, source_label, error = _load_sefaria_text(backend)
     else:
         return {
             "status": "resource-unreadable",
@@ -314,24 +386,58 @@ class _HtmlStripper(html.parser.HTMLParser):
         return "".join(self._chunks)
 
 
-def _load_text_file(
+def _load_ocr_text(
     backend: dict[str, Any],
+    citation: dict[str, Any],
 ) -> tuple[str | None, str, str | None]:
-    """For external-greek-ocr: just read the .txt file (already plain text)."""
+    """For external-ocr: read an OCR'd plain-text file in any language.
+
+    The citation's ``quote.language`` ISO code names the per-language
+    subdirectory under ``external-resources/`` (e.g. ``grc`` → ``greek/``,
+    ``la`` → ``latin/``). The backend's ``filename`` is the path relative
+    to ``external-resources/`` and must begin with the language subdirectory.
+    Texts are pre-stripped (the OCR pipeline produces plain text); we apply
+    NFC normalization at match time via ``_normalize``.
+    """
     filename = backend.get("filename")
     if not filename:
-        return None, "<external-greek-ocr>", "citation missing backend.filename"
+        return None, "<external-ocr>", "citation missing backend.filename"
+
+    quote = citation.get("quote") or {}
+    language = quote.get("language")
+    if language is None:
+        return (
+            None,
+            f"<external-ocr:{filename}>",
+            "external-ocr citation missing quote.language",
+        )
+    expected_dir = OCR_LANGUAGE_DIRS.get(language)
+    if expected_dir is None:
+        return (
+            None,
+            f"<external-ocr:{filename}>",
+            f"unsupported quote.language={language!r}; "
+            f"accepted: {sorted(OCR_LANGUAGE_DIRS.keys())}",
+        )
+    if not filename.startswith(f"{expected_dir}/"):
+        return (
+            None,
+            f"<external-ocr:{filename}>",
+            f"backend.filename {filename!r} does not start with "
+            f"'{expected_dir}/' (required for language={language!r})",
+        )
+
     try:
         path = _resolve_external_path(filename)
     except ValueError as e:
-        return None, f"<external-greek-ocr:{filename}>", str(e)
+        return None, f"<external-ocr:{filename}>", str(e)
     if not path.exists():
-        return None, f"<external-greek-ocr:{filename}>", f"file not found: {path}"
+        return None, f"<external-ocr:{filename}>", f"file not found: {path}"
     try:
         text = path.read_text(encoding="utf-8")
     except OSError as e:
-        return None, f"<external-greek-ocr:{filename}>", f"read failed: {e}"
-    return text, f"greek-ocr:{filename}", None
+        return None, f"<external-ocr:{filename}>", f"read failed: {e}"
+    return text, f"ocr:{filename}", None
 
 
 _PDF_TEXT_CACHE: dict[str, str] = {}
@@ -374,6 +480,243 @@ def _load_pdf_text(
     return _PDF_TEXT_CACHE[cache_key], f"pdf:{filename}", None
 
 
+# ── external-sefaria loader (WS0c-expansion) ────────────────────────────────
+
+
+def _load_sefaria_text(
+    backend: dict[str, Any],
+) -> tuple[str | None, str, str | None]:
+    """Fetch + extract verse text from the Sefaria API.
+
+    The Sefaria response carries parallel ``text`` (English) and ``he`` (Hebrew)
+    fields, each an array of strings (one per comment segment within the cited
+    verse). We pick the array named by ``backend.language``, flatten it,
+    strip HTML tags, and NFC-normalize.
+    """
+    resource_url = backend.get("resourceUrl")
+    if not resource_url:
+        return None, "<external-sefaria>", "citation missing backend.resourceUrl"
+    language = backend.get("language")
+    if language not in SEFARIA_LANGUAGES:
+        return (
+            None,
+            f"<external-sefaria:{resource_url}>",
+            f"backend.language must be one of {SEFARIA_LANGUAGES}, got {language!r}",
+        )
+    try:
+        validate_sefaria_url(resource_url)
+    except ValueError as e:
+        return None, f"<external-sefaria:{resource_url}>", str(e)
+
+    try:
+        data = _fetch_sefaria(resource_url)
+    except (urllib.error.URLError, OSError, ValueError, json.JSONDecodeError) as e:
+        return None, f"<external-sefaria:{resource_url}>", f"fetch failed: {e}"
+
+    field_name = _SEFARIA_LANGUAGE_FIELD[language]
+    field = data.get(field_name)
+    flat = _flatten_sefaria_text(field)
+    if not flat.strip():
+        # Sefaria returned no text for the requested language. Fall back to the
+        # other language only if the citation didn't request it (defensive —
+        # a Hebrew-only entry being cited as English shouldn't silently verify
+        # against the Hebrew, so we surface the empty-text condition).
+        return (
+            None,
+            f"sefaria:{resource_url}",
+            f"sefaria response has no text for language={language!r}",
+        )
+
+    stripped = _strip_html_tags(flat)
+    normalized = unicodedata.normalize("NFC", stripped)
+    return normalized, f"sefaria:{resource_url}", None
+
+
+def validate_sefaria_url(url: str) -> None:
+    """Reject URLs that aren't a canonical Sefaria text-API endpoint.
+
+    The on-disk cache is keyed by the URL's path component only (see
+    ``_sefaria_cache_path``), so any URL that smuggles state in via the query
+    string, fragment, RFC-3986 path-params, userinfo, or explicit port would
+    fetch a different payload while colliding with the bare-path entry in the
+    cache. Reject all of them up front. Reject path traversal (literal or
+    percent-encoded) too — the cache path is built by string concatenation
+    under ``SEFARIA_CACHE_DIR``.
+
+    Rejection-bypass surface closed in C-3:
+      - userinfo (``user:pass@host``) — rewrites authority while urlparse keeps
+        the canonical hostname intact
+      - explicit port (``host:443``, ``host:abc``, ``host:``) — same idea, plus
+        ``parsed.port`` raises on non-integer values, so we inspect the netloc
+        as a string instead of touching ``.port``
+      - percent-encoded characters in the ref segment — ``%2F`` / ``%2E%2E``
+        decode after our segment check otherwise; double-encoding (``%252F``)
+        compounds the problem. Reject any ``%`` outright (simpler and stricter
+        than decode-then-recheck).
+      - leading/trailing whitespace and embedded control characters —
+        ``\\nhttps://...`` parses as a valid URL with the newline stripped from
+        the scheme by some downstream consumers, so refuse anything that isn't
+        already canonical.
+
+    This function is the single source of truth for what counts as an
+    acceptable Sefaria URL. ``tools/validate_scholar.py`` imports it so the
+    document validator and the runtime fetch path stay in lockstep — any URL
+    a scholar JSON can carry must be one the runtime is willing to fetch.
+    """
+    if url != url.strip():
+        raise ValueError(
+            "resourceUrl must not have leading/trailing whitespace"
+        )
+    if any(ord(c) < 0x20 or ord(c) == 0x7F for c in url):
+        raise ValueError("resourceUrl must not contain control characters")
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme != "https":
+        raise ValueError(f"resourceUrl must be https, got {parsed.scheme!r}")
+    if parsed.hostname not in _SEFARIA_HOSTS:
+        raise ValueError(
+            f"resourceUrl host {parsed.hostname!r} not in {_SEFARIA_HOSTS}"
+        )
+    # Userinfo: ``user:pass@host`` or even bare ``@host``. parsed.username is
+    # empty-string (falsy) for the bare case, so check the netloc directly.
+    if "@" in parsed.netloc:
+        raise ValueError("resourceUrl must not contain userinfo (user:pass@)")
+    # Explicit port: any ``:`` in the host authority is a port specifier
+    # (Sefaria has no IPv6 endpoint, so ``[::1]``-style literals are out of
+    # scope). Inspect the netloc string rather than parsed.port, because
+    # parsed.port raises ValueError for non-integer ports like ``:abc``.
+    host_authority = parsed.netloc.rsplit("@", 1)[-1]
+    if ":" in host_authority:
+        raise ValueError(
+            "resourceUrl must not contain an explicit port; canonical "
+            "Sefaria URLs have no port"
+        )
+    if parsed.params:
+        raise ValueError(
+            f"resourceUrl must not contain RFC-3986 path params, got {parsed.params!r}"
+        )
+    if parsed.query:
+        raise ValueError(
+            f"resourceUrl must not contain a query string, got {parsed.query!r}"
+        )
+    if parsed.fragment:
+        raise ValueError(
+            f"resourceUrl must not contain a fragment, got {parsed.fragment!r}"
+        )
+    if not parsed.path.startswith("/api/texts/"):
+        raise ValueError(
+            f"resourceUrl path must start with /api/texts/, got {parsed.path!r}"
+        )
+    key = parsed.path[len("/api/texts/"):]
+    if not key:
+        raise ValueError(
+            f"resourceUrl missing ref segment after /api/texts/: {parsed.path!r}"
+        )
+    if "%" in key:
+        # Reject percent-encoding outright. ``%2F`` would smuggle a ``/`` past
+        # the single-segment check; ``%2E%2E`` would smuggle ``..``;
+        # double-encoded ``%252F`` defeats single-pass decoding. Sefaria refs
+        # use plain ASCII (``Rashi_on_Daniel.7.13``), so any ``%`` is suspect.
+        raise ValueError(
+            f"resourceUrl ref segment must not contain percent-encoded "
+            f"characters: {key!r}"
+        )
+    segments = key.split("/")
+    if len(segments) > 1:
+        # Catches both trailing extras (.../Rashi_on_Daniel.7.13/extra) and
+        # empty segments produced by a doubled slash (.../api/texts//foo).
+        raise ValueError(
+            f"resourceUrl ref must be a single path segment, got {parsed.path!r}"
+        )
+    seg = segments[0]
+    if seg in (".", ".."):
+        raise ValueError(f"resourceUrl ref segment is reserved: {seg!r}")
+    if seg.startswith("."):
+        raise ValueError(
+            f"resourceUrl ref segment must not start with '.': {seg!r}"
+        )
+    if not _REF_SEGMENT_RE.match(seg):
+        # Final positive allowlist: ASCII letters/digits/underscore/dot/hyphen
+        # only. Catches backslash, embedded whitespace, zero-width joiners
+        # (U+200D), right-to-left overrides (U+202E), non-breaking spaces
+        # (U+00A0), and any non-ASCII character.
+        raise ValueError(
+            f"resourceUrl ref segment contains disallowed characters; "
+            f"only [A-Za-z0-9_.-] permitted, got {seg!r}"
+        )
+
+
+def _sefaria_cache_path(url: str) -> Path:
+    """Map a Sefaria text-API URL to its on-disk cache file."""
+    parsed = urllib.parse.urlparse(url)
+    key = parsed.path[len("/api/texts/"):]
+    return SEFARIA_CACHE_DIR / f"{key}.json"
+
+
+# Tests monkeypatch this to avoid hitting the network. Keep the signature
+# narrow (one URL → parsed JSON) so substitutions are trivial.
+def _fetch_sefaria_uncached(url: str) -> dict[str, Any]:
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "logos4-research-citations/0.1 (+local)"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        raw = resp.read()
+    return json.loads(raw.decode("utf-8"))
+
+
+def _fetch_sefaria(url: str) -> dict[str, Any]:
+    """Disk-cached wrapper around the Sefaria text API.
+
+    Cache invalidation: Sefaria texts are stable references — a cached
+    Daniel 7:13 response stays valid as long as Sefaria's underlying edition
+    doesn't change. To force a refresh, delete the cache file by hand. We
+    intentionally do not auto-expire: research citations should be reproducible
+    against the exact text we verified them against.
+    """
+    cache_path = _sefaria_cache_path(url)
+    if cache_path.exists():
+        try:
+            return json.loads(cache_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            # Corrupt cache file — fall through and re-fetch.
+            pass
+    data = _fetch_sefaria_uncached(url)
+    try:
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    except OSError:
+        # Cache write failure is non-fatal; verification can still proceed.
+        pass
+    return data
+
+
+def _flatten_sefaria_text(field: Any) -> str:
+    """Sefaria's text/he fields are arrays of strings (one per segment within
+    the cited verse). For multi-verse spans they may be nested arrays. Flatten
+    to a newline-joined string preserving order."""
+    if field is None:
+        return ""
+    if isinstance(field, str):
+        return field
+    if isinstance(field, list):
+        parts: list[str] = []
+        for item in field:
+            sub = _flatten_sefaria_text(item)
+            if sub:
+                parts.append(sub)
+        return "\n".join(parts)
+    return ""
+
+
+def _strip_html_tags(text: str) -> str:
+    """Strip HTML tags using the same parser used for EPUB extraction."""
+    stripper = _HtmlStripper()
+    stripper.feed(text)
+    return stripper.text()
+
+
 # ── helpers ─────────────────────────────────────────────────────────────────
 
 
@@ -395,7 +738,13 @@ _TYPO_MAP = str.maketrans({
 
 
 def _normalize(text: str) -> str:
-    return _WHITESPACE_RE.sub(" ", text.translate(_TYPO_MAP)).strip()
+    # Hebrew + Greek + Latin diacritic combinations differ between NFC (composed)
+    # and NFD (decomposed). Sefaria returns mixed forms; some Logos articles
+    # store NFD. Normalize to NFC so quote+article are compared in the same
+    # form. Idempotent on already-NFC text.
+    return _WHITESPACE_RE.sub(
+        " ", unicodedata.normalize("NFC", text).translate(_TYPO_MAP)
+    ).strip()
 
 
 def _normalize_whitespace(text: str) -> str:

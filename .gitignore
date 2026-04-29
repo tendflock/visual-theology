@@ -53,3 +53,6 @@ tools/workbench/.sermon_sync.lock
 external-resources/epubs/*.epub
 external-resources/pdfs/*.pdf
 external-resources/greek/migne-pg81-archiveorg/
+
+# Sefaria API response cache (rebuildable from the live API; not source-of-truth)
+external-resources/sefaria-cache/
