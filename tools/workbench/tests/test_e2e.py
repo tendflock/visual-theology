@@ -286,9 +286,12 @@ def test_star_annotation(page, base_url):
     star = page.locator("#star-popup")
     star.wait_for(state="visible", timeout=5000)
 
-    # Click star (uses mousedown handler)
+    # Click star (uses mousedown handler). The handler shows prompt() (handled by the dialog
+    # listener above), then POSTs to /annotate, then appends a .sb-star-item on success.
+    # Wait for the .sb-star-item to appear — that confirms the POST round-tripped before reload,
+    # since the JS only appends after the fetch resolves.
     star.dispatch_event("mousedown")
-    page.wait_for_load_state("networkidle")
+    page.locator(".sb-star-item").first.wait_for(state="visible", timeout=10000)
 
     # Reload and check annotation persisted
     page.reload()
