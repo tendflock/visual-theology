@@ -1,0 +1,1232 @@
+{
+  "scholarId": "bauckham-theology-revelation",
+  "authorDisplay": "Bauckham",
+  "workDisplay": "The Theology of the Book of Revelation",
+  "resourceId": "LLS:NTTHEO87REV",
+  "resourceFile": "NTTHEO87REV.logos4",
+  "traditionTag": "critical-mediating",
+  "passageCoverage": [
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:23-27",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
+  "fullTitle": "The Theology of the Book of Revelation (New Testament Theology)",
+  "commitmentProfile": {
+    "strong": [
+      "J: Rev 14:14’s ‘one like a son of man’ is precisely Dan 7:13–14, but restricted to kingdom-receipt — NOT parousia-as-judge — in deliberate distinction from Synoptic usage.",
+      "C: The beast of Rev 13 = Roman imperial power, drawn through Dan 7:2–8 + Leviathan; satanic-trinity reading (dragon + sea-beast + earth-beast); conflict is over worship and truth, won by witness-unto-death not violence.",
+      "K: Saints constituted ‘a kingdom and priests’ (Exod 19 + Rev 1:6 + 5:10 + 22:3b–5); the 144,000 / multitude of Rev 7 are the messianic army of the Lamb whose witness wins the nations; Rev 20:4 echoes Dan 7:18, 22, 27.",
+      "F: Millennium is symbolic — its sole theological function is to demonstrate the triumph of the martyrs, with thrones (Rev 20:4) drawn directly from Dan 7:9. Literal reading renders it incomprehensible.",
+      "N: Daniel 7 (chiefly) and the wider OT prophetic tradition are intertextually saturated through Revelation; ‘climax of prophecy’ thesis — John gathers and re-actualizes all of OT eschatological expectation.",
+      "L: Revelation’s images are evocative theological symbols, not encoded literal predictions; genre is prophetic-apocalyptic-letter; time-periods (3½ years, 1000 years) and judgment-sequences are symbolic.",
+      "E: Apocalyptic = theocentric counter-vision opening the readers’ world to divine transcendence (heaven) and eschatological future (New Jerusalem) against Roman imperial ideology."
+    ],
+    "moderate": [
+      "O: Three-stage Christ’s-work scheme (decisive Lamb-victory → witnessing-church → parousia + New Jerusalem) holds Daniel 7’s kingdom-transfer across all three stages; double-aspect ending preserves both universal-conversion-of-nations AND judgment-of-unrepentant without resolving the tension."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Daniel 7:13–14)",
+      "position": "Revelation deploys Daniel 7:13–14’s ‘one like a son of man’ as the figure to whom universal kingdom is given — primarily in Rev 14:14’s grain-harvest scene, where the cloud-borne crowned figure receives into his kingdom the nations the martyrs have won from the beast. Bauckham carefully restricts the christological reference of Dan 7:13–14 to what the verses actually say (kingdom-receipt, dominion over all peoples) and does NOT use the passage as a parousia-as-judge text, in deliberate contrast to early Christian writers who do. The Christophany of Rev 1:13 (also ‘one like a son of man’) designates Christ’s authority over the churches as lampstands bearing light to the nations.",
+      "commitment": "strong",
+      "rationale": "Bauckham observes that ‘one like a son of man’ in Rev 14:14 is a precise allusion to Daniel 7:13–14, the only verses in Daniel which use that phrase. He notes that Daniel 7 does not depict the figure as a judge or as concerned in the destruction of the beast — he simply receives his universal kingdom — and that this is also what he does in Rev 14:14–16, receiving the nations won from the beast’s dominion into Christ’s kingdom. Bauckham underlines that John uses the exact Danielic phrase ‘one like a son of man’ (not the Synoptic title ‘the Son of Man’) only in 1:13 and 14:14, and does not associate Dan 7:13–14 with Christ’s parousia as judge — restricting the christological reference of the passage to what it actually says. In the parousia proper (19:11–21) Christ is the Word of God and divine Warrior-judge, but not designated ‘son of man’; the Danielic kingdom-receipt and the Warrior-judgment are separated by the millennium (Rev 20).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "The figure who reaps the grain harvest is certainly Jesus Christ",
+            "sha256": "062e7d3391c04014dc5c0d5d2181d1a300f9396629f6a63de1903cbcc0f515fb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "The description of the figure on the cloud is a precise allusion to Daniel 7:13–14",
+            "sha256": "cb6b6955b5c278ddae183a0b4366a63b9964cc61b614eb03186afb45345007b5",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "Daniel 7 does not depict this figure as a judge or as concerned in the destruction of the beast. He simply receives his universal kingdom. This is also what he does in Revelation 14:14–16.",
+            "sha256": "8f856dc21439de1701ac02408cc699decd64a6ef7583fe9f992a552130329dc4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "Unlike the Gospel traditions in which Jesus is called ‘the Son of man’, John carefully uses the exact phrase from Daniel, ‘one like a son of man’, and uses it only here and in 1:13.",
+            "sha256": "303b5e64a58664bc83b0e955766f4489e6eb58140a868eb198aca6854cd0b34a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "He does not associate Daniel 7:13–14 with Christ’s parousia as judge, as some early Christian writers do, but restricts the christological reference of the passage to what it actually says",
+            "sha256": "e9fc54209b7d1fe77deb5e24bb51fe194da5f473d216145c39bb662b8856b2f8",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "He receives into his kingdom the nations which have been won from the beast’s dominion for Christ’s by the martyrs’ conquest of the beast",
+            "sha256": "e31331cd9e2889a64df8c0ad0de82cf7bdc60725f01dd698a3ade126aea75468",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Antichrist / Beast",
+      "position": "Revelation’s beast (Rev 13) is the imperial power of Rome, drawn from a satanic trinity of dragon (Satan), sea-beast (empire), and earth-beast (the imperial-cult propaganda machine). The composite seven-headed sea-monster fuses the primordial chaos-dragon Leviathan with the four beasts of Daniel 7:2–8 — Rome here surpasses in violence and self-deification even the evil empires of Daniel’s vision. The beast’s defining act is to demand worship of itself as divine; the conflict with the saints is therefore primarily a conflict over worship and truth, not a military contest, and Christians ‘conquer’ by faithful witness to the death rather than by violence.",
+      "commitment": "strong",
+      "rationale": "Bauckham reads chapters 12–13 as introducing a ‘satanic trinity’: dragon (the primeval source of all opposition to God), sea-beast (Roman imperial power), and earth-beast (the imperial cult). The genealogy of the sea-beast runs explicitly through Daniel 7:2–8 and the older Leviathan myth: the monsters of Daniel 7 are themselves redeployments of the primeval seven-headed serpent, and Rome is now their fullest incarnation. The beast’s demand for worship (Rev 13:4 echoes Exodus 15:11 in parody) makes the contest one of monotheism vs. idolatrous self-deification of human power. Critically, Bauckham does NOT decode the beast as a future Antichrist: it is currently incarnated in Rome, and the Christian response is non-violent witness-unto-death, the ‘blood of the Lamb’ logic of Rev 12:11.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the satanic trinity: the dragon or serpent (the primeval, supernatural source of all opposition to God), the beast or sea-monster (the imperial power of Rome), and the second beast or earth-monster (the propaganda machine of the imperial cult)",
+            "sha256": "4bd33939089eb0c8887fc166b88f82c8acfbd5f4f727414dd8cadf5814fd8d3f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the ancestry of the beast also goes back (via the monsters of Daniel 7:2–8) to Leviathan, since he rises out of the sea",
+            "sha256": "92bb20d038f055cc0a51f96e8c55b6ab43b7ff11eece9f1e6676904afd11dc1b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the bestial figures are essentially primeval forces of evil, destined for ultimate defeat by the divine Warrior at the last day, but currently incarnated in the oppressive power of the Roman Empire, which surpasses in its military violence and its deification of its own power even the evil empires of the past",
+            "sha256": "e1c9ff3330e8efaa3ca2bfd52c3e693881152eb5d9985e8cbfbbce9a3a9d47c7",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 133,
+            "nativeSectionId": "R12.10"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R12.10 — The Creator’s Faithfulness to Creation",
+            "page": 51,
+            "pageEnd": 53,
+            "citationString": "Bauckham, Theology of Revelation, §R12.10 (pp. 51–53)"
+          },
+          "quote": {
+            "text": "These waters of chaos are the sea from which the beast, with his destructive violence, arises (Rev. 13:1; cf. Dan. 7:2–3)",
+            "sha256": "bb5ede0f85fdf900d111a7beae8665e28cc8d5d01209683f46d808bcf6c8506c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "Resist!—but by witness and martyrdom, not by violence.",
+            "sha256": "1438c74e30d18bee8cece8d5136f55fc1b3acbf7ef1010f6b899d30266de6d6a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints, kingdom and priests",
+      "position": "The redeemed in Revelation are constituted ‘a kingdom and priests serving our God’ (1:6; 5:10) — Bauckham reads this as a deliberate Sinai-covenant echo (Exod 19:5–6) extended through Daniel 7’s kingdom-transfer-to-the-saints into a universal vocation. The saints are not a passive remnant awaiting rescue but the messianic army of the Lamb (the 144,000 / innumerable multitude of Rev 7), whose witness-unto-death is the means by which the nations are won to the worship of the true God. In the New Jerusalem, this destiny culminates: all the redeemed have priestly access to God’s face and reign as kings (Rev 22:3b–5).",
+      "commitment": "strong",
+      "rationale": "Bauckham’s structural reading ties Rev 1:5–6 (doxology), Rev 5:9–10 (the four-living-creatures hymn) and Rev 22:3b–5 (the New Jerusalem climax) into one ‘kingdom and priests’ arc. The saints’ reign in Rev 20:4 echoes Dan 7:18, 22, 27 — Bauckham explicitly draws the Daniel-7 / Revelation-20 throne-and-kingdom-transfer parallel. The saints are emphatically active: the messianic war is fought through their witness, and the Lamb’s 7×4 = 28 occurrences signify a worldwide-scope victory in which his followers participate. This is the role the opened scroll reveals (Rev 10–11): God’s eschatological people are redeemed from the nations to bear prophetic witness to the nations.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 140,
+            "nativeSectionId": "R14.2"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.2 — The Major Symbolic Themes",
+            "page": 67,
+            "pageEnd": 73,
+            "citationString": "Bauckham, Theology of Revelation, §R14.2 (pp. 67–73)"
+          },
+          "quote": {
+            "text": "by his blood the Lamb has ‘ransomed’ a people and made them ‘a kingdom and priests serving our God’. The latter phrase echoes the well-known words of the Sinai covenant",
+            "sha256": "2df2fc98bd2cb268813beedc394d13f5e73514be59033e6ba07838e2212c3010",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the earth is given to Christ’s people to rule with him (20:4; cf. 5:10; Dan. 7:18, 27)",
+            "sha256": "6dc255d8df7a4bf405fb78c5c99b06482d782dab594c989ec03196e8acb2b901",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 144,
+            "nativeSectionId": "R14.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.6 — The Two Witnesses",
+            "page": 84,
+            "pageEnd": 88,
+            "citationString": "Bauckham, Theology of Revelation, §R14.6 (pp. 84–88)"
+          },
+          "quote": {
+            "text": "The people of God have been redeemed from all the nations (5:9) in order to bear prophetic witness to all the nations (11:3–13).",
+            "sha256": "af7dd9df4ce5f570335395da3db84a7f7ec409d0e1af298db36a030cc13ebc82",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 159,
+            "nativeSectionId": "R16.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R16.3 — The New Jerusalem as People",
+            "page": 392,
+            "pageEnd": 396,
+            "citationString": "Bauckham, Theology of Revelation, §R16.3 (pp. 392–396)"
+          },
+          "quote": {
+            "text": "the climax of the whole account of the New Jerusalem (22:3b–5) portrays the destiny of being ‘a kingdom and priests to our God’ (5:10; cf. 1:6), which the Lamb won for his Christian followers",
+            "sha256": "774e3de2103c1074261e03131b45189909a91b16d68eb21519f936a31c9af4c9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 159,
+            "nativeSectionId": "R16.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R16.3 — The New Jerusalem as People",
+            "page": 392,
+            "pageEnd": 396,
+            "citationString": "Bauckham, Theology of Revelation, §R16.3 (pp. 392–396)"
+          },
+          "quote": {
+            "text": "In the New Jerusalem they will worship God in his immediate presence, as priests (22:3b–4), and they will share his reign, as kings (22:5).",
+            "sha256": "398c3a80900551ed86313f26bef5ab344b0319a771ee5f7eba5875fe83b02d70",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Millennium",
+      "position": "The thousand years of Rev 20 is a symbolic image with a specific theological function — to demonstrate the triumph of the martyrs over the beast — not a literal predictive period. Bauckham anchors Rev 20:4’s thrones directly in Daniel 7:9 and Rev 20:11’s opened books in Daniel 7:10: Daniel 7 is concerned with the destruction of the beast and the transference of his kingdom to the Son of Man and his people, and Revelation depicts those two moves in 19:11–21 (beast destroyed) and 20:4–6 (kingdom transferred to the saints). Read literally, the millennium becomes incomprehensible; read symbolically, it is John’s way of vindicating the martyrs as the true rulers and defeating the lie that the beast’s power was final.",
+      "commitment": "strong",
+      "rationale": "Bauckham gives Rev 20 a Daniel-7-derived structural reading: 20:4’s thrones come from Dan 7:9, 20:11’s books from Dan 7:10. The destruction-of-beast / transfer-of-kingdom-to-saints diptych of Daniel 7 is decomposed in Revelation across 19:11–21 + 20:4–6. The millennium’s sole theological point is the triumph of the martyrs — life and rule on the very issues over which the contest with the beast was fought. Bauckham insists that Revelation’s time-periods are all symbolic (citing Rev 2:10; 17:10) and that asking literal questions of the millennium (Where do the saints reign? On earth or from heaven? Who are the deceived nations?) renders it incomprehensible. John ‘depicts the meaning, rather than predicting the manner of [the martyrs’] vindication.’",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "Comparing Revelation 20 with one of its major sources, the vision of the divine judgment in Daniel 7:9, we see that the thrones of Revelation 20:4 come from Daniel 7:9, and the opening of the books in Revelation 20:11 from Daniel 7:10.",
+            "sha256": "455d38c9f82414f52c30152736107ba0c4ca1975616f74ca924886eccb393e8e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "Daniel 7 concerns the destruction of the beast that has persecuted the people of God and the transference of his kingdom to the Son of Man and his people. It is this which Revelation depicts in 19:11–21 (the destruction of the beast) and 20:4–6 (the transference of the kingdom to the saints).",
+            "sha256": "a4664f676a99fd0cb8a1decee9f6a14da78dd2715c4fcb43dfa66f4699839e21",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the theological point of the millennium is solely to demonstrate the triumph of the martyrs",
+            "sha256": "733ecf8b94a23a6d17da8349cae56921f272bcbcf548d7949856131b49bf77c4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "The millennium becomes incomprehensible once we take the image literally.",
+            "sha256": "dc753d89671e14b5a0d997747253df5cb7f1a3b9dfc8aabeed7dfbeaad20e89a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "John expected the martyrs to be vindicated, but the millennium depicts the meaning, rather than predicting the manner of their vindication.",
+            "sha256": "ffc732a49375220f6edf098c4277b8bf2fd31431d20042721f3431f03cc21252",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Daniel ↔ Revelation)",
+      "position": "Daniel 7 is one of Revelation’s controlling intertexts — the Daniel-7 destruction-of-beast / kingdom-transfer-to-saints diptych structures Rev 13 + 19 + 20, the throne-room (Rev 4–5) draws on Dan 7:9–10’s divine council, Rev 14:14’s ‘one like a son of man’ is precisely Dan 7:13–14, and the saints’ reign of Rev 20:4–6 fulfills Dan 7:18, 22, 27. Daniel’s prophecies of temple desecration (Dan 8:9–14; 11:31; 12:11) are reinterpreted in Rev 11:1–2 as the persecution of the church through the symbolic 3½ years. Revelation reads, gathers, and re-actualizes the whole biblical prophetic tradition (esp. Daniel) at its eschatological climax — without formal quotation, by saturated allusion.",
+      "commitment": "strong",
+      "rationale": "Bauckham’s ‘climax of prophecy’ thesis is that Revelation draws together the strands of Old Testament prophetic expectation — Daniel chief among them — and re-envisions them in light of the Lamb’s victory. This produces tightly integrated cross-book readings: Dan 7:2–8 → Rev 13:1–2 (beast composite); Dan 7:9 → Rev 4:4 elders + Rev 20:4 thrones; Dan 7:13–14 → Rev 1:13 + 14:14; Dan 7:18, 22, 27 → Rev 20:4–6 saints reign; Dan 8:9–14 / 11:31 / 12:11 → Rev 11:1–2 holy city trampled. Bauckham explicitly contrasts his approach to Revelation’s use of Daniel with that of the Synoptic Gospels (which read Dan 7 as parousia-prediction): John uses the exact Danielic phrase ‘one like a son of man’ and is more disciplined than the Gospel writers in restricting Dan 7:13–14 to kingdom-receipt rather than judgment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 157,
+            "nativeSectionId": "R16.1"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R16.1 — The Cities of Revelation",
+            "page": 126,
+            "pageEnd": 388,
+            "citationString": "Bauckham, Theology of Revelation, §R16.1 (pp. 126–388)"
+          },
+          "quote": {
+            "text": "John is here reinterpreting Daniel’s prophecies of the desecration of the temple (Dan. 8:9–14; 11:31; 12:11) and perhaps also the prophecies in the Gospels, dependent on Daniel, which prophesied the fall of Jerusalem",
+            "sha256": "8687340b8e6aa2973c724210e3af36f133e7593cbf8d63bda3bbbd12fb67e8c6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the thrones of Revelation 20:4 come from Daniel 7:9, and the opening of the books in Revelation 20:11 from Daniel 7:10",
+            "sha256": "55df2f771631adf11c7d8ae8f30bda8c633741feb5656aec0e2dc0ef44d080f0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the earth is given to Christ’s people to rule with him (20:4; cf. 5:10; Dan. 7:18, 27)",
+            "sha256": "6dc255d8df7a4bf405fb78c5c99b06482d782dab594c989ec03196e8acb2b901",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "The description of the figure on the cloud is a precise allusion to Daniel 7:13–14",
+            "sha256": "cb6b6955b5c278ddae183a0b4366a63b9964cc61b614eb03186afb45345007b5",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 118,
+            "nativeSectionId": "R11.2"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.2 — Revelation as Christian Prophecy",
+            "page": 2,
+            "pageEnd": 5,
+            "citationString": "Bauckham, Theology of Revelation, §R11.2 (pp. 2–5)"
+          },
+          "quote": {
+            "text": "John not only writes in the tradition of the Old Testament prophets, but understands himself to be writing at the climax of the tradition, when all the eschatological oracles of the prophets are about to be finally fulfilled",
+            "sha256": "9a63db05f7e2868c0ec43be8705b0f312fa282afaf0aa514c1ca8d20bd7217fd",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Revelation’s images are not encoded literal predictions but evocative theological symbols; reading them either as flat-literal future-prediction or as a mere allegorical code misconstrues the genre. Bauckham reads Revelation as a prophetic-apocalyptic-letter that creates a counter-imperial symbolic universe to refurbish the Christian imagination. Its imagery saturates Old Testament allusions (Daniel above all) and contemporary Roman political-mythological references into a mutually-illuminating network. Its time-periods (3½ years, 1000 years) and judgment-sequences (seals, trumpets, bowls) are symbolic, not chronological.",
+      "commitment": "strong",
+      "rationale": "Bauckham’s programmatic move on hermeneutic is to refuse two opposite errors: timeless allegory and code-decoded literalism. The images ‘cannot be read either as literal descriptions or as encoded literal descriptions, but must be read for their theological meaning and their power to evoke response.’ Revelation is genre-hybrid (apocalypse + prophecy + letter), designed for oral performance in worship, addressed contextually to seven specific Asian churches under Roman imperial pressure. Its imagery is meticulously composed — ‘a complex network of literary cross-references, parallels, contrasts’ — and saturates the Old Testament without formal quotation. The function is to ‘purge and refurbish the Christian imagination’ by opening the world to divine transcendence, exposing the dominant Roman ideology as a lie, and grounding resistance in worship. Symbol-as-symbol (not symbol-as-code) is the load-bearing methodological claim.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 122,
+            "nativeSectionId": "R11.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.6 — Understanding the Imagery",
+            "page": 17,
+            "pageEnd": 22,
+            "citationString": "Bauckham, Theology of Revelation, §R11.6 (pp. 17–22)"
+          },
+          "quote": {
+            "text": "they cannot be read either as literal descriptions or as encoded literal descriptions, but must be read for their theological meaning and their power to evoke response",
+            "sha256": "360597b4c03dce28aa68ebd9d1747d43e5b108e4e06dc17033b897a521732d5a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 122,
+            "nativeSectionId": "R11.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.6 — Understanding the Imagery",
+            "page": 17,
+            "pageEnd": 22,
+            "citationString": "Bauckham, Theology of Revelation, §R11.6 (pp. 17–22)"
+          },
+          "quote": {
+            "text": "They are not just a system of codes waiting to be translated into matter-of-fact references to people and events.",
+            "sha256": "a5eadac2cc3beab7b2e99baa5a592c038db50189732d2b14b068b86e3253bf96",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 122,
+            "nativeSectionId": "R11.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.6 — Understanding the Imagery",
+            "page": 17,
+            "pageEnd": 22,
+            "citationString": "Bauckham, Theology of Revelation, §R11.6 (pp. 17–22)"
+          },
+          "quote": {
+            "text": "it would be a serious mistake to understand the images of Revelation as timeless symbols",
+            "sha256": "9468ef4d1a4d53bf487b09593554b1ecd8e00b0641b5d4ba0dbfd21cc5d317a3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 164,
+            "nativeSectionId": "R17.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R17.3 — Imminence and Delay",
+            "page": 413,
+            "pageEnd": 415,
+            "citationString": "Bauckham, Theology of Revelation, §R17.3 (pp. 413–415)"
+          },
+          "quote": {
+            "text": "Anyone who doubts that Revelation’s time-periods are all symbolic should consider 2:10; 17:12",
+            "sha256": "8bc5316d5da2e55d896df52165e6d4cf7c72d674370d0beca8cef74f64e05380",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 122,
+            "nativeSectionId": "R11.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.6 — Understanding the Imagery",
+            "page": 17,
+            "pageEnd": 22,
+            "citationString": "Bauckham, Theology of Revelation, §R11.6 (pp. 17–22)"
+          },
+          "quote": {
+            "text": "The point is not to predict a sequence of events. The point is to evoke and to explore the meaning of the divine judgment which is impending on the sinful world.",
+            "sha256": "ddde35bf56154ffac909f14945111b816e0abcba44a7236e3bb97e86a724aed9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Revelation/apocalyptic approach",
+      "position": "Bauckham reads apocalyptic — and Revelation specifically — as transcendent counter-vision to imperial ideology. The apocalyptic genre’s characteristic move is to take the seer out of the world in order to see the world from heaven’s perspective and from the eschatological future, breaking the bounds Roman power and ideology set on the readers’ world. Revelation is theocentric (the throne is the central image), polemical against idolatrous self-deification of empire, and exclusively concerned with eschatology — using the apocalyptic genre as a vehicle of prophecy. Daniel (one of John’s major sources) is read in continuity with this prophetic-apocalyptic stream, not as a quasi-Synoptic vindication-of-Jesus pattern.",
+      "commitment": "strong",
+      "rationale": "Bauckham insists Revelation is ‘a prophetic apocalypse or apocalyptic prophecy’ — he uses the apocalyptic genre as a vehicle of prophecy. The visionary transportation to heaven is functional: it expands the readers’ world ‘both spatially (into heaven) and temporally (into the eschatological future)’, opening their world to divine transcendence and exposing Rome’s ideology as a lie. The central question Revelation shares with Jewish apocalypses is ‘who is Lord over the world?’ — addressed in the throne-room vision of Rev 4–5, the foundational set-piece in which God’s sovereignty is the ‘ultimate reality behind all earthly appearances.’ Bauckham’s read of apocalyptic differs sharply from Wright’s socio-political-metaphor reading: for Bauckham apocalyptic is theocentric counter-vision, not strictly metaphor-for-AD70-vindication.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 119,
+            "nativeSectionId": "R11.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.3 — Revelation as an Apocalypse",
+            "page": 5,
+            "pageEnd": 9,
+            "citationString": "Bauckham, Theology of Revelation, §R11.3 (pp. 5–9)"
+          },
+          "quote": {
+            "text": "John’s apocalypse, however, is exclusively concerned with eschatology",
+            "sha256": "c2b39b9b99c3ed97bc7cfbcb6a81b2a199de48bd062808276bf5cda604c7c944",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 119,
+            "nativeSectionId": "R11.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.3 — Revelation as an Apocalypse",
+            "page": 5,
+            "pageEnd": 9,
+            "citationString": "Bauckham, Theology of Revelation, §R11.3 (pp. 5–9)"
+          },
+          "quote": {
+            "text": "John (and thereby his readers with him) is taken up into heaven in order to see the world from the heavenly perspective.",
+            "sha256": "db3dfe8f8bdf851c182f3d12003527950ca26ca06975b65ae0e674039456a447",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 119,
+            "nativeSectionId": "R11.3"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.3 — Revelation as an Apocalypse",
+            "page": 5,
+            "pageEnd": 9,
+            "citationString": "Bauckham, Theology of Revelation, §R11.3 (pp. 5–9)"
+          },
+          "quote": {
+            "text": "The bounds which Roman power and ideology set to the readers’ world are broken open and that world is seen as open to the greater purpose of its transcendent Creator and Lord.",
+            "sha256": "519c995b1c86c4e9cca6f685d66a51c7a0874c184f755b3a5cb241a8ca5f0d18",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 128,
+            "nativeSectionId": "R12.5"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R12.5 — The One Who Sits on the Throne",
+            "page": 31,
+            "pageEnd": 35,
+            "citationString": "Bauckham, Theology of Revelation, §R12.5 (pp. 31–35)"
+          },
+          "quote": {
+            "text": "It is the latter which makes it possible for John to enlarge his readers’ perspective on their own situation by setting it within the broader context of God’s universal purpose",
+            "sha256": "3e7c6fdb11228a1290ae3ba1a79d6909b04d51a8d00d35eb12943490b9395f4b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 128,
+            "nativeSectionId": "R12.5"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R12.5 — The One Who Sits on the Throne",
+            "page": 31,
+            "pageEnd": 35,
+            "citationString": "Bauckham, Theology of Revelation, §R12.5 (pp. 31–35)"
+          },
+          "quote": {
+            "text": "John is taken up into heaven to see that God’s throne is the ultimate reality behind all earthly appearances.",
+            "sha256": "1f0e90c774b8e9e7a254a0a077a2eb78f8271765668327330d750f108753f526",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Bauckham reads Christ’s work in Revelation as a three-stage process: (1) decisive victory in the Lamb’s sacrificial death and resurrection, (2) the church’s participation in that victory through faithful witness-unto-death which wins the nations, and (3) the parousia in which the divine Warrior consummates the victory and the New Jerusalem descends. Daniel 7’s kingdom-transfer is fulfilled across stages 1–3, climactically in the symbolic millennium and the New Jerusalem. The fulfillment is universalistic — the nations are won to worship of the true God through martyr-witness — yet not flattened: judgment of the unrepentant is set alongside conversion of the nations without one canceling the other.",
+      "commitment": "moderate",
+      "rationale": "Bauckham organizes his christology of Revelation around a three-stage messianic-war / new-exodus / faithful-witness scheme. The three motifs interpret each other; each runs across all three stages. The Daniel-7 kingdom-receipt (Rev 14:14–16) belongs to stage 3 in its consummation but is anticipated in 1:13 (stage 1–2). The millennium and New Jerusalem are not separate end-time stages so much as symbolic vindications-of-the-martyrs and consummations-of-presence. Bauckham’s structure is neither classical-premillennial nor strictly amillennial; it is theologically-symbolic. The remarkable feature is the double-aspect ending: chapters 13–14 hold together the conversion of the nations AND the judgment of the unrepentant without resolving the tension into either universalism or particularism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 140,
+            "nativeSectionId": "R14.2"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.2 — The Major Symbolic Themes",
+            "page": 67,
+            "pageEnd": 73,
+            "citationString": "Bauckham, Theology of Revelation, §R14.2 (pp. 67–73)"
+          },
+          "quote": {
+            "text": "It is also a process which begins with his earthly life and death and ends with his parousia. The victory he has already achieved in his death and resurrection is decisive, but needs to be continued by his Christian followers in the present and completed at his parousia in the future.",
+            "sha256": "6df81bf868acde10df239a4e8d5f18c330c984149a7f57633f0ae0d9070830b6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 147,
+            "nativeSectionId": "R14.9"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.9 — The Conversion of the Nations",
+            "page": 98,
+            "pageEnd": 104,
+            "citationString": "Bauckham, Theology of Revelation, §R14.9 (pp. 98–104)"
+          },
+          "quote": {
+            "text": "The two pictures correspond to the choice presented to the nations by the proclamations of the angels",
+            "sha256": "6cca0e5875d0014a7a5413059f50050398a422f04fcde376ac4cef6d95250b40",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 148,
+            "nativeSectionId": "R14.10"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.10 — The Parousia",
+            "page": 104,
+            "pageEnd": 106,
+            "citationString": "Bauckham, Theology of Revelation, §R14.10 (pp. 104–106)"
+          },
+          "quote": {
+            "text": "the Word of God in person",
+            "sha256": "683888b385aa2c5c1df760df71a4249905cecc573353a2230fdc9e84a466c8ff",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "Now that the destroyers of the earth have been destroyed (11:18), the earth is given to Christ’s people to rule with him",
+            "sha256": "0c5888905b674f05acc3b8288b694812a6145d95af378f17404bf4492488ac68",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Bauckham reads Rev 1:13’s ‘one like a son of man’ as a precise Dan 7:13 allusion that designates Christ’s authority over the churches (the seven lampstands). The Christophany’s ‘I am the first and the last, and the living one’ (1:17–18) corresponds to God’s ‘I am the Alpha and the Omega’ (1:8) within a chiastic pattern (1:8 / 1:17 / 21:6 / 22:13) that includes Christ in the eternal being of the one God of Israel — without compromising Jewish monotheism. The Daniel-7 reference is deliberately limited to ecclesial authority and protology, NOT to parousia-as-judge.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 135,
+            "nativeSectionId": "R13.1"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R13.1 — The First and the Last",
+            "page": 54,
+            "pageEnd": 58,
+            "citationString": "Bauckham, Theology of Revelation, §R13.1 (pp. 54–58)"
+          },
+          "quote": {
+            "text": "It does not designate him a second god, but includes him in the eternal being of the one God of Israel who is the only source and goal of all things.",
+            "sha256": "c6dd926ee285e36af22211d76273399181efa88407fa97cb1cb5c8480fab47d6",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 146,
+            "nativeSectionId": "R14.8"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.8 — The Harvest of the Earth",
+            "page": 94,
+            "pageEnd": 98,
+            "citationString": "Bauckham, Theology of Revelation, §R14.8 (pp. 94–98)"
+          },
+          "quote": {
+            "text": "He is ‘one like a son of man’ precisely in relation to the churches as lampstands (1:12–13), bearing light for the nations.",
+            "sha256": "91ad08a9d9fd3fd963b58a192a6a0ba6df859cdfa080883deb93300497363193",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13’s sea-beast is the Roman imperial power read through the composite Dan 7:2–8 four-beasts-and-Leviathan complex. The earth-beast (the imperial cult propaganda machine) makes the conflict one of worship-against-worship. The beast’s victory over the saints (13:7) and the saints’ victory over the beast (15:2) are the same event seen from opposite perspectives — the martyrs are the real victors when seen from heaven. Christians ‘conquer’ (an unmistakably militaristic image) by witness and martyrdom, not by violence; the beast’s power-of-might is overcome by the martyrs’ power-of-truth.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the imperial power of Rome",
+            "sha256": "c2fee737ce986888a009f5b8a0c4712095e22d42fb79cb3dddf711bc5d95727c",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the same event—the martyrdom of Christians—is described both as the beast’s victory over them and as their victory over the beast",
+            "sha256": "45afc581638f2e9f19ca128f89310f8227c727fe3221e1e6f0c1585920aa9acb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the beast’s apparent victory is the martyrs’—and therefore God’s—real victory",
+            "sha256": "fcb154d95070d06eebe4b58e925478e1b867d3df3dd1a1cda263cf4548660a7e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 145,
+            "nativeSectionId": "R14.7"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.7 — Defeating the Beast",
+            "page": 88,
+            "pageEnd": 94,
+            "citationString": "Bauckham, Theology of Revelation, §R14.7 (pp. 88–94)"
+          },
+          "quote": {
+            "text": "the most important contrast between the forces of evil and the army of the Lamb is the contrast between deceit and truth",
+            "sha256": "8a04e8d4d4dda2b5ac235931d6377c27b2cf3903a16e462c0b9041b6dea17086",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Babylon-the-harlot of Rev 17 is the Roman imperial civilization (seven hills, seven heads) — distinct in function from the beast-as-political-power: Christians are not called to ‘conquer’ Babylon but to ‘come out of her.’ The chapter exposes Roma-the-goddess as a Roman prostitute, deploying biblical Jezebel-overtones to puncture imperial-cult propaganda. The mythological resonance (Nero-redivivus, Parthian invasion) is harnessed to portray the self-destructive nature of evil.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 157,
+            "nativeSectionId": "R16.1"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R16.1 — The Cities of Revelation",
+            "page": 126,
+            "pageEnd": 388,
+            "citationString": "Bauckham, Theology of Revelation, §R16.1 (pp. 126–388)"
+          },
+          "quote": {
+            "text": "Babylon is the city of Rome, built on seven hills (17:9), but she also represents the corrupting influence which Rome had on all the cities of her empire.",
+            "sha256": "d296cdae1f2e4c9970a14eaff42301e93e3c3ff33f1ea244ce77b22f4935ecbe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 122,
+            "nativeSectionId": "R11.6"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R11.6 — Understanding the Imagery",
+            "page": 17,
+            "pageEnd": 22,
+            "citationString": "Bauckham, Theology of Revelation, §R11.6 (pp. 17–22)"
+          },
+          "quote": {
+            "text": "But as John sees her, she is a Roman prostitute, a seductive whore and a scheming witch, and her wealth and splendour represent the profits of her disreputable trade.",
+            "sha256": "04400e6b917b2ba206adb11165c7685c98f2ea8ada66023bd61594658ada384c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Rev 20:4–6 (saints reign) and 20:11 (great-white-throne books) are read as a Daniel-7 transposition: the thrones come from Dan 7:9, the books from Dan 7:10. The millennium’s sole theological point is to demonstrate the triumph of the martyrs over the beast — life and rule on the very issues over which they were contested. Read literally, the millennium becomes incomprehensible; read symbolically, it is the necessary positive counterpart to the beast’s destruction in Rev 19. The saints reign with Christ over the earth (20:4; cf. 5:10; Dan 7:18, 27).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "Comparing Revelation 20 with one of its major sources, the vision of the divine judgment in Daniel 7:9, we see that the thrones of Revelation 20:4 come from Daniel 7:9, and the opening of the books in Revelation 20:11 from Daniel 7:10.",
+            "sha256": "455d38c9f82414f52c30152736107ba0c4ca1975616f74ca924886eccb393e8e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the theological point of the millennium is solely to demonstrate the triumph of the martyrs",
+            "sha256": "733ecf8b94a23a6d17da8349cae56921f272bcbcf548d7949856131b49bf77c4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:NTTHEO87REV",
+            "logosArticleNum": 149,
+            "nativeSectionId": "R14.11"
+          },
+          "frontend": {
+            "author": "Bauckham",
+            "title": "The Theology of the Book of Revelation",
+            "section": "§R14.11 — The Millennium",
+            "page": 106,
+            "pageEnd": 108,
+            "citationString": "Bauckham, Theology of Revelation, §R14.11 (pp. 106–108)"
+          },
+          "quote": {
+            "text": "the earth is given to Christ’s people to rule with him (20:4; cf. 5:10; Dan. 7:18, 27)",
+            "sha256": "6dc255d8df7a4bf405fb78c5c99b06482d782dab594c989ec03196e8acb2b901",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Disciplines the use of Dan 7:13–14 — restricting the christological reference to kingdom-receipt (Rev 14:14) and ecclesial authority (Rev 1:13), explicitly NOT to parousia-as-judge — in deliberate contrast to Synoptic and other early-Christian uses.",
+    "Reads the beast of Rev 13 as a composite of Dan 7:2–8 + the primeval Leviathan/serpent myth, locating Rome on a single trajectory of imperial-evil-as-chaos-monster that Daniel’s four-beasts vision had already begun to map.",
+    "Identifies a satanic trinity (dragon + sea-beast + earth-beast) in Rev 12–13, distinguishing the beast (political power, to be conquered by witness) from Babylon (corrupting civilization, from which Christians ‘come out’).",
+    "Anchors the millennium structurally in Daniel 7: Rev 20:4 thrones from Dan 7:9, Rev 20:11 books from Dan 7:10. The Dan 7 destruction-of-beast / kingdom-transfer-to-saints diptych is decomposed across Rev 19:11–21 + 20:4–6.",
+    "Reads ‘conquering’ as deliberately militaristic imagery whose content is non-violent witness-unto-death — Rev 13:7 (beast conquers saints) and Rev 15:2 (saints conquer beast) describe the same event from earthly vs heavenly perspectives.",
+    "Treats Revelation as designed to ‘purge and refurbish the Christian imagination’ — counter-imagery that exposes Roman imperial-cult propaganda as ideology-of-the-powerful and grounds resistance in theocentric worship.",
+    "Climax-of-prophecy thesis: Revelation gathers, interprets, and re-actualizes the whole OT prophetic tradition (esp. Daniel) at its eschatological consummation, by saturated allusion rather than formal quotation.",
+    "Holds together universalism (conversion of all nations through martyr-witness, Rev 11:13; 15:3–4; 21:3, 24–6) and particularism (final judgment on the unrepentant, Rev 16–19) without resolving the tension — explicitly resists pre-empting in either direction.",
+    "Reads Rev 22:3b–5 (kingdom-and-priests in the New Jerusalem) as the climactic fulfillment of the Sinai-covenant formula extended through Daniel 7’s kingdom-transfer — reign + priestly access + seeing God’s face."
+  ],
+  "uncertainties": [
+    "Bauckham does not directly engage Daniel 7’s second-century Maccabean / Antiochene-crisis context (axis A composition, axis B fourth-kingdom-as-Greek-vs-Roman) — his interest is the first-century-AD reception of Daniel in Revelation, not the original Sitz im Leben. Axes A and B are not directly his quarry.",
+    "Axis H (eschatological structure: amillennial / postmillennial / premillennial) is not Bauckham’s category — the millennium is symbolic-theological, not chronologically situated within a covenantal-vs-dispensational schema. The work resists the standard millennial-position taxonomy.",
+    "Bauckham’s position on the relationship between Revelation’s reading of Daniel 7 and the Synoptic-Gospel reading (Mark 13 / Matt 24 / Mark 14:62) is suggestive but not fully developed in this short work — he flags John’s discipline in restricting Dan 7:13–14 to kingdom-receipt, in contrast to Synoptic parousia-as-judge use, but the full intertextual analysis lives in his Climax of Prophecy (1993) rather than this 1993 New Testament Theology volume.",
+    "The book is short (170 pp) and aphoristic; many citations depend on dense paragraph-arguments that resist single-quote anchoring. Several rationales are reinforced by paraphrase-anchored or summary-inference citations rather than directly-quoted ones.",
+    "Bauckham does not engage post-WW2 dispensationalist or American-evangelical readings of Revelation directly — his polemic is against (a) the Bultmannian dismissal of Revelation as ‘weakly Christianised Judaism’ and (b) Roman/imperial-ideological readings, not against futurist-decoder hermeneutics."
+  ]
+}

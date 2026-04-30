@@ -1,0 +1,1242 @@
+{
+  "scholarId": "victorinus-apocalypse",
+  "authorDisplay": "Victorinus of Pettau",
+  "workDisplay": "Commentary on the Apocalypse + On the Creation of the World (ANF 7)",
+  "resourceId": "LLS:6.50.7",
+  "resourceFile": "anf07.logos4",
+  "traditionTag": "patristic",
+  "passageCoverage": [
+    "Dan 7:7-8",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20",
+    "Matt 24",
+    "2 Thess 2"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome - the woman of Rev 17 is 'the city of Rome' (5326); ten horns are kings 'in the latest times' from Rome's dissolution.",
+      "C: Antichrist = personal future tyrant + Nero-redivivus pseudo-messiah received by the Jews - explicit identification of the Rev 17 'eighth king' with a returned Nero (5331).",
+      "F: Six-millennium chronology + literal seventh-millennium Sabbath-reign - preserved in De fabrica mundi (5192); buried in Apocalypse-commentary recension.",
+      "J: Son of Man = the risen-glorified Christ in His undertaken-manhood, two-advent (5201, 5202).",
+      "K: Saints' kingdom = literal millennial reign with Christ - original layer; the redaction we have explicitly repudiates this as 'Cerinthian' (5338), exposing the textual layering.",
+      "L: Recapitulation hermeneutics - 'not the order of the reading, but the order of the discourse, must be understood' (5293); the methodological locus classicus.",
+      "N: Tight Daniel-Revelation-2 Thess-Matt synthesis - Daniel's ten horns explicitly mapped onto Rev's ten kings (5330); Dan 11's eunuch-king feeds Rev 17's eighth king (5331)."
+    ],
+    "moderate": [
+      "E: Apocalyptic-prophetic genre treated as Spirit-given prophetic discourse with non-linear (recapitulating) structure - implicit, not theorized.",
+      "H: Two-advent eschatology with dual forerunners (Elias + a second prophet) preaching 1260 days before Antichrist's revelation (5305, 5308).",
+      "O: Lemma-and-gloss verse exegesis + Greek/Latin isopsephic decoding of 666 (5312) - the earliest surviving Latin biblical commentary mode."
+    ],
+    "tentative": [
+      "A: Daniel as 6th-c. BCE prophet - assumed without argument; the Maccabean redating is post-Victorinus, so this commitment is implicit."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome - the woman/whore of Revelation 17 is the city of Rome (the seven hills); the dragon's seven heads are the Roman emperors; Daniel's ten horns are kings 'in the latest times' who emerge from the dissolution of Rome and submit to Antichrist when he moves from the east.",
+      "commitment": "strong",
+      "rationale": "Victorinus' identification of Rome as the eschatological power is direct and unembarrassed. He glosses Rev 17:9 baldly ('That is, the city of Rome'), reads the dragon's seven heads as 'the seven kings of the Romans,' and synchronizes Daniel's vision of ten horns with Revelation's ten kings of the latest times: when Antichrist 'shall move from the east,' he will be sent 'from the city of Rome with his armies,' and three of the principal leaders are killed by him while the others give him 'honour and wisdom and power.' The Roman identification is thus both political (Rome the present persecuting senate-city) and structural (Rome as the matrix from which the ten-king/Antichrist constellation emerges).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5326,
+            "nativeSectionId": "PAR.677"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.677 — From the Seventeenth Chapter",
+            "page": 741,
+            "pageEnd": 742,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.677 (pp. 741–742)"
+          },
+          "quote": {
+            "text": "The seven heads are the seven hills, on which the woman sitteth.",
+            "sha256": "23f32cabd93e66cc592600545de79c80c0cb62163cb9bc0f06a85373e24372e4",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5297,
+            "nativeSectionId": "PAR.652"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.652 — From the Twelfth Chapter",
+            "page": 739,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.652 (p. 739)"
+          },
+          "quote": {
+            "text": "His seven heads were the seven kings of the Romans, of whom also is Antichrist, as we have said above.",
+            "sha256": "021720a520f94653fe7605e5dc7e5cb0eb93087dd03cabefbb66f47efcff7142",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5292,
+            "nativeSectionId": "PAR.648"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.648 — From the Eleventh Chapter",
+            "page": 738,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.648 (p. 738)"
+          },
+          "quote": {
+            "text": "in the kingdom of kingdoms, that is, of the Romans",
+            "sha256": "b3c6fdbf9e9f6bbbba25301f669477a1d3ed884162148156c1dbb8fd6a08df18",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5330,
+            "nativeSectionId": "PAR.681"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.681 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.681 (p. 742)"
+          },
+          "quote": {
+            "text": "And Daniel sets forth the ten horns and the ten diadems. And that these are eradicated from the former ones",
+            "sha256": "008e64f1dd208ac562aa0f5b1acdfe2c98fbb35291e692cf3e43aa38ece2e282",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "A future personal Antichrist who arises from Rome, uproots three of the ten contemporaneous kings, places a golden image in the Jerusalem temple, persecutes the saints for three-and-a-half years, and is publicly received by the Jews as their Christ - the only patristic source that explicitly identifies the Antichrist with a Nero-redivivus pseudo-messiah figure who 'rises from hell' under another name.",
+      "commitment": "strong",
+      "rationale": "Victorinus' Antichrist is the canonical Western patristic figure: a future tyrant, three uprooted kings, the desecration of the Jerusalem temple via a golden image into which an apostate angel speaks oracles, a 1260-day persecution. His most distinctive contribution is the explicit fusion of the Antichrist tradition with the Nero-redivivus legend: when 'one of the heads was, as it were, slain to death,' he 'speaks of Nero,' who cut his throat to escape the senate's cavalry; 'when raised up, God will send' him as a king to be received by the Jews as their messiah. This double pseudo-figure (Roman Caesar + counterfeit Christ) fuses Daniel's little horn with Pauline 2-Thessalonians 'lawless one' Christology. Daniel 7's beasts and 11's king who 'shall not know the lust of women' both feed this composite. The mark-of-the-name passage (5312) supplies multiple isopsephic candidates (teitan, antemos, genseric, DICLUX) - the third of which is conclusive evidence of post-Victorinus interpolation (see uncertainties).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5331,
+            "nativeSectionId": "PAR.682"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.682 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.682 (p. 742)"
+          },
+          "quote": {
+            "text": "he speaks of Nero. For it is plain that when the cavalry sent by the senate was pursuing him, he himself cut his throat.",
+            "sha256": "10a681fcc434bdaed729e538a82830bf985aa006e0520b16f3610a3687e8a709",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5331,
+            "nativeSectionId": "PAR.682"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.682 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.682 (p. 742)"
+          },
+          "quote": {
+            "text": "He shall not know the lust of women, although before he was most impure, and he shall know no God of his fathers",
+            "sha256": "14782db22ce7fcb21f52803c2c80df6a52b9ba62099ecc54523c8740b99ef0ef",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "He shall cause also that a golden image of Antichrist shall be placed in the temple at Jerusalem, and that the apostate angel should enter, and thence utter voices and oracles.",
+            "sha256": "7d611a8223723e48bae9afdb0a28e8a72202217fae80a8f8af289c33195d4f48",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "Daniel had previously predicted his contempt and provocation of God.",
+            "sha256": "30e0fa171012d9ad47e9aa1020b0c516fcf5fabc431d59f991748e20996185c0",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5308,
+            "nativeSectionId": "PAR.663"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.663 — From the Twelfth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.663 (p. 740)"
+          },
+          "quote": {
+            "text": "This is the beginning of Antichrist; yet previously Elias must prophesy, and there must be times of peace.",
+            "sha256": "1c6a0000bf4a114de6563d3f119b160262f16ef352bbcf32aab33407725ffe99",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5312,
+            "nativeSectionId": "PAR.666"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.666 — From the Thirteenth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.666 (p. 740)"
+          },
+          "quote": {
+            "text": "we understand Antichrist, who, although he be cut off from the supernal light, and deprived thereof, yet transforms himself into an angel of light, daring to call himself light.",
+            "sha256": "406092bb49abed3f9e979d0aeedec419766f05b1b4c9833c3c8dab60a85b77f7",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "A",
+      "axisName": "Dating / authorship",
+      "position": "Sixth-century BCE composition by the historical prophet Daniel - assumed without argument; Daniel's 'predictions' (the ten horns, the temple-image, Antichrist's character) are literally predictive, fulfilled and to-be-fulfilled in real history.",
+      "commitment": "tentative",
+      "rationale": "Like Hippolytus, Victorinus precedes any live critical-date debate (Porphyry's polemic was a generation later). Daniel is treated as a transparent prophet whose visions yield the very details by which Victorinus reads Revelation: the temple-image, the seventy weeks, the four-kingdoms / ten-king sequence, the king who 'shall not know the lust of women.' This is implicit conviction, not defended commitment - anachronistic to read him as an explicit anti-Maccabean voice.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "Daniel had previously predicted his contempt and provocation of God.",
+            "sha256": "30e0fa171012d9ad47e9aa1020b0c516fcf5fabc431d59f991748e20996185c0",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5193,
+            "nativeSectionId": "PAR.561"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "On the Creation of the World (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.561 — On the Creation of the World",
+            "page": 726,
+            "pageEnd": 727,
+            "citationString": "Victorinus of Pettau, On the Creation, §PAR.561 (pp. 726–727)"
+          },
+          "quote": {
+            "text": "the seven weeks in Daniel",
+            "sha256": "3b7ee3853463f6c14b062eff94742e86806841dea9d5749be8ad3874a8edd24c",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Eschatological chronology",
+      "position": "Six-day-week / six-thousand-year world chronology with a literal seventh-millennium Sabbath-reign of Christ with His elect - explicit in On the Creation of the World; in the Apocalypse commentary the 'thousand years' has been re-glossed (post-Victorinus, Augustinian recension) as the present sixth age in which Satan is bound from deceiving the Church.",
+      "commitment": "strong",
+      "rationale": "Victorinus' De fabrica mundi preserves the chiliast Sabbath-millennium in unambiguous terms: 'Wherefore to those seven days the Lord attributed to each a thousand years... that true Sabbath will be in the seventh millenary of years, when Christ with His elect shall reign.' This is the position Jerome later excoriates - and the ANF commentary on Apocalypse 20 has clearly been edited to suppress it, redefining the thousand years as 'what is left of the sixth day' (the present age). The chiliasm survives in Creation but is buried in Apocalypse: the textual layering itself is the exegetical evidence. The American editor (general note 17) flags the same contradiction: 'Victorinus was a Chiliast of the better sort, according to St. Jerome. This confirms the corruption of the mss.'",
+      "compositional": "Composite text. De fabrica mundi (article 5192) preserves the original chiliasm; the Apocalypse commentary's millennium articles (5333-5338) display the Augustinian-redactor's gloss. The position attributed here is reconstructed across both layers, with the recension flagged.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5192,
+            "nativeSectionId": "PAR.560"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "On the Creation of the World (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.560 — On the Creation of the World",
+            "page": 726,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, On the Creation, §PAR.560 (p. 726)"
+          },
+          "quote": {
+            "text": "that true Sabbath will be in the seventh millenary of years, when Christ with His elect shall reign.",
+            "sha256": "461f9e40445cea9959d0d61db1477e88826a688ff8858faac635102f3ce598bb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5192,
+            "nativeSectionId": "PAR.560"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "On the Creation of the World (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.560 — On the Creation of the World",
+            "page": 726,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, On the Creation, §PAR.560 (p. 726)"
+          },
+          "quote": {
+            "text": "Wherefore to those seven days the Lord attributed to each a thousand years",
+            "sha256": "141422ddca9c7b77fac758dec84bfa401ee8c73617023824db5d93acdf78816f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5333,
+            "nativeSectionId": "s1.v7.a4.w2.b0.ch18"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§s1.v7.a4.w2.b0.ch18 — From the Twentieth Chapter",
+            "page": 742,
+            "pageEnd": 743,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §s1.v7.a4.w2.b0.ch18 (pp. 742–743)"
+          },
+          "quote": {
+            "text": "the thousand years should be completed, that is, what is left of the sixth day, to wit, of the sixth age, which subsists for a thousand years",
+            "sha256": "eede863233413c26dcc9be846b38d3edc500b3cc248b13c5f10580e442f09891",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "The 'one like unto the Son of man' (Rev 1:13, mediating Daniel 7:13) is the crucified-and-risen Christ - a manhood 'undertaken' and now glorified after victory over death; first advent in hiddenness, second advent 'with clouds' in manifest majesty for judgment.",
+      "commitment": "strong",
+      "rationale": "Victorinus' Christology is two-advent and incarnational: the Son of man who walks in the midst of the candlesticks 'is like Him after His victory over death' - the resurrected human nature, not a docetic appearance. The first advent is 'hidden in the manhood that He had undertaken'; the second is 'manifest in majesty and glory' - the same coming-with-clouds motif Daniel 7:13 supplies for Revelation 1:7. The fleshly resurrection is load-bearing: Antichrist's counterfeit miracles can simulate this ('even the dead appear to rise again' - 5314), but only Christ's true bodily resurrection grounds the saints' 'first resurrection.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5202,
+            "nativeSectionId": "PAR.568"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.568 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.568 (p. 728)"
+          },
+          "quote": {
+            "text": "He says that He was like Him after His victory over death",
+            "sha256": "ef24ae1adc6ef5a6773feccb8faceadf4fee27cf7cd0e6f2fef96a90a063818c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5201,
+            "nativeSectionId": "PAR.567"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.567 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.567 (p. 728)"
+          },
+          "quote": {
+            "text": "For He who at first came hidden in the manhood that He had undertaken, shall after a little while come to judgment manifest in majesty and glory.",
+            "sha256": "0b2d6d9be6a5efaff9a0189dca982fe0e591a623c9226d8be72c44af3d4a9090",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5203,
+            "nativeSectionId": "PAR.569"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.569 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.569 (p. 728)"
+          },
+          "quote": {
+            "text": "He says, in the midst of the churches",
+            "sha256": "3039bda2fa43644ed583cc9913d19b12be0bc8a286b8130976377b5f44ee92c1",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints' kingdom",
+      "position": "Composite/contested. Original layer (preserved in De fabrica mundi): a literal seventh-millennium reign of Christ with the elect - Daniel 7:18,22,27 fulfilled in Revelation 20:4-6 chiliastically. Recension layer (Apocalypse commentary as we have it): the 'first resurrection' is the present spiritual rebirth of believers, Cerinthus's earthly thousand-year reign is condemned, and the kingdom is 'now eternal in the saints' though its glory is manifested only after the resurrection.",
+      "commitment": "strong",
+      "rationale": "The ANF text on Revelation 20 is editorially incoherent - it preserves Victorinus' chiliast vocabulary (a true priesthood that 'reigns with Christ' through the millenary number) while explicitly repudiating the 'earthly reign of a thousand years' as Cerinthian heresy, and even retro-fitting Augustine's spiritualized first-resurrection. The contradiction is not Victorinus' but the redactor's. Read against De fabrica mundi (art. 5192), Victorinus' authentic position is straightforwardly chiliast: a Sabbath-millennium of saints reigning with Christ on earth before the eternal state - the same kingdom-of-the-saints (Dan 7:18,22,27) that Hippolytus and Irenaeus articulate. The post-Augustinian / pseudo-Hieronymian redaction (post-410) imposed an amillennial gloss; the redactor visible in our text is in line with that move.",
+      "compositional": "The Apocalypse-commentary citations show the post-Victorinus redactor's hand; the De fabrica mundi citation preserves the original layer.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5334,
+            "nativeSectionId": "PAR.683"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.683 — From the Twentieth Chapter",
+            "page": 743,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.683 (p. 743)"
+          },
+          "quote": {
+            "text": "There are two resurrections. But the first resurrection is now of the souls that are by the faith",
+            "sha256": "9e6c519ec7e854df39fc86ce94539ac11ce4aa7f02b4c691e93fc4a61f85ea49",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5335,
+            "nativeSectionId": "PAR.684"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.684 — From the Twentieth Chapter",
+            "page": 743,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.684 (p. 743)"
+          },
+          "quote": {
+            "text": "I do not think the reign of a thousand years is eternal; or if it is thus to be thought of, they cease to reign when the thousand years are finished.",
+            "sha256": "1759d6cf762752084772f3840bac8f2ca21472f40a603bcd4fbd7cfc565acb8a",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5338,
+            "nativeSectionId": "PAR.686"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.686 — From the Twenty-First and Twenty-Second Chapters",
+            "page": 743,
+            "pageEnd": 744,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.686 (pp. 743–744)"
+          },
+          "quote": {
+            "text": "Therefore they are not to be heard who assure themselves that there is to be an earthly reign of a thousand years; who think, that is to say, with the heretic Cerinthus.",
+            "sha256": "78438f25815e954f44c342fbd3df3a2699fe9123c902bd65a279c347beb802db",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5192,
+            "nativeSectionId": "PAR.560"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "On the Creation of the World (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.560 — On the Creation of the World",
+            "page": 726,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, On the Creation, §PAR.560 (p. 726)"
+          },
+          "quote": {
+            "text": "that true Sabbath will be in the seventh millenary of years, when Christ with His elect shall reign.",
+            "sha256": "461f9e40445cea9959d0d61db1477e88826a688ff8858faac635102f3ce598bb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutics",
+      "position": "Recapitulation hermeneutics: the Apocalypse is not chronologically sequential ('not the order of the reading, but the order of the discourse, must be understood') - the Spirit 'goes forward to the last times' and then 'repeats the former ones,' presenting future events 'as if done.' Combined with anti-mimetic typology: Antichrist mimics Christ point-by-point (golden temple-image vs. true incarnation; counterfeit resurrections vs. real first-resurrection; pseudo-messiah received by Jews vs. true Messiah rejected).",
+      "commitment": "strong",
+      "rationale": "Victorinus is the patristic locus classicus for recapitulation as an explicit hermeneutical principle applied to the Apocalypse - the methodological move that lets him read the seals, trumpets, bowls, beast-cycle, and millennium as overlapping rather than serial visions. Article 5293 is the methodological key text: 'not the order of the reading, but the order of the discourse, must be understood.' His anti-mimetic Christology (Antichrist's counterfeit signs and pseudo-incarnation in the temple-image) is the structural twin of his recapitulation: the Spirit revisits the same events from new angles, and Antichrist re-stages Christ's signs in counterfeit form. Both moves prefigure later Tyconius-Augustine recapitulation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5293,
+            "nativeSectionId": "PAR.649"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.649 — From the Eleventh Chapter",
+            "page": 738,
+            "pageEnd": 739,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.649 (pp. 738–739)"
+          },
+          "quote": {
+            "text": "not the order of the reading, but the order of the discourse, must be understood",
+            "sha256": "ce8ce7c482dad0e98a468df3546aa92dd181cc81f73385178be6ccb00cc24f31",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5314,
+            "nativeSectionId": "PAR.668"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.668 — From the Thirteenth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.668 (p. 740)"
+          },
+          "quote": {
+            "text": "But the devil speaks full of malice; for he shall do these things in the presence of men, so that even the dead appear to rise again.",
+            "sha256": "19e7c4b1a5627aae53dd16efc1a48585ba6a97a25fa846c20f8995074e87008c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "He shall cause also that a golden image of Antichrist shall be placed in the temple at Jerusalem, and that the apostate angel should enter, and thence utter voices and oracles.",
+            "sha256": "7d611a8223723e48bae9afdb0a28e8a72202217fae80a8f8af289c33195d4f48",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book synthesis",
+      "position": "Tight Daniel-Revelation-2 Thessalonians-Matthew/Mark synthesis. The Revelation 13 sea-beast (leopard-bear-lion) is Daniel 7's composite fourth beast read backwards into the ten-king Roman dissolution; Revelation 17's whore-on-beast cross-references Daniel 7's ten horns; Antichrist's character (Dan 11's 'shall not know the lust of women' plus 'no God of his fathers') feeds Revelation 17's eighth king and Paul's 'man of sin'; the abomination-of-desolation (Matt 24:15 / Mark 13:14) is the golden temple-image animated by an apostate angel.",
+      "commitment": "strong",
+      "rationale": "Victorinus' commentary is structurally a Daniel-anchored reading of Revelation. Wherever Revelation echoes Daniel's apocalyptic furniture - ten horns, beast composite, dominion-handover, Son-of-Man-with-clouds, image-in-the-temple - Victorinus pulls Daniel forward by name ('Daniel had previously predicted...'; 'Says Daniel...'; 'Daniel sets forth the ten horns and the ten diadems'). This is the canonical Western synthesis Hippolytus had begun to crystallize a generation earlier; Victorinus tightens it and formalizes Antichrist's pseudo-messianic Jewish reception via Daniel 11.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5330,
+            "nativeSectionId": "PAR.681"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.681 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.681 (p. 742)"
+          },
+          "quote": {
+            "text": "And Daniel sets forth the ten horns and the ten diadems.",
+            "sha256": "f30efb01a79f082c39158a692bf5a6ca6d93103f8396e84e7daf53afa3eb0661",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5331,
+            "nativeSectionId": "PAR.682"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.682 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.682 (p. 742)"
+          },
+          "quote": {
+            "text": "He shall not know the lust of women, although before he was most impure, and he shall know no God of his fathers",
+            "sha256": "14782db22ce7fcb21f52803c2c80df6a52b9ba62099ecc54523c8740b99ef0ef",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5292,
+            "nativeSectionId": "PAR.648"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.648 — From the Eleventh Chapter",
+            "page": 738,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.648 (p. 738)"
+          },
+          "quote": {
+            "text": "Let him who now restraineth restrain, until he be taken out of the way; and then shall appear that Wicked One",
+            "sha256": "124c8e40b73884cf2cac48d19aabd3273b425f186aa2293bddbcd36158128ab2",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "Thence here he places, and by and by here he renews, that of which the Lord, admonishing His churches concerning the last times and their dangers",
+            "sha256": "0fd3c386df7ee70c5cfcb405ecf2ac687c36f6864813bd68220362f2f80b43c9",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5308,
+            "nativeSectionId": "PAR.663"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.663 — From the Twelfth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.663 (p. 740)"
+          },
+          "quote": {
+            "text": "Except there come a falling away first, and the man of sin shall appear, the son of perdition",
+            "sha256": "62e3b2504649cd4ec43d9142ad9560bfcd2744c6ca715cfb590469e896d286df",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Genre / mode",
+      "position": "Prophecy received via Spirit-mediated revelation, structured by recapitulation (non-linear restaging of the same end-time events) - the Apocalypse and Daniel together comprise a single Spirit-given prophetic discourse about 'the last times.'",
+      "commitment": "moderate",
+      "rationale": "Victorinus does not theorize 'apocalyptic' as a genre in the modern sense; he treats both Daniel and Revelation as prophecy received in vision and explicitly reflects on the reading-order paradox the recapitulating structure produces. The genre commitment is implicit in his interpretive method (article 5293) rather than thematized.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5293,
+            "nativeSectionId": "PAR.649"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.649 — From the Eleventh Chapter",
+            "page": 738,
+            "pageEnd": 739,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.649 (pp. 738–739)"
+          },
+          "quote": {
+            "text": "what the Spirit from the Father both announces and anticipates, and how, when He has gone forward to the last times, He again repeats the former ones.",
+            "sha256": "01081a6f223c582a94b05b371900d6bf3e36e6ed87182801f083087e6de109f4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5279,
+            "nativeSectionId": "PAR.636"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.636 — From the Tenth Chapter",
+            "page": 737,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.636 (p. 737)"
+          },
+          "quote": {
+            "text": "A revelation of works in the future judgment, or the Apocalypse which John received.",
+            "sha256": "b67d4670dbafb054895d4076ab00cff8ab85b9395e5bef57a9dda49757485f72",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Two-advent eschatology",
+      "position": "Two advents (hidden-manhood / manifest-glory) + dual eschatological forerunners (Elias and 'the prophet who shall be with him') whose 1260-day prophetic ministry preludes Antichrist's revelation and triggers the salvation of 144,000 Israelites before the end.",
+      "commitment": "moderate",
+      "rationale": "Like Hippolytus, Victorinus gives the second advent two heralds - Elias plus an unnamed companion prophet. Their three-and-a-half-year preaching is bracketed: 'Elias must prophesy, and there must be times of peace; afterwards, when the three years and six months are completed in the preaching of Elias, he also must be cast down from heaven.' This timeline is part of the inherited Western Antichrist-tradition Victorinus shares with Hippolytus and bequeaths to Lactantius and Jerome.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5201,
+            "nativeSectionId": "PAR.567"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.567 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.567 (p. 728)"
+          },
+          "quote": {
+            "text": "For He who at first came hidden in the manhood that He had undertaken, shall after a little while come to judgment manifest in majesty and glory.",
+            "sha256": "0b2d6d9be6a5efaff9a0189dca982fe0e591a623c9226d8be72c44af3d4a9090",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5305,
+            "nativeSectionId": "PAR.660"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.660 — From the Twelfth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.660 (p. 740)"
+          },
+          "quote": {
+            "text": "are the two prophets",
+            "sha256": "0632b60908c90ff65d2b70cf08c78fc73fd1cb0c6e2f07a8bb42161eca2ff717",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5304,
+            "nativeSectionId": "PAR.659"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.659 — From the Twelfth Chapter",
+            "page": 739,
+            "pageEnd": 740,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.659 (pp. 739–740)"
+          },
+          "quote": {
+            "text": "a hundred and forty-four thousands of men should believe on the preaching of Elias",
+            "sha256": "d2c50fd9fa6fb6bf9da7d2bae8bd21435ebcd07623ac5fde7af2880373bb9f78",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5308,
+            "nativeSectionId": "PAR.663"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.663 — From the Twelfth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.663 (p. 740)"
+          },
+          "quote": {
+            "text": "yet previously Elias must prophesy, and there must be times of peace. And afterwards, when the three years and six months are completed in the preaching of Elias, he also must be cast down from heaven",
+            "sha256": "9a8eee8ad930120f56ca10551db60620963dfad0ecacd23adc4f5f1f25b8d55e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Method",
+      "position": "Pastoral-exegetical commentary at the verse level: lemma-and-gloss (verse cited, '[]' glossed) with cross-canonical proof-texting; numerical/isopsephic decoding for symbolic numbers (666 -> teitan / DICLUX); recapitulation as the controlling structural principle.",
+      "commitment": "moderate",
+      "rationale": "The treatise is the earliest surviving Latin biblical commentary in the patristic tradition. The dominant move is verse-by-verse lemma exegesis with brief Daniel-and-Pauline anchoring, modulated by recapitulation when the visions overlap. The 666 isopsephy (5312) shows Victorinus' confident command of bilingual Greek-Latin numerological decoding - multiple equally valid candidates are offered, none dogmatically privileged.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5293,
+            "nativeSectionId": "PAR.649"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.649 — From the Eleventh Chapter",
+            "page": 738,
+            "pageEnd": 739,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.649 (pp. 738–739)"
+          },
+          "quote": {
+            "text": "Therefore the interpretation of the following sayings has shown therein, that not the order of the reading, but the order of the discourse, must be understood.",
+            "sha256": "c78346f9d6c7227dad78782d809b4e2e3495b05ceb0e3ff001fc78a86e55979b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5312,
+            "nativeSectionId": "PAR.666"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.666 — From the Thirteenth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.666 (p. 740)"
+          },
+          "quote": {
+            "text": "As they have it reckoned from the Greek characters",
+            "sha256": "c0e0d21551b45b14e1c5e6672872f72e04a0de93d0b697acf1e311fb0583fb83",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "The sea-beast of Rev 13 is straightforwardly Daniel 7's composite fourth beast: leopard body, bear's feet, lion's mouth = 'the kingdom of that time of Antichrist, and the people mingled with the variety of nations' (5309). The earth-beast is the 'great and false prophet' (5313), and his image-erection in the Jerusalem temple (5315) explicitly cross-cites Dan 9:27/11 and Matt 24:15 as the same abomination-of-desolation event.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5309,
+            "nativeSectionId": "s1.v7.a4.w2.b0.ch13"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§s1.v7.a4.w2.b0.ch13 — From the Thirteenth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §s1.v7.a4.w2.b0.ch13 (p. 740)"
+          },
+          "quote": {
+            "text": "This signifies the kingdom of that time of Antichrist, and the people mingled with the variety of nations.",
+            "sha256": "6d6e0539c78259a1e2e818c78dc057d3c68e88ce4c790a9b64dc7f26c4bba0e7",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5313,
+            "nativeSectionId": "PAR.667"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.667 — From the Thirteenth Chapter",
+            "page": 740,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.667 (p. 740)"
+          },
+          "quote": {
+            "text": "He is speaking of the great and false prophet who is to do signs, and portents, and falsehoods before him in the presence of men.",
+            "sha256": "fa8dd94bdb71aadbb658d050d1662b18e8206c1bbffd3a30d55ccb61ac525773",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5315,
+            "nativeSectionId": "PAR.669"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.669 — From the Thirteenth Chapter",
+            "page": 741,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.669 (p. 741)"
+          },
+          "quote": {
+            "text": "But when ye shall see the contempt which is spoken of by Daniel the prophet standing in the holy place, let him who readeth understand.",
+            "sha256": "fa31692c9fc7532a96ded2c7b9f5a4260478e88263781f3251f7365927d858d2",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Rev 17's whore-on-beast is Rome (5326), her seven heads are seven Roman emperors counted out by name (Galba, Otho, Vitellius, Vespasian, Titus = the five fallen; Domitian = the one reigning when John wrote; Nerva = 'not yet come, will be for a short time' - 5327); the eighth king who 'is of the seven' is Nero, who 'cut his throat' to escape the senate's cavalry and will return as a pseudo-Christ to be received by the Jews (5328, 5331). Daniel supplies the ten horns and the king's eunuch-character (5330-5331).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5326,
+            "nativeSectionId": "PAR.677"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.677 — From the Seventeenth Chapter",
+            "page": 741,
+            "pageEnd": 742,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.677 (pp. 741–742)"
+          },
+          "quote": {
+            "text": "The seven heads are the seven hills, on which the woman sitteth.",
+            "sha256": "23f32cabd93e66cc592600545de79c80c0cb62163cb9bc0f06a85373e24372e4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5327,
+            "nativeSectionId": "PAR.678"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.678 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.678 (p. 742)"
+          },
+          "quote": {
+            "text": "These are the five who have fallen. One remains, under whom the Apocalypse was written",
+            "sha256": "f904125514168c251530deb33ceede26dc1f72a721480c48be70aa0293702f0e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5331,
+            "nativeSectionId": "PAR.682"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.682 — From the Seventeenth Chapter",
+            "page": 742,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.682 (p. 742)"
+          },
+          "quote": {
+            "text": "Now that one of the heads was, as it were, slain to death, and that the stroke of his death was directed, he speaks of Nero.",
+            "sha256": "cc21886d2251fb84f6780792096b1e308dd615b91c4fc2d358ed9bbf20ca4dc7",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Compositionally fractured. The original Victorinus held a literal seventh-millennium chiliasm (preserved at De fabrica mundi 5192). The text we have has been redacted into a proto-Augustinian recapitulating frame: 'Those years wherein Satan is bound are in the first advent of Christ, even to the end of the age' (5333); the first resurrection is the present spiritual rebirth (5334); the 'reign of a thousand years' is read symbolically (decalogue x hundredfold-virginity) and is not eternal (5335); and the closing summary (5338) explicitly anathematizes Cerinthian earthly chiliasm. The American editor's General Note 17 confirms the corruption: 'Victorinus was a Chiliast of the better sort, according to St. Jerome. This confirms the corruption of the mss.'",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5333,
+            "nativeSectionId": "s1.v7.a4.w2.b0.ch18"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§s1.v7.a4.w2.b0.ch18 — From the Twentieth Chapter",
+            "page": 742,
+            "pageEnd": 743,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §s1.v7.a4.w2.b0.ch18 (pp. 742–743)"
+          },
+          "quote": {
+            "text": "Those years wherein Satan is bound are in the first advent of Christ, even to the end of the age",
+            "sha256": "bf21cc6a14b48813f6fcf2d4354fca14a1d478cb129aad1a013d21969801313a",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5335,
+            "nativeSectionId": "PAR.684"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.684 — From the Twentieth Chapter",
+            "page": 743,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.684 (p. 743)"
+          },
+          "quote": {
+            "text": "I do not think the reign of a thousand years is eternal; or if it is thus to be thought of, they cease to reign when the thousand years are finished.",
+            "sha256": "1759d6cf762752084772f3840bac8f2ca21472f40a603bcd4fbd7cfc565acb8a",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5338,
+            "nativeSectionId": "PAR.686"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.686 — From the Twenty-First and Twenty-Second Chapters",
+            "page": 743,
+            "pageEnd": 744,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.686 (pp. 743–744)"
+          },
+          "quote": {
+            "text": "Therefore they are not to be heard who assure themselves that there is to be an earthly reign of a thousand years; who think, that is to say, with the heretic Cerinthus.",
+            "sha256": "78438f25815e954f44c342fbd3df3a2699fe9123c902bd65a279c347beb802db",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5192,
+            "nativeSectionId": "PAR.560"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "On the Creation of the World (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.560 — On the Creation of the World",
+            "page": 726,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, On the Creation, §PAR.560 (p. 726)"
+          },
+          "quote": {
+            "text": "that true Sabbath will be in the seventh millenary of years, when Christ with His elect shall reign.",
+            "sha256": "461f9e40445cea9959d0d61db1477e88826a688ff8858faac635102f3ce598bb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Rev 1's 'one like unto the Son of man' walking among the candlesticks is Christ 'after His victory over death' - the risen humanity 'undertaken' at the incarnation now glorified; Daniel 7:13's clouds-of-heaven advent is the second-coming horizon (5201). The priestly garment, golden girdle, white head/hairs, and flaming eyes are read incarnationally and ecclesiologically rather than cosmologically.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5202,
+            "nativeSectionId": "PAR.568"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.568 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.568 (p. 728)"
+          },
+          "quote": {
+            "text": "He says that He was like Him after His victory over death",
+            "sha256": "ef24ae1adc6ef5a6773feccb8faceadf4fee27cf7cd0e6f2fef96a90a063818c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.50.7",
+            "logosArticleNum": 5201,
+            "nativeSectionId": "PAR.567"
+          },
+          "frontend": {
+            "author": "Victorinus of Pettau",
+            "title": "Commentary on the Apocalypse of the Blessed John (ANF Vol. 7, ed. Roberts-Donaldson, tr. Wallis)",
+            "section": "§PAR.567 — From the First Chapter",
+            "page": 728,
+            "pageEnd": null,
+            "citationString": "Victorinus of Pettau, Comm. Apoc., §PAR.567 (p. 728)"
+          },
+          "quote": {
+            "text": "For He who at first came hidden in the manhood that He had undertaken, shall after a little while come to judgment manifest in majesty and glory.",
+            "sha256": "0b2d6d9be6a5efaff9a0189dca982fe0e591a623c9226d8be72c44af3d4a9090",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Earliest surviving Latin commentary on a biblical book: Victorinus pioneers the lemma-and-gloss verse-exegesis form that becomes the medieval Western standard.",
+    "Recapitulation as an explicit hermeneutical principle applied to the Apocalypse: 'not the order of the reading, but the order of the discourse, must be understood' (5293) - the locus classicus that flowers in Tyconius and Augustine.",
+    "Explicit Nero-redivivus identification of the Rev 17 'eighth king who is of the seven' (5331): Antichrist is a returned Nero who 'cut his throat' to escape the senate's cavalry, raised by God to be received by the Jews as their Christ - the most explicit patristic fusion of the Nero-redivivus legend with the Antichrist tradition.",
+    "Anti-mimetic Christology of Antichrist: the false prophet's counterfeit signs ('even the dead appear to rise again' - 5314), the golden temple-image animated by an apostate angel (5315), and the pseudo-messianic Jewish reception (5331) construct Antichrist as a structural inversion of Christ's incarnation, miracles, and messianic identity.",
+    "Multiple equally-presented isopsephic candidates for 666 (teitan/Sol/Phoebus, antemos, genseric, DICLUX - 5312): no dogmatic insistence on one solution, but a confident bilingual Greek-Latin numerological method.",
+    "Six-day-week / six-thousand-year cosmic chronology with literal seventh-millennium Sabbath (preserved in De fabrica mundi 5192) - the chiliast position Jerome will later condemn."
+  ],
+  "uncertainties": [
+    "RECENSION FLAG (load-bearing). The ANF text reflects a post-Augustinian / pseudo-Hieronymian redaction, NOT Victorinus' original. Decisive evidence: article 5312 contains 'genseric' (Genseric, Vandal king, d. c. 477 CE) as a 666-candidate - more than a century after Victorinus' martyrdom (c. 304 CE). The American editor (General Note 15, art. 5339) flags this directly: 'Can antemos here be a reference to Anthemius, of the kindred of Julian (d. a.d. 472)? His history... connects with Genseric, who died a.d. 477.' General Note 17 adds: 'Victorinus was a Chiliast of the better sort, according to St. Jerome. This confirms the corruption of the mss.' The chiliasm has been Augustinianized away in the Apocalypse-commentary millennium articles (5333-5338) but survives in On the Creation of the World (5192). Wave 6 / WS1 readers should treat the Apocalypse text as a textual stratum: Victorinus' substrate + post-Augustinian redactor's overlay.",
+    "Axis I (geopolitical/symbolic mapping of the four kingdoms) is not engaged distinctly from B; Victorinus assumes the Babylon -> Medo-Persia -> Greece -> Rome scheme without arguing it.",
+    "Axis G (apocalyptic dualism - heavenly vs earthly courts) is engaged only obliquely via the Antichrist-mimics-Christ structure; not separately thematized.",
+    "Axes M, P, Q are not engaged."
+  ]
+}

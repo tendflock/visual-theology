@@ -1,0 +1,1272 @@
+{
+  "scholarId": "cyril-jerusalem-catechetical-15",
+  "authorDisplay": "Cyril of Jerusalem",
+  "workDisplay": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+  "resourceId": "LLS:6.60.21",
+  "resourceFile": "NPNF21.logos4",
+  "traditionTag": "patristic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 12:1-13",
+    "Matt 24",
+    "2 Thess 2"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome — Cyril cites 'the tradition of the Church’s interpreters' as warrant; the four-kingdom sequence (Assyria → Medo-Persia → Macedon → Rome) is settled doxa for him.",
+      "C: Little horn = future personal Antichrist — a magician who seizes Roman power as the eleventh of ten Roman successor-kings, reigns three-and-a-half years, is destroyed by the parousia.",
+      "F: Two-advent linear chronology with NO chiliastic millennium — Cyril is explicitly anti-chiliastic; the kingdom received by Christ in Dan 7:14 has no temporal end.",
+      "H: Two-advent christology as the structural frame — first advent in humility, second in glory on the clouds; the antithesis runs from sec. 1 through sec. 33.",
+      "J: Son of Man = Christ — Dan 7:13-14 is the controlling parousia-text; the cloud-coming is simultaneously the ascension's mirror and the second advent's mode.",
+      "K: Saints' kingdom = everlasting — Cyril polemicizes by description against a Galatian teacher (Marcellus?) who taught the kingdom would end; Dan 7:14 + Dan 2:44 + Luke 1:33 are his proof-cluster.",
+      "L: Catechetical-traditional method — 'not of our own invention, but having learned them out of the divine Scriptures used in the Church'; tradition-sourced canonical synthesis.",
+      "N: Tight cross-book synthesis — Dan 7 + Dan 2 + Dan 12 + Matt 24 + 2 Thess 2 + 1 Thess 4 fused into one continuous eschatological discourse."
+    ],
+    "moderate": [
+      "E: Predictive prophecy — implicit but consistent; Cyril contrasts prophecy with 'history of things gone by,' takes Daniel as actual future-disclosing oracle.",
+      "O: Polemical engagement — anti-Manichaean, anti-Marcellan kingdom-end teaching; each polemic is text-anchored rather than abstract."
+    ],
+    "tentative": [
+      "A: Date / authorship — assumed without argument (Daniel as historical sixth-century prophet); the Maccabean redating critique post-dates Cyril, so the question is not yet a live one for him."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — Cyril identifies the fourth beast of Daniel 7 explicitly with the Roman empire, citing the Church's traditional sequence (Assyria → Medo-Persia → Macedonia → Rome) and Gabriel's angelic interpretation as authoritative. The eschatological Antichrist will arise from within the dissolution of Roman imperial power.",
+      "commitment": "strong",
+      "rationale": "Cyril's Roman identification is presented as settled tradition rather than novel exegesis: 'this kingdom is that of the Romans, has been the tradition of the Church’s interpreters.' He locks the four-kingdom sequence into the Roman present, then reads the ten horns as ten Roman kings reigning contemporaneously, with the Antichrist arising as an eleventh from within Rome's collapse. This is the same Hippolytan-Irenaean Roman line, but Cyril invokes it as catechetical doxa for fourth-century Jerusalem catechumens — a moment in which Daniel's fourth-kingdom identification has hardened into Church doctrine.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Now these things we teach, not of our own invention, but having learned them out of the divine Scriptures used in the Church",
+            "sha256": "4da28d479c24dd4dd37da56f20eeea3bd28e655e1ee3c17395573bae64ac6efd",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "The fourth beast shall be a fourth kingdom upon earth, which shall surpass all kingdoms",
+            "sha256": "990c745c0cada09e9de4cef20a4a8fc4e43a68fb2bb84aceec16b2d3bbf6d17d",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And that this kingdom is that of the Romans, has been the tradition of the Church’s interpreters. For as the first kingdom which became renowned was that of the Assyrians, and the second, that of the Medes and Persians together, and after these, that of the Macedonians was the third, so the fourth kingdom now is that of the Romans",
+            "sha256": "8289b40803e15faad84678176700966c740b6d2ae6059b4696948f7a4a10528c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.12",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.12, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "But this aforesaid Antichrist is to come when the times of the Roman empire shall have been fulfilled, and the end of the world is now drawing near",
+            "sha256": "7da18c5ded8f531f00cdb29ee370bf1d58e6b26974907af054b391692b57f994",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Future eschatological Antichrist — a single personal magician-tyrant who arises as the eleventh king after ten contemporary Roman successor-kings, uproots three of them, falsely claims to be Christ to deceive the Jews, persecutes Christians for three and a half years, and is destroyed at Christ's parousia. Cyril treats Antiochus IV as background type at most; the lecture's interest is wholly future.",
+      "commitment": "strong",
+      "rationale": "Cyril gives one of the most detailed pre-Nicene Antichrist sketches in patristic literature: he is a 'magician,' 'most expert in sorceries and enchantments,' who 'shall seize for himself the power of the Roman empire' and 'falsely style himself Christ.' He fits Daniel's ten-horn schema (an 'eleventh, the Antichrist…three he shall humble') with 2 Thess 2:3-9 verbatim and Matt 24:24 as canonical confirmation. Cyril is explicit that the Antichrist comes only after Rome's dissolution — chronological eschatology, not realized typology, and not Antiochus.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.11",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.11, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "brings in a certain man who is a magician",
+            "sha256": "44df7551bba00550c0e9b621e3e6d4eb500c65fc442fc18c748eaa63072a9c4d",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.11",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.11, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": ", and most expert in sorceries and enchantments of beguiling craftiness; who shall seize for himself the power of the Roman empire, and shall falsely style himself Christ",
+            "sha256": "19c64accfb28eb53d8d74682b6dc5adbbbceac5094c4dfb7403b9a6f48225c17",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.12",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.12, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "There shall rise up together ten kings of the Romans, reigning in different parts perhaps, but all about the same time; and after these an eleventh, the Antichrist, who by his magical craft shall seize upon the Roman power; and of the kings who reigned before him, three he shall humble",
+            "sha256": "803508adb8cbe84acc43455e18a5c857780ce7f92bef9da561be1b72b27f617a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.12",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.12, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And after perpetrating such things for three years and six months only, he shall be destroyed by the glorious second advent from heaven of the only-begotten Son of God, our Lord and Saviour Jesus, the true Christ, who shall slay Antichrist with the breath of His mouth",
+            "sha256": "bab158b8396f2e47916ace3fe540b2e80c40501d7cdfc9d148707f5631c1c7e8",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.15",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.15, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "at first indeed making a pretence of benevolence, but afterwards displaying his relentless temper, and that chiefly against the Saints of God. For he says, I beheld, and the same horn made war with the saints",
+            "sha256": "3c236aa76160324fca9ac4602fc6fb42f25a1e621550f4f73f27197a0b115710",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Genre of Daniel 7",
+      "position": "Predictive prophecy — Daniel 7 is genuine future-disclosing prophecy from the historical Daniel, not vaticinium ex eventu. Cyril treats it as a script for events still to come (Antichrist, parousia), while at the same time historicizing the four-kingdom retrospective into the Roman present.",
+      "commitment": "moderate",
+      "rationale": "Cyril names Daniel 7 a 'prophecy' and contrasts prophecy with mere history: 'it is not a history of things gone by, but a prophecy of things future, and which will surely come.' He bases his Antichrist teaching directly on 'the prophecy of Daniel just now read.' The genre commitment is implicit but consistent: predictive prophecy spanning from Daniel's day through Cyril's own to the parousia. He explicitly distinguishes Daniel from apocryphal sources, granting Daniel canonical-prophetic authority.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.4",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.4, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "for it is not a history of things gone by, but a prophecy of things future, and which will surely come. Not that we prophesy, for we are unworthy; but that the things which are written will be set before you, and the signs declared",
+            "sha256": "2308273d4167d0551650c9bd5c044d3d2deed76f4d0431325aeb8d42592fef4d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": ", and chiefly from the prophecy of Daniel just now read",
+            "sha256": "f89f5296033d2da8f38d3fad34f86aaf88224f99fa44feca08110c8948e696fd",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.16",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.16, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "We speak not from apocryphal books, but from Daniel",
+            "sha256": "c79d6cffddb7c43cb8aec0db27f295df2ee8c6da4ae3364863ad31d21c099b78",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Eschatological chronology",
+      "position": "Two-advent linear scheme: present age (post-ascension Church) → falling away + Antichrist's three-and-a-half-year reign within a fragmented Rome → glorious parousia of Christ on the clouds → resurrection (dead in Christ rise first; living caught up) → final judgment. Cyril does NOT teach a chiliastic millennium; on the contrary, he emphatically affirms that Christ's kingdom 'shall have no end' against a Galatian heresy he names by description.",
+      "commitment": "strong",
+      "rationale": "Cyril's eschatological sequence is laid out step-by-step across Lecture XV. The Antichrist's reign is fixed precisely at 'three years and six months' on the strength of Daniel's 'time, times and half a time.' The parousia follows immediately: 'he shall be destroyed by the glorious second advent.' The resurrection sequence Cyril takes from 1 Thess 4:16-17 verbatim. Notably he polemicizes against any claim that 'the kingdom of Christ shall have an end' — 'abhor the heresy; it is another head of the dragon' — distancing himself from chiliastic readings that bind the kingdom to a thousand-year span.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.16",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.16, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Antichrist shall reign for three years and a half only. We speak not from apocryphal books, but from Daniel; for he says, And they shall be given into his hand until a time and times and half a time",
+            "sha256": "df8e2f64af9ae9a1107c167a120219bbb9c3291451da511a071610a5b5644175",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.19",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.19, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "the dead in Christ shall rise first",
+            "sha256": "c8b7dc3b35567d05a8e34b83c9259bbcba68041a7fb0b79170c742dca210e64e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.19",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.19, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": ",—the godly persons who are alive shall be caught up in the clouds, receiving as the reward of their labours more than human honour",
+            "sha256": "e729220fedbaf71b6cfb96d1ef263dd7c872b34717461533c560403dfe578d58",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And shouldest thou ever hear any say that the kingdom of Christ shall have an end, abhor the heresy; it is another head of the dragon, lately sprung up in Galatia",
+            "sha256": "d362b13a059a3cee81771aab281a701998ead27387566d97e72cfd1e076cb941",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.16",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.16, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "A time is the one year in which his coming shall for a while have increase; and the times are the remaining two years of iniquity, making up the sum of the three years; and the half a time is the six months",
+            "sha256": "64c60699d76f3f3a52e3b27a9ba36f661fdb2f367c9e29b85f9c353eca59e923",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Two-advent christology",
+      "position": "Two distinct advents of the same Christ: the first in humility (manger, cross, hidden as 'rain on a fleece'); the second in glory (open, with angelic hosts, on the clouds, to judge). The lecture's frame is a sustained antithesis between these two comings, with Daniel 7:13-14 governing the second.",
+      "commitment": "strong",
+      "rationale": "The opening sentences establish the structural insight of the whole lecture: 'We preach not one advent only of Christ, but a second also.' Cyril doubles every christological category — 'twofold generation,' 'twofold descents,' 'first…second' — with Malachi 3:1-2, Titus 2:11-13, and Daniel 7:13-14 as the proof-texts. The Daniel 7:13 'one like the Son of Man came with the clouds' is the load-bearing OT prediction of the second advent for him.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.1",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.1, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "We preach not one advent only of Christ, but a second also, far more glorious than the former. For the former gave a view of His patience; but the latter brings with it the crown of a divine kingdom",
+            "sha256": "87161b60d0720210bffea969a6dd196e14b89a29d22c60e634bd966b1d51b14a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.1",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.1, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "In His former advent, He was wrapped in swaddling clothes in the manger; in His second, He covereth Himself with light as with a garment",
+            "sha256": "fd4d561bb940632cb93fc87c8f7690d773cd673b903a1ac0a79293cca9608526",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.2",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.2, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Paul also knew these two comings, when writing to Titus and saying, The grace of God hath appeared which bringeth salvation unto all men",
+            "sha256": "3deadf0ce79a2f2db67ee9bd28c4c981b6ad2d5a420a989753f92ff1f56f3b17",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "The 'one like the Son of Man' of Daniel 7:13 is Christ — the same Christ who ascended on the clouds returns on the clouds. Cyril fuses Dan 7:13-14 with Acts 1:11 and Matt 24:30 into a single ascension-parousia symmetry. The Father is the 'Ancient of Days' to whom the Son comes; both Father and Son share an everlasting kingdom.",
+      "commitment": "strong",
+      "rationale": "Cyril takes Daniel 7:13 as the controlling vision of the parousia, opening the lecture by quoting it verbatim, returning to it at sec. 21, and citing it again at sec. 27 as the climactic proof against 'kingdom-shall-have-an-end' heretics. The Son comes 'to the Father, on the clouds of heaven' — the cloud-coming is a return to the Father's throne, not a descent only. Cyril makes the Father's white garment / wool-hair imagery (Dan 7:9) symbolic of forgiveness rather than literal old-age, but holds the Son's identity as the cloud-rider firmly literal.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.epigraph",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.epigraph, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "I beheld till thrones were placed, and one that was ancient of days did sit, and then, I saw in a vision of the night, and behold one like unto the Son of Man came with the clouds of heaven",
+            "sha256": "e851ceaf0f5459377dc701c6aec9bbad52c6637fa211fb87297f8616a198c676",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.21",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.21, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "The Son of Man shall come to the Father, according to the Scripture which was just now read, on the clouds of heaven, drawn by a stream of fire",
+            "sha256": "d9869112b28a8653083e6e5aed28c2b204ee883b0ea5f1475f5ec20483602c09",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Listen to the testimony of Daniel in the text",
+            "sha256": "c97594a10a01f3e333666f8ed5d43620d4d22f40ec7e0a9b4e714fc5a2ed7fee",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "; I saw in a vision of the night, and behold, one like the Son of Man came with the clouds of heaven, and came to the Ancient of days",
+            "sha256": "6e61bc8b78920a2c937fac1c81b6d8f88f91d9b4cdd61d8463cd5b6746e0a31b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And to Him was given the honour, and the dominion, and the kingdom: and all peoples, tribes, and languages shall serve Him; His dominion is an everlasting dominion, which shall not pass away, and His kingdom shall not be destroyed",
+            "sha256": "74417fe02089e32a49841f104920c328990624f0086a749a8420e63c78994a2b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints' kingdom",
+      "position": "Eternal kingdom — the kingdom received by Christ (and by extension the saints) is everlasting, with no temporal terminus. Cyril repeatedly anchors this in Daniel 7:14 ('His kingdom shall not be destroyed') and Daniel 2:44 ('shall not be left to another people'), polemically against any teacher who limits the reign to a millennium or to a pre-end stage.",
+      "commitment": "strong",
+      "rationale": "Cyril's most distinctive eschatological move is his explicit anti-chiliasm: he names a Galatian teacher (most likely Marcellus of Ancyra) who taught that Christ's kingdom would end, and refutes him with Dan 7:14 + Dan 2:44 + Luke 1:33. This sets Cyril against the Hippolytan/Irenaean millennial line and aligns him with the trajectory that Augustine will later consolidate. The saints' inheritance is 'the eternal kingdom of heaven,' not a thousand-year earthly reign.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.17",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.17, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "having toiled for a little while they may inherit the eternal kingdom of heaven, according to that which Daniel says, And at that time thy people shall be delivered",
+            "sha256": "371faf3af27332ac51d1d349612615ae30388e5fbde28967ef5cb7299dc175b3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "uttering such blasphemies to his own perdition. For he has not listened to the Lord, saying, The Son abideth for ever",
+            "sha256": "05440784d5f7b1b77e0b96ba142c0c23553b36842b09f937b0abc2fdbd4a8ea2",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": ". He has not listened to Gabriel, saying, And He shall reign over the house of Jacob for ever, and of His kingdom there shall be no end",
+            "sha256": "faa9444112533426a4b60969d2b2fe598d0d7760947959f2f28719236adf5ceb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.28",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.28, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "The like doctrine thou has also in the interpretation of the Stone, which was cut out of a mountain without hands, which is Christ according to the flesh",
+            "sha256": "279ceb314346bc6cfd1ef1eef41bf97fe6ec1b7473d9cb4d18118bdff2523b55",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.28",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.28, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "; And His kingdom shall not be left to another people",
+            "sha256": "04f794693ad20100c265c52ff957134eb61251a12fdeec8070fa3b735bc36f40",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Interpretive method",
+      "position": "Catechetical synthesis grounded in 'the tradition of the Church’s interpreters' plus literal-prophetic reading of Daniel and the apostolic eschatological texts. Cyril treats Scripture as a single canonical voice, harmonizing Daniel 7 + Daniel 2 + Daniel 12 + Matthew 24 + 2 Thessalonians 2 + 1 Thess 4 cloud-imagery into one continuous eschatological narrative. Method is doctrinal and ecclesial, not historical-critical.",
+      "commitment": "strong",
+      "rationale": "Cyril foregrounds his hermeneutic explicitly twice: 'Now these things we teach, not of our own invention, but having learned them out of the divine Scriptures used in the Church.' His warrant for the Roman identification is 'the tradition of the Church’s interpreters.' He defends use of Daniel against any apocryphal-source charge ('We speak not from apocryphal books, but from Daniel'). The result is a tradition-sourced canonical synthesis, taught to catechumens — a paradigm for later orthodox patristic eschatology.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Now these things we teach, not of our own invention, but having learned them out of the divine Scriptures used in the Church",
+            "sha256": "4da28d479c24dd4dd37da56f20eeea3bd28e655e1ee3c17395573bae64ac6efd",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.13",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.13, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And that this kingdom is that of the Romans, has been the tradition of the Church’s interpreters",
+            "sha256": "0ab73608c48f975534d2b4375e481d406bc4944241f98412ac6c39abd118621d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.16",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.16, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "We speak not from apocryphal books, but from Daniel",
+            "sha256": "c79d6cffddb7c43cb8aec0db27f295df2ee8c6da4ae3364863ad31d21c099b78",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book synthesis",
+      "position": "Tight synthesis of Daniel 7 with Matthew 24 (Olivet Discourse), 2 Thessalonians 2 (man of sin), 1 Thessalonians 4 (parousia + rapture), Daniel 2 (stone-cut-without-hands), and Daniel 12 (resurrection of the just). Cyril welds these into a single continuous eschatological discourse — Daniel 7 supplies the political-imperial frame, Matt 24 the signs of the end, 2 Thess 2 the Antichrist's character, Dan 12 the resurrection, 1 Thess 4 the parousia mode.",
+      "commitment": "strong",
+      "rationale": "Lecture XV is built as a sustained intertextual interpretation. Cyril walks through the Olivet signs in order ('Take heed that no man mislead you' → wars and rumours → famines → hatred among brethren → abomination of desolation), then drops in 2 Thess 2:3-10 verbatim as the apostolic complement to Daniel's little-horn vision, and crowns the lecture with Dan 7:13-14 + 1 Thess 4:16-17 for the parousia. The Antichrist is simultaneously Daniel's eleventh king, Paul's man of sin, Christ's false christs, and the standing-in-the-Holy-Place desolator — one figure, multiple texts.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.9",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.9, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Hatred of the brethren makes room next for Antichrist; for the devil prepares beforehand the divisions among the people, that he who is to come may be acceptable to them",
+            "sha256": "33fefcf23fd4e420aa59ba122974d3c2b801758ce745d99dd1ec86eefbbed70c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.9",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.9, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "For that day shall not come, except there came first the falling away, and the man of sin be revealed, the son of perdition, who opposeth and exalteth himself against all that is called God",
+            "sha256": "9657e505442288b072c2c666ea42a7e8ac9863926f05b20858cfb912b06af3c2",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.19",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.19, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "For the Lord Himself shall descend from heaven with a shout, with the voice of the Archangel, and with the trump of God: and the dead in Christ shall rise first",
+            "sha256": "ba30ff3609a76d70ecc603c80d5cd50a51e1bee68b374e01532515f974e0fc56",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.9",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.9, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And what comes to pass after this? He says next, When therefore ye see the abomination of desolation, which was spoken of by Daniel the Prophet, standing in the Holy Place",
+            "sha256": "c2785d2d949277b4f9f393836233d15ad7ef2379880f2def34d867a6aae47be7",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Polemical method / engagement",
+      "position": "Catechetical-polemical: Cyril teaches the Daniel 7 / Antichrist material specifically to inoculate catechumens against (a) deception by false-Christ figures, (b) Manichaean cosmology that identified the sun with Christ, (c) Marcionite-style hatred of the Old Testament prophets, and (d) a named Galatian heresy (most likely Marcellus of Ancyra) that limited Christ's kingdom to a fixed term.",
+      "commitment": "moderate",
+      "rationale": "Lecture XV's polemical horizon is broad but disciplined. Cyril names the Manichees as a current target, names a 'lately sprung up in Galatia' kingdom-with-end heresy, and warns of heretics-in-disguise within the Church ('now the Church is filled with heretics in disguise'). Each polemical move is anchored to a Scripture text rather than a doctrinal abstraction — Daniel 7:14, Luke 1:33, Heb 1:8 — typical of Cyril's catechetical style. The polemic is pastoral protection, not academic refutation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.3",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.3, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Here let converts from the Manichees gain instruction, and no longer make those lights their gods; nor impiously think, that this sun which shall be darkened is Christ",
+            "sha256": "b8ee42513a22c12e4cb0c5ca9320846d2e3f684829aed62f4555af6a07eed6ed",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.9",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.9, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And formerly the heretics were manifest; but now the Church is filled with heretics in disguise",
+            "sha256": "2beb01e7f25285507b795db28ccea31abb81d1af31a05c12186ed31eeb3fb9e0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.27",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.27, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And shouldest thou ever hear any say that the kingdom of Christ shall have an end, abhor the heresy; it is another head of the dragon, lately sprung up in Galatia",
+            "sha256": "d362b13a059a3cee81771aab281a701998ead27387566d97e72cfd1e076cb941",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Cyril treats Matthew 24 (the Olivet Discourse) as the Lord's own ordered exposition of the signs of the end, and walks his catechumens through it sequentially: 'Take heed that no man mislead you' (sec. 4-5) → wars and earthquakes (sec. 6) → hatred and betrayal among brethren (sec. 7) → gospel preached to all nations (sec. 8) → the abomination of desolation 'spoken of by Daniel the Prophet, standing in the Holy Place' (sec. 9). The Olivet Discourse functions as Cyril's narrative spine; Daniel 7 + 2 Thess 2 supply the Antichrist's identity within that spine.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.4",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.4, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "Tell us, when shall these things be, and what shall be the sign of Thy coming, and of the end of the world",
+            "sha256": "0f3e566bbe260985ccec03c8518c4298f64e1cc4ac501d5089fbe06e587bfea4",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.6",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.6, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And ye shall hear of wars and rumours of wars",
+            "sha256": "9677de86a967aa22f76551c2b51900177bacef7f22ad0c2898ade98135725e34",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.6",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.6, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": ". Is there then at this time war between Persians and Romans for Mesopotamia, or no?",
+            "sha256": "0e1394aba7da6e64d589f92c8f2a3ebb33dfbbad2523ffdb9683125ef0499283",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.22",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.22, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And then shall appear, He says, the sign of the Son of Man in heaven",
+            "sha256": "63309ac30f680ad08d526d6595d050813c23a1dc1bce2a679baf08769cbd2966",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "targetPassage": "2 Thess 2",
+      "positionSummary": "Cyril cites 2 Thessalonians 2:3-10 verbatim as the apostolic confirmation of Daniel's eleventh-king Antichrist. The 'falling away' is realized in his own day ('and now is the falling away'), the 'man of sin' is Daniel's little horn, the 'temple of God' in which he sits is the destroyed Jewish Temple (which the Antichrist will rebuild for Jewish messianic deception), and the 'lawless one whom the Lord Jesus shall slay with the breath of His mouth' is Cyril's image of the parousia's destruction of Antichrist.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.9",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.9, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "so that he sitteth in the temple of God, shewing himself that he is God",
+            "sha256": "e146aad5706ced343dfe1beb51c8d488c03b2e8750c974c8b80bd7d26c0066d3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.15",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.15, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "What temple then? He means, the Temple of the Jews which has been destroyed. For God forbid that it should be the one in which we are!",
+            "sha256": "6dd6ef622d8f00753e486777c03bb1d5269b692ffabda770be73f0f6244487bc",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.14",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.14, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And who is this, and from what sort of working? Interpret to us, O Paul. Whose coming, he says, is after the working of Satan, with all power and signs and lying wonders",
+            "sha256": "dfc0c24793ee62626176485a21087060a988ce41cd0e0bfbd48cb619df134b75",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Cyril treats Daniel 2 as parallel and corroborative testimony to Daniel 7: the same four-kingdom sequence (Assyria → Medo-Persia → Macedon → Rome), and the same eternal-kingdom climax. The 'stone cut out without hands' is Christ-according-to-the-flesh (i.e., the virginal incarnation), and the kingdom 'shall not be left to another people' (Dan 2:44) is invoked as a parallel proof-text against the Galatian end-of-kingdom heretic. Daniel 2 + Daniel 7 form a single canonical witness to Rome-as-fourth and Christ's-kingdom-as-everlasting.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.28",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.28, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "The like doctrine thou has also in the interpretation of the Stone, which was cut out of a mountain without hands, which is Christ according to the flesh",
+            "sha256": "279ceb314346bc6cfd1ef1eef41bf97fe6ec1b7473d9cb4d18118bdff2523b55",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.28",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.28, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "; And His kingdom shall not be left to another people",
+            "sha256": "04f794693ad20100c265c52ff957134eb61251a12fdeec8070fa3b735bc36f40",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 12:1-13",
+      "positionSummary": "Cyril links Daniel 12's resurrection scene to the eschatological vindication of the saints persecuted by Antichrist, citing Daniel's 'time, times and half a time' (Dan 12:7) for the precise three-and-a-half-year duration of Antichrist's reign and Daniel 12:2-3 for the resurrection of the wise as 'stars for ever and ever.' Daniel 12 supplies the chronology and the resurrection-reward; Daniel 7 supplies the imperial-political vision they answer.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.16",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.16, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And they shall be given into his hand until a time and times and half a time",
+            "sha256": "2467726cd31c5c4aa9fdb2d70186d79aca9930d7defe150349db3eab35c5ab52",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.17",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.17, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "And at that time thy people shall be delivered, every one that shall be found written in the book",
+            "sha256": "d781b0bd5ff92f4735942308fcc256b3cb0462c474d1a4ee3b8f2ab3bcc46365",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.21",
+            "logosArticleNum": 4870,
+            "nativeSectionId": "s3.v7.a1.w1.b17"
+          },
+          "frontend": {
+            "author": "Cyril of Jerusalem",
+            "title": "Catechetical Lecture XV (NPNF Series 2, Vol. 7)",
+            "section": "§s3.v7.a1.w1.b17 — Lecture XV.17",
+            "page": 104,
+            "pageEnd": 114,
+            "citationString": "Cyril of Jerusalem, Catechetical Lecture XV.17, §s3.v7.a1.w1.b17 (pp. 104–114)"
+          },
+          "quote": {
+            "text": "many of them that sleep in the dust of the earth shall awake, some to everlasting life, and some to shame and everlasting contempt; and they that be wise shall shine as the brightness of the firmament",
+            "sha256": "032cb45c9e7b57be8725edaca51da2d7227a7edced39fab4b40b9c3358c125de",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Reads Daniel 7's 'Ancient of Days' wool-and-snow imagery as symbolic of forgiveness of sins ('I will make your sins white as snow, and as wool'), not literal portraiture of the Father — anticipates later Cappadocian apophatic instincts about divine appearance language.",
+    "Identifies the 'temple of God' in 2 Thess 2:4 as the destroyed Jewish Temple (which Antichrist will rebuild for messianic deception), explicitly NOT the Church — a sharp Antiochene-historical reading distinct from later spiritualizing patristic options.",
+    "Pre-Augustinian anti-chiliasm: names and refutes a kingdom-with-an-end Galatian teacher decades before Augustine consolidates non-millennial eschatology in De Civ. XX. Cyril's grounding is Dan 7:14 rather than Augustine's recapitulative reading of Rev 20.",
+    "Embeds the Antichrist scheme inside catechetical pastoral care: 'Guard thyself then, O man; thou hast the signs of Antichrist' — eschatology functions to harden new Christians against deception, not to satisfy speculation about dates.",
+    "Numerical exegesis of Daniel's 'time, times and half a time' as 1 + 2 + 0.5 = 3.5 years, giving a precise three-and-a-half-year Antichrist reign — a scheme later adopted by Western medieval Antichrist tradition."
+  ],
+  "uncertainties": [
+    "Cyril does not engage axis A (date / authorship of Daniel) — the Porphyrian Maccabean-redating critique post-dates him; he simply assumes the historical Daniel.",
+    "Cyril is silent on the precise identity of Daniel 7's first three beasts (lion / bear / leopard = which kingdoms?) — he names only the four-kingdom sequence in summary, not the per-beast assignments.",
+    "Cyril mentions Revelation imagery only obliquely (the 'thrones' of Dan 7:9 are not connected to Rev 4-5 here, nor is the little horn explicitly cross-mapped to Rev 13's beast). The Hippolytan Dan 7 → Rev 13/17 mapping is absent.",
+    "Cyril does not engage Dan 8 (ram-and-goat) or Dan 9 (seventy weeks) in Lecture XV; the lecture's locus is Dan 7 + Dan 2 + Dan 12 plus NT eschatological texts.",
+    "The lecture's Galatian heresy target ('lately sprung up') is unnamed; modern consensus identifies it with Marcellus of Ancyra (deposed 336), but Cyril leaves the identification implicit."
+  ]
+}

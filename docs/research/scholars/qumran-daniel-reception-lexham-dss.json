@@ -1,0 +1,643 @@
+{
+  "scholarId": "qumran-daniel-reception-lexham-dss",
+  "authorDisplay": "Qumran (Lexham DSS)",
+  "workDisplay": "Lexham DSS Hebrew-English Interlinear Bible",
+  "resourceId": "LLS:LDSSHEIB",
+  "resourceFile": "LDSSHEIB.logos4",
+  "traditionTag": "second-temple-reception",
+  "fullTitle": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible (composite text from the biblical Daniel manuscripts at Qumran: 1QDan-a, 1QDan-b, 4QDan-a, 4QDan-b, 4QDan-c, 4QDan-d, 4QDan-e, 6QpapDan)",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 9:1-19",
+    "Dan 10:1-21",
+    "Dan 11:1-45"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom — the Qumran biblical Daniel scrolls preserve the Aramaic of Dan 7:7 (fourth beast) and 7:23 (the fourth beast shall be a fourth kingdom on earth, which shall be different from all the kingdoms) exactly as the Masoretic tradition transmits them, anchoring the four-kingdom schema textually before the rise of Christianity.",
+      "F: Saints / kingdom of saints — Dan 7:18, 7:25, 7:26 are witnessed in Qumran Aramaic, including they shall possess the kingdom forever and ever (7:18) and the Antiochene-figure speaking words against the Most High and wearing out the holy ones for time, times, and half a time (7:25).",
+      "K: Date and provenance — eight Daniel manuscripts at Qumran (1QDan-a/b, 4QDan-a/b/c/d/e, 6QpapDan), the earliest (4QDan-c / 4Q114) palaeographically dated to the late 2nd century BCE, demonstrating that Daniel in something close to its received form was canonical-quality literature within decades of its purported Maccabean horizon.",
+      "N: Cross-book coherence within Daniel — the scrolls preserve the Aramaic-Hebrew bilingual structure of Daniel exactly as MT transmits it; the composite witness in this resource covers Dan 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11."
+    ],
+    "moderate": [
+      "L: Apocalyptic hermeneutic — Daniel 11 preserved Hebrew (in 4QDan-c) supplies the maśkîlîm (wise instructors) vocabulary the Yaḥad applied to itself; though the explicit sectarian appropriations (1QM, 4Q174, 11Q13, Pseudo-Daniel) live outside this resource, their textual base is here.",
+      "Textual transmission — variant readings at Dan 7:6, 7:11, 7:19 (apparatus articles 8242-8244) record consonantal divergences between 4QDan-A/B/D and the later Masoretic recension, indicating active transmission rather than monolithic copying."
+    ],
+    "tentative": [
+      "J: Son of Man — verses Dan 7:8-10 and 7:12-14 (throne vision + Son of Man) are NOT preserved in the eight Daniel manuscripts at Qumran as represented in this composite; the scrolls preserve 7:1-7, 11, 15-23, 25-28 but skip the throne-vision center. The Qumran biblical witness is, on this resource, silent at the Son-of-Man verse itself."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "The Qumran biblical Daniel scrolls preserve the Aramaic of Daniel 7 four-kingdom vision essentially identical to the Masoretic Text: a fourth beast fearful and terrifying and exceedingly strong with iron teeth and ten horns that devours and crushes (7:7), and an angelic interpretation that names it a fourth kingdom on the earth, which shall be different from all the kingdoms, and shall devour the whole earth, trample it down, and crush it (7:23). The textual stability of the four-kingdom schema is therefore not a Christian or post-Maccabean editorial overlay but is fixed in the Aramaic of Daniel by the late 2nd / early 1st century BCE.",
+      "commitment": "strong",
+      "rationale": "Article 9288 (BK.27.007 — the composite Daniel 7) preserves the Aramaic of 7:7 and 7:23 as continuous text drawn primarily from 4QDan-a/b/d (4Q112 / 4Q113 / 4Q115). The textual-criticism intro (article 8675) is explicit that the Qumran manuscripts of Daniel exhibit the same text form as the MT, indicating that the final form was already in place. For the four-kingdom passage specifically, the consonantal text, morphology, and orthography of the fourth-beast verses are continuous with the MT, anchoring the four-kingdom textual base in the Hasmonean / pre-Roman period.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "יליא וארו חיוה רביעיה דחילה ואימתני ותקיפא יתירא ושנין די פרזל לה רברבן אכלה ומדקה ושארא ברגליה רפסה והיא משניה מן כל חיותא די קדמיה וקרנין עשר לה",
+            "sha256": "7f939f9d09341d2c19c32b47465756ef693c26eef0b35c4ee016854edef77183",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...night, and behold a fourth beast, fearful and terrifying and exceedingly strong; and it had great iron teeth, devouring and crushing, and stamping the residue with its feet; and it was different from all the beasts that were before it, and it had ten horns.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "די תשנא מן כל מלכותא ותאכל כל ארעא ותדושנה ותדקנ",
+            "sha256": "56b2085b51c393ca8ab94b267b490c123516ef889dd1324fde13f7760e144a15",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...which shall be different from all the kingdoms, and it shall devour the whole earth and trample it down and crush it...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 8675,
+            "nativeSectionId": "INTRO.1.7"
+          },
+          "frontend": {
+            "author": "Penner (ed.), Lexham DSS",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§INTRO.1.7 — Textual Criticism of the Hebrew Bible",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Penner (ed.), Lexham DSS, Lexham DSS, §INTRO.1.7"
+          },
+          "quote": {
+            "text": "In both these cases, the Qumran manuscripts exhibit the same text form as the Masoretic Text, indicating that the final form of these books had already taken shape.",
+            "sha256": "79bd356d9919b6bc398cb455aea18c3355c851d0137dadc3d8a00ab3a77b1023",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Saints / kingdom of saints",
+      "position": "The defining note of Daniel 7 interpretive section — the holy ones of the Most High receiving an everlasting kingdom — is preserved verbatim in Qumran Aramaic Daniel: they shall possess the kingdom forever and ever (7:18); the Antiochene-figure shall speak words against the Most High, and shall wear out the holy ones of the Most High, and shall think to change the appointed times and the law; and they shall be given into his hand for a time, times, and half a time (7:25); his dominion shall be taken away, to be consumed and destroyed to the end (7:26). The kingdom-of-saints frame is fully present in the Hasmonean-era Qumran manuscripts and is not a later interpolation.",
+      "commitment": "strong",
+      "rationale": "Verses 7:18, 7:25, 7:26 are continuous Aramaic text in the composite (article 9288), drawn primarily from 4QDan-b (4Q113) and 4QDan-d (4Q115). The Qumran community well-documented self-understanding as the saints (qedoshim) and the elect is anchored in this very vocabulary; whether or not the sectarian Pesharim explicitly quote Dan 7 (they do — in 11Q13 Melchizedek and 4Q174 Florilegium, housed in other Logos resources outside this composite), the lexical bridge is already in place in the biblical text the community copied.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "ויחסנון מלכותא עד עלמא ועד עלם על",
+            "sha256": "9ebba5930913f4f9c7460ee06ee9f4519a9477fe6bbdfb988595f47bfb71c772",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...and they shall possess the kingdom forever, even forever and ever...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "ומלין לצד עליא ימלל ולקדישי עליונין יבלא ויסבר להשניה זמנין ודת ויתיהבון בידה עד עד",
+            "sha256": "98e3160e2109bf327e040f784f91ff321b0ca344a2d89f94c6d70fee323fa505",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he shall speak words against the Most High, and shall wear out the holy ones of the Most High; and he shall think to change the appointed times and the law; and they shall be given into his hand for a time...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "ושלטנה יהעדון להשמדה ולהובד",
+            "sha256": "a77eb08c132e4ced2cd033f15f0188e07276ed4b9c238156672c14e72e977d89",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...and his dominion shall be taken away, to be consumed and destroyed...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Date and provenance",
+      "position": "Eight Daniel manuscripts are attested at Qumran (1QDan-a / 1Q71, 1QDan-b / 1Q72, 4QDan-a / 4Q112, 4QDan-b / 4Q113, 4QDan-c / 4Q114, 4QDan-d / 4Q115, 4QDan-e / 4Q116, 6QpapDan / 6Q7), making Daniel one of the most-copied books at the site. The earliest (4QDan-c / 4Q114) is palaeographically dated to the late 2nd century BCE — within roughly fifty years of the book purported Maccabean horizon — and the variant readings preserved in the apparatus indicate active textual transmission rather than a single recent composition. The collective testimony is that Daniel in something close to its received form was already canonical-quality literature by the late Hasmonean period.",
+      "commitment": "strong",
+      "rationale": "The resource intro to the biblical texts (article 8674) lists Daniel at 8 manuscripts. The textual-criticism intro (article 8675) asserts that the Qumran biblical Daniel manuscripts already match the form of the MT. The variant apparatus (articles 8242-8244) records three consonantal-level variants in Dan 7 alone (at 7:6, 7:11, 7:19), each tagging the specific 4QDan-A or 4QDan-B reading versus the Masoretic-tradition base — evidence of active textual transmission. The intro to the Scrolls (article 8669) frames their broader significance: the greatest manuscript discovery of the 20th century for Jewish studies of the Second Temple Period and biblical studies.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 8674,
+            "nativeSectionId": "INTRO.1.6"
+          },
+          "frontend": {
+            "author": "Penner (ed.), Lexham DSS",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§INTRO.1.6 — Biblical Texts",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Penner (ed.), Lexham DSS, Lexham DSS, §INTRO.1.6"
+          },
+          "quote": {
+            "text": "Daniel\n8",
+            "sha256": "959339d591e12c0181d33e1d7af38e2124b6eac7d416c55ab704a970056a7c85",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 8669,
+            "nativeSectionId": "INTRO.1.1"
+          },
+          "frontend": {
+            "author": "Penner (ed.), Lexham DSS",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§INTRO.1.1 — Significance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Penner (ed.), Lexham DSS, Lexham DSS, §INTRO.1.1"
+          },
+          "quote": {
+            "text": "the greatest manuscript discovery of the 20th century for Jewish studies of the Second Temple Period and biblical studies",
+            "sha256": "d98a74877951d5ee7a4bc37e493c74e2690c1ee0fc8d2f3afe59d802165030df",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 8242,
+            "nativeSectionId": "APP.BIBLE-BHS-27-7-6.HOT-272897-1-1"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§APP.BIBLE-BHS-27-7-6.HOT-272897-1-1",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §APP.BIBLE-BHS-27-7-6.HOT-272897-1-1"
+          },
+          "quote": {
+            "text": "ג֯ב 4QDanA",
+            "sha256": "6470fd70c3d58622d3402f39506ab47a45488195211ae0b550a7077f6311067c",
+            "language": "arc"
+          },
+          "supportStatus": "paraphrase-anchored",
+          "translations": [
+            {
+              "language": "en",
+              "text": "Apparatus shorthand at Daniel 7:6: 4QDan-A reads גב, with a small superscript marker dot above the gimel flagging the consonant in the apparatus.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence within Daniel",
+      "position": "The Qumran biblical Daniel manuscripts preserve the entire shape of the canonical book — including its distinctive Aramaic-Hebrew bilingual seam (Hebrew at 1:1-2:4a, Aramaic at 2:4b-7:28, Hebrew again at 8-12) — exactly as the Masoretic tradition transmits it. The composite witness this resource builds covers Daniel 1-11 (Daniel 12 is not preserved at Qumran in this composite). The bilingual structure is not a later editorial artifact: by the late 2nd century BCE Daniel already had this shape, with the apocalyptic-Aramaic core (chs. 2-7) and the Hebrew-language visions (chs. 8-12) already in place. This is decisive for any account of how the Daniel-7 throne vision (Aramaic) coheres with the Daniel-9 prayer of confession (Hebrew, 9:12-18 preserved at Qumran), the Daniel-10 angelic interpretation (Hebrew, with Michael named as one of the chief princes), and the Daniel-11 apocalyptic survey (Hebrew).",
+      "commitment": "strong",
+      "rationale": "The textual-criticism intro (article 8675) names this directly: how Daniel came to be composed of Aramaic and Hebrew parts ... the Qumran manuscripts exhibit the same text form as the Masoretic Text, indicating that the final form of these books had already taken shape. The chapter-by-chapter composite (articles 9282-9292) preserves the bilingual seam: Daniel 1 in Hebrew, Daniel 2 transitioning into Aramaic at 2:4 (and the Chaldeans spoke to the king in Aramaic), the Aramaic continuing through Daniel 7, and Daniel 8 onward returning to Hebrew. The Hebrew of Daniel 9:18 (penitential prayer) and Daniel 10:13 (Michael, one of the chief princes) are preserved continuously and verbatim. The bilingual seam is therefore a fixed feature of Daniel by the Hasmonean period.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 8675,
+            "nativeSectionId": "INTRO.1.7"
+          },
+          "frontend": {
+            "author": "Penner (ed.), Lexham DSS",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§INTRO.1.7 — Textual Criticism of the Hebrew Bible",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Penner (ed.), Lexham DSS, Lexham DSS, §INTRO.1.7"
+          },
+          "quote": {
+            "text": "how Daniel came to be composed of Aramaic and Hebrew parts",
+            "sha256": "94c018119ba59233e65ac0c502bd16647b3ce993689e2fc4704c7e140f8863ee",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9290,
+            "nativeSectionId": "BK.27.009"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.009 — Chapter 9",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.009"
+          },
+          "quote": {
+            "text": "הטה אלהי אזנך ושמע פקחה עיניך וראה שממתינו והעיר אשר נקרא שמך עליה כי לא על צדקתינו אנחנו מפילים תחנונינו לפניך כי על רחמיך הרבים",
+            "sha256": "3c7f4f1481a0dc8970e6b00746f7be5cb2c7a888b64f3fe7a495c53b6da3235f",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "Incline your ear, my God, and hear; open your eyes and see our desolations, and the city that is called by your name; for it is not on the basis of our righteousness that we present our supplications before you, but on the basis of your great mercies...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9291,
+            "nativeSectionId": "BK.27.010"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.010 — Chapter 10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.010"
+          },
+          "quote": {
+            "text": "חד יום והנה מיכאל אחד השרים",
+            "sha256": "b477624bea93ebd3d22c573e02f12b2e125118925e64d638a0fc2d993cbee297",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...one [and twenty] days, and behold, Michael, one of the chief princes...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Daniel 11 prolonged Hebrew apocalyptic narrative — preserved at Qumran primarily in 4QDan-c (4Q114) — is the structural matrix that the sectarian Pesharim use to read their own historical moment as the eschatological time of the end. The Qumran biblical witness preserves the language of the wise of the people who shall instruct the many, and they shall fall by sword and flame (11:33) and the self-exalting king who shall speak astonishing words against the God of gods (11:36) — verses the sectarian community read as forecasting their own present. Whether or not the non-biblical sectarian scrolls (1QM, 4Q174, 11Q13, Pseudo-Daniel) explicitly cite Daniel 7 Son of Man (they do, in other Logos resources), the biblical Daniel manuscripts at Qumran already supply the maśkîlîm (wise instructors) vocabulary that the Yaḥad assumed for itself.",
+      "commitment": "moderate",
+      "rationale": "Article 9292 (BK.27.011 — Daniel 11) preserves the Hebrew of 11:33 (the maśkîlîm) and 11:36 (the self-exalting king) as continuous text drawn from 4QDan-c. The Qumran community self-designation as maśkîlîm and their identification of the eschatological persecutor with Antiochene-style figures is well-attested in their non-biblical literature; this resource carries only the biblical base-text, but the lexical and typological foundation is here. This is a moderate commitment because LDSSHEIB cannot itself demonstrate the sectarian appropriation — only that the biblical material on which that appropriation rests is textually fixed at Qumran.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9292,
+            "nativeSectionId": "BK.27.011"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.011 — Chapter 11",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.011"
+          },
+          "quote": {
+            "text": "ומשכילי עם יבינו לרבים ונכשלו בחרב וב",
+            "sha256": "212f7d788a7dbb5101d990b5bbeed93717de8c319580760c8e016c3756568a99",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the wise instructors among the people shall give understanding to the many; and they shall stumble by sword and by flame...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9292,
+            "nativeSectionId": "BK.27.011"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.011 — Chapter 11",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.011"
+          },
+          "quote": {
+            "text": "אל ועל אל אלים ידבר נפלאות והצליח עד כלה זעם כי נחרצה נעשתה",
+            "sha256": "f3e7e82c290034ff0bfe4cec2f69180a49a059d656a320ac4b82218e8a74411c",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...and against the God of gods he shall speak astonishing things; and he shall prosper until the wrath is finished, for what is determined shall be done.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Daniel 7 narrative arc — fourth-beast tyranny, divine court convened, beast killed and body destroyed, kingdom given to the holy ones forever — is preserved as a continuous Aramaic sequence in Qumran biblical Daniel manuscripts (verses 7:7, 7:11, 7:18, 7:20, 7:25-27 are all witnessed). The fourth-beast judgment in 7:11 (I beheld until the beast was killed, and his body destroyed and given to the burning flame) is preserved verbatim. What is missing in the Qumran biblical witness is precisely the throne-vision verse (7:9-10) and the Son-of-Man delivery verses (7:13-14): these fall in the lacunae of the fragmentary scrolls. The Qumran community would have read the fulfillment structure straight: tyranny ends in fire, kingdom goes to the saints, dominion is eternal — without (in their biblical text per se) the verses that would later anchor Christian Son-of-Man Christology.",
+      "commitment": "moderate",
+      "rationale": "Article 9288 preserves the fulfillment-arc verses 7:7, 7:11, 7:18, 7:20, 7:25, 7:26, 7:27 as continuous Aramaic text. The fourth-beast judgment in 7:11 and the little-horn description in 7:20 are both preserved. The arc is intact; only the throne-vision center (7:9-10, 13-14) is missing from the surviving Qumran biblical fragments — a textual accident of preservation that nonetheless cautions against using LDSSHEIB alone to argue Qumran-community Son-of-Man Christology one way or the other.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "ממללה חזה הוית עד די קטילת חיותא והובד גשמה ויהיבת ליקדת אשא",
+            "sha256": "a644983d363a19aa62f4cca411d353f708e128b7a7b394a8cc505ffa96a112ae",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...[the horn] speaking. I kept watching until the beast was killed and its body destroyed and given over to the burning fire.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9288,
+            "nativeSectionId": "BK.27.007"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.007 — Chapter 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.007"
+          },
+          "quote": {
+            "text": "א עשר די בראשה ואחרי די סלקת ונפלו מן קדמיה תלת וקרנא דכן ועינין לה ופם ממלל רברבן וחזוה רב מן חברתה",
+            "sha256": "230fe3464c72c6cbd4221dd9c768897bed4afb56724a4f9faf5ef5e6de615f91",
+            "language": "arc"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "...the ten [horns] that were on its head, and the other one that came up before which three fell, namely, that horn that had eyes and a mouth speaking great things, and whose appearance was greater than its companions.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 11:1-45",
+      "positionSummary": "Daniel 11 — the Hebrew apocalyptic survey of Persian and Hellenistic kings climaxing in the self-exalting tyrant of 11:36-39 — is preserved at Qumran primarily in 4QDan-c (4Q114) and is the eschatological narrative the sectarian community most aggressively appropriated. The Qumran biblical witness preserves the king-of-the-south-king-of-the-north narrative (11:25-29), the maśkîlîm of 11:33 (the title the Yaḥad assumed for itself), and the self-exalting king of 11:36 who speaks astonishing words against the God of gods. The arc that begins in Dan 7 with the fourth-beast little-horn culminates here in the explicit Hebrew portrait of the eschatological tyrant; the textual continuity of this arc (Aramaic Dan 7 → Hebrew Dan 11) is fixed by the Hasmonean period.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9292,
+            "nativeSectionId": "BK.27.011"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.011 — Chapter 11",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.011"
+          },
+          "quote": {
+            "text": "ויער כחו ולבבו על מלך הנגב בחיל גדול ומלך הנגב יתגרה למלחמה בחיל גדול ועצום עד מאד ולא יעמד כי יחשבו עליו מחש",
+            "sha256": "be61de2175217ea255593e7a8450b30d46bf9537da822feb1f827c62b667973a",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he shall stir up his strength and his courage against the king of the south with a great army; and the king of the south shall be incited to battle with an exceedingly great and mighty army, but he shall not stand, for they shall devise plots against him...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 9:1-19",
+      "positionSummary": "Daniel 9 prayer of confession (9:12-18) — Daniel penitential plea on behalf of Israel for the desolated city — is preserved in Qumran biblical Daniel manuscripts as continuous Hebrew (article 9290). The seventy-weeks oracle proper (9:20-27) is NOT preserved at Qumran in this composite — a textual gap that means LDSSHEIB cannot independently witness the famous chronology that figures so heavily in second-temple, NT, and rabbinic eschatology. What it does witness is the preceding prayer appeal to mercy not on the basis of our righteousness, but on the basis of your great mercies (9:18) — the theological frame within which the seventy-weeks oracle is given.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:LDSSHEIB",
+            "logosArticleNum": 9290,
+            "nativeSectionId": "BK.27.009"
+          },
+          "frontend": {
+            "author": "Qumran (Lexham DSS)",
+            "title": "The Lexham Dead Sea Scrolls Hebrew-English Interlinear Bible",
+            "section": "§BK.27.009 — Chapter 9",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Qumran (Lexham DSS), Lexham DSS, §BK.27.009"
+          },
+          "quote": {
+            "text": "הטה אלהי אזנך ושמע פקחה עיניך וראה שממתינו והעיר אשר נקרא שמך עליה כי לא על צדקתינו אנחנו מפילים תחנונינו לפניך כי על רחמיך הרבים",
+            "sha256": "3c7f4f1481a0dc8970e6b00746f7be5cb2c7a888b64f3fe7a495c53b6da3235f",
+            "language": "he"
+          },
+          "supportStatus": "directly-quoted",
+          "translations": [
+            {
+              "language": "en",
+              "text": "Incline your ear, my God, and hear; open your eyes and see our desolations, and the city that is called by your name; for it is not on the basis of our righteousness that we present our supplications before you, but on the basis of your great mercies...",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Treats the Qumran biblical Daniel manuscripts as a single composite voice — the textual witness of the late-Hasmonean Yaḥad to the canonical book of Daniel — rather than as eight independent author-voices. This mirrors the 1 Enoch Parables convention: voice attributed to a corpus, not a single author.",
+    "Distinguishes sharply between (a) the biblical Daniel manuscripts at Qumran, which are housed in this composite resource and contain only the canonical text of Daniel 1-11, and (b) the non-biblical sectarian scrolls (1QM War Scroll, 4Q174 Florilegium, 11Q13 Melchizedek, 4Q246 Aramaic Apocalypse Son of God, 4Q243-245 Pseudo-Daniel) which explicitly cite or rewrite Daniel 7 and live in other Logos resources outside this composite. The honest scope of this survey is the biblical witness only.",
+    "Reports a textual lacuna at Daniel 7:8-10 and 7:12-14 in the Qumran biblical witness — the throne-vision and Son-of-Man verses themselves are NOT preserved in the eight Daniel manuscripts as represented in this composite. The surrounding narrative (7:1-7, 11, 15-23, 25-28) is preserved.",
+    "Treats Daniel bilingual Aramaic-Hebrew structure (Aramaic 2:4b-7:28, Hebrew 1:1-2:4a + 8-12) as fixed by the Hasmonean period on the strength of the Qumran witness, against any account that treats the bilingual seam as a Christian-era or rabbinic-era editorial feature.",
+    "Notes that the biblical Daniel apparatus tracks specific consonantal divergences between 4QDan-A, 4QDan-B, 4QDan-D and the later Lexham Hebrew Bible base-text (apparatus articles 8242-8244 record three variants in Daniel 7 alone), evidence of active textual transmission rather than monolithic copying."
+  ],
+  "uncertainties": [
+    "Daniel 7:9-10 (Ancient of Days throne vision) and 7:13-14 (Son of Man) are NOT preserved in the eight Qumran biblical Daniel manuscripts as represented in this composite resource — the scrolls fragmentary state leaves these verses in lacunae. Therefore the J axis (Son of Man) cannot be independently argued from LDSSHEIB; the verbatim Aramaic of these verses must be supplied from MT / Theodotion.",
+    "Daniel 9:20-27 (the seventy-weeks oracle) is NOT preserved at Qumran in this composite. The Hebrew prayer of confession (9:12-18) is preserved, but the chronology that has driven so much eschatological reception lies in the lacunae.",
+    "Daniel 12 is NOT preserved at Qumran in this composite. The eschatological resurrection (12:1-3) and the time-of-the-end timetable (12:7-12) are absent from the biblical Daniel scrolls represented in LDSSHEIB.",
+    "The non-biblical sectarian scrolls that explicitly receive Daniel 7 — 1QM (War Scroll), 4Q174 (Florilegium / 4QFlor), 11Q13 (Melchizedek), 4Q246 (Aramaic Apocalypse Son of God), and 4Q243-245 (Pseudo-Daniel) — are NOT in this Lexham DSS Hebrew-English Interlinear Bible. They are housed in other Logos resources and must be surveyed separately. This survey is honest about that scope: only the biblical Daniel witness at Qumran is in view here.",
+    "Pilot-axes A (genre), C (literary unity), E (date of authorship), H (eschatological structure beyond the fulfillment-arc preserved in 7:11/7:25-27), I, P, Q: largely silent. The biblical witness is a textual artifact, not a hermeneutical statement; questions of genre, dating-of-composition, and literary unity require the introduction framing (article 8675) but are not the resource payload."
+  ]
+}

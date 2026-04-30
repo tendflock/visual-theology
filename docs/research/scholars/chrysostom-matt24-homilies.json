@@ -1,0 +1,1006 @@
+{
+  "scholarId": "chrysostom-matt24-homilies",
+  "authorDisplay": "John Chrysostom",
+  "workDisplay": "Homilies on Matthew, LXXV-LXXIX (NPNF Series 1, vol. 10)",
+  "resourceId": "LLS:6.60.10",
+  "resourceFile": "NPNF10.logos4",
+  "traditionTag": "patristic",
+  "passageCoverage": [
+    "Matt 24",
+    "Mark 13",
+    "Dan 9:20-27",
+    "Dan 7:13-14",
+    "2 Thess 2"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "L: Two-layer Antiochene Olivet exegesis - Matt 24 splits at the parousia transition; the adverb tote is non-temporal.",
+      "C: Future personal Antichrist identified with Pauls man of sin (2 Thess 2); restrained on speculation beyond the Pauline anchor.",
+      "J: Son of Man = divine Christ at parousia, coming in clouds with great glory, enthroned at Matt 25:31 - Daniel-7-shaped without explicit Daniel-7 citation.",
+      "K: Saints receive eternal kingdom directly at parousia; no chiliast millennial intermediary; almsgiving is the Matt 25 judgment criterion.",
+      "H: Cosmic-parousia eschatology with brief tribulation, cosmic signs, sign-of-the-cross, angelic gathering - sequence drawn from Matt 24:29-31.",
+      "N: Dense cross-book lattice - Daniel + Matthew + 2 Thess + 1 Thess + Hosea - but Daniel is read minimally and Hippolytan typology is absent.",
+      "O: Antiochene literal-historical method polemically deployed against astrologers (Hom. LXXV) and Arians (Hom. LXXVII); Josephus marshalled as external witness."
+    ],
+    "moderate": [
+      "F: Chronology - strict agnostic-pastoral on the day and hour; rebuts Arian-Christological reading of Matt 24:36; no schematic time count.",
+      "E: Genre - literal-historical for the AD-70 register, literal-but-glory-suffused for the parousia register; explicit anti-hyperbolic discipline."
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic / interpretive mode",
+      "position": "Two-layer Antiochene exegesis of the Olivet Discourse: Matt 24 carries two distinct prophetic registers - the historical destruction of Jerusalem in AD 70 (the disciples first question, when shall these things be?) and the eschatological parousia (their second question, what is the sign of thy coming?). Chrysostom marks the seam at the transition from the abomination of desolation / Roman armies (Matt 24:15-28, addressed to the Jews) to immediately after the tribulation of those days (Matt 24:29ff., the parousia), and treats the Greek adverb tote at v. 23 as a non-chronological transition marker covering the long interval between the two events.",
+      "commitment": "strong",
+      "rationale": "Chrysostom reads the disciples double question (Hom. LXXV) as already establishing two horizons. He then explicitly notes the seam in Hom. LXXVI - Having finished what concerned Jerusalem, He passes on to His own coming - and in Hom. LXXVII lays out his rule for reading Matthew tote: it relates not to the connection in order of time with the things before mentioned. This is an explicit Antiochene methodological move: distinguish the prophetic horizons rather than collapse them. Chrysostom differs from Hippolytus, who compresses prediction-and-fulfillment, and from later allegorists, by letting Matt 24:1-22 land squarely on AD 70 while reserving Matt 24:29ff. for the future advent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7163,
+            "nativeSectionId": "PAR (3819)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3819) — Homily LXXV",
+            "page": 962,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3819) (p. 962)"
+          },
+          "quote": {
+            "text": "Therefore did they come unto Him privately, as it was of such matters they meant to inquire. For they were in travail to know the day of His coming",
+            "sha256": "ed4b8271c21e9a1312505770c899e96d6482acebdef5fc3a777bbbe2713a84df",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7163,
+            "nativeSectionId": "PAR (3819)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3819) — Homily LXXV",
+            "page": 962,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3819) (p. 962)"
+          },
+          "quote": {
+            "text": "And these two things do they ask him, when shall these things be? that is, the overthrow of the temple; and, what is the sign of thy coming?",
+            "sha256": "b8230fe676b788089f837facf35d1b1179d21e599c1bf7a61e3e6eb860af7900",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7230,
+            "nativeSectionId": "PAR (3885)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3885) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3885) (p. 970)"
+          },
+          "quote": {
+            "text": "Having finished what concerned Jerusalem, He passes on to His own coming, and tells the signs of it",
+            "sha256": "158e85ab80e92deebc631d8cbc83edd2a0057906a088047b3bd0b66f00f20573",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7231,
+            "nativeSectionId": "PAR (3886)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3886) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3886) (p. 970)"
+          },
+          "quote": {
+            "text": "Here, as I have often said, the word, “then,” relates not to the connection in order of time with the things before mentioned",
+            "sha256": "415977628c9eca49784ef23296530f1041434ce725fa35aff86154be1d8ad757",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7231,
+            "nativeSectionId": "PAR (3886)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3886) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3886) (p. 970)"
+          },
+          "quote": {
+            "text": "having passed over all the intermediate time from the taking of Jerusalem unto the preludes of the consummation, He speaketh of the time just before the consummation",
+            "sha256": "77be2a2f94ef189fe7c60b43b76c8ae5d7a7aa1675528d6a08e89ac302cac9ed",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / Antichrist",
+      "position": "A future personal Antichrist - distinct from the historical desecrators of Jerusalem - who appears in a specific place, works deceiving signs and wonders, and is identified with Pauls man of sin / son of perdition of 2 Thess 2. Chrysostom does not exegete Daniel 7 little horn directly here, but he reads Matt 24:24 as speaking of Antichrist and explicitly cross-references 2 Thessalonians as the parallel Antichrist text.",
+      "commitment": "strong",
+      "rationale": "In Hom. LXXVI Chrysostom names Antichrist as the referent of false Christs and false prophets... so as to deceive if possible the very elect, and immediately quotes 2 Thess 2 - after the working of Satan, with all power and signs and lying wonders - to fix the identification. In Hom. LXXVII he repeats: when Antichrist is come, the pursuit of unlawful pleasures shall be more eager. The figure is future, eschatological, and comes immediately before the parousia (after whom is the end). Chrysostom is characteristically restrained on speculation about Antichrist identity, lineage, or seat - unlike Hippolytus he names no tribe, no three uprooted kings, and offers no chronological calculation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7233,
+            "nativeSectionId": "PAR (3888)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3888) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": 971,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3888) (pp. 970–971)"
+          },
+          "quote": {
+            "text": "here He is speaking of Antichrist, and indicates that some also shall minister to him",
+            "sha256": "88c990ccb3df390b5e1ff9b8733cc7ea3d20cfa3a04b6d81529593895101f998",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7233,
+            "nativeSectionId": "PAR (3888)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3888) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": 971,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3888) (pp. 970–971)"
+          },
+          "quote": {
+            "text": "Having called him “man of sin,” and “son of perdition,” He added, “Whose coming is after the working of Satan, with all power and signs and lying wonders",
+            "sha256": "3c85f941fd8c2e81f9f3f4309ee0974140efffd81d6c40dee5d79ed4a58aaa4c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7266,
+            "nativeSectionId": "PAR (3920)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3920) — Homily LXXVII",
+            "page": 976,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3920) (p. 976)"
+          },
+          "quote": {
+            "text": "Antichrist indeed shall appear, after whom is the end, and the punishments at the end, and vengeance intolerable",
+            "sha256": "5de4302f1ec466da3f72e04f5a7759871dad2c0f0532206d467542ffedb0dd95",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "The Son of Man of Matt 24:30 / 25:31 is the divine Christ at the parousia - coming in the clouds of heaven with power and great glory, enthroned upon the throne of His glory, with all the holy angels with Him, to judge the nations. Chrysostom explicitly contrasts the first advent (in Bethlehem, in a small corner of the world, unrecognized) with the second (open, manifest, lightning-like, universal). He treats Daniel 7:13-14 enthroned Son of Man imagery as fulfilled at the parousia rather than at the ascension.",
+      "commitment": "strong",
+      "rationale": "In Hom. LXXVI Chrysostom contrasts the first and second comings on the principle of visibility - the first hidden, the second openly and with all circumstance. He fuses Matt 24:30 with Daniel-style cloud-coming language; then in Hom. LXXIX he reads Matt 25:31 as the throne-vision pendant: the Son of Man comes in the glory of His Father, and all the holy angels with Him, and shall sit upon the throne of His glory. The parousia is the Son of Man session in glory - the exegetical destination of the entire Olivet Discourse for him.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7232,
+            "nativeSectionId": "PAR (3887)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3887) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3887) (p. 970)"
+          },
+          "quote": {
+            "text": "not, as when at His former coming He appeared in Bethlehem, and in a small corner of the world, and no one knew Him at the beginning, so doth He say it shall be then too; but openly and with all circumstance",
+            "sha256": "7ce9dee72499b6f945222de3079a9f7c9292cf4b45289676060dfb5701e2cb62",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7241,
+            "nativeSectionId": "PAR (3896)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3896) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3896) (p. 971)"
+          },
+          "quote": {
+            "text": "They shall see the Son of Man coming,” no longer on the cross, but “in the clouds of Heaven, with power and great glory.",
+            "sha256": "e13ed2e7a76f315338ffb2f4d2717288f8807f6dc690b71df693120068baf07f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7236,
+            "nativeSectionId": "PAR (3891)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3891) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3891) (p. 971)"
+          },
+          "quote": {
+            "text": "So shall that coming be, showing itself at once everywhere by reason of the shining forth of His glory",
+            "sha256": "80a044bbd3595e4f5deea03efd4af9f5c13eb29630f9cfecd2f5c66dfc658187",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7336,
+            "nativeSectionId": "s2.v10.a1.w1.b79"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§s2.v10.a1.w1.b79 — Homily LXXIX",
+            "page": 986,
+            "pageEnd": 987,
+            "citationString": "John Chrysostom, Hom. on Matt., §s2.v10.a1.w1.b79 (pp. 986–987)"
+          },
+          "quote": {
+            "text": "When the Son of Man shall come in His glory.” For now is He come in dishonor, now in affronts and reproaches; but then shall He sit upon the throne of His glory",
+            "sha256": "08be931d04c8fdee9ddb60941ac7df77d06b52cd1863acbd430c765f3b7234c3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7339,
+            "nativeSectionId": "PAR (3991)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3991) — Homily LXXIX",
+            "page": 987,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3991) (p. 987)"
+          },
+          "quote": {
+            "text": "And He shall separate them one from another, as the shepherd his sheep",
+            "sha256": "2eb3ac9ea1b54b8dd318f08e6debab7ed753d348ad78edf4ed8dd3715c9d10dd",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints kingdom",
+      "position": "The kingdom of the saints is the eternal post-judgment kingdom received from the enthroned Son of Man at the parousia - given to the righteous sheep at the great separation of Matt 25:31-46. Chrysostom shows no chiliast / millennial intermediary kingdom; the kingdom is received directly at Christ coming-in-glory and is set against the eternal fire prepared for the devil and his angels. Almsgiving is the decisive criterion of inclusion.",
+      "commitment": "strong",
+      "rationale": "Hom. LXXIX paraphrases Matt 25:31-41: He will give the kingdom to them (the righteous) but the others... He will send into the eternal fire. Chrysostom develops this throughout Hom. LXXIX with no millennial detour; the saints reign is the post-judgment eternal state. This is consistent with Greek-Antiochene anti-chiliasm but more importantly is simply the way Chrysostom reads the Olivet sequence: tribulation - cosmic signs - parousia - angelic gathering - judgment - kingdom.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7336,
+            "nativeSectionId": "s2.v10.a1.w1.b79"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§s2.v10.a1.w1.b79 — Homily LXXIX",
+            "page": 986,
+            "pageEnd": 987,
+            "citationString": "John Chrysostom, Hom. on Matt., §s2.v10.a1.w1.b79 (pp. 986–987)"
+          },
+          "quote": {
+            "text": "He will accept, because they fed Him, when an hungered, and gave Him drink when thirsty, and took Him in when a stranger, and clothed Him when naked, and visited Him when sick, and came to see Him when in prison: and He will give the kingdom to them",
+            "sha256": "22e9921ec1908b13d85cc6bc9d1be7acbec17ce252ed7e359910e6b660e92bce",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7336,
+            "nativeSectionId": "s2.v10.a1.w1.b79"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§s2.v10.a1.w1.b79 — Homily LXXIX",
+            "page": 986,
+            "pageEnd": 987,
+            "citationString": "John Chrysostom, Hom. on Matt., §s2.v10.a1.w1.b79 (pp. 986–987)"
+          },
+          "quote": {
+            "text": "But the others, accusing them for the opposite things, He will send into the eternal fire, prepared for the devil and his angels",
+            "sha256": "89c493800322be0dffc7d15939f4d4bb30aed43bc37b6df4b184a3410626496d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatology architecture (two advents, signs, gathering)",
+      "position": "Chrysostom holds a cosmic-parousia eschatology: tribulation of those days (the days of Antichrist and false prophets, brief in duration); cosmic signs (sun darkened, stars falling, powers of heaven shaken); the sign of the Son of Man (the cross) appearing brighter than the sun; the tribes mourning at the wounded Christ; the Lord descending with trumpet and archangel voice; the elect gathered by angels from the four winds. The whole sequence happens in a moment, in an instant, unexpectedly, and as the days of Noah - ordinary life will be in progress when it ruptures.",
+      "commitment": "strong",
+      "rationale": "Hom. LXXVI walks the parousia signs paragraph by paragraph; Hom. LXXVII emphasizes unexpectedness via the days-of-Noah analog and the two in the field parallel. The tribulation is not protracted to a length of time but limited for these same sake - Chrysostom holds the brevity of the eschatological tribulation as deliberately parallel to the brevity of the Jewish war shortening for the elect sake, integrating the historical and eschatological registers without conflating them.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7237,
+            "nativeSectionId": "PAR (3892)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3892) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3892) (p. 971)"
+          },
+          "quote": {
+            "text": "But it is not protracted to a length of time. For if the Jewish war was shortened for the elect’s sake, much more shall this temptation be limited for these same",
+            "sha256": "2e6b87a3f874b578719bb0f88b316d2e56e89d8f1fa6e81ce13a1caec7d14f42",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7238,
+            "nativeSectionId": "PAR (3893)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3893) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3893) (p. 971)"
+          },
+          "quote": {
+            "text": "the sun shall be darkened,” not destroyed, but overcome by the light of His presence",
+            "sha256": "834172ccf962a8d3f5c0d44c153323557f2e5f9a8c307e0494ef61c659e9abba",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7239,
+            "nativeSectionId": "PAR (3894)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3894) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3894) (p. 971)"
+          },
+          "quote": {
+            "text": "Then shall appear the sign of the Son of Man in Heaven",
+            "sha256": "f4a8cf917aca69a3b37ce7aa738f8e3415d9c5d3108c3c5a2c7627fc39fafb43",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7239,
+            "nativeSectionId": "PAR (3894)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3894) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3894) (p. 971)"
+          },
+          "quote": {
+            "text": "the cross being brighter than the sun, since this last will be darkened",
+            "sha256": "1f6227daeec27a53a72f109fb411fe801b506464c982f5540b988e793ff29465",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7245,
+            "nativeSectionId": "PAR (3900)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3900) — Homily LXXVI",
+            "page": 972,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3900) (p. 972)"
+          },
+          "quote": {
+            "text": "the angels shall gather them together, when gathered together the clouds shall catch them up; and all these things are done in a moment, in an instant",
+            "sha256": "bd025622160135f67e524cf0cabcb61e666990fb11e66bb73b258af3f903c9a0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7265,
+            "nativeSectionId": "PAR (3919)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3919) — Homily LXXVII",
+            "page": 976,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3919) (p. 976)"
+          },
+          "quote": {
+            "text": "as in the days of Not they were eating and drinking, marrying and giving in marriage",
+            "sha256": "f90b018f9bd1aadf38badcc1619b44cc8396750eca9534d4ca04b84e8289b634",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time / chronology",
+      "position": "Chrysostom does not exegete Daniel 7 time, times, and half a time directly in these Matt 24 homilies. On chronology he is a strict agnostic of the day and hour: the Father silence about the day is pedagogically intentional, not a deficit of the Son knowledge. He rebuts (against Arians) any reading of Matt 24:36 that makes the Son ignorant, while affirming that disciples should not calculate it. The eschatological tribulation is brief, but the parousia day is hidden - and is to remain so in order that they may watch.",
+      "commitment": "moderate",
+      "rationale": "In Hom. LXXVII Chrysostom argues at length that the Father He knoweth clearly, even as clearly as He knoweth the Son; and of the day is He ignorant? - denying any Christological subordinationism while preserving the day concealment as pastoral (that for the sake of this, He did not tell it). He gives no schematic 1,260-day count or 6,000-year scheme a la Hippolytus; he gives no Maccabean or proximate-future calculation. This is best classified as a moderate agnostic-pastoral position on the chronological axis, with no engagement of Dan 7:25 / Dan 12:7.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7261,
+            "nativeSectionId": "PAR (3915)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3915) — Homily LXXVII",
+            "page": 975,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3915) (p. 975)"
+          },
+          "quote": {
+            "text": "But of that day and hour knoweth no man",
+            "sha256": "f5977802e53f0ed9552948bcf2f0cf72a38339ddcccefa9e4c08f85f1e69e873",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7261,
+            "nativeSectionId": "PAR (3915)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3915) — Homily LXXVII",
+            "page": 975,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3915) (p. 975)"
+          },
+          "quote": {
+            "text": "By saying, not the angels, He stopped their mouths, that they should not seek to learn what these angels know not",
+            "sha256": "be44baf572583b4fbf760aa063ff211fa8292c79be46b8db325cc4bc084f4f37",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7261,
+            "nativeSectionId": "PAR (3915)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3915) — Homily LXXVII",
+            "page": 975,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3915) (p. 975)"
+          },
+          "quote": {
+            "text": "And the Father He knoweth clearly, even as clearly as He knoweth the Son; and of the day is He ignorant?",
+            "sha256": "a6bf7158c1a952daa210590ee8a0d37f75e262df7908556e00df5ef86c10447d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7270,
+            "nativeSectionId": "PAR (3924)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3924) — Homily LXXVII",
+            "page": 976,
+            "pageEnd": 977,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3924) (pp. 976–977)"
+          },
+          "quote": {
+            "text": "He said not, “I know not,” but, “ye know not.” For when He had brought them well nigh to the very hour",
+            "sha256": "b820a65ba6a891c7328dcc280d8f56f12f167e4e786558375d058d042239e88e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Chrysostom integrates Daniel, Matthew, Paul, and the Old Testament prophets into a single eschatological lattice - but without Hippolytus-style typological identification of figures. Daniel abomination of desolation is anchored in Matt 24:15 and read of the Roman desolating statue (the statue of him who then took the city); 2 Thess 2 man of sin is the New Testament Antichrist; Paul caught up in the clouds (1 Thess 4) supplements the angelic gathering of Matt 24:31. The lattice is dense in Pauline cross-reference and modest in Daniel cross-reference.",
+      "commitment": "strong",
+      "rationale": "Hom. LXXV cites Daniel by name on the abomination of desolation, but in service of the historical-fulfillment register (Roman desolation of the temple) rather than the apocalyptic-Daniel-7 register: And by abomination He meaneth the statue of him who then took the city. Hom. LXXVI brings 2 Thess 2 into Matt 24 Antichrist exposition and integrates 1 Thess 4 with Matt 24:31. The cross-book texture is dense, but Daniel is read minimally - Chrysostom does not invoke Dan 7:13-14 as the prooftext for the Son-of-Man parousia; he derives it from Matthew own vocabulary.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7181,
+            "nativeSectionId": "PAR (3837)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3837) — Homily LXXV",
+            "page": 964,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3837) (p. 964)"
+          },
+          "quote": {
+            "text": "He brought in also a prophecy, to confirm their desolation, saying, “But when ye shall see the abomination of desolation, spoken of by Daniel the prophet, standing in the holy place, let him that readeth understand.",
+            "sha256": "9c17c1c911852777287e137e5d271af657e9786ce1ddfb904b9a6f86e49b25fd",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7181,
+            "nativeSectionId": "PAR (3837)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3837) — Homily LXXV",
+            "page": 964,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3837) (p. 964)"
+          },
+          "quote": {
+            "text": "He referred them to Daniel. And by” abomination” He meaneth the statue of him who then took the city, which he who desolated the city and the temple placed within the temple",
+            "sha256": "97076e46e4df38272f13f502654b27b79dc733ddcc62acb77e415c3e3753b00f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7233,
+            "nativeSectionId": "PAR (3888)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3888) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": 971,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3888) (pp. 970–971)"
+          },
+          "quote": {
+            "text": "Of him Paul too speaks on this wise. Having called him “man of sin,” and “son of perdition,",
+            "sha256": "6e227352aa703cb01e3e6e700f0d16ef165287b55a434cf660a554e77c733da4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7245,
+            "nativeSectionId": "PAR (3900)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3900) — Homily LXXVI",
+            "page": 972,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3900) (p. 972)"
+          },
+          "quote": {
+            "text": "But Paul saith, that they “shall be caught up in clouds.” And He said this also, when He was speaking concerning a resurrection",
+            "sha256": "2f64af6113ceb641be397d33640d7f46b2ec5c8aa0e2f54465fe938ca8a8c4d4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Method / engagement style",
+      "position": "Antiochene literal-historical method, polemically deployed against two opponents: (1) astrologers / fatalists who attribute history to a nativity and the cycle of times, and (2) Arians who infer subordinationist Christology from Matt 24:36. Chrysostom appeals to Josephus history of the Jewish War as external corroboration of Christ predictions and notes John omission of the Olivet Discourse as a deliberate dispensational arrangement of the Spirit (since John wrote after AD 70).",
+      "commitment": "strong",
+      "rationale": "Chrysostom rhetorical method is pastoral-confrontational rather than scholastic. He marshalls Josephus as evidentiary witness, appeals to lived experience, and turns the Olivet text against contemporary errors (astrology, Arian Christology). His distinctive Antiochene preference for plain historical sense over allegory is visible throughout - the abomination is a literal statue, the wars are literal Jewish wars, the famines are documented in Josephus.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7219,
+            "nativeSectionId": "PAR (3874)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3874) — Homily LXXVI",
+            "page": 969,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3874) (p. 969)"
+          },
+          "quote": {
+            "text": "let him study the writings of Josephus, and learn the truth of the sayings. For neither can any one say, that the man being a believer, in order to establish Christ’s words, hath exaggerated the tragical history",
+            "sha256": "7d06e7f85ca6c3cba8036d12cfa9c17cffae5445e907e840cd678ea5d741d189",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7228,
+            "nativeSectionId": "PAR (3883)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3883) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3883) (p. 970)"
+          },
+          "quote": {
+            "text": "But mark thou, I pray thee, the dispensation of the Spirit, that John wrote none of these things, lest he should seem to write from the very history of the things done",
+            "sha256": "d4a1a7c481fcde60d0605436696eab86ee84d72ff6a935d3c9c19165ffbb03f6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7191,
+            "nativeSectionId": "PAR (3847)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3847) — Homily LXXV",
+            "page": 966,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3847) (p. 966)"
+          },
+          "quote": {
+            "text": "Where then are they who set up the power of a nativity and the cycle of times against the doctrines of the church?",
+            "sha256": "10e79568076ca80409254a67cae3f3a6008f18c347681a6375d87751bda8d03f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7261,
+            "nativeSectionId": "PAR (3915)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3915) — Homily LXXVII",
+            "page": 975,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3915) (p. 975)"
+          },
+          "quote": {
+            "text": "And the Father He knoweth clearly, even as clearly as He knoweth the Son; and of the day is He ignorant?",
+            "sha256": "a6bf7158c1a952daa210590ee8a0d37f75e262df7908556e00df5ef86c10447d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Mode of prophetic language",
+      "position": "Predictive prophecy in two genres held distinct: historical prediction (the Jerusalem-war section of Matt 24, fulfilled in AD 70 and verifiable from Josephus) and apocalyptic-cosmic prediction (the parousia section, future, with literal cosmic signs and a literal bodily return of Christ). Chrysostom rejects hyperbolic readings of the historical material while admitting that some details - the darkening of the sun - are not destruction but display (not destroyed, but overcome by the light of His presence).",
+      "commitment": "moderate",
+      "rationale": "Hom. LXXVI defends literal reading of Matt 24:21 against minimizers: let not any man suppose this to have been spoken hyperbolically. Hom. LXXVI then glosses Matt 24:29 solar darkening not as cosmic destruction but as eclipse-by-glory. This is a modest, careful position on the genre axis: literal-historical for the AD-70 register, literal-but-glory-suffused for the parousia register, with explicit anti-hyperbolic discipline. It is moderate rather than strong because Chrysostom does not theorize the genre distinction explicitly - he just operates with it.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7219,
+            "nativeSectionId": "PAR (3874)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3874) — Homily LXXVI",
+            "page": 969,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3874) (p. 969)"
+          },
+          "quote": {
+            "text": "And let not any man suppose this to have been spoken hyperbolically; but let him study the writings of Josephus",
+            "sha256": "9024e30fdaa9f036b7f3da022da8a57f2dc3e30aa6824bcf53b492d15f6134a5",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7238,
+            "nativeSectionId": "PAR (3893)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3893) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3893) (p. 971)"
+          },
+          "quote": {
+            "text": "the sun shall be darkened,” not destroyed, but overcome by the light of His presence",
+            "sha256": "834172ccf962a8d3f5c0d44c153323557f2e5f9a8c307e0494ef61c659e9abba",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 9:20-27",
+      "positionSummary": "Chrysostom anchors Matt 24:15 abomination of desolation in Daniel as a literal-historical prediction of the Roman desecration of the temple - the statue of him who then took the city. He does not engage Daniel 9 seventy-weeks chronology directly here; the Daniel reference functions as a typological and verbal anchor for the AD-70 register of Matt 24.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7181,
+            "nativeSectionId": "PAR (3837)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3837) — Homily LXXV",
+            "page": 964,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3837) (p. 964)"
+          },
+          "quote": {
+            "text": "He referred them to Daniel. And by” abomination” He meaneth the statue of him who then took the city, which he who desolated the city and the temple placed within the temple, wherefore Christ calleth it, “of desolation.",
+            "sha256": "95a4a6ebc921728c0fa9ae38eb3b7eaed7c40a7f899bb75d49005b8dc015198c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 7:13-14",
+      "positionSummary": "Chrysostom does not explicitly cite Daniel 7:13-14 by chapter and verse in Hom. LXXV-LXXIX, but his exegesis of Matt 24:30 (they shall see the Son of Man coming in the clouds of heaven with power and great glory) and Matt 25:31 (upon the throne of His glory) is materially Daniel 7 enthroned Son of Man fulfilled at parousia. He treats the Son-of-Man cloud-coming and throne-session as the eschatological complement to the cross. Anchoring this to Dan 7:13-14 is therefore inferential, not directly quotation-based.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7241,
+            "nativeSectionId": "PAR (3896)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3896) — Homily LXXVI",
+            "page": 971,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3896) (p. 971)"
+          },
+          "quote": {
+            "text": "They shall see the Son of Man coming,” no longer on the cross, but “in the clouds of Heaven, with power and great glory.",
+            "sha256": "e13ed2e7a76f315338ffb2f4d2717288f8807f6dc690b71df693120068baf07f",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7336,
+            "nativeSectionId": "s2.v10.a1.w1.b79"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§s2.v10.a1.w1.b79 — Homily LXXIX",
+            "page": 986,
+            "pageEnd": 987,
+            "citationString": "John Chrysostom, Hom. on Matt., §s2.v10.a1.w1.b79 (pp. 986–987)"
+          },
+          "quote": {
+            "text": "When the Son of Man shall come in His glory.” For now is He come in dishonor, now in affronts and reproaches; but then shall He sit upon the throne of His glory",
+            "sha256": "08be931d04c8fdee9ddb60941ac7df77d06b52cd1863acbd430c765f3b7234c3",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "targetPassage": "2 Thess 2",
+      "positionSummary": "Chrysostom explicitly cross-references Matt 24:24 deceptive miracle-workers with 2 Thess 2 man of sin / son of perdition, treating the two passages as describing the same eschatological Antichrist. He quotes 2 Thess 2:9 verbatim (after the working of Satan, with all power and signs and lying wonders) as the New Testament clearest Antichrist text.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7233,
+            "nativeSectionId": "PAR (3888)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3888) — Homily LXXVI",
+            "page": 970,
+            "pageEnd": 971,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3888) (pp. 970–971)"
+          },
+          "quote": {
+            "text": "here He is speaking of Antichrist, and indicates that some also shall minister to him. Of him Paul too speaks on this wise. Having called him “man of sin,” and “son of perdition,” He added, “Whose coming is after the working of Satan, with all power and signs and lying wonders",
+            "sha256": "8539181c528ebb4fce16de120c270efc9b6ad19dee57b089dd6d22a07d0f4a85",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Mark 13",
+      "positionSummary": "Chrysostom synoptic-harmonizes briefly - Mark saith, that neither did all of them ask concerning the end of Jerusalem, but Peter and John, as having greater freedom of speech. The Markan parallel functions for him as an internal-Gospel evidentiary cross-check on the disciples question, not as a separate apocalyptic source.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:6.60.10",
+            "logosArticleNum": 7163,
+            "nativeSectionId": "PAR (3819)"
+          },
+          "frontend": {
+            "author": "John Chrysostom",
+            "title": "Saint Chrysostom: Homilies on the Gospel of Saint Matthew (NPNF Series 1, Vol. 10; ed. Schaff, trans. Prevost)",
+            "section": "§PAR (3819) — Homily LXXV",
+            "page": 962,
+            "pageEnd": null,
+            "citationString": "John Chrysostom, Hom. on Matt., §PAR (3819) (p. 962)"
+          },
+          "quote": {
+            "text": "Mark saith, that neither did all of them ask concerning the end of Jerusalem, but Peter and John",
+            "sha256": "93ae5e647baca15690226b54af4dd9ae90c330bf10d44fe9866e570568285a1f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Antiochene two-question / two-horizon reading: the disciples double question is the load-bearing structural key for splitting Matt 24 into a Jerusalem register and a parousia register.",
+    "Explicit non-temporal use of Matt 24:23 tote as a hermeneutical rule - relates not to the connection in order of time - illustrated by the Matt 3:1 parallel.",
+    "Cross-textual welding of 2 Thess 2 into Matt 24 Antichrist material as the canonical New Testament Antichrist locus, while leaving Daniel 7 little horn unindexed at this point in the homily series.",
+    "Pastoral-pedagogical reading of the day-and-hour silence (Matt 24:36): the Son apparent ignorance is the Father deliberate concealment for the disciples good, not a Christological deficit - directly polemicizing Arian readings.",
+    "Use of Josephus as external historical witness to Matt 24:21-22, treating the Jewish historian tragical history as evidentiary corroboration of Christ predictions and a check against allegorical or hyperbolic dilution.",
+    "Reading Matt 24:29 solar darkening as eclipse-by-glory (not destroyed, but overcome by the light of His presence) rather than cosmic destruction - a moderating literalism that anticipates later Greek-patristic glory-Christology.",
+    "Polemical use of the Olivet text against fourth-century astrology / nativity and the cycle of times - a cosmological-determinist target rarely engaged elsewhere in patristic Daniel reception."
+  ],
+  "uncertainties": [
+    "Daniel 7:13-14 is not directly quoted in Hom. LXXV-LXXIX, even where Chrysostom exposition of Matt 24:30 / Matt 25:31 is materially Daniel-7 cloud-and-throne Christology. Whether he silently presupposes Dan 7 or works only from Matthew vocabulary is not decidable from these homilies alone.",
+    "Daniel 7:25 time, times, and half a time is not engaged: Chrysostom does not specify the duration of the eschatological tribulation in chronological terms, only that it is limited for the elect sake as the AD-70 war was limited.",
+    "Chrysostom does not identify the four kingdoms (Axis B) and is silent on the fourth kingdom / Rome question in Hom. LXXV-LXXIX.",
+    "Antichrist tribe, lineage, three uprooted kings, and 3.5-year reign - the Hippolytan canon - are absent. Chrysostom Antichrist is briefly described and otherwise unspeculated on.",
+    "The sign of the Son of Man (Matt 24:30) is glossed as the cross - a distinctive reading not anchored to Dan 7 imagery but to a Christological theology of the cross-as-emblem at parousia.",
+    "Chiliasm / millennium: no Rev 20 / 1,000-year reading appears here. The kingdom is the post-judgment eternal state. Chrysostom anti-chiliasm is implicit and unargued in this homily set."
+  ]
+}
