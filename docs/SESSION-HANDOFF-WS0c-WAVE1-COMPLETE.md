@@ -1,5 +1,8 @@
 # Session Handoff — WS0c Expansion, Wave 1 Complete
 
+> **SUPERSEDED 2026-04-30** by `docs/SESSION-HANDOFF-WS0c-WAVE6-COMPLETE.md`.
+> Kept on disk as historical record. Do not start a session from this doc.
+
 **Date:** 2026-04-28
 **Status:** WS0.6 sufficiency map + WS0c gap-mapping committed; verifier patch committed;
 Wright JVG errata applied; Wave 1 dispatched, audited, relabeled, and committed (5 new

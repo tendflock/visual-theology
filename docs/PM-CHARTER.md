@@ -64,6 +64,17 @@ Never mark a citation `directly-quoted` unless its quote alone proves the ration
 sub-claim. When the rationale outruns the quote, downgrade to `paraphrase-anchored`
 or `summary-inference` — these are honest labels, not failures.
 
+**Translations architecture.** Every non-English quote carries a `translations[]`
+array populated at survey time, not at render time. The canonical translator is
+the latest Opus model per the SSoT at
+`docs/research/scholars/_TRANSLATION_CONFIG.md`; register is modern-faithful.
+Each non-English quote MUST have at least one entry with `language: "en"`;
+`tools/validate_scholar.py` enforces this strictly. Translations are NOT
+verified against the source by `verify_citation` — only `quote.text` is the
+verifier's anchor; the validator's check on `translations[]` is structural
+(required fields, allowed languages/methods/registers, ISO date, llm-translator
+format). Full specification at `docs/schema/citation-schema.md §"translations"`.
+
 ## 4. Subagent discipline
 
 When dispatching to a subagent:
@@ -86,17 +97,36 @@ When NOT to dispatch a subagent:
 - The task requires architectural judgment (schema design, trade-off decisions).
 - The task requires reading and reconciling the user's recent feedback.
 
+**Codex review is required, not optional.** Every dispatch session that produces
+an artifact (scholar JSON, audit doc, schema change, code change) ends with a
+codex adversarial review scoped to the session's own work. Do NOT apply codex's
+suggestions during the same session — capture them as findings in
+`docs/FOLLOW-UPS-TRACKER.md` and fold them into a follow-on session. This keeps
+the session's commit boundary clean and prevents codex review from silently
+expanding scope.
+
 ## 5. Tool discipline
 
 - **Skills**: invoke `superpowers:` skills as relevant. `executing-plans`,
   `subagent-driven-development`, `verification-before-completion`,
   `test-driven-development` are the most-used. Don't invoke if not relevant; do invoke
   if a skill applies.
-- **Codex CLI**: `codex exec --dangerously-bypass-approvals-and-sandbox
-  --skip-git-repo-check -c model_reasoning_effort=high < prompt.txt > log.txt 2>&1`.
-  Run in background for long jobs. **Never use `--output-last-message`** — it clobbers
-  files codex writes. Codex writes via the Write tool to whatever path the prompt
-  specifies.
+- **Codex CLI**: `codex exec -s read-only --skip-git-repo-check -c
+  model_reasoning_effort=high < prompt.txt > log.txt 2>&1`. Read-only sandbox is
+  the standard form for advisory review. Reserve
+  `--dangerously-bypass-approvals-and-sandbox` for cases where codex must write
+  a deliverable file via the Write tool. Run in background for long jobs.
+  **Never use `--output-last-message`** — it clobbers files codex writes. Codex
+  writes via the Write tool to whatever path the prompt specifies.
+
+- **Parallel-coordinator coordination.** When two or more coordinators run in
+  parallel, every coordinator briefing MUST enumerate by exact path every file
+  the *other* coordinator is expected to produce or modify. Coordinators (and
+  their subagents) MUST NOT delete or overwrite files outside their assigned
+  scope; if a file appears that's outside the assignment, leave it alone — it
+  may be from a parallel coordinator. The Wave 6.1 / Wave 6.2 file-vanishing
+  incident hit because the two coordinators wrote into the same `tools/apply_*`
+  script namespace without cross-awareness; this rule prevents recurrence.
 - **Plugins**: `code-review`, `pr-review-toolkit`, `frontend-design` are installed and
   available. Use when relevant.
 - **Test runs**: `pm2 stop study-companion` before any pytest run (port 5111
@@ -151,6 +181,10 @@ Every session, in order:
 1. Run `git status` + `git log --oneline -5` to see the working state.
 2. Read the most recent `docs/SESSION-HANDOFF-*.md` (probably
    `docs/SESSION-HANDOFF-WS0c-EXPANSION.md` until it gets superseded).
+   After the handoff, skim `docs/PROJECT-DECISIONS.md` (architectural decisions
+   with rationale) and `docs/FOLLOW-UPS-TRACKER.md` (codex-surfaced items
+   deferred across sessions) — both are short and load context the handoff
+   doesn't carry.
 3. Read this charter (the part you don't already remember).
 4. Run `python3 tools/validate_scholar.py docs/research/scholars/` to confirm corpus
    integrity.
@@ -237,6 +271,8 @@ honest about what it can and can't do.
 
 - This charter: `docs/PM-CHARTER.md`
 - Latest handoff: `docs/SESSION-HANDOFF-WS0c-EXPANSION.md`
+- Decision log: `docs/PROJECT-DECISIONS.md`
+- Follow-ups tracker: `docs/FOLLOW-UPS-TRACKER.md`
 - Spec: `docs/superpowers/specs/2026-04-23-visual-theology-architecture-design.md`
 - Schema: `docs/schema/citation-schema.md`
 - Method/limits: `docs/research/method-and-limits.md`
