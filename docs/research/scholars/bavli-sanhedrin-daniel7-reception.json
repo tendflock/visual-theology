@@ -1,0 +1,378 @@
+{
+  "scholarId": "bavli-sanhedrin-daniel7-reception",
+  "authorDisplay": "Babylonian Talmud (Sanhedrin/Hagigah)",
+  "workDisplay": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+  "resourceId": "sefaria:bavli-daniel7-reception",
+  "resourceFile": "external/bavli-sanhedrin-daniel7-reception.sefaria",
+  "traditionTag": "rabbinic-classical",
+  "fullTitle": "Babylonian Talmud — Sanhedrin 98a (messianic-coming sugya) and Hagigah 14a (Maaseh Merkabah / Daniel 7 throne controversy): the classical rabbinic Daniel 7 reception event",
+  "passageCoverage": [
+    "Dan 7:9-12",
+    "Dan 7:13-14"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Ancient of Days / two thrones — Hag. 14a §§4-5 stages a four-rabbi controversy (Akiva, Yose ben Galili, Elazar ben Azarya) on Dan 7:9 plural thrones. Akivas one for Him and one for David is rebuked twice (profaning the Shekhinah; sticking to halakhah, not aggadah). The retained reading: one for the throne, one for the footstool (Isa 66:1).",
+      "J: Son of Man — Sanh. 98a §12 (R. Joshua ben Levi via R. Alexandri) reads Dan 7:13 with the clouds of heaven, like a son of man against Zech 9:9 lowly, riding on a donkey as a single Messianic figure whose mode of arrival is merit-conditional — the canonical rabbinic harmonization.",
+      "L: Apocalyptic / midrashic hermeneutic — the 98a sugya runs the eschaton through merit (be-ittah/ahishennah, §11; clouds/donkey, §12), present-moment moral conditioning (§16 Today = Ps 95:7), and Persian-imperial polemic (§13 Shapur Malka). Daniel 7 is a moral-eschatological lever, not an apocalyptic timetable."
+    ],
+    "moderate": [
+      "B: Fourth kingdom — Rome appears messianically (Sanh. 98a §5: until the worthless kingdom ceases; §15: the Messiah sits at the gate of Rome), not schematically. The classical Edom=Rome ↔ Daniel-fourth-beast formal locus is Avodah Zarah 2b (R. Yochanan), out of scope.",
+      "N: Cross-book coherence — Daniel 7 is read alongside Zechariah 9, Isaiah 60, Canticles 5, Isaiah 66, Psalm 95: a multi-book messianic intertext rather than a stand-alone apocalypse."
+    ],
+    "tentative": [
+      "Whether the Sanh. 98a §13 Shapur-and-Shmuel exchange is a real Sasanian-court polemic or a literary construction; either way it stages an early Jewish-Persian apologetic over the Daniel 7 / Zechariah 9 mode-of-arrival."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Ancient of Days / throne vision",
+      "position": "Hagigah 14a §§3-5 stages the classical rabbinic Daniel-7 throne-controversy. §3 first harmonizes the Ancient of Days raiment white as snow (Dan 7:9) with the lovers locks black as a raven (Cant 5:11) — the same God appears elderly in session and youthful in war. §§4-5 then stages a dispute on Dan 7:9 plural thrones: R. Akivas bold one for Him and one for David is rebuked first by R. Yose the Galilean (Akiva, how long will you make the Shekhinah profane? — replaces with one for justice, one for charity) and then by R. Elazar ben Azarya (telling Akiva to stop doing aggadah and stick to negaim and ohalot — replaces with one for the throne, one for the footstool, Isa 66:1). The transmitted halakhic ruling sides with the rebukers; Akivas Davidic-co-enthronement reading is preserved only as the rejected position. This is the bedrock of later rabbinic resistance to any two-powers-in-heaven (shtei reshuyot) reading of Dan 7.",
+      "commitment": "strong",
+      "rationale": "Daniel 7:9 plural thrones were set was a textual flashpoint in second-century rabbinic discourse. Hag. 14a transmits the controversy with the harshness intact: Akiva is rebuked twice, and the second rebuke (Elazar ben Azarya: what have you to do with aggadah?) effectively silences the Davidic-co-enthronement reading. The retained reading — throne and footstool — re-anchors the Daniel-7 vision in the Isaiah 66:1 monotheist frame: there are not two enthroned figures but one enthroned Holy One, with the earth itself as the footstool. The §3 raiment-vs-hair harmonization (session vs warfare) further constrains the Ancient-of-Days image to a single divine subject with two iconographic modes, blocking the Christian binitarian reading that emerges in the same centuries.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Hagigah.14a.3",
+            "language": "he",
+            "verseRef": "Bavli Hagigah 14a §3 — raiment-and-hair (Dan 7:9 / Cant 5:11): enthronement vs warfare"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Hag. 14a §3 — Daniel 7:9 raiment white as snow harmonized with Canticles 5:11 locks black as a raven: session vs war",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Hagigah 14a §3 [Sefaria: Bavli Hagigah 14a §3 — raiment-and-hair (Dan 7:9 / Cant 5:11): enthronement vs warfare]"
+          },
+          "quote": {
+            "text": "כָּתוּב אֶחָד אוֹמֵר: ״לְבוּשֵׁיהּ כִּתְלַג חִיוָּר וּשְׂעַר רֵישֵׁיהּ כַּעֲמַר נְקֵא״. וּכְתִיב: ״קְוֻצּוֹתָיו תַּלְתַּלִּים שְׁחוֹרוֹת כָּעוֹרֵב״! לָא קַשְׁיָא: כָּאן בִּישִׁיבָה, כָּאן בַּמִּלְחָמָה",
+            "sha256": "9765e7a3903010dd5ffc3471b8dd7c690e6083c5acba9ac65a1ec00410a9064a",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "One verse says, His raiment was white as snow, and the hair of his head like pure wool (Dan 7:9), and another says, His locks are wavy, black as a raven (Cant 5:11). No contradiction: the one is at the session, the other in war.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Hagigah.14a.4",
+            "language": "he",
+            "verseRef": "Bavli Hagigah 14a §4 — R. Akiva one for Him and one for David rebuked by R. Yose ben Galili"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Hag. 14a §4 — two-thrones controversy: R. Akiva (one for Him, one for David) rebuked by R. Yose the Galilean (one for justice, one for charity)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Hagigah 14a §4 [Sefaria: Bavli Hagigah 14a §4 — R. Akiva one for Him and one for David rebuked by R. Yose ben Galili]"
+          },
+          "quote": {
+            "text": "כָּתוּב אֶחָד אוֹמֵר: ״כׇּרְסְיֵהּ שְׁבִיבִין דִּינוּר״, וְכָתוּב אֶחָד אוֹמֵר: ״עַד דִּי כׇרְסָוָן רְמִיו וְעַתִּיק יוֹמִין יְתִיב״! לָא קַשְׁיָא: אֶחָד לוֹ וְאֶחָד לְדָוִד. כִּדְתַנְיָא: אֶחָד לוֹ וְאֶחָד לְדָוִד, דִּבְרֵי רַבִּי עֲקִיבָא. אָמַר לוֹ רַבִּי יוֹסֵי הַגְּלִילִי: עֲקִיבָא, עַד מָתַי אַתָּה עוֹשֶׂה שְׁכִינָה חוֹל?! אֶלָּא: אֶחָד לְדִין וְאֶחָד לִצְדָקָה",
+            "sha256": "6041628122fa1ef98fd3b69da0d0c4610815e4bd04a852cdfce93d057f6db95d",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "One verse says, His throne was tongues of fire (Dan 7:9b), and another verse says, Until thrones were set up and an Ancient of Days took His seat (Dan 7:9a). No contradiction: one for Him and one for David. As taught in a baraita: One for Him and one for David — the words of Rabbi Akiva. Rabbi Yose the Galilean said to him: Akiva, how long will you make the Divine Presence profane? Rather: one for justice and one for charity.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Hagigah.14a.5",
+            "language": "he",
+            "verseRef": "Bavli Hagigah 14a §5 — R. Elazar ben Azarya rebukes R. Akiva: one throne, one footstool (Isa 66:1)"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Hag. 14a §5 — two-thrones continued: R. Elazar ben Azarya (Akiva, what have you to do with aggadah? — one for the throne, one for the footstool)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Hagigah 14a §5 [Sefaria: Bavli Hagigah 14a §5 — R. Elazar ben Azarya rebukes R. Akiva: one throne, one footstool (Isa 66:1)]"
+          },
+          "quote": {
+            "text": "אָמַר לוֹ רַבִּי אֶלְעָזָר בֶּן עֲזַרְיָה: עֲקִיבָא, מָה לְךָ אֵצֶל הַגָּדָה! כְּלָךְ מִדַּבְּרוֹתֶיךָ אֵצֶל נְגָעִים וְאֹהָלוֹת. אֶלָּא: אֶחָד לְכִסֵּא וְאֶחָד לִשְׁרַפְרַף. כִּסֵּא — לֵישֵׁב עָלָיו, שְׁרַפְרַף — לַהֲדוֹם רַגְלָיו",
+            "sha256": "776750811acace744fca1fd9f90c8f21b5bc688222eaf4815b7ddea3f2981573",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Rabbi Elazar ben Azarya said to him: Akiva, what have you to do with aggadah? Take your discourses and go to negaim and ohalot. Rather: one for a throne and one for a footstool — the throne to sit upon, the footstool for a footrest, as it is said, The heavens are My throne, and the earth is My footstool (Isa 66:1).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Sanhedrin 98a §12 transmits the canonical rabbinic harmonization of Daniel 7:13 (with the clouds of heaven, one like a son of man) and Zechariah 9:9 (lowly and riding on a donkey): a single Messianic figure whose mode of arrival is merit-conditional. If they merit — with the clouds of heaven; if they do not merit — lowly and riding on a donkey. The locus is attributed to R. Joshua ben Levi (third-century Eretz Yisrael) via the Babylonian tradent R. Alexandri. This single dictum solves the textual puzzle the Christian tradition resolved by two-comings (humble-then-glorious): for the rabbis, the same coming varies modally with Israels worthiness.",
+      "commitment": "strong",
+      "rationale": "The §12 dictum is the classical rabbinic answer to the Dan 7:13 / Zech 9:9 tension. Crucially, the Bavli does not deny Dan 7:13 son of man messianic referent — it identifies him with the Zech 9:9 donkey-rider — and it does not delay the resolution to a second coming but ties it to Israels present moral condition. R. Joshua ben Levis parallel dictum at §11 (be-ittah / ahishennah, Isa 60:22) supplies the same merit-conditional logic at the level of timing rather than mode. The shape is rabbinic-eschatological-moral rather than apocalyptic-deterministic: the Daniel-7 vision is true, but its mode is in Israels hands.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.12",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §12 — R. Joshua ben Levi (via R. Alexandri): clouds-of-heaven vs donkey (Dan 7:13 / Zech 9:9)"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §12 — clouds-vs-donkey: if they merit, with the clouds of heaven (Dan 7:13); if they do not merit, lowly and riding on a donkey (Zech 9:9)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §12 [Sefaria: Bavli Sanhedrin 98a §12 — R. Joshua ben Levi (via R. Alexandri): clouds-of-heaven vs donkey (Dan 7:13 / Zech 9:9)]"
+          },
+          "quote": {
+            "text": "אָמַר רַבִּי אֲלֶכְּסַנְדְּרִי: רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי רָמֵי, כְּתִיב: ״וַאֲרוּ עִם עֲנָנֵי שְׁמַיָּא כְּבַר אֱנָשׁ אָתֵה״, וּכְתִיב: ״עָנִי וְרֹכֵב עַל חֲמוֹר״. זָכוּ – עִם עֲנָנֵי שְׁמַיָּא, לֹא זָכוּ – עָנִי וְרוֹכֵב עַל חֲמוֹר",
+            "sha256": "3b6ed754d2cb7101e6750c81ce82b83bf578533a0c2359b8d12eee9c15f150a5",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Rabbi Alexandri said: Rabbi Joshua ben Levi raised a contradiction. It is written, Behold, with the clouds of heaven came one like a son of man (Dan 7:13); and it is written, Lowly and riding on a donkey (Zech 9:9). If they merit — with the clouds of heaven; if they do not merit — lowly and riding on a donkey.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic / midrashic hermeneutic",
+      "position": "The 98a messianic sugya frames Daniel 7 not as an apocalyptic decoder ring but as a moral-eschatological lever. §11 raises in its time (be-ittah) vs I will hasten it (ahishennah) from Isa 60:22 and resolves by merit. §12 applies the same merit-conditional logic to the mode-of-arrival (clouds vs donkey). §13 stages the Persian-imperial polemic — Shapur Malka mocks Shmuel for the donkey tradition, offering his dappled steed; Shmuel deflects. The hermeneutic move: the apocalyptic vision is true and unresolved; what resolves it is Israels halakhic and moral conduct, not a calendar.",
+      "commitment": "strong",
+      "rationale": "The 98a sugya systematically sublimates apocalyptic determinacy. R. Joshua ben Levi appears as the central tradent for two parallel dicta (timing in §11; mode in §12) which together encode the rabbinic anti-calculative ethos. The Shapur-Shmuel exchange (§13) shows the Daniel-7 / Zechariah-9 cluster already operative in third-century Sasanian-Babylonian Jewish-Persian polemic — the king mocks the donkey-Messiah tradition and Shmuels reply turns the mockery without conceding. This is reception-as-defense rather than reception-as-decoding.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.11",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §11 — R. Joshua ben Levi: be-ittah / ahishennah — merit-conditional timing (Isa 60:22)"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §11 — merit-conditional eschaton: if they merit, I will hasten it; if not, in its time — pairs with §12 clouds-vs-donkey",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §11 [Sefaria: Bavli Sanhedrin 98a §11 — R. Joshua ben Levi: be-ittah / ahishennah — merit-conditional timing (Isa 60:22)]"
+          },
+          "quote": {
+            "text": "רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי רָמֵי, כְּתִיב ״בְּעִתָּהּ״ וּכְתִיב ״אֲחִישֶׁנָּה״. זָכוּ – אֲחִישֶׁנָּה, לֹא זָכוּ – בְּעִתָּהּ",
+            "sha256": "c717b7eebc2287e5598e506cd822bf9a8a2ddc9a1a83e7556ada523c3c2780d4",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Rabbi Joshua ben Levi raised a contradiction. It is written in its time (be-ittah) and it is written I will hasten it (ahishennah). If they merit — I will hasten it; if they do not merit — in its time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.13",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §13 — Shapur Malka mocks Shmuel on the Messiah-on-donkey tradition"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §13 — Persian polemic: King Shapur to Shmuel — you say the Messiah comes on a donkey? let me send him my dappled steed!",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §13 [Sefaria: Bavli Sanhedrin 98a §13 — Shapur Malka mocks Shmuel on the Messiah-on-donkey tradition]"
+          },
+          "quote": {
+            "text": "אֲמַר לֵיהּ שַׁבּוּר מַלְכָּא לִשְׁמוּאֵל: אָמְרִיתוּ מָשִׁיחַ עַל חַמְרָא אָתֵי? אֵישַׁדַּר לֵיהּ סוּסְיָא בָּרְקָא דְּאִית לִי",
+            "sha256": "0234e623f8a76aee52aaa163b86de1dababc9d4294385754fcc5a75c097e8c81",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "King Shapur said to Shmuel: You say the Messiah comes on a donkey? Let me send him my dappled steed! He said to him: Have you a hundred-hued one to send him?",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "In the 98a sugya, Rome is not mapped to Daniel 7 fourth beast schematically; it surfaces messianically. §5 (R. Hama bar Hanina): the Son of David does not come until the worthless kingdom (malkhut hazalah — a euphemism for Rome) has ceased over Israel. §15 (Elijah to R. Joshua ben Levi): the Messiah sits at the gate of Rome (apitcha de-Romi) among the poor who suffer afflictions; his sign is that he loosens and binds his bandages one at a time. The Daniel-7 fourth-kingdom-as-Rome assumption is presupposed by the sugya rather than argued — the formal locus for the equation is Avodah Zarah 2b (R. Yochanan, this is wicked Rome), out of this surveys scope.",
+      "commitment": "moderate",
+      "rationale": "What Sanh. 98a does engage on Rome is the messianic mechanics: Rome must fall before the Son of David comes (§5), and the Messiah is even now stationed at Romes gate (§15). The geographical specificity (at the gate of Rome) ties Daniel 7 eschatological climax to the concrete imperial center. The §15 image — Messiah among the lepers and afflicted, attentive to the call to come — fuses Isa 53:4 (bearing afflictions) with Dan 7:13 (the readiness to come with the clouds) into a single rabbinic figure of a messianic agent who participates in the divine reign without an incarnational framework.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.5",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §5 — R. Hama bar Hanina: Son of David does not come until the worthless kingdom (malkhut hazalah) ceases"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §5 — fourth-kingdom-must-cease: the Son of David does not come until the worthless kingdom — Rome — has ceased over Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §5 [Sefaria: Bavli Sanhedrin 98a §5 — R. Hama bar Hanina: Son of David does not come until the worthless kingdom (malkhut hazalah) ceases]"
+          },
+          "quote": {
+            "text": "אָמַר רַבִּי חָמָא בַּר חֲנִינָא: אֵין בֶּן דָּוִד בָּא עַד שֶׁתִּכְלֶה מַלְכוּת הַזָּלָה מִיִּשְׂרָאֵל",
+            "sha256": "6319ebf691b67c102ca5cb1fedccba00fa6b38ef7277797263d7992331679969",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Rabbi Hama bar Hanina said: The Son of David does not come until the worthless kingdom has ceased over Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.15",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §15 — Elijah to R. Joshua ben Levi: where does the Messiah sit? At the gate of Rome"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §15 — Messiah waits at the gate of Rome among the poor and afflicted; sign — he unbinds and rebinds his bandages one at a time",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §15 [Sefaria: Bavli Sanhedrin 98a §15 — Elijah to R. Joshua ben Levi: where does the Messiah sit? At the gate of Rome]"
+          },
+          "quote": {
+            "text": "וְהֵיכָא יָתֵיב? אַפִּיתְחָא דְּרוֹמִי. וּמַאי סִימָנֵיהּ? יָתֵיב בֵּינֵי עַנְיֵי סוֹבְלֵי חֳלָאִים",
+            "sha256": "754edca716037851ba695a173156d57af93d222fcc85188d512ca87c58e282b8",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And where does he sit? At the gate of Rome. And what is his sign? He sits among the poor who bear afflictions; they all loosen and bind their bandages at one stroke, but he loosens one and binds one.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 7:13-14",
+      "positionSummary": "The 98a sugya reads Daniel 7:13 inside a quadrilateral: Dan 7:13 ↔ Zech 9:9 (clouds vs donkey) ↔ Isa 60:22 (be-ittah vs ahishennah, the merit-conditional timing) ↔ Ps 95:7 (today, if you will hear His voice — §16 resolution of the eschaton into the present moment of Torah-listening). The Hagigah 14a throne-vision sugya then folds Cant 5:11 (the lovers locks) and Isa 66:1 (heavens-throne, earth-footstool) into the Dan 7:9 vision. The rabbinic Daniel 7 is therefore an intertextual cluster, not a stand-alone apocalypse.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Sanhedrin.98a.16",
+            "language": "he",
+            "verseRef": "Bavli Sanhedrin 98a §16 — R. Joshua ben Levi to the Messiah: when will my master come? — Today (Ps 95:7)"
+          },
+          "frontend": {
+            "author": "Babylonian Talmud (Sanhedrin/Hagigah)",
+            "title": "Bavli Sanhedrin 98a; Hagigah 14a — Daniel 7 reception",
+            "section": "Sanh. 98a §16 — Today = Ps 95:7 today, if you will hear His voice — collapsing the eschaton into Torah-listening obedience in the present moment",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "b. Sanhedrin 98a §16 [Sefaria: Bavli Sanhedrin 98a §16 — R. Joshua ben Levi to the Messiah: when will my master come? — Today (Ps 95:7)]"
+          },
+          "quote": {
+            "text": "אֲמַר לֵיהּ: לְאֵימַת אָתֵי מָר? אֲמַר לֵיהּ: הַיּוֹם",
+            "sha256": "4e49b87970026c096511a5d7503a00c446d141389e0f7453a73a9554837a1956",
+            "language": "arc"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He said to him: When will my master come? He said to him: Today.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Merit-conditional eschatology: §§11-12 collapse Daniel 7 deterministic-looking with the clouds of heaven into a contingency on Israels worthiness — the same Messiah, two modes of arrival, indexed to merit.",
+    "Rebuke-as-canonization of the rejected position: Hag. 14a §§4-5 preserves R. Akivas Davidic-co-enthronement reading of Dan 7:9 only to reject it twice — the rebukes are themselves the canonical text. This pattern lets the tradition register and disarm a binitarian reading without losing the question.",
+    "Geographical-imperial concretization of the eschaton: Sanh. 98a §15 places the Messiah at the literal gate of Rome — an unusually concrete imperial-political localization for a Messiah who is otherwise treated atemporally.",
+    "Persian-court polemic preserved: §13 Shapur-and-Shmuel exchange is a rare moment of the rabbinic Daniel 7 reception engaging non-Jewish imperial mockery directly; Shmuel does not concede but redirects.",
+    "Today-as-eschaton: §16 Ps 95:7 punchline (today, if you will hear His voice) folds the entire Daniel-7 cloud-coming into the present moment of halakhic obedience — perhaps the most distinctive rabbinic move on this material."
+  ],
+  "uncertainties": [
+    "The classical Edom=Rome ↔ Daniel-fourth-beast formal locus is Avodah Zarah 2b (R. Yochanan), not the Sanh. 98a sugya. The audit doc that anchored this survey at Sanh. 96b §§4-5 misanchored: 96b messianic discussion does not begin until §14 (Bar Nafli), and 96b §§4-5 is the Nebuchadnezzar-Nebuzaradan Temple-destruction narrative. A future Wave 6.x Talmud reception survey should capture AZ 2b directly.",
+    "Sanh. 98a §13 (Shapur Malka / Shmuel) is sometimes treated as a literary construction rather than a historical exchange; this survey records the dictum as transmitted and does not adjudicate.",
+    "Pilot axes C (Saints of the Most High), E (Little Horn), and F (kingdoms-as-time-of-Messiah) receive no developed treatment in the surveyed segments. The 98a sugya is a messianic-coming sugya, not a four-kingdoms catalog; the four-kingdoms-as-Rome scheme is presupposed rather than argued.",
+    "The Hag. 14a §§4-5 controversy presupposes the Dan 7:9 plural-thrones text; some critical scholars read R. Akivas one for Him, one for David as a covert assertion of a Two-Powers position the editor wished to discredit, but the segment as transmitted treats Akiva as a faithful tanna whose aggadic exuberance simply outran the limits of monotheist discourse — the survey reflects the Bavli framing."
+  ]
+}

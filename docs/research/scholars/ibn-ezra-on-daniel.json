@@ -1,0 +1,1027 @@
+{
+  "scholarId": "ibn-ezra-on-daniel",
+  "authorDisplay": "Abraham ibn Ezra",
+  "workDisplay": "Commentary on Daniel",
+  "resourceId": "sefaria:Ibn_Ezra_on_Daniel",
+  "resourceFile": "sefaria/Ibn_Ezra_on_Daniel",
+  "traditionTag": "medieval-jewish-rabbanite",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Ishmael (Islam) — explicit at Dan 7:14 ('the fourth beast that appears is the kingdom of Ishmael') and reasoned out at length at Dan 2:39 against Saadya's Aram/Rome reading",
+      "C: Little horn = a still-future last king within Ishmael who will war against Israel and seek to change Israel's appointed-times and Torah — 'the matter of the little horn is yet to come, near the coming of the Redeemer'",
+      "H: Ten horns = ten kingdoms of Ishmael (Khorasan, Isfahan, Yemen/Sheba, Mecca, Egypt, Africa/Maghreb, the desert Ishmaelites, the Almoravids, the Berbers, the Cushites) — geographic-political enumeration of the Islamic world c. 1140",
+      "J: Bar enash = Israel as a 'name of the kind' (shem ha-min) — corporate-Israel reading explicitly correcting R. Yeshua's individual-messianic interpretation",
+      "K: Saints' kingdom = Israel takes the kingdom directly from the fourth (Ishmaelite) beast at the end — kingdom transfer is corporate-Jewish, not transferred to the Church or to a single messianic individual",
+      "L: Andalusi-grammatical peshat — Aramaic-to-Hebrew gloss, named historical referents, polemical engagement with prior interpreters (Saadya, Yefet ben Eli, R. Yeshua) by name, with linguistic analysis (shem ha-min) controlling theological identification"
+    ],
+    "moderate": [
+      "O: Past-historical-then-still-future — beasts 1-3 (Babylon, Persia, Greece) and the present spread of Ishmael are realized history; the little horn, the kingdom-transfer to Israel, and the temporal index remain future and tied to the coming of the Redeemer",
+      "N: Ancient of Days — Ibn Ezra reads the theophany figuratively (the wheels are the celestial spheres, fire-streams are physical phenomena tied to the lunar/fire spheres) and refers the secret of angels/myriads to his philosophical works",
+      "F: 'Time, times, and half a time' — Ibn Ezra defers the computation explicitly to Dan 12 ('I will explain this on the verse 'for a time, times, and a half'')"
+    ],
+    "tentative": [
+      "E: Anti-Christian/anti-individual-messianic counter-reading — explicit against R. Yeshua's reading of bar enash as the Messiah (a Karaite-Christian-friendly position); the Ishmael-as-fourth-kingdom move is also implicitly polemical against the Christian Edom/Rome reading though Christian interlocutors are not named on Dan 7"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Ishmael (Islam) — distinctive among medieval Jewish commentators against Rashi's Edom/Rome and against Saadya's Aram identification; the iron of Nebuchadnezzar's dream and the iron-toothed fourth beast both point to the Islamic empire of Ibn Ezra's day",
+      "commitment": "strong",
+      "rationale": "Ibn Ezra's distinctive — and within medieval Jewish exegesis nearly singular — identification of the fourth kingdom is Ishmael (Islam). At Dan 7:14 he writes plainly that 'the fourth beast that appears is the kingdom of Ishmael, which is figured in Nebuchadnezzar's dream as iron.' He arrives at the identification by elimination: lion = Babylon (he names Evil-Merodach and Belshazzar at v. 14), bear = Persia (succeeded Babylon, the silver of the dream), leopard = Greece beginning with Alexander (the bronze). With Babylon-Persia-Greece located in beasts 1-3, the fourth beast cannot also be Greek-Roman Edom; given the iron-image and the present-day reach of the kingdom, it must be Ishmael. He defends the move at length on Dan 2:39 against Saadya, who identified the iron with Aram (= Rome) and read the clay as Ishmael — Ibn Ezra rejects that splice ('how can the kingdom of Ishmael combine with Aram, when Ishmael never ruled over it and their religion is not one?') and argues that the iron alone is Ishmael, with the two-and-feet imagery accommodating Aram/Greek and Ishmael as the two co-existing kingdoms 'on this day' over which Aram once ruled.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — fourth beast = Ishmael",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "והחיה הרביעית הנראה הוא מלכות ישמעאל, היא הנמשלת בחלום נבוכדנצר לברזל",
+            "sha256": "3fe05a82a0bb1fe6b6456807cff69304412f6945146e3e3072a1de4e426b3deb",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the fourth beast that appears is the kingdom of Ishmael, which is figured in Nebuchadnezzar's dream as iron.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.2.39",
+            "language": "he",
+            "verseRef": "Daniel 2:39",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 2:39 — iron = Ishmael (against Saadya)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 2:39 (Sefaria)"
+          },
+          "quote": {
+            "text": "הברזל מלכות ישמעאל",
+            "sha256": "d309dc997b2c76b9f17ce67aa4592ae6651c6aeff47d05bb144f4cc42d5e2a30",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The iron is the kingdom of Ishmael.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — first beast = Babylon (death of Evil-Merodach, start of Belshazzar)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וזאת הנבואה במות אויל מרודך ותחלת בלשצר, והנה האריה מלכות כשדים",
+            "sha256": "ce83bec6afe269de5517c24ec986bc687ad18ea88eb9b13f23c1a560df1b8ca9",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And this prophecy is at the death of Evil-Merodach and the beginning of Belshazzar — and behold, the lion is the kingdom of the Chaldeans.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — second beast = Persia",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "והחיה השנית מלכות פרס שהשחיתה מלכות כשדים והיא הנמשלת לכסף בחלום נבוכדנצר",
+            "sha256": "c2c9462b90a8c10d28693bc53ce80660838e412d06971b8bcc10e6a9b8a77374",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the second beast is the kingdom of Persia, which destroyed the kingdom of the Chaldeans, and it is the one figured as silver in Nebuchadnezzar's dream.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — third beast = Greece (Alexander)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "והחיה השלישית נמשלת לנמר היא מלכות יון ותחלת מלכות אלכסנדרוס שהיה מלך עליהם",
+            "sha256": "02cb68fd0c60eb83be33f606730fc53c46a2788324873ae9239e7732e1cd0889",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the third beast, figured as a leopard, is the kingdom of Greece, and the beginning of the kingdom of Alexander who was king over them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "A still-future last king within the kingdom of Ishmael who will arise from the East, return three of the ten Ishmaelite kingdoms to a unified rule, and 'do great evil to Israel' — seeking to change Israel's appointed-times and Torah; the matter of this horn is 'yet to come, near the coming of the Redeemer'",
+      "commitment": "strong",
+      "rationale": "Ibn Ezra reads the little horn (qarna ze'eira) as a still-future ruler within the Islamic world, not as Titus (Rashi) and not as a typical-Christian Antichrist. At Dan 7:14 he says explicitly that 'the matter of the little horn is yet to come (od atid), for it will be near the coming of the Redeemer.' The horn 'will arise from the East and return three kingdoms' to the religion of the Ishmaelite kingdoms, and at v. 16 the angel reveals to Daniel that 'this last king within the kingdom of Ishmael will do great evil to Israel' — the persecuting horn will 'wear out the saints' (yebale) by 'wishing to change the appointed-times of Israel and their Torah, and Israel will be in distress.' The temporal duration ('a time, times, and a half') is deferred to Dan 12 for full discussion.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — little horn still future",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "ודבר הקרן הקטנה עודנו עתיד, כי זה יהיה קרוב מביאת הגואל",
+            "sha256": "d6f6adc78a877431b2ae589bd6d52e2d46de6ba670220bddfcff10f1e6408f3b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the matter of the little horn is yet to come, for this will be near the coming of the Redeemer.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — last king of Ishmael does great evil to Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "כי זה המלך האחרון במלכות ישמעאל ירע רעה גדולה לישראל",
+            "sha256": "21952e28d1a88fb81606e1cbae978a2d582f266728448fdf8c1fa56bcf588a6a",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "For this last king within the kingdom of Ishmael will do great evil to Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — horn wars against Israel and prevails",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "כי הקרן הקטנה תעשה מלחמה עם ישראל ותוכל להם",
+            "sha256": "9c7161ecf52e573b91134c9cd217fd08945063f2f8e3082fd5738b596f8388da",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "For the little horn will make war with Israel and prevail over them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — horn seeks to change Israel's times and Torah",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "כי ירצה לשנות מועדי ישראל ותורתם ויהיו ישראל בצרה",
+            "sha256": "92372fd0aed471415c3ea51fe6c32d231adb9430b84e5792caedc4f9616ca63d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "For he will wish to change the appointed-times of Israel and their Torah, and Israel will be in distress.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "position": "Deferred — Ibn Ezra acknowledges the temporal index ('a time, times, and a half') at Dan 7:25 / 7:16 but explicitly defers the computation to his comments on Dan 12 ('for an appointed time, times, and a half'); no time-figure is fixed at Dan 7",
+      "commitment": "moderate",
+      "rationale": "Ibn Ezra is unusually disciplined about time-reckoning at Dan 7. Within his single long comment on v. 16 (which folds vv. 17-25 in this Sefaria edition), he names the temporal index — 'until a time, times, and half a time' — and then writes 'and this I will explain on the verse 'for an appointed time, times, and a half'' (Dan 12:7). The deferral is method, not silence: Ibn Ezra reads Dan 7 and Dan 12 as governed by the same temporal grammar and locates the calculation in Dan 12 where the figure recurs explicitly. Within Dan 7 itself he offers no number, no gematria, no apocalyptic year-count.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — defers time-times-half to Dan 12",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "עד עדן ועדנין ופלג עדן וזה אפרש בפסוק כי למועד מועדים וחצי",
+            "sha256": "e6b51f7719c5b1b86e593d947579fefb61f1b763c1e2b7be91d1ecde2fd5e046",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Until a time, times, and half a time — and this I will explain on the verse 'for an appointed time, times, and a half.'",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Ten horns / kings of Dan 7:24",
+      "position": "Ten kingdoms of Ishmael — a geographic-political enumeration of the Islamic world c. 1140: Khorasan, Isfahan, Yemen (= Sheba), Mecca, Egypt, Africa (Maghreb), the desert Ishmaelites east and west, the Almoravids (Philistines), the Berbers (descendants of Ham, white), and the Cushites (many kings) — 'all of these have one Torah'",
+      "commitment": "strong",
+      "rationale": "Where Rashi reads the ten horns as ten Roman emperors before Vespasian, Ibn Ezra reads them as ten kingdoms of the Islamic world of his own day. At Dan 7:14 he writes that 'the meaning of the ten horns — that the kingdom of Ishmael spread over most of the inhabited world,' and then enumerates the ten by name: Khorasan, Isfahan, Yemen (which is Sheba), Mecca (= Mikha = Misha, per Saadya), Egypt, Africa, the tent-dwelling Ishmaelites of east and west, the Philistines (= the Almoravids), the Berbers ('descendants of Ham, who are white'), and the Cushites ('and they are many kings'). The list is geographic-political, anchored on twelfth-century Andalusi knowledge of the dar al-Islam, and reads the ten horns as the constituent powers of the present-day Islamic world rather than as past Roman emperors or future revived-empire kings.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — ten horns = ten Ishmaelite kingdoms",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וטעם וקרנין עשר - שפשטה מלכות ישמעאל ברוב הישוב",
+            "sha256": "2a2129544e76a279d51cc4ac0df44319cf1577ae903aff506c143693fe822cbb",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the meaning of 'ten horns' — that the kingdom of Ishmael spread over most of the inhabited world.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Bar enash = Israel as a 'name of the kind' (shem ha-min) — corporate-Israel reading explicitly correcting R. Yeshua's individual-messianic interpretation; the Son of Man figure is generic-humanity-as-Israel set against the bestial gentile kingdoms",
+      "commitment": "strong",
+      "rationale": "Ibn Ezra's reading of bar enash at Dan 7:13-14 is sharply distinctive within medieval Jewish exegesis. He reports R. Yeshua's reading first ('And R. Yeshua says: this bar enash is the Messiah') and accepts the directional point ('and his statement is correct') — but corrects it: 'except that he is the holy people, who are Israel.' On v. 14 he gives his own positive formulation: 'And I have said that this bar enash is Israel, who is a name of the kind (shem ha-min),' grounding the identification in Daniel's own gloss ('and the Ancient of Days gave judgment to the holy ones of the Most High'). The 'son of man' is a generic-kind term for the human collective figured in the vision as Israel against the bestial nations; the messianic individual reading is replaced by a corporate-typological one. This is grammatically rigorous (shem ha-min = noun-of-kind, an Andalusi-grammatical category) and structurally polemical against any reading — Karaite, Christian, or Talmudic — that fixes bar enash on a single eschatological individual.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — Son of Man = Israel as 'name of the kind'",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "ואמרתי שזה כבר אנש הוא ישראל שהוא שם המין",
+            "sha256": "4f9a2d6912190dbbe6ad32e5913f2f681cbf1af24fba7210ee9e58017f664317",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And I have said that this 'one like a son of man' is Israel, who is a name of the kind.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — correcting R. Yeshua's individual-Messiah reading",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "ויאמר רבי ישועה: כי זה כבר אנש הוא המשיח. ונכון דבר רק הוא עם הקדש שהם ישראל",
+            "sha256": "ed3380c2d5dde6ed53e2aa5cea5f8d51088c416a318b12fe51fae94369d7f1e2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And R. Yeshua says: this 'one like a son of man' is the Messiah. And his statement is correct, except that he is the holy people, who are Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:13 — gloss on the Son of Man scene",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:13 (Sefaria)"
+          },
+          "quote": {
+            "text": "והנה עם ענני השמים כבן אנוש היה בא",
+            "sha256": "0daf5f72159be3631935e9d47c5cf6053e611a29fa6ecc876a0303e31bc668bc",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And behold, with the clouds of heaven one like a son of man was coming.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Kingdom of the saints",
+      "position": "Qadishei elyonin = Israel; the kingdom is taken at the end (be-sof ha-malkhut) directly from the fourth (Ishmaelite) beast and given to Israel forever — the same logic that grounds the Son-of-Man-as-Israel reading",
+      "commitment": "strong",
+      "rationale": "Ibn Ezra ties the kingdom-of-the-saints reading directly to his Son-of-Man-as-Israel reading. At Dan 7:16 he glosses the angel's interpretation: 'and the meaning of 'one like a son of man came and they received' — at the end of the kingdom, the holy ones of the Most High will inherit the kingdom forever and ever.' Earlier in the same comment he draws the inference from Daniel's own self-quotation ('and judgment was given to the holy ones of the Most High') back to the Son-of-Man scene as the same referent. The kingdom-transfer at the end of the fourth beast is therefore corporate-Jewish (Israel) and not transferred to a Christian Church or a Karaite individual messiah. The temporal frame is eschatological-future ('near the coming of the Redeemer'), continuous with the persecuting little-horn period.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — saints inherit the kingdom forever",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "בסוף המלכות קדושי עליון וירשו המלכות עד עולם ועד עולם",
+            "sha256": "0e87904d9b648121588c60145f86e11a8ea6aae84056efd3810874006dde54bf",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "At the end of the kingdom, the holy ones of the Most High — and they will inherit the kingdom forever and ever.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Andalusi-grammatical peshat — Aramaic-to-Hebrew gloss, named historical-political referents grounded in present-day knowledge (the Islamic world c. 1140), and explicit dialectical engagement with prior interpreters (Saadya Gaon, Yefet ben Eli, R. Yeshua) by name; linguistic categories ('shem ha-min', 'name of the kind') control theological identification",
+      "commitment": "strong",
+      "rationale": "Ibn Ezra's procedure is recognizably Andalusi: each verse opens with a lemma plus an Aramaic-to-Hebrew gloss ('arav = ke-mo va'alu'), and identifications are then anchored to named contemporaries and named prior interpreters. Yefet ben Eli (the Karaite) is cited at v. 1 ('Yefet said: 'beginnings of words' means the principal points, not all the words'), Saadya Gaon is cited and disagreed with at v. 14 (on the lion as Nebuchadnezzar-in-the-past), and R. Yeshua is cited and corrected on bar enash at v. 14. The fourth-beast identification is argued on lexical-historical grounds against Saadya at length on Dan 2:39 ('how can the kingdom of Ishmael combine with Aram?'). The grammatical category shem ha-min ('name of the kind') is what licenses the corporate-Israel reading of bar enash. This is the Sephardi grammarian's method, not Rashi's Northern-French peshat-with-midrash, and not Karaite literalism.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.1",
+            "language": "he",
+            "verseRef": "Daniel 7:1",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:1 — engaging Yefet ben Eli by name",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:1 (Sefaria)"
+          },
+          "quote": {
+            "text": "ריש מלין אמר - אמר יפת: ראשי דברים דבר ולא כל דברים",
+            "sha256": "bb9b351b89dee98ffc407e856d7c7da820defd09ed524f51f970d9547337c03c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'The beginning of the words spoke' — Yefet said: 'beginnings of words' means he spoke principal points, not all the words.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — engaging Saadya by name",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "והגאון רב סעדיה אמר: כי זאת המראה על דבר עבר והוא דבר נבוכדנצר",
+            "sha256": "fe10aa06293e77bdc8da76bbc53e375a0213a228c8b9d4aa817872c25112d817",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the Gaon Rav Saadya said: this vision is about a past matter — namely the matter of Nebuchadnezzar.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — disagreeing with Saadya on past-vision reading",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וזה איננו נכון בעיני, כי מה טעם לראות מה שעבר ומה תועלת להזכירו",
+            "sha256": "1c8bfc7120e99ac356d9c00cee86c7484690cc436482462e62c7f52b7db68f37",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And this is not correct in my view — for what is the point of seeing what has already passed, and what benefit is there in mentioning it?",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Theology proper / divine vision",
+      "position": "Ancient of Days = a vision-of-prophecy figure ('he saw him in the visions of prophecy as an old man'); the wheels (galgalin) are the celestial spheres — fire-streams emerge from their motion because the sphere-of-fire sits beneath the sphere-of-the-moon; the myriads-serving point refers Ibn Ezra back to his Sefer ha-Shem on the angelic hosts and the host-of-heaven",
+      "commitment": "moderate",
+      "rationale": "Ibn Ezra's theology proper at Dan 7:9-10 is philosophical-Andalusi rather than midrashic-merciful (Rashi). At v. 9 he reads the imagery as 'he saw him in the visions of prophecy as an old man' — i.e., the 'Ancient of Days' garment and white hair is a prophetic visionary mode of representation, not a literal description. At v. 14 he gives the elaboration: 'and his throne is his seat, and the wheels (galgalohi) are the spheres — and from the abundance of their motion fire-streams emerge, because the sphere of fire sits beneath the sphere of the moon by demonstrative proofs.' He glosses the myriads serving as a non-anomaly ('do not be surprised, for everything is by the command of the exalted Name'), referring the reader to Sefer ha-Shem ha-Nikhbad for the secret of angels and host-of-heaven. The theophany is consistent with his philosophical theology elsewhere — figurative anthropomorphism plus celestial-mechanical concretion of the imagery.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.9",
+            "language": "he",
+            "verseRef": "Daniel 7:9",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:9 — Ancient of Days theophany",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:9 (Sefaria)"
+          },
+          "quote": {
+            "text": "וקדמון ימים ישב לבושו כשלג לבן ושער ראשו כצמר נקי",
+            "sha256": "01f00db62d9a02644049bb71cf49ce94e874b463577061a276a59c6f3a1216b8",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the Ancient of Days sat — his garment was white as snow and the hair of his head like clean wool.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Past-historical-then-still-future, but with a distinctive present moment — Babylon-Persia-Greece are realized history; the kingdom of Ishmael is the present-day fulfillment of the fourth beast (mid-twelfth century); the little horn, the saints' inheritance, and the temporal index all remain future, near the coming of the Redeemer",
+      "commitment": "moderate",
+      "rationale": "Ibn Ezra's fulfillment structure at Dan 7 has three temporal stages, not two: realized past (the first three beasts: Babylon, Persia, Greece), realized present (the fourth beast = the Islamic kingdom presently spread across most of the inhabited world, with its ten constituent kingdoms), and still-future (the little horn, who will arise from the East, persecute Israel, seek to change Israel's appointed-times and Torah, war on the saints and prevail for a time-times-half — but at the end will be destroyed and the kingdom transferred to Israel forever). The eschatological telos is 'near the coming of the Redeemer (be'iat ha-go'el),' with the Son-of-Man-as-Israel collective receiving universal dominion. This places Ibn Ezra in his own present as inhabiting the late phase of beast-four, expecting an imminent persecution-then-deliverance — a position with no exact parallel among Rashi's Roman-past or Saadya's Aram-Ishmael-composite or the Christian patristic Roman-eschatological scheme.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — fourth beast realized in the present (Ishmael)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וטעם וקרנין עשר - שפשטה מלכות ישמעאל ברוב הישוב",
+            "sha256": "2a2129544e76a279d51cc4ac0df44319cf1577ae903aff506c143693fe822cbb",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the meaning of 'ten horns' — that the kingdom of Ishmael spread over most of the inhabited world.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — little horn near the coming of the Redeemer",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "ודבר הקרן הקטנה עודנו עתיד, כי זה יהיה קרוב מביאת הגואל",
+            "sha256": "d6f6adc78a877431b2ae589bd6d52e2d46de6ba670220bddfcff10f1e6408f3b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the matter of the little horn is yet to come, for this will be near the coming of the Redeemer.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Engagement with anti-Christian / Maccabean / typological readings",
+      "position": "Explicitly polemical against R. Yeshua's individual-messianic reading of bar enash; implicitly polemical against the Christian Edom/Rome reading of the fourth kingdom by relocating it to Ishmael (Islam); the Christian individual-Messiah reading of Dan 7:13 has no surface to attach to once bar enash is fixed as 'Israel as name of the kind'",
+      "commitment": "tentative",
+      "rationale": "Ibn Ezra's engagement with rival readings is named and granular, not anonymous. R. Yeshua (the Karaite, often read in tandem with Christian individual-Messiah readings of Dan 7:13) is named directly at v. 14: 'And R. Yeshua says: this bar enash is the Messiah. And his statement is correct, except that he is the holy people, who are Israel.' The correction is not a rejection of messianic content but a re-grounding: bar enash is collective-Israel-as-kind, not a single eschatological individual. Saadya Gaon is engaged on the four-empires identification (the lion-as-Nebuchadnezzar-in-the-past and the Aram/Ishmael-composite fourth kingdom) at length and rejected by name. Christian interlocutors are not named on Dan 7 (in line with Andalusi caution), but the structural moves — fourth kingdom = Ishmael (not Edom/Rome), bar enash = corporate Israel (not Christ) — close off the standard Christian reading of Dan 7 by reassigning every key referent away from Greco-Roman-Christian salvation history.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:14 — naming and correcting R. Yeshua on bar enash",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "ויאמר רבי ישועה: כי זה כבר אנש הוא המשיח. ונכון דבר רק הוא עם הקדש שהם ישראל",
+            "sha256": "ed3380c2d5dde6ed53e2aa5cea5f8d51088c416a318b12fe51fae94369d7f1e2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And R. Yeshua says: this 'one like a son of man' is the Messiah. And his statement is correct, except that he is the holy people, who are Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Ibn Ezra's most extended argument for the Ishmael-as-fourth-kingdom reading is mounted at Dan 2:39, not at Dan 7. There he names Saadya Gaon's identification (gold = Babylon, silver = Persia, bronze = Greece, iron = Aram/Rome, clay = Ishmael) and rejects it on three lexical-historical grounds: (i) Daniel says of the iron 'partly strong, partly broken,' but Saadya's Aram/Ishmael composite forces an asymmetric reading of one kingdom as two; (ii) 'how can the kingdom of Ishmael combine with Aram, when Ishmael never ruled over it and their religion is not one?'; and (iii) the absence of any direct mention of Ishmael in Daniel is itself a puzzle that demands the iron-as-Ishmael reading. He concludes that 'the iron is the kingdom of Ishmael' and that the two kingdoms presently ruling 'on this day' over former-Aram are Greece and Ishmael, with Ishmael (the iron) as the dominant fourth-kingdom referent of Dan 2 and 7 alike. The two visions are exegetically welded: Dan 7 inherits the Ishmael-as-iron identification from Dan 2.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.2.39",
+            "language": "he",
+            "verseRef": "Daniel 2:39",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 2:39 — two kingdoms now ruling over former Aram",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 2:39 (Sefaria)"
+          },
+          "quote": {
+            "text": "שתי מלכיות מלכו ארם, שהוא מלכות יון ומלכות ישמעאל ואלו השתים מלכיות ביום הזה",
+            "sha256": "e7e636ed92f4d555481acb19ce28d88860f1ffba6ea1e15bca616f085ded2d92",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Two kingdoms ruled over Aram — namely the kingdom of Greece and the kingdom of Ishmael — and these are the two kingdoms on this day.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.2.39",
+            "language": "he",
+            "verseRef": "Daniel 2:39",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 2:39 — Daniel's silence on Ishmael as a puzzle",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 2:39 (Sefaria)"
+          },
+          "quote": {
+            "text": "יש לתמוה איך לא הזכיר דניאל מלכות ישמעאל",
+            "sha256": "f363a0192419dfb8e644a51fe454997655acfaf567b0d293ff04990290f2a9ba",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "It is to be wondered how Daniel did not mention the kingdom of Ishmael.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.2.44",
+            "language": "he",
+            "verseRef": "Daniel 2:44",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 2:44 — fifth kingdom = the Messianic kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 2:44 (Sefaria)"
+          },
+          "quote": {
+            "text": "וביומיהון - מלכות המשיח",
+            "sha256": "532e59b02b5a8c41ac5955a0b7f5a239735edf0c5bd0e1b274f4f8f21cc638ee",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'And in their days' — the kingdom of the Messiah.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 12:1-13",
+      "positionSummary": "Ibn Ezra explicitly defers the computation of the time-figure ('time, times, and a half') from Dan 7:25 to his comments on Dan 12:7 ('for an appointed time, times, and a half'). The two passages share the same temporal grammar in his reading; Dan 12 is the controlling locus where the figure recurs explicitly and where any reckoning belongs.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Ibn_Ezra_on_Daniel.7.16",
+            "language": "he",
+            "verseRef": "Daniel 7:16",
+            "commentator": "Ibn Ezra"
+          },
+          "frontend": {
+            "author": "Abraham ibn Ezra",
+            "title": "Ibn Ezra on Daniel",
+            "section": "ad Dan 7:16 — defer time-times-half to Dan 12",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Ibn Ezra, ad Dan. 7:16 (Sefaria)"
+          },
+          "quote": {
+            "text": "עד עדן ועדנין ופלג עדן וזה אפרש בפסוק כי למועד מועדים וחצי",
+            "sha256": "e6b51f7719c5b1b86e593d947579fefb61f1b763c1e2b7be91d1ecde2fd5e046",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Until a time, times, and half a time — and this I will explain on the verse 'for an appointed time, times, and a half.'",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Identifies the fourth kingdom as Ishmael (Islam) — distinctive among medieval Jewish commentators against Rashi's Edom/Rome and Saadya's Aram-Ishmael composite; the fourth-beast / iron of Nebuchadnezzar's image both point to the Islamic empire of his own day",
+    "Enumerates the ten horns as ten contemporary Islamic kingdoms by name (Khorasan, Isfahan, Yemen/Sheba, Mecca, Egypt, Africa/Maghreb, the desert Ishmaelites, the Almoravids, the Berbers, the Cushites) — geographic-political scheme of the dar al-Islam c. 1140",
+    "Reads the little horn as a still-future last king within Ishmael who arises from the East, returns three Ishmaelite kingdoms to himself, and seeks to change Israel's appointed-times and Torah — explicitly 'near the coming of the Redeemer'",
+    "Reads bar enash at Dan 7:13-14 as 'Israel that is a name of the kind' (shem ha-min) — using the Andalusi-grammatical category of the 'noun-of-kind' to license a corporate-Israel reading, explicitly correcting R. Yeshua's individual-messianic reading by name",
+    "Engages prior interpreters by name and dialectically: Yefet ben Eli (Karaite) at v. 1, Saadya Gaon at length at v. 14 (and at Dan 2:39), R. Yeshua at v. 14 — accepting some moves, correcting others, refuting on lexical-historical grounds",
+    "Defers the time-times-half computation explicitly from Dan 7 to Dan 12:7 — disciplined methodological cross-reference rather than apocalyptic reticence",
+    "Reads the Ancient of Days theophany philosophically: the wheels are the celestial spheres, fire-streams emerge from sphere-motion because the sphere-of-fire sits below the sphere-of-the-moon 'by demonstrative proofs' — Andalusi astronomical-philosophical concretion of the imagery, with the secret of angels referred to Sefer ha-Shem"
+  ],
+  "uncertainties": [
+    "Sefaria's edition of Ibn Ezra on Daniel ends at Dan 7:16, with vv. 17-28 folded into the long v.14 / v.16 comments; the verse-block coverage at Dan 7:23-27 is therefore real but reflected through the v.16 comment (the angelic interpretation) rather than verse-by-verse",
+    "Christian interlocutors are not named in the surveyed material; the polemical dimension of the Ishmael-fourth-kingdom move (against the Christian Edom/Rome reading) is structural, not explicit, in line with Andalusi caution",
+    "Ibn Ezra's reading of v. 25's verb 'wear out the saints' (yeballe) is glossed indirectly through the v.16 comment ('he will wish to change the appointed-times of Israel and their Torah'); a verse-by-verse v.25 reading is absent in this Sefaria edition",
+    "Ibn Ezra reports Saadya's reading of the ten horns at v.14 (the Mecca = Mikha = Misha identification follows Saadya) without fully agreeing — the line between Saadya-attributed and Ibn-Ezra-original identifications within the ten-horn list is not always sharp",
+    "Pages are null because Sefaria is a free-online edition without canonical print pagination; the Sefaria URL form is the locator (resourceUrl carries chapter.verse)",
+    "The traditional Christian individual-Antichrist reading of the little horn is not engaged by name; Ibn Ezra's little-horn reading (a future king within Ishmael who persecutes Israel and seeks to change Israel's Torah) functions as a Jewish counter-reading by replacement rather than by direct refutation"
+  ]
+}

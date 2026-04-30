@@ -1,0 +1,659 @@
+{
+  "scholarId": "steinsaltz-on-daniel",
+  "authorDisplay": "Steinsaltz",
+  "workDisplay": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+  "resourceId": "external-sefaria:Steinsaltz_on_Daniel",
+  "resourceFile": "external-sefaria/Steinsaltz_on_Daniel",
+  "traditionTag": "modern-jewish-orthodox",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "L: Pedagogical-explanatory hermeneutic — Steinsaltz interleaves the Aramaic MT lemma (in bold) with a bracketed modern-Hebrew expansion that translates difficult words, glosses anatomy, and frequently lists multiple interpretive options without choosing among them; the register is teaching, not polemics.",
+      "N: Apophatic-rabbinic theology proper — the Ancient of Days is identified as apparently a designation of the Holy One Blessed be He, preserving Maimonidean caution about anthropomorphic divine vision while still endorsing the standard rabbinic identification."
+    ],
+    "moderate": [
+      "K: People of the holy ones of the Most High = Israel — explicit and unhedged at v27; but the identity of the holy ones themselves at v18, v21, v22 is offered as a binary option (angels OR righteous ones), without resolution.",
+      "O: Successive-kingdoms-then-redemption fulfillment structure — chapter-summary at v28 reads the vision as different kingdoms come one after another, and at the end comes the redemption (geulah); the rabbinic-Jewish eschatological frame, not millenarian or dispensational."
+    ],
+    "tentative": [
+      "B: Fourth kingdom — only described as different from all kingdoms (v23); Steinsaltz never identifies the four beasts historically (no Babylon/Persia/Greece/Rome mapping in the chapter), so any axis-B position is read off his silences rather than his claims.",
+      "C: Little horn — paraphrased only; the horn mouth is glossed as words of pride at v8 and the war on the saints is editorially marked all of it negative at v21, but no Antiochus / Antichrist / specific-emperor / future-figure identification is offered.",
+      "F: Time, times, and half a time — given as a literal Aramaic-to-Hebrew rendering at v25 with no calculation, no calendar conversion, no historical anchoring.",
+      "J: Son of Man — rendered as in the likeness of a man at v13, with the closing scare-quote the man flagging the figure as a vision-symbol; no Messianic, angelic, or corporate-Israel identification."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "compositional": null,
+      "position": "Pedagogical-translational interleaving — bold Aramaic MT lemma followed by a bracketed modern-Hebrew expansion that translates, glosses, and lists multiple interpretive options without committing to one; explicit editorial labels (words of pride, all of it negative) flag tone but not historical referent",
+      "commitment": "strong",
+      "rationale": "Steinsaltz commentary unit is the verse, and within each verse he reproduces the Aramaic lemma in bold then immediately supplies, in brackets, a fluent modern-Hebrew rendering that often expands lexical items into a small catalog of possible meanings. At v17 the four kings of the Aramaic become four kings, kingdoms, dynasties, or ranks of rule that will arise from the earth — four glosses, no choice. At v18 the kadishei elyonin are glossed as the angels OR: the righteous ones, explicitly preserving the binary. The register is the classroom, not the polemic; Steinsaltz almost never argues against another reading and almost never identifies prophetic referents historically. Where he does intervene editorially, it is to signal tone — words of pride on the little horn mouth at v8, all of it negative on v21 war against the saints — rather than identity.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:4 — interleaved Aramaic to Hebrew expansion of first beast",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:4 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "החיה הראשונה נראית כאריה, וכנפיים של נשר לה",
+            "sha256": "48ba9db621c3f8d48774bd4641afa240496a025c0c2ec26ee09ead201d2669e0",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The first beast appears as a lion, with eagle's wings.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.17",
+            "language": "he",
+            "verseRef": "Daniel 7:17",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:17 — option-listing pedagogy",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:17 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "ארבעה מלכים, ממלכות, שושלות או דרגות שלטון שיקומו מן הארץ",
+            "sha256": "f9c123d490dc1df8e4c885d6aad4820a39cb58a6318749f93014510507fd4c7d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "four kings — kingdoms, dynasties, or ranks of rule — that will arise from the earth.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.21",
+            "language": "he",
+            "verseRef": "Daniel 7:21",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:21 — editorial tone-marker",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:21 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "נלחמת עם קדושים, מלאכים או צדיקים, ויכולה להם.] כולה שלילה",
+            "sha256": "37d5ab403c50f327f767083121d39acfd2a544301d8e669d909c11cab39e985e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "[the horn] makes war with the holy ones — angels or righteous ones — and prevails over them. [The horn here is] entirely negative.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Theology proper / divine vision",
+      "compositional": null,
+      "commitment": "strong",
+      "position": "Apophatic-rabbinic — the Ancient of Days is identified as apparently a designation of the Holy One Blessed be He (כנראה כינוי לקדוש ברוך הוא), with the hedge apparently (כנראה) preserving Maimonidean caution about anthropomorphic divine vision while still endorsing the canonical rabbinic identification of the seated figure as God",
+      "rationale": "On Dan 7:9 Steinsaltz glosses the Aramaic Ancient of Days (עתיק יומין) as the Ancient One, the Primordial — apparently a designation of the Holy One Blessed be He — sat down. The use of designation (כינוי) rather than name or identity is the standard rabbinic move to avoid attributing literal age, body, or seated posture to God; the hedge apparently (כנראה) further insulates the identification. At v22 he repeats and tightens the identification — until the Ancient of Days came, the Holy One Blessed be He — this time without apparently, indicating that the designation is settled by the time the second occurrence is glossed.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.9",
+            "language": "he",
+            "verseRef": "Daniel 7:9",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:9 — Ancient of Days = HKBH (hedged)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:9 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "ועתיק ימים, הקדמון, כנראה כינוי לקדוש ברוך הוא, ישב",
+            "sha256": "525e4eafc1b8f4b886e46ec7b5c7804f314d46d07a6342e5342d2a1ee4bed1a5",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the Ancient of Days, the Primordial — apparently a designation of the Holy One Blessed be He — sat down.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.22",
+            "language": "he",
+            "verseRef": "Daniel 7:22",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:22 — Ancient of Days = HKBH (settled)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:22 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "עד שבא עתיק הימים, הקדוש ברוך הוא, ואת הדין נתן לקדושים העליונים",
+            "sha256": "66c1b55f1097ceb17f331a152dc8cb79409ef11920ec6c9919c01fd58d1cd328",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "until the Ancient of Days came, the Holy One Blessed be He, and gave judgment to the holy ones of the Most High.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Kingdom of the saints",
+      "compositional": null,
+      "commitment": "moderate",
+      "position": "The people of the holy ones of the Most High is identified as Israel at v27, who inherit an everlasting kingdom; the identity of the holy ones themselves at v18 / v21 / v22 is left open as a binary between angels and righteous human ones",
+      "rationale": "Steinsaltz is unhedged at v27: the kingdom under the heavens is given to the people of the holy ones of the Most High, namely Israel. But he is deliberately undecided about who the holy ones (קדישי עליונין) themselves are when the phrase appears alone — at v18 he glosses them the angels OR: the righteous ones, at v21 angels or righteous ones, at v22 the upper holy ones. The disambiguation comes only when the noun is bound to people (עם), which steers him to the human-Israel reading. The eschatology is unmistakably eternal — the saints will inherit the kingdom forever and ever and ever (עד עולם ועד עולם-עולמים at v18) — but the constituency of the kingdom-bearers vacillates between angelic and human throughout the chapter.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:18 — holy ones = angels OR righteous ones",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:18 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "קדושי עליונים, המלאכים או: הצדיקים",
+            "sha256": "68738a9c86a14f2527970a8e1a2b19fc1938aa5c45e99bc585db5afae98b5e8b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "the holy ones of the Most High — the angels, or: the righteous ones.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:18 — saints inherit eternal kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:18 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "יירשו את המלכות עד עולם ועד עולם-עולמים",
+            "sha256": "3d40f668aef32683cb608a3ca8b27f2f5492bdde8576465d7bebb814ad696cff",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "they will inherit the kingdom forever and forever and ever.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.27",
+            "language": "he",
+            "verseRef": "Daniel 7:27",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:27 — people of the holy ones = Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:27 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "יינתנו לעם קדושי עליונים, ישראל",
+            "sha256": "705d34880180c5f567c02c0451dbccb4d640d634412ed1677848273f85605d3c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "[these] will be given to the people of the holy ones of the Most High, [namely] Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "compositional": null,
+      "commitment": "tentative",
+      "position": "Steinsaltz renders the figure literally as in the likeness of a man (בן איש) coming with the clouds and brought before the Ancient of Days, then closes the verse with the scare-quoted phrase the man (האדם), flagging the figure as a vision-symbol but offering no Messianic, angelic, or corporate-Israel identification",
+      "rationale": "On Dan 7:13 Steinsaltz translates Aramaic kevar enash as in the likeness of a son of man (כדמות בן איש), close to a wooden rendering. After paraphrasing the Aramaic clauses he closes with the editorial gloss they brought him near before him — that is, the man (האדם), the scare-quoted אדם marking the figure as visionary rather than literal. He does not name him — no Messiah, no angel Michael, no metaphor for Israel, no eschatological judge. At v14 he renders the gift of the eternal kingdom faithfully but again without specifying who the recipient is. This is consistent with his pedagogical posture throughout: where the text is open, he leaves it open. For axis J this means his contribution to the visual-theology mosaic is essentially the modern-Orthodox refusal to commit on what was, in late-Second-Temple Jewish reception, a contested figure.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:13 — in the likeness of a son of man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:13 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "עם ענני השמים כדמות בן איש בא",
+            "sha256": "8a4d57b549027e2a0cf31f7a1f964ff344378bd742b1976bafeed4d25771d12e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "with the clouds of heaven, in the likeness of a son of man, [one] was coming.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:13 — closing scare-quoted ha-adam",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:13 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "ולפניו הקריבו אותו] – את ה'אדם'",
+            "sha256": "76e2da5a5558e502a04b13ccf3e5ecd7dae3e047ab1acb6d25c3487025f30770",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and they brought him near before him — that is, the (man).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:14 — eternal dominion of the figure",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:14 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "שלטונו שלטון עולם שלא יסור, ומלכותו – מלכות שלא תינזק",
+            "sha256": "f0cb35146bffb27cc128d8b81f73e1a97e58dc6514d99902a8fbbebb228e000c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "His dominion is an eternal dominion that will not depart, and his kingdom is a kingdom that will not be damaged.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "compositional": null,
+      "commitment": "tentative",
+      "position": "Unidentified historically — Steinsaltz characterizes the fourth kingdom as different from all kingdoms (v23) but never names Babylon, Persia, Greece, or Rome at any point in Daniel 7; the historical mapping that drives Christian and earlier rabbinic exegesis is conspicuously absent",
+      "rationale": "Steinsaltz silence here is itself the position. Where Theodoret painstakingly names each beast Assyrian/Persian/Macedonian/Roman, where Walvoord defends Rome with a future revival, where Ibn Ezra identifies the kingdoms with the four classical empires, Steinsaltz simply paraphrases. At v23 the angel gloss a fourth kingdom that will be on the earth, different from all kingdoms is rendered into modern Hebrew without commentary. At v24 the ten horns are simply ten kings will arise, and another will arise after them, and he will be different from the first ones. The absence is consistent with the modern-Orthodox educational genre: Steinsaltz project was to make the text accessible to Hebrew readers, not to litigate which empire it named. For the visual-theology corpus this matters because it is a load-bearing data point on how Daniel 7 is taught in 21c. Israeli synagogues and yeshivot.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:7 — fourth beast paraphrase",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:7 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "חיה רביעית מפחידה ואימתנית וחזקה מאוד",
+            "sha256": "c684c0b09e741f76d004d284d4c7e40ad9608c80697609583ac5a814881b4b31",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "a fourth beast, fearsome and dreadful and exceedingly strong.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.23",
+            "language": "he",
+            "verseRef": "Daniel 7:23",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:23 — fourth kingdom different from all kingdoms",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:23 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "מלכות רביעית תהיה בארץ שתהיה שונה מכל המלכויות",
+            "sha256": "eaa055363dc2c7d9cfb1f12b48ba9f0a1cc0696301ccc8973c87e0da8d646c9e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "a fourth kingdom shall be on the earth that will be different from all the kingdoms.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "compositional": null,
+      "commitment": "tentative",
+      "position": "Tone-marked but unidentified — the horn mouth speaks words of pride (דברי גאווה) at v8 and the figure is editorially flagged as entirely negative at v21, but no historical identification (Antiochus / Antichrist / specific emperor / future ruler) is offered",
+      "rationale": "Steinsaltz intervention on the little horn is editorial-evaluative, not identificatory. At v8 the Aramaic mouth speaking great things is rendered a mouth speaking great things and then immediately glossed in his bracket-followup as words of pride (דברי גאווה) — a moral characterization, not a referent. At v21 he labels the war on the holy ones all of it negative (כולה שלילה), one of the few unmistakably evaluative phrases in the chapter. But at v24 (the ten kings + another will arise after them, and he will be different from the first ones) he offers no candidate. This is again a deliberate silence that reflects the modern-Orthodox educational register: the text is a sealed prophecy whose referents are reserved.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.8",
+            "language": "he",
+            "verseRef": "Daniel 7:8",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:8 — words of pride editorial gloss",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:8 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "ופה מדבר גדולות,] דברי גאווה",
+            "sha256": "25ddf40995b165a0d11766a27c86bcb7bd43328cc96b48db5d45ac19005ba5db",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "[and] a mouth speaking great things — [namely,] words of pride.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "compositional": null,
+      "commitment": "tentative",
+      "position": "Translated literally as a time, times, and half a time (עת ועתים וחצי עת) without calendrical or eschatological calculation — no equation with three-and-a-half years, no day-for-year, no Antiochene 1290-day cross-reference",
+      "rationale": "On Dan 7:25 Steinsaltz renders the Aramaic until time and times and half a time (עד עידן ועידנין ופלג עידן) into modern Hebrew as until a time and times and half a time — a one-to-one transposition that conserves the indeterminacy of the Aramaic. Where Theodoret reads three and a half years explicitly, where Christian futurists argue for a literal final tribulation, where some Jewish exegetes calculate against Daniel 12, Steinsaltz refrains. The literal Hebrew rendering is itself the position: the text encodes an interval whose unit is unstated, and Steinsaltz declines to fill in.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:25 — literal time-times-half rendering",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:25 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "יינתנו בידו עד עת ועתים וחצי עת",
+            "sha256": "45f2bd64730eb07d7c5dfc7a35af9ca3ef0378c13bf74179015687984290ba76",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "[these] shall be given into his hand until a time, and times, and half a time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "compositional": null,
+      "commitment": "moderate",
+      "position": "Successive earthly kingdoms culminating in redemption (geulah) — Steinsaltz chapter-summary gloss at v28 reads the vision as different kingdoms will come one after another, and at the end will come the redemption, the standard rabbinic-Jewish eschatological frame",
+      "rationale": "At the close of v28 Steinsaltz steps out of his verse-by-verse register to summarize the chapter as a whole: the kingdoms of the world come one after another, and at the end comes the geulah (redemption). Geulah is the precise rabbinic-eschatological term — not salvation (yeshuah), not consummation (qets), not eschaton — and it carries the standard messianic-age expectation without pinning Steinsaltz to dispensational, premillennial, or amillennial scaffolding. He does not specify whether geulah arrives via the Messianic figure of v13-14 (he never identified the figure), via the destruction of the fourth kingdom (he never identified the kingdom), or by another route. The structure is sequential-then-redemptive, the texture is reticent.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Steinsaltz_on_Daniel.7.28",
+            "language": "he",
+            "verseRef": "Daniel 7:28",
+            "commentator": "Steinsaltz"
+          },
+          "frontend": {
+            "author": "Adin Even-Israel Steinsaltz",
+            "title": "Steinsaltz on Daniel (Koren Tanakh HaMevoar)",
+            "section": "ad Dan 7:28 — chapter summary: kingdoms then redemption",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Steinsaltz, ad Dan. 7:28 (Koren Tanakh HaMevoar; Sefaria)"
+          },
+          "quote": {
+            "text": "מלכויות שונות יבואו זו אחר זו, ובסופו של דבר תבוא הגאולה",
+            "sha256": "f0ca824a41ea942353f48782c31c4a075ead0dbc89d65f7d1b2873ce778b1fe6",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "different kingdoms will come one after another, and in the end the redemption will come.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [],
+  "distinctiveMoves": [
+    "Pedagogical-translational interleaving: each verse bold Aramaic lemma is followed by a bracketed modern-Hebrew expansion, often listing two or more lexical options without choosing — a deliberate refusal to decide on the reader behalf",
+    "Apparently (כנראה) as theological hedge: at Dan 7:9 the Ancient of Days is identified as apparently a designation of HKBH, preserving Maimonidean apophatic caution about anthropomorphic divine vision; at Dan 7:22 the qualifier drops, indicating the identification has been ratified by the second occurrence",
+    "Editorial tone-markers without referent identification: words of pride at v8 and all of it negative at v21 supply moral evaluation of the little horn while leaving its historical identity open — a register choice that distinguishes Steinsaltz from both Christian polemic-typological commentaries and earlier rabbinic chronological commentaries",
+    "Conspicuous silence on the four-kingdoms historical mapping: Steinsaltz never names Babylon, Persia, Greece, or Rome anywhere in Dan 7, breaking with the standard rabbinic identification (Targum, Rashi, Ibn Ezra) and refusing the polemical surface where Christian-Jewish disputes have classically lived",
+    "Disambiguation of holy ones only when bound to people: kadishei elyonin alone is glossed angels OR righteous ones at v18, v21, v22, but the bound phrase am kadishei elyonin at v27 is unhedged Israel — a lexical-syntactic move that delivers a national-eschatological recipient without commitment on celestial vs. terrestrial holy-ones",
+    "Use of geulah (redemption) as the chapter eschatological terminus at v28 — the standard rabbinic-Jewish messianic-age term, deployed without millennial / chiliastic / dispensational scaffolding"
+  ],
+  "uncertainties": [
+    "Steinsaltz never engages the dating of the book; the modern-critical second-century Maccabean hypothesis is neither defended nor rejected within the chapter — silence rather than commitment on axis A",
+    "He never engages Christian readings of Dan 7:13-14 (Son of Man / parousia / Christological enthronement) — the modern-Orthodox educational register treats these as out of scope; whether Steinsaltz held any private view on the New Testament reception is not visible in the commentary",
+    "The four kingdoms are never identified historically — for a corpus that needs to map Steinsaltz onto the standard rabbinic Babylon/Persia/Greece/Rome (or Greece-as-fourth) identification, this commentary is not the source; it is silent where Rashi and Ibn Ezra are explicit",
+    "Steinsaltz English on Sefaria is licensed by the Steinsaltz Center under copyright; this survey translations[] entries are LLM-generated from the Hebrew quote text and are NOT copies of the Sefaria-published English",
+    "Coverage limited to Dan 7 only; the Steinsaltz_on_Daniel resource on Sefaria covers all twelve chapters of Daniel, but axes engaged elsewhere (Dan 2 four kingdoms, Dan 9 seventy weeks, Dan 11-12 historical apocalypse) are not surveyed here"
+  ]
+}

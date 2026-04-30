@@ -1,0 +1,507 @@
+{
+  "scholarId": "yalkut-shimoni-nach-1066-daniel7",
+  "authorDisplay": "Yalkut Shimoni on Nach §1066",
+  "workDisplay": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+  "resourceId": "sefaria:yalkut-shimoni-nach-1066",
+  "resourceFile": "external/yalkut-shimoni-nach-1066.sefaria",
+  "traditionTag": "medieval-jewish-anthological",
+  "fullTitle": "Yalkut Shimoni on Nakh §1066 (13th-century anthology compiling earlier midrashic material on Daniel 7–12)",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:13-14",
+    "Dan 7:23-27"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom — the iron-and-clay fourth kingdom is identified with the present oppressing empire; the standard Edom=Rome substrate is preserved (though §1066 §0 reads ’Aram’ — almost certainly a Christian-censor scribal substitution for אדום).",
+      "J: Son of Man — collapsed via the Stone-Messiah tradition: the Dan 2:34 stone cut without hands is identified by Resh Lakish (b. Sanhedrin 98a) as the King-Messiah, and §1066 explicitly fuses this with Dan 7:13 (’I was looking until’) and crowns the Daniel-7 vision-arc with messianic deliverance.",
+      "L: Apocalyptic / midrashic hermeneutic — characteristic Yalkut anthology move: Daniel 7 is read by aggregating Dan 2, b. Sanhedrin 98a, Bereshit Rabbah on Gen 49:24, the iron-and-clay Isa 30:14 prooftext, and rabbinic dicta on the fourth kingdom into a single composite reading.",
+      "N: Cross-book coherence — the §1066 §0 reading runs Dan 7 ↔ Dan 2 (statue-and-stone ↔ four beasts) ↔ Gen 49:24 (Stone-of-Israel) ↔ Isa 30:14 (broken vessel) — quintessential rabbinic intertextual exegesis."
+    ],
+    "moderate": [
+      "M5/M7 (kingdom-succession + Jewish reception): The §1066 anthology inherits and consolidates the classical four-kingdoms-ending-in-Edom/Rome scheme that was already canonical in Bereshit Rabbah, Vayikra Rabbah 13:5, and Pesikta Rabbati; it does not innovate doctrinally but stabilizes the scheme for the medieval Ashkenazi readership."
+    ],
+    "tentative": [
+      "Whether the ’Aram’ (ארם) reading at the fourth-kingdom identification reflects a pre-censorship variant or a self-censored copy by Jewish scribes anxious about Christian persecution — the parallel Mekhilta and Bereshit Rabbah witnesses preserve ’Edom’, so the Yalkuts ’Aram’ is almost certainly a substitution."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "The Yalkuts compiled tradition presents the four kingdoms as Babylon → Media → Greece → ’Aram’ (the textual reading; original = Edom/Rome). Distinctive aggadic features: this fourth kingdom is to be broken by the Holy One like a potters vessel (Isa 30:14), and its hardness is symbolized by iron while its impending destruction is symbolized by clay — which the rabbis of §1066 link to a tradition that the fourth empire will eventually ’use coinage of clay’, a polemic against imperial economic decadence.",
+      "commitment": "strong",
+      "rationale": "§1066 §0 systematically walks Dan 2s metallic-statue interpretation across the Daniel-7 horizon: head=Babylon, breast/arms=silver=Media (so the Yalkuts tradition; not the Talmudic Persia identification), belly/thighs=bronze=Greece, legs=iron=fourth kingdom=’Aram’. The ’Aram’ reading is the most striking feature — almost certainly a Christian-censorship substitution for אדום (Edom). The combined iron-and-clay metaphor receives two glosses: a rabbinic dictum that the fourth kingdom will use clay coinage, and an Isaiah 30:14 prooftext for divine shattering. The Yalkuts anthological character is on display: it preserves the Bavli Sanhedrin tradition while folding it into a Dan 7 reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — four-kingdom identification (note Aram for Edom — Christian-censorship reading)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]]"
+          },
+          "quote": {
+            "text": "א\"ל אנת הוא ראשיה די דהבא חדוהי ודרעוהי די כסף זו מלכות בבל, ובתרך תקום מלכו אחרי ארע מנך מעוהי וירכתה די נחש זו מלכות מדי, ומלכו תליתאה אחרי די נחשא די תשלט בכל ארעא שקוהי די פרזל זו מלכות יון, ומלכו רביעאה תהוא תקיפה כפרזלא זו ארם",
+            "sha256": "570b67c01ad0bf5bf1723a20a9ce432c3269b2af7862c127709d406a1b7709f2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He said to him (Dan 2:38): \"You are the head, that of gold\" — \"its breast and arms of silver\" (Dan 2:32): this [the head, of gold] is the kingdom of Babylon. \"And after you another kingdom shall arise, inferior to you\" (Dan 2:39) — \"its belly and thighs of bronze\" (Dan 2:32): this [the breast and arms of silver] is the kingdom of Media. \"And a third kingdom, of bronze, that shall rule over all the earth\" (Dan 2:39) — \"its legs of iron\" (Dan 2:33): this [the belly and thighs of bronze] is the kingdom of Greece. \"And a fourth kingdom shall be strong as iron\" (Dan 2:40): this [the legs of iron, the fourth kingdom] is Aram.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [aggadic tradition on Dan 2:42-43 iron-and-clay; quoting Isa 30:14]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — fourth-kingdom polemic (clay-coinage; Isaiah 30:14)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [aggadic tradition on Dan 2:42-43 iron-and-clay; quoting Isa 30:14]]"
+          },
+          "quote": {
+            "text": "אמרו רבותינו מלכות הרביעית הזו עתידה להשתמש במטבע של חרס, ד\"א מה הברזל קשה כך מלכות הרביעית הזו קשה, וכחרס שעתיד הקב\"ה לשברה כחרס שנאמר ושברה כשבר נבל יוצרים",
+            "sha256": "5393657bd2fc21bd03a499e07416a085c270fc929d4de79aa10c0c2751c8bcf1",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Our rabbis said: this fourth kingdom will in the future use coinage of clay. Another interpretation: just as iron is hard, so is this fourth kingdom hard; and as clay — that the Holy One, blessed be He, will in the future shatter it like a clay vessel, as it is said, \"And He shall break it as a potters vessel is broken\" (Isa 30:14).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man / Stone-Messiah",
+      "position": "The Yalkuts §1066 §0 collapses Dan 2s ’stone cut without hands’ (Dan 2:34) and Dan 7:13s coming-with-clouds ’one like a son of man’ into a single messianic figure — the King-Messiah. The Daniel 7 vision climaxes not with a transfer of dominion but with messianic deliverance: Daniel ’saw the King-Messiah’ in the very act of Daniel 7s vision-arc, where the stone-cut-without-hands strikes the kingdoms-of-the-nations-of-the-world that are ’set within the image’. The hermeneutic move attributes the identification to Resh Lakish, importing b. Sanhedrin 98as stone-Messiah tradition.",
+      "commitment": "strong",
+      "rationale": "The decisive citation: ’And he saw the King-Messiah, as it is said: I was looking until a stone was cut out — Resh Lakish said: this is the King-Messiah’. The phrase חזה הוית עד די התגזרת is grammatically Aramaic and is a hybrid: it splices Dan 7s signature opening formula (’I was looking, חזה הוית’, repeated 7 times across Dan 7) with Dan 2:34s ’a stone was cut out’ (התגזרת אבן). The Yalkuts compiler thereby reads Daniel 2 and Daniel 7 as a single messianic vision, and supplies a Genesis 49:24 prooftext (’Stone of Israel’) to ground the messianic-stone identification in patriarchal merit. This is reception-history at its highest density: one paragraph fuses three biblical texts and a Talmudic tradent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — opening (Dan 7:13–15 framed by Dan 2)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]]"
+          },
+          "quote": {
+            "text": "ועד עתיק יומיא מטה וגו' אתכרית רוחי אנה דניאל, מה היה דניאל רואה אלא כיון שראה נ\"נ את החלום ודניאל היה רואה כמו שראה ארבע מלכיות בא ופתר ליה",
+            "sha256": "f9996c7fe740ecbac12bc417ed6bcb2b3bdd2b205369a85bbabfd30d292c05e4",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And until the Ancient of Days came...\" — \"My spirit was troubled, I, Daniel.\" What was Daniel seeing? When Nebuchadnezzar saw the dream, Daniel also was seeing — as he saw the four kingdoms — and he came and interpreted it for him.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — Stone-Messiah tradition (Resh Lakish; Dan 2:34 fused with Dan 7:13)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]]"
+          },
+          "quote": {
+            "text": "וראה מלך המשיח שנאמר חזה הוית עד די התגזרת אבן, אמר ריש לקיש זה מלך המשיח ומחת לצלמא על דגלוהי לכל מלכיות עו\"א שהם נתונים בצלם",
+            "sha256": "7fc90d4d1660f37541a35eae72b9f7b31d0d641e67d9b9cd757531b7b7147c09",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he saw the King-Messiah, as it is said, \"I was looking until a stone was cut out\" — Resh Lakish said: this is the King-Messiah. \"And it struck the image upon its feet\" — against all the kingdoms of the nations of the world, which are set within the image.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Bereshit Rabbah / aggadic tradition on Gen 49:24]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — Stone-of-Israel link (Gen 49:24 anchoring Stone-Messiah in Jacob)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Bereshit Rabbah / aggadic tradition on Gen 49:24]]"
+          },
+          "quote": {
+            "text": "ובזכות מה נמשל מלך המשיח לאבן, בזכות יעקב שנאמר משם רועה אבן ישראל",
+            "sha256": "a55ddf34814255b94ef637e2538cbbf4d919003a5acade403f5e1a87bbe11b23",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And by what merit is the King-Messiah likened to a stone? By the merit of Jacob, as it is said, \"From there the Shepherd, the Stone of Israel\" (Gen 49:24).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic / midrashic hermeneutic",
+      "position": "§1066s hermeneutic is the Yalkuts signature move: anthological aggregation of earlier midrashim into a continuous, sourced commentary chain. The §0 Daniel-7 entry does not generate new exegesis; it weaves Bavli Sanhedrin 98a (Resh Lakish), aggadic four-kingdoms traditions, Bereshit Rabbah on Gen 49:24, and a rabbinic Isaiah 30:14 prooftext into a single sustained reading. The reading method reads Daniel 7 not as a stand-alone vision but as the integrative climax of a multi-book messianic narrative.",
+      "commitment": "strong",
+      "rationale": "The §1066 §0 micro-text quotes ’אמרו רבותינו’ (our rabbis said) and ’אמר ריש לקיש’ (Resh Lakish said), explicitly flagging its compilational character. Reading the segment as a whole, the compiler proceeds verse-by-verse through Dan 7s stations (Ancient of Days; the four metals; the iron-and-clay; the stone striking the image; the Stone-of-Israel) and at each station summons the relevant earlier rabbinic dictum. This is a 13th-century stabilization of pre-existing material — but it is also itself a hermeneutical act, because the editorial selection encodes a particular messianic reading of Dan 7.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — four-kingdom identification (note Aram for Edom — Christian-censorship reading)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]]"
+          },
+          "quote": {
+            "text": "א\"ל אנת הוא ראשיה די דהבא חדוהי ודרעוהי די כסף זו מלכות בבל, ובתרך תקום מלכו אחרי ארע מנך מעוהי וירכתה די נחש זו מלכות מדי, ומלכו תליתאה אחרי די נחשא די תשלט בכל ארעא שקוהי די פרזל זו מלכות יון, ומלכו רביעאה תהוא תקיפה כפרזלא זו ארם",
+            "sha256": "570b67c01ad0bf5bf1723a20a9ce432c3269b2af7862c127709d406a1b7709f2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He said to him (Dan 2:38): \"You are the head, that of gold\" — \"its breast and arms of silver\" (Dan 2:32): this [the head, of gold] is the kingdom of Babylon. \"And after you another kingdom shall arise, inferior to you\" (Dan 2:39) — \"its belly and thighs of bronze\" (Dan 2:32): this [the breast and arms of silver] is the kingdom of Media. \"And a third kingdom, of bronze, that shall rule over all the earth\" (Dan 2:39) — \"its legs of iron\" (Dan 2:33): this [the belly and thighs of bronze] is the kingdom of Greece. \"And a fourth kingdom shall be strong as iron\" (Dan 2:40): this [the legs of iron, the fourth kingdom] is Aram.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — Stone-Messiah tradition (Resh Lakish; Dan 2:34 fused with Dan 7:13)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]]"
+          },
+          "quote": {
+            "text": "וראה מלך המשיח שנאמר חזה הוית עד די התגזרת אבן, אמר ריש לקיש זה מלך המשיח ומחת לצלמא על דגלוהי לכל מלכיות עו\"א שהם נתונים בצלם",
+            "sha256": "7fc90d4d1660f37541a35eae72b9f7b31d0d641e67d9b9cd757531b7b7147c09",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he saw the King-Messiah, as it is said, \"I was looking until a stone was cut out\" — Resh Lakish said: this is the King-Messiah. \"And it struck the image upon its feet\" — against all the kingdoms of the nations of the world, which are set within the image.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Dan 7 in §1066 §0 is read inside a quadrilateral: Dan 7 ↔ Dan 2 (statue-and-stone ↔ four beasts) ↔ Gen 49:24 (Stone-of-Israel) ↔ Isa 30:14 (vessel-breaking). The Daniel-2 schema dominates the verse-mapping; Dan 7s vision is glossed as Dan 2s prophecy fulfilled in messianic key. Genesis 49:24 supplies the Christological-style ’merit of the patriarchs’ sub-argument; Isaiah 30:14 supplies the imagery of imperial collapse.",
+      "commitment": "strong",
+      "rationale": "Every clause of §1066 §0 puts at least two biblical books in dialogue. The four-metals walk — Dan 2:32-40 mapped onto kingdoms — is then immediately re-read into Dan 7s framework via the Resh Lakish stone-Messiah link. The Isaiah 30:14 prooftext is invoked verbatim (’ושברה כשבר נבל יוצרים’). Genesis 49:24s ’משם רועה אבן ישראל’ anchors the Stone-Messiah typology. The Yalkuts aggregating method is most visible here.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — opening (Dan 7:13–15 framed by Dan 2)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]]"
+          },
+          "quote": {
+            "text": "ועד עתיק יומיא מטה וגו' אתכרית רוחי אנה דניאל, מה היה דניאל רואה אלא כיון שראה נ\"נ את החלום ודניאל היה רואה כמו שראה ארבע מלכיות בא ופתר ליה",
+            "sha256": "f9996c7fe740ecbac12bc417ed6bcb2b3bdd2b205369a85bbabfd30d292c05e4",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And until the Ancient of Days came...\" — \"My spirit was troubled, I, Daniel.\" What was Daniel seeing? When Nebuchadnezzar saw the dream, Daniel also was seeing — as he saw the four kingdoms — and he came and interpreted it for him.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — four-kingdom identification (note Aram for Edom — Christian-censorship reading)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]]"
+          },
+          "quote": {
+            "text": "א\"ל אנת הוא ראשיה די דהבא חדוהי ודרעוהי די כסף זו מלכות בבל, ובתרך תקום מלכו אחרי ארע מנך מעוהי וירכתה די נחש זו מלכות מדי, ומלכו תליתאה אחרי די נחשא די תשלט בכל ארעא שקוהי די פרזל זו מלכות יון, ומלכו רביעאה תהוא תקיפה כפרזלא זו ארם",
+            "sha256": "570b67c01ad0bf5bf1723a20a9ce432c3269b2af7862c127709d406a1b7709f2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He said to him (Dan 2:38): \"You are the head, that of gold\" — \"its breast and arms of silver\" (Dan 2:32): this [the head, of gold] is the kingdom of Babylon. \"And after you another kingdom shall arise, inferior to you\" (Dan 2:39) — \"its belly and thighs of bronze\" (Dan 2:32): this [the breast and arms of silver] is the kingdom of Media. \"And a third kingdom, of bronze, that shall rule over all the earth\" (Dan 2:39) — \"its legs of iron\" (Dan 2:33): this [the belly and thighs of bronze] is the kingdom of Greece. \"And a fourth kingdom shall be strong as iron\" (Dan 2:40): this [the legs of iron, the fourth kingdom] is Aram.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Bereshit Rabbah / aggadic tradition on Gen 49:24]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — Stone-of-Israel link (Gen 49:24 anchoring Stone-Messiah in Jacob)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Bereshit Rabbah / aggadic tradition on Gen 49:24]]"
+          },
+          "quote": {
+            "text": "ובזכות מה נמשל מלך המשיח לאבן, בזכות יעקב שנאמר משם רועה אבן ישראל",
+            "sha256": "a55ddf34814255b94ef637e2538cbbf4d919003a5acade403f5e1a87bbe11b23",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And by what merit is the King-Messiah likened to a stone? By the merit of Jacob, as it is said, \"From there the Shepherd, the Stone of Israel\" (Gen 49:24).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "The §1066 §0 reading treats Dan 2 (Nebuchadnezzars statue-dream and Daniels interpretation) and Dan 7 (Daniels beast-vision) as a single eschatological revelation differently distributed: Dan 2 gives the dream, Dan 7 gives Daniels matching vision. The compiler explicitly says, ’when Nebuchadnezzar saw the dream, Daniel also was seeing’. The four-kingdoms scheme is then walked metal-by-metal in Aramaic — Babylon (gold/head), Media (silver/breast-and-arms), Greece (bronze/belly-and-thighs), ’Aram’ (iron/legs). The Stone-cut-without-hands of Dan 2:34 is identified with the King-Messiah (Resh Lakish, b. Sanhedrin 98a), so Dan 7:13s ’one like a son of man’ coming with clouds is implicitly the same figure who in Dan 2 ’strikes the image upon its feet’.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — opening (Dan 7:13–15 framed by Dan 2)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [opening; framing Dan 7 via Dan 2 dream-vision]]"
+          },
+          "quote": {
+            "text": "ועד עתיק יומיא מטה וגו' אתכרית רוחי אנה דניאל, מה היה דניאל רואה אלא כיון שראה נ\"נ את החלום ודניאל היה רואה כמו שראה ארבע מלכיות בא ופתר ליה",
+            "sha256": "f9996c7fe740ecbac12bc417ed6bcb2b3bdd2b205369a85bbabfd30d292c05e4",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And until the Ancient of Days came...\" — \"My spirit was troubled, I, Daniel.\" What was Daniel seeing? When Nebuchadnezzar saw the dream, Daniel also was seeing — as he saw the four kingdoms — and he came and interpreted it for him.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — four-kingdom identification (note Aram for Edom — Christian-censorship reading)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing Dan 2:32-40 four-kingdom interpretation transposed to Dan 7; the underlying four-kingdoms scheme parallels b. Avodah Zarah 2b and Bereshit Rabbah]]"
+          },
+          "quote": {
+            "text": "א\"ל אנת הוא ראשיה די דהבא חדוהי ודרעוהי די כסף זו מלכות בבל, ובתרך תקום מלכו אחרי ארע מנך מעוהי וירכתה די נחש זו מלכות מדי, ומלכו תליתאה אחרי די נחשא די תשלט בכל ארעא שקוהי די פרזל זו מלכות יון, ומלכו רביעאה תהוא תקיפה כפרזלא זו ארם",
+            "sha256": "570b67c01ad0bf5bf1723a20a9ce432c3269b2af7862c127709d406a1b7709f2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "He said to him (Dan 2:38): \"You are the head, that of gold\" — \"its breast and arms of silver\" (Dan 2:32): this [the head, of gold] is the kingdom of Babylon. \"And after you another kingdom shall arise, inferior to you\" (Dan 2:39) — \"its belly and thighs of bronze\" (Dan 2:32): this [the breast and arms of silver] is the kingdom of Media. \"And a third kingdom, of bronze, that shall rule over all the earth\" (Dan 2:39) — \"its legs of iron\" (Dan 2:33): this [the belly and thighs of bronze] is the kingdom of Greece. \"And a fourth kingdom shall be strong as iron\" (Dan 2:40): this [the legs of iron, the fourth kingdom] is Aram.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Yalkut_Shimoni_on_Nach.1066",
+            "language": "he",
+            "verseRef": "Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]"
+          },
+          "frontend": {
+            "author": "Yalkut Shimoni on Nach §1066",
+            "title": "Yalkut Shimoni on Nach §1066 — anthological compilation of Daniel 7 midrashim",
+            "section": "§1066 segment 0 — Stone-Messiah tradition (Resh Lakish; Dan 2:34 fused with Dan 7:13)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Yalkut Shimoni on Nach §1066, segment 0 [Sefaria: Yalkut Shimoni Nach §1066 §0 [citing b. Sanhedrin 98a tradition; Resh Lakish on Dan 2:34 as messianic]]"
+          },
+          "quote": {
+            "text": "וראה מלך המשיח שנאמר חזה הוית עד די התגזרת אבן, אמר ריש לקיש זה מלך המשיח ומחת לצלמא על דגלוהי לכל מלכיות עו\"א שהם נתונים בצלם",
+            "sha256": "7fc90d4d1660f37541a35eae72b9f7b31d0d641e67d9b9cd757531b7b7147c09",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he saw the King-Messiah, as it is said, \"I was looking until a stone was cut out\" — Resh Lakish said: this is the King-Messiah. \"And it struck the image upon its feet\" — against all the kingdoms of the nations of the world, which are set within the image.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Anthological character is the medium: §1066 cites ’our rabbis said’ and names Resh Lakish — surfacing its sources rather than producing fresh exegesis. The compositional method is reception-as-stabilization, not innovation.",
+    "The Yalkuts §1066 §0 reads ’Aram’ (ארם) for the fourth kingdom rather than the standard Edom/Rome (אדום) — almost certainly a Christian-censor scribal substitution preserved (or self-imposed) in the manuscript stream the editio princeps inherited.",
+    "Dan 2 dominates the Dan 7 reading: the four-metals statue from Dan 2:32-40 supplies the verse-mapping for the four beasts of Dan 7, and the stone-cut-without-hands of Dan 2:34 supplies the messianic climax — the Yalkuts compiler reads the two visions as a single eschatological revelation.",
+    "The Stone-Messiah tradition is given a patriarchal-merit grounding: Gen 49:24 (’From there the Shepherd, the Stone of Israel’) is invoked to explain why the Messiah is figured as a stone — by the merit of Jacob.",
+    "The fourth-kingdom polemic is sharpened by an aggadic clay-coinage tradition (’this fourth kingdom will use coinage of clay’) yoked to Isaiah 30:14s ’broken as a potters vessel’ — the kingdoms hardness (iron) and its fragility (clay) are read as the dual mark of an empire ripe for divine shattering."
+  ],
+  "uncertainties": [
+    "The ’Aram’ (ארם) reading at the fourth-kingdom identification is almost certainly a Christian-censorship substitution for ’Edom’ (אדום); the Sefaria base-text preserves it but parallel rabbinic witnesses (Bereshit Rabbah, Pesikta Rabbati, Mekhilta) read ’Edom’. Whether this was self-censorship by Ashkenazi Jewish scribes anxious about the consequences of a Rome=Edom identification under Christian rule, or external censorship by Christian licensers of Hebrew presses, cannot be determined from the §1066 entry alone.",
+    "§1066 traverses Dan 7–12 sequentially across 25 segments; this survey concentrates on segment 0 (the Daniel 7 anchor). Segments engaging Dan 8–12 (the ram/he-goat, seventy-weeks, Tigris vision, eschatological epilogue) occasionally reach back to Dan 7 thematically but were not surveyed for additional citations because Dan 7 is the projects pilot focus.",
+    "Pilot axes A (Ancient of Days), C (Saints of the Most High), E (Little Horn) receive only glancing engagement in §1066 §0; the segment opens by quoting ’And until the Ancient of Days came’ but does not develop A independently — A is folded into the broader four-kingdoms-and-Messiah arc.",
+    "The Yalkuts ’Media’ identification for the silver kingdom (rather than Persia) follows one strand of the rabbinic tradition; Sanhedrin and other anthologies sometimes prefer Persia for the silver. §1066 §0 does not adjudicate."
+  ]
+}

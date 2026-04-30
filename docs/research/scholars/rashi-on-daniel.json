@@ -1,0 +1,929 @@
+{
+  "scholarId": "rashi-on-daniel",
+  "authorDisplay": "Rashi (Solomon ben Isaac)",
+  "workDisplay": "Commentary on Daniel",
+  "resourceId": "sefaria:Rashi_on_Daniel",
+  "resourceFile": "sefaria/Rashi_on_Daniel",
+  "traditionTag": "medieval-jewish-rabbanite",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome — explicit at v. 7 ('ten kings of Rome before Vespasian') and v. 24 (Titus is the last horn)",
+      "C: Little horn = Titus — historical-Roman, not eschatological Antichrist; v. 8 cites b. Gittin 56b directly",
+      "H: Ten horns = ten Roman emperors before Vespasian — past-historical reckoning terminating in 70 CE",
+      "J: Son of Man = the still-awaited King Messiah, with Israel figured as the humanized counter-image to the four beasts",
+      "K: Saints' kingdom = Israel taking the kingdom directly from the fourth (Roman) beast — not transferred to the Church",
+      "L: Tzarfati peshat hermeneutic — Aramaic-to-Hebrew gloss + named historical referents drawn from Sefer Yosippon, Bavli, midrash",
+      "O: Past-historical-then-still-future fulfillment — the bestial sequence is realized history through Titus, the messianic kingdom remains future"
+    ],
+    "moderate": [
+      "F: 'Time, times, and half a time' = sealed end (qets satum); reports Saadya's 1335-year calculation but warns 'the early ones expounded each according to his view, and the appointed times all elapsed'",
+      "N: Ancient of Days = the Holy One sitting in mercy-toned judgment over Rome and Greece; the white-as-snow garment denotes whitening Israel's sins"
+    ],
+    "tentative": [
+      "E: Implicit anti-Christian counter-reading (Son of Man as the still-future King Messiah, qadishin as Israel) — Rashi never names a Christian interlocutor in this commentary, but the structural moves track the medieval disputation context"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — explicitly the empire of the ten kings before Vespasian, with Titus as its climactic blaspheming horn",
+      "commitment": "strong",
+      "rationale": "Rashi reads the four-beasts scheme as Babylon (lioness, v. 4), Persia (bear, v. 5), Greece-Antiochus (leopard, v. 6), Rome (terrifying fourth beast, vv. 7-8). He spells the identification out by glossing the ten horns as 'ten kings who would arise to Rome before Vespasian who destroyed the Temple,' and the upstart eleventh horn as Titus, who according to the Sages (b. Gittin 56b) blasphemed and entered the Sanctuary brazenly. The fourth kingdom is therefore Rome historically, not a future revived empire; it is past-fulfilled in the Flavian destruction of the Second Temple and remains in force pending eschatological judgment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:7 — ten kings of Rome",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:7 (Sefaria)"
+          },
+          "quote": {
+            "text": "עֲשָׂרָה מְלָכִים שֶׁיַּעַמְדוּ לְרוֹמִי קֹדֶם לְאַסְפַּסְיָנוּס שֶׁחָרַב אֶת הַבַּיִת",
+            "sha256": "bdde33ec5e997ff99569e810043f7f84bb369e13ce4a28c65952360577fab239",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "ten kings who would arise for Rome before Vespasian who destroyed the Temple.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.24",
+            "language": "he",
+            "verseRef": "Daniel 7:24",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:24 — last horn = Titus",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:24 (Sefaria)"
+          },
+          "quote": {
+            "text": "וְהָאַחֲרוֹן יָקוּם אַחֲרֵיהֶן, הוּא טִיטוּס",
+            "sha256": "a3542d4527fcbce07afdd9341c3fde8cc63c03d098904d034c0ba32437d0ecf9",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the last one will arise after them — that is Titus.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Titus, the Flavian destroyer of the Second Temple — historical-Roman, not eschatological Antichrist",
+      "commitment": "strong",
+      "rationale": "On v. 8 Rashi identifies the 'mouth speaking great things' (memallel ravrevan) as Titus, citing the rabbinic tradition (b. Gittin 56b) that he 'reviled and blasphemed and entered the Sanctuary with audacity.' The same identification recurs at v. 24, where the eleventh horn that arises after the ten is again Titus. This is a Jewish-rabbanite plain-meaning reading: the horn's blasphemies and war on the saints are read as Titus' historical sack of Jerusalem, not as a still-future Antichrist figure. Rashi notably does not invoke any 'imago/archetype' typology — the horn IS Titus, not a type of someone else.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.8",
+            "language": "he",
+            "verseRef": "Daniel 7:8",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:8 — little horn = Titus",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:8 (Sefaria)"
+          },
+          "quote": {
+            "text": "דִּבְרֵי גַּאֲוָה, הוּא טִיטוּס שֶׁאָמְרוּ חֲכָמֵינוּ זִכְרוֹנָם לִבְרָכָה",
+            "sha256": "f59a737d88fcdda1fcd05eac1cc410e16fc634d00c29bee3ab45253a2633a0d4",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Words of arrogance — that is Titus, of whom our Sages of blessed memory said …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.24",
+            "language": "he",
+            "verseRef": "Daniel 7:24",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:24 — eleventh horn = Titus",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:24 (Sefaria)"
+          },
+          "quote": {
+            "text": "וְהָאַחֲרוֹן יָקוּם אַחֲרֵיהֶן, הוּא טִיטוּס",
+            "sha256": "a3542d4527fcbce07afdd9341c3fde8cc63c03d098904d034c0ba32437d0ecf9",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And the last one will arise after them — that is Titus.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "position": "A 'sealed end' (qets satum) — Rashi declines to fix a number, reports Saadya Gaon's gematria-based 1335-year calculation, and warns that 'the early ones expounded each according to his view, and the appointed times all elapsed'",
+      "commitment": "moderate",
+      "rationale": "On v. 25 Rashi explicitly classifies the time-figure as a 'sealed end' (qets satum), invoking Dan 12:4 ('seal the words') as the controlling key. He notes that earlier exegetes 'expounded it each according to his own view, and the appointed times all elapsed' — a striking concession that prior date-setting failed. He then reports (without fully endorsing) Saadya's calculation that the period maps onto the 1335 days of Dan 12:12, with the 'times' (iddanim) summing to the 480 + 410 + 445 = 1335 years from the Exodus through the half-period after the Temple's destruction, and the gematria of הסתר אסתיר (Deut 31:18) coming to 1335 as auxiliary support. The temporal index is therefore eschatological-but-hidden in Rashi, not a literal three-and-a-half-year Antichrist reign.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:25 — sealed end",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:25 (Sefaria)"
+          },
+          "quote": {
+            "text": "קֵץ סָתוּם הוּא זֶה, כַּאֲשֶׁר נֶאֱמַר לְדָנִיֵּאל",
+            "sha256": "0edbbb3e0e48e9691c57ed83f9b5034d9f5d75f788b2444c2301c2380c5a9f12",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is a sealed end, just as it was said to Daniel …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:25 — failed earlier calculations",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:25 (Sefaria)"
+          },
+          "quote": {
+            "text": "וּדְרָשׁוּהוּ הָרִאשׁוֹנִים אִישׁ לְפִי דַעְתּוֹ, וְכָלוּ הַקִּצִּים",
+            "sha256": "dcda1f7251fb7432e562bea30bbfb0de29afeac4e9b0f9d6e19980148b41c4ec",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the early [exegetes] expounded it each according to his own view, and the [appointed] ends all elapsed.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Ten horns / kings of Dan 7:24",
+      "position": "Ten kings of Rome before Vespasian — historical-Roman emperors counted up to the destruction of the Temple in 70 CE",
+      "commitment": "strong",
+      "rationale": "Rashi gives the gloss explicitly at v. 7 — the ten horns are 'ten kings who would arise to Rome before Vespasian who destroyed the Temple' — locating the ten in the early-Imperial succession terminating in Vespasian. The eleventh upstart horn (vv. 8, 24) is Titus, who 'will arise after them' and humble three. This is structurally a past-historical reading: the ten are not future revived-empire kingdoms but pre-Flavian Roman rulers, and the horn-count is exhausted in the events of 70 CE. The same reading reappears at v. 24, anchoring the gloss in the angelic interpretation rather than as private speculation.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:7 — gloss on the ten horns",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:7 (Sefaria)"
+          },
+          "quote": {
+            "text": "עֲשָׂרָה מְלָכִים שֶׁיַּעַמְדוּ לְרוֹמִי קֹדֶם לְאַסְפַּסְיָנוּס שֶׁחָרַב אֶת הַבַּיִת",
+            "sha256": "bdde33ec5e997ff99569e810043f7f84bb369e13ce4a28c65952360577fab239",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "ten kings who would arise for Rome before Vespasian who destroyed the Temple.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Bar enash = the King Messiah (melekh ha-mashiah); the figure represents Israel set against the bestial gentile kingdoms",
+      "commitment": "strong",
+      "rationale": "Rashi's gloss on Dan 7:13 is famously direct: 'one like a son of man came — that is the King Messiah' (hu melekh ha-mashiah). On v. 14 he explains the imagery's binary logic: the gentile kingdoms are figured as beasts (hayyot), while Israel is figured 'as a son of man because they are humble and innocent (anwetanim u-tmimim).' The Son of Man is therefore both the Messiah king who receives universal dominion and a corporate emblem of Israel as the humanized counter-image to the four beasts; the two readings cohere in classical Jewish-rabbanite fashion (Messiah as Israel's representative).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:13 — Son of Man = King Messiah",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:13 (Sefaria)"
+          },
+          "quote": {
+            "text": "כְּבַר אֱנָשׁ אָתֵה. הוּא מֶלֶךְ הַמָּשִׁיחַ",
+            "sha256": "c3ead4c078689c79d52911870b1b19d15d5a460b96cce064fcd4deefc9ff5b36",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'One like a son of man came' — that is the King Messiah.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:14 — Israel as son of man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וְיִשְׂרָאֵל דִּימָּה כְּבֶן אָדָם עַל שֶׁהֵם עֲנְוְתָנִים וּתְמִימִים",
+            "sha256": "7adf49dbff836d8080b6909da3d95c07ebab47a0ffce6b8f5d67db0b51463819",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and Israel he likened to a son of man, because they are humble and innocent.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:14 — dominion over the nations",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:14 (Sefaria)"
+          },
+          "quote": {
+            "text": "וּלְאוֹתוֹ בֶּן אָדָם נָתַן מֶמְשֶׁלֶת הָאוּמּוֹת",
+            "sha256": "4e7aaf90f4b480c7f2fbf42f2dece53760dddae922beb3cb2fddec5758acc3c1",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and to that son of man he gave dominion over the nations.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Kingdom of the saints",
+      "position": "The qadishin / 'saints of the Most High' = Israel; they receive the kingdom directly from the fourth (Roman) beast at the end",
+      "commitment": "strong",
+      "rationale": "Rashi pins down both halves of the kingdom-of-the-saints reading. On v. 18 the 'holy ones of the Most High' who receive the kingdom are 'Israel, who will take the kingdom from the fourth' (mei-ha-reviit). On v. 21 he glosses 'with the holy ones' even more crisply: 'the people of Israel.' The kingdom-transfer is therefore not from generic righteous of all nations but from the historical Roman fourth beast directly to ethnic-religious Israel; messianic-Jewish nationalism, not transferred-to-the-Church spiritualization. He pairs this on v. 22 with 'and judgment was given to the holy ones of the Most High — vengeance was given them against her' (the fourth beast), reinforcing the corporate-Israel referent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:18 — qadishin = Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:18 (Sefaria)"
+          },
+          "quote": {
+            "text": "אֵלּוּ יִשְׂרָאֵל שֶׁיִּטְּלוּ הַמַּלְכוּת מֵהָרְבִיעִית",
+            "sha256": "fe8897d9f6cc2c3d7191a223f98ff478672cb23134411b1290e75db165eddc7b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "These are Israel, who will take the kingdom from the fourth [beast].",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.21",
+            "language": "he",
+            "verseRef": "Daniel 7:21",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:21 — holy ones = people of Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:21 (Sefaria)"
+          },
+          "quote": {
+            "text": "עִם קַדִּישִׁין. עַם יִשְׂרָאֵל",
+            "sha256": "bfc068f224c966d618ea556ed47589a2e6a279ca63c0a488bc529c5d4daec55c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'With the holy ones' — the people of Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Tzarfati peshat — plain-meaning Aramaic-to-Hebrew gloss followed by named historical referents (Babylon, Persia, Greece-Antiochus, Rome) drawing on rabbinic tradition (Sefer Yosippon, Bavli, midrash) without allegorizing the imagery away",
+      "commitment": "strong",
+      "rationale": "Rashi's procedure across Dan 7 is consistently lexical-then-referential: he first offers a Hebrew/Aramaic translation of the Aramaic word (e.g., aharei = aheret, damya le-dov = like a bear) and then names the historical kingdom. v. 4 = Babylon (citing Jer 4:7 and 48:40 for the lion + eagle imagery); v. 5 = Persia (with three Persian kings — Cyrus, Ahasuerus, Darius — for the three ribs); v. 6 = Greece, specifically the kingdom of Antiochus (citing Sefer Yosippon for the four-way Diadochi division); v. 7 = Rome's ten kings before Vespasian. This is the Northern-French (Tzarfat) plain-meaning method anchored on rabbinic source-criticism (Yosippon, Vayikra Rabbah, b. Qiddushin 72a, b. Gittin 56b), not Christian allegorical exegesis and not Iberian philosophical exegesis.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:4 — first beast = Babylon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:4 (Sefaria)"
+          },
+          "quote": {
+            "text": "זוֹ הִיא מַלְכוּת בָּבֶל שֶׁהָיְתָה מוֹשֶׁלֶת בְּאוֹתָהּ שָׁעָה",
+            "sha256": "ee4cbca0964585ea5e201e99eb0f2e84a7b5d379755abf9473d105296bcd3627",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is the kingdom of Babylon, which was ruling at that time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.5",
+            "language": "he",
+            "verseRef": "Daniel 7:5",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:5 — second beast = Persia",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:5 (Sefaria)"
+          },
+          "quote": {
+            "text": "זֶה רֶמֶז לְמַלְכוּת פָּרַס שֶׁתִּמְלֹךְ אַחַר בָּבֶל",
+            "sha256": "6c3dfef4db3a0634d7cb56eb420b410ae07dac51708af358eeb3d95956fe88ac",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is a hint at the kingdom of Persia, which would rule after Babylon.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.6",
+            "language": "he",
+            "verseRef": "Daniel 7:6",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:6 — third beast = Greece-Antiochus",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:6 (Sefaria)"
+          },
+          "quote": {
+            "text": "שֶׁהַחַיָּה הַזֹּאת הַשְּׁלִישִׁית הִיא מַלְכוּת אַנְטִיוֹכוֹס",
+            "sha256": "bc0ebf833dbb3b9b779924d8e7002532cb1ad9743538fbdcd6db8cada3e46485",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "For this third beast is the kingdom of Antiochus.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Theology proper / divine vision",
+      "position": "The Ancient of Days is the Holy One Blessed Be He sitting in mercy-toned judgment over the fourth (Roman) and third (Greek) kingdoms; the white-as-snow garment signals 'whitening Israel's sins'",
+      "commitment": "moderate",
+      "rationale": "On Dan 7:9 Rashi reads each element of the Ancient-of-Days theophany as legal-symbolic: the thrones are set up so that he may sit in judgment 'one for justice and one for mercy toward Israel,' the seated figure is 'the Holy One Blessed Be He sitting in judgment over this kingdom (Rome) and the one before it (Greece) which provoked him and oppressed his sons,' the white-as-snow garment denotes 'whitening (i.e. forgiving / cleansing) the sins of his people,' and the wool-clean hair denotes 'cleansing himself of [the record of his people's] merits.' This is a strikingly merciful, soteriologically-framed reading of the theophany — judgment is set up FOR Israel, not against them, and the cleansing imagery is read as God's purgation of Israel's record before reckoning with Rome.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.9",
+            "language": "he",
+            "verseRef": "Daniel 7:9",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:9 — Ancient of Days as judge over Rome",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:9 (Sefaria)"
+          },
+          "quote": {
+            "text": "הַקָּדוֹשׁ בָּרוּךְ הוּא יוֹשֵׁב לְמִשְׁפָּט עַל הַמַּלְכוּת הַזּוֹ וְעַל שֶׁלְּפָנֶיהָ",
+            "sha256": "7ee8eaa47163e215a190b253d777845f9333e81ca9da3764ff4bdd212c454274",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The Holy One, blessed be He, sits in judgment over this kingdom and the one before it.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.9",
+            "language": "he",
+            "verseRef": "Daniel 7:9",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:9 — white snow = forgiving Israel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:9 (Sefaria)"
+          },
+          "quote": {
+            "text": "כְּתַלַג חִוָּר. לְלַבֵּן עֲוֹנוֹת עַמּוֹ",
+            "sha256": "7b32c317c2b684ff298255be3501ac1a907eb084e7d2b57717708f2c98af4490",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'Like white snow' — to whiten the sins of his people.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Past-historical-then-still-future — the four beasts and ten horns are realized in named past empires up through Titus (70 CE), but the kingdom-transfer to Israel and the messianic-Son-of-Man enthronement remain future and 'sealed'",
+      "commitment": "strong",
+      "rationale": "Rashi's fulfillment structure is hybrid: the bestial sequence and its details (Babylon-Persia-Greece-Rome, ten Roman kings, Titus the eleventh horn, Antiochus' four-way succession) are read as already realized past history, anchored on rabbinic chronicle (Sefer Yosippon) and Talmudic tradition (b. Gittin 56b). But the Son-of-Man passage (v. 13), the saints' inheritance of the kingdom (vv. 18, 21), the time-times-half-time (v. 25), and the eschatological wars of Gog and Magog (v. 12, citing Ezek 38) remain future and explicitly 'sealed' — Rashi cites Saadya's reckoning with the same cautionary clause that 'the early ones expounded each according to his view, and the ends all elapsed.' This is two-stage but not in the Christian patristic eikon/archetypon mode: the past stage is past, full stop, and the future stage is the messianic redemption.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.12",
+            "language": "he",
+            "verseRef": "Daniel 7:12",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:12 — deferred to Gog and Magog",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:12 (Sefaria)"
+          },
+          "quote": {
+            "text": "וּזְמַן נִתַּן לָהֶם בַּחַיִּים עַד יוֹם מוֹעֵד לֶעָתִיד לָבֹא מִלְחֲמוֹת גּוֹג וּמָגוֹג",
+            "sha256": "9a35d411763278e9bc8118aaf354529a668e887770b2cb186af7f68c05c7181a",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And a time was given to them, in life, until the appointed day yet to come — the wars of Gog and Magog.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:25 — warning against date-setting",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:25 (Sefaria)"
+          },
+          "quote": {
+            "text": "וּדְרָשׁוּהוּ הָרִאשׁוֹנִים אִישׁ לְפִי דַעְתּוֹ, וְכָלוּ הַקִּצִּים",
+            "sha256": "dcda1f7251fb7432e562bea30bbfb0de29afeac4e9b0f9d6e19980148b41c4ec",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the early [exegetes] expounded it each according to his own view, and the [appointed] ends all elapsed.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Engagement with anti-Christian / Maccabean / typological readings",
+      "position": "Implicit anti-Christian counter-reading: the Son of Man is identified as the still-future melekh ha-mashiah (King Messiah), and the 'saints of the Most High' are explicitly Israel — both moves implicitly reject the Christian reading of Dan 7 as fulfilled in Christ and the church",
+      "commitment": "tentative",
+      "rationale": "Rashi never names a Christian interlocutor in his Daniel 7 commentary, but the polemical edge of the medieval Northern-French context is unmistakable: identifying bar enash as melekh ha-mashiah in his still-awaited messianic capacity (not a figure already enthroned) and identifying the qadishin as 'Israel who will take the kingdom from the fourth' (not the Church) maps cleanly onto the Jewish-Christian disputation grid of the 11th-12th centuries. Other medieval Jewish commentators on this passage are more openly polemical (Ibn Ezra, Abarbanel); Rashi's mode here is to construct the positive Jewish reading so densely that the Christian alternative simply has no surface to attach to.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:13 — counter-reading the Son of Man",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:13 (Sefaria)"
+          },
+          "quote": {
+            "text": "כְּבַר אֱנָשׁ אָתֵה. הוּא מֶלֶךְ הַמָּשִׁיחַ",
+            "sha256": "c3ead4c078689c79d52911870b1b19d15d5a460b96cce064fcd4deefc9ff5b36",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "'One like a son of man came' — that is the King Messiah.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:18 — counter-reading the qadishin",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:18 (Sefaria)"
+          },
+          "quote": {
+            "text": "אֵלּוּ יִשְׂרָאֵל שֶׁיִּטְּלוּ הַמַּלְכוּת מֵהָרְבִיעִית",
+            "sha256": "fe8897d9f6cc2c3d7191a223f98ff478672cb23134411b1290e75db165eddc7b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "These are Israel, who will take the kingdom from the fourth [beast].",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 12:1-13",
+      "positionSummary": "Rashi reads Dan 7:25's 'time, times, and half a time' against Dan 12 throughout: Dan 12:4 ('seal the words') is invoked as the controlling key for why the time-figure is a 'sealed end,' and Saadya's interpretation is built explicitly on Dan 12:12's 1335 days. The two passages are exegetically welded: 7:25 inherits 12's hiddenness, and 12 supplies the gematria for any reckoning of 7:25.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:25 — Dan 12:4 as control",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:25 (Sefaria)"
+          },
+          "quote": {
+            "text": "קֵץ סָתוּם הוּא זֶה, כַּאֲשֶׁר נֶאֱמַר לְדָנִיֵּאל",
+            "sha256": "0edbbb3e0e48e9691c57ed83f9b5034d9f5d75f788b2444c2301c2380c5a9f12",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is a sealed end, just as it was said to Daniel …",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "The Babylon-Persia-Greece-Rome scheme Rashi deploys at Dan 7:4-7 is the same four-empires sequence he reads in the Nebuchadnezzar statue of Dan 2 (gold-silver-bronze-iron). Where Dan 2 names Babylon as the head of gold explicitly, Rashi imports that named identification into Dan 7:4 by glossing the lioness as 'the kingdom of Babylon, which was ruling at that time' and citing Jeremiah's lion + eagle imagery for Babylon. The Dan 7 sequence is therefore a refiguration of the Dan 2 scheme rather than a parallel revelation.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Rashi_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Rashi"
+          },
+          "frontend": {
+            "author": "Rashi (Solomon ben Isaac)",
+            "title": "Rashi on Daniel",
+            "section": "ad Dan 7:4 — Dan 2 four-empires identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Rashi, ad Dan. 7:4 (Sefaria)"
+          },
+          "quote": {
+            "text": "זוֹ הִיא מַלְכוּת בָּבֶל שֶׁהָיְתָה מוֹשֶׁלֶת בְּאוֹתָהּ שָׁעָה",
+            "sha256": "ee4cbca0964585ea5e201e99eb0f2e84a7b5d379755abf9473d105296bcd3627",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is the kingdom of Babylon, which was ruling at that time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Identifies the eleventh horn (vv. 8, 24) as Titus by name, citing b. Gittin 56b — a historical-Roman, not eschatological-Antichrist, reading of the little horn",
+    "Glosses the ten horns as 'ten kings who would arise to Rome before Vespasian who destroyed the Temple' — past-historical reckoning with horn-count exhausted in 70 CE",
+    "On Dan 7:13 'one like a son of man came' = melekh ha-mashiah (the King Messiah) — the classical Jewish messianic reading, paired on v. 14 with Israel-as-humanized-counter-image to the bestial gentile kingdoms",
+    "Reads the white-as-snow Ancient of Days through a soteriological lens: the garment signals whitening Israel's sins, the wool-clean hair signals cleansing the divine record of Israel's merits — judgment is set up FOR Israel, against Rome",
+    "Identifies the third beast as 'the kingdom of Antiochus' (Greece) by citation of Sefer Yosippon, locating Antiochus IV in the third bestia rather than the fourth — distinguishes Rashi's scheme from any Maccabean-fourth-kingdom critical reading",
+    "On v. 25 explicitly classifies the time-figure as a 'sealed end' (qets satum) and reports Saadya's gematria-based 1335-year reckoning with the cautionary warning that 'the early ones expounded each according to his view, and the appointed ends all elapsed' — disciplined reticence against date-setting",
+    "On v. 12 reads the deferred destruction of the surviving beasts as awaiting 'the day appointed for the wars of Gog and Magog' (citing Ezek 38) — explicitly eschatological-future on the messianic side of the bestial-historical / messianic-future divide"
+  ],
+  "uncertainties": [
+    "Rashi never names Porphyry or Christian interlocutors in the Daniel 7 commentary, so axis E ('engagement with anti-Christian readings') sits at 'tentative' — the polemical edge is structural, not explicit",
+    "Rashi's Daniel 7 commentary does not directly engage Dan 9 (the seventy weeks); the surveyed material covers Dan 7 alone, and a Rashi-on-Dan-9 reading would need a separate survey",
+    "Pages are null because Sefaria is a free-online edition without canonical print pagination; the Sefaria URL form is the locator (resourceUrl carries chapter.verse)",
+    "Rashi reports Saadya's 1335-year calculation in v. 25 without explicitly endorsing or rejecting it — the position attributed at axis F is therefore 'sealed end + reports a calculation,' not 'commits to 1335'",
+    "Rashi's identification of 'three Persian kings' (Cyrus, Ahasuerus, Darius) in v. 5 — citing 'and I say' — disagrees with the rabbinic gloss of three rebellious provinces from b. Qiddushin 72a; this internal disagreement is captured in axis L's rationale but not given a dedicated citation block",
+    "The traditional Rashi-Edom identification of Rome is not made by name in the Dan 7 comments themselves; here Rashi names Rome directly (Romi), making the standard Edom = Rome substitution unnecessary at this surface"
+  ]
+}

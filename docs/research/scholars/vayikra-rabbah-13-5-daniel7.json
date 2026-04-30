@@ -1,0 +1,905 @@
+{
+  "scholarId": "vayikra-rabbah-13-5-daniel7",
+  "authorDisplay": "Vayikra Rabbah 13:5",
+  "workDisplay": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+  "resourceId": "sefaria:vayikra-rabbah-13-5",
+  "resourceFile": "external/vayikra-rabbah-13-5.sefaria",
+  "traditionTag": "rabbinic-classical",
+  "fullTitle": "Vayikra Rabbah 13:5 — Amoraic-period (c. 5th century CE) Palestinian midrash on Lev 11:4-7, the great four-kingdoms / four-beasts compendium that anchors the rabbinic Babylon-Media-Greece-Edom scheme and reads Daniel 7 alongside Gen 2 (rivers of Eden), Gen 15 (Abraham horror), Lev 11 (unclean animals), and Jer 5:6.",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:23-27",
+    "Dan 2:31-45"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Edom (= Rome) — explicit, repeated, and climactic. The fourth beast of Dan 7:7, the swine of Lev 11:7 (in the climactic reading), the Perat of Gen 2:14, and the all-who-go-out-from-there of Jer 5:6 are all identified with Edom across multiple proof-text chains.",
+      "A: Each beast -> kingdom (typological correspondence). The compiler walks Dan 7:4-7 beast by beast and matches each to a kingdom: lion+eagle=Babylon, bear=Media, leopard=Greece, fourth-beast=Edom — a tight typological grid.",
+      "L: Apocalyptic / midrashic hermeneutic — argument by aggregation of proof-texts. The midrash builds its case by stacking citations from Genesis, Habakkuk, Psalms, Jeremiah, Leviticus, Esther, Daniel, Isaiah, and Obadiah; the very form of the argument is a gevurah of intertextual proof-texts.",
+      "N: Cross-book coherence: Dan 7 / Dan 2 (this midrash collapses the two visions implicitly via the four-kingdoms grid) / Gen 2 (rivers of Eden) / Gen 15 (Abraham horror) / Lev 11 (unclean animals) / Jer 5:6 (predator-list) / Obad 1:21 (Esau-judged-on-Zion). Rare integrative density.",
+      "O: Eschatological reversal — the cup-of-staggering for the nations (R. Yehoshua ben Levi) and the swine returning the crown (Obad 1:21 climax) frame the midrash with explicit eschatological hope."
+    ],
+    "moderate": [
+      "M5/M7 (kingdom-succession + Jewish-reception lattice): VR 13:5 stabilizes the four-kingdoms-ending-in-Edom scheme as the canonical rabbinic reading, harmonizing it with the Lev 11 unclean-animal list — the harmonization (rather than the scheme itself) is the moderate-commitment innovation."
+    ],
+    "tentative": [
+      "Dan 2:31-45 cross-reading: VR 13:5 does not cite the Dan 2 statue-and-stone scheme directly, but its four-kingdoms grid presupposes it; the Dan 2 connection is structural rather than text-cited within this section."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Edom (= Rome). VR 13:5 identifies the fourth kingdom with Edom across four independent proof-text chains: (1) Dan 7:7 fourth-beast = Edom directly; (2) Gen 2:14 Perat = Edom (paratah/ravat wordplay); (3) Jer 5:6 all-who-go-out-from-there-will-be-torn = Edom (R. Yohanan); (4) Lev 11:7 swine in its climactic reading = Edom (mahazeret wordplay, Obad 1:21).",
+      "commitment": "strong",
+      "rationale": "The four-kingdoms scheme in VR 13:5 is structurally Edom-centred: the first three kingdoms (Babylon, Media, Greece) are dispatched briefly across two or three proof-texts each, but Edom is engaged at length and from multiple angles — the rivers grid, the Lev 11 swine, the Jer 5:6 predator list, the Dan 7:7 fourth beast, the magistrate-bench hypocrisy parable, and the Obad 1:21 mahazeret climax. Edom is not just the fourth in a sequence; it is the kingdom against which the entire midrash is structured. The R. Yohanan / R. Shimon ben Lakish exchange — debating whether Edom is weighed against the other three or weightier than them — registers the rabbinic conviction that Edom-Rome bears a unique theological weight in the four-kingdoms arc.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid climax: Perat = Edom (multiple paratah/ravat readings; Isa 63:3 winepress)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid climax: Perat = Edom (multiple readings)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid climax: Perat = Edom (multiple paratah/ravat readings; Isa 63:3 winepress)]"
+          },
+          "quote": {
+            "text": "וְהַנָּהָר הָרְבִיעִי הוּא פְרָת, הוּא אֱדוֹם שֶׁפָּרָת וְרָבָת בִּתְפִלָּתוֹ שֶׁל זָקֵן. דָּבָר אַחֵר, שֶׁפָּרָת וְרָבָת וְהֵצֵירָה לְעוֹלָמוֹ שֶׁל יִשְׂרָאֵל. דָּבָר אַחֵר, שֶׁפָּרָת וְרָבָת וְהֵצֵירָה לִבְנוֹ. דָּבָר אַחֵר, שֶׁפָּרָת וְרָבָת וְהֵצֵירָה לְבֵיתוֹ. דָּבָר אַחֵר, פָּרָת עַל שׁוּם סוֹפָהּ, שֶׁנֶּאֱמַר (ישעיה סג, ג): פּוּרָה דָרַכְתִּי לְבַדִּי",
+            "sha256": "89f43fd81f40f6432e2fb7f33fe157b3644e8d653f6af2c056b41ec2a3022a59",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And the fourth river is the Euphrates (Perat)\" — this is Edom, because she became fruitful (paratah) and great (ravat) by the prayer of the old man (Isaac); another reading: she became fruitful and great and pressed (hetsirah) the world of Israel; another reading: she became fruitful and great and pressed her son; another reading: she became fruitful and great and pressed her house; another reading: \"Perat\" because of her end, as it is said (Isa 63:3) \"I have trodden the winepress (purah) alone.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:7: fourth beast = Edom (Yohanan vs Resh Lakish)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)]"
+          },
+          "quote": {
+            "text": "וַאֲרוּ חֵיוָה רְבִיעָאָה דְּחִילָה וְאֵימְתָנִי וְתַקִּיפָא יַתִּירָה, זוֹ אֱדוֹם, דָּנִיֵּאל רָאָה שְׁלָשְׁתָּן בְּלַיְלָה אֶחָד וְלָזוֹ בְּלַיְלָה אֶחָד, לָמָּה, רַבִּי יוֹחָנָן וְרַבִּי שִׁמְעוֹן בֶּן לָקִישׁ, רַבִּי יוֹחָנָן אָמַר שֶׁשְּׁקוּלָה כְּנֶגֶד שְׁלָשְׁתָּן, רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ אָמַר יַתִּירָה",
+            "sha256": "a3eb552cd0aa2677108e66d20a1b5ea8abf12d45a3cd077bc95dbf07a9d53aa3",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"After this I was looking in the visions of the night, and behold, a fourth beast, dreadful and terrible and exceedingly strong\" — this is Edom. Daniel saw the three of them in one night and this one in one night. Why? R. Yohanan and R. Shimon ben Lakish: R. Yohanan said: she is weighed against the three; R. Shimon ben Lakish said: more than them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — R. Yohanan via Jer 5:6: lion=Babylon, wolf=Media, leopard=Greece, all-going-out=Edom"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Jer 5:6 four-kingdoms grid (R. Yohanan)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — R. Yohanan via Jer 5:6: lion=Babylon, wolf=Media, leopard=Greece, all-going-out=Edom]"
+          },
+          "quote": {
+            "text": "הוּא דַעְתֵּיהּ דְּרַבִּי יוֹחָנָן דְּאָמַר רַבִּי יוֹחָנָן (ירמיה ה, ו): עַל כֵּן הִכָּם אַרְיֵה מִיַּעַר, זוֹ בָּבֶל. (ירמיה ה, ו): זְאֵב עֲרָבוֹת יְשָׁדְדֵם, זוֹ מָדַי. (ירמיה ה, ו): נָמֵר שֹׁקֵד עַל עָרֵיהֶם, זוֹ יָוָן. (ירמיה ה, ו): כָּל הַיּוֹצֵא מֵהֵנָּה יִטָּרֵף, זוֹ אֱדוֹם, לָמָּה, (ירמיה ה, ו): כִּי רַבּוּ פִּשְׁעֵיהֶם עָצְמוּ מְשֻׁבוֹתֵיהֶם",
+            "sha256": "77bdb03b6574400e4376e183bbba248adb6375ea08a86dbcda030538a474d12e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is the view of R. Yohanan, who said: (Jer 5:6) \"Therefore a lion from the forest will slay them\" — this is Babylon; \"a wolf of the deserts will plunder them\" — this is Media; \"a leopard watches over their cities\" — this is Greece; \"all who go out from there will be torn\" — this is Edom. Why? \"Because their transgressions are many, their backslidings have increased.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Edom-as-swine polemic: arrogance + magistrate-bench hypocrisy"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Edom-as-swine: hypocrisy polemic",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Edom-as-swine polemic: arrogance + magistrate-bench hypocrisy]"
+          },
+          "quote": {
+            "text": "לוֹמַר לָךְ מָה חֲזִיר בְּשָׁעָה שֶׁהוּא רוֹבֵץ מוֹצִיא טְלָפָיו וְאוֹמֵר רְאוּ שֶׁאֲנִי טָהוֹר, כָּךְ מַלְכוּת אֱדוֹם מִתְגָּאָה וְחוֹמֶסֶת וְגוֹזֶלֶת וְנִרְאֵית כְּאִלּוּ מַצַּעַת בִּימָה",
+            "sha256": "6d4eb15ebd207b1863d0ae9839b404dc2410ec4df48a1bbd1c0cfc237c27986b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Why is she likened to a swine? To tell you: just as the swine, when it lies down, sticks out its hooves and says \"see, I am pure!\" — so the kingdom of Edom is arrogant and robs and steals, and yet appears as if she is setting up the magistrate’s bench.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "A",
+      "axisName": "Beast-to-kingdom typology (Dan 7:4-7)",
+      "position": "Each Dan 7 beast is mapped to a specific kingdom. Lion (Dan 7:4) + eagle wings = Babylon (Jer 4:7 + 49:22 dual citation). Bear (Dan 7:5) = Media (defective spelling ledov instead of ledob, on R. Yohanan’s reading). Leopard (Dan 7:6) = Greece (sharp-and-swift decrees). Fourth beast (Dan 7:7) = Edom.",
+      "commitment": "strong",
+      "rationale": "VR 13:5 walks Dan 7:4-7 beast by beast, supplying for each animal both the kingdom-identification and a confirming proof-text from earlier prophets (Jeremiah supplies the lion/eagle dual for Babylon; Jer 5:6 supplies the parallel predator-list confirming all four). The bear-to-Media mapping is supported by an orthographic micro-argument: the consonantal text reads ledob (a bear) but is written defectively ledov, which the midrash exploits to anchor the identification. The leopard-to-Greece identification is reinforced by the same horn-of-the-ox decree-against-Israel saying that appears in the rivers grid — a deliberate cross-section echo. The compiler is doing systematic typology, not ad-hoc allegory.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Daniel block opening: Dan 7:2-3 four-winds-and-four-beasts citation"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Daniel block: opening citation of Dan 7:2-3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Daniel block opening: Dan 7:2-3 four-winds-and-four-beasts citation]"
+          },
+          "quote": {
+            "text": "רָאָה דָּנִיֵּאל אֶת הַמַּלְכֻיּוֹת בְּעִסּוּקָן, הֲדָא הוּא דִכְתִיב (דניאל ז, ב ג): חָזֵה הֲוֵית בְּחֶזְוִי עִם לֵילְיָא וַאֲרוּ אַרְבַּע רוּחֵי שְׁמַיָא מְגִיחָן לְיַמָּא רַבָּא, וְאַרְבַּע חֵיוָן רַבְרְבָן סָלְקָן מִן יַמָּא",
+            "sha256": "50b6ae7e9be30f3a54639fd717e512c5560698dc735d5dbb0c4f8697f2881c0d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Daniel saw the kingdoms in their preoccupations, as it is written (Dan 7:2-3): \"I was looking in my vision by night, and behold, the four winds of the heavens were stirring up the great sea, and four great beasts were coming up out of the sea.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:4 first beast = Babylon: lion (Jer 4:7) + eagle (Jer 49:22)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:4: first beast = Babylon (Jeremiah lion + eagle)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:4 first beast = Babylon: lion (Jer 4:7) + eagle (Jer 49:22)]"
+          },
+          "quote": {
+            "text": "קַדְמָיְתָא כְאַרְיֵה, זוֹ בָּבֶל, יִרְמְיָה רָאָה אוֹתָהּ אֲרִי וְרָאָה אוֹתָהּ נֶשֶׁר, דִּכְתִיב (ירמיה ד, ז): עָלָה אַרְיֵה מִסֻּבְּכוֹ (ירמיה מט, כב): הִנֵּה כַנֶּשֶׁר יַעֲלֶה וְיִדְאֶה",
+            "sha256": "86b66461dce82804924e16cfaaa281a3e44ca82e7b247e7c24603989ed97fcca",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"The first was like a lion\" — this is Babylon. Jeremiah saw her as a lion and saw her as an eagle, as it is written (Jer 4:7) \"a lion has come up from his thicket\" and (Jer 49:22) \"behold, like an eagle he shall mount up and swoop down.\" They said to Daniel: What did you see her as? He said to them: I saw the face of a lion and wings of an eagle, as it is written (Dan 7:4) \"the first was like a lion, and it had wings of an eagle.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:5 second beast = Media (defective spelling ledov; R. Yohanan)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:5: second beast = Media (R. Yohanan)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:5 second beast = Media (defective spelling ledov; R. Yohanan)]"
+          },
+          "quote": {
+            "text": "וַאֲרוּ חֵיוָה אָחֳרֵי תִנְיָנָא דָמְיָא לְדֹב, לְדב כְּתִיב זֶה מָדַי",
+            "sha256": "d529219d1adffc9f5c7491736359705d548f75728e70f5d7117a68dc44bd2285",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And behold, another beast, a second one, resembling a bear\" — written ledov (\"to a bear\"); this is Media. This is the view of R. Yohanan, who said: This is Media.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:6 third beast = Greece (leopard; horn-of-ox decree against world-to-come)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:6: third beast = Greece",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:6 third beast = Greece (leopard; horn-of-ox decree against world-to-come)]"
+          },
+          "quote": {
+            "text": "חָזֵה הֲוֵית וַאֲרוּ אָחֳרִי כִּנְמַר, זוֹ יָוָן, שֶׁהָיְתָה מַעֲמֶדֶת בִּגְזֵרוֹתֶיהָ וְאוֹמֶרֶת לְיִשְׂרָאֵל כִּתְבוּ עַל קֶרֶן הַשּׁוֹר שֶׁאֵין לָכֶם חֵלֶק לָעוֹלָם הַבָּא",
+            "sha256": "af7a9b28aa0d89e900fa6e5bf1a643cf4216d9439b7073b040d0e4eb51fe4fbc",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"I was looking, and behold, another like a leopard\" — this is Greece, which stood up against Israel with her decrees, saying to them: Write upon the horn of the ox that you have no portion in the world to come.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:7: fourth beast = Edom (Yohanan vs Resh Lakish)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)]"
+          },
+          "quote": {
+            "text": "וַאֲרוּ חֵיוָה רְבִיעָאָה דְּחִילָה וְאֵימְתָנִי וְתַקִּיפָא יַתִּירָה, זוֹ אֱדוֹם, דָּנִיֵּאל רָאָה שְׁלָשְׁתָּן בְּלַיְלָה אֶחָד וְלָזוֹ בְּלַיְלָה אֶחָד, לָמָּה, רַבִּי יוֹחָנָן וְרַבִּי שִׁמְעוֹן בֶּן לָקִישׁ, רַבִּי יוֹחָנָן אָמַר שֶׁשְּׁקוּלָה כְּנֶגֶד שְׁלָשְׁתָּן, רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ אָמַר יַתִּירָה",
+            "sha256": "a3eb552cd0aa2677108e66d20a1b5ea8abf12d45a3cd077bc95dbf07a9d53aa3",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"After this I was looking in the visions of the night, and behold, a fourth beast, dreadful and terrible and exceedingly strong\" — this is Edom. Daniel saw the three of them in one night and this one in one night. Why? R. Yohanan and R. Shimon ben Lakish: R. Yohanan said: she is weighed against the three; R. Shimon ben Lakish said: more than them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic / midrashic hermeneutic",
+      "position": "Argument by stacked proof-text aggregation. VR 13:5 reads Dan 7 by drawing in Gen 2 (rivers of Eden), Gen 15 (Abraham’s horror-vision), Lev 11 (unclean animals), Jer 5:6 (predator list), and Obad 1:21 (kingdom-of-the-LORD); each kingdom is established by multiple wordplays (paratah/ravat, gemul, gehoneha, haddah/qallah, sanyan, mahazeret) that read the four-kingdoms scheme out of every Pentateuchal and prophetic location where four-ness can be found.",
+      "commitment": "strong",
+      "rationale": "The midrash explicitly thematises this method: “all the prophets saw the kingdoms in their preoccupations”. Daniel saw them in Dan 7; Moses saw them in Lev 11; Abraham saw them in Gen 15; the rivers-of-Eden compiler saw them in Gen 2. The hermeneutic claim is that the four-kingdoms scheme is canonically distributed across Tanakh, and the midrashic exegete’s task is to harvest it. The Dan 7:3 al-tiqrei wordplay (shanyan -> sanyan, “differing” read as “hating”) exemplifies the technique at the level of a single consonantal cluster: a phonological resemblance becomes a theological claim about gentile hatred of Israel.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — opening frame: R. Shmuel bar Nahman, all prophets saw the kingdoms (Gen 2:10 cited)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "frame: prophets-saw-the-kingdoms (R. Shmuel bar Nahman)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — opening frame: R. Shmuel bar Nahman, all prophets saw the kingdoms (Gen 2:10 cited)]"
+          },
+          "quote": {
+            "text": "אָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָן כָּל הַנְּבִיאִים רָאוּ הַמַּלְכֻיּוֹת בְּעִסּוּקָן, הֲדָא הוּא דִכְתִיב (בראשית ב, י): וְנָהָר יֹצֵא מֵעֵדֶן לְהַשְׁקוֹת וגו'",
+            "sha256": "f92efa7f50252ea160148bf53f764cba52f305f48be9356e3e3efe2e272384ba",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "R. Shmuel bar Nahman said: All the prophets saw the kingdoms in their preoccupations, as it is written (Gen 2:10): \"And a river went out from Eden to water...\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:3 al-tiqrei: shanyan/sanyan wordplay; nations hate Israel"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:3 wordplay: shanyan -> sanyan",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:3 al-tiqrei: shanyan/sanyan wordplay; nations hate Israel]"
+          },
+          "quote": {
+            "text": "שָׁנְיָן דָּא מִן דָּא, אַל תִּקְרֵי שָׁנְיָן אֶלָּא סָנְיָן דָּא מִן דָּא, מְלַמֵּד שֶׁכָּל אֻמָּה שֶׁשּׁוֹלֶטֶת בָּעוֹלָם הִיא שׂוֹנְאָה לְיִשְׂרָאֵל וּמְשַׁעְבְּדָא בָּהֶן",
+            "sha256": "9107d036fb1435cb4cddee9a84807f219e313c65ecf2322e1de195d07e014a1f",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"Differing one from another\" (shanyan da min da) — do not read shanyan (differing) but sanyan (hating) one another. This teaches that every nation that rules in the world hates Israel and enslaves them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Pishon = Babylon (Hab 1:8 wordplay)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Pishon = Babylon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Pishon = Babylon (Hab 1:8 wordplay)]"
+          },
+          "quote": {
+            "text": "שֵׁם הָאֶחָד פִּישׁוֹן, זֶה בָּבֶל, עַל שֵׁם (חבקוק א, ח): וּפָשׁוּ פָּרָשָׁיו",
+            "sha256": "609642c6c95852fed76d159a60bfe198b74aa76f60a485fd439896d3df57bddd",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"The name of the first is Pishon\" — this is Babylon, on account of (Hab 1:8) \"and their horsemen spread (u-fashu) themselves.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Gihon = Media (Gen 3:14 serpent wordplay; Haman)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Gihon = Media (Haman the serpent)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Gihon = Media (Gen 3:14 serpent wordplay; Haman)]"
+          },
+          "quote": {
+            "text": "וְשֵׁם הַנָּהָר הַשֵּׁנִי גִיחוֹן, זֶה מָדַי, שֶׁהֶעֱמִידָה אֶת הָמָן הָרָשָׁע שֶׁמָּשַׁךְ עִסָּה כַּנָּחָשׁ, עַל שׁוּם (בראשית ג, יד): עַל גְּחֹנְךָ תֵלֵךְ",
+            "sha256": "a8d6832258af728b8a9b2c39fa60d7b22e144400333b643efef06bc8b8efb23e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And the name of the second river is Gihon\" — this is Media, which set up the wicked Haman, who hissed at the people like a serpent, on account of (Gen 3:14) \"on your belly (gehoneha) you shall go.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Hiddekel = Greece (haddah/qallah wordplay; horn-of-ox decree)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Hiddekel = Greece",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Hiddekel = Greece (haddah/qallah wordplay; horn-of-ox decree)]"
+          },
+          "quote": {
+            "text": "וְשֵׁם הַנָּהָר הַשְּׁלִישִׁי חִדֶּקֶל, זוֹ יָוָן, שֶׁהִיא חַדָּה וְקַלָּה בִּגְזֵרוֹתֶיהָ עַל יִשְׂרָאֵל, וְאוֹמֵר לָהֶם כִּתְבוּ עַל קֶרֶן הַשּׁוֹר שֶׁאֵין לְיִשְׂרָאֵל חֵלֶק בֵּאלֹהֵי יִשְׂרָאֵל",
+            "sha256": "5af6eb2edb0559517a5d4cb8c0c8bb340ca022b8e916345d52c3bec5f00526bf",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And the name of the third river is Hiddekel\" — this is Greece, which was sharp (haddah) and swift (qallah) in her decrees against Israel, saying to them: Write upon the horn of an ox that you have no portion in the God of Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Dan 7 is read inside a multi-book lattice: Gen 2 rivers grid (Pishon=Babylon, Gihon=Media, Hiddekel=Greece, Perat=Edom), Lev 11 unclean-animal grid (camel/coney/hare/swine), Jer 5:6 predator grid (lion/wolf/leopard/all-who-go-out), and Obad 1:21 eschatological climax. Every clause is at minimum bi-textual.",
+      "commitment": "strong",
+      "rationale": "The structural move is the “all-the-prophets-saw-the-kingdoms” frame: the midrash reads four-kingdoms parallels across Genesis, Leviticus, Jeremiah, Daniel, and Obadiah as a single intertextual system. The Lev 11 unclean-animal grid is doubled: one reading places swine = Persia, then a second sustained reading places swine = Edom — the climactic hypocrisy polemic. R. Yohanan supplies the Jer 5:6 four-kingdoms predator list explicitly. Obad 1:21 closes the midrash with the kingdom-of-the-LORD. Dan 7 is not the sole locus but the integrative climax of a multi-book reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Pishon = Babylon (Hab 1:8 wordplay)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Pishon = Babylon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Pishon = Babylon (Hab 1:8 wordplay)]"
+          },
+          "quote": {
+            "text": "שֵׁם הָאֶחָד פִּישׁוֹן, זֶה בָּבֶל, עַל שֵׁם (חבקוק א, ח): וּפָשׁוּ פָּרָשָׁיו",
+            "sha256": "609642c6c95852fed76d159a60bfe198b74aa76f60a485fd439896d3df57bddd",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"The name of the first is Pishon\" — this is Babylon, on account of (Hab 1:8) \"and their horsemen spread (u-fashu) themselves.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Gihon = Media (Gen 3:14 serpent wordplay; Haman)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Gihon = Media (Haman the serpent)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Gihon = Media (Gen 3:14 serpent wordplay; Haman)]"
+          },
+          "quote": {
+            "text": "וְשֵׁם הַנָּהָר הַשֵּׁנִי גִיחוֹן, זֶה מָדַי, שֶׁהֶעֱמִידָה אֶת הָמָן הָרָשָׁע שֶׁמָּשַׁךְ עִסָּה כַּנָּחָשׁ, עַל שׁוּם (בראשית ג, יד): עַל גְּחֹנְךָ תֵלֵךְ",
+            "sha256": "a8d6832258af728b8a9b2c39fa60d7b22e144400333b643efef06bc8b8efb23e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And the name of the second river is Gihon\" — this is Media, which set up the wicked Haman, who hissed at the people like a serpent, on account of (Gen 3:14) \"on your belly (gehoneha) you shall go.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Hiddekel = Greece (haddah/qallah wordplay; horn-of-ox decree)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "rivers grid: Hiddekel = Greece",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — rivers-of-Eden grid: Hiddekel = Greece (haddah/qallah wordplay; horn-of-ox decree)]"
+          },
+          "quote": {
+            "text": "וְשֵׁם הַנָּהָר הַשְּׁלִישִׁי חִדֶּקֶל, זוֹ יָוָן, שֶׁהִיא חַדָּה וְקַלָּה בִּגְזֵרוֹתֶיהָ עַל יִשְׂרָאֵל, וְאוֹמֵר לָהֶם כִּתְבוּ עַל קֶרֶן הַשּׁוֹר שֶׁאֵין לְיִשְׂרָאֵל חֵלֶק בֵּאלֹהֵי יִשְׂרָאֵל",
+            "sha256": "5af6eb2edb0559517a5d4cb8c0c8bb340ca022b8e916345d52c3bec5f00526bf",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"And the name of the third river is Hiddekel\" — this is Greece, which was sharp (haddah) and swift (qallah) in her decrees against Israel, saying to them: Write upon the horn of an ox that you have no portion in the God of Israel.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — R. Yohanan via Jer 5:6: lion=Babylon, wolf=Media, leopard=Greece, all-going-out=Edom"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Jer 5:6 four-kingdoms grid (R. Yohanan)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — R. Yohanan via Jer 5:6: lion=Babylon, wolf=Media, leopard=Greece, all-going-out=Edom]"
+          },
+          "quote": {
+            "text": "הוּא דַעְתֵּיהּ דְּרַבִּי יוֹחָנָן דְּאָמַר רַבִּי יוֹחָנָן (ירמיה ה, ו): עַל כֵּן הִכָּם אַרְיֵה מִיַּעַר, זוֹ בָּבֶל. (ירמיה ה, ו): זְאֵב עֲרָבוֹת יְשָׁדְדֵם, זוֹ מָדַי. (ירמיה ה, ו): נָמֵר שֹׁקֵד עַל עָרֵיהֶם, זוֹ יָוָן. (ירמיה ה, ו): כָּל הַיּוֹצֵא מֵהֵנָּה יִטָּרֵף, זוֹ אֱדוֹם, לָמָּה, (ירמיה ה, ו): כִּי רַבּוּ פִּשְׁעֵיהֶם עָצְמוּ מְשֻׁבוֹתֵיהֶם",
+            "sha256": "77bdb03b6574400e4376e183bbba248adb6375ea08a86dbcda030538a474d12e",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is the view of R. Yohanan, who said: (Jer 5:6) \"Therefore a lion from the forest will slay them\" — this is Babylon; \"a wolf of the deserts will plunder them\" — this is Media; \"a leopard watches over their cities\" — this is Greece; \"all who go out from there will be torn\" — this is Edom. Why? \"Because their transgressions are many, their backslidings have increased.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Moses-block four-kingdoms via Lev 11: camel = Babylon (Ps 137:8 gemul wordplay)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Lev 11:4 grid: camel = Babylon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Moses-block four-kingdoms via Lev 11: camel = Babylon (Ps 137:8 gemul wordplay)]"
+          },
+          "quote": {
+            "text": "אֶת הַגָּמָל, זוֹ בָּבֶל, שֶׁנֶּאֱמַר (תהלים קלז, ח): אַשְׁרֵי שֶׁיְשַׁלֶּם לָךְ אֶת גְּמוּלֵךְ שֶׁגָּמַלְתְּ לָנוּ",
+            "sha256": "532fe92eb40b4969e57d73295b6ea471c72239064b5718c4ac4c76f2a4490a53",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Moses saw the kingdoms in their preoccupations: (Lev 11:4) \"the camel\" — this is Babylon, as it is said (Ps 137:8) \"happy is he who repays you with what you dealt out to us\" (gemulekh she-gamalt).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 — Abraham saw the kingdoms in Gen 15:12 vision (אימה=Babylon, חשכה=Media, גדלה=Greece, נפלת=Edom)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Gen 15:12 four-kingdoms grid (Abraham's covenant-of-the-pieces vision)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Gen 15:12 four-kingdoms grid — אַבְרָהָם רָאָה הַמַּלְכֻיּוֹת בְּעִסּוּקָן]"
+          },
+          "quote": {
+            "text": "אַבְרָהָם רָאָה הַמַּלְכֻיּוֹת בְּעִסּוּקָן (בראשית טו, יב): וְהִנֵּה אֵימָה, זוֹ בָּבֶל",
+            "sha256": "824eaf9ce00bcf66797ed60ee004c6525271d91466b2a78710b4fdf26dc093d9",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Abraham saw the kingdoms in their preoccupations (Gen 15:12): \"and behold, dread\" — this is Babylon.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-30",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Eschatological reversal",
+      "position": "The midrash frames the four-kingdoms arc with eschatological reversal: at the opening, R. Yehoshua ben Levi (via R. Tanhuma/Menahema) declares that the Holy One will give the cup of staggering to the nations in the time to come; at the climax, the swine (Edom) is named hazir from mahazeret because it will return the crown to Israel — sealed by Obad 1:21, “the kingdom shall be the LORD’s”.",
+      "commitment": "strong",
+      "rationale": "These two bookends are not incidental — they are the soteriological architecture of the midrash. The cup-of-staggering tradition (Jer 25:15-16) is invoked at the opening to establish that the four kingdoms are headed for divine judgment; the mahazeret wordplay at the close establishes the same point as a positive — Edom returns the crown to Israel, the kingdom is the LORD’s. Between these poles, every kingdom-identification serves the same eschatological vector: the empires are temporary and will give way to the kingdom of the LORD.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — eschatological cup-of-staggering tradition (R. Yehoshua ben Levi via R. Tanhuma/Menahema)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "eschatology: cup of staggering for the nations (R. Yehoshua ben Levi)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — eschatological cup-of-staggering tradition (R. Yehoshua ben Levi via R. Tanhuma/Menahema)]"
+          },
+          "quote": {
+            "text": "רַבִּי תַּנְחוּמָא וְאַמְרֵי לָהּ רַבִּי מְנַחֲמָא בְּשֵׁם רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי אָמַר עָתִיד הַקָּדוֹשׁ בָּרוּךְ הוּא לְהַשְׁקוֹת כּוֹס הַתַּרְעֵלָה לְאֻמּוֹת הָעוֹלָם לֶעָתִיד לָבוֹא, הֲדָא הוּא דִכְתִיב: וְנָהָר יֹצֵא מֵעֵדֶן, מָקוֹם שֶׁהַדִּין יוֹצֵא",
+            "sha256": "45d210105ea88e119daaa5867cbd0f205a06790cf9a4448cbba7cc7895b5405a",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "R. Tanhuma — and some say R. Menahema — in the name of R. Yehoshua ben Levi said: The Holy One, blessed be He, is going to give the cup of staggering to drink to the nations of the world in the time to come, as it is written: \"And a river went out from Eden\" — the place from which judgment goes forth.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — eschatological climax: hazir/mahazeret wordplay (swine returns the crown); Obad 1:21 kingdom-of-the-LORD"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Obad 1:21 climax: swine returns the crown",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — eschatological climax: hazir/mahazeret wordplay (swine returns the crown); Obad 1:21 kingdom-of-the-LORD]"
+          },
+          "quote": {
+            "text": "וְלָמָּה נִקְרָא שְׁמָהּ חֲזִיר, שֶׁמַּחֲזֶרֶת עֲטָרָה לִבְעָלֶיהָ, הֲדָא הוּא דִכְתִיב (עובדיה א, כא): וְעָלוּ מוֹשִׁיעִים בְּהַר צִיּוֹן לִשְׁפֹּט אֶת הַר עֵשָׂו וְהָיְתָה לַה' הַמְּלוּכָה",
+            "sha256": "7230745c8bc01ab5a25a5e2990cf384e80c383915ccd9b47c7079e7a27ffa742",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And why is its name called \"swine\" (hazir)? Because it will return (mahazeret) the crown to its owners — as it is written (Obad 1:21) \"And saviors shall come up on Mount Zion to judge Mount Esau, and the kingdom shall be the LORD’s.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Edom-as-swine polemic: parable of the ruler who executes the very crimes he committed"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "ruler-parable: judge executing his own crimes",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Edom-as-swine polemic: parable of the ruler who executes the very crimes he committed]"
+          },
+          "quote": {
+            "text": "מַעֲשֶׂה בְּשִׁלְטוֹן אֶחָד שֶׁהָיָה הוֹרֵג הַגַּנָּבִים וְהַמְנָאֲפִים וְהַמְכַשְּׁפִים, גָּחִין וְאָמַר לַסַּנְקְלִיטִין, שְׁלָשְׁתָּן עָשִׂיתִי בְּלַיְלָה אֶחָד",
+            "sha256": "d9bb5e9289d48cc152aa8df87a7b91fa7735fe5a70d9b1f50f65bce657d2bf56",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "It happened with one ruler who would execute thieves and adulterers and sorcerers; he leaned over and said to his counsellors: \"All three of these acts I committed in a single night.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "VR 13:5 does not cite Dan 2 by chapter and verse, but its four-kingdoms grid presupposes the Dan 2 statue-and-stone scheme as the structural backbone. The midrash treats the four kingdoms (Babylon-Media-Greece-Edom) as a single tradition distributed across Tanakh; in the wider rabbinic context (cf. Bereshit Rabbah 44:17, b. Shabbat 150a, b. Avodah Zarah 2b) Dan 2 is the locus classicus for the same scheme. The doubled swine mapping (Persia then Edom) and the R. Yohanan vs R. Shimon ben Lakish weight-debate over the fourth beast both engage the Dan 7 vision as the apocalyptic completion of the Dan 2 dream-vision.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Daniel block opening: Dan 7:2-3 four-winds-and-four-beasts citation"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Daniel block: opening citation of Dan 7:2-3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Daniel block opening: Dan 7:2-3 four-winds-and-four-beasts citation]"
+          },
+          "quote": {
+            "text": "רָאָה דָּנִיֵּאל אֶת הַמַּלְכֻיּוֹת בְּעִסּוּקָן, הֲדָא הוּא דִכְתִיב (דניאל ז, ב ג): חָזֵה הֲוֵית בְּחֶזְוִי עִם לֵילְיָא וַאֲרוּ אַרְבַּע רוּחֵי שְׁמַיָא מְגִיחָן לְיַמָּא רַבָּא, וְאַרְבַּע חֵיוָן רַבְרְבָן סָלְקָן מִן יַמָּא",
+            "sha256": "50b6ae7e9be30f3a54639fd717e512c5560698dc735d5dbb0c4f8697f2881c0d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Daniel saw the kingdoms in their preoccupations, as it is written (Dan 7:2-3): \"I was looking in my vision by night, and behold, the four winds of the heavens were stirring up the great sea, and four great beasts were coming up out of the sea.\"",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Vayikra_Rabbah.13.5",
+            "language": "he",
+            "verseRef": "Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)"
+          },
+          "frontend": {
+            "author": "Vayikra Rabbah 13:5",
+            "title": "Vayikra Rabbah 13:5 - four-kingdoms / four-beasts midrash on Daniel 7",
+            "section": "Dan 7:7: fourth beast = Edom (Yohanan vs Resh Lakish)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Vayikra Rabbah 13:5 [Sefaria: Vayikra Rabbah 13:5 within he[4] — Dan 7:7 fourth beast = Edom (R. Yohanan vs R. Shimon ben Lakish on its weight)]"
+          },
+          "quote": {
+            "text": "וַאֲרוּ חֵיוָה רְבִיעָאָה דְּחִילָה וְאֵימְתָנִי וְתַקִּיפָא יַתִּירָה, זוֹ אֱדוֹם, דָּנִיֵּאל רָאָה שְׁלָשְׁתָּן בְּלַיְלָה אֶחָד וְלָזוֹ בְּלַיְלָה אֶחָד, לָמָּה, רַבִּי יוֹחָנָן וְרַבִּי שִׁמְעוֹן בֶּן לָקִישׁ, רַבִּי יוֹחָנָן אָמַר שֶׁשְּׁקוּלָה כְּנֶגֶד שְׁלָשְׁתָּן, רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ אָמַר יַתִּירָה",
+            "sha256": "a3eb552cd0aa2677108e66d20a1b5ea8abf12d45a3cd077bc95dbf07a9d53aa3",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "\"After this I was looking in the visions of the night, and behold, a fourth beast, dreadful and terrible and exceedingly strong\" — this is Edom. Daniel saw the three of them in one night and this one in one night. Why? R. Yohanan and R. Shimon ben Lakish: R. Yohanan said: she is weighed against the three; R. Shimon ben Lakish said: more than them.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Doubled swine mapping: VR 13:5 contains TWO swine-to-kingdom identifications. In the Moses-block first run, Lev 11:7 “and the swine” = Persia. In the second sustained Lev 11 run, Lev 11:7 swine = Edom; this second reading opens the climactic hypocrisy polemic and closes (via the mahazeret wordplay) with Obad 1:21. The compiler does not adjudicate; both readings stand. This is one of the most studied features of the midrash — the swine is the only animal that bears two kingdom-identifications, reflecting the editorial fusion of an older Persia-strand into the dominant Edom-strand.",
+    "Magistrate-bench hypocrisy parable: the swine that “sticks out its hooves and says see, I am pure” becomes the trope of imperial hypocrisy — the kingdom of Edom “is arrogant and robs and steals, and yet appears as if she is setting up the magistrate’s bench”. This is followed by a parable of a ruler who executed thieves, adulterers, and sorcerers, then admitted privately he had committed all three crimes the same night. The polemic is sharp: Rome’s claim to law is a public mask for private criminality.",
+    "Hazir / mahazeret wordplay as eschatological climax: the swine (hazir) returns (mahazeret) the crown to its owners. This is one of the densest wordplays in classical midrash — the swine, the climax of the unclean-animal list, becomes via consonantal pun the agent of cosmic restoration. Obad 1:21 (“saviors shall come up on Mount Zion to judge Mount Esau, and the kingdom shall be the LORD’s”) seals the move.",
+    "Rivers of Eden as four-kingdoms grid: Pishon = Babylon (Hab 1:8 wordplay on parashav), Gihon = Media (Gen 3:14 serpent gehoneha; Haman the serpent), Hiddekel = Greece (haddah u-qallah, sharp-and-swift), Perat = Edom (paratah/ravat). The midrash reads the geography of paradise as a prophecy of imperial succession — a hermeneutical move whose audacity is sustained by tight phonological argument.",
+    "R. Yohanan vs R. Shimon ben Lakish weight-debate on the fourth beast: R. Yohanan reads it as weighed-against-the-three; R. Shimon ben Lakish reads it as more-than-them. The exchange is staged twice (in the Dan 7:7 block and in the Lev 11 swine-block) — the same disputation re-applied at two different stations of the four-kingdoms walk. This redoubling is itself a hermeneutical signature: the question of Edom’s relative weight is posed wherever the fourth slot appears.",
+    "All-the-prophets-saw-the-kingdoms framing (R. Shmuel bar Nahman): the midrash is structured by the claim that Daniel, Moses, Abraham, and Asaph all saw the four kingdoms in their respective scriptural locations. This reads scripture as a polyphonic chorus testifying to a single eschatological scheme."
+  ],
+  "uncertainties": [
+    "Dan 7:13-14 (Son of Man / one like a son of man / Ancient of Days throne-vision) is conspicuously absent from VR 13:5. The midrash quotes Dan 7:2-3, walks Dan 7:4-7 beast by beast, and stops at the fourth beast. The Son-of-Man passage — politically combustible in late-antique Christian-Jewish polemic, and tied in the Bavli (Hagigah 14a) to the controversy over “two thrones” — is silently bypassed. The most plausible reading is deliberate avoidance: the editor builds eschatology from the Lev 11 swine and Obad 1:21 instead, leaving the Son-of-Man material aside. This is a significant gap given the project’s pilot focus on Dan 7:13-14.",
+    "Stone-Messiah tradition (Resh Lakish on Dan 2:34, b. Sanhedrin 98a) is not invoked here despite its later canonical status in the rabbinic Dan 7 reception. VR 13:5’s eschatology is articulated through cup-of-staggering (R. Yehoshua ben Levi) and crown-returning (Obad 1:21 mahazeret) rather than through the messianic Stone — a different soteriological vocabulary.",
+    "The “Ancient of Days” (axis A in the project’s taxonomy as the throne-vision figure) is not engaged. VR 13:5 is the four-beasts midrash, not the throne-vision midrash; the editorial focus is on the kingdoms-and-their-end, not on the heavenly court that judges them.",
+    "The Lev 11 doubled swine mapping (Persia in the first run, Edom in the climactic run) is preserved without adjudication. Whether the compiler regards this as a genuine alternative reading or as an editorial seam (an older Persia-strand surviving alongside the dominant Edom-strand) is not resolvable from the text alone.",
+    "Sefaria reports Vayikra Rabbah license as “unknown” (Midrash Rabbah TE source). The Hebrew quote.text is academic citation of the public-domain rabbinic text and is verifiable; the English translations[] in this survey are LLM-generated rather than copied from Sefaria."
+  ]
+}

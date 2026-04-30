@@ -1,0 +1,702 @@
+{
+  "scholarId": "joseph-ibn-yahya-on-daniel",
+  "authorDisplay": "Joseph ben David ibn Yahya",
+  "workDisplay": "Perush ʿal Daniel (Bologna 1538)",
+  "resourceId": "sefaria:Joseph_ibn_Yahya_on_Daniel",
+  "resourceFile": "external/sefaria-Joseph_ibn_Yahya_on_Daniel",
+  "traditionTag": "early-modern-jewish-sephardic",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 8:1-27"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome / the present Christian kingdom — explicit at Dan 7:27 ('the fourth kingdom is well-known: it is the present kingdom that ruled the world entire and was afterwards split among nations differing in religion')",
+      "J: Son of Man = our righteous Messiah, brought before God by Elijah — flat Jewish-messianic identification, refusing any reading that breaks the Messiah from the future Davidic redemption",
+      "K: Saints' kingdom = a fifth, celestially-instituted kingdom of Israel that inherits world rule from God after the fall of Rome — pointedly contrasted with the four 'earthly-caused' beasts whose origin is 'natural, not divine'",
+      "C: Little horn = perhaps the nation of Gog and Magog, the eschatological enemy whose downfall transfers world-rule to Israel — a uniquely Sephardic Gog/Magog identification of the horn rather than Antiochus or papal Rome",
+      "L: Plain-sense rabbinic peshat with restrained mashal extension — every beast keyed to a named historical empire before any spiritual reading; he refuses both Antiochene typology and Christian christological extension"
+    ],
+    "moderate": [
+      "F: 'Time, times, and half a time' read as a 2,300-year span computed from the prophecy's date until the Messianic age, with each ʿiddan = 1,000 prophetic years — extraordinary computational gloss anchored at Dan 7:25 / 8:14"
+    ],
+    "tentative": [
+      "E: Implicit anti-Maccabean polemic — at Dan 8:14 he insists Daniel's question concerns 'the final end' (קץ האחרון) of exile in the messianic age, NOT 'the particular distress of Antiochus, from which they were already saved by the Hasmoneans'; this is the closest he comes to naming and rejecting the Antiochene reading",
+      "A: Sixth-century / authentic exilic prophecy — assumed throughout, never argued (the Maccabean thesis is a Christian-academic move that reaches Jewish exegesis later); Dan 7:1 framing 'wrote down the dream as a sign for the last generation' presupposes predictive prophecy delivered to the historical Daniel"
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome / the present Christian kingdom 'split among nations differing in religion' — i.e., Latin Christendom as the fourth beast in its post-imperial fragmentation",
+      "commitment": "strong",
+      "rationale": "Ibn Yahya identifies the four beasts directly with Babylon (Nebuchadnezzar, the lion), Medo-Persia (the bear), Greece under Alexander (the leopard), and Rome (the iron-toothed fourth beast). At the close of Dan 7:27 he writes plainly that 'this fourth kingdom is well-known: it is the present kingdom that ruled the world in totality and was afterwards split among nations differing in religion.' Writing in Bologna in 1538 — a generation after the Spanish expulsion (1492) and inside the Catholic-Protestant fracture — this gloss reads contemporary Latin Christendom AS the fourth beast in its decadent, post-unitary phase. He defers the identification of the ten kings explicitly because 'the end has not yet arrived such that we could carve up the time and know when these ten kings reigned.' The reading is sharp polemic delivered with peshat sobriety: the Christian world is not the kingdom of the saints; it is the dying iron beast.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.27",
+            "language": "he",
+            "verseRef": "Daniel 7:27",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:27",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:27 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "הנה המלכות הרביעית הזה הוא מפורסם שהוא מלכות ההווה אשר מלך בכיפה ואחר כך נחלק לפני לאומים מתחלפים בדת",
+            "sha256": "4e099be5e61ec92a2938da15cca2aa4519a68d94bdca977e5ede3ca8bdff3c81",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Here, this fourth kingdom is well-known: it is the present kingdom that ruled the world entire, and was afterwards split into nations differing in religion.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.2.40",
+            "language": "he",
+            "verseRef": "Daniel 2:40",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 2:40",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 2:40 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "ואחריו מלכות רביעי שיהי׳ חזק כברזל וכאשר הברזל מהדק ומפוצץ וכורת הכל",
+            "sha256": "ffe573a7f16c7afd16cf697409277e4f457824c2dd13bb31a276b7acf0fb9a96",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And after it, a fourth kingdom that will be strong as iron — and just as iron crushes and shatters and cuts everything.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:4",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:4 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "הראשונה כאריה והוא נבוכדנצאר אשר גבר בעולם כאריה",
+            "sha256": "c283704531f4cc2884f016d859a47700613f8b3b946a0731058af75ccfe138cb",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "The first one is like a lion, and it is Nebuchadnezzar, who prevailed in the world like a lion.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.5",
+            "language": "he",
+            "verseRef": "Daniel 7:5",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:5",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:5 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "והוא משל למלכות מדי ופרס. ונדמה לדוב שאינו לוחם כל כך כאריה",
+            "sha256": "8c0f3688af1107486892eb28191cecdd1b14f045bbd17739258315b4e42d5878",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And it is a figure for the kingdom of Media and Persia, and it is likened to a bear, which does not fight as fiercely as a lion.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.6",
+            "language": "he",
+            "verseRef": "Daniel 7:6",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:6 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "והוא רמז לאלכסנדר המוקדוני שהיה משונה בצורתו להיותו נולד מכח השדים והכשופים",
+            "sha256": "53f8995ed0d396feedd5289c1475aacea03c7aa89a7ce41e2d8e772bf35fe754",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And it is an allusion to Alexander of Macedon, who was strange in his form because he was born from the power of demons and sorceries.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn identity",
+      "position": "Possibly the nation of Gog and Magog — the rabbinic-eschatological enemy that wages the final war against Israel before God brings them down and grants Israel world-rule",
+      "commitment": "strong",
+      "rationale": "Where Christian readers (and modern critical readers) lock the little horn onto a single named individual — Antichrist, Antiochus, the papacy — ibn Yahya floats a national-eschatological identification. At Dan 7:27 he writes 'and as for the horn that arises last and humbles three kings — perhaps it will be the nation of Gog and Magog, which we have received [by tradition] is destined to wage war with Israel, and the LORD will humble them, and Israel will then inherit the kingdom of the world.' The triple 'perhaps … which we have received' is methodologically careful: the identification is held tentatively but anchored in established rabbinic eschatological tradition (Ezekiel 38–39). Note the structural move: the saints' inheritance comes only AFTER the horn is broken, and the agent of breaking is God, not a Davidic figure operating inside history. This positions ibn Yahya squarely against any Christian christological reading where Christ defeats Antichrist mid-history.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.27",
+            "language": "he",
+            "verseRef": "Daniel 7:27",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:27 horn as Gog and Magog",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:27 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "אולי כי יהיה אומת גוג ומגוג אשר קבלנו שעתידה ללחום עם ישראל וה׳ ישפילנה וירשו אז בני ישראל מלכות העולם",
+            "sha256": "c1d22dc09e953554d05f988d58a1c34c0f0a8aea85100e360dffc04ba8af0e96",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Perhaps it will be the nation of Gog and Magog, which we have received [by tradition] is destined to wage war with Israel; and the LORD will humble them, and the children of Israel will then inherit the kingdom of the world.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:25",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:25 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "וזה האחרון ידבר דברים כנגד אל עליון ולקדושי עליונים יבלא וישחית ויחשוב לשנות מועדים ודת",
+            "sha256": "b2335eb78d3df48f4310a7a7749ccab91c7496b26c8e27b7cddf985fa852e8f5",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And this last one will speak words against God Most High, and against the holy ones of the Most High he will wear them out and ravage them, and he will plot to alter the appointed times and the Law.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man reading",
+      "position": "Messiah ben David (Mashiach Tzidkenu, 'our righteous Messiah') — explicit, individual, future, brought before the Ancient of Days by Elijah the prophet",
+      "commitment": "strong",
+      "rationale": "At Dan 7:13–14 ibn Yahya offers what looks like a head-on collision with the dominant Christian reading. He writes plainly that the figure 'like a son of man' coming with the clouds is 'our righteous Messiah, who will arrive before the LORD; and Elijah the prophet will bring him near before Him, and to him will be given the dominion forever and ever.' Three load-bearing moves stand out. (1) He uses the technical messianic title Mashiach Tzidkenu — the same phrase classical rabbinic and medieval Jewish texts reserve for the Davidic redeemer. (2) He inserts Elijah as the figure who escorts the Messiah, locking the scene into the standard rabbinic eschatological choreography (cf. Mal 4:5–6). (3) He treats the kingdom transfer as exclusive: 'his dominion is an everlasting dominion that shall not pass away as the former ones did, and his kingdom shall not be harmed.' Because the kingdom is new and final and Elijah-mediated, the figure cannot be backfit to a first-century crucifixion-resurrection sequence — the Messiah here is structurally future. This is the M7 polemic move executed not by frontal attack but by occupying the verse with an alternative scheme so completely that no Christian extension fits.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:14 Messiah ben David identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:14 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "והוא משיח צדקנו אשר יגיע לפני ה׳. ואליהו הנביא יקרבהו לפניו",
+            "sha256": "3a8e39bf26dc0ef745e3d0f95d60b8a6ff7372ecb3424cdd20d27cccfb6bf183",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And he is our righteous Messiah, who will arrive before the LORD; and Elijah the prophet will bring him near before Him.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:13 fifth kingdom premise",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:13 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "להיות המלכות החמישי דבר גדול וקיים אמ׳ בו במראות הלילה",
+            "sha256": "68e73f41af683d84f3bff319035f981feacdeabee483f9121c6c474091c035c8",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Because the fifth kingdom is a great and enduring thing, he says of it 'in the visions of the night,' just as he said with respect to the fourth kingdom.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints' kingdom",
+      "position": "A literal fifth kingdom of Israel, instituted by God from heaven, succeeding the four earthly empires after the destruction of Rome and the fall of Gog/Magog — eternal, this-worldly-and-next-worldly, ruled by the saints of the Most High",
+      "commitment": "strong",
+      "rationale": "Ibn Yahya makes the structural argument cleanly at Dan 7:18: the four prior kingdoms had a 'natural, not divine' cause; the fifth kingdom has a contrary cause. 'But the rise of the fifth kingdom will be from the LORD, from the heavens; for the holy ones of the Most High will receive the kingdom and inherit it as long as this world stands and forever and ever in the world to come.' This distinguishes him from any reading where the saints' kingdom is the church spiritually inheriting from Rome politically (Christian historicism), or where the kingdom is a moral/mystical reality (philosophical-rationalist Jewish readings such as Ibn Ezra in part). The kingdom is concrete, future, Israel-specific, and eternal in both ages. At Dan 7:27 he confirms the bodies-and-borders character: when Gog/Magog falls, 'the children of Israel will inherit the kingdom of the world.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:18 fifth kingdom from God",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:18 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "אך תקומת המלכות החמישי תהיה מאת ה׳ מן השמים כי יקבלו המלכות הקדושי עליון וינחלוהו עד עמוד העולם הזה ולעולמי עולמים",
+            "sha256": "e9f0dff0710d938bf7dd06b3c1703de307dc0dc5891b9769dd33ebad43f5c0dd",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "But the rise of the fifth kingdom will be from the LORD, from the heavens; for the holy ones of the Most High will receive the kingdom and inherit it as long as this world stands, and for all eternity in the world to come.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.17",
+            "language": "he",
+            "verseRef": "Daniel 7:17",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:17 beasts as earthly-caused",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:17 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "אלה החיות הגדולו׳ שהם ארבע ירמוז לד׳ מלכים שיקומו מן הארץ וסבת הקמתם תהיה סבת ארציית ולא אלהית",
+            "sha256": "167587675d752a4f332d9ccdc0f57193ba5c5d940a0bc04efd23124ec9114e49",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "These great beasts, which are four, allude to four kings who shall arise from the earth, and the cause of their rise will be an earthly cause, not a divine one.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "'Time, times, and half a time'",
+      "position": "A 2,300-year computational span from the date of the prophecy until the messianic age — each ʿiddan = 1,000 prophetic years (because 'a thousand years in your sight are as yesterday'), with the 'half ʿiddan' supplying the additional ~300 years to reach the 2,300 of Dan 8:14",
+      "commitment": "moderate",
+      "rationale": "Ibn Yahya offers an unusual computation at Dan 7:25, refined at 7:27 and tied into the 8:14 figure. The 'time, times, and half a time' (עד עדן עדנין ופלג עידן) is, he says, a span belonging not to the horn but to the beast: Israel is given into the hand of the fourth kingdom for that period. He then applies 2 Peter / Psalm 90 logic — 'a thousand years in your sight are as yesterday' — to gloss each ʿiddan as 1,000 years, totaling roughly 2,000 + 300 = 2,300 years, which he matches to Dan 8:14 evenings-and-mornings. This is not the standard rabbinic rendering (which keeps the time = year-day equation tighter), and it explicitly grounds the chronological extension in a midrashic / philosophical use of God's experience of time. The commitment is moderate because the chain depends on cross-textual harmonization rather than a single direct lemma, and because he is careful to call the calculation provisional ('the end has not yet arrived').",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:25 horn speech against the Most High",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:25 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "וזה האחרון ידבר דברים כנגד אל עליון ולקדושי עליונים יבלא וישחית ויחשוב לשנות מועדים ודת",
+            "sha256": "b2335eb78d3df48f4310a7a7749ccab91c7496b26c8e27b7cddf985fa852e8f5",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And this last one will speak words against God Most High, and against the holy ones of the Most High he will wear them out and ravage them, and he will plot to alter the appointed times and the Law.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Plain-sense rabbinic peshat with extended mashal (figural) keying — beasts and horns are figures of named historical empires before any spiritual extension; refuses both Christian christological allegory and Maccabean Antiochene typology",
+      "commitment": "strong",
+      "rationale": "Ibn Yahya's method at Dan 7 is consistently mashal-based: 'and it is a figure for [X kingdom]' (והוא משל ל…) recurs verse after verse — lion=Nebuchadnezzar, bear=Medo-Persia, leopard=Alexander, fourth=Rome. This is straight rabbinic peshat-with-figural-extension, not philosophical allegory in the Maimonidean mode and not midrashic free-association. But notice what the discipline COSTS the Christian reading: when ibn Yahya refuses to extend the leopard's four heads (Dan 7:6) beyond the historical Diadochi, and when he refuses to fold any of the four beasts into a single transhistorical 'Rome' (the eclectic Christian historicist move), he makes the four-empire sequence load-bearing for a Roman fourth-kingdom and an unfulfilled fifth — which is exactly where his Jewish polemic gains its purchase. Note also the demonological color at Dan 7:6 (Alexander 'born from the power of demons and sorceries'), which shows that peshat-with-mashal is not flat literalism: rabbinic-haggadic tradition supplies content where the lemma is silent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.3",
+            "language": "he",
+            "verseRef": "Daniel 7:3",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:3 earthly causation of the four beasts",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:3 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "להיות כי האומות להיותם חלק האלילים אשר הם עובדים ולא חלק ה׳ לא יושגחו ממנו יתברך",
+            "sha256": "2b6de373d3d336eb6c5f9d18f7865c5317a30582dd7e66a9fa00d17c2e0748f8",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Because the [Gentile] nations, being the portion of the idols whom they worship and not the portion of the LORD, are not subject to His providence.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.3",
+            "language": "he",
+            "verseRef": "Daniel 7:3",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:3 five-kingdoms framing",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:3 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "היות גדולות והוא רמז לה׳ מלכיות הנזכרות במה שקדם",
+            "sha256": "3915fa186f775e4a56a8f43d44124a3d28d7cfae466fa5a2f942d9d13a1336dd",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "[The beasts are] great in size, and this is an allusion to the five kingdoms mentioned in what preceded.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "A",
+      "axisName": "Dating of Daniel",
+      "position": "Sixth-century / authentic exilic prophecy — assumed throughout, never argued (the Maccabean thesis is a Christian-academic move that reaches Jewish exegesis later)",
+      "commitment": "strong",
+      "rationale": "Ibn Yahya never argues for a sixth-century Daniel because in early-modern Jewish exegesis it was not yet a contested premise. He treats the visions as real prophecy received by the historical Daniel during the Babylonian-Persian transition. The opening note at Dan 7:1 — 'and then he wrote down the dream as a sign for the last generation, that they might believe in it when they see that the words of the dream are being fulfilled from time to time' — is fully predictive-prophetic in shape: the dream addresses a future audience precisely because it is not vaticinium ex eventu. He never engages Porphyry or any Maccabean argument; what would today be called 'the critical view' is simply absent from his horizon.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.7.1",
+            "language": "he",
+            "verseRef": "Daniel 7:1",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 7:1 written down as a sign for the last generation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 7:1 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "ואז כתב החלום לאות לדור אחרון שיאמינו בו בראותם שדברי החלום מתקיימים מעת לעת",
+            "sha256": "01a621049b36d6680eb03d11816f7089b6ed09a328fa26ed070f82e48fc8471c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And then he wrote down the dream as a sign for the last generation, that they might believe in it when they see that the words of the dream are being fulfilled from time to time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Engagement with anti-Christian / anti-Maccabean polemic",
+      "position": "Implicit and structural — at Dan 8:14 he explicitly rejects the Antiochene reading of Daniel's question about the end ('it is not about Antiochus's particular distress, from which they were already saved by the Hasmoneans'); the fight against christological readings of 7:13–14 is conducted by occupation of the verse rather than by named-opponent disputation",
+      "commitment": "tentative",
+      "rationale": "Ibn Yahya is post-expulsion (Spain 1492 → Portugal → Naples → Italy) and writes in a Bologna where his community lives under Christian polemic and forced-baptism pressure. But unlike Isaac Abarbanel (a generation earlier) he does not name Christian opponents in his Daniel commentary. The polemical pressure surfaces structurally: by reserving Mashiach Tzidkenu for an Elijah-mediated future arrival (7:14), by reading the fourth kingdom as 'the present kingdom split into nations differing in religion' (7:27 — i.e., Latin Christendom as the dying iron beast), and by extending the 2,300 days of 8:14 across millennia to anchor the Messianic age far beyond the first century. The closest he comes to direct refutation is at Dan 8:14, where he insists that Daniel's question 'was NOT about the particular distress from Antiochus, from which they were already saved by the Hasmoneans, in only a few days … but rather about the knowledge of the final end.' That move shuts down both Antiochene historicism (Christian and modern critical) and any short-horizon Christian fulfillment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.8.14",
+            "language": "he",
+            "verseRef": "Daniel 8:14",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 8:14 refusal of the Antiochene referent",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 8:14 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "ושאלת דניאל פה למלאך המדבר על ידיעת קץ הגלות וחרבן הבית לא היה על הצרה הפרטית מאנטיוכוס כי ממנה נצלו על ידי החשמונים",
+            "sha256": "45ca735404385f51a4a69e1c7e3e94717079949310c6ce046f8956c049759dc6",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And Daniel's question here, addressed to the speaking angel concerning the knowledge of the end of the exile and the destruction of the Temple, was not about the particular distress from Antiochus — for from that they were saved by means of the Hasmoneans.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Ibn Yahya integrates the Daniel 7 four-beast vision with the Daniel 2 statue exactly as classical rabbinic exegesis does: the iron-and-clay legs of the statue and the iron-toothed fourth beast are the same kingdom — Rome / 'the present kingdom' / Latin Christendom. Where Christian readings divide history into pre-Christ and post-Christ ages, ibn Yahya's two visions converge on a single still-pending event: the destruction of the fourth kingdom and the institution of an Israel-ruled fifth. The statue's stone 'cut without hands' is, structurally, the same agent as the Son-of-Man in 7:13–14 — God's direct intervention from heaven, not a Davidic figure operating inside the fourth kingdom's history.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Joseph_ibn_Yahya_on_Daniel.2.40",
+            "language": "he",
+            "verseRef": "Daniel 2:40",
+            "commentator": "Joseph ibn Yahya"
+          },
+          "frontend": {
+            "author": "Joseph ben David ibn Yahya",
+            "title": "Joseph ibn Yahya on Daniel (Bologna 1538)",
+            "section": "ad Dan 2:40 iron fourth kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Joseph ibn Yahya, ad Dan. 2:40 (Bologna 1538; Sefaria)"
+          },
+          "quote": {
+            "text": "ואחריו מלכות רביעי שיהי׳ חזק כברזל וכאשר הברזל מהדק ומפוצץ וכורת הכל",
+            "sha256": "ffe573a7f16c7afd16cf697409277e4f457824c2dd13bb31a276b7acf0fb9a96",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And after it, a fourth kingdom that will be strong as iron — and just as iron crushes and shatters and cuts everything.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Five-kingdom framing introduced at Dan 7:3: the four beasts (lion / bear / leopard / iron-toothed) prefigure FIVE kingdoms when counted with the heaven-sent fifth — a scheme rare in medieval Jewish exegesis but powerful for blocking the Christian inauguration-of-the-kingdom reading.",
+    "Mashiach Tzidkenu + Elijah escort at Dan 7:14 — locates the Son-of-Man scene inside standard rabbinic eschatological choreography (Mal 4:5–6), making any first-century Christian fulfillment structurally unavailable.",
+    "Fourth kingdom = 'the present kingdom split into nations differing in religion' at Dan 7:27 — coded reference to early-sixteenth-century Latin Christendom in its Catholic-Protestant fracture, as the dying iron beast rather than the kingdom of the saints.",
+    "Little horn floated as Gog/Magog rather than Antiochus, papacy, or Antichrist — marks the eschatological enemy as a national-rabbinic-eschatological category rather than an individual figure.",
+    "2,300-year millennial computation at Dan 7:25–27 + 8:14 with each ʿiddan = 1,000 prophetic years (Ps 90:4 hermeneutic), pushing the messianic terminus into deep eschatological future.",
+    "Demonological etiology of Alexander at Dan 7:6 ('born from the power of demons and sorceries') — peshat-with-mashal, but mashal sourced from rabbinic-haggadic tradition rather than philosophical reduction.",
+    "Refusal-by-occupation rather than refusal-by-disputation: the polemic against Christian christological readings of 7:13–14 is conducted by writing such a complete alternative scheme that no Christian extension fits — a method distinct from Ramban's frontal disputation or Abarbanel's named-opponent argument."
+  ],
+  "uncertainties": [
+    "Ibn Yahya never names Christian opponents directly in this commentary; the 'Christian polemic' axis is structural rather than disputational, so any reading that demands explicit citation of Christian readings will find him silent.",
+    "The 2,300-year computation depends on a chain of cross-textual moves (Dan 7:25 → 7:27 → 8:14 + Ps 90:4) and is held provisionally ('the end has not yet arrived') — it should not be characterized as a settled chronological commitment.",
+    "Whether the 'three uprooted kings' and the 'ten kings' admit any historical identification is left open by the commentator himself, who declines to specify because 'the end has not yet arrived.'",
+    "He does not extensively engage Dan 9:24–27 (Seventy Sevens) within the surveyed material; that axis (D) is therefore not treated in this survey.",
+    "He is silent on a millennial interim (axis F) in the Christian sense; his structure is two-stage (this world → world to come) without a thousand-year intermediate phase, so 'amillennial / premillennial' as Christian categories don't apply cleanly."
+  ]
+}

@@ -1,0 +1,983 @@
+{
+  "scholarId": "malbim-on-daniel",
+  "authorDisplay": "Malbim",
+  "workDisplay": "Malbim on Daniel",
+  "resourceId": "external:sefaria:Malbim_on_Daniel",
+  "resourceFile": "external/sefaria/Malbim_on_Daniel",
+  "traditionTag": "modern-jewish-rabbanite",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 8:1-27",
+    "Dan 12:1-13"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Sixth-century Daniel taken as load-bearing premise — the Maccabean-dating thesis is presupposed-rejected; the prophecy projects history forward through Rome down to Malbims own day.",
+      "B: Fourth kingdom = Rome — explicitly named at Dan 7:7, anchored to the consensus of Rashi, Ramban, and Maimonides, with the iron teeth read as Roman absorption-by-incorporation of conquered states.",
+      "E: Engagement with rival readings (anti-Maccabean by implication, anti-Christological at Dan 7:13) — never named, but the architecture (Rome as fourth, papacy/Islam as little horn, end-time at 1912/1913) depends on rejecting them.",
+      "F: Time, times and half a time = a computable eschatological clock — explicit calculation: time = 410 years (= duration of First Temple), 3.5 × 410 = 1845 years, added to the destruction of the Second Temple → 1912/1913 CE.",
+      "J: Son of Man = the elect together with the holy ones of the Most High — corporate-messianic, explicitly anti-Christological: the bar enash represents saints who came near to the Ancient of Days through Torah-study and mitsvot.",
+      "K: Saints kingdom = the eternal post-exilic Jewish messianic kingdom on earth, contrasted with the four ephemeral Gentile kingdoms — endures because the spirit of error will pass from the earth and they will sin no more.",
+      "L: Rationalist-philological hermeneutic; engages prior medieval-Jewish commentators (Rashi, Ramban, Rambam, Abrabanel) by name and integrates Hazal — beasts read as named historical empires before any mystical extension."
+    ],
+    "moderate": [
+      "C: Little horn = both the papacy AND Islam (Muhammads prophetic dispensation) — a remarkable double identification; the eyes-and-mouth signal interpretive-authority claims pressed against Israel.",
+      "N: Cross-book integration — Dan 7 beasts mapped to the four metals of Dan 2; Dan 8 four-headed leopard = the Diadochi; Dan 12:7 time-times-half formula = Dan 7:25."
+    ],
+    "tentative": []
+  },
+  "distinctiveMoves": [
+    "Anchors the four-kingdoms = Babylon-Persia-Greece-Rome scheme on the named consensus of Rashi, Ramban, and Maimonides — by-name medieval-Jewish triangulation rather than independent argument.",
+    "Offers a remarkable double identification of the little horn — the papacy (following Abrabanel) AND/OR Muhammads prophetic dispensation — and entertains that both may be intended simultaneously.",
+    "Performs an explicit numerical eschatological computation at Dan 7:25: iddan = 410 years, 3.5 × 410 added to the destruction of the Second Temple = 5673 AM (= 1912/1913 CE); cross-confirmed via Dan 12:7.",
+    "Reads the Son of Man as a corporate-messianic figure (the holy ones with the messiah of the God of Jacob at their head) ascending through Torah-and-mitsvot, NOT through incarnation — a pointed anti-Christological gloss without ever naming Christianity.",
+    "Frames the kingdoms eternity not mythologically but ethically: the spirit of error will pass from the earth, and they will sin no more — moral eschatology rather than apocalyptic imagery.",
+    "Closes the commentary on Dan 7 with an unusually pastoral note (v.28) — Daniel withholds the vision because he did not wish to pain the hearts of the prisoners of hope.",
+    "Treats the maskilic / Christian higher-critical Maccabean-dating thesis as not on the table — never names it, never engages it, but the entire architecture (papacy and Muhammad as referents of the little horn, end-time at 1912/1913) is structurally incompatible with a second-century date.",
+    "Engages the medieval Aristotelian-rationalist register: Daniels vision is an intellectual influx from the world of the separated intelligences (= angels in medieval-philosophical idiom)."
+  ],
+  "uncertainties": [
+    "Malbim never names Porphyry or contemporary higher critics by name; the anti-Maccabean polemic is structural rather than explicit. A reader hostile to the vaticinium-prophecy framework will find no direct argument here — only a presupposed rejection.",
+    "The little-horn identification is doubly hedged: papacy (with Abrabanel), Muhammad, or both. A reader expecting a single referent should know Malbim is non-exclusive on this point.",
+    "The 1912/1913 end-time computation is offered confidently but Malbim immediately complicates it with a parallel reckoning yielding 1868. The date passed without the predicted redemption — a fact Malbim could not adjudicate from beyond his 1879 death; later Malbim editors would have to work out the disconfirmation.",
+    "Axis O (multi-stage / type-antitype) is genuinely thin in Malbim — he is structurally one-stage-eschatological. Surveyors looking for an Antiochus-as-type / Antichrist-as-antitype layered reading will not find it; Malbim does not even mention Antiochus IV in his Dan 7 commentary."
+  ],
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome — explicitly named, anchored to the medieval-Jewish consensus of Rashi, Ramban, and Maimonides.",
+      "commitment": "strong",
+      "rationale": "Malbim opens at Dan 7:7 with a flat identification of the fourth beast as Rome, naming Rashi, Ramban, and the Rambam in his epistles as supporting authorities. The iron teeth he reads as Rome digesting conquered states into a single Roman body politic; the trampling feet are remoter provinces administered by Roman generals. The ten horns are pre-figured in the ten toes of Nebuchadnezzar statue (Dan 2). He treats this thesis as so settled that he frames it as a citation of the medieval triumvirate rather than an argument.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:7 — fourth-beast = Rome",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:7 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "היא מלכות רומי כמו שהסכימו רש\"י והרמב\"ן והרמב\"ם באגרותיו",
+            "sha256": "d493aea6c66b8df7435a58bccac9dce7145e9fd602b14cb98092c36f9de9d6db",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "This is the kingdom of Rome, as Rashi, Ramban, and the Rambam in his epistles have agreed.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:7 — Roman policy of incorporation",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:7 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ממשלת רומי להפך את הממלכות הנכבשות תחתיה שיהיו גוף אחד עם מלכות רומי",
+            "sha256": "d7a785099ac9f94fc8baae847d5ecf64a62497404e638b93b6adaf47c4a57de9",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "the Roman government — to convert the kingdoms it conquered beneath it into a single body with the kingdom of Rome.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.23",
+            "language": "he",
+            "verseRef": "Daniel 7:23",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:23 — fourth kingdom restated by the angel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:23 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "מורה על מלכות רביעית שתהיה בארץ שתהיה משונה מכל המלכיות",
+            "sha256": "d27919fd6d4737c926eb5b3ea066e03161d820b5aab0a0c4d860c999ba833056",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "indicates a fourth kingdom that will be on the earth, which will be different from all the other kingdoms.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn",
+      "position": "Double identification: the papacy AND/OR Muhammad — a propagandistic-religious power, not a merely military king, that wages doctrinal war against the saints.",
+      "commitment": "moderate",
+      "rationale": "Malbim reads the little horn at Dan 7:8 in two parallel ways. He first follows Abrabanel in identifying the small horn with the papacy, beginning at Constantine and the elevation of Pope Sylvester, with three crowns uprooted read either as three kings who broke from papal authority, or as the rise of three rival doctrinal positions. He then offers a second, parallel reading: the little horn alludes to Muhammad, who was small at first and then conquered Asia and other parts of the world, with the three uprooted horns being three Greek/Diadochic kingdoms swallowed by Islamic conquest. He explicitly entertains that BOTH may be correct simultaneously, since the eyes-and-mouth signal a horn whose distinctive power is doctrinal-rhetorical, not military: its power is in its mouth — disputation, dogmatic teaching, claims pressed against Israel through both opinion and arguments.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.8",
+            "language": "he",
+            "verseRef": "Daniel 7:8",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:8 — papal identification (with Abrabanel)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:8 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "פי' הרי\"א שכיון על ממשלת האפיפיור אשר התחיל ברומי שהיה בתחלתו מעטה וזעירא",
+            "sha256": "7eb79eee19bdb16090544a4fe8f267aa24e8a9793f58aca88d1f15bf732f383c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "Abrabanel explained that the prophet aimed at the rule of the Pope which began in Rome, which at its outset was small and minor.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.8",
+            "language": "he",
+            "verseRef": "Daniel 7:8",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:8 — Islamic identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:8 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ויש מקום לפרש שהקרן זעירא רומז על מחמד, שצמח כמה מאות שנה אחרי זאת",
+            "sha256": "a260f3a09d7b0c02c738ee31ceb1b223ab5804d7fa5a2ce0a08f8abf1ccbb264",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And there is room to interpret that the little horn alludes to Muhammad, who arose several hundred years after this.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.8",
+            "language": "he",
+            "verseRef": "Daniel 7:8",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:8 — eyes and mouth = rhetorical-doctrinal power",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:8 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כי כח הקרן הזה ע\"י עינים ופה, העינים מציינים השכל והחכמה",
+            "sha256": "b521fdd2336505cf4d394d85796a75c606cd941f2a5da0342cf23473e80c46b3",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "for the power of this horn is by means of eyes and mouth — the eyes signify intellect and wisdom.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:25 — little horn = the Ishmaelite prophet",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:25 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "וכאשר עמד הקרן זעירא נביא הישמעאלים, כלו כמה צדיקים וקדושי עליון",
+            "sha256": "651fb6add9679fa5cc005b253b24937384b80fa834961f0d60c2fa52f2fb82de",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and when the little horn — the prophet of the Ishmaelites Muhammad — arose, many righteous ones and holy ones of the Most High perished.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Time, times, and half a time",
+      "position": "A computable eschatological clock yielding 1912/1913 CE: time = 410 years (= duration of First Temple); 3.5 × 410 = 1845 years; added to the destruction of the Second Temple → 5673 AM (= 1912/1913 CE).",
+      "commitment": "strong",
+      "rationale": "At Dan 7:25 Malbim performs one of the most concrete end-time computations in 19th-century Jewish exegesis. He surveys earlier rabbinic interpretations that took iddan as 400 years (the Egyptian exile) yielding 1800 years from the destruction → 1868, but rejects that arithmetic in favor of iddan = 410 years (the duration of the First Temple). Three iddanim plus a half = 3.5 × 410 = 1845 years; added to the date of the Roman destruction of the Second Temple this gives 5673 AM (= 1912/1913 CE). He then ties this to the parallel computation in Dan 12:7 as deliberate cross-confirmation. He hedges by noting two reckonings (one from 400 years yielding 1868 as start of process, one from 410 yielding 1912/1913 as completion) and reads them as bracketing the redemption window.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:25 — computation principle",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:25 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ומוכרח שהעדן הוא ת\"י שנה כזמן עמידת בית ראשון, שלשה עדנים הם אלף ר\"ל שנה",
+            "sha256": "721905a482f64b6c2c3002c1ab2b96640eaf90ce53f196bf46a56f466afa26b8",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "And it must be that iddan is 410 years, like the duration of the First Temples standing; three iddanim are one thousand two hundred and thirty years.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:25 — 1912/1913 CE end-date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:25 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "סה\"כ אלף שמונה מאות מ\"ה שנה, ויגיע זמן הקץ בשנת תרע\"ג",
+            "sha256": "54512a7d643eb083eb2728e2a994d90443b3e8c407bc5b376860e3351f62f28d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "in total, one thousand eight hundred and forty-five years; the time of the end will arrive in the year 5673 (= 1912/1913 CE).",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man",
+      "position": "Corporate-messianic: the bar enash represents the elect Israel — the holy ones who through Torah-study and mitsvot ascend to come near to the Ancient of Days; the messiah of the God of Jacob stands at their head. Explicitly anti-incarnational and anti-Christological.",
+      "commitment": "strong",
+      "rationale": "Malbim reading of Dan 7:13 is one of the most carefully-constructed anti-Christological readings in the modern-Jewish corpus. Where the four beasts rose from the agitated sea, the Son of Man arrives with the clouds of heaven — clouds being fine vapors filled with light spirit, ascending from the waters and moistures to the heights, and from there pouring down generous rain on the earth. The Son of Man coming, then, is by means of the spiritual dew that rises through his Torah and his deeds — matters elevated above matter and corporeality. The figure rises in his good deeds upward until he draws near to God and walks with God — this is a moral-spiritual ascent, NOT an incarnation. The coming-near is bilateral: the elect ascend through merit, and divine help descends to draw them yet nearer. At Dan 7:27 he closes the loop explicitly: the bar enash refers to the holy ones of the Most High, with the messiah of the God of Jacob at their head. The corporate reading is grounded in the rabbinic principle zakhu (Sanh. 98a): if Israel merits, they come with the clouds of heaven.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:13 — Son of Man as Torah-elect",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:13 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ומלכות ה' תבא ע\"י ההשכלה בתורת ה' ועשות מצותיו שזה מיוחס לבן אדם משכיל",
+            "sha256": "099064db8e4f817c918cf80fe4c73ebfae681716b2c26420f8247193f8a72f0c",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the kingdom of God will come by means of enlightenment in the Torah of God and the doing of His commandments — this is what is attributed to the wise son of man.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.13",
+            "language": "he",
+            "verseRef": "Daniel 7:13",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:13 — clouds = spiritual ascent",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:13 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ראה שיתנשא במעשיו הטובים למעלה ראש עד יקרב אל האלהים ואת אלהים יתהלך",
+            "sha256": "4653da55c052e06d520e1c83e7a2702a937994e543ebfb0d4d152d087c38c6d7",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "he saw that he ascends through his good deeds upward until he draws near to God and walks with God.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.27",
+            "language": "he",
+            "verseRef": "Daniel 7:27",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:27 — corporate messianic identification",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:27 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "ופי' שהבר אנש הם קדישי עליונים ומשיח אלהי יעקב בראשם",
+            "sha256": "ce8e1ecf5c3b291c9753d5915fa973ef6323b954c69fdfab5f1ae6f835442214",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the angel explained that the bar enash is the holy ones of the Most High, with the messiah of the God of Jacob at their head.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Saints kingdom",
+      "position": "An eternal Jewish messianic kingdom on earth — the holy ones inherit dominion over all peoples; tyrant-kingdoms perish quickly but this one endures because the inhabitants will not sin again once the spirit of error is removed from the earth.",
+      "commitment": "strong",
+      "rationale": "At Dan 7:14 (citing Abrabanel) Malbim distinguishes three privations of exile against three positive gifts of the messianic kingdom: against weakness of heart — dominion (shultan); against contempt — honor (yeqar); against absence of king-and-princes — kingship in the holy land. Against the natural rule that tyrant-empires are short-lived, this dominion is everlasting precisely because the underlying conditions of moral failure that destabilize empires will be eliminated: the spirit of error will pass from the earth, and they will no longer sin. At v.18 he locks in the eternal dimension: the saints do not arise from the earth (as the four beasts did) but inherit the kingdom forever, and to the eternal world that comes after the world of decay. At v.22 he distinguishes two gateways to redemption — by merit (zakhu) at any moment, or by the appointed time even without merit — citing Sanh. 98a be-ittah / lo zakhu.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.14",
+            "language": "he",
+            "verseRef": "Daniel 7:14",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:14 — eternal saintly kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:14 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "אבל מלכות זה לא תתחבל, כי רוח טועים יעביר מן הארץ ולא יחטאו עוד",
+            "sha256": "75cb9d292252fcbb6d6a60aa9ce3f1c481e961290c1f8c0ecc40d874aa878de7",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "But this kingdom will not be destroyed, because the spirit of error will pass away from the earth, and they will sin no more.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.18",
+            "language": "he",
+            "verseRef": "Daniel 7:18",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:18 — saints inherit the eternal kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:18 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "והם לא יקומון מן ארעא רק יירשו המלכות עד העולם, ועד העולם הנצחי שיבא אחרי העולם הכלה ונפסד",
+            "sha256": "08a1ff4870620287d552345b9b88571c10d97626d20805817657b72fdf3fe727",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and they will not arise from the earth, but rather will inherit the kingdom forever, and into the eternal world that comes after the world of decay and corruption.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.22",
+            "language": "he",
+            "verseRef": "Daniel 7:22",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:22 — two paths to redemption (zakhu / lo zakhu)",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:22 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כי הגאולה תלוי או בכלות הזמן המיועד, או בעת רצון גם לפני הזמן",
+            "sha256": "83ec57e88c11830cd9cbbda39dd293b9b7e16dde8816725f579ca89376efd6c1",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "for the redemption depends either on the completion of the appointed time, or on a moment of divine favor even before the time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Hermeneutic",
+      "position": "Rationalist-philological commentary in the medieval-Jewish stream — engages Rashi, Ramban, Rambam, and especially Abrabanel by name, integrates Hazal where they help, and prefers a plain meaning anchored in a single named-historical-empire reading of the four beasts before any spiritual or mystical extension.",
+      "commitment": "strong",
+      "rationale": "Malbim method on Dan 7 is to (1) identify each beast with a named empire on the explicit authority of medieval-Jewish predecessors, (2) read each animal-feature symbolically against that empires known historical character (lion = Babylonian standard imagery; bear = uncentered Medo-Persian double-monarchy; leopards four heads = the four Diadochic kingdoms; iron-toothed unique fourth = Rome), (3) integrate Hazal halakhic-aggadic readings (Tanhuma on the thrones, b. Sanh. 98a on zakhu), and (4) cross-reference the visions of Daniel 2, Ezekiel 1, and other prophets to triangulate. He explicitly cites the Rabbis (Hazal), Rashi, Ramban, Rambam, and Abrabanel, and Ezekiel by name as confirmatory cross-witnesses. His vocabulary is post-Maimonidean rationalist (Daniels vision is an intellectual influx from the world of the separated intelligences, i.e., angels in medieval-philosophical idiom).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.1",
+            "language": "he",
+            "verseRef": "Daniel 7:1",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:1 — vision as intellectual influx",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:1 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כי היה השפעה שכליית מעולם השכליים הנפרדים. [שכלים נפרדים בלשון הקדמונים פירושו מלאכים]",
+            "sha256": "2c59ff51a62315fcda43c92a9aacb0e635e5c46e6515e6b53693fa1e9863b7ff",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "for it was an intellectual influx from the world of the separated intelligences. (Separated intelligences in the language of the ancients means angels.)",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:4 — Hazal-anchored identification of Babylon",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:4 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "וכבר פי' חז\"ל שרומז על מלכות בבל שמשלה אז",
+            "sha256": "6bbff667395a4d0096eaeec4a4b10eedfca779d2cbdad9d76a912fec5cc171c5",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and the Sages have already explained that it alludes to the kingdom of Babylon which ruled at that time.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "A",
+      "axisName": "Dating / authorship",
+      "position": "Authentic sixth-century Daniel; the prophecy projects history forward through Babylon → Persia → Greece → Rome and into the modern era. The Maccabean-dating thesis is presupposed-rejected (never named, never engaged on its merits — its falsity is taken for granted by the entire architecture of the commentary).",
+      "commitment": "strong",
+      "rationale": "Malbim never argues against a Maccabean date because, for him, the Maccabean-date hypothesis is not on the table — the architecture of his commentary makes the question moot. He treats every chapter as authentically prophetic of subsequent history: the second part of the book is Daniels own writing of his own visions, the first verse alone is appended by the men of the Great Assembly who wrote the book of Daniel as the Sages said. The four kingdoms run Babylon → Medo-Persia → Greece → Rome; the little horn is Pope Sylvester or Muhammad — both more than a thousand years after Daniels hypothetical Maccabean redactor. The end-time computation lands in 1912/1913 CE — only a vaticinium delivered to the historical sixth-century Daniel can do this work. The polemic is structural, not explicit: Malbim simply refuses the maskilic-and-Christian-critical premise that prophecy is post-eventum.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.1",
+            "language": "he",
+            "verseRef": "Daniel 7:1",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:1 — Daniel as author",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:1 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "בלשון מדבר בעדו, שהוא עצמו כתב כל הדברים כמו שהם",
+            "sha256": "6fb6066b8eb2b7af7aa4c205d0914886f0fcfa2e663daef6aeb1478e80165ca6",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "in the first-person voice — for Daniel himself wrote all the matters as they are.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.17",
+            "language": "he",
+            "verseRef": "Daniel 7:17",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:17 — vision oriented to the four kingdoms fall",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:17 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "עקר כונת המחזה הזאת הוא להגיד סילוק הד' מלכיות ועמידת מלכות שמים אשר תבא בסוף כולם",
+            "sha256": "c48621bc9faad1e510ba4b78fe06bfd28dff0caf46323ecefc34914f29757ef1",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "the principal intent of this vision is to declare the removal of the four kingdoms and the standing of the kingdom of Heaven, which will come at the end of them all.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Apocalyptic referent",
+      "position": "Future-eschatological — the climax of Daniel 7 (vv. 13-14, 22, 27) refers to a still-future messianic age that has not yet arrived in Malbims day; the four-kingdoms sequence terminates not in any past inner-historical event but in a final divine intervention computed (per Dan 7:25) at ~1912/1913 CE.",
+      "commitment": "strong",
+      "rationale": "Malbim reading is irreducibly eschatological-future: the visions principal intent is the kingdoms removal and the standing of the eternal kingdom at the end of them all (v.17). The thrones and the divine throne-judgement of vv. 9-10 are the fall of the throne of the idolatrous kingdoms which the Holy One blessed be He will overturn; the river of fire flows from the divine throne to consume the wicked at the eschaton. The redemption-window computation at v.25 points to a date in his future. He ends the chapter with a striking pastoral note (v.28): Daniel kept the matter to himself because he did not wish to grieve the heart of the prisoners-of-hope — long night of exile, dawn yet to come.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.9",
+            "language": "he",
+            "verseRef": "Daniel 7:9",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:9 — overthrow of idolatrous thrones",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:9 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "אלו כסאות עובדי כו\"ם שעתיד הקב\"ה להפכן",
+            "sha256": "a1f6f836f02684ec0f87fb9b2e6fbd5a585b57edf9257877f06f18e06528abe2",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "these are the thrones of the worshipers of foreign worship, which the Holy One Blessed be He will in the future overturn.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.28",
+            "language": "he",
+            "verseRef": "Daniel 7:28",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:28 — long night of exile, hope deferred",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:28 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כי עוד יבא לילה ארוכה ואפילה מנודח ולא רצה להכאיב לב אסירי התקוה",
+            "sha256": "2b45afa03aeafaadc1929615a3f79394ecdda07327e437d32b7d7e25fa092ca7",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "for a long and outcast-darkening night was still to come, and he did not wish to pain the hearts of the prisoners of hope.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book integration",
+      "position": "Tight integration of Daniel 7 with Daniel 2, Daniel 8, Daniel 12, Ezekiel 1, and prior prophets — the four beasts of Dan 7 = the four metals of Nebuchadnezzars statue in Dan 2; the leopards four heads of Dan 7 = the four-headed goat-kingdoms of Dan 8; time, times, and a half of Dan 7:25 = the same expression at Dan 12:7.",
+      "commitment": "moderate",
+      "rationale": "Malbim cross-references chapters and books constantly. At Dan 7:4 the lion is identified via Nebuchadnezzars statue (he is the head of gold) and via Ezekiels chariot (their banner was the form of a lion). At Dan 7:6 the leopards four heads are read against Dan 8:22 (four kingdoms shall stand up). At Dan 7:7 the ten horns of the fourth beast are identified with the ten toes of Dan 2s statue. At Dan 7:25 the time-times-half computation is doubled by Dan 12:7 identical formula, treated as deliberate cross-confirmation. He invokes Habakkuk, Isaiah, Jeremiah, and Haggai by name as parallel attestations.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.6",
+            "language": "he",
+            "verseRef": "Daniel 7:6",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:6 — leopard heads = Dan 8 kingdoms",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:6 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כי אחרי מותו נחלקה מלכותו לד' ראשים כמ\"ש עוד לקמן [ח' כ\"ב] ארבע מלכיות מגוי תעמודנה",
+            "sha256": "4e8e8785b5cec0104976b1d18b14e3d9f6e6da8eb6099107dfb74a5b8735d80b",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "for after his death his kingdom was divided into four heads, as is said further on (Dan 8:22): four kingdoms shall stand up out of the nation.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.7",
+            "language": "he",
+            "verseRef": "Daniel 7:7",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:7 — ten horns = ten toes of Dan 2",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:7 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "וקרנים עשר לה, לדעתי הוא עצמו עשר אצבעות הרגלים שראה נבוכדנצר בחלומו",
+            "sha256": "31cb3fb3179c6a1eb6267386a6098be39573288fcc5856986a2c51ef169f81fc",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and it had ten horns — in my view this is the very same as the ten toes of the feet that Nebuchadnezzar saw in his dream.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Malbim treats Dan 7 four beasts as parallel to Dan 2 four-metal statue: lion = head of gold (Babylon), bear = silver (Medo-Persia), leopard = bronze (Greece), iron-toothed beast = iron-and-clay (Rome). The ten horns of the fourth beast in Dan 7 are explicitly identified with the ten toes of Dan 2 statue, and read as the eschatological partition of the fourth kingdom into ten subordinate kingdoms at the end of days.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.4",
+            "language": "he",
+            "verseRef": "Daniel 7:4",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:4 — lion = head of gold",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:4 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "כמו שהתבאר בחלום נבוכדנצר שהוא רישא דדהבא",
+            "sha256": "d0421159e3cfda58f46dd965847029832c8ae97069fee566cfea21fb47257c10",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "as was explained in Nebuchadnezzars dream — that he is the head of gold.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Dan 12:1-13",
+      "positionSummary": "The time-times-and-half formula at Dan 7:25 is read in deliberate parallel with the same formula at Dan 12:7; the two attestations bracket the eschatological window — beginning around 1868 CE (on the 400-year reckoning) and completing around 1912/1913 CE (on the 410-year reckoning). Malbim treats the doubling as a deliberate cross-confirmation rather than a redundancy.",
+      "citations": [
+        {
+          "backend": {
+            "kind": "external-sefaria",
+            "resourceUrl": "https://www.sefaria.org/api/texts/Malbim_on_Daniel.7.25",
+            "language": "he",
+            "verseRef": "Daniel 7:25",
+            "commentator": "Malbim"
+          },
+          "frontend": {
+            "author": "Meir Leibush ben Yehiel Michel Wisser (Malbim)",
+            "title": "Malbim on Daniel",
+            "section": "ad Dan 7:25 — Dan 7:25 parallel to Dan 12:7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Malbim, ad Dan. 7:25 (Sefaria, ex Wikisource)"
+          },
+          "quote": {
+            "text": "וזמן זה בא שנית בסי' י\"ב שאמר המלאך לדניאל כי למועד מועדים וחצי תכלינה כל אלה",
+            "sha256": "7fe1a4e6010d9aef0487bbe074e5638fda2cd9afdaf6bdf9ca60e22711b0040d",
+            "language": "he"
+          },
+          "translations": [
+            {
+              "language": "en",
+              "text": "and this time-period comes a second time in chapter 12, where the angel said to Daniel: for at an appointed time, times, and a half all these shall be completed.",
+              "translator": "anthropic:claude-opus-4-7",
+              "translatedAt": "2026-04-29",
+              "method": "llm",
+              "register": "modern-faithful"
+            }
+          ],
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ]
+}
