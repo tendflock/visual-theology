@@ -1,0 +1,4382 @@
+# Extracted from PDF
+# Source: https://repository.yu.edu/items/f04a17f7-cc80-422c-8f75-cd5132521785
+# Pages: 1-154, DPI: 200, PSM: 6, language: heb+eng
+# Generated 2026-05-01 08:40:41
+# WARNING: OCR-quality. Verify against the printed page for any citation.
+
+==== PDF page 0001 ====
+RAV SAADIA GAON'S TAFSIR ON THE ARAMAIC PORTION OF DANIEL
+EDITED FROM MANUSCRIPTS
+AND CAIRO GENIZA FRAGMENTS
+WITH AN INTRODUCTION
+BY
+STANLEY KLEIN
+7 A MASTER'S PROJECT SUBMITTED TO THE FACULTY OF THE
+BERNARD REVEL GRADUATE SCHOOL
+IN PARTIAL FULFILLMENT OF THE REQUIREMENTS
+OF THE DEGREE OF
+MASTER OF ARTS
+AS OF JANUARY, 1977
+SPONSOR: /
+/ |. te fo
+
+==== PDF page 0002 ====
+ABSTRACT
+RAV SAADIA GAON'S TAFSIR ON THE ARAMAIC PORTION OF DANIEL
+EDITED FROM MANUSCRIPTS AND CAIRO GENIZA FRAGMENTS
+WITH AN INTRODUCTION
+‏צ‎
+‎Stanley Klein
+
+A hurmdred and fifty years age, few ef Rav Saadia Gaen's
+Arabic translations and cemzentaries en the Bible were
+available te Eurepeam schelars. The rediscevery ef these
+lest werks ef R. Saadia begam with the first traces ef new
+1062686 im Judee-Arabic literature im seventeenth century
+Eurepe, culminating im the centralizatien ef such manuscript
+material im Eurepean libraries during the nimeteerth century,
+when mest catalegues ef these cellectiens started te appear.
+At the same time, Eurepean Jewry wae renewing its centact
+with the Arabie speaking cemnunities ef Nerth Africa and
+Yemen. By the end ef the mineteenth century, manuscripts
+frem Yemen and the Caire Geniza previded schelars fer the
+first time with the majer pertien ef R. Saadia's literary
+eutput en the Bible.
+
+Ameng these werks, 2, Saadia's Tafsir (Apabic translatien)
+on the Aramaic pertion of Damiel is simgled out for treatment
+here. This part ef R. Saadia's exegetical werk is feund te be
+ef special significance since he was acquainted with numereus
+Aramaic dialects frem written seurces, and ceuld speak a
+number ef these dialects himself.Such extensive knewledge ef
+598106 frem literary and oral sources was ast available Le
+iater vewish schelars , and when cembined with R. Saadia's
+methed ef using cemparative Semitic philolezy, yielded resuits
+which are ef lasting value te medern schelarship. .\
+
+Im 02062 te ‏ע200028%61‎ aseertain 2. 588818'8 cextribution
+te the understanding ef Biblical Aramaic, we must have
+receurse te manuscripts ef his Tafsir en Daniel. Am editien ef
+this beek based en ene Yemenite manuscript was published by H.
+Spiegel in 1906 as his decteral dissertatien, but it centains
+many mistakes and emissiens , and can therefere not be relied
+upen. Te reetify this situation, I have previded variants te
+his text frem three ether manuscripts and four Geniza fragments.
+The impertance ef these manuscripts and fraguents is that they
+emable us te view the vwarieus stages ef the textual histery ef
+this werk frem a shert peried after R. Saadia'’s death up te
+medernm times.
+
+==== PDF page 0003 ====
+Wilo tuis infermatiem in 3220, 2. Saadia's tafsir en Daniel
+is dealt with 15 the centext ef the textual criticism ef his
+translatiens ef ether parts ef the Bible. Deubts have beem expressed
+abeut the accuracy, reliability, amd ‏ת6צ6‎ authership ef the
+text ef these translatiens as we new have them. The reasens fer
+these deubts are discussed, and em the basis ef this analysis,
+the reliability ef the text ef the Tafsir en Daniel 18 4.
+
+0061001572 the intreductier, a sampling ef R. Saadia's
+exegesis ef Daniel is gives which highlights the value ef the
+Tafsir fer the study e Biblical Aramaic, and the inpertance ef
+am accurate text ef this werk.The Judee-Arabic text ef the 2
+en the Aramaic pertien ef Daniel ‏6ב+‎ 8.
+
+==== PDF page 0004 ====
+TABLE OF CONTENTS
+PART
+I. INTRODUCTION
+I. The Rediscovery of R. Saadia's Lost Works 3-7
+II. R. Saadia's Knowledge of Aramaic 8-15
+III. Manuscripts Used For This Edition 16-21
+IV. The Text of R. Saadia's Tafsir 22-39
+V. R. Saadia's Exegesis of Daniel 40-47
+VI. Notes 48-58
+II. BIBLIOGRAPHY 59-69
+III. RAV SAADIA'S TAFSIR ON THE ARAMAIC PORTION OF DANIEL -
+THE JUDEO-ARABICTEXT WITH VARIANTS 2-81
+
+==== PDF page 0005 ====
+CHAPTER I
+THE REDISCOVERY OF R. SAADIA'S LOST WORKS
+
+In the early epoch of modern Jewish scholarship, even
+a scholar of the stature of 5. Rappaport had only a limited
+knowledge of R. Saadia's literary output, consisting of brief \
+quotations and allusions culled from medieval sources. As \
+to the magnitude of his work in the field of Biblical exegesis,
+Bahya Ibn Pakuda and Abraham Ibn Ezra provided some details!
+The great Judeo-Arabic works written by R. Saadia and those
+who followed were lost to Europeans who, with the exception
+of a few scholars, understood no Arabic. Only those works
+which had been translated into Hebrew had survived and con-
+tinued to be used. Even in the Orient where Arabic was still
+spoken, many of these works had gone out of use. The concise
+and to the point Bible comments of Abraham Ibn Ezra and
+Tanhum Yerushalmi had long replaced all the works of their
+predecessors, but here and there some of R. Saadia's Arabic
+translations and commentaries continued to be used and were
+available in manuscript form. 2
+
+The first traces of a new interest among Europeans in
+Judeo-Arabic literature began in the seventeenth century with
+scholars such as Joseph Scaliger; and Edward Pococke. 3
+Exceptionally important in bringing such works to Europe was
+
+3
+
+==== PDF page 0006 ====
+4
+Richard Huntington. While stationed in Damascus as an English
+trade attache for many years during the seventeenth century,
+he managed to accumulate a collection of the Judeo-Arabic
+originals of many important Jewish works, which had to wait
+until the rise of modern Jewish scholarship to become well
+known .4
+
+The gradual ingathering of Hebrew and Judeo-Arabic
+Manuscripts to the great university and national libraries
+culminated in the nineteenth century with centralized collections
+which now began to be catalogued and described for the first
+time by Jewish scholars such as Munk, Dukes, Neubauer and
+Steinschneider. > These scholars were knowledgeable in Arabic
+language and literature, a prerequisite for undertaking
+Judeo-Arabic studies.
+
+At the same time European Jewry was renewing its contact
+with the Arabic speaking Jewish communities. Southern Italy
+now served as an important point of contact, just as it had
+been hundreds of years earlier. The Jews of the important
+Italian port city of Leghorn had close ties with those of the
+North African city of Tunis, with constant traffic flowing
+between these two cities.© The Jewish printing center in
+Leghorn published numerous works by and for the use of North
+African Jews, some of these written in Judeo-Arabic.? Important
+manuscripts reached Italy through this channel and then
+passed on to other European centers © A Tunisian Jewish
+Maecenas was once responsible for the publication of an impor-
+
+==== PDF page 0007 ====
+5
+
+tant Judeo-Arabic work in Paris. 9
+
+The small Jewish population of Palestine during the
+nineteenth century was another important center for contact
+between far-flung Jewish communities. It was from there that
+scholarly Jews were sent to solicit funds for the support of
+the charitable and educational institutions of the "“Yishuv".
+One of these itinerant collectors was the Ashkenazi Jacob Saphir
+who travelled through a good part of Europe and the Orient.
+We are fortunate to have his diary Even Saphir which contains
+a detailed description of what he found interesting enough
+to record. During his Eastern travels, because of his scholarly
+background and interests, he was especially fascinated by
+the cultural life of the Yemenite Jews 10
+
+Living in a remote corner of the Arabian Feninsula, they
+had nevertheless managed to keep in touch with the outside
+Jewish world. All the variegated literary trends found in the
+Midrashim, the works of the Babylonian Geonim, the Spanish
+poets and philosophers, and the mystics of Safed, had had
+their effects on the religious life of the Yemenite Jews.
+Surprisingly enough, some of these books which had been lost
+for centuries, were preserved to modern times only in Yemen. 1
+
+Saphir's account of R. Saadia's works still in use in Yemen,
+provided invaluable inférmation for European Scholars .12 Book
+dealers found an abundant source of Hebrew and Judeo-Arabic
+manuscripts in Yemen, where printed books were still considered
+a rarity, and the impoverished Yemenite Jews were overjoyed
+to find that these outsiders would pay relatively high prices
+
+==== PDF page 0008 ====
+6
+
+for old manuscripts which were in poor condition, frequently
+giving them in exchange newly printed books which were much
+more usable.!3 In this way the late nineteenth century saw a
+huge influx of Yemenite manuscripts to the libraries of
+England and Germany, many of them Bible manuscripts containing
+R. Saadia's Arabic translation. 14
+
+But the most important and most striking event for the
+recovery of R. Saadia's works was without doubt the discovery
+of the Cairo Geniza. Here again Jacob Saphir played a role,
+by supplying an interesting account of his brief visit there 15
+Thereafter, numerous manuscript fragments began to trickle into
+European libraries with some reaching S. Werthiemer in Jerusalem,
+who was among the first to publish’ such materia 16 In 1896 S.
+Schechter in England was fortunate enough to discover that one
+such fragment contained the Hebrew original of Ben Sira, which
+had been lost for over a thousand years. Electrified by this
+discovery, and with the financial support mustered by Charles
+Taylor, an English mathematician well versed in Rabbinics,
+Schechter undertook a trip to Egypt to transfer the contents
+of the Cairo Geniza to England, where it could become
+available to scholars. Schechter was extremely successful in
+his undertaking because of the cooperation of the Jewish com-
+munity in Cairo, and so he was able to bring veritably
+hundreds of thousands of manuscript pages from the Geniza of
+the Ezra Synagogue and the nearby Basutin cemetery.) ’Some
+
+==== PDF page 0009 ====
+7
+
+of these fragments are works of 2. 5880618 or letters and
+documents which shed a new light on -his period.) 8 schechter
+himself published a volume of such fragments, entitled appro-
+Piately enough, Saadyana, and scholars have continued his work
+to this day.19
+
+Here for the first time were found parts of R. Saadia's
+books which had been known only by name 20 Many of these
+manuscripts date within a hundred years of R. Saadia's death,
+and so represent more correct versions of some of his works
+already known to us from Yemenite manuscripts~ The long
+task of piecing together 2. Saadia's works has only begun; the
+future will certainly bring new discoveries of some of his
+still missing works.
+
+==== PDF page 0010 ====
+CHAPTER II
+R, SAADIA'S KNOWLEDGE OF ARAMAIC
+
+With the bringing of many Yemenite manuscripts to Europe
+and the new Genizah findings, scholars were for the first time
+able to view many of R. Saadia's Arabic translations and
+commentaries to the Bible which had previously been considered
+lost. At the end of the nineteenth century the time was
+ripe for a complete edition of R. Saadia's works, and this
+task was undertaken by J. Derenbourg with the aid of a group
+of scholars. The proposed edition was to have been published
+in twelve volumes in honor of the one thousandth anniversary
+of R. Saadia's birth, but only six ever appeared. The seventh
+volume was to have contained "Daniel, version arabe et
+commentaire, avec traduction frangaise".} Not until 1906 was
+‏.ם‎ Saadia's translation of Daniel published, unfortunately
+only on the basis of one sixteenth century Yemenite manuscript,
+even though other and earlier manuscripts were available.”
+The result was a text with numerous mistakes and omissions,
+which could not be relied upon without comparing other manus-
+cripts. My thesis is meant to rectify this situation by
+providing variants to the previously published text from
+various manuscripts, in this way affording scholars the oppor-
+tunity of examining R. Saadia's work on the Aramaic portion
+of Daniel with a greater measure of certainty.
+
+Does 5. Saadia's translation have any value for us today?
+
+\ 8
+
+==== PDF page 0011 ====
+9
+
+R. Saadia's total exegetical output on the Bible has had a
+tremendous impact on later Biblical exegesis and lexicography.
+One need only mention such grammarians as Jonah Ibn Ganah and
+Bible commentators such as Judah Ibn Balaam who used R. Saadia
+as the point of departure for their work, generally without
+even mentioning his name, for his translation was the
+standard one which everyone in Arabic-speaking countries was
+aware of .? Through the works of Abraham Ibn Ezra and David Kimhi,
+many of R. Saadia's explanations of difficult points in the
+Bible were preserved and incorporated already in the early works
+of modern critical scholarship.“ It is no small testimony to
+Lhe lasting value of R. Saadia's work, that some of his views
+
+\ have been substantiated only with the aid of new information
+from ancient Semitic languages >
+
+How did R. Saadia acquire this highly respected knowledge
+
+of Hebrew, a knowledge so deep that he could use the most /
+‏6תטססס‎ Biblical words in a meaningful way in his poetry,
+something he in fact went of his way to do® His thorough
+acquaintance with the Bible alone would not help him in this
+task. R. Saadia himself says that the Bible was not meant to
+be a textbook of the Hebrew language. Its purpose was theolo-
+gical rather than philological, and for this reason it only
+presented a partial picture of the Hebrew used in Biblical
+times.’
+
+==== PDF page 0012 ====
+10
+Only a language for which a large amount of written
+material of all types has been preserved or that still conti-
+nues to be known through a spoken, living tradition, can be
+understood adequately. Biblical Hebrew is not one of these
+languages, and even Mishnaic Hebrew, its later form, ceased
+to be spoken hundreds of years before R. Saadia, and left
+a literature of a narrowly defined nature. 8
+Words which occurred infrequently in the Bible, or had
+many different meanings and nuances, could not always be
+understood accurately on the basis: of context alone. R.
+Saadia's innovative contribution to Biblical scholarship was
+> his use of cognate Semitic languages and dialects for compa-
+rative purposes. His wide knowledge of Mishnaic Hebrew,
+Arabic and Aramaic, controlled by his sensitivity to what the
+Biblical context could bear, resulted in the elucidation of
+many obscure words. It is interesting that, not long after
+‏.םת‎ Saadia's death, Jonah Ibn Ganah should mention that this
+. method was frowned upon by some on religious grounds. But R..
+Saadia, even though he was the greatest religious authority
+of his time, did not let such considerations blind him to the
+_ obvious scientific truth he saw in these comparisons.”
+Biblical Aramaic, however, was part of a large complex
+of dialects, many of which were still spoken when R. Saadia
+lived. How well was he acquainted with them? Which languages
+
+==== PDF page 0013 ====
+11
+did he know?
+
+R. Saadia was raised and educated in Egypt where Arabic
+had been spoken for over two hundred years, so we may assume
+that his mother tongue was Arabic? He must have been \
+thoroughly acquainted with Arabic as a literary language,
+since we know that he carried on a lively philosophical and
+scientific correspondence with Isaac Israeli of Kairouan, and
+only Arabic had the terminology necessary for these topies t!
+At an early age R. Saadia already came in contact with the
+Aramaic of Targum Onkelos on the Torah which was a basic
+part of elementary Jewish education.” Evidence is also available
+of R. Saadia's acquaintance with Targum Jonathan to the
+Prophets, Targum Yerushaimi to the Torah and other Targunim,)3
+From the fact that he wrote an Arabic translation 05 83%
+Antiochus which he considered authentic, we see that he had
+closely studied this Aramaic text which recently has been
+dated as early as the second century c.g. His thorough
+knowledge of the Babylonian and Jerusalem Talmudim and many
+Midrashim completed his knowledge of Aramaic from written
+sources, aside from the Aramaic of the Bible.!>
+
+R. Saadia may have come in contact with Aramaic speaking
+Jews in Egypt since we know that communities of Palestinian
+and Babylonian Jews existed there onis most thorough contact
+with spoken Aramaic dialects, however, took place during his
+extended travels and sojournings in Palestine, Syria and
+Babylonia.!!
+
+==== PDF page 0014 ====
+12
+R. Saadia's six year long stay in Palestine was an
+important milestone in his education. It was here that he
+completed his linguistic and grammatical education at the
+great center of the Massoretic tradition, the city of Tiberias,
+under Abu Kathir Ibn Zakariya. New information recently
+published by Allony has revealed the great importance of this
+scholar. We now know that he himself was a practitioner of
+the comparative philological method that R. Saadia was so adept
+| at using. Abu Kathir devoted a whole chapter in his mostly
+lost work, Principles of the Hebrew Language, to the study of
+the close relationship of Aramaic and its dialects to Hebrew.
+Most important were his methods of linguistic research
+of oral traditions, for just as a modern scholar goes to
+remote areas to record the speech of a dialect of interest to
+him,2so would Abu Kathir search out Jewish speakers of Aramaic,
+which was then on the wane in Palestine, in order to find
+information to solve his linguistic problems 28 we should
+note that this procedure was also common among medieval Arab
+linguistic scholars who searched for rare words and accurate
+grammatical constructions among the illiterate Bedsulim of the
+Arabian desert who were thought to have preserved the pristine
+beauty and purity of the Arabic language. Also R. Saadia used
+this method for we find him quoting the common, every-day
+Palestinian Aramaic speech of a woman asking her son's teacher
+to release him from school; from here R. Saadia derived a
+
+==== PDF page 0015 ====
+13
+rule of punctuation, which his teacher Abu Kathir had been «
+aware of too 2?
+
+Aramaic continued to be spoken in Babylonia into the
+eleventh century, and there is no doubt that R. Saadia was
+acquainted with this type of Aramaic alsoz! So well was he
+attuned to the dialectical differences between Palestinian
+
+\ and Babylonian Aramaic speech that he could even relate how
+various objects are called by different names in these
+dialects. There is little doubt that R. Saadia himself
+actually spoke Babylonian Aramaic, especially in the environs
+of the Yeshiva of sura 2? In this vein an anecdote preserved
+for us by Moses Ibn Ezra may be of some interest. He quotes
+a biographer of ₪. Hai's who tells the following story: >
+“What happened was that this Gaon, (R. Hai), found a word of
+the Fayyumite of blessed memory, (R. Saadia), in one of his
+
+\ *bakashot' and did not know its meaning or his intent. So
+he concentrated on it, fell asleep and saw him (that is R.
+Saadia) in his sleep, and asked him about it in the Aramaic
+language they were fluent in." ?Whatever one may think of
+this story, its author, R. Masliah, had been a student of |
+‏.קת‎ 181'5 and certainly was well aware of the linguistic
+situation in tenth and eleventh century Babylonia 2
+
+==== PDF page 0016 ====
+14
+Not only was R. Saadia knowledgeable in the area of Aramaic,
+
+but it also played a special role for him. R. Saadia in his
+Agron conceived his task to be that of setting an example for
+and teaching the correct usage of Hebrew to budding young
+poets. His interest in creating an elegant but clear classical
+Hebrew style was no doubt a reaction against the Arab claim
+
+of superiority over all other languages. He wanted to prepare
+for the use of poets a Hebrew vocabulary cleansed ef all
+foreign elements such as Persian or Greek words. Aramaic,
+however, was considered differently because of its closeness
+
+to Hebrew..and the fact that it was included in the Bible and
+used so much in the liturgy. Even though R. Saadia in his
+Sefer ha-Galui bemoans the fact that Aramaic (together with
+Arabic) has replaced Hebrew as the spoken language, he is willing
+to incorporate many Aramaic words into the Hebrew language by
+changing their form slightly to fit more closely into Hebrew.
+R. Saadia in his Hebrew poetry used Aramaic words which he had
+Hebraised and no doubt under his influence, the harbinger of
+the Golden Age of Poetry in Spain, Dunash Ibn Labrat, did the
+same. To R. Saadia, then, Biblical Aramaic shared to some
+extent in the holiness and importance of the Hebrew language
+and so was worthy of the same exacting study that the Hebrew
+| part of the Bible received.
+
+R. Saadia's Tafsir on the Aramaic portion of Daniel 8
+
+special value for us today because he alone among medieval
+
+==== PDF page 0017 ====
+15
+scholars had the most extensive information from both written
+and oral sources at hand to explain Biblical Aramaic, and
+felt the need to understand it thoroughly enough to be able
+to use it in poetry. Therefore, for the study of Biblical
+Aramaic and the Aramaic vocabulary of the Spanish poets, a
+renewed interest in R. Saadia's work on Daniel is in order..
+
+==== PDF page 0018 ====
+CHAPTER III |
+MANUSCRIPTS USED FOR THIS EDITION
+1. Ms. a.
+
+In 1906 Hermann Spiegel published as his doctoral
+dissertation Saadia al-Fajjumi's arabische Danielversion,
+with a brief German introduction and some notes. 4 The only
+manuscript used for this edition was the Berlin Ms. Or.
+no.1203 of Steinschneider's catalogue. This manuscript has
+175 pages and contains the text of the Hagiographa with
+Babylonian punctuation and an interlinear Arabic translation.
+Its colophon indicates that it was written in Yemen in 1597.2
+Editors of R. 588018'8 Tafsir on other books of the Bible,
+
+J. Cohn, W. Bacher, J. Derenbourg and J. Kafih, have used
+this same manuscript for their own editions.?
+
+Spiegel offers as his text a “corrected" version of the
+Berlin manuscript, while the original readings are relegated
+to his notes. Words oar phrases which he considered to be mis-
+sing, were inserted in square brackets based on conjecture
+alone. Original readings of this Ms. are referred to in my
+variants asa. As I was not able to consult this Ms. because
+its whereabouts after World War II are not known, I have had
+to rely on the accuracy of Spiegel's transcription, which
+serves here as the basic text??
+
+16
+
+==== PDF page 0019 ====
+17
+2. Ms. ‏.א‎
+
+The Bodleian Library in Oxford has the distinction of
+having the only manuscript known of R. Saadia's long commentary
+on Daniel, aside from Geniza fragments. It includes his
+Arabic translation along with the Biblical text, and was
+among the "latest acquisitions" of the 1880's; its catalogue
+number is 2486. Neubauer describes this Ms. as being “very
+fragmentary and much injured" for none of the chapters are
+complete. It is written in Syrian square characters in quarto
+size, on paper, and has 175 pages. “ of the six chapters covered
+by my edition, this manuscript contains: Dan 2:29-4:9; 4:15-
+7:12:
+
+3. Ms. p,
+
+A Yemenite manuscript of the book of Daniel with R.
+Saadia's Tafsir, belonging to Rabbi Joseph Kafih was published
+in facsimile in 1973 by Shelomo Morag. It is probably to be
+ascribed to the thirteenth or fourteenth century, and is only
+fragmentary, with the missing portions being supplied by a
+later hand. This Ms. covers the following parts of my editin:
+Dan. 2:11-29; 2:38-3:26; 4:17-32; 5:6-6:8; 7:3-28.>
+
+Morag's interest in publishing the Ms. was limited to
+the nature of the Biblical Aramaic portrayed therein, with no
+attention at all payed to the text of 2. Saadia's Tafsir.
+
+==== PDF page 0020 ====
+18
+4. Ms. 1p,
+
+The missing pages of Ms. ‏ק‎ were filled in over seventy
+years ago by R. Shalom ben R. Yahya Kafih. While the older
+manuscript had the Biblical text written with Babylonian
+vocalisation, this newer one was copied from a Ms. with
+Tiberian vocalisation. This Ms., included in Morag's fac-
+simile edition for the sake of completeness, covers: Dan. 2:1-
+10; 2:30-37; 3:27-4:16; 4:33-5:5; 6:9-7:2.° ‘
+5. Ms. ‏,ת‎ /
+
+In 1971 a facsimile of this manuscript containing the
+entire book of Daniel with Saadia's Tafsir, was published in
+Israel. The anonymous publisher calls it an “ancient manuscript
+from Yemen", While one can be suré that it is written in a
+Yemenite hand, it is most certainly not ancient. For one
+thing, the beginning verse of each chapter of the Biblical
+text (given here with Tiberian vocalisation) is indented, and \
+the chapter number included in the body of the text. This
+practice came about under the influence of printed bibles which
+first began to circulate in Yemen in large numbers in the nine-
+teenth century, and does not occur even in the relatively
+modern Ms. 1D, Secondly, on the basis of the handwriting
+alone, it seems to be no older than one of the manuscripts
+shown in 5. Birnbaum*s important work on Hebrew paleography.
+
+==== PDF page 0021 ====
+19
+That "Temanic Square” handwriting is dated 1747 and already |
+was influenced by the Sephardic printing type.7
+6. Ms. 9,
+
+The Saltykov-Schedrin Public Library in Leningrad houses
+the Antonin collection of Geniza manuscripts. This six page
+fragment found there is mentioned in A. I. Katsh's handlist
+as number 476 and is described as "Saadia Gaon on Daniel in
+Arabic" .® It is written on parchment, with 31 to 33 lines per
+page.
+
+As far as the date of this fragment is concerned, we are
+in a position to ascribe it to the first half of the eleventh
+century. On the recto of page 1 the Ms. reads: ‏"ליוסף בן‎
+‏ישוטה ש'צ' יחיה ויזכה"‎ Interestingly enough, this figure
+shows up in a number of Geniza sources, and is a signatory
+on a document written in Fostat in 1041 C.E., here with the
+title of “ha-Parnas".? While there may, of course, have been
+two people with the same name, the pool of names occurring in
+the Geniza is somewhat limited and in addition, the handwriting
+of the Ms. does support such an early date. This Ms. contains
+part of R. Saadia's long commentary and his Arabic translation
+of Dan. 2, verses: 1-2, 8-19, 22-29, 32, 35-45.
+
+Some scribal features of interest are that no diacritical
+points occur except on the letter 2 and that words are broken
+off in the middle at the endwfa line, and then are continued
+
+==== PDF page 0022 ====
+20
+on the next one.
+7. Ms. ‘a,
+
+A two page fragment of R. Saadia's Tafsir alone is found
+in the small Geniza collection of Westminster College in
+Cambridge, England, under the number Arabic volume 1, fragment
+no. 132. It has 17 to 19 lines per page and is written on
+paper. The fragment does not have diacritical points except
+above the $ and at times ‏אל-‎ is written separately. It
+covers Dan. 3:29-4:10; 4:32»5:9.
+
+8. Ms. By.
+
+The transference of the contents of the Cairo Geniza
+to libraries of many different countries is responsible for
+the fact that parts of the same manuscript frequently have
+become separated only to be reconstructed by painstakingly dif-
+ficult scholarly 1801 ,10 such has been the case with these
+three fragments which are part of one manuscript of R. Saadia's
+commentary and Arabic translation. The first fragment of two
+pages was shown to me by Dr. M. Zucker. It includes the
+Tafsir to Dan. 3:24-30. The second fragment, also of two
+pages is numbered T-S, Fragments box Misc. 28, Frag. no. 222,
+and covers the Tafsir to Dan. 6:5-29; 7:23-28. A third fragment
+of this manuscript which contains one page of the Arabic com  -
+mentary is found in Westminster College, Arabic vol. 2 frag. 178.
+
+==== PDF page 0023 ====
+21
+
+The two last fragments were found by Dr. . Hurvitz. The ma-
+nuscript is written in an eleventh century cursive hand and
+contains from 30 to 34 lines per page. -!
+9. Ms. 34,
+
+A one page fragment, T-S Arabic box 51 frag. 3, contains
+
+> part of R. Saadia's commentary and his Tafsir ‏מס‎ Dan. 7:15-18.
+
+It has 18 lines per page and is written in large square Baby-
+lonian characters of the eleventh century. Diacritical points
+are found above the letters 5 and ‏בצ‎
+
+The collation of these manuscripts has been done for the
+entire book of Daniel, but only the. Tafsir on the Aramaic part
+is presented here because of its unique importance for the
+understanding of Biblical Aramaic. After the Judeo-Arabic
+portion of this thesis was completed, a number of other Geniza
+fragments have been discovered by me, but they regrettably could
+not be included here. The fragments used, however, provide a
+good example of the types of manuscripts available in the
+Geniza and are invaluable in serving as a control to the evidence.
+presented by the Yemenite manuscripts.
+
+==== PDF page 0024 ====
+CHAPTER IV
+THE TEXT OF R. SAADIA'S TAFSIR
+
+In dealing with the Tafsir on Daniel we may ask if what
+we find in the manuscripts is really 2. Saadia's own work.
+
+On the surface, we are able to answer this question
+positively by pointing to the many parallels with R. Saadia's
+other works, and references to it by later authors which agree
+with the text of the Tafsir as we have it. Moreover, R. Saadia's
+long commentary on Daniel, where he refers to his well known
+Beliefs and Opinions, contains allusions to his translation
+which are found in our text.) We may be sure then, that the
+Tafsir on Daniel that we have is R. Saadia's, but,,is it in
+the same form as it was when it left the author's hands?
+
+The Tafsir on Daniel is only a small part of R. Saadia's
+Arabic translation of many parts of the Bible, and the textual
+reliability and even authenticity of other parts of this
+translation has been called into question by scholars. We shall
+discuss these doubts, analyze the reasons behind them, and
+then return to consider the state of the text of the Tafsir
+on Daniel in the light of our findings.
+
+The history of the development of the text of R. Saadia's
+
+\ 21016 translation spans the long period from the tenth to the
+twentieth century, from the time it was composed until the
+22
+
+==== PDF page 0025 ====
+| 23
+Yemenite Jews, the last Jewish community preserving a manuscript
+tradition of the Tafsir, ceased to exist as an isolated entity
+in 1948.
+
+Soon after R. Saadia's time, quite a number of new trans-
+lations became available for various parts of the Bible. Fre-
+quently, one who wrote a commentary on a particular part of
+the Bible included a new translation. We know of a number of
+such translations which have survived, while many have been
+lost? The nature of these translations and their proximity
+or distance from R. Saadia's vary widely. Some, such as
+parts of R. Samuel ben Hophni's translation of the Pentateuch
+are actually revised versions of R. Saadia's Tafsir. Only
+occasional changes necessitated by 8 different understanding
+of the original were made.° Others, such as the translations
+of Yefet ben Ali the Karaite, are meant to be totally indepen-
+dent of R. Saadia's work and therefore diverge entirely
+from his wording, sometimes just for the sake of offering a
+non-Saadianic translation, but even in this case, occasional
+similarities are unavoidable.’
+
+In the thirteenth century the Samaritan community found
+it necessary to have an Arabic translation of the Pentateuch
+for its own use, so R. Saadia's Tafsir was revised to corres-
+pond to the different Hebrew text of the Samaritans, and some
+other changes of a theological nature were made. >
+
+==== PDF page 0026 ====
+24
+
+The opportunities for these secondary translations to
+infiltrate and affect in return the original Tafsir of R. Saadia
+are myriad, for in the hands of scribes and copyists anything
+can happen. At worst, another's translation can be ascribed
+to R. Saadia if the manuscript does not state clearly who
+the translator is. A defective manuscript of R. Saadia's
+Tafsir to some book can have the missing parts filled in from
+another author's translation. A scribe having a number of :
+translations before him, may create a hybrid version by
+selecting for each word or phrase the translation he prefers.
+
+With passing generations, subtle changes sometimes occur.
+Without thinking, copyists may substitute grammatical forms
+and spellings current in their own time for the antiquated
+ones found in older manuscripts. Certain words in the Tafsir
+of R. Saadia were not in common use even in his own time, and
+may have been exchanged for more current ones at a later date ©
+
+The liturgical and pedagogical use of Arabic translations
+of the Bible is also an important factor in the history of
+the text of R. Saadia's Tafsir. R. Saadia's almost classical
+Arabic would generally be beyond the understanding of the
+young or uneducated, those who needed a translation most, and
+especially by the late middle ages, the distance between the
+spoken Arabic dialects and R. Saadia's exhalted Arabic had
+
+==== PDF page 0027 ====
+25
+grown immensly./ The Tafsir on the parts of the Bible read
+publicly most often, the Pentateuch and Five Scrolls, were most
+open to simplification and wholesale revision.
+Thus we see that numerous possibilities for the text of
+R. Saadia's translation to gradually change its original form
+existed. Do we have any actual evidence, though, that this
+has happened? Here scholars offer us a wide spectrum of opinions.
+Paul Kahle, the famous Bible scholar, goes so far as to
+state that he considers the standard version of the Tafsir
+on the Pentateuch "8 textus receptus, written for the convenience
+of the Arabic speaking Jews in Yemen and based on the translation
+of Satadya" 5 His student, Max Katten, suggests that our text |
+results from the fixing of a standard text of ‘an Arabic trans-
+lation to the Pentateuch based on R. Saadia's, in eleventh
+century Babylonia?
+The main reason for these contentions is that certain
+\ differences exist between this standard text and quotations
+from medieval sources, which seem to indicate that we no Longer
+possess the original version of the Tafsir. These differences
+were examined by Dr. M. Zucker but were found to be of much
+less significance than Katten had thought. While a few of
+the quotations differing from the text of the Tafsir may
+actually be from various other commentaries by R. Saadia, or
+different editions of his works, many others are the result
+of mistakes or changes typical to all manusctipts but not sig-
+nificant enough to consider the Tafsir non-Saadianic.!0
+
+==== PDF page 0028 ====
+26
+
+The extreme opposite of Kahle's view is that ₪ Joseph
+Kafih. He is of the opinion that the Yemenite text of the
+Tafsir as represented by the oldest manuscripts of this type,
+are quite accurate, while the many variants found are indica-
+tive of the continuing revisions of R. Saadia'to his translation!
+All, then, acknowledge the existence of variants, but differ
+only as to their significance.
+
+S. Abramson, in discussing a particular instance of
+variants, mentions that it is difficult to determine which
+reading in the Tafsir is correct, since ‏.א‎ Saadia translated
+the Pentateuch twice and each variant may stem from a different
+translationl2 This notion lends new authority to the many
+variants which are found, and could serve as an all-encompassing
+explanation for how they came into being. Abramson is’not alone
+in this matter; in fact, this is the standard opinion voiced
+by scholars such as Derenbourg, Steinschneider, Eppenstein,
+and Maiter!?
+
+The source for this view is the introduction by R. Saadia
+himself, which occurs before the Tafsir on the Torah in
+Derenbourg's edition!* After a discussion of a theological =
+nature, R. Saadia says that he was requested to write a book
+which would deal exclusively with the simple meaning of the
+Torah without the long involved philological and theological
+explanations which are so characteristic of his long commentary.
+This new work is taken by the above-mentioned scholars to be
+the Tafsir which we now have.
+
+There are certain problems though, inherent in accepting
+
+==== PDF page 0029 ====
+27
+
+this view, if we carry it through to its final conclusion.
+What we are actually saying is that R. Saadia translated the
+Torah into Arabic, wrote a commentary on large parts of it,
+and then translated the Torah again. The nature of the first
+translation must have been such that it could not exist inde-
+pendently, but only made sense when the long commentary was
+at hand to explain all its obscurities and peculiarities.
+Only by considering the first translation to have been of this
+nature, can we explain the need for a second translation which
+could make clear sense without any recourse to a commentary.
+
+Now, it should be pointed out that, as far as I can tell,
+the Tafsir on the Torah as we have it differs in no way whatso-
+ever in style, method or clarity, from R. Saadia's translations
+to other books of the Bible for which, in addition, we have
+his long commentaries. Are we to assume that these long
+commentaries were also written to elucidate previous transla-
+tions of R. Saadia's, now lost, which could not be understood
+independently? The existence of such translations would be
+very helpful in accounting for the numerous variants found in
+the manuscripts of R. Saadia's Tafsir to these books. But
+this assumption cannot be accepted, for we clearly see the
+close connection with and many allusions to the Arabic trans-
+lations we now have, in every part of these commentaries.
+Similarly, the fragments of R. Saadia's long commentary on the
+Torah which have survived, refer to a text of R. Saadia's
+translation which is essentially the same as
+
+==== PDF page 0030 ====
+8
+
+ours, and even when a significant departure from our text
+occurs, it is not one which would indicate the existence of
+a previous translation different in clarity and simplicity
+from the present one! The differences which occur are no
+more radical than those found in the textual history of any
+medieval text of so popular a nature, and certainly are not
+grave enough to force us to conclude that a previous Tafsir
+on the Torah had been written and lost.
+
+If we nevertheless feel constrained to believe that R.
+Saadia did translate the Torah twice becouse he apparently
+says so in his introduction to the Tafsir, we would do well
+to examine this introduction carefully. There are four parts
+of it which are crucial in ascertaining the nature of the
+work being discussed !é :
+
+The first iswhere R, 588018 says he wrote his book in
+answer to a request, "T7950 ‏"אן אנפרד בסיםס נץ אלתורה פי כתאב‎
+“to devote a special work to the simple meaning of the text
+of the Torah". This could mean a translation, but could
+just as well be a brief commentary. More telling is where
+R. Saadia says that instead of long involved explanations he
+would give ‏."אכראג מעאני נץ אלתורה פקם"‎ Both Derenbourg and
+Kafih take the word ‏אכראג‎ to have the meaning of translating,
+and would say that R. Saadia was stating that he would trans-
+late the meaning of the text of the Torah alone! ? While the
+
+==== PDF page 0031 ====
+29
+
+Arabic root 173 has meanings which include elucidating and
+presenting to the public, we must acknowledge that R. Saadia
+himself uses it in reference to his Arabic translation! On
+the other hand, since he also uses it with the meaning of
+explaining, we do not have to assume that a translation is
+being referred to here. !9
+
+Towards the end of this introduction, R. Saadia describes
+his work aS "ops ‏בסים נץ אלתורה‎ Wosn". The word ‏תפסיך‎ is
+translated by Derenbourg | ‏תה "פתרון"‎ ambiguous word which
+means “explanation”, while Kafih gives the meaning ‏"תרגום"‎
+‎which clearly means "translation". 20106 again, while R. Saadia
+often uses this word when referring to his translation, it can
+just as well mean explanation, interpretation or commentary. 2!
+
+At the end of his introduction, 8. Saadia says that where
+he is able to add a word or letter which would reveal the
+meaning without any further comment, he would do so. Since
+this is a typical aspect of his translation we may feel that
+this is what is referred to here? But what if the mere addition
+of a word or letter would not suffice to make the meaning of
+a verse clear, doesn':t this imply that here some sort of
+remark or comment would be in order? While this would suite
+a short commentary, it would be totally out of place ina
+translation. R. 588018 may simply be stressing his desire
+to be as brief as possible here, in contradistinction to his
+long commentary.
+
+==== PDF page 0032 ====
+20
+We may conclude on the basis of this analysis that ‏.א‎
+‎Saadia's introduction cannot conclusively be proven to have
+| been meant for a second translation, but could just as well
+have been an introduction to a short commentary. Are we,
+however, substituting one unprovable theory for another?
+\ Here we are on firmer ground for we have some relevant evidence
+from the Geniza and other sources.
+
+In the list of R. Saadia's works compiled after his death
+by his sons, an almost complete account of his works on the
+Bible is given. The works on the Torah mentioned are: 1.- R.
+Saadia's translation, 2.- his long commentary on the first
+half of Genesis and on Exodus and Leviticus, 3.- ‏כתאב אזהאר‎
+‏תס אלךדאץ‎ the entire Torah, 4.- questions on the Torah?? We
+hardly know anything about the ‏יכתאב אזהאך אלריאץ‎ while the
+other three works are obviously not, short commentaries on the
+Toran2* Mann translated the title as Choice of Practices and
+felt that it probably dealt with the laws of the Pentateuch
+in their Biblical order, on which (2. Saadia offered his
+comments?> But aside from the fact that the title is more
+properly translated Garden Flowers, the non-Halachic nature
+of some of the quotations we have from this book show that
+Mann was wronge?® 5. Pognanski considers this work to have
+contained short glosses to the Pentateuch, (which we shall call
+the "short commentary") and equates it with the work referred
+to in R. Saadia's above-mentioned introduction. In addition,
+Poznanski assumes that D7029R ‏,אלפרת‎ the plain commentary
+of R. Saadia quoted by R. Abraham Maimonides refers also to
+
+==== PDF page 0033 ====
+31
+these short glosses. 7 \
+
+Since R. Abraham in his Arabic commentary on Genesis and
+Exodus quotes R. Saadia by name quite frequently, I examined
+these quotations carefully in order to determine whether any
+clear evidence for the existence of a short commentary by R.
+Saadia could be founa 28 Most of these quotes did not furnish
+evidence conclusive enough to decide this issue, except for
+R. Abraham's comment on Gen. 49:4 where he says: ‏"ור סעדיה זכ‎
+
+JIS ‏ולם תתחלל אלא אנת ואמא‎ WITT ‏יקול מא מפנאה אנת חללת‎
+‏פמנזה ען אלחלול,"‎ nar
+Here we have an explanation by R. Saadia which is obviously
+not from his translation, and also not from from his long
+\ commentary which ended with Gen. 28:9. te could only be from
+his short commentary, and, as should be noted, is in the form
+of an extremely Loose paraphrase.
+
+Two other quotations in R. Saadia's name occur, which are
+of interest to us. The first one, mentioned by Dunash Ibn Labrat
+in his critique of R. Saadia reads: ‏רעוד פירש גנובתי יום‎
+
+‎(Gen. 31;39)‏ | פמלתי מן לשון עמל וריגיעה והביא ראיה מן גנבתו סופה,
+‎(Job 21:18) ,0‏
+‎This comment also, because of its location and nature, could‏
+‎only be from the short commentary 3! Most instructive, however,‏
+‎is a reference from R. Nissim Gaon's Meggilat Setarim, for here‏
+"ואמא ‎clearly occurs 2 R. Nissim says:‏ כתאב אלאזהא, ‎the name‏
+קול רבי' סעדיה ‎ORI‏ אלמתיבה זק"ל פי כתאב אלאזהאר בפרשת רישב
+יעקב, יקום יקולון אלה תולדות יפקב יוסף כ'צה לאנה כאן ‎ATID‏
+‏שקול כנגד כל בניו כקו' הנאך והיה בית יפעקב אש ובית ווסף להבה
+וכו' וקאל הנאך גאלת בזרוע ‎YoU‏ בני יעקב ויוסף סלה ויגעלון להם
+:
+
+==== PDF page 0034 ====
+32
+תשביהא פי ת'לאת'ה ועשרין מעני ליס הני ‎vein‏ שרתהא?"
+
+R. 588018 mentions that Joseph was similar to Jacob in
+
+twenty three ways but says that this is not the place to
+
+spell them out; R. Nissim however was asked to explain them,
+
+which he proceeds to do in a page-long exposition. This has
+
+to be a reference to the short commentary because it, again,
+
+is from the part of Genesis on which R. Saadia did not write
+
+his long commentary and is certainly not from his translation.
+
+Even one who claims that R. Saadia's long commentary covered
+
+all of Genesis, would have to admit that this quotation is
+
+not from that work,for, otherwise, why would R. Saadia hesitate
+
+to list the twenty-three similarities the way R. Nissim dia? 22
+\ 2. 588018'8 interest in brevity here, however, is in full
+
+accordance with His intentions in his brief commentary, as
+
+expressed by him in his introduction.
+
+We see then that R. Saadia did write a short commentary
+on the Torah, which would fit the description given in the
+introduction printed by Derenbourg, and also correspond with
+our knowledge of the works . 2. Saadia composed on the Penta-
+teuch. There is no reason, therefore, to believe that two
+translations to the Torah were ever written by him, an idea
+
+==== PDF page 0035 ====
+33
+which,,as we demonstrated, makes no sense on logical grounds \
+alone. The notion that every variant to the Tafsir on the Torah
+which makes sense is automatically to be imbued with Saadianic
+authority, should be dispensed with, and unless unassailable
+proof of Saadianic origin is provided, such variants must be
+understood to have developed in that same gradual manner typical
+of variants to all medieval texts.
+
+The reliability of the text of R. Saadia's Arabic trans-
+lations to other books of the Bible has also been questioned.
+Bacher, in his edition of ‏,א‎ Saadia's Tafsir on Job says that,
+“One should not be surprised that there are so many variants
+to this translation for many people tampered with it, and
+copyists were not afraid to change words and grammatical forms.”.
+He mentions the possibility that some variants are the result
+of R. Saadia changing his mind in the second edition of his
+commentary ‘on Job, which Bacher claims existed, based on his
+finding a long and short version of parts of this commentary 24
+Ratzaby was the first to point out that the Yemenite manuscripts
+contain a version of the commentary quite different from the
+one published by Bacher. While this new version contains
+comments which other medieval writers quote in R. Saadia's
+name, certain parts have been tampered with, as is evirieed by
+the muddled tone and faulty Arabic style of some sections,
+quite untypical of R. Saadia's writing. Nevertheless, Ratzaby
+
+==== PDF page 0036 ====
+34
+walks a thin tightrope by saying that even such parts should
+be considered Saadianiciin spirit and content if not in form
+and language. 2°
+
+What is important to note here is that even the long com-
+mentaries of R. Saadia have not entirely been immune from
+significant changes at the Hands of later copyists. These
+commentaries are usually considered to be the best criteria
+for judging the accuracy of R. Saadia's translations. Texts
+of the Tafsir found together with the commentaries, should be
+most accurate because they were copied less often than those
+with the translations alone, and scribes would not feel that
+free to make changes in the Tafsir at their whim, when faced
+with the original version mentioned in these commentaries. ©
+Since we see, however, that the commentaries themselves may
+have been tampered with, we must be more careful in evaluating
+the evidence they have to offer about the text of the
+translations.
+
+Doubts about the authenticity and reliability of texts
+attributed to R. Saadia are no more prevalent than in the
+instance of the Tafsir to the Five Scrolls. Here total confu-
+sion reigns.
+
+Only commentaries on Lamentations and Esther, which must
+have included translations, are mentioned in the list of R.
+Saadia's works compiled by his sons, but Yemenite manuscripts
+contain Arabic translations ascribed to R. Saadia on the other
+Scrolls also2’S, Poznanski considers 2. Saadia's authorship
+of the translation of Lamentations, found in these manuscripts,
+
+==== PDF page 0037 ====
+35
+
+"still subject to investigation,” while the translation to
+Esther, "perhaps slightly revised". The translation of
+Canticles, according to him, exhibits “many Saadyanic charac-
+teristics", that to Ruth, “has nothing to do with Saadya", and
+that to Ecclesiastes, is the work of R. Isaac Ibn Giyyat2®
+Matters are further complicated by the existence, according
+to Kafih, of no less than five Arabic translations to Ruth
+
+in Yemen, some attributed to R. Saadia and some simply called
+"Tafsir"? This state of affairs inevitably leads to an
+entanglement of versions which can only be cleared up by
+checking earlier Geniza manusctipts, and is symptomatic of
+the freedom Yemenite scribes allowed themselves in copying
+certain works of a popular nature.
+
+After examining different aspects of the textual problems
+of various parts of R. Saadia's Tafsir, we may now see how the
+text of his Tafsir on Daniel has fared in the hands of the
+copyists. This new edition, based on manuscripts from within
+a hundred years of R. Saadia's death up to modern times, pro-
+vides us with an excellent opportunity for viewing the develop-
+ment of the text from an historical perspective. Our range
+of manuscripts include many different types whose value for
+textual criticism varies.
+
+==== PDF page 0038 ====
+36
+Geniza manuscripts from the eleventh century such as», ?,
+and / may be considered to be most trustworthy because of
+their early date, but Yemenite manuscripts must form the basis
+for this edition because only in them do we find a continuous
+text of a homogeneous nature, unless eventually a complete
+manuscript from the Geniza can be pieced together. But the
+early date of a Ms. does not guarantee its accuracy nor does
+a later date imply less importance for textual criticism.
+Ms. p aithough perhaps as late as the fourteenth century,
+has a Biblical text which was copied from a Babylonian
+version written before the complete takeover by the Tiberian
+Massoretical tradition of Babylonia itser ft? Does this en-
+hance the importance of the text of the Tafsir which accom~
+panies it? We may answer in the negative for it is certain
+that 2. Saadia's translation was meant by him to accompany
+the text of the Tiberian tradition which he followed.
+Furthermore, in the earliest Mss. ‏,ל‎ 2 and 34 the Biblical
+text is never included but only the first Biblical word in
+each verse proceeds each verse of translation, so that the /
+presence of the whole Biblical text may not be indicative of
+antiquity or accuracy.
+These manuscripts which contain ‏.א‎ Saadia's commentary
+\ along with his translation may be considered more accurate
+because such Mss. were copied less often and were less open
+
+==== PDF page 0039 ====
+. 37
+
+to tampering, but even on Daniel this cannot be considered
+a foolproof criterion. Malter has expressed the opinion
+that R. Saadia's commentary on Daniel has been tampered with 41
+Does this mean that the whole commentary and translation in
+Ms. ‏א‎ which Malter referred to is under suspicion? A comparison
+with the other Mss. does not warrant such a conclusion, so
+the tampering Malter suspects must be limited to the interpo-
+lation of a féw lines to make explicit what 2. Saadia did not-
+the exact date of the coming of the Messiah. Certain phrases
+in Ms. ‏א‎ are translated quite differently than in the other
+manuscripts 42 Has this Ms., because it is accompanied by the
+commentary, preserved for us more original readings than those
+-Mss. without the commentary?
+
+In judging the accuracy of the text of the Tafsir on
+Daniel we are not aided by the commentary. While quotations
+of the Tafsir in the commentary never indicate the existence
+of a text totally different from the one we have, they never \
+substantiate with complete accuracy a reading in the Tafsir.
+R. Saadia simply has an aversion to quoting himself verbatim,
+and when quoting his translation usually reproduces a word
+with the same Arabic root but different grammatical form.
+This abhorrence of repetition is a very important factor
+in understanding the reason for certain types of variants.
+The many lists of government officials, musical instruments
+and other matters which are repeated constantly in Daniel
+always occur with variants between verses in the same manuscript
+
+==== PDF page 0040 ====
+38
+although the Aramaic original is the same. 5. 2. Goitein has
+pointed out that it is typical of Geniza scribes to purposely
+vary the wording in repeated formulae,evidently to lessen the
+monotony of the text being copiedt4 Medieval standards of
+. seribal accuracy, then, do not correspond to ours and make the
+goal of reaching a text identical with that which left the
+author's hands, almost unattainable. \
+Is there a possibility that the text of 2. Saadia's
+| Tafsir on Daniel has been modernized to be more suitable for
+liturgical or other public use? Many North African Jewish
+communities have the custom of reading Daniel publicly before
+the Sabbath Minha services for six weeks after Tisha be-Av,
+in six installments .45 Evidently for such use, a fairly modern
+Judeo-Arabic version of Daniel has been published in Algeria,
+but I found no similarities between it and R. Saadia's Tafsir .46
+As yet no manuscript of 2. Saadia's translation from this area
+has come to light, so that we have no information about any
+attempt to modernize his work on Daniel for public use; neither
+is such a possibility indicated by the variants in my edition.
+In many cases variants found in the latest manuscripts
+are attested to by the earliest manuscripts.4/ Because of
+insufficient information, a clear grouping of say, Yemenite
+manuscripts on the one hand and early Geniza manuscripts on
+the other, cannot meaningfully be made, and there is no
+certainty that further Geniza finds will improve this situation.
+
+==== PDF page 0041 ====
+39
+
+Nevertheless, some attempt at showing the relationship
+between the various manuscripts can be made. If we divide
+the manuscript history of the Tafsir on Daniel into three periods
+subsequent to the time of its authorship, we may postulate the
+existence of four different types during the first period:
+‏,ל‎ 2, the ancestor of prand that of n'pa; during the
+second period: ‏6ם8 ב , ק, א‎ the closely related ancestor of
+nip; for the third period, the closely related 1p and ‏ת‎ have
+survived.
+
+All that can be said at the present is that we have R.
+Saadia's Tafsir on Daniel substantially as he wrote it, but
+we cannot delineate exactly the changes that have taken place
+until more information becomes available.
+
+==== PDF page 0042 ====
+CHAPTER V
+R. SAADIA'S EXEGESIS OF DANIEL - A SAMPLING
+
+The significance of R. Saadia's Tafsir on the Aramaic
+portion of Daniel can best be grasped by viewing some of his
+translations to certain words in the context of modern
+
+| scholarship. For this purpose J.A. Montgomery's A Critical
+
+and Exegetical Commentary on the Book of Daniel published in
+
+1927 is invaluable} since it takes into account the works of
+all medieval and modern commentators and also the new informa-
+tion available from the Aramaic of the Elephantine Papyri and
+modern comparative Semitic philology. Seen in the light of
+the interpretations offered there, it is striking to notice
+how many of R. 588018'8 translations agree with modern view-
+points which are based on new information, and how often R.
+Saadia is the originator of explanations followed by others,
+which have not become outdated or overshadowed by modern disco-
+veries. The following selections, arranged in the order of
+the Biblical text, offer ample evidence of these phenomena.
+Dan. 2:5.  אדדא‎ 730 ‏,מלתא‎
+
+R. 588018 translates: ‏גד 130 אלאמך‎ tp, “the matter is
+in earnest with me". Ibn Ezra considers this word to be one
+that can only be understood by its context and says that it
+has the meaning of ‏ראמת‎ RO77p or, more exactly here, ‏ב תתקיים‎
+Rashi equates ‏אדדא‎ with ‏.אזלא‎ Pseudo-Saadia mentions two
+interpretations: That ‏אזדא‎ is like ‏,אזלא‎ or that it signifies
+
+40
+
+==== PDF page 0043 ====
+1
+‏תרקפח‎ 85 does ‏זדון‎ and as does, perhaps, the common Talmudic
+phrase ‏.ראזדא רבא לטעמיה‎ The Elephantine Papyri corroborate
+R. Saadia's view for we find there the phrase: | ‏יהן אזד יתעבד‎
+“if it was made certain"?
+Dan. 2:5. 7973.
+\ R. 588018 translates: ‏,צואפי‎ "booty", and Yephet also
+follows this interpretation. Ibn Ezra explains: ‏הרוסות וחרבה‎
+‏ושממה‎ , and Rashi:  הפשא.‎ Pseudo-Saadia offers three
+interpretations:  הזיב‎ , ‏(,מנורול‎ and ‏.חריבת‎ Torrey has found
+the root %1}with the meaning of confiscation or booty in a
+Phoenician inscription, thus supporting R. Saadia's translation?
+Dan. 2:6. ‏להך‎ .
+2. 588018 translates:  ךלאדל,‎ "therefore". Rashi and
+Pseudo-Saadia explain: ‏אך‎ "but". This work usually does
+\ mean "but" (as in Dan. 2:11, 30; 3:28; 6:6,8, 13), however,
+the meaning demanded by the context here is "therefore". While
+this meaning vanished later from Aramaic and was not known to
+the medieval Jewish commentators, it is attested to by its \
+appearance in the Teima inscription?
+Dan. 2:9. ‏.די הן‎
+2. 588618 translates: ‏,באנכם אןך‎ “that if". Similary,
+Ibn Ezra (on verse 8) explains: ox ‏,והרא‎ and Rashi and Pseudo-
+Saadia: orm. While most modern commentators feel that a new
+statement begins here, R. Saadia and the other Jewish commenta-
+tors correctly understood that ‏דד הן‎ serves as a connective
+to continue the statement made in verse 2
+
+==== PDF page 0044 ====
+| 42
+Dan. 2:12. ‏בנס‎ .
+
+R. Saadia translates: ‏שאט‎ , “burned (with anger)". Ibn
+Ezra, Rashi and Pseudo-Saadia take the ‏ב‎ to be an auxiliary
+letter and not part of the basic root. Rashi quotes Menahem
+who feels that the ‏ב‎ 15 part of the root, and Dunash who
+feels that it is not. Allony, in his comments to the Agron,
+seems to have misunderstood R. Saadia's view to be that the 2
+is not part of the root as most later Jewish commentators
+Claimed. Aside from the fact that, if Allony were correct,
+R. Saadia would have had to translate the ‏ב‎ together with 8
+noun or at least a verbal noun instead of just a verb, and
+that the root ‏בסס‎ may mean “to be sad" or “grieve" but never
+to be angry, the root ‏בנס‎ 18 found with the meaning “to be
+angry" in Jewish and Samaritan Targumim®
+Dan. 2:13.  ןילטקתמ.‎ \ \
+
+R. 588618 translates  j19np1, "were to be killed".
+Rashi and Pseudo-Saadia also explain: anni». The gerundive
+interpretation given by R. Saadia is accepted by many modern
+commentators!
+
+Dan. 3:14.  תחדצה.‎
+
+\ 2. 588018 translates: ‏ב יקיבא‎ "certainly". Ibn Ezra says
+that the ‏ה‎ is the interrogative nand that ‏צדא‎ means nor.
+
+Rashi agrees about the nature of then, but explains ‏צדא‎ as 117
+‏רק‎ . Pseudo-Saadia explains: ‏בודאד‎ .  יאדצה‎ 88 been found
+with a meaning similar to that given to it by R. 588018, in
+
+an Aramaic ostracon published by Lidzbarski®
+
+==== PDF page 0045 ====
+43
+,| למלכא נבוכדנצר .3:16 ‎Dan.‏
+
+R. 588618 translates: 731952 ‏.יא‎ The difficulty here
+is that Nebuchadnezzar is addressed by his name alone, which
+is not the way one would normally speak to a monarch. Rashi,
+giving a Midrashic interpretation, explains that this statement
+was purposely meant to have a disparaging tone. Some modern
+scholars have felt that the ‏אתנתתא‎ was simply misplaced, but
+R. Saadia's translation: "Oh Nebuchadnezzar", shows that he
+followed the traditional punctuation and interpretation here?
+Dan. 3:17. yn.
+
+R. Saadia translates: TR, ‏"עס+"‎ or “behold". Similarly,
+Ibn Ezra and Rashi (on verse 16) explain: 13 , and Pseudo-
+588018 explains: ‏.הנה‎ This interpretation enables us to
+recast the syntax of this sentence to be something on the order
+of: "Behold (or, for) our G-d is able to save us from the ©
+furnace, and from your hand He will save"!
+
+Dan. 3:29. 190.
+
+R. 588018 translates: ‏אלמתאל‎ , "an absurdity”. Ibn Ezra
+explains: 1238, while Rashi explains: ‏שום דבר של גנא"‎ and
+Pseudo-Saadia: 39190 127. It is interesting to note that ‏.א‎
+‎Saadia translates in a similar way ‏כסילים תאבדם‎ Hizei(Prov.
+1:32) as: ‏,וזלה אלגהאל תבידהם‎ “and the mistake of the fools
+will destroy them", and explains the derivation of this trans-
+lation from his understanding of the word 199 in Dan 3:29,
+which he says means mistake in the language of the Targum
+
+==== PDF page 0046 ====
+44
+(Biblical Aramaic). R. Saadia"s explanation of this word in
+Proverbs and Daniel was adopted by Ibn Ganah, and Montgomery
+too accepts this interpretation!!
+Dan. 3:29. ‏.כדנה‎
+
+R. Saadia translates: ‏,כדאלך‎ "Like this" or "thus".
+
+What does 3t3refer to here: “like this one (G-d)", or "in
+this manner"? Ibn Ezra takes it to mean: “like this G-d",
+while Rashi says: ‏כזאת‎ , “in this way". Montgomery considers
+R. Saadia's explanation the correct one!2
+
+Dan. 4:14. ‏שאלתא<‎ .
+
+R. Saadia translates: ‏רגוחב אלמסאלה‎ meaning a reply to
+a question or, more clearly, a judicial response. Ibn Ezra
+takes it to mean a question, but Rashi explains:  הרזג.‎
+
+Evidence from Targum Jonathan to Jeremiah 12:1 and other sources
+support R. Saadia's explanation of ‏שאלתא‎ meaning not a request,
+but rather a response!
+Dan. 4:24. pig.
+
+| R. 588018 translates ‏פתפך‎ , "break off". Ibn Ezra explains:
+‏,גאל‎ and Pseudo-Saadia: ‏תפדה‎ , but Rashi explains:  קורפ‎
+While a later development of this root has the meaning of
+“redeem", R. Saadia has translated according to the original
+and, according to many modern commentators, more correct meaning
+which is also more preferable on the basis of the context !4
+Dan. 4:32. ‏כלה‎ .
+
+R. 588018 translates 835 ‏לא‎ , “Like nothing". Rashi and
+Pseudo-Saadia offer the Midrashic interpretation thatn? is a
+type of dust seen in sun rays, but Pseudo-Saadia also mentions
+the explanation: "like nothing". Montgomery finds the same
+
+==== PDF page 0047 ====
+\ | 45
+use of rv in Syriac as that given here by R. Saadia!>
+Dan. 4:33. ‏.הדרי‎
+
+R. 588018 868 ‏,רבהגתד‎ “my splendor". It is not
+absolutely clear here whether 17717 is a noun or a verb, and
+in fact, Rashi explains: anasn, "I returned". Montgomery
+considers Rashi's explanation to be based on an understanding
+of later linguistic premises, while R. Saadia follows earlier
+usage; and Torrey remarks that such repetition of words is
+quite typical in Danie1!®
+Dan. 6:1. ‏מלכותא‎ Jap ARTO ‏.ודריוש‎
+
+2. 588018 translates:  שוירד ‏צאר אלמלך אלד‎ “the rule
+became Darius'". Ibn Ezra, at the end of his comment to this
+verse, explains that Darius received the rule from Cyrus,
+while Marti and Charles think it means that Darius received
+it from 0-7 Ibn Ezra and the other scholars thought that
+‏קבל‎ must mean to receive from someone, so they were forced
+to determine who gave the rule over to Darius, but R. Saadia
+was of the opinion that ‏קבל מלכותא‎ had no connotation of \
+taking over or receiving the rule from someone else. ‏.א‎
+‎Saadia's explanation is corroborated by Syriac usage which
+has ‏קבל‎ connoting a normal secular succession! ®
+Dan. 6:7, 12, 16.  ושגרה.‎
+
+This word which occurs three times, is translated three
+different ways by 2. Saadia: 17R3 “came to", ‏תחכר‎ "684
+
+==== PDF page 0048 ====
+46
+with", and 1238, “rushed against". The variants to these
+translations are also of significance here. Ms. p, instead \
+of ‏צארו‎ reads:  במאכ‎ "addressed". For ‏תחכר‎ which makes no
+sense at all here (for why would Daniel's opponents quarrel
+with him at a time that they were seeking incriminating
+evidence against him), all the other manuscripts read: Donn
+which means "probed", "sought information", “made inquiries"
+or “perceived". The word 124%, which Montgomery thinks means
+“rushed against" is better translated "criticized sharpiy"!?
+In verse 7 Ibn Ezra explains: ‏התחברר‎ , Rashi: youn ‏,משמשר על‎
+and Pseudo-Saadia: oy ‏,לשון קיבוץ‎ On verse 12 Rashi explains:
+‏משמשו רחפשר‎ , and Pseudo-Saadia (on verse 11): mavia ‏היו‎
+‏ואודרבים‎ In view of the confusion shown by most medieval
+and modern eommentators in explaining this word, R. Saadia's
+clear translation of it, each time in a way appropriate to the
+context, is innovative2? The importance of checking the
+manuscripts in order to correctly ascertain R. Saadia's view
+is especially clear in this case.
+Dan. 6:19,  ןוחדו.‎
+
+R. Saadia translates:  אנאוכ‎ "tables". Ibn Ezra explains:
+‏נגינרת רשירות‎ . Rashi, in the name of Dunash explains: ‏רשלחן‎
+‏במשנה‎ (but no such Mishna can be found!). Pseudo-Saadia
+explains it by metathesis to be j11n1,"delights" and says
+that it refers to musicians and dancing girls. Montgomery
+concludes that the meaning is unknown?! but R. Saadia explains
+
+==== PDF page 0049 ====
+47
+
+the basis for his translation of “tables” quite clearly in
+his long commentary on Daniel where he says: ,71NT1 ROR1"
+
+פקד יפסר כואנאת ליוכל בין ידיה, רקד 333° מתל הדה אללפפה
+פי תוספת כלים: הדחונות שאוכלין עליהן". \
+‎R. 588018 finds the exact same word in a most obscure area of‏
+‎Rabbinic Literature, the Tosefta to Kelim (ed. Zuckermandel‏
+‎referred to by Dunash??‏ משנה ‎line 27) which must be the‏ 583 .סש
+‎tt is no surprise, however, that modern Biblical scholarship‏
+‎was not aware of this information since Zuckermandel's text‏
+,"הרחוינית (!) שבטרקלינין בעלי בתים האוכלים עליהם" ‎reads:‏
+‎Lest there be any doubt as to the correctness of 2. Saadia's‏
+‎understanding of this word, the Tosefta itself, a line later,‏
+‎which makes it clear that 8 portable table‏ "שהך כטבלה" ‎explains‏
+‎made of boards is meant. R. Saadia's lasting importance for‏
+‎a basic comprehension of Biblical Aramaic is never more‏
+‎obvious than in this instance.‏
+
+==== PDF page 0050 ====
+NOTES TO CHAPTER I
+1. Rappaport 1913: I, 134-136, 146-154.
+2. See Bacher 1896 VII; and 5. Pognanski 1900 131-132.
+= 3, Steinschneider 1858 XVIII; Encyclopaedia Britannica 1965
+
+Vol. 20: 43-44, Vol. 18: 102.
+
+4. Neubauer 1886 V.
+
+5. Steinschneider 1965 98-99, 102-103 et passim.
+
+6. Roth 1964 349-350; Azulai 1934, index under Tunis.
+
+פזמרגים ‎MANS‏ לימים נרראים לפי נוסת אלג'יךר, ליוורנו, תש"ד: .6.8 .7
+‎See: Hirschfeld 1897 249; Malter 1921 407; Roth 1946 399;‏
+‎Yaari 1951 713.‏
+
+8. See Fleischer 1926 XVII.
+
+9. Goldberg1897 I.
+
+10. See Yaari 1951 737, 820-822; Sdphir 1866 48-111. \
+
+11. See the many works mentioned in Nahum 1971; Kafih 1954 7-13;
+Kafih 1960 6-9; Liebermann 1940 3-4, 10-11, 22, 32.
+
+12. Y. Tobi 1975 654. :
+
+13. Saphir 1866 536, 618, 1018: Kafih 1966 14.
+
+14. See below Chapter III.
+
+15. Saphir 1866 2la-b. Kafih 1976 409 published a text which
+indicates that the Geniza was known to Yemenite Jews during
+the fourteenth century.
+
+16. Kahle 1960 6-9; Wertheimer 1952 4
+
+17. Kahle 1960 9-13; see also works listed by Allony 1961 423-425,
+About the Basutin cemetery, see Allony 1961 412 and Ben-Zev
+
+> 1957 8.
+08
+
+==== PDF page 0051 ====
+49
+18. See e.g. Malter 1921 409-419,
+19, Published in Cambridge, England, 1903 by Deighton and Bell.
+20. See Malter 1921 305-419; Werfel (Raphael) 1943 644-657.
+21. e.g. Zucker 1959 308-317,
+
+==== PDF page 0052 ====
+NOTES TO CHAPTER 1
+1. See inside cover of Bacher 1899.
+2. Spiegel 1906. For other manuscripts see Neubauer 1886 881.
+3. Malter 1921 277; Bacher 1896 554; Derenbourg 1892 19;
+and Israelsohn 1909 277.
+4. Melammed 1975 654-664, 777-778; Bacher 1875 16-40;
+Gesenius 1863 XIII-XIV.
+5. See Allony 1958a 365.
+6. Zulay 1965 23.
+7. Allony 1958b 172.
+8. Segal 1936 14-15; Bendavid 1967 163-164.
+9. Wilensky 1929 16-24; Barr 1968 61-62.
+10. Blau 1965 19-21.
+11. Altmann and Stern xxii n.l.
+12. Goitein 1962 19,
+13. Allony 1969 70-71; Ratzaby 1941 93.
+14. Kadari 1964 213 and bibliography at end of article.
+15. About 2. Saadia's use of the Yerushalmi see Poznanski 1909
+6-8, 25-26.
+16. Goitein 1971 6.
+17. Poznanski 1904 149 n.3; Malter 1921 56-57.
+18. Allony 1970 83,100.
+20. Kafih 1972 78; Allony 1970 93-97. ;
+21. Epstein 1915 53-57; Mann 1931;I, 446 n.2 and 554 n.1;
+Baneth 1946 152; Morag 1960 220-221; Morag 1964 130;
+Blau 1965 19-22,
+22. Epstein 1915 32-33.
+50
+
+==== PDF page 0053 ====
+\ 1
+23. Halkin 1975 126.
+24. Ibid., note to line 66; Abramson 1974 245 n.2.
+25. Allony 1969 27-29, 70-71, 159 lines 52-55; Barr 1968 62.
+26. Malter 1912-1913 498 lines 15-17. |
+27. Allony 1969 70-71, 337; Davidson et. al. 1963 5 line 6.
+
+==== PDF page 0054 ====
+/
+NOTES TO CHAPTER III
+1. Spiegel 1906 15.
+2. Steinschneider 1897 2; It was purchased from the ill fated
+convert Shapira in 1879 or 1881.
+3. Cohn 1889 4; Bacher 1899 VIII; Derenbourg 1894 VIII;
+Kafih 1966 15; 1973 7; 1976 6. Kafih says that he did
+not consult this Ms. but relied on Derenbourg (1976 3),
+however, on p. 6, it is clear from the colophon referred
+to that Kafih did use it but simply was hot aware of its
+9 torigin. For 8 facsimile of the colophon see Kafih 1962 9,
+3a. For an accurate evaluation of Spiegel's work; cases where
+he felt there was a lacuna in the text of Ms. ‏ב‎ are listed
+here: Dan. 2:23 [eax] - none of the Mss. agree; Dan 3:4
+‏[אלשפוב]‎ - supported by ‏א) קת‎ has ‏(אלשדב‎ ; Dan 5 ‏[דג יאל‎ .
+supported by all the Mss.; Dan. 4:7 [rm sv ‏[ורפצהא‎ - these
+words are also missing in 12, while nip add other words;
+Dan 4:20 - there is 8 large lacuna in ‏ב‎ with part of
+Spiegel's reconstruction confirmed and part denied by the
+Mss; Dan. 6;9 ‏ב - איי₪‎ has 77%, while ‏קות‎ have ‏איה‎ which
+supports Spiegel's correction; Dan. 6311, 14 for] -
+supported by all Mss.
+Spiegel's corrections made in his notes are frequently
+clearly opposed by information available from the other
+manuscripts. See especially variants to Dan. 4:8, 12, 24,
+27, 30; 5:1; 6:5, 11, 14; 7;5, 9,21,25.
+Many of the Berlin manuscripts were found after the war
+52
+
+==== PDF page 0055 ====
+53
+in Tubingen and Hamburg (see Allony and Loewinger, ‏רשימת‎
+‏,תצלומי כתבי-יד העבריים במכוך‎ Part 1, Jerusalem
+1957, p.22) but I was not able to locate this one. Although
+Kafih used a facsimile of it he did not provide exact in-
+\ formation about its location, but a thorough search
+among the microfilms of the Ben-Zvi Institute which he
+consulted, may bring it to light.
+
+4. Neubauer 1886 882.
+
+5. Morag 1973 13.
+
+6. Ibid.
+
+7. S. A. Birnbaum 1971 251, 1954-1957 plate no.222. See
+below pp. 36, 38 where the possibility of late manuscripts
+preserving early variants is mentioned.
+
+8. Katsh 1963 16. Dr. ‏.ם‎ Hurvitz was kind enough to make
+this fragment accessible to me.
+
+9. Mann 1920-1922 Vol. I 92; Vol. II 90 line 17, 99 no. 20(5),
+115 no. 31(1).
+
+10. See e.g. 2.2. Halper ‏התקופה‎ 19 (1923): 236.
+11. See Goitein 1971
+
+==== PDF page 0056 ====
+NOTES TO CHAPTER IV
+1. Spiegel 1906 9-15; Ms. x 85b.
+2. See e.g. Leveen 1935 107-108.
+3. Zucker 1959 280. | :
+4. See P. Birnbaum 1942 xx-xxi.
+5. Halkin 1943 282-283.
+6. Ratzaby 1960 172.
+7. Ratzaby 1964 244.
+8. Kahle 1960 55 note 3.
+9. Ibid. note 2.
+10. Zucker 1959 286-290. /
+11. Kafih 19638 6, 8.
+12. Abramson 1974 40-42.
+13. Derenbourg 1893 VIII; Steinschneider 1964 56; Eppenstein 1913
+81; Malter 1921 308.
+14. Derenbourg 1893 2-4.
+15. See Skoss 1959 303, Zucker 1951 21, Zucker 1955-56 311.
+16. Derenbourg 1893 4.
+17. Kafih 1963a 160.
+18. Wehr 1971 231-233. Ratzaby 1946 54 verse 23,
+19. Kafih 1973 29 line 15. See also Allony 1969 152 line 1
+where R. Saadia uses ‏כ'רוג‎ to mean publication.
+20. Kafih 1963a 160.
+21. Wehr 1971 713.
+22. See Zucker 1959 269-270.
+23. Mann 1921 425.
+24. See Malter 1921 316, 407, 427.
+25. Mann 1921 427.
+54
+
+==== PDF page 0057 ====
+26. Wehr 1971 384.
+
+27. Poznanski 1923 379-380.
+
+28. See Weisenberg 1959 538-539.
+
+29. See Mann 1921 426. \
+
+30. Schroter 1866 5 (no. 13).
+
+31. But see Zucker 1959 271, who feels that Dunash totally
+misunderstood 2. 588018 and presented his view incorrectly.
+While this may be true, the fact that Dunash says that
+R. Saadia brings a proof from Job 21:18 is enough for us,
+since this indicates that it is a commentary,not a
+translation that is being referred to.
+
+32. Kafih 1963b 334-335. It is mentioned also by Abramson
+1965 202 (but missing in his index!), and Kafih 1963a 42
+note 1 to Gen. 37, who claims that it is from R. Saadia's
+long commentary on the Torah!
+
+33. Kafih, see above, note 32.
+
+34. Bacher 1899 Ix.
+
+35. Ratzaby 1955 317.
+
+36. Zucker 1959 292.See also indices to Leveen 1935 and Neubauer
+
+37. Mann 1921 425 lines 18-19. See also Steinschneider 1964
+ff. 57.
+
+38. Poznanski 1902 364-372; Poznanski 1923 384, 387-389. See
+also Malter 1921 321-325. ,
+
+39. Kafih 1962
+
+40. See Morag 1964 118-119 et passim; Morag 1960 233-234.
+
+41. Malter 1919 55.
+
+==== PDF page 0058 ====
+| 56
+‘42, See my edition on Dan. 4:15 and 5:15.
+43. See 2. Saadia’s Ms. commentary on Dan. 2:35 and 4:30.
+44. Goitein 1971 236-237.
+45. Fried 1966 173-174.
+46. 21922 ‏לשון הקדש ללערבי, אלגזאיר,‎ Ja ‏הנביא, מתרגם‎ PRIA
+47. See e.g. variants to Dan. 2:10, 13, 24, 28, 34.
+
+==== PDF page 0059 ====
+NOTES TO CHAPTER V
+
+1. Published in Edinburgh as part of The International Critical
+Commentary.
+
+2. Montgomery 1927 148.
+
+3. Ibid. 149.
+
+4. Ibid. 150.
+
+5. Ibid. 151.
+
+6. See Allony 1969 50, 337 (but compare above, note 27 to
+Chapter II); Montgomery 1927 153, and Jastrow's dictionary
+under Dil
+
+7. Montgomery 1927 154.
+
+8. Ibid. 207.
+
+9. Ibid. 208.
+
+10. Ibid. 209.
+| 11. See Spiegiel 1906 ‏א‎ note 19, Kafih 19768 30; Bacher 1896
+515-516, Montgomery 1927 219.
+12. Montgomery 1927 219.
+13. Ibid. 237.
+14. Ibid. 240, 242.
+15. Ibid. 246.
+16. Ibid.
+17. Ibid. 267.
+18. Ibid.
+19. See Wehr 1971 174,455 and Montgomery 1927 272.
+20. Montgomery 1927 272.
+21. Ibid. 278.
+22. Ms.R 666-67a. 57
+
+==== PDF page 0060 ====
+58
+23. R. Saadia's explanation and reference to the Tosefta is
+quoted by Kimhi ) ‏השרשים‎ 199, ed. Biesenthal and Lebrecht,
+\ Berlin 1847) but not in his name.
+
+==== PDF page 0061 ====
+BIBLIOGRAPHY
+Abramson, S.
+1965 ‏,ירושלים : מקיצי נרדמים.‎ IRA ‏רב נסים‎
+1974 ‏עוייגנות בספרות הגאונים ג,ירושלים : מוסד הרב קוק,‎
+Allony, ‏.א‎
+‎18 ‏בתוך‎ 366-362 Say , ‏מיכה ב"שבעים מלים בודדות" לרס"ג‎
+‏פרסומי החברה לחקר המקרח בישראל, ספר ה', לזכר פמואל‎
+‏דים, בעריכת ח, בר-דרומא, ח,מ,י, גבריהו וב"צ לוריח,‎
+‏ירושלים+ ההברה לחקר המקרת* בישראל,‎
+Allony, ‏.א‎
+‎1958b ‏כתאב אלסבעין לפט'ה לרב טספעדיה גאון,פם* קלג-קפ בתוך‎
+‏ספר זכרון לכבוד פרופ* יצתק יהודה גולדציהך ח"ב,‎
+‏שייבר, י, שומוג'י,‎ CR ‏ערוך ע"י ד,ש, לוינגר,‎
+‏ירושלים,‎
+‎Allony, ‏.א‎
+‎11 ‏גנדזה וכתבי-יד עבריים בספריות קמברידג', ארשת ג*:‎
+0425-395
+Allony, N.
+1969 ‏התגרון,,,מאת רב סעדיה גחון, ירושלים: האקדמיה‎
+\ ‏ללשון העברית,‎
+Allony, ‏.א‎
+‎1970 ‏עלי בן יהודה הנזיר ותיבורו "יסודות הלשון העברית",‎
+2209-187 ,105-75 ‏לד:‎ 133307
+Altman, A. and Stern, S. M.
+1958 Isaac Israeli. Oxford University Press.
+Azulai, H.J.D.
+1934 ‏ספר מעגל פוב השלם, ירושלם: מקיצי נרדמים,‎
+59
+
+==== PDF page 0062 ====
+00
+Bacher, ‏.א‎ \
+1875 Abraham Ibn Esra's Einleitung zu Seinem Pentateuch-
+Commentar. Wien: Karl Gerold.
+Bacher, W.
+1896 ‏מפב הערעים .,.חברו,,,ר' יונה בן גנאת, ברלין:‎
+‏מקיצי נרדמים,.‎
+Bacher, ‏.א‎
+‎19 ‏פבגום ספר איוב וביחורו בלשון ערבית לרבינו סעדיה‎
+‏גחאון, פאריס: ארנסט לרו.‎
+Baneth, , 4. /
+1946 ‏התנוין בהתפתתותו למלה נפרדת במכסטים פרביים-יהודיים.‎
+,153-141 ‏ידיעות החברה לחקירת א"ר רעתיקותיה י"ב:‎
+Barr, J.
+1968 Comparative Philology and the Text of the Old
+Testament. Oxford: Clarendon Press.
+Ben-Zev, I.
+1957 ‏תעודות על בית-הקברות היהודי הקדום בקהיר, ספונות‎
+‏ז-בד,‎ 2°R
+Bendavid, A.
+1967 ‏לפוך מקרא ולשון חכמים. תל-אביב: דביר,‎
+Birnbaum, ‏וע‎ 72%"
+1942 The Arabic Commentary of Yefet Ben Ali the Karaite
+on the Book of Hosea. Philadelphia: Dropsie College.
+
+==== PDF page 0063 ====
+61
+Birnbaum, S.A.
+1971 The Hebrew Scripts. Part 1. Leiden: E.J. Brill.
+1954-1957 The Hebrew Scripts. Part 2. London: Palaeographia.
+Blau, J.
+1965 The Emergence and Linguistic Background of Judeo-Arabic.
+Oxford University Press.
+Cohn, J.
+1889 ‏איוב אלמלקב בכתאב תלתעדיל‎ ARNI
+Das Buch Hiob ubersetzt_und erklart vom Gaon 8.
+Altona: Gebruder Bonn.
+Davidson, I.
+1963 Assaf, 5. and Joel, B.I.
+‏סדור רב סעדיה גאון. מהדורה שניה, ירושלים: מקיצר נרדמום‎
+Derenbourg, J. ‏בהוצאת ר,8ל.‎
+1 1892 0105858 D*Abou Zakariya Ben 21188 sur 15810. Paris.
+Derenbourg, J.
+1893 ‏תרגום תמשה חורמשי תורה בלשון פרבית לרבינו סעדיה‎
+‏גאון, פאריס: ארנסט לדו,‎
+Derenbourg, J. and Lambert, M. -
+1894 ‏תרגום ספר משלי וביאורו בלשוך ערבית,.,לרבינו סעדיה‎
+‏גאון, פאריס: ארנסט לרו,‎
+Eppenstein, =
+1913 Beitrage zur Geschichte und Literatur im Geonischen
+Zeitalter. Berlin: Louis Lamm.
+Epstein, J.N.
+1915 Der Gaondische Kommentar zur Ordnung Tohoroth. Berlin:
+Mayer & Muller.
+
+==== PDF page 0064 ====
+62
+Fleischer, L.
+1926 ‏עורא לספר שמות,,,עם פרוש משנה לעזרא,וינה:‎ PIR ‏ספר‎
+‏מנורה,‎
+‎Fried, ‏.א‎
+‎106 .174-166 ‏פניינות מגילת אנטיוכוס, ארשת ד:‎
+Gesenius, W.
+1863 Hebraisches und Chaldaisches Handworterbuch uber das
+Alte Testament. Sechste Auflage. Leipzig; F.C.W. Vogel.
+Goitein, S.D.
+1962 ‏סדרי חינוך בימי הגאונים ובית הרמב"ם, ירושלים: מכוך‎
+‏בן צבי-האוניברסיפה העברית,‎
+Goitein, S.D.
+\ 1971 A Mediterranean Society. Vol. II. Berkeley: University
+of California Press.
+Goldberg, B.
+1867 ‏מעשה נסים הן הגה שאלות 1327 דניאל 99230 על ספר‎ nan
+‏המצות של הרמב"ם,פריט,‎
+Halkin, A.S.
+1943 The Relation of the Samaritans to Saadia Gaon. Pp.271-325
+in Saadia Anniversary Volume. Ed. B. Cohen. New York:
+American Academy for Jewish Research.
+Halkin, A.S.
+1975 ‏העיונים והדיונים, ירושלים:‎ WD ‏עזרחא:‎ YAR ‏משה בן יעקב‎
+‏מקיצי נרדמום,‎
+Hirschfeld, H.
+1897 Noitzuber einen dem Maimuni untergschobenen arabischen
+Commentar zu Esther. Pp. 248-253 in Semitic Studies
+in Memory of Rev. Dr. Alexander Kohut. ed. G.A. Kohut.
+
+==== PDF page 0065 ====
+53
+‎Berlin: S. Calvary.‏
+‎Israelsohn, J. \‏
+פורוש על ספר ירמיה 1299 יהודה 72 בלעם,עפם' 308-273 1909
+בתוך זכרון לאברהם אליהו ערוך ע"י ד, גינצבורג וד, ד,
+מארקאן,פטרבורג.:
+‎Kadari, M.Z.‏
+מגילת אנסמיוכס הארמית ח"א,בר-אילך א:1-א105-81,7. 1963
+‎NIAID‏ חנטיוכס הארמית ח"ב, בר-אילך ב: 2214-178 1964
+‎Kafih, J.‏
+ספר גן השכלים לרבינו נתנאל זצ"ל בירב פידמ*י וצ"ל, 1954
+ירושלם: האגודה להצלת גנזי תימן,
+‎Kafih, J.‏
+הרד"ף למסכת חוליך עם פירוש בשפה הערבית לאחד מחכמי יהדות ‏ 1960
+תימן,ירדשלם: האגודה להצלת גנזי תימך,
+‎Kafih, J.‏
+חמש מגילות,,,עם פירושים פתיקים,ירושלים: האגודה להצלת 1962
+גנזי תימן.,
+‎Kafih, J.‏
+פובושי רבינו סעדיה גאוך על התורה,ירוסלים: מוסד הרב 19630
+‎«PIP‏
+‎Kafih, J.‏
+גרדומי פנינים מספר בכ"י תימני קדום,תלפיות ‎1963b fain *n‏
+ג-דז 356-111.
+‎Kafih, J.‏
+תהלים ‎ov‏ תרגום ופירוש הגאון רביגו סעדיה,ירושלם. 1966
+‎oa.‏ ודו שת
+
+==== PDF page 0066 ====
+64
+Kafih, J.
+1972 ‏ספר יבירה עם פירוש הגאון רבנו ספדיה. הועד להוצאת‎
+. ‏ספרי רס"ג,‎
+Kafih, J.
+1973 ‏תרגום ופירוש הגאון רבנו סעדיה, ירושפלים.‎ oy ‏איוב‎
+‎Kafih, J.
+1976a ‏מסלי עם תרגום ופירוש הגאון 1337 סעדיה, ירושלים.‎
+Kafih, J.
+1976b ‏שיעור קומה,‎ 6p ‏שריד מחיבור תימני עתיק בענייני‎
+‏תז-תי בתוך: יהדות תימך: בעריכת י, ישעיהו רי,‎ ‘fay
+‏טפובי, ירושלים: יד בן-צבי.‎
+Kahle, P.
+1904 Die Arabischen Bibelubersetzungen. Leipzig: J.C. Hinrich.
+1960 The Cairo Geniza. Second edition. New York: Praeger. \
+Katsh, A.I.
+1963 The Antonin Genizah in the Saltykov-Schedrin Public
+Library in Leningrad. N.Y. (Offprint from The Leo
+Jung Jubilee Volume pp. 115-131).
+Leveen, J.
+1935 Catalogue of the Hebrew_and Samaritan Manuscripts
+in the British Museum, Part IV. London.
+Liebermann, S.
+1940 ‏מדרשי תימך. ירושלים: במברגר את וואהרמן.‎
+Malter, H.
+1912-1913 Saadia Studies I. Jewish Quarterly Review.
+| n.s.3: 487-499.
+Malter, H.
+1919 Saadia Gaon's Messianic Computation. Journal of
+Jewish Lore and Philosophy. 1:45-59.
+
+==== PDF page 0067 ====
+65
+Malter, H.
+1921 Saadia Gaon, His Life and Works. Philadelphia: JPSA.
+Mann, J.
+1920-1922 The Jews in Egypt and in Palestine Under the
+Fatamid Caliphs. 2 Vols. Oxford University Press.
+Mann,.J.
+1921 A Fihrist of Sa'tadyas Works. JQR n.s. XI: 423-428,
+Mann, J.
+1931 Texts and Studies in Jewish History and Literature.
+Vol. I. Cincinnati: Hebrew Union College Press.
+Melammed, E.Z.
+1975 ‏מפרשי המקרא,ירושלים: מאגנט, האוניברסיטה העברית,‎
+Morag, S.
+1960 ‏"שבע כפולות בגד כפרת",צם'242-207 בתוך פרטומי החברה‎
+‏לכבוד הפדפ' 1,ה,‎ gain ‏לחקך המקרא בישראל, ספר ח',‎
+‏מור-סיני , בעריכת ם, הרן וב"צ לוריא, ירושלים4 החברה‎
+‏לחקר המקרא בישראל ע"י קרית ספר.‎
+Morag, S.
+1964 Biblical Aramaic in Geonic Babylonia. Pp. 117-130 in
+Studies in Egyptology and Linguistics in Honour of
+H.J. Polotsky. ed. H.B. Rosen. Jerusalem. Israel
+Exploration Society.
+Morag, S.
+1973 ‏עפר דניאל, כתב-יד בבלי-תימנו. ירושליח: קרית ספר,‎
+Nahum, Y.L.
+1971 ‏תימן,‎ A732 ‏גנוזים מתימן, הולון: מפעל תשיפת‎ Asn
+
+==== PDF page 0068 ====
+6
+Neubauer, A.
+1886 Catalogue bf the Hebrew Manuscripts in the Bodleian
+Library. Oxford: Clarendon Press.
+Poznanski, S.
+1900 Tanhoum Yerouschalmi. Revue des Etudes Juives.
+XL: 129-153; XLI: 45-61.
+Poznanski, S.
+1902 Miscellen uber Saadja, IV. Saad jas Ubersetzung zum
+Buch Ester, Monatsschrift fur Geschichte und Wissenschaft
+des Judentums. XLVI: 364-372/ ,
+Poznanski, S.
+1904 Ephraim ben Schemaria de Fostat. REJ XLVIII: 145-175.
+Pognanski, S. \
+1909 ‏עגינים שוניס הנוגעים לתקופת הגאונים,ווארש".‎
+Poananski, S.
+1923 A Fihirst of Saadya's Works. 108 n.s. XIII: 369-396,
+Rappaport, S.
+\ 1913 | ‏תולדות,וורשה: הצפירה.‎
+Ratzaby, Y.
+1941 2106692 ‏גאון, תרביץ י"ג:‎ ATID 139179 ‏תרגום אדכה‎
+Ratzaby, Y.
+1946 256-46 ‏שרידים מביאור הרס"ג לישעיה, תרביךץ ו"ח:‎
+Ratzaby. Y.
+199 1960 ‘ay ‏תרגום פרבי למגדלת רות מבית מדרשד של הרס"ג,‎
+‏בתוך פרסומי החברה לחקר המקרא בישראל,ספר י',‎ 1
+
+==== PDF page 0069 ====
+7
+לזכך בצבי קארל בעריכת א, ורייזר ‎S817‏ לוריא, יררשלים: החברה
+לחקר המקרא בדשראל ע"ד הוצאת קדות ספר,.
+‎Ratzaby, Y.‏
+על תפסיר רב סעדיה למקרח, ‎‘ay‏ 250-237 בתוך כתבי החברה 1964
+לחקר המקרא ביטראל, לזכר ד"ר י,פ, קורנגריך. תל-אביב:
+החברה לחקר המקרא בושראל ע"י הוצאת ניב,
+‎Roth, C.‏
+‎The History of the Jews of Italy. Philadelphia: JPSA.‏ 1946
+‎R. Saadia Gaon‏
+תפסיר רס"ג לספר דנואל, מקרא ותרגום ערבי , צילום כתב יד | 1971
+עתיקץ מתימן,ישראל.
+‎Saphir, J.‏
+אבן ספיר .א-ב, לדק-מגנצא. 1866-1874
+‎Schechter, S. \‏
+‎Cambridge: Deighton and Bell.‏ .58807808 1903
+.ה ‎Schroter,‏
+‏ספר תשובות דדנש הלוד 92 לברס על רבי סעדיה גאוך. 1866
+ברסלאו,
+‎Segal, M.Z.‏
+דקדוק לשון המשנה, תל-אביב: דביר, 1936
+
+==== PDF page 0070 ====
+68
+Skoss, S.
+1959 ‏מפירושו הארוך של רב טעדיה גאון על בראסית כב,כ-כג,‎
+.324-503 ‏יח;כה, כת-כו,תרביץ כ"ת:‎
+Spiegel, H.
+1906 8 al-Fajjumi's arabische Danielversion. Berlin.
+Steinschneider, M.
+1858 Catalogus Codicum Hebraeorum Bibliothecae Academiae
+Lugduno-Batavae. Lugduni-Batavorum: E.J. Brill.
+Steinschneider, M.
+1897 Verzeichniss der hebraeischen Handschriften. Zweite
+Abtheilung. Berlin: A. Asher.
+Steinschneider, M.
+1964 Die arabische Literatur der Juden. Reprint. Hildesheim:
+Olms.
+Steinschneider, M.
+1965 ‏הרב קוק.‎ TOW ‏הרכאות על כתבד יד עבריים, ירושלים:‎
+Tobi, Y.
+1975 ‏שרידים חדשום מפירוש רב סעדיה גאון לספר ישעיהו,‎
+.662-654 ‏קרית ספר  ם:‎
+Wehr, H.
+1971 A Dictionary of Modern Written Arabic. Third edition..
+Ithaca, New York: Spoken Language Services, Inc.
+
+==== PDF page 0071 ====
+59
+‎Weisenberg, E.‏
+‎M1795‏ רבינו אברהם ‎Ja‏ הרמב"ם ז"ל על בראשית ושמות, 1959
+י'ע פ-------
+‎Werfel (Raphael), I.‏
+מלואים לביבליוגרפיה,פעפמ' תרמד-תרנז בתוך רב סעדיה 1943
+גאוך בעריכת י, ל, הכהן פישמן, ירושלים: ‎Told‏ הרב |
+קוק.
+‎Wertheimer, S.A.‏
+בתי מדרשות, ת"א, ירושלים: מדטסד הרב ‎.PIp‏ 1952
+‎Wilensky, M.‏
+ספר ‎ABpIA‏ לר'* יונה אבן גנאת, ברלין: האקדמיה 1929
+למדעד הדהדות,
+‎Yaari, A.‏
+שלותי ‎PIR‏ ישראל, ירושלים: מוסד הרב קוק, 1951
+‎Zucker, M.‏
+על תרגום רס"ג לתורה, ניו-יורק: פעלדהיים, 1959
+.א ‎Zulay,‏
+‏החסכולה הפוסנית של רס"ג, ירדשלים: מכון שוקן. 1964
+‎Zucker, 4.‏
+חלקו של ר' סעדיה גאון בפולמוס ממחרת השבת. 1951
+‎Proceedings of the American Academy for Jewish Research‏
+‎XX : 1-26.‏
+‎Zucker, M.‏
+מפרושו של רס"ג לתורה, סורא ב : 355-393 1955-56
+
+==== PDF page 0073 ====
+קייא "7 --ר -%
+ו -
+7 =
+ו
+7
+/
+הי
+0
+ור 0
+- 0 0
+-.--.
+..
+‎a‏
+‎i . | |‏
+בי >" 42 2 .
+0 0 =
+0 \
+רו
+- ו
+
+==== PDF page 0074 ====
+תפסיר רבינו סעדיה גחוך
+על החלק הארמי של ספר דניאל
+‎OD‏ השווחות 99 פי כתב*" דד
+וקפמעים מגניזת קהיר
+רעם מבוא באנגלות
+‎ARO‏
+‎PRIDE‏ אהרן קליין
+
+==== PDF page 0075 ====
+2
+רשימת סימנים רקצורים
+ח' = תסר, כלומר: לא ‎RADI‏ בכ"י אבל הכ"ד אינו ‎DIAS‏ באותו מקוס.
+חסר = הכ"ד פגום באותו מקום,
+נ' = נוסף.
+[ ] = בסכסס, השלמה פ"פ ההשערה; בשינויים, חור בכ"י,
+= ממדשסש, והקריאה אינה ברורה,
+.4 ,”= מסושטש, אבל מספר החאותיות ברור,
+1 ,2 ,3 1
+לסומני כתבד היד: תא,ב,ג',ג",ג7,ל,ק,ק',ת עיין בחלק האנגלי
+‎fay‏ 21-16.
+/ = חם ‎WR‏ רדות בין סימן זה לאותיות שלפניו רשלאהריו,
+מובנו שבכ"י יש שורה חדשה; אהרת, סימן זה מבדיל ביך
+שינויים שונים לאותה מלה בטכסס,
+
+==== PDF page 0076 ====
+‘a pis
+
+כתבד דד: א,ל,ק,ק',ת.
+
+אן 39 אלסנה אלתאניה מן מלך בכתנצר ראד הלמא פכרב רותה ותנגץ
+נומה, | ‎me‏
+‏פי/ ופי לק'ת. |
+אלתאניה. אלב' ל / אלתאנייה ת.
+בכתנבר/, בכתנ' ל / ‎nda‏ נצר ת.
+‎JIRA‏ ראא ק'ת. |
+
+ב, ‎WRI‏ באן ‎ROT‏ באלחכמא ואלמנגמין ואלסחרה ואלכסדאניין
+ליערפוה רויאה ‎TRA‏ ווקפו בין ידיה, .
+ואלכסדאניין/ ואלכסדאנין ל,
+ליערפוה/ ליערפונה ק'ת.
+ווקפו/, פוקפו ל,
+
+ג, פקאל להם אלמלך קד ראית רויא פכרב רותי ‎VR‏ אן אערפה,
+אן/ ‎Sn‏ ונשלם למעלה מהשורה ‎ar‏ ; /
+
+ד, פכלמוה באלנבטיה אמאל אללה ‎WIR RPI‏ קל אלרויא לעבידך
+ננברך בתפסירהא: ;
+באלנבמיה/ באלנבטייה ק'ת.
+נכברך/. ונכברך ק'ת.
+
+ה, אגאבהם פקאל קד גד מני אלאמר באנכם אן ‎OF‏ תערפוני אלרווא
+רתפסירהא אפצחא תפעלון וביותכם צואפי תציירון, |
+פקאל/ רקאל קית. : |
+אעבאא/, ‎RETR‏ ת.
+תציירון/ יתציירון ‎np‏
+
+==== PDF page 0077 ====
+4
+‎pag‏ ב'
+ו, ואן אלרויא ותפסירהא תכברונד הבאת וגואיז ווקר ועז כתיר
+תרפעון ‎Yo‏ קדאמי לדאלך אלרויא ותפסירהא אכברונ5ל
+תנכברוני/. תכברון ק'ת;
+רוקר/ ווקאר ‎in'p‏ |
+כתיר/ כביר ק'ת.
+ד אגאבוה תאגית וקאלו אלמלך יקול אלרויא לעבודה 77253
+בתפסירהתא,
+תאבית/ ‎wip fn‏
+לפבודה/, ח' ק'ת.
+ננכברה/, פנכברה ק'ת.
+ח, אגאבהם וקאל ‎WIR‏ לאעלם יקינא אנכם אבמא תשתרון סאעתכם ודאלך
+למא ראיתם גד אלאמר מני,
+וקאל/ פקאל לקית. )
+אני/ ‎133K‏ ק'ת.
+לאפלם/] לאיתאעלם 222
+ודאלך/. ודאך 2 / ודאך ק'ת.
+₪, באנכם ‎oF TR‏ תערפוני אלרויא פסבילכם ‎KINKI‏ ואנמא קד אעתדתם
+כלאם אלכדב ואלזור ‎TR‏ תקולוה בין ידי ‎TR WR‏ תתגייך אלסאעה
+ותבגלי לכן ‎WIP‏ לי ‎ART‏ אלרויא ‎TAN‏ אעלם אצכם צאדקין פי
+אכבארי ותפסירהא,
+ואחדא/, ואחדה 2 / ואחד ק'ת.
+קד ‎wp tn‏
+‎/ontnyr‏ אעדדתם 2
+אלבלב/. 173 ל / ‎ata‏ ק'ת.
+ואלזור/ וזור לקות.
+‎in‏ ידוי ת.
+‎LVR‏ אלא ‎oD‏
+‏תתגייר/. תתגיר לק!.
+ותפסירהא/, בתפסירהא לק'ת,
+
+==== PDF page 0078 ====
+5
+‎pag‏ 2“
+י, אגאבו אלכסדאניין בחצרה אלמלך וקאלו ‎VID‏ אנסאן עלי אלארץ
+יקדר אן יכבר ‎PAIR MRP ROI‏ ודאלך אן כל מלך גליל וסלטאך
+עצים לם יסאל קט מתל הדא אלאמר לאד חכים או מנגם או כסדאני.
+אגאבו/, אגאב ל / אגאבוה ק'ת. \ ן
+אלכסדאניין/ אלכסדאנין ל / אלכפדאניין ‎oD‏ |
+בהצרה/ בחצרת ת.
+אנסאן/ אנסן ל.
+או(1)/ או אך ב.
+ודאלך/. ודלך ל.
+עביס/ ח' לקית.
+יסאל/ 907 2.
+הדא הדא ‎wip‏
+‏אלאמר/. אלקול לק'ת.
+לאי/ לאיי 2, '
+יע, ואלתמר אלדי וסאל ענה אלמלך עזיז ‎DIDI‏ אבר סואנא איצא יקדר
+אן יכברה ‎ROA‏ קאל אלא אלםלאיכה אלדי לוע משכנוש מע אלבאט,
+יסאל/ וסל 2. דר ‎a‏ \ \ 0
+אוצעא/ איצ' ל / ‎Bin‏
+‏יכברה/ יבבר ‎sp‏
+‏במא/ במא ת.
+‎RoI‏ קאל/ בהא ל. \
+קאל/ ב': אלמלך ק.
+אלא] אלד 5. >
+אלדי(2)/ אלתי ל.
+יב, ‎PRT Taya‏ שאט אלמלך וסלט גדא ואמר באבאדה גמיע תכמא באבל, “
+דאלך/. דלך ל. ן |
+וסכמ/ ומבט ל / וצבס ק.
+באבאדה/ בקתל ק.
+
+==== PDF page 0079 ====
+6 : ,
+‎pas‏ 2“
+יג, וכרג אלתוקיע בדאלך והודא יקתלון אלחכמא וכאד דניאל
+וחאצחאבה אן יקתלון.
+אלתוקיע/ אלתיקיע 2.
+בדאלך/ בדלך 2.
+והודא/] והודא קת.
+\ יקתלון/ יקתלו לקת.
+יד, חיניל רפע דניאל ‎Asp‏ אלי אריוך רייס סיאפי אלמלך אלדד 493
+אן יקתל חכמא באבל,
+היניד-באבל/ חסר בחלקו ל.
+חיניד/ חינד ת.
+קצה/] אלקבה ק.
+רייס/ ריס ל.
+סיאפי/ סייאפי ת.
+נפד] ב': פי ל.
+מו, יסאלה ויקול עלי מא דא אלאמר ‎ARN‏ מן ‎Tay‏ אלמלך חיניד ערפה
+ארירך אלקצה,
+יסאלה-אלקצה/ ‎ron‏ בחלקו ל,
+יסאלה/ וסאלה ת / ג': דניאל ת.
+ויקול/ וקאל ת. \
+אריוך/ אריוך ת.
+אלקצה/, קצה ת.
+פז, פתסבב דניאל ‎WR‏ אן סאל אלמלך אן ינצרה אגלא חתי יפרפה
+אלרויא ותפסירהא,
+פתסבב-ותפסירהא/ ‎ron‏ בחלקו ל.
+
+==== PDF page 0080 ====
+7
++
+‎pis‏ ב .
+יז, חיניד ‎ARB‏ דניתאל אלו ‎ANIA‏ וערף חנניה מישאל רעזריה אצתאבה
+אלקבה,
+חיניד-אלקצה/ ‎avn‏ בחהלקו 2.
+יח, וראגתמעו אך ילתמסו אלרחמה ‎ja‏ ענד אלרב פ+ הדא אלסר לילא
+יהלכון דניאל ואצתאבה מע באקי ‎RODIN‏ באבל.
+ואגתמפו-באבל/ ‎Jon‏ ברובו ל.
+אלרב/ רב ל / ג': אלסמא ל.
+הוא/ הדי ק / הדי' ‎wh‏
+‏אלסר/ אלסר ת.
+לילא/ ללא קת.
+ים, חינול כשף אללה דאלך ‎WIR‏ לדניאל ‎IS‏ רויא אלליל ‎NAVD‏ דניאל
+רב אלסמתח, \ \
+חיניל-אלסמא/ חסר ברובו 2.
+כ. באן קאל יכון אסם אללה מבארכא ‎JO‏ אוול אלעאלם אלו אכרה אלדי
+אלחכמה ואלגברווה לה.
+אוול/ אול 2.
+. -
+אכרה/. אכרה .
+אלחכמה/ אלחכם ת.
+כא, והו מגייר אלאוקאת ראלאזמאן עאזל מלוך ונאצב מלוך מעטי
+אלחכמה לאלחכמא ואלעלם לפארפי אלפהם, \
+כב, והו כאשף אלעמיקאת ראלמסתוראת רפלם מא ‎TS‏ אלצלמאת ואלנור
+סאכן ענדה, \ \
+אלצלמאת/ אלמלמאת 2.
+
+==== PDF page 0081 ====
+8
+‎‘apis‏
+‏כג, לך יא אלאה אבאינא שאכר ומסבת [אנ] למא קד רזקתני ‎qo‏
+‏אלחכמה ואלגברווה ואלאן ערפתני מא ‎WORD‏ והי מסאלה אלמלך,
+אלאה/ אלה 2.
+אבאינא/, אבעיי ל / 1': אנא ל.
+רמסבה/, מסבח לע.
+מסאלה/ מסלה ל / מסאלת ת,
+כד, ‎Tay‏ דאלך צאר דנואל ‎WR‏ אריוך אלדי ולאה אלמלך ליביד הכמא
+באבל לא תביד ‎INR‏ מנהם אדפלני אלד אלמלך אערפה אלרויתא
+ותפסירהא,
+עבד/ פעבד לקת.
+דאלך/ דלך ל.
+אריוך//, אריוךף ‎oR‏
+‏באבל/ 363 פקאל לה לקת,.
+תביד/ ‎yan‏ קת.
+אחד/, אחדא לקת.
+כה, חיניד אריוך במבאדרה אד5ל דניאל אלי אלמלך וקאל לה אניד קד
+וגדת רגל מן אהל גלוה אליהוד ידכר אנה יערף אלמלך אלרויא
+ותפסירהא,
+אריוך/, אריוך 5. |
+קד ‎‘n‏ ק.
+רגל/ רגלא ל.
+גלוה/ אלגלוה קת / ‎fa‏ אלדי מן ם.
+ידכר/ ידכל ת.
+
+==== PDF page 0082 ====
+9
+פרק ‎‘a‏
+‏כו, אבתדאה אלמלך וקאל יא בלטשאצר הל תקדר ‎YR‏ תערפני אלרויא
+אלדי ראיתהא ותפסירהא, .
+אבתדאה/ פאבתדאה לק / פאבתדא ת.
+ית/ ב': דניאל אלד1 לקבך 2.
+בלטשאצר/ בלטשבר ל / בלט שצר 5 / בלט/58ר 2 ‎ .‏ .
+אלדי/ אלתי לק.
+ראיתהא/ ראית ת.
+כז, אגאבה דניאל וקאל אלסר אלדו אלתמסה אלמלך לא אלהכמא
+ואלמנגמין ואלכסדאניין ואלחכאם יקדרון אן יכברון בה,
+אלתמסה/ ילתמסה ל / אלתמס ק / אלתמפה 2. -'
+ראלכסדאבייך/ ראלכסדאנין ל . |
+בה/ נ': אלמלך ת. |
+כח, לא כך אלאלאה אלדי פי אלסמא ‎YORI‏ אלאטראר ‎FIV‏ אלמלך בכתנצר
+במא סיכון ‎IS‏ אלא3ר אלזמאן פרויאך ומא נצרא עיניך עלי
+מצגעך הו הדי אלדי אקולה, / |
+לא כן/ לכן לקת. \
+אלאלאה/ ח' ל.
+‎for‏ ח* 49
+אלסמא/ 353 רב ל.
+כאשף/ יכשף לת / וכאשף ‎PB‏
+‏אלמלך/ ח' קע.
+אלמלך בכתנצר/ בכת/נצר אלמלך ת.
+בלתבצר/ נ': אלמלך ל. 0/0
+במא] מא לקת. יוכיד >
+אלאבר/ אכר ל / אכר קת.
+נברא/ נמרת ל / גבצרתה ק.
+עיביך/, פינאך לקת.
+הדי/ הדא ל / הלא ת.
+
+==== PDF page 0083 ====
+10
+
+‘a pas
+
+כמ, יא אלה אלמלך כאן אפכארך קבל נומך חארת פי מא יכון בעד ‎ATA‏
+‎ORRIN‏ פאטעפך כאשף אלאסראר באן ערפך דאלך. .
+יא-דאלך/, מסושסש בחלקו א / חסר ברובו ל.
+יא אלה יא ‎rate‏ אק'ת / יחיהח 2.
+כאן/ כאנת א.
+חארת/ תאלת אפ'ת.
+פי מא] פומא ‎oR‏
+‎fata‏ הלא ‎wip‏
+‏כאשף/ כאשפך ת.
+ערפך/ יערפך ‎oR‏
+
+| דעלך/, דלך 8.
+
+ל ואנא פליט לאני אחכם אלנאס כשף לד הדא אלסר 139 בסבב אלדי
+יערפון אלמלך אלתפטסיר 1991 תערף מראד 27083
+ראנא-נפסך/ מטושסש ‎TRO‏ א.
+‎/RIR1‏ ראני' ‎np‏
+‏לאני/ ח* ‎Jp‏ / אנא ת.
+139/ אלכן ‎oR‏
+‎JV TOR‏ אלאלדק ‎LR‏
+‏יערפון//. ‎Rasy‏
+‏תפרף/ ת..ף א.
+
+‎LRP‏ יא איה אלמלך ראית כאנך מתבצר פאדא בצנם ‎ORT msy‏ אלצנם
+כביר לה בהגה כתירה והו קאים אמאמך ולה רועה האילה,
+וע איה/ יאיהא ‎oR‏
+‏פפדא/ פאדי' קית.
+‎Rk may /msy‏
+, . 1
+דאלך/ ודלך 8 / ‎wt‏ קית.
+בהגה/. ‎nana‏ ק'ת.
+
+==== PDF page 0084 ====
+11
+‎pas‏ 2“
+לב, דאלך אלצגם ראסה מן דהב לאלץ צדרה ודראעיה מן ‎W302 ARS‏
+וחפכאדה מן נחאס,
+לאלך-נתאס/ ‎Jon‏ ברובו 2.
+‎LRA‏ דלך א.
+ודראפיה/ רדראעאה 8.
+ואפבאדה/ רפבדאה ‎oR‏
+‏מן/ ‎-k fn‏
+לג, סחקיה מן ‎TAIN‏ רגלאה ‎PIT‏ אגאזהא מן הדיד ובעצהא ‎WO‏ כזף.
+סאקיה-כזף/ ממושמט 2.
+סאקיה/ סאקאה ת.
+‎LRATRAR‏ אגזאיהא א / אגזאהא ק'ת.
+לד, ‎oh‏ ראות כאן חגר קד אנקטעת פצרב דאלך אלנצם עלי רגליה אלתי
+מן הדיד וכזף פדקהמא פסקס,
+קד/ ‎fn‏ 8.
+‎/nonpir‏ אנקטע אק'ת / ב': לא ביד ‎tne‏ אק'ת.
+דאלך/ דלך א.
+אלנצם/ אלצנם אק'ת.
+אלתו, אלדי ק'ת / נ': הי 8.
+חדיד/, אלחדוד ק'ת.
+וכזף/. ואלכזף ק'ת.
+פדקהמא/ פדקהא ‎np‏
+
+==== PDF page 0085 ====
+12
+‎‘apis‏
+‏לה, חינדד אנדקו אגמעין אלהדיד ואלכזף ואלנתאס ואלפ3ם ואלדהב
+וכצחרו כהשים מן בואדר אלציף ‎Oh‏ המלהם אלרית ולם ירגד להם
+‎KIRK‏ אלבתה תם אן אלתגר אלדי ‎ITZ‏ אלצנם צאר גבלא רמלא גמיע
+תלך אלארץ. . \ 9%
+החיניד-אלארץ/ חטר רובו בתחתילתו ל.
+חיניד/ חיניד3 ‎np‏
+‏כהטים/ כאלהשים 8.
+בואדר/ ביחדר א / בואדר ק'ת.
+אלבתה/ בתה א.
+גבלא/. ב': ‎may‏ 8 /8פפימח לק! / נ': עבימח 2.
+לו, ואד הדא אלרויא נקול תפסירה בין ידי אלמלך ,
+הדא הדה א, |
+תפסירה/. תפסירהח אלק'ת.
+‎fy‏ ידירו קית.
+לז, וא איה אלמלך אנת מלך אלמלוך אד רב אלסמטא אלמלך ואלותאק.
+| | ואלתאייד ואלכרם רזקך. | |
+יא איה/ יאיהח %ל.
+אלמלוך/ מלוך ‎“RB‏
+‏ואלותאק/ אלותאק ל / ואלואתק (אותיות בא בכ"י ‎INR‏ למעלה
+מאותיות ‎Che‏ ק .1‏ . |
+ואלתתייד/, ותלתאה/ 2
+
+==== PDF page 0086 ====
+13
+
+‘apis
+
+לה, ‎HINT‏ יאוי גמיע אלנאס וחיואן אלצתרא וטאיד אלסמא ‎NOPD‏ אליך
+וסלפך עלי גמיעהם אנת הר אלממתל ברחס אלדהב.
+יפוי דאוי 2
+אלצהרא/ אלבחרי קת.
+אליך/ אליך (נכתב למעלה מהשורה בחאותו כ"י) 2.
+וסלטך/ וצלטך ק.
+גמיעהם/ גמיעהט ק.
+אנת/ ‎nara‏ אלק.
+אנת הר/ פאנתהו ת.
+
+בראס/ באלראס אלת.
+
+לט, ובעדך תקום ממלכה אכרי תדון מנך ואלםמלכה אלתאלתה תשבה
+אלנחאס ותתסלט ‎VIDA TID‏ אלארץ, |
+אלתאלתה/ אלג' ל,
+רתתסלט/ ותתבלט קת.
+
+מ, ואלממלכה אלראבעה תכון צלבה כלאהדיד כמא אן אלחדיד ידק
+אלכל ויסחקה וירצה כדאך הי תדק אלכל רתרצה,
+כלאחדיד/ כאלחדיד אתל / כלחדיד 2.
+במח] רכמח אלם,
+אלבל(1)/ לכל 2.
+וירצה/ וירצצה 2%,
+‎‘n fra‏ אלקת.
+
+==== PDF page 0087 ====
+14
+פרע 2‘
+מא, ואמח מא ראית מן אלקדמין ואלאצאבע ‎PIA‏ אגזתהח כוף פכאר
+ובעצהא ‎TIN‏ פיכון דאלך מלכא מנקסמא פיהא מן אצל אחדיד
+באיזא ‎RO‏ ראיתה ‎BIRT‏ אלכזף ואלטין, | 0
+אגזאהא/ אגזאיהא אל / אגזאה ‎oP‏
+‏פכאר/ מפכר אל / מפכר קת.
+דאלך/ דלך א / דאר ל.
+פיהא/ ופיה ‎(por‏
+‏אחדיד/ אלהדיד %לק1,
+באיוא/ באוא אלת. ד
+רחיתה/ ראיתאה ת.
+רבאלט/ ובאלט ‎p‏ / יבלט ת.
+‎LAIR‏ *לכזף (חותיות אל באותו כ"י) א,
+ואלטין/ אלטון א / ‎“ay poor‏ \
+מב, ותאויל אלאצאבע אלתי ‎TIN RAID‏ ומנהא כזף אן יכון בעץ
+אלממלכה ‎RIVE‏ ובעצהח מנכסרץח,
+אלאצאבפ/ אלאצאבע ק. |
+אן/ ‎oR ‘n‏ י >
+‎Lin‏ יכן 2 / יר' 2. /
+צלבא/ בלבהּ קת. >
+מבכסרא*/ מנכסרה לת.
+מג, ואמא מא ראית מן אלתלאטהמא פתאוילה ‎INST YR‏ הולאי
+באלמנאסלה ולא יכתלטו באלכללה כמא ‎YR‏ אלתדיד לא ‎pond)‏
+‏אלתלאמהמא/ אכתלאטהח קת.
+הולצי] האולי 8 / הולא ל .
+‎ind.‏ (2) / ילתזקון א,
+באלכלוה/ באלכלייה קת,'
+כמא] ‎fn‏ ק. 0
+יכתלט/] יבאלס אל.
+באלכזף/ אלכזף אל.
+
+==== PDF page 0088 ====
+15
+
+פרע 2“
+
+מד, וכעד מדה האתין אלממלכתין יקים רב אלסמח ממלכה לא תפסד אלר
+אלדהור ולח יתרך מעהא מלכא לאמהּ אכרי פהי ‎PIN‏ גמיע הדה
+אלממאלך ותסיפהא והי תתבת אלי אלדהּור,
+וכעד/ ובעד אלקת.
+
+‎ata fata |‏ ק.
+רב/ אלחה ק.
+אלדהור; (1) ‎J‏ אלדהר ת,
+
+‎fanso‏ ח' ק.
+תדק/ יתדק ק.
+תתבת/ תתבת 12 | ך
+אלדהור (2) / אלדו-ר (ה"ו" באותו כ"י) ‎oR‏
+
+‏מה, ודלך באיזח ‎RA‏ ראית אן ‎WN‏ אנקטע מן אלגבל לא ‎THR TIA‏ פרק
+אלחדיד ואלנתאם ואלכזף ראלפצה ואלדהב גמלה אלאמר ‎TR‏ אללה
+אלכביר ‎FW‏ אלמלך מא יכון פי אכר אלאיאם פאלרויא ‎MANS‏
+‏ותפסירהת צאדץ, /
+ודלך/ ודאך 5 / דאך 2 / ודאך קת.
+באיוח/ באזא אלת. |
+הגר/ הגרח אלקת,.
+אחד/ ‎‘n‏ פלק.
+פרק/ פדק פלקת.
+ואלנחאם/ ראלנתחאס אלקת.
+ואלנזף/ ח' ל.
+יכו יכו 2.
+אלאיאם/ אלאתום א.
+צחית/ צחיחה אל,
+ותפסורהא/ דתפסירה אק.
+
+==== PDF page 0089 ====
+16
+‎‘apis‏
+‏מו, חיניד וקע אלמלך בכתנצר עלי וגהה וסגד לדניאל ואמר בחן
+תקרב לה הדחיח ושמאים. |
+‎fan‏ וחינד ת. |
+בנתנצר/ ‎nda‏ נצר תק .
+וסגד/ פסגד ‎fo‏
+‏באן/ חן 2.
+מז, תם קאל לה מן אלחק אלצתית אן רבכם הו אלאה אלאלאהתת וסייד
+אלמלוך וכחשף אלאסראר ‎TR‏ מכנך חן תכשף הדא אלטר,
+אלאה/ אלה ‎oR‏
+‎LARARIRIR‏ אלאלהה ‎PR‏ / אלאלאה ת.
+וסייד/ וסיד 2
+אלאסראר/ חלסרחאיר קת.
+מכנך/, אמכנך ת.
+‎/qoan‏ כשפת קת. )
+הדת] הדי ק. | .
+מח, חיניל כתר אלמלך דניאל ווהב לה ‎RROD‏ נפיסה גלילה8 וסלפה
+עלי גמיע מדינה באבל וומרה עלי גמיפ ‎ROIN‏ באבל,
+וסלטה/ וצלסה קת.
+מדינה/] מדינת ת.
+מס, ‎ON‏ חן דניאל סאל אלמלך אן יולי עלי חעמל מדינה באבל שדרך
+מיפך ועביד נגו ואקאם הו בבאב אלמלך,
+תס-אלמלך/ מטושטש ‎TRO‏ 5.
+‎frown‏ יוולד ק / נ': בה 2. \
+אפמל] אצעמחל פק.
+מדינה/ מדינת ‎oA‏
+‏מיטך/ ‎yer‏ ת.
+ועביד/ וע.,. א / ופבד ת.
+
+==== PDF page 0090 ====
+17
+‎pis‏ 2“
+כתבי יד: א,ק,קי,ת,גי,ג?. |
+‎ph GR |‏ אן בכתנצר אלמלך אצלח צנמא ‎ant yo‏ רפעה סתין דראע ופרצה .
+
+סתה ונצבה פי בקעה דורח פי מדינה באבל,
+בלתנצר/ בת נצר קת. |
+דראפ/ דרחצ* ף,
+בקפה/ בקעת קת.
+מדינה/ מדינת ‎“Ap‏
+
+ב, ‎oh‏ חנה בעת ליחשד אלבטחרקה ואלאמרא ואלכלפא ואלהכאם ואלפמחל
+ואלכתאב ואלשרמיין וסאיךר סלחטין אלמדן ‎FOR‏ וכר3% אלצנם אלדי.
+נצבה, | |
+ואלפמחל ואלכתאב/ ואלכתאב ואלעמאל ת.
+סלאטין/ צלאסין ‎HP‏ \
+אלמדן/ אלבלדחן אקת.
+וכרה/ וכארה ‎Sane / x‏ ק.
+נצבה/ נ': בכת נצר אלמלך ת.
+
+ג, חיביל אגתמעו חלבטארקה ואלאמרא ואלכלפא ואלתכאם ואלפמאל
+ואלכתחב ואלשרסיין וסאיר סלאטין אלבלדאן אלי וכרה אלצנם
+אללי נצבה בנכתנצר ווקפו בין ידיה,
+אגתמפו/ אגתמע א. ,
+סלאמין/ צלאמין קת.
+וכרה/ וכארה א / וכארת 2
+בנתנצר/ ח' אפ / בכת גצר ק.
+
+ד ואלמנאדי ינאדי בקוו3 לכם יקחל |אלשעוב] ואלאמם ‎Sant‏
+‏אללגאת, :
+בקווה/ ‎ipa‏ ת, |
+וקחצל/ יחא מעאשר ק / נב': יא מפאשר תת.
+[אלשעוב] / אלשוב א / אלשעוב קת.
+
+==== PDF page 0091 ====
+18
+
+‘a pas
+
+‎oA‏ פי דקת ‎YR‏ תסמעון צות אלבוק ואלצפארה ואלדך ואלטבל ואלצנג
+וחלנאי וסחיר אנואע אלמלאהי תלר ותסגדו לצנם אלדהב אלדד
+נצבה ב5תנצר, |
+‎fi‏ תי ת.
+וחלדך/ ואלדף ‎BPR‏
+‏ואלנחי/ ואלינחי ‎oR‏
+‏וסציר, וסאיר 8,
+‎fqn‏ תכרו א / תכרו קת.
+ותסגדר/ פתסגדו ת.
+לבנם/ 81370 ‎R‏ / לאלצגם 5.
+בכתנצר/ בכת נצר ‎JR‏ קת.
+
+‏ו, ומן מנכם ‎RD‏ יכרד ויסגד להּ ‎JA‏ סאעתה ‎ROW‏ בה אלי ‎PINK‏ אלנאר
+אלמתוקד, ן
+לא] ?8 2.
+ויסגד/ פיסגד א,
+ירם*/ ירמי ‎Rk‏
+‏אתון/ אלאתון ת.
+אלמתוקד/ אלמתוקדה א / אלמתווקד קת.
+
+‏ז, פענד ‎PRI‏ כמא כאן יסםפ גמיפ אלשעוב צות אלבוק ואלצפארת
+וחלדף וחלמבל ואלצנג ואלנאי וטאיר ‎PRI‏ אלמלאהי מן וקתה
+17757 גמיע חלשעוב ותאלאמם וחהל אללגחת פיסגדון 8339 אלדהב
+אלדי נצבה בכתנצר אלמלך,
+‎LPR‏ דלך 5.
+יוטמפ/, יסמעון ת.
+ותלנאי/ ח' ‎ope‏
+‏אנואפ/ ‎fn‏ ת.
+מן וקתה/ ח* ת.
+לבנם/ ללצנם א / לאלצנם ק, |
+בכתנצר/ ‎nda‏ נצר פע.
+
+==== PDF page 0092 ====
+19
+
+‘2a pas
+
+‎on‏ וענד דאלך ‎Jo‏ וקתה תקדם ‎DIP‏ כסאדניין פלעו ר1מזו באליהוד,
+‎RT Let‏
+כסתדניין/ כסדא..? א / כסדאניין ק / כשדאניין ת.
+פלעו/ פסעו קת. |
+פלעו וגמזו/ פמחלו *,
+
+‏פ, באן אבתדו ‎RPT‏ לבכתנצר אלמלך אמאל אללה ‎RPL‏ אלמלך,
+וקאלו/ פקאלו 5.
+לבכתנצר/ לבכת נצר קת.
+
+‏י. איה אלמלך אנת אמרת באן כל אלנטאן יסמע ‎AIS‏ חלבוק ואלצפארה
+ותלדף ואלטבל ואלצנג ואלנאי וסאיר ‎PRIN‏ אלמלאהי ילר ויסגד
+לצנם אלדהב.
+איה/ יאיהח א / יח איה קת.
+אלנסתן/ אנסחן ‎BPR‏
+‏וחלנאי-*למלאהי/ ח* ‎oR‏
+‏ויסגד/ פיטגד ‎oR‏
+‏לצנם/ ללצנם 5.
+
+‎oF JOT LRT‏ ילר ויסגד ירמה בה פי אתרן אלנאר אלמתקוד,
+ריסגד/ פיסגד 8.
+ירמה ירמי א / פירמח ק / ‎Drow‏
+‏פי/ חלי ק.
+אתון אלנאר/ אלאתון ת.
+אלמתקוד/ אלמתוקד א / אלמתווקד קת.
+
+==== PDF page 0093 ====
+20 \
+פרק גי
+יב, מוגוד קום יהוד ‎WTR‏ וליתהם עלי אעמתאל מדינה באבל שדר
+מישך ועבד נגו אולחיך קום לא יקבלון לאמלך אמרא מעבודך \
+לא ועבדון ולאלצנם אלדהב אלדי נצבתהא לא יסגדון.
+מוגוד/ פמוגוד 8.
+אלדין/ אללדיג ‎eR‏
+‏| שדר/ שדרך אקת.
+מישך/ ומישך 5 / משך ק.
+ועבד נגו/ ופבדנגו (בסוף שורה) 8.
+‎a? /R?‏ 2.
+יקבלון/ יקבלו קת.
+לאמלך/ ללמלך א / לאלמלך קת.
+מעבודך/, מעבודה ‎pr‏
+‏ולאלצנם/ וללצנם א / ותלצנם ק / ולצנם ת.
+נצבתהא/ נצבתה אק / נצבתאה ת,
+יסגדון/ ב': לה ק.
+יג, חיניד אמר בכתנצר ברגז וחמייה אן יחצר שדרך מישך ועבד בנגו
+פאחצרו בין ידיה,
+בלתנצר/ ‎n5a‏ נצר קת.
+וחמיי3/ דחמיה 5. |
+מישך/, ומישר ת.
+נגו/ נג. 8.
+פאהפרו/ תיניד אחצרו ק.
+יד, פאבתדא וקחל להם אוקינא ית שדרך מישך ועבד נגו מעבודי ‎BID‏
+‏חנתם עפאבדין ולאלצנם אללהב אללי נצבתה גיר סאגדין,
+פאבתדא/ פאבתדי ‎DPR‏
+‏מישך/ ומישך 8 / משר ק.
+מעבודי/ למעבודי ק.
+עאבדין/ עאבדון ק.
+ולאלצנם/ וללצנם א / 03391 קת.
+
+==== PDF page 0094 ====
+21
+
+פרק 2‘
+
+מו, ואלאן 1313 מסתעדין פי וקת תסמעון צות אלבוק ואלצפארת
+ואלדף ואלטבל ואלצנג ואלנתאי וסאיר אנואע אלמלאהי תנרוך
+ותסגדון לאלצנם ‎WOR‏ צנעתה ‎UP TRI‏ תסגדון ‎YO‏ סאעתכם ירמא
+בכם אלי אתוך אלנאר אלמתוקד ואל דא רב 993959 מן ידי.
+ואלאן/ אלחן אקת.
+כונו/ כנו א.
+תסמעון/ תסמעו 8
+צות/ חי ‎ok‏
+‏לאלצנם/ 03377 5,
+תסגדון/ תסגדו 8.
+ירמא ירמי ת.
+אלמתוקד/ אלמתווקד קת.
+
+מז, אגאבוה וקאלו יח בכתנצר לא נהתאג ‎TR‏ נגיבך ‎WON‏ הדא בכלמה,
+אגאבוה/ גחובוה ת. 0 \
+בנכתנצר/ בכת נצר קת / נ': אלמלך 2.
+פלי/ פן אקת.
+הדא/ הדי ‎op‏
+
+יז, אל רבנא אלדי נפבדה יסתספיע ‎YR‏ יכלצנא מן אתון אלנחר
+אלמתוקד ומן ידך יח אייה אלמלך יכלצנא,
+אלמתוקד/ פלמפווקד קת. \
+יא אייה/ יאיהת ‎gp‏ |
+אייה/ איה קת,
+
+יה, ואן לם יכלצנא יא אייה אלמלך אנא לא נעבד מעבודך ולא ‎TABI‏
+‏0139 אלדי נצבתה, |
+יכלבנבא / ב': פאעלם ‎Spe‏
+‏יח אויה/, יאיהח ,
+אייה/ איה ‎Sp‏
+‏אנא אן ק.
+לצנם/ ללצבם א / נ': אלדהב א / '*: אלדהב קת.
+‎/anass‏ נצבתאה ‎fo‏ : \ \
+
+==== PDF page 0095 ====
+22
+‎pag‏ 2‘
+ים, חיניל אמתלח בכתנצר המייף וסתנה וגהה תגיירת עלי שדרך מישך
+ועבד נגו פאמר באן יסגר אלחתון סבעה עלי מא ינבגי אן יטגר,
+אמתלא/ תמתלד 5.
+בנתנצר/ ‎ada‏ נצר קת / נ': אלמלך ‎oR‏
+‏חמייה/ ‎oman‏
+‏וסחנה/ וסהנת ק / ותסנהי ת.
+תגיירת/ תגידת א.
+מישך/ ומישך 8 / משך 2
+ופבד/ ועביד ק.
+בחן/ אן א, יסגר(1)/ בגלירן: נ"א יחמת ת.
+אלאתון/, נ': ללראתד א / 1'*: לאלואחד ‎Bp‏
+‏ינבגי/ נ': לה קת.
+כ, ואמר קומא גבתפרין מן גישה ‎YR‏ יכפתו שדרך מישך ועביד נגו
+לירמי בהם פי אתוך אלנאר אלמתרקד,
+יכפתו/ יכתפו ‎x‏ / יכפתון קת.
+פדרך/ שד' ת. :
+מישך/ ומושפך א / משך ק / ‎Sea‏ ת.
+ופביד/ ועי* ת.
+לירטי] ‎Bp xo?‏
+אלמתוקד/ אלמתווקד קת.
+כח, חיניד כפתו אולתיך אלקום בסראוי לחתהם וקמצאנהם רמשאמלהם
+וסחיר לבאטהם ורמי בהם פי אתון אלנאר אלמתוקד,
+כפתו/ כתף א / כתפו 2
+בסראוי לאתהם/ בסראוילתהם ‎R‏ / בסראוילאתהם ק / בסראוילהם 2.
+פי/ ב': וסט ‎ap‏ |
+פי חתון/ אלי וסט 5.
+אתון/ ח' ונשלם למעלה מהשורה ובגליון ת.
+אלמתוקד אלמתווקד ק. ן
+
+==== PDF page 0096 ====
+23
+‎‘as‏
+‏כב, ‎RODS‏ כאן אלאמר האתא ואלאתון סגר ‎RISA‏ חולאיך אלדי זגו
+בשדרך מישך ועביד נגו קתלהם והג אלנאר,
+תלאמר/ ‎WR‏ אלמלך 5.
+חאולעיך/ אלקום ‎BPR‏
+‏אלדי/ אללדין ‎DR / RB‏ קת.
+זגו/ גאזו ק.
+בפדרךר, בט' ת.
+מישך/ ומישך ‎Rk‏ / מיש' ת.
+רעביד/ ‎fant‏ ת.
+והג/ והב ק.
+כג, ואולאיך אלנפר אלתלאתה שדרך מישך ועבד נגר וקער פי ‎BUT‏
+‏אתון אלנאר אלמתוקד מכפותין,
+ואולתיך/ ח' ‎APR‏
+‏*לנפר/ ואלנפר אקת.
+אלתלאתה/ אלג' ‎spina)‏ אלתלתה) ת,
+פדרך/. ‎Ste‏ ת.
+מיסך/ ומישך ‎x‏ / משך ק / ‎Soa‏ ת.
+ועבד/ ופביד ע / ופ* ‎of‏
+‏וקפו/ פוקפו ‎2B‏
+‏וסס/ וצט ע.
+אלמתוקד/ אלמתווקד קת.
+מכפותין/ ‎Pans‏ 8.
+
+==== PDF page 0097 ====
+24
+‎pas‏ גי
+כד, היביד קלק ב5תנצר אלמלך וקאם מבאדרא פאבתדת רקאל לקוחדה
+אליס תלאתה נפר רמינח בהם אלי וספ אלנחר מכפותין *גאבוה
+וקאלוד יקינא יא חייה *למלך, .
+היניל-תלאת8/ חסר ג?.
+בבתנצר/ ‎nda‏ נצר קת.
+פאבתדא/ פאבתדי אחת.
+תלחתה/ ג' ת.
+‎asf} £193‏ ג?.
+חלו/ פו ת.
+רסט/ וצט 2
+אלנחר/ אלנ-[] ג?. |
+מכפותין/ מכתפין 5 / ] ]תפין ג?.
+אגחבוה/ אגאבר ג.
+‎tn fe‏ ג"ת.
+יח אייה/ יחיהת ת.
+אייה/ איה ג?קת.
+כה, אחגאבהם וקאל הודח אנצר חרבעה נפר מהללין יתמשון פי ‎HoT‏
+‏אלנאר וליס פיהם שי מן אלפסאד וחלייה אלראבע תשבה אלמלאיכה,
+אגעבהם-נפר/ חסר ג?.
+הוד*ת/ התנא א / הודי 2.
+אגבר/ נאסר .
+ארבעה/ 61 ‎x‏
+‏מחללין/ ,תלליך ‎7a‏
+‏וסס/ ‎esi‏ ק.
+וליט/ מטרשמט ג?.
+שי/ ‎Re‏ את / סטיי" ק. |
+ותחלייה/ וחליה 8ג? / וחלית 2.
+
+==== PDF page 0098 ====
+25
+פרק ‎‘a‏
+‏כו, חיניל תקדם בכתנצר ‎WR‏ באב ‎JINR‏ אלנאר אלמתוקד פנאדח יע
+שדרך מישך ועבד נגו ‎TAY‏ אלאלחה אלעאליי אכרגו ותעחלו ‎FIN‏
+‏פדרך מישך ופבד נגו כרגו מן וסט אלנאר,
+חיניך/. חסר ג?.
+בלתנצר/ בכת נצר ג? / ‎asa nda‏ ק'ת.
+אלנאר, אל זר גל.
+תלמתוקד/ ‎‘n‏ ג?ק'ת.
+פנאדח/ פנאדי א.
+פדרך/ שד* פ'ת.
+מישך/, ומישך א / מיש* ל'ת.
+ועבד], ‎Savi‏ ית / ‎‘m3‏ ג?.
+פבד/ פביד אג?ק'ת.
+אלאלאה/ אללה ‎Zar‏
+‏אלצאליי/ *לצלי 5 / אלפחלי ג?ק'ת.
+‎Warn‏ )2( / נ': כרג 8.
+שדרך (2)-מן/ חסר ג?.
+שדרך (2)/ ‎np ‘te‏
+מישך (2)/ ומישך א / מיש' ק'ת.
+ועבד )2(/ ועב' קית
+ועבד ‎Jaa‏ (2)/ ועבדנגו (בסוף שורה) 8.
+5רגו/ ‎ok fn‏
+וסט ובס ק'ת.
+
+==== PDF page 0099 ====
+26
+‎pas‏ גי
+כז, ואגתמעו אלבטחרקה ואלאמרא ואלכלפח וקואד אלמלך 17337 אולאיך
+אלקום ותעגבו כיף לם יתסלט אלנאר עלי אגסאמהם ‎WHI‏ רוסהם
+לם יתשווט ולבאסהם לם יתגיר וראיתה אלדכאן לם ‎payn‏ בהם,
+ועגתמעו], ראגתמע פק'ת / וא---]- ג?. | \
+ינצרו/ פנפרו א / פנפרו ק'ת ‎wb  /‏ (חסר ומטוטטפ) ג? /
+ב': אלי ג?. \ .
+אחולאיך/ אוליך ‎Zar‏
+‏ותעגבו/ ‎7a aon‏ \
+לם )1( / לח קית. .
+יתסלט/ תתסלס ג? / יתבלט ת.
+פלי] פי ג?. 0/9
+אגסאמהם/ אגסאמהם ג?.
+רוסהם/ רווסהם 8.
+יתפווט/ יתשום אג?ק'ת.
+יתגיר/. יתגייר ק'ת.
+אלדכאן/ דכאן ‎oR‏
+‎fon‏ חסר ‎7a‏
+
+==== PDF page 0100 ====
+27
+
+“2 ps
+
+כח, תם אבתרא בכתנצר וקאל תבארך אלאה שדרך מישך ופביד נגו ‎S79R‏
+‏בעת במלכה ונכלץ עבידה ‎PTR‏ תוכלו ‎AION‏ וגיירו אמר אלמלך) ,
+ובדלו אגסאםהם דון חן יעבדון ואן יסגדון לאללה ‎RID‏ אלאההם,
+אבתרא/, אבתדי א / אבתדת ‎nip‏ / קאל ג?.
+בכתנבר/ בכת נצר ק'ת.
+וקאל/ פקאל 8. .
+תבארך/ תברך א / ‎Taran‏ ג?.
+אלאה/ ‎AIR‏ א / ‎wey‏ ג?.
+שדרך/ ש* 21 / ‎np ‘to‏ :
+מיסך/ ‎to‏ ג? / ומיסך 8 / מיש' ק'ת.
+ועביד, וע* 21 / ‎Sani‏ קית )7 בשומר הדף: ועבד), ‏ |
+במלבה/ מלכה ג?. |
+‎{IR‏ אללדין א / אלדי ק'ת.
+תוכלו/ תוכלך ג?. ‏ .
+‎Zi‏ רגירו ‎Zar‏ .
+אלמלך/ אל . ] ג.
+יעבדון/, יעבדו 5 / יפ[ ] ג?.
+וצן/ אר ‎npr‏ | \
+ואן יסגדוו, [ ]ה ‎ar [ jean‏
+יסגדון/ ‎Wav‏ 8. \ 0
+לאללה/ לאלה 8 / לאלאה פיב / ולה ‎27a‏
+‏סוא/ סוי א. |
+אלאההם/. אלההם אג?.
+
+==== PDF page 0101 ====
+28
+
+‘2 pas
+
+כט, והודח אמר ‎WRI‏ אן יכון אי קביל או אמה יתקוול אלמחאל 899
+אלאה שדרך מישך ועבד נגו חן יגעל אעצאא ומנזלה נכאלא א% לח
+ירגד אלאה אלר יסתמיע אן וכלץ כצאלך,
+והודא-נכאלא/ חסר ‎wa‏
+‏והודא, ואנא ג?.
+או יכון/ ח* ג?.
+אמה/ ‎sta‏ או דר לגה 8 / נ': או דר לגה ק'ת / ג': או לסאן ג?.
+יתקוול/, יתקול ‎aR‏ .
+אלאה (1)/ אלה 5 / אללה ג?.
+שדרך-1גו/, שך,.] די ‎27a‏
+‏שדרך/. שד* ‎np‏
+‏מישטך/ ומישך 8 / ‎‘wa‏ ק'ת.
+ועבד/, ‎‘ami‏ ק'ת.
+אן (2)/ ח* ק'ת. .
+יגפעל/ מסוטטש וחסר גו . .
+‎geboR /erdoe‏ ה- הט
+
+| ומנזלה-כדאלך, ‎ok Sn‏
+ומנזלה/, ומנזלה ג?.
+‎/R? |‏ לם ג?. \
+‎anor‏ (2)/ נ': אן ג'.
+
+בופלך]) כדלך ג'ג?.
+
+ל, ‎OH‏ אן אלמלך אצלת תחאל שדרך מישך ועביד נגו פי מדינה באבל,
+חאל ‎Jn‏ ] ג?. בש \
+שדרך-נגו/ [ ‎‘of‏ 17 [ (הסר ומפושסט) ג?.
+שדרך/. שד' ק'ת. /
+מיסך/. ומיפך ג' / ‎Sava‏ ק'ת.
+ועביד/, ועבד ‎fava / ta‏ ק! / וע' ת, ‏
+פי-באבל/. חסר ומפושסט ג?. \
+מדינה/ מדינת ת.
+
+==== PDF page 0102 ====
+29
+
+‘2 pas
+
+ל*, ‎oh‏ אן בלתנצר ‎and‏ אלי גמיע אלשעוב ואלאמם ודרי אללגאת
+אלמקימין פ* גמיע אלבלאד סלאם עליכם וברכאת ‎SHIR‏ |
+תם אן בכתנצר/ פאול אל נסכה נבוכדנצר אלמלך ג'. |
+בנתנצר/ נבוכדנצר אלמלך ‎fox‏ בכת/נצר ת / נ': אלמלך ‎np‏
+‏ואלאמם/ ואלארמם ג'.
+ודוי/ ודרר ‎yg‏
+‏אללגאת/ אלגאת ג'.
+אלבלאד/ אלבלדתן ק'ת.
+סלאם/ סלם ‎ar‏ . \
+עליכם וברכאת אללה/ אללה עליכם וברכאתה ק'ת.
+וברכאת/ וברכה ג!.
+
+לב, אלאיאת ואלאפגובאת אלתי צנעהא מעי אלאלאה אלפאלי ראית אך
+אכברכם בהא, \
+אלאיאת/ אתנא אלאיאת ג'. .
+ואלאעגובאת/ ותלאפגובא"ת א / ואל עגובאת ג'.
+אלתי/ ‎vor‏ ק'ת. .
+אלאלאה], אללה אג'קית.
+אלעאלי/ אלעלי ת.
+
+לג, ‎ANRIR‏ פמא אעצמהא ואעגובאתה ‎ROS‏ אשדהא מלכה מלך אלעאלם
+וסלסאנה פי כל גיל ואגיאל.. \
+איאתה/., ראש הפסוק מסושמש ת. |
+
+\ אעבמהא/ אעממהא ‎‘a‏ / אכתרהא ק'ת.
+
+וסלטחנה/ ובלטאנה 2.
+
+==== PDF page 0103 ====
+30
+בתבי יד: ‎'p,p,R‏ ,13,8
+‎LR‏ אנא בכתנצר כנת סאליא ומטמאנא פו היבלי, |
+בנתנצר/ בכת/נצר ק' / ב5ת נצר ת.
+סתליא/ סאילא ג1 / נ'ו פי מנזלי אק'תג'.
+רמטמאנא/ רמסאמאנא ת.
+ב, חתי רחית רויא פאפועני ואפכארי עלי מצגעי ורויא" ידפרני,
+רויחפ/ חלמא אק'תג!..
+ורויאי/ ורויאיי אגי.
+ג, פאמרת פאה%ר אליי גמיע הכמח באבל ליערפוני תפסיר דאלך.
+פאחבר/ פאה3אר ק'ת. .
+אליו/ אלי א / ‎tn‏ ג'.
+באבל/ בבל ג'.
+דאלך/דלך אג'.
+ד, תיניד חצרו אלחכמא ואלמנגמין ואלכסדאניין ואלתכאם פקצצת
+‎IIIT‏ אלרויא ולם יערפוני תאוילהח,
+חצרר/ חצר אג'. \
+ואלכסדאניין, ואלכסדחגין ג'.
+ואלחכאם-תאוילהא/] מסרשטש 5.
+פקצצת, ‎Wz Ransyps‏
+
+==== PDF page 0104 ====
+31
+
+‎pas‏ בי
+
+‏ה, ואלי חצר בין ידיי אכדהם [דנ יאל] אלדי אסמיתה בְלטשאצר כאטם
+מעבודי ולאן פיה רוח אללה אלמקדס פקצצתהת עליה,
+ואלי/ אלי ‎lan‏ / ב': אן אג'ק'ם.
+‎Lan‏ אג'. \
+אלדהם]. אכרהם קית. ;
+[דביאל]/ דניתל אג'ק'ת.
+אסמיתה/ ‎wap moor‏ \
+בלטשאבר/ בלטשצר אג'ת / בלט 730 ‎.'p‏
+
+‏כאסם// בחסס אג'ק'ת.
+ולאן/, ואלאן ג'. \
+אלמקדט/ נ': פיה ג'.
+
+‏4 וקלת לה וא בלטשאצר רייס אלתכמא ‎STOR‏ אעלם מנך אן רות אללה
+אלמקדס ‎WS‏ וכל סר ‎WITT ROS‏ ואלדי קאל לד אנפא אלרויאי
+ותפסירהת..
+‎fay‏ ח* ‎wa‏ .
+בלמטאבר, בלסטצר אג'ת / 072 שבר ק'.
+רייס/ ריס ‎ok‏ \
+אן/ נ': פיך ‎np.‏
+‎aig ‘n fs‏
+סר/ סיר ‎eta‏ :
+‎L139‏ יעויך 8 / יעזך ג'. \
+אלרויעאי/ רוואיי 2 / רויאי ג! / אלרוית ק'ת.
+
+‏ז, רויאי אלאן עלו מצגעי ראית כאן שגרה פי ‎VOI‏ אלארץ ‎inayat]‏
+‎[pr 39‏
+רויאי/ רויתיי 8,/ רואי ג'.
+פלו/ עלו אג'ק'ת. /
+כאן שגרה/, מסושטט ‎Ro‏
+‏וסט/] רבם ‎np‏ \
+אלארץ/. ארץ 5 / אל ארץ ג'.
+[ורפעהא ‎f [oss‏ ה ‎‘a‏ / ואסעה רפ... ‎WAS‏ א / ואסעה רפעהא
+
+‏כתיר פ'ת.
+
+==== PDF page 0105 ====
+ב
+\ 32
+‎pag‏ ב'
+ח,. ואן תלך אלשגרה ‎nang‏ וע%מת רפעהת ‎JIT WOR‏ אלסמא ושפבהא אלד
+‎RIPR‏ גמיע ‎JON‏ אלארץ. ,
+ואן תלך אלשגר3]. חתי אג'ק'ת.
+כתרת/, כברת אג'ק'ת.
+ועצמת// פעממת אג' / מפמת ת / ג': ובלג א / נ': ובלג ק'ת /
+ב': ובלגת.ג!.
+‎Lan‏ דוין אק'ת..
+אקצת/ ח* אפג'קית.
+₪, ואגצתנה* חסאן ותמרהא ‎WHI‏ וקות לאלכל פיה ותחתהא יסתצל
+חיואך אלצהרא ‎WIT‏ אגצאנהא יאוי ‎TRO‏ אלסמא ומנהא ימאן כל
+בשרי. \
+\ לאלבל]. 9999 א / ללבול ג!.
+פיה/ ח' ג' / פיהח ‎np‏ 2
+ותחתהאק/, די רוח תתתהח ‎a‏ .
+יסתבל/, יסתטל א / ויסתלל ג'.
+‎sq faa‏ ג'. \
+| בשרי/ נ': הנאך ק'ת /8ה ך 8 / ג': |צאך הנאך ג1.
+י, תם ראית תמאם רויאי פי אלליל באן ‎TWO‏ קדוס ‎JO‏ אלסמא קד נזל,
+רויצי/ רואיי ‎ty‏ / אלרויאי ק'ת.
+אללול-גזל, חסר ג'.
+באן/ כאן ל'ת.
+
+==== PDF page 0106 ====
+33
+‎pig‏ 1‘
+וע, ינאדי בקווה והכדא יקול ‎Wa‏ אלשגרה וקצו תאגפאנהא ואכברפר |
+ורקהא ובדרו תמרהא יזול אלותפ ‎Jo‏ תתתהא ואלטיר ‎YO‏ אגצאנהח,
+וקצו/. וקצצו ‎np‏ 0/0
+אגבאנהא/ אגצאנהח ק'ת.
+ואלסיר, ואלסאיר ק'ת.
+יב, לא סנך אצולהא אתרכוה פי אלארץ ושדוה בותאק מן אלחדיד
+ואלנהאס פי כלחי ‎RANBIR‏ ומן ‎RTI‏ אלסמא ינצבג וקותה מע
+אלבהאים מן עשב אלצחרא,
+לא] 137 ‎nip‏
+‏אלחדיד/ חדיד ‎nip‏
+‏ואלנחאס/ ונחאס ק'ת.
+בלאי/ בלא קית.
+אלצחרא/. אלצחרי ת / אלצהראן ב / אל/צהרח ק!.
+יג, ותמייזה יגייר ‎YO‏ תחאל אלנאס ותכייל אלבהאים יגעל לה וסבעט
+אחואל תמצי עליה כדאך,
+‎may :‏ יגיר פי.
+ותכייל/ ותביל ‎op‏
+‏כלאך) בדאלך ק'ת.
+
+==== PDF page 0107 ====
+34
+
+‘a pag
+
+יד, וכאן אלקול בתתם אלמלאיכה וגואב אלמסאלה בקול אלקדוטין 997
+יעלם אלבאט ‎YR‏ אלעלי מסלט ‎IVY‏ מלכהם ומן ישא ינצבה להם ויגוד
+ח*אן ינצב להם אלוציע מנהם,
+אלפלי] אלפאלי ק!.
+מלכהם/ מלך אלנאס ק!' / אלנאס ת.
+ומן/ למן בער
+יסא] שא אעמאה רמן שא קית.
+להם )2( ‎f‏ לה ק! ת.
+
+פו, הכדא אלרוית ‎HIRI‏ אנא בכתנצר אלמלך ואנת יא בלטשאצר תפסירהא
+קל לאגל אן גמיע הכמא ממלכתי ‎oF‏ יסתטיעו תפקירהא לתערפוני
+ואנת תסתטפיע לאן מוגוד ‎WS‏ רות אללה אלמקדס,
+
+| הכדא-אנא/ חסר ‎"re‏ : |
+בכתנצר אלמלך/ אלמלך ‎nda‏ נצר ק'ת.
+אלמלך/ ת' ‎wk‏ , ב
+בלמטאצר, בלסשבר א / בלס שצר ק'ת.
+תפסירהא קל, ערפנ" תפסירה 2.
+קל יקאל ת.
+לאגל-לתפרפוני/ אד ליס פי ‎RAIN‏ ממלכתי מן יקדר אן יערפנו
+תפסירה 2. .
+
+אן גמיע/ ‎wap ‘n‏ .
+לתצרפוני/ לתעריפי ק'ת.
+תסתמיע/ תערפה 5. .
+מוגוד-אלמקדס/ פיך עלמא ‎Jo‏ אלקדוסין 8.
+
+==== PDF page 0108 ====
+35
+‎pas‏ ב'
+‎TO‏ חיניד ‎prox‏ דניאל אלמסמא בלטשאצר ‎NI‏ סאעה וכאדת אפכארה ‎VR‏
+‏תדהשה ‎ANN‏ אבתדא אלמלך וקאל יא בלסשאצר לא יהולך אלרויח* ‏ ©
+ותפסירהא אגאבה פקחל יא סיידי אלרויא לשאניך ותפסירהא לעדווך,
+אלמסמא/ אלמסמי ת, / |
+בלטטחצר (1)/ בלטשצר א / בלט שצר ק'ת.
+וכאדת/ ואכדת 8.
+אן/ ‎‘n‏ א.
+אבתדא/ אבתדי אק'ת. /
+וקאל/ פקאל א / נ': לה א,. \
+בלטשאצר (2)/. בלטשצר א / בלס שצר קית.
+יהולך]/, יהולך 5. .
+ותפטירהא/., רתארילהא את.
+אגאבה/, פאגאבה 8.
+פקאל/ וקאל אתק.
+סויידי, סידי א, .
+לעדווך/ לפדוך 5.
+יז, תאויל אלשגרה אלתי ראיתהא קד כברת ועצמת ובלג ארתפאעהא ‎VIR‏
+‏דון אלסמא ושעבהא ‎WR‏ אקצא תלך אלארץ,
+אלתי/ אלדי ת. .
+ועבמת/] ופסמת ת,
+ועפמת-אלסמא/ ממושמש מאוד 2.
+ארתפאעהא/, א פאפהת 8.
+אלי (1)/ ח' אקת.
+דון/ ‎at‏ את. | .
+ושעבהא/ ועשבהח ץ,
+אלי (2)/ חי ‎ok‏ \
+אקצא/, אקבי 8 / אקאבי ק.
+אלארץ/ אלארךץ אקת.
+
+==== PDF page 0109 ====
+36
+‎pas‏ די
+וח, ואגצאנהא חסאן ותמרהא כתיר וקות אלכל מנהא ותתתהא יאוי וחש
+אלצחרא ופי אגצאנהא יסכן מאיר אלסמת,
+מנהת/ מנה א. . |
+אלצחרא/] אלצחרי קת.
+ים, אנת הר יא ‎ATR‏ אלמלך אלדי כברת ועכָמת ועלת ריאסתך פדאנת
+אלסמא ובלג סלטאנך ‎JOR‏ אקטאר אלארץ.
+‎fia‏ חי ת. .
+יא איוה/ יא יהח 8,
+אייה/ איה קת. .
+‎-R[ pots {naam‏
+סלטאנך/ צלטאנך קת.
+כ ואמא מא ראי אלמלך מלך קדוס נזל ‎Jo‏ אלסמא פקאל גדו ‎Frag‏
+‏ואקטעוהא לכן טנך אצולהא אתרכו פי אלארץ מותוקא בחדיד
+ונחאס פי ללא אלצהרא ‎RTI YOY‏ אלסמא ינצבג קָקותה מע אלבהאים
+מן עשב אלצחרא] אלי ‎WAH YR‏ עליה סבעה אחהואל,
+מלך/ ‎R320‏ .
+קדוס/ קדיסא א / קדוסא קת.
+בזל/ על ת.
+אצולהא, אצלהא 2..
+אתרכו/, אתרכוה את.
+מותוקא/ מותרקה ת.
+אלצחרא/ אלצהרי ע. \
+[ומן-ינבבג/, ומן ‎RTI‏ אלססא ינצבג א / ‎JO‏ נדא אלסמא ינצבג ק2. | .
+הקותה-אלצהרא]/ ומע ותש אלצתרא קותה 8 / ומע ותש אלצתרי קותה קת.
+סבפה/ ז' אק.
+
+==== PDF page 0110 ====
+37
+‎‘i pag‏
+כא, פהדא תאוילה יח אייה אלמלך והו חכם אלעלי אלדי חכם ‎WIN‏ סיודו
+אלמלך,
+פהדא/ ‎vine‏ ע.
+יא אייה/ יא דה" ‎ok‏
+‏אייה/ איה קת. .
+אלפלי/ תלעליר א / אלצחלי קת.
+אלדר/ ‎fa‏ קד 8. |
+‎fp. ann /)2( aan‏
+‎(Mp‏ סידי ‎Rk‏
+‏כב, באן תנפא מן בין אלנאס ורתאורי מע ‎ONT‏ אלצתרא ותגתדי אלצשב
+כאלבקר ותנצבג מן טל אלסמא ותמ3" עליך סבעה אהואל ‎FAN‏ תעלם
+חן אלעאלי מסלט ‎39D‏ מלך אלנאט ‎JO?‏ שא אצטאה,
+תנפא/ ינפי ‎R‏ / ינפח ק.
+ותחאוי/ ריחוי ‎a‏
+‏אלצהרא-חתי/, מסושטש ‎ONT‏ ת.
+אלצהרא/ אלצחרי קת.
+ותגתדי/ פיגתדי 2,
+ותנצבג/ וינצבג ע.
+ותמבי/ ודמצי ת.
+פליך] פליה ק.
+אחואל/ נ': כדאך א / ג': כדאך קת.
+אלפאל"/ אלעלו 5 / אלצתל ת.
+מסלם] מצלט קת.
+אפטאה/] יעטיה אק.
+
+==== PDF page 0111 ====
+38
+‎pas‏ די
+כג, ראמא מא קאל מן תרך סנר אצול אלשגרהּ פתאוילהא אן 7370 סיעוד ‏
+‎THA WIR‏ אן תעתרף בסלטאן ‎ANKE‏ אלסמח,
+קאל/ קאלר אקת. \
+אצול, אבל 2.
+פתאוילהא/ פתאוולה אק. \
+בסלטאן/ בצלמאן קת.
+כד, לכן וא ‎WIR AIK‏ תהסן משורתי ‎Way‏ פתפך כטייך בצדקה
+ודנובך בראפה אלצעפא פלעל אן תכון ‎AoA‏ לנעמתר.
+לכן/ ולכן אק. \ : :
+יח תייה/ יח דהח ת.
+אווה/ איה קת.
+‎fn f/yonn‏ ב.
+כטייך/ כפיתך א / כטייתך קת.
+בצדקה/ באלצדקה 2. יי ,
+אלצעפא] אלבעפי אקת.
+‎fords‏ לצפל ת,
+מהלה/ מוהלה ע,
+לנעמתך/ נ'ז פי דלך ת.
+‎LAD‏ אלכל הל בבכתנצר אלמלך.
+אלכל-אלמלך/ מטושמש וחסר א,
+בבכתנצר/, פי בכת נצר ק / בבכת נצר ת.
+
+==== PDF page 0112 ====
+39
+ברע ד'
+כו, בעד אתנ* עשר פהרא ‎TRI‏ יתמשא עלד היכל ‎POR‏ 39 באבל,
+אתבי/ ‎Rane‏ ע.
+אתני פשר/ אתנאעטר ת.
+היכל] היבל אקת.
+כז, פאבתדא וקאל אן הדא באבל כברי אלתי בניתהא לד למנבד אלמלך
+בשדה ותאקי ובהאי,
+פאבתדא/ פאבתדי אקת.
+וקאל/ ב': אלא ‎oR‏
+‏הדח/ ‎ata‏ א / ‎ata‏ קתב.
+כברי/ אלכברי אקת.
+לי ח' אקת.
+למנבר/ מנבר 5.
+ותאקי/ ותאק א / ג': לכרמי א / נ': וכרמי עת.
+ובהאי/ ובהאיי חק.
+כח, בין מא אלכלמה פי פמה אד וקע צות מן ‎RODIR‏ לך יקאל וח
+בכתנצר אלמלך אלמלך קד זאל ענך.
+בין ‎fro‏ ביבא א / בינאה 2.
+פמה/ פיה א / פאה ע.
+אד/ חתי אקת.
+דקפ ורד אקת.
+בנתנצר/ בכת נצר קת.
+אלמלך (2)/ ח'* 8.
+דחל/ ב': אלמלך ‎oR‏
+
+==== PDF page 0113 ====
+40
+‎pas‏ די \
+כט, ומן בין אלנאס תנפא ומע ותש אלצתרא תאוי פתגתדי אלעשב
+כאלבקר ותמצי עליך סבעה חתואל ‎Wn‏ תערף חן אלפאלד מסלט
+עלי מלך אלנאס למן שא אעפאהח,
+תבפא/ תבפי אק.
+אלצחרא/ אלצחרי קת.
+אלעטשב/ נ': תנפא ת.
+סבפה] ז' ‎«PR‏
+‏אהואל/ נ': כדאך א / נ': כלאך ת / נ': בצחך ק.
+חחי/ ‎wun‏ את / ‎in‏
+‏תערף/ תעתרף א / תעלם קת.
+אן/ באן את. |
+אלצאלו/ אלצלי 5,
+מסלט/ מבלט קת.
+אפמתהץ] יעטיה אק / אפטחאה ם.
+,
+ל, מן סאעתה חל אלאמר בבכתנצר ומן בין אלנאס נפי וצאר יאכל
+פשב כאלבקר ואנצבג מן ‎RTI‏ אלסמא אל* אן ‎WD‏ פערה שביה
+בריש אלנסור ואצפארה כאלגוארח.
+מן/ רמו 2.
+סאפתה/ סאפה קת.
+‎fon‏ הל ק.
+\ בבכתנצר/ ‎nan‏ נצר קת.
+| יאבל] יתבל 2.
+פסב/ אלפטב קת.
+ואנצבג. 333997 א / וינצבג קת / ונגצבה ב.
+כבר] בבר 2«
+אלנסור/ אלנסר ‎oR‏
+‏ואבפארה/. ואטמפארה א,
+
+==== PDF page 0114 ====
+41
+‎pag‏ די
+לא, פלמא אנקצת תלך אלאיאם רפעת עיני* תנא בכתנצר אלו אלסמת
+ורגעת ‎wy‏ עקל* פהמדת ‎PRIOR‏ וסבחת ומגדת אלעאלם ‎ATOR‏
+‏סלפאנה סלטאן אלפאלם ומלכה מע גיל וגול,
+אנקבת/ ‎nan‏ ת.
+עיביי/ פיבי את.
+בנתנבר/ בכת נצר קת.
+‎Javan‏ פרגע א / ‎van‏ קת.
+פלי/ אליי א / צפלוי קת.
+פהמדת/ 8,..ת 2
+אלעאלו/] אלעליי ‎oR‏
+‏אלפאלי וסבחת/ ח' ת.
+ומגדת/ נ': חי אק / נ': חיי ם,
+סלטאנה/ צלמאנה ק.
+סלסאן/ צלטחן ק,
+מפ] אלו ‎oR‏
+‏גיל גיאל 2.
+וגיל/ ואגיחל ‎BPR‏
+‏לב, וגמיע אחל אלארץ לא כשי מחסובין והו מראדה יצנעה בגיש
+אלסמא ואהל אלארץ רליס מן יברב עלד ודה ולא יקול לה מא
+דא צבעת.
+וגמיע-ואהל,/. חסר ג'.
+אחל/. אהל אקת.
+בגיט/ כגיט ק'ת.
+‎fq‏ 30 ג'.
+‎fro‏ ב': מן א.
+‎tan fn Let‏
+
+==== PDF page 0115 ====
+42
+‎pag‏ די
+לג, פי דלך אלוקת ‎WIR TRY‏ פקלי ווקאר מלכי ובהגתי רבהאף
+תראגע אליו 197 אלוקאר ואלרוסח ‎IOI‏ ותבחת ‎IS‏ 3590
+וזיד לי שרף כתיך,
+דלך-אלוקאר/, מטושטש לגמרי א,
+ובהאי/ ובהאיי ג'.
+תראגע/ תרגע ג'.
+אליי (2)/ לי ג'.
+אלוקאר/ אלקואר ק'ת.
+ואלרוסא/, ואל ריסח ג' / ואלרויסא ק'ת.
+ותבחת/ ותתבת 8 / ותבתת קית / ותבת ג'.
+פי (2)/ ת' ‎o£‏
+‏לד, אלאן אנא בכתנצר מסבתח ומרפע ומבגל ‎YAP‏ אלסמא אלדי גמיע
+צנעה אלחק וסבילה אלחכם ומן יסיר בין ידי באקתדחרא יקדר
+אן יחטה,
+בנתנצר/ בכת נצר ת / בכת/נצר ק'.
+גסיפ/ גמע 25.
+וסבילה/. וסבלה אג'ק'ת.
+ידי/ ידוה אג'ק'ת.
+באקתדארא/ באקתדאר אג'ק'ת / נ': הר ג'.
+יקדר/. קארר ג'.
+יחפה/ ‎on sta‏ אל גד אל ‎$a‏ ג'.
+
+==== PDF page 0116 ====
+43
+
+“2 pas
+
+כתב%ף יד: א,ק,קי,ת,ג',
+
+א,. ‎ON‏ אן בלפאצר אלמלך אצלה טעחמח כתירא לאלף ראיס ‎AVG‏ וגלס
+הדאעהם שארבא כמרח,
+בלשאבר), בלפצר אג'ק'.
+רחיס/ ריט אג! / רייס ק'ת / ריחס ב.
+שארבא/ דשרב א / ישרב ג'ק'ת.
+5מר*]) אלכמר אג'.
+
+ב, פלמא מלכה רח* אלכמר ‎WR‏ אן ‎Tenn‏ אנייה אלדהב ואלפצה ‎anor‏
+‏אכרגהח בכתנצר אביה מן אלהיכל אלדד פי מדונה לישרב בהא אלמלך
+וחלרוסא ותרחריה וסראריה,
+אנייה/ אניה ‎fn / Tote‏ ת.
+אלתי/ אלדו ‎aR‏ .
+אכרגהא/ אבדהח ק'ת.
+בכתנצר// ‎nda‏ נצר ק'ת.
+אביה/ אבוה ג1.
+אלהובל]) היכל ג'.
+מדינה/, מדינת לית / ב'ו אלסלם 5 / 263 אל סלאם ג1 / ג': אלסלאם ‎cn'p‏
+‏לישרב/ ולישרב אג'ק'ת.
+ואעלרוסא/ ואלרוסא א / וחעלריסח ג! / וחלרווסת 2 / וחל/רויסא ק';
+וחראריה/ ‎Ravin‏
+‏דסראריה/, רטראירה ‎oR‏
+
+==== PDF page 0117 ====
+44
+ג, חיניד אהצרת אנייה אלדהב ואלפצה אלתי אכרגוה מן היכל בית
+אללה אלדד פי ירושלם וטפק ‎TR‏ ישרב בהא אלמלך ואלרוסא
+הדאריה וסראריה,
+אחברת/. אהברה ק'ם.
+אנייה/ ‎avian‏ אג'ק' ת(בשפומר הדף: אנות) / נ': בית אללה ‎cla‏
+‏ואלפצה/. ח' אק'ת.
+אלתי/ חלדי ‎lag‏ / אלדי ק'ת.
+אכרגוה/. אכרגוה* ‎tar‏ / אכרגוה"ח ק'ת.
+בית/ ח* ג'. \
+אלדו, אלתי ק'ת.
+ירושלם/ דאר אלסלם א / ירושלים ת.
+' רספק/ וטאק (נמחק בקו ונכתב על גביו באותו כתב היד: וטלב) ג'.
+וחלרוסא/ וחאלריסח ‎tan‏ / ואלרויסא ק'ת.
+חראריה/, וחראירה את / וחראריה ג'ק!.
+וסראריה/ וסרחירה ת.
+ד אכדו אן ישרבו בהא ‎RIS‏ וסבחו לאלאהה ‎AIR‏ ראלדהב ואלנתאס
+ואלחדיד ואלכשב ואלתגארה,
+בהא/ ‎fn‏ אם.
+לאלאה3/. לאלאה ג1 / ‎anor?‏ אק'ת.
+אלפ33 ואלדהב// חלדהב ואלפצה ‎anton / Tye‏ ואלפבה ק'ת.
+וחלחגארה/, ואלחגר אג'.
+
+==== PDF page 0118 ====
+45
+‎‘a pag‏
+ה, מן סאעתה ‎NASM‏ אצאבע בצורה יד אלאנסחן פכתבת בהדא אלמבארה
+פעפלי חספידחג חאיט אלמלך ואלמלך ירא אלכף והי תכתב, \
+חצרת/ פהרת ‎eta wins / x‏
+אצאבפ/ אלאצאבצע פ'ת.
+בצורה/ בצורת ק'ת.
+יד אלאנסאן/, יד אן/*נסאן ג'.
+אלאנסאן/ ,.אנסחאן 2 / אנסתן ק'ת.
+עלי/ ‎nlp roy‏
+‎LARTV GOR‏ אספאדתג א / אסבידג ‎1a‏ / אספודאג ק'.
+‎Loren‏ 383 היכל תק'ת.
+ירא/, ירי 5 / ינבר ק'ת.
+ו, חיניד תגיירת סתנתה ואדערתה אפכחארה וכאן כרז צלבה תתללת
+ואקבלת רכבאתה תנצך ואהדה מע אלאכרי,
+תגיירת/ תגירת ‎wlan‏
+‏ואדערתה/ ואדרעתה 5,
+אפכארה/ אפכאהה ‎ola‏
+‏וכאו/ וכ (כך הוח בכ"י) ג1.
+רכבאתה// רכבתאה אקת.
+תנצך/. תצטך אג'.
+וחחדה/. אל/ואתדה ‎ta‏ / ואחד ת.
+אלחכרו/ אכרי א,
+
+==== PDF page 0119 ====
+46
+
+“a ‏פרק‎
+
+‎Tt‏ פנאדא בקווה באחהצאר אלמנגמין ואלכסדאניין ואלחכאם פאבתדצ
+וקאל להם אי אנסאן אחסן אן יקרא הדא אלכתאב ווערפני
+תפסירהא ילבס אלחמרה ויפודק בטוק אלדהב 997 תלת אלממלכה,
+‎/RTRIS‏ פנאדי אג'.
+בקווה/ בקוה ‎aR‏
+‏ואלכסדאניין// ואלכסדאנין ג1.
+ואלתכאם/, נ': ואלכתחב ‎eB‏
+‏פאבתדא, פאבתדי ‎pr‏ / פאבדת ג'.
+אחסן/ ‎qon‏ צגי. \
+הדא הדי ק.
+תפסירהחא/ תפסידה אג'קת.
+ילבס/ ‎vax‏ אקת / פילבס ג'.
+ויטווק/ ורטוק אג'ת.
+בטוק/ ‎oR pupa‏
+וילי] וירלי 5,
+תלת/ תלה א.
+
+‏ח, היניד הצר גמיע הכמא באבל פלם יטיקו יקרו אלכתאב 739 על+
+‎1R‏ יערפו אלמלך תפסירה,
+חינוד-באבל//, ח' (והשאר נכתב כהמשכו של פסוק הקודם) ג1.
+חכמא/ ‎toon‏ ק.
+באבל/ אלממלכה אק.
+יטוקו/ ימקו א / 1*: אך אג'קת.
+
+‏0 יקרו/. יקרא ג'.
+| 39 פצלת אג'ת.
+
+‏פלי/ ‎fn‏ ע,
+או/ אל ג1,
+תפסירה/, תפסירהא ץ,
+
+==== PDF page 0120 ====
+47
+
+‘2 pas
+
+‎ya‏ תיניד תחייר בלפאצר אלמלך כתירא ותגייר לונה עליה ואלריסח
+אלדי מעה מתשוטין,
+תהייר/ תחיר ‎Rk‏
+‏בלשאצר/, בלשצר אג'.
+בלשאצר אלמלך/ אלמלך בלשצר ק / אלמלך בלשאצר ת.
+ותגייר/ ותגיר 5. |
+ותלריסא/ ואלרייסת ק / ואלרויסץ ת.
+‎[VOR‏ אללדון א / אלדין ג' / ‎ton‏ קת.
+‎favo‏ מצוה ג'.
+
+‏י, ענד כלאם אלמלך ואלרוסח ‎NIST‏ אלמלכה ‎IIR‏ מגלס פאבתדת
+וק*אלת אטאל אללה ‎RPA‏ אלמלך לא תדהלך אפכארך ולא יתגי"ר לונר.;
+ואלרוסא/ ואלריסא א / ואלרייסא ק / ואלרויסח ‎eB‏
+‏דכלת/. נ': אליהם ‎eB‏
+‏מגלס/ אלמגלס חקת.
+פאבתדת/ פאבתדאת ק,
+יתגייר/ יתגיר 5,
+
+==== PDF page 0121 ====
+° 48
+‎‘a pas‏
+יח, מוגוד פי ממלכתך מן פיה רות אללה אלמקדס מן איאם אבוך
+אלאיכאח ואלצקל ואלתכמה בתכמה אלמלאיכה מוגודה פיה ולדאלך
+נצבה אסתאדא לאלתכמא ואלמנגמין ואלכסדאניין ואלתהכאם,
+ממלכתך/ 263 רגל קת.
+10 (1)/ רגל א.
+מן (2)/ ומן את.
+אבוך]/, אביר א.
+ואלעקל/ ואלפקאל ת.
+ואלחכמה/, וחכמה א,
+מוגודה/ מוגוד ת. |
+ולדאלך/. לדלך א,
+נצבה/ נ': ‎nda yar‏ נצר 2.
+אסתאדא/ ‎tenor‏ א / אסתאד קת.
+לאלחכמא/ אלתחכמא אקת. |
+יב, לאגל מא פיה ‎yo‏ אלראי אלפאצל ואלמערפה ואלעקל ופסר אלאתלאט
+‎RAI‏ אלאתאדית וותלל אלפקד אלכל מוגוד ‎IS‏ דניאל ‎STOR‏
+‏אסמאה אלמלך בלטשאצר אלאן ידעא בה תתי יערפך אלתפסיר,
+‎pin fis‏
+ורויא/ וירו" אקת.
+אלאהאדית/ אלחדות א,
+אלעקד, אלעפקוד ת.
+אלבל/ בל 8.
+‎/73R0072‏ בלסשצר אק / בלט שצר ת,
+ידעא/] וידעי ‎Bote / x‏
+יערפך/, ‎Was‏ א.
+אלתפסור/, באלתפסיר 5.
+
+==== PDF page 0122 ====
+49
+
+‎pas‏ תי
+
+‏יג, חיניד אחצר דניאל ‎YA‏ ודד אלמלך פאבתדא וקאל לה אנת הר
+דניחל אלד" מן אהל ‎TAR AA‏ אלד סבאהם ‎BIR‏ מן אלשאם,
+אחצר/ חצר ק.
+פאבתדא/ פאבתדה א / פאבתדאה ק,
+*אהל, מק.
+גלוה/ גלות ק.
+אבי/ 263 אלמלך ‎oR‏
+
+‏יד, וסמפעת ענך אן מוגוד פיך רוח אללה ואוצצת ועקל ‎foam‏
+‏פאצלה וגדת פיך,
+וסמעת-פיך/ נכתב בכתב ‎TWA‏ שונה משאר הפסוקים א,
+וסמעת/ אלדפ סמעת ת.
+מוגוד/ ח' ‎ak‏
+‏ואיפאת/. ואיבאה אקת.
+ופקל/] ‎Trani‏ 2,
+פאבלה/, זאודה ח,
+וגדת// מוגודה ‎sR‏
+
+‎TRIN LT!‏ אצעדד בין ידי אלתכמא ואלמנגמין אן יקרון הדא אלכתחב
+ויערפונ" תפסירה ולם דסתטיעו תפסור לפצה לאכבאר;
+אלאן-לאכבבאר//, נכתב בכתב ‎TIA‏ שרנה משאר הפסוקתם &
+אלאן/ ואלאן אקת.
+אצעדו/ פקד אדכלו א / פאצעדי ע,
+בין ידי/ אלד תצרתי א / אליד ק / קדאמי ת.
+אלתכמא/ הכמא 5.
+ואלמנגמיך/ ומנגמין על" 2.
+אן יקרון/ ליקרו ק / לוקרון ‎eX‏
+‎feria‏ הדו ק.
+
+‏ויערפוני/, ו"ערפוב (מופיע בסוף שורה) ק.
+
+‏יסתטיעו-לאכבאר/ יטמיקו עלי ביתן כלמה ואחדה 22
+
+==== PDF page 0123 ====
+20
+
+‘a ‏פרק‎
+
+טז, ‎WIRD‏ קד סמעת ענך אנך תסתטיע אן תפסר אלתפאסיר ‎FINN‏ אלעקד
+אלאן אמכנך אן תקרא הדא אלכתאב ותערפוני תפסירה תלבס
+אלחמרה ותטווק בטוק אלדהב ותלי תלת אלממלכה,
+פאבי/ ‎Tans‏ א.
+תפסר/, תפסיר 2.
+אלעקד/ אלעקוד ת.
+אלאן/ אן 2 / 263 אן אק.
+הדא הדי ק,
+ותערפונ+/ ותפרפני אקת,
+תלבס/ ותלבס ת.
+ותפווק/ ‎eR pint‏
+
+יד, תיניד חגאבה דניאל וקאל אמא עמאיאך פתבקא ענדך ואמא גואיזך
+פהבהא לגירד לכנד אקרא אלכתאב לאלמלך ואערפה תפסורה,
+חיניד-לגירו], מפופמש וחסר 2<
+
+עטחיחך/ חעמאיחך ‎oH‏
+
+וחמח/ פחמח ת.
+פהבהא/ הבהא ק.
+לכני/ ולכני את.
+אלכתאב לאלמלך/ לאלמלך אלכתאב 2.
+לאלמלך/ ללמלך ‎oR‏
+
+ית, ואקדם קבל ‎TORT‏ יא איה אלמלך תעלם ‎TR‏ אללה אלעתאלח אעמא
+בכתנצר אביך אלמלך ואלטרף ואלוקחר וחלבהץ,
+דאלך/, דלך 8 / נ': חנת תקת.
+יח איה יאדהת ת.
+אללה/ אלאלחה ‎FL‏
+‏חאלעחלו/ אלפלי ‎oR‏
+‏בכתנצר/ בכת נצר קת.
+אביך/ אב*ך א / אבור 2
+
+==== PDF page 0124 ====
+51
+
+‘a pg
+
+יט, ומך שרף מח אעמאה בחן גמיע אלשעוב ואלצמם ואהל אללגחת
+יתקונה ויכאפונה פמן שא קתל ומן שח אסתבקא ומן שא רפע
+ומן שח חטח.
+מא-חם/ ממושמט 8 .
+שרף], סרחף 1.
+קתל], קבל 5.
+
+כ ולמ* עצם קלבה דעלת נפסה ‎WR‏ אלתוקה אהט מן כרסד מלכה
+ווקארה זאל פנה, \
+ולמא] ולמי ת.
+עצם/ פטס 5.
+אלתוקה/ אלאתקאת ק.
+‎on on /oner‏
+
+כח, ומן בין אלנאס נפי וראיה צחר מע ‎ONT‏ אלצהרא ומאוה ‎BO‏
+‏אלערביד יגתדי אלפטב כאלבקר 423391 מן פל אלסמא חתי
+‎RI TINK‏ אללה מסלט עלי ‎WIA‏ אלנאס למן שא דנצבה להם .
+ורחיה צחר/ וצאר ראיה 2.
+צאר/ תי ת.
+וחש/, אלוחש ‎«Rk‏
+‏אלצהרא/ ת' א / אלצחרי ‎Bb‏
+‏ומחוה/ ומחתואה ‎pe‏ / ומא מה ת.
+אלערביד/ אלערבד א / אלעראביד קת. .
+‎fon‏ נדא ‎of‏
+‏אללה/ 363 אלפלי 5,
+מסלט] מצלם ‎op‏
+
+\ שת], ‎“eu‏ ת.
+ינצבה להם/ אצטאה ויגוז )263 לה ק) אן ינצב לה (ח' ‎(p‏
+‏אלוציצ (אלוצופ ק / אלוקיצ ‎(n‏ מנהם אקת.
+
+==== PDF page 0125 ====
+22
+פרק ‎‘a‏
+‏כב, ואנת יח בלטפאצר אבנה ‎oF‏ תתוצע מע מא קד וקפת פלי גמיצ דתלך.
+בלמשחצר/ בלשצר קת.
+תתוצפ/ תתבע ק / תתנאצט 5,
+כג, ולכנך תרפעפ עלי רב חלסמא פאהצרת בין ידיך אניה ‎AHA‏ ושרבת
+אנת ואלרוסא והראריך וסראריך אלכמרא בהא וסבחת לאלאהה אלדהב
+וחלפצה ואלנהחס ואלתדיד ואלכשב ואלתגאר אלדי ‎WAN OF‏ ולם
+תסמע ולא תעלם שיא ולם תבגל אללה אלדי נסמתך פו ידה וגמוע
+אחואלך לה,
+£13371 לכנר 2«
+חניה/, חבייה .
+וסרבת/. פשרבת 5.
+ואלרוסא/ ואעלריסא א / ואלריוסא ק / ואלרויס" ‎cB‏
+‏והראריך/ וחראירך ת.
+חלבמרח] חלכמר ץ / חלבמר קת.
+וסבחת/ וסבתחתם 2
+לאלאהה] אלהה א / לחלהה ק / לאלאהת ת.
+ואלחגחר/ ואלתגר ת,
+אלדי/ חלתי ‎«PR‏
+‏07{ לח אקם. |
+077 (1)/ רלח חקת.
+סיח] שירח ק.
+. אללה/ לאלאלצה ת.
+כד, חינוד בעת ‎Yo‏ הצרתה ‎RIAA‏ אלכף פרסמת הדח אלכתחב.
+בהדאפ] בהדה 8 / בהדה ק.
+פרסמת/ ‎noon‏ ת.
+‎feta‏ הדו ק.
+
+==== PDF page 0126 ====
+53
+‎‘a pas‏
+כה, ‎RIAD‏ אלכתחב אלמרסום ‎VINK RINK‏ 1777 וזן וכסר כפר,
+והדא/ ‎pata‏ / נ': הו חק.
+אלמרסום/, ח' 2.
+אחצא/ אחצי קת.
+ווזן/ וזו א.
+וכסר/ כסר א.
+כו, והדא תפסיר הדה אלכלמאת אמא אלאהצא פאן אללה קד אחצת ‎Ato‏
+‏: מלכך ותממהת,
+‎friar‏ והדי ‎ep‏
+‎/ROR‏ תמא אמח ת.
+אחצא/ אחצי ‎oR‏
+‏כז, ואמחת ‎[TR‏ פאנך וזגת פי מיזאן פוגדת נאקצת,
+פתנר/ ‎fn‏ ק. ב
+וזנת, פוזנת ק.
+כח, ואמא אלכסר ‎Ips‏ כסר מלכך וסלם ‎WRX‏ מאהאת ופארט,
+פקד/ ‎airs‏ קד ת. '
+מאהחת/ מדי אק.
+ופחרס, ופרס אק.
+כט, תינול אמר בלשאצר פאלבסו דניאל אלחמרה וסווקוה בטוק תלדהב |
+ונאדו עליה ‎[RA‏ יל% תלת אלממלכה,
+בלפחצר/ בלשצר 5ק.
+פאלבטו/, פתלבטס ‎eB‏
+‏אלחמרה/, המרה 2
+ופווקוּה/ ופוקוה תת / וסווקה ק.
+‎IS 44‏ תלך אללולה קתל בלשחצר חלמלך אלבסדאגית,
+פי/ ‎Rag‏
+‏בלשחצר], בלשצר תע.
+אלכפדחניח], חלכסדאני אקת.
+
+==== PDF page 0127 ====
+54
+
+כתב%ף וד: א,ק,ק',ת,ג?,
+
+א, ‏ תם צאר אלמלך אלד דרווש אלמאדד ‎WT‏ שביה באבן תנתיך
+וסתחן סנה,
+דריוש/ דחרח 5.
+אלמחדי/ אלמדי ק.
+תנתין/ אתנדך את / אתנין ק.
+
+ב,. ‎ART‏ מן ראדה אן ינצב 49 ממלכתה מחיה ועשרין בטריקא
+יתצרפון פי גמיעה",
+
+ג, ופוקהם תלאתה וזרא ‎WIR‏ דניאל ואחד מהם 899 יכון אולאוך
+אלוורא יעטונהא אלרא3 ולא ותאדא אלמלך,
+תלאתה, גי ת.
+‎/ona‏ מנהם חקת.
+אלוזרת/ ח' ק.
+יעמונהא/ יעספובה" א / יעטונהם קת.
+יתחדא/ ‎stent‏ 8 / יתחדי ק,
+
+ד, ‎TIAN‏ באן דניאל מתגלב על אלרוסח ואלבטארקה לעל חן פיה
+‎PRA‏ ראצ ואלמלך עאזם אן ינצבה לגמיע חאלממלכה,
+מתגלב/ מתגלבח א,
+
+99/ צלח אקת.
+אלרוסא/ אלוזרח אקת.
+לצל/ לצלה חקת.
+
+==== PDF page 0128 ====
+55
+
+‎pag‏ ב*
+
+‏ה, חיניד כאן אלוזרא ואלבטארקה יסלבון אוה עלה יגדונהא עלא
+דניאל מן גה8 אלממלכה ולם ימכנהם אן יגדד עליה ‎Sou Aer‏
+או גנאזה ‎FIR YO‏ חנה אלאמין פלא ‎ADT‏ ולא גלמה תוגד ‎Savoy‏
+‏היניל-פלה(1)/, חסר ג?.
+כאן/ כחנו ‎oP‏
+‏יטלבון/ יטלבו ‎oR‏
+‏*איה(1)/ ח' אקת.
+יגדונהא/ ..,ונהח ג
+מן(1)/ פד אג?קת.
+אלממלכ8/ אלמלך ג?.
+ולם/ פלם אג? / לם קב.
+עליה/ ח' חקת.,
+איה(2)/ חות ‎ne‏ / אוית ק / ח* ג?.
+פלה(2)/ ‎tn‏ ג2.
+‎Yaar fase‏ ] ג?.
+אלאמין/ חסר ו
+פלא/ ולח ק.
+ולא ולן] ג?.
+גלמה/ גלטה אג?ק / גלמה ת.
+תוגד עליה/ ‎tain‏ עלוה .
+
+==== PDF page 0129 ====
+56
+פרע בי
+ו, היניד קאלו אולאיך חלקום הודא לא נגד על" דנואל הדא פוא
+מן ח*לפלל לכנא נגד דתלך עליה פ% סנה דינה,
+אולחיך/ אוליך ג?.
+אלקום הודא/ עאנת ‎27a‏
+‏הורח/ אד קת.
+ל*/ לם ת.
+פלי-דינה/ לדנוחל עלה אלא מן גהה בה דדדנה ג?.
+דנוחאל הדח/ הדא ‎FRIST‏
+‏שדת] ‎te‏ ק.
+לבנא/ לכן ת.
+דאלך/ ‎fn‏ אק.
+עלוה/ עלד ‎PRIVAT‏ ק.
+‎CT‏ הינוד בארו אולאחך ‎RAFI‏ ואלבטארקה ‎FIR‏ אלמלך וקאלו לה
+אמחל אללה ‎RPA‏ דריוש אלמלך,
+צחרו/ צאר א / 5אמב ק / סחר ג?.
+אולאיך/ ‎p fn‏ / אולך.] גל.
+עלוזרא/ אלוזרח אקת ‏ / 3 גל.
+אלו/ אל ג?.
+וקאלו/, פקאלו אג?ת.
+‎pin far‏
+‎p in favor‏
+‎fetta‏ דרויש ‎afin f/f p‏
+
+==== PDF page 0130 ====
+57
+פרע בי \
+ה, קד אשארו ‎VIDA‏ אגלא אלממלכה ואלחמרח ראלבטארקה ואלרוסא
+
+וחלנלפא באן *"עהד אלמלך ‎TAY‏ ודתצר הצרא אן כל מן יטלב
+מלבה מן מעבוד ‎FEI‏ אנסאן ‎RIV‏ אלמלך אלד תלאתין ‎DIT‏ ורמא
+‎AD‏ אלי גב אלחסד,
+חברא-אלאסד/ מסושמש והסר ‎oR‏
+‏אשארו/ אפחר אג?.
+אגלא/ אלאגלח ג?.
+אלממלכה-ואלבלפא] אלרוסת ואלכלפאך ‎af‏
+‏ואלאמרא/ אלאמרא ‎oR‏
+‏ואלרוסא/ ואלרואסץ א / ואלרויסח ‎2p‏
+‏באן יעהד/ ‎ton‏ .
+אלמלך/ ‎Wa}‏ ג?.
+
+wn pr ‏פהדף‎ /tay
+‏ג?.‎ Fine / ‏ויחצר/, ריחפר א‎
+‏חצרא/. הדרא ג?.‎
+‏*ן/ נ': יכוך אג?ק'ת.‎
+‏ומלב/, סלב אג?ק'ת.‎
+‏קית.‎ on ‏מו(2)/ ב':‎
+‏יחי אן ג?.‎
+‏סו*/ סוי ק'ת.‎
+‏תלחתין/ ל' ג?.‎
+‏יום/ ירמא ג?ק'ת.‎
+
+==== PDF page 0131 ====
+58
+‎pag‏ ב*
+‎Ve‏ נריד אלאן וא אייך] אלמלך אן תקים הדא אלחצר ותרסמה פי
+כתחב ‎WRIT‏ לא יגייר כסנן ‎ARARD‏ ופארס אלדי לא תזול,
+נריד/. חסר ג?.
+יח איי 2 רא רהת + / ‎RRA‏ ג?.
+‎{fre‏ איה ק'ת / ‎ave‏
+‎ria‏ הדא ‎op‏
+‏אלחצר/ אלחפר 8 / אלחדר ג?.
+ותרסמה/ [ ]סמה ג.
+ואן/ ח* אג?.
+לא(ו) / ולח אג?.
+יגיור/, דגיר % / יגיר 2
+מאהאת], מדי אג? / מחאאת ‎cn‏
+‏ופארס/, ‎visi‏ אג?.
+אלדו/ חלתי אג?ק'ת.
+*, פענד ‎WRT‏ רסם דרידש חלכתאב באלחצר,
+פעבד] ‎tay‏ ג?.
+‎Lert‏ דלך א / צלך ג2.
+‎7a [ Jn Lov‏
+דריוש/ נ': אלמלך אג?ק'ת. .
+באלחצר/. באלתטר א / באלהדצ ‎52a‏
+
+==== PDF page 0132 ====
+59
+פרק ב'
+יא, פלמא עלם דניאל אן אלכתאב קד ‎DOT‏ צאר אלי מנזלה ולה כויך
+מפתוחה פי גרפתה הלא ירושלם ותלחאת מראר פי כל ום] ‎thao‏ 299
+רכבתחאה ויצלי וישכר רבה עלי מא כאן סבפלה ‎YR‏ יצנע קבל דאלך.
+פלמח] פל ח ג?.
+דביפל, ד* ‎7a‏
+‏18/ בחן א.
+קד קד ג?.
+רסם/ רסם ג?.
+‎/1R3‏ סאר ‎7a‏
+‎fan‏ ולח ב / ‎Sn‏ ג?.
+כוין/ כוי א / וכוא ,2 / ‎wis‏ פ'ם.
+הדא/ הדח פי.
+ירושלם], ירושלם ג?,
+ותלחת/ ותלת א / ‎fay‏ ג?.
+מרחר/. מראת א / מראת ג?;
+[יופ]/ יוס אג??'ת / ח' ב / נ': הו אג?ק'ת.
+יגתו/, יגת קית.
+רבבתאה], רכ" ה ג?.
+מא-סבילה/, סביל ‎RO‏ כאן אג?,
+אן יצבע/ צאנפא מן א / יצנע ‎Wo‏ ג?.
+דתלך/ דלך ‎.'p yt / 2aR‏
+
+==== PDF page 0133 ====
+60
+‎pas‏ בי
+יב. חיביד תחכר ‎PRIIR‏ אלקום עלי דניאל פוגדוה יתהנן ויטלב
+בין ידי רבה,
+חיניד/ ‎tain‏ ק'.
+תחכר/ תהסס *ג?ק'ת.
+אולאיך אלקום/ ‎my Vesey‏ ג?.
+יתחנן ריסלב/ יטלב ויתחנך *גל.
+ווסלב/, נ': מן ק'ת.
+בין ידי/ ‎yaa‏ ידי (נמחק בקו וכתוב למעלה: אזר ךָ..] ג?.
+יג, חיניד תקדמו ‎WITT‏ אלמלך בסבב חצרה אליס קד רסמת אלחצר
+חנה אי ‎FROIN‏ טלב מן ‎FR‏ מעבוד ואי אנסאן ‎RID‏ אלמלך ‎VIR‏
+‎VARIA‏ יום ירמא בה אל*" גב אלאסד אגאבהם אלמלך וקאל
+אלאמר יקינח 1303 מדי ופארס אלדי לא תזול,
+וכלמו/ פכלמו אג?ק'ת.
+חצרה/ חלחפר א / חלהדר ג?.
+רסמת/ רסמ ] ג?.
+אלהצר-אי(1)/ ‎ton‏ ג?.
+אלחצר/ אלהסר א / אלאמר ת.
+אנסאן(1)/ [|לאנסאן ג.
+מלב/. יטלב אג?.
+‎Lia‏ 13 ג?.
+*י(2)/ ‎tn‏ 72
+מעבוד/ 363 רמן ת.
+וחי] זי / ‎aR‏
+‏תלחתין/ תלתין א / ל' ג?.
+תלאתין-מדי/ ‎aR WON‏
+יום/ יום* ג?ק'ת.
+אגאבהם/ אגאבה ת / פאגאבהם ג?.
+*למלך(3)/ ח' ג?.
+וקאל/ פקאל ‎.'p‏
+‏יקינא/ ‎Fixer‏ ] ג?.
+כטסנן-ופארס', חסר ג.
+מדי/ מאהחת קת ופארס, ופרס 8, | אלדי], אלתי אג?ק ת.
+
+==== PDF page 0134 ====
+61
+‎pas‏ גי
+יד, חיניד חגאבו בין ידי ‎WOIR‏ וקאלו אן דניאל אלדי מן אהל
+גלוה אליהוד לם וקבל לאלמלך אמרא ולם ילתפת ‎FOR‏ אלחהצר
+אלדו רסמתה ותלאת מראר פו כל ‎[ov]‏ יסלב טלבתה,
+‎fn fan‏
+אן/ פאן אג?. 0/3
+אלדי/ ‎Sn‏ ג?.
+אהל/ ‎fn‏ ת,
+גלוה/ גאליה ,
+לם/ ליטס 5. |
+לאלמלך/, ללמלך א / לאלמלך ג?.
+אמרא- ילתפת/, חסר ג?.
+אלחצר/ ‎Vande‏ א / אלחדר 323
+רסמתה/, רסמת 73 / רסמתחה לית.
+ותלחת/ ותלת א / וג' ג?. |
+מראר/, מראת 8ג.
+פי-מלבתה//, ימלב מלבתה פי כל יום ג?.
+[יום]/ יוס אג?ק'ת.
+מו, חיניד למא סמע אלמלך הדא אלאמר שק עליה גדא וודר באלה פד
+תכליץ דניאל ‎OFT‏ יזאל חרוצח פי תכליצה אלי מגיב אלשמס,
+למא/ ח' ג?.
+‎fn feta‏ ג?.
+וודר/, וודר א / ודר ג? / ורד ק'ת.
+באחלה/, [|אלה ג?:
+פי(1)/ 73 72
+תכליץ/, תכלץ אג?.
+יזאל/ וזל ג?.
+פי(2)/ עלי אג?ק'ת.
+תלליצה/. תכלצה אגַ?.
+אלי-אלשמס/ מפושטש ת.
+אלי/ ‎Fon‏ ג?.
+מגיב) [..)] 7ת ב?.
+
+==== PDF page 0135 ====
+62
+‎pis‏ בי
+טז, היניד שגבו אולאדך אלקום עלי אלמלך וקחלו לה יעלם אלמלך ‎VR‏
+‏מן סנן מדי ופרס אן כל תצר ורסם יקדמה אלמלך לא יגייך,
+שגבו/, שגב ת.
+אולאיך/ הוליך ג?.
+אלקום// אלוזרת ואלבסארקה אק'ת ‏ / נ': ואלוזרא ואלבסארקה (2.
+מדי/ מאהחת ‎|p‏ / מחהחה ת. | |
+אן(2)/ נ': יכון אג?ק'ת.
+הצר/ הטר א / הדר ג?.
+‎/aon‏ ורסוּם 21 / ג': אן ‎np‏
+‏יגייר/. יגיר א / יזול .
+יז, חיניד ‎WR‏ אלמלך פגד בדניאל ‎WAT‏ בה פי גב אלאסוד פאבתדאה
+וקאל לה אלחאהך אלדי תעבדה דאימא הו יכלצך.
+‎fain‏ חינד ג?.
+פגי/ פאתי ג?ק'ת.
+‎a ion Aan‏
+פי/ ‎sor‏ 2
+גב אלאסוד/ ‎tore... Ja‏ 2
+אלחסוד/ אלאסד אק'ת.
+פאבתדאה/. פאבתדי א / פאבתדח קית / פאבתרח ג?.
+אלאהך/ אלהך ‎oR‏ : |
+‎fin‏ והו ג?.
+
+==== PDF page 0136 ====
+63
+פרק 1‘
+יח, ‎BA‏ גי בהגר עצים פוצע עלי פם אלגב וכתמה אלמלך בכאתמה
+וכוחתם ריסא לילא יתגייר רחיה ‎TH‏ דניחל,
+גי/ ‎Vir‏ ג? / אתי ק' / אתח ם.
+‎Jaana‏ בצכרה £23
+עבים/ ‎men‏ 5 / פפימה ג?.
+פובע/ פודעה ג?.
+אלגב// *לך] 273
+‎fony‏ ך ‎at‏ ג?.
+בכאתמה], ‎ot “naa‏
+וכוחתם], וכאתם אג?.
+ריס*/ אלרותאסח ‎BR‏ / תלרוסף ג? / *לרויסח ק'2.
+לולא בלח א / בחלא ג? / ללא ק'ת.
+יתגייר/. יתגיר א / יתניר ג?.
+‎Lm‏ היניד ‎ARS‏ אלמלך אלד היכלה פבחאת טאויא ‎OFF‏ יהצר כואנח
+בין ידיה פארק נומה,
+אלמלך/. ח' ק'ת.
+אלי/ אלן] ג. \
+פבחת/ ובאת פיב / פבחת ‏ ג?;
+ולם/, חסר ג?.
+כוחנ*/ חלכואנ* ג?.
+ביו/ בו 2'.
+בין ידיה/ ‎ofa fn‏
+פחרק/ ופארק ו
+
+==== PDF page 0137 ====
+64
+‎‘a pag‏
+כ, תיביד קאם אלמלך ענד מטלע אלפגר וצאר ‎VR‏ אלגב מבחדרח,
+פבד/ מפ גל.
+אלפגר/ אלפגר (אותיות פגר נמתקו בקו ונכתב 99 גביהן: מפגר) ג.
+‎[Jor Lon‏ 273
+אלגב/ גב 5 / 7 ‎aj‏ גל / ג': אלאסד ג?.
+מבאדרא/ מבאורח ג?.
+כח, פלמא קרב מנה צות בדנפאל בצות הזין ‎VRPT‏ לה ית דנואל ‎TAY‏
+‏אללה אלחי אלאהך אלדד תעבדה דחתומא הל אמכן כלאצה לך ‎WO‏ אסד,
+‎7a ] Je rors‏
+מנה/, ‎ofa av.‏
+בדביאל/ לדביחל 5 / לדניחל ק' / ‎For‏ דנוחל ג?.
+בצות/ בצות ג?. |
+חזין/ תזיך ג?.
+אללה/ אלאלה / / אלאלאה ת.
+אלחי/ אלהדר פית.
+אלאהך/. אלהך ‎opr‏
+‏אלדי/ ‎Jor‏ ] ג?.
+תעבדה/ תעבדה ג?.
+דחומח/ דחיםת ‏ ג?.
+‎fon‏ הל ג2.
+אמכן/ ‎Razak‏ ג2.
+כלאצה לך/ חן יכלצך ג?.
+תסד/ אלאסד ‎npr‏ / אלגב ג?.
+כב, ‎TWIN‏ כאטב דניאל אלמלך וקאל לה חפאל אלאלה ‎RPA‏ תלמלך,
+כחטב/ באפב ג2.
+‎{no‏ ח' אק'ת.
+אלחלה/ אללה חק'ת.
+
+==== PDF page 0138 ====
+65
+‎pas‏ 1“
+כג, רבי בעת במלכה פסד פם אלאסד ‎ANN‏ לש תוויגי ודאלך למא הצרני
+בין ידיה מן אלהסנאת ואיצא בתצרתך יא אייה אלמלך לם אעמל
+סייה,
+‎ftps‏ 779 ג?.
+אלאסד/ תלחסד ג?.
+‎Joo ann‏ 7794 7 2;
+תודיני/ תודבי א.
+ודאלך/, ודלך ‎an‏ / ודלך ק'.
+הברנו/ ‎a On‏
+אלחסנאת/ אלהסנח ק',
+בחצרתך/., בהבסתך (למעלה מאות ספ נכתב ר באותו כתב היד) ג?.
+יח תייה יתיה" % / איהח ג?.
+אייה/. איה ק'ת.
+סייה סיה ‎Zan‏ / סחיה ק'ת.
+כד, ‎TAIN‏ למא סמע ‎WIR‏ הדא אלאמר סרה גדא ‎WORT‏ באצעאד דניחל
+מן אלגב פאצעד ולם יוגד פיה שי מך אלפסאד ‎JOR ROD‏ ברבה,
+חיניד-ברבה/, מטושמש לגמרי א.
+חיביד/ חיניד ג?.
+‎fw‏ פיח ק'ת.
+
+==== PDF page 0139 ====
+6
+‎“a pas‏
+כה, פאמר ‎TIM‏ פגאו באולחיך אלקום אלדי מהלו בדניאל רמו בהם
+פי גב חלאסד ‎BA‏ ובניהם ונסאהם ‎ROG‏ וצלו אלי קערה חתי תסלטת
+עליהם ‎TORIR‏ פדקת גמיע עצמהם,
+פאמר/ ותמר 5ַג? ‎wp‏
+‏פגחו/ פגי א / ‎nip ones‏ / פאתר ג?.
+באולאיך אלקום)/ באלקום ג?.
+באולציך/ בחוליך א.
+אלדי/ אללדין א / אלדין ג? / אלדין ‎op‏
+‏רמו ורמי אג?קית. \
+המ/ ח' אג?ק'ת.
+וצלו/ ובלך ‎3a‏
+‏אלי קערה/ *%לקערה ג?.
+תסלטת/ תסלט" ת.
+עליהם//, ח' ק'ת ‏ / ‎ooo‏ ?.
+אלאטד/ אלך | ] ג. \
+‎avon /npts‏ ג?.
+עבמהם/ עסאמהם א / עסאמהם ג? / עצאמהם ק'ת.
+
+==== PDF page 0140 ====
+67
+‎pas‏ ב' |
+כו, חיניד ‎ana‏ דריוש חלמלך אלי 9109 חלשעוב וחלאמם ודוי אללגאפ
+אלמקימין פי ‎VIVA‏ שעוב אלבלאד סלאם עליכם וברכאת אללה,
+היניד-ואלחמם/ מטושסט א.
+אלמלך/ ה* ג?.
+ודוי/, ודוה ת.
+‎val) drat pare‏ ג?.
+פי ממוטמש ‏ ב*.
+גמיע-אלבלאד/ חסר ‎7a‏
+‏שעוב/ ‎‘n‏ אק'ת.
+אלבלאד/ אלבלדאן ‎np‏
+‏סלאם/ סלם אַג?.
+עליכם-אללה/ אללה עליכם וברכאתה אק'ת.
+וברכאת אללה/. וברכאתה ג?.
+כז, קד ‎NWR‏ באמר פי גמיפ סלטנה ממלכתי אן יכונו מתקיין פאזעיך
+מן תלחה דניאל אד ‎IN‏ אלאלאה אלתי אלקיום אלי אלאבד ומלכה לח
+יזדול וסלטחאנה אלי ‎TSR‏ אלעאלם,
+סלמנה/ סלמחן 22 / סלטאנה ת.
+ממלכתי] ממל[ | ]ד ג?.
+יכונו/ יכוצו ג?.
+מתקיין/ מ[ ] ג?.
+פאזעין-א1/. חסר ג2.
+פחזצפין] פזציך 2.
+‎fin‏ הו אג?ת / הו" ‎wp‏
+‏אלחלחה] אלאלה ת / אלחה ג?.
+אלקיום/ אלקיוס ג?.
+אלי(1)/ אלר ג?.
+ומלכה, וממלכתה ג?.
+יזול/ תזול ג?.
+אלפחלט/ אלפ[ ] ג2.
+
+==== PDF page 0141 ====
+68
+פרק ר*
+כתה, והו אלמנגי ואלמכלץ באנע איאת ותעגובאת פי ‎RODIN‏ ואלחרץ
+אד ‎IRIIT PID‏ מן יד אלאסד,
+והו-צאנ2ע/ חסר ‎7a‏
+‎/virs‏ רצתבפ אק'ת.
+‎SIR‏ .2
+איתת/ | אואת ב.
+ואעגובאת/ ‎ARIAT‏ גל.
+אד חלדי ג?.
+יד/ ח* ‎7a‏
+‏כם, ‎oh‏ אצלה דניאל פי מלך דריוש וכורש אלפארסי,
+‎[Jn Loh‏ ג?.
+אצלת/. 263 תאל אק'ת ‏ / ‎ton‏ (אבל ‎ews‏ מקום בעד תאל) ג?.
+פי-אלפארסי/ ‎Jon‏ 273
+
+==== PDF page 0142 ====
+69
+‎pas‏ די
+כתבי יד: א,ק,קי,ת,ג?,ג?.
+‎CR‏ פי אלסנה אלתולח מך ‎WH‏ בלטאצר מלך ‎VARA‏ ראי דביאל ‎ROI‏
+‎RIN ROD‏ עינה 101 פי מצגעה ‎AND TIN‏ דאלך אלתלם וקחל 79
+אוול אלכלאם.
+אלאולא/ אלאולי ‎oR‏
+‏בלשאצר]/, בלשצר ‎np‏
+‏כמא/ כמי ת,
+תרא, ‎tan‏ א. |
+‎/naiy‏ ציגתה ‎np‏ |
+דתלך/ דלך א / ‎rt‏
+‏אוול/ אול א.
+ב,. ‎RNIN‏ דניאל וקאל ראית ‎FS‏ רויאי פי אלליל כאן ארבע גהאת
+*לסמא מצדרה מנצמה אלי אלבחר אלכביר,
+אבתדא/ אבתדי אק'ת..
+פי(1)/ ב': םח ק.
+רויחי/ רוחאיי א ‎ /‏ ירח ק / מי* ת.
+פי(2)/ ח' ת.
+אללול/, אלול ‎oD‏
+‏ארבע/ ד* ת.
+ג, וכאן תרבע אשכחץ עבימה באפעדה ‎Yo‏ אלבחר כל וחחד מתגייר ‎Yo‏
+‏אלאכר.,
+‏ארבפ], ארבעה 5.
+עבימהּ/ פסימה 1.
+מתפגייר/, מתגיר ת.
+
+==== PDF page 0143 ====
+/ 70
+‎pas‏ 3‘
+ד, אלשכץ חאלאוול ישבה אלאסד ולה אגנחה כאלנסר ‎ON‏ ראית כחן
+*גנהתה אנתתפת ורפע מע דאלך מן אלארץ ‎of‏ אקים עלי רגלאך
+מתל אנסאן ותעפד ‎py‏ אנסאן.
+אלחוול/ אלאול ‎oR‏
+‏אגנחתה/ ג': קד קת.
+דחלך/ דאך *.
+רגלחן// רגלין את.
+‎/1RDIR‏ אלנחס אקת.
+ה, ואלאן טכץ ‎IIR‏ תאני שביה אלדב וקד אקים ‎ION‏ גאנב ‎TART‏
+‏וכחאן פי פמה תלחתה אצלאע מתעלקה ביןך אסנאנה והכדא יקאל
+לה ‎op‏ פכל אללתם אלכתיר,
+ואלחן/ ‎1x31‏ חקת.
+שביה/ ישבה 5 / שבה ק.
+אלי גחנב/ אלחגחנב ת,
+פמה/ פיה ‎ara / x‏ קת.
+תלחתה/ ‎Sa‏ % / תלחת ק.
+דהכדח/ והכבדי ק.
+והכדא-אלכתיר/ ‎Ron‏
+‏ו, ובעד דלך ראית כאן שנכץ אכר כאלנמר ולה ארבעה חגנההּ ‎Wee‏
+‏עלד ‎AINE‏ ולה ארבעה רוס וקד ‎AOR VST‏ סלטאן.,
+שכץ/ שכצחא ת.
+ארבפה/ ד' ‎pp van / xR‏ / ג': מן אקת.
+אגנחה/ אגנחת ק.
+‎wee‏ אלטחיר אקת,.
+בהרה-סלסחן/. תפר א,
+סלטאן/ צלטאן ק.
+
+==== PDF page 0144 ====
+71
+‎‘x pas‏
+| ז, ובעד ‎PRT‏ ראית פי רויא אלליל כאן שכץ ראבע פזיע היוב
+
+שדיד גדא ולה אסנאן כבאר מן חדיד יאכל בהא וידק ואלבאקו
+ידוסה ברגלאהּ ‎ANT‏ מתגייר ען סאיר אלאטכחאץ ‎IAIR‏ קבלה ולה
+עשרה קרון.
+‎LPI‏ דלך ת.
+רויץ/ ר'יח ת.
+פזיפ/ ‎xis”‏ ק / ‎passa‏ |
+היוב/ מהיב ת. ו ,
+
+| שדיד/ ‎Sn‏ א / ‎fn‏ (אבל נשלם בגליון) ק.
+ידוסה-קרון/ ‎aon‏ ומטוסמש ‏ ת.
+ברגלאה//, ברגליה ק.
+‎fino‏ מתגיר ת.
+ען/ מן ת. \
+אלתו/] אלדי א.
+עשרה], פטר 1.
+
+==== PDF page 0145 ====
+72
+
+‘x pas
+
+‎GN‏ פבין מא ‎RIR‏ מתפכר פי תלך אלקרון פאדח בקרין חכר סגיר קד
+‎NAD‏ פי מא בינהא ותלחתהּ מן קרון אלאולי אנקלעת ‎Yo‏ בין ידיס
+וכאן עיון כעיון אלנאס פי דאלך אלקרין ופם יתכלט באלכבחיר.
+פבין/ וביך קת. |
+פבין מא/ ובינםח א. .
+מתפכר/. מתפרס ‎x‏ / מתפסר קת.
+פאדא] ‎Vine‏ ק. |
+בקרין/ בקרן אקת.
+אכר/ ‎‘n‏ ק.
+סגיר/ ‎wax‏ 5 / צגיר קת,
+פי ‎/en‏ פומת ‎oH‏
+‏מא/ ‎yn fn‏
+בינהח/ בינהמח ק / ביניהם 2.
+ותלאתה/ דתלתה ת.. .
+קרון/ חלקרון חקת.
+אלאולי/ אלארל א / אלאוחיל 5 / ‎fn‏ ק.
+וכאן/ ולה ק.
+דאלך/ דאך א / דאך ת.
+ח*לקרין/ אלקרון קת.
+
+‎LD‏ תם ראית כאן כראסי קד ‎ANI‏ וכאן שיכא קד ‎VIA‏ פוקהח ולבאסהת
+כאלתלג אלאביץ ושער ראסה אביץ כאלצוף וכרסיה מן נאר לה
+שעחע ולואלבה נאר משתעלה,
+כין/ חי ק.
+ולבאסה/ לבאסה ק,
+כאלתלג אלאביץ/ אביץ כאלתלג א,
+וכרסיה/ וכראסיה ק / וכרסייה ת.
+מן נאר/ ‎op Sn‏
+לה// להח חאקת,
+משתעלה], משפעל ת.
+
+==== PDF page 0146 ====
+73
+‎pas‏ די
+י, ונהר מן נאר יגרי מן בין ידיה ויכרג ואלף אלוף יכדמונה \
+ורבואת רבואת יקוטון בין ‎ATI‏ וקד וצע אלחכם ונשרת אלדיחוין,
+יגרי/ יגר ת / נ': ויכרג קת. |
+‎fara.‏ ח' קת..
+ואלף/, ואלוף ‎oR‏
+‏יכדמונה/ ‎fn‏ 2. .
+ורבוחאת/ ורבוה ק, .
+יקומון/ נ': מן קת. -.
+אלדיאוין/ אלדוחאוין א.
+יח, ‎On‏ רחית כאן ‎JON JO‏ אלכלמאת חלעצימה ‎VOR‏ כאן אלקרין יתכלם
+‎RAI‏ אסתחק גמלה ‎PIR‏ אן קתל ובחד גסמה וגעל וקידא לאלנאר,
+מן/ נ': אגל אקת. . |
+אלעבימה/ חלפפימה ת,
+אלדי/ אלתי חק. ‏ .
+כאן(2)/ ‎nara‏ אקע..
+אלקרין/ אלקרן חקת.
+יתכלם/, תתכלם חקת.
+אלשנץ/ ב': חלי ת.
+קתפל/ יקתל ‎-R‏
+‏לאלנאר/ ללנאר ת.
+יב, ואמח באקי אלאשכאץ פזאל סלטחנהם וחעטד מהלה פי חיותהם ‎JOR‏
+‏וקת וזמאן. |
+סלפאנהם/ צלטאנהם ק, .
+סלטאנהם-וזמאן/ ‎Ron‏
+‏מהלה/. נהלה ת.
+פי/ מן קת.
+חיותהם/ ‎Bann‏
+
+==== PDF page 0147 ====
+74
+
+‘x pas
+
+יג, תם ראית פי ‎RO‏ ירחא ‎JO‏ אלליל כאן שחאבא מקבל מע אלסתאב חתי
+בלג אלי מו3פ אלשיך וקדמה בין ידיה,
+
+| תם-ידיה, ‎ton‏ ת.
+
+מך/ פי ע. |
+אלסחחאב/ אלסאחב ת.
+אלשוך// אלסיף ת.
+וקדמה/] פקדמה קת.
+
+יד, פאעטאה חלסלטאן ואלוקאר וחלמלך וגמיע אלשעוב וחלאמם ואהל .
+אללגחת לה יסיעון סלטאנה סלמאך אבדא לא יזול ומלכה לא יתגייר,
+פאעפטאה-יתגייר/ חסר ת.
+פאעסתה] פאפטי ת.
+אלסלפאן/ אלצלטחן 2.
+ואלוקאר/ חאלוקחר ‎eB‏
+‏סלטחנה], צלמאבה.ק.
+סלמחן/ צלמחן ק.
+אבדא/ אבדי ת ‏ / אלעאלם ק ‏ / ג': אלדי ק.
+
+סר, ‎RAPS‏ כרב ‎INIT‏ אנא דניאל פי גסמי ‎RID‏ עיני אדהשתני,
+דניחל] דבי' 5 . \
+‎fea‏ וריא ג? ‏ / וריי ת. |
+עיבי/ עיביי םש / פיבחי ת / ב': קד ק.
+אדהשתבי/, אדהשני אק / ידהשני ‎Ba‏
+
+==== PDF page 0148 ====
+5
+‎‘x pis‏ |
+פז, תקדמת אלי ואחד מן אלוקוף ואלתמטת ‎AID‏ אלצתיתח פי ‎VIDA‏ דאלך
+פקאל לי וערפני תפטיר אלאמור.
+תקדמת/ פתקדמת ת.
+דאלך/. דלך אג7. .
+פקתל/ פקחלה ‎ar‏
+‏לי/ ‎any‏ \
+תפסיר/ תפס ג 5‏ / נ*: דאלך ק2.
+יז, ‎ATA‏ אלחשכאץ אלעצאם אלדי הי ארבע הי ‎VAIN‏ ממאלך תקום פי אלאחרץ.
+אלאשכחאץ//הדשכחץ ת,
+אלצבאם/ אלעמאם ‎Jan‏
+‏אלדי, חלתי אגלק.
+ארבע(1)/ ארבעה א / ד' ‎a‏
+‏הי(?)/ תי 2 של 0 שר |
+/ 5
+הי ארבע(2)/. | הי ארבע ‎ea‏
+‏ארבע(2)/, ד 8.
+יח, ‎on‏ יתסלמון אלמלך אלקדוסין אלמתעליון וירתונה אלי אלדהר,
+יתסלמון/ יתסלם ‎Far‏ / יסתלמון 2. | .
+אלקדוסין/ אלקדיסין ‎3a‏ / אלקדוסיין 2. /
+אלמתפליון/ אלעחאליין א / אלעאלי'ן ‎Fa‏ / אלמתעאליין קת.
+חלדהר/ נ': ודהר אלדהור אגיקת.
+
+==== PDF page 0149 ====
+76 \
+\ פרק ‎‘s‏
+‏יש, חיניד ארדת חן אסתתבת ‎WR‏ אלשכץ אלראבע אלדי כחן מגיירץ
+מן ‎WII‏ פה מפזע גדא אסנאנה מן חדוד ואצפארה מן נהאס
+יתעכל בהא וידק ואלבאקי ידוסה ברגלתאה,
+ארדת חן/ ‎‘n‏ ק.
+אסתתבת/. אסתתבאת ק.
+‎rq [ Lior varie‏
+מגיירא//, מגירח ת.
+פה/ פהו אקת. .
+מפופ/ מפזרע ק.
+גדח אסבחנה], גן זבה .
+ותצפארה], ואספארה ת.
+בהא/ ‎ap fn‏
+ברגלאה/, ברגלה 5 / ברגליה ק. \
+כ, וחמא אלפשר אלקרון אלאואיל אללואתי פי ראסה וחלאכר אלדי
+‎Apo‏ ונבת ‎Jo‏ בין ידיה תלאתה ואלקרין מנתצב אלעיודן ופם מתכלם
+באלכבחאיר וצאר מנצרה ‎WIR‏ מן נברחיה,
+ואמא/ ואמר א. | .
+אלעשר/ אלעטרה ת,
+‎WIR‏ אלקרון/ אלקרון אלפשרה ק.
+אלקרון/. קרון ת.
+חלאוחיל/ תח את / אלאולחת ק.
+אללוחאתי/ ח' ק. \
+וסקט ונבת/ נבת וסקס ‎BPR‏
+‏תלאתה], ‎fa‏ ת.
+ואלקרין/ ואלקרן אקת. \
+אלציון/ ולה עיון א / נ': ולה עיון 5,
+מתכלם], ותכלם אקת.
+מנצרה/, מנסרה א.
+אכתר, ‎Vase‏ ת5.
+בפראיה/, נמראיה 8.
+
+==== PDF page 0150 ====
+77
+‎pis‏ די \
+‎LRT‏ וכנת ראית כאן דאלך אלקרין יתארב אלקדוסין ויצפר בהם,
+‎fan‏ וכך]. 2.
+כאן/ ‎yea‏ 2..
+דאלך/, דלך ‎wR‏ |
+אלקרין/ אלקרן חת. \
+יהארב/ יחאסב ת / יתאבב ‎wa‏
+‏אלקדוסין/ אלקדיסין ת.
+ויצפר/, ויספר ת.
+‎af] Lona‏ 2. |
+‎Ld‏ אלי חן גח אלפיך ‎ARIS‏ אלתחכם לאלקדוסין אלמתעאלייך ודנת
+אלאגל וורת חלמלך אלקדוסין.
+לאלקדוסין/ ללקדיסין ‎oR‏ . \
+אלקדוסין/ אלקדיסין א / אלקדוסיין ק.
+
+==== PDF page 0151 ====
+78
+‎pis‏ 3‘
+כג, הכדא קחל תפסיר אלשפכץ אלראבע ממלכה ראבעה תכון פי אלארץ
+תגייר.מן תקדם מן אלממאלך וכאנהא תאכל גמיע אלבלאד ‎AVITAL‏
+‏ותדקה,
+‏הכדא/ הכדי א / הכדי ק. |
+קאל תפסיר/ ‎yp‏ 0 .
+תפס יר), ‎jor‏ וכח
+אלפכץ/ חלס[ 2. \
+‎VARI‏ ממלכה, * לראב [מלכה 2. \
+ממלכה], חלממלבה גל.
+ראבעה/ אלרחבעה ג?.
+תכון/ תכן 5.
+אלארז/ אל[ ]| 2.
+תגייר/. ‎Wan‏ אג?.
+‎ro /(1)10‏ אג?קת. |
+תקדט-אלממאלך)/, תק[ ‎Tl‏ 2
+תאכל/ ‎BU Jen‏ . |
+‎Jorma‏ גומיצ ג?.
+| אלבלחד/ אלממחלך [ ‎27a‏
+‏ותדוסה/. ותדוסהח 5 / []תדוסה" ג?. \
+ותדקה/, ותדקהם ג? / ותדקהא ת / ות|ַקה 2.
+
+==== PDF page 0152 ====
+79
+
+פרק ד'
+
+כד, ותפסיר אלעשר אלקרון מן תלך אלממלכה יקופ עשר מלוך ואכר
+בעדהם ‎Ins‏ יגייר מא תקדם מן אלאוולין ויצע תלאת מלוך.
+אלפשר, אלי'* ‏ ל / אלעשרה ק.
+אלקרוןו] קרון ‎aR‏
+‏פשר], עשרה חקת. |
+וחאכר בעדהם/ רבעדהט/ ובעדהם יקום חכר ג?.
+וחכר/ נ': יקום אקת.
+יגייר/, יגיר אג?.
+םא] מן] ג?.
+אלאוולין/ אלאולין אג?ת.
+ויבע/ ויציע ג?.
+תלחת] ‎‘a‏ אג? ‏ / תלחתה ת.
+
+כהּ, וכלאם יתקודלה צלי אלעאלי ויכלק אלקדוסין אלמתפחלייך
+ויחמל אן יגייר אעיאדהם וסננהם ויסלמון פי ידה ‎ATO VIR‏
+‎[ANTI‏ ונצף,
+רתקוולה/, יתקולה 5 / תקולה 71 ‎Of‏ ות7 7 2.
+אלפחלי] אלפלי ת,
+ויכלק/ ויכלק א / ויבלק ‎Be‏ / מטוטסט ג?.
+אלקדוסין, אלקדיסין אג? ‏ / לקדוטיין 2.
+אלמתפחליין/. אלמתעאלין ג? / אל[]צליין ק.
+ויחםל/ ויומל א / וירמל ג? / ויאמל ק2.
+יגייר/, יגיר אג?.
+אעיעדהם/ אעדחיהם 5 / אעיאצהם ג?.
+אעידהם וסננהם/ מפושטש רמתורר ‏ 2.
+וסננהם/ ‎Jor‏ ] ג? .
+ויטלמון/ [יסלמוו 2.
+פי/ מטדשסט .473 \
+ידה-מדה .8‏ ו,, ,ל, ‎oT,‏ 2
+
+ונצף/, 93831 ע.
+
+==== PDF page 0153 ====
+= 80
+‎pas‏ 2‘
+כו, ולמא וצף אלחכם ואזיל סלטאנה וצאר אלי אלנפד ואלאבאדה אלי
+‎WIR‏ אלזמאך. -
+ו3ף/, רצע אקת... /
+ולמח ו3ף/, ולם:.-ך ‎atl‏
+‏וחזיל/. חזיל אג?ת.
+סלפאבה/ צלטאנה ע.
+תלנפד/ אלנפד 23 / נפחד ק / אלנפאד כ ת.
+וחלאבחדה/, ואבאדה ק / ואלחבא[ ] ‎22a‏
+‏אלי(2)/ []לי.ג?.
+אכר/. ‎Wx‏ קת.
+כז, וראלמלך ואלסלטאן וחלשרף אלדין למלך גמיע מא תחת ‎RODIR‏ סלמת
+אלי אלקום אלקדוסין אלמתעאלייך מלכהם מלך אלדהר וגמיע אלסלאטין
+‎ony‏ וסמעון ויסיעוך,
+ואלמלך/. ולחלמלך ג?, .
+ראלסלטחאן/ ואלצלטחן ‎eB‏ .
+אלדין למלך/ אלדך | [אלך גל.
+אלדון/ אללדון א / אלדי ת.
+למלך/ ללמאלך ‎Rw‏ / לאלממאלך ת.
+‎Leo‏ מן ג?. \
+אלסמח/ אלסמד ג2.
+סלמת/ ‎Sn‏ ת.
+אלי/ ‎fn‏ ג?..
+אלקום, ח' ע. ,
+אלקדוסין/ אלקדיסין א / אלקדוסיין ק ‎J‏ ..,.קד,.ין ג?.
+אלמתעאליין/ אלמתעאלוין 21 / אלמתפאלין ת,
+‎Las‏ פמלכהם אג?קת.
+וגמיע], וגמיע ג?. \
+אלסלאפין/ ,..לחטין 0 ק / אלסלח[ ‎f‏ ג?.
+‎fond‏ חסר ג?.
+וסמעון/, []מעון 72
+
+==== PDF page 0154 ====
+81
+
+‘rps
+
+כת, אלי ההנא אבר אלקצה ואנא דנואל קד אדהשתני אפכארי ‎RAD‏
+‏ותגיירת סתנתי עליי ‎n3sni‏ אלקצה פי קלבי,
+אלי/ חסר ג?. ,
+‎fran‏ האהנח אג? ‏ / ב': אבתהח ג?.
+‎Riri / prin /rini‏ 2
+קד] ‎‘n‏ אקת.
+אדהשתני/ אדהפתני ק / ‎ [‏ ]שתני ג?.
+ותגיירת/. ותגורת אג?.
+עליי/ חסר ‎73a‏ /
+וחפ3ת/ ותפפת א / [ ]ת ג2.
+
+af Jor Lizprr \
+
+קלבי], קלבי ‎a‏
+

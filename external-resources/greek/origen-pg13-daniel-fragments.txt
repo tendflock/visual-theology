@@ -1,0 +1,321 @@
+# Extracted from PDF column range
+# Source: https://archive.org/download/patrologiae_cursus_completus_gr_vol_013/patrologiae_cursus_completus_gr_vol_013.pdf
+# Columns: 805-810; PDF pages: 425-428
+# Formula: (col + 45) / 2; DPI: 300, PSM: 4, language: grc+lat
+# Generated 2026-05-01 09:15:25
+# WARNING: OCR-quality. Greek/Latin parallel text may interleave.
+
+==== PDF page 0425 ====
+805 SELECTA IN EZECHIELEM. 806
+Sua εἰς τὴν ἔρημον ἀπὸ Θεοῦ (jvyhv καὶ τῆς διχαιο- A ἃ Deo ejusque justitia deserta est. Quare autem
+
+σύνης αὐτοῦ. Ζήτει δὲ καὶ τὴν πρᾶξιν τοῦ ζώου. quid operetur animal.
+Οὐκ ἔστησαν ἐν στερεώματι. Τὸ ἀβδέθαιον χαὶ Non steterunt in firmamento 15. His verbis eorum
+ψεῦδος xai ἀδύναμον ἡνίξατο ἐν τούτῳ. inconstantiam et mendacium impotentiamque sib-
+obscure notavit.
+
+ὁ Ka συνήγαγον τὰ ποίμνια. Τοὺς αἱρετικοὺς πὶ Et congregaverunt greges !*. Hi:ereticos ad Eccle-
+
+τὴν Ἐχχλησίαν " τὰ χτηνώδη δόγματα ἐπὶ τὴν ἀλῆ- — siam ; belluina dogmata, ad ver;tatem.
+Cea.
+
+Οὐχ ἀνέστησαν ἐν πολέμῳ. Οὐχ ἀνέστησαν σὺν Δ, Non surrexerunt in prelio ". Non surrexe-
+Χριστῷ, διότι οὐ συνετάφησαν αὐτῷ ol λέγοντες xoi — runt cum Christo, quia nec cum illo consepulti
+βλέποντες ἡμέραν Κυρίου ψευδῆ. sunt, qui dicunt et vident diem Domini falsam.
+
+Οὐχὶ ὅρασιν ψευδῆ ἑωράκατε; "Opaaw ψευδὴς Nosne visionem [alsam vidistis '*? Visio falsa, ea
+ἔστι τὰ χατὰ ψεῦδος νοούμενα δόγματα. dogmata sunt, qud secundum mendacium intelli-
+
+untur.
+
+Ἐν παιδείᾳ τοῦ λαοῦ μου οὐχ ἔσονται. Mágo- i In disciplina populi mei non erunt δ. Varie sunt
+
+px παρὰ Κυρίου αἱ παιδεῖαι. “Ἔστι παιδεία ἡ λεγο- ^ a Domino discipline. Est disciplina quz dicitur in
+μένη ἐν χρίσει, xai ἔστι παιδεία ἡ λεγομένη ἐν θυμῷ. — judicio ; et est disciplina, quz dicitur in furore.
+Οὐδὲ ἐν γραφῇ olxov "cpanA ἔσονται. Ἐξα- Neque in censu domus Israel erunt 8, Delebuntur
+
+λειφθήσοντα: γὰρ Ex βίθλου ζώντων. enim de libro viventium.
+
+Καὶ εὶς τὴν Trjv τοῦ "IcpaiA οὐχ eloeAeUcorcat. Εἰ in terram Israel non introibunt **.. 1n. futuro
+Ἐν τῇ μελλούσῃ ἡμέρᾳ δηλονότι. nimirum die.
+
+Διὰ τοῦτο ψευδῆ οὐ μὴ εἰδῆτε. Τουτέστιν, Οὐ Propterea mendacia non videbitis **. Hoc est, non
+μὴ συγχωρήσω εὐοδωθῆναι ὑμᾶς, ἵνα τὸ ἑξῆς mÀn- — sinam ul prospere vobis cedat, ut quod sequitur,
+ψωθῇ. impleatur. '
+
+ΚΕΦ. IA'. CAP. XIV.
+El ἀποχρινόμεγος ἀποχριθῶ αὑτοῖς. El &roxp:- Si respondens respondebo eis *'. Si respondeus
+
+νόμενος ἀποχριθήσομαι αὐτοῖς, χρίσιν ἐξ ὑμῶν’ ἤτοι — respondebo cis, judicium ex vobis : vel ex propheta
+ix τοῦ προφήτου λαμθάνει ὁ Θεός" Tj δῆλόν φησιν — sumit Deus : vel manifestat se talibus responst.-
+ἀτηχρίνεσθαι αὑτοῖς τοῖς τοιούτοις ὅθεν ὑπερνιχῶν rum : hincque adeo, supervincens judicium , τ6-
+τὴν χρίσιν, ἐπαγγέλλεται ἀποκρίνεσθαι ὡς ἐλεήμων. c sponsurum se pollicetur tanquam misericors.
+
+Ὃς ἂν θῇ τὰ διαγοήματα αὐτοῦ. Ἔν τούτοις Qui posuerit cogitationes suas in corde suo**.
+διδάσχει πῶς δεῖ ἑχάστῳ ἀποχρίνεσθαι τὰ προσφό- In his docet, quomodo unicuique, quz illi con-
+px συναρμοστέα, xxi μὴ ὡς ἔτυχε" xal ὅτι αὐτὸς gruant, respondendum sit, et non temere ; Doni-
+Κύριός ἐστιν ὁ ἀποχρινόμενος διὰ τοῦ προφήτου. numque esse qui respondet per prophetam.
+
+"Ero Κύριος ἀποχριθήσομαι αὐτῷ ἐν αὐτοῖς, ἐν ς Ego Dominus respondebo ei in his, quibus tenetur
+εἷς ἐγέχεται ἢ Διάνοια αὐτοῦ. Τουτέστιν, áxolou- — mens ejus "δ. Hoc est, qui? consectatur, quibus
+θεῖ, τέρπεται, κεχόλληται. Διὰ δὲ ταῦτα τοιαῦτα, ἄτινα — delectatur, quibus adbzret. Propter talia hzc quse
+παρέχει πρόφασιν τοῖς yajvotg xal ἐχλελυμένοις τῇ — mollibus ac dissolutis oceasionem przbent defle-
+καρδίᾳ πλαγιάξειν ἀπὸ Θεοῦ, 'AJX ὅμως εἰ xaX τοιοῦ- — ctendi a Deo. Verumtamen etsi tales sunt, ta'ibus-
+το εἰσι, xal τοιούτοις ἔχεται αὐτῶν fj χαρδία" ἐπειδὴ — qne eorum animus affectus est, quia tamen per-
+δὲ ἤθελον πυθέσθαι παρὰ Κυρίου, ἀποχρίνεται aó- — contari a Domino voluerunt, respoadet eis per pro-
+τοῖς διὰ τοῦ προφήτου, ὡς χρήζουσιν ἐπιστροφῆς,  phetam, opus eos habere conversione, dicens **:
+λέγων: Ἐπιστρέψατε xal ἀποστρέψατε, καὶ «X — Convertimini et recedite, et quxe sequuntur.
+
+n.
+
+Tj, fj ἐὰν ἁμάρτῃ. Ἔθος τῇ θείᾳ Γραφῇ πολλά. D — Terra, quecunque peccaverit mihi ". Moris est
+χις ὀνομάζειν τὸ οἴχημα ἤτοι τὴν κατάστασιν εἰς — divine Scripture, ut non raro habitationem seu
+πρόσωπον τῶν olxoUvttv* xal πάλιν τοὺς οἰχοῦντας.- Stationem eorum nomine qui habitant sumat, vi-
+ti; πρόσωπον τοῦ οἰκήματος. 'Eür οὖν γῆ ἁμάρτῃ,  cissimque habitantes nomine habitationis. Dicendo
+τοὺς vrnivoug διὰ τῆς γῆς ὠνόμασε" δι᾽ ἣν αἰτίαν igilur, ferra si peccaverit, terre nomine terrenos
+ἐξολοθρευθήσεται ἐξ αὐτῆς ἄνθρωπος xal χτῆνος. nuncupavit; quapropter exterminabitur ex ea homo
+Καὶ ἄλλως ἡ γηΐνη ἕξις ἐὰν ἁμάρτῃ (πέφυχε yàp εἰ pecus. Ac przeterea, terrenus habitus si peccaverit
+αὔτη ἀμαρτεῖν), ἐξολοθρευθήσεται ἐξ αὑτῆς ἄνθρω- (solet enim peccare) exterminabitur ex eo homo
+s» χαὶ χτῆνος ὁ χτηνώδης ἄνθρωπος xal ὁ Aoyi- et pecus; nempe homo pecori moribus affinis, et
+χώτερος ἄνθρωπος. Οὐ γὰρ ἔστιν εἰπεῖν τὴν γῆν — homo qui aliquanto amplius est rationabilior.
+ταύτην fjv πατοῦμεν εἶναι λογιχὴν, xat αὐτὴν ἁμαρ- Neque enim dici potest terram hanc quam calea-
+τάνειν, ὥς τινες ἐφαντάσθησταν. El γὰρ τοῦτο δώσο- — mus, esse ratione przeditam, et peccare, ut quidam
+
+"E;ch. xin, ὅ. 1604. "1014, !*ibid. 7. '*ibid, 9. *'ibid. *'ibid. * ibid. 95. — ** Ezech.
+mv,3. Β΄ iid. 4, — *"ibid. S. "*ibid. 6. "" ibid. 13.
+
+==== PDF page 0426 ====
+801 EX OR!GENE 805
+
+somniarunt. Nam si hoc dederimus, tempus est A μὲν, ὥρα τὰ πάντα λέγειν ἔμψυχα, καὶ συνηγορεῖν
+ul cuneta animata dicamus, atque iis. patrocinemur τοῖς τὰς μετεμψυχώσεις εἰσάγουσι,
+qui metempsychoses inducunt.
+
+Et conteram ez ea [ulcimentum panis **. Quasi di- Καὶ συντρίψω αὐτῆς στήριγμα ἄρτου. "Avà
+ceret : pro iniquitatis sux ratione punientur., τοῦ" Κατὰ τὴν ἀδιχίαν τιμωρηθήσονται.
+
+1,8 Ejusdem. Terra nostra peccans, homo sci Τοῦ αὐτοῦ. 'H γῆ ἡμῶν ἡ ἁμαρτάνουσα, ὁ ἕξω
+licet exterior, sensibili fame unietur; interior ἄνθρωπος κολάζεται τῷ αἰσθητῷ λιμῷ" χαὶ ὁ ἔσω
+autem homo fame spiritali, carentia nimirum pauis ἄνθρωπος χολάζεται τῷ νοητῷ λιμῷ, τῇ στερήσει τοῦ
+spiritalis. Angustias sustinet, οὐ exterior, tum πνευματιχοῦ ἄρτου. ᾿Αγωνίαν ὑπομένει xal ὁ ἕξω,
+interior; a quidquid exterior sustinet quantum ad καὶ ὁ ἔσω" καὶ ὅσα ὑπομένει ὁ ἔξω χατὰ τὸ αἰσθητὸν,
+sensum, suslinet et interior quantum ad mentem. τοσαῦτα ὑπομένει χαὶ ὁ ἔσω χατὰ τὸ νοητόν.
+
+Ejusdem. Etiam uniuscujusque nostrum anima Τοῦ αὐτοῦ. Λέγεται καὶ ἡ ἑχάστου ἡμῶν ψυχὴ
+terra dicitur; et alia quidem paradisum, alia spi- — YT ἡ μὲν παράδεισον γῆ ἔχουσα, ἡ δὲ ἀχάνθας " ἡ &
+nas habet, alia bona dicitur, alia mala, Atque hzc καλὴ λέγεται, ἡ δὲ πονηρά. Καὶ ταῦτα δηλοῖ ἡ τα-
+ostendit Domini parabola. ραδολὴ τοῦ Κυρίου.
+
+. Et si fuerint tres viri isti in medio ejus, Noe, Job, B — Kal ἐὰν ὦσιν οἱ τρεῖς ἄνδρες οὗτοι ἐν μέσῳ
+Daniel **. Mosce sanctos refert omnis qui vitam αὑτῆς, Νῶε, ᾿Ιὼδ, Δανιήλ. Πρόσωπά ἔστι τῶν ἁγίων
+suam super terram non corrupit, nec ila totus carne τούτων λαμθανόμενα, πᾶς ὃς ἐὰν μὴ φθείρῃ τὸν
+imbutus est, ut faciat sensum carnis ct totus esse — βίον ἑαυτοῦ ἐπὶ γῆς, οὐ ποιούμενος ὅλος τῇ σαρχὶ
+caro censeatur, sed lucet tanquam luminare in διὰ τοῦ ποιεῖν αὐτὸν τὸ φρόνημα τῆς σαρκὸς, ὦστε
+muudo, sustinens verbum vite in medio generato- χρηματίσαι αὐτὸν ὅλον σάρχα, ἀλλὰ φαινόμενος ὡς
+nis pravae atque perverse , ut ad eum Deus respon- φωστὴρ ἐν κόσμῳ, ἐπέχων λόγον ζωῆς Ev μέσῳ 7ε-
+deat: Νουὶ te solum justum in generatione ἰδία *. γεᾶς σχολιᾶς καὶ διεστραμμένης, ὥστε χρηματίσαι
+Quisquis igitur talis cst, Noe est; et qui de illo πρὸς αὐτὸν τὸν Θεὸν, ὅτι, Σὲ εἶδον δίκαιον uóror
+conscripta sunt, etiam ad istum referuntur. Con- ἐν τῇ γεγεᾷ ταύτῃ. Πᾶς οὖν ὁ τοιοῦτος Νῶέ ἐστι,
+ditione enim pares ambo facii sunt, ita uL ambo καὶ τὰ ἱστορούμενα ἐπ᾽ ἐχείνου ἀνάγεται χαὶ ἐπὶ
+
+Noe nuncupentur. τοῦτον" τῇ γὰρ καταστάσει γεγόνασιν ἴσοι ápgé:t-
+pot, ὥστε χρηματίσα: αὐτοὺς Νῶε.
+Ejusdem. Omnis qui posuerit in corde suo non Τοῦ αὐτοῦ. Πᾶς ὃς ἐὰν θῇ ἐπὶ τῇ χαρδίᾳ αὐτοῦ
+
+pollui in eibis et potibus spiritalis Nabuchodono- μὴ μιανθῆναι ἐν τοῖς βρώμασι xal τοῖς πόμασι τοῦ
+
+sor, sed animam suam jejuniis affligere in hac Ba- C νοητοῦ Ναδουχοδονόσορ, ἀλλὰ χαχῶσαι τὴν ψυχὴ»
+bylone propter cognitionem veritatis ; qui, iuquam, αὑτοῦ νηστείαις ἐν τῇ Βαθυλῶνι ταύτῃ διὰ τὴν γνῶ
+ejusmodi est, Daniel est, et quae de illo narrantur, σιν τῆς ἀληθείας, ὁ τοιοῦτος Δανιὴλ ἐστι, xal τὰ ἰστο-
+de πος quoque congrue dicantur. Idem enim utrius- ρούμενα ἐπ᾽ ἐχείνου ἁρμόσει xal ἐπὶ τούτῳ λέγεσθαι'
+que status, idem utriusque habitus, ila uL uterque μία γὰρ κατάστασις, xai τῆς αὐτῆς ἕξεως οἱ ἀμφό-
+merito Daniel possit vocari. τεροι, ὡς καλεῖσθαι αὐτοὺς Δανιήλ.
+
+Ejusdem. Quisquis in vita irreprehensibilis , at- Τοῦ αὐτοῦ. Πᾶς ὃς ἐὰν fj ἄμεμπτος ἐν βίῳ, ἀλη-
+que in Dei cultu verus exstiterit, ita ab omni se θινὸς ἐν θεοσεδείᾳ, ὥστε ἀπέχεσθαι αὐτὸν ἀπὸ xaxo)
+malo abstinens ut diabolus Ὡηλαδιΐοπα in eum ex- παντὸς, ὥστε παραζηλοῦσθαι ἐπ᾽ αὐτῷ τὸν διάθολον,
+ardescat genusque omne tentationum illi inferat, καὶ πάντα γενικὸν πειρασμὸν ἐπαγαγεῖν αὐτῷ i
+nec tamen ipse vel labiorum sermone quidquam πειρασμοῖς, xai οὐχ ὀχλάσῃ ἕως λόγου χειλέων᾽ ὁ
+offendat, ia Job est, ac qux de Job scripta sunt, in τοιοῦτος Ἰώδ ἐστι, καὶ τὰ ἱστορούμενα ἐπ᾽ ἐχείνῳ
+lune quoque convenient. Ambo enim habitu pares ἀρμόσει xal ἐπὶ τούτῳ. ᾿Αμφότεροι γὰρ ἴσοι ἐν μιᾷ
+iu Domino, ac uterque Job vocabitur. ἕξει ἐν Κυρίῳ, xa Ἰὼδ χληθήσονται ἀμφότεροι.
+
+δὲ filii et filie salvabuntur 3). Secundum eamdem p — El viol καὶ θυγατέρες σωθήσονται. Υἱοὺς ἔχει ὁ
+spiritalem generationem Daniel fllios habet, quos Δανιὴλ κατὰ τὴν αὐτὴν πνευματικὴν γενεὰν, οὖς
+genuit ejus prophetia. Filios enim carnales non ha- ἐγέννησεν ἡ προφητεία αὐτοῦ" υἱοὺς γὰρ σαρκιχοὺς
+buit, quippe qui spado erat, ut aiunt, Idque mani- οὐχ Écyev: εὐνοῦχος γὰρ ἦν, ὡς φατι. Καὶ δῆλον
+festum est ex eo quod traditus est principi spado- ὑπὸ τούτων γὰρ παρεδόθη τῷ ἀρχιευνούχῳ. Ἐὰν ov
+num. Si igitur tres isti viri Noe, Job et Daniel in- οἱ τρεῖς οὗτοι ἄνδρες, Νῶε, xai Ἰὼδ, xal Δαγιῆλ,
+venti fuerint in terra peccatrice, hi in justitia sua εὑρεθῶσιν ἐν τῇ ἁμαρτούσῃ γῇ, οὗτοι ἐν' τῇ διχαιο-
+salvabuntur **.. Acsi dicat : Etiam qui inventi fue- σύγῃ αὐτῶν σωθήσονται: ὡσεὶ ἔλεγε" Καὶ ἐὰν d-
+rint illis similes. ρεθῶσιν ὡς Νῶε, καὶ Ἰὼδ, καὶ Δανιήλ.
+
+Si filii et filie relinguentur 33, Pro eo ac dicat : Ἐὰν υἱοὶ xal θυγατέρες ὑποκλειφρθῶσιν. "vi
+non relinquentur.. Ipsi soli Noe, Daniel et Job in τοῦ, οὐχ ὑπολειφθήσονται. Αὐτοὶ μόνοι Νῶε, χαὶ
+justitia sua liberabunt animas 4499 suas, proprias Δανιὴλ, xot Ἰὼδ ἐν τῇ διχαιοσύνῃ αὐτῶν ῥύσονται
+videlicet. Est eniin etiam in aliis diving Scripture τὰς ψυχὰς αὐτῶν, τὰς ἰδίας δηλονότι ἔστι γὰρ x
+
+" Ezech. xrv, 13. "Ezech. xiv, 14. 59 Gen. vir, 1. Ezech, xiv, 46, 48, 30, "5 ibid, 20. "ib.
+
+
+==== PDF page 0427 ====
+809 SELECTA IN EZECIIIELEV. .ORIO
+
+ἀλλαχοῦ τῆς θεοπνεύστου Γραφῆς τοιοῦτον εἶδος φρά- A locis ejusmodi species locutionis, qu: negationem
+σεως, ἄρνησιν ἔχον πρόδηλον, ὡς τὸ εἰρημένον τῷ — habet manifestam, quemadmodum dictum est ab
+Ἡλί πρὸς τὸν ᾿Αχαάδ- Ζῇ Κύριος ὁ Θεὸς τῶν δυς Elia ad Achab δ᾽ : Vivit Dominus Deus virtutum,
+γάμεων, ὁ Θεὸς Ἰσραὴ, ᾧπέρ ἐσμεν ἐνώπιον — Deus. Israel, in cujus conspectu sumus, si annis istis
+αὐτοῦ, el ἐπὶ τὰ ἔτη ταῦτα δρόσος xal ὑετὸς ἀγὰ — erit ros et pluvia per tolam terram. Sic et Dominus
+πᾶσαν γῆν ἔσται. Οὕτω xa ὁ Κύριος ἐν τῷ κατὰ — in Marci Evangelio *5 : Generatio hec signum qua
+Μάρχον Εὐαγγελίῳ, ὅτι, 'H γεγεὰ αὕτη σημεῖον — rit : amen, amen dico vobis , si dabitur generationi
+ἐπιζητεῖ. ᾿Αμὴν, ἀμὴν «έγω ὑμῖν, εἰ δοθήσεται — huic signum, hoc est, non dabitur. His item simile
+τῇ γενεᾷ ταύτῃ σημεῖον" τουτέστιν οὐ δοθήσεται. — est quod in Psalmis habetur ?*: Sicut juravi in
+Kai τὸ ἐν ψαλμοῖς εἰρημένον τούτοις ὅμοιον: Ὡς — ira mea, si. introibunt. in requiem meam, Dictum
+ὥμοσα ἐν τῇ ἐργῇ μου, el εἰσελεύσονται εἰς τὴν — est enim. pro, non introibunt.
+
+χατάπαυσιν. ᾿Αντὶ γὰρ τοῦ, οὐχ εἰσελεύσονται, εἴ-
+
+prat. .
+
+Οὗτοι ἐξάγουσιν υἱοὺς xal θυγατέρας. Τοῦτο Hi educunt filios et filias 3, Interrogative istui
+γατὰ ἐρώτησιν ἀναγνωστέον " Εἰ ἐχείνοις, φησὶ, μίαν legendum. Si illis, inquit, post unius ultionis minas
+ἐχδίχησιν ἠπειλημμένοις οὐχ ἀρχήσουτι NGs xal Δα- B non sufficient Noe, Daniel et Job, nunquid hi, cum
+νιὴλ xai Ἰὼδ, οὗτοι δυνήσονται, τῶν τεσσάρων ἐχ- quadruplex illata fuerit ultio, poterunt educere ex
+δικήσεων ἐπαγομένων, ἐξαγαγεῖν τοῦ ὀλέθρου υἱοὺς interitu filios suos et filias? Ecce ipsi egredientur
+αὐτῶν xai θυγατέρας; Ἰδοὺ αὐτοὶ ἐχπορεύσονται ᾿ ad vos, qui priores captivi abducti estis , collatis.
+πρὸς ὑμᾶς τοὺς προαιχμαλωτισθέντας, xai τῇ mapa- — '€ vestris malis eum illorum erumnis, hoc vobis
+θέσει τῶν ἐπελθόντων αὐτοῖς καχῶν ὑμεῖς παραχλη- erit solatio quod his minora longe passi estis.
+θήσεσϑε ἥττονα πολλὰ παθόντες.
+
+ΚΕΦ. IE. CAP. XV.
+Τῶν ὄντων ἐν τοῖς ξύλοις δρυμοῦ. Ξύλα 6pu- Quo sunt inter ligna silve *^. Ligna silva illic
+
+uoo x&vsi τὰ ἄγρια νοητέον, πεύχην, xai τὰ ὅμοια. — quoque silvestria intelligenda sunt, picea, et si-
+Συγχρῖναι δὲ βούλετα! διὰ τούτου πρὸς τὰ λοιπὰ — milia, Vult autem his verlis Israelem:cum reliquis
+ἔθνη τὸν Ἰσραὴλ, ὡς ἄμπελον γεωργίας ἀπολαύσαντα — gentibus. comparare , tanquam vineam quz legis
+νόμου, ἱερέων xal προφητῶν ἐπαγγελίας, xa ναοῦ — cultura profecerit, sacerdotum  prophetarumque
+ἁγίου, xai πολλῶν τῶν θαυμάτων, αὐτομάτου πυρὸς — annuntiatione, templo sancto, miraculorum copia,
+ἀναλίσχοντος τὰς θυσίας, φωνῆς φερομένης ἀπὸ τοῦ  spontanco igne victimas consumente, voce pro-
+
+ἱλαστηρίου τῶν χερονὄιμ,, χαὶ ἑτέρων ὁμοίων. manante ex cherubinorum propiliatorio, aliisque
+similibus.
+"Ex τοῦ πυρὸς ἐξελεύσονται. "Ex τῆς αἰχμαλω- De igne egredientur ??. Cum e captivitate Na-
+
+σίας τοῦ Ναδουχοδονόσορ ὅταν ἀναχληθῶσι, λήψεται — buchodonosor revocati fuerint, apprehendet eos
+αὐτοὺς ἑτέρα ἡ Obsomastavou, ἤγουν διὰ Τίτου, Τὴν — alia Vespasiani, qum scilicet. per Titum inducta
+
+συνέχειαν τῶν συμφορῶν μηνύει. est. Continuas fore calamitates denuntiat.
+ΚΕΦ. Iq. . CAP. XVI.
+Kal obx ἔδησων τοὺς μαστούς cov. Ὃ iv Εἰ non ligaverunt mamillas tuas "9, Qui in
+
+πρώτῃ θεωρίξ γενόμενος οὐχ ἔξω τῆς σοφίας θηλά- — prima contemplatione est, non extra sapientiam
+ζει, ἀλλ᾽ ἕνδον ἐξ αὑτῆς τρέφεται. Καλῶς οὖν εἶπόν — lac sugit, sed intra ex ipsa nutritur. Bene igitur
+τινες δύο μαστοὺς τὰς δύο Διαθήχας, ἀφ᾽ ὧν θηλά- — dixerunt quidam, duo ubera duo Testamenta esse,
+ζουσι τὰ νήπισ * xai ol θηλάζοντες οὗτοί εἰσιν, ἀφ’ — ex quibus lac sugunt parvuli, suntque hi lactentes,
+ὧν χατηρτίσατο Κύριος αἶνον, τοῦ χαταλῦσα: ἐχθρὺν ex quibus Dominus perficit laudem, ut destruat
+xai ἐχδιχη τήν. inimicum et ultorem *!.
+
+Οὐδὲ ἐφείσατο ὁ ὀρθωῖμός cov. Τουτέστιν, ob p — Neque pepercit oculus tuus *.. Hoc est, non tui
+συνεπάθησας ἑαυτῇ, φεισαμένη τοῦ ποιῆσαι xàv ἕν — ipsa miserta es, parcens facere vel unum quid
+τῶν προλεχθέντων, ἵνα χἀμὲ χινήσης εἰς συμπά- —Corum qui antea dicta sunt, αἱ me ad commise-
+θειαν. rationem moveres.
+
+Kal 6ujA0ov. xal διὰ σοῦ. Ὃ Θεὸς ἀπαθὴς ἐστιν, Εἰ transivi per te "3. Deus ab omni immunis
+ὡς xai ἄτρεπτος, xoi ἄχτιστος. Ποιχίλαι δὲ αὐτοῦ — affectu est, quemadmodum etiam est immutabilis
+αἱ πρόνοιαι χατὰ τὴν ποιχιλίαν τῶν οἰχονομουμένων: Εἱ inereatus.. Varig autem. sunt ejus providentiz
+πάντων γάρ ἔστι ποιητής ὥς τινας μὲν εἶναι οἶχος — pro eorum qui providentia reguutur, diversitate.
+μίας θυμοειδεῖς, τὰς δὲ ζηλοτυποειδεῖς " ὁμοίως 6 — Omnium enim auctor 4.340 est : sie vero ut. ejus
+χαὶ τοῖς πντυματιχοῖς δούλοις εἶναι οἰχονομίας yá- — quxdam dispensationes iram pr:ferant, quxdam
+Qs, xal δόξης, καὶ ἀγαλλιάσεως, £x τοῦ ἑνὸς xal — semulationem, Ad viros item spiritales quod atti
+ἀτρέπτου, καὶ ἀπαθοῦς xal παντοδυνάμου Θεοῦ. net, dispensationes gratie sunt, el glorie, et ex-
+sullaionis , ex uno, immutabili, impassibili et omnipotente Deo.
+
+À [il Reg. xvii, 1. 55 Marc. viii, 19. ?* Psal. xciv, 11. ?" Ezech. xiv, 332. "ibid. xv, ἃ. ? ibid. 7.
+M jbid. xvi, ὁ. "' Psal. vir, ὅ. ^ Ezech. xvi, ὅ. ** ibid. 8.
+
+PATROL, Gn. XIII. 26
+
+==== PDF page 0428 ====
+δὲ} EX ORIGENE . 812
+
+Ejusdem. Compatitur Deus miserendo : non enim A Τοῦ αὐτοῦ. Συμπάσχει ὁ Θεὸς τῷ ἐλεῆσαι" οὐ
+
+visceribus caret. γὰρ ἄσπλαγχνος ὁ Θεός.
+
+Et lavi te in aqua "». Lavacro et gratia. sancti Kal ξιλουσά σε ἐν ὕδατι. Τῷ λουτρῷ xa) τῇ yà-
+Spiritus, verboque sanctificante. pitt τοῦ ἁγίου Πνεύματος, xa τῷ ἁγιρποιῷ λόγῳ.
+
+Et unzi te in oleo ". Unguentum est inhabitatio Kal ἔχρισά σε ἐν ἐλαίῳ. Χρίσμα ἐστὶν ἐνοίχη-
+sancti Spiritus in scientia veritatis.- σις τοῦ ἁγίου Πνεύματος ἐν γνώσει τῆς ἀληθείας.
+
+Et indui te variis **.. Indumentum varium habi- Kal ἐγέδυσά σὲ xouAa. "Ἐνδυμά ἔστι ποιχῇλον
+tus est , variis ornatus virtutibus , dogmatum veri- ἡ £x τῶν ποιχίλων ἀρετῶν χοσμουμένη ἕξις, ix ὃδο-
+tate, piisque actionibus. Ὑμάτων ἀληθείας xal πράξεως εὐσεθοῦς.
+
+Εἰ calceavi te hyacintho V. Ilyacintho mundo Kal ὑπέδυσά σε ὑάκινθον. Ὑάχινθον χαθαρὸν
+ornavit gressum, exuens ex eo inductam morlalita-— τὴν χίνησιν ἐκόσμησεν, ἀποδύσας ἐξ αὐτῆς τὴν ἔπεισ-
+iem. Est et symbolum universe vitz. αχθεῖσαν νεχρότητα. Ἔστι δὲ xal τοῦ παντὸς βίου
+. σύμθολον.
+
+7 Ejusdem. Anim quoque hzc aptari queant ab eo Τοῦ αὐτοῦ. Δύναται δὲ τις xal ἐπὶ ψυχῆς αὐτὰ
+
+qui calceum dixerit operandi facultatem impedi- ἁρμόσαι, ὑπόδημα λέγων τὸ ἀπαραπόδιστον τῶν ἔρ-
+mentis liberam; cingulum, tuta mentis consilia ; B. γων᾽ τὴν ὃὲ ζώνην, τὸ ἀσφαλίζεσθαι τῆς διανοίας τὰ
+amictum , demissis oculis in veritate stare; armil- βουλεύματα " περιδόλαιον δὲ, τὸ χάτω νεύοντα ἐπὶ τῇς
+las, nihil quod absurdum sit, facere; torquem, ἀληθείας ἑστηχέναι" τὰ δὲ ψέλλια, τὸ μὴ τι τῶν ἀτό-
+dicendi in bono libertatem ; rotulas, obsequentem πων πράττειν " χάθεμα 0b, τὴν ἐπὶ τῷ xai παῤῥη-
+legi animum ; coronam gloriationis, Dei promissio" — g(ay* τροχίσχους δὲ, τὴν περὶ τὸν νόμον εὐπείθειαν᾽'
+nem, quam recte agentibus destinavit. στέφανον δὲ καυχήσεως, τὴν τοῦ Θεοῦ ἐπαγγελίαν, ἣν
+τοῖς χατορθοῦσιν ἀφώρισεν.
+
+Εἰ cinzi te bysso "5. Omnino byssus veritatis ve- Kal ἔζωσά cs βύσσῳ. Σύμθολον τῆς ἀληθείας ἡ
+reque castitatis symbolum est; ac si dicat : Te βύσσος πάντως xal τῆς ἀληθοῦς σωφροσύνης ἀντὶ
+mihi ascivi mecumque duxi, ut quasi vilem quam- τοῦ, 'Qxsíoo& os, χαθάπερ τινὰ γυναῖκα εὐτελῆ
+dam muliercalam inverecunde discinctam circum- ἀσχημόνω; ἄζωστον περιάγειν.
+ducerem.
+
+Ejusdem. Amictum illic quoque hemiphorium Τοῦ αὐτοῦ. Περιθόλαιον δὲ κἀκεῖ τὸ ἡμιφόριον.
+(quasi breve palliolum) dicit. Trichaptum etiam ibi ὙΤρίχαπτον δὲ x&xet τὸ ἀπὸ χρυσοῦ χατεσχευασμένον.
+vestem auro textam dicit.
+
+Ejusdem. Dat Deus armillas in manus animae, C τοῦ αὐτοῦ. Δίδωσιν ὁ θεὸς ψέλλια ἐπὶ τὰς χεῖρας
+occasiones nempe bonorum operum, sicut et ipsa τῆς ψυχῆς, ἀφορμὰς τῶν ἀγαθῶν πράξεων, ὡς xol
+opera virtute Spiritus sancti. Sunt enim armillg αὐτὰς τὰς πράξεις τῇ δυνάμει τοῦ ἁγίου Πνεύματος.
+
+symbolum actionis. Σύμθολον γὰρ πράξεως τὰ ψέλλια.
+
+Ejusdem. Inauris circa nares, est suaveolens ve- Tov αὐτοῦ. Ἐνώτιόν ἔστι περὶ τὸν βυχτῆρα, ἡ
+raque mysteriorum scientia. εὐωδεστάτη τῶν μυστηρίων ἀληθὴς γνῶσις.
+
+Ejusdem. Motulz super aures , velut inauris ma- Τοῦ αὐτοῦ. Τροχίσχοι δὲ περὶ τὸ οὕς, olov ἐνώτιον
+gna aurez, divina sunt eloquia, ex quibus mens ve- μέγα χρυσοῦν, τὰ θεῖα λόγια, ἐξ ὧν ὁ νοῦς συγχροτεῖ
+ritatis scientiam sibi conflat. ἑαυτῷ τὴν τῆς ἀληθείας γνῶσιν.
+
+Ejusdem. Corona gloriatienis, est omni labe Τοῦ αὐτοῦ. Στέφανος xavyf,GetG ἐστι τὸ ἀνεπί-
+
+carens opus , doctrina veritatis perfectum. ληπτον ἔργον, δόγμασιν ἀληθείας τετελειωμένον.
+
+Ejusdem. Mundus auro argentoque conflatus, ille Tov αὐτοῦ. Κόσμος ἐστὶν Ex χρυσίου xal ἀργυ-
+est quem e divinis sententiis ac sacris eloquiis mens ρίου, ὁ ἐχ νοημάτων θείων καὶ λόγων ἱερῶν συνιστά-
+sibi comparat. μένος τῷ ἡγεμονιχῷ.
+
+Ejusdem. Τρίχαπτα sunt, ac sidiceret, seusa p Τοῦ αὑτοῦ. Τρίχαπτά ἐστιν, οἷον ὡσεὶ ἔλεγε,
+valde densa, profunda, vel varia ob diversa virtu- σφόδρα ἰσχνὰ νοήματα, βαθέα, ἣ ποικίλα δὲ διὰ τὰ
+tum genera. διάφορα εἴδη τῆς ἀρετῆς.
+
+4.831 Εἰ incensum 9. Incensum et oleum, ea est Kal τὸ θυμίαμα. θυμίαμα καὶ ἔλαιόν ἐστιν f; μετὰ
+
+oratio qux ad Deum cum scientia emittitur e mente, γνώσεως ἀναπεμπομένη προσευχὴ τῷ Θεῷ Ex τοῦ
+et qua Deus delectatur. νοῦ, f; συνήδεται Θεός.
+'— Et divaricasti crura tua omni. transeunti δ, Cru- Kal διήγαγες cà σκέλη σου παγτὶ ἐν παρόδῳ.
+rium nomine motum subinnuit, quo mola est Τὴν χίνησιν τοῦ νοῦ ἠνίξατο διὰ τοῦ σχέλους, ἐν ᾧ
+meus in omnem transitum. Transitus autem dicitur ἐχινήθη εἰς πᾶσαν πάροδον. Πάροδος δὲ λέγεται, τὸ
+id quod non ambulat secundum veritatem. Veritas μὴ ὁδεῦον κατὰ τὴν ἀλήθειαν" ἡ γὰρ ἀλήθεια εἶπεν,
+enim dixit δ᾽ : Ego sum via, Quidquid igitur ex ad- ὅτι, Ἐγώ εἶμι ἡ ὁδός. Πᾶν οὖν τὸ ἐξεναντίας νοούμε-
+verso intelligitur, transitus dicitur. voy πάροδος λέγεται.
+
+Εἰ fornicata es tripliciter*. Id est frequenter. Kal ἐξεπόρνευσας τρισσῶς. ᾿Ἀντὶ τοῦ, πολλαχοῦ"
+
+* Ezech. xvi, 9, " ibid.  **ibid. 40. 57 1014.  **ibid. "ihid. 18. "* ibid. 25. *' Joan. xiv, 6.
+53 Ezech. xvi, 25. .
+
