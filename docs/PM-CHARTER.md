@@ -127,6 +127,16 @@ expanding scope.
   may be from a parallel coordinator. The Wave 6.1 / Wave 6.2 file-vanishing
   incident hit because the two coordinators wrote into the same `tools/apply_*`
   script namespace without cross-awareness; this rule prevents recurrence.
+- **Subagent staging-file protection.** Subagents within a coordinator's wave
+  also MUST NOT delete sibling subagents' staging files (e.g., files named
+  `_*.json`, `*_citations.json`, `*.tmp.*`, `_*_shas.tmp`, etc., that are
+  in-flight intermediates produced by other subagents in the same wave).
+  Coordinator briefings MUST instruct subagents to leave any such files alone
+  even if they appear inside the coordinator's assigned output directory. The
+  Wave 3 Sib Or subagent deleted Montgomery's `_montgomery_citations.json`
+  staging file mid-flight; Montgomery's pipeline survived only because it
+  had already written its final output. Future briefings enumerate this
+  explicitly to prevent silent destruction of sibling-subagent state.
 - **Plugins**: `code-review`, `pr-review-toolkit`, `frontend-design` are installed and
   available. Use when relevant.
 - **Test runs**: `pm2 stop study-companion` before any pytest run (port 5111

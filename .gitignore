@@ -56,3 +56,9 @@ external-resources/greek/migne-pg81-archiveorg/
 
 # Sefaria API response cache (rebuildable from the live API; not source-of-truth)
 external-resources/sefaria-cache/
+
+# Manually-downloaded source PDFs for Wave 7 OCR-prep (public-domain originals,
+# but heavy and re-fetchable from the URLs documented in the audits + per-language
+# _OCR-PREP-NOTES.md). The OCR text files derived from these live under
+# external-resources/{language}/ and are tracked.
+daniel/

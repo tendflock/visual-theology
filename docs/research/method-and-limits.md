@@ -149,6 +149,40 @@ explicitly rather than hidden):
   Theodotion textual question on Daniel substantively beyond passing references in
   surveyed scholars (Goldingay, Collins, Hartman/Di Lella note it; the project does
   not adjudicate).
+- **Pellican (Konrad Pellikan) on Daniel**. Pellican's Daniel commentary lives in
+  his *Commentaria Bibliorum* (1532–1539, Zürich) within the *Prophetae
+  Posteriores Omnes* volume; full-text exists in BSB digitale-sammlungen
+  (`bsb10142935`) and on Google Books, but neither produces a working PDF
+  download under any of (a) BSB direct legacy endpoint, (b) BSB modern Mirador
+  segment download, (c) Google Books PDF export, (d) e-rara, or (e) archive.org
+  full-text search. Resource is research-library-accessible but not effectively
+  free-online. Pellican coverage in the corpus relies on the existing Reformation
+  cluster (Bullinger 1571 + Œcolampadius 1530 + Melanchthon 1543 + Lambert 1528
+  *In Apocalypsim* — surveyed in Wave 7) without his independent voice.
+- **Mede Latin original** (*Clavis Apocalyptica*, 1627 + later editions). No
+  open-access scan located on archive.org / e-rara / BSB / Google Books in the
+  D-1.5 audit search. Cooper 1833 English translation IS verified on archive.org
+  and is the corpus's witness for Mede; the Latin canonical text is research-
+  library-accessible only (Cambridge / Bodleian / EEBO). Acquisition deferred.
+- **Origen primary Daniel surface — PG 13 yields only 1 substantive cluster.**
+  The D-1.5 audit recommended PG 13 as the primary Origen-on-Daniel source.
+  OCR-prep-Greek confirmed (via direct grep of archive.org's whole-volume PG 13
+  djvu.txt) that PG 13 has NO contiguous "Selecta in Danielem" block — only 6
+  scattered Daniel allusions across the volume, of which only the Ezek 14:14
+  Noah-Daniel-Job typology cluster (cols 805-810, *Selecta in Ezechielem*
+  cap. XIV) is substantive. The OCR file at
+  `external-resources/greek/origen-pg13-daniel-fragments.txt` captures that
+  cluster only. Origen's primary Daniel-engaging surface for Wave 7 dispatch
+  is therefore **CCEL *Contra Celsum*** (where Origen's Daniel typology +
+  Son-of-Man arguments live) via the planned external-html backend, NOT a
+  contiguous PG 13 commentary surface as the audit assumed.
+- **Abrabanel, *Mayyenei ha-Yeshuah*** (full original-Hebrew text). HebrewBooks 23900
+  is the canonical free digitization but Cloudflare blocks all programmatic
+  download attempts; manual browser download is the only currently-known path.
+  Status: pending Bryan's manual-download intervention; if that succeeds, OCR-
+  prep-Hebrew completes and Abrabanel becomes a Wave 6.3 voice. If browser
+  download also fails, Abrabanel stays a documented gap and Wave 6.3 dispatches
+  with the other two Hebrew/Judeo-Arabic voices (Saadia + Yefet 1–6) only.
 
 ## 4. Definition of "primary voice"
 

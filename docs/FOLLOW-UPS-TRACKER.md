@@ -228,3 +228,222 @@ Four advisory items, all deferred:
   Disposition: **defer indefinitely**.
 - **Sefaria / YU links out of scope** — explicitly excluded from OCR-1
   scope. Disposition: **acknowledged, no action**.
+
+---
+
+## Wave 3 codex review (2026-04-30) — ACTIVE
+
+Audit at `/tmp/wave3-codex-audit.md`. Verdict: **PASS-with-conditions**.
+5/5 strict-validate; 236/236 citation verifications independent of codex.
+35 `directly-quoted` over-applications flagged across the 5 files.
+
+- **35 dq over-application relabels** distributed as:
+  Driver 4 (lines 160, 797, 849, 968 → 2 pa + 2 si);
+  Montgomery 4 (130, 893, 1100, 1217 → 2 pa + 2 si);
+  Charles 11 (348, 432, 463, 484, 693, 766, 808, 973, 1306, 1327, 1438 →
+  9 pa + 1 si + 1 duplicate-pa); Beale NIGTC 13 (233, 317, 662, 724,
+  745, 837, 927, 1233, 1254, 1302, 1323, 1350, 1377 → 6 pa + 7 si);
+  Sib Or 3 (296, 494, 515 → 1 pa + 2 si).
+  Disposition: **address-before-Wave-4** in a Wave-3 cleanup session.
+  Build a `tools/apply_wave3_fixes.py` script analogous to
+  `tools/apply_wave2_fixes.py` that applies the relabels precisely as
+  flagged. Run validator + sweep + tests after; commit as a single unit.
+
+- **Beale NIGTC tradition tag — `reformed-amil` flagged as borderline.**
+  Codex recommends switching to `evangelical-biblical-theology` or
+  `evangelical-cross-book-reception` for cross-Beale tag uniformity (the
+  existing `beale-use-of-daniel-in-revelation.json` uses
+  `evangelical-cross-book-reception`; M10 §6 of the sufficiency map
+  classifies Beale/Hamilton as Evangelical-BT). The Wave 3 dispatch
+  briefing called the work "reformed-amil major Revelation," which is
+  why the subagent landed on that tag. Codex's argument: Beale himself
+  uses "inaugurated millennialism" + "eclecticism / redemptive-historical
+  modified idealism" as self-descriptors, not a confessional Reformed-
+  amil label.
+  Disposition: **bring-to-Bryan** during the Wave-3 cleanup session.
+  This is a tradition-cluster vocabulary decision (PM-Charter §9 escalation
+  trigger). Default action if no input: keep `reformed-amil` and add a
+  `notes` field explaining Beale's self-labels.
+
+- **passageCoverage cleanups — 8 entries to remove or move to
+  crossBookReadings.**
+    - Driver: `Rev 13` (source-note level only; belongs in
+      `crossBookReadings[]`)
+    - Montgomery: `Mark 13`, `Matt 24`, `Rev 1`, `Rev 13` (textual-variant
+      and parallel-note material, not substantive treatment)
+    - Beale NIGTC: `Matt 24`, `Mark 13`, `1 En 37-71` (crossBook rows
+      weakly anchored; NIGTC quote support inadequate)
+  Codex marks Driver/Montgomery `1 En 37-71` and Charles `1 En 37-71` as
+  borderline-but-acceptable (each scholar has a substantive Son-of-Man /
+  Parables note). Disposition: **address-before-Wave-4** with the dq
+  relabel pass.
+
+- **Sib Or filename × resourceId mismatch.** File is named
+  `sibylline-oracles-charlesworth-otp2.json` but its `resourceId` is
+  `LLS:OTPSEUD01` because Sib Or actually lives in OTP Vol 1, not Vol 2
+  as the briefing said. The pivot is correct (data > spec); but future
+  maintainers may be misled by the "otp2" filename. Codex recommends a
+  `notes`/`auditNotes` field documenting the deliberate pivot, or a
+  follow-up rename to `sibylline-oracles-charlesworth-otp1.json`.
+  Disposition: **address-before-Wave-4**. Default action: rename in the
+  Wave-3 cleanup session and update any references; or, if rename costs
+  too much, add a top-level `notes` field documenting the pivot.
+
+- **Beale NIGTC × Beale monograph topical overlap — accepted with
+  condition.** Codex confirms the two Beale entries are not redundant
+  (NIGTC adds Rev 20 inaugurated millennialism, Rev 17 emperor-count
+  adjudication, full commentary exegesis). The condition: NIGTC's
+  `Matt 24`, `Mark 13`, `1 En 37-71` rows currently recapitulate
+  monograph material without adequate NIGTC quote support; addressed by
+  the passageCoverage cleanup above.
+
+- **Charles source-table fragments overused as direct quotes.** Several
+  Charles citations cite verified-but-unintelligible source-table
+  fragments ("Likewise in Dan. 7:9", "appear to have suggested the
+  clauses in our text", "Here again our author has drawn upon Daniel").
+  These are quote-sufficiency problems, not quote-verification problems.
+  Subset of the 11 Charles relabels above. Disposition: **address as part
+  of the dq-relabel pass**.
+
+- **[charter violation, MEDIUM] Sib Or subagent deleted other coordinators'
+  staging files.** The Wave 3.5 subagent removed `_*.json` files from
+  `docs/research/scholars/` including `_montgomery_citations.json` (which
+  was Montgomery's in-flight staging file, not Sib Or's). Montgomery's
+  pipeline survived (final output verified 51/51). But this violated the
+  PM-Charter §5 cross-coordinator coordination rule: "Coordinators (and
+  their subagents) MUST NOT delete or overwrite files outside their
+  assigned scope." Disposition: **fold-into-Wave-4-coordinator-prep**.
+  Update the parallel-coordinator briefing template to add an explicit
+  "do not delete sibling staging files matching `_*.json`,
+  `*_citations.json`, `*.tmp.*`, etc." rule for subagents. The Wave 4
+  briefing should enumerate this explicitly.
+
+- **[advisory] Subagent harness friction with Write tool path
+  permissions.** Driver and Sib Or subagents both reported the harness
+  blocked Write into `docs/research/scholars/` and they had to work
+  around via `python3 -c` + `os.write` / Path.write_text-inside-script
+  hacks. Outputs are correct but the workaround is fragile. Disposition:
+  **defer indefinitely** unless it blocks future waves.
+
+---
+
+## OCR-prep × 5 + OCR-1.5 (2026-04-30 / 2026-05-01) — ACTIVE
+
+- **[gap, MEDIUM] Pellican on Daniel — manual-download exhausted.** BSB
+  legacy endpoint, BSB modern Mirador, Google Books PDF export, e-rara,
+  and archive.org full-text search all failed to produce a working PDF.
+  Logged as a permanent gap in `docs/research/method-and-limits.md` §3a.
+  Wave 7 dispatches without Pellican; the existing Reformation cluster
+  (Bullinger + Œcolampadius + Melanchthon + Lambert) carries the load.
+  Disposition: **schedule-for-after-Wave-7** — re-attempt acquisition if
+  a research-library scan surfaces or if free-online holdings get
+  re-digitized; non-blocking for Wave 7 PASS.
+
+- **[gap, LOW] Mede Latin original — no open-access scan located.**
+  D-1.5 audit search did not find Cambridge / Bodleian / EEBO open-access
+  digitizations of *Clavis Apocalyptica*. Cooper 1833 English translation
+  is verified on archive.org and serves as the corpus's Mede witness.
+  Disposition: **schedule-for-after-Wave-7** — same trigger as Pellican.
+
+- **[blocked, MEDIUM] Abrabanel *Mayyenei ha-Yeshuah* — HebrewBooks
+  Cloudflare-blocked.** OCR-prep-Hebrew restart confirmed 403 on six
+  HebrewBooks endpoints with browser-class UA and Accept-Language headers.
+  No fabrication: no output file was created. Notes file at
+  `external-resources/hebrew/_OCR-PREP-NOTES.md` has the complete
+  hand-off command sequence for browser-side download. Disposition:
+  **fold-into-Wave-6.3-coordinator-prep** — Bryan's manual browser
+  download is the only currently-known path; if it succeeds, OCR-prep-
+  Hebrew runs the cache-honoring re-invocation. If the manual download
+  also fails, Abrabanel becomes a permanent gap in `method-and-limits.md`
+  and Wave 6.3 dispatches without him.
+
+- **[audit error, IMPORTANT] Saadia attribution: Klein 1977, not Hurvitz
+  1977.** OCR-prep-Judeo-Arabic established that the YU DSpace thesis on
+  Saadia's Aramaic Daniel is by Klein, not Hurvitz as audit §B2 stated.
+  Disposition: **address-when-Wave-6.3-touches-audits** — D-1J pass-3 or
+  Wave-6.3 coordinator prep should correct the attribution in the audit
+  doc and in any survey briefing that references the source.
+
+- **[scope correction, IMPORTANT] Saadia OCR scope: edited body starts
+  Dan 2:1, not Dan 2:4b.** Codex caught that Klein's edited Aramaic body
+  begins at Dan 2:1 (the scope description on the thesis title page says
+  "2:4b–7:28" but the actual edited text is broader). Wave 6.3 survey
+  should cite from Dan 2:1 onward, not Dan 2:4b. Disposition:
+  **fold-into-Wave-6.3-coordinator-prep** — survey briefing notes the
+  expanded scope.
+
+- **[boundary, IMPORTANT] Yefet ben Eli OCR contains a second bound
+  work.** Margoliouth 1889 print binds Yefet's Daniel commentary together
+  with "THE PALESTINIAN VERSION" (a different work, likely a Karaite
+  Hexapla witness). Yefet body runs lines 1–9741; the Palestinian Version
+  begins at line 9742. The OCR file
+  `external-resources/judeo-arabic/yefet-ben-eli-margoliouth-1889.txt`
+  spans both. Disposition: **fold-into-Wave-6.3-coordinator-prep** —
+  Wave 6.3 Yefet survey briefing must instruct subagents to read only
+  lines ≤ 9741 OR the file must be split into two separate text files
+  (`yefet-ben-eli-margoliouth-1889.txt` truncated at line 9741 + a
+  separate `palestinian-version-margoliouth-1889.txt` for the bound
+  second work, which is out of pilot scope but useful as a reception-
+  history footnote). Pick whichever is cleaner during K-5-prep.
+
+- **[scope decision pattern, INFO] Bible-scale Fraktur slice technique.**
+  OCR-prep-German located the Luther 1545 Bibel Daniel preface (PDF
+  pp. 915–938 in a 1,535-page volume) via streaming the archive.org
+  djvu.xml WORD-content search rather than full-volume OCR (which would
+  have been ~13h for `frk` Fraktur). Pattern documented in
+  `external-resources/german/_OCR-PREP-NOTES.md`. Disposition:
+  **defer indefinitely** — informational only; future Bible-scale
+  Fraktur sources can reuse the technique.
+
+- **[follow-on, LOW] Saadia + Yefet: 4 codex conditions in OCR-prep
+  notes await transcription.** Per OCR-prep-Judeo-Arabic report, codex
+  flagged 4 conditions captured in
+  `external-resources/judeo-arabic/_OCR-PREP-NOTES.md` "Codex review
+  findings" section that should be promoted into this tracker by a
+  follow-on PM-Edit. Disposition: **address-before-K-5** — PM reads the
+  notes file and adds entries here before the K-5 commit. (Self-
+  reference: this entry is the placeholder.)
+
+- **[audit redirect, IMPORTANT] Origen primary surface: PG 13 → CCEL
+  *Contra Celsum*.** OCR-prep-Greek confirmed PG 13 has no contiguous
+  Origen Daniel commentary; only the Ezek 14:14 Noah-Daniel-Job
+  typology cluster is substantive (captured in
+  `external-resources/greek/origen-pg13-daniel-fragments.txt`).
+  Wave 7 Origen dispatch must source the primary Daniel-engaging surface
+  from CCEL *Contra Celsum* (where Origen's Son-of-Man + Daniel typology
+  lives) via the planned external-html backend, NOT from PG 13. The
+  PG 13 OCR remains useful as a corroborating fragment file but is not
+  the primary surface. Logged as a gap-redirect in
+  `docs/research/method-and-limits.md` §3a. Disposition:
+  **fold-into-Wave-7-coordinator-prep** — Wave 7 Origen survey briefing
+  must specify CCEL *Contra Celsum* as the primary surface + the PG 13
+  fragment as supplementary. Also surfaces the latent question of
+  whether external-html backend implementation should be added to the
+  Wave-7 prerequisite list (currently CCEL extraction is via
+  extract_ocr.sh --html mode, which OCR-1 implemented).
+
+- **[survey discipline, IMPORTANT] Abrabanel OCR-quality requires
+  visual-PDF-anchored quote extraction.** OCR-prep-Hebrew-pt-2 reported
+  acceptable-with-caveat quality on
+  `external-resources/hebrew/abrabanel-mayyenei-ha-yeshuah.txt`:
+  Daniel keyword density unexpectedly low (דניאל=16, חיות=20, קרן=24,
+  בן.אנש=0) due to OCR character substitutions corrupting Hebrew proper
+  nouns. The text is substantively usable but blind LLM extraction will
+  miss content. Wave 6.3 Abrabanel survey discipline: subagent reads the
+  source PDF (HebrewBooks 23900) in a viewer to identify Daniel-7-engaging
+  passages first, then locates the matching OCR substring as a short
+  consonantal phrase (3-7 Hebrew letters) for the quote anchor. Disposition:
+  **fold-into-Wave-6.3-coordinator-prep** — survey briefing must mandate
+  this workflow.
+
+- **[OCR re-do candidate, LOW] Abrabanel + Cyril Greek may benefit from
+  re-OCR with tighter parameters.** OCR-prep-Hebrew-pt-2 noted a
+  future re-OCR pass with `--psm 4` or watermark pre-suppression may
+  improve Abrabanel quality. Cyril Mai vol 2 already required `--psm 4
+  --dpi 300` to handle the parallel-column layout. Pattern: when an OCR
+  output is "acceptable with substantive error rate," try alternate
+  tesseract parameters before treating as final. Disposition:
+  **schedule-for-after-Wave-6.3** — re-attempt only if Wave 6.3
+  Abrabanel survey is materially blocked by OCR quality; otherwise
+  defer indefinitely (the visual-PDF-anchored discipline above mostly
+  obviates the need).
