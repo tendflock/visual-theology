@@ -1,0 +1,1489 @@
+{
+  "scholarId": "charles-icc-revelation",
+  "authorDisplay": "Charles",
+  "workDisplay": "ICC Revelation (1920)",
+  "resourceId": "LLS:ICC_REV",
+  "resourceFile": "ICC_REV.logos4",
+  "traditionTag": "critical-modern",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:23-27",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20",
+    "1 En 37-71"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom = Rome -- the Rev 13 first beast is identified explicitly with the Roman Empire and is read as 'the representation of the fourth kingdom in Daniel'.",
+      "C: Rev 13 beast = Dan 7:2-7 (the four beasts collapsed into one) -- Charles's signature genealogical claim that the seven heads composite the Daniel four-beast complex.",
+      "K (method): Source-critical / layered redaction -- every Daniel-engaging Revelation chapter is dissected into earlier Hebrew sources, Greek translations, our author's editing, later glosses, and harmonizing scribes.",
+      "L: Direct Hebrew/Aramaic dependence on Daniel -- John 'translated directly from the O.T. text' (including the Aramaic of Daniel) rather than quoting from a fixed Greek version."
+    ],
+    "moderate": [
+      "J: 'Son of man' in Dan 7:13 is corporate ('= the saints'), with the messianic individualization first appearing in 1 Enoch 46 -- Charles's notable disagreement with later evangelical readings that find the individual Messiah already in Daniel itself.",
+      "F: The corporate Daniel-7 saints reading is paired with Dan 7:9, 22, 26 as the source of the Rev 20:4 thrones-and-judgment scene, where 'the saints' will judge.",
+      "N: Daniel as one of four constantly-used prophetic books for the Apocalypse -- alongside Isaiah, Jeremiah, and Ezekiel ('he constantly uses Isaiah, Jeremiah, Ezekiel, and Daniel').",
+      "O: Literal-chiliastic / two-stage eschatology -- the Rev 20 millennium 'must be taken literally,' followed by the second resurrection and final judgment, after which heaven and earth vanish into nothingness before the great-white-throne judgment."
+    ],
+    "tentative": [
+      "Identifies an ironic-parody reading of Rev 17:8 -- 'was-and-is-not-and-shall-come' as a parody of the divine name (1:4, 8) -- but applies it primarily to the Nero-redivivus expectation rather than to Dan-7 directly.",
+      "Reads Rev 17:9-10's seven heads as a doublet (seven hills + seven kings, a scribal gloss layered on the original kings-only meaning) -- a source-critical move rather than a Daniel-engaged one."
+    ]
+  },
+  "distinctiveMoves": [
+    "Layered source-criticism applied to every Daniel-engaging chapter: Rev 13 has two Hebrew sources (the proto-Beast Apocalypse and 13:3c/8) plus our author's edits; Rev 17 has source A (Vespasian-era, Beast = Roman Empire) and source B (Nero-redivivus, Beast = living Nero with Parthian satraps), bound by an editor.",
+    "Identifies the seven heads of Rev 13/17 as a composite of all four Dan-7 beasts (heads added together) plus the fourth-beast's ten horns from Dan 7:24 -- an early statement of the cumulative-beast reading later canonized by Beale.",
+    "Reads 1 En 46:1's 'son of man' as the original messianic individualization of what was in Dan 7:13 a corporate saints designation -- the opposite trajectory from later evangelical scholarship which finds the messianic individual already in Daniel.",
+    "Holds that the 'description which in Daniel and 1 Enoch belongs to the Ancient of Days, is here transferred to the Son of Man' in Rev 1:14 -- an early statement of the Ancient-of-Days/Son-of-Man fusion-Christology now standard in Beale, Bauckham, Hurtado.",
+    "Insists on direct dependence on the Hebrew/Aramaic text of Daniel rather than a Greek version -- John translates afresh, with LXX/Theodotion only as secondary influence on his renderings.",
+    "Defends literal chiliasm against the Augustinian spiritualizing tradition: 'the prophecy of the Millennium in chap. 20 must be taken literally, as it was by Justin Martyr, Irenaeus, Victorinus of Pettau' -- a sober pre-dispensationalist millennialism."
+  ],
+  "uncertainties": [
+    "Charles is silent on the dating of Daniel itself (treats Daniel as an undisputed source-text without entering Maccabean-vs-sixth-century debates within this commentary).",
+    "Hedges on the relationship of Rev 17:11's eighth-king to Domitian -- concludes a Nero-redivivus reading against Moffatt's Domitian identification, but admits the textual surface is ambiguous.",
+    "Says little explicitly about how Rev 13's Christ-parody themes (slain-and-living beast vs slain-and-living Lamb) work theologically; treats them primarily as source-critical evidence for Hebrew Vorlagen.",
+    "Does not develop a self-conscious Christ-thread reading of Dan-7 son-of-man into Revelation; instead grounds the messianic Son-of-Man identification in 1 Enoch's Parables, with Daniel itself as a corporate-saints source."
+  ],
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Rome -- the Rev 13 first beast is the Roman Empire, and is identified as 'the representation of the fourth kingdom in Daniel.' Charles's exegetical genealogy thus collapses Daniel 7's four-beast schema into the single Roman beast of Revelation, with the heads-as-composite-of-the-four-beasts reading and the ten horns inherited from Dan 7:24.",
+      "commitment": "strong",
+      "rationale": "In the Rev 13 commentary Charles is unambiguous: 'The first Beast is the Roman Empire. The description of this Beast in 13:1-2abc is clearly based on Dan. 7:2-7. It comes up from the sea, as the four beasts in Daniel did ... It is evidently the representation of the fourth kingdom in Daniel, though it is a still more terrible monster than that depicted there.' In Rev 17 source A, 'the Beast can only be the Roman Empire,' though source B subsequently transforms the Beast into the demonic Nero-redivivus. The five-fallen / one-is / one-coming sequence in 17:10 starts the Roman emperor-list with Augustus.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "The first Beast is the Roman Empire.",
+            "sha256": "d5d29d49b76d2ec9b00ee7e442ce0adab0369f01b3d3e0f79f1da20216a94fb8",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "The description of this Beast in 13:1–2abc is clearly based on Dan. 7:2–7",
+            "sha256": "9ef4dd01a927194cb1ceb5358163057ef64293b50628dacae8803c8e80e72b96",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "It is evidently the representation of the fourth kingdom in Daniel",
+            "sha256": "527047e3defc63980edf5e6455c57f6ac63a763c64e7cee33f3503010f9bdbef",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "though it is a still more terrible monster than that depicted there",
+            "sha256": "6d0b4fb83bdb154190764db9e06f700de498138ba57417fede5eca843cbbb303",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1506,
+            "nativeSectionId": "COMMENT.17.INTRO.4"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.17.INTRO.4 — § 4",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.17.INTRO.4"
+          },
+          "quote": {
+            "text": "in 17:3, 7 the Beast can only be the Roman Empire",
+            "sha256": "c213f8bc97be3a87220fa14eb92081e6a5f6b57363890ac50ecb1cf818a542db",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1522,
+            "nativeSectionId": "P2...69"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...69 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...69"
+          },
+          "quote": {
+            "text": "The first five emperors are Augustus, Tiberius, Caligula, Claudius, Nero",
+            "sha256": "9462b854e63d899a95d961c0a28a15225b46eaa456c06946f202a0fef70e4ae4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn -> eschatological adversary lineage",
+      "position": "Rev 13's first beast collapses Daniel 7's four-beast complex into a single Roman beast: the seven heads are Charles's 'composite' of the heads of the four Dan-7 beasts, the ten horns are taken from Dan 7's fourth beast (and explicitly identified with Dan 7:24's ten kings at Rev 17:12), and the leopard/bear/lion likeness of Rev 13:2 is borrowed from Daniel's first three beasts. The Nero-redivivus expectation of source B then re-applies the same beast-figure as a satanic anti-Christ coming up from the abyss to lead the Parthian kings against Rome -- Charles's source-critical layering preserves both the original Roman-Empire identification and the demonic Nero overlay.",
+      "commitment": "strong",
+      "rationale": "Charles maps Rev 13:1-2 onto Dan 7:2-7 verse-by-verse: sea-origin from Dan 7:2-3, ten horns from the fourth beast of Dan 7:7, leopard/bear/lion features from the first three beasts of Dan 7:4-6. He notes that 'the number of its heads may be directly derived from adding together the heads of the four beasts.' At Rev 17:12 he writes simply 'dέκα βασιλεῖς. Cf. Dan. 7:24' -- the canonical source-citation. Source-critical analysis: 13:3c/8 is one Hebrew source (the Antichrist apocalypse with the slain-and-restored beast), 13:1-2/4-7a/10 is another (a Pharisaic-Quietist Jewish apocalypse against Rome), with our author's edits layered on top.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "the number of its heads may be directly derived from adding together the heads of the four beasts",
+            "sha256": "b69127f80d23022e162b9170bc719678fa0d54e77c6c0c24fd02092089f8f64b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "its ten horns are from the fourth beast, and its likeness to a leopard, its possession of the feet of a bear, and the mouth of a lion, are borrowed from the first three beasts",
+            "sha256": "22bac854b176ca15189b70857c5e74e02d7ede921362a1dc9f602ac3295a6d73",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1525,
+            "nativeSectionId": "P2...72"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...72 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...72"
+          },
+          "quote": {
+            "text": "δέκα βασιλεῖς. Cf. Dan. 7:24",
+            "sha256": "939b08496d0edc9931216eb7024f7df444503678c5991d2bb2e74069cd84ae08",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1388,
+            "nativeSectionId": "COMMENT.13.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.1 — The Two Beasts, 12:18–13",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.1"
+          },
+          "quote": {
+            "text": "The dragon foiled in his attempt to destroy the Messiah and His Community proceeds to the shore of the sea and summons from it the Beast (i.e. the Roman Empire)",
+            "sha256": "462ccf620ac9515e9292a7f344dd223e3d8bfdb060604217606a43d7c4604425",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1506,
+            "nativeSectionId": "COMMENT.17.INTRO.4"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.17.INTRO.4 — § 4",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.17.INTRO.4"
+          },
+          "quote": {
+            "text": "the Beast was not the Roman Empire (as originally in 17:3–10), but the living Nero returning from the East at the head of the Parthian kings",
+            "sha256": "091472aa9a45d7c8e2885b9c4b530b69fbe8842e2e2ccff99322e6785e13bf4b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1521,
+            "nativeSectionId": "P2...68"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...68 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...68"
+          },
+          "quote": {
+            "text": "In ὅτι ἦν καὶ οὐκ ἔστιν καὶ πάρεσται there is a parody of the divine name",
+            "sha256": "bfc1391cf9cbfa06c49d0c12c87e7eacdbc2ea4448d0aab7d9fa8f490d0b4c13",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man trajectory",
+      "position": "Dan 7:13's 'one like a son of man' is read corporately ('= the saints') in Daniel itself -- the messianic individualization is a post-Daniel development first attested in 1 Enoch 46:1. Rev 1:13 and 14:14's 'one like a son of man' inherits this individualized messianic reading, but the trajectory passes through 1 Enoch's Parables, not directly through Daniel. The Rev 1:13-16 vision then fuses Daniel's Ancient-of-Days description (Dan 7:9 white hair like wool) with Daniel's man-clothed-in-linen (Dan 10:5-6), transferring the divine-elder description to the risen Christ.",
+      "commitment": "moderate",
+      "rationale": "Charles's INTRO.7.7 source-table records: '14:14 homoion huion anthropou. 1 En 46:1 which first applies to the Messiah, this phrase which in Dan 7:13 = the saints.' The Rev 1:13 commentary echoes that 'long before the time of our Seer the phrase like a Son of Man in Dan. 7:13 was taken as a Messianic designation' -- the messianic reading is reception, not original-Daniel meaning. At Rev 1:14 Charles writes that John's 'text presupposes Dan. 7:9 and 1 Enoch xlvi. 1 ... It should be observed that the description which in Daniel and 1 Enoch belongs to the Ancient of Days, is here transferred to the Son of Man.' This is the early-twentieth-century academic precursor to the Bauckham-Hurtado Ancient-of-Days/Son-of-Man fusion-Christology, but with a corporate-Daniel base instead of an individual-messianic Daniel.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 672,
+            "nativeSectionId": "INTRO.7.7"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.7 — § 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.7"
+          },
+          "quote": {
+            "text": "which first applies to the Messiah, this phrase which in Dan 7:13 = “the saints.”",
+            "sha256": "60abb209c7d4307ddc475862301dbf0d82c285161614029f706ce0482b8241f2",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 994,
+            "nativeSectionId": "P...27"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...27 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...27"
+          },
+          "quote": {
+            "text": "long before the time of our Seer the phrase “like a Son of Man” (כְּבַר אֱנָשׁ) in Dan. 7:13 was taken as a Messianic designation",
+            "sha256": "8d6960de1ad28e49cce757d9a86c56494903ad86641bbfa719ea559d6f055506",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "Our text presupposes Dan. 7:9 and 1 Enoch xlvi. 1",
+            "sha256": "0f0a0dad27885ddc9e9236f8f50796a91635de444f8c0bc8ed4d0a9b97743b6e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "the description which in Daniel and 1 Enoch belongs to the Ancient of Days, is here transferred to the Son of Man",
+            "sha256": "1b4d63f92f43925a8a7ee65637993e58a6451e703503e382cac17c5749028c67",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 996,
+            "nativeSectionId": "P...29"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...29 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...29"
+          },
+          "quote": {
+            "text": "Here again our author has drawn upon Daniel",
+            "sha256": "0bbe4b4f946b7547804ed443a1cd3148c2be9029a25cca6962515d7fc632c55e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Saints of the Most High",
+      "position": "The Rev 20:4 'thrones, and they sat on them, and judgment was given to them' scene is grounded in Dan 7:9, 22, 26 -- the saints receiving judgment from the Ancient of Days. Charles reads this corporately: the martyrs reign with Christ for the millennium and exercise judgment, fulfilling the corporate Dan 7:13/22 reading. The Rev 20:11-15 great-white-throne judgment, by contrast, is Charles's notable departure from Dan 7's collegial court: 'whereas God has assessors seated on adjoining thrones in Dan. 7:9, here He judges alone.'",
+      "commitment": "moderate",
+      "rationale": "On Rev 20:4 Charles sees passages from Dan 7:9 (thrones placed), 7:22 (judgment given to the saints of the Most High), and 7:26 (the court sat) which 'appear to have suggested the clauses in our text.' The Rev 20:11-15 great-white-throne, however, departs from the Dan-7 collegial picture: God judges alone, after heaven and earth have vanished. The Rev 20:12 'books were opened' is a direct Dan 7:10 reuse: 'These books contain a record of all that men have done: cf. Dan. 7:10.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1666,
+            "nativeSectionId": "COMMENT.20B.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20B.COMM.1 — 20:4–6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20B.COMM.1"
+          },
+          "quote": {
+            "text": "Likewise in Dan. 7:9",
+            "sha256": "7835e9726fcce0672f90a5389608820327f99ca245cfa982e0b6d0933887c82b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1666,
+            "nativeSectionId": "COMMENT.20B.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20B.COMM.1 — 20:4–6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20B.COMM.1"
+          },
+          "quote": {
+            "text": "appear to have suggested the clauses in our text",
+            "sha256": "0ef087fb12f71a747b4f8b5ce3787b2dd5f8fe2481a2f2e87c59398f8938f0d7",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1678,
+            "nativeSectionId": "P2...192"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...192 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...192"
+          },
+          "quote": {
+            "text": "whereas God has assessors seated on adjoining thrones in Dan. 7:9, here He judges alone",
+            "sha256": "e3708abac9225376c60f78eba7813ca91cd3a1a471f8f981ee11c5ea02a6b976",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1680,
+            "nativeSectionId": "P2...194"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...194 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...194"
+          },
+          "quote": {
+            "text": "These books contain a record of all that men have done: cf. Dan. 7:10",
+            "sha256": "9c4f028f3c70b4402d96dda1b3bb10a8e6bccc027a57f46792cf264f794b1f9a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Dan <-> Rev)",
+      "position": "Daniel is one of four prophetic books John 'constantly uses' (Isaiah, Jeremiah, Ezekiel, Daniel), with major Daniel-shaping at Rev 1 (Dan 7+10 fused Christophany), Rev 13 (the four-beast composite Roman beast), Rev 17 (Dan 7:24 ten kings = Parthian satraps), and Rev 20 (Dan 7:9-26 thrones / 7:10 books opened). Charles's source-critical method foregrounds Daniel as a Hebrew/Aramaic Vorlage that John translates afresh, not as one filtered through a fixed Greek version.",
+      "commitment": "moderate",
+      "rationale": "INTRO.7.1 lists Daniel alongside Isaiah, Jeremiah, and Ezekiel as the four constantly-used prophetic books -- placing Daniel at parity with the great-prophets group, which Charles distinguishes from the lesser-prophets (Zechariah, Joel, Amos, Hosea) used 'in a less degree.' The detailed source-tables in section 3 ('Passages based directly on the Hebrew of the O.T. (or the Aramaic in Daniel)') record some 18 Daniel-derived clauses across Rev 1, 4, 9, 11, 13, 17, 20 -- Daniel functions as a continuous architectural source, not an occasional intertext.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 661,
+            "nativeSectionId": "INTRO.7.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.1 — § 1",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.1"
+          },
+          "quote": {
+            "text": "He constantly uses Isaiah, Jeremiah, Ezekiel, and Daniel",
+            "sha256": "64bb2571fa23362e780fb3633b47623f43ce4e922d7cba22b81cc0dad7152af2",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 666,
+            "nativeSectionId": "INTRO.7.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.3"
+          },
+          "quote": {
+            "text": "1:13 (14:14) ὅμοιον υἱὸν ἀνθρώπου",
+            "sha256": "6cc17f4a947055438070bbbecbfb3ad8be5c351cdc38dcf5ea5cabbd3ccf0128",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 666,
+            "nativeSectionId": "INTRO.7.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.3"
+          },
+          "quote": {
+            "text": "1:7b ὄψεται αὐτὸν πᾶς ὀφθαλμὸς",
+            "sha256": "921c52e87e013021916e9fc427264686215e14b644ff1e0b69edd2dd2f4adf4c",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 666,
+            "nativeSectionId": "INTRO.7.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.3"
+          },
+          "quote": {
+            "text": "1:18 ζῶν εἰμὶ εἰς τ. αἰῶνας τ. αἰώνων",
+            "sha256": "850f68d4068d3fc5901f632345892c343a55bf899297de4d583c1a15a362e1f6",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Genre -- apocalyptic and method",
+      "position": "Apocalyptic = a philosophy of history and religion, conveyed through dreams/visions/ecstatic experience supplemented by reason, that reproduces and reinterprets traditional materials. Charles's signature method is layered source-criticism: every Daniel-engaging Revelation chapter is dissected into earlier Hebrew sources, Greek translations, our author's editing, and later glosses. He combines this with Contemporary-Historical, Religious-Historical, and Traditional-Historical methods, against the Spiritualizing tradition that lost the contemporary-Roman horizon for over a millennium.",
+      "commitment": "strong",
+      "rationale": "INTRO.15 explicitly enumerates the methods Charles applies in combination: Contemporary-Historical (the Apocalypse 'was originally directed against Rome'), Eschatological including literal Chiliasm, Philological, Literary-Critical (Redactional + Sources + Fragmentary hypotheses), Traditional-Historical, Religious-Historical, and Philosophical. The Sources hypothesis is applied 'to a limited extent' in 7:1-3, 7:4-8, 11:1-13, 12, 13, 17, 18 -- precisely the Daniel-engaging chapters. INTRO.13.6/section 8 demonstrates the layering on Rev 13 -- a 'Pharisaic Quietist' Hebrew source pre/post-70 AD lies behind 13:1abd/2/4-7a/10, with another Hebrew source behind 13:3c/8, edited by our author. Each new apocalypse is 'a reproduction and reinterpretation of traditional material.'",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 946,
+            "nativeSectionId": "INTRO.15.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.15.1 — § 1",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.15.1"
+          },
+          "quote": {
+            "text": "These scholars established as an assured result that the Apocalypse was originally directed against Rome",
+            "sha256": "69e9cec388c5f209616068b45f7e33d21803298d2ff235f079734b1348afefe9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 952,
+            "nativeSectionId": "P...CLXXXV"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...CLXXXV — § 5",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...CLXXXV"
+          },
+          "quote": {
+            "text": "the Apocalypse was composed of several visions written down at different times and in different places",
+            "sha256": "0c77a6abfafe8a4a2eb38f8ba56ab27b852ba7214281fdbcfb4ed3ca7ca0a9a2",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 952,
+            "nativeSectionId": "P...CLXXXV"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...CLXXXV — § 5",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...CLXXXV"
+          },
+          "quote": {
+            "text": "I have sought to show in 7:1–3, 7:4–8, 11:1–13, 12, 13, 17, 18",
+            "sha256": "48a076c6f98519937557ced45e19776d1bca91c8352315d9004406a187b5bbd6",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 954,
+            "nativeSectionId": "INTRO.15.6"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.15.6 — § 6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.15.6"
+          },
+          "quote": {
+            "text": "Each new apocalypse is to some extent a reproduction and reinterpretation of traditional material",
+            "sha256": "4f50e115aa19345bb79454dac0488cb9c8140c643a0723a75f0a150661d0f7df",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1380,
+            "nativeSectionId": "COMMENT.13.INTRO.6"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.INTRO.6 — § 6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.INTRO.6"
+          },
+          "quote": {
+            "text": "I therefore assume the use of Hebrew sources by our author in this chapter",
+            "sha256": "6dbcd7738ec2f1b1e73e4784a0a9e699aa5781e87b2326d25319564d640d8dd9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "NT use of Daniel (Hebrew/Aramaic vs Greek source)",
+      "position": "John 'translated directly from the O.T. text' -- including the Aramaic of Daniel -- and never quotes from a fixed Greek version. He is occasionally influenced in his rendering by LXX or proto-Theodotion forms, but his renderings of Dan 7:9 (Ancient of Days hair-like-wool), Dan 7:13 (one like a son of man), Dan 7:25 (forty-two months), and Dan 10:5-6 (the man clothed in linen) are independent translations of the Hebrew/Aramaic, often agreeing with one Greek tradition against another. This is Charles's textual-critical answer to Beale's later 'Greek mediation' question: for Charles, John reads Daniel in Aramaic.",
+      "commitment": "strong",
+      "rationale": "INTRO.7.2 is explicit that John 'translated directly from the O.T. text' and 'did not quote from any Greek Version,' though he was influenced in his renderings by the LXX and a proto-Theodotionic recension. The section 3 source-tables record Daniel allusions where John's text agrees with LXX against MT (Rev 1:14 'wool white' vs MT 'pure wool'), Theodotion against LXX (Rev 4:1 'after these things'), or against both. The Rev 13 commentary repeatedly retroverts unintelligible Greek clauses into Hebrew Vorlagen.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1380,
+            "nativeSectionId": "COMMENT.13.INTRO.6"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.INTRO.6 — § 6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.INTRO.6"
+          },
+          "quote": {
+            "text": "I therefore assume the use of Hebrew sources by our author in this chapter",
+            "sha256": "6dbcd7738ec2f1b1e73e4784a0a9e699aa5781e87b2326d25319564d640d8dd9",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 666,
+            "nativeSectionId": "INTRO.7.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.3"
+          },
+          "quote": {
+            "text": "1:13 (14:14) ὅμοιον υἱὸν ἀνθρώπου",
+            "sha256": "6cc17f4a947055438070bbbecbfb3ad8be5c351cdc38dcf5ea5cabbd3ccf0128",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "Our text presupposes Dan. 7:9 and 1 Enoch xlvi. 1",
+            "sha256": "0f0a0dad27885ddc9e9236f8f50796a91635de444f8c0bc8ed4d0a9b97743b6e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Literal-chiliastic / two-stage eschatology: After the fall of Rome and the destruction of the two beasts (Rev 18-19), Satan is bound for a literal 1000 years (Rev 20:1-3) during which the martyrs reign with Christ (first resurrection, Rev 20:4-6). At the close of the millennium Satan is released, finally defeated, and cast into the lake of fire; heaven and earth then vanish into nothingness, and the second resurrection brings the remaining dead (righteous and wicked) before God's great-white-throne -- a Dan-7-grounded judgment scene where God judges alone, by the books opened (Dan 7:10) plus the book of life. Charles defends literal chiliasm against the Augustinian spiritualizing tradition.",
+      "commitment": "moderate",
+      "rationale": "INTRO.15.3 commits to literal chiliasm explicitly: 'the prophecy of the Millennium in chap. 20 must be taken literally, as it was by Justin Martyr, Irenaeus, Victorinus of Pettau' -- a sober pre-dispensationalist millennialism with patristic warrant. INTRO.12.5 summarizes the two-resurrection structure: only martyrs share the first resurrection, the rest (righteous and wicked) await the great-white-throne. Rev 20:1-3 commentary makes the binding-of-Satan literal. Rev 20:11 commentary insists on 'the literal vanishing of the former heaven and earth into nothingness' before the second-resurrection judgment.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 949,
+            "nativeSectionId": "INTRO.15.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.15.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.15.3"
+          },
+          "quote": {
+            "text": "the prophecy of the Millennium in chap. 20. must be taken literally",
+            "sha256": "6f1391e389f0a64c90b73edee1b459a2334aa567f7093680b1f7d32de77ac383",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1616,
+            "nativeSectionId": "COMMENT.20A.INTRO.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20A.INTRO.1 — § 1",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20A.INTRO.1"
+          },
+          "quote": {
+            "text": "Now that Rome has fallen (18), the hostile nations been destroyed, and the two Beasts cast into the lake of fire (19:19–20), there remains no obstacle to the manifestation of the kingdom save the presence of Satan still on earth",
+            "sha256": "baf3620a272bee12a8e19c3e2d92b462411c65fc5fefe576e04c5ef9969b6890",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1678,
+            "nativeSectionId": "P2...192"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...192 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...192"
+          },
+          "quote": {
+            "text": "whereas God has assessors seated on adjoining thrones in Dan. 7:9, here He judges alone",
+            "sha256": "e3708abac9225376c60f78eba7813ca91cd3a1a471f8f981ee11c5ea02a6b976",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1680,
+            "nativeSectionId": "P2...194"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...194 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...194"
+          },
+          "quote": {
+            "text": "These books contain a record of all that men have done: cf. Dan. 7:10",
+            "sha256": "9c4f028f3c70b4402d96dda1b3bb10a8e6bccc027a57f46792cf264f794b1f9a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Rev 1:13-18 fuses Dan 7 (Ancient of Days) with Dan 10 (man clothed in linen) and applies both to the risen Christ. The robe-and-golden-girdle (1:13) is from Dan 10:5; eyes-as-fire (1:14b) from Dan 10:6; voice-as-many-waters from Ezek 43:2 (Charles notes that John rejected the Dan 10:6 'voice of a multitude' for the Ezekiel rendering); the Ancient-of-Days white hair (Dan 7:9) is the most striking transfer -- 'the description which in Daniel and 1 Enoch belongs to the Ancient of Days, is here transferred to the Son of Man.' Rev 1:7's coming-on-clouds combines Dan 7:13 with Zech 12:10 (LXX-Theodotion). Rev 1:13's 'one like a son of man' inherits the post-Daniel Messianic reading of Dan 7:13, mediated via 1 Enoch 46:1 -- for Charles, Dan 7:13 itself originally meant 'the saints.'",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "Our text presupposes Dan. 7:9 and 1 Enoch xlvi. 1",
+            "sha256": "0f0a0dad27885ddc9e9236f8f50796a91635de444f8c0bc8ed4d0a9b97743b6e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "the description which in Daniel and 1 Enoch belongs to the Ancient of Days, is here transferred to the Son of Man",
+            "sha256": "1b4d63f92f43925a8a7ee65637993e58a6451e703503e382cac17c5749028c67",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 996,
+            "nativeSectionId": "P...29"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...29 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...29"
+          },
+          "quote": {
+            "text": "Here again our author has drawn upon Daniel",
+            "sha256": "0bbe4b4f946b7547804ed443a1cd3148c2be9029a25cca6962515d7fc632c55e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 994,
+            "nativeSectionId": "P...27"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...27 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...27"
+          },
+          "quote": {
+            "text": "long before the time of our Seer the phrase “like a Son of Man” (כְּבַר אֱנָשׁ) in Dan. 7:13 was taken as a Messianic designation",
+            "sha256": "8d6960de1ad28e49cce757d9a86c56494903ad86641bbfa719ea559d6f055506",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 666,
+            "nativeSectionId": "INTRO.7.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.3"
+          },
+          "quote": {
+            "text": "1:13 (14:14) ὅμοιον υἱὸν ἀνθρώπου",
+            "sha256": "6cc17f4a947055438070bbbecbfb3ad8be5c351cdc38dcf5ea5cabbd3ccf0128",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13:1-2 'is clearly based on Dan. 7:2-7' -- the first beast comes from the sea like the four Daniel beasts, its seven heads composite the heads of the four, its ten horns are from the fourth beast, and the leopard/bear/lion features are borrowed from the first three. Charles concludes: 'It is evidently the representation of the fourth kingdom in Daniel.' The Beast is 'the Roman Empire' explicitly. Source-critically, two Hebrew sources lie behind Rev 13:1-10: a Pharisaic-Quietist Jewish apocalypse against Rome (13:1abd, 2, 4-7a, 10) and a separate Antichrist apocalypse with the slain-and-restored beast (13:3c, 8 -- doublet of 17:8). Our author's editing layers in the parody-of-Christ themes (wounded head, horns like a lamb, 'was-and-is-not-and-shall-come' as parody of the divine name).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "The first Beast is the Roman Empire.",
+            "sha256": "d5d29d49b76d2ec9b00ee7e442ce0adab0369f01b3d3e0f79f1da20216a94fb8",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "The description of this Beast in 13:1–2abc is clearly based on Dan. 7:2–7",
+            "sha256": "9ef4dd01a927194cb1ceb5358163057ef64293b50628dacae8803c8e80e72b96",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "It is evidently the representation of the fourth kingdom in Daniel",
+            "sha256": "527047e3defc63980edf5e6455c57f6ac63a763c64e7cee33f3503010f9bdbef",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1389,
+            "nativeSectionId": "COMMENT.13.COMM.2"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.2 — The First Beast, 13:1–10",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.2"
+          },
+          "quote": {
+            "text": "the number of its heads may be directly derived from adding together the heads of the four beasts",
+            "sha256": "b69127f80d23022e162b9170bc719678fa0d54e77c6c0c24fd02092089f8f64b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1380,
+            "nativeSectionId": "COMMENT.13.INTRO.6"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.INTRO.6 — § 6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.INTRO.6"
+          },
+          "quote": {
+            "text": "I therefore assume the use of Hebrew sources by our author in this chapter",
+            "sha256": "6dbcd7738ec2f1b1e73e4784a0a9e699aa5781e87b2326d25319564d640d8dd9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1388,
+            "nativeSectionId": "COMMENT.13.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.13.COMM.1 — The Two Beasts, 12:18–13",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.13.COMM.1"
+          },
+          "quote": {
+            "text": "The dragon foiled in his attempt to destroy the Messiah and His Community proceeds to the shore of the sea and summons from it the Beast (i.e. the Roman Empire)",
+            "sha256": "462ccf620ac9515e9292a7f344dd223e3d8bfdb060604217606a43d7c4604425",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Rev 17 is a composite of two Hebrew/Greek sources edited by our author. Source A (17:1c-2, 3b-6, 7, 18, partial 8-10) was written under Vespasian and identifies the Beast with the Roman Empire (the seven heads = the seven Roman emperors from Augustus, the sixth being Vespasian, the seventh briefly-reigning being Titus). Source B (17:11-13, 16-17, 14) was written later under the Nero-redivivus expectation: the Beast is the living Nero returning from the East at the head of the Parthian kings; the ten horns of 17:12 are explicitly tied by Charles to Dan 7:24 -- the Parthian satraps. Our author's editing converts both into the demonic-Nero coming-up-from-the-abyss reading, with 'was-and-is-not-and-shall-come' as ironic parody of the divine name 'was-and-is-and-is-to-come.' The seven-hills reading at 17:9 is a later glossator's interpolation, not Charles's primary identification.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1506,
+            "nativeSectionId": "COMMENT.17.INTRO.4"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.17.INTRO.4 — § 4",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.17.INTRO.4"
+          },
+          "quote": {
+            "text": "in 17:3, 7 the Beast can only be the Roman Empire",
+            "sha256": "c213f8bc97be3a87220fa14eb92081e6a5f6b57363890ac50ecb1cf818a542db",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1506,
+            "nativeSectionId": "COMMENT.17.INTRO.4"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.17.INTRO.4 — § 4",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.17.INTRO.4"
+          },
+          "quote": {
+            "text": "the Beast was not the Roman Empire (as originally in 17:3–10), but the living Nero returning from the East at the head of the Parthian kings",
+            "sha256": "091472aa9a45d7c8e2885b9c4b530b69fbe8842e2e2ccff99322e6785e13bf4b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1525,
+            "nativeSectionId": "P2...72"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...72 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...72"
+          },
+          "quote": {
+            "text": "δέκα βασιλεῖς. Cf. Dan. 7:24",
+            "sha256": "939b08496d0edc9931216eb7024f7df444503678c5991d2bb2e74069cd84ae08",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1521,
+            "nativeSectionId": "P2...68"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...68 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...68"
+          },
+          "quote": {
+            "text": "In ὅτι ἦν καὶ οὐκ ἔστιν καὶ πάρεσται there is a parody of the divine name",
+            "sha256": "bfc1391cf9cbfa06c49d0c12c87e7eacdbc2ea4448d0aab7d9fa8f490d0b4c13",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1522,
+            "nativeSectionId": "P2...69"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...69 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...69"
+          },
+          "quote": {
+            "text": "The first five emperors are Augustus, Tiberius, Caligula, Claudius, Nero",
+            "sha256": "9462b854e63d899a95d961c0a28a15225b46eaa456c06946f202a0fef70e4ae4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1522,
+            "nativeSectionId": "P2...69"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...69 — 17:8–18",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...69"
+          },
+          "quote": {
+            "text": "“The city of seven hills” was a familiar expression in classical writers",
+            "sha256": "56e769cf60464e3898fdfa099becd6de91346245374bc901d8f36c261652da68",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Rev 20:4's thrones-and-judgment scene is grounded in Dan 7:9, 22, 26 (the Ancient of Days seating, judgment given to the saints, the court sitting). Rev 20:11-15's great-white-throne diverges from Dan 7's collegial-court reading: 'whereas God has assessors seated on adjoining thrones in Dan. 7:9, here He judges alone.' Rev 20:12's 'books were opened' is a direct Dan 7:10 reuse. The millennium of 20:1-6 must be read literally, on the patristic warrant of Justin, Irenaeus, and Victorinus of Pettau, against the Augustinian spiritualizing tradition -- only the martyrs share the first resurrection (20:4-6). At the close of the millennium, after Satan's final release and defeat, heaven and earth vanish before the great-white-throne second-resurrection judgment.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1666,
+            "nativeSectionId": "COMMENT.20B.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20B.COMM.1 — 20:4–6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20B.COMM.1"
+          },
+          "quote": {
+            "text": "Likewise in Dan. 7:9",
+            "sha256": "7835e9726fcce0672f90a5389608820327f99ca245cfa982e0b6d0933887c82b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1666,
+            "nativeSectionId": "COMMENT.20B.COMM.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20B.COMM.1 — 20:4–6",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20B.COMM.1"
+          },
+          "quote": {
+            "text": "appear to have suggested the clauses in our text",
+            "sha256": "0ef087fb12f71a747b4f8b5ce3787b2dd5f8fe2481a2f2e87c59398f8938f0d7",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1678,
+            "nativeSectionId": "P2...192"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...192 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...192"
+          },
+          "quote": {
+            "text": "whereas God has assessors seated on adjoining thrones in Dan. 7:9, here He judges alone",
+            "sha256": "e3708abac9225376c60f78eba7813ca91cd3a1a471f8f981ee11c5ea02a6b976",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1680,
+            "nativeSectionId": "P2...194"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P2...194 — 20:11–15",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P2...194"
+          },
+          "quote": {
+            "text": "These books contain a record of all that men have done: cf. Dan. 7:10",
+            "sha256": "9c4f028f3c70b4402d96dda1b3bb10a8e6bccc027a57f46792cf264f794b1f9a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 949,
+            "nativeSectionId": "INTRO.15.3"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.15.3 — § 3",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.15.3"
+          },
+          "quote": {
+            "text": "the prophecy of the Millennium in chap. 20. must be taken literally",
+            "sha256": "6f1391e389f0a64c90b73edee1b459a2334aa567f7093680b1f7d32de77ac383",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 1616,
+            "nativeSectionId": "COMMENT.20A.INTRO.1"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§COMMENT.20A.INTRO.1 — § 1",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §COMMENT.20A.INTRO.1"
+          },
+          "quote": {
+            "text": "Now that Rome has fallen (18), the hostile nations been destroyed, and the two Beasts cast into the lake of fire (19:19–20), there remains no obstacle to the manifestation of the kingdom save the presence of Satan still on earth",
+            "sha256": "baf3620a272bee12a8e19c3e2d92b462411c65fc5fefe576e04c5ef9969b6890",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "1 Enoch 46:1 is the first locus where 'one like a son of man' (Dan 7:13's phrase) is applied to the Messiah. For Charles this is critical: in Daniel itself the phrase = 'the saints' (corporate), and the messianic individualization is a post-Daniel reception-historical development first attested in the Parables of Enoch. Rev 1:13/14:14 thus inherits a 1-Enoch-mediated reading of Dan 7:13, not a direct Daniel-individualized one. The Rev 1:14 Ancient-of-Days/Son-of-Man description-transfer also draws on 1 Enoch 46:1 alongside Dan 7:9.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 672,
+            "nativeSectionId": "INTRO.7.7"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.7 — § 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.7"
+          },
+          "quote": {
+            "text": "which first applies to the Messiah, this phrase which in Dan 7:13 = “the saints.”",
+            "sha256": "60abb209c7d4307ddc475862301dbf0d82c285161614029f706ce0482b8241f2",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 995,
+            "nativeSectionId": "P...28"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§P...28 — 9–20",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §P...28"
+          },
+          "quote": {
+            "text": "Our text presupposes Dan. 7:9 and 1 Enoch xlvi. 1",
+            "sha256": "0f0a0dad27885ddc9e9236f8f50796a91635de444f8c0bc8ed4d0a9b97743b6e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_REV",
+            "logosArticleNum": 672,
+            "nativeSectionId": "INTRO.7.7"
+          },
+          "frontend": {
+            "author": "Charles",
+            "title": "A Critical and Exegetical Commentary on the Revelation of St. John (ICC)",
+            "section": "§INTRO.7.7 — § 7",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Charles, ICC Revelation, §INTRO.7.7"
+          },
+          "quote": {
+            "text": "17:14 (Cf. 19:16) Κύριος κυρίων ἐστὶν καὶ βασιλεὺς βασιλέων",
+            "sha256": "515bf7aa2250c051d9d5b77beed0b54177cd6173279a1b3a158ddc74d899c90e",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ]
+}

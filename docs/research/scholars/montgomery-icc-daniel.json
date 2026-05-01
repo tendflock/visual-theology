@@ -1,0 +1,1239 @@
+{
+  "scholarId": "montgomery-icc-daniel",
+  "authorDisplay": "Montgomery",
+  "workDisplay": "ICC Daniel",
+  "resourceId": "LLS:ICC_DA",
+  "resourceFile": "ICC_DA.logos4",
+  "traditionTag": "critical-modern",
+  "fullTitle": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "1 En 37-71"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Bipartite Maccabean dating -- Visions (cc.7-12) 168-165 BCE in Antiochene crisis; Stories (cc.1-6) 3rd-century Babylonia. Aramaic philology rules out 6th-century date; Porphyry's thesis vindicated.",
+      "B: Fourth kingdom = Greece (Hellenistic empire) -- required by parallel with Dan 8 (Buck-Ram = Greece-Persia). Roman identification a later 'updating' as eschatological expectation was 'put off.'",
+      "C: Little horn = Antiochus IV Epiphanes -- anchored in 1 Macc parallels, the Sibylline Oracles 3.388-400, and the 3.5-year temple-profanation calendar.",
+      "E: Apocalyptic as 'process out of Prophecy' with transcendent dualism, intermediate angelic agencies, and theological determinism. Vision-allegory hermeneutic.",
+      "H: Earth-located, nationalistic-collective eschatology -- kingdom given to people of the saints, this-world locus, no developed Messiah figure.",
+      "J: Son of Man = symbolic personification of the people of the saints (Israel) -- explicitly NOT a Messianic figure (Messianic reading is secondary), NOT angelic-Michael, NOT mythological-Babylonian.",
+      "L: Historical-critical with text-critical and Aramaic-philological apparatus. OG vs. Theodotion at Dan 7:13 mapped systematically; 'hos palaios hemeron' diagnosed as pre-Christian textual error.",
+      "N: Cross-book coherence is literary dependence (downstream reception) -- En. 37-71, NT, Rev all depend on Dan 7. Personalization-into-Messiah is a secondary trajectory.",
+      "O: Single-fulfillment Antiochene referent -- Roman, Christian-Antichrist, Islamic re-applications are pious updatings, not original prophetic intent."
+    ],
+    "moderate": [],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Dating",
+      "position": "Bipartite Maccabean dating: cc. 7-12 composed seriatim during the first years of the Maccabean uprising, 168-165 BCE, before Judas' rededication of the temple; cc. 1-6 (the Stories) earlier, ca. 3rd century BCE in Babylonian provenance. Aramaic philology rules out a 6th-century date, putting Daniel's Aramaic no earlier than the 5th century. Porphyry's Maccabean thesis is taken as vindicated by modern scholarship.",
+      "commitment": "strong",
+      "rationale": "Montgomery's bipartite dating thesis is the foundational pre-Collins critical position. The Visions (cc. 7-12) are tied to the Antiochene crisis of 167-164 BCE on the basis of (1) the references to the temple's profanation but not yet its rededication; (2) the survey of Hellenistic history culminating in Antiochus IV; (3) the year-week and 3.5-year calculations matching the Antiochene profanation. The Stories (cc. 1-6) Montgomery places earlier, in 3rd-century Babylonia, on linguistic and provenance grounds. The Aramaic of Daniel is post-5th-century by Torrey-style philological tests (the z-to-d shift, etc.), excluding the traditional 6th-century date. Porphyry's Maccabean thesis, preserved in Jerome's polemic, is treated as vindicated by the cumulative weight of modern scholarship.",
+      "compositional": "Bipartite: Stories (cc. 1-6) composed in 3rd-century Babylonia from various traditional materials, by an author working with prior Daniel folk-traditions. Visions (cc. 7-12) composed seriatim in 168-165 BCE during the early Maccabean revolt, possibly by another hand. Cc. 7 itself may be a forerunner-apocalypse from 3rd century with Antiochene-period redactional touches; Montgomery leaves this open between Sellin/Holscher's two-stage model and a unitary Maccabean reading. Some additions/glosses identified (12:11-12, etc.).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 547,
+            "nativeSectionId": "INTRO.4.21.D"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.21.D — d. The Dating of the Two Sections",
+            "page": 96,
+            "pageEnd": 99,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.21.D (pp. 96–99)"
+          },
+          "quote": {
+            "text": "Cc. 7–12 belong to the first years of the Macc. uprising, 168–165 b.c., the four Visions to be regarded as composed seriatim",
+            "sha256": "865d3444781a73e9c1a0f617205eda62fe0c6c9df4dff2ed776cbd6e5e90c375",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 547,
+            "nativeSectionId": "INTRO.4.21.D"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.21.D — d. The Dating of the Two Sections",
+            "page": 96,
+            "pageEnd": 99,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.21.D (pp. 96–99)"
+          },
+          "quote": {
+            "text": "the Visions were composed well before the retaking of the temple and its purification, which latter event occurred Chislev (about December) 25, 165, according to the record just three years to the day after its profanation",
+            "sha256": "ef06344c6acccbd278324b986f5dd35f704784a0b8f6c8750483ece07787887c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 502,
+            "nativeSectionId": "INTRO.2.7"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.2.7 — §7. The Aramaic",
+            "page": 15,
+            "pageEnd": 20,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.2.7 (pp. 15–20)"
+          },
+          "quote": {
+            "text": "the whole weight of differences (as Torrey says: “the points of difference are what we need most to consider”) forces the present writer to hold that the Aram. of Dan. is not earlier than within the 5th cent.",
+            "sha256": "c6aa8315c89abb87243f274e4d6378e7ea395e3de7ccac5841e263995aedefeb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 552,
+            "nativeSectionId": "INTRO.4.23"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.23 — §23. Review of the Literature on Daniel",
+            "page": 105,
+            "pageEnd": 109,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.23 (pp. 105–109)"
+          },
+          "quote": {
+            "text": "His position as to the date of Dan. has been vindicated by most of modern scholarship.",
+            "sha256": "3baeb25601cde3f46224fbc40a51712b49fe1b201ac740fd81584b63c92704a9",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greece (the Hellenistic empire of Alexander and the Diadochi/Seleucids), explicit and required by the Buck-Ram of Daniel 8 (Greece-Persia) read in parallel with Daniel 2 and 7. Babylon-Media-Persia-Greece is the chapter's intended four-kingdoms scheme. The traditional Roman identification arose later as the Apocalyptic expectation was 'put off' and the prophecy updated to the Jews' new Roman mistress.",
+      "commitment": "strong",
+      "rationale": "Montgomery's argument runs: Daniel 11's exact survey of Hellenistic kings down to Antiochus IV fixes Greece as the climactic kingdom; Daniel 8 explicitly names Greece (the Buck) as the conqueror of the Medo-Persian Ram; analogy across the parallel four-kingdom schemes (Dan 2, Dan 7, Dan 8) requires that the fourth beast = Greece. The Median hegemony is preserved as the second kingdom on the strength of biblical prophecies about the Medes overthrowing Babylon (Isa 13:17, Jer 51:11) and of Daniel's separation between Darius the Mede and Cyrus the Persian. The Roman identification arose only later, as a moral 'updating' to keep the apocalyptic prophecy live for successive generations.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 596,
+            "nativeSectionId": "COMMENT.2.7"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7 — Chapter 7. The Vision of the Beasts and the Man",
+            "page": 666,
+            "pageEnd": 667,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7 (pp. 666–667)"
+          },
+          "quote": {
+            "text": "the present writer agrees with the great majority of modern commentators in understanding by the four successive metals or beasts the several empires of Babylonia, Media, Persia, Greece",
+            "sha256": "2e647cbaf14d11cf2e62a9a39c0035153eb266ad74747f0e498233a106068c96",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 537,
+            "nativeSectionId": "INTRO.4.19.C"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.C — c. The Historical Objective of the Book: The Four Monarchies",
+            "page": 59,
+            "pageEnd": 63,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.C (pp. 59–63)"
+          },
+          "quote": {
+            "text": "Now, analogy requires the identification of the fourth Beast with its successive horns in c. 7 with Greece as specified in c. 8.",
+            "sha256": "c3c0bf77da89ad5721d53a794f5d07a357f1f9d5d2187401eea82ba6640c32a1",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 537,
+            "nativeSectionId": "INTRO.4.19.C"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.C — c. The Historical Objective of the Book: The Four Monarchies",
+            "page": 59,
+            "pageEnd": 63,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.C (pp. 59–63)"
+          },
+          "quote": {
+            "text": "There is one ancient and very respectable reason why the Fourth Monarchy has been sought in Rome. With the putting off of the fulfilment of the Apocalyptic expectation of the consummation of the Kingdom of God, interpretation simply proceeded to keep the prophecy up to date.",
+            "sha256": "d9bb7fbc1123b75744585cf6fd607006c3353d85f71e28f778e58dac8574bb99",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 598,
+            "nativeSectionId": "COMMENT.2.7.2"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.2 — 2b–8",
+            "page": 669,
+            "pageEnd": 680,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.2 (pp. 669–680)"
+          },
+          "quote": {
+            "text": "this fearful figure meant to the Maccabæan Jew the Seleucide Hellenism which he knew",
+            "sha256": "9a1ea75464e3a9ad5519d58013b5c60add822a08e3c3271092cda58cdff624f0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn (Daniel 7)",
+      "position": "Antiochus IV Epiphanes, on the cumulative weight of: the cluster of Antiochene markers in vv. 7-8, 21, 25 (arrogant words, war on the saints, attempt to change times and law); 1 Macc 1:24 and 41ff. as direct historical analogues for the king's words and edicts; the 3.5-year period (= temple devastation 168-165 BCE); the Sibylline Oracles 3.388-400 already reading the ten horns as Antiochus and his Seleucid predecessors. Three uprooted horns most likely Heliodorus, Demetrius (the hostage), and a third Seleucid-house claimant.",
+      "commitment": "strong",
+      "rationale": "Montgomery treats the Antiochus identification as a continuous tradition reaching back to within decades of Daniel's publication: the Sibylline Oracles 3.388-400 (mid-2nd century BCE) already cite the ten horns and identify the 'stranger' with Antiochus; 1 Macc 1:24 and 1 Macc 1:41 ff. supply verbatim historical parallels for the horn's 'speaking big things' and for the change of laws/seasons. The 3.5 years = the temple profanation period from Era Sel. 145 (168 BCE) to Judas' rededication in Chislev 165 BCE; the 'time, times, and half a time' is a half-sabbatic-cycle calculation. The three uprooted horns are usually identified as Heliodorus + Demetrius + a third Seleucid-line claimant whom Antiochus eliminated. Montgomery follows von Gutschmidt and Bevan on the third horn detail.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 598,
+            "nativeSectionId": "COMMENT.2.7.2"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.2 — 2b–8",
+            "page": 669,
+            "pageEnd": 680,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.2 (pp. 669–680)"
+          },
+          "quote": {
+            "text": "The interpretation of the little horn as Antiochus is implicitly that of 1 Mac. (toward end of 2d cent.) and 3 Mac., ll.cc. It was also that adopted by Porphyry, Polych. and Aph. Syr.",
+            "sha256": "cb7a3bd085b563b8611a6ebce914eb7eed9c6f4bc5afeaa2576908dbf4332592",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 598,
+            "nativeSectionId": "COMMENT.2.7.2"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.2 — 2b–8",
+            "page": 669,
+            "pageEnd": 680,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.2 (pp. 669–680)"
+          },
+          "quote": {
+            "text": "The historical parallel for Antiochus Epiph. is given in 1 Mac. 1:24",
+            "sha256": "149d302f484c12e0bb5a752b778b7dd6cc5955134e050e959c878a30c774a9f9",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 600,
+            "nativeSectionId": "COMMENT.2.7.4"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.4 — 15–27",
+            "page": 689,
+            "pageEnd": 700,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.4 (pp. 689–700)"
+          },
+          "quote": {
+            "text": "The historical interpretation of this indictment is found in 1 Mac. 1:41 ff.",
+            "sha256": "e6b96470c5f2df0681a6b96a042b723c11ec5aadbe8f7823cccaa4be8faff0e6",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 600,
+            "nativeSectionId": "COMMENT.2.7.4"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.4 — 15–27",
+            "page": 689,
+            "pageEnd": 700,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.4 (pp. 689–700)"
+          },
+          "quote": {
+            "text": "Morgenstern, ‘The Three Calendars of Ancient Israel,’ Hebrew Union College Annual, 1924, p. 75, suggests that the passage refers to an attempt by Antiochus at revision of the calendar.",
+            "sha256": "fb8ca760499c4675a2f4da2cc9cc95cd7760e4a4f1770bff8afe3807b295b76b",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 600,
+            "nativeSectionId": "COMMENT.2.7.4"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.4 — 15–27",
+            "page": 689,
+            "pageEnd": 700,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.4 (pp. 689–700)"
+          },
+          "quote": {
+            "text": "The most natural terminus ad quem is Judas’ rededication of the temple in the month Chislev Era Sel. 148 = December 165 b.c.",
+            "sha256": "98465681c505a2f66e6fd0db10ee79a887b62f8b3b946bc0077537fba0f9a298",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Apocalyptic / revelation approach",
+      "position": "Daniel is the originating exemplar of biblical apocalyptic, defined as a 'process out of Prophecy' marked by a transcendent element (sharp this-world/other-world dualism), intermediate angelic agencies, theological determinism (foreordained history copied from heavenly archetype), exact calculations of years and days, and the apocryphon convention (a sealed book opened in the time of the end). The chapter's literary form is prose with poetical rhapsodies (vv. 9-10, 13-14, 23-27) -- vision-allegory, not coded historiography.",
+      "commitment": "strong",
+      "rationale": "Montgomery's section 20 is the most influential pre-Collins systematic treatment of apocalyptic as genre. Apocalyptic is a genuine outgrowth of biblical prophecy, not a foreign import; what distinguishes it is the transcendent element, the sharper this-worldly/other-worldly dualism, the use of intermediate angelic agencies, and theological determinism. The vision-allegory framework of Dan 7 -- beasts emerging from the agitated Great Sea, the divine Assize, the human-like figure on the clouds -- is treated as a literarily sublime form whose 'simplicity and reserve' is unmatched in subsequent apocalypses. The rhapsodic-poetical character of vv. 9-10, 13-14, and 23-27 is recognized; symbols are decoded by intra-vision interpretation (vv. 17-18, 23-27) plus comparative-religious analogies, not by mythological backreading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "The bk. belongs as a whole to the category of Apocalyptic, which itself is a process out of Prophecy.",
+            "sha256": "69de681541ca5a7d48976372168846f7c72ff99aa241eb6a3fca6c4c19753867",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "The feature that in general distinguishes later Apocalyptic from earlier Prophecy so called consists in the transcendent element.",
+            "sha256": "3454bada92ae82353560a0ddfac64480142a70cab2f5f527df4a9041ea87b90f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "a theological determinism which regards all history as foreordained, a copy stamped from the drama already enacted above, involving the exact calculation of secular years and days",
+            "sha256": "c61ff9af8c7b22845c1c3d0eb7a20cfb6a921a20602dc62f8f74c90504aac341",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 596,
+            "nativeSectionId": "COMMENT.2.7"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7 — Chapter 7. The Vision of the Beasts and the Man",
+            "page": 666,
+            "pageEnd": 667,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7 (pp. 666–667)"
+          },
+          "quote": {
+            "text": "the chap. is treated as on the whole prose with poetical rhapsodies",
+            "sha256": "f443638c9b1f850d3ede38edf9cd7c1229b395b3bdd3f751111f11e6951ebbed",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Earth-located, nationalistic-collective eschatology: God's kingdom is to be established on earth in the hands of his Saints (Israel); the resurrection of Daniel 12:2 is limited to 'many' from Israel, with this-world locus; the climax of the Visions is a final battle in the Holy Land in which the tyrant is overthrown by divine operation (not human Maccabean military action). Notably, no developed Messianic figure -- only the symbolic Son-of-Man.",
+      "commitment": "strong",
+      "rationale": "Montgomery emphasizes the earthward orientation of Daniel's eschatology against contemporaneous mythological readings. The kingdom in Dan 7:27 is given to 'the people of the saints of the Most High' -- earthly Israel. The resurrection of 12:2 is a partial, this-world resurrection, an emergency dogma born of the persecution context. The final battle culminates with 'the tyrant shall be overthrown by divine operation' -- Montgomery distinguishes this pacifistic divine-act eschatology from the Maccabean military program; Daniel represents 'the principled pacifistic wing' of the Chasidic party. There is, strikingly, no developed messianic figure: the Son-of-Man is symbolic, the kingdom is given to the collective saints.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "the consummation of the judgment is the donation to the Saints of the Highest ‘of the kingdoms under the whole earth,’ i.e., God’s kingdom is to be established on earth in the hands of his Saints",
+            "sha256": "f2223a88e4c803790aaa5223d8aae5261621ecd9ab4d26fe4f74904c0a92c755",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "Here is the usual Biblical nationalistic and secular eschatology without further development; the writer’s contribution is literary, not dogmatic. Noticeable is the lack of a Messianic figure",
+            "sha256": "e528a80d0603661d123bef803ae791a7c277108f80580505219b252247a38b7e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 542,
+            "nativeSectionId": "INTRO.4.20"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.20 — §20. The Theology of the Book and Its Place in Jewish Religion",
+            "page": 78,
+            "pageEnd": 87,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.20 (pp. 78–87)"
+          },
+          "quote": {
+            "text": "And the sphere of this resurrection is evidently this world.",
+            "sha256": "91b5513217ed4ac26a285ff9ff821eb2768bd7e1e3c32270ee0cabfa6a3eac86",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 547,
+            "nativeSectionId": "INTRO.4.21.D"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.21.D — d. The Dating of the Two Sections",
+            "page": 96,
+            "pageEnd": 99,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.21.D (pp. 96–99)"
+          },
+          "quote": {
+            "text": "the climax is expected in a final great battle in the Holy Land, when the tyrant shall be overthrown by divine operation",
+            "sha256": "bde5d40ff8cead74b29d947e94db0efa65a311fa6b224866a544f46ba1f26600",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Daniel 7:13-14)",
+      "position": "Symbolic personification of the people of the saints (Israel/the faithful Chasidic community), parallel to the Stone of Daniel 2 and to the bestial personifications of the Gentile empires. NOT a Messianic figure in the original sense; the Messianic interpretation, while ancient (Sibylline, Parables of Enoch, Akiba, Rashi), is a secondary personalization driven by the strikingness of the figure. NOT an angelic figure either (rejecting Schmidt's Michael theory and the Pan-Babylonist mythological school).",
+      "commitment": "strong",
+      "rationale": "Montgomery defends the symbolic-collective interpretation cumulatively from: (1) the explicit interpretation given in vv. 18 and 27 ('the saints of the Most High shall receive the kingdom' / 'sovereignty given to the people of the saints of the Most High') -- these are 'intentional replicas of v. 14'; (2) the parallel with the Stone of Dan 2 and with the bestial personifications of the empires; (3) the Semitic genius for personifying the people (cf. the I-Psalms, the Servant of YHWH); (4) the philological case that 'son of man' (bar enash) means simply 'a human' -- no built-in mystery. Three classes of competing interpretation are surveyed: personal-Messianic (Sibylline, En. 37-71, NT, rabbis, Aphraem with caveats), angelic-Michael (Schmidt, with Marduk-prototype baggage), and pan-Babylonian-mythological (Gunkel, Zimmern, Bousset, Gressmann, A. Jeremias). All three are rejected. Montgomery aligns with Meinhold, Bevan, Prince, Driver, Marti, Charles. Walvoord names Montgomery as the foil against whose collective reading conservative Christology must be defended.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 596,
+            "nativeSectionId": "COMMENT.2.7"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7 — Chapter 7. The Vision of the Beasts and the Man",
+            "page": 666,
+            "pageEnd": 667,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7 (pp. 666–667)"
+          },
+          "quote": {
+            "text": "There is more diversity of opinion concerning the interpretation of the Son of Man, whether he is to be regarded, like the Stone, as directly Messianic or as symbolical of the people of the saints; the latter view is held here.",
+            "sha256": "e53b64b602d06423b94ff5a0ec5c7caaf414d0926061c90084345b2c213726e0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "The writer thus agrees with the majority of recent comm. on Dan., with Mein., Bev., Pr., Dr., Mar., Cha.",
+            "sha256": "8dbe148475078f434765676fc12d50969d0619a4639af818a9b250d0bcf34413",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "The present writer submits that the symbolical interpretation of the Son of Man is wholly adequate to the chap.",
+            "sha256": "881dff6086e900f2b0f776707b661b2b28df803da8c5a51b3abfc11b99d2c5aa",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "However much a student, for one reason or another, may be inclined to find here a Messianic prophecy of a heaven-born Saviour coming to the rescue and rule of his people, nevertheless the strict exegesis of the chap. does not bear this out.",
+            "sha256": "20524e63939a114774aa92232ad493403794466551444f00baa44e930dd7a63b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "Acc. to v. 18 it is ‘the saints of the Most High’ who ‘shall receive the kingdom’; and in v. 27 ‘sovereignty and dominion … are given to the people of the saints of the Most High’; i.e., both statements are intentional replicas of v. 14.",
+            "sha256": "d6d3af45051214992eb03eee5059b8ad861845bc9f11d6095da19d276ab354c3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "Exactly, ‘son of man’ is ‘a human.’",
+            "sha256": "f5360488565747c4d1071fb42bdc904c8398e5de1d55d06951aa178279980c17",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "Not one of those ingenious scholars, working tirelessly over the same field, for which Bab. literature affords an enormous treasure, has been able to identify the Son-of-Man figure.",
+            "sha256": "a9deb00767a2b0c90cb4c6bc01bf85fb3623c4470ee8d66bd7cb88a989fd4585",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic / textual-philological method",
+      "position": "Historical-critical with intensive text-critical apparatus: the Old Greek (LXX/Chigi-Syrohexaplar) and Theodotion are independently weighed against MT (Hebrew/Aramaic); glosses, doublets, and Hexaplaric additions are isolated; Aramaic philology dates the language; Daniel as apocryphon (sealed-book convention) is read against parallel Egyptian prophetic-pseudograph genre (Demotic Chronicle, 3rd century). Apocalyptic genre treated as vision-allegory grounded in Hebrew prophetic precedent, NOT as cryptic prediction-history.",
+      "commitment": "strong",
+      "rationale": "Montgomery's commentary is foundationally text-critical. His section 11 reframes the OG as a 'staunenswerthe Leistung' (with Bludau) once glosses and Hexaplaric additions are filtered out; he rejects Jahn's and Charles's wholesale OG-preference. His section 7 places Daniel's Aramaic post-5th-century via Torrey's z-to-d criterion. The apocryphon thesis (section 19g) frames Daniel as the first specimen of technical apocrypha -- a sealed book of alleged antiquity disclosed at the moment of crisis -- paralleled by the Egyptian Demotic Chronicle of the 3rd century (a vaticinium-ex-eventu pseudograph with veiled allusions to Persian and Greek kings). At Dan 7:13 specifically, he weighs the variants 'with' (Theodotion, MT, Mark 14:62, Rev 1:7) vs. 'upon' (some OG, Matt 24:30, Justin) the clouds, and the famous OG 'hos palaios hemeron' (as the Ancient of Days) reading he diagnoses as a pre-Christian textual error (corruption of heos to hos), not a Christological reading.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 522,
+            "nativeSectionId": "INTRO.3.11"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.3.11 — §11. The Old Greek Version",
+            "page": 35,
+            "pageEnd": 39,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.3.11 (pp. 35–39)"
+          },
+          "quote": {
+            "text": "the translator worked faithfully word by word, especially in the obscure passages, and that the present muddled condition is largely due to the shuffling into the text of true glosses or doublets which once stood in the marg.",
+            "sha256": "f2605a0384aba3f72b34a53f53723a0f34252a5eaf4c3f5ee36b6993a91f2fee",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 502,
+            "nativeSectionId": "INTRO.2.7"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.2.7 — §7. The Aramaic",
+            "page": 15,
+            "pageEnd": 20,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.2.7 (pp. 15–20)"
+          },
+          "quote": {
+            "text": "It has therefore been necessary in the following Comm. to make as complete current reference as possible to the philological phenomena of the fresh texts.",
+            "sha256": "a79bcf9653bba541a93cf4e7d6fce5b972df978e5da4749eec197dcc1cab4b13",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 541,
+            "nativeSectionId": "INTRO.4.19.G"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.G — g. The Book as an Apocryphon",
+            "page": 76,
+            "pageEnd": 78,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.G (pp. 76–78)"
+          },
+          "quote": {
+            "text": "The bk. as a unit is an apocryphon, that is, a volume of alleged antiquity that had been purposely ‘hidden away’ until the emergency arrived for its publication.",
+            "sha256": "19794be07f9d2dd8883b1c9eb9286bd97ab7e4ca74bf47f7f71d191ef87ac23b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 541,
+            "nativeSectionId": "INTRO.4.19.G"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.G — g. The Book as an Apocryphon",
+            "page": 76,
+            "pageEnd": 78,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.G (pp. 76–78)"
+          },
+          "quote": {
+            "text": "The Visions of Dan. appear then to belong to a definite genre of religious literature exemplified very clearly in Egypt in the 3d cent.",
+            "sha256": "38e1143a00b80b3c6800a6f52c4f44831e35147dd9192d55cc4b4e4c51f113a5",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "There is no reason with some to prefer the tr. of 𝔊 ‘upon the clouds’; 𝕳 is vouched for by ‘pre-Theodotionic’ rdgs. of the N. T. and Fathers",
+            "sha256": "77c4f9329011c14a4881db0e9eb6b0a0fc9813e1a306bab5e06466e79d152664",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "𝔊 ὡς παλαιὸς ἡμερῶν, ancient error for ἕως π. ἡ., but pre-christian, as citation of it in Rev. 1:14 shows",
+            "sha256": "0de4d04bb73179a9b7a8dde0bee95588b5fe34c2a0bc26081f81e86fd42e748b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Cross-book coherence is a phenomenon of literary dependence (downstream reception), NOT shared prophetic intent. Daniel 7's imagery and Son-of-Man figure became the controlling source for subsequent apocalyptic -- En. 37-71, 2 Esd 13, Mark 14:62, Rev 1-13 are all dependent on Dan 7. The personalization-into-Messiah trajectory (En. 46:1ff, NT, rabbis) is a secondary trajectory off the original collective-symbolic referent.",
+      "commitment": "strong",
+      "rationale": "Montgomery treats the relationship between Dan 7 and later apocalyptic as a dependence chain, not a unified prophetic plan. Revelation's apocalyptic imagery is 'particularly dependent upon our passage'; the Parables of Enoch (En. 37-71) develop the Son-of-Man into a personal Messiah, and this trajectory feeds directly into Mark 14:62 and the NT Christology; 2 Esd 13 freely adapts Daniel's elements. The textual variants at Dan 7:13 (meta vs. epi tas nephelas) shape NT citation patterns: Theodotion's 'with the clouds' = Mark 14:62 / Rev 1:7; OG/Matthew/Justin = 'upon the clouds.' The coherence is genealogical (one influence stream), not coordinate (one prophetic plan executed across Scripture).",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "Reference may be made for the Apocalyptic parallels, amongst which those in Rev. are particularly dependent upon our passage.",
+            "sha256": "38c4148bd29921c760c94dab4bd933074341b24e0ce6499465be9f110e8e8a61",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "The dependence upon Dan. 7 is patent from the first reference, En. 46:1 ff.",
+            "sha256": "96249721a1eba7eaa9c4bf6e92b54d42f294525c5b84379492ed4a62898ce51b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "Without doubt this was the primitive judaistic understanding of the statement of the Lord at his trial, Mk. 14:62",
+            "sha256": "4966def3755fb32d949cb0c31084e69666a64b115373d2ded9c9c1482495c2ce",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "Θ μετὰ τῶν νεφελῶν = Mk. 14:62",
+            "sha256": "d8241064025cda86b4200420d00763c666b42a2f2327e05230a32adaf6b54507",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 493,
+            "nativeSectionId": "INTRO.1.2"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.1.2 — §2. Early Testimony to the Book and Its Place in the Canon",
+            "page": 2,
+            "pageEnd": 5,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.1.2 (pp. 2–5)"
+          },
+          "quote": {
+            "text": "the influence and language and the spirit of the bk. are powerful throughout the apocalyptic sections of the N. T., the Parousia passages of the Gospels, 2 Th. and esp. Rev.",
+            "sha256": "049d6493e23a7156261c9c14854b5c8faa8d1a823c656b694fe0903ca9135bee",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single-fulfillment historical referent: all four Visions converge on Antiochus IV and the Antiochene crisis. The Roman re-application is a secondary pious 'updating' as the original fulfillment was 'put off.' The 3.5 years and 1150 days are pre-eventum calculations made before the temple's rededication; rough fulfillment occurred (3 years rather than 3.5), so the Visions remain genuine prediction in a limited sense -- but the referent is solely Antiochene, not Roman, not future-eschatological.",
+      "commitment": "strong",
+      "rationale": "Montgomery's structure: the four Visions of cc. 7-12 'culminate in one and the same execrable tyrant' -- Antiochus IV. The 3.5 years and 1150 days are computed pre-eventum (before Judas' rededication); rough fulfillment happened in 3 years, so Daniel's prediction is genuine within its Antiochene horizon. Roman, medieval Christian (Antichrist), Islamic, and Protestant Antichrist re-applications are documented as a chain of subsequent re-keying, but they are not part of the original prophetic intent. This rules out both the dispensationalist future-Antichrist reading and the dual-fulfillment reading; Antiochus is not a 'type' but THE referent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 537,
+            "nativeSectionId": "INTRO.4.19.C"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.C — c. The Historical Objective of the Book: The Four Monarchies",
+            "page": 59,
+            "pageEnd": 63,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.C (pp. 59–63)"
+          },
+          "quote": {
+            "text": "all four Visions of the second half of the bk. culminate in one and the same execrable tyrant, in one and the same expected catastrophe of the Nation and the Holy City. He and his doings are the climax of the ‘kingdom of Greece.’",
+            "sha256": "93bb617eba9c665d730b39a88a0d096855fe818b895ba5d586470ccf0c82131b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 547,
+            "nativeSectionId": "INTRO.4.21.D"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.21.D — d. The Dating of the Two Sections",
+            "page": 96,
+            "pageEnd": 99,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.21.D (pp. 96–99)"
+          },
+          "quote": {
+            "text": "the 3½ years is a round figure, and the 1150 days an exact calculation based on terms wholly obscure to us; neither of the calculations was exactly fulfilled, hence they both must have been devised ante eventum",
+            "sha256": "729cb13bda0dc3a3f6223da045d457cb170296053b023091823888f768753ed1",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 600,
+            "nativeSectionId": "COMMENT.2.7.4"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.4 — 15–27",
+            "page": 689,
+            "pageEnd": 700,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.4 (pp. 689–700)"
+          },
+          "quote": {
+            "text": "With the interpretation of the figure here as the type of Antichrist (e.g., in Rev.), this historical ref. came to be entirely ignored",
+            "sha256": "054590bdbc629a851dd9b442ccd57a5c928917ed5eec019faa159c4a25b82951",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 537,
+            "nativeSectionId": "INTRO.4.19.C"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§INTRO.4.19.C — c. The Historical Objective of the Book: The Four Monarchies",
+            "page": 59,
+            "pageEnd": 63,
+            "citationString": "Montgomery, ICC Daniel, §INTRO.4.19.C (pp. 59–63)"
+          },
+          "quote": {
+            "text": "interpretation simply proceeded to keep the prophecy up to date. Accordingly the Jews under Rome found that Monarchy in their new mistress, teste Josephus",
+            "sha256": "b60ab88fa6f33865409c5c6235592700aa7ab81562a021b39c1ccf520d953616",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Mark 13; Matt 24",
+      "positionSummary": "Montgomery treats the NT 'Son of Man' Christology as a personalization of Daniel's symbolic Son-of-Man, mediated through the Parables of Enoch (En. 37-71). Mark 14:62 ('Son of Man sitting at the right hand of power and coming with the clouds of heaven') is a direct citation of Daniel 7:13 in Theodotion's text-form ('meta ton nephelon' / with the clouds), confirming a 'pre-Theodotionic' Greek translation already circulating before the NT. Matthew 24:30, by contrast, reads 'epi ton nephelon' (upon the clouds), agreeing with one Old Greek reading and Justin Apol. 51 -- a textual variant tradition Montgomery carefully maps but does not adjudicate as theologically decisive.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "Θ μετὰ τῶν νεφελῶν = Mk. 14:62 (cf. Harris, Testimonies, 2, 76, for suggestion of a basic Targum here), Rev. 1:7",
+            "sha256": "15f1ada44fa5e78b479ac38dd58d2aeb294780acb10fca4147f102e5f45713e9",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "𝔊 Q ἐπὶ τ. ν. = Mt. 24:30; 26:64",
+            "sha256": "e18a900899cea8ebe274ec15c8db7b920fbf7a69e4c17f61941eb197cd09a488",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "Without doubt this was the primitive judaistic understanding of the statement of the Lord at his trial, Mk. 14:62",
+            "sha256": "4966def3755fb32d949cb0c31084e69666a64b115373d2ded9c9c1482495c2ce",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 1; Rev 13",
+      "positionSummary": "Revelation's apocalyptic imagery -- the throne scene, the beast from the sea, the Son-of-Man title -- is read by Montgomery as direct literary dependence on Daniel 7. Rev 1:7 ('with the clouds') agrees with Theodotion at Dan 7:13. The OG variant 'hos palaios hemeron' (as the Ancient of Days) at Dan 7:13, which the medieval Christian iconographic tradition would later exploit for Christ-Ancient-of-Days conflation, Montgomery diagnoses as an 'ancient error for heos p.h.' that is nonetheless pre-Christian (cited already in Rev 1:14). Rev 13's beast from the sea with mouth speaking blasphemies is treated as a parallel composition built on Dan 7's apparition.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "𝔊 ὡς παλαιὸς ἡμερῶν, ancient error for ἕως π. ἡ., but pre-christian, as citation of it in Rev. 1:14 shows",
+            "sha256": "0de4d04bb73179a9b7a8dde0bee95588b5fe34c2a0bc26081f81e86fd42e748b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 598,
+            "nativeSectionId": "COMMENT.2.7.2"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.2 — 2b–8",
+            "page": 669,
+            "pageEnd": 680,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.2 (pp. 669–680)"
+          },
+          "quote": {
+            "text": "Similarly the monster out of the sea, Rev. 13:1 f., is based on this apparition with the added features of leopard, bear, and lion.",
+            "sha256": "fb9141e76c14e0857802ead73e8776198a41f3e8e2c8323993b25cb0362ffdf3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 599,
+            "nativeSectionId": "COMMENT.2.7.3"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.3 — 9–14",
+            "page": 680,
+            "pageEnd": 689,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.3 (pp. 680–689)"
+          },
+          "quote": {
+            "text": "Reference may be made for the Apocalyptic parallels, amongst which those in Rev. are particularly dependent upon our passage.",
+            "sha256": "38c4148bd29921c760c94dab4bd933074341b24e0ce6499465be9f110e8e8a61",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "The Parables of Enoch (En. 37-71) are Montgomery's primary witness to the early personalization of Daniel's symbolic Son-of-Man into a Messianic figure. En. 46:1ff is read as a self-conscious development of Dan 7:9-13 -- the One with head of days, hair white like wool, alongside another being like a man -- and this Messianized reading then feeds Mark 14:62 and the NT. Critically, Montgomery treats this Messianizing trajectory as secondary to Daniel's original symbolic-collective referent: the strikingness of the human figure invites personalization, but the chapter's own self-interpretation in vv. 18, 27 makes the saints (collective Israel) the actual referent.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "The dependence upon Dan. 7 is patent from the first reference, En. 46:1 ff.",
+            "sha256": "96249721a1eba7eaa9c4bf6e92b54d42f294525c5b84379492ed4a62898ce51b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:ICC_DA",
+            "logosArticleNum": 602,
+            "nativeSectionId": "COMMENT.2.7.NOTE"
+          },
+          "frontend": {
+            "author": "Montgomery",
+            "title": "A Critical and Exegetical Commentary on the Book of Daniel (International Critical Commentary, 1927)",
+            "section": "§COMMENT.2.7.NOTE — Note on ‘Son of Man’",
+            "page": 701,
+            "pageEnd": 708,
+            "citationString": "Montgomery, ICC Daniel, §COMMENT.2.7.NOTE (pp. 701–708)"
+          },
+          "quote": {
+            "text": "The term is frequent in the Parables of Enoch, En. 37–71, where it occurs 14 times.",
+            "sha256": "815ab3e87a2b93ab4d3932ed478a88461a2af577e8f782c259d9c8f95705ddda",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Bipartite compositional thesis sharply distinguishing 3rd-century Babylonian-provenance Stories (cc. 1-6) from Antiochene-crisis-period Visions (cc. 7-12) -- anticipates the more elaborate Newsom/Sellin/Holscher two-stage models.",
+    "Aramaic philology (z->d shift, dental demonstratives, etc.) used to rule out a 6th-century date for the Aramaic chapters and place them no earlier than the 5th century -- an early systematic philological dating argument.",
+    "Treatment of Daniel as 'apocryphon' -- the first specimen of technical pseudepigraphal apocalypse -- paralleled by the 3rd-century Egyptian Demotic Chronicle. Frames the genre as deliberate hidden-book convention with vaticinia ex eventu, opening the genre-critical move that Newsom and Collins later refine.",
+    "Systematic text-critical apparatus distinguishing OG (Chigi-Syrohexaplar) from Theodotion, with isolation of glosses, doublets, and Hexaplaric additions -- Montgomery's sections 11-18 are foundational for all subsequent Daniel text-criticism.",
+    "Diagnosis of OG Dan 7:13's 'hos palaios hemeron' (as the Ancient of Days) as a pre-Christian textual error (corruption of heos to hos), refusing both the Christological-conflation reading and the wholesale OG-preference (against Charles, Jahn).",
+    "Sharp rejection of the Pan-Babylonist mythological school (Gunkel, Zimmern, Bousset, Gressmann, A. Jeremias) on the Son-of-Man -- Montgomery insists the chapter speaks for itself as the product of the writer's mind, and the Babylonian-myth genealogies fail to identify the Son-of-Man figure.",
+    "Position that Daniel represents 'principled pacifistic wing' of the Chasidic party -- the tyrant is overthrown 'without hand' by divine action, not by Maccabean military operation; this contextualizes the eschatology politically within 2nd-century BCE Jewish factional debate.",
+    "'Updating-and-reapplication' theory of how the Roman / Antichrist / Islamic / Papal interpretations arose -- as the Apocalyptic expectation was repeatedly 'put off' generation by generation, the prophecy was kept alive by re-keying it to the current adversary. Anticipates Newsom-Breed's reception-history methodology by ~85 years."
+  ],
+  "uncertainties": [
+    "Montgomery leaves open whether c. 7 is unitary or was redacted -- he is 'inclined to leave it an open question whether c. 7 is a distinct composition, a forerunner of the apocalypses,' even without deletion of vv. tying it to the Maccabean age. He neither commits to nor decisively rejects the Sellin/Holscher excisions of vv. 8, 11a, 20-22, 24-25.",
+    "On the three uprooted horns Montgomery surveys multiple reconstructions (Heliodorus + Demetrius + Ptolemy VI [Bertholdt]; with Alexander as fourth Seleucid [Hitzig]; or all-Seleucid via von Gutschmidt's third-Philopator-son hypothesis [Bevan, Niese]) without firm adjudication -- accepts plurality of plausible identifications.",
+    "Montgomery is silent on classical Reformation/dispensational axes (F: millennium; G: rapture; K: dispensational vs covenantal). These are not the categories within which the work is framed -- though he documents the 'Papacy as Antichrist' Protestant tradition as part of the updating-reapplication chain.",
+    "On the question whether Dan 7:9-10, 13-14 contain pre-existing hymnic kernel (a position Newsom would later argue), Montgomery notes the rhapsodic-poetical character of these verses and the 'classical model for all subsequent apocalyptic scenes' status of the throne vision, but does not pursue a redactional source-criticism of the kernel.",
+    "On the relationship between the symbolic Son-of-Man and Michael (against Schmidt's identification), Montgomery dismisses Schmidt's argument because 'Michael is a well-known figure, the Son of Man here a future, non-existent one' -- but does not engage the 1QM 17:7-8 corroboration that Newsom later cites (the War Scroll postdates Montgomery's 1927 work)."
+  ]
+}

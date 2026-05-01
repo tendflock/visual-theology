@@ -1,0 +1,1032 @@
+{
+  "scholarId": "driver-cambridge-bible-daniel",
+  "authorDisplay": "Driver",
+  "workDisplay": "Cambridge Bible Daniel (Driver)",
+  "resourceId": "LLS:CAMBC27DA",
+  "resourceFile": "CAMBC27DA.logos4",
+  "fullTitle": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+  "traditionTag": "critical-modern",
+  "passageCoverage": [
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Dan 2:31-45",
+    "Dan 8:1-27",
+    "Dan 9:20-27",
+    "Dan 11:1-45",
+    "Dan 12:1-13",
+    "1 En 37-71"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "A: Maccabean composition (168-165 BCE) — internal evidence ‘demonstrates with a cogency that cannot be resisted’ a date no earlier than c. 300 BCE; Antiochene-period most probable",
+      "B: Greek (Seleucid) fourth kingdom — Roman interpretation rejected as ‘untenable’ on historical and exegetical grounds; sequence is Babylon-Media-Persia-Greece",
+      "C: Little horn = Antiochus IV Epiphanes; 3.5 years = persecution period from June 168 to rededication of Temple Dec 165 BCE; ten horns = ten Seleucid successors of Alexander",
+      "D: Maccabean reading of Daniel 9 — 70th week is 171-164 BCE; ‘anointed one’ of v. 26 is Onias III; chronological excess (367 vs 434 yrs) honestly conceded as Maccabean miscomputation paralleled in Josephus",
+      "E: Daniel as paradigmatic Jewish apocalypse — ‘model’ for non-canonical apocalypses; pseudonymity, vaticinium ex eventu, angelic interpreters, symbolic visions are conventions of the genre",
+      "H: Antiochene-bounded eschatology — Messianic age represented as commencing immediately after Antiochus’ fall (prophetic foreshortening, paralleled in earlier prophets)",
+      "J: Son of Man = the glorified and ideal people of Israel (collective/corporate); Messianic interpretation rejected as failing the chapter’s own internal interpretation in vv. 18, 22, 27",
+      "L: Historical-critical / philological hermeneutic — linguistic argument from Persian and Greek loanwords plus type of Aramaic and Hebrew anchors the dating; Daniel-internal interpretation governs symbolism",
+      "O: Single Antiochene referent for all the end-time material; downstream NT and apocalyptic reception is genuine reception, not predictive fulfillment in a dual-horizon sense"
+    ],
+    "moderate": [
+      "N: Cross-book coherence as one-directional source-relation — Daniel is the source-text for 1 Enoch’s Similitudes, 4 Ezra 13, and Revelation’s apocalyptic imagery; downstream reuse expands and modifies the original meaning"
+    ],
+    "tentative": []
+  },
+  "positions": [
+    {
+      "axis": "A",
+      "axisName": "Dating",
+      "position": "Maccabean composition between 168 and 165 BCE — not earlier than c. 300 BCE; written in Palestine during the persecution of Antiochus Epiphanes; rejects Danielic authorship as not 'really tenable' on internal evidence.",
+      "commitment": "strong",
+      "rationale": "Driver opens §3 with the verdict that internal evidence 'demonstrates, with a cogency that cannot be resisted,' that Daniel cannot be earlier than c. 300 BCE and is most probably composed during the Antiochene persecution. He marshals canonical placement (Daniel’s position in the Kethūbīm rather than the Prophets), Sirach’s silence, the historical errors regarding Belshazzar and Darius the Mede, and the linguistic evidence of Persian and Greek loanwords. The cumulative argument is what later critics (Collins, Newsom-Breed) inherit; Driver supplies the late-Victorian English form of the case.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 365,
+            "nativeSectionId": "INTRO.3"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.3 — § 3. Authorship and Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.3"
+          },
+          "quote": {
+            "text": "Internal evidence demonstrates, with a cogency that cannot be resisted, that the Book of Daniel must have been written not earlier than c. 300 b.c., and in Palestine; and there are considerations which make it highly probable that it was, in fact, composed during the persecution of Antiochus Epiphanes, between b.c. 168 and 165.",
+            "sha256": "c2008de1491df5a9a089865f9be251553d3f7d8c7c1727039fe4e3212ad1c5b2",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 365,
+            "nativeSectionId": "INTRO.3"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.3 — § 3. Authorship and Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.3"
+          },
+          "quote": {
+            "text": "It used formerly to be assumed as a matter of course that the Book of Daniel was written by Daniel himself,—and there are still scholars who, upon apologetic grounds, defend this opinion. A careful survey, however, of the facts presented by the book, in the light of the larger knowledge which recent years have brought, shews that this position is not really a tenable one.",
+            "sha256": "cdb8d667904b40351b051e4c3228705ec0f606e3c8307e9b53e5823e075b1fdf",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 365,
+            "nativeSectionId": "INTRO.3"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.3 — § 3. Authorship and Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.3"
+          },
+          "quote": {
+            "text": "had the Book of Daniel existed at the time, and been believed to be the work of a prophet, it is difficult not to think that it would have ranked accordingly, and been included with the writings of the other prophets.",
+            "sha256": "f37f02a3d035f5bc1d68704e0e2b0f0d31040e2f41154b467bdf8ce5c7bd3000",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 365,
+            "nativeSectionId": "INTRO.3"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.3 — § 3. Authorship and Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.3"
+          },
+          "quote": {
+            "text": "Of the arguments that have been here stated, while 8 is doubtful, and 9 should be used with reserve, the rest all possess weight,—particularly 4, 5, and 6.",
+            "sha256": "91ece29b4e7d2a2c448f9054dee49de948d074bec6992d42527bb4048a8147fb",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Greek (the empire of Alexander’s successors / Seleucids), not Roman. The sequence is Babylon — Media — Persia — Greece. The Roman interpretation, though traditional, is rendered untenable by historical and exegetical considerations.",
+      "commitment": "strong",
+      "rationale": "Driver’s Additional Note on the Four Empires reproduces the two principal interpretive options (the ‘Roman’ theory A and the ‘Grecian’ theory B) and rejects A on three grounds: (1) the Roman empire has ‘passed from the stage of history,’ so the ten kingdoms cannot ‘arise out of’ it; (2) the symbolism of ch. 8 explicitly identifies the second-and-third sequence as Media-Persia-Greece, with the fourth-beast ‘little horn’ paralleling the ch. 8 ‘little horn’ (Antiochus); (3) within Daniel itself the age of Antiochus is ‘the limiting horizon of the book,’ followed without interval by the Messianic age. He cites Ephrem Syrus, Westcott, Bevan, Ewald, Bleek, Delitzsch, Kuenen, Meinhold as advocates of the Grecian theory. In the body commentary on Dan 7:7 he writes plainly: ‘The empire meant (if the two preceding ones are explained correctly) will be that of Alexander the Great.’",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "The great, and indeed fatal, objection to this interpretation is, however, that it does not agree with the history. The Roman empire, the empire which conquered and ruled so many nations of the ancient world",
+            "sha256": "c1a511be6f4ffda80121d8dbd0674af60a8159f3cafe823eb7665cff2beb8d09",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "For these reasons it is impossible to think either that the ‘little horn’ of ch. 7 represents any other ruler but Antiochus Epiphanes, or that the fourth empire of ch. 2 and ch. 7 is any other than the Greek empire of Alexander’s successors.",
+            "sha256": "43f6cc92f55ea64d69896c354135e528f6a061a03cee4981dbfc011f549aaa8c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The empire meant (if the two preceding ones are explained correctly) will be that of Alexander the Great",
+            "sha256": "16da5592e25ba0cbd1429e57346e4c6f823bccf231a076fbfa2c03c56f6cf7eb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "The age of Antiochus Epiphanes is in fact the limiting horizon of the book.",
+            "sha256": "25ca064ab232fbf00da29e9a3dc7049d2ba79d18ebc31ee3bd0f760a351fb95f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn (Daniel 7)",
+      "position": "Antiochus IV Epiphanes. The ‘little horn’ of Dan 7 is identical in essentials to the ‘little horn’ of Dan 8 (admitted on all hands as Antiochus); the three uprooted horns are three Seleucid pretenders displaced by Antiochus on his accession; the 3.5 ‘time, times, and half a time’ = the period of the Antiochene persecution from June 168 to the rededication of the Temple in December 165.",
+      "commitment": "strong",
+      "rationale": "Driver’s argument from internal parallels: ch. 8 ‘little horn’ is universally recognized as Antiochus, and ch. 7’s description (proud mouth, war on saints, blasphemy, 3.5 years) matches in ‘all essentials.’ The 3.5-year period in 7:25 is ‘exactly the period during which (12:7) the persecution of Antiochus is to continue.’ The ten horns are the ten Seleucid successors of Alexander on the throne of Antioch (with three reckonings of which trio is uprooted — Heliodorus, Demetrius, Ptolemy Philometor / or Seleucus IV / or an unnamed brother). Driver does not entertain Antichrist, Papacy, or Roman-imperial readings.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "If the fourth beast symbolizes the empire of Alexander, the ‘little horn’ will be Antiochus Epiphanes, whose persecution of the Jews (b.c. 168–165) forms certainly the subject of 8:10–14, 24, 25, and 11:31–33, and who, in 8:9 (see 8:23), is also represented by a ‘little horn.’",
+            "sha256": "9f68d21964cc3cc054cd0521b43e4b63616473dc4370be877af8b1df9543f43f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The saints will be given into the hand of this godless king for three years and a half.",
+            "sha256": "74079cc5a56438f840e4b607af1f150236054119efd054c61ca502e7aa04e69e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "as Delitzsch remarks, it is extremely difficult to think that where the description is so similar, two entirely different persons, living in widely different periods of the world’s history, should be intended.",
+            "sha256": "2e340adedb7d1d216b1cd3773c743bd0acfad7e79032285e9b6ffcdd8b719812",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "Alluding to the violent efforts made by Antiochus Epiphanes to denationalize the Jews and to suppress their religion",
+            "sha256": "181e339b9c771de2b67060fa917cf8d6ebb80d8d0d416ca447f63d12de3a61b9",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "D",
+      "axisName": "Seventy sevens (Daniel 9:24-27)",
+      "position": "Maccabean-period reading. Terminus a quo = 587/6 BCE (Jeremiah’s promises of rebuilding); 7 weeks end at Cyrus’ edict (538 BCE); the ‘anointed one’ of v. 26 is Onias III (murdered 171 BCE); the 70th week (171-164 BCE) describes Antiochus IV’s persecution. The traditional Christological reading (Christ + Titus) is rejected on five concrete grounds. The chronological gap (367 vs 434 years) is acknowledged as a Maccabean-period miscomputation paralleled in Josephus and Demetrius.",
+      "commitment": "strong",
+      "rationale": "Driver’s Additional Note on the Seventy Weeks lays out the field carefully and adopts the Antiochene reading. He rejects the Christological interpretation on the grounds that (1) v. 27’s ‘confirm a covenant for one week’ does not fit Christ’s ministry; (2) the destruction by Titus (a.d. 70) falls 40 years past the Crucifixion and so is out of place; (3) the rendering ‘but not for himself’ is impossible; (4) the punctuation A.V. adopts is unnatural; and (5) the natural meaning of v. 27 is temporary suspension of sacrifice for half a week, not their final abolition. The chronological excess is honestly conceded as ‘a traditional error in the ancient chronology of the period.’",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 386,
+            "nativeSectionId": "DA.2.3.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.3.1 — Additional Note on the Prophecy of the Seventy Weeks",
+            "page": 399,
+            "pageEnd": 406,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.3.1 (pp. 399–406)"
+          },
+          "quote": {
+            "text": "the 7 weeks of v. 25 end with b.c. 538, the date of the edict of Cyrus (the ‘anointed one, the prince’ of this verse); the 62 weeks, reckoned from 538, end with b.c. 171 (the date of the murder of Onias III., the ‘anointed one’ of v. 26); the last week extends from b.c. 171 to b.c. 164, the reference in vv. 26 b, 27, being to Antiochus Epiphanes, and to his acts of violence and persecution against the Jews.",
+            "sha256": "23f65aab3979833081cffed7d8f9f0fccf0f8a0845184c0f14a15806c6b1d99a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 386,
+            "nativeSectionId": "DA.2.3.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.3.1 — Additional Note on the Prophecy of the Seventy Weeks",
+            "page": 399,
+            "pageEnd": 406,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.3.1 (pp. 399–406)"
+          },
+          "quote": {
+            "text": "The general parallelism of vv. 26 b, 27,—especially the suspension of the Temple services for ‘half of the week,’—with other passages of the book where the persecutions of Antiochus are alluded to (as 7:25, 8:11, 13, 11:31, 12:7, 11), and the fact that elsewhere in c. 7–12. Antiochus is the prominent figure",
+            "sha256": "49a895fbbe7e3f0aab521cc21a59d1dd3b16db0c0115107741456febd5dc6d65",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 386,
+            "nativeSectionId": "DA.2.3.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.3.1 — Additional Note on the Prophecy of the Seventy Weeks",
+            "page": 399,
+            "pageEnd": 406,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.3.1 (pp. 399–406)"
+          },
+          "quote": {
+            "text": "There seems in fact, as Schürer has remarked, to have been a traditional error in the ancient chronology of the period here in question",
+            "sha256": "ebce7f12927597d82f55a44181839c085de65fae1e97b3d6aead990924434e8f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "axisName": "Revelation/apocalyptic approach",
+      "position": "Daniel is a paradigmatic Jewish ‘apocalypse’ — pseudonymous, symbolic, eschatological, historical-survey-shaped. It is the ‘model’ for non-canonical apocalypses (1 Enoch, 4 Ezra, 2 Baruch, Sibylline Oracles, Assumption of Moses) and is best understood as standing in this literary class, even while its theological superiority is recognized.",
+      "commitment": "strong",
+      "rationale": "Driver’s §4 mounts a programmatic case that Daniel belongs to a ‘species of literature… commonly known as Apocalyptic Literature.’ He catalogues the conventions: pseudonymous attribution to an ancient seer, vaticinium ex eventu, angelic interpreters, symbolic visions, eschatological scope. His judgment on the genre is decisive: ‘the superiority, in each case, from a theological point of view, of the canonical work does not place it in a different literary category from the corresponding non-canonical work.’ This is the foundational pre-Collins articulation of Daniel as apocalypse — a frame Collins’s Hermeneia and the SBL Apocalypse Group will later codify.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "But, as applied in Daniel, both the symbolism and the veiled predictions are characteristic of a species of literature which was now beginning to spring up, and which is known commonly by modern writers as Apocalyptic Literature.",
+            "sha256": "bba2f5d48713fb7031777c83ecdf05e84c137584f3a9ccc06aa9610d48eb59eb",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "the disclosures which were the most characteristic element of apocalyptic prophecy were not made by the author in his own person, they were placed in the mouth of some pious and famous man of old—an Enoch, a Moses, a Baruch, an Ezra: from the standpoint of the assumed speaker the future was unrolled, usually under symbolic imagery, down to the time in which the actual author lived",
+            "sha256": "9f76fd8458670a0784d15e5bde5137440a79460d5244d854d34610f30fa17a0a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "Probably, indeed, the Book of Daniel formed the model, especially in chs. 7–12, upon which the non-canonical apocalypses were constructed",
+            "sha256": "51dbcd0e4d33d98e57869523fd459f3337b0b9d91751840cb6f4149434cc26bd",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "the superiority, in each case, from a theological point of view, of the canonical work does not place it in a different literary category from the corresponding non-canonical work or works.",
+            "sha256": "926213b3eccbacd1f501a7a1352efe5ffd1062ebdeec9762e28cc84c99248209",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "Two-stage but Antiochene-bounded. The Book’s prophetic horizon culminates in the fall of Antiochus Epiphanes; the Messianic kingdom is represented as commencing immediately thereafter. Driver acknowledges this as ‘foreshortening of the future’ shared with the earlier prophets — a feature of biblical prophetic temporality, not a defect.",
+      "commitment": "strong",
+      "rationale": "Driver argues that ‘A careful study of Dan. 7-12 makes it evident that the reign of righteousness, and the everlasting dominion of the saints, are represented as beginning immediately after the fall of Antiochus.’ This is consistent with prophetic foreshortening (Isaiah, Micah, Second Isaiah did the same with respect to the Assyrian and Babylonian crises). He notes the eschatology of Daniel is ‘more distinctly eschatological’ than earlier prophecy — judgement, resurrection (12:2), the kingdom of the saints — but ‘less so than… parts of the Book of Enoch.’ Daniel is a transition-period text in eschatological development.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The inauguration of the kingdom of God will follow immediately upon the overthrow of the ‘fourth empire’ in the person of Antiochus Epiphanes.",
+            "sha256": "bc87104677f5db5d849289462d91a7a4d9ff2195eeb0bca81bbce649f57d0103",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "A careful study of Dan. 7–12 makes it evident that the reign of righteousness, and the everlasting dominion of the saints, are represented as beginning immediately after the fall of Antiochus",
+            "sha256": "0d9e805586d40ffd44d9c766cbbc5c2a27555a77a959b8e576f1321481e66826",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The representation in Daniel is of the same intermediate character; it is more distinctly eschatological than the passages just quoted, but less so than, for instance, parts of the Book of Enoch.",
+            "sha256": "27db7f23fe0e8feb246e893214829c3ed9c40b7b9f7a817ddd93f7d17fd448d4",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man (Daniel 7:13-14)",
+      "position": "Collective / corporate — the ‘one like unto a son of man’ represents ‘the glorified and ideal people of Israel,’ not a personal Messiah. The Messianic interpretation, though early (Enoch’s Similitudes, 4 Ezra 13, R. Joshua ben Levi) is secondary to the original intent; the primary argument is that vv. 18, 22, 27 of the same chapter substitute ‘the saints of the Most High’ for the ‘one like unto a son of man,’ and the parallelism is decisive.",
+      "commitment": "strong",
+      "rationale": "Driver’s Additional Note on Dan 7:13 is a careful philological and contextual case for the corporate-Israel reading. The expression ‘son of man’ in Hebrew is ordinary idiom for ‘a man’; the four beasts are not actual beasts but stand for kingdoms, so by analogy the human form ‘would not represent an actual man, but would stand for something else’ — which the chapter itself identifies as the ideal Israel in vv. 18, 22, 27. The NT ‘Son of Man’ usage is a development that ‘reads into [Dan 7:13] a larger and fuller meaning than it there possesses,’ and may owe more to Ps 8:4 than to Dan 7. He rejects the Messianic reading as an ‘impression’ that needs to yield to ‘what (to use Schürer’s words) is said by the author distinctly and expressly in his interpretation of the vision, in vv. 18, 22, 27.’",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "On the one hand, the current interpretation has, no doubt, been that it denotes the Messiah; on the other hand, there are strong reasons, derived from the text of Daniel itself, for holding that it denotes the glorified and ideal people of Israel.",
+            "sha256": "f7305604181869cf0903210b5ff28b9dfb071182170302ff2e1c6cfeffe5af39",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "the realities of history are represented in the vision not as they actually are, but in a figurative form: the four beasts are not four actual beasts, but represent four kingdoms; the horns are not actual horns, but represent kings: by analogy, therefore, the figure in human form would not represent an actual man, but would stand for something else",
+            "sha256": "9b253bcad1ad2ba665e77a921230f0fdd3e4ffc0753189ca66588d4e7c8a563b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "If the writer by ‘the one like unto a son of man’ meant the Messiah, the head of the future ideal nation, his silence in the interpretation of the vision is inexplicable: how comes it that he there passes over the Messiah altogether, and applies the terms which (ex hyp.) are used of him in vv. 13, 14 to the people of Israel in vv. 18, 22, 27?",
+            "sha256": "d39c1dd9f8efaa976ceed0e4533720f8b963fe1bade010c6945fbaa9b13d24fd",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The rendering of A.V., ‘the Son of man,’ is quite untenable: the expression of the original is indefinite, and denotes simply, in poetical language",
+            "sha256": "472e39714a63fa76b9eb5097a97205afad3f8b192900e61b39dde6acdf8d9016",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "Historical-critical / philological. Daniel is read in its own historical horizon (Antiochene crisis), with linguistic, canonical, theological, and symbolic features used to date and contextualize the text. Symbolism is decoded by attending to the in-text interpretation (vv. 17ff explain vv. 1-14) and by parallels with contemporary Jewish apocalyptic literature, not by retrojecting NT or post-canonical fulfillment frameworks.",
+      "commitment": "strong",
+      "rationale": "Driver’s whole methodological orientation is the historical-critical philological consensus emerging in late-Victorian Britain. He works through Persian and Greek loanwords, the type of Aramaic and Hebrew, the canonical placement, the historical errors, and the structural parallels among Daniel’s chapters and with 1 Enoch, 4 Ezra, 2 Baruch. The Roman interpretation is set aside as the historical product of Christian expectation in a particular age, not as exegesis of the Daniel text. The corporate Son of Man reading is grounded in ‘what is said by the author distinctly and expressly’ — i.e. the chapter’s own internal interpretation, not later traditions.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "The interpretation under discussion is in fact one which, in view of the circumstances of the age, might readily have suggested itself to. Christian expositors of Daniel, while the Roman empire was still the dominant power in the world; but it is one which the progress of history has shewn to be untenable.",
+            "sha256": "5165e2dc829654de28094124b6dd63baa28626b8acff01133f9b301e23031a29",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 365,
+            "nativeSectionId": "INTRO.3"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.3 — § 3. Authorship and Date",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.3"
+          },
+          "quote": {
+            "text": "The verdict of the language of Daniel is thus clear. The Persian words presuppose a period after the Persian empire had been well established: the Greek words demand, the Hebrew supports, and the Aramaic permits, a date after the conquest of Palestine by Alexander the Great",
+            "sha256": "433a69af2495eac892e4ecf71fb400ba83b1d3a71aae02578439d4b7f16160ab",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "The explanation of the vision given in the chapter itself is thus the primary and fundamental argument of those who hold the ideal people of Israel to be intended in 7:13.",
+            "sha256": "43610dfdec526d03279bdc866fa2e7ea53b6ed28af3fae5b417a1945e4ccba6c",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence",
+      "position": "Daniel is the source-text for downstream apocalyptic imagery (1 Enoch’s Similitudes, 4 Ezra 13, Revelation), but downstream usage is reception, not original meaning. The NT ‘Son of Man’ (esp. Matt 24:30, 26:64) draws on Dan 7:13 but expands its meaning; its primary sense in the Synoptics is closer to Ps 8:4. Within Daniel, chs. 7, 8, 9, 11-12 cohere as successive reframings of the same Antiochene crisis.",
+      "commitment": "moderate",
+      "rationale": "Driver consistently treats later apocalyptic and NT material as developing Daniel’s imagery rather than as confirming a unified prophetic system. 1 Enoch’s Similitudes, 4 Ezra 13, and Revelation 5:11; 1:7, 13; 13:1; 17:3 are all ‘derived’ from or based on Dan 7:9-13. He is careful that Christ’s use of ‘Son of Man’ is not simply a citation of Dan 7:13 but a creative theological development. Within Daniel itself, 7:25’s 3.5 years = 12:7’s 3.5 years = 9:27’s half-week, all referring to the Antiochene persecution.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The Book of Daniel is also one of the sources of the imagery, or the expression, of the Book of Revelation",
+            "sha256": "60e79d0b95f8df2195bf0a5d15dc62cf74750c8ee04d327e00222ee7612be727",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "even in so far as He bases His use of the term upon Dan. 7:13, He certainly reads into it a larger and fuller meaning than it there possesses. And it is a question whether the sense which He appears to attach to the title is not more naturally deducible from Ps. 8:4",
+            "sha256": "cf69ba7ee20e40a290034f3e2af77debc2fdbd6e22c818d01d96c111fea645d6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "is it likely that entirely different events should be measured by precisely the same interval of time?",
+            "sha256": "288dfd62b2743ad2bb044cbe1251b473b61240296c53730309bd21707d6fa943",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Single Antiochene-period referent for all the end-time material in chs. 7-12. No Roman, no Antichrist, no still-future fulfillment is required by the text. Daniel’s prophetic horizon closes with Antiochus IV’s death (164 BCE), and the ‘foreshortening’ by which the Messianic age is presented as immediate is a feature shared with the prophets and is not a literal historical claim of imminence in 165 BCE.",
+      "commitment": "strong",
+      "rationale": "Throughout Driver’s commentary, Antiochus is the single referent for Dan 7’s little horn, Dan 8’s little horn, Dan 9:27’s coming prince, Dan 11:21-45’s king of the north, and Dan 12’s tribulation. Reception in 1 Enoch, 4 Ezra, Revelation, and the NT is genuine reception, not ‘fulfillment’ in a dual-horizon predictive sense. He treats the prophetic foreshortening of the Messianic age as a temporality common to the prophets — an idealized projection that history has not borne out in its anticipated form.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 381,
+            "nativeSectionId": "DA.2.1.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.1 — Additional Note on the Four Empires of Daniel 2, 7",
+            "page": 94,
+            "pageEnd": 102,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.1 (pp. 94–102)"
+          },
+          "quote": {
+            "text": "the age of Antiochus himself is in 8:19 (as the sequel shews) described as the ‘time of the end’: can there then, asks Delitzsch, have been for Daniel a ‘time of the end’ after that which he himself expressly describes as the ‘end’?",
+            "sha256": "c41181abc8d29ff8cb97579d04b63cc9ee9c484c266dc80182eb990adeeb016a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The same foreshortening of the future is characteristic of the prophecies in the Book of Daniel",
+            "sha256": "9e9f7ea21da7a93bf5e414a2204f5997af7e697977ad56440f46bf104e88aeb3",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The writer thinks of empires only, not of individuals; and it is impossible to say what he pictured to himself as being the fate of the individuals of whom the fourth empire consisted.",
+            "sha256": "74a2048d6fa4e87eeeab6d9aa156f57642ec1e0e8745d51989df5ace5f9c4c8f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 13; Rev 1; Rev 14:14",
+      "positionSummary": "Revelation 1:7, 1:13-14, 13:1, 14:14, 17:3 are all ‘derived’ from or ‘based upon’ Dan 7:9-13; the ten horns and 42-month/3.5-year persecution period in Revelation reuse Dan 7:25’s ‘time, times, and half a time.’ Driver’s framing is one-directional — Daniel is the source of Revelation’s imagery, not Revelation the divinely-given expansion of Daniel’s prophecy.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The imagery of Rev. 1:14 is derived from the present passage.",
+            "sha256": "9f4e8d27c46254daed290f6926c94e487766e3ef2f5c79b26a2bdb03728b7ad3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 380,
+            "nativeSectionId": "DA.2.1"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1 — Chap. 7. The Vision of the Four Beasts",
+            "page": 79,
+            "pageEnd": 94,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1 (pp. 79–94)"
+          },
+          "quote": {
+            "text": "The passage is the source of the expression in Mk. 14:62 (Mt. 26:64 ‘on’); Rev. 1:7, ‘behold, he cometh with the clouds:’",
+            "sha256": "799edb12f68fb770a7dbf3826629669ae60131809145f5714082eddbe4535c60",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The Book of Daniel is also one of the sources of the imagery, or the expression, of the Book of Revelation",
+            "sha256": "60e79d0b95f8df2195bf0a5d15dc62cf74750c8ee04d327e00222ee7612be727",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "1 Enoch’s Similitudes (chs. 37-71) develop Dan 7:13 personally — applying ‘son of man’ to a Messianic ‘Elect One’ on the Almighty’s throne. Driver presents this as the earliest extant Messianic reading of Dan 7:13, but treats it as reception that secondarily personalizes a Daniel-internal corporate symbol; the Similitudes’ imagery is ‘fine,’ but they expand the source.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "The earliest example of this application is found in the ‘Similitudes’ of the apocryphal Book of Enoch (cc. 37–71), a part of this (composite) book, which is generally considered to date from the first century b.c.",
+            "sha256": "86f147914d4172d2dcfeee79ad3ba2b73d3206cf6be25adb582bbc3a05ffb47c",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 382,
+            "nativeSectionId": "DA.2.1.2"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§DA.2.1.2 — Additional Note on the Expression ‘One like unto a Son of Man’ in Dan. 7:13",
+            "page": 102,
+            "pageEnd": 110,
+            "citationString": "Driver, Cambridge Bible Daniel, §DA.2.1.2 (pp. 102–110)"
+          },
+          "quote": {
+            "text": "The imagery of the writer is in several instances suggested evidently by Dan. 7.",
+            "sha256": "bc095a3ca5b3b0ceecb8aaa0cc8b3f3cfe26004d33a49381353d53e8323c73ae",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:CAMBC27DA",
+            "logosArticleNum": 366,
+            "nativeSectionId": "INTRO.4"
+          },
+          "frontend": {
+            "author": "Driver",
+            "title": "The Book of Daniel (Cambridge Bible for Schools and Colleges)",
+            "section": "§INTRO.4 — § 4. Some Characteristic Features of the Book of Daniel",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Driver, Cambridge Bible Daniel, §INTRO.4"
+          },
+          "quote": {
+            "text": "The imagery of the ‘Similitudes’ is fine: and the thought is often an expansion of parts of Daniel",
+            "sha256": "bef2cd24540ea7b0867f56d9c3ef3f55232bb56dac3c8d97a6550150c59d97dc",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Mounts the linguistic argument as the load-bearing case for late dating: ‘The Persian words presuppose a period after the Persian empire had been well established: the Greek words demand, the Hebrew supports, and the Aramaic permits, a date after the conquest of Palestine by Alexander the Great.’ This formulation becomes the late-Victorian English consensus statement.",
+    "Diagnoses the Roman fourth-kingdom interpretation historically rather than dismissing it polemically: it ‘originated at a time when the triumphant advent of Messiah was the object of immediate expectation, and the Roman empire appeared to be the last in the series of earthly kingdoms’ — a self-aware historicizing of the Christian-traditional reading.",
+    "Reads Daniel as a paradigmatic apocalypse alongside 1 Enoch, 4 Ezra, 2 Baruch, the Sibyllines, and the Assumption of Moses — refusing to place Daniel in ‘a different literary category’ from non-canonical apocalypses despite recognizing its theological superiority. This is the foundational pre-Collins articulation of Daniel-as-apocalypse.",
+    "Insists the corporate Son of Man reading wins because the chapter’s own interpretation (vv. 18, 22, 27) substitutes ‘the saints of the Most High’ for the figure of v. 13; the Messianic reading is generated by external pressures (NT use, Enoch’s Similitudes), not by the chapter’s internal logic.",
+    "Concedes the chronological excess in the seventy-weeks reading honestly — ‘367 vs 434 years’ — and grounds it in a documented Maccabean-period miscomputation tradition paralleled in Josephus and Demetrius. This is candor, not retreat, and is treated as preferable to the ‘serious’ objections that defeat the Christological reading.",
+    "Treats prophetic foreshortening as a feature shared with Isaiah, Micah, and the exilic prophets — the Messianic age is presented as ‘commencing immediately after the troubles’ in all of them. This reframes Daniel’s apparent failed prediction as continuity with the canonical prophetic style, not idiosyncrasy."
+  ],
+  "uncertainties": [
+    "Driver follows Cornill’s high-priestly-generations conjecture for the 70-weeks chronology with hedged language (‘clever suggestion’); does not commit to it as the explanation of the 490-year figure.",
+    "On which three Seleucid kings are the ‘three uprooted horns,’ Driver presents three competing reckonings (Heliodorus + Demetrius + Ptolemy Philometor; or Seleucus IV + Heliodorus + Demetrius; or Seleucus IV + Heliodorus + an unnamed brother) without final adjudication: ‘our knowledge of the times does not, unfortunately, enable us to decide with confidence which deserves the preference.’",
+    "Driver does not engage Matthew 24 or Mark 13 as substantive cross-references in their own right; he treats Christ’s ‘Son of Man’ usage as drawing on Dan 7:13 but reading ‘a larger and fuller meaning’ into it, possibly more from Ps 8:4 than Dan 7. The synoptic apocalypse is not a Driver topic.",
+    "On the relation of Dan 7’s beasts (esp. the Median bear) to historical Median statehood and the Median empire’s separate existence prior to Cyrus, Driver follows the Daniel-internal Median-kingdom representation but does not fully harmonize it with extra-biblical Median-Persian unity attested in the inscriptions."
+  ]
+}

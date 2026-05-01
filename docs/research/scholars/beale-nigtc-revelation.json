@@ -1,0 +1,1402 @@
+{
+  "scholarId": "beale-nigtc-revelation",
+  "authorDisplay": "Beale",
+  "workDisplay": "NIGTC Revelation",
+  "resourceId": "LLS:29.71.18",
+  "resourceFile": "NIGTCREV.logos4",
+  "traditionTag": "evangelical-cross-book-reception",
+  "passageCoverage": [
+    "Dan 2:31-45",
+    "Dan 7:1-6",
+    "Dan 7:7-8",
+    "Dan 7:9-12",
+    "Dan 7:13-14",
+    "Dan 7:15-18",
+    "Dan 7:19-22",
+    "Dan 7:23-27",
+    "Rev 1",
+    "Rev 13",
+    "Rev 17",
+    "Rev 20"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "E: Revelation approach = 'eclecticism' (modified idealism with redemptive-historical fulfillment) — Beale's named, self-chosen position; symbols largely transtemporal across the inter-advent age.",
+      "O: Inaugurated millennialism (Beale's preferred label over 'amillennialism') — Rev 20:1-6 covers the church age; binding of Satan = Christ's resurrection, restraint on deception, not full neutralization.",
+      "C: Rev 13 beast = transtemporal corporate Antichrist — collapses Daniel's four beasts into one, with already/not-yet inauguration at Christ's death-resurrection and consummate manifestation at the end. Christological parody throughout.",
+      "N: Daniel is the primary OT framework structuring Revelation — Dan 2 + Dan 7 sign-post the macro-structure (1:1, 1:19, 4:1, 22:6); Rev 1, 4-5, 13, 17 are Danielic Vorbild-controlled.",
+      "B: Fourth kingdom / seven heads = transtemporal world-government symbolism, NOT a literal Roman emperor count — beast spans all empires and culminates in eschatological seventh/eighth king."
+    ],
+    "moderate": [
+      "J: 'Son of man' (Rev 1:7, 1:13-16) fuses Dan 7 + Dan 10 — Christ inherits Ancient-of-Days attributes (head/hair white) AND the Son-of-Man universal-rule role; vv 7-20 are a Dan-7+10 midrash.",
+      "K: Apocalyptic/method — John 'consistently develops the contextual ideas of his OT references'; against atomistic readings, demonstrating contextual usage inductively.",
+      "F: Saints' reign in Rev 20:4 fulfills Dan 7:22 ('judgment passed in favor of the saints') — vindication-via-resurrection-with-Christ during the inter-advent age, prior to consummate kingdom."
+    ],
+    "tentative": [
+      "L: Synoptic Olivet discourse mediates Daniel into Revelation — Dan-7:13 + Zech-12:10 fusion in Matt 24:30 'may have influenced' John's similar combination at Rev 1:7, but Beale hedges on direct vs. tradition-mediated dependence."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "E",
+      "axisName": "Revelation approach",
+      "position": "Eclectic / redemptive-historical modified idealism — symbols portray transtemporal events across the church age 'under the sovereignty of the Lamb,' culminating in the final coming of Christ. Rejects strict preterism, historicism, futurism, and pure idealism. Embraces a few specific historical referents (Christ's first/second comings) but treats most symbols as transtemporal across the inter-advent age.",
+      "commitment": "strong",
+      "rationale": "Beale explicitly names his fifth view 'eclecticism' and aligns it with a 'redemptive-historical form of modified idealism.' The Apocalypse symbolically portrays events throughout history under the sovereignty of the Lamb, with the great majority of symbols transtemporal across what Beale calls 'the church age,' 'the interadventual age,' or 'the latter days.' He develops this position by direct critique of all four classical interpretive approaches in the body of the introduction. The position is theologically committed (not relativizing pluralism): history is governed by Christ and consummated at his final coming.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3819,
+            "nativeSectionId": "INTRO.5.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§INTRO.5.5 — The View of This Commentary: Eclecticism, or a Redemptive-Historical Form of Modified Idealism",
+            "page": 48,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §INTRO.5.5 (p. 48)"
+          },
+          "quote": {
+            "text": "Perhaps it would be best to call this fifth view “eclecticism.”",
+            "sha256": "04d9bb3e763cb9e579f1133688f80d08549dc0a345f6826029eb014f073c598b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3819,
+            "nativeSectionId": "INTRO.5.5"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§INTRO.5.5 — The View of This Commentary: Eclecticism, or a Redemptive-Historical Form of Modified Idealism",
+            "page": 48,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §INTRO.5.5 (p. 48)"
+          },
+          "quote": {
+            "text": "no specific prophesied historical events are discerned in the book, except for the final coming of Christ to deliver and judge",
+            "sha256": "b2f3c58b721e5acf6b52305c2d9ca27aa5ca6413e48e94f26c686832d072dd19",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "O",
+      "axisName": "Fulfillment structure",
+      "position": "Inaugurated millennialism — Rev 20:1-6 covers the entire age between Christ's resurrection and his final parousia. The binding of Satan is the inaugurated effect of Christ's death-and-resurrection, restraining only the devil's gospel-deceiving activity (so the gospel can spread among the nations) while still allowing personal satanic activity. Saints' reign with Christ on thrones is the heavenly-vindication state of deceased believers. The 'thousand years' is figurative (the third power of ten = an ideal long epoch). Final parousia consummates the kingdom.",
+      "commitment": "strong",
+      "rationale": "Beale develops the inaugurated-millennial reading as the preferred refinement of the amillennial tradition (he prefers 'inaugurated millennialism' as the more positive label). Two simultaneous realities obtain in the millennium: (a) on earth, Satan is restrained from successful gospel-deception so that the church spreads among the nations; (b) in heaven, deceased saints reign with Christ in vindication of Dan 7:22. He stakes the position on multiple recapitulation arguments: Rev 20:1-6 echoes Rev 12:7-11 (seven structural parallels demonstrated); the angel-descent formula in 20:1 matches 7:2; 10:1; 18:1 (visionary, not chronological, transition); Ezekiel 38-39 recapitulation in Rev 19/20 reinforces non-sequential reading. Isaiah 24:21-22 is the OT base-text for Rev 20:2-3.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4869,
+            "nativeSectionId": "P...973"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...973 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church and by the Resurrection of Believers’ Souls to Heaven to Reign There with Christ (20:1–6)",
+            "page": 1996,
+            "pageEnd": 1997,
+            "citationString": "Beale, NIGTC Revelation, §P...973 (pp. 1996–1997)"
+          },
+          "quote": {
+            "text": "this view has been called amillennialism, though it is better to call it, more simply, “inaugurated millennialism”",
+            "sha256": "8a76344a0ac8d1db6231cd05a004dea1562286340343ef340249c921d8968579",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4888,
+            "nativeSectionId": "SEC.33.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.33.1 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2008,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §SEC.33.1 (p. 2008)"
+          },
+          "quote": {
+            "text": "The time span of the vision will be seen to extend from Christ’s resurrection until his final parousia",
+            "sha256": "a02e2594b40d8552f8a76c57251d4bc16335039fb3a2e9328e818b20c71d660d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4890,
+            "nativeSectionId": "P...986"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...986 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2009,
+            "pageEnd": 2010,
+            "citationString": "Beale, NIGTC Revelation, §P...986 (pp. 2009–2010)"
+          },
+          "quote": {
+            "text": "Christ’s work of restraining the devil’s ability to “deceive” is not a complete curtailment of all of the devil’s activities but only a restraint on his deceiving activities",
+            "sha256": "8427b7adbb0e40a82605be3bf51989d2224c599365e4004ee821091f984b0694",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4895,
+            "nativeSectionId": "P...991"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...991 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2014,
+            "pageEnd": 2015,
+            "citationString": "Beale, NIGTC Revelation, §P...991 (pp. 2014–2015)"
+          },
+          "quote": {
+            "text": "Isa. 24:21–22 is the basis for Rev. 20:2–3",
+            "sha256": "9cc9dee66405787f4d3efe5a55793ec773d9612159fa41d2abe50443e92f67f0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4899,
+            "nativeSectionId": "P...995"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...995 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2018,
+            "pageEnd": 2019,
+            "citationString": "Beale, NIGTC Revelation, §P...995 (pp. 2018–2019)"
+          },
+          "quote": {
+            "text": "1,000 is the third power of ten, and, if figurative here, might represent a long era",
+            "sha256": "452434d6683b7463c1b509829bcbb765820046753c0858e5e3801bced853998e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little horn / Antichrist lineage",
+      "position": "Rev 13 beast is the transtemporal corporate Antichrist — devil's grand nemesis whose career parallels Christ's, with already/not-yet inauguration at Christ's death-resurrection and consummate manifestation at the end. Beast collapses all four Dan-7 beasts into one figure (Dan 7:1-7 in Rev 13:1-2), inheriting the Dan-7 + Dan-8 + Dan-11 pattern of (a) blaspheming mouth, (b) authorization clause ('it was given to him'), (c) decreed time-period. The chapter is structured by Daniel's threefold authorization scheme, and Dan 7:14 (Son of Man's universal worship) is ironically parodied at Rev 13:7-8a — beast-as-anti-Christ. Multiple individual antichrists across history (cf. 1 John 2:18; 2 Thess 2) plus a final escalated manifestation.",
+      "commitment": "strong",
+      "rationale": "Beale's full NIGTC commentary develops the Rev 13 + Rev 17 beast christology with cumulative depth. The beast is identified by structural and verbal parallels with the Christ of Rev 5 (slain, horns, universal worship received, sword, names on foreheads of followers, four-fold tribes-tongues-peoples-nations formula) — six or seven specific christological-parody features that, taken together, exclude any single emperor as referent. Daniel's four beasts are 'combined image' applied to one beast, signaling temporal transcendency. He follows Bauckham in treating the beast's death-and-resurrection (13:3) as a parody of Christ's; the beast's career structurally mirrors Christ's career as already/not-yet (13:3 = past inauguration; 17:8 = future parousia and destruction). On Dan 7:25 + Dan 8:11 + Dan 11:36, Beale argues the three diagnostic Danielic elements (blaspheming mouth, authorization clause, decreed time-period) are 'unique to Daniel in the OT' — making Daniel's eschatological tyrant the dominant template.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4565,
+            "nativeSectionId": "P...691"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...691 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1458,
+            "pageEnd": 1459,
+            "citationString": "Beale, NIGTC Revelation, §P...691 (pp. 1458–1459)"
+          },
+          "quote": {
+            "text": "the beast is set up as the supreme enemy of Christ and his people. The only figure who fits the description of the beast is the devil himself",
+            "sha256": "06e5aa484483d574bc1cf540c39ba276eba2f4dd28814abbb8bff21ffb4625fb",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4565,
+            "nativeSectionId": "P...691"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...691 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1458,
+            "pageEnd": 1459,
+            "citationString": "Beale, NIGTC Revelation, §P...691 (pp. 1458–1459)"
+          },
+          "quote": {
+            "text": "the chief opponent of Christ cannot be limited to one historical person or epoch",
+            "sha256": "db9a669f2e9766baa69f25d7e0b11eaaf8bdbc8683bdbe8c038fe97a9f1d8605",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4566,
+            "nativeSectionId": "P...692"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...692 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1459,
+            "pageEnd": 1460,
+            "citationString": "Beale, NIGTC Revelation, §P...692 (pp. 1459–1460)"
+          },
+          "quote": {
+            "text": "the combined image of the rise and fall of Daniel’s four empires, which is applied to the one beast and connotes his temporal transcendency",
+            "sha256": "ad15742c02ac8af6dbb058e3f1c8b5d3ef34ee1e8546473e72cf21bb886cc07b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4567,
+            "nativeSectionId": "P...693"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...693 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1461,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §P...693 (p. 1461)"
+          },
+          "quote": {
+            "text": "The theme of christological parody indicates that John has constructed a history for the beast which parallels that of Christ",
+            "sha256": "cf0c3b14ad95ce6289c2e407f4c282bd2e125160373239074079e0cbb8a05aa0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4569,
+            "nativeSectionId": "P...695"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...695 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1463,
+            "pageEnd": 1464,
+            "citationString": "Beale, NIGTC Revelation, §P...695 (pp. 1463–1464)"
+          },
+          "quote": {
+            "text": "the three elements of a blaspheming mouth, an authorization clause",
+            "sha256": "508ab16d6ffa5680f667b4d9d4910ab812574c984480bd1dd6d2230d0047d89b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4570,
+            "nativeSectionId": "P...697"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...697 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1464,
+            "pageEnd": 1467,
+            "citationString": "Beale, NIGTC Revelation, §P...697 (pp. 1464–1467)"
+          },
+          "quote": {
+            "text": "speak of an eschatological fiend who speaks out against God, equates himself with God",
+            "sha256": "715c5192ccf306da5d9dd45f8f45edbd398443e8de5b5ee2a04e6243e963069a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4571,
+            "nativeSectionId": "P...700"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...700 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1467,
+            "pageEnd": 1468,
+            "citationString": "Beale, NIGTC Revelation, §P...700 (pp. 1467–1468)"
+          },
+          "quote": {
+            "text": "the beast’s conquering efforts are but an ironic parody of the Son of man’s final triumph",
+            "sha256": "270ff10d1a78c9470466ef1779063eb836bb7a99e0f4b6fa32cb5f4e57568ffe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4561,
+            "nativeSectionId": "P...687"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...687 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1454,
+            "pageEnd": 1455,
+            "citationString": "Beale, NIGTC Revelation, §P...687 (pp. 1454–1455)"
+          },
+          "quote": {
+            "text": "Various Jewish exegetical traditions understood Daniel’s fourth kingdom as transtemporal",
+            "sha256": "8178ec6e2ad764bc221dcbdadb7b878af6a28a251fdfe821c6da9353d5f64733",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4568,
+            "nativeSectionId": "P...694"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...694 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1461,
+            "pageEnd": 1462,
+            "citationString": "Beale, NIGTC Revelation, §P...694 (pp. 1461–1462)"
+          },
+          "quote": {
+            "text": "the prophecy of Israel’s oppression at the hands of a fiendish divine opponent have begun at Christ’s death and resurrection and are continuing to be fulfilled in the persecution of the church",
+            "sha256": "349c3c89293279f1f02804f0ce25c30060d0bc5549bc89075425b8046be3c985",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "N",
+      "axisName": "Cross-book coherence (Dan ↔ Rev)",
+      "position": "Daniel is one of the primary frameworks within which the whole Apocalypse is conceived; Dan 2:28-29, 45 ('what must take place') in Rev 1:1, 1:19, 4:1, 22:6 functions as a deliberate sign-post of the Danielic frame; Rev 1, Rev 4-5, Rev 13, and Rev 17 are each Danielic Vorbild-controlled. Roughly 50% of OT references in Rev 1:7-20 are from Daniel — predominantly Dan 7 and Dan 10. Beale's broader Daniel-in-Revelation thesis is here re-stated as the methodological premise of the Revelation commentary itself.",
+      "commitment": "strong",
+      "rationale": "Beale states explicitly that 'John may be asserting that Daniel 2 (and its parallel, Daniel 7ff.) is one of the primary frameworks within which the following contents of the whole Apocalypse are to be conceived.' He develops this with allusion-density tabulation in Rev 1 (~50% from Daniel), Rev 13 (two-thirds from Daniel), and Rev 17 (the whole 17:8 threefold formula derived from Dan 7's three rise-and-destruction prophecies of the beast). The structural claim is paired with eschatological inversion: 'What Daniel expected to occur in the far-off latter days, the defeat of cosmic evil and the ushering in of the divine kingdom, John expects to begin in his own generation.' This makes Daniel-in-Revelation not merely an allusion catalog but the inaugurated-eschatological grammar of the Apocalypse.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3923,
+            "nativeSectionId": "INTRO.DANALLUSIONS"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§INTRO.DANALLUSIONS — The Progressive Recapitulation (Parallelism) Position",
+            "page": 393,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §INTRO.DANALLUSIONS (p. 393)"
+          },
+          "quote": {
+            "text": "John may be asserting that Daniel 2 (and its parallel, Daniel 7ff.) is one of the primary frameworks within which the following contents of the whole Apocalypse are to be conceived",
+            "sha256": "c4c5f71df6fa9affe4ff00e8c67803fa28f6bb79ce5108056f08d3da6618673a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3923,
+            "nativeSectionId": "INTRO.DANALLUSIONS"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§INTRO.DANALLUSIONS — The Progressive Recapitulation (Parallelism) Position",
+            "page": 393,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §INTRO.DANALLUSIONS (p. 393)"
+          },
+          "quote": {
+            "text": "the defeat of cosmic evil and the ushering in of the divine kingdom, John expects to begin in his own generation",
+            "sha256": "fdac32647d93e1ad51e3df6c42b952a6d744bf4ae9b7f2aedef2b86e20d4198d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "About half of the OT references in vv 7–20 are from Daniel",
+            "sha256": "5be4217020ea809499cb1c835361b84fbc4b232d8c25eda8816887e514b779fe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "vv 7–20 may be a “midrash” on these two chapters from Daniel",
+            "sha256": "86c11c99178c0c92fbce5800e7a28b99a1110d7d0e400136bf9a7ce96f324ce6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Transtemporal world-system, NOT a literal counted Roman emperor sequence. The 'seven heads / seven mountains / seven kings' of Rev 17 represent 'the oppressive power of world government throughout the ages,' though Rome is the contemporary first-century embodiment. Beale collapses Daniel's four beasts into the one beast (Dan 7:4-7 supplies all seven heads of Rev 13:1 / Rev 17:9), and rejects every variant Roman-emperor count for both internal-textual and historical reasons. Hendriksen's 'seven historical empires figuratively representing all empires throughout history' is closest to Beale's preferred reading.",
+      "commitment": "strong",
+      "rationale": "Beale tabulates every plausible emperor enumeration and shows none works without arbitrary inclusions/exclusions: where to start (Caesar/Augustus/Caligula/Nero); which short reigns (Galba/Otho/Vitellius) to count; how the eighth king is also one of the seven without a figurative move. He prefers the figurative reading — the seven heads are figurative for fullness/completeness of oppressive power, with the seventh-and-eighth being the final escalated manifestation directly preceding Christ's parousia. This dovetails with his identification of Daniel 7's four beasts as together supplying the seven heads, and aligns Rev 17 with the same transtemporal beast picture in Rev 12:3 and 13:1-3. Rome is alluded to as the 'city of seven hills' (citing Virgil, Martial, etc.) but treated as the first-century instance, not the whole referent.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4751,
+            "nativeSectionId": "SEC.30.4"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.30.4 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1760,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §SEC.30.4 (p. 1760)"
+          },
+          "quote": {
+            "text": "The longer version of the third part of the formula, “ascend … and go to destruction,” is adapted from Daniel 7",
+            "sha256": "5829eb6feccc3b0ae62a61d5abf756b6880db8af25f9804942840e70cd83ee12",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4754,
+            "nativeSectionId": "P...868"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...868 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1763,
+            "pageEnd": 1764,
+            "citationString": "Beale, NIGTC Revelation, §P...868 (pp. 1763–1764)"
+          },
+          "quote": {
+            "text": "Daniel 7 is also the source of the seven heads in Rev. 13:1",
+            "sha256": "a2018ca8191ad47a514efef3e806a5f1bd6e94dbf9fbb0d6c49dcab066c85782",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4755,
+            "nativeSectionId": "P...869"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...869 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1764,
+            "pageEnd": 1765,
+            "citationString": "Beale, NIGTC Revelation, §P...869 (pp. 1764–1765)"
+          },
+          "quote": {
+            "text": "the seven mountains and kings represent the oppressive power of world government throughout the ages",
+            "sha256": "7e7932e720fe0c3826d98d388d2b09d31e8ae7e858de10ece746bedadcf4770a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4761,
+            "nativeSectionId": "P...875"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...875 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1770,
+            "pageEnd": 1771,
+            "citationString": "Beale, NIGTC Revelation, §P...875 (pp. 1770–1771)"
+          },
+          "quote": {
+            "text": "Hendriksen’s version of the identification of the seven kings with world empires is more plausible",
+            "sha256": "2cec9c22f6e207c8a5d3ea4fbef9f4c0ea92d6e3f4f8528fbdd3e031fdcedf6f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "J",
+      "axisName": "Son of Man trajectory",
+      "position": "Rev 1:7-20 fuses Dan 7 (Ancient of Days, Son of Man) with Dan 10 (white-robed heavenly figure) to identify the risen Christ as both Son of Man AND bearer of Ancient-of-Days attributes — head/hair white, glorified appearance — applied to him because of his death and resurrection. The transferal is christologically distinctive: Daniel keeps Ancient-of-Days and Son-of-Man separate; Revelation fuses them, signaling Christ's deity. Christ's 'coming' in Rev 1:7 (Dan 7:13 + Zech 12:10, with Matt 24:30 having likely 'influenced' the combination) is read inaugurated-eschatologically: it spans the church age in conditional visitations of judgment AND culminates in the final parousia.",
+      "commitment": "moderate",
+      "rationale": "Beale concludes that Rev 1:7-20 is 'a midrash on these two chapters from Daniel' (Dan 7 + Dan 10), with about 50% of OT references from Daniel. Crucially, the Ancient-of-Days head/hair-white of Dan 7:9 is transferred to the Son of Man figure in Rev 1:14 — a christologically distinctive move. Rev 1:7's Dan 7:13 + Zech 12:10 combination is read inaugurated: the Daniel-7 reference 'may include the whole course of the church age,' while Zechariah-12 mourning is consummated at the parousia. Matt 24:30's identical combination 'may have influenced' John, but Beale hedges on whether this is Synoptic mediation or independent Christian-Daniel tradition. Commitment is moderate because Beale carefully holds Synoptic-mediation as plausible but not the load-bearing argument; the load-bearing argument is the inductive Dan-7+10 allusion density in Rev 1.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "About half of the OT references in vv 7–20 are from Daniel",
+            "sha256": "5be4217020ea809499cb1c835361b84fbc4b232d8c25eda8816887e514b779fe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "vv 7–20 may be a “midrash” on these two chapters from Daniel",
+            "sha256": "86c11c99178c0c92fbce5800e7a28b99a1110d7d0e400136bf9a7ce96f324ce6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3989,
+            "nativeSectionId": "P...197"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...197 — The Son’s Kingship and the Father’s Sovereignty over History are Emphasized as the Basis of the Church’s Grace and Peace and the Father’s Glory (1:7–8)",
+            "page": 452,
+            "pageEnd": 453,
+            "citationString": "Beale, NIGTC Revelation, §P...197 (pp. 452–453)"
+          },
+          "quote": {
+            "text": "John typically adheres to and consistently develops the contextual ideas of his OT references",
+            "sha256": "b9cdcaad942d6a43ebd10ede726aba4b32fae395c95848d58ca9d959f0bb72f0",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Apocalyptic genre and method",
+      "position": "Apocalyptic = 'an intensification of prophecy,' not a separate genre. Revelation is best understood within the OT prophetic-apocalyptic tradition of Ezekiel, Daniel, and Zechariah. Methodologically, John 'typically adheres to and consistently develops the contextual ideas of his OT references' — the burden of proof rests on those proposing decontextualized usage. This contextual-respect principle is the methodological backbone of the commentary.",
+      "commitment": "moderate",
+      "rationale": "Beale's hermeneutical commitment is methodologically central: against atomistic readings of apocalyptic OT-use, he insists on contextual respect as the working hypothesis. He demonstrates this inductively across Rev 1:7 (Zech 12 used in continuity with its OT context of repentance and end-time judgment), Rev 13 (Dan 7's four-beast complex carried over with its eschatological-fiend pattern intact), and Rev 17 (Dan 4 + Dan 7 carried with their Babylon-as-tyrant frame). The genre framing — apocalyptic as intensification of prophecy — preserves predictive content while accepting the genre's symbolic density. Position is moderate because Beale grants exceptions and is cautious about claiming John could not deviate from OT context.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3989,
+            "nativeSectionId": "P...197"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...197 — The Son’s Kingship and the Father’s Sovereignty over History are Emphasized as the Basis of the Church’s Grace and Peace and the Father’s Glory (1:7–8)",
+            "page": 452,
+            "pageEnd": 453,
+            "citationString": "Beale, NIGTC Revelation, §P...197 (pp. 452–453)"
+          },
+          "quote": {
+            "text": "John typically adheres to and consistently develops the contextual ideas of his OT references",
+            "sha256": "b9cdcaad942d6a43ebd10ede726aba4b32fae395c95848d58ca9d959f0bb72f0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "F",
+      "axisName": "Saints of the Most High",
+      "position": "Saints of Dan 7:22 ('judgment given to/for the saints') are vindicated in Rev 20:4 — the 'judgment was given' to those on thrones is read as 'judgment was passed [against the devil] on their behalf.' Saints' reign is corporate-judicial: they have begun to reign and to execute the judicial function that they will carry out consummately at the end of the age. This is the inaugurated, heavenly-vindication phase of saints' kingship; their full reign follows the consummation. Christ's reign and the saints' reign are bound together as in Daniel 7.",
+      "commitment": "moderate",
+      "rationale": "Beale reads Rev 20:4 ('judgment was given to them') as a deliberate allusion to Dan 7:22 ('judgment was passed in favor of the saints'). The κρίμα ἐδόθη αὐτοῖς is dative of advantage — judgment passed on the saints' behalf, vindicating them against their persecutors. The pattern from Daniel 7 of beast → judgment-on-beast → saints-receive-kingdom is the structure of Rev 20:1-4. Beale insists 'thrones indicate primarily their kingship' — the saints are heaven-located deceased believers reigning with Christ, not yet on a millennial earth. Commitment is moderate because Beale grants the broader question of who sits on the thrones (martyrs only? all saints? angels with saints?) is contested; he prefers a both/and reading but acknowledges five legitimate identifications in the field.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4896,
+            "nativeSectionId": "SEC.33.2"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.33.2 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2015,
+            "pageEnd": 2016,
+            "citationString": "Beale, NIGTC Revelation, §SEC.33.2 (pp. 2015–2016)"
+          },
+          "quote": {
+            "text": "the primary point of the millennium is to demonstrate the victory of suffering Christians",
+            "sha256": "0aa9af5e3a2cca2cc44fbceb8a48080b7b9a30dc88e0607bcf091c7f65a90740",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4901,
+            "nativeSectionId": "P...997"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...997 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2020,
+            "pageEnd": 2021,
+            "citationString": "Beale, NIGTC Revelation, §P...997 (pp. 2020–2021)"
+          },
+          "quote": {
+            "text": "executed on behalf of God’s people",
+            "sha256": "b8b8726d627eed89fafa88135b3517409aec9067d141f1611dd7d39094cf2a67",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4901,
+            "nativeSectionId": "P...997"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...997 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2020,
+            "pageEnd": 2021,
+            "citationString": "Beale, NIGTC Revelation, §P...997 (pp. 2020–2021)"
+          },
+          "quote": {
+            "text": "saints are pictured as beginning to reign and to execute the judicial function",
+            "sha256": "4501adf462aacdfee771f91d3ebfac870dee0a90ff2556ee4a4a094f6797f9ad",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Rev 1",
+      "positionSummary": "Rev 1:7-20 is a Dan-7 + Dan-10 midrash. Roughly 50% of OT references in vv 7-20 are from Daniel. Rev 1:7 fuses Dan 7:13 with Zech 12:10 — Beale notes Matt 24:30's identical combination 'may have suggested' it to John. The vision in 1:12-20 portrays Christ with Dan 7:9's head/hair white (= Ancient of Days attributes) and Dan 10:5-6's robe + golden sash + bronze feet + voice (= heavenly-man attributes), fusing Ancient-of-Days deity with Son-of-Man messianic kingship in a single christological figure. The seven lampstands derive from Zech 4 and represent the church as the inaugurated end-time temple.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "About half of the OT references in vv 7–20 are from Daniel",
+            "sha256": "5be4217020ea809499cb1c835361b84fbc4b232d8c25eda8816887e514b779fe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "vv 7–20 may be a “midrash” on these two chapters from Daniel",
+            "sha256": "86c11c99178c0c92fbce5800e7a28b99a1110d7d0e400136bf9a7ce96f324ce6",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3989,
+            "nativeSectionId": "P...197"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...197 — The Son’s Kingship and the Father’s Sovereignty over History are Emphasized as the Basis of the Church’s Grace and Peace and the Father’s Glory (1:7–8)",
+            "page": 452,
+            "pageEnd": 453,
+            "citationString": "Beale, NIGTC Revelation, §P...197 (pp. 452–453)"
+          },
+          "quote": {
+            "text": "John typically adheres to and consistently develops the contextual ideas of his OT references",
+            "sha256": "b9cdcaad942d6a43ebd10ede726aba4b32fae395c95848d58ca9d959f0bb72f0",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 13",
+      "positionSummary": "Rev 13 is moulded on Daniel 7 throughout. Rev 13:1-2 collapses all four Dan-7 beasts into one beast (the seven heads = composite of all four). The chapter follows Dan 7's threefold authorization scheme and inherits the Dan-7:25 + Dan-8:11 + Dan-11:36 'three-element' eschatological-tyrant pattern — Beale notes these three together are 'unique to Daniel in the OT.' The beast's death-and-resurrection (13:3) is a christological parody of the slain Lamb of Rev 5:6, with the beast's career structurally paralleling Christ's. Dan 7:14's Son-of-Man universal worship is ironically transferred to the beast at 13:7-8a. The transtemporal Antichrist is corporate (= devil's nemesis throughout history) with multiple individual incarnations and a final escalated manifestation, paralleling 1 John 2:18 ('many antichrists') and 2 Thess 2:1-12.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4565,
+            "nativeSectionId": "P...691"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...691 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1458,
+            "pageEnd": 1459,
+            "citationString": "Beale, NIGTC Revelation, §P...691 (pp. 1458–1459)"
+          },
+          "quote": {
+            "text": "the chief opponent of Christ cannot be limited to one historical person or epoch",
+            "sha256": "db9a669f2e9766baa69f25d7e0b11eaaf8bdbc8683bdbe8c038fe97a9f1d8605",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4566,
+            "nativeSectionId": "P...692"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...692 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1459,
+            "pageEnd": 1460,
+            "citationString": "Beale, NIGTC Revelation, §P...692 (pp. 1459–1460)"
+          },
+          "quote": {
+            "text": "the combined image of the rise and fall of Daniel’s four empires, which is applied to the one beast and connotes his temporal transcendency",
+            "sha256": "ad15742c02ac8af6dbb058e3f1c8b5d3ef34ee1e8546473e72cf21bb886cc07b",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4567,
+            "nativeSectionId": "P...693"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...693 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1461,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §P...693 (p. 1461)"
+          },
+          "quote": {
+            "text": "The theme of christological parody indicates that John has constructed a history for the beast which parallels that of Christ",
+            "sha256": "cf0c3b14ad95ce6289c2e407f4c282bd2e125160373239074079e0cbb8a05aa0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4569,
+            "nativeSectionId": "P...695"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...695 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1463,
+            "pageEnd": 1464,
+            "citationString": "Beale, NIGTC Revelation, §P...695 (pp. 1463–1464)"
+          },
+          "quote": {
+            "text": "the three elements of a blaspheming mouth, an authorization clause",
+            "sha256": "508ab16d6ffa5680f667b4d9d4910ab812574c984480bd1dd6d2230d0047d89b",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4570,
+            "nativeSectionId": "P...697"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...697 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1464,
+            "pageEnd": 1467,
+            "citationString": "Beale, NIGTC Revelation, §P...697 (pp. 1464–1467)"
+          },
+          "quote": {
+            "text": "speak of an eschatological fiend who speaks out against God, equates himself with God",
+            "sha256": "715c5192ccf306da5d9dd45f8f45edbd398443e8de5b5ee2a04e6243e963069a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4571,
+            "nativeSectionId": "P...700"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...700 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1467,
+            "pageEnd": 1468,
+            "citationString": "Beale, NIGTC Revelation, §P...700 (pp. 1467–1468)"
+          },
+          "quote": {
+            "text": "the beast’s conquering efforts are but an ironic parody of the Son of man’s final triumph",
+            "sha256": "270ff10d1a78c9470466ef1779063eb836bb7a99e0f4b6fa32cb5f4e57568ffe",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4561,
+            "nativeSectionId": "P...687"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...687 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1454,
+            "pageEnd": 1455,
+            "citationString": "Beale, NIGTC Revelation, §P...687 (pp. 1454–1455)"
+          },
+          "quote": {
+            "text": "Various Jewish exegetical traditions understood Daniel’s fourth kingdom as transtemporal",
+            "sha256": "8178ec6e2ad764bc221dcbdadb7b878af6a28a251fdfe821c6da9353d5f64733",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4568,
+            "nativeSectionId": "P...694"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...694 — The Devil Authorizes the State as His Agent to Persecute the Church and to Deceive the Ungodly (12:18–13:8)",
+            "page": 1461,
+            "pageEnd": 1462,
+            "citationString": "Beale, NIGTC Revelation, §P...694 (pp. 1461–1462)"
+          },
+          "quote": {
+            "text": "the prophecy of Israel’s oppression at the hands of a fiendish divine opponent have begun at Christ’s death and resurrection and are continuing to be fulfilled in the persecution of the church",
+            "sha256": "349c3c89293279f1f02804f0ce25c30060d0bc5549bc89075425b8046be3c985",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 17",
+      "positionSummary": "Rev 17 reprises and develops the Dan-7 beast complex. The threefold formula 'was, is not, is about to come up out of the abyss and goes to destruction' (17:8) parodies Christ's death-resurrection-parousia AND echoes Dan 7's three repeated rise-and-destruction prophecies of the beast (Dan 7:3, 11, 17-18, 23, 26). The 'King of kings, Lord of lords' title (17:14b) derives primarily from Dan 4:37 LXX. The seven heads = the four Dan-7 beasts collected (Dan 7:4-7); the ten horns = Dan 7:7-8, 20, 24's ten kings. The mountains/kings are figurative for the oppressive power of world government throughout the ages, not a literal Roman-emperor count. Hendriksen's 'seven historical empires figuratively representing all empires' is closest to Beale's reading.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4751,
+            "nativeSectionId": "SEC.30.4"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.30.4 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1760,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §SEC.30.4 (p. 1760)"
+          },
+          "quote": {
+            "text": "The longer version of the third part of the formula, “ascend … and go to destruction,” is adapted from Daniel 7",
+            "sha256": "5829eb6feccc3b0ae62a61d5abf756b6880db8af25f9804942840e70cd83ee12",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4754,
+            "nativeSectionId": "P...868"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...868 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1763,
+            "pageEnd": 1764,
+            "citationString": "Beale, NIGTC Revelation, §P...868 (pp. 1763–1764)"
+          },
+          "quote": {
+            "text": "Daniel 7 is also the source of the seven heads in Rev. 13:1",
+            "sha256": "a2018ca8191ad47a514efef3e806a5f1bd6e94dbf9fbb0d6c49dcab066c85782",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4755,
+            "nativeSectionId": "P...869"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...869 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1764,
+            "pageEnd": 1765,
+            "citationString": "Beale, NIGTC Revelation, §P...869 (pp. 1764–1765)"
+          },
+          "quote": {
+            "text": "the seven mountains and kings represent the oppressive power of world government throughout the ages",
+            "sha256": "7e7932e720fe0c3826d98d388d2b09d31e8ae7e858de10ece746bedadcf4770a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4761,
+            "nativeSectionId": "P...875"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...875 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1770,
+            "pageEnd": 1771,
+            "citationString": "Beale, NIGTC Revelation, §P...875 (pp. 1770–1771)"
+          },
+          "quote": {
+            "text": "Hendriksen’s version of the identification of the seven kings with world empires is more plausible",
+            "sha256": "2cec9c22f6e207c8a5d3ea4fbef9f4c0ea92d6e3f4f8528fbdd3e031fdcedf6f",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Rev 20",
+      "positionSummary": "Rev 20:1-6 covers the church age. The binding of Satan = inaugurated effect of Christ's death-resurrection, restraining only the devil's gospel-deceiving activity while still allowing personal-level satanic activity. Isaiah 24:21-22 supplies the OT base; the 'thousand years' is figurative (third power of ten = ideal long epoch). The thrones-and-souls of 20:4 are deceased believers reigning in heaven, vindicating Dan 7:22 ('judgment given on their behalf'). 20:7-15 recapitulates the final-judgment scene already described in 19:11-21 (Ezekiel 38-39 recapitulation pattern). Beale prefers 'inaugurated millennialism' over 'amillennialism.' Seven structural parallels with Rev 12:7-11 demonstrate that Rev 20:1-6 narrates the same redemptive-historical reality from a different angle.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4869,
+            "nativeSectionId": "P...973"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...973 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church and by the Resurrection of Believers’ Souls to Heaven to Reign There with Christ (20:1–6)",
+            "page": 1996,
+            "pageEnd": 1997,
+            "citationString": "Beale, NIGTC Revelation, §P...973 (pp. 1996–1997)"
+          },
+          "quote": {
+            "text": "this view has been called amillennialism, though it is better to call it, more simply, “inaugurated millennialism”",
+            "sha256": "8a76344a0ac8d1db6231cd05a004dea1562286340343ef340249c921d8968579",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4888,
+            "nativeSectionId": "SEC.33.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.33.1 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2008,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §SEC.33.1 (p. 2008)"
+          },
+          "quote": {
+            "text": "The time span of the vision will be seen to extend from Christ’s resurrection until his final parousia",
+            "sha256": "a02e2594b40d8552f8a76c57251d4bc16335039fb3a2e9328e818b20c71d660d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4890,
+            "nativeSectionId": "P...986"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...986 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2009,
+            "pageEnd": 2010,
+            "citationString": "Beale, NIGTC Revelation, §P...986 (pp. 2009–2010)"
+          },
+          "quote": {
+            "text": "Christ’s work of restraining the devil’s ability to “deceive” is not a complete curtailment of all of the devil’s activities but only a restraint on his deceiving activities",
+            "sha256": "8427b7adbb0e40a82605be3bf51989d2224c599365e4004ee821091f984b0694",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4895,
+            "nativeSectionId": "P...991"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...991 — The Millennium is Inaugurated during the Church Age by God’s Curtailment of Satan’s Ability to Deceive the Nations and to Annihilate the Church (20:1–3)",
+            "page": 2014,
+            "pageEnd": 2015,
+            "citationString": "Beale, NIGTC Revelation, §P...991 (pp. 2014–2015)"
+          },
+          "quote": {
+            "text": "Isa. 24:21–22 is the basis for Rev. 20:2–3",
+            "sha256": "9cc9dee66405787f4d3efe5a55793ec773d9612159fa41d2abe50443e92f67f0",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4899,
+            "nativeSectionId": "P...995"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...995 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2018,
+            "pageEnd": 2019,
+            "citationString": "Beale, NIGTC Revelation, §P...995 (pp. 2018–2019)"
+          },
+          "quote": {
+            "text": "1,000 is the third power of ten, and, if figurative here, might represent a long era",
+            "sha256": "452434d6683b7463c1b509829bcbb765820046753c0858e5e3801bced853998e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4896,
+            "nativeSectionId": "SEC.33.2"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§SEC.33.2 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2015,
+            "pageEnd": 2016,
+            "citationString": "Beale, NIGTC Revelation, §SEC.33.2 (pp. 2015–2016)"
+          },
+          "quote": {
+            "text": "the primary point of the millennium is to demonstrate the victory of suffering Christians",
+            "sha256": "0aa9af5e3a2cca2cc44fbceb8a48080b7b9a30dc88e0607bcf091c7f65a90740",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4901,
+            "nativeSectionId": "P...997"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...997 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2020,
+            "pageEnd": 2021,
+            "citationString": "Beale, NIGTC Revelation, §P...997 (pp. 2020–2021)"
+          },
+          "quote": {
+            "text": "executed on behalf of God’s people",
+            "sha256": "b8b8726d627eed89fafa88135b3517409aec9067d141f1611dd7d39094cf2a67",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4901,
+            "nativeSectionId": "P...997"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...997 — The Millennium Is Inaugurated for Deceased Saints during the Church Age by the Resurrection of Their Souls, Placing Them in the Heavenly Condition of Having Authority with Christ as Priests and Kings over Spiritual Death (20:4–6)",
+            "page": 2020,
+            "pageEnd": 2021,
+            "citationString": "Beale, NIGTC Revelation, §P...997 (pp. 2020–2021)"
+          },
+          "quote": {
+            "text": "saints are pictured as beginning to reign and to execute the judicial function",
+            "sha256": "4501adf462aacdfee771f91d3ebfac870dee0a90ff2556ee4a4a094f6797f9ad",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Matt 24",
+      "positionSummary": "Matt 24:30's combination of Dan 7:13 (Son-of-Man on clouds) with Zech 12:10 (mourning of all tribes) likely 'influenced' John's identical fusion at Rev 1:7 — though Beale hedges between direct dependence and shared Christian-Daniel tradition. The Synoptic Olivet discourse stands in the same Dan-7-driven prophetic stream as Revelation; Matt 24:13 + 24:21-24 (cut-short tribulation + false Christs) underlies Beale's reading of Rev 13's deception-and-perseverance theme.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "About half of the OT references in vv 7–20 are from Daniel",
+            "sha256": "5be4217020ea809499cb1c835361b84fbc4b232d8c25eda8816887e514b779fe",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4014,
+            "nativeSectionId": "EXC.1.1"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§EXC.1.1 — Conclusions with Respect to the Use of the Old Testament in Revelation 1",
+            "page": 476,
+            "pageEnd": null,
+            "citationString": "Beale, NIGTC Revelation, §EXC.1.1 (p. 476)"
+          },
+          "quote": {
+            "text": "vv 7–20 may be a “midrash” on these two chapters from Daniel",
+            "sha256": "86c11c99178c0c92fbce5800e7a28b99a1110d7d0e400136bf9a7ce96f324ce6",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "Mark 13",
+      "positionSummary": "Mark 13:26 + 14:62's Dan 7:13 citation, alongside Matt 24:30's combination, is part of the Christian-Daniel tradition Beale sees as a likely mediating channel for Rev 1:7. Beale notes Mark 13:26 / 14:62 'refers not to the final coming of Christ, but to the Son of man's coming in judgment of Jerusalem in a.d. 70' — opening the door to inaugurated rather than purely future readings of Dan 7:13 in the NT. The Mark 13 + Matt 24 mediation is held tentatively in NIGTC; the fuller argument for Synoptic mediation lives in Beale's earlier Daniel-in-Revelation monograph.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 3989,
+            "nativeSectionId": "P...197"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...197 — The Son’s Kingship and the Father’s Sovereignty over History are Emphasized as the Basis of the Church’s Grace and Peace and the Father’s Glory (1:7–8)",
+            "page": 452,
+            "pageEnd": 453,
+            "citationString": "Beale, NIGTC Revelation, §P...197 (pp. 452–453)"
+          },
+          "quote": {
+            "text": "John typically adheres to and consistently develops the contextual ideas of his OT references",
+            "sha256": "b9cdcaad942d6a43ebd10ede726aba4b32fae395c95848d58ca9d959f0bb72f0",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "targetPassage": "1 En 37-71",
+      "positionSummary": "Beale references 1 Enoch 37-71 (the Parables / Similitudes) as one of the Jewish-apocalyptic streams independently developing the Dan-7 'Son of Man' as a messianic figure (cf. 4 Ezra 13). In NIGTC he treats this briefly, pointing to it as background context for Rev 1:7's messianic Son-of-Man reading; the fuller demonstration that 1 Enoch 46-48 is itself a midrash on Dan 7:9-27 lives in Beale's prior Daniel-in-Revelation monograph. The 'Lord of lords, God of gods, King of kings' title in 1 En 9:4 is noted as a possible influence on Rev 17:14b but is judged less likely than Dan 4:37 LXX.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:29.71.18",
+            "logosArticleNum": 4761,
+            "nativeSectionId": "P...875"
+          },
+          "frontend": {
+            "author": "Beale",
+            "title": "The Book of Revelation: A Commentary on the Greek Text (NIGTC)",
+            "section": "§P...875 — The Interpretation of the Beast: The Deceptive Career of the Satanic State and Its Allies Will Be Revealed as a Sham When They Are Judged by Christ at the End of Time (17:8–14)",
+            "page": 1770,
+            "pageEnd": 1771,
+            "citationString": "Beale, NIGTC Revelation, §P...875 (pp. 1770–1771)"
+          },
+          "quote": {
+            "text": "Hendriksen’s version of the identification of the seven kings with world empires is more plausible",
+            "sha256": "2cec9c22f6e207c8a5d3ea4fbef9f4c0ea92d6e3f4f8528fbdd3e031fdcedf6f",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Names his interpretive position 'eclecticism' or 'redemptive-historical modified idealism' — explicitly carving a fifth space distinct from preterist, historicist, futurist, and pure idealist readings; symbols are largely transtemporal.",
+    "Prefers 'inaugurated millennialism' over 'amillennialism' — argues the latter is vaguer and the former captures the already/not-yet structure of Rev 20 positively.",
+    "Restraint of Satan in Rev 20:1-3 is partial, not absolute — limited to 'deceiving the nations' so the gospel can spread; pre-Christ, Satan blinded the nations (Israel could not be a light); post-Christ, that veil is lifted but personal-level satanic activity continues.",
+    "Develops a seven-point structural parallel between Rev 20:1-6 and Rev 12:7-11 to argue the two passages narrate the same events from different angles, demonstrating recapitulation between Rev 19 and Rev 20.",
+    "Beast in Rev 13/17 is christologically parodic — six or seven specific structural parallels with the Lamb of Rev 5 (slain, horns, universal worship, sword, names on followers, fourfold tribes-tongues-peoples-nations) make Rome-only / Nero-only readings impossible.",
+    "Three Danielic elements (blaspheming mouth, authorization 'it was given to him' clause, decreed time-period) co-occurring uniquely in Daniel — used as the diagnostic signature of Rev 13 / Rev 17 dependence on Dan 7 + Dan 8 + Dan 11.",
+    "Rev 17:8's threefold formula (was, is not, is about to come) is BOTH a parody of Christ's death-resurrection-parousia AND a collective allusion to Dan 7's three repeated rise-and-destruction prophecies of the beast — the same formula doing double work.",
+    "Treats Rev 1:13-14's white head/hair as a christological transferal of Dan-7:9 Ancient-of-Days attributes onto the Dan-7:13 Son of Man — Daniel keeps the two figures separate; Revelation fuses them to signal Christ's deity.",
+    "Tabulates every plausible Roman-emperor count for the 'seven kings' of Rev 17:10 and shows none works without arbitrary inclusions/exclusions — drives the figurative-transtemporal reading.",
+    "Reads the four-beast Daniel-7 sequence as collapsed into the single Rev-13 beast (4 → 1 collapse), with the seven heads as Daniel's four-beast composite (4 + 3 heads = 7), distinct from Charles's narrowly Roman emperor count."
+  ],
+  "uncertainties": [
+    "Synoptic-mediation thesis (Mark 13 / Matt 24 as channel of Daniel into Revelation) is held tentatively in NIGTC — Beale grants Matt 24:30 'may have influenced' Rev 1:7 but hedges on whether John knew Synoptics directly or via shared Christian-Daniel tradition.",
+    "On 'who sits on the thrones' in Rev 20:4 (martyrs only, all saints, angels, saints+angels), Beale prefers an inclusive reading but explicitly grants five legitimate possibilities.",
+    "On the 'eighth king' of Rev 17:11 (descendant of vs. one of the seven), Beale rejects the 'one of the seven' reading but engages the question on internal-textual grounds without dogmatism.",
+    "On compositional/dating questions for Daniel itself, Beale assumes Daniel's prophetic integrity and operates throughout as if Daniel-as-source supplies a coherent prophetic framework — does not enter Maccabean-vs-sixth-century date debates.",
+    "On whether the 'seven heads' refer to seven world empires (Hendriksen's view) or seven figurative kings, Beale treats Hendriksen as 'more plausible' but maintains transtemporal-symbolism as primary."
+  ]
+}

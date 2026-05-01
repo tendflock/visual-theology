@@ -1,0 +1,589 @@
+{
+  "scholarId": "sibylline-oracles-charlesworth-otp2",
+  "authorDisplay": "Sib Or III + IV (via Charlesworth OTP 1)",
+  "workDisplay": "Sibylline Oracles (Charlesworth OTP)",
+  "resourceId": "LLS:OTPSEUD01",
+  "resourceFile": "OTPSEUD01.logos4",
+  "traditionTag": "second-temple-reception",
+  "fullTitle": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+  "passageCoverage": [
+    "Dan 7:7-8",
+    "Dan 7:23-27",
+    "Dan 2:31-45"
+  ],
+  "commitmentProfile": {
+    "strong": [
+      "B: Fourth kingdom — Sib Or 4's hellenistic-age oracle preserves a four-kingdoms scheme (Assyria → Media → Persia → Macedonia) climaxing in Macedonia as the fourth kingdom marked for destruction; Rome is bolted onto the original schema by a first-century-CE Jewish redactor (vss. 102-51) who could not integrate Rome into the original numerical periodization.",
+      "C: Little-horn typology — Sib Or 3.388-400 explicitly reuses Daniel 7's 'root with ten horns' and 'horn growing on the side' to indict Alexander and the Diadochoi, a late Jewish editorial overlay on what was originally an oracle 'against the Macedonians.'",
+      "L: Apocalyptic hermeneutic — the Sibylline mode of Daniel-7 reception is overlay/redaction (a Jewish Sibyllist 'updates' a hellenistic political oracle by inserting Daniel's beast-horns vocabulary) rather than verse-by-verse exegesis.",
+      "K: Date and provenance — Sib Or 3 main corpus c. 163-145 BCE, Egyptian-Jewish, written in circles around Onias and the seventh Ptolemaic king; Sib Or 4's hellenistic core post-Alexander, redacted c. 80 CE by a Jewish baptist circle in Syria/Jordan after the destruction of the Temple.",
+      "H: Eschatological structure — Sib Or 3 expects a 'King from the sun' (3.652), an Egyptian/Ptolemaic messianic figure, followed by transformation of the earth and exaltation of the Temple; Sib Or 4 expects conflagration, resurrection, and judgment as the climax of the four-kingdoms sequence."
+    ],
+    "moderate": [
+      "B (variant): Sib Or 4's redactor adds Rome (vss. 102-51) to the original four-kingdoms scheme without re-numbering — the Roman recasting is a supplement to, not a replacement of, the Daniel-style Macedonian climax (distinguishing Sib Or 4 from 4 Ezra 11-12's beast-as-Rome retargeting).",
+      "Reception mode: ten generations + four kingdoms together — Sib Or 4 fuses Persian/Hellenistic ten-generations periodization with Daniel-style four-kingdoms periodization."
+    ],
+    "tentative": [
+      "Whether the original Sib Or 4 hellenistic oracle was Jewish at all: Collins notes 'nothing in the oracle necessarily requires Jewish authorship' for the four-kingdoms core.",
+      "Whether the four-kingdoms list (Assyria, Media, Persia, Macedonia) in Sib Or 4 derives from Daniel: Collins explicitly says it 'cannot be derived from the Book of Daniel' since Daniel begins with Babylon."
+    ]
+  },
+  "positions": [
+    {
+      "axis": "B",
+      "axisName": "Fourth kingdom",
+      "position": "Sib Or 4 preserves a hellenistic-age four-kingdoms oracle (Assyria → Media → Persia → Macedonia) in which Macedonia is the climactic fourth kingdom, marked for destruction. Collins reads this as analogous to but NOT directly derived from Daniel 2/7 — the Sibylline four-kingdoms list begins with Assyria rather than Babylon, paralleling Aemilius Sura and the Persian Zand-ī Vohūman Yasn rather than Daniel proper. The schema is updated by a first-century-CE Jewish redactor (vss. 102-51) who appends Rome's rise and fall, but Rome is not integrated into the original numerical periodization — it is a secondary addition to a closed Macedonia-as-fourth-kingdom oracle. Sib Or 3.388-400 separately introduces Daniel's horn imagery into an anti-Alexander oracle without reorganizing the broader periodization.",
+      "commitment": "strong",
+      "rationale": "Collins's introduction to Sib Or 4 lays out the structural argument with care. The original hellenistic oracle (4.49-101) follows the four-kingdoms scheme precisely: Assyrians (six generations), Medes (two), Persians (one), Macedonians (final/tenth = fourth kingdom). The translation's section heading 'The fourth kingdom' is Collins's editorial label for vss. 88-101. Crucially, Collins observes that the Macedonian list 'cannot be derived from the Book of Daniel, where the first empire is Babylon,' identifying instead Aemilius Sura and Tobit 14 as parallels. The Roman supplement (vss. 102-51) is editorial bolt-on. This is a reception-event distinct from 4 Ezra's deliberate Macedonian-to-Rome retargeting: Sib Or 4 keeps Macedonia as fourth kingdom and treats Rome as a secondary post-fourth-kingdom historical note.",
+      "compositional": "Sib Or 4 has two compositional strata: an original hellenistic anti-Macedonian oracle (post-Alexander, perhaps 3rd c. BCE) and a first-century-CE Jewish redaction (c. 80 CE) that bolts Rome's rise and fall onto the original schema and adds the conflagration-resurrection-judgment ending plus baptismal ethics. Sib Or 3 has three strata: main corpus (c. 163-145 BCE), oracles against various nations (3.350-488, including the Daniel-7 horns oracle), and 3.1-96 (probably the conclusion of a separate book, with Beliar/Nero anti-messiah inserted post-70 CE).",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10950,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO1 — Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO1"
+          },
+          "quote": {
+            "text": "The older hellenistic oracle is structured by a twofold division of history into ten generations and four kingdoms.",
+            "sha256": "d7961d88a19e25fd3053f7aad9c153889c456757859869abf595d6440b3c4680",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10950,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO1 — Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO1"
+          },
+          "quote": {
+            "text": "There we read that the Assyrians will rule for six generations, the Medes for two, and the Persians for one. Then the tenth generation and fourth kingdom coincide in the Macedonian Empire.",
+            "sha256": "601101a8eeee2fe1fffbd85f8ae6343d683ba582a3662ea6e14be5c66ee38920",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10950,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO1 — Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO1"
+          },
+          "quote": {
+            "text": "Since Rome is not integrated into the numerical schematization of history we must assume that verses 102–51 are a later addition",
+            "sha256": "88ccae9d1350e46e113ca1d80c9f3007a00b4381f4e943f186011fef10d9be92",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10951,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO2"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO2 — Date and Provenance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO2"
+          },
+          "quote": {
+            "text": "In schematizations of history of this sort the last enumerated kingdom/generation is either a glorious one (e.g. the seventh king in SibOr 3) or is especially marked out for destruction (as in Dan 2 and 7).",
+            "sha256": "f3cf4dcd20c0c5cdcff05620fd2e2d8860d17ed90f189b36c8a9f01d38a9547d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10951,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO2"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO2 — Date and Provenance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO2"
+          },
+          "quote": {
+            "text": "The particular enumeration of world kingdoms, Assyria, Media, Persia, Macedonia, cannot be derived from the Book of Daniel, where the first empire is Babylon",
+            "sha256": "e0182107da2eaf4c9a6a53759a22262ba3ef56a79f8f0a2e6b88d3f626b0d1e1",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10952,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO3 — Historical and Theological Importance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO3"
+          },
+          "quote": {
+            "text": "The four kingdoms are best known from Daniel 2 and 7, but are also found in Aemilius Sura and the Persian Zand-ī Vohūman Yasn.",
+            "sha256": "5825627ef4253ee7d38e5c6ee8e3f0ff54bc6c7ec9c231dd671d2a7ad1d537df",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10961,
+            "nativeSectionId": "PT1.CH4.TRANS3.BK4.8"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.BK4.8 — The Fourth Kingdom",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.BK4.8"
+          },
+          "quote": {
+            "text": "But when the Macedonians boast of scepters,\nthereafter there will also be dire capture for Thebes.",
+            "sha256": "927fe08326f187a775f1680aaa466bd330ae7849c835756b06666866fa470774",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    },
+    {
+      "axis": "C",
+      "axisName": "Little-horn / antichrist typology",
+      "position": "Sib Or 3.388-400 is the explicit Daniel-7 reception event in the Sibylline corpus: an oracle on Alexander 'the faithless man clad with a purple cloak' is updated by a Jewish Sibyllist who adds 'a root with ten horns' and 'a horn growing on the side' that 'will reign' — self-conscious reuse of Daniel 7:7-8 (the four-beast vision's ten horns and the little horn). Collins identifies this as an editorial layer 'clearly alluding to Daniel 7'; the redaction targets Alexander and the Diadochoi political situation rather than a single eschatological antichrist. A separate redaction in Sib Or 3.63-74 introduces 'Beliar from the Sebastenoi' (the line of the Augusti = Nero) as an eschatological adversary, paralleling Ascension of Isaiah's Beliar-Nero typology. The Sibylline mode is therefore not single-figure antichrist but typology-as-overlay: Daniel's horn/beast vocabulary reapplied to local political actors (Alexander/Diadochoi, then Nero/Rome) at successive redactional stages.",
+      "commitment": "strong",
+      "rationale": "Collins's introduction to verses 388-400 of Sib Or 3 explicitly identifies the Daniel-7 source for the editorial overlay: 'This oracle was updated by a Jewish Sibyllist who added references to the root with ten horns and the horn growing on the side, clearly alluding to Daniel 7.' Collins notes that 'since all the oracles in verses 350-488 were apparently late additions to Sibylline Oracles 3, the reference to Daniel is of no help in dating the book' — confirming the Daniel-7 layer is a redactional overlay, not original. The translated text preserves the Danielic vocabulary precisely: 'leaving one root, which the destroyer will also cut off from ten horns, he will sprout another shoot on the side ... and then the horn growing on the side will reign.' Beliar's eschatological adversary role in 3.63-74 is identified by Collins as most likely Nero ('from the line of the Augusti') paralleling Asc Isa 4:1.",
+      "compositional": "The Daniel-7 horn imagery in Sib Or 3.388-400 is editorial-redactional, added by a Jewish Sibyllist after the original anti-Alexander oracle was composed. The Beliar-Nero passage in 3.63-74 is a post-70 CE insertion bringing the collection up to date with current eschatological expectations.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10907,
+            "nativeSectionId": "PT1.CH4.TRANS2.INTRO1.2.3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.INTRO1.2.3 — Verses 388–400",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.INTRO1.2.3"
+          },
+          "quote": {
+            "text": "This oracle was updated by a Jewish Sibyllist who added references to the root with ten horns and the horn growing on the side, clearly alluding to Daniel 7.",
+            "sha256": "763be0527dbfc88bdb5cb24d2a71301d1093cde832c2ae325e8931ffe49892b3",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10907,
+            "nativeSectionId": "PT1.CH4.TRANS2.INTRO1.2.3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.INTRO1.2.3 — Verses 388–400",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.INTRO1.2.3"
+          },
+          "quote": {
+            "text": "Since all the oracles in verses 350–488 were apparently late additions to Sibylline Oracles 3, the reference to Daniel is of no help in dating the book.",
+            "sha256": "452aabeef0437866f9675675eefab78c200059ab8da6a5bb5041b11c54428a7e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10930,
+            "nativeSectionId": "PT1.CH4.TRANS2.BK3.17"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.BK3.17 — An Oracle on Alexander and His Descendants",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.BK3.17"
+          },
+          "quote": {
+            "text": "Yet leaving one root, which the destroyer will also cut off\nfrom ten horns, he will sprout another shoot on the side",
+            "sha256": "ac48e0776ad90da85e99a9349e9c33193d31b1f7a7adb92171bad4b929f91917",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10930,
+            "nativeSectionId": "PT1.CH4.TRANS2.BK3.17"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.BK3.17 — An Oracle on Alexander and His Descendants",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.BK3.17"
+          },
+          "quote": {
+            "text": "and then the horn growing on the side will reign",
+            "sha256": "6d652f18444c9c23b49ba1355d8e14bd320b9150fd132938f3157053d250d213",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10917,
+            "nativeSectionId": "PT1.CH4.TRANS2.BK3.4"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.BK3.4 — The Advent of Beliar",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.BK3.4"
+          },
+          "quote": {
+            "text": "Then Beliar will come from the Sebastēnoi",
+            "sha256": "95537d1b26b5310eaddc8b3ce871c6ce0cfeb715900af460e6cf4e81db5bb6e5",
+            "language": "en"
+          },
+          "supportStatus": "paraphrase-anchored"
+        }
+      ]
+    },
+    {
+      "axis": "L",
+      "axisName": "Apocalyptic hermeneutic",
+      "position": "The Sibylline mode of Daniel-7 reception is overlay/redaction rather than verse-by-verse exegesis: an existing political oracle is updated by a Jewish Sibyllist who adds Daniel-7 vocabulary (root, ten horns, horn-on-the-side) without re-organizing the oracle's overall logic. The four-kingdoms scheme in Sib Or 4 is structurally analogous to Daniel 2/7 but, per Collins, 'cannot be derived from the Book of Daniel' — it shares apocalyptic-periodization patterning with Daniel without literary dependence on it. The Sibylline mode is also self-consciously 'political' (Collins's term): 'The eschatology of the Jewish oracles is political in nature,' concerned with 'the advent of a glorious kingdom and the transformation of the earth.' Political eschatology of Daniel-7 type 'functioned widely in the ideology of resistance to Rome (and earlier to Greece) in the Near East.'",
+      "commitment": "strong",
+      "rationale": "Collins's introduction to the Sibylline corpus identifies a distinct apocalyptic-political-eschatology mode: periodization (ten generations or four kingdoms), pattern of sin → disaster → advent of king/kingdom, and use of older oracles as raw material for ongoing redaction. Daniel-7 vocabulary enters this mode as overlay (Sib Or 3.388-400) and as structural parallel (Sib Or 4's four-kingdoms scheme). Collins notes that the four-kingdoms periodization is 'best known from Daniel 2 and 7, but are also found in Aemilius Sura and the Persian Zand-ī Vohūman Yasn,' framing Daniel 7 as one node in a wider eastern-Mediterranean tradition of empire-periodization rather than the Sibyllist's primary source.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10833,
+            "nativeSectionId": "PT1.CH4.INTRO.8.1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.INTRO.8.1 — Eschatology",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.INTRO.8.1"
+          },
+          "quote": {
+            "text": "Periodization is ubiquitous in the Sibylline Oracles. Usually history is divided into ten generations, but the pattern of four kingdoms also occurs, at least in Sibylline Oracles 4.",
+            "sha256": "99a91ab73e8e9b15cdfee259e76ffbd11f89c7b314b38c9b2d6dcd7dbfe1b908",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10833,
+            "nativeSectionId": "PT1.CH4.INTRO.8.1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.INTRO.8.1 — Eschatology",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.INTRO.8.1"
+          },
+          "quote": {
+            "text": "Another example is provided by the schema of four kingdoms in Sibylline Oracles 4.",
+            "sha256": "32a9d177a97860276255f45bdac5a195b66019af5cc7b7a6fd4fce6bb39adc8e",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10833,
+            "nativeSectionId": "PT1.CH4.INTRO.8.1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.INTRO.8.1 — Eschatology",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.INTRO.8.1"
+          },
+          "quote": {
+            "text": "However, political eschatology also functioned widely in the ideology of resistance to Rome (and earlier to Greece) in the Near East.",
+            "sha256": "b834bdaf0cc5fc8357554eb45b8428fbd1de7b055637272236d95f33fd34b94e",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10952,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO3 — Historical and Theological Importance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO3"
+          },
+          "quote": {
+            "text": "The periodization of the hellenistic oracle has multiple parallels in Jewish apocalyptic.",
+            "sha256": "cff2e7ef5c5df298aede9b9f6335709e580778fbbc6c7023acf3a9e58a23f739",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "axisName": "Eschatological structure",
+      "position": "The Sibylline books work within a political-eschatological framework: an ideal king/kingdom resolves the present age. Sib Or 3 expects a 'King from the sun' (3.652), an Egyptian/Ptolemaic messianic figure who 'will stop the entire earth from evil war' — Collins identifies this as the seventh Ptolemaic king hailed as messiah. The end-state is the transformation of the earth and exaltation of the Jerusalem Temple. Sib Or 4, contrastingly, envisions the four-kingdoms sequence climaxing in conflagration, bodily resurrection, and judgment that divides pious from impious; the Sib Or 4 redactor's eschatology requires baptism as prerequisite for salvation. Both books participate in Daniel 7's broader pattern (judgment of last empire → transition to definitive kingdom) but rework it through distinct political horizons (Egyptian Ptolemaic messianism in Sib Or 3, Jewish-baptist conflagration-resurrection in Sib Or 4).",
+      "commitment": "strong",
+      "rationale": "Collins's introduction to Sib Or 3 makes the seventh-Ptolemaic-king-as-messiah claim explicit: 'Sibylline Oracles 3 looked upon the seventh Ptolemaic king, whether present or still future, as a messiah sent by God.' The translated text (3.652) reads 'And then God will send a King from the sun.' Sib Or 4's introduction frames its eschatology as conflagration plus resurrection. This is structurally Daniel-7-shaped (final empire → cosmic resolution) but with distinctive Sibylline contents.",
+      "compositional": null,
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10899,
+            "nativeSectionId": "PT1.CH4.TRANS2.INTRO1.1.3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.INTRO1.1.3 — Historical Importance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.INTRO1.1.3"
+          },
+          "quote": {
+            "text": "Sibylline Oracles 3 looked upon the seventh Ptolemaic king, whether present or still future, as a messiah sent by God.",
+            "sha256": "7aafb312bb9e1dbfa0794d5d301323fd32381af2250d95e2eb48767e4210b9e8",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10939,
+            "nativeSectionId": "PT1.CH4.TRANS2.BK3.26"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.BK3.26 — The Savior King",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.BK3.26"
+          },
+          "quote": {
+            "text": "And then God will send a King from the sun",
+            "sha256": "a346837014a77265394c54b32b6ccb1049d0d440d1a3915ff05a7e71b4237f1a",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10901,
+            "nativeSectionId": "PT1.CH4.TRANS2.INTRO1.1.5"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.INTRO1.1.5 — Relation to Other Books",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.INTRO1.1.5"
+          },
+          "quote": {
+            "text": "The eschatology of Sibylline Oracles 3 finds its closest parallels in pre-exilic Jewish literature such as Isaiah and the Psalms.",
+            "sha256": "6cc01fcc4240a65430a90ac9727097a927cd885c1d1a15d4412d8547362e44ae",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    },
+    {
+      "axis": "K",
+      "axisName": "Date and provenance",
+      "position": "Sib Or 3 main corpus: c. 163-145 BCE, Egyptian-Jewish, written in circles around the priest Onias and the Ptolemaic court (especially Philometor); the seventh-Ptolemaic-king messianic figure is the dating anchor. Sib Or 3.388-400 (with the Daniel-7 ten-horns overlay) belongs to a later editorial layer (3.350-488), post-main-corpus. Sib Or 4: hellenistic core post-Alexander (anti-Macedonian, perhaps 3rd c. BCE), redacted c. 80 CE by a Jewish baptist circle in Syria/Jordan after the destruction of the Second Temple and the eruption of Vesuvius (79 CE). Both books therefore preserve Daniel-7-engaging material composed BEFORE the Common Era (Sib Or 4 hellenistic core) and AFTER (Sib Or 4 c. 80 CE redaction; Sib Or 3 horns-overlay). This range makes the Sibylline corpus a long-arc reception event spanning Hellenistic Egypt to first-century-CE Jewish-baptist Syria.",
+      "commitment": "strong",
+      "rationale": "Collins's introductions to Sib Or 3 and Sib Or 4 lay out the dating with care. Sib Or 3 is anchored by the threefold reference to the seventh Ptolemaic king (3.193, 318, 608) plus the prominence of Romans (post-190 BCE). The 388-400 horns oracle is part of the late editorial layer (3.350-488). Sib Or 4 is anchored by the eruption of Vesuvius (79 CE) at vss. 130-35 + Nero's flight to the Parthians + the destruction of the Temple. The 'composite nature' of both books is uncontroversial.",
+      "compositional": "Sib Or 3 has at least three strata; Sib Or 4 has at least two. The Daniel-7-engaging material (3.388-400 horns; 4.49-101 four-kingdoms) belongs to different strata in different books — the horns overlay is editorial-redactional, the four-kingdoms scheme is original to the Sib Or 4 hellenistic core.",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10895,
+            "nativeSectionId": "PT1.CH4.TRANS2.INTRO1"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS2.INTRO1 — Introduction",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS2.INTRO1"
+          },
+          "quote": {
+            "text": "The composite nature of the book has been recognized by virtually all scholars",
+            "sha256": "fca9cbaa4859b7e15f8cb427bd60524ae298dfd11b42487200b3f25f309c7175",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10952,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO3 — Historical and Theological Importance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO3"
+          },
+          "quote": {
+            "text": "The hellenistic oracle is important as a specimen of anti-Macedonian political prophecy.",
+            "sha256": "b42b770b7ba7a08ea5ef6be6e517fed664ef994d508fcc3f0d637feb19ebe883",
+            "language": "en"
+          },
+          "supportStatus": "summary-inference"
+        }
+      ]
+    }
+  ],
+  "crossBookReadings": [
+    {
+      "targetPassage": "Dan 2:31-45",
+      "positionSummary": "Collins repeatedly groups Daniel 2 with Daniel 7 as the joint canonical prototype for four-kingdoms periodization in Jewish apocalyptic. The Sib Or 4 introduction explicitly says 'The four kingdoms are best known from Daniel 2 and 7, but are also found in Aemilius Sura and the Persian Zand-ī Vohūman Yasn' — placing the Sibylline four-kingdoms scheme in a comparative-religious matrix that includes both Daniel chapters as one node. The 'last enumerated kingdom marked out for destruction' pattern Collins names as the structural logic of Sib Or 4's hellenistic core is paradigmatically attested 'in Dan 2 and 7.'",
+      "citations": [
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10952,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO3"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO3 — Historical and Theological Importance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO3"
+          },
+          "quote": {
+            "text": "The four kingdoms are best known from Daniel 2 and 7, but are also found in Aemilius Sura and the Persian Zand-ī Vohūman Yasn.",
+            "sha256": "5825627ef4253ee7d38e5c6ee8e3f0ff54bc6c7ec9c231dd671d2a7ad1d537df",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        },
+        {
+          "backend": {
+            "resourceId": "LLS:OTPSEUD01",
+            "logosArticleNum": 10951,
+            "nativeSectionId": "PT1.CH4.TRANS3.INTRO2"
+          },
+          "frontend": {
+            "author": "Sib Or III + IV (via Charlesworth OTP 1)",
+            "title": "The Old Testament Pseudepigrapha, Volume 1: Sibylline Oracles (J. J. Collins, ed./trans.)",
+            "section": "§PT1.CH4.TRANS3.INTRO2 — Date and Provenance",
+            "page": null,
+            "pageEnd": null,
+            "citationString": "Sib Or III + IV (via Charlesworth OTP 1), Sibylline Oracles (Charlesworth OTP Vol 1), §PT1.CH4.TRANS3.INTRO2"
+          },
+          "quote": {
+            "text": "In schematizations of history of this sort the last enumerated kingdom/generation is either a glorious one (e.g. the seventh king in SibOr 3) or is especially marked out for destruction (as in Dan 2 and 7).",
+            "sha256": "f3cf4dcd20c0c5cdcff05620fd2e2d8860d17ed90f189b36c8a9f01d38a9547d",
+            "language": "en"
+          },
+          "supportStatus": "directly-quoted"
+        }
+      ]
+    }
+  ],
+  "distinctiveMoves": [
+    "Treats the Sibylline Daniel-7 reception mode as 'overlay/redaction' rather than verse-by-verse exegesis: a Jewish Sibyllist updates an existing political oracle (Sib Or 3.388-400) by inserting Daniel 7's ten-horns and horn-on-the-side vocabulary, without re-organizing the surrounding oracle.",
+    "Distinguishes Sib Or 4's four-kingdoms scheme (Assyria, Media, Persia, Macedonia) from Daniel's (Babylon, Media, Persia, Greece): structurally analogous and both ending with Macedonia/Greece marked for destruction, but 'cannot be derived from the Book of Daniel' since Daniel begins with Babylon — the parallel is comparative-religious (Aemilius Sura, Zand-ī Vohūman Yasn) not literary-dependent.",
+    "Frames Sib Or 4's Roman supplement (vss. 102-51) as a first-century-CE Jewish bolt-on rather than a Daniel-style 'Macedonia-to-Rome' retargeting: Rome is appended to the original four-kingdoms scheme without re-numbering, distinguishing the Sibylline reception event from 4 Ezra 11-12's beast-as-Rome reidentification.",
+    "Identifies Sib Or 3's 'King from the sun' (3.652) as the seventh Ptolemaic king hailed as a messianic figure — Egyptian-Jewish messianism with no precedent in Daniel itself but functioning as the Sibylline analog to Daniel's eschatological 'kingdom transfer' moment.",
+    "Reads Sib Or 3.63-74's Beliar-from-the-Sebastenoi as the line of the Augusti = Nero, paralleling Asc Isa 4:1's Beliar-Nero typology and bringing the Sibylline corpus into a multi-figure typological network that overlaps with Daniel's little-horn/antichrist tradition without literary dependence on Daniel 7 specifically."
+  ],
+  "uncertainties": [
+    "Whether the Sib Or 4 hellenistic core was originally Jewish: Collins notes 'nothing in the oracle necessarily requires Jewish authorship'; the Jewish character is most evident in the c. 80 CE redaction layer.",
+    "Pilot axes A, E, F, J, N, O are not Collins's questions in this material: he is editing/translating Sibylline Oracles, not interpreting Daniel 7 directly. His positions on these axes can only be inferred indirectly from how the Sibyllists repurpose Daniel-7 motifs.",
+    "Whether Sib Or 3's Daniel-7 horns overlay (3.388-400) shows direct literary dependence on Daniel or works through a now-lost intermediary apocalyptic-political tradition: Collins says 'clearly alluding to Daniel 7' but does not press for verbatim literary dependence.",
+    "Whether Sib Or 4's bolt-on Roman supplement (vss. 102-51) reflects the redactor's own Daniel-7 awareness: Collins is silent on whether the c. 80 CE redactor knew 4 Ezra's contemporary Rome-as-fourth-beast move; the structural parallel is suggestive but not exegeted.",
+    "PASSAGE_COVERAGE_VOCAB does not yet include explicit 'Sib Or 3' or 'Sib Or 4' entries (the actual primary text Collins is editing); passageCoverage[] therefore lists the Daniel verse-blocks the Sibyllists substantively engage. A vocab extension could add 'Sib Or 3' and 'Sib Or 4' parallel to '1 En 37-71'.",
+    "DEVIATION FROM SPEC: The original assignment specified OTPSEUD02 as the Sibylline Oracles container. In fact OTP Vol 2 (LLS:OTPSEUD02) covers 'Expansions of the OT, Wisdom, Prayers, Fragments' and does NOT contain Sibylline Oracles. The Sibylline Oracles are in OTP Vol 1 (LLS:OTPSEUD01, PT1.CH4, J. J. Collins, ed./trans.). This entry surveys OTP Vol 1's Sibylline Oracles material, with resourceId/resourceFile pointing at Vol 1. The filename was renamed in H-4 from sibylline-oracles-charlesworth-otp2.json to sibylline-oracles-charlesworth-otp1.json so that the on-disk name matches the actual resource. The scholarId 'sibylline-oracles-charlesworth-otp2' is retained for downstream consistency with prior dispatch records."
+  ]
+}
