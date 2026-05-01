@@ -1,5 +1,8 @@
 # Session Handoff — WS0c Wave 6.1 + 6.2 Complete
 
+> **SUPERSEDED 2026-05-01** by `docs/SESSION-HANDOFF-WS0c-OCR-PREP-COMPLETE.md`.
+> Kept on disk as historical record. Do not start a session from this doc.
+
 **Date:** 2026-04-30
 **Status:** Wave 1, Sefaria backend (C-series), workbench cleanup (M/N), three multilingual
 audits (D-1 / D-1J / D-1.6 — all final), `external-ocr` generalization + `translations[]`
