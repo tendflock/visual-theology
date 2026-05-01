@@ -142,7 +142,66 @@ run_test_with_grep "pdf-columns rejects --bogus" 2 "unknown flag" \
                    "$SCRIPT" pdf-columns https://example.com/x.pdf 1 2 grc /tmp/x.txt --bogus
 
 echo
-echo "[9] --pages flag shape"
+echo "[9] archive-text uses /download/, not /stream/"
+# Regression for the codex-caught bug: /stream/<id>/<id>_djvu.txt serves
+# archive.org's HTML viewer wrapping the text, not the text itself. Only
+# /download/<id>/<id>_djvu.txt returns the raw _djvu.txt body. The HTML
+# wrapper is large enough to clear the < 1000-byte quality_check floor,
+# so a regression here would silently produce citation-unsafe outputs.
+# Source-level assertion is offline-deterministic; the suite is offline.
+ARCHIVE_DISPATCH=$(awk '/^cmd_archive_text\(\)/,/^}/' "$SCRIPT")
+if printf '%s' "$ARCHIVE_DISPATCH" | grep -qF 'https://archive.org/download/${archive_id}/${archive_id}_djvu.txt'; then
+  PASS=$((PASS+1)); printf "  OK  archive-text constructs /download/ URL\n"
+else
+  FAIL=$((FAIL+1)); FAILED_NAMES+=("archive-text constructs /download/ URL")
+  printf "  FAIL archive-text constructs /download/ URL\n"
+fi
+if printf '%s' "$ARCHIVE_DISPATCH" | grep -qF 'archive.org/stream/'; then
+  FAIL=$((FAIL+1)); FAILED_NAMES+=("archive-text does NOT use /stream/")
+  printf "  FAIL archive-text does NOT use /stream/ (HTML-wrapper bug regressed)\n"
+else
+  PASS=$((PASS+1)); printf "  OK  archive-text does NOT use /stream/\n"
+fi
+
+# Unit-level checks that the HTML-wrapper sniff condition itself
+# (head -c 256 | grep -E '<!DOCTYPE|<html|<body') matches HTML payloads
+# and does NOT match plain text. These do NOT exercise the archive-text
+# dispatch end-to-end (the suite is offline). Integration coverage of
+# the sniff against a live archive.org response belongs in a separate
+# online smoke test; the dispatch path that contains the sniff is also
+# guarded by the source-grep tests above.
+SNIFF_TMP=$(mktemp -t extract_ocr_sniff.XXXXXX)
+printf '<!DOCTYPE html>\n<html><body>oops</body></html>\n' > "$SNIFF_TMP"
+if head -c 256 "$SNIFF_TMP" | LC_ALL=C grep -qE '<!DOCTYPE|<html|<body'; then
+  PASS=$((PASS+1)); printf "  OK  HTML-wrapper sniff condition matches HTML output\n"
+else
+  FAIL=$((FAIL+1)); FAILED_NAMES+=("HTML-wrapper sniff matches HTML")
+  printf "  FAIL HTML-wrapper sniff did not match a known-HTML payload\n"
+fi
+PLAIN_TMP=$(mktemp -t extract_ocr_plain.XXXXXX)
+printf 'A COMMENTARY ON THE BOOK OF DANIEL\n' > "$PLAIN_TMP"
+if head -c 256 "$PLAIN_TMP" | LC_ALL=C grep -qE '<!DOCTYPE|<html|<body'; then
+  FAIL=$((FAIL+1)); FAILED_NAMES+=("HTML-wrapper sniff false-positive on plain text")
+  printf "  FAIL HTML-wrapper sniff false-positive on plain text\n"
+else
+  PASS=$((PASS+1)); printf "  OK  HTML-wrapper sniff does not false-positive on plain text\n"
+fi
+rm -f "$SNIFF_TMP" "$PLAIN_TMP"
+
+# Source-level assertion that the dispatch makes the sniff fatal (exits
+# non-zero) rather than just warning. This is load-bearing on the
+# codex-required-fix #1: a non-fatal warning would let downstream survey
+# runs ingest HTML wrappers as text.
+ARCHIVE_DISPATCH2=$(awk '/^cmd_archive_text\(\)/,/^}/' "$SCRIPT")
+if printf '%s' "$ARCHIVE_DISPATCH2" | grep -qE 'exit [1-9]'; then
+  PASS=$((PASS+1)); printf "  OK  archive-text exits non-zero on HTML output\n"
+else
+  FAIL=$((FAIL+1)); FAILED_NAMES+=("archive-text exits non-zero on HTML output")
+  printf "  FAIL archive-text dispatch must exit non-zero when HTML is detected\n"
+fi
+
+echo
+echo "[10] --pages flag shape"
 # Bad --pages format requires getting past lang validation; use eng + a reachable bogus URL.
 # We can't reach the URL; we just need the parser to emit the right error
 # before the fetch. The order is: validate_url -> validate_output_path ->

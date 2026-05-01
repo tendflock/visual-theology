@@ -18,8 +18,10 @@
 #     pass --col-formula to override for other PG / PL volumes.
 #   * archive.org _djvu.txt plain-text — skips OCR; archive.org already
 #     publishes a full-volume plain-text extraction at
-#     archive.org/stream/<id>/<id>_djvu.txt (audit D-1J §B3 notes Yefet
-#     ben Eli's commentary is best ingested this way).
+#     archive.org/download/<id>/<id>_djvu.txt (audit D-1J §B3 notes Yefet
+#     ben Eli's commentary is best ingested this way). The /stream/ form
+#     of the same path serves an HTML viewer wrapping the text — do NOT
+#     use it; see Tool-bug follow-up in external-resources/latin/_OCR-PREP-NOTES.md.
 #   * HTML — CCEL work-slug pages; strips tags via Python's html.parser.
 #
 # Subcommands:
@@ -470,7 +472,12 @@ cmd_archive_text() {
   validate_archive_id "$archive_id"
   validate_output_path "$output"
 
-  local url="https://archive.org/stream/${archive_id}/${archive_id}_djvu.txt"
+  # /download/ serves the raw _djvu.txt; /stream/ serves an HTML viewer
+  # wrapping it. The HTML wrapper is large enough to clear the < 1000-byte
+  # quality floor below, so the wrong endpoint will silently produce a
+  # citation-unsafe file. See external-resources/latin/_OCR-PREP-NOTES.md
+  # ("Tool-bug follow-up").
+  local url="https://archive.org/download/${archive_id}/${archive_id}_djvu.txt"
   echo "Fetching archive.org plain-text for ${archive_id}"
   fetch_url "$url" "$output"
   echo
@@ -481,6 +488,20 @@ cmd_archive_text() {
   if [ "$size" -lt 1000 ]; then
     echo "  WARNING: < 1000 bytes — archive.org may not have a _djvu.txt for this id."
     echo "           Try the IA item page directly: https://archive.org/details/${archive_id}"
+  fi
+  # Defensive sniff: if archive.org ever returns an HTML page (redirect to
+  # a viewer, item-not-found stub, etc.) on the /download/ path, fail the
+  # subcommand rather than letting downstream survey runs treat it as
+  # text. The HTML wrapper is large enough to clear the < 1000-byte floor
+  # above, so a non-fatal warning would silently degrade — see codex
+  # follow-up in OCR-1.5 session notes.
+  if head -c 256 "$output" 2>/dev/null | LC_ALL=C grep -qE '<!DOCTYPE|<html|<body'; then
+    echo "  ERROR: output begins with HTML markup — archive.org returned a" >&2
+    echo "         viewer page rather than plain text. The output file" >&2
+    echo "         was written but is NOT citation-ready. Inspect:" >&2
+    echo "           $output" >&2
+    echo "         and re-fetch from a corrected URL before retrying." >&2
+    exit 3
   fi
 }
 
